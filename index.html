@@ -1,0 +1,479 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>英文闯关乐园 - 学习模式</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Lexend:wght@400;600&display=swap');
+        
+        body {
+            font-family: 'Lexend', 'PingFang SC', sans-serif;
+            background-color: #F7F9FB;
+        }
+
+        .tab-active {
+            background-color: #10B981 !important;
+            color: white !important;
+        }
+
+        .option-btn:active {
+            transform: scale(0.98);
+        }
+
+        /* 隐藏滚动条 */
+        ::-webkit-scrollbar {
+            width: 0px;
+        }
+
+        #sidebar {
+            transition: transform 0.3s ease-in-out, width 0.3s ease-in-out, opacity 0.3s ease-in-out;
+            overflow: hidden; /* 防止收起时文字溢出或挤压 */
+        }
+
+        .sidebar-closed {
+            transform: translateX(-100%);
+            width: 0 !important;
+            opacity: 0;
+            pointer-events: none;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(-20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+    </style>
+</head>
+<body class="text-gray-800 flex h-screen overflow-hidden">
+
+    <!-- 左侧导航栏 -->
+    <aside id="sidebar" class="w-72 bg-white border-r border-gray-100 flex flex-col flex-shrink-0 z-40 relative">
+        <div class="p-6 border-b border-gray-50 bg-emerald-50/30 whitespace-nowrap">
+            <h2 class="text-2xl font-bold text-emerald-600 flex items-center gap-2">
+                题目目录
+            </h2>
+            <div class="mt-4 flex items-center justify-between p-3 bg-white rounded-xl border border-emerald-100 shadow-sm">
+                <span class="text-gray-500 font-semibold">隐藏答案词</span>
+                <label class="relative inline-flex items-center cursor-pointer">
+                    <input type="checkbox" id="toggle-word-visibility" class="sr-only peer" onchange="toggleWordMode()">
+                    <div class="w-11 h-6 bg-gray-200 peer-focus:outline-none rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all peer-checked:bg-emerald-500"></div>
+                </label>
+            </div>
+        </div>
+        <nav id="sidebar-nav" class="flex-1 overflow-y-auto p-4 space-y-2 whitespace-nowrap">
+            <!-- 导航项动态生成 -->
+        </nav>
+        <div class="p-4 border-t text-sm text-gray-400 text-center whitespace-nowrap">
+            单词导航模式
+        </div>
+    </aside>
+
+    <!-- 主内容区 -->
+    <main class="flex-1 flex flex-col overflow-hidden relative">
+        <!-- 顶部条 -->
+        <header class="h-16 flex items-center px-6 justify-between bg-white border-b border-gray-100">
+            <div class="flex items-center gap-2">
+                <!-- 侧边栏开关 -->
+                <button onclick="toggleSidebar()" class="p-2 hover:bg-gray-100 rounded-lg text-gray-500" title="打开/关闭目录">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+                    </svg>
+                </button>
+                <!-- 回到首页按钮 -->
+                <a href="https://codepen.io/qinqian-zheng/full/NPrYLQM" target="_top" class="p-2 hover:bg-emerald-50 rounded-lg text-emerald-500 transition-colors" title="回到首页">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6" />
+                    </svg>
+                </a>
+            </div>
+            <div class="flex items-center gap-4">
+                <span id="progress-text" class="text-xl font-bold text-gray-400">第 1 题</span>
+                <div class="w-32 bg-gray-100 h-3 rounded-full overflow-hidden">
+                    <div id="progress-bar" class="bg-emerald-400 h-full transition-all duration-500" style="width: 0%"></div>
+                </div>
+            </div>
+        </header>
+
+        <div class="flex-1 overflow-y-auto p-4 md:p-12">
+            <div class="max-w-6xl mx-auto transition-all">
+                <!-- 答题卡片 -->
+                <div class="bg-white rounded-[2.5rem] shadow-xl p-8 md:p-12 border-4 border-emerald-50 relative">
+                    <!-- 题目区域 -->
+                    <div id="question-container" class="mb-10 p-8 bg-emerald-50/50 rounded-3xl cursor-pointer hover:bg-emerald-50 transition-all group" onclick="readQuestion()">
+                        <p id="question-text" class="text-3xl md:text-5xl text-emerald-900 leading-relaxed font-semibold">
+                            加载中...
+                        </p>
+                        <div class="mt-6 text-emerald-400 text-xl flex items-center font-medium opacity-60 group-hover:opacity-100">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-7 w-7 mr-3" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15.536 8.464a5 5 0 010 7.072m2.828-9.9a9 9 0 010 12.728M5.586 15H4a1 1 0 01-1-1v-4a1 1 0 011-1h1.586l4.707-4.707C10.923 3.663 12 4.109 12 5v14c0 .891-1.077 1.337-1.707.707L5.586 15z" />
+                            </svg>
+                            点击句子可听朗读（填空处会停顿）
+                        </div>
+                    </div>
+
+                    <div id="options-grid" class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                        <!-- 选项 -->
+                    </div>
+
+                    <!-- 解析按钮 -->
+                    <div class="mt-12 pt-8 border-t border-gray-50 flex justify-center">
+                        <button onclick="showExplanation()" class="flex flex-col items-center gap-1 group">
+                            <div class="flex items-center gap-3 px-10 py-5 bg-amber-50 text-amber-600 rounded-2xl text-2xl font-bold border-2 border-amber-100 hover:bg-amber-100 transition-all active:scale-95 shadow-sm">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z" />
+                                </svg>
+                                <span>查看解析：<span id="btn-word-display">...</span></span>
+                            </div>
+                            <span class="text-gray-400 text-lg mt-2 font-medium">不确定？可以先看看解析哦</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- 解析弹窗 (Modal) -->
+    <div id="analysis-modal" class="hidden fixed inset-0 bg-black/60 backdrop-blur-sm flex items-center justify-center p-4 z-50">
+        <div class="bg-white w-full max-w-5xl rounded-[2.5rem] overflow-hidden shadow-2xl flex flex-col max-h-[90vh] relative">
+            <button onclick="closeExplanation()" class="absolute top-6 right-6 p-2 text-gray-400 hover:text-gray-600 hover:bg-gray-100 rounded-full transition-colors z-10">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+                </svg>
+            </button>
+
+            <div class="p-8 bg-white border-b flex flex-col flex-shrink-0">
+                <h2 id="modal-title" class="text-2xl font-bold text-gray-400 mb-1">🌟 知识点详解</h2>
+                <div id="word-title" class="text-4xl font-extrabold text-emerald-600 italic">word</div>
+            </div>
+
+            <div class="flex bg-gray-100 p-2 gap-1 overflow-x-auto flex-shrink-0">
+                <button onclick="switchTab(0)" id="tab-0" class="tab-btn whitespace-nowrap flex-1 py-5 px-1 md:px-2 text-lg md:text-xl lg:text-2xl font-bold rounded-2xl text-gray-500 transition-all tab-active">图解</button>
+                <button onclick="switchTab(1)" id="tab-1" class="tab-btn whitespace-nowrap flex-1 py-5 px-1 md:px-2 text-lg md:text-xl lg:text-2xl font-bold rounded-2xl text-gray-500 transition-all">含义/原句</button>
+                <button onclick="switchTab(2)" id="tab-2" class="tab-btn whitespace-nowrap flex-1 py-5 px-1 md:px-2 text-lg md:text-xl lg:text-2xl font-bold rounded-2xl text-gray-500 transition-all">常见用法</button>
+                <button onclick="switchTab(3)" id="tab-3" class="tab-btn whitespace-nowrap flex-1 py-5 px-1 md:px-2 text-lg md:text-xl lg:text-2xl font-bold rounded-2xl text-gray-500 transition-all">避免用错</button>
+            </div>
+
+            <div id="analysis-content" class="p-10 overflow-y-auto text-2xl leading-relaxed text-gray-700 flex-1">
+                <!-- 解析内容 -->
+            </div>
+
+            <div class="p-8 bg-gray-50 border-t flex justify-end gap-4 flex-shrink-0">
+                <button onclick="closeExplanation()" class="px-10 py-5 bg-gray-200 text-gray-600 rounded-2xl text-2xl font-bold active:scale-95 transition-transform">
+                    返回题目
+                </button>
+                <button id="next-btn" onclick="nextQuestion()" class="bg-emerald-500 hover:bg-emerald-600 text-white px-12 py-5 rounded-2xl text-3xl font-bold shadow-lg active:scale-95 transition-transform">
+                    下一题
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- 图片放大 -->
+    <div id="zoom-overlay" class="hidden fixed inset-0 bg-black/95 z-[70] flex items-center justify-center cursor-zoom-out" onclick="closeZoom()">
+        <img id="zoomed-img" src="" class="max-w-full max-h-full object-contain" alt="放大查看">
+        <div class="absolute bottom-10 left-1/2 -translate-x-1/2 text-white/70 text-2xl bg-white/10 px-8 py-3 rounded-full">点击任意处关闭</div>
+    </div>
+
+    <div id="toast" class="hidden fixed top-20 left-1/2 -translate-x-1/2 bg-red-500 text-white px-10 py-5 rounded-2xl text-3xl font-bold shadow-2xl z-[60] animate-bounce">
+        再试一次吧！加油！
+    </div>
+
+    <script>
+        // --- 数据配置 ---
+        const quizData = [
+             {
+        question: "Ana said ______ that she would not leave her sick dragon Kepri.",
+        options: ["gentle", "take care of", "usual", "firmly"],
+        correct: 3,
+        word: "firmly",
+        wordFull: "firmly (adv.)",
+        illustration: ["picture/pic1.png"],
+        explanation: [
+            `<div>
+                <p class="font-bold text-emerald-600 mb-2">1. 含义</p>
+                <p>副词 (adv.)<br>文中意思：坚定地；牢固地；坚决地。</p>
+                <p class="font-bold text-emerald-600 mt-6 mb-2">2. 书本原句</p>
+                <p class="bg-emerald-50 p-4 rounded-xl border-l-4 border-emerald-400 italic">"I'm not leaving her," Ana said firmly.（“我不会离开她的，”安娜坚定地说。）</p>
+            </div>`,
+            `<div>
+                <p class="font-bold text-emerald-600 mb-2">3. 常见用法</p>
+                <ul class="list-disc ml-6 space-y-2">
+                    <li>firmly refuse (坚决拒绝)</li>
+                    <li>speak firmly (坚定地说)</li>
+                    <li>hold firmly (紧紧握住)</li>
+                    <li>stand firmly (稳稳站立)</li>
+                </ul>
+                <p class="font-bold text-emerald-600 mt-6 mb-2">4. 例句</p>
+                <p class="mb-2">She firmly refused to lie to her mom.</p>
+                <p>Please close the door firmly to keep the cold out.</p>
+            </div>`,
+            `<div>
+                <p class="font-bold text-emerald-600 mb-2">5. 避免用错</p>
+                <p>是副词，修饰动词。不与 hard 混淆：firmly 侧重“坚定”，hard 侧重“用力”。</p>
+                <p class="mt-2">不要当作形容词使用，“坚定的态度”是 firm attitude，不是 firmly attitude（×）。</p>
+            </div>`
+        ]
+    },
+    {
+        question: "Griffith put a ______ hand on Ana’s shoulder to comfort her.",
+        options: ["firmly", "take care of", "usual", "gentle"],
+        correct: 3,
+        word: "gentle",
+        wordFull: "gentle (adj.)",
+        illustration: ["picture/pic2.png"],
+        explanation: [
+            `<div>
+                <p class="font-bold text-emerald-600 mb-2">1. 含义</p>
+                <p>形容词 (adj.)<br>文中意思：温和的；轻柔的；慈祥的。</p>
+                <p class="font-bold text-emerald-600 mt-6 mb-2">2. 书本原句</p>
+                <p class="bg-emerald-50 p-4 rounded-xl border-l-4 border-emerald-400 italic">"Griffith put a gentle hand on her shoulder."（格里菲斯把一只温和的手放在她的肩膀上。）</p>
+            </div>`,
+            `<div>
+                <p class="font-bold text-emerald-600 mb-2">3. 常见用法</p>
+                <ul class="list-disc ml-6 space-y-2">
+                    <li>gentle hand (轻柔的手)</li>
+                    <li>gentle wind (微风)</li>
+                    <li>gentle voice (温和的声音)</li>
+                    <li>gentle smile (慈祥的微笑)</li>
+                </ul>
+                <p class="font-bold text-emerald-600 mt-6 mb-2">4. 例句</p>
+                <p class="mb-2">Be gentle with the little dog-it’s scared.</p>
+                <p>The gentle rain kept falling all morning.</p>
+            </div>`,
+            `<div>
+                <p class="font-bold text-emerald-600 mb-2">5. 避免用错</p>
+                <p>修饰名词用 gentle，修饰动词用 gently（如：speak gently），不要说 speak gentle（×）。</p>
+                <p class="mt-2">不与 soft 混淆：gentle 侧重“态度、动作温和”，soft 侧重“质地、声音柔软”。</p>
+            </div>`
+        ]
+    },
+    {
+        question: "You must ______ yourself so you can help the sick dragon.",
+        options: ["gentle", "firmly", "take care of", "far-away"],
+        correct: 2,
+        word: "take care of",
+        wordFull: "take care of (短语)",
+        illustration: ["picture/pic3.png"],
+        explanation: [
+            `<div>
+                <p class="font-bold text-emerald-600 mb-2">1. 含义</p>
+                <p>动词短语 (v.)<br>文中意思：照顾；照料；处理。</p>
+                <p class="font-bold text-emerald-600 mt-6 mb-2">2. 书本原句</p>
+                <p class="bg-emerald-50 p-4 rounded-xl border-l-4 border-emerald-400 italic">"Ana, you must take care of yourself," he said.（“安娜，你必须照顾好自己，”他说。）</p>
+            </div>`,
+            `<div>
+                <p class="font-bold text-emerald-600 mb-2">3. 常见用法</p>
+                <ul class="list-disc ml-6 space-y-2">
+                    <li>take care of sb (照顾某人)</li>
+                    <li>take care of sth (照料某物)</li>
+                    <li>take good care of (好好照顾)</li>
+                    <li>take care of a problem (处理问题)</li>
+                </ul>
+                <p class="font-bold text-emerald-600 mt-6 mb-2">4. 例句</p>
+                <p class="mb-2">Can you take care of my bag while I go to the bathroom?</p>
+                <p>You need to take care of yourself when you’re alone.</p>
+            </div>`,
+            `<div>
+                <p class="font-bold text-emerald-600 mb-2">5. 避免用错</p>
+                <p>不可遗漏 of，“照顾妈妈”是 take care of mom（√），不是 take care mom（×）。</p>
+            </div>`
+        ]
+    }
+        ];
+
+        let currentIdx = 0;
+        let isWordHidden = false;
+
+        function initApp() {
+            renderSidebar();
+            initQuiz();
+        }
+
+        // --- 侧边栏逻辑 ---
+        function renderSidebar() {
+            const nav = document.getElementById('sidebar-nav');
+            nav.innerHTML = '';
+            quizData.forEach((q, i) => {
+                const btn = document.createElement('button');
+                btn.className = `w-full p-4 text-left text-xl font-bold rounded-xl transition-all flex items-center gap-3 ${i === currentIdx ? 'bg-emerald-500 text-white shadow-md' : 'text-gray-600 hover:bg-gray-100'}`;
+                btn.innerHTML = `
+                    <span class="w-8 h-8 flex-shrink-0 flex items-center justify-center rounded-full bg-white/20 text-sm">${i + 1}</span>
+                    <span class="truncate">${q.word}</span>
+                `;
+                btn.onclick = () => {
+                    currentIdx = i;
+                    initQuiz();
+                    // 在小屏上自动收起
+                    if (window.innerWidth < 1024) toggleSidebar(false);
+                };
+                nav.appendChild(btn);
+            });
+        }
+
+        function toggleSidebar(force) {
+            const sidebar = document.getElementById('sidebar');
+            sidebar.classList.toggle('sidebar-closed', force === false ? true : undefined);
+        }
+
+        function toggleWordMode() {
+            isWordHidden = document.getElementById('toggle-word-visibility').checked;
+            updateBtnWordDisplay();
+        }
+
+        function updateBtnWordDisplay() {
+            const display = document.getElementById('btn-word-display');
+            if (isWordHidden) {
+                display.innerText = "***";
+            } else {
+                display.innerText = quizData[currentIdx].word;
+            }
+        }
+
+        // --- 答题逻辑 ---
+        function initQuiz() {
+            const quiz = quizData[currentIdx];
+            
+            // UI 更新
+            document.getElementById('progress-text').innerText = `第 ${currentIdx + 1} 题`;
+            document.getElementById('progress-bar').style.width = `${((currentIdx + 1) / quizData.length) * 100}%`;
+            document.getElementById('question-text').innerText = quiz.question;
+            updateBtnWordDisplay();
+            renderSidebar(); // 刷新导航高亮
+
+            const grid = document.getElementById('options-grid');
+            grid.innerHTML = '';
+            quiz.options.forEach((opt, i) => {
+                const btn = document.createElement('button');
+                btn.className = "option-btn w-full p-6 text-2xl md:text-3xl font-bold text-left bg-gray-50 border-4 border-gray-100 rounded-[2rem] hover:border-emerald-300 hover:bg-emerald-50 transition-all flex items-center";
+                btn.innerHTML = `<span class="w-14 h-14 flex-shrink-0 flex items-center justify-center bg-white border-2 border-gray-200 rounded-full mr-5 text-emerald-600 text-2xl font-bold">${String.fromCharCode(65 + i)}</span> ${opt}`;
+                btn.onclick = () => checkAnswer(i);
+                grid.appendChild(btn);
+            });
+        }
+
+        function checkAnswer(i) {
+            if (i === quizData[currentIdx].correct) {
+                showExplanation(true);
+            } else {
+                const toast = document.getElementById('toast');
+                toast.classList.remove('hidden');
+                setTimeout(() => toast.classList.add('hidden'), 1200);
+            }
+        }
+
+        function showExplanation(auto = false) {
+            const quiz = quizData[currentIdx];
+            document.getElementById('word-title').innerText = quiz.wordFull;
+            document.getElementById('modal-title').innerText = auto ? "🌟 答对了！真棒" : "💡 知识点详解";
+            
+            switchTab(0);
+            document.getElementById('analysis-modal').classList.remove('hidden');
+            
+            const nextBtn = document.getElementById('next-btn');
+            nextBtn.innerText = (currentIdx === quizData.length - 1) ? "重新开始" : "下一题";
+        }
+
+        function closeExplanation() {
+            document.getElementById('analysis-modal').classList.add('hidden');
+        }
+
+        function switchTab(tabIdx) {
+            const quiz = quizData[currentIdx];
+            document.querySelectorAll('.tab-btn').forEach((btn, i) => {
+                if (i === tabIdx) btn.classList.add('tab-active');
+                else btn.classList.remove('tab-active');
+            });
+
+            const content = document.getElementById('analysis-content');
+            if (tabIdx === 0) {
+                let imgs = quiz.illustration.map(src => `
+                    <div class="mb-6 text-center">
+                        <img src="${src}" class="rounded-3xl shadow-lg border border-gray-100 cursor-zoom-in max-w-full hover:opacity-95" 
+                             onclick="openZoom('${src}')" onerror="this.src='https://via.placeholder.com/800x600?text=Image+Missing'">
+                    </div>
+                `).join('');
+                content.innerHTML = `<div><p class="text-gray-400 mb-8 text-center text-xl italic">💡 点击图片可放大查看详情</p>${imgs}</div>`;
+            } else {
+                content.innerHTML = quiz.explanation[tabIdx - 1];
+            }
+        }
+
+        function openZoom(src) {
+            const overlay = document.getElementById('zoom-overlay');
+            document.getElementById('zoomed-img').src = src;
+            overlay.classList.remove('hidden');
+            overlay.style.display = 'flex';
+        }
+
+        function closeZoom() {
+            document.getElementById('zoom-overlay').classList.add('hidden');
+            document.getElementById('zoom-overlay').style.display = 'none';
+        }
+
+        function nextQuestion() {
+            closeExplanation();
+            currentIdx = (currentIdx < quizData.length - 1) ? currentIdx + 1 : 0;
+            initQuiz();
+        }
+
+        function readQuestion() {
+            const text = quizData[currentIdx].question;
+            const parts = text.split('______');
+            window.speechSynthesis.cancel();
+            const utter1 = new SpeechSynthesisUtterance(parts[0]);
+            utter1.lang = 'en-US'; utter1.rate = 0.75;
+            utter1.onend = () => {
+                if (parts[1]) {
+                    setTimeout(() => {
+                        const utter2 = new SpeechSynthesisUtterance(parts[1]);
+                        utter2.lang = 'en-US'; utter2.rate = 0.75;
+                        window.speechSynthesis.speak(utter2);
+                    }, 1500);
+                }
+            };
+            window.speechSynthesis.speak(utter1);
+        }
+
+        window.onload = initApp;
+    </script>
+<!-- Code injected by live-server -->
+<script>
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+</body>
+</html>
