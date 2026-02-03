@@ -28,7 +28,9 @@ function initVoices() {
 
 document.addEventListener('DOMContentLoaded', () => {
     if (typeof DB === 'undefined') { alert("错误：无法读取 data.js。请检查 data.js 格式！"); return; }
-    if (!DB.ratings) DB.ratings = {};
+    
+    // 【核心修改 1】初始化时，尝试从 LocalStorage 读取评分
+    loadRatingsFromStorage();
 
     initHome();
     initVoices();
@@ -38,42 +40,55 @@ document.addEventListener('DOMContentLoaded', () => {
     
     document.addEventListener('click', (e) => {
         if (!isClickSoundEnabled) return;
-        
-        // 排除掉不需要通用音效的元素
-        // 注意：【修改】这里移除了 .star-icon 的排除，让它也能播放声音
         if (e.target.closest('.quiz-q') || e.target.closest('.opt-btn')) return;
         if (e.target.closest('.switch')) return; 
         if (e.target.closest('.audio-icon')) return;
-        
-        // 筛选器星星也加上音效反馈
-        // if (e.target.closest('.filter-star-btn')) return; 
+        if (e.target.closest('.star-icon') || e.target.closest('.filter-star-btn')) return; 
 
         const playPromise = audioClick.play();
         if (playPromise !== undefined) { playPromise.catch(error => {}); }
     });
 });
 
+// 【核心修改 2】读取缓存函数
+function loadRatingsFromStorage() {
+    const savedRatings = localStorage.getItem('myWordRatings');
+    if (savedRatings) {
+        try {
+            const parsed = JSON.parse(savedRatings);
+            // 合并缓存数据到 DB.ratings (如果有新词，保留新词默认0；如果有旧词记录，覆盖为缓存值)
+            DB.ratings = { ...DB.ratings, ...parsed };
+            console.log("已从浏览器缓存恢复评分数据");
+        } catch (e) {
+            console.error("读取缓存失败", e);
+        }
+    } else {
+        // 如果缓存没有，确保 DB.ratings 存在
+        if (!DB.ratings) DB.ratings = {};
+    }
+}
+
+// 【核心修改 3】保存缓存函数
+function saveRatingsToStorage() {
+    localStorage.setItem('myWordRatings', JSON.stringify(DB.ratings));
+}
+
 function toggleClickSound(el) {
     isClickSoundEnabled = el.checked;
     document.querySelectorAll('.sound-switch').forEach(s => { s.checked = isClickSoundEnabled; });
 }
 
-// 【核心修改】优化导出数据格式：增加单词注释列
 window.exportData = function() {
-    let outputLines = [];
+    const jsonStr = JSON.stringify(DB.ratings, null, 4);
     
-    // 遍历所有单词，确保顺序一致且包含注释
-    // 如果想要按字母顺序导出，可以先排序
+    // 导出逻辑不变，但现在你可以把这个作为“双重保险”
+    let outputLines = [];
     const sortedWords = [...DB.words].sort((a, b) => a.word.localeCompare(b.word));
-
     sortedWords.forEach(w => {
         const rating = DB.ratings[w.uid] || 0;
-        // 格式化： "ID": 分数,    // 单词
-        // 使用 padEnd 让注释对齐，看起来像一列
         const line = `        "${w.uid}": ${rating},`.padEnd(25) + `// ${w.word}`;
         outputLines.push(line);
     });
-
     const outputStr = `ratings: {\n${outputLines.join('\n')}\n    },`;
     
     const exportContent = `// ================== 星级数据导出 ==================\n// 请打开 data.js，找到 "ratings: { ... }" 部分，用下面的代码替换它：\n\n${outputStr}`;
@@ -86,7 +101,7 @@ window.exportData = function() {
     a.click();
     document.body.removeChild(a);
     
-    alert("数据已导出！\n文件内已自动添加单词注释，方便您在 data.js 中查看。");
+    alert("数据已导出！\n平时会自动保存在浏览器中，导出文件可作为永久备份。");
 }
 
 function initHome() {
@@ -450,9 +465,13 @@ function renderRatingStars(wordObj, suffix) {
     }
 }
 
+// 【核心修改 4】打分后立即保存到 LocalStorage
 window.setRating = function(uid, rating) {
     const current = DB.ratings[uid] || 0;
     DB.ratings[uid] = (current === rating) ? 0 : rating;
+    
+    // 保存到浏览器缓存
+    saveRatingsToStorage();
     
     const word = getWordByUid(uid);
     const suffix = state.mode === 'home_detail' ? '-home' : '';
