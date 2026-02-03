@@ -12,31 +12,64 @@
         
         <aside class="sidebar home-sidebar">
             <div class="sidebar-header">
-                <h2><i class="icon"></i> Word List</h2>
-                <button id="btn-home-toggle" class="toggle-text-btn" onclick="toggleHomeList()">
-                    全部展开
-                </button>
+                <h2>
+                    <i class="icon">📑</i> Word List 
+                    <span id="home-list-count" class="list-count">(ct. 0)</span>
+                </h2>
+                <button class="save-btn" onclick="exportData()">💾 导出</button>
             </div>
             
             <div class="search-box">
                 <input type="text" id="global-search" placeholder="Search words..." autocomplete="off">
-                <ul id="search-suggestions" class="suggestions-list"></ul>
+            </div>
+
+            <div class="sidebar-filter-area">
+                <div id="home-filter-stars" class="filter-stars-container"></div>
+                <button id="btn-home-toggle" class="toggle-text-btn" onclick="toggleHomeList()">全部展开</button>
             </div>
             
-            <ul id="abc-list" class="scroll-list">
-                </ul>
+            <ul id="abc-list" class="scroll-list"></ul>
         </aside>
 
         <main class="content-home">
-            <div class="home-fixed-header">
-                <div class="home-top-row">
-                    <div class="header-left-group">
-                        <h2><i class="icon"></i> Books</h2>
-                        <span id="total-stats" class="badge">Total: 0</span>
+            <div id="home-gallery-view">
+                <div class="home-fixed-header">
+                    <div class="home-top-row">
+                        <div class="header-left-group">
+                            <h2><i class="icon">📚</i> Books</h2>
+                            </div>
+                        <nav id="book-type-tabs" class="nav-tabs-inline"></nav>
+                        <div class="header-right-group">
+                            <div class="switch-wrapper">
+                                <span>按键音</span>
+                                <label class="switch">
+                                    <input type="checkbox" class="sound-switch" checked onchange="toggleClickSound(this)">
+                                    <span class="slider round"></span>
+                                </label>
+                            </div>
+                        </div>
                     </div>
-                    <nav id="book-type-tabs" class="nav-tabs-inline"></nav>
-                    <div class="header-right-group">
-                        <div class="switch-wrapper">
+                </div>
+                <div class="home-scroll-area">
+                    <div id="book-gallery" class="book-gallery"></div>
+                </div>
+            </div>
+
+            <div id="home-detail-view" class="hidden">
+                <header class="word-top-bar">
+                    <div class="bar-left">
+                        <button class="icon-btn home-btn" onclick="closeHomeDetail()">
+                            <img src="backinfo/home.png" alt="Back">
+                        </button>
+                        
+                        <div class="switch-wrapper" style="margin-left:20px;">
+                            <span>显示单词</span>
+                            <label class="switch">
+                                <input type="checkbox" id="word-mask-toggle-home" checked onchange="toggleWordVisibility()">
+                                <span class="slider round"></span>
+                            </label>
+                        </div>
+                        <div class="switch-wrapper" style="margin-left: 15px;">
                             <span>按键音</span>
                             <label class="switch">
                                 <input type="checkbox" class="sound-switch" checked onchange="toggleClickSound(this)">
@@ -44,27 +77,40 @@
                             </label>
                         </div>
                     </div>
-                </div>
-            </div>
-
-            <div class="home-scroll-area">
-                <div id="book-gallery" class="book-gallery"></div>
+                    <div class="bar-center">
+                        <div class="word-row-main">
+                            <h1 id="word-main-home">Abundant</h1>
+                            <img src="backinfo/laba.png" class="audio-icon main-audio" onclick="playCurrentWord()" alt="Play">
+                        </div>
+                        <div id="rating-stars-home" class="rating-box"></div>
+                    </div>
+                    <div class="bar-right" id="nav-buttons-home">
+                        <button class="nav-arrow" onclick="prevWord()">◀ PREV</button>
+                        <button class="nav-arrow" onclick="nextWord()">NEXT ▶</button>
+                    </div>
+                </header>
+                <nav id="detail-tabs-home" class="detail-tabs"></nav>
+                <div id="tab-content-area-home" class="tab-content-area"></div>
             </div>
         </main>
     </div>
 
     <div id="view-detail" class="page-view hidden">
-        
         <aside id="chapter-sidebar" class="sidebar detail-sidebar">
             <div class="sidebar-header">
-                <h2><i class="icon"></i> Word List</h2>
-                <button id="btn-chapter-toggle" class="toggle-text-btn" onclick="toggleAllChapters()">
-                    全部收起
-                </button>
-            </div>
+                <h2>
+                    <i class="icon">📑</i> Word List
+                    <span id="book-list-count" class="list-count">(ct. 0)</span>
+                </h2>
+                </div>
             
             <div class="search-box">
                 <input type="text" id="chapter-search" placeholder="Search in book..." autocomplete="off">
+            </div>
+
+            <div class="sidebar-filter-area">
+                <div id="book-filter-stars" class="filter-stars-container"></div>
+                <button id="btn-chapter-toggle" class="toggle-text-btn" onclick="toggleAllChapters()">全部收起</button>
             </div>
 
             <div id="chapter-list-container" class="scroll-list"></div>
@@ -78,7 +124,8 @@
                     <button class="icon-btn home-btn" onclick="goHome()">
                         <img src="backinfo/home.png" alt="Home">
                     </button>
-                    <div class="switch-wrapper">
+                    
+                    <div class="switch-wrapper" style="margin-left: 10px;">
                         <span>显示单词</span>
                         <label class="switch">
                             <input type="checkbox" id="word-mask-toggle" checked onchange="toggleWordVisibility()">
@@ -95,8 +142,11 @@
                 </div>
 
                 <div class="bar-center">
-                    <h1 id="word-main">Abundant</h1>
-                    <img src="backinfo/laba.png" class="audio-icon main-audio" onclick="playCurrentWord()" alt="Play">
+                    <div class="word-row-main">
+                        <h1 id="word-main">Abundant</h1>
+                        <img src="backinfo/laba.png" class="audio-icon main-audio" onclick="playCurrentWord()" alt="Play">
+                    </div>
+                    <div id="rating-stars" class="rating-box"></div>
                 </div>
 
                 <div class="bar-right" id="nav-buttons">

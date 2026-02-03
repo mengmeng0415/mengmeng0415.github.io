@@ -4,6 +4,15 @@ const DB = {
         seriesOrder: ["Dragon Masters", "Pincess in black", "Rocket Girl", "Level AA"]
     },
 
+    // 【核心修改】这里是专门维护星级的地方
+    // 格式： "单词ID": 星级数字
+    // 导出数据时，只需替换这一块内容即可
+    ratings: {
+        "w001": 5,
+        "w003": 3,
+        "w002": 1
+    },
+
     books: [
         { id: "dm-1", type: "初章书", series: "Dragon Masters", title: "Rise of the Earth Dragon", cover: "bcover/dm1.png", chapters: [{ id: "dm1-c1", name: "Chapter 1" }, { id: "dm1-c2", name: "Chapter 2" }] },
         { id: "dm-2", type: "初章书", series: "Dragon Masters", title: "Dragon Masters book2", cover: "bcover/dm2.png", chapters: [{ id: "dm2-c1", name: "Chapter 1" }, { id: "dm2-c2", name: "Chapter 2" }] },
@@ -27,9 +36,9 @@ const DB = {
         {
             uid: "w001", word: "Abundant", chapterId: "dm1-c1", order: 10, phonetic: "/əˈbʌndənt/", pos: "ADJ.",
             tabs: [
-                { type: "image", title: "视觉联想", data: ["https://img.freepik.com/free-photo/abundant-harvest-concept-illustration_114360-1438.jpg?w=826"] },
-                { type: "text", title: "常见用法", data: [{ title: "核心含义", content: "<b>大量的，充足的。</b><br>形容某样东西非常多，用之不尽。", subs: [{ subtitle: "💡 助记", content: "a + bun (大量馒头) + dant" }] }] },
-                { type: "quiz", title: "挑战一下", data: { question: "The farmer had an _______ harvest.", options: ["tiny", "abundant", "tired", "broken"], answerIndex: 1, explanation: "因为是大丰收，所以是 Abundant。" } }
+                { type: "image", title: "🖼️ 视觉联想", data: ["https://img.freepik.com/free-photo/abundant-harvest-concept-illustration_114360-1438.jpg?w=826"] },
+                { type: "text", title: "📝 老师笔记", data: [{ title: "核心含义", content: "<b>大量的，充足的。</b><br>形容某样东西非常多，用之不尽。", subs: [{ subtitle: "💡 助记", content: "a + bun (大量馒头) + dant" }] }] },
+                { type: "quiz", title: "✅ 挑战一下", data: { question: "The farmer had an _______ harvest.", options: ["tiny", "abundant", "tired", "broken"], answerIndex: 1, explanation: "因为是大丰收，所以是 Abundant。" } }
             ]
         },
         {
@@ -40,22 +49,22 @@ const DB = {
                     title: "图片联想", 
                     data: [
                         "wordpic/act.PNG",
-                        "wordpic/bring.PNG" // <--- 【这里插入了你要的图片】
+                        "wordpic/bring.PNG" 
                     ] 
                 },
                 {
                     type: "text",
-                    title: "单词详解",
+                    title: "📝 老师笔记",
                     data: [
                         {
                            title: "核心含义",
                            content: "<b>n. 恐惧；惊骇；可怕的事物。</b><br>指强烈的害怕或厌恶感，也可指代令人感到恐惧的人或事物。",
                            subs: [
-                             { subtitle: "含义", content: "名词（n.）文中意思 + 常用意思：恐惧；惊骇；可怕的事物" },
-                             { subtitle: "书本原句", content: "\"Drake watched in horror as the arrow flew toward Ana.\"" },
-                             { subtitle: "常见用法", content: "（n.）in horror（惊恐地）：She screamed in horror at the loud noise..." },
-                             { subtitle: "例句", content: "（n.）He stared in horror..." },
-                             { subtitle: "避免用错", content: "horror 是不可数名词..." }
+                             { subtitle: "📖 含义", content: "名词（n.）文中意思 + 常用意思：恐惧；惊骇；可怕的事物" },
+                             { subtitle: "📜 书本原句", content: "\"Drake watched in horror as the arrow flew toward Ana.\"" },
+                             { subtitle: "🔧 常见用法", content: "（n.）in horror（惊恐地）：She screamed in horror at the loud noise..." },
+                             { subtitle: "✍️ 例句", content: "（n.）He stared in horror..." },
+                             { subtitle: "⚠️ 避免用错", content: "horror 是不可数名词..." }
                            ]
                         },
                          {
@@ -65,7 +74,7 @@ const DB = {
                         }
                     ]
                 },
-                { type: "quiz", title: "挑战一下", data: { question: "The farmer had an _______ harvest.", options: ["tiny", "abundant", "tired", "broken"], answerIndex: 1, explanation: "因为是大丰收，所以是 Abundant。" } }
+                { type: "quiz", title: "✅ 挑战一下", data: { question: "The farmer had an _______ harvest.", options: ["tiny", "abundant", "tired", "broken"], answerIndex: 1, explanation: "因为是大丰收，所以是 Abundant。" } }
             ]
         },
         {

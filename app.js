@@ -4,8 +4,11 @@ let state = {
     currentWordIndex: 0, 
     mode: 'home',
     chaptersExpanded: true,
-    homeExpanded: false, // 首页默认状态：折叠
-    lastActiveTabTitle: null 
+    homeExpanded: false,
+    homeSearchResults: [],
+    lastActiveTabTitle: null,
+    homeFilterRatings: new Set(),
+    bookFilterRatings: new Set()
 };
 
 // 音效路径
@@ -25,6 +28,8 @@ function initVoices() {
 
 document.addEventListener('DOMContentLoaded', () => {
     if (typeof DB === 'undefined') { alert("错误：无法读取 data.js。请检查 data.js 格式！"); return; }
+    if (!DB.ratings) DB.ratings = {};
+
     initHome();
     initVoices();
     if (window.speechSynthesis.onvoiceschanged !== undefined) {
@@ -33,9 +38,16 @@ document.addEventListener('DOMContentLoaded', () => {
     
     document.addEventListener('click', (e) => {
         if (!isClickSoundEnabled) return;
+        
+        // 排除掉不需要通用音效的元素
+        // 注意：【修改】这里移除了 .star-icon 的排除，让它也能播放声音
         if (e.target.closest('.quiz-q') || e.target.closest('.opt-btn')) return;
         if (e.target.closest('.switch')) return; 
         if (e.target.closest('.audio-icon')) return;
+        
+        // 筛选器星星也加上音效反馈
+        // if (e.target.closest('.filter-star-btn')) return; 
+
         const playPromise = audioClick.play();
         if (playPromise !== undefined) { playPromise.catch(error => {}); }
     });
@@ -46,12 +58,152 @@ function toggleClickSound(el) {
     document.querySelectorAll('.sound-switch').forEach(s => { s.checked = isClickSoundEnabled; });
 }
 
+// 【核心修改】优化导出数据格式：增加单词注释列
+window.exportData = function() {
+    let outputLines = [];
+    
+    // 遍历所有单词，确保顺序一致且包含注释
+    // 如果想要按字母顺序导出，可以先排序
+    const sortedWords = [...DB.words].sort((a, b) => a.word.localeCompare(b.word));
+
+    sortedWords.forEach(w => {
+        const rating = DB.ratings[w.uid] || 0;
+        // 格式化： "ID": 分数,    // 单词
+        // 使用 padEnd 让注释对齐，看起来像一列
+        const line = `        "${w.uid}": ${rating},`.padEnd(25) + `// ${w.word}`;
+        outputLines.push(line);
+    });
+
+    const outputStr = `ratings: {\n${outputLines.join('\n')}\n    },`;
+    
+    const exportContent = `// ================== 星级数据导出 ==================\n// 请打开 data.js，找到 "ratings: { ... }" 部分，用下面的代码替换它：\n\n${outputStr}`;
+    
+    const blob = new Blob([exportContent], { type: "text/plain;charset=utf-8" });
+    const a = document.createElement("a");
+    a.href = URL.createObjectURL(blob);
+    a.download = "updated_ratings.txt"; 
+    document.body.appendChild(a);
+    a.click();
+    document.body.removeChild(a);
+    
+    alert("数据已导出！\n文件内已自动添加单词注释，方便您在 data.js 中查看。");
+}
+
 function initHome() {
-    renderABCList();
+    renderSidebarFilter('home');
+    applyHomeFilter(); 
+    
     const categories = (DB.settings && DB.settings.bookCategories) || [];
     if (categories.length > 0) renderBookTabs(categories[0]);
-    setupGlobalSearch();
+    
+    const input = document.getElementById('global-search');
+    if(input) {
+        const newInput = input.cloneNode(true);
+        input.parentNode.replaceChild(newInput, input);
+        newInput.addEventListener('input', () => applyHomeFilter());
+    }
 }
+
+function renderSidebarFilter(mode) {
+    const containerId = mode === 'home' ? 'home-filter-stars' : 'book-filter-stars';
+    const container = document.getElementById(containerId);
+    if (!container) return;
+    
+    container.innerHTML = '';
+    const currentFilters = mode === 'home' ? state.homeFilterRatings : state.bookFilterRatings;
+    
+    for (let i = 1; i <= 5; i++) {
+        const btn = document.createElement('div');
+        btn.className = `filter-star-btn ${currentFilters.has(i) ? 'active' : ''}`;
+        btn.innerText = i;
+        btn.onclick = () => toggleFilter(mode, i);
+        container.appendChild(btn);
+    }
+}
+
+function toggleFilter(mode, rating) {
+    const filterSet = mode === 'home' ? state.homeFilterRatings : state.bookFilterRatings;
+    
+    if (filterSet.has(rating)) {
+        filterSet.delete(rating);
+    } else {
+        filterSet.add(rating);
+    }
+    
+    if (mode === 'home') {
+        renderSidebarFilter('home');
+        applyHomeFilter();
+    } else {
+        renderSidebarFilter('book');
+        applyBookFilter();
+    }
+}
+
+function generateListItemHTML(wordObj) {
+    const rating = DB.ratings[wordObj.uid] || 0;
+    let ratingHtml = '';
+    if (rating > 0) {
+        ratingHtml = `<span class="rating-num rating-${rating}">${rating}</span>`;
+    } else {
+        ratingHtml = `<span class="rating-num"></span>`; 
+    }
+    return `<li onclick="enterSoloMode('${wordObj.uid}')">${ratingHtml} ${wordObj.word} <small style='color:#ccc;margin-left:5px'>(${getSeriesNameByChapter(wordObj.chapterId)})</small></li>`;
+}
+
+function updateListCounts(count, mode) {
+    const elId = mode === 'home' ? 'home-list-count' : 'book-list-count';
+    const el = document.getElementById(elId);
+    if (el) el.innerText = `(ct. ${count})`;
+}
+
+function applyHomeFilter() {
+    const input = document.getElementById('global-search');
+    const val = input ? input.value.toLowerCase() : '';
+    const filters = state.homeFilterRatings;
+    
+    let filtered = DB.words.filter(w => {
+        const wordRating = DB.ratings[w.uid] || 0;
+        const matchText = !val || w.word.toLowerCase().includes(val);
+        const matchStar = filters.size === 0 || filters.has(wordRating);
+        return matchText && matchStar;
+    });
+    
+    filtered.sort((a, b) => a.word.localeCompare(b.word));
+    state.homeSearchResults = filtered;
+    renderABCListFiltered(filtered);
+    updateListCounts(filtered.length, 'home');
+    
+    const list = document.getElementById('search-suggestions');
+    if (val && list) {
+        list.style.display = filtered.length ? 'block' : 'none';
+        list.innerHTML = filtered.slice(0, 5).map(w => generateListItemHTML(w)).join('');
+    } else if (list) {
+        list.style.display = 'none';
+    }
+}
+
+function renderABCListFiltered(words) {
+    const list = document.getElementById('abc-list');
+    list.innerHTML = '';
+    
+    const groups = {};
+    words.forEach(w => {
+        const char = w.word[0].toUpperCase();
+        if(!groups[char]) groups[char] = [];
+        groups[char].push(w);
+    });
+    
+    Object.keys(groups).sort().forEach(char => {
+        const li = document.createElement('li');
+        const isExpanded = state.homeExpanded || state.homeFilterRatings.size > 0 || document.getElementById('global-search').value !== '';
+        const hiddenClass = isExpanded ? '' : 'hidden';
+        
+        li.innerHTML = `<div class="abc-group-header" onclick="this.nextElementSibling.classList.toggle('hidden')">${char} <small>${groups[char].length}</small></div><ul class="abc-items ${hiddenClass}">${groups[char].map(w => generateListItemHTML(w)).join('')}</ul>`;
+        list.appendChild(li);
+    });
+}
+
+function renderABCList() { applyHomeFilter(); }
 
 function getWordsByChapterId(chapId) {
     if (!DB.words) return [];
@@ -64,32 +216,10 @@ function getSeriesNameByChapter(chapId) {
     } return "";
 }
 
-function renderABCList() {
-    const list = document.getElementById('abc-list');
-    const groups = {};
-    const sortedWords = [...DB.words].sort((a, b) => a.word.localeCompare(b.word));
-    sortedWords.forEach(w => {
-        const char = w.word[0].toUpperCase();
-        if(!groups[char]) groups[char] = [];
-        groups[char].push(w);
-    });
-    list.innerHTML = '';
-    Object.keys(groups).sort().forEach(char => {
-        const li = document.createElement('li');
-        // 默认 hidden，即折叠状态
-        li.innerHTML = `<div class="abc-group-header" onclick="this.nextElementSibling.classList.toggle('hidden')">${char} <small>${groups[char].length}</small></div><ul class="abc-items hidden">${groups[char].map(w => `<li onclick="enterSoloMode('${w.uid}')">${w.word} <span style="font-size:10px;color:#ccc;margin-left:5px">(${getSeriesNameByChapter(w.chapterId)})</span></li>`).join('')}</ul>`;
-        list.appendChild(li);
-    });
-    const totalSpan = document.getElementById('total-stats');
-    if(totalSpan) totalSpan.innerText = `Total: ${DB.words.length}`;
-}
-
-// 【新增】首页列表 Toggle 逻辑
 window.toggleHomeList = function() {
     state.homeExpanded = !state.homeExpanded;
     const btn = document.getElementById('btn-home-toggle');
     if(btn) btn.innerText = state.homeExpanded ? '全部收起' : '全部展开';
-    
     document.querySelectorAll('#abc-list .abc-items').forEach(ul => {
         if(state.homeExpanded) ul.classList.remove('hidden');
         else ul.classList.add('hidden');
@@ -134,86 +264,113 @@ function renderBookTabs(activeType) {
 }
 
 window.enterSoloMode = function(uid) {
-    state.mode = 'solo'; const wordObj = getWordByUid(uid);
-    state.currentWordList = [wordObj]; state.currentWordIndex = 0;
-    switchView('detail'); document.getElementById('view-detail').classList.add('solo-mode'); renderWordDetail(wordObj);
-}
-window.enterBookMode = function(bookId) {
-    state.mode = 'book'; state.currentBookId = bookId; const book = DB.books.find(b => b.id === bookId);
-    state.currentWordList = []; book.chapters.forEach(c => { state.currentWordList.push(...getWordsByChapterId(c.id)); }); state.currentWordIndex = 0;
-    switchView('detail'); document.getElementById('view-detail').classList.remove('solo-mode'); renderChapterSidebar(book);
+    state.mode = 'home_detail'; 
+    state.currentWordList = state.homeSearchResults; 
+    const idx = state.currentWordList.findIndex(w => w.uid === uid);
+    if(idx !== -1) state.currentWordIndex = idx;
     
-    // 【新增】进入书籍时初始化详情页搜索
-    setupChapterSearch();
-
-    if(state.currentWordList.length > 0) { renderWordDetail(state.currentWordList[0]); } 
-    else { document.getElementById('word-main').innerText = "暂无单词"; document.getElementById('detail-tabs').innerHTML = ""; document.getElementById('tab-content-area').innerHTML = "<p style='text-align:center;color:#999;margin-top:50px'>这本书还没有添加单词哦</p>"; }
+    document.getElementById('home-gallery-view').classList.add('hidden');
+    document.getElementById('home-detail-view').classList.remove('hidden');
+    renderWordDetail(state.currentWordList[state.currentWordIndex]);
 }
-function switchView(view) { document.querySelectorAll('.page-view').forEach(v => v.classList.add('hidden')); document.getElementById(`view-${view}`).classList.remove('hidden'); }
-window.goHome = function() { switchView('home'); document.getElementById('word-mask-toggle').checked = true; initHome(); }
 
-function renderChapterSidebar(book) {
-    document.getElementById('current-book-title').innerText = `《${book.title}》`;
+window.closeHomeDetail = function() {
+    state.mode = 'home';
+    document.getElementById('home-detail-view').classList.add('hidden');
+    document.getElementById('home-gallery-view').classList.remove('hidden');
+    applyHomeFilter(); 
+}
+
+window.enterBookMode = function(bookId) {
+    state.mode = 'book'; 
+    state.currentBookId = bookId;
+    state.bookFilterRatings.clear(); 
+    
+    const book = DB.books.find(b => b.id === bookId);
+    state.currentWordList = []; 
+    book.chapters.forEach(c => { state.currentWordList.push(...getWordsByChapterId(c.id)); }); 
+    state.currentWordIndex = 0;
+    
+    document.querySelectorAll('.page-view').forEach(v => v.classList.add('hidden'));
+    document.getElementById('view-detail').classList.remove('hidden');
+    
+    renderSidebarFilter('book');
+    
+    const input = document.getElementById('chapter-search');
+    if(input) {
+        input.value = '';
+        const newInput = input.cloneNode(true);
+        input.parentNode.replaceChild(newInput, input);
+        newInput.addEventListener('input', () => applyBookFilter());
+    }
+
+    applyBookFilter();
+}
+
+function applyBookFilter() {
+    const book = DB.books.find(b => b.id === state.currentBookId);
+    if(!book) return;
+
+    const input = document.getElementById('chapter-search');
+    const val = input ? input.value.toLowerCase() : '';
+    const filters = state.bookFilterRatings;
+
+    let allBookWords = [];
+    book.chapters.forEach(c => allBookWords.push(...getWordsByChapterId(c.id)));
+
+    const filteredWords = allBookWords.filter(w => {
+        const wordRating = DB.ratings[w.uid] || 0;
+        const matchText = !val || w.word.toLowerCase().includes(val);
+        const matchStar = filters.size === 0 || filters.has(wordRating);
+        return matchText && matchStar;
+    });
+
+    state.currentWordList = filteredWords;
+    state.currentWordIndex = 0; 
+    
+    updateListCounts(filteredWords.length, 'book');
+
     const container = document.getElementById('chapter-list-container');
     container.innerHTML = book.chapters.map(ch => {
-        const words = getWordsByChapterId(ch.id);
-        return `<div class="chapter-group"><div class="chapter-header" onclick="this.nextElementSibling.classList.toggle('hidden')"><span>▼ ${ch.name}</span> <span>${words.length}</span></div><ul class="chapter-words abc-items">${words.map(w => `<li onclick="jumpToWord('${w.uid}')">${w.word}</li>`).join('')}</ul></div>`;
+        const chapterWords = getWordsByChapterId(ch.id).filter(w => {
+            const wordRating = DB.ratings[w.uid] || 0;
+            const matchText = !val || w.word.toLowerCase().includes(val);
+            const matchStar = filters.size === 0 || filters.has(wordRating);
+            return matchText && matchStar;
+        });
+
+        if (chapterWords.length === 0 && (val || filters.size > 0)) return '';
+
+        const wordItems = chapterWords.map(w => {
+            const rating = DB.ratings[w.uid] || 0;
+            let ratingHtml = rating > 0 ? `<span class="rating-num rating-${rating}">${rating}</span>` : `<span class="rating-num"></span>`;
+            return `<li onclick="jumpToWord('${w.uid}')">${ratingHtml} ${w.word}</li>`;
+        }).join('');
+
+        return `<div class="chapter-group"><div class="chapter-header" onclick="this.nextElementSibling.classList.toggle('hidden')"><span>▼ ${ch.name}</span> <span>${chapterWords.length}</span></div><ul class="chapter-words abc-items">${wordItems}</ul></div>`;
     }).join('');
-    
-    // 默认展开
+
     state.chaptersExpanded = true;
     updateChapterToggleButton();
-    
-    // 清空搜索框
-    const searchInput = document.getElementById('chapter-search');
-    if(searchInput) searchInput.value = '';
+
+    if (state.currentWordList.length > 0) {
+        renderWordDetail(state.currentWordList[0]);
+    } else {
+        document.getElementById('word-main').innerText = "暂无单词"; 
+        document.getElementById('detail-tabs').innerHTML = ""; 
+        document.getElementById('tab-content-area').innerHTML = "";
+    }
 }
 
-// 【新增】详情页搜索逻辑
-function setupChapterSearch() {
-    const input = document.getElementById('chapter-search');
-    if(!input) return;
-    
-    // 移除旧的监听器防止叠加 (简单粗暴克隆替换)
-    const newInput = input.cloneNode(true);
-    input.parentNode.replaceChild(newInput, input);
-    
-    newInput.addEventListener('input', (e) => {
-        const val = e.target.value.toLowerCase();
-        const groups = document.querySelectorAll('#chapter-list-container .chapter-group');
-        
-        groups.forEach(group => {
-            const list = group.querySelector('.chapter-words');
-            const items = list.querySelectorAll('li');
-            let hasMatch = false;
-            
-            items.forEach(li => {
-                const text = li.innerText.toLowerCase();
-                if(text.includes(val)) {
-                    li.style.display = 'block';
-                    hasMatch = true;
-                } else {
-                    li.style.display = 'none';
-                }
-            });
-            
-            if(val) {
-                // 搜索模式
-                if(hasMatch) {
-                    group.style.display = 'block';
-                    list.classList.remove('hidden'); // 自动展开有匹配的章节
-                } else {
-                    group.style.display = 'none';
-                }
-            } else {
-                // 清空搜索时，恢复全部显示
-                group.style.display = 'block';
-                items.forEach(li => li.style.display = 'block');
-                // 恢复默认展开状态 (这里保持展开比较方便)
-                list.classList.remove('hidden');
-            }
-        });
-    });
+function renderChapterSidebar(book) { applyBookFilter(); }
+function setupChapterSearch() { }
+function setupGlobalSearch() { }
+
+function switchView(view) { document.querySelectorAll('.page-view').forEach(v => v.classList.add('hidden')); document.getElementById(`view-${view}`).classList.remove('hidden'); }
+window.goHome = function() { 
+    switchView('home'); 
+    closeHomeDetail();
+    initHome(); 
 }
 
 window.toggleAllChapters = function() {
@@ -227,21 +384,26 @@ window.toggleAllChapters = function() {
 
 function updateChapterToggleButton() {
     const btn = document.getElementById('btn-chapter-toggle');
-    if(btn) {
-        btn.innerText = state.chaptersExpanded ? '全部收起' : '全部展开';
-    }
+    if(btn) { btn.innerText = state.chaptersExpanded ? '全部收起' : '全部展开'; }
 }
 
 function renderWordDetail(wordObj) {
     if(!wordObj) return;
-    document.getElementById('word-main').innerText = wordObj.word;
-    toggleWordVisibility();
-    const tabsContainer = document.getElementById('detail-tabs');
+    
+    const suffix = state.mode === 'home_detail' ? '-home' : '';
+    
+    const titleEl = document.getElementById(`word-main${suffix}`);
+    if(titleEl) titleEl.innerText = wordObj.word;
+    
+    renderRatingStars(wordObj, suffix);
+
+    const tabsContainer = document.getElementById(`detail-tabs${suffix}`);
+    const contentArea = document.getElementById(`tab-content-area${suffix}`);
+    if(!tabsContainer || !contentArea) return;
+    
     tabsContainer.innerHTML = '';
-    const contentArea = document.getElementById('tab-content-area');
     contentArea.innerHTML = '';
     const tabs = wordObj.tabs || [];
-    if (tabs.length === 0) { contentArea.innerHTML = "<p style='color:#999;text-align:center;margin-top:50px'>该单词暂无精讲内容</p>"; return; }
     
     let activeTabIndex = 0;
     if (state.lastActiveTabTitle) {
@@ -256,19 +418,55 @@ function renderWordDetail(wordObj) {
             state.lastActiveTabTitle = tab.title;
         }
         btn.onclick = () => { 
-            document.querySelectorAll('.detail-tabs button').forEach(b => b.classList.remove('active')); 
+            tabsContainer.querySelectorAll('button').forEach(b => b.classList.remove('active')); 
             btn.classList.add('active'); 
             state.lastActiveTabTitle = tab.title; 
-            renderTabContent(tab); 
+            renderTabContent(tab, suffix); 
         };
         tabsContainer.appendChild(btn);
     });
-    renderTabContent(tabs[activeTabIndex]);
-    document.querySelectorAll('.chapter-words li').forEach(li => { li.classList.toggle('active', li.getAttribute('onclick').includes(wordObj.uid)); });
+    renderTabContent(tabs[activeTabIndex], suffix);
+    
+    if (state.mode === 'book') {
+        document.querySelectorAll('.chapter-words li').forEach(li => { 
+            li.classList.toggle('active', li.getAttribute('onclick').includes(wordObj.uid)); 
+        });
+    }
 }
 
-function renderTabContent(tab) {
-    const area = document.getElementById('tab-content-area'); area.innerHTML = ''; const data = tab.data;
+function renderRatingStars(wordObj, suffix) {
+    const container = document.getElementById(`rating-stars${suffix}`);
+    if(!container) return;
+    container.innerHTML = '';
+    
+    const currentRating = DB.ratings[wordObj.uid] || 0;
+    
+    for(let i=1; i<=5; i++) {
+        const img = document.createElement('img');
+        img.src = i <= currentRating ? 'backinfo/yestar.png' : 'backinfo/nostar.png';
+        img.className = 'star-icon';
+        img.onclick = () => setRating(wordObj.uid, i);
+        container.appendChild(img);
+    }
+}
+
+window.setRating = function(uid, rating) {
+    const current = DB.ratings[uid] || 0;
+    DB.ratings[uid] = (current === rating) ? 0 : rating;
+    
+    const word = getWordByUid(uid);
+    const suffix = state.mode === 'home_detail' ? '-home' : '';
+    renderRatingStars(word, suffix);
+    
+    if(state.mode === 'home_detail') applyHomeFilter();
+    if(state.mode === 'book') applyBookFilter();
+}
+
+function renderTabContent(tab, suffix) {
+    const area = document.getElementById(`tab-content-area${suffix}`);
+    if(!area) return;
+    area.innerHTML = ''; 
+    const data = tab.data;
     if(tab.type === 'image') { data.forEach(src => { area.innerHTML += `<img src="${src}" class="big-image" onclick="openModal('${src}')">`; }); } 
     else if(tab.type === 'text') {
         let navHtml = ''; let navItems = [];
@@ -366,6 +564,20 @@ window.prevWord = function() { if(state.currentWordIndex > 0) renderWordDetail(s
 window.nextWord = function() { if(state.currentWordIndex < state.currentWordList.length-1) renderWordDetail(state.currentWordList[++state.currentWordIndex]); }
 window.jumpToWord = function(uid) { const idx = state.currentWordList.findIndex(w => w.uid === uid); if(idx !== -1) { state.currentWordIndex = idx; renderWordDetail(state.currentWordList[idx]); } }
 window.toggleSidebar = function() { const s = document.getElementById('chapter-sidebar'); s.style.marginLeft = s.style.marginLeft === '-261px' ? '0' : '-261px'; }
-window.toggleWordVisibility = function() { document.getElementById('word-main').style.opacity = document.getElementById('word-mask-toggle').checked ? '1' : '0'; }
-window.playCurrentWord = function() { const w = document.getElementById('word-main').innerText.trim(); const u = new SpeechSynthesisUtterance(w); u.lang = 'en-US'; if(preferredVoice) u.voice = preferredVoice; window.speechSynthesis.speak(u); }
-function setupGlobalSearch() { const input = document.getElementById('global-search'); if(!input) return; input.addEventListener('input', (e)=>{ const val = e.target.value.toLowerCase(); const list = document.getElementById('search-suggestions'); if(!val) { list.style.display='none'; return; } const matches = DB.words.filter(w => w.word.toLowerCase().includes(val)); list.style.display = matches.length ? 'block' : 'none'; list.innerHTML = matches.slice(0,5).map(w => `<li onclick="enterSoloMode('${w.uid}')">${w.word} <small style='color:#ccc'>(${getSeriesNameByChapter(w.chapterId)})</small></li>`).join(''); }); }
+window.toggleWordVisibility = function() { 
+    const suffix = state.mode === 'home_detail' ? '-home' : '';
+    document.getElementById(`word-main${suffix}`).style.opacity = document.getElementById(`word-mask-toggle${suffix}`).checked ? '1' : '0'; 
+}
+window.playCurrentWord = function() { 
+    const suffix = state.mode === 'home_detail' ? '-home' : '';
+    const w = document.getElementById(`word-main${suffix}`).innerText.trim(); 
+    const u = new SpeechSynthesisUtterance(w); 
+    u.lang = 'en-US'; 
+    if(preferredVoice) u.voice = preferredVoice; 
+    window.speechSynthesis.speak(u); 
+}
+function setupGlobalSearch() { 
+    const input = document.getElementById('global-search'); 
+    if(!input) return; 
+    input.addEventListener('input', (e)=>{ applyHomeFilter(); }); 
+}
