@@ -28,9 +28,7 @@ function initVoices() {
 
 document.addEventListener('DOMContentLoaded', () => {
     if (typeof DB === 'undefined') { alert("错误：无法读取 data.js。请检查 data.js 格式！"); return; }
-    
-    // 【核心修改 1】初始化时，尝试从 LocalStorage 读取评分
-    loadRatingsFromStorage();
+    if (!DB.ratings) DB.ratings = {};
 
     initHome();
     initVoices();
@@ -50,29 +48,6 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 });
 
-// 【核心修改 2】读取缓存函数
-function loadRatingsFromStorage() {
-    const savedRatings = localStorage.getItem('myWordRatings');
-    if (savedRatings) {
-        try {
-            const parsed = JSON.parse(savedRatings);
-            // 合并缓存数据到 DB.ratings (如果有新词，保留新词默认0；如果有旧词记录，覆盖为缓存值)
-            DB.ratings = { ...DB.ratings, ...parsed };
-            console.log("已从浏览器缓存恢复评分数据");
-        } catch (e) {
-            console.error("读取缓存失败", e);
-        }
-    } else {
-        // 如果缓存没有，确保 DB.ratings 存在
-        if (!DB.ratings) DB.ratings = {};
-    }
-}
-
-// 【核心修改 3】保存缓存函数
-function saveRatingsToStorage() {
-    localStorage.setItem('myWordRatings', JSON.stringify(DB.ratings));
-}
-
 function toggleClickSound(el) {
     isClickSoundEnabled = el.checked;
     document.querySelectorAll('.sound-switch').forEach(s => { s.checked = isClickSoundEnabled; });
@@ -81,7 +56,6 @@ function toggleClickSound(el) {
 window.exportData = function() {
     const jsonStr = JSON.stringify(DB.ratings, null, 4);
     
-    // 导出逻辑不变，但现在你可以把这个作为“双重保险”
     let outputLines = [];
     const sortedWords = [...DB.words].sort((a, b) => a.word.localeCompare(b.word));
     sortedWords.forEach(w => {
@@ -101,7 +75,7 @@ window.exportData = function() {
     a.click();
     document.body.removeChild(a);
     
-    alert("数据已导出！\n平时会自动保存在浏览器中，导出文件可作为永久备份。");
+    alert("星级数据已导出！\n请打开 updated_ratings.txt，\n复制内容替换 data.js 中的 ratings 部分即可。");
 }
 
 function initHome() {
@@ -138,13 +112,11 @@ function renderSidebarFilter(mode) {
 
 function toggleFilter(mode, rating) {
     const filterSet = mode === 'home' ? state.homeFilterRatings : state.bookFilterRatings;
-    
     if (filterSet.has(rating)) {
         filterSet.delete(rating);
     } else {
         filterSet.add(rating);
     }
-    
     if (mode === 'home') {
         renderSidebarFilter('home');
         applyHomeFilter();
@@ -156,12 +128,7 @@ function toggleFilter(mode, rating) {
 
 function generateListItemHTML(wordObj) {
     const rating = DB.ratings[wordObj.uid] || 0;
-    let ratingHtml = '';
-    if (rating > 0) {
-        ratingHtml = `<span class="rating-num rating-${rating}">${rating}</span>`;
-    } else {
-        ratingHtml = `<span class="rating-num"></span>`; 
-    }
+    let ratingHtml = rating > 0 ? `<span class="rating-num rating-${rating}">${rating}</span>` : `<span class="rating-num"></span>`;
     return `<li onclick="enterSoloMode('${wordObj.uid}')">${ratingHtml} ${wordObj.word} <small style='color:#ccc;margin-left:5px'>(${getSeriesNameByChapter(wordObj.chapterId)})</small></li>`;
 }
 
@@ -239,6 +206,12 @@ window.toggleHomeList = function() {
         if(state.homeExpanded) ul.classList.remove('hidden');
         else ul.classList.add('hidden');
     });
+}
+
+// 【新增】首页侧边栏切换功能
+window.toggleHomeSidebar = function() {
+    const s = document.getElementById('home-sidebar');
+    s.style.marginLeft = s.style.marginLeft === '-261px' ? '0' : '-261px';
 }
 
 function renderBookTabs(activeType) {
@@ -388,6 +361,8 @@ window.goHome = function() {
     initHome(); 
 }
 
+window.toggleSidebar = function() { const s = document.getElementById('chapter-sidebar'); s.style.marginLeft = s.style.marginLeft === '-261px' ? '0' : '-261px'; }
+
 window.toggleAllChapters = function() {
     state.chaptersExpanded = !state.chaptersExpanded;
     updateChapterToggleButton();
@@ -465,13 +440,9 @@ function renderRatingStars(wordObj, suffix) {
     }
 }
 
-// 【核心修改 4】打分后立即保存到 LocalStorage
 window.setRating = function(uid, rating) {
     const current = DB.ratings[uid] || 0;
     DB.ratings[uid] = (current === rating) ? 0 : rating;
-    
-    // 保存到浏览器缓存
-    saveRatingsToStorage();
     
     const word = getWordByUid(uid);
     const suffix = state.mode === 'home_detail' ? '-home' : '';
@@ -582,7 +553,6 @@ window.checkAnswer = function(btn, idx, correct, text) {
 window.prevWord = function() { if(state.currentWordIndex > 0) renderWordDetail(state.currentWordList[--state.currentWordIndex]); }
 window.nextWord = function() { if(state.currentWordIndex < state.currentWordList.length-1) renderWordDetail(state.currentWordList[++state.currentWordIndex]); }
 window.jumpToWord = function(uid) { const idx = state.currentWordList.findIndex(w => w.uid === uid); if(idx !== -1) { state.currentWordIndex = idx; renderWordDetail(state.currentWordList[idx]); } }
-window.toggleSidebar = function() { const s = document.getElementById('chapter-sidebar'); s.style.marginLeft = s.style.marginLeft === '-261px' ? '0' : '-261px'; }
 window.toggleWordVisibility = function() { 
     const suffix = state.mode === 'home_detail' ? '-home' : '';
     document.getElementById(`word-main${suffix}`).style.opacity = document.getElementById(`word-mask-toggle${suffix}`).checked ? '1' : '0'; 

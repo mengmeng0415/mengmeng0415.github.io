@@ -10,19 +10,20 @@
 
     <div id="view-home" class="page-view">
         
-        <aside class="sidebar home-sidebar">
+        <aside id="home-sidebar" class="sidebar home-sidebar">
             <div class="sidebar-header">
                 <h2>
-                    <i class="icon"></i> Word List 
+                    <i class="icon">📑</i> Word List 
                     <span id="home-list-count" class="list-count">(ct. 0)</span>
                 </h2>
-                <button class="save-btn" onclick="exportData()">导出</button>
+                <button class="save-btn" onclick="exportData()">💾 导出</button>
             </div>
             
             <div class="search-box">
                 <input type="text" id="global-search" placeholder="Search words..." autocomplete="off">
+                <ul id="search-suggestions" class="suggestions-list"></ul>
             </div>
-
+            
             <div class="sidebar-filter-area">
                 <div id="home-filter-stars" class="filter-stars-container"></div>
                 <button id="btn-home-toggle" class="toggle-text-btn" onclick="toggleHomeList()">全部展开</button>
@@ -36,8 +37,8 @@
                 <div class="home-fixed-header">
                     <div class="home-top-row">
                         <div class="header-left-group">
-                            <h2><i class="icon"></i> Books</h2>
-                            </div>
+                            <h2><i class="icon">📚</i> Books</h2>
+                        </div>
                         <nav id="book-type-tabs" class="nav-tabs-inline"></nav>
                         <div class="header-right-group">
                             <div class="switch-wrapper">
@@ -58,6 +59,8 @@
             <div id="home-detail-view" class="hidden">
                 <header class="word-top-bar">
                     <div class="bar-left">
+                        <button id="btn-toggle-home-sidebar" class="icon-btn" onclick="toggleHomeSidebar()">☰</button>
+                        
                         <button class="icon-btn home-btn" onclick="closeHomeDetail()">
                             <img src="backinfo/home.png" alt="Back">
                         </button>
@@ -102,7 +105,7 @@
                     <i class="icon">📑</i> Word List
                     <span id="book-list-count" class="list-count">(ct. 0)</span>
                 </h2>
-                </div>
+            </div>
             
             <div class="search-box">
                 <input type="text" id="chapter-search" placeholder="Search in book..." autocomplete="off">
