@@ -4,7 +4,7 @@ let state = {
     currentWordIndex: 0, 
     mode: 'home',
     chaptersExpanded: true,
-    homeExpanded: false,
+    homeExpanded: true, 
     homeSearchResults: [],
     lastActiveTabTitle: null,
     homeFilterRatings: new Set(),
@@ -28,7 +28,10 @@ function initVoices() {
 
 document.addEventListener('DOMContentLoaded', () => {
     if (typeof DB === 'undefined') { alert("错误：无法读取 data.js。请检查 data.js 格式！"); return; }
+    
+    // 【修复 1】初始化 ratings 对象并读取缓存
     if (!DB.ratings) DB.ratings = {};
+    loadRatingsFromStorage();
 
     initHome();
     initVoices();
@@ -41,12 +44,31 @@ document.addEventListener('DOMContentLoaded', () => {
         if (e.target.closest('.quiz-q') || e.target.closest('.opt-btn')) return;
         if (e.target.closest('.switch')) return; 
         if (e.target.closest('.audio-icon')) return;
-        if (e.target.closest('.star-icon') || e.target.closest('.filter-star-btn')) return; 
-
+        
         const playPromise = audioClick.play();
         if (playPromise !== undefined) { playPromise.catch(error => {}); }
     });
 });
+
+// 【修复 2】从浏览器缓存加载数据
+function loadRatingsFromStorage() {
+    const savedRatings = localStorage.getItem('myWordRatings');
+    if (savedRatings) {
+        try {
+            const parsed = JSON.parse(savedRatings);
+            // 合并数据
+            DB.ratings = { ...DB.ratings, ...parsed };
+            console.log("已恢复评分数据");
+        } catch (e) {
+            console.error("读取缓存失败", e);
+        }
+    }
+}
+
+// 【修复 3】保存数据到浏览器缓存
+function saveRatingsToStorage() {
+    localStorage.setItem('myWordRatings', JSON.stringify(DB.ratings));
+}
 
 function toggleClickSound(el) {
     isClickSoundEnabled = el.checked;
@@ -54,8 +76,7 @@ function toggleClickSound(el) {
 }
 
 window.exportData = function() {
-    const jsonStr = JSON.stringify(DB.ratings, null, 4);
-    
+    // 导出逻辑保持最新（带注释）
     let outputLines = [];
     const sortedWords = [...DB.words].sort((a, b) => a.word.localeCompare(b.word));
     sortedWords.forEach(w => {
@@ -75,7 +96,7 @@ window.exportData = function() {
     a.click();
     document.body.removeChild(a);
     
-    alert("星级数据已导出！\n请打开 updated_ratings.txt，\n复制内容替换 data.js 中的 ratings 部分即可。");
+    alert("星级数据已导出！\n平时会自动保存在浏览器中，导出文件可作为永久备份。");
 }
 
 function initHome() {
@@ -268,13 +289,12 @@ window.enterSoloMode = function(uid) {
     renderWordDetail(state.currentWordList[state.currentWordIndex]);
 }
 
-// 【核心修改】关闭详情页时，强制重置侧边栏
 window.closeHomeDetail = function() {
     state.mode = 'home';
     document.getElementById('home-detail-view').classList.add('hidden');
     document.getElementById('home-gallery-view').classList.remove('hidden');
     
-    // 强制显示侧边栏
+    // 强制重置侧边栏位置（修复隐藏后无法显示的问题）
     const s = document.getElementById('home-sidebar');
     if(s) s.style.marginLeft = '0';
 
@@ -368,15 +388,11 @@ function setupGlobalSearch() { }
 
 function switchView(view) { document.querySelectorAll('.page-view').forEach(v => v.classList.add('hidden')); document.getElementById(`view-${view}`).classList.remove('hidden'); }
 
-// 【核心修改】回首页逻辑
 window.goHome = function() { 
     switchView('home'); 
-    closeHomeDetail(); // 这会重置侧边栏位置
-    
-    // 强制展开
+    closeHomeDetail();
     state.homeExpanded = true;
     updateHomeToggleBtnUI();
-    
     initHome(); 
 }
 
@@ -459,9 +475,12 @@ function renderRatingStars(wordObj, suffix) {
     }
 }
 
+// 【修复 4】打分时立即调用 saveRatingsToStorage
 window.setRating = function(uid, rating) {
     const current = DB.ratings[uid] || 0;
     DB.ratings[uid] = (current === rating) ? 0 : rating;
+    
+    saveRatingsToStorage(); // 保存到缓存
     
     const word = getWordByUid(uid);
     const suffix = state.mode === 'home_detail' ? '-home' : '';
