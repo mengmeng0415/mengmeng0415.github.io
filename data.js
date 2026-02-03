@@ -36,9 +36,9 @@ const DB = {
         {
             uid: "w001", word: "Abundant", chapterId: "dm1-c1", order: 10, phonetic: "/əˈbʌndənt/", pos: "ADJ.",
             tabs: [
-                { type: "image", title: "🖼️ 视觉联想", data: ["https://img.freepik.com/free-photo/abundant-harvest-concept-illustration_114360-1438.jpg?w=826"] },
-                { type: "text", title: "📝 老师笔记", data: [{ title: "核心含义", content: "<b>大量的，充足的。</b><br>形容某样东西非常多，用之不尽。", subs: [{ subtitle: "💡 助记", content: "a + bun (大量馒头) + dant" }] }] },
-                { type: "quiz", title: "✅ 挑战一下", data: { question: "The farmer had an _______ harvest.", options: ["tiny", "abundant", "tired", "broken"], answerIndex: 1, explanation: "因为是大丰收，所以是 Abundant。" } }
+                { type: "image", title: "视觉联想", data: ["https://img.freepik.com/free-photo/abundant-harvest-concept-illustration_114360-1438.jpg?w=826"] },
+                { type: "text", title: "老师笔记", data: [{ title: "核心含义", content: "<b>大量的，充足的。</b><br>形容某样东西非常多，用之不尽。", subs: [{ subtitle: "💡 助记", content: "a + bun (大量馒头) + dant" }] }] },
+                { type: "quiz", title: "挑战一下", data: { question: "The farmer had an _______ harvest.", options: ["tiny", "abundant", "tired", "broken"], answerIndex: 1, explanation: "因为是大丰收，所以是 Abundant。" } }
             ]
         },
         {
@@ -74,7 +74,7 @@ const DB = {
                         }
                     ]
                 },
-                { type: "quiz", title: "✅ 挑战一下", data: { question: "The farmer had an _______ harvest.", options: ["tiny", "abundant", "tired", "broken"], answerIndex: 1, explanation: "因为是大丰收，所以是 Abundant。" } }
+                { type: "quiz", title: "挑战一下", data: { question: "The farmer had an _______ harvest.", options: ["tiny", "abundant", "tired", "broken"], answerIndex: 1, explanation: "因为是大丰收，所以是 Abundant。" } }
             ]
         },
         {
