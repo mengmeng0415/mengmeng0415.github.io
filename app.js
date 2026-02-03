@@ -29,7 +29,6 @@ function initVoices() {
 document.addEventListener('DOMContentLoaded', () => {
     if (typeof DB === 'undefined') { alert("错误：无法读取 data.js。请检查 data.js 格式！"); return; }
     
-    // 【修复 1】初始化 ratings 对象并读取缓存
     if (!DB.ratings) DB.ratings = {};
     loadRatingsFromStorage();
 
@@ -50,13 +49,11 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 });
 
-// 【修复 2】从浏览器缓存加载数据
 function loadRatingsFromStorage() {
     const savedRatings = localStorage.getItem('myWordRatings');
     if (savedRatings) {
         try {
             const parsed = JSON.parse(savedRatings);
-            // 合并数据
             DB.ratings = { ...DB.ratings, ...parsed };
             console.log("已恢复评分数据");
         } catch (e) {
@@ -65,7 +62,6 @@ function loadRatingsFromStorage() {
     }
 }
 
-// 【修复 3】保存数据到浏览器缓存
 function saveRatingsToStorage() {
     localStorage.setItem('myWordRatings', JSON.stringify(DB.ratings));
 }
@@ -76,7 +72,6 @@ function toggleClickSound(el) {
 }
 
 window.exportData = function() {
-    // 导出逻辑保持最新（带注释）
     let outputLines = [];
     const sortedWords = [...DB.words].sort((a, b) => a.word.localeCompare(b.word));
     sortedWords.forEach(w => {
@@ -294,7 +289,6 @@ window.closeHomeDetail = function() {
     document.getElementById('home-detail-view').classList.add('hidden');
     document.getElementById('home-gallery-view').classList.remove('hidden');
     
-    // 强制重置侧边栏位置（修复隐藏后无法显示的问题）
     const s = document.getElementById('home-sidebar');
     if(s) s.style.marginLeft = '0';
 
@@ -430,17 +424,31 @@ function renderWordDetail(wordObj) {
     contentArea.innerHTML = '';
     const tabs = wordObj.tabs || [];
     
+    // 【核心修改】Tab 自动定位逻辑
     let activeTabIndex = 0;
-    if (state.lastActiveTabTitle) {
-        const foundIndex = tabs.findIndex(t => t.title === state.lastActiveTabTitle);
-        if (foundIndex !== -1) activeTabIndex = foundIndex;
+    
+    // 获取当前模式下的“显示单词”开关状态
+    const toggleState = document.getElementById(`word-mask-toggle${suffix}`).checked;
+
+    if (toggleState) {
+        // 如果显示单词（ON），强制定位到第一个 Tab
+        activeTabIndex = 0;
+        if (tabs.length > 0) {
+            state.lastActiveTabTitle = tabs[0].title;
+        }
+    } else {
+        // 如果隐藏单词（OFF），尝试保持上一个 Tab 类型
+        if (state.lastActiveTabTitle) {
+            const foundIndex = tabs.findIndex(t => t.title === state.lastActiveTabTitle);
+            if (foundIndex !== -1) activeTabIndex = foundIndex;
+        }
     }
 
     tabs.forEach((tab, index) => {
         const btn = document.createElement('button'); btn.innerText = tab.title;
         if(index === activeTabIndex) {
             btn.className = 'active';
-            state.lastActiveTabTitle = tab.title;
+            state.lastActiveTabTitle = tab.title; // 确保状态同步
         }
         btn.onclick = () => { 
             tabsContainer.querySelectorAll('button').forEach(b => b.classList.remove('active')); 
@@ -475,12 +483,11 @@ function renderRatingStars(wordObj, suffix) {
     }
 }
 
-// 【修复 4】打分时立即调用 saveRatingsToStorage
 window.setRating = function(uid, rating) {
     const current = DB.ratings[uid] || 0;
     DB.ratings[uid] = (current === rating) ? 0 : rating;
     
-    saveRatingsToStorage(); // 保存到缓存
+    saveRatingsToStorage();
     
     const word = getWordByUid(uid);
     const suffix = state.mode === 'home_detail' ? '-home' : '';
@@ -493,6 +500,10 @@ window.setRating = function(uid, rating) {
 function renderTabContent(tab, suffix) {
     const area = document.getElementById(`tab-content-area${suffix}`);
     if(!area) return;
+    
+    // 【核心修改】切换 Tab 时，滚动条复位到顶部
+    area.scrollTop = 0;
+    
     area.innerHTML = ''; 
     const data = tab.data;
     if(tab.type === 'image') { data.forEach(src => { area.innerHTML += `<img src="${src}" class="big-image" onclick="openModal('${src}')">`; }); } 
@@ -591,6 +602,7 @@ window.checkAnswer = function(btn, idx, correct, text) {
 window.prevWord = function() { if(state.currentWordIndex > 0) renderWordDetail(state.currentWordList[--state.currentWordIndex]); }
 window.nextWord = function() { if(state.currentWordIndex < state.currentWordList.length-1) renderWordDetail(state.currentWordList[++state.currentWordIndex]); }
 window.jumpToWord = function(uid) { const idx = state.currentWordList.findIndex(w => w.uid === uid); if(idx !== -1) { state.currentWordIndex = idx; renderWordDetail(state.currentWordList[idx]); } }
+window.toggleSidebar = function() { const s = document.getElementById('chapter-sidebar'); s.style.marginLeft = s.style.marginLeft === '-261px' ? '0' : '-261px'; }
 window.toggleWordVisibility = function() { 
     const suffix = state.mode === 'home_detail' ? '-home' : '';
     document.getElementById(`word-main${suffix}`).style.opacity = document.getElementById(`word-mask-toggle${suffix}`).checked ? '1' : '0'; 
