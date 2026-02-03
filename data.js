@@ -45,7 +45,7 @@ const DB = {
                 },
                 {
                     type: "text",
-                    title: "📝 老师笔记",
+                    title: "单词详解",
                     data: [
                         {
                            title: "核心含义",
