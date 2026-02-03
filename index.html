@@ -1,215 +1,121 @@
 <!DOCTYPE html>
 <html lang="zh-CN">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>词汇练习分级导航</title>
-  <!-- 引入Tailwind CSS -->
-  <script src="https://cdn.tailwindcss.com"></script>
-  <!-- Font Awesome 6 精致图标 -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-  <!-- 自定义精致扁平化配置：配色/圆角/阴影（无需修改） -->
-  <script>
-    tailwind.config = {
-      theme: {
-        extend: {
-          colors: {
-            primary: '#4299e1', // 主色：柔和天空蓝
-            secondary: '#e2e8f0', // 边框/分隔色：淡灰蓝
-            neutral: '#f7fafc', // 基础hover背景
-            hover: '#ebf8ff', // 主项hover背景
-            text: {
-              dark: '#2d3748', // 主文字：深灰
-              mid: '#718096',  // 次级文字：中灰
-              light: '#a0aec0' // 图标/辅助文字：浅灰
-            }
-          },
-          borderRadius: { 'base': '6px' },
-          boxShadow: {
-            'card': '0 2px 8px 0 rgba(0,0,0,0.06)',
-            'hover': '0 4px 12px 0 rgba(66,153,225,0.08)'
-          }
-        }
-      }
-    }
-  </script>
-  <style type="text/tailwindcss">
-    @layer utilities {
-      .nav-hide { display: none; }
-      .nav-item-hover { @apply hover:bg-hover hover:shadow-hover transition-all duration-200; }
-      .link-hover { @apply hover:bg-neutral transition-colors duration-200; }
-      .icon-transition { @apply transition-colors duration-200; }
-    }
-    body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; line-height: 1.5; }
-    ul { list-style: none; padding: 0; margin: 0; }
-    a { text-decoration: none; color: inherit; }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>我的亲子词汇精讲</title>
+    <link rel="stylesheet" href="style.css">
 </head>
-<body class="bg-gray-50 text-text-dark min-h-screen py-10 px-4">
-  <div class="max-w-3xl mx-auto bg-white rounded-base shadow-card p-8">
-    <h1 class="text-[clamp(1.6rem,3vw,2.2rem)] font-bold text-primary mb-8 text-center pb-4 border-b border-secondary">
-      词汇练习分级导航
-    </h1>
-    <!-- 导航容器：由JS自动渲染，无需修改 -->
-    <ul id="book-list" class="space-y-4"></ul>
-  </div>
+<body>
 
-  <script>
-    /**************************
-     * 【导航配置区 - 仅需修改这里】
-     * 规则：
-     * 1. 新增书籍：在books数组里加一个{name: '书名', chapters: [...]}对象
-     * 2. 新增章节：在对应书籍的chapters数组里加一个{name: '章节名', links: [...]}对象
-     * 3. 新增链接：在对应章节的links数组里加一个{name: '链接名', url: '跳转地址'}对象
-     * 4. 删除：直接删掉对应行即可
-     * 5. 修改：直接改name/url的值即可
-     **************************/
-    const navConfig = {
-      books: [
-        {
-          name: 'Dragon Masters',
-          chapters: [
-            {
-              name: 'Book2',
-              links: [
-                { name: 'U5-U6', url: 'https://codepen.io/qinqian-zheng/full/xbOWaRB' },
-                { name: '其它单元待生成', url: 'https://example.com/word2' }
-              ]
-            },
-            {
-              name: 'Dragon Master3待生成',
-              links: [
-                { name: 'Dragon Master', url: 'learnpage/dm1.html' }
-              ]
-            }
-          ]
-        },
-        {
-          name: 'the princess in Black',
-          chapters: [
-            {
-              name: 'Book1',
-              links: [
-                { name: 'U1练习题待生成', url: 'https://example.com/kaoyan1' },
-                  { name: 'U2练习题待生成', url: 'https://example.com/kaoyan1' }
-              ]
-            }
-          ]
-        },
-        // 示例：新增书籍3，直接复制下面注释的代码，删掉注释即可
-        /*
-        {
-          name: 'Book3（四六级核心词汇）',
-          chapters: [
-            {
-              name: 'Chapter1（四级高频词）',
-              links: [
-                { name: '四级词默写练习', url: 'https://example.com/cet4-1' },
-                { name: '四级词选词填空', url: 'https://example.com/cet4-2' }
-              ]
-            }
-          ]
-        }
-        */
-      ]
-    };
-
-    /**************************
-     * 【渲染函数 - 无需修改】
-     * 自动根据配置生成导航HTML，保留所有样式和层级
-     **************************/
-    function renderNav() {
-      const bookList = document.getElementById('book-list');
-      let html = '';
-      // 遍历所有书籍
-      navConfig.books.forEach(book => {
-        html += `
-          <li class="book-item rounded-base border border-secondary overflow-hidden">
-            <div class="book-title flex items-center justify-between px-5 py-3.5 nav-item-hover cursor-pointer w-full">
-              <span class="font-semibold text-lg flex items-center">
-                <i class="fa-solid fa-book-open mr-3 text-primary icon-transition"></i>
-                ${book.name}
-              </span>
-              <i class="fa-solid fa-chevron-down text-sm text-text-light toggle-icon icon-transition"></i>
+    <div id="view-home" class="page-view">
+        
+        <aside class="sidebar home-sidebar">
+            <div class="sidebar-header">
+                <h2><i class="icon"></i> Word List</h2>
+                <button id="btn-home-toggle" class="toggle-text-btn" onclick="toggleHomeList()">
+                    全部展开
+                </button>
             </div>
-            <ul class="chapter-list pl-8 pr-5 py-2 border-t border-secondary nav-hide">
-        `;
-        // 遍历当前书籍的所有章节
-        book.chapters.forEach(chapter => {
-          html += `
-            <li class="chapter-item py-3 border-b border-secondary last:border-0">
-              <div class="chapter-title flex items-center justify-between cursor-pointer w-full">
-                <span class="font-medium text-text-dark flex items-center link-hover px-3 py-2 rounded-base w-full">
-                  <i class="fa-solid fa-layer-group mr-3 text-text-mid icon-transition"></i>
-                  ${chapter.name}
-                </span>
-                <i class="fa-solid fa-chevron-down text-sm text-text-light toggle-icon icon-transition -mr-2"></i>
-              </div>
-              <ul class="link-list pl-8 py-3 space-y-2 nav-hide">
-          `;
-          // 遍历当前章节的所有链接
-          chapter.links.forEach(link => {
-            html += `
-              <li class="link-item link-hover px-3 py-2 rounded-base">
-                <a href="${link.url}" target="_blank" class="flex items-center text-sm text-text-dark">
-                  <i class="fa-solid fa-arrow-up-right-from-square mr-3 text-primary text-xs icon-transition"></i>
-                  ${link.name}
-                </a>
-              </li>
-            `;
-          });
-          html += `</ul></li>`;
-        });
-        html += `</ul></li>`;
-      });
-      bookList.innerHTML = html;
-    }
+            
+            <div class="search-box">
+                <input type="text" id="global-search" placeholder="Search words..." autocomplete="off">
+                <ul id="search-suggestions" class="suggestions-list"></ul>
+            </div>
+            
+            <ul id="abc-list" class="scroll-list">
+                </ul>
+        </aside>
 
-    /**************************
-     * 【交互逻辑 - 无需修改】
-     * 保留展开/收起、图标变色等所有交互
-     **************************/
-    function bindEvent() {
-      // 书籍层级展开/收起
-      document.querySelectorAll('.book-title').forEach(btn => {
-        btn.addEventListener('click', function() {
-          const chapterList = this.nextElementSibling;
-          const icon = this.querySelector('.toggle-icon');
-          chapterList.classList.toggle('nav-hide');
-          icon.classList.toggle('fa-chevron-down');
-          icon.classList.toggle('fa-chevron-up');
-          icon.classList.toggle('text-primary');
-        });
-        btn.addEventListener('mouseenter', () => btn.querySelector('.toggle-icon').classList.add('text-primary'));
-        btn.addEventListener('mouseleave', function() {
-          const icon = this.querySelector('.toggle-icon');
-          if (icon.classList.contains('fa-chevron-down')) icon.classList.remove('text-primary');
-        });
-      });
+        <main class="content-home">
+            <div class="home-fixed-header">
+                <div class="home-top-row">
+                    <div class="header-left-group">
+                        <h2><i class="icon"></i> Books</h2>
+                        <span id="total-stats" class="badge">Total: 0</span>
+                    </div>
+                    <nav id="book-type-tabs" class="nav-tabs-inline"></nav>
+                    <div class="header-right-group">
+                        <div class="switch-wrapper">
+                            <span>按键音</span>
+                            <label class="switch">
+                                <input type="checkbox" class="sound-switch" checked onchange="toggleClickSound(this)">
+                                <span class="slider round"></span>
+                            </label>
+                        </div>
+                    </div>
+                </div>
+            </div>
 
-      // 章节层级展开/收起
-      document.querySelectorAll('.chapter-title').forEach(btn => {
-        btn.addEventListener('click', function() {
-          const linkList = this.nextElementSibling;
-          const icon = this.querySelector('.toggle-icon');
-          linkList.classList.toggle('nav-hide');
-          icon.classList.toggle('fa-chevron-down');
-          icon.classList.toggle('fa-chevron-up');
-          icon.classList.toggle('text-primary');
-        });
-        btn.addEventListener('mouseenter', () => btn.querySelector('.toggle-icon').classList.add('text-primary'));
-        btn.addEventListener('mouseleave', function() {
-          const icon = this.querySelector('.toggle-icon');
-          if (icon.classList.contains('fa-chevron-down')) icon.classList.remove('text-primary');
-        });
-      });
-    }
+            <div class="home-scroll-area">
+                <div id="book-gallery" class="book-gallery"></div>
+            </div>
+        </main>
+    </div>
 
-    // 页面加载：先渲染导航，再绑定事件
-    window.onload = function() {
-      renderNav();
-      bindEvent();
-    };
-  </script>
+    <div id="view-detail" class="page-view hidden">
+        
+        <aside id="chapter-sidebar" class="sidebar detail-sidebar">
+            <div class="sidebar-header">
+                <h2><i class="icon"></i> Word List</h2>
+                <button id="btn-chapter-toggle" class="toggle-text-btn" onclick="toggleAllChapters()">
+                    全部收起
+                </button>
+            </div>
+            
+            <div class="search-box">
+                <input type="text" id="chapter-search" placeholder="Search in book..." autocomplete="off">
+            </div>
+
+            <div id="chapter-list-container" class="scroll-list"></div>
+            <div class="book-meta-footer" id="current-book-title"></div>
+        </aside>
+
+        <main class="content-detail">
+            <header class="word-top-bar">
+                <div class="bar-left">
+                    <button id="btn-toggle-sidebar" class="icon-btn" onclick="toggleSidebar()">☰</button>
+                    <button class="icon-btn home-btn" onclick="goHome()">
+                        <img src="backinfo/home.png" alt="Home">
+                    </button>
+                    <div class="switch-wrapper">
+                        <span>显示单词</span>
+                        <label class="switch">
+                            <input type="checkbox" id="word-mask-toggle" checked onchange="toggleWordVisibility()">
+                            <span class="slider round"></span>
+                        </label>
+                    </div>
+                    <div class="switch-wrapper" style="margin-left: 15px;">
+                        <span>按键音</span>
+                        <label class="switch">
+                            <input type="checkbox" class="sound-switch" checked onchange="toggleClickSound(this)">
+                            <span class="slider round"></span>
+                        </label>
+                    </div>
+                </div>
+
+                <div class="bar-center">
+                    <h1 id="word-main">Abundant</h1>
+                    <img src="backinfo/laba.png" class="audio-icon main-audio" onclick="playCurrentWord()" alt="Play">
+                </div>
+
+                <div class="bar-right" id="nav-buttons">
+                    <button class="nav-arrow" onclick="prevWord()">◀ PREV</button>
+                    <button class="nav-arrow" onclick="nextWord()">NEXT ▶</button>
+                </div>
+            </header>
+
+            <nav id="detail-tabs" class="detail-tabs"></nav>
+            <div id="tab-content-area" class="tab-content-area"></div>
+        </main>
+    </div>
+
+    <div id="image-modal" class="image-modal" onclick="closeModal()">
+        <span class="close-btn">&times;</span>
+        <img class="modal-content" id="modal-img">
+    </div>
+
+    <script src="data.js"></script>
+    <script src="app.js"></script>
 </body>
 </html>
