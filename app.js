@@ -79,6 +79,9 @@ window.exportData = function() {
 }
 
 function initHome() {
+    state.homeExpanded = true;
+    updateHomeToggleBtnUI();
+
     renderSidebarFilter('home');
     applyHomeFilter(); 
     
@@ -200,15 +203,18 @@ function getSeriesNameByChapter(chapId) {
 
 window.toggleHomeList = function() {
     state.homeExpanded = !state.homeExpanded;
-    const btn = document.getElementById('btn-home-toggle');
-    if(btn) btn.innerText = state.homeExpanded ? '全部收起' : '全部展开';
+    updateHomeToggleBtnUI();
     document.querySelectorAll('#abc-list .abc-items').forEach(ul => {
         if(state.homeExpanded) ul.classList.remove('hidden');
         else ul.classList.add('hidden');
     });
 }
 
-// 【新增】首页侧边栏切换功能
+function updateHomeToggleBtnUI() {
+    const btn = document.getElementById('btn-home-toggle');
+    if(btn) btn.innerText = state.homeExpanded ? '全部收起' : '全部展开';
+}
+
 window.toggleHomeSidebar = function() {
     const s = document.getElementById('home-sidebar');
     s.style.marginLeft = s.style.marginLeft === '-261px' ? '0' : '-261px';
@@ -262,10 +268,16 @@ window.enterSoloMode = function(uid) {
     renderWordDetail(state.currentWordList[state.currentWordIndex]);
 }
 
+// 【核心修改】关闭详情页时，强制重置侧边栏
 window.closeHomeDetail = function() {
     state.mode = 'home';
     document.getElementById('home-detail-view').classList.add('hidden');
     document.getElementById('home-gallery-view').classList.remove('hidden');
+    
+    // 强制显示侧边栏
+    const s = document.getElementById('home-sidebar');
+    if(s) s.style.marginLeft = '0';
+
     applyHomeFilter(); 
 }
 
@@ -355,9 +367,16 @@ function setupChapterSearch() { }
 function setupGlobalSearch() { }
 
 function switchView(view) { document.querySelectorAll('.page-view').forEach(v => v.classList.add('hidden')); document.getElementById(`view-${view}`).classList.remove('hidden'); }
+
+// 【核心修改】回首页逻辑
 window.goHome = function() { 
     switchView('home'); 
-    closeHomeDetail();
+    closeHomeDetail(); // 这会重置侧边栏位置
+    
+    // 强制展开
+    state.homeExpanded = true;
+    updateHomeToggleBtnUI();
+    
     initHome(); 
 }
 
