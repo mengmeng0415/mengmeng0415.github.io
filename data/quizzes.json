@@ -1,0 +1,54 @@
+{
+  "q_w001": { "type": "choice_text", "wordIds": ["w001"], "question": "The dragon hid in the ______ under the big tree to avoid the sun.", "options": ["practice", "arc", "shade", "sway"], "answer": 2 },
+  "q_w001_2": { "type": "choice_text", "wordIds": ["w001"], "question": "When 'shade' is used as a verb, what does it mean?", "options": ["To shine brightly", "To block the sun", "To run fast", "To fly high"], "answer": 1 },
+  
+  "q_w002": { "type": "choice_text", "wordIds": ["w001","w002","w004"],"question": "The Dragon Masters do ______ every morning to train with dragons.", "options": ["shade", "arc", "sway", "practice"], "answer": 3 },
+  "q_w002_img": { "type": "choice_image", "wordIds": ["w002"], "question": "Which image shows the meaning of 'Practice'?", "options": [{"id": "w001", "label": "A"}, {"id": "w002", "label": "B"}, {"id": "w003", "label": "C"}], "answer": 1 },
+
+  "q_w003": { "type": "choice_text", "wordIds": ["w003"], "question": "A rainbow made a beautiful ______ across the blue sky.", "options": ["shade", "practice", "arc", "gaze"], "answer": 2 },
+  
+  "q_c1_match": { 
+    "type": "matching", 
+    "wordIds": ["w001", "w002", "w003"], 
+    "title": "Match the words with their meanings", 
+   "pairs": [
+  { "left": "infopic01/shade.webp", "right": "树荫", "type": "image-text" },
+  { "left": "Practice", "right": "练习", "type": "text-text" }
+]
+  },
+
+  "q_w004": { "type": "choice_text", "wordIds": ["w004"], "question": "Ana’s long hair would ______ behind her when she ran.", "options": ["shade", "sway", "sense", "gaze"], "answer": 1 },
+  "q_w005": { "type": "choice_text", "wordIds": ["w005"], "question": "Drake turned his ______ to the sky and saw Kepri flying.", "options": ["sense", "gaze", "sway", "arc"], "answer": 1 },
+  "q_w006": { "type": "choice_text", "wordIds": ["w006"], "question": "The dog could ______ the food from far away with its nose.", "options": ["gaze", "sense", "sway", "arc"], "answer": 1 },
+  "q_w007": { "type": "choice_text", "wordIds": ["w007"], "question": "A red ______ flashed across the sky before hitting the ground.", "options": ["lunge", "gently", "cloudy", "blur"], "answer": 3 },
+  "q_w008": { "type": "choice_text", "wordIds": ["w008"], "question": "Vulcan ______ forward to catch Kepri when she fell from the sky.", "options": ["blur", "gently", "cloudy", "lunge"], "answer": 3 },
+  "q_w009": { "type": "choice_text", "wordIds": ["w009"], "question": "The wizard placed the sick dragon ______ on the soft grass.", "options": ["blur", "lunge", "gently", "cloudy"], "answer": 2 },
+  "q_w010": { "type": "choice_text", "wordIds": ["w010"], "question": "Kepri’s eyes became ______ when she felt sick from dark magic.", "options": ["gently", "blur", "cloudy", "lunge"], "answer": 2 },
+  "q_w011": { "type": "choice_text", "wordIds": ["w011"], "question": "Dragon training often ______ underground to keep it a secret.", "options": ["cave-in", "tale", "bring", "take place"], "answer": 3 },
+  "q_w012": { "type": "choice_text", "wordIds": ["w012"], "question": "The tunnel had a ______ after the dragon banged into the walls.", "options": ["take place", "tale", "bring", "cave-in"], "answer": 3 },
+  "q_w013": { "type": "choice_text", "wordIds": ["w013"], "question": "Griffith had no time to tell ______ about dark wizards that day.", "options": ["cave-in", "take place", "tale", "bring"], "answer": 2 },
+  "q_w014": { "type": "choice_text", "wordIds": ["w014"], "question": "Drake helped ______ the jar of moonbeams to the wizard’s pot.", "options": ["tale", "cave-in", "bring", "take place"], "answer": 2 },
+  
+  "q_w015": { "type": "choice_text", "wordIds": ["w015"], "question": "The king sent a ______ to watch the dark wizard’s every move in the valley.", "options": ["warrior", "spy", "wizard", "dragon"], "answer": 1 },
+  "q_w015_2": { "type": "choice_text", "wordIds": ["w015"], "question": "What does a spy usually do?", "options": ["Sings loudly", "Watches secretly", "Sleeps all day", "Cooks food"], "answer": 1 },
+
+  "q_w016": { "type": "choice_text", "wordIds": ["w016"], "question": "Griffith kept the secret ______ telling the king what really happened to the dragons.", "options": ["instead of", "because of", "thanks to", "as for"], "answer": 0 },
+  "q_w017": { "type": "choice_text", "wordIds": ["w017"], "question": "The swan moved in a ______ way across the quiet lake in the castle garden.", "options": ["clumsy", "graceful", "slow", "fast"], "answer": 1 },
+  "q_w018": { "type": "choice_text", "wordIds": ["w018"], "question": "Kepri’s wings ______ with tiredness after she flew for a whole day in the sky.", "options": ["rose", "drooped", "shook", "flapped"], "answer": 1 },
+  "q_w019": { "type": "choice_text", "wordIds": ["w019"], "question": "As a wizard who studies dragons, you ______ know how to heal a sick dragon.", "options": ["are supposed to", "are afraid to", "refuse to", "happen to"], "answer": 0 },
+  "q_w020": { "type": "choice_text", "wordIds": ["w020"], "question": "The magic spring water can ______ any small wound on the dragon’s body quickly.", "options": ["hurt", "heal", "break", "damage"], "answer": 1 },
+
+"game_w001_A": { 
+    "type": "game", 
+    "wordIds": ["w001"], 
+    "gameUrl": "https://wordwall.net/embed/a54572a22dd04e2eb4bf8a5b69a0f3c7?themeId=1054&templateId=25&fontStackId=0"
+  },
+
+"game_w002_A": { 
+    "type": "game", 
+    "wordIds": ["w001"], 
+    "gameUrl": "https://wordwall.net/embed/a5717a04e7cc49888bbde821e48ed5ae?themeId=60&templateId=70&fontStackId=0" 
+  }
+
+
+}

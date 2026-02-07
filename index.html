@@ -2,152 +2,96 @@
 <html lang="zh-CN">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>我的亲子词汇精讲</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>My Word Library</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
     <div id="view-home" class="page-view">
-        
         <aside id="home-sidebar" class="sidebar home-sidebar">
             <div class="sidebar-header">
-                <h2>
-                    <i class="icon">📑</i> Word List 
-                    <span id="home-list-count" class="list-count">(ct. 0)</span>
-                </h2>
+                <h2><i class="icon">📑</i> Word List <span id="home-list-count" class="list-count">(0)</span></h2>
                 <button class="save-btn" onclick="exportData()">💾 导出</button>
             </div>
-            
             <div class="search-box">
                 <input type="text" id="global-search" placeholder="Search words..." autocomplete="off">
-                <ul id="search-suggestions" class="suggestions-list"></ul>
             </div>
-            
             <div class="sidebar-filter-area">
                 <div id="home-filter-stars" class="filter-stars-container"></div>
                 <button id="btn-home-toggle" class="toggle-text-btn" onclick="toggleHomeList()">全部展开</button>
             </div>
-            
             <ul id="abc-list" class="scroll-list"></ul>
         </aside>
 
         <main class="content-home">
             <div id="home-gallery-view">
                 <div class="home-fixed-header">
-                    <div class="home-top-row">
-                        <div class="header-left-group">
-                            <h2><i class="icon">📚</i> Books</h2>
-                        </div>
-                        <nav id="book-type-tabs" class="nav-tabs-inline"></nav>
-                        <div class="header-right-group">
-                            <div class="switch-wrapper">
-                                <span>按键音</span>
-                                <label class="switch">
-                                    <input type="checkbox" class="sound-switch" checked onchange="toggleClickSound(this)">
-                                    <span class="slider round"></span>
-                                </label>
-                            </div>
-                        </div>
+                    <div class="header-left">
+                        <h1>📚 Books</h1>
+                        <div id="book-type-tabs" class="book-type-nav"></div>
+                    </div>
+                    
+                    <div class="header-right">
+                        <span>按键音</span>
+                        <label class="switch">
+                            <input type="checkbox" id="home-sound-toggle" checked onchange="toggleClickSound(this)">
+                            <span class="slider round"></span>
+                        </label>
                     </div>
                 </div>
-                <div class="home-scroll-area">
-                    <div id="book-gallery" class="book-gallery"></div>
-                </div>
-            </div>
-
-            <div id="home-detail-view" class="hidden">
-                <header class="word-top-bar">
-                    <div class="bar-left">
-                        <button id="btn-toggle-home-sidebar" class="icon-btn" onclick="toggleHomeSidebar()">☰</button>
-                        
-                        <button class="icon-btn home-btn" onclick="closeHomeDetail()">
-                            <img src="backinfo/home.png" alt="Back">
-                        </button>
-                        
-                        <div class="switch-wrapper" style="margin-left:20px;">
-                            <span>显示单词</span>
-                            <label class="switch">
-                                <input type="checkbox" id="word-mask-toggle-home" checked onchange="toggleWordVisibility()">
-                                <span class="slider round"></span>
-                            </label>
-                        </div>
-                        <div class="switch-wrapper" style="margin-left: 15px;">
-                            <span>按键音</span>
-                            <label class="switch">
-                                <input type="checkbox" class="sound-switch" checked onchange="toggleClickSound(this)">
-                                <span class="slider round"></span>
-                            </label>
-                        </div>
-                    </div>
-                    <div class="bar-center">
-                        <div class="word-row-main">
-                            <h1 id="word-main-home">Abundant</h1>
-                            <img src="backinfo/laba.png" class="audio-icon main-audio" onclick="playCurrentWord()" alt="Play">
-                        </div>
-                        <div id="rating-stars-home" class="rating-box"></div>
-                    </div>
-                    <div class="bar-right" id="nav-buttons-home">
-                        <button class="nav-arrow" onclick="prevWord()">◀ PREV</button>
-                        <button class="nav-arrow" onclick="nextWord()">NEXT ▶</button>
-                    </div>
-                </header>
-                <nav id="detail-tabs-home" class="detail-tabs"></nav>
-                <div id="tab-content-area-home" class="tab-content-area"></div>
+                <div id="book-gallery" class="book-gallery"></div>
             </div>
         </main>
     </div>
 
     <div id="view-detail" class="page-view hidden">
-        <aside id="chapter-sidebar" class="sidebar detail-sidebar">
+        <aside id="chapter-sidebar" class="sidebar collapsed">
             <div class="sidebar-header">
-                <h2>
-                    <i class="icon">📑</i> Word List
-                    <span id="book-list-count" class="list-count">(ct. 0)</span>
+                <h2 style="font-size: 18px; margin: 0; display: flex; align-items: center; gap: 8px; color: #333;">
+                    <i class="icon">📑</i> Word List 
+                    <span id="chapter-list-count" class="list-count" style="font-size: 12px; color: #999; background: #f0f2f5; padding: 2px 6px; border-radius: 4px;">(0)</span>
                 </h2>
             </div>
-            
             <div class="search-box">
-                <input type="text" id="chapter-search" placeholder="Search in book..." autocomplete="off">
+                 <input type="text" id="chapter-search" placeholder="Search in book..." autocomplete="off">
             </div>
-
             <div class="sidebar-filter-area">
-                <div id="book-filter-stars" class="filter-stars-container"></div>
-                <button id="btn-chapter-toggle" class="toggle-text-btn" onclick="toggleAllChapters()">全部收起</button>
+                 <div id="book-filter-stars" class="filter-stars-container"></div>
+                 <button id="btn-book-toggle" class="toggle-text-btn" onclick="toggleBookList()">全部展开</button>
             </div>
-
-            <div id="chapter-list-container" class="scroll-list"></div>
-            <div class="book-meta-footer" id="current-book-title"></div>
+            <ul id="chapter-list-container" class="scroll-list"></ul>
         </aside>
 
         <main class="content-detail">
             <header class="word-top-bar">
                 <div class="bar-left">
-                    <button id="btn-toggle-sidebar" class="icon-btn" onclick="toggleSidebar()">☰</button>
-                    <button class="icon-btn home-btn" onclick="goHome()">
-                        <img src="backinfo/home.png" alt="Home">
-                    </button>
-                    
-                    <div class="switch-wrapper" style="margin-left: 10px;">
-                        <span>显示单词</span>
-                        <label class="switch">
-                            <input type="checkbox" id="word-mask-toggle" checked onchange="toggleWordVisibility()">
-                            <span class="slider round"></span>
-                        </label>
-                    </div>
-                    <div class="switch-wrapper" style="margin-left: 15px;">
-                        <span>按键音</span>
-                        <label class="switch">
-                            <input type="checkbox" class="sound-switch" checked onchange="toggleClickSound(this)">
-                            <span class="slider round"></span>
-                        </label>
-                    </div>
-                </div>
+    <button id="btn-toggle-sidebar" class="icon-btn" onclick="toggleSidebar()">☰</button>
+    
+    <button class="icon-btn home-btn" onclick="goHome()">
+        <img src="backinfo/home.png" class="home-icon-img" alt="Home">
+    </button>
+    
+    <div class="practice-dropdown" id="book-practice-container" style="display:none;">
+        <button class="practice-btn" onclick="togglePracticeMenu()">
+            <span>书本练习</span>
+            <span class="dropdown-arrow">▼</span>
+        </button>
+        <div id="practice-menu-content" class="dropdown-content">
+            </div>
+    </div>
+
+    <button id="btn-toggle-word" class="toggle-word-btn active" onclick="toggleWordVisibility()">
+        显示单词
+    </button>
+</div>
 
                 <div class="bar-center">
                     <div class="word-row-main">
-                        <h1 id="word-main">Abundant</h1>
-                        <img src="backinfo/laba.png" class="audio-icon main-audio" onclick="playCurrentWord()" alt="Play">
+                        <h1 id="word-main">Word</h1>
+                        <div class="main-audio" onclick="playCurrentWord()">
+                            <svg viewBox="0 0 24 24" width="18" height="18" fill="white"><path d="M3 9v6h4l5 5V4L7 9H3zm13.5 3c0-1.77-1.02-3.29-2.5-4.03v8.05c1.48-.73 2.5-2.25 2.5-4.02zM14 3.23v2.06c2.89.86 5 3.54 5 6.71s-2.11 5.85-5 6.71v2.06c4.01-.91 7-4.49 7-8.77s-2.99-7.86-7-8.77z"/></svg>
+                        </div>
                     </div>
                     <div id="rating-stars" class="rating-box"></div>
                 </div>
@@ -168,7 +112,6 @@
         <img class="modal-content" id="modal-img">
     </div>
 
-    <script src="data.js"></script>
     <script src="app.js"></script>
 </body>
 </html>

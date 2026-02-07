@@ -1,0 +1,41 @@
+[
+  {
+    "id": "dm-1",
+    "type": "初章书",
+    "series": "Dragon Masters",
+    "title": "Saving The Sun Dragon",
+    "cover": "infopic01/act.webp",
+    "chapters": [
+      { "id": "dm1-c1", "name": "Chapter 1", "wordIds": ["w001", "w002", "w003", "w004", "w005", "w006"], "quizIds": ["q_w001", "q_w002", "q_w003", "q_w004", "q_w005", "q_w006","q_c1_match","game_w001_A","game_w002_A"] },
+      { "id": "dm1-c2", "name": "Chapter 2", "wordIds": ["w007", "w008", "w009", "w010", "w011", "w012", "w013", "w014"], "quizIds": ["q_w007", "q_w008", "q_w009", "q_w010", "q_w011", "q_w012", "q_w013", "q_w014"] },
+      { "id": "dm1-c3", "name": "Chapter 3", "wordIds": ["w015", "w016", "w017", "w018", "w019", "w020"], "quizIds": ["q_w015", "q_w016", "q_w017", "q_w018", "q_w019", "q_w020"] },
+      { "id": "dm1-c4", "name": "Chapter 4", "wordIds": ["w025", "w026", "w027", "w028", "w029", "w030", "w031", "w032", "w033", "w034", "w035", "w036", "w037"], "quizIds": ["q_w025", "q_w026", "q_w027", "q_w028", "q_w029", "q_w030", "q_w031", "q_w032", "q_w033", "q_w034", "q_w035", "q_w036", "q_w037"] },
+      { "id": "dm1-c5", "name": "Chapter 5", "wordIds": ["w038", "w039", "w040", "w041", "w042", "w043", "w044", "w045", "w046", "w047"], "quizIds": ["q_w038", "q_w039", "q_w040", "q_w041", "q_w042", "q_w043", "q_w044", "q_w045", "q_w046", "q_w047"] }
+    ],
+    "bookPractices": [
+      {
+        "name": "Unit 1 ", 
+        "quizIds": ["q_w001", "q_w002", "q_w003", "q_w004", "q_w005", "q_w006","q_c1_match","game_w001_A","game_w002_A"] 
+      },
+      {
+        "name": "Mid-term Test", 
+        "quizIds": ["q_w001", "q_w002", "q_w003", "q_w004", "q_w005", "q_w006","q_c1_match","game_w001_A","game_w002_A"]
+      }
+    ]
+  },
+  
+    { "id": "dm-4", "type": "初章书", "series": "Dragon Masters", "title": "Dragon Masters book4", "cover": "infopic01/shade.webp", "chapters": [{ "id": "dm3-c1", "name": "Chapter 1" }],"bookPractices": [
+      {
+        "name": "Unit 1 ", 
+        "quizIds": ["q_w001", "q_w002", "q_w003", "q_w004", "q_w005", "q_w006","q_c1_match","game_w001_A","game_w002_A"] 
+      }
+    ]},
+    { "id": "dm-5", "type": "初章书", "series": "Dragon Masters", "title": "Dragon Masters book5", "cover": "infopic01/shade.webp", "chapters": [{ "id": "dm3-c1", "name": "Chapter 1" }] },
+    { "id": "dm-6", "type": "初章书", "series": "Dragon Masters", "title": "Dragon Masters book6", "cover": "infopic01/shade.webp", "chapters": [{ "id": "dm3-c1", "name": "Chapter 1" }] },
+    { "id": "dm-7", "type": "初章书", "series": "Dragon Masters", "title": "Dragon Masters book7", "cover": "infopic01/shade.webp", "chapters": [{ "id": "dm3-c1", "name": "Chapter 1" }] },
+  { "id": "dm-3", "type": "初章书", "series": "Dragon Masters", "title": "Dragon Masters book3", "cover": "infopic01/shade.webp", "chapters": [{ "id": "dm3-c1", "name": "Chapter 1" }] },
+  { "id": "pb-1", "type": "初章书", "series": "Pincess in black", "title": "Pincess in black book1", "cover": "infopic01/arc.webp", "chapters": [{ "id": "pb1-c1", "name": "Chapter 1" }] },
+  { "id": "dm-8", "type": "初章书", "series": "Pincess in black", "title": "Dragon Masters book4", "cover": "infopic01/shade.webp", "chapters": [{ "id": "dm3-c1", "name": "Chapter 1" }] },
+  { "id": "dm-9", "type": "初章书", "series": "Rocket Girl", "title": "rocket girl1", "cover": "infopic01/shade.webp", "chapters": [{ "id": "dm3-c1", "name": "Chapter 1" }] }
+  
+]

@@ -1,0 +1,97 @@
+{
+  "w001": {
+    "word": "shade",
+    "images": { "scene": ["infopic01/shade.webp"] },
+    "richDetail": [
+      "[TITLE] 解释 [/TITLE][DEF][EN] To block the sun so that it does not shine directly (used in the book when Drake blocks sunlight with his hand to watch Kepri fly)[/EN][CN] 遮蔽（阳光）；挡光（书中指德雷克用手挡住阳光，观看凯普丽飞行）[/CN][POS] v.[/POS][PH]/ʃeɪd/[/PH][DU] Drake shaded his eyes with his hand to look at Kepri flying in the sky.|(原文例句) 德雷克用手挡住眼睛，观看凯普丽在空中飞行。[/DU][DU] The umbrella shades us from the strong sunlight.| 雨伞为我们挡住强烈的阳光。[/DU][DU] The big leaves shade the flowers below.| 大片的叶子为下面的花儿挡光。[/DU][/DEF][DEF][EN] A cool place out of the sun (used in the book when Drake stays in the cool area under the tree with Worm)[/EN][CN] 树荫；阴凉处（书中指德雷克和沃姆待在树下的凉爽区域）[/CN][POS] n.[/POS][DU] Drake sat in the shade of the big tree with Worm.|(原文例句) 德雷克和沃姆坐在大树的树荫下。[/DU][DU] The little cat lies in the shade to escape the hot sun.| 小猫躺在阴凉处躲避烈日。[/DU][DU] We have a picnic in the shade of the pavilion.| 我们在亭子的阴凉处野餐。[/DU][/DEF]",
+"[TITLE]常见用法 [/TITLE][COLL][H] shade one's eyes | 用手挡眼（避光） [POS] v.[/POS][/H][EX] She shaded her eyes to see the distant mountain.| 她用手挡眼看远处的山。[/EX][EX] He shaded his eyes from the sunset.| 他用手挡住夕阳的光。[/EX][C] shade eyes from the sun | 挡住阳光护眼 [/C][C] shade eyes to see far | 挡光看远方 [/C][/COLL][COLL][H] in the shade | 在阴凉处 n.[/H][EX] Children play games in the shade after class.| 孩子们课后在阴凉处做游戏。[/EX][EX] Old people rest in the shade in the afternoon.| 老人们下午在阴凉处休息。[/EX][C] play in the shade | 在阴凉处玩耍 [/C][C] rest in the shade | 在阴凉处休息 [/C][/COLL]",
+"[TITLE] 额外例句 [/TITLE][EX] She shaded the baby's face with a hat.[POS] v.[/POS]| 她用帽子挡住宝宝的脸，避免阳光直射。[/EX][EX] The curtain shades the room from the morning sun.[POS] v.[/POS]| 窗帘挡住了房间里的晨光。[/EX][EX] The oak tree provides cool shade for the garden.[POS] n.[/POS]| 橡树为花园提供了凉爽的阴凉处。[/EX][EX] Birds build nests in the shade of the branches.[POS] n.[/POS]| 鸟儿在树枝的阴凉处筑巢。[/EX]",
+"[TITLE] 常见错误 [/TITLE][ERR] 不要混淆 shade 的动词和名词用法！作动词时表示 “遮蔽”，后接宾语（如 shade eyes）；作名词时表示 “阴凉处”，常用搭配 in the shade。[/ERR][ERR] 不要混淆 shade 和 shadow！shade 指 “阴凉处”（无阳光的区域），shadow 指 “影子”（物体挡住光形成的轮廓），比如 “树的影子” 是 tree shadow，“树的阴凉处” 是 tree shade。[/ERR][ERR] shade 作 “阴凉处” 时是不可数名词，不能说 “a shade”，要表达 “一片阴凉” 可以说 “a patch of shade”。[/ERR][ERR] 作动词 “遮蔽” 时，不能单独说 “shade”，需接宾语或加介词，比如 “挡住阳光” 是 shade oneself from the sun（正确），不是 shade the sun（错误）。[/ERR]"
+    ]
+  },
+  "w002": {
+    "word": "practice",
+    "images": { "scene": ["infopic01/practice.webp"] },
+    "richDetail": [
+      "[TITLE]解释[/TITLE][DEF][EN]To do something again and again to get better[/EN][CN]练习；操练[/CN][POS]v.[/POS][PH]/ˈpræktɪs/（美式）/ˈpræktɪs/（英式）[/PH][DU]We practice riding bikes.|我们练习骑自行车。[/DU][DU]She practices singing every day.|她每天练习唱歌。[/DU][/DEF][DEF][EN]Doing something again to learn it[/EN][CN]练习；训练[/CN][POS]n.[/POS][PH]/ˈpræktɪs/（美式）/ˈpræktɪs/（英式）[/PH][DU]Practice makes perfect.|熟能生巧。[/DU][DU]We have dragon practice.|我们有龙的训练。[/DU][/DEF]",
+      "[TITLE]常见用法[/TITLE][COLL][H]practice doing sth|练习做某事[/H][POS]v.[/POS][EX]He practices drawing dragons.|他练习画龙。[/EX][EX]They practice flying with dragons.|他们练习和龙一起飞行。[/EX][C]practice 练习[/C][C]doing sth 做某事[/C][/COLL][COLL][H]daily practice|日常练习[/H][POS]n.[/POS][EX]Daily practice helps you improve.|日常练习能帮你进步。[/EX][EX]My daily practice is reading.|我的日常练习是读书。[/EX][C]daily 日常的[/C][C]practice 练习[/C][/COLL]",
+      "[TITLE]额外例句[/TITLE][EX]The Dragon Masters practice training dragons.|(原文相关例句)龙法师们练习训练龙。[/EX][EX]She does piano practice every evening.|她每天晚上练钢琴。[/EX]",
+      "[TITLE]常见错误[/TITLE][ERR]不要混淆 practice 和 practise！美式英语中动词和名词都写 practice，英式英语中动词是 practise，名词是 practice。[/ERR][ERR]作动词时，后面不能接“to do”，要接“doing”，比如“practice swimming”（正确），不是“practice to swim”（错误）。[/ERR][ERR]作名词时，不可数，不能说“a practice”，要说“do practice”或“have practice”。[/ERR]"
+    ]
+  },
+"w003": {
+"word": "glow",
+"images": {"scene": ["infopic01/glow.webp"] },
+"richDetail": [
+"[TITLE] 解释 [/TITLE][DEF][EN] To shine softly and steadily [/EN][CN] 发光；发亮 [/CN][POS] v.[/POS][PH]/ɡləʊ/（英式）/ɡloʊ/（美式）[/PH][DU] Worm's eyes glowed bright green.| 沃姆的眼睛发出明亮的绿光。[/DU][DU] The candle glows in the dark.| 蜡烛在黑暗中发光。[/DU][/DEF][DEF][EN] A soft steady light [/EN][CN] 微光；光泽 [/CN][POS] n.[/POS][PH]/ɡləʊ/（英式）/ɡloʊ/（美式）[/PH][DU] The glow of the Dragon Stone is green.| 龙石的微光是绿色的。[/DU][DU] We saw the glow from the cave.| 我们看到了洞穴里的亮光。[/DU][/DEF]",
+"[TITLE] 常见用法 [/TITLE][COLL][H] glow brightly | 明亮地发光 [/H][POS] v.[/POS][EX] The sun dragon glows brightly in the sky.| 太阳龙在天空中明亮地发光。[/EX][EX] The magic stone glows brightly at night.| 魔法石在晚上明亮地发光。[/EX][C] glow 发光 [/C][C] brightly 明亮地 [/C][/COLL][COLL][H] a soft glow | 柔和的微光 [/H][POS] n.[/POS][EX] There's a soft glow from the potion.| 药剂发出柔和的微光。[/EX][EX] The moon gives a soft glow.| 月亮发出柔和的微光。[/EX][C] soft 柔和的 [/C][C] glow 微光 [/C][/COLL]",
+"[TITLE] 额外例句 [/TITLE][POS] v.[/POS][EX] Worm's eyes glowed bright green.|(原文例句) 沃姆的眼睛发出明亮的绿光。[/EX][EX] The stars glow in the night sky.| 星星在夜空中发光。[/EX]",
+"[TITLE] 常见错误 [/TITLE][ERR] 不要混淆 glow 和 shine！glow 是 “柔和、持续地发光”，shine 是 “强烈、耀眼地照耀”。[/ERR][ERR] 作动词时，不能说 “glow light”，直接说 “glow” 即可，比如 “The lamp glows”（正确）。[/ERR][ERR] 作名词时，不可数，不能说 “a glow of the lamp”，要说 “the glow of the lamp”。[/ERR]"
+]
+},
+"w004": {
+"word": "cave",
+"images": { "scene": ["infopic01/cave.webp"] },
+"richDetail": [
+"[TITLE] 解释 [/TITLE][DEF][EN] A big hole in the side of a hill or under the ground [/EN][CN] 洞穴；山洞 [/CN][POS] n.[/POS][PH]/keɪv/[/PH][DU] Each dragon has a small cave.| 每条龙都有一个小洞穴。[/DU][DU] We explored the dark cave.| 我们探索了黑暗的山洞。[/DU][/DEF][DEF][EN] To fall in suddenly [/EN][CN] 塌陷；倒塌 [/CN][POS] v.[/POS][PH]/keɪv/[/PH][DU] The tunnel caved in after the dragon hit it.| 龙撞到隧道后，隧道塌陷了。[/DU][DU] The old mine caved in slowly.| 旧矿井慢慢塌陷了。[/DU][/DEF]",
+"[TITLE] 常见用法 [/TITLE][COLL][H] dragon cave | 龙穴 [/H][POS] n.[/POS][EX] The dragon returned to its cave.| 龙回到了它的洞穴。[/EX][EX] We visited the dragon cave carefully.| 我们小心翼翼地参观了龙穴。[/EX][C] dragon 龙 [/C][C] cave 洞穴 [/C][/COLL][COLL][H] cave in | 塌陷；倒塌 [/H][POS] v.[/POS][EX] The tunnel caved in during the storm.| 隧道在暴风雨中塌陷了。[/EX][EX] The roof of the old house caved in.| 老房子的屋顶倒塌了。[/EX][C] cave 塌陷 [/C][C] in 进去 [/C][/COLL]",
+"[TITLE] 额外例句 [/TITLE][EX] Each dragon had a small cave.|(原文例句) 每条龙都有一个小洞穴。[/EX][EX] Bears sleep in caves in winter.| 熊冬天在山洞里睡觉。[/EX]",
+"[TITLE] 常见错误 [/TITLE][ERR] 不要混淆 cave（名词，洞穴）和 cave in（动词短语，塌陷）！比如 “隧道塌陷了” 是 “The tunnel caved in”（正确），不是 “The tunnel cave”。[/ERR][ERR] 作名词时，复数是 caves，不能说 “cavees”（错误）。[/ERR][ERR] 作动词 “塌陷” 时，必须加 in，不能单独说 “cave”，比如 “The wall caved in”（正确），不是 “The wall caved”。[/ERR]"
+]
+},
+
+  "w009": {
+    "word": "glow",
+    "images": { "scene": ["infopic01/glow.webp"] },
+    "richDetail": [
+      "[TITLE]解释[/TITLE][DEF][EN]To shine softly and steadily (used in the book when Worm's eyes or the Dragon Stone gives out soft, steady light)[/EN][CN]发光；发亮（书中指沃姆的眼睛或龙石发出柔和稳定的光）[/CN][POS]v.[/POS][PH]/ɡləʊ/（英式）/ɡloʊ/（美式）[/PH][DU]Worm's eyes glowed bright green.|(原文例句)沃姆的眼睛发出明亮的绿光。[/DU][DU]The Dragon Stone around Drake's neck glowed brightly when Worm called him.|德雷克脖子上的龙石在沃姆呼唤他时明亮地发光。[/DU][DU]The fireflies glow in the garden at night.|萤火虫晚上在花园里发光。[/DU][/DEF][DEF][EN]A soft, steady light[/EN][CN]微光；光泽[/CN][POS]n.[/POS][DU]The glow of the potion lit up the dark cave.|药剂的微光照亮了黑暗的洞穴。[/DU][DU]We saw the warm glow from the cottage window.|我们看到小屋窗户透出温暖的微光。[/DU][DU]The moon casts a silvery glow on the lake.|月亮在湖面上洒下银色的光泽。[/DU][/DEF]",
+      "[TITLE]常见用法[/TITLE][COLL][H]glow brightly|明亮地发光[/H][POS]v.[/POS][EX]The sun dragon glows brightly in the sky.|太阳龙在天空中明亮地发光。[/EX][EX]The magic crystal glows brightly at midnight.|魔法水晶在午夜明亮地发光。[/EX][C]glow brightly in the dark|在黑暗中明亮发光[/C][C]glow brightly with joy|因喜悦而明亮发光[/C][/COLL][COLL][H]a soft glow|柔和的微光[/H][POS]n.[/POS][EX]There's a soft glow from the candle on the table.|桌子上的蜡烛发出柔和的微光。[/EX][EX]The fireplace gives off a warm glow.|壁炉散发出温暖的微光。[/EX][C]a warm glow of happiness|幸福的温暖微光[/C][C]a silvery glow of the moon|月亮的银色微光[/C][/COLL]",
+      "[TITLE]额外例句[/TITLE][EX]The stars glow gently in the night sky.[POS]v.[/POS]|星星在夜空中温柔地发光。[/EX][EX]Her face glows with excitement when she sees the dragons.[POS]v.[/POS]|看到龙时，她的脸上因兴奋而发光。[/EX][EX]The glow of the sunset paints the sky pink.[POS]n.[/POS]|夕阳的微光把天空染成了粉色。[/EX][EX]The magic stone emits a faint glow that guides the way.[POS]n.[/POS]|魔法石发出微弱的微光指引方向。[/EX]",
+      "[TITLE]常见错误[/TITLE][ERR]不要混淆 glow 和 shine！glow 是“柔和、持续地发光”，比如萤火虫发光；shine 是“强烈、耀眼地照耀”，比如太阳照耀。[/ERR][ERR]作动词时，不能说“glow light”，直接用“glow”即可，正确表达：The lamp glows（台灯发光）。[/ERR][ERR]作名词时是不可数名词，不能说“a glow of the lamp”，要加定冠词“the”，正确表达：the glow of the lamp（台灯的微光）。[/ERR]"
+    ]
+  },
+  "w010": {
+    "word": "cave",
+    "images": { "scene": ["infopic01/cave.webp"] },
+    "richDetail": [
+      "[TITLE]解释[/TITLE][DEF][EN]A small underground room for dragons (used in the book when each dragon has its own underground space in the Dragon Room)[/EN][CN]龙穴；洞穴（书中指龙屋里每条龙专属的地下空间）[/CN][POS]n.[/POS][PH]/keɪv/[/PH][DU]Each dragon had a small cave.|(原文例句)每条龙都有一个小洞穴。[/DU][DU]Kepri rested in her cave to recover from illness.|凯普丽在她的洞穴里休息，以便从病痛中恢复。[/DU][DU]The little bear hibernates in a warm cave in winter.|小熊冬天在温暖的洞穴里冬眠。[/DU][/DEF][DEF][EN]To fall in suddenly (used in the book when the tunnel collapsed after Vulcan hit the walls)[/EN][CN]塌陷；倒塌（书中指沃肯撞到隧道墙壁后，隧道突然坍塌）[/CN][POS]v.[/POS][DU]The tunnel caved in after Vulcan banged into the walls.|(原文例句)沃肯撞到墙壁后，隧道塌陷了。[/DU][DU]The old mine caved in because of the heavy rain.|旧矿井因为大雨而塌陷了。[/DU][DU]The roof of the abandoned house caved in slowly.|废弃房屋的屋顶慢慢倒塌了。[/DU][/DEF]",
+      "[TITLE]常见用法[/TITLE][COLL][H]dragon cave|龙穴[/H][POS]n.[/POS][EX]The dragon returned to its cave with food.|龙带着食物回到了它的洞穴。[/EX][EX]We visited the dragon cave quietly to not disturb the dragon.|我们安静地参观龙穴，以免打扰龙。[/EX][C]rest in the dragon cave|在龙穴休息[/C][C]hide in the dragon cave|躲在龙穴里[/C][/COLL][COLL][H]cave in|塌陷；倒塌[/H][POS]v.[/POS][EX]The road caved in after the earthquake.|地震后道路塌陷了。[/EX][EX]The sand dune caved in when the wind blew hard.|大风刮起时，沙丘塌陷了。[/EX][C]tunnel cave in|隧道塌陷[/C][C]mine cave in|矿井倒塌[/C][/COLL]",
+      "[TITLE]额外例句[/TITLE][EX]The explorers found ancient paintings in the deep cave.[POS]n.[/POS]|探险家们在深洞里发现了古老的壁画。[/EX][EX]The rabbit dug a small cave under the tree to hide.[POS]n.[/POS]|兔子在树下挖了一个小洞穴来躲藏。[/EX][EX]The wall caved in when the truck crashed into it.[POS]v.[/POS]|卡车撞到墙上时，墙壁倒塌了。[/EX][EX]The soil caved in and trapped the little squirrel.[POS]v.[/POS]|泥土塌陷，困住了小松鼠。[/EX]",
+      "[TITLE]常见错误[/TITLE][ERR]不要混淆 cave 的名词和动词用法！作名词时表示“洞穴”，常用搭配“in the cave”；作动词时表示“塌陷”，必须和 in 连用，构成短语“cave in”。[/ERR][ERR]作名词时，复数形式是 caves，不能写成“cavees”（错误拼写）。[/ERR][ERR]作动词“塌陷”时，不能单独使用“cave”，必须加 in，正确表达：The tunnel caved in（隧道塌陷了），错误表达：The tunnel caved（隧道塌陷了）。[/ERR]"
+    ]
+  },
+  "w011": {
+    "word": "potion",
+    "images": { "scene": ["infopic01/potion.webp"] },
+    "richDetail": [
+      "[TITLE]解释[/TITLE][DEF][EN]A magic liquid that can heal or do special things (used in the book when Griffith and the Dragon Masters make a healing liquid for sick Kepri)[/EN][CN]魔法药剂；药水（书中指格里菲斯和龙法师们为生病的凯普丽制作的治愈液体）[/CN][POS]n.[/POS][PH]/ˈpəʊʃn/（英式）/ˈpoʊʃn/（美式）[/PH][DU]They made a healing potion for Kepri.|(原文例句)他们给凯普丽做了一瓶治愈药剂。[/DU][DU]Griffith handed the jar of potion to Ana to feed Kepri.|格里菲斯把装有药剂的罐子递给安娜，让她喂给凯普丽。[/DU][DU]The wizard mixed herbs to make a magic potion.|巫师混合草药制作魔法药剂。[/DU][/DEF][DEF][EN]A liquid with special effects (often in stories)[/EN][CN]（故事中）有特殊功效的液体[/CN][POS]n.[/POS][DU]The fairy gave the princess a potion to sleep peacefully.|仙女给了公主一瓶药水，让她安稳入睡。[/DU][DU]The knight drank a strength potion to fight the monster.|骑士喝了一瓶力量药水来对抗怪物。[/DU][DU]The witch's potion can turn stones into gold.|女巫的药水能把石头变成金子。[/DU][/DEF]",
+      "[TITLE]常见用法[/TITLE][COLL][H]healing potion|治愈药剂[/H][POS]n.[/POS][EX]The healing potion cured the sick dragon quickly.|治愈药剂很快治好了生病的龙。[/EX][EX]We need to collect rare flowers to make a healing potion.|我们需要收集稀有花朵来制作治愈药剂。[/EX][C]make a healing potion|制作治愈药剂[/C][C]drink a healing potion|喝治愈药剂[/C][/COLL][COLL][H]magic potion|魔法药剂[/H][POS]n.[/POS][EX]The wizard's magic potion can grant wishes.|巫师的魔法药剂能实现愿望。[/EX][EX]The children dreamed of finding a bottle of magic potion.|孩子们梦想找到一瓶魔法药剂。[/EX][C]mix a magic potion|调制魔法药剂[/C][C]carry a magic potion|携带魔法药剂[/C][/COLL]",
+      "[TITLE]额外例句[/TITLE][EX]The blue potion glows softly and smells like flowers.[POS]n.[/POS]|这瓶蓝色药剂柔和地发光，闻起来像花朵。[/EX][EX]Ana poured the potion into Kepri's mouth gently.[POS]n.[/POS]|安娜轻轻地把药剂倒进凯普丽的嘴里。[/EX][EX]The magic potion made the little mouse grow big.[POS]n.[/POS]|魔法药剂让小老鼠变大了。[/EX][EX]They stored the potion in a glass jar to keep it fresh.[POS]n.[/POS]|他们把药剂放在玻璃罐里保鲜。[/EX]",
+      "[TITLE]常见错误[/TITLE][ERR]potion 是可数名词，单数形式前面要加 a 或 the，正确表达：a potion（一瓶药剂），the potion（那瓶药剂），错误表达：potion（药剂）。[/ERR][ERR]不要混淆 potion 和 medicine！potion 是“魔法类、故事中的药剂”，medicine 是“现实中的药物”，比如“感冒吃药”是 take medicine，“魔法治愈药剂”是 healing potion。[/ERR][ERR]常用搭配“make a potion”（制作药剂），不能说“do a potion”（错误表达）。[/ERR]"
+    ]
+  },
+  "w012": {
+    "word": "robber",
+    "images": { "scene": ["infopic01/robber.webp"] },
+    "richDetail": [
+      "[TITLE]解释[/TITLE][DEF][EN]A person who steals things from others (used in the book when people come to the pyramid to steal treasures or capture dragons)[/EN][CN]强盗；盗贼（书中指来金字塔偷宝藏或捕捉龙的人）[/CN][POS]n.[/POS][PH]/ˈrɒbə(r)/（英式）/ˈrɑːbər/（美式）[/PH][DU]Robbers often come to the pyramids to steal things.|(原文例句)强盗们经常来金字塔偷东西。[/DU][DU]The robbers tried to capture the dragons for money.|强盗们试图捕捉龙来赚钱。[/DU][DU]The little girl hid from the robber in the closet.|小女孩躲在壁橱里躲避强盗。[/DU][/DEF][DEF][EN]A person who takes something illegally from a place or person[/EN][CN]抢劫犯；窃贼[/CN][POS]n.[/POS][DU]The robber broke into the house and stole the jewels.|窃贼闯入房子偷走了珠宝。[/DU][DU]The police caught the robber who stole the bank's money.|警察抓住了偷银行钱的抢劫犯。[/DU][DU]The traveler was robbed by a group of robbers on the road.|旅行者在路上被一群抢劫犯抢劫了。[/DU][/DEF]",
+      "[TITLE]常见用法[/TITLE][COLL][H]steal from|偷……的东西[/H][POS]v.[/POS][EX]Robbers steal gold and treasures from the pyramids.|强盗们从金字塔偷金子和宝藏。[/EX][EX]The robber stole money from the old man.|窃贼偷了老人的钱。[/EX][C]steal treasures from pyramids|从金字塔偷宝藏[/C][C]steal money from banks|从银行偷钱[/C][/COLL][COLL][H]capture|捕捉；捕获[/H][POS]v.[/POS][EX]The robbers tried to capture the dragons to sell them.|强盗们试图捕捉龙来卖掉它们。[/EX][EX]The hunter captured a rabbit in the forest.|猎人在森林里捕获了一只兔子。[/EX][C]capture dragons|捕捉龙[/C][C]capture thieves|捕获小偷[/C][/COLL]",
+      "[TITLE]额外例句[/TITLE][EX]The robbers ran away when they saw the dragons roar.[POS]n.[/POS]|强盗们看到龙咆哮就逃跑了。[/EX][EX]The store owner called the police when a robber tried to steal food.[POS]n.[/POS]|当窃贼试图偷食物时，店主报警了。[/EX][EX]The robber wore a mask to hide his face.[POS]n.[/POS]|抢劫犯戴着面具来隐藏他的脸。[/EX][EX]The villagers worked together to stop the robbers from stealing their crops.[POS]n.[/POS]|村民们一起阻止强盗偷他们的庄稼。[/EX]",
+      "[TITLE]常见错误[/TITLE][ERR]robber 的复数形式是 robbers，不是 robberes（错误拼写）。[/ERR][ERR]不要混淆 robber 和 thief！robber 指“使用暴力或威胁抢劫的人”，thief 指“偷偷摸摸偷窃的人”，比如“银行抢劫犯”是 bank robber，“小偷小摸的窃贼”是 thief。[/ERR][ERR]常用搭配“rob sb of sth”（抢劫某人某物），不能说“rob sb's sth”，正确表达：The robber robbed him of his phone（抢劫犯抢走了他的手机），错误表达：The robber robbed his phone（抢劫犯抢走了他的手机）。[/ERR]"
+    ]
+  },
+  "w013": {
+    "word": "pyramid",
+    "images": { "scene": ["infopic01/pyramid.webp"] },
+    "richDetail": [
+      "[TITLE]解释[/TITLE][DEF][EN]A tall building with four triangle sides and a pointy top (used in the book when Ana and the Dragon Masters go to her homeland and see the ancient building)[/EN][CN]金字塔（书中指安娜和龙法师们去她的故乡时看到的古老建筑，有四个三角形侧面和一个尖顶）[/CN][POS]n.[/POS][PH]/ˈpɪrəmɪd/[/PH][DU]Ana cried out when she saw the pyramid in her homeland.|(原文例句)安娜在故乡看到金字塔时大喊起来。[/DU][DU]The pyramid's pointy top is capped with shining gold.|金字塔的尖顶覆盖着闪闪发光的金子。[/DU][DU]The ancient Egyptians built many pyramids as tombs.|古埃及人建造了许多金字塔作为陵墓。[/DU][/DEF][DEF][EN]A shape with a square base and four triangle sides meeting at a point[/EN][CN]棱锥体（一种底面为正方形、四个侧面为三角形且交于一点的形状）[/CN][POS]n.[/POS][DU]The child made a pyramid with toy blocks.|孩子用积木搭了一个棱锥体。[/DU][DU]The math teacher showed the class a model of a pyramid.|数学老师给全班看了一个棱锥体模型。[/DU][DU]The cake is decorated in the shape of a small pyramid.|蛋糕被装饰成小棱锥体的形状。[/DU][/DEF]",
+      "[TITLE]常见用法[/TITLE][COLL][H]ancient pyramid|古金字塔[/H][POS]n.[/POS][EX]Tourists from all over the world visit the ancient pyramids in Egypt.|来自世界各地的游客参观埃及的古金字塔。[/EX][EX]The ancient pyramid is a famous historical site.|古金字塔是著名的历史遗迹。[/EX][C]visit ancient pyramids|参观古金字塔[/C][C]explore ancient pyramids|探索古金字塔[/C][/COLL][COLL][H]build a pyramid|建造金字塔/棱锥体[/H][POS]v.[/POS][EX]The workers spent many years building the huge pyramid.|工人们花了很多年建造这座巨大的金字塔。[/EX][EX]We can build a small pyramid with sand on the beach.|我们可以在沙滩上用沙子堆一个小棱锥体。[/EX][C]build a sand pyramid|堆沙棱锥体[/C][C]build a block pyramid|搭积木棱锥体[/C][/COLL]",
+      "[TITLE]额外例句[/TITLE][EX]The pyramid stands tall in the middle of the desert.[POS]n.[/POS]|金字塔矗立在沙漠中央。[/EX][EX]Ana told her friends stories about the pyramids near her hometown.[POS]n.[/POS]|安娜给朋友们讲了她家乡附近金字塔的故事。[/EX][EX]The student drew a pyramid in his math notebook.[POS]n.[/POS]|学生在他的数学笔记本上画了一个棱锥体。[/EX][EX]The museum has a model of a pyramid from ancient times.[POS]n.[/POS]|博物馆里有一个古代金字塔的模型。[/EX]",
+      "[TITLE]常见错误[/TITLE][ERR]pyramid 是可数名词，复数形式是 pyramids，不是 pyramidss（错误拼写）。[/ERR][ERR]不要混淆 pyramid 和 mountain！pyramid 是“人工建造的金字塔或几何棱锥体”，mountain 是“自然形成的山”，比如“埃及金字塔”是 Egyptian pyramids，“高山”是 high mountain。[/ERR][ERR]表示“在金字塔里”用“in the pyramid”，表示“在金字塔顶上”用“on the top of the pyramid”，不能说“on the pyramid”（在金字塔上）。[/ERR]"
+    ]
+  }
+
+}
+
+
+
