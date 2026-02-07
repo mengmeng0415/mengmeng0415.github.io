@@ -728,7 +728,7 @@ input:checked + .slider:before { transform: translateX(16px); }
 #tab-content-area.pseudo-fullscreen .quiz-box {
     max-width: 1400px;
     width: 95%;
-    min-height: 70vh; /* 您的微调：70vh */
+    min-height: 75vh; /* 您的微调：70vh */
     padding: 60px 60px;
     display: flex;
     flex-direction: column;
@@ -742,7 +742,7 @@ input:checked + .slider:before { transform: translateX(16px); }
     max-width: 400px;
     font-size: 24px;
     padding: 20px 0;
-    margin-top: 50px; /* 您的微调：20px */
+    margin-top: 10px; /* 您的微调：20px */
     margin-bottom: 0px;
 }
 
@@ -774,4 +774,26 @@ input:checked + .slider:before { transform: translateX(16px); }
 #tab-content-area.pseudo-fullscreen .game-wrapper {
     max-width: 650px; /* 您的微调：650px */
     aspect-ratio: 16 / 9;
+}
+/* 8. 缩小全屏模式下的顶部页码按钮 */
+#tab-content-area:fullscreen .quiz-page-btn,
+#tab-content-area.pseudo-fullscreen .quiz-page-btn {
+    /* 默认是 44px，这里调小到 30px */
+    width: 30px;       
+    height: 30px;
+    
+    /* 字体也相应调小 */
+    font-size: 13px;   
+    
+    /* 如果觉得按钮之间太宽，可以微调外边距（可选） */
+    margin: 0 2px;
+}
+
+/* 9. 调整页码容器的间距（让排列更紧凑） */
+#tab-content-area:fullscreen .quiz-pagination,
+#tab-content-area.pseudo-fullscreen .quiz-pagination {
+    gap: 8px;  /* 默认是 12px，调小间隙 */
+    
+    /* 调整页码栏和下面白卡片的距离 */
+    margin-bottom: 10px; 
 }
