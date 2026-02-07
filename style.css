@@ -435,10 +435,10 @@ input:checked + .slider:before { transform: translateX(16px); }
 /* 1. 题目大白卡片：固定最小高度 + 垂直居中 */
 .quiz-box { 
     background: #fff; 
-    padding: 40px 50px;       /* 增加内边距 */
+    padding: 10px 40px;       /* 增加内边距 */
     border-radius: 20px;      /* 更圆润的圆角 */
     width: 100%; 
-    max-width: 1000px;        /* 限制最大宽度 */
+    max-width: 950px;        /* 限制最大宽度 */
     margin: 0 auto; 
     box-shadow: 0 10px 40px rgba(0,0,0,0.08); /* 柔和投影 */
     box-sizing: border-box; 
