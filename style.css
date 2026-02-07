@@ -728,12 +728,12 @@ input:checked + .slider:before { transform: translateX(16px); }
 #tab-content-area.pseudo-fullscreen .quiz-box {
     max-width: 1400px;
     width: 95%;
-    min-height: 75vh; /* 您的微调：75vh */
-    padding: 60px 80px;
+    min-height: 70vh; /* 您的微调：70vh */
+    padding: 60px 60px;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
 }
 
 /* 4. Next 按钮 */
@@ -743,7 +743,7 @@ input:checked + .slider:before { transform: translateX(16px); }
     font-size: 24px;
     padding: 20px 0;
     margin-top: 20px; /* 您的微调：20px */
-    margin-bottom: 20px;
+    margin-bottom: 10px;
 }
 
 /* 5. 字体放大 */
@@ -772,6 +772,6 @@ input:checked + .slider:before { transform: translateX(16px); }
 
 #tab-content-area:fullscreen .game-wrapper,
 #tab-content-area.pseudo-fullscreen .game-wrapper {
-    max-width: 700px; /* 您的微调：700px */
+    max-width: 650px; /* 您的微调：650px */
     aspect-ratio: 16 / 9;
 }
