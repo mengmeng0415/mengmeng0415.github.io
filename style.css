@@ -1012,46 +1012,96 @@ input:checked + .slider:before { transform: translateX(16px); }
     padding: 5px 15px; border-radius: 20px; backdrop-filter: blur(5px);
 }
 
-/* ============ 🎴 翻牌卡片样式 (Spooky风格) ============ */
+/* ============ 🎴 翻牌卡片样式 (UI 终极优化版) ============ */
+/* ============ 🎴 翻牌卡片样式 (UI 撑满屏幕版) ============ */
 .spooky-grid {
     display: grid; 
-    grid-template-columns: repeat(5, 1fr); /* 默认5列 */
-    gap: 15px; width: 95%; perspective: 1000px;
+    /* grid-template-columns 由 JS 动态计算 */
+    
+    /* 【修改 1】极小的间距，把空间让给卡片 */
+    gap: 1vh 1vw; 
+    
+    /* 【修改 2】宽度几乎占满全屏 */
+    width: 98%;   
+    max-width: 1600px; 
+    
+    /* 【修改 3】居中对齐 */
+    margin: 0 auto;
+    justify-content: center;
+    align-content: center;
+    height: 100%; /* 占满容器高度 */
+    
+    perspective: 1000px;
 }
 
 .spooky-card {
-    position: relative; aspect-ratio: 3/4; cursor: pointer;
-    transform-style: preserve-3d; transition: transform 0.6s cubic-bezier(0.4, 0.0, 0.2, 1);
+    position: relative; 
+    aspect-ratio: 3/4; /* 保持比例 */
+    cursor: pointer;
+    transform-style: preserve-3d; 
+    transition: transform 0.6s cubic-bezier(0.4, 0.0, 0.2, 1);
     box-shadow: 0 5px 15px rgba(0,0,0,0.5);
+    
+    /* 【修改 4：关键！】单张卡片最大高度 */
+    /* 46vh * 2 = 92vh，上下只留极窄的边距 */
+    /* 这会让卡片变得非常巨大 */
+    max-height: 46vh; 
+    
+    /* 让宽度自动膨胀 */
+    width: auto; 
+    max-width: 100%;
+}
+
+/* 屏幕很窄时（手机竖屏），稍微减小高度防止左右溢出 */
+@media (max-width: 600px) {
+    .spooky-card {
+        max-height: 38vh; /* 手机上稍微收敛一点 */
+    }
 }
 
 .spooky-card.flipped { transform: rotateY(180deg); }
-.spooky-card.matched { visibility: hidden; opacity: 0; transition: opacity 0.5s 0.5s; } /* 配对后消失 */
+.spooky-card.matched { visibility: hidden; opacity: 0; transition: opacity 0.5s 0.5s; }
+
+/* ... 后面的 .face 样式保持不变 ... */
 
 .face {
     position: absolute; width: 100%; height: 100%;
-    backface-visibility: hidden; border-radius: 10px;
+    backface-visibility: hidden; border-radius: 12px; /* 圆角稍微大一点更现代 */
     display: flex; justify-content: center; align-items: center;
-    border: 2px solid rgba(255,255,255,0.5);
+    border: 2px solid rgba(255,255,255,0.6);
 }
 
-/* 背面 (图案) */
 .face.back {
-    background: #2c3e50; /* 如果没有spooky背景图，用深色 */
+    background: #2c3e50; 
     background-image: repeating-linear-gradient(45deg, #2c3e50 0, #2c3e50 10px, #34495e 10px, #34495e 20px);
-    display: flex; justify-content: center; align-items: center;
     color: #fff; font-size: 24px;
 }
 
-/* 正面 (内容) */
 .face.front {
     background: rgba(255,255,255,0.95);
     transform: rotateY(180deg);
-    padding: 5px;
+    padding: 8px; /* 内边距稍微大一点 */
     flex-direction: column;
 }
-.face.front img { width: 80%; height: 70%; object-fit: contain; }
-.face.front span { font-size: 14px; margin-top: 5px; color: #333; font-weight: bold; }
+
+.face.front img { 
+    width: 90%; /* 图片大一点 */
+    height: 75%; 
+    object-fit: contain; 
+}
+
+.face.front span { 
+    font-size: 1.5vw; /* 字体随屏幕宽度响应式缩放 */
+    margin-top: 5px; 
+    color: #333; 
+    font-weight: 800; 
+}
+
+/* 手机竖屏适配 */
+@media (max-width: 768px) {
+    .face.front span { font-size: 16px; } /* 手机上字体设个固定最小值，防止太小 */
+    .spooky-grid { gap: 10px; width: 95%; }
+}
 
 /* 洗牌动画 */
 @keyframes shuffleDeck {
@@ -1060,11 +1110,19 @@ input:checked + .slider:before { transform: translateX(16px); }
     100% { transform: translate(0,0); }
 }
 .shuffling .spooky-card { animation: shuffleDeck 0.3s ease-in-out infinite; }
-/* ============ 🎮 游戏启动遮罩层 ============ */
+
+/* ============ 👇 重点检查这里 👇 ============ */
+/* 确保这段代码前面没有未闭合的括号！建议直接粘贴在文件最末尾 */
+
+/* 🎮 游戏启动遮罩层 */
 .game-start-overlay {
-    position: absolute; top: 0; left: 0; width: 100%; height: 100%;
-    background: rgba(0, 0, 0, 0.8); /* 半透明黑底 */
-    z-index: 50; /* 在视频之上，棋盘之下 */
+    position: absolute; 
+    top: 0; 
+    left: 0; 
+    width: 100%; 
+    height: 100%;
+    background: rgba(0, 0, 0, 0.85); /* 深色背景，确保能盖住视频 */
+    z-index: 9999; /* 确保层级最高 */
     display: flex;
     flex-direction: column;
     justify-content: center;

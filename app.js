@@ -1396,7 +1396,7 @@ function clearCustomGames() {
 let gameVideo, gameBgm;
 
 
-// ============ 🛡️ 终极方案：带启动按钮的 startSpookyGame ============
+// ============ 🛡️ 终极 UI 修复版 startSpookyGame ============
 function startSpookyGame(gameIndex) {
     const gameData = state.customGames[gameIndex];
     if (!gameData) return;
@@ -1409,7 +1409,7 @@ function startSpookyGame(gameIndex) {
         document.body.appendChild(container);
     }
     
-    // 【修改点】新增了一个 .game-start-overlay 遮罩层和按钮
+    // 【修改 1】容器结构优化：game-board-layer 变成 Flex 容器，负责垂直居中
     container.innerHTML = `
         <video id="game-video-bg" playsinline style="position: absolute; width: 100%; height: 100%; object-fit: cover;">
             <source src="https://cdn.jsdelivr.net/gh/mengmeng0415/wordpic01/spooky.mp4" type="video/mp4">
@@ -1422,13 +1422,13 @@ function startSpookyGame(gameIndex) {
         </div>
 
         <button class="btn-exit-game" onclick="exitSpookyGame()">退出游戏</button>
-        <div id="game-board-layer" style="opacity: 0; transition: opacity 1s;">
-            <h2 style="color:#fff; text-shadow:0 2px 10px #000; margin-bottom:20px; margin-top: 60px;">${gameData.title}</h2>
+        
+        <div id="game-board-layer" style="opacity: 0; transition: opacity 1s; width: 100%; height: 100%; display: flex; align-items: center; justify-content: center;">
             <div id="spooky-grid" class="spooky-grid"></div>
         </div>
     `;
 
-    // 2. 准备卡片数据 (保持不变)
+    // 2. 准备卡片数据
     const cards = [];
     gameData.words.forEach(uid => {
         const w = DataManager.getWordDetail(uid);
@@ -1441,11 +1441,13 @@ function startSpookyGame(gameIndex) {
     });
     cards.sort(() => Math.random() - 0.5);
 
-    // 3. 渲染卡片 (保持不变)
+    // 3. 渲染卡片 【修改 2：动态计算列数】
     const grid = document.getElementById('spooky-grid');
-    if (cards.length <= 4) grid.style.gridTemplateColumns = 'repeat(2, 1fr)';
-    else if (cards.length <= 6) grid.style.gridTemplateColumns = 'repeat(3, 1fr)';
-    else grid.style.gridTemplateColumns = 'repeat(5, 1fr)';
+    
+    // 强制分为 2 行。
+    // 如果有 10 张牌，10/2 = 5列。如果有 8 张牌，8/2 = 4列。
+    const columns = Math.ceil(cards.length / 2);
+    grid.style.gridTemplateColumns = `repeat(${columns}, 1fr)`;
 
     grid.innerHTML = cards.map((c, i) => `
         <div class="spooky-card" data-idx="${i}" onclick="flipSpookyCard(this, '${c.id}', '${c.wordObj.word}')">
@@ -1456,74 +1458,54 @@ function startSpookyGame(gameIndex) {
         </div>
     `).join('');
 
-    
-    // 4. 定义真实的启动逻辑 (视频画面 + 独立音频版)
+    // 4. 启动逻辑 (保持您已有的分离播放逻辑)
     window.realStartGameAction = function() {
-        // 隐藏遮罩层
         const overlay = document.getElementById('game-start-overlay');
         if(overlay) overlay.style.display = 'none';
 
-        // 获取媒体元素
         gameVideo = document.getElementById('game-video-bg');
         gameBgm = document.getElementById('bgm-spooky');
-        const sfxOpen = document.getElementById('sfx-open'); // 这里会自动获取 index.html 里配好的 GitHub 音频
+        const sfxOpen = document.getElementById('sfx-open');
         const sfxShuffle = document.getElementById('sfx-shuffle');
 
-        // 尝试全屏
         if (container.requestFullscreen) container.requestFullscreen().catch(()=>{});
 
-        // ============ 👇 核心修改在这里 👇 ============
-        
-        // 1. 视频设置：强制【静音】
-        // 这样我们只用它的画面，不管视频文件里有没有声音，都把它关掉
+        // 视频静音，音频独立
         gameVideo.muted = true; 
         gameVideo.volume = 0;
 
-        // 2. 音频设置：播放 GitHub 上的独立开场音乐
         if (sfxOpen) {
             sfxOpen.currentTime = 0;
-            sfxOpen.volume = 1.0; // 音量拉满
-            // 因为用户刚点击了按钮，这里播放 100% 会成功
+            sfxOpen.volume = 1.0; 
             sfxOpen.play().catch(e => console.log("Audio play error:", e));
         }
 
-        // 3. 播放视频画面
         gameVideo.play().catch(e => {
             console.error("Video failed:", e);
             showGameBoard();
         });
 
-        // ============ 👆 修改结束 👆 ============
-
-        // 绑定视频结束事件 (视频播完 -> 显示游戏)
         gameVideo.onended = () => {
-            // 视频播完了，为了平滑过渡，我们停止开场音乐，开始播背景音乐
             if (sfxOpen) sfxOpen.pause(); 
             showGameBoard();
         };
         
-        // 保底定时器
         setTimeout(() => {
             const layer = document.getElementById('game-board-layer');
             if (layer && layer.style.opacity === '0') showGameBoard();
         }, 5000);
     };
 
-    // 显示棋盘的函数
     const showGameBoard = () => {
-        console.log("Showing game board...");
-        
-        // 播放 BGM
         if (gameBgm) { 
             gameBgm.currentTime = 0; 
-            gameBgm.volume = 0.5; // 背景音乐稍微小一点
+            gameBgm.volume = 0.5; 
             gameBgm.play().catch(()=>{}); 
         }
 
         const layer = document.getElementById('game-board-layer');
         if (layer) layer.style.opacity = '1';
         
-        // 播放洗牌音效
         if (sfxShuffle) sfxShuffle.play().catch(()=>{});
         
         const allCards = document.querySelectorAll('.spooky-card');
