@@ -1499,18 +1499,35 @@ function resetSpookyLogic() {
     [sCard1, sCard2, sLock] = [null, null, false];
 }
 
+// ============ 修复版 flipSpookyCard ============
 function flipSpookyCard(el, uid, wordText) {
     if (sLock) return;
     if (el === sCard1) return;
     if (el.classList.contains('matched')) return;
 
+    // 1. 立即执行 UI 动作 (翻牌)
     el.classList.add('flipped');
     
-    const u = new SpeechSynthesisUtterance(wordText);
-    u.lang = 'en-US';
-    if(preferredVoice) u.voice = preferredVoice;
-    speechSynthesis.speak(u);
+    // 2. 尝试朗读 (放在 try-catch 里，防止报错卡死)
+    try {
+        if ('speechSynthesis' in window) {
+            // 停止之前的朗读，防止堆积
+            speechSynthesis.cancel(); 
+            
+            const u = new SpeechSynthesisUtterance(wordText);
+            u.lang = 'en-US';
+            if(preferredVoice) u.voice = preferredVoice;
+            
+            // 降低音量防止爆音
+            u.volume = 1; 
+            
+            speechSynthesis.speak(u);
+        }
+    } catch (e) {
+        console.warn("TTS failed:", e);
+    }
 
+    // 3. 游戏逻辑
     if (!sCard1) {
         sCard1 = { el, uid };
         return;
@@ -1520,67 +1537,77 @@ function flipSpookyCard(el, uid, wordText) {
     checkSpookyMatch();
 }
 
-// ============ 修复版：翻牌判定逻辑 (防止因音频报错导致卡死) ============
+
 // ============ 🛡️ 终极防卡死版 checkSpookyMatch ============
 function checkSpookyMatch() {
     sLock = true;
     
-    // 1. 【关键】立刻把当前的卡片存到局部变量里
-    // 这样就算全局变量 sCard1 后面变了，这里也能记住我们要操作哪两张牌
+    // 1. 【关键】锁定当前操作对象
+    // 防止在延时期间全局变量被修改
     const card1 = sCard1;
     const card2 = sCard2;
-    
     const isMatch = card1.uid === card2.uid;
-    const sfxMatch = document.getElementById('sfx-match'); 
-    const sfxError = document.getElementById('sfx-error'); 
 
-    // 2. 【核心修复】先设置定时器，保证 UI 逻辑 100% 会执行
-    // 无论后面音频是否报错，这个 setTimeout 已经被浏览器记住了
+    // 2. 【核心修复】先设定 UI 恢复逻辑 (UI 优先)
+    // 无论下面声音播不播，这个 setTimeout 必须被注册
     const delay = isMatch ? 800 : 1200;
     
     setTimeout(() => {
-        // 检查元素是否存在（防止中途退出游戏报错）
+        // 安全检查：防止页面已销毁
         if (!card1 || !card1.el || !card2 || !card2.el) {
             resetSpookyLogic();
             return;
         }
 
         if (isMatch) {
-            // --- 配对成功逻辑 ---
+            // 配对成功：消除
             card1.el.classList.add('matched');
             card2.el.classList.add('matched');
             
-            // 检查是否通关
+            // 检查通关
             const left = document.querySelectorAll('.spooky-card:not(.matched)').length;
             if (left === 0) {
-                setTimeout(() => alert("🎉 Group Complete!"), 500);
+                // 延时一点庆祝，防止动画冲突
+                setTimeout(() => alert("🎉 Group Complete!"), 300);
             }
         } else {
-            // --- 配对失败逻辑 ---
-            // 强制移除 flipped 类，让 CSS 动画把它翻回去
+            // 配对失败：翻回去
+            // 强制移除 CSS 类
             card1.el.classList.remove('flipped');
             card2.el.classList.remove('flipped');
         }
         
-        // 解锁，允许下一次点击
+        // 解锁，允许下一次操作
         resetSpookyLogic();
+        
     }, delay);
 
-    // 3. 【最后】再去尝试播放声音 (放在最后，挂了也不影响游戏)
+    // 3. 【最后】尝试播放音效 (作为副作用处理)
+    // 放在最后，并且使用 safePlayAudio，确保绝对不会报错阻断
+    if (isMatch) {
+        safePlayAudio('sfx-match');
+    } else {
+        safePlayAudio('sfx-error');
+    }
+}
+// ============ 🛡️ 音频安全播放辅助函数 ============
+function safePlayAudio(audioId) {
     try {
-        const audio = isMatch ? sfxMatch : sfxError;
-        if (audio) {
-            audio.currentTime = 0;
-            // 使用 catch 捕获所有可能的音频错误
-            const playPromise = audio.play();
-            if (playPromise !== undefined) {
-                playPromise.catch(e => {
-                    // 静默失败，不要在控制台报错干扰执行
-                    // console.log("Audio ignored:", e); 
-                });
-            }
+        const audio = document.getElementById(audioId);
+        if (!audio) return;
+        
+        audio.currentTime = 0;
+        // 尝试播放
+        const playPromise = audio.play();
+        
+        // 如果浏览器返回 Promise (现代浏览器都会)，我们需要捕获错误
+        if (playPromise !== undefined) {
+            playPromise.catch(error => {
+                // 静默失败：只在后台打印，绝不阻断代码
+                console.warn("Audio play blocked (benign):", error);
+            });
         }
     } catch (e) {
-        // 忽略所有音频相关的崩溃
+        console.warn("Audio element error:", e);
     }
 }
