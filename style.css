@@ -151,7 +151,17 @@ input:checked + .slider:before { transform: translateX(16px); }
 .detail-tabs { display: flex; justify-content: center; background: #fff; border-bottom: 1px solid var(--border); padding-top: 10px; }
 .detail-tabs button { padding: 10px 30px; font-size: 15px; font-weight: 800; color: #999; border-bottom: 3px solid transparent; transition: 0.2s; margin-bottom: -1px; }
 .detail-tabs button.active { color: var(--primary); border-bottom-color: var(--primary); color: var(--primary); }
-.tab-content-area { flex: 1; padding: 0; overflow-y: auto; display: flex; flex-direction: column; align-items: center; background: #f8f9fa; scroll-behavior: smooth; }
+/* ============ 1. 详情页内容区域 (还原) ============ */
+.tab-content-area { 
+    flex: 1; 
+    padding: 0;   /* 【还原】普通模式下不需要顶部内边距 */
+    overflow-y: auto; 
+    display: flex; 
+    flex-direction: column; 
+    align-items: center; 
+    background: #f8f9fa; 
+    scroll-behavior: smooth; 
+}
 
 /* 吸顶导航 */
 .rich-nav { position: sticky; top: 0; z-index: 20; background: #fff; width: 100%; padding: 15px 40px; box-sizing: border-box; display: flex; gap: 10px; overflow-x: auto; border-bottom: 1px solid #eee; box-shadow: 0 2px 8px rgba(0,0,0,0.02); min-height: 60px; flex-shrink: 0; }
@@ -567,18 +577,20 @@ input:checked + .slider:before { transform: translateX(16px); }
     object-fit: contain;
     display: block;
 }
-/* ============ 底部大号 Next 按钮 (优化版) ============ */
+
+
+/* ============ 2. 底部大号 Next 按钮 (还原) ============ */
 .btn-big-next {
-    /* 改用 flex 布局，让文字和图标完美对齐 */
     display: flex;
     align-items: center;
     justify-content: center;
-    
     width: 100%;
     max-width: 320px;
-    margin: 40px auto 60px;
-    padding: 18px 0;
     
+    /* 【还原】普通模式下保持宽松的间距 */
+    margin: 40px auto 60px; 
+    
+    padding: 18px 0;
     background: var(--primary);
     color: #fff;
     font-size: 20px;
@@ -586,7 +598,7 @@ input:checked + .slider:before { transform: translateX(16px); }
     border-radius: 50px;
     box-shadow: 0 8px 25px rgba(91, 103, 241, 0.4);
     transition: all 0.2s ease;
-    cursor: pointer; /* 确保鼠标是手型 */
+    cursor: pointer;
 }
 
 .btn-big-next:hover {
@@ -691,37 +703,66 @@ input:checked + .slider:before { transform: translateX(16px); }
     justify-content: center;
     overflow-y: auto;
 }
+
+
 /* ============ 📺 全屏沉浸模式专属优化 ============ */
 
-/* 1. 放大白底卡片 */
-#tab-content-area:fullscreen .quiz-box {
-    max-width: 1400px;        /* 宽度：从 1000px -> 1400px */
-    width: 95%;               /* 宽度占比：更宽 */
-    min-height: 75vh;         /* 高度：至少占据屏幕高度的 75% */
-    padding: 60px 80px;       /* 内边距：更宽敞，呼吸感更强 */
+/* 1. 全屏容器：增加顶部留白，防止页码切头 */
+#tab-content-area:fullscreen {
+    background-color: var(--bg-gray);
     
-    /* 保持内容垂直居中 */
+    /* 【核心修改】只在全屏时增加顶部内边距 (10px)，给页码留出空间 */
+    padding: 10px 0 0 0; 
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow-y: auto;
+    
+    /* 改为 flex-start 配合 padding，防止内容过多时居中导致头部被切 */
+    justify-content: flex-start; 
+}
+
+/* 2. 全屏时的白底卡片 */
+#tab-content-area:fullscreen .quiz-box {
+    max-width: 1400px;
+    width: 95%;
+    /* 稍微减小最小高度，因为我们加了 padding-top，防止撑破屏幕 */
+    min-height: 75vh; 
+    padding: 60px 80px;
+    
     display: flex;
     flex-direction: column;
     justify-content: center; 
+    /* 增加一点下边距，和 Next 按钮拉开距离 */
+    margin-bottom: 20px; 
 }
 
-/* 2. 放大题目文字 */
+/* 3. 全屏时的 Next 按钮：间距改小 */
+#tab-content-area:fullscreen .btn-big-next {
+    max-width: 400px;
+    font-size: 24px;
+    padding: 20px 0;
+    
+    /* 【核心修改】全屏时缩小上下间距，看起来更紧凑 */
+    margin-top: 20px;    
+    margin-bottom: 20px; 
+}
+
+/* --- 以下保持不变 --- */
 #tab-content-area:fullscreen .quiz-q {
-    font-size: 38px;          /* 字号：28px -> 38px */
+    font-size: 38px;
     margin-bottom: 60px;
     line-height: 1.4;
 }
 
-/* 3. 放大选项按钮 */
 #tab-content-area:fullscreen .opt-btn {
-    font-size: 26px;          /* 字号：22px -> 26px */
+    font-size: 26px;
     padding: 25px 40px;
-    min-height: 110px;        /* 按钮更高，更容易点击 */
+    min-height: 110px;
     border-radius: 16px;
 }
 
-/* 4. 放大 ABCD 圆圈 */
 #tab-content-area:fullscreen .opt-btn span {
     width: 56px;
     height: 56px;
@@ -729,17 +770,7 @@ input:checked + .slider:before { transform: translateX(16px); }
     margin-right: 20px;
 }
 
-/* 5. 放大底部的 Next 按钮 */
-#tab-content-area:fullscreen .btn-big-next {
-    max-width: 400px;
-    font-size: 24px;
-    padding: 22px 0;
-    margin-top: 50px;
-    margin-bottom: 80px;      /* 底部多留点空，防止贴底 */
-}
-
-/* 6. 如果是游戏题，把游戏窗口也放大 */
 #tab-content-area:fullscreen .game-wrapper {
-    max-width: 1100px;        /* 游戏窗口变得超大 */
-    aspect-ratio: 16 / 9;     /* 变成宽屏比例，视野更好 */
+    max-width: 700px;
+    aspect-ratio: 16 / 9;
 }
