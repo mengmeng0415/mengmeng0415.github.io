@@ -1521,49 +1521,66 @@ function flipSpookyCard(el, uid, wordText) {
 }
 
 // ============ 修复版：翻牌判定逻辑 (防止因音频报错导致卡死) ============
+// ============ 🛡️ 终极防卡死版 checkSpookyMatch ============
 function checkSpookyMatch() {
     sLock = true;
-    const isMatch = sCard1.uid === sCard2.uid;
     
+    // 1. 【关键】立刻把当前的卡片存到局部变量里
+    // 这样就算全局变量 sCard1 后面变了，这里也能记住我们要操作哪两张牌
+    const card1 = sCard1;
+    const card2 = sCard2;
+    
+    const isMatch = card1.uid === card2.uid;
     const sfxMatch = document.getElementById('sfx-match'); 
     const sfxError = document.getElementById('sfx-error'); 
 
-    // 定义一个安全的播放函数：无论成功失败，绝不报错卡死代码
-    const safePlay = (audioEl) => {
-        if (audioEl) {
-            try {
-                audioEl.currentTime = 0;
-                // catch 住 promise 错误，防止红屏报错
-                audioEl.play().catch(e => console.log("Audio skipped:", e));
-            } catch (e) {
-                console.log("Audio element error:", e);
-            }
-        }
-    };
-
-    if (isMatch) {
-        safePlay(sfxMatch); // 播放正确音效
-        
-        setTimeout(() => {
-            // 确保元素还存在才操作，防止中途退出游戏导致报错
-            if (sCard1 && sCard1.el) sCard1.el.classList.add('matched');
-            if (sCard2 && sCard2.el) sCard2.el.classList.add('matched');
-            
+    // 2. 【核心修复】先设置定时器，保证 UI 逻辑 100% 会执行
+    // 无论后面音频是否报错，这个 setTimeout 已经被浏览器记住了
+    const delay = isMatch ? 800 : 1200;
+    
+    setTimeout(() => {
+        // 检查元素是否存在（防止中途退出游戏报错）
+        if (!card1 || !card1.el || !card2 || !card2.el) {
             resetSpookyLogic();
+            return;
+        }
+
+        if (isMatch) {
+            // --- 配对成功逻辑 ---
+            card1.el.classList.add('matched');
+            card2.el.classList.add('matched');
             
-            if (document.querySelectorAll('.spooky-card:not(.matched)').length === 0) {
+            // 检查是否通关
+            const left = document.querySelectorAll('.spooky-card:not(.matched)').length;
+            if (left === 0) {
                 setTimeout(() => alert("🎉 Group Complete!"), 500);
             }
-        }, 800);
-    } else {
-        safePlay(sfxError); // 播放错误音效
+        } else {
+            // --- 配对失败逻辑 ---
+            // 强制移除 flipped 类，让 CSS 动画把它翻回去
+            card1.el.classList.remove('flipped');
+            card2.el.classList.remove('flipped');
+        }
         
-        setTimeout(() => {
-            // 核心修复：就算没声音，1.2秒后也必须把牌翻回去
-            if (sCard1 && sCard1.el) sCard1.el.classList.remove('flipped');
-            if (sCard2 && sCard2.el) sCard2.el.classList.remove('flipped');
-            
-            resetSpookyLogic(); // 解锁，允许下一次点击
-        }, 1200);
+        // 解锁，允许下一次点击
+        resetSpookyLogic();
+    }, delay);
+
+    // 3. 【最后】再去尝试播放声音 (放在最后，挂了也不影响游戏)
+    try {
+        const audio = isMatch ? sfxMatch : sfxError;
+        if (audio) {
+            audio.currentTime = 0;
+            // 使用 catch 捕获所有可能的音频错误
+            const playPromise = audio.play();
+            if (playPromise !== undefined) {
+                playPromise.catch(e => {
+                    // 静默失败，不要在控制台报错干扰执行
+                    // console.log("Audio ignored:", e); 
+                });
+            }
+        }
+    } catch (e) {
+        // 忽略所有音频相关的崩溃
     }
 }
