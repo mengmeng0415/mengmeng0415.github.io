@@ -693,16 +693,7 @@ input:checked + .slider:before { transform: translateX(16px); }
     box-shadow: 0 8px 25px rgba(91, 103, 241, 0.3);
 }
 
-/* 适配全屏后的背景色 */
-#tab-content-area:fullscreen {
-    background-color: #f4f7f9; /* 保持浅灰背景，保护眼睛 */
-    padding: 20px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    overflow-y: auto;
-}
+
 
 
 /* ============ 📺 全屏沉浸模式专属优化 (兼容版) ============ */
