@@ -691,3 +691,55 @@ input:checked + .slider:before { transform: translateX(16px); }
     justify-content: center;
     overflow-y: auto;
 }
+/* ============ 📺 全屏沉浸模式专属优化 ============ */
+
+/* 1. 放大白底卡片 */
+#tab-content-area:fullscreen .quiz-box {
+    max-width: 1400px;        /* 宽度：从 1000px -> 1400px */
+    width: 95%;               /* 宽度占比：更宽 */
+    min-height: 75vh;         /* 高度：至少占据屏幕高度的 75% */
+    padding: 60px 80px;       /* 内边距：更宽敞，呼吸感更强 */
+    
+    /* 保持内容垂直居中 */
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+}
+
+/* 2. 放大题目文字 */
+#tab-content-area:fullscreen .quiz-q {
+    font-size: 38px;          /* 字号：28px -> 38px */
+    margin-bottom: 60px;
+    line-height: 1.4;
+}
+
+/* 3. 放大选项按钮 */
+#tab-content-area:fullscreen .opt-btn {
+    font-size: 26px;          /* 字号：22px -> 26px */
+    padding: 25px 40px;
+    min-height: 110px;        /* 按钮更高，更容易点击 */
+    border-radius: 16px;
+}
+
+/* 4. 放大 ABCD 圆圈 */
+#tab-content-area:fullscreen .opt-btn span {
+    width: 56px;
+    height: 56px;
+    font-size: 24px;
+    margin-right: 20px;
+}
+
+/* 5. 放大底部的 Next 按钮 */
+#tab-content-area:fullscreen .btn-big-next {
+    max-width: 400px;
+    font-size: 24px;
+    padding: 22px 0;
+    margin-top: 50px;
+    margin-bottom: 80px;      /* 底部多留点空，防止贴底 */
+}
+
+/* 6. 如果是游戏题，把游戏窗口也放大 */
+#tab-content-area:fullscreen .game-wrapper {
+    max-width: 1100px;        /* 游戏窗口变得超大 */
+    aspect-ratio: 16 / 9;     /* 变成宽屏比例，视野更好 */
+}
