@@ -1456,8 +1456,8 @@ function startSpookyGame(gameIndex) {
         </div>
     `).join('');
 
-    // 4. 定义真实的启动逻辑 (点击按钮后触发)
-    // 把它挂载到 window 上，让 HTML 里的 onclick 能访问到
+    
+    // 4. 定义真实的启动逻辑 (视频画面 + 独立音频版)
     window.realStartGameAction = function() {
         // 隐藏遮罩层
         const overlay = document.getElementById('game-start-overlay');
@@ -1466,32 +1466,43 @@ function startSpookyGame(gameIndex) {
         // 获取媒体元素
         gameVideo = document.getElementById('game-video-bg');
         gameBgm = document.getElementById('bgm-spooky');
-        const sfxOpen = document.getElementById('sfx-open');
+        const sfxOpen = document.getElementById('sfx-open'); // 这里会自动获取 index.html 里配好的 GitHub 音频
         const sfxShuffle = document.getElementById('sfx-shuffle');
 
         // 尝试全屏
         if (container.requestFullscreen) container.requestFullscreen().catch(()=>{});
 
-        // 【关键】此时是用户刚点击完，浏览器允许播放一切声音！
-        gameVideo.muted = false;
-        gameVideo.volume = 1.0;
+        // ============ 👇 核心修改在这里 👇 ============
         
-        // 播放开场音效 (可选)
-        // if (sfxOpen) { sfxOpen.volume = 1.0; sfxOpen.play().catch(e=>console.log(e)); }
+        // 1. 视频设置：强制【静音】
+        // 这样我们只用它的画面，不管视频文件里有没有声音，都把它关掉
+        gameVideo.muted = true; 
+        gameVideo.volume = 0;
 
-        // 播放视频
-        gameVideo.play().then(() => {
-            console.log("Video started successfully with sound!");
-        }).catch(e => {
+        // 2. 音频设置：播放 GitHub 上的独立开场音乐
+        if (sfxOpen) {
+            sfxOpen.currentTime = 0;
+            sfxOpen.volume = 1.0; // 音量拉满
+            // 因为用户刚点击了按钮，这里播放 100% 会成功
+            sfxOpen.play().catch(e => console.log("Audio play error:", e));
+        }
+
+        // 3. 播放视频画面
+        gameVideo.play().catch(e => {
             console.error("Video failed:", e);
-            // 失败保底：直接跳过视频显示游戏
             showGameBoard();
         });
 
-        // 绑定视频结束事件
-        gameVideo.onended = showGameBoard;
+        // ============ 👆 修改结束 👆 ============
+
+        // 绑定视频结束事件 (视频播完 -> 显示游戏)
+        gameVideo.onended = () => {
+            // 视频播完了，为了平滑过渡，我们停止开场音乐，开始播背景音乐
+            if (sfxOpen) sfxOpen.pause(); 
+            showGameBoard();
+        };
         
-        // 保底定时器 (防止视频卡死)
+        // 保底定时器
         setTimeout(() => {
             const layer = document.getElementById('game-board-layer');
             if (layer && layer.style.opacity === '0') showGameBoard();
