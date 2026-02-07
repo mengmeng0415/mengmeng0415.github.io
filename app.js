@@ -1395,10 +1395,13 @@ function clearCustomGames() {
 // ============ 🃏 Spooky Game Engine (黑屏修复版) ============
 let gameVideo, gameBgm;
 
+
+// ============ 🛡️ 终极方案：带启动按钮的 startSpookyGame ============
 function startSpookyGame(gameIndex) {
     const gameData = state.customGames[gameIndex];
     if (!gameData) return;
 
+    // 1. 构建全屏容器
     let container = document.getElementById('game-fullscreen-container');
     if (!container) {
         container = document.createElement('div');
@@ -1406,11 +1409,18 @@ function startSpookyGame(gameIndex) {
         document.body.appendChild(container);
     }
     
-    // 【核心修复】src 强制使用 CDN 链接
+    // 【修改点】新增了一个 .game-start-overlay 遮罩层和按钮
     container.innerHTML = `
-        <video id="game-video-bg" muted playsinline style="position: absolute; width: 100%; height: 100%; object-fit: cover;">
+        <video id="game-video-bg" playsinline style="position: absolute; width: 100%; height: 100%; object-fit: cover;">
             <source src="https://cdn.jsdelivr.net/gh/mengmeng0415/wordpic01/spooky.mp4" type="video/mp4">
         </video>
+        
+        <div id="game-start-overlay" class="game-start-overlay">
+            <div style="font-size:60px; margin-bottom:20px;">🎃</div>
+            <button class="btn-game-start" onclick="realStartGameAction()">▶ START GAME</button>
+            <p style="margin-top:15px; opacity:0.8;">Click to enable sound</p>
+        </div>
+
         <button class="btn-exit-game" onclick="exitSpookyGame()">退出游戏</button>
         <div id="game-board-layer" style="opacity: 0; transition: opacity 1s;">
             <h2 style="color:#fff; text-shadow:0 2px 10px #000; margin-bottom:20px; margin-top: 60px;">${gameData.title}</h2>
@@ -1418,20 +1428,20 @@ function startSpookyGame(gameIndex) {
         </div>
     `;
 
+    // 2. 准备卡片数据 (保持不变)
     const cards = [];
     gameData.words.forEach(uid => {
         const w = DataManager.getWordDetail(uid);
         if (!w) return;
         cards.push({ id: uid, type: 'word', content: w.word, wordObj: w });
-        
         let imgUrl = null;
         if (w.images && w.images.card && w.images.card.length > 0) imgUrl = w.images.card[0];
         else if (w.displayImages && w.displayImages.length > 0) imgUrl = w.displayImages[0];
         cards.push({ id: uid, type: 'image', content: imgUrl || 'No Img', wordObj: w });
     });
-
     cards.sort(() => Math.random() - 0.5);
 
+    // 3. 渲染卡片 (保持不变)
     const grid = document.getElementById('spooky-grid');
     if (cards.length <= 4) grid.style.gridTemplateColumns = 'repeat(2, 1fr)';
     else if (cards.length <= 6) grid.style.gridTemplateColumns = 'repeat(3, 1fr)';
@@ -1446,40 +1456,69 @@ function startSpookyGame(gameIndex) {
         </div>
     `).join('');
 
-    gameVideo = document.getElementById('game-video-bg');
-    gameBgm = document.getElementById('bgm-spooky');
-    const sfxOpen = document.getElementById('sfx-open');
-    const sfxShuffle = document.getElementById('sfx-shuffle');
+    // 4. 定义真实的启动逻辑 (点击按钮后触发)
+    // 把它挂载到 window 上，让 HTML 里的 onclick 能访问到
+    window.realStartGameAction = function() {
+        // 隐藏遮罩层
+        const overlay = document.getElementById('game-start-overlay');
+        if(overlay) overlay.style.display = 'none';
 
-    if (container.requestFullscreen) container.requestFullscreen().catch(()=>{});
+        // 获取媒体元素
+        gameVideo = document.getElementById('game-video-bg');
+        gameBgm = document.getElementById('bgm-spooky');
+        const sfxOpen = document.getElementById('sfx-open');
+        const sfxShuffle = document.getElementById('sfx-shuffle');
 
-    let hasStarted = false;
-    const showGameBoard = () => {
-        if (hasStarted) return;
-        hasStarted = true;
-        console.log("Game Interface Showing...");
+        // 尝试全屏
+        if (container.requestFullscreen) container.requestFullscreen().catch(()=>{});
+
+        // 【关键】此时是用户刚点击完，浏览器允许播放一切声音！
+        gameVideo.muted = false;
+        gameVideo.volume = 1.0;
         
-        if (gameBgm) { gameBgm.currentTime = 0; gameBgm.play().catch(()=>{}); }
+        // 播放开场音效 (可选)
+        // if (sfxOpen) { sfxOpen.volume = 1.0; sfxOpen.play().catch(e=>console.log(e)); }
+
+        // 播放视频
+        gameVideo.play().then(() => {
+            console.log("Video started successfully with sound!");
+        }).catch(e => {
+            console.error("Video failed:", e);
+            // 失败保底：直接跳过视频显示游戏
+            showGameBoard();
+        });
+
+        // 绑定视频结束事件
+        gameVideo.onended = showGameBoard;
+        
+        // 保底定时器 (防止视频卡死)
+        setTimeout(() => {
+            const layer = document.getElementById('game-board-layer');
+            if (layer && layer.style.opacity === '0') showGameBoard();
+        }, 5000);
+    };
+
+    // 显示棋盘的函数
+    const showGameBoard = () => {
+        console.log("Showing game board...");
+        
+        // 播放 BGM
+        if (gameBgm) { 
+            gameBgm.currentTime = 0; 
+            gameBgm.volume = 0.5; // 背景音乐稍微小一点
+            gameBgm.play().catch(()=>{}); 
+        }
+
         const layer = document.getElementById('game-board-layer');
         if (layer) layer.style.opacity = '1';
         
+        // 播放洗牌音效
         if (sfxShuffle) sfxShuffle.play().catch(()=>{});
+        
         const allCards = document.querySelectorAll('.spooky-card');
         allCards.forEach(c => c.classList.add('shuffling'));
         setTimeout(() => { allCards.forEach(c => c.classList.remove('shuffling')); }, 1000);
     };
-
-    gameVideo.onended = showGameBoard;
-    gameVideo.onerror = () => { console.log("Video Load Error"); showGameBoard(); }; 
-
-    if (sfxOpen) sfxOpen.play().catch(()=>{});
-    
-    setTimeout(() => { if (!hasStarted) showGameBoard(); }, 4000);
-
-    const playPromise = gameVideo.play();
-    if (playPromise !== undefined) {
-        playPromise.catch(() => { showGameBoard(); });
-    }
 
     resetSpookyLogic();
 }

@@ -1060,3 +1060,37 @@ input:checked + .slider:before { transform: translateX(16px); }
     100% { transform: translate(0,0); }
 }
 .shuffling .spooky-card { animation: shuffleDeck 0.3s ease-in-out infinite; }
+/* ============ 🎮 游戏启动遮罩层 ============ */
+.game-start-overlay {
+    position: absolute; top: 0; left: 0; width: 100%; height: 100%;
+    background: rgba(0, 0, 0, 0.8); /* 半透明黑底 */
+    z-index: 50; /* 在视频之上，棋盘之下 */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+}
+
+.btn-game-start {
+    padding: 15px 50px;
+    font-size: 28px;
+    font-weight: 800;
+    color: #fff;
+    background: linear-gradient(45deg, #ff5252, #f48fb1);
+    border: 4px solid #fff;
+    border-radius: 50px;
+    cursor: pointer;
+    box-shadow: 0 0 20px rgba(255, 82, 82, 0.6);
+    transition: transform 0.2s;
+    animation: pulseBtn 1.5s infinite;
+}
+
+.btn-game-start:hover { transform: scale(1.1); }
+.btn-game-start:active { transform: scale(0.95); }
+
+@keyframes pulseBtn {
+    0% { transform: scale(1); box-shadow: 0 0 0 0 rgba(255, 255, 255, 0.7); }
+    70% { transform: scale(1.05); box-shadow: 0 0 0 15px rgba(255, 255, 255, 0); }
+    100% { transform: scale(1); box-shadow: 0 0 0 0 rgba(255, 255, 255, 0); }
+}
