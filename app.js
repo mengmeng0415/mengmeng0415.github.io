@@ -1520,6 +1520,7 @@ function flipSpookyCard(el, uid, wordText) {
     checkSpookyMatch();
 }
 
+// ============ 修复版：翻牌判定逻辑 (防止因音频报错导致卡死) ============
 function checkSpookyMatch() {
     sLock = true;
     const isMatch = sCard1.uid === sCard2.uid;
@@ -1527,13 +1528,27 @@ function checkSpookyMatch() {
     const sfxMatch = document.getElementById('sfx-match'); 
     const sfxError = document.getElementById('sfx-error'); 
 
+    // 定义一个安全的播放函数：无论成功失败，绝不报错卡死代码
+    const safePlay = (audioEl) => {
+        if (audioEl) {
+            try {
+                audioEl.currentTime = 0;
+                // catch 住 promise 错误，防止红屏报错
+                audioEl.play().catch(e => console.log("Audio skipped:", e));
+            } catch (e) {
+                console.log("Audio element error:", e);
+            }
+        }
+    };
+
     if (isMatch) {
-        sfxMatch.currentTime = 0;
-        sfxMatch.play();
+        safePlay(sfxMatch); // 播放正确音效
         
         setTimeout(() => {
-            sCard1.el.classList.add('matched');
-            sCard2.el.classList.add('matched');
+            // 确保元素还存在才操作，防止中途退出游戏导致报错
+            if (sCard1 && sCard1.el) sCard1.el.classList.add('matched');
+            if (sCard2 && sCard2.el) sCard2.el.classList.add('matched');
+            
             resetSpookyLogic();
             
             if (document.querySelectorAll('.spooky-card:not(.matched)').length === 0) {
@@ -1541,13 +1556,14 @@ function checkSpookyMatch() {
             }
         }, 800);
     } else {
-        sfxError.currentTime = 0;
-        sfxError.play();
+        safePlay(sfxError); // 播放错误音效
         
         setTimeout(() => {
-            sCard1.el.classList.remove('flipped');
-            sCard2.el.classList.remove('flipped');
-            resetSpookyLogic();
+            // 核心修复：就算没声音，1.2秒后也必须把牌翻回去
+            if (sCard1 && sCard1.el) sCard1.el.classList.remove('flipped');
+            if (sCard2 && sCard2.el) sCard2.el.classList.remove('flipped');
+            
+            resetSpookyLogic(); // 解锁，允许下一次点击
         }, 1200);
     }
 }
