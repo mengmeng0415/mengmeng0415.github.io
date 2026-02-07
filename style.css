@@ -407,7 +407,7 @@ input:checked + .slider:before { transform: translateX(16px); }
 .big-image { display: block; width: calc(100% - 40px); max-width: 800px; margin: 0 auto 30px; border-radius: 12px; box-shadow: 0 4px 15px rgba(0,0,0,0.1); cursor: zoom-in; }
 
 .rich-img-group { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; padding: 0 20px; margin: 20px 0; width: 100%; box-sizing: border-box; }
-.rich-img-group img { width: 100%; aspect-ratio: 4 / 3; object-fit: cover; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.05); cursor: zoom-in; transition: transform 0.2s ease; display: block; background: #f0f0f0; }
+.rich-img-group img { width: 100%; aspect-ratio: 16 / 9; object-fit: cover; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.05); cursor: zoom-in; transition: transform 0.2s ease; display: block; background: #f0f0f0; }
 .rich-img-group img:hover { transform: scale(1.03); box-shadow: 0 5px 15px rgba(0,0,0,0.15); }
 @media (max-width: 600px) { .rich-img-group { grid-template-columns: repeat(2, 1fr); } }
 
@@ -420,6 +420,36 @@ input:checked + .slider:before { transform: translateX(16px); }
 .scene-images[data-count="2"] { grid-template-columns: 1fr 1fr; }
 .scene-images:not([data-count="1"]):not([data-count="2"]) { grid-template-columns: 1fr 1fr 1fr; }
 
+/* ============ [IMG] 单张图片特大号显示优化 ============ */
+
+/* 1. 容器改为居中布局 (覆盖原来的 Grid 3列) */
+.rich-img-group[data-count="1"] {
+    display: flex !important;    /* 强制改为 Flex */
+    justify-content: center;     /* 水平居中 */
+    grid-template-columns: none; /* 取消网格列限制 */
+    padding: 0;                  /* 去掉多余边距 */
+}
+
+/* 2. 图片本身放大并保持原比例 */
+.rich-img-group[data-count="1"] img {
+    /* 【宽度调整】 */
+    width: auto;                 /* 宽度自动，不再强制 100% 撑满格子 */
+    max-width: 100%;             /* 保证不超过屏幕宽度 */
+    
+    /* 如果您想让它尽可能大，可以设置最小宽度，比如： */
+    /* min-width: 300px; */
+
+    /* 【高度限制】防止竖图太高占满屏幕 */
+    max-height: 500px;           
+    
+    /* 【比例恢复】关键！取消默认的 4/3 裁剪，显示完整原图 */
+    aspect-ratio: auto;          
+    
+    /* 增加阴影，更有质感 */
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1); 
+    margin: 0 auto;
+}
+
 /* ============ 1. 游戏容器 (用于 Tab 页和 Quiz 页) ============ */
 .game-container { width: 100%; display: flex; justify-content: center; padding: 20px 0; margin-bottom: 50px; }
 .game-wrapper { width: 100%; max-width: 400px; aspect-ratio: 500 / 380; border-radius: 12px; overflow: hidden; box-shadow: 0 4px 20px rgba(0,0,0,0.1); background: #000; border: 1px solid #eee; }
@@ -430,6 +460,101 @@ input:checked + .slider:before { transform: translateX(16px); }
 .rich-game-item iframe { width: 100%; height: 100%; border: none; display: block; }
 @media (max-width: 300px) { .rich-game-group { grid-template-columns: 1fr; } }
 
+
+/* ============ 图片 Tab 专属样式 ============ */
+
+/* 1. 白底大卡片容器 */
+.image-box {
+    background: #fff;
+    padding: 30px;           /* 内边距 */
+    border-radius: 20px;     /* 圆角 */
+    box-shadow: 0 4px 15px rgba(0,0,0,0.05); /* 阴影 */
+    width: 100%;
+    max-width: 1000px;       /* 限制最大宽度 */
+    margin: 20px auto;       /* 居中 */
+    box-sizing: border-box;
+    
+    /* 保证盒子有一定高度，且内容垂直居中 */
+    min-height: 400px;       
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+    align-items: center;     /* 水平居中 */
+}
+
+/* 2. 图片网格容器 */
+.scene-images {
+    width: 100%;
+    display: grid;
+    gap: 20px;
+}
+
+/* 3. 图片 wrapper 和 图片本身 */
+.scene-img-wrapper {
+    width: 100%;
+    border-radius: 12px;
+    overflow: hidden;
+    /* 给个默认背景色，图片加载出来前好看点 */
+    background: #f8f9fa; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.scene-image {
+    width: 100%;
+    height: 100%;
+    object-fit: contain; /* 保持比例 */
+    cursor: zoom-in;
+    transition: transform 0.2s ease;
+    border-radius: 12px;
+}
+.scene-image:hover {
+    transform: scale(1.02);
+}
+
+/* ============ 核心：单张图片特殊处理 ============ */
+
+/* 当只有 1 张图时 */
+.scene-images[data-count="1"] {
+    display: flex;           /* 改用 Flex 布局 */
+    justify-content: center; /* 水平居中 */
+    align-items: center;     /* 垂直居中 */
+    height: 100%;
+}
+
+.scene-images[data-count="1"] .scene-img-wrapper {
+    width: auto;             /* 宽度自动，不撑满整行 */
+    max-width: 100%;
+    background: transparent; /* 单图时去掉灰色背景 */
+}
+
+.scene-images[data-count="1"] .scene-image {
+    max-height: 500px;       /* 限制最大高度，防止图太长 */
+    width: auto;             /* 宽度自适应 */
+    max-width: 100%;         /* 但不能超过容器 */
+    box-shadow: 0 4px 20px rgba(0,0,0,0.1); /* 加点投影更精致 */
+}
+
+/* ============ 多张图片布局 ============ */
+
+/* 当有 2 张图时 */
+.scene-images[data-count="2"] {
+    grid-template-columns: 1fr 1fr;
+}
+
+/* 当有 3 张及以上图时 */
+.scene-images:not([data-count="1"]):not([data-count="2"]) {
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+}
+
+/* 针对全屏模式的适配 (可选，让全屏时白底也变大) */
+#tab-content-area:fullscreen .image-box,
+#tab-content-area.pseudo-fullscreen .image-box {
+    max-width: 1400px;
+    min-height: 75vh;
+    padding: 60px;
+}
 /* ============ Quiz & Matching (UI 优化版) ============ */
 
 /* 1. 题目大白卡片：固定最小高度 + 垂直居中 */
@@ -797,3 +922,141 @@ input:checked + .slider:before { transform: translateX(16px); }
     /* 调整页码栏和下面白卡片的距离 */
     margin-bottom: 10px; 
 }
+/* ============ 进度信息 (左下角外部) ============ */
+.quiz-info-text {
+    position: absolute;
+    left: 0;
+    bottom: -60px; /* 放在白卡片下方 */
+    width: 100%;
+    text-align: left; /* 左对齐 */
+    
+    font-size: 18px;
+    color: #888;
+    line-height: 1.5;
+    pointer-events: none; /* 防止遮挡点击 */
+    white-space: nowrap;
+}
+
+/* 全屏模式下，稍微往下一点，防止太挤 */
+#tab-content-area:fullscreen .quiz-info-text,
+#tab-content-area.pseudo-fullscreen .quiz-info-text {
+    bottom: -70px;
+    font-size: 20px; /* 全屏时字号稍大一点点 */
+}
+/* ============ 🃏 创建游戏模式 UI ============ */
+.btn-create-game {
+    width: 100%;
+    padding: 10px;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    border-radius: 8px;
+    font-weight: bold;
+    box-shadow: 0 4px 10px rgba(118, 75, 162, 0.3);
+    transition: all 0.2s;
+}
+.btn-create-game:active { transform: scale(0.98); }
+
+.btn-action-primary { flex:1; background: var(--primary); color:#fff; padding:8px; border-radius:6px; }
+.btn-action-cancel { flex:1; background: #eee; color:#666; padding:8px; border-radius:6px; }
+
+/* 复选框样式 */
+.word-checkbox {
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+    accent-color: var(--primary);
+    cursor: pointer;
+}
+
+/* 弹窗样式 */
+.modal-overlay {
+    position: fixed; top:0; left:0; width:100%; height:100%;
+    background: rgba(0,0,0,0.5); z-index: 2000;
+    display: flex; justify-content: center; align-items: center;
+}
+.config-box {
+    background: #fff; padding: 30px; border-radius: 15px; width: 300px;
+    text-align: center; box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+}
+.config-row { margin: 20px 0; display: flex; justify-content: space-between; align-items: center; }
+.config-row select { padding: 8px; border-radius: 6px; border: 1px solid #ccc; }
+.config-actions { display: flex; gap: 10px; justify-content: flex-end; }
+.btn-confirm { background: var(--primary); color: #fff; padding: 8px 20px; border-radius: 6px; }
+
+/* ============ 🎬 游戏场景与视频背景 ============ */
+#game-fullscreen-container {
+    position: fixed; top: 0; left: 0; width: 100vw; height: 100vh;
+    background: #000; z-index: 99999;
+    display: flex; flex-direction: column; align-items: center; justify-content: center;
+}
+
+/* 视频层：作为背景 */
+#game-video-bg {
+    position: absolute; top: 0; left: 0; width: 100%; height: 100%;
+    object-fit: cover; z-index: 1;
+    opacity: 1; transition: opacity 0.5s;
+}
+
+/* 游戏层：覆盖在视频上 */
+#game-board-layer {
+    position: relative; z-index: 10;
+    width: 100%; max-width: 1000px;
+    display: flex; flex-direction: column; align-items: center;
+    opacity: 0; transition: opacity 1s; /* 初始隐藏，等视频播完显示 */
+}
+
+/* 退出按钮 */
+.btn-exit-game {
+    position: absolute; top: 20px; right: 20px; z-index: 20;
+    background: rgba(255,255,255,0.2); color: #fff; border: 1px solid #fff;
+    padding: 5px 15px; border-radius: 20px; backdrop-filter: blur(5px);
+}
+
+/* ============ 🎴 翻牌卡片样式 (Spooky风格) ============ */
+.spooky-grid {
+    display: grid; 
+    grid-template-columns: repeat(5, 1fr); /* 默认5列 */
+    gap: 15px; width: 95%; perspective: 1000px;
+}
+
+.spooky-card {
+    position: relative; aspect-ratio: 3/4; cursor: pointer;
+    transform-style: preserve-3d; transition: transform 0.6s cubic-bezier(0.4, 0.0, 0.2, 1);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.5);
+}
+
+.spooky-card.flipped { transform: rotateY(180deg); }
+.spooky-card.matched { visibility: hidden; opacity: 0; transition: opacity 0.5s 0.5s; } /* 配对后消失 */
+
+.face {
+    position: absolute; width: 100%; height: 100%;
+    backface-visibility: hidden; border-radius: 10px;
+    display: flex; justify-content: center; align-items: center;
+    border: 2px solid rgba(255,255,255,0.5);
+}
+
+/* 背面 (图案) */
+.face.back {
+    background: #2c3e50; /* 如果没有spooky背景图，用深色 */
+    background-image: repeating-linear-gradient(45deg, #2c3e50 0, #2c3e50 10px, #34495e 10px, #34495e 20px);
+    display: flex; justify-content: center; align-items: center;
+    color: #fff; font-size: 24px;
+}
+
+/* 正面 (内容) */
+.face.front {
+    background: rgba(255,255,255,0.95);
+    transform: rotateY(180deg);
+    padding: 5px;
+    flex-direction: column;
+}
+.face.front img { width: 80%; height: 70%; object-fit: contain; }
+.face.front span { font-size: 14px; margin-top: 5px; color: #333; font-weight: bold; }
+
+/* 洗牌动画 */
+@keyframes shuffleDeck {
+    0% { transform: translate(0,0); }
+    50% { transform: translate(0, -20px) rotate(5deg); }
+    100% { transform: translate(0,0); }
+}
+.shuffling .spooky-card { animation: shuffleDeck 0.3s ease-in-out infinite; }

@@ -1,6 +1,7 @@
 // ================== 🛠️ 1. 资源配置 ==================
 const CONFIG = {
-    assetUrl: "https://mengmeng0415.github.io/", 
+    // 1. 把基础链接改成 jsDelivr 的 CDN 根目录 (注意末尾有斜杠)
+    assetUrl: "https://cdn.jsdelivr.net/gh/mengmeng0415/", 
     imgFolder: "", 
     dataPath: "data/" 
 };
@@ -40,74 +41,80 @@ const DataManager = {
         }
     },
 
-    getWordDetail: function(uid) {
-        const raw = this.db.words[uid];
-        if (!raw) return null;
+   // ============ 修复版 getWordDetail (解决图片加载失败) ============
+getWordDetail: function(uid) {
+    const raw = this.db.words[uid];
+    if (!raw) return null;
+    
+    // 深拷贝
+    const word = JSON.parse(JSON.stringify(raw));
+    word.uid = uid; 
+    
+    // 链接处理函数
+    const process = (url) => url.startsWith('http') ? url : CONFIG.assetUrl + CONFIG.imgFolder + url;
+    
+    // 1. 图片路径处理 (修复点在此)
+    word.displayImages = [];
+    if (word.images) {
+        // 分别处理 scene 和 card 图片，生成完整链接
+        const scene = (word.images.scene || []).map(process);
+        const card = (word.images.card || []).map(process);
         
-        // 深拷贝
-        const word = JSON.parse(JSON.stringify(raw));
-        word.uid = uid; 
+        // 【核心修复】将处理好的完整链接写回对象
+        // 这样后续的游戏逻辑读取 word.images.card 时，拿到的就是 http... 的完整地址了
+        word.images.scene = scene;
+        word.images.card = card;
         
-        const process = (url) => url.startsWith('http') ? url : CONFIG.assetUrl + CONFIG.imgFolder + url;
-        
-        // 1. 图片路径处理
-        word.displayImages = [];
-        if (word.images) {
-            const scene = (word.images.scene || []).map(process);
-            const card = (word.images.card || []).map(process);
-            word.displayImages = scene.concat(card);
-        }
+        // 合并用于显示
+        word.displayImages = scene.concat(card);
+    }
 
-        // 2. Tab 游戏 (games)
-        if (word.games && Array.isArray(word.games)) {
-        } else if (word.gameUrl) {
-            word.games = [word.gameUrl];
-        } else {
-            word.games = [];
-        }
+    // 2. Tab 游戏 (games)
+    if (word.games && Array.isArray(word.games)) {
+    } else if (word.gameUrl) {
+        word.games = [word.gameUrl];
+    } else {
+        word.games = [];
+    }
 
-        // 3. Quiz 游戏 (quizGames)
-        if (word.quizGames && Array.isArray(word.quizGames)) {
-            // 保持原样
-        } else {
-            word.quizGames = [];
-        }
+    // 3. Quiz 游戏 (quizGames)
+    if (!word.quizGames) word.quizGames = [];
 
-        // 4. 富文本详情处理
-        if (word.richDetail) {
-            word.richDetail = word.richDetail.map(item => {
-                if (typeof item === 'string') {
-                    let title = "详细内容"; 
-                    let content = item;
-                    const titleMatch = item.match(/\[TITLE\](.*?)\[\/TITLE\]/);
-                    if (titleMatch) {
-                        title = titleMatch[1]; 
-                        content = item.replace(titleMatch[0], ''); 
-                    }
-                    return { title: title, content: content };
+    // 4. 富文本详情处理
+    if (word.richDetail) {
+        word.richDetail = word.richDetail.map(item => {
+            if (typeof item === 'string') {
+                let title = "详细内容"; 
+                let content = item;
+                const titleMatch = item.match(/\[TITLE\](.*?)\[\/TITLE\]/);
+                if (titleMatch) {
+                    title = titleMatch[1]; 
+                    content = item.replace(titleMatch[0], ''); 
                 }
-                return item;
-            });
-
-            word.richDetail.forEach(s => {
-                s.content = parseRichContent(s.content);
-                s.content = s.content.replace(/src=["']([^"']+)["']/g, (m, src) => {
-                    const fullSrc = src.startsWith('http') ? src : CONFIG.assetUrl + CONFIG.imgFolder + src;
-                    return `src="${fullSrc}" onclick="openModal('${fullSrc}')"`;
-                });
-            });
-        }
-        
-        // 5. 关联题目 (Quiz)
-        word.linkedQuizzes = [];
-        for (const qid in this.db.quizzes) {
-            if (this.db.quizzes[qid].wordIds.includes(uid)) {
-                word.linkedQuizzes.push({ id: qid, ...this.db.quizzes[qid] });
+                return { title: title, content: content };
             }
+            return item;
+        });
+
+        word.richDetail.forEach(s => {
+            s.content = parseRichContent(s.content);
+            s.content = s.content.replace(/src=["']([^"']+)["']/g, (m, src) => {
+                const fullSrc = src.startsWith('http') ? src : CONFIG.assetUrl + CONFIG.imgFolder + src;
+                return `src="${fullSrc}" onclick="openModal('${fullSrc}')"`;
+            });
+        });
+    }
+    
+    // 5. 关联题目 (Quiz)
+    word.linkedQuizzes = [];
+    for (const qid in this.db.quizzes) {
+        if (this.db.quizzes[qid].wordIds.includes(uid)) {
+            word.linkedQuizzes.push({ id: qid, ...this.db.quizzes[qid] });
         }
-        
-        return word;
-    },
+    }
+    
+    return word;
+},
 
     getWordsByChapter: function(chapterId) {
         const book = this.db.books.find(b => b.chapters.some(c => c.id === chapterId));
@@ -132,8 +139,6 @@ const DataManager = {
             else if (typeof item === 'object') {
                 uid = item.uid;
                 if (item.focus !== undefined) focusIdx = item.focus;
-                
-                // Tab 游戏依然保留，因为它是独立 Tab
                 if (item.games && Array.isArray(item.games)) {
                     bookSpecificGames = item.games;
                 }
@@ -145,8 +150,6 @@ const DataManager = {
             detail._tempFocus = focusIdx; 
             
             if (bookSpecificGames) detail.games = bookSpecificGames;
-            
-            // 把章节配置的 quizIds 列表挂载到单词上
             detail.chapterQuizIds = chapter.quizIds || [];
 
             return detail;
@@ -171,7 +174,8 @@ let state = {
     lastActiveTabTitle: null,
     homeFilterRatings: new Set(), bookFilterRatings: new Set(),
     isPracticeMode: false, 
-    currentPracticeIndex: 0
+    currentPracticeIndex: 0,
+    customGames: null // 存储生成的游戏
 };
 
 const audioClick = new Audio('backinfo/click.mp3');
@@ -306,7 +310,6 @@ function renderDetailSidebar() {
     
     state.currentWordList = wordsToRender;
 
-    // 更新侧边栏顶部的统计数字
     const countEl = document.getElementById('chapter-list-count');
     if (countEl) {
         countEl.innerText = `(${wordsToRender.length})`;
@@ -324,8 +327,19 @@ function generateSidebarItemHtml(w) {
         isActive = true;
     }
 
+    let checkboxHtml = '';
+    let clickAction = `onclick="jumpToWord('${w.uid}')"`;
+    
+    if (isCreationMode) {
+        const checked = selectedWordUIDs.has(w.uid) ? 'checked' : '';
+        checkboxHtml = `<input type="checkbox" class="word-checkbox" ${checked} onclick="event.stopPropagation(); toggleWordSelection('${w.uid}')">`;
+        clickAction = `onclick="toggleWordSelection('${w.uid}')"`;
+        isActive = false;
+    }
+
     return `
-    <li onclick="jumpToWord('${w.uid}')" class="${isActive ? 'active' : ''}">
+    <li ${clickAction} class="${isActive ? 'active' : ''}">
+        ${checkboxHtml}
         <div class="word-info-col">
             <span class="word-text">${w.word}</span>
             <span class="series-text">${series}</span>
@@ -347,43 +361,32 @@ function generateGroupHtml(title, count, itemsHtml, hiddenClass) {
 
 window.enterBookMode = function(bookId) {
     state.mode = 'book'; 
-    state.isPracticeMode = false; // 【新增】重置标记
+    state.isPracticeMode = false;
     state.currentBookId = bookId; 
     state.bookFilterRatings.clear();
     
     document.getElementById('view-home').classList.add('hidden');
     document.getElementById('view-detail').classList.remove('hidden');
     
-    // 1. 获取书本信息
     const book = DataManager.db.books.find(b => b.id === bookId);
     if (!book) return;
 
-    // 2. 统计单词数
     const wordCount = countBookWords(book);
-    
-    // 3. 检查是否有书本练习
     const hasPractices = book.bookPractices && book.bookPractices.length > 0;
     
-    // 渲染练习菜单 (无论是否有单词，都要准备好菜单)
     renderPracticeMenu(book);
 
-    // ============ 核心修改：无单词但有练习，自动跳转 ============
     if (wordCount === 0 && hasPractices) {
-        // 收起侧边栏
         const sidebar = document.getElementById('chapter-sidebar');
-        if(sidebar) sidebar.classList.add('collapsed'); // 强制收起
+        if(sidebar) sidebar.classList.add('collapsed'); 
         
-        // 隐藏“展开/收起”按钮 (因为没东西可展开)
         const bookToggleBtn = document.getElementById('btn-book-toggle'); 
         if(bookToggleBtn) bookToggleBtn.style.display = 'none';
 
-        // 直接进入第一个练习单元
         loadPracticeUnit(bookId, 0);
-        return; // 结束，不再渲染单词列表
+        return; 
     }
-    // =======================================================
 
-    // 正常流程：显示侧边栏
     const sidebar = document.getElementById('chapter-sidebar'); 
     if(sidebar) { sidebar.classList.remove('hidden'); sidebar.classList.remove('collapsed'); }
     
@@ -399,12 +402,10 @@ window.enterBookMode = function(bookId) {
 
     renderDetailSidebar();
     
-    // 如果有单词，默认显示第一个
     if(state.currentWordList.length > 0) {
         state.currentWordIndex = 0;
         renderWordDetail(state.currentWordList[0].uid);
     } else if (!hasPractices) {
-        // 既没单词也没练习
         document.getElementById('word-main').innerText = "暂无内容";
         document.getElementById('tab-content-area').innerHTML = "";
     }
@@ -412,12 +413,11 @@ window.enterBookMode = function(bookId) {
 
 window.enterSoloMode = function(uid) {
     state.mode = 'home_detail';
-    state.isPracticeMode = false; // 【新增】重置标记
+    state.isPracticeMode = false;
     document.getElementById('view-home').classList.add('hidden');
     document.getElementById('view-detail').classList.remove('hidden');
     const sidebar = document.getElementById('chapter-sidebar'); if(sidebar) { sidebar.classList.remove('hidden'); sidebar.classList.remove('collapsed'); }
     
-    // 隐藏书本展开按钮
     const bookToggleBtn = document.getElementById('btn-book-toggle'); if(bookToggleBtn) bookToggleBtn.style.display = 'none';
 
     renderSidebarFilter('home');
@@ -453,13 +453,11 @@ function renderBookTabs(activeType) {
     }).join('');
 }
 
-// 统计单词数量时，增加校验，只统计真实存在于 words 库中的单词
 function countBookWords(book) {
     let count = 0;
     if (book.chapters) { 
         book.chapters.forEach(c => { 
             if (c.wordIds) {
-                // 修复逻辑：过滤掉无效的 ID
                 count += c.wordIds.filter(uid => DataManager.db.words[uid]).length;
             }
         }); 
@@ -499,22 +497,16 @@ function toggleFilter(mode, i) {
 }
 
 function renderWordDetail(uid) {
-    // 1. 获取基础数据
     const word = DataManager.getWordDetail(uid);
     if (!word) return;
 
-    // ======= 恢复 UI 状态 (修正版) =======
-    // 从练习模式返回时，需要把隐藏的星星、发音等显示出来
-    document.getElementById('rating-stars').style.display = 'flex'; // 显示星星
-    document.querySelector('.main-audio').style.display = 'flex';   // 显示发音
-    document.getElementById('nav-buttons').style.display = 'flex';  // 显示前后翻页
+    document.getElementById('rating-stars').style.display = 'flex';
+    document.querySelector('.main-audio').style.display = 'flex'; 
+    document.getElementById('nav-buttons').style.display = 'flex'; 
     
-    // 恢复“显示单词”按钮
     const wordBtnEl = document.getElementById('btn-toggle-word');
     if(wordBtnEl) wordBtnEl.style.visibility = 'visible'; 
-    // ================================================
     
-    // 从当前状态列表中获取“上下文信息”（比如书本规定的题目顺序）
     const contextWord = state.currentWordList.find(w => w.uid === uid);
     if (contextWord && contextWord.chapterQuizIds) {
         word.chapterQuizIds = contextWord.chapterQuizIds;
@@ -523,25 +515,20 @@ function renderWordDetail(uid) {
     document.getElementById('word-main').innerText = word.word;
     renderHeaderStars(uid);
     
-   // ======= 判断单词显示状态 =======
     const wordBtn = document.getElementById('btn-toggle-word');
-    // 如果按钮有 active 类，说明当前是“显示单词”模式
     const isWordVisible = wordBtn ? wordBtn.classList.contains('active') : true;
 
     if (isWordVisible) {
         state.lastActiveTabTitle = null; 
     }
-    // ======= 修改结束 =======
 
     const tabs = document.getElementById('detail-tabs');
     const area = document.getElementById('tab-content-area');
     tabs.innerHTML = ''; area.innerHTML = '';
     
-    // ================= 动态生成 Tab 列表 =================
     const hasScene = word.displayImages && word.displayImages.length > 0;
     const hasText = word.richDetail && word.richDetail.length > 0;
     
-    // 检查挑战内容
     let availableQuizzes = word.linkedQuizzes || [];
     if (word.chapterQuizIds && word.chapterQuizIds.length > 0) {
         availableQuizzes = availableQuizzes.filter(q => word.chapterQuizIds.includes(q.id));
@@ -584,7 +571,6 @@ function renderWordDetail(uid) {
 
     renderTabContent(items[activeTabIndex].id, word, area);
     
-    // 高亮侧边栏
     const lis = document.querySelectorAll('.abc-items li');
     lis.forEach(li => { 
         li.classList.remove('active'); 
@@ -613,15 +599,28 @@ function renderHeaderStars(uid) {
     }
 }
 
+// 核心：渲染 Tab 内容 (修复了 Quiz 渲染)
 function renderTabContent(type, word, container) {
     container.innerHTML = ''; 
     container.scrollTop = 0;
     
     if (type === 'scene') {
         if (word.displayImages.length) {
-            const imgs = word.displayImages.map(src => `<div class="scene-img-wrapper"><img src="${src}" class="scene-image" onclick="openModal('${src}')"></div>`).join('');
-            container.innerHTML = `<div class="scene-images" data-count="${word.displayImages.length}">${imgs}</div>`;
-        } else container.innerHTML = `<div class="empty-tip">暂无图片</div>`;
+            const imgs = word.displayImages.map(src => 
+                `<div class="scene-img-wrapper">
+                    <img src="${src}" class="scene-image" onclick="openModal('${src}')">
+                 </div>`
+            ).join('');
+            
+            container.innerHTML = `
+                <div class="image-box">
+                    <div class="scene-images" data-count="${word.displayImages.length}">
+                        ${imgs}
+                    </div>
+                </div>`;
+        } else {
+            container.innerHTML = `<div class="empty-tip">暂无图片</div>`;
+        }
     
     } else if (type === 'text') {
         if(word.richDetail) {
@@ -631,36 +630,55 @@ function renderTabContent(type, word, container) {
         }
     
     } else if (type === 'quiz') {
-        // ======= 基于 quizzes.json 和 顺序控制 =======
-        let allQuizzes = word.linkedQuizzes || [];
+        // 1. 如果有自定义生成的游戏，优先显示
+        if (state.customGames && state.customGames.length > 0) {
+            const gamesListHtml = state.customGames.map((g, idx) => `
+                <div class="quiz-box" onclick="startSpookyGame(${idx})" style="min-height:200px; cursor:pointer; align-items:center; transition:0.2s; border:2px solid transparent;">
+                    <div style="font-size:50px; margin-bottom:15px;">🎃</div>
+                    <div class="quiz-q" style="margin-bottom:10px; text-align:center;">
+                        ${g.title}
+                    </div>
+                    <div style="color:#666;">
+                        包含 ${g.words.length} 个单词 / 点击开始
+                    </div>
+                </div>
+            `).join('');
+
+            container.innerHTML = `
+                <div style="width:100%; max-width:1000px; padding-top:20px;">
+                    <h3 style="text-align:center; color:var(--primary); margin-bottom:30px;">
+                        已生成 ${state.customGames.length} 组翻牌游戏
+                    </h3>
+                    <div style="display:grid; gap:20px; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));">
+                        ${gamesListHtml}
+                    </div>
+                    <div style="text-align:center; margin-top:40px;">
+                         <button onclick="clearCustomGames()" style="color:#999; text-decoration:underline;">清空游戏并返回</button>
+                    </div>
+                </div>
+            `;
+            return; // 渲染完直接结束
+        }
+
+        // 2. 否则渲染普通的 Quiz (修复了这里缺失的代码)
+        let allQuizzes = [];
         
-        // 如果存在“书本规定的题目列表”
+        // A. 关联的普通 Quiz
+        let linked = word.linkedQuizzes || [];
         if (word.chapterQuizIds && word.chapterQuizIds.length > 0) {
-            allQuizzes = allQuizzes.filter(q => word.chapterQuizIds.includes(q.id));
-            allQuizzes.sort((a, b) => {
-                return word.chapterQuizIds.indexOf(a.id) - word.chapterQuizIds.indexOf(b.id);
+            linked = linked.filter(q => word.chapterQuizIds.includes(q.id));
+        }
+        allQuizzes = linked.filter(q => q.question && q.question.trim().length > 0).map(q => ({ type: 'quiz', content: q, id: q.id }));
+        
+        // B. 关联的游戏 (quizGames)
+        if (word.quizGames && word.quizGames.length > 0) {
+            word.quizGames.forEach((g, idx) => {
+                allQuizzes.push({ type: 'game', content: g.url, id: `game-${idx}` });
             });
         }
 
-        let challengeList = [];
-        allQuizzes.forEach(item => {
-            if (item.type === 'game') {
-                challengeList.push({ 
-                    type: 'game', 
-                    content: item.gameUrl, 
-                    id: item.id 
-                });
-            } else {
-                challengeList.push({ 
-                    type: 'quiz', 
-                    content: item, 
-                    id: item.id 
-                });
-            }
-        });
-
-        if (challengeList.length > 0) {
-            renderMixedPagination(challengeList, container, 0);
+        if (allQuizzes.length > 0) {
+            renderMixedPagination(allQuizzes, container, 0);
         } else {
             container.innerHTML = `<div class="empty-tip">暂无挑战</div>`;
         }
@@ -685,18 +703,100 @@ function renderTabContent(type, word, container) {
     }
 }
 
-// 混合内容分页渲染函数
-// 混合内容分页渲染函数 (修改版：按钮在顶部)
-// 混合内容分页渲染函数 (最终版：顶部圆点 + 底部大按钮)
-// 混合内容分页渲染函数 (修复版：各种间距与图标优化)
-// 混合内容分页渲染函数 (完美防跳动版)
-// 混合内容分页渲染函数 (含全屏缩放按钮)
-// 混合内容分页渲染函数 (悬浮按钮版)
+function getWordQuizCount(word) {
+    let count = 0;
+    let quizzes = word.linkedQuizzes || [];
+    if (word.chapterQuizIds && word.chapterQuizIds.length > 0) {
+        quizzes = quizzes.filter(q => word.chapterQuizIds.includes(q.id));
+    }
+    count += quizzes.filter(q => q.question && q.question.trim().length > 0).length;
+    if (word.quizGames) count += word.quizGames.length;
+    return count;
+}
+
+function getQuizProgressInfo(activeIndex, currentItemTotal) {
+    let line1 = "", line2 = "";
+
+    if (state.isPracticeMode) {
+        const book = DataManager.db.books.find(b => b.id === state.currentBookId);
+        if (book && book.bookPractices) {
+            const practice = book.bookPractices[state.currentPracticeIndex];
+            line1 = `${practice.name} (${activeIndex + 1}/${currentItemTotal})`;
+
+            let totalBook = 0;
+            let currentBook = 0;
+            
+            for (let i = 0; i < book.bookPractices.length; i++) {
+                const p = book.bookPractices[i];
+                const validCount = (p.quizIds || []).filter(qid => DataManager.db.quizzes[qid]).length;
+                totalBook += validCount;
+                if (i < state.currentPracticeIndex) {
+                    currentBook += validCount;
+                } else if (i === state.currentPracticeIndex) {
+                    currentBook += (activeIndex + 1);
+                }
+            }
+            line2 = `本书 (${currentBook}/${totalBook})`;
+        }
+    } else {
+        const currentWord = state.currentWordList[state.currentWordIndex];
+        if (!currentWord) return { line1: "", line2: "" };
+
+        let groupName = "";
+        let groupTotal = 0;
+        let groupCurrent = 0;
+        let bookTotal = 0;
+        let bookCurrent = 0;
+
+        let scopeWords = []; 
+        
+        if (state.mode === 'book') {
+            const book = DataManager.db.books.find(b => b.id === state.currentBookId);
+            if (book) {
+                const ch = book.chapters.find(c => c.wordIds.some(id => (typeof id === 'string' ? id.includes(currentWord.uid) : id.uid === currentWord.uid)));
+                if (ch) {
+                    groupName = ch.name;
+                    const chapterUIDs = new Set(ch.wordIds.map(item => typeof item === 'string' ? item.split(':')[0] : item.uid));
+                    scopeWords = state.currentWordList.filter(w => chapterUIDs.has(w.uid));
+                }
+            }
+        } else {
+            const char = currentWord.word[0].toUpperCase();
+            groupName = char;
+            scopeWords = state.currentWordList.filter(w => w.word[0].toUpperCase() === char);
+        }
+
+        for (let w of scopeWords) {
+            let qCount = getWordQuizCount(w);
+            groupTotal += qCount;
+            if (w.uid === currentWord.uid) {
+                groupCurrent += (activeIndex + 1);
+            } else if (state.currentWordList.indexOf(w) < state.currentWordList.indexOf(currentWord)) {
+                groupCurrent += qCount;
+            }
+        }
+        line1 = `${groupName} (${groupCurrent}/${groupTotal})`;
+
+        for (let i = 0; i < state.currentWordList.length; i++) {
+            const w = state.currentWordList[i];
+            let qCount = getWordQuizCount(w);
+            bookTotal += qCount;
+            if (i < state.currentWordIndex) {
+                bookCurrent += qCount;
+            } else if (i === state.currentWordIndex) {
+                bookCurrent += (activeIndex + 1);
+            }
+        }
+        const label = state.mode === 'book' ? "本书" : "总计";
+        line2 = `${label} (${bookCurrent}/${bookTotal})`;
+    }
+    return { line1, line2 };
+}
+
 function renderMixedPagination(items, container, activeIndex) {
     container.innerHTML = ''; 
     container.scrollTop = 0;
     
-    // 1. 顶部：分页占位区
     const pageContainer = document.createElement('div');
     pageContainer.className = 'quiz-pagination';
     
@@ -720,14 +820,24 @@ function renderMixedPagination(items, container, activeIndex) {
     }
     container.appendChild(pageContainer);
 
-    // 2. 中间：白底卡片 (注意：这里不再插入 zoom 按钮了)
     const item = items[activeIndex];
     let contentHtml = '';
     
+    const zoomIcon = `<svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 3h6v6M9 21H3v-6M21 3l-7 7M3 21l7-7"/></svg>`;
+    const zoomBtnHtml = `<button class="btn-quiz-zoom" onclick="toggleFullScreen()" title="全屏模式">${zoomIcon}</button>`;
+    
+    const progress = getQuizProgressInfo(activeIndex, items.length);
+    const infoHtml = `
+        <div class="quiz-info-text">
+            <div>${progress.line1}</div>
+            <div>${progress.line2}</div>
+        </div>`;
+
     if (item.type === 'game') {
         contentHtml = `
             <div class="quiz-box">
-                <div class="quiz-q">
+                ${zoomBtnHtml}
+                ${infoHtml} <div class="quiz-q">
                     <span style="color:var(--primary); font-size:0.8em; margin-right:8px;">Q${activeIndex + 1}.</span>
                     互动游戏
                 </div>
@@ -742,7 +852,8 @@ function renderMixedPagination(items, container, activeIndex) {
         if (q.type === 'matching') {
             contentHtml = `
                 <div class="quiz-box">
-                    <div class="quiz-q">
+                    ${zoomBtnHtml}
+                    ${infoHtml} <div class="quiz-q">
                         <span style="color:var(--primary); font-size:0.8em; margin-right:8px;">Q${activeIndex + 1}.</span>
                         ${q.title || "Match the pairs"}
                     </div>
@@ -754,7 +865,8 @@ function renderMixedPagination(items, container, activeIndex) {
             const isImgOpt = q.type === 'choice_image';
             contentHtml = `
                 <div class="quiz-box">
-                    <div class="quiz-q">
+                    ${zoomBtnHtml}
+                    ${infoHtml} <div class="quiz-q">
                         <span style="color:var(--primary); font-size:0.8em; margin-right:8px;">Q${activeIndex + 1}.</span>
                         ${q.question}
                     </div>
@@ -774,7 +886,6 @@ function renderMixedPagination(items, container, activeIndex) {
     wrapper.innerHTML = contentHtml;
     container.appendChild(wrapper);
 
-    // 3. 底部：大号 Next 按钮
     const nextBtn = document.createElement('button');
     nextBtn.className = 'btn-big-next';
     const arrowIcon = `<svg style="width:20px; height:20px; margin-left:8px;" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>`;
@@ -785,61 +896,41 @@ function renderMixedPagination(items, container, activeIndex) {
         if (state.isPracticeMode) {
             nextBtn.innerHTML = `Next Unit ${arrowIcon}`;   
         } else {
-            nextBtn.innerHTML = `Next Word ${arrowIcon}`;    
+            nextBtn.innerHTML = `Next Word ${arrowIcon}`;   
         }
     }
     nextBtn.onclick = () => handleBigNextClick(items, container, activeIndex);
     container.appendChild(nextBtn);
 
-    // ============ 4. 悬浮全屏按钮 (新位置：屏幕右下角) ============
-    
-    // 四箭头向外扩散的 SVG 图标
-    const fourArrowsIcon = `
-    <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-        <path d="M15 3h6v6M9 21H3v-6M21 3l-7 7M3 21l7-7"/>
-    </svg>`;
-
+    const fourArrowsIcon = `<svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 3h6v6M9 21H3v-6M21 3l-7 7M3 21l7-7"/></svg>`;
     const zoomBtn = document.createElement('button');
-    zoomBtn.className = 'btn-fixed-zoom'; // 使用新的 CSS 类
+    zoomBtn.className = 'btn-fixed-zoom';
     zoomBtn.innerHTML = fourArrowsIcon;
     zoomBtn.title = "全屏专注模式";
     zoomBtn.onclick = toggleFullScreen;
-    
-    // 添加到容器的最末尾 (确保它在最上层)
     container.appendChild(zoomBtn);
 }
 
-// 配对题逻辑
-// ================== 新增：配对题逻辑处理 (支持图片版) ==================
 function initMatchingGame(quizData, containerId, feedbackId) {
     const container = document.getElementById(containerId);
     if (!container) return;
 
-    // 1. 准备数据
     const pairs = quizData.pairs;
     const leftItems = pairs.map((p, i) => ({ text: p.left, id: i }));
     const rightItems = pairs.map((p, i) => ({ text: p.right, id: i }));
     
-    // 右侧乱序
     rightItems.sort(() => Math.random() - 0.5);
 
-    // 2. 生成 HTML
     const colLeft = document.createElement('div'); colLeft.className = 'match-col';
     const colRight = document.createElement('div'); colRight.className = 'match-col';
 
-    // --- 内部辅助函数：判断是显示文字还是图片 ---
     const appendContent = (btn, content) => {
-        // 检查是否为图片路径 (简单判断：以常见的图片后缀结尾)
         const isImage = /\.(webp|png|jpg|jpeg|gif)$/i.test(content);
-        
         if (isImage) {
-            // 如果是图片，插入 img 标签
-            // 注意：这里自动拼接了 CONFIG.assetUrl，就像处理其他图片一样
             const fullSrc = content.startsWith('http') ? content : CONFIG.assetUrl + CONFIG.imgFolder + content;
             btn.innerHTML = `<img src="${fullSrc}" class="match-img" alt="img" />`;
-            btn.classList.add('has-image'); // 加个类名方便写样式
+            btn.classList.add('has-image'); 
         } else {
-            // 如果是文字，直接显示
             btn.innerText = content;
         }
     };
@@ -847,17 +938,17 @@ function initMatchingGame(quizData, containerId, feedbackId) {
     leftItems.forEach(item => {
         const btn = document.createElement('div');
         btn.className = 'match-item';
-        appendContent(btn, item.text); // 使用辅助函数渲染
+        appendContent(btn, item.text); 
         btn.dataset.id = item.id;
         btn.dataset.side = 'left';
-        btn.onclick = (e) => handleMatchClick(e.currentTarget, feedbackId); // 改为 currentTarget 确保点到 div
+        btn.onclick = (e) => handleMatchClick(e.currentTarget, feedbackId); 
         colLeft.appendChild(btn);
     });
 
     rightItems.forEach(item => {
         const btn = document.createElement('div');
         btn.className = 'match-item';
-        appendContent(btn, item.text); // 使用辅助函数渲染
+        appendContent(btn, item.text); 
         btn.dataset.id = item.id;
         btn.dataset.side = 'right';
         btn.onclick = (e) => handleMatchClick(e.currentTarget, feedbackId);
@@ -953,13 +1044,15 @@ window.playCurrentWord = () => { const t=document.getElementById('word-main').in
 window.prevWord = () => { if(state.currentWordIndex>0) { state.currentWordIndex--; renderWordDetail(state.currentWordList[state.currentWordIndex].uid); } };
 window.nextWord = () => { if(state.currentWordIndex<state.currentWordList.length-1) { state.currentWordIndex++; renderWordDetail(state.currentWordList[state.currentWordIndex].uid); } };
 window.jumpToWord = uid => {
-    // 修复：如果是在首页点击，直接进入详情模式（不要去查 currentWordList，因为此时它是空的）
+    state.isPracticeMode = false;
+    state.currentPracticeIndex = 0;
+    state.customGames = null; 
+
     if (state.mode === 'home') {
         enterSoloMode(uid);
         return;
     }
 
-    // 其他模式（书本内、详情页内）保持原有逻辑
     const i = state.currentWordList.findIndex(w => w.uid === uid);
     if (i !== -1) {
         state.currentWordIndex = i;
@@ -971,7 +1064,6 @@ window.jumpToWord = uid => {
 function initVoices() { const vs=speechSynthesis.getVoices(); if(vs.length) preferredVoice=vs.find(v=>v.name.includes('Google US'))||vs.find(v=>v.lang==='en-US'); }
 window.exportData = () => alert(JSON.stringify(DataManager.db.ratings));
 
-// 全新的切换逻辑：控制按钮样式和文字
 window.toggleWordVisibility = function() {
     const btn = document.getElementById('btn-toggle-word');
     const wordMain = document.getElementById('word-main');
@@ -987,7 +1079,6 @@ window.toggleWordVisibility = function() {
     }
 };
 
-// ============ 书本练习功能模块 ============
 window.togglePracticeMenu = function() {
     document.getElementById('practice-menu-content').classList.toggle('show');
 }
@@ -1005,14 +1096,24 @@ function renderPracticeMenu(book) {
     const container = document.getElementById('book-practice-container');
     const menu = document.getElementById('practice-menu-content');
     
+    container.style.display = 'inline-block'; 
+
+    const createBtnHtml = `
+        <button onclick="toggleCreationMode()" class="practice-btn special-create-btn" style="color:var(--primary); font-weight:800; border-bottom:1px dashed #eee;">
+            🃏 创建翻牌游戏
+        </button>
+    `;
+
+    let practicesHtml = '';
     if (book.bookPractices && book.bookPractices.length > 0) {
-        container.style.display = 'inline-block'; 
-        menu.innerHTML = book.bookPractices.map((p, index) => 
+        practicesHtml = book.bookPractices.map((p, index) => 
             `<button onclick="loadPracticeUnit('${book.id}', ${index})">${p.name}</button>`
         ).join('');
     } else {
-        container.style.display = 'none'; 
+        practicesHtml = `<div style="padding:10px; color:#999; font-size:12px;">本书暂无预设练习</div>`;
     }
+
+    menu.innerHTML = createBtnHtml + practicesHtml;
 }
 
 window.loadPracticeUnit = function(bookId, practiceIndex) {
@@ -1022,18 +1123,15 @@ window.loadPracticeUnit = function(bookId, practiceIndex) {
     const practice = book.bookPractices[practiceIndex];
     if (!practice) return;
 
-    // 【新增】记录当前状态
     state.isPracticeMode = true;
-    state.currentBookId = bookId; // 确保 bookId 正确
+    state.currentBookId = bookId; 
     state.currentPracticeIndex = practiceIndex;
 
-    // --- UI 调整：进入“纯净”做题模式 ---
     document.getElementById('word-main').innerText = practice.name;
     
     document.getElementById('rating-stars').style.display = 'none';
     document.querySelector('.main-audio').style.display = 'none';
     document.getElementById('nav-buttons').style.display = 'none';
-    // 隐藏“显示单词”按钮
     const wordBtn = document.getElementById('btn-toggle-word');
     if(wordBtn) wordBtn.style.visibility = 'hidden';
 
@@ -1062,7 +1160,6 @@ window.loadPracticeUnit = function(bookId, practiceIndex) {
     document.getElementById('practice-menu-content').classList.remove('show');
 }
 
-// 快捷标签解析器
 function parseRichContent(content) {
     if (!content) return "";
 
@@ -1105,43 +1202,30 @@ function parseRichContent(content) {
     
     return content.replace(/\n/g, '<br>');
 }
-// 处理大号 Next 按钮的跳转逻辑
+
 function handleBigNextClick(items, container, activeIndex) {
-    // 情况 1: 本组还有题目，跳转下一题
     if (activeIndex < items.length - 1) {
         renderMixedPagination(items, container, activeIndex + 1);
         return;
     }
 
-    // 情况 2: 本组题目做完了，需要跨越跳转
-    // ------------------------------------------------
-    
-    // A. 如果是【书本练习模式】 -> 跳到下一个练习单元
     if (state.isPracticeMode) {
         const book = DataManager.db.books.find(b => b.id === state.currentBookId);
         if (book && book.bookPractices) {
             const nextIndex = state.currentPracticeIndex + 1;
             if (nextIndex < book.bookPractices.length) {
-                // 加载下一个单元
                 loadPracticeUnit(state.currentBookId, nextIndex);
-                // 滚回顶部
                 document.getElementById('tab-content-area').scrollTop = 0;
             } else {
                 alert("🎉 恭喜！本书所有练习已完成！");
             }
         }
     } 
-    // B. 如果是【普通背单词模式】 -> 跳到下一个单词
     else {
         if (state.currentWordIndex < state.currentWordList.length - 1) {
-            // 1. 切换到下一个单词
             state.currentWordIndex++;
             const nextUid = state.currentWordList[state.currentWordIndex].uid;
-            
-            // 2. 【关键】强制下个单词默认打开“挑战一下”Tab
             state.lastActiveTabTitle = '挑战一下'; 
-            
-            // 3. 渲染
             renderWordDetail(nextUid);
         } else {
             alert("🎉 恭喜！本列表单词已全部学完！");
@@ -1149,23 +1233,16 @@ function handleBigNextClick(items, container, activeIndex) {
     }
 }
 
-
-// 全屏切换逻辑 (强力兼容版：解决点击无反应问题)
 window.toggleFullScreen = function() {
-    
-    alert("正在尝试进入全屏...");
-    
     const elem = document.getElementById('tab-content-area');
     if (!elem) return;
 
-    // 1. 检查当前状态
     const isPseudo = elem.classList.contains('pseudo-fullscreen');
     const isNative = document.fullscreenElement || 
                      document.webkitFullscreenElement || 
                      document.mozFullScreenElement || 
                      document.msFullscreenElement;
 
-    // === A. 如果已经在全屏(真/伪)，则退出 ===
     if (isPseudo) {
         elem.classList.remove('pseudo-fullscreen');
         return;
@@ -1176,9 +1253,6 @@ window.toggleFullScreen = function() {
         return;
     }
 
-    // === B. 尝试进入全屏 ===
-    // 策略：优先试探原生全屏，但无论成功与否，设置一个定时器检查结果
-    
     let requestPromise;
     try {
         if (elem.requestFullscreen) {
@@ -1192,8 +1266,6 @@ window.toggleFullScreen = function() {
         console.log("Native API error, forcing pseudo.");
     }
 
-    // 【核心修复】双保险机制
-    // 如果原生API返回了Promise，尝试捕获拒绝
     if (requestPromise && requestPromise.catch) {
         requestPromise.catch(err => {
             console.log("Native blocked, forcing pseudo.");
@@ -1201,9 +1273,6 @@ window.toggleFullScreen = function() {
         });
     }
 
-    // 【终极兜底】不管原生API有没有反应，100ms后检查。
-    // 如果发现还没进全屏，直接强开伪全屏。
-    // 这能解决腾讯文档等WebView“静默失败”的问题。
     setTimeout(() => {
         const currentNative = document.fullscreenElement || document.webkitFullscreenElement;
         if (!currentNative && !elem.classList.contains('pseudo-fullscreen')) {
@@ -1212,3 +1281,273 @@ window.toggleFullScreen = function() {
         }
     }, 100);
 };
+
+// ============ 🃏 选词模式控制逻辑 ============
+let isCreationMode = false;
+let selectedWordUIDs = new Set();
+
+function toggleCreationMode() {
+    isCreationMode = true;
+    selectedWordUIDs.clear();
+    
+    const searchBox = document.querySelector('.search-box');
+    if (searchBox) searchBox.classList.add('hidden');
+
+    const actionBar = document.getElementById('creation-bar');
+    if (actionBar) {
+        actionBar.classList.remove('hidden');
+    }
+    
+    updateSelectionCount();
+    renderDetailSidebar(); 
+    
+    const menu = document.getElementById('practice-menu-content');
+    if (menu) menu.classList.remove('show');
+}
+
+function exitCreationMode() {
+    isCreationMode = false;
+    selectedWordUIDs.clear();
+
+    const searchBox = document.querySelector('.search-box');
+    if (searchBox) searchBox.classList.remove('hidden');
+
+    const actionBar = document.getElementById('creation-bar');
+    if (actionBar) actionBar.classList.add('hidden');
+
+    renderDetailSidebar();
+}
+
+function updateSelectionCount() {
+    const el = document.getElementById('sidebar-select-count');
+    if (el) el.innerText = selectedWordUIDs.size;
+}
+
+function toggleWordSelection(uid) {
+    if (selectedWordUIDs.has(uid)) {
+        selectedWordUIDs.delete(uid);
+    } else {
+        selectedWordUIDs.add(uid);
+    }
+    
+    const checkbox = document.querySelector(`input[onclick*="'${uid}'"]`);
+    if(checkbox) checkbox.checked = selectedWordUIDs.has(uid);
+    
+    updateSelectionCount();
+}
+
+function openConfigModal() {
+    if (selectedWordUIDs.size < 2) {
+        alert("请至少选择 2 个单词！");
+        return;
+    }
+    document.getElementById('selected-count').innerText = selectedWordUIDs.size;
+    document.getElementById('game-config-modal').classList.remove('hidden');
+}
+
+function closeConfigModal() {
+    document.getElementById('game-config-modal').classList.add('hidden');
+}
+
+// ============ 🃏 游戏生成逻辑 ============
+function confirmGameGeneration() {
+    const groupSize = parseInt(document.getElementById('group-size-select').value);
+    const uids = Array.from(selectedWordUIDs);
+    
+    const newGames = [];
+    for (let i = 0; i < uids.length; i += groupSize) {
+        let chunk = uids.slice(i, i + groupSize);
+        if (chunk.length < groupSize) {
+            const need = groupSize - chunk.length;
+            const padding = uids.slice(0, need);
+            chunk = chunk.concat(padding);
+        }
+        
+        newGames.push({
+            id: `game-${Date.now()}-${i}`,
+            words: chunk,
+            type: 'spooky-memory',
+            title: `Group ${Math.floor(i/groupSize) + 1}`
+        });
+    }
+
+    state.customGames = newGames;
+    
+    closeConfigModal();
+    exitCreationMode();
+
+    const tabs = document.getElementById('detail-tabs');
+    if (tabs) {
+        Array.from(tabs.children).forEach(btn => btn.classList.remove('active'));
+    }
+
+    const area = document.getElementById('tab-content-area');
+    renderTabContent('quiz', { uid: 'custom-game-mode' }, area);
+}
+
+function clearCustomGames() {
+    state.customGames = null;
+    if (state.currentWordList[state.currentWordIndex]) {
+        renderWordDetail(state.currentWordList[state.currentWordIndex].uid);
+    }
+}
+
+// ============ 🃏 Spooky Game Engine (黑屏修复版) ============
+let gameVideo, gameBgm;
+
+function startSpookyGame(gameIndex) {
+    const gameData = state.customGames[gameIndex];
+    if (!gameData) return;
+
+    let container = document.getElementById('game-fullscreen-container');
+    if (!container) {
+        container = document.createElement('div');
+        container.id = 'game-fullscreen-container';
+        document.body.appendChild(container);
+    }
+    
+    // 【核心修复】src 强制使用 CDN 链接
+    container.innerHTML = `
+        <video id="game-video-bg" muted playsinline style="position: absolute; width: 100%; height: 100%; object-fit: cover;">
+            <source src="https://cdn.jsdelivr.net/gh/mengmeng0415/wordpic01/spooky.mp4" type="video/mp4">
+        </video>
+        <button class="btn-exit-game" onclick="exitSpookyGame()">退出游戏</button>
+        <div id="game-board-layer" style="opacity: 0; transition: opacity 1s;">
+            <h2 style="color:#fff; text-shadow:0 2px 10px #000; margin-bottom:20px; margin-top: 60px;">${gameData.title}</h2>
+            <div id="spooky-grid" class="spooky-grid"></div>
+        </div>
+    `;
+
+    const cards = [];
+    gameData.words.forEach(uid => {
+        const w = DataManager.getWordDetail(uid);
+        if (!w) return;
+        cards.push({ id: uid, type: 'word', content: w.word, wordObj: w });
+        
+        let imgUrl = null;
+        if (w.images && w.images.card && w.images.card.length > 0) imgUrl = w.images.card[0];
+        else if (w.displayImages && w.displayImages.length > 0) imgUrl = w.displayImages[0];
+        cards.push({ id: uid, type: 'image', content: imgUrl || 'No Img', wordObj: w });
+    });
+
+    cards.sort(() => Math.random() - 0.5);
+
+    const grid = document.getElementById('spooky-grid');
+    if (cards.length <= 4) grid.style.gridTemplateColumns = 'repeat(2, 1fr)';
+    else if (cards.length <= 6) grid.style.gridTemplateColumns = 'repeat(3, 1fr)';
+    else grid.style.gridTemplateColumns = 'repeat(5, 1fr)';
+
+    grid.innerHTML = cards.map((c, i) => `
+        <div class="spooky-card" data-idx="${i}" onclick="flipSpookyCard(this, '${c.id}', '${c.wordObj.word}')">
+            <div class="face front">
+                ${c.type==='image' && c.content!=='No Img' ? `<img src="${c.content}">` : `<span style="font-size:24px;">${c.wordObj.word}</span>`}
+            </div>
+            <div class="face back">🕷️</div>
+        </div>
+    `).join('');
+
+    gameVideo = document.getElementById('game-video-bg');
+    gameBgm = document.getElementById('bgm-spooky');
+    const sfxOpen = document.getElementById('sfx-open');
+    const sfxShuffle = document.getElementById('sfx-shuffle');
+
+    if (container.requestFullscreen) container.requestFullscreen().catch(()=>{});
+
+    let hasStarted = false;
+    const showGameBoard = () => {
+        if (hasStarted) return;
+        hasStarted = true;
+        console.log("Game Interface Showing...");
+        
+        if (gameBgm) { gameBgm.currentTime = 0; gameBgm.play().catch(()=>{}); }
+        const layer = document.getElementById('game-board-layer');
+        if (layer) layer.style.opacity = '1';
+        
+        if (sfxShuffle) sfxShuffle.play().catch(()=>{});
+        const allCards = document.querySelectorAll('.spooky-card');
+        allCards.forEach(c => c.classList.add('shuffling'));
+        setTimeout(() => { allCards.forEach(c => c.classList.remove('shuffling')); }, 1000);
+    };
+
+    gameVideo.onended = showGameBoard;
+    gameVideo.onerror = () => { console.log("Video Load Error"); showGameBoard(); }; 
+
+    if (sfxOpen) sfxOpen.play().catch(()=>{});
+    
+    setTimeout(() => { if (!hasStarted) showGameBoard(); }, 4000);
+
+    const playPromise = gameVideo.play();
+    if (playPromise !== undefined) {
+        playPromise.catch(() => { showGameBoard(); });
+    }
+
+    resetSpookyLogic();
+}
+
+function exitSpookyGame() {
+    const c = document.getElementById('game-fullscreen-container');
+    if (c) c.remove();
+    if (document.exitFullscreen) document.exitFullscreen();
+    if (gameBgm) gameBgm.pause();
+    if (gameVideo) gameVideo.pause();
+}
+
+let sCard1 = null, sCard2 = null;
+let sLock = false;
+
+function resetSpookyLogic() {
+    [sCard1, sCard2, sLock] = [null, null, false];
+}
+
+function flipSpookyCard(el, uid, wordText) {
+    if (sLock) return;
+    if (el === sCard1) return;
+    if (el.classList.contains('matched')) return;
+
+    el.classList.add('flipped');
+    
+    const u = new SpeechSynthesisUtterance(wordText);
+    u.lang = 'en-US';
+    if(preferredVoice) u.voice = preferredVoice;
+    speechSynthesis.speak(u);
+
+    if (!sCard1) {
+        sCard1 = { el, uid };
+        return;
+    }
+
+    sCard2 = { el, uid };
+    checkSpookyMatch();
+}
+
+function checkSpookyMatch() {
+    sLock = true;
+    const isMatch = sCard1.uid === sCard2.uid;
+    
+    const sfxMatch = document.getElementById('sfx-match'); 
+    const sfxError = document.getElementById('sfx-error'); 
+
+    if (isMatch) {
+        sfxMatch.currentTime = 0;
+        sfxMatch.play();
+        
+        setTimeout(() => {
+            sCard1.el.classList.add('matched');
+            sCard2.el.classList.add('matched');
+            resetSpookyLogic();
+            
+            if (document.querySelectorAll('.spooky-card:not(.matched)').length === 0) {
+                setTimeout(() => alert("🎉 Group Complete!"), 500);
+            }
+        }, 800);
+    } else {
+        sfxError.currentTime = 0;
+        sfxError.play();
+        
+        setTimeout(() => {
+            sCard1.el.classList.remove('flipped');
+            sCard2.el.classList.remove('flipped');
+            resetSpookyLogic();
+        }, 1200);
+    }
+}

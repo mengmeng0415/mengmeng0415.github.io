@@ -1,9 +1,12 @@
 {
   "w001": {
     "word": "shade",
-    "images": { "scene": ["infopic01/shade.webp"] },
+    "images": { "scene": ["infopic01/shade.webp","infopic01/practice.webp","infopic01/potion.webp","infopic01/argue.webp"],
+      "card": [
+        "infopic01/shade.webp"
+      ] },
     "richDetail": [
-      "[TITLE] 解释 [/TITLE][DEF][EN] To block the sun so that it does not shine directly (used in the book when Drake blocks sunlight with his hand to watch Kepri fly)[/EN][CN] 遮蔽（阳光）；挡光（书中指德雷克用手挡住阳光，观看凯普丽飞行）[/CN][POS] v.[/POS][PH]/ʃeɪd/[/PH][DU] Drake shaded his eyes with his hand to look at Kepri flying in the sky.|(原文例句) 德雷克用手挡住眼睛，观看凯普丽在空中飞行。[/DU][DU] The umbrella shades us from the strong sunlight.| 雨伞为我们挡住强烈的阳光。[/DU][DU] The big leaves shade the flowers below.| 大片的叶子为下面的花儿挡光。[/DU][/DEF][DEF][EN] A cool place out of the sun (used in the book when Drake stays in the cool area under the tree with Worm)[/EN][CN] 树荫；阴凉处（书中指德雷克和沃姆待在树下的凉爽区域）[/CN][POS] n.[/POS][DU] Drake sat in the shade of the big tree with Worm.|(原文例句) 德雷克和沃姆坐在大树的树荫下。[/DU][DU] The little cat lies in the shade to escape the hot sun.| 小猫躺在阴凉处躲避烈日。[/DU][DU] We have a picnic in the shade of the pavilion.| 我们在亭子的阴凉处野餐。[/DU][/DEF]",
+      "[TITLE] 解释 [/TITLE][DEF][EN] To block the sun so that it does not shine directly (used in the book when Drake blocks sunlight with his hand to watch Kepri fly)[/EN][CN] 遮蔽（阳光）；挡光（书中指德雷克用手挡住阳光，观看凯普丽飞行）[/CN][POS] v.[/POS][PH]/ʃeɪd/[/PH][DU] Drake shaded his eyes with his hand to look at Kepri flying in the sky.|(原文例句) 德雷克用手挡住眼睛，观看凯普丽在空中飞行。[/DU][DU] The umbrella shades us from the strong sunlight.| 雨伞为我们挡住强烈的阳光。[/DU][DU] The big leaves shade the flowers below.| 大片的叶子为下面的花儿挡光。[/DU][/DEF][IMG]infopic01/argue.webp[/IMG][DEF][EN] A cool place out of the sun (used in the book when Drake stays in the cool area under the tree with Worm)[/EN][CN] 树荫；阴凉处（书中指德雷克和沃姆待在树下的凉爽区域）[/CN][POS] n.[/POS][DU] Drake sat in the shade of the big tree with Worm.|(原文例句) 德雷克和沃姆坐在大树的树荫下。[/DU][DU] The little cat lies in the shade to escape the hot sun.| 小猫躺在阴凉处躲避烈日。[/DU][DU] We have a picnic in the shade of the pavilion.| 我们在亭子的阴凉处野餐。[/DU][/DEF]",
 "[TITLE]常见用法 [/TITLE][COLL][H] shade one's eyes | 用手挡眼（避光） [POS] v.[/POS][/H][EX] She shaded her eyes to see the distant mountain.| 她用手挡眼看远处的山。[/EX][EX] He shaded his eyes from the sunset.| 他用手挡住夕阳的光。[/EX][C] shade eyes from the sun | 挡住阳光护眼 [/C][C] shade eyes to see far | 挡光看远方 [/C][/COLL][COLL][H] in the shade | 在阴凉处 n.[/H][EX] Children play games in the shade after class.| 孩子们课后在阴凉处做游戏。[/EX][EX] Old people rest in the shade in the afternoon.| 老人们下午在阴凉处休息。[/EX][C] play in the shade | 在阴凉处玩耍 [/C][C] rest in the shade | 在阴凉处休息 [/C][/COLL]",
 "[TITLE] 额外例句 [/TITLE][EX] She shaded the baby's face with a hat.[POS] v.[/POS]| 她用帽子挡住宝宝的脸，避免阳光直射。[/EX][EX] The curtain shades the room from the morning sun.[POS] v.[/POS]| 窗帘挡住了房间里的晨光。[/EX][EX] The oak tree provides cool shade for the garden.[POS] n.[/POS]| 橡树为花园提供了凉爽的阴凉处。[/EX][EX] Birds build nests in the shade of the branches.[POS] n.[/POS]| 鸟儿在树枝的阴凉处筑巢。[/EX]",
 "[TITLE] 常见错误 [/TITLE][ERR] 不要混淆 shade 的动词和名词用法！作动词时表示 “遮蔽”，后接宾语（如 shade eyes）；作名词时表示 “阴凉处”，常用搭配 in the shade。[/ERR][ERR] 不要混淆 shade 和 shadow！shade 指 “阴凉处”（无阳光的区域），shadow 指 “影子”（物体挡住光形成的轮廓），比如 “树的影子” 是 tree shadow，“树的阴凉处” 是 tree shade。[/ERR][ERR] shade 作 “阴凉处” 时是不可数名词，不能说 “a shade”，要表达 “一片阴凉” 可以说 “a patch of shade”。[/ERR][ERR] 作动词 “遮蔽” 时，不能单独说 “shade”，需接宾语或加介词，比如 “挡住阳光” 是 shade oneself from the sun（正确），不是 shade the sun（错误）。[/ERR]"
@@ -11,7 +14,10 @@
   },
   "w002": {
     "word": "practice",
-    "images": { "scene": ["infopic01/practice.webp"] },
+    "images": { "scene": ["infopic01/practice.webp","infopic01/practice.webp","infopic01/potion.webp"] ,
+      "card": [
+        "wordpic01/pb2.png"
+      ] },
     "richDetail": [
       "[TITLE]解释[/TITLE][DEF][EN]To do something again and again to get better[/EN][CN]练习；操练[/CN][POS]v.[/POS][PH]/ˈpræktɪs/（美式）/ˈpræktɪs/（英式）[/PH][DU]We practice riding bikes.|我们练习骑自行车。[/DU][DU]She practices singing every day.|她每天练习唱歌。[/DU][/DEF][DEF][EN]Doing something again to learn it[/EN][CN]练习；训练[/CN][POS]n.[/POS][PH]/ˈpræktɪs/（美式）/ˈpræktɪs/（英式）[/PH][DU]Practice makes perfect.|熟能生巧。[/DU][DU]We have dragon practice.|我们有龙的训练。[/DU][/DEF]",
       "[TITLE]常见用法[/TITLE][COLL][H]practice doing sth|练习做某事[/H][POS]v.[/POS][EX]He practices drawing dragons.|他练习画龙。[/EX][EX]They practice flying with dragons.|他们练习和龙一起飞行。[/EX][C]practice 练习[/C][C]doing sth 做某事[/C][/COLL][COLL][H]daily practice|日常练习[/H][POS]n.[/POS][EX]Daily practice helps you improve.|日常练习能帮你进步。[/EX][EX]My daily practice is reading.|我的日常练习是读书。[/EX][C]daily 日常的[/C][C]practice 练习[/C][/COLL]",
@@ -21,7 +27,10 @@
   },
 "w003": {
 "word": "glow",
-"images": {"scene": ["infopic01/glow.webp"] },
+"images": {"scene": ["infopic01/glow.webp"],
+      "card": [
+        "wordpic01/pb3.png"
+      ]  },
 "richDetail": [
 "[TITLE] 解释 [/TITLE][DEF][EN] To shine softly and steadily [/EN][CN] 发光；发亮 [/CN][POS] v.[/POS][PH]/ɡləʊ/（英式）/ɡloʊ/（美式）[/PH][DU] Worm's eyes glowed bright green.| 沃姆的眼睛发出明亮的绿光。[/DU][DU] The candle glows in the dark.| 蜡烛在黑暗中发光。[/DU][/DEF][DEF][EN] A soft steady light [/EN][CN] 微光；光泽 [/CN][POS] n.[/POS][PH]/ɡləʊ/（英式）/ɡloʊ/（美式）[/PH][DU] The glow of the Dragon Stone is green.| 龙石的微光是绿色的。[/DU][DU] We saw the glow from the cave.| 我们看到了洞穴里的亮光。[/DU][/DEF]",
 "[TITLE] 常见用法 [/TITLE][COLL][H] glow brightly | 明亮地发光 [/H][POS] v.[/POS][EX] The sun dragon glows brightly in the sky.| 太阳龙在天空中明亮地发光。[/EX][EX] The magic stone glows brightly at night.| 魔法石在晚上明亮地发光。[/EX][C] glow 发光 [/C][C] brightly 明亮地 [/C][/COLL][COLL][H] a soft glow | 柔和的微光 [/H][POS] n.[/POS][EX] There's a soft glow from the potion.| 药剂发出柔和的微光。[/EX][EX] The moon gives a soft glow.| 月亮发出柔和的微光。[/EX][C] soft 柔和的 [/C][C] glow 微光 [/C][/COLL]",
@@ -31,7 +40,10 @@
 },
 "w004": {
 "word": "cave",
-"images": { "scene": ["infopic01/cave.webp"] },
+"images": { "scene": ["infopic01/cave.webp"],
+      "card": [
+        "wordpic01/pb1.png"
+      ]  },
 "richDetail": [
 "[TITLE] 解释 [/TITLE][DEF][EN] A big hole in the side of a hill or under the ground [/EN][CN] 洞穴；山洞 [/CN][POS] n.[/POS][PH]/keɪv/[/PH][DU] Each dragon has a small cave.| 每条龙都有一个小洞穴。[/DU][DU] We explored the dark cave.| 我们探索了黑暗的山洞。[/DU][/DEF][DEF][EN] To fall in suddenly [/EN][CN] 塌陷；倒塌 [/CN][POS] v.[/POS][PH]/keɪv/[/PH][DU] The tunnel caved in after the dragon hit it.| 龙撞到隧道后，隧道塌陷了。[/DU][DU] The old mine caved in slowly.| 旧矿井慢慢塌陷了。[/DU][/DEF]",
 "[TITLE] 常见用法 [/TITLE][COLL][H] dragon cave | 龙穴 [/H][POS] n.[/POS][EX] The dragon returned to its cave.| 龙回到了它的洞穴。[/EX][EX] We visited the dragon cave carefully.| 我们小心翼翼地参观了龙穴。[/EX][C] dragon 龙 [/C][C] cave 洞穴 [/C][/COLL][COLL][H] cave in | 塌陷；倒塌 [/H][POS] v.[/POS][EX] The tunnel caved in during the storm.| 隧道在暴风雨中塌陷了。[/EX][EX] The roof of the old house caved in.| 老房子的屋顶倒塌了。[/EX][C] cave 塌陷 [/C][C] in 进去 [/C][/COLL]",
@@ -42,7 +54,10 @@
 
   "w009": {
     "word": "glow",
-    "images": { "scene": ["infopic01/glow.webp"] },
+    "images": { "scene": ["infopic01/glow.webp"] ,
+      "card": [
+        "wordpic01/pb4.png"
+      ] },
     "richDetail": [
       "[TITLE]解释[/TITLE][DEF][EN]To shine softly and steadily (used in the book when Worm's eyes or the Dragon Stone gives out soft, steady light)[/EN][CN]发光；发亮（书中指沃姆的眼睛或龙石发出柔和稳定的光）[/CN][POS]v.[/POS][PH]/ɡləʊ/（英式）/ɡloʊ/（美式）[/PH][DU]Worm's eyes glowed bright green.|(原文例句)沃姆的眼睛发出明亮的绿光。[/DU][DU]The Dragon Stone around Drake's neck glowed brightly when Worm called him.|德雷克脖子上的龙石在沃姆呼唤他时明亮地发光。[/DU][DU]The fireflies glow in the garden at night.|萤火虫晚上在花园里发光。[/DU][/DEF][DEF][EN]A soft, steady light[/EN][CN]微光；光泽[/CN][POS]n.[/POS][DU]The glow of the potion lit up the dark cave.|药剂的微光照亮了黑暗的洞穴。[/DU][DU]We saw the warm glow from the cottage window.|我们看到小屋窗户透出温暖的微光。[/DU][DU]The moon casts a silvery glow on the lake.|月亮在湖面上洒下银色的光泽。[/DU][/DEF]",
       "[TITLE]常见用法[/TITLE][COLL][H]glow brightly|明亮地发光[/H][POS]v.[/POS][EX]The sun dragon glows brightly in the sky.|太阳龙在天空中明亮地发光。[/EX][EX]The magic crystal glows brightly at midnight.|魔法水晶在午夜明亮地发光。[/EX][C]glow brightly in the dark|在黑暗中明亮发光[/C][C]glow brightly with joy|因喜悦而明亮发光[/C][/COLL][COLL][H]a soft glow|柔和的微光[/H][POS]n.[/POS][EX]There's a soft glow from the candle on the table.|桌子上的蜡烛发出柔和的微光。[/EX][EX]The fireplace gives off a warm glow.|壁炉散发出温暖的微光。[/EX][C]a warm glow of happiness|幸福的温暖微光[/C][C]a silvery glow of the moon|月亮的银色微光[/C][/COLL]",

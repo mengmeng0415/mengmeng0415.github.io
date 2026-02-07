@@ -4,9 +4,42 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <title>My Word Library</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css?v=2.1">
 </head>
 <body>
+    <div id="game-assets" style="display:none;">
+        <video id="intro-video" playsinline muted>
+            <source src="https://cdn.jsdelivr.net/gh/mengmeng0415/wordpic01/spooky.mp4" type="video/mp4">
+        </video>
+        
+        <audio id="bgm-spooky" src="https://cdn.jsdelivr.net/gh/mengmeng0415/wordpic01/spooky.MP3" loop></audio>
+        <audio id="sfx-open" src="https://cdn.jsdelivr.net/gh/mengmeng0415/wordpic01/openmusic.mp3"></audio> 
+        <audio id="sfx-shuffle" src="https://cdn.jsdelivr.net/gh/mengmeng0415/wordpic01/shuffle.MP3"></audio>
+        <audio id="sfx-match" src="https://cdn.jsdelivr.net/gh/mengmeng0415/wordpic01/wrong.MP3"></audio> 
+        <audio id="sfx-error" src="https://cdn.jsdelivr.net/gh/mengmeng0415/wordpic01/right.MP3"></audio>
+    </div>
+
+    <div id="game-config-modal" class="modal-overlay hidden">
+        <div class="config-box">
+            <h3>配置翻牌游戏</h3>
+            <p>已选中 <span id="selected-count" style="color:var(--primary);font-weight:bold;">0</span> 个单词</p>
+            
+            <div class="config-row">
+                <label>每组单词数：</label>
+                <select id="group-size-select">
+                    <option value="2">2 个 (4张牌)</option>
+                    <option value="3">3 个 (6张牌)</option>
+                    <option value="4">4 个 (8张牌)</option>
+                    <option value="5" selected>5 个 (10张牌)</option>
+                </select>
+            </div>
+
+            <div class="config-actions">
+                <button onclick="closeConfigModal()" class="btn-cancel">取消</button>
+                <button onclick="confirmGameGeneration()" class="btn-confirm">生成游戏</button>
+            </div>
+        </div>
+    </div>
 
     <div id="view-home" class="page-view">
         <aside id="home-sidebar" class="sidebar home-sidebar">
@@ -31,7 +64,6 @@
                         <h1>📚 Books</h1>
                         <div id="book-type-tabs" class="book-type-nav"></div>
                     </div>
-                    
                     <div class="header-right">
                         <span>按键音</span>
                         <label class="switch">
@@ -53,9 +85,21 @@
                     <span id="chapter-list-count" class="list-count" style="font-size: 12px; color: #999; background: #f0f2f5; padding: 2px 6px; border-radius: 4px;">(0)</span>
                 </h2>
             </div>
+            
             <div class="search-box">
                  <input type="text" id="chapter-search" placeholder="Search in book..." autocomplete="off">
             </div>
+
+            <div id="creation-bar" class="hidden" style="padding: 10px 15px; background: #eef2ff; border-bottom: 1px solid #e0e6ed; display: flex; align-items: center; justify-content: space-between; gap: 10px;">
+                <div style="font-size: 13px; color: var(--primary); font-weight: bold;">
+                    已选: <span id="sidebar-select-count">0</span>
+                </div>
+                <div style="display: flex; gap: 8px;">
+                    <button onclick="exitCreationMode()" style="padding: 6px 12px; background: #fff; border: 1px solid #ccc; border-radius: 4px; font-size: 12px;">取消</button>
+                    <button onclick="openConfigModal()" style="padding: 6px 12px; background: var(--primary); color: #fff; border-radius: 4px; font-size: 12px; font-weight: bold;">下一步</button>
+                </div>
+            </div>
+
             <div class="sidebar-filter-area">
                  <div id="book-filter-stars" class="filter-stars-container"></div>
                  <button id="btn-book-toggle" class="toggle-text-btn" onclick="toggleBookList()">全部展开</button>
@@ -66,25 +110,23 @@
         <main class="content-detail">
             <header class="word-top-bar">
                 <div class="bar-left">
-    <button id="btn-toggle-sidebar" class="icon-btn" onclick="toggleSidebar()">☰</button>
-    
-    <button class="icon-btn home-btn" onclick="goHome()">
-        <img src="backinfo/home.png" class="home-icon-img" alt="Home">
-    </button>
-    
-    <div class="practice-dropdown" id="book-practice-container" style="display:none;">
-        <button class="practice-btn" onclick="togglePracticeMenu()">
-            <span>书本练习</span>
-            <span class="dropdown-arrow">▼</span>
-        </button>
-        <div id="practice-menu-content" class="dropdown-content">
-            </div>
-    </div>
+                    <button id="btn-toggle-sidebar" class="icon-btn" onclick="toggleSidebar()">☰</button>
+                    <button class="icon-btn home-btn" onclick="goHome()">
+                        <img src="backinfo/home.png" class="home-icon-img" alt="Home">
+                    </button>
+                    
+                    <div class="practice-dropdown" id="book-practice-container" style="display:none;">
+                        <button class="practice-btn" onclick="togglePracticeMenu()">
+                            <span>书本练习</span>
+                            <span class="dropdown-arrow">▼</span>
+                        </button>
+                        <div id="practice-menu-content" class="dropdown-content"></div>
+                    </div>
 
-    <button id="btn-toggle-word" class="toggle-word-btn active" onclick="toggleWordVisibility()">
-        显示单词
-    </button>
-</div>
+                    <button id="btn-toggle-word" class="toggle-word-btn active" onclick="toggleWordVisibility()">
+                        显示单词
+                    </button>
+                </div>
 
                 <div class="bar-center">
                     <div class="word-row-main">
@@ -112,6 +154,6 @@
         <img class="modal-content" id="modal-img">
     </div>
 
-    <script src="app.js"></script>
+    <script src="app.js?v=2.1"></script>
 </body>
 </html>
