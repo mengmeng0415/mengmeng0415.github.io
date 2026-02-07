@@ -1148,30 +1148,67 @@ function handleBigNextClick(items, container, activeIndex) {
         }
     }
 }
-// 全屏切换逻辑
+
+
+// 全屏切换逻辑 (强力兼容版：解决点击无反应问题)
 window.toggleFullScreen = function() {
-    // 获取需要全屏的容器（这里是整个 Tab 内容区，包含了圆点、卡片和 Next 按钮）
-    const elem = document.getElementById('tab-content-area');
     
-    if (!document.fullscreenElement) {
-        // 进入全屏
-        if (elem.requestFullscreen) {
-            elem.requestFullscreen().catch(err => {
-                alert(`Error attempting to enable full-screen mode: ${err.message} (${err.name})`);
-            });
-        } else if (elem.webkitRequestFullscreen) { /* Safari */
-            elem.webkitRequestFullscreen();
-        } else if (elem.msRequestFullscreen) { /* IE11 */
-            elem.msRequestFullscreen();
-        }
-    } else {
-        // 退出全屏
-        if (document.exitFullscreen) {
-            document.exitFullscreen();
-        } else if (document.webkitExitFullscreen) { /* Safari */
-            document.webkitExitFullscreen();
-        } else if (document.msExitFullscreen) { /* IE11 */
-            document.msExitFullscreen();
-        }
+    alert("正在尝试进入全屏...");
+    
+    const elem = document.getElementById('tab-content-area');
+    if (!elem) return;
+
+    // 1. 检查当前状态
+    const isPseudo = elem.classList.contains('pseudo-fullscreen');
+    const isNative = document.fullscreenElement || 
+                     document.webkitFullscreenElement || 
+                     document.mozFullScreenElement || 
+                     document.msFullscreenElement;
+
+    // === A. 如果已经在全屏(真/伪)，则退出 ===
+    if (isPseudo) {
+        elem.classList.remove('pseudo-fullscreen');
+        return;
     }
+    if (isNative) {
+        if (document.exitFullscreen) document.exitFullscreen();
+        else if (document.webkitExitFullscreen) document.webkitExitFullscreen();
+        return;
+    }
+
+    // === B. 尝试进入全屏 ===
+    // 策略：优先试探原生全屏，但无论成功与否，设置一个定时器检查结果
+    
+    let requestPromise;
+    try {
+        if (elem.requestFullscreen) {
+            requestPromise = elem.requestFullscreen();
+        } else if (elem.webkitRequestFullscreen) {
+            requestPromise = elem.webkitRequestFullscreen();
+        } else if (elem.msRequestFullscreen) {
+            requestPromise = elem.msRequestFullscreen();
+        }
+    } catch (e) {
+        console.log("Native API error, forcing pseudo.");
+    }
+
+    // 【核心修复】双保险机制
+    // 如果原生API返回了Promise，尝试捕获拒绝
+    if (requestPromise && requestPromise.catch) {
+        requestPromise.catch(err => {
+            console.log("Native blocked, forcing pseudo.");
+            elem.classList.add('pseudo-fullscreen');
+        });
+    }
+
+    // 【终极兜底】不管原生API有没有反应，100ms后检查。
+    // 如果发现还没进全屏，直接强开伪全屏。
+    // 这能解决腾讯文档等WebView“静默失败”的问题。
+    setTimeout(() => {
+        const currentNative = document.fullscreenElement || document.webkitFullscreenElement;
+        if (!currentNative && !elem.classList.contains('pseudo-fullscreen')) {
+            console.log("Timeout check: Native failed silently, forcing pseudo mode.");
+            elem.classList.add('pseudo-fullscreen');
+        }
+    }, 100);
 };

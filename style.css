@@ -696,72 +696,57 @@ input:checked + .slider:before { transform: translateX(16px); }
 
 
 
-/* ============ 📺 全屏沉浸模式专属优化 (兼容版) ============ */
+/* ============ 📺 全屏沉浸模式专属优化 (最终兼容版) ============ */
 
-/* A. 定义“伪全屏”的基础机制 (用于不支持原生全屏的学习机/微信等) */
+/* 1. 伪全屏机制：强制覆盖整个窗口 */
 .pseudo-fullscreen {
     position: fixed !important;
     top: 0 !important;
     left: 0 !important;
     width: 100vw !important;
     height: 100vh !important;
-    z-index: 99999 !important; /* 保证在最顶层 */
+    z-index: 2147483647 !important; /* 调到最大值，防止被其他元素遮挡 */
     background-color: var(--bg-gray) !important;
     margin: 0 !important;
     box-sizing: border-box !important;
 }
 
-/* B. 下面的样式同时应用于：原生全屏 (:fullscreen) 和 伪全屏 (.pseudo-fullscreen) */
-/* 注意：我保留了您所有微调过的数值 (10px, 75vh, 700px 等) */
-
-/* 1. 全屏容器 */
+/* 2. 容器样式：适用于 原生全屏 和 伪全屏 */
 #tab-content-area:fullscreen,
 #tab-content-area.pseudo-fullscreen {
     background-color: var(--bg-gray);
-    
-    /* 您的微调：顶部留白 10px */
-    padding: 10px 0 0 0; 
-    
+    padding: 10px 0 0 0; /* 您的微调：顶部留白 10px */
     display: flex;
     flex-direction: column;
     align-items: center;
     overflow-y: auto;
-    
-    /* 您的设置：flex-start */
-    justify-content: flex-start; 
+    justify-content: flex-start; /* 从顶部开始排列 */
 }
 
-/* 2. 全屏时的白底卡片 */
+/* 3. 白底卡片 */
 #tab-content-area:fullscreen .quiz-box,
 #tab-content-area.pseudo-fullscreen .quiz-box {
     max-width: 1400px;
     width: 95%;
-    
-    /* 您的微调：最小高度 75vh */
-    min-height: 75vh; 
+    min-height: 75vh; /* 您的微调：75vh */
     padding: 60px 80px;
-    
     display: flex;
     flex-direction: column;
-    justify-content: center; 
-    margin-bottom: 20px; 
+    justify-content: center;
+    margin-bottom: 20px;
 }
 
-/* 3. 全屏时的 Next 按钮 */
+/* 4. Next 按钮 */
 #tab-content-area:fullscreen .btn-big-next,
 #tab-content-area.pseudo-fullscreen .btn-big-next {
     max-width: 400px;
     font-size: 24px;
     padding: 20px 0;
-    
-    /* 您的微调：上下间距 20px */
-    margin-top: 20px;    
-    margin-bottom: 20px; 
+    margin-top: 20px; /* 您的微调：20px */
+    margin-bottom: 20px;
 }
 
-/* --- 以下保持不变 (但增加了兼容选择器) --- */
-
-/* 4. 放大题目文字 */
+/* 5. 字体放大 */
 #tab-content-area:fullscreen .quiz-q,
 #tab-content-area.pseudo-fullscreen .quiz-q {
     font-size: 38px;
@@ -769,7 +754,6 @@ input:checked + .slider:before { transform: translateX(16px); }
     line-height: 1.4;
 }
 
-/* 5. 放大选项按钮 */
 #tab-content-area:fullscreen .opt-btn,
 #tab-content-area.pseudo-fullscreen .opt-btn {
     font-size: 26px;
@@ -778,7 +762,6 @@ input:checked + .slider:before { transform: translateX(16px); }
     border-radius: 16px;
 }
 
-/* 6. 放大 ABCD 圆圈 */
 #tab-content-area:fullscreen .opt-btn span,
 #tab-content-area.pseudo-fullscreen .opt-btn span {
     width: 56px;
@@ -787,10 +770,8 @@ input:checked + .slider:before { transform: translateX(16px); }
     margin-right: 20px;
 }
 
-/* 7. 放大游戏窗口 */
 #tab-content-area:fullscreen .game-wrapper,
 #tab-content-area.pseudo-fullscreen .game-wrapper {
-    /* 您的微调：最大宽度 700px */
-    max-width: 700px;
+    max-width: 700px; /* 您的微调：700px */
     aspect-ratio: 16 / 9;
 }
