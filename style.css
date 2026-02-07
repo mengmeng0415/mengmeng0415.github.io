@@ -742,8 +742,8 @@ input:checked + .slider:before { transform: translateX(16px); }
     max-width: 400px;
     font-size: 24px;
     padding: 20px 0;
-    margin-top: 20px; /* 您的微调：20px */
-    margin-bottom: 10px;
+    margin-top: 50px; /* 您的微调：20px */
+    margin-bottom: 0px;
 }
 
 /* 5. 字体放大 */
