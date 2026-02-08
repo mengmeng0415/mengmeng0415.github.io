@@ -1271,7 +1271,7 @@ function startSpookyGame(gameIndex) {
     // 1. 强制添加 playsinline 和 webkit-playsinline 属性，这对 iOS/平板 至关重要
     // 2. 添加海报 poster (背景图)，万一视频加载不出来，至少有个背景，不是黑屏
     container.innerHTML = `
-        <video id="game-video-bg" playsinline webkit-playsinline muted loop style="position: absolute; width: 100%; height: 100%; object-fit: cover; z-index: 1; background: #000;">
+        <video id="game-video-bg" playsinline webkit-playsinline muted style="position: absolute; width: 100%; height: 100%; object-fit: cover; z-index: 1; background: #000;">
             <source src="https://cdn.jsdelivr.net/gh/mengmeng0415/wordpic01/spooky.mp4" type="video/mp4">
         </video>
         
