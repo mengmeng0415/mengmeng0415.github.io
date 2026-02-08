@@ -3,7 +3,7 @@
     "word": "shade",
     "images": { "scene": ["infopic01/shade.webp","infopic01/practice.webp","infopic01/potion.webp","infopic01/argue.webp"],
       "card": [
-        "wordpic01/pb1.png"
+        "wordpic01/ex1.png"
       ] },
     "richDetail": [
       "[TITLE] 解释 [/TITLE][DEF][EN] To block the sun so that it does not shine directly (used in the book when Drake blocks sunlight with his hand to watch Kepri fly)[/EN][CN] 遮蔽（阳光）；挡光（书中指德雷克用手挡住阳光，观看凯普丽飞行）[/CN][POS] v.[/POS][PH]/ʃeɪd/[/PH][DU] Drake shaded his eyes with his hand to look at Kepri flying in the sky.|(原文例句) 德雷克用手挡住眼睛，观看凯普丽在空中飞行。[/DU][DU] The umbrella shades us from the strong sunlight.| 雨伞为我们挡住强烈的阳光。[/DU][DU] The big leaves shade the flowers below.| 大片的叶子为下面的花儿挡光。[/DU][/DEF][IMG]infopic01/argue.webp[/IMG][DEF][EN] A cool place out of the sun (used in the book when Drake stays in the cool area under the tree with Worm)[/EN][CN] 树荫；阴凉处（书中指德雷克和沃姆待在树下的凉爽区域）[/CN][POS] n.[/POS][DU] Drake sat in the shade of the big tree with Worm.|(原文例句) 德雷克和沃姆坐在大树的树荫下。[/DU][DU] The little cat lies in the shade to escape the hot sun.| 小猫躺在阴凉处躲避烈日。[/DU][DU] We have a picnic in the shade of the pavilion.| 我们在亭子的阴凉处野餐。[/DU][/DEF]",
@@ -16,7 +16,7 @@
     "word": "practice",
     "images": { "scene": ["infopic01/practice.webp","infopic01/practice.webp","infopic01/potion.webp"] ,
       "card": [
-        "wordpic01/pb2.png"
+        "wordpic01/ex2.png"
       ] },
     "richDetail": [
       "[TITLE]解释[/TITLE][DEF][EN]To do something again and again to get better[/EN][CN]练习；操练[/CN][POS]v.[/POS][PH]/ˈpræktɪs/（美式）/ˈpræktɪs/（英式）[/PH][DU]We practice riding bikes.|我们练习骑自行车。[/DU][DU]She practices singing every day.|她每天练习唱歌。[/DU][/DEF][DEF][EN]Doing something again to learn it[/EN][CN]练习；训练[/CN][POS]n.[/POS][PH]/ˈpræktɪs/（美式）/ˈpræktɪs/（英式）[/PH][DU]Practice makes perfect.|熟能生巧。[/DU][DU]We have dragon practice.|我们有龙的训练。[/DU][/DEF]",
@@ -29,7 +29,7 @@
 "word": "glow",
 "images": {"scene": ["infopic01/glow.webp"],
       "card": [
-        "wordpic01/pb3.png"
+        "wordpic01/ex3.png"
       ]  },
 "richDetail": [
 "[TITLE] 解释 [/TITLE][DEF][EN] To shine softly and steadily [/EN][CN] 发光；发亮 [/CN][POS] v.[/POS][PH]/ɡləʊ/（英式）/ɡloʊ/（美式）[/PH][DU] Worm's eyes glowed bright green.| 沃姆的眼睛发出明亮的绿光。[/DU][DU] The candle glows in the dark.| 蜡烛在黑暗中发光。[/DU][/DEF][DEF][EN] A soft steady light [/EN][CN] 微光；光泽 [/CN][POS] n.[/POS][PH]/ɡləʊ/（英式）/ɡloʊ/（美式）[/PH][DU] The glow of the Dragon Stone is green.| 龙石的微光是绿色的。[/DU][DU] We saw the glow from the cave.| 我们看到了洞穴里的亮光。[/DU][/DEF]",
@@ -42,7 +42,7 @@
 "word": "cave",
 "images": { "scene": ["infopic01/cave.webp"],
       "card": [
-        "wordpic01/pb1.png"
+        "wordpic01/ex4.png"
       ]  },
 "richDetail": [
 "[TITLE] 解释 [/TITLE][DEF][EN] A big hole in the side of a hill or under the ground [/EN][CN] 洞穴；山洞 [/CN][POS] n.[/POS][PH]/keɪv/[/PH][DU] Each dragon has a small cave.| 每条龙都有一个小洞穴。[/DU][DU] We explored the dark cave.| 我们探索了黑暗的山洞。[/DU][/DEF][DEF][EN] To fall in suddenly [/EN][CN] 塌陷；倒塌 [/CN][POS] v.[/POS][PH]/keɪv/[/PH][DU] The tunnel caved in after the dragon hit it.| 龙撞到隧道后，隧道塌陷了。[/DU][DU] The old mine caved in slowly.| 旧矿井慢慢塌陷了。[/DU][/DEF]",
