@@ -1327,60 +1327,85 @@ function startSpookyGame(gameIndex) {
     grid.innerHTML = cardsHtml + '<div id="grid-overlay" class="grid-overlay"></div>';
 
     // ============ 🚀 核心：点击“开始”时的强力激活逻辑 ============
+   // ============ 🚀 核心：点击“开始”时的强力激活逻辑 ============
     window.realStartGameAction = function() {
         const overlay = document.getElementById('game-start-overlay');
         if(overlay) overlay.style.display = 'none';
 
         // 获取所有媒体元素
         gameVideo = document.getElementById('game-video-bg');
-        gameBgm = document.getElementById('bgm-spooky');
         
-        // 1. 【视频激活】
-        // 必须静音才能自动播放 (平板策略)
+        // 1. 【视频播放】
         gameVideo.muted = true; 
         gameVideo.play().catch(e => console.warn("Video autoplay blocked:", e));
 
-        // 2. 【音频激活】
-        // 重点：在这里把所有音效都“摸”一遍，解锁浏览器的音频限制
+        // 2. 【音频全员激活 (解锁)】
+        // 先把所有音频都“摸”一遍 (play然后立即pause)，获取浏览器信任
         const audioIds = ['bgm-spooky', 'sfx-open', 'sfx-shuffle', 'sfx-match', 'sfx-notmatch', 'sfx-flip'];
         
         audioIds.forEach(id => {
             const audio = document.getElementById(id);
             if (audio) {
-                audio.muted = false; // 确保取消静音
-                audio.volume = (id === 'bgm-spooky') ? 0.5 : 1.0; // 设置音量
+                audio.muted = false; // 取消静音
+                // 设置音量：背景音乐小一点，音效大一点
+                audio.volume = (id === 'bgm-spooky' || id === 'sfx-open') ? 0.6 : 1.0; 
                 
-                // 技巧：播放一瞬间然后暂停，这样浏览器就认为“用户已经允许该音频播放了”
                 const p = audio.play();
                 if (p !== undefined) {
                     p.then(() => {
-                        // 如果不是背景音乐，播放后立即重置，等待调用
-                        if (id !== 'bgm-spooky') {
-                            audio.pause();
-                            audio.currentTime = 0;
-                        }
+                        // ⚡️ 重点：激活后立刻暂停所有声音！
+                        // 也就是：点击瞬间，什么都别响，等待后续指令
+                        audio.pause();
+                        audio.currentTime = 0;
                     }).catch(e => console.warn(`Audio ${id} blocked:`, e));
                 }
             }
         });
 
-        // 3. 进入全屏 (如果浏览器允许)
+        // 3. 【正式播放开场音乐】
+        // 激活完毕后，立刻单独播放开场音乐
+        setTimeout(() => {
+            const openMusic = document.getElementById('sfx-open');
+            if (openMusic) openMusic.play().catch(()=>{});
+        }, 100); // 稍微延迟100ms确保激活完成
+
+        // 4. 进入全屏
         if (container.requestFullscreen) container.requestFullscreen().catch(()=>{});
         else if (container.webkitRequestFullscreen) container.webkitRequestFullscreen().catch(()=>{});
 
-        // 4. 显示游戏盘面
+        // 5. 【5秒后：切换场景 & 切换音乐】
         setTimeout(() => {
+            // A. 显示卡牌层
             const layer = document.getElementById('game-board-layer');
             if (layer) layer.style.opacity = '1';
             
-            // 播放洗牌音效 (此时已经解锁，应该能听到)
-            safePlayAudio('sfx-shuffle');
+            // B. 音乐交接仪式
+            const openMusic = document.getElementById('sfx-open');
+            const bgm = document.getElementById('bgm-spooky');
             
+            // 停止开场音乐
+            if (openMusic) { 
+                openMusic.pause(); 
+                openMusic.currentTime = 0; 
+            }
+            
+            // 开始循环播放游戏背景音乐
+            if (bgm) {
+                bgm.currentTime = 0;
+                bgm.play().catch(()=>{});
+            }
+
+            // C. 播放洗牌音效 & 动画
+            safePlayAudio('sfx-shuffle');
             const allCards = document.querySelectorAll('.spooky-card');
             allCards.forEach(c => c.classList.add('shuffling'));
             setTimeout(() => { allCards.forEach(c => c.classList.remove('shuffling')); }, 1000);
-        }, 4000); // 稍微延迟一点点，让视频先加载出来
+            
+        }, 5000); // 👈 对应视频时长的 5秒
     };
+
+    resetSpookyLogic();
+
 
     resetSpookyLogic();
 }
