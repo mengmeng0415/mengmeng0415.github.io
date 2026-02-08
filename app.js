@@ -1379,7 +1379,7 @@ function startSpookyGame(gameIndex) {
             const allCards = document.querySelectorAll('.spooky-card');
             allCards.forEach(c => c.classList.add('shuffling'));
             setTimeout(() => { allCards.forEach(c => c.classList.remove('shuffling')); }, 1000);
-        }, 500); // 稍微延迟一点点，让视频先加载出来
+        }, 4000); // 稍微延迟一点点，让视频先加载出来
     };
 
     resetSpookyLogic();
