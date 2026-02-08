@@ -1000,9 +1000,12 @@ input:checked + .slider:before { transform: translateX(16px); }
 /* 游戏层：覆盖在视频上 */
 #game-board-layer {
     position: relative; z-index: 10;
-    width: 100%; max-width: 1000px;
-    display: flex; flex-direction: column; align-items: center;
-    opacity: 0; transition: opacity 1s; /* 初始隐藏，等视频播完显示 */
+    width: 100%; height: 100%; /* 确保层撑满屏幕 */
+    display: flex; 
+    flex-direction: column; 
+    align-items: center; 
+    justify-content: center; /* 垂直居中核心 */
+    opacity: 0; transition: opacity 1s;
 }
 
 /* 退出按钮 */
@@ -1012,44 +1015,59 @@ input:checked + .slider:before { transform: translateX(16px); }
     padding: 5px 15px; border-radius: 20px; backdrop-filter: blur(5px);
 }
 
-/* ============ 🎴 翻牌卡片样式 (UI 终极优化版) ============ */
-/* ============ 🎴 翻牌卡片样式 (UI 撑满屏幕版) ============ */
+/* ============ 🎴 翻牌卡片样式 (UI 撑满屏幕极简版) ============ */
 .spooky-grid {
     display: grid; 
     /* grid-template-columns 由 JS 动态计算 */
     
-    /* 【修改 1】极小的间距，把空间让给卡片 */
-    gap: 1vh 1vw; 
+    /* 间距 */
+    gap: 1.5vh 1.5vw; 
     
-    /* 【修改 2】宽度几乎占满全屏 */
+    /* 容器尺寸 */
     width: 98%;   
     max-width: 1600px; 
+    height: 100%; 
     
-    /* 【修改 3】居中对齐 */
+    /* 整体居中 */
     margin: 0 auto;
-    justify-content: center;
     align-content: center;
-    height: 100%; /* 占满容器高度 */
+    justify-content: center;
     
     perspective: 1000px;
 }
 
 .spooky-card {
     position: relative; 
-    aspect-ratio: 3/4; /* 保持比例 */
+    
+    /* 1. 【核心修复】尺寸控制 */
+    /* 改回宽度撑满，高度自动，这样绝对不会塌陷成小点 */
+    width: 95%;
+    height: auto;
+    
+    /* 2. 【核心】锁定 3:4 比例 */
+    aspect-ratio: 3 / 4; 
+    
+    /* 3. 【巧妙限制】限制最大宽度，间接限制高度 */
+    /* 原理：最大高度想限制在 46vh，按 3:4 比例换算，最大宽度就是 46vh * 0.75 ≈ 34.5vh */
+    /* 这样既保证了比例，又保证了高度不会撑破屏幕，也不会塌陷 */
+    max-width: 30vh;
+    
+    /* 4. 居中显示 */
+    margin: 0 auto;
+    justify-self: center;
+    align-self: center;
+    
     cursor: pointer;
     transform-style: preserve-3d; 
     transition: transform 0.6s cubic-bezier(0.4, 0.0, 0.2, 1);
-    box-shadow: 0 5px 15px rgba(0,0,0,0.5);
     
-    /* 【修改 4：关键！】单张卡片最大高度 */
-    /* 46vh * 2 = 92vh，上下只留极窄的边距 */
-    /* 这会让卡片变得非常巨大 */
-    max-height: 46vh; 
+    /* 阴影与圆角 */
+    box-shadow: 0 6px 16px rgba(0,0,0,0.3);
+    border-radius: 12px;
     
-    /* 让宽度自动膨胀 */
-    width: auto; 
-    max-width: 100%;
+    /* 独立透视 */
+    transform-origin: center center;
+    transform: perspective(2000px) rotateY(0deg);
 }
 
 /* 屏幕很窄时（手机竖屏），稍微减小高度防止左右溢出 */
@@ -1059,29 +1077,127 @@ input:checked + .slider:before { transform: translateX(16px); }
     }
 }
 
-.spooky-card.flipped { transform: rotateY(180deg); }
-.spooky-card.matched { visibility: hidden; opacity: 0; transition: opacity 0.5s 0.5s; }
+/* 翻转状态 */
+.spooky-card.flipped { 
+    transform: perspective(2000px) rotateY(180deg); 
+}
 
-/* ... 后面的 .face 样式保持不变 ... */
+/* 悬停效果 */
+.spooky-card:hover {
+    box-shadow: 0 10px 25px rgba(0,0,0,0.5); 
+    transform: perspective(2000px) rotateY(0deg) translateY(-2px); 
+}
+
+.spooky-card.matched { visibility: hidden; opacity: 0; transition: opacity 0.5s 0.5s; }
 
 .face {
     position: absolute; width: 100%; height: 100%;
     backface-visibility: hidden; border-radius: 12px; /* 圆角稍微大一点更现代 */
     display: flex; justify-content: center; align-items: center;
-    border: 2px solid rgba(255,255,255,0.6);
+   
 }
 
+
+/* ============ 修改卡牌背面 ============ */
 .face.back {
-    background: #2c3e50; 
-    background-image: repeating-linear-gradient(45deg, #2c3e50 0, #2c3e50 10px, #34495e 10px, #34495e 20px);
-    color: #fff; font-size: 24px;
+    /* 1. 设置背景色 (图片加载前的底色) */
+    background-color: #fff; 
+
+    /* 2. 设置背景图 (替换这里的链接) */
+    background-image: url('https://cdn.jsdelivr.net/gh/mengmeng0415/wordpic01/spookybackn.png');
+    
+    /* 3. 让图片充满卡牌 */
+    background-size: cover; 
+    background-position: center;
+    background-repeat: no-repeat;
+
+    
+    
+    /* 5. 调整文字/图标颜色 (如果你还保留中间的 logo) */
+    color: transparent; /* 如果你想隐藏那个 🕷️，就把颜色设为透明 */
+     border: 2px solid rgba(255,255,255,0.6);
+}
+/* ============ 修改卡牌正面样式 (统一图文版) ============ */
+
+/* 1. 正面容器布局 */
+.face.front {
+    /* 1. 核心翻转逻辑 (不动) */
+    transform: rotateY(180deg);
+    
+    /* 2. 【关键修复】背景图设置 */
+    background-color: #fff; /* 图片加载前的底色 */
+    
+    
+    background-image: url('https://cdn.jsdelivr.net/gh/mengmeng0415/wordpic01/spookyface.png');
+    
+    background-size: cover;  /* 铺满卡片 */
+    background-position: center;
+    background-repeat: no-repeat;
+
+    /* 3. 边框与内边距 */
+    border: 3px solid #fff; 
+    box-sizing: border-box; 
+    padding: 10px;
+
+    /* 4. 布局模式：垂直排列 (图在上，文在下) */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5px; /* 图文之间的间距 */
 }
 
-.face.front {
-    background: rgba(255,255,255,0.95);
-    transform: rotateY(180deg);
-    padding: 8px; /* 内边距稍微大一点 */
-    flex-direction: column;
+/* 2. 图片容器 (用于控制1:1比例) */
+.front-img-container {
+    width: 90%;          /* 宽度占卡片的 90% */
+    aspect-ratio: 1 / 1; /* 【核心】强制 1:1 正方形 */
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    background: #f8f9fa; /* 给一个浅灰背景框，让画面更整洁 */
+    border-radius: 8px;  /* 圆角 */
+    box-shadow: inset 0 0 10px rgba(0,0,0,0.05); /* 内阴影增加质感 */
+    overflow: hidden;    /* 超出部分隐藏 */
+}
+
+/* 3. 图片本身 */
+.front-img-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain; /* 保证图片完整显示在正方形内，不裁切 */
+    display: block;
+}
+
+/* (可选) 没有图片时的占位文字 */
+.no-img-text {
+    color: #ccc;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+/* 4. 下方的单词文本 */
+.front-word-text {
+    font-size: 4vh !important;
+    font-weight: 800;
+    color: #2c3e50;
+    text-align: center;
+    
+    /* 防止长单词换行撑破布局 */
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 98%;
+    
+    /* 加个白色描边，防止背景太花看不清 */
+   /* text-shadow: 0 2px 4px rgba(255,255,255,1); */
+}
+
+/* 手机端适配：稍微减小字体和间距 */
+@media (max-width: 600px) {
+    .face.front { padding: 8px; gap: 6px; }
+    .front-word-text { font-size: 1.8vh; }
 }
 
 .face.front img { 
@@ -1091,10 +1207,13 @@ input:checked + .slider:before { transform: translateX(16px); }
 }
 
 .face.front span { 
-    font-size: 1.5vw; /* 字体随屏幕宽度响应式缩放 */
+    font-size: 1.5vw; 
     margin-top: 5px; 
     color: #333; 
     font-weight: 800; 
+    
+    /* 文字描白边，确保在任何背景上都能看清 */
+    text-shadow: 0 0 5px #fff, 0 0 5px #fff, 0 0 5px #fff; 
 }
 
 /* 手机竖屏适配 */
@@ -1111,10 +1230,7 @@ input:checked + .slider:before { transform: translateX(16px); }
 }
 .shuffling .spooky-card { animation: shuffleDeck 0.3s ease-in-out infinite; }
 
-/* ============ 👇 重点检查这里 👇 ============ */
-/* 确保这段代码前面没有未闭合的括号！建议直接粘贴在文件最末尾 */
-
-/* 🎮 游戏启动遮罩层 */
+/* ============ 🎮 游戏启动遮罩层 ============ */
 .game-start-overlay {
     position: absolute; 
     top: 0; 
@@ -1151,4 +1267,88 @@ input:checked + .slider:before { transform: translateX(16px); }
     0% { transform: scale(1); box-shadow: 0 0 0 0 rgba(255, 255, 255, 0.7); }
     70% { transform: scale(1.05); box-shadow: 0 0 0 15px rgba(255, 255, 255, 0); }
     100% { transform: scale(1); box-shadow: 0 0 0 0 rgba(255, 255, 255, 0); }
+}
+/* ============ 🎭 游戏特效样式 ============ */
+
+/* 1. 背景后退效果 */
+.grid-recede {
+    transform: scale(0.9); /* 整体缩小 */
+    opacity: 0.3;          /* 变暗 */
+    filter: blur(2px);     /* 变模糊 */
+    transition: all 0.5s ease;
+}
+
+/* 2. 印章容器 */
+.stamp-container {
+    position: absolute;
+    top: 0; left: 0; width: 100%; height: 100%;
+    background-size: 80%;
+    background-position: center;
+    background-repeat: no-repeat;
+    opacity: 0;
+    transform: scale(2); /* 初始放大，模拟盖章砸下来的效果 */
+    transition: all 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    z-index: 10;
+    pointer-events: none;
+}
+
+/* 印章显示状态 */
+.stamp-container.show {
+    opacity: 1;
+    transform: scale(1); /* 砸到纸面上 */
+}
+
+/* 3. 错误时的震动动画 */
+.shake {
+    animation: shakeCard 0.5s;
+}
+@keyframes shakeCard {
+    0%, 100% { transform: perspective(2000px) rotateY(180deg) translateX(0); }
+    25% { transform: perspective(2000px) rotateY(180deg) translateX(-10px); }
+    75% { transform: perspective(2000px) rotateY(180deg) translateX(10px); }
+}
+/* ============ 🎭 遮罩层样式 (修复版) ============ */
+
+/* 1. 遮罩层：位于棋盘(默认)之上，但位于主角卡牌(z9999)之下 */
+.grid-overlay {
+    position: absolute;
+    /* 扩大范围，防止边缘露白 */
+    top: -50%; left: -50%; 
+    width: 200%; height: 200%;
+    
+    background: rgba(0, 0, 0, 0.7); /* 70% 黑色背景 */
+    backdrop-filter: blur(8px);     /* 背景模糊 */
+    
+    z-index: 9000; /* 关键层级：比普通卡牌高，比放大卡牌低 */
+    
+    opacity: 0;
+    pointer-events: none; /* 让鼠标穿透，不影响点击 */
+    transition: opacity 0.5s ease;
+}
+
+.grid-overlay.active {
+    opacity: 1; /* 激活时显示 */
+}
+
+/* 2. 确保印章样式存在 */
+.stamp-container {
+    position: absolute;
+    top: 0; left: 0; width: 100%; height: 100%;
+    background-size: 80%;
+    background-position: center;
+    background-repeat: no-repeat;
+    opacity: 0;
+    transform: scale(2); 
+    transition: all 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    z-index: 10;
+    pointer-events: none;
+}
+.stamp-container.show { opacity: 1; transform: scale(1); }
+
+/* 3. 错误震动 */
+.shake { animation: shakeCard 0.5s; }
+@keyframes shakeCard {
+    0%, 100% { transform: perspective(2000px) rotateY(180deg) translateX(0); }
+    25% { transform: perspective(2000px) rotateY(180deg) translateX(-10px); }
+    75% { transform: perspective(2000px) rotateY(180deg) translateX(10px); }
 }

@@ -1,6 +1,5 @@
 // ================== 🛠️ 1. 资源配置 ==================
 const CONFIG = {
-    // 1. 把基础链接改成 jsDelivr 的 CDN 根目录 (注意末尾有斜杠)
     assetUrl: "https://cdn.jsdelivr.net/gh/mengmeng0415/", 
     imgFolder: "", 
     dataPath: "data/" 
@@ -41,80 +40,66 @@ const DataManager = {
         }
     },
 
-   // ============ 修复版 getWordDetail (解决图片加载失败) ============
-getWordDetail: function(uid) {
-    const raw = this.db.words[uid];
-    if (!raw) return null;
-    
-    // 深拷贝
-    const word = JSON.parse(JSON.stringify(raw));
-    word.uid = uid; 
-    
-    // 链接处理函数
-    const process = (url) => url.startsWith('http') ? url : CONFIG.assetUrl + CONFIG.imgFolder + url;
-    
-    // 1. 图片路径处理 (修复点在此)
-    word.displayImages = [];
-    if (word.images) {
-        // 分别处理 scene 和 card 图片，生成完整链接
-        const scene = (word.images.scene || []).map(process);
-        const card = (word.images.card || []).map(process);
+    getWordDetail: function(uid) {
+        const raw = this.db.words[uid];
+        if (!raw) return null;
         
-        // 【核心修复】将处理好的完整链接写回对象
-        // 这样后续的游戏逻辑读取 word.images.card 时，拿到的就是 http... 的完整地址了
-        word.images.scene = scene;
-        word.images.card = card;
+        const word = JSON.parse(JSON.stringify(raw));
+        word.uid = uid; 
         
-        // 合并用于显示
-        word.displayImages = scene.concat(card);
-    }
-
-    // 2. Tab 游戏 (games)
-    if (word.games && Array.isArray(word.games)) {
-    } else if (word.gameUrl) {
-        word.games = [word.gameUrl];
-    } else {
-        word.games = [];
-    }
-
-    // 3. Quiz 游戏 (quizGames)
-    if (!word.quizGames) word.quizGames = [];
-
-    // 4. 富文本详情处理
-    if (word.richDetail) {
-        word.richDetail = word.richDetail.map(item => {
-            if (typeof item === 'string') {
-                let title = "详细内容"; 
-                let content = item;
-                const titleMatch = item.match(/\[TITLE\](.*?)\[\/TITLE\]/);
-                if (titleMatch) {
-                    title = titleMatch[1]; 
-                    content = item.replace(titleMatch[0], ''); 
-                }
-                return { title: title, content: content };
-            }
-            return item;
-        });
-
-        word.richDetail.forEach(s => {
-            s.content = parseRichContent(s.content);
-            s.content = s.content.replace(/src=["']([^"']+)["']/g, (m, src) => {
-                const fullSrc = src.startsWith('http') ? src : CONFIG.assetUrl + CONFIG.imgFolder + src;
-                return `src="${fullSrc}" onclick="openModal('${fullSrc}')"`;
-            });
-        });
-    }
-    
-    // 5. 关联题目 (Quiz)
-    word.linkedQuizzes = [];
-    for (const qid in this.db.quizzes) {
-        if (this.db.quizzes[qid].wordIds.includes(uid)) {
-            word.linkedQuizzes.push({ id: qid, ...this.db.quizzes[qid] });
+        const process = (url) => url.startsWith('http') ? url : CONFIG.assetUrl + CONFIG.imgFolder + url;
+        
+        word.displayImages = [];
+        if (word.images) {
+            const scene = (word.images.scene || []).map(process);
+            const card = (word.images.card || []).map(process);
+            word.images.scene = scene;
+            word.images.card = card;
+            word.displayImages = scene.concat(card);
         }
-    }
-    
-    return word;
-},
+
+        if (word.games && Array.isArray(word.games)) {
+        } else if (word.gameUrl) {
+            word.games = [word.gameUrl];
+        } else {
+            word.games = [];
+        }
+
+        if (!word.quizGames) word.quizGames = [];
+
+        if (word.richDetail) {
+            word.richDetail = word.richDetail.map(item => {
+                if (typeof item === 'string') {
+                    let title = "详细内容"; 
+                    let content = item;
+                    const titleMatch = item.match(/\[TITLE\](.*?)\[\/TITLE\]/);
+                    if (titleMatch) {
+                        title = titleMatch[1]; 
+                        content = item.replace(titleMatch[0], ''); 
+                    }
+                    return { title: title, content: content };
+                }
+                return item;
+            });
+
+            word.richDetail.forEach(s => {
+                s.content = parseRichContent(s.content);
+                s.content = s.content.replace(/src=["']([^"']+)["']/g, (m, src) => {
+                    const fullSrc = src.startsWith('http') ? src : CONFIG.assetUrl + CONFIG.imgFolder + src;
+                    return `src="${fullSrc}" onclick="openModal('${fullSrc}')"`;
+                });
+            });
+        }
+        
+        word.linkedQuizzes = [];
+        for (const qid in this.db.quizzes) {
+            if (this.db.quizzes[qid].wordIds.includes(uid)) {
+                word.linkedQuizzes.push({ id: qid, ...this.db.quizzes[qid] });
+            }
+        }
+        
+        return word;
+    },
 
     getWordsByChapter: function(chapterId) {
         const book = this.db.books.find(b => b.chapters.some(c => c.id === chapterId));
@@ -175,7 +160,7 @@ let state = {
     homeFilterRatings: new Set(), bookFilterRatings: new Set(),
     isPracticeMode: false, 
     currentPracticeIndex: 0,
-    customGames: null // 存储生成的游戏
+    customGames: null
 };
 
 const audioClick = new Audio('backinfo/click.mp3');
@@ -193,7 +178,13 @@ document.addEventListener('DOMContentLoaded', async () => {
 
 document.addEventListener('click', (e) => {
     if (!isClickSoundEnabled) return;
-    if (e.target.closest('.quiz-q') || e.target.closest('.opt-btn') || e.target.closest('.switch') || e.target.closest('.audio-icon')) return;
+    if (e.target.closest('.quiz-q') || 
+        e.target.closest('.opt-btn') || 
+        e.target.closest('.switch') || 
+        e.target.closest('.audio-icon') || 
+        e.target.closest('.spooky-card')) { 
+        return; 
+    }
     audioClick.play().catch(()=>{});
 });
 
@@ -268,7 +259,6 @@ function renderDetailSidebar() {
     const container = document.getElementById('chapter-list-container');
     if(!container) return;
     container.innerHTML = '';
-    
     let wordsToRender = []; 
 
     if (state.mode === 'book') {
@@ -379,27 +369,22 @@ window.enterBookMode = function(bookId) {
     if (wordCount === 0 && hasPractices) {
         const sidebar = document.getElementById('chapter-sidebar');
         if(sidebar) sidebar.classList.add('collapsed'); 
-        
         const bookToggleBtn = document.getElementById('btn-book-toggle'); 
         if(bookToggleBtn) bookToggleBtn.style.display = 'none';
-
         loadPracticeUnit(bookId, 0);
         return; 
     }
 
     const sidebar = document.getElementById('chapter-sidebar'); 
     if(sidebar) { sidebar.classList.remove('hidden'); sidebar.classList.remove('collapsed'); }
-    
     renderSidebarFilter('book');
     const bookToggleBtn = document.getElementById('btn-book-toggle'); 
     if(bookToggleBtn) { 
         bookToggleBtn.style.display = 'inline-block'; 
         updateBookToggleBtn(); 
     }
-    
     const input = document.getElementById('chapter-search');
     if(input) { input.value = ''; input.oninput = () => renderDetailSidebar(); }
-
     renderDetailSidebar();
     
     if(state.currentWordList.length > 0) {
@@ -417,16 +402,12 @@ window.enterSoloMode = function(uid) {
     document.getElementById('view-home').classList.add('hidden');
     document.getElementById('view-detail').classList.remove('hidden');
     const sidebar = document.getElementById('chapter-sidebar'); if(sidebar) { sidebar.classList.remove('hidden'); sidebar.classList.remove('collapsed'); }
-    
     const bookToggleBtn = document.getElementById('btn-book-toggle'); if(bookToggleBtn) bookToggleBtn.style.display = 'none';
-
     renderSidebarFilter('home');
     const input = document.getElementById('chapter-search');
     if(input) { input.value = ''; input.oninput = () => renderDetailSidebar(); }
-    
     state.currentWordList = [...state.homeSearchResults]; 
     state.currentWordIndex = state.currentWordList.findIndex(w => w.uid === uid);
-    
     renderDetailSidebar(); 
     renderWordDetail(uid);
 };
@@ -435,10 +416,8 @@ function renderBookTabs(activeType) {
     const types=DataManager.db.settings.bookCategories||[];
     const nav = document.getElementById('book-type-tabs');
     if(nav) nav.innerHTML=types.map(t=>`<button class="${t===activeType?'active':''}" onclick="renderBookTabs('${t}')">${t}</button>`).join('');
-    
     const bks=DataManager.db.books.filter(b=>b.type===activeType);
     const gallery = document.getElementById('book-gallery');
-    
     const grp={}; bks.forEach(b=>{if(!grp[b.series])grp[b.series]=[];grp[b.series].push(b)});
     if(gallery) gallery.innerHTML = Object.keys(grp).map(s=>{
         const cards = grp[s].map(b=>`
@@ -489,46 +468,35 @@ function renderSidebarFilter(mode) {
 function toggleFilter(mode, i) {
     const fs = mode === 'home' ? state.homeFilterRatings : state.bookFilterRatings;
     if(fs.has(i)) fs.delete(i); else fs.add(i);
-    
     if(mode === 'home') applyHomeFilter(); 
     else renderDetailSidebar();
-    
     renderSidebarFilter(mode);
 }
 
 function renderWordDetail(uid) {
     const word = DataManager.getWordDetail(uid);
     if (!word) return;
-
     document.getElementById('rating-stars').style.display = 'flex';
     document.querySelector('.main-audio').style.display = 'flex'; 
     document.getElementById('nav-buttons').style.display = 'flex'; 
-    
     const wordBtnEl = document.getElementById('btn-toggle-word');
     if(wordBtnEl) wordBtnEl.style.visibility = 'visible'; 
-    
     const contextWord = state.currentWordList.find(w => w.uid === uid);
     if (contextWord && contextWord.chapterQuizIds) {
         word.chapterQuizIds = contextWord.chapterQuizIds;
     }
-
     document.getElementById('word-main').innerText = word.word;
     renderHeaderStars(uid);
-    
     const wordBtn = document.getElementById('btn-toggle-word');
     const isWordVisible = wordBtn ? wordBtn.classList.contains('active') : true;
-
     if (isWordVisible) {
         state.lastActiveTabTitle = null; 
     }
-
     const tabs = document.getElementById('detail-tabs');
     const area = document.getElementById('tab-content-area');
     tabs.innerHTML = ''; area.innerHTML = '';
-    
     const hasScene = word.displayImages && word.displayImages.length > 0;
     const hasText = word.richDetail && word.richDetail.length > 0;
-    
     let availableQuizzes = word.linkedQuizzes || [];
     if (word.chapterQuizIds && word.chapterQuizIds.length > 0) {
         availableQuizzes = availableQuizzes.filter(q => word.chapterQuizIds.includes(q.id));
@@ -536,26 +504,21 @@ function renderWordDetail(uid) {
     const validQuizCount = availableQuizzes.filter(q => q.question && q.question.trim().length > 0).length;
     const quizGameCount = (word.quizGames || []).length;
     const hasQuiz = (validQuizCount + quizGameCount) > 0;
-    
     const hasGame = word.games && word.games.length > 0;
-
     const items = [];
     if (hasScene) items.push({id:'scene', t:'图片'});
     if (hasText)  items.push({id:'text', t:'单词详解'});
     if (hasQuiz)  items.push({id:'quiz', t:'挑战一下'});
     if (hasGame)  items.push({id:'game', t:'趣味游戏'});
-
     if (items.length === 0) {
         area.innerHTML = `<div class="empty-tip">暂无内容</div>`;
         return;
     }
-
     let activeTabIndex = 0; 
     if (state.lastActiveTabTitle) {
         const found = items.findIndex(i => i.t === state.lastActiveTabTitle);
         if(found !== -1) activeTabIndex = found;
     }
-
     items.forEach((t, i) => {
         const b = document.createElement('button'); 
         b.innerText = t.t;
@@ -568,9 +531,7 @@ function renderWordDetail(uid) {
         };
         tabs.appendChild(b);
     });
-
     renderTabContent(items[activeTabIndex].id, word, area);
-    
     const lis = document.querySelectorAll('.abc-items li');
     lis.forEach(li => { 
         li.classList.remove('active'); 
@@ -599,7 +560,6 @@ function renderHeaderStars(uid) {
     }
 }
 
-// 核心：渲染 Tab 内容 (修复了 Quiz 渲染)
 function renderTabContent(type, word, container) {
     container.innerHTML = ''; 
     container.scrollTop = 0;
@@ -621,16 +581,13 @@ function renderTabContent(type, word, container) {
         } else {
             container.innerHTML = `<div class="empty-tip">暂无图片</div>`;
         }
-    
     } else if (type === 'text') {
         if(word.richDetail) {
             let nav='<div class="rich-nav">', body='';
             word.richDetail.forEach((s,i) => { nav+=`<button onclick="scrollToSection('s-${i}')">${s.title}</button>`; body+=`<div id="s-${i}" class="rich-section"><h3>${s.title}</h3><div class="rich-content-body">${s.content}</div></div>`; });
             container.innerHTML = nav+'</div>'+body;
         }
-    
     } else if (type === 'quiz') {
-        // 1. 如果有自定义生成的游戏，优先显示
         if (state.customGames && state.customGames.length > 0) {
             const gamesListHtml = state.customGames.map((g, idx) => `
                 <div class="quiz-box" onclick="startSpookyGame(${idx})" style="min-height:200px; cursor:pointer; align-items:center; transition:0.2s; border:2px solid transparent;">
@@ -657,20 +614,16 @@ function renderTabContent(type, word, container) {
                     </div>
                 </div>
             `;
-            return; // 渲染完直接结束
+            return;
         }
 
-        // 2. 否则渲染普通的 Quiz (修复了这里缺失的代码)
         let allQuizzes = [];
-        
-        // A. 关联的普通 Quiz
         let linked = word.linkedQuizzes || [];
         if (word.chapterQuizIds && word.chapterQuizIds.length > 0) {
             linked = linked.filter(q => word.chapterQuizIds.includes(q.id));
         }
         allQuizzes = linked.filter(q => q.question && q.question.trim().length > 0).map(q => ({ type: 'quiz', content: q, id: q.id }));
         
-        // B. 关联的游戏 (quizGames)
         if (word.quizGames && word.quizGames.length > 0) {
             word.quizGames.forEach((g, idx) => {
                 allQuizzes.push({ type: 'game', content: g.url, id: `game-${idx}` });
@@ -682,7 +635,6 @@ function renderTabContent(type, word, container) {
         } else {
             container.innerHTML = `<div class="empty-tip">暂无挑战</div>`;
         }
-
     } else if (type === 'game') {
         if (word.games && word.games.length > 0) {
             const gamesHtml = word.games.map(url => `
@@ -716,16 +668,13 @@ function getWordQuizCount(word) {
 
 function getQuizProgressInfo(activeIndex, currentItemTotal) {
     let line1 = "", line2 = "";
-
     if (state.isPracticeMode) {
         const book = DataManager.db.books.find(b => b.id === state.currentBookId);
         if (book && book.bookPractices) {
             const practice = book.bookPractices[state.currentPracticeIndex];
             line1 = `${practice.name} (${activeIndex + 1}/${currentItemTotal})`;
-
             let totalBook = 0;
             let currentBook = 0;
-            
             for (let i = 0; i < book.bookPractices.length; i++) {
                 const p = book.bookPractices[i];
                 const validCount = (p.quizIds || []).filter(qid => DataManager.db.quizzes[qid]).length;
@@ -741,15 +690,12 @@ function getQuizProgressInfo(activeIndex, currentItemTotal) {
     } else {
         const currentWord = state.currentWordList[state.currentWordIndex];
         if (!currentWord) return { line1: "", line2: "" };
-
         let groupName = "";
         let groupTotal = 0;
         let groupCurrent = 0;
         let bookTotal = 0;
         let bookCurrent = 0;
-
         let scopeWords = []; 
-        
         if (state.mode === 'book') {
             const book = DataManager.db.books.find(b => b.id === state.currentBookId);
             if (book) {
@@ -765,7 +711,6 @@ function getQuizProgressInfo(activeIndex, currentItemTotal) {
             groupName = char;
             scopeWords = state.currentWordList.filter(w => w.word[0].toUpperCase() === char);
         }
-
         for (let w of scopeWords) {
             let qCount = getWordQuizCount(w);
             groupTotal += qCount;
@@ -776,7 +721,6 @@ function getQuizProgressInfo(activeIndex, currentItemTotal) {
             }
         }
         line1 = `${groupName} (${groupCurrent}/${groupTotal})`;
-
         for (let i = 0; i < state.currentWordList.length; i++) {
             const w = state.currentWordList[i];
             let qCount = getWordQuizCount(w);
@@ -796,10 +740,8 @@ function getQuizProgressInfo(activeIndex, currentItemTotal) {
 function renderMixedPagination(items, container, activeIndex) {
     container.innerHTML = ''; 
     container.scrollTop = 0;
-    
     const pageContainer = document.createElement('div');
     pageContainer.className = 'quiz-pagination';
-    
     if (items.length > 1) {
         items.forEach((it, idx) => {
             const btn = document.createElement('button');
@@ -819,19 +761,12 @@ function renderMixedPagination(items, container, activeIndex) {
         pageContainer.appendChild(dummyBtn);
     }
     container.appendChild(pageContainer);
-
     const item = items[activeIndex];
     let contentHtml = '';
-    
     const zoomIcon = `<svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 3h6v6M9 21H3v-6M21 3l-7 7M3 21l7-7"/></svg>`;
     const zoomBtnHtml = `<button class="btn-quiz-zoom" onclick="toggleFullScreen()" title="全屏模式">${zoomIcon}</button>`;
-    
     const progress = getQuizProgressInfo(activeIndex, items.length);
-    const infoHtml = `
-        <div class="quiz-info-text">
-            <div>${progress.line1}</div>
-            <div>${progress.line2}</div>
-        </div>`;
+    const infoHtml = `<div class="quiz-info-text"><div>${progress.line1}</div><div>${progress.line2}</div></div>`;
 
     if (item.type === 'game') {
         contentHtml = `
@@ -880,16 +815,13 @@ function renderMixedPagination(items, container, activeIndex) {
             contentHtml += `</div></div>`;
         }
     }
-
     const wrapper = document.createElement('div');
     wrapper.style.width = '100%'; 
     wrapper.innerHTML = contentHtml;
     container.appendChild(wrapper);
-
     const nextBtn = document.createElement('button');
     nextBtn.className = 'btn-big-next';
     const arrowIcon = `<svg style="width:20px; height:20px; margin-left:8px;" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>`;
-    
     if (activeIndex < items.length - 1) {
         nextBtn.innerHTML = `Next Question ${arrowIcon}`; 
     } else {
@@ -901,7 +833,6 @@ function renderMixedPagination(items, container, activeIndex) {
     }
     nextBtn.onclick = () => handleBigNextClick(items, container, activeIndex);
     container.appendChild(nextBtn);
-
     const fourArrowsIcon = `<svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 3h6v6M9 21H3v-6M21 3l-7 7M3 21l7-7"/></svg>`;
     const zoomBtn = document.createElement('button');
     zoomBtn.className = 'btn-fixed-zoom';
@@ -914,16 +845,12 @@ function renderMixedPagination(items, container, activeIndex) {
 function initMatchingGame(quizData, containerId, feedbackId) {
     const container = document.getElementById(containerId);
     if (!container) return;
-
     const pairs = quizData.pairs;
     const leftItems = pairs.map((p, i) => ({ text: p.left, id: i }));
     const rightItems = pairs.map((p, i) => ({ text: p.right, id: i }));
-    
     rightItems.sort(() => Math.random() - 0.5);
-
     const colLeft = document.createElement('div'); colLeft.className = 'match-col';
     const colRight = document.createElement('div'); colRight.className = 'match-col';
-
     const appendContent = (btn, content) => {
         const isImage = /\.(webp|png|jpg|jpeg|gif)$/i.test(content);
         if (isImage) {
@@ -934,7 +861,6 @@ function initMatchingGame(quizData, containerId, feedbackId) {
             btn.innerText = content;
         }
     };
-
     leftItems.forEach(item => {
         const btn = document.createElement('div');
         btn.className = 'match-item';
@@ -944,7 +870,6 @@ function initMatchingGame(quizData, containerId, feedbackId) {
         btn.onclick = (e) => handleMatchClick(e.currentTarget, feedbackId); 
         colLeft.appendChild(btn);
     });
-
     rightItems.forEach(item => {
         const btn = document.createElement('div');
         btn.className = 'match-item';
@@ -954,7 +879,6 @@ function initMatchingGame(quizData, containerId, feedbackId) {
         btn.onclick = (e) => handleMatchClick(e.currentTarget, feedbackId);
         colRight.appendChild(btn);
     });
-
     container.appendChild(colLeft);
     container.appendChild(colRight);
 }
@@ -968,10 +892,8 @@ function handleMatchClick(el, feedbackId) {
     const parent = el.parentElement;
     parent.querySelectorAll('.match-item').forEach(b => b.classList.remove('selected'));
     el.classList.add('selected');
-
     if (side === 'left') selectedLeft = el;
     else selectedRight = el;
-
     if (selectedLeft && selectedRight) {
         checkMatchPair(feedbackId);
     }
@@ -980,7 +902,6 @@ function handleMatchClick(el, feedbackId) {
 function checkMatchPair(feedbackId) {
     const isMatch = selectedLeft.dataset.id === selectedRight.dataset.id;
     const fb = document.getElementById(feedbackId);
-
     if (isMatch) {
         selectedLeft.classList.remove('selected');
         selectedRight.classList.remove('selected');
@@ -1016,7 +937,6 @@ function scrollToSection(id) {
 function checkAnswer(btn, idx, corr) {
     if (btn.classList.contains('correct')) return;
     if (btn.classList.contains('wrong')) return;
-
     if (idx === corr) {
         btn.classList.add('correct');
         if (isClickSoundEnabled) {
@@ -1047,12 +967,10 @@ window.jumpToWord = uid => {
     state.isPracticeMode = false;
     state.currentPracticeIndex = 0;
     state.customGames = null; 
-
     if (state.mode === 'home') {
         enterSoloMode(uid);
         return;
     }
-
     const i = state.currentWordList.findIndex(w => w.uid === uid);
     if (i !== -1) {
         state.currentWordIndex = i;
@@ -1068,7 +986,6 @@ window.toggleWordVisibility = function() {
     const btn = document.getElementById('btn-toggle-word');
     const wordMain = document.getElementById('word-main');
     const isActive = btn.classList.toggle('active');
-    
     if (isActive) {
         btn.innerText = '显示单词';
         wordMain.style.opacity = '1';
@@ -1095,15 +1012,12 @@ window.onclick = function(event) {
 function renderPracticeMenu(book) {
     const container = document.getElementById('book-practice-container');
     const menu = document.getElementById('practice-menu-content');
-    
     container.style.display = 'inline-block'; 
-
     const createBtnHtml = `
         <button onclick="toggleCreationMode()" class="practice-btn special-create-btn" style="color:var(--primary); font-weight:800; border-bottom:1px dashed #eee;">
             🃏 创建翻牌游戏
         </button>
     `;
-
     let practicesHtml = '';
     if (book.bookPractices && book.bookPractices.length > 0) {
         practicesHtml = book.bookPractices.map((p, index) => 
@@ -1112,33 +1026,26 @@ function renderPracticeMenu(book) {
     } else {
         practicesHtml = `<div style="padding:10px; color:#999; font-size:12px;">本书暂无预设练习</div>`;
     }
-
     menu.innerHTML = createBtnHtml + practicesHtml;
 }
 
 window.loadPracticeUnit = function(bookId, practiceIndex) {
     const book = DataManager.db.books.find(b => b.id === bookId);
     if (!book || !book.bookPractices) return;
-
     const practice = book.bookPractices[practiceIndex];
     if (!practice) return;
-
     state.isPracticeMode = true;
     state.currentBookId = bookId; 
     state.currentPracticeIndex = practiceIndex;
-
     document.getElementById('word-main').innerText = practice.name;
-    
     document.getElementById('rating-stars').style.display = 'none';
     document.querySelector('.main-audio').style.display = 'none';
     document.getElementById('nav-buttons').style.display = 'none';
     const wordBtn = document.getElementById('btn-toggle-word');
     if(wordBtn) wordBtn.style.visibility = 'hidden';
-
     const tabs = document.getElementById('detail-tabs');
     const area = document.getElementById('tab-content-area');
     tabs.innerHTML = `<button class="active">挑战一下</button>`;
-    
     const challengeList = [];
     (practice.quizIds || []).forEach(qid => {
         const quiz = DataManager.db.quizzes[qid];
@@ -1150,19 +1057,16 @@ window.loadPracticeUnit = function(bookId, practiceIndex) {
             }
         }
     });
-
     if (challengeList.length > 0) {
         renderMixedPagination(challengeList, area, 0);
     } else {
         area.innerHTML = `<div class="empty-tip">该单元暂无题目</div>`;
     }
-    
     document.getElementById('practice-menu-content').classList.remove('show');
 }
 
 function parseRichContent(content) {
     if (!content) return "";
-
     content = content.replace(/\[L1\](.*?)\[\/L1\]/g, '<div class="level-1">$1</div>');
     content = content.replace(/\[L2\](.*?)\[\/L2\]/g, '<div class="level-2">$1</div>');
     content = content.replace(/\[L3\](.*?)\[\/L3\]/g, '<div class="level-3">$1</div>');
@@ -1182,7 +1086,6 @@ function parseRichContent(content) {
     content = content.replace(/\[CR\](.*?)\[\/CR\]/g, '<div class="block-cr"><b>重要:</b> $1</div>');
     content = content.replace(/\[CO\](.*?)\[\/CO\]/g, '<div class="block-co"><b>注意:</b> $1</div>');
     content = content.replace(/\[CB\](.*?)\[\/CB\]/g, '<div class="block-cb"><b>笔记:</b> $1</div>');
-
     content = content.replace(/\[IMG\]([\s\S]*?)\[\/IMG\]/g, (match, p1) => {
         const srcs = p1.split('|').map(s => s.trim());
         const imgHtml = srcs.map(s => {
@@ -1191,7 +1094,6 @@ function parseRichContent(content) {
         }).join('');
         return `<div class="rich-img-group" data-count="${srcs.length}">${imgHtml}</div>`;
     });
-
     content = content.replace(/\[GAME\]([\s\S]*?)\[\/GAME\]/g, (match, p1) => {
         const urls = p1.split('|').map(s => s.trim());
         const gameHtml = urls.map(url => {
@@ -1199,7 +1101,6 @@ function parseRichContent(content) {
         }).join('');
         return `<div class="rich-game-group">${gameHtml}</div>`;
     });
-    
     return content.replace(/\n/g, '<br>');
 }
 
@@ -1208,7 +1109,6 @@ function handleBigNextClick(items, container, activeIndex) {
         renderMixedPagination(items, container, activeIndex + 1);
         return;
     }
-
     if (state.isPracticeMode) {
         const book = DataManager.db.books.find(b => b.id === state.currentBookId);
         if (book && book.bookPractices) {
@@ -1236,13 +1136,8 @@ function handleBigNextClick(items, container, activeIndex) {
 window.toggleFullScreen = function() {
     const elem = document.getElementById('tab-content-area');
     if (!elem) return;
-
     const isPseudo = elem.classList.contains('pseudo-fullscreen');
-    const isNative = document.fullscreenElement || 
-                     document.webkitFullscreenElement || 
-                     document.mozFullScreenElement || 
-                     document.msFullscreenElement;
-
+    const isNative = document.fullscreenElement || document.webkitFullscreenElement || document.mozFullScreenElement || document.msFullscreenElement;
     if (isPseudo) {
         elem.classList.remove('pseudo-fullscreen');
         return;
@@ -1252,33 +1147,21 @@ window.toggleFullScreen = function() {
         else if (document.webkitExitFullscreen) document.webkitExitFullscreen();
         return;
     }
-
     let requestPromise;
     try {
-        if (elem.requestFullscreen) {
-            requestPromise = elem.requestFullscreen();
-        } else if (elem.webkitRequestFullscreen) {
-            requestPromise = elem.webkitRequestFullscreen();
-        } else if (elem.msRequestFullscreen) {
-            requestPromise = elem.msRequestFullscreen();
-        }
-    } catch (e) {
-        console.log("Native API error, forcing pseudo.");
-    }
-
+        if (elem.requestFullscreen) requestPromise = elem.requestFullscreen();
+        else if (elem.webkitRequestFullscreen) requestPromise = elem.webkitRequestFullscreen();
+        else if (elem.msRequestFullscreen) requestPromise = elem.msRequestFullscreen();
+    } catch (e) { console.log("Native API error, forcing pseudo."); }
     if (requestPromise && requestPromise.catch) {
         requestPromise.catch(err => {
             console.log("Native blocked, forcing pseudo.");
             elem.classList.add('pseudo-fullscreen');
         });
     }
-
     setTimeout(() => {
         const currentNative = document.fullscreenElement || document.webkitFullscreenElement;
-        if (!currentNative && !elem.classList.contains('pseudo-fullscreen')) {
-            console.log("Timeout check: Native failed silently, forcing pseudo mode.");
-            elem.classList.add('pseudo-fullscreen');
-        }
+        if (!currentNative && !elem.classList.contains('pseudo-fullscreen')) elem.classList.add('pseudo-fullscreen');
     }, 100);
 };
 
@@ -1289,18 +1172,12 @@ let selectedWordUIDs = new Set();
 function toggleCreationMode() {
     isCreationMode = true;
     selectedWordUIDs.clear();
-    
     const searchBox = document.querySelector('.search-box');
     if (searchBox) searchBox.classList.add('hidden');
-
     const actionBar = document.getElementById('creation-bar');
-    if (actionBar) {
-        actionBar.classList.remove('hidden');
-    }
-    
+    if (actionBar) actionBar.classList.remove('hidden');
     updateSelectionCount();
     renderDetailSidebar(); 
-    
     const menu = document.getElementById('practice-menu-content');
     if (menu) menu.classList.remove('show');
 }
@@ -1308,13 +1185,10 @@ function toggleCreationMode() {
 function exitCreationMode() {
     isCreationMode = false;
     selectedWordUIDs.clear();
-
     const searchBox = document.querySelector('.search-box');
     if (searchBox) searchBox.classList.remove('hidden');
-
     const actionBar = document.getElementById('creation-bar');
     if (actionBar) actionBar.classList.add('hidden');
-
     renderDetailSidebar();
 }
 
@@ -1324,15 +1198,10 @@ function updateSelectionCount() {
 }
 
 function toggleWordSelection(uid) {
-    if (selectedWordUIDs.has(uid)) {
-        selectedWordUIDs.delete(uid);
-    } else {
-        selectedWordUIDs.add(uid);
-    }
-    
+    if (selectedWordUIDs.has(uid)) selectedWordUIDs.delete(uid);
+    else selectedWordUIDs.add(uid);
     const checkbox = document.querySelector(`input[onclick*="'${uid}'"]`);
     if(checkbox) checkbox.checked = selectedWordUIDs.has(uid);
-    
     updateSelectionCount();
 }
 
@@ -1353,7 +1222,6 @@ function closeConfigModal() {
 function confirmGameGeneration() {
     const groupSize = parseInt(document.getElementById('group-size-select').value);
     const uids = Array.from(selectedWordUIDs);
-    
     const newGames = [];
     for (let i = 0; i < uids.length; i += groupSize) {
         let chunk = uids.slice(i, i + groupSize);
@@ -1362,7 +1230,6 @@ function confirmGameGeneration() {
             const padding = uids.slice(0, need);
             chunk = chunk.concat(padding);
         }
-        
         newGames.push({
             id: `game-${Date.now()}-${i}`,
             words: chunk,
@@ -1370,17 +1237,11 @@ function confirmGameGeneration() {
             title: `Group ${Math.floor(i/groupSize) + 1}`
         });
     }
-
     state.customGames = newGames;
-    
     closeConfigModal();
     exitCreationMode();
-
     const tabs = document.getElementById('detail-tabs');
-    if (tabs) {
-        Array.from(tabs.children).forEach(btn => btn.classList.remove('active'));
-    }
-
+    if (tabs) Array.from(tabs.children).forEach(btn => btn.classList.remove('active'));
     const area = document.getElementById('tab-content-area');
     renderTabContent('quiz', { uid: 'custom-game-mode' }, area);
 }
@@ -1392,16 +1253,14 @@ function clearCustomGames() {
     }
 }
 
-// ============ 🃏 Spooky Game Engine (黑屏修复版) ============
+// ============ 🃏 Spooky Game Engine ============
 let gameVideo, gameBgm;
-
 
 // ============ 🛡️ 终极 UI 修复版 startSpookyGame ============
 function startSpookyGame(gameIndex) {
     const gameData = state.customGames[gameIndex];
     if (!gameData) return;
 
-    // 1. 构建全屏容器
     let container = document.getElementById('game-fullscreen-container');
     if (!container) {
         container = document.createElement('div');
@@ -1409,87 +1268,83 @@ function startSpookyGame(gameIndex) {
         document.body.appendChild(container);
     }
     
-    // 【修改 1】容器结构优化：game-board-layer 变成 Flex 容器，负责垂直居中
     container.innerHTML = `
         <video id="game-video-bg" playsinline style="position: absolute; width: 100%; height: 100%; object-fit: cover;">
             <source src="https://cdn.jsdelivr.net/gh/mengmeng0415/wordpic01/spooky.mp4" type="video/mp4">
         </video>
-        
         <div id="game-start-overlay" class="game-start-overlay">
             <div style="font-size:60px; margin-bottom:20px;">🎃</div>
             <button class="btn-game-start" onclick="realStartGameAction()">▶ START GAME</button>
             <p style="margin-top:15px; opacity:0.8;">Click to enable sound</p>
         </div>
-
         <button class="btn-exit-game" onclick="exitSpookyGame()">退出游戏</button>
-        
         <div id="game-board-layer" style="opacity: 0; transition: opacity 1s; width: 100%; height: 100%; display: flex; align-items: center; justify-content: center;">
             <div id="spooky-grid" class="spooky-grid"></div>
         </div>
     `;
 
-    // 2. 准备卡片数据
     const cards = [];
     gameData.words.forEach(uid => {
         const w = DataManager.getWordDetail(uid);
         if (!w) return;
-        cards.push({ id: uid, type: 'word', content: w.word, wordObj: w });
-        let imgUrl = null;
-        if (w.images && w.images.card && w.images.card.length > 0) imgUrl = w.images.card[0];
-        else if (w.displayImages && w.displayImages.length > 0) imgUrl = w.displayImages[0];
-        cards.push({ id: uid, type: 'image', content: imgUrl || 'No Img', wordObj: w });
+        let imgUrl = ''; 
+        if (w.images && w.images.card && w.images.card.length > 0) {
+             imgUrl = w.images.card[0];
+        } else if (w.displayImages && w.displayImages.length > 0) {
+             imgUrl = w.displayImages[0];
+        }
+        const cardData = {
+            id: uid,         
+            text: w.word,    
+            img: imgUrl      
+        };
+        cards.push(cardData);
+        cards.push(cardData);
     });
     cards.sort(() => Math.random() - 0.5);
 
-    // 3. 渲染卡片 【修改 2：动态计算列数】
     const grid = document.getElementById('spooky-grid');
-    
-    // 强制分为 2 行。
-    // 如果有 10 张牌，10/2 = 5列。如果有 8 张牌，8/2 = 4列。
     const columns = Math.ceil(cards.length / 2);
     grid.style.gridTemplateColumns = `repeat(${columns}, 1fr)`;
 
-    grid.innerHTML = cards.map((c, i) => `
-        <div class="spooky-card" data-idx="${i}" onclick="flipSpookyCard(this, '${c.id}', '${c.wordObj.word}')">
+    const cardsHtml = cards.map((c, i) => `
+        <div class="spooky-card" id="card-${c.id}-${i}" data-idx="${i}" onclick="flipSpookyCard(this, '${c.id}', '${c.text.replace(/'/g, "\\'")}')">
             <div class="face front">
-                ${c.type==='image' && c.content!=='No Img' ? `<img src="${c.content}">` : `<span style="font-size:24px;">${c.wordObj.word}</span>`}
+                <div class="front-img-container">
+                    ${c.img ? `<img src="${c.img}" alt="${c.text}">` : '<span class="no-img-text">No Image</span>'}
+                </div>
+                <span class="front-word-text">${c.text}</span>
+                <div class="stamp-container"></div>
             </div>
-            <div class="face back">🕷️</div>
+            <div class="face back"></div>
         </div>
     `).join('');
 
-    // 4. 启动逻辑 (保持您已有的分离播放逻辑)
+    grid.innerHTML = cardsHtml + '<div id="grid-overlay" class="grid-overlay"></div>';
+
     window.realStartGameAction = function() {
         const overlay = document.getElementById('game-start-overlay');
         if(overlay) overlay.style.display = 'none';
-
         gameVideo = document.getElementById('game-video-bg');
         gameBgm = document.getElementById('bgm-spooky');
         const sfxOpen = document.getElementById('sfx-open');
         const sfxShuffle = document.getElementById('sfx-shuffle');
-
         if (container.requestFullscreen) container.requestFullscreen().catch(()=>{});
-
-        // 视频静音，音频独立
         gameVideo.muted = true; 
         gameVideo.volume = 0;
-
         if (sfxOpen) {
             sfxOpen.currentTime = 0;
             sfxOpen.volume = 1.0; 
             sfxOpen.play().catch(e => console.log("Audio play error:", e));
         }
-
         gameVideo.play().catch(e => {
             console.error("Video failed:", e);
             showGameBoard();
         });
-
         gameVideo.onended = () => {
             if (sfxOpen) sfxOpen.pause(); 
             showGameBoard();
         };
-        
         setTimeout(() => {
             const layer = document.getElementById('game-board-layer');
             if (layer && layer.style.opacity === '0') showGameBoard();
@@ -1502,17 +1357,13 @@ function startSpookyGame(gameIndex) {
             gameBgm.volume = 0.5; 
             gameBgm.play().catch(()=>{}); 
         }
-
         const layer = document.getElementById('game-board-layer');
         if (layer) layer.style.opacity = '1';
-        
         if (sfxShuffle) sfxShuffle.play().catch(()=>{});
-        
         const allCards = document.querySelectorAll('.spooky-card');
         allCards.forEach(c => c.classList.add('shuffling'));
         setTimeout(() => { allCards.forEach(c => c.classList.remove('shuffling')); }, 1000);
     };
-
     resetSpookyLogic();
 }
 
@@ -1531,111 +1382,159 @@ function resetSpookyLogic() {
     [sCard1, sCard2, sLock] = [null, null, false];
 }
 
-// ============ 修复版 flipSpookyCard ============
+// ============ 翻牌逻辑 (零延迟优化版) ============
+// ============ 翻牌逻辑 (零延迟优化版) ============
+// ============ 翻牌逻辑 (绝对流畅版) ============
 function flipSpookyCard(el, uid, wordText) {
+    // 1. 基础拦截
     if (sLock) return;
-    if (el === sCard1) return;
+    if (sCard1 && el === sCard1.el) return;
     if (el.classList.contains('matched')) return;
 
-    // 1. 立即执行 UI 动作 (翻牌)
+    // 2. 【最高优先级】先执行 UI 翻转，没有任何阻碍
+    // 浏览器会优先绘制这一帧，确保卡牌瞬间动起来
     el.classList.add('flipped');
     
-    // 2. 尝试朗读 (放在 try-catch 里，防止报错卡死)
-    try {
-        if ('speechSynthesis' in window) {
-            // 停止之前的朗读，防止堆积
-            speechSynthesis.cancel(); 
-            
-            const u = new SpeechSynthesisUtterance(wordText);
-            u.lang = 'en-US';
-            if(preferredVoice) u.voice = preferredVoice;
-            
-            // 降低音量防止爆音
-            u.volume = 1; 
-            
-            speechSynthesis.speak(u);
+    // 3. 【优化】延迟 50ms 播放翻牌音效
+    // 把它移出当前渲染帧，防止音频加载卡住画面
+    setTimeout(() => {
+        safePlayAudio('sfx-flip'); 
+    }, 50);
+
+    // 4. 【优化】延迟 400ms 再开始朗读
+    // 让 CSS 翻转动画先跑一大半，视觉丝般顺滑，然后再启动耗资源的语音引擎
+    setTimeout(() => {
+        const onSpeechEnd = () => {
+            if (!sCard1) {
+                sCard1 = { el, uid };
+            } else {
+                sCard2 = { el, uid };
+                checkSpookyMatch();
+            }
+        };
+
+        let hasSpeech = false;
+        try {
+            if ('speechSynthesis' in window) {
+                speechSynthesis.cancel(); 
+                const u = new SpeechSynthesisUtterance(wordText);
+                u.lang = 'en-US';
+                if (preferredVoice) u.voice = preferredVoice;
+                u.volume = 1;
+                u.onend = onSpeechEnd;
+                
+                setTimeout(() => {
+                    if (sCard2) return; 
+                    if (sCard1 && !sCard2 && sCard1.el !== el) {
+                         onSpeechEnd();
+                    }
+                }, 1200);
+
+                speechSynthesis.speak(u);
+                hasSpeech = true;
+            }
+        } catch (e) {
+            console.warn("TTS failed:", e);
         }
-    } catch (e) {
-        console.warn("TTS failed:", e);
-    }
 
-    // 3. 游戏逻辑
-    if (!sCard1) {
-        sCard1 = { el, uid };
-        return;
-    }
-
-    sCard2 = { el, uid };
-    checkSpookyMatch();
+        if (!hasSpeech) {
+            setTimeout(onSpeechEnd, 600);
+        }
+    }, 400); // 建议改到 400，给动画更多时间
 }
 
-
-// ============ 🛡️ 终极防卡死版 checkSpookyMatch ============
+// ============ 核心：判断与动画序列 (修复遮罩层逻辑) ============
 function checkSpookyMatch() {
     sLock = true;
-    
-    // 1. 【关键】锁定当前操作对象
-    // 防止在延时期间全局变量被修改
     const card1 = sCard1;
     const card2 = sCard2;
     const isMatch = card1.uid === card2.uid;
+    const stampDelay = 300; 
 
-    // 2. 【核心修复】先设定 UI 恢复逻辑 (UI 优先)
-    // 无论下面声音播不播，这个 setTimeout 必须被注册
-    const delay = isMatch ? 800 : 1200;
-    
     setTimeout(() => {
-        // 安全检查：防止页面已销毁
-        if (!card1 || !card1.el || !card2 || !card2.el) {
-            resetSpookyLogic();
-            return;
-        }
-
         if (isMatch) {
-            // 配对成功：消除
-            card1.el.classList.add('matched');
-            card2.el.classList.add('matched');
-            
-            // 检查通关
-            const left = document.querySelectorAll('.spooky-card:not(.matched)').length;
-            if (left === 0) {
-                // 延时一点庆祝，防止动画冲突
-                setTimeout(() => alert("🎉 Group Complete!"), 300);
-            }
-        } else {
-            // 配对失败：翻回去
-            // 强制移除 CSS 类
-            card1.el.classList.remove('flipped');
-            card2.el.classList.remove('flipped');
-        }
-        
-        // 解锁，允许下一次操作
-        resetSpookyLogic();
-        
-    }, delay);
+            const overlay = document.getElementById('grid-overlay');
+            if(overlay) overlay.classList.add('active');
 
-    // 3. 【最后】尝试播放音效 (作为副作用处理)
-    // 放在最后，并且使用 safePlayAudio，确保绝对不会报错阻断
-    if (isMatch) {
-        safePlayAudio('sfx-match');
-    } else {
-        safePlayAudio('sfx-error');
-    }
+            const centerCards = () => {
+                const cx = window.innerWidth / 2;
+                const cy = window.innerHeight / 2;
+                [card1.el, card2.el].forEach((el, index) => {
+                    const rect = el.getBoundingClientRect();
+                    const offset = index === 0 ? -rect.width * 0.9 : rect.width * 0.9;
+                    const tx = cx - (rect.left + rect.width / 2) + offset;
+                    const ty = cy - (rect.top + rect.height / 2);
+                    el.style.zIndex = "9999"; 
+                    el.style.transition = "transform 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275)";
+                    el.style.transform = `translate(${tx}px, ${ty}px) scale(1.5) rotateY(180deg)`;
+                });
+            };
+            centerCards();
+
+            setTimeout(() => {
+                safePlayAudio('sfx-match');
+                showStamp(card1.el, 'match');
+                showStamp(card2.el, 'match');
+            }, 500); 
+
+            setTimeout(() => {
+                removeStamp(card1.el);
+                removeStamp(card2.el);
+            }, 1500);
+
+            setTimeout(() => {
+                card1.el.style.opacity = '0';
+                card2.el.style.opacity = '0';
+                card1.el.classList.add('matched');
+                card2.el.classList.add('matched');
+                const left = document.querySelectorAll('.spooky-card:not(.matched)').length;
+                if (left === 0) setTimeout(() => alert("🎉 Group Complete!"), 500);
+            }, 3000); 
+
+            setTimeout(() => {
+                if(overlay) overlay.classList.remove('active');
+                resetSpookyLogic();
+            }, 3200);
+
+        } else {
+            safePlayAudio('sfx-notmatch');
+            showStamp(card1.el, 'notmatch');
+            showStamp(card2.el, 'notmatch');
+            card1.el.classList.add('shake');
+            card2.el.classList.add('shake');
+            setTimeout(() => {
+                removeStamp(card1.el);
+                removeStamp(card2.el);
+                card1.el.classList.remove('flipped', 'shake');
+                card2.el.classList.remove('flipped', 'shake');
+                resetSpookyLogic();
+            }, 1500); 
+        }
+    }, stampDelay);
 }
-// ============ 🛡️ 音频安全播放辅助函数 ============
+
+function showStamp(cardEl, type) {
+    const container = cardEl.querySelector('.stamp-container');
+    const imgUrl = type === 'match' 
+        ? 'https://cdn.jsdelivr.net/gh/mengmeng0415/wordpic01/match.png' 
+        : 'https://cdn.jsdelivr.net/gh/mengmeng0415/wordpic01/notmatch.png';
+    container.style.backgroundImage = `url('${imgUrl}')`;
+    container.classList.add('show');
+}
+
+function removeStamp(cardEl) {
+    const container = cardEl.querySelector('.stamp-container');
+    container.classList.remove('show');
+}
+
 function safePlayAudio(audioId) {
     try {
         const audio = document.getElementById(audioId);
         if (!audio) return;
-        
         audio.currentTime = 0;
-        // 尝试播放
         const playPromise = audio.play();
-        
-        // 如果浏览器返回 Promise (现代浏览器都会)，我们需要捕获错误
         if (playPromise !== undefined) {
             playPromise.catch(error => {
-                // 静默失败：只在后台打印，绝不阻断代码
                 console.warn("Audio play blocked (benign):", error);
             });
         }
