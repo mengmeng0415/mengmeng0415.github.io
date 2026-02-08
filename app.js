@@ -618,7 +618,7 @@ function renderTabContent(type, word, container) {
             const gamesListHtml = state.customGames.map((g, idx) => `
                 <div class="quiz-box" onclick="startSpookyGame(${idx})" style="min-height:200px; cursor:pointer; align-items:center; transition:0.2s; border:2px solid transparent;">
                   
-                    <div class="quiz-q" style="margin-bottom:10px; text-align:center;">
+                    <div class="quiz-q" style="margin:10px; text-align:center;">
                         ${g.title}
                     </div>
                     <div style="color:#666;">
@@ -632,7 +632,7 @@ function renderTabContent(type, word, container) {
                     <h3 style="text-align:center; color:var(--primary); margin-bottom:30px;">
                         已生成 ${state.customGames.length} 组翻牌游戏
                     </h3>
-                    <div style="display:grid; gap:20px; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));">
+                    <div style="display:grid; gap:30px; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));">
                         ${gamesListHtml}
                     </div>
                     <div style="text-align:center; margin-top:40px;">
