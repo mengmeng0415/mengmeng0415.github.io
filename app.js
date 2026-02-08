@@ -1256,7 +1256,7 @@ function clearCustomGames() {
 // ============ 🃏 Spooky Game Engine ============
 let gameVideo, gameBgm;
 
-// ============ 🛡️ 终极 UI 修复版 startSpookyGame ============
+// ============ 🛡️ 终极兼容版 startSpookyGame ============
 function startSpookyGame(gameIndex) {
     const gameData = state.customGames[gameIndex];
     if (!gameData) return;
@@ -1268,54 +1268,48 @@ function startSpookyGame(gameIndex) {
         document.body.appendChild(container);
     }
     
+    // 1. 强制添加 playsinline 和 webkit-playsinline 属性，这对 iOS/平板 至关重要
+    // 2. 添加海报 poster (背景图)，万一视频加载不出来，至少有个背景，不是黑屏
     container.innerHTML = `
-        <video id="game-video-bg" playsinline style="position: absolute; width: 100%; height: 100%; object-fit: cover;">
+        <video id="game-video-bg" playsinline webkit-playsinline muted loop style="position: absolute; width: 100%; height: 100%; object-fit: cover; z-index: 1; background: #000;">
             <source src="https://cdn.jsdelivr.net/gh/mengmeng0415/wordpic01/spooky.mp4" type="video/mp4">
         </video>
+        
         <div id="game-start-overlay" class="game-start-overlay">
             <div style="font-size:60px; margin-bottom:20px;">🎃</div>
             <button class="btn-game-start" onclick="realStartGameAction()">▶ START GAME</button>
-            <p style="margin-top:15px; opacity:0.8;">Click to enable sound</p>
+            <p style="margin-top:15px; opacity:0.8; font-size:14px;">Tap to enter the Spooky World</p>
         </div>
+
         <button class="btn-exit-game" onclick="exitSpookyGame()">退出游戏</button>
-        <div id="game-board-layer" style="opacity: 0; transition: opacity 1s; width: 100%; height: 100%; display: flex; align-items: center; justify-content: center;">
+        
+        <div id="game-board-layer" style="opacity: 0; transition: opacity 1s; width: 100%; height: 100%; display: flex; align-items: center; justify-content: center; position: relative; z-index: 10;">
             <div id="spooky-grid" class="spooky-grid"></div>
         </div>
     `;
 
+    // 预先生成卡牌数据
     const cards = [];
     gameData.words.forEach(uid => {
         const w = DataManager.getWordDetail(uid);
         if (!w) return;
         let imgUrl = ''; 
-        if (w.images && w.images.card && w.images.card.length > 0) {
-             imgUrl = w.images.card[0];
-        } else if (w.displayImages && w.displayImages.length > 0) {
-             imgUrl = w.displayImages[0];
-        }
-        const cardData = {
-            id: uid,         
-            text: w.word,    
-            img: imgUrl      
-        };
+        if (w.images && w.images.card && w.images.card.length > 0) imgUrl = w.images.card[0];
+        else if (w.displayImages && w.displayImages.length > 0) imgUrl = w.displayImages[0];
+        
+        const cardData = { id: uid, text: w.word, img: imgUrl };
         cards.push(cardData);
         cards.push(cardData);
     });
     cards.sort(() => Math.random() - 0.5);
 
+    // 渲染网格
     const grid = document.getElementById('spooky-grid');
     const columns = Math.ceil(cards.length / 2);
-    // 👇 【核心修改】混合布局策略 👇
     
-    // 1. 列宽回归弹性 (1fr)：确保10张牌时，如果屏幕窄，卡牌会自动变小，绝不溢出屏幕
+    // 混合布局策略
     grid.style.gridTemplateColumns = `repeat(${columns}, 1fr)`;
-
-    // 2. 动态限制容器最大宽度：
-    // 计算公式：列数 * 34vh。
-    // (卡牌最大30vh + 间隙，给34vh很宽裕)
-    // 效果：4张牌(2列)时，网格最宽只有 68vh，会在屏幕中间紧凑排列，不会拉伸到两边。
     grid.style.maxWidth = (columns * 34) + 'vh';
-
 
     const cardsHtml = cards.map((c, i) => `
         <div class="spooky-card" id="card-${c.id}-${i}" data-idx="${i}" onclick="flipSpookyCard(this, '${c.id}', '${c.text.replace(/'/g, "\\'")}')">
@@ -1332,48 +1326,62 @@ function startSpookyGame(gameIndex) {
 
     grid.innerHTML = cardsHtml + '<div id="grid-overlay" class="grid-overlay"></div>';
 
+    // ============ 🚀 核心：点击“开始”时的强力激活逻辑 ============
     window.realStartGameAction = function() {
         const overlay = document.getElementById('game-start-overlay');
         if(overlay) overlay.style.display = 'none';
+
+        // 获取所有媒体元素
         gameVideo = document.getElementById('game-video-bg');
         gameBgm = document.getElementById('bgm-spooky');
-        const sfxOpen = document.getElementById('sfx-open');
-        const sfxShuffle = document.getElementById('sfx-shuffle');
-        if (container.requestFullscreen) container.requestFullscreen().catch(()=>{});
+        
+        // 1. 【视频激活】
+        // 必须静音才能自动播放 (平板策略)
         gameVideo.muted = true; 
-        gameVideo.volume = 0;
-        if (sfxOpen) {
-            sfxOpen.currentTime = 0;
-            sfxOpen.volume = 1.0; 
-            sfxOpen.play().catch(e => console.log("Audio play error:", e));
-        }
-        gameVideo.play().catch(e => {
-            console.error("Video failed:", e);
-            showGameBoard();
+        gameVideo.play().catch(e => console.warn("Video autoplay blocked:", e));
+
+        // 2. 【音频激活】
+        // 重点：在这里把所有音效都“摸”一遍，解锁浏览器的音频限制
+        const audioIds = ['bgm-spooky', 'sfx-open', 'sfx-shuffle', 'sfx-match', 'sfx-notmatch', 'sfx-flip'];
+        
+        audioIds.forEach(id => {
+            const audio = document.getElementById(id);
+            if (audio) {
+                audio.muted = false; // 确保取消静音
+                audio.volume = (id === 'bgm-spooky') ? 0.5 : 1.0; // 设置音量
+                
+                // 技巧：播放一瞬间然后暂停，这样浏览器就认为“用户已经允许该音频播放了”
+                const p = audio.play();
+                if (p !== undefined) {
+                    p.then(() => {
+                        // 如果不是背景音乐，播放后立即重置，等待调用
+                        if (id !== 'bgm-spooky') {
+                            audio.pause();
+                            audio.currentTime = 0;
+                        }
+                    }).catch(e => console.warn(`Audio ${id} blocked:`, e));
+                }
+            }
         });
-        gameVideo.onended = () => {
-            if (sfxOpen) sfxOpen.pause(); 
-            showGameBoard();
-        };
+
+        // 3. 进入全屏 (如果浏览器允许)
+        if (container.requestFullscreen) container.requestFullscreen().catch(()=>{});
+        else if (container.webkitRequestFullscreen) container.webkitRequestFullscreen().catch(()=>{});
+
+        // 4. 显示游戏盘面
         setTimeout(() => {
             const layer = document.getElementById('game-board-layer');
-            if (layer && layer.style.opacity === '0') showGameBoard();
-        }, 5000);
+            if (layer) layer.style.opacity = '1';
+            
+            // 播放洗牌音效 (此时已经解锁，应该能听到)
+            safePlayAudio('sfx-shuffle');
+            
+            const allCards = document.querySelectorAll('.spooky-card');
+            allCards.forEach(c => c.classList.add('shuffling'));
+            setTimeout(() => { allCards.forEach(c => c.classList.remove('shuffling')); }, 1000);
+        }, 500); // 稍微延迟一点点，让视频先加载出来
     };
 
-    const showGameBoard = () => {
-        if (gameBgm) { 
-            gameBgm.currentTime = 0; 
-            gameBgm.volume = 0.5; 
-            gameBgm.play().catch(()=>{}); 
-        }
-        const layer = document.getElementById('game-board-layer');
-        if (layer) layer.style.opacity = '1';
-        if (sfxShuffle) sfxShuffle.play().catch(()=>{});
-        const allCards = document.querySelectorAll('.spooky-card');
-        allCards.forEach(c => c.classList.add('shuffling'));
-        setTimeout(() => { allCards.forEach(c => c.classList.remove('shuffling')); }, 1000);
-    };
     resetSpookyLogic();
 }
 
