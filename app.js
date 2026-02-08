@@ -1305,7 +1305,17 @@ function startSpookyGame(gameIndex) {
 
     const grid = document.getElementById('spooky-grid');
     const columns = Math.ceil(cards.length / 2);
+    // 👇 【核心修改】混合布局策略 👇
+    
+    // 1. 列宽回归弹性 (1fr)：确保10张牌时，如果屏幕窄，卡牌会自动变小，绝不溢出屏幕
     grid.style.gridTemplateColumns = `repeat(${columns}, 1fr)`;
+
+    // 2. 动态限制容器最大宽度：
+    // 计算公式：列数 * 34vh。
+    // (卡牌最大30vh + 间隙，给34vh很宽裕)
+    // 效果：4张牌(2列)时，网格最宽只有 68vh，会在屏幕中间紧凑排列，不会拉伸到两边。
+    grid.style.maxWidth = (columns * 34) + 'vh';
+
 
     const cardsHtml = cards.map((c, i) => `
         <div class="spooky-card" id="card-${c.id}-${i}" data-idx="${i}" onclick="flipSpookyCard(this, '${c.id}', '${c.text.replace(/'/g, "\\'")}')">
@@ -1385,24 +1395,24 @@ function resetSpookyLogic() {
 // ============ 翻牌逻辑 (零延迟优化版) ============
 // ============ 翻牌逻辑 (零延迟优化版) ============
 // ============ 翻牌逻辑 (绝对流畅版) ============
+// ============ 翻牌逻辑 (极致流畅版：先动画面，再出声音) ============
 function flipSpookyCard(el, uid, wordText) {
-    // 1. 基础拦截
     if (sLock) return;
     if (sCard1 && el === sCard1.el) return;
     if (el.classList.contains('matched')) return;
 
-    // 2. 【最高优先级】先执行 UI 翻转，没有任何阻碍
-    // 浏览器会优先绘制这一帧，确保卡牌瞬间动起来
+    // 1. 【最高优先级】先告诉浏览器：我要翻牌了！快画！
+    // 不做任何其他事情，绝不阻塞 UI 线程
     el.classList.add('flipped');
     
-    // 3. 【优化】延迟 50ms 播放翻牌音效
-    // 把它移出当前渲染帧，防止音频加载卡住画面
+    // 2. 【稍后一步】延迟 50ms 播放翻牌音效
+    // 等浏览器把“翻牌动作”画出来之后，再处理声音
     setTimeout(() => {
         safePlayAudio('sfx-flip'); 
     }, 50);
 
-    // 4. 【优化】延迟 400ms 再开始朗读
-    // 让 CSS 翻转动画先跑一大半，视觉丝般顺滑，然后再启动耗资源的语音引擎
+    // 3. 【再晚一点】延迟 350ms 开始朗读单词
+    // 此时卡牌已经翻到一半了，视觉极其流畅，这时候启动语音引擎
     setTimeout(() => {
         const onSpeechEnd = () => {
             if (!sCard1) {
@@ -1423,6 +1433,7 @@ function flipSpookyCard(el, uid, wordText) {
                 u.volume = 1;
                 u.onend = onSpeechEnd;
                 
+                // 安卓/部分浏览器保底逻辑
                 setTimeout(() => {
                     if (sCard2) return; 
                     if (sCard1 && !sCard2 && sCard1.el !== el) {
@@ -1437,10 +1448,11 @@ function flipSpookyCard(el, uid, wordText) {
             console.warn("TTS failed:", e);
         }
 
+        // 不支持语音的情况
         if (!hasSpeech) {
             setTimeout(onSpeechEnd, 600);
         }
-    }, 400); // 建议改到 400，给动画更多时间
+    }, 350); // 这里给 350ms，配合音效的节奏
 }
 
 // ============ 核心：判断与动画序列 (修复遮罩层逻辑) ============
