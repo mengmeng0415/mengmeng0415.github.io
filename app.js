@@ -1396,29 +1396,43 @@ function resetSpookyLogic() {
 // ============ 翻牌逻辑 (零延迟优化版) ============
 // ============ 翻牌逻辑 (绝对流畅版) ============
 // ============ 翻牌逻辑 (极致流畅版：先动画面，再出声音) ============
+// ============ 翻牌逻辑 (防手快/防多点修复版) ============
 function flipSpookyCard(el, uid, wordText) {
+    // 1. 基础拦截
     if (sLock) return;
+    // 防止重复点击同一张
     if (sCard1 && el === sCard1.el) return;
+    // 防止点击已经配对的
     if (el.classList.contains('matched')) return;
 
-    // 1. 【最高优先级】先告诉浏览器：我要翻牌了！快画！
-    // 不做任何其他事情，绝不阻塞 UI 线程
+    // 2. 【核心修复】点击瞬间立即更新状态 (占位)
+    // 不要等 350ms 后再记录，现在立刻记录，防止用户手快点第三张
+    let isSecondCard = false;
+    
+    if (!sCard1) {
+        // 这是第一张牌
+        sCard1 = { el, uid };
+    } else {
+        // 这是第二张牌：立刻上锁！
+        sCard2 = { el, uid };
+        sLock = true; // ⛔️ 关键：立刻锁住游戏，不让点第三张
+        isSecondCard = true;
+    }
+
+    // 3. 视觉翻转 (立即执行)
     el.classList.add('flipped');
     
-    // 2. 【稍后一步】延迟 50ms 播放翻牌音效
-    // 等浏览器把“翻牌动作”画出来之后，再处理声音
+    // 4. 播放音效 (微小延迟防卡顿)
     setTimeout(() => {
         safePlayAudio('sfx-flip'); 
     }, 50);
 
-    // 3. 【再晚一点】延迟 350ms 开始朗读单词
-    // 此时卡牌已经翻到一半了，视觉极其流畅，这时候启动语音引擎
+    // 5. 读单词 & 触发判断 (延迟执行，配合动画)
     setTimeout(() => {
         const onSpeechEnd = () => {
-            if (!sCard1) {
-                sCard1 = { el, uid };
-            } else {
-                sCard2 = { el, uid };
+            // 只有当这是第二张牌时，才去触发比对逻辑
+            // 第一张牌读完就读完了，不需要做任何事
+            if (isSecondCard) {
                 checkSpookyMatch();
             }
         };
@@ -1431,15 +1445,17 @@ function flipSpookyCard(el, uid, wordText) {
                 u.lang = 'en-US';
                 if (preferredVoice) u.voice = preferredVoice;
                 u.volume = 1;
+                
+                // 绑定读完的回调
                 u.onend = onSpeechEnd;
                 
-                // 安卓/部分浏览器保底逻辑
-                setTimeout(() => {
-                    if (sCard2) return; 
-                    if (sCard1 && !sCard2 && sCard1.el !== el) {
-                         onSpeechEnd();
-                    }
-                }, 1200);
+                // 安卓/平板保底：如果读音卡住不回调，1.2秒后强制继续
+                if (isSecondCard) {
+                    setTimeout(() => {
+                        // 如果锁还没解开(说明还没check)，手动触发
+                        if (sLock && sCard2) onSpeechEnd();
+                    }, 1200);
+                }
 
                 speechSynthesis.speak(u);
                 hasSpeech = true;
@@ -1448,11 +1464,11 @@ function flipSpookyCard(el, uid, wordText) {
             console.warn("TTS failed:", e);
         }
 
-        // 不支持语音的情况
+        // 如果不支持语音，或者没声音，直接延迟触发
         if (!hasSpeech) {
             setTimeout(onSpeechEnd, 600);
         }
-    }, 350); // 这里给 350ms，配合音效的节奏
+    }, 350); 
 }
 
 // ============ 核心：判断与动画序列 (修复遮罩层逻辑) ============
