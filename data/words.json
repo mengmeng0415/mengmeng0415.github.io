@@ -1,17 +1,20 @@
 {
+  
   "w001": {
-    "word": "shade",
-    "images": { "scene": ["infopic01/shade.webp","infopic01/practice.webp","infopic01/potion.webp","infopic01/argue.webp"],
-      "card": [
-        "wordpic01/ex1.png"
-      ] },
+    "word": "steady",
+    "images": {
+      "scene": ["infopic01/shade.webp"],
+      "card": ["wordpic01/ex1.png"]
+    },
     "richDetail": [
-      "[TITLE] 解释 [/TITLE][DEF][EN] To block the sun so that it does not shine directly (used in the book when Drake blocks sunlight with his hand to watch Kepri fly)[/EN][CN] 遮蔽（阳光）；挡光（书中指德雷克用手挡住阳光，观看凯普丽飞行）[/CN][POS] v.[/POS][PH]/ʃeɪd/[/PH][DU] Drake shaded his eyes with his hand to look at Kepri flying in the sky.|(原文例句) 德雷克用手挡住眼睛，观看凯普丽在空中飞行。[/DU][DU] The umbrella shades us from the strong sunlight.| 雨伞为我们挡住强烈的阳光。[/DU][DU] The big leaves shade the flowers below.| 大片的叶子为下面的花儿挡光。[/DU][/DEF][IMG]infopic01/argue.webp|wordpic01/ex4.png[/IMG][DEF][EN] A cool place out of the sun (used in the book when Drake stays in the cool area under the tree with Worm)[/EN][CN] 树荫；阴凉处（书中指德雷克和沃姆待在树下的凉爽区域）[/CN][POS] n.[/POS][DU] Drake sat in the shade of the big tree with Worm.|(原文例句) 德雷克和沃姆坐在大树的树荫下。[/DU][DU] The little cat lies in the shade to escape the hot sun.| 小猫躺在阴凉处躲避烈日。[/DU][DU] We have a picnic in the shade of the pavilion.| 我们在亭子的阴凉处野餐。[/DU][/DEF]",
-"[TITLE]常见用法 [/TITLE][COLL][H] shade one's eyes | 用手挡眼（避光） [POS] v.[/POS][/H][EX] She shaded her eyes to see the distant mountain.| 她用手挡眼看远处的山。[/EX][EX] He shaded his eyes from the sunset.| 他用手挡住夕阳的光。[/EX][C] shade eyes from the sun | 挡住阳光护眼 [/C][C] shade eyes to see far | 挡光看远方 [/C][/COLL][COLL][H] in the shade | 在阴凉处 n.[/H][EX] Children play games in the shade after class.| 孩子们课后在阴凉处做游戏。[/EX][EX] Old people rest in the shade in the afternoon.| 老人们下午在阴凉处休息。[/EX][C] play in the shade | 在阴凉处玩耍 [/C][C] rest in the shade | 在阴凉处休息 [/C][/COLL]",
-"[TITLE] 额外例句 [/TITLE][EX] She shaded the baby's face with a hat.[POS] v.[/POS]| 她用帽子挡住宝宝的脸，避免阳光直射。[/EX][EX] The curtain shades the room from the morning sun.[POS] v.[/POS]| 窗帘挡住了房间里的晨光。[/EX][EX] The oak tree provides cool shade for the garden.[POS] n.[/POS]| 橡树为花园提供了凉爽的阴凉处。[/EX][EX] Birds build nests in the shade of the branches.[POS] n.[/POS]| 鸟儿在树枝的阴凉处筑巢。[/EX]",
-"[TITLE] 常见错误 [/TITLE][ERR] 不要混淆 shade 的动词和名词用法！作动词时表示 “遮蔽”，后接宾语（如 shade eyes）；作名词时表示 “阴凉处”，常用搭配 in the shade。[/ERR][ERR] 不要混淆 shade 和 shadow！shade 指 “阴凉处”（无阳光的区域），shadow 指 “影子”（物体挡住光形成的轮廓），比如 “树的影子” 是 tree shadow，“树的阴凉处” 是 tree shade。[/ERR][ERR] shade 作 “阴凉处” 时是不可数名词，不能说 “a shade”，要表达 “一片阴凉” 可以说 “a patch of shade”。[/ERR][ERR] 作动词 “遮蔽” 时，不能单独说 “shade”，需接宾语或加介词，比如 “挡住阳光” 是 shade oneself from the sun（正确），不是 shade the sun（错误）。[/ERR]"
+      "[TITLE]解释[/TITLE][DEF][EN]Not shaking or moving (used in the book when Griffith tells everyone to keep the dragon calm while putting on the saddle)[/EN][CN]平稳的；稳定的（书中指格里菲斯让大家给龙装马鞍时，让龙保持不摇晃）[/CN][POS]adj.[/POS][PH]/ˈstedɪ/[/PH][DU]\"Steady now,\" warned Griffith, the king's wizard.|(原文例句)“现在稳住，”国王的巫师格里菲斯警告道。[/DU][DU]Keep steady when you stand on the dragon's back.|站在龙背上时要保持平稳。[/DU][DU]The little bird stayed steady on the thin branch.|小鸟稳稳地停在细树枝上。[/DU][/DEF][IMG]infopic01/shade.webp|wordpic01/ex1.png[/IMG][DEF][EN]To make something stop shaking or moving[/EN][CN]使平稳；稳住[/CN][POS]v.[/POS][DU]Bo steadied the saddle before putting it on Shu.|波在给舒装马鞍前先稳住了它。[/DU][DU]She steadied the bowl with both hands.|她用双手稳住了碗。[/DU][DU]The hiker steadied himself against the rock.|徒步旅行者靠着石头稳住了身体。[/DU][/DEF]",
+      "[TITLE]常见用法[/TITLE][COLL][H]steady hand|平稳的手[POS]n.[/POS][/H][EX]You need a steady hand to feed the small dragon.|喂小龙需要手稳。[/EX][EX]The artist has a steady hand to draw fine lines.|艺术家有一双平稳的手来画细线。[/EX][C]a steady hand for painting|画画用的平稳的手[/C][C]a steady hand for cooking|做饭用的平稳的手[/C][/COLL][COLL][H]steady oneself|稳住自己[POS]v.[/POS][/H][EX]He steadied himself on the dragon's saddle.|他在龙的马鞍上稳住了自己。[/EX][EX]She steadied herself when the wind blew hard.|大风刮起时，她稳住了自己。[/EX][C]steady oneself against the wind|逆风稳住自己[/C][C]steady oneself on the ladder|在梯子上稳住自己[/C][/COLL]",
+      "[TITLE]额外例句[/TITLE][EX]The dragon flew at a steady pace through the sky.[POS]adj.[/POS]|龙以平稳的速度在空中飞行。[/EX][EX]The water in the lake is steady on calm days.[POS]adj.[/POS]|无风的日子里，湖面很平稳。[/EX][EX]He steadied the box so it wouldn't fall off the table.[POS]v.[/POS]|他稳住了盒子，不让它从桌子上掉下来。[/EX][EX]The teacher steadied the student's hand to write neatly.[POS]v.[/POS]|老师稳住学生的手，让他写得工整。[/EX]",
+      "[TITLE]常见错误[/TITLE][ERR]不要混淆 steady 和 stable！steady 侧重“动作、状态不摇晃”，stable 侧重“结构、局势稳定”，比如“稳定的工作”是 a stable job，不是 a steady job。[/ERR][ERR]作动词时，直接接宾语，不能说“steady on sth”，正确表达：steady the saddle（稳住马鞍）。[/ERR][ERR]作形容词时，修饰名词要放在前面，不能说“a hand steady”，正确表达：a steady hand（平稳的手）。[/ERR]"
     ]
-  },
+  
+ },
+
   "w002": {
     "word": "practice",
     "images": { "scene": ["infopic01/practice.webp","infopic01/practice.webp","infopic01/potion.webp"] ,
