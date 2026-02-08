@@ -4,6 +4,32 @@ const CONFIG = {
     imgFolder: "", 
     dataPath: "data/" 
 };
+// ================== 🎨 主题配置中心 ==================
+const THEMES = {
+    // 🎃 主题 1: 万圣节 (原版)
+    "spooky": {
+        name: "Spooky Night",
+        introVideo: "https://cdn.jsdelivr.net/gh/mengmeng0415/wordpic01/spooky.mp4",
+        introAudio: "https://cdn.jsdelivr.net/gh/mengmeng0415/wordpic01/openmusic.mp3",
+        bgm: "https://cdn.jsdelivr.net/gh/mengmeng0415/wordpic01/spooky.MP3",
+        cardBack: "https://cdn.jsdelivr.net/gh/mengmeng0415/wordpic01/spookybackn.png",
+        cardFrontBg: "https://cdn.jsdelivr.net/gh/mengmeng0415/wordpic01/spookyface.png",
+        introDuration: 5000, // 开场视频时长 (毫秒)
+        thumb: "https://cdn.jsdelivr.net/gh/mengmeng0415/wordpic01/spookythumb.png" // 缩略图
+    },
+    // 🌊 主题 2: 冬日
+    "ocean": {
+        name: "Winter Time",
+        introVideo: "https://cdn.jsdelivr.net/gh/mengmeng0415/wordpic01/winopen.mp4", // 请替换您的链接
+        introAudio: "https://cdn.jsdelivr.net/gh/mengmeng0415/wordpic01/winteropen.mp3", // 请替换
+        bgm: "https://cdn.jsdelivr.net/gh/mengmeng0415/wordpic01/winterbgm.mp3",         // 请替换
+        cardBack: "https://cdn.jsdelivr.net/gh/mengmeng0415/wordpic01/winterback.png",    // 请替换
+        cardFrontBg: "https://cdn.jsdelivr.net/gh/mengmeng0415/wordpic01/winterface.png", // 请替换
+        introDuration: 5000, // 这个视频有5秒
+        thumb: "https://cdn.jsdelivr.net/gh/mengmeng0415/wordpic01/winterthumb.png"
+    }
+    // 您可以继续添加更多主题...
+};
 
 // ================== 🛠️ 2. Data Manager ==================
 const DataManager = {
@@ -591,7 +617,7 @@ function renderTabContent(type, word, container) {
         if (state.customGames && state.customGames.length > 0) {
             const gamesListHtml = state.customGames.map((g, idx) => `
                 <div class="quiz-box" onclick="startSpookyGame(${idx})" style="min-height:200px; cursor:pointer; align-items:center; transition:0.2s; border:2px solid transparent;">
-                    <div style="font-size:50px; margin-bottom:15px;">🎃</div>
+                  
                     <div class="quiz-q" style="margin-bottom:10px; text-align:center;">
                         ${g.title}
                     </div>
@@ -1205,6 +1231,9 @@ function toggleWordSelection(uid) {
     updateSelectionCount();
 }
 
+// 全局变量记录当前选中的主题（默认为 spooky）
+let currentSelectedThemeId = 'spooky';
+
 function openConfigModal() {
     if (selectedWordUIDs.size < 2) {
         alert("请至少选择 2 个单词！");
@@ -1212,6 +1241,25 @@ function openConfigModal() {
     }
     document.getElementById('selected-count').innerText = selectedWordUIDs.size;
     document.getElementById('game-config-modal').classList.remove('hidden');
+
+    // 👇 【新增】渲染主题列表
+    const container = document.getElementById('modal-theme-list');
+    container.innerHTML = '';
+    
+    Object.keys(THEMES).forEach(key => {
+        const theme = THEMES[key];
+        const div = document.createElement('div');
+        div.className = `theme-option ${key === currentSelectedThemeId ? 'selected' : ''}`;
+        div.style.backgroundImage = `url('${theme.thumb}')`;
+        div.innerHTML = `<span>${theme.name}</span>`;
+        div.onclick = () => {
+            currentSelectedThemeId = key;
+            // 更新选中样式
+            Array.from(container.children).forEach(c => c.classList.remove('selected'));
+            div.classList.add('selected');
+        };
+        container.appendChild(div);
+    });
 }
 
 function closeConfigModal() {
@@ -1234,12 +1282,14 @@ function confirmGameGeneration() {
             id: `game-${Date.now()}-${i}`,
             words: chunk,
             type: 'spooky-memory',
-            title: `Group ${Math.floor(i/groupSize) + 1}`
+            title: `Group ${Math.floor(i/groupSize) + 1}`,
+            themeId: currentSelectedThemeId // 👈 【关键】保存主题ID
         });
     }
     state.customGames = newGames;
     closeConfigModal();
     exitCreationMode();
+    // ... 后面的代码不变 ...
     const tabs = document.getElementById('detail-tabs');
     if (tabs) Array.from(tabs.children).forEach(btn => btn.classList.remove('active'));
     const area = document.getElementById('tab-content-area');
@@ -1256,10 +1306,15 @@ function clearCustomGames() {
 // ============ 🃏 Spooky Game Engine ============
 let gameVideo, gameBgm;
 
-// ============ 🛡️ 终极兼容版 startSpookyGame ============
+
+// ============ 🛡️ 多主题全兼容版 startSpookyGame ============
 function startSpookyGame(gameIndex) {
     const gameData = state.customGames[gameIndex];
     if (!gameData) return;
+
+    // 获取当前游戏的主题配置
+    let activeThemeId = gameData.themeId || 'spooky';
+    let themeConfig = THEMES[activeThemeId];
 
     let container = document.getElementById('game-fullscreen-container');
     if (!container) {
@@ -1268,18 +1323,20 @@ function startSpookyGame(gameIndex) {
         document.body.appendChild(container);
     }
     
-    // 1. 强制添加 playsinline 和 webkit-playsinline 属性，这对 iOS/平板 至关重要
-    // 2. 添加海报 poster (背景图)，万一视频加载不出来，至少有个背景，不是黑屏
-  // 👇 【修改】container.innerHTML 部分，加入了 id="victory-view" 的结构
+    // 渲染容器结构
+    // 注意：Video 和 Audio 的 src 现在是空的，稍后用 JS 填充，或者先填默认
     container.innerHTML = `
         <video id="game-video-bg" playsinline webkit-playsinline muted style="position: absolute; width: 100%; height: 100%; object-fit: cover; z-index: 1; background: #000;">
-            <source src="https://cdn.jsdelivr.net/gh/mengmeng0415/wordpic01/spooky.mp4" type="video/mp4">
+            <source src="${themeConfig.introVideo}" type="video/mp4">
         </video>
         
         <div id="game-start-overlay" class="game-start-overlay">
             <div style="font-size:60px; margin-bottom:20px;">🎃</div>
+            
+            <div id="start-screen-theme-list" class="theme-selector" style="margin-bottom:30px;"></div>
+
             <button class="btn-game-start" onclick="realStartGameAction()">▶ START GAME</button>
-            <p style="margin-top:15px; opacity:0.8; font-size:14px;">Tap to enter the Spooky World</p>
+            <p style="margin-top:15px; opacity:0.8; font-size:14px;">Tap to enter the Game</p>
         </div>
 
         <button class="btn-exit-game" onclick="exitSpookyGame()">退出游戏</button>
@@ -1292,9 +1349,65 @@ function startSpookyGame(gameIndex) {
             <img src="https://cdn.jsdelivr.net/gh/mengmeng0415/wordpic01/youwin.png" class="victory-img" alt="You Win">
             <button class="btn-victory-ok" onclick="exitSpookyGame()">OK</button>
         </div>
+        
+        <audio id="sfx-open-dynamic" src="${themeConfig.introAudio}"></audio>
+        <audio id="bgm-dynamic" src="${themeConfig.bgm}" loop></audio>
     `;
 
-    // 预先生成卡牌数据
+    // 渲染开始界面上的主题选择器
+    const themeSelector = document.getElementById('start-screen-theme-list');
+    Object.keys(THEMES).forEach(key => {
+        const t = THEMES[key];
+        const div = document.createElement('div');
+        div.className = `theme-option ${key === activeThemeId ? 'selected' : ''}`;
+        div.style.backgroundImage = `url('${t.thumb}')`;
+        div.innerHTML = `<span>${t.name}</span>`;
+        div.onclick = (e) => {
+            e.stopPropagation(); // 防止触发后面的点击
+            switchThemeInLobby(key); // 👈 立即切换主题
+        };
+        themeSelector.appendChild(div);
+    });
+
+    // 内部函数：在准备界面切换主题
+    function switchThemeInLobby(newKey) {
+        activeThemeId = newKey;
+        themeConfig = THEMES[newKey];
+        
+        // 1. 更新 UI 选中状态
+        Array.from(themeSelector.children).forEach(c => c.classList.remove('selected'));
+        // 找到对应的 div 加 selected (这里简单重新渲染或者遍历匹配)
+        // 省略遍历 dom 逻辑，简单点：
+        themeSelector.innerHTML = '';
+        Object.keys(THEMES).forEach(key => {
+            const t = THEMES[key];
+            const div = document.createElement('div');
+            div.className = `theme-option ${key === activeThemeId ? 'selected' : ''}`;
+            div.style.backgroundImage = `url('${t.thumb}')`;
+            div.innerHTML = `<span>${t.name}</span>`;
+            div.onclick = (e) => { e.stopPropagation(); switchThemeInLobby(key); };
+            themeSelector.appendChild(div);
+        });
+
+        // 2. 更新 Video 
+        const vid = document.getElementById('game-video-bg');
+        vid.src = themeConfig.introVideo; // 切换视频源
+        vid.load(); // 重新加载
+
+        // 3. 更新 Audio
+        document.getElementById('sfx-open-dynamic').src = themeConfig.introAudio;
+        document.getElementById('bgm-dynamic').src = themeConfig.bgm;
+
+        // 4. 更新 CSS 变量 (卡牌样式)
+        const grid = document.getElementById('spooky-grid');
+        grid.style.setProperty('--card-back', `url('${themeConfig.cardBack}')`);
+        grid.style.setProperty('--card-front-bg', `url('${themeConfig.cardFrontBg}')`);
+    }
+
+    // 初始化 CSS 变量 (为了防止没点切换直接开始)
+    setTimeout(() => switchThemeInLobby(activeThemeId), 0);
+
+    // 生成卡牌数据
     const cards = [];
     gameData.words.forEach(uid => {
         const w = DataManager.getWordDetail(uid);
@@ -1312,8 +1425,6 @@ function startSpookyGame(gameIndex) {
     // 渲染网格
     const grid = document.getElementById('spooky-grid');
     const columns = Math.ceil(cards.length / 2);
-    
-    // 混合布局策略
     grid.style.gridTemplateColumns = `repeat(${columns}, 1fr)`;
     grid.style.maxWidth = (columns * 34) + 'vh';
 
@@ -1332,25 +1443,26 @@ function startSpookyGame(gameIndex) {
 
     grid.innerHTML = cardsHtml + '<div id="grid-overlay" class="grid-overlay"></div>';
 
-    // ============ 🚀 核心：点击“开始”时的强力激活逻辑 ============
-   // ============ 🚀 核心：点击“开始”时的强力激活逻辑 ============
+    // ============ 🚀 点击“开始”时的激活逻辑 ============
     window.realStartGameAction = function() {
         const overlay = document.getElementById('game-start-overlay');
         if(overlay) overlay.style.display = 'none';
 
         gameVideo = document.getElementById('game-video-bg');
+        
+        // 1. 播放视频
         gameVideo.muted = true; 
         gameVideo.play().catch(e => console.warn("Video autoplay blocked:", e));
 
-        // 👇 【修改】把 'sfx-win' 加进去
-        const audioIds = ['bgm-spooky', 'sfx-open', 'sfx-shuffle', 'sfx-match', 'sfx-notmatch', 'sfx-flip', 'sfx-win'];
+        // 2. 音频全员激活
+        // 注意：现在有动态ID了，所以列表要包含它们
+        const audioIds = ['bgm-dynamic', 'sfx-open-dynamic', 'sfx-shuffle', 'sfx-match', 'sfx-notmatch', 'sfx-flip', 'sfx-win'];
         
         audioIds.forEach(id => {
             const audio = document.getElementById(id);
             if (audio) {
                 audio.muted = false; 
-                // 设置音量
-                audio.volume = (id === 'bgm-spooky' || id === 'sfx-open') ? 0.6 : 1.0; 
+                audio.volume = (id.includes('bgm') || id.includes('open')) ? 0.6 : 1.0; 
                 
                 const p = audio.play();
                 if (p !== undefined) {
@@ -1362,50 +1474,36 @@ function startSpookyGame(gameIndex) {
             }
         });
 
-        // 3. 【正式播放开场音乐】
-        // 激活完毕后，立刻单独播放开场音乐
+        // 3. 播放开场音乐 (动态ID)
         setTimeout(() => {
-            const openMusic = document.getElementById('sfx-open');
+            const openMusic = document.getElementById('sfx-open-dynamic');
             if (openMusic) openMusic.play().catch(()=>{});
-        }, 100); // 稍微延迟100ms确保激活完成
+        }, 100);
 
-        // 4. 进入全屏
         if (container.requestFullscreen) container.requestFullscreen().catch(()=>{});
         else if (container.webkitRequestFullscreen) container.webkitRequestFullscreen().catch(()=>{});
 
-        // 5. 【5秒后：切换场景 & 切换音乐】
+        // 4. 【动态等待时间】根据当前主题的时长决定
         setTimeout(() => {
-            // A. 显示卡牌层
             const layer = document.getElementById('game-board-layer');
             if (layer) layer.style.opacity = '1';
             
-            // B. 音乐交接仪式
-            const openMusic = document.getElementById('sfx-open');
-            const bgm = document.getElementById('bgm-spooky');
+            // 切换音乐
+            const openMusic = document.getElementById('sfx-open-dynamic');
+            const bgm = document.getElementById('bgm-dynamic');
             
-            // 停止开场音乐
-            if (openMusic) { 
-                openMusic.pause(); 
-                openMusic.currentTime = 0; 
-            }
-            
-            // 开始循环播放游戏背景音乐
-            if (bgm) {
-                bgm.currentTime = 0;
-                bgm.play().catch(()=>{});
-            }
+            if (openMusic) { openMusic.pause(); openMusic.currentTime = 0; }
+            if (bgm) { bgm.currentTime = 0; bgm.play().catch(()=>{}); }
 
-            // C. 播放洗牌音效 & 动画
             safePlayAudio('sfx-shuffle');
             const allCards = document.querySelectorAll('.spooky-card');
             allCards.forEach(c => c.classList.add('shuffling'));
             setTimeout(() => { allCards.forEach(c => c.classList.remove('shuffling')); }, 1000);
             
-        }, 5000); // 👈 对应视频时长的 5秒
+        }, themeConfig.introDuration); // 👈 使用配置中的时长！
     };
 
     resetSpookyLogic();
-
 }
 
 function exitSpookyGame() {
@@ -1550,7 +1648,8 @@ function checkSpookyMatch() {
                 if (left === 0) {
                     setTimeout(() => {
                         // 1. 停止背景音乐
-                        const bgm = document.getElementById('bgm-spooky');
+                        // 👇 修改这里：ID 变了
+                        const bgm = document.getElementById('bgm-dynamic'); 
                         if (bgm) bgm.pause();
 
                         // 2. 播放胜利音效

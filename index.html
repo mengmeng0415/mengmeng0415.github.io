@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <title>My Word Library</title>
-    <link rel="stylesheet" href="style.css?v=13">
+    <link rel="stylesheet" href="style.css?v=15">
 </head>
 <body>
 <div id="game-assets" style="display:none;">
@@ -35,6 +35,12 @@
                     <option value="4">4 个 (8张牌)</option>
                     <option value="5" selected>5 个 (10张牌)</option>
                 </select>
+            </div>
+
+            <div class="config-row" style="display:block; text-align:left;">
+                <label style="margin-bottom:10px; display:block;">选择主题：</label>
+                <div id="modal-theme-list" class="theme-selector">
+                    </div>
             </div>
 
             <div class="config-actions">
@@ -157,6 +163,6 @@
         <img class="modal-content" id="modal-img">
     </div>
 
-    <script src="app.js?v=13"></script>
+    <script src="app.js?v=15"></script>
 </body>
 </html>

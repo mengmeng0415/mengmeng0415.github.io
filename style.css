@@ -97,7 +97,7 @@ input:checked + .slider:before { transform: translateX(16px); }
 .series-scroll-container { display: flex; gap: 30px; overflow-x: auto; padding-bottom: 25px; }
 .series-scroll-container::-webkit-scrollbar { height: 8px; }
 .series-scroll-container::-webkit-scrollbar-thumb { background: #ddd; border-radius: 4px; }
-.book-card { flex: 0 0 240px; background: #fff; border-radius: 12px; box-shadow: 0 4px 12px rgba(0,0,0,0.05); cursor: pointer; transition: all 0.3s ease; overflow: hidden; padding-bottom: 12px; border: 1px solid transparent; }
+.book-card { flex: 0 0 220px; background: #fff; border-radius: 12px; box-shadow: 0 4px 12px rgba(0,0,0,0.05); cursor: pointer; transition: all 0.3s ease; overflow: hidden; padding-bottom: 12px; border: 1px solid transparent; }
 .book-card:hover { transform: translateY(-5px); box-shadow: 0 8px 20px rgba(91, 103, 241, 0.15); border-color: var(--primary-light); }
 .book-cover { width: 100%; height: 280px; background-color: #eee; background-size: cover; background-position: center; margin-bottom: 12px; }
 .book-info { padding: 0 12px; text-align: left; }
@@ -974,14 +974,90 @@ input:checked + .slider:before { transform: translateX(16px); }
     background: rgba(0,0,0,0.5); z-index: 2000;
     display: flex; justify-content: center; align-items: center;
 }
+/* 增大弹窗宽度 */
 .config-box {
-    background: #fff; padding: 30px; border-radius: 15px; width: 300px;
-    text-align: center; box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+    background: #fff; 
+    padding: 30px; 
+    border-radius: 15px; 
+    /* 👇 修改这里：宽度从 300px 改为 550px，并加上最大宽度限制以适配手机 */
+    width: 550px;
+    max-width: 90%; 
+    text-align: center; 
+    box-shadow: 0 10px 30px rgba(0,0,0,0.2);
 }
-.config-row { margin: 20px 0; display: flex; justify-content: space-between; align-items: center; }
-.config-row select { padding: 8px; border-radius: 6px; border: 1px solid #ccc; }
-.config-actions { display: flex; gap: 10px; justify-content: flex-end; }
-.btn-confirm { background: var(--primary); color: #fff; padding: 8px 20px; border-radius: 6px; }
+/* 修改配置行的布局：改为居中对齐，让下拉框往左靠 */
+.config-row { 
+    margin: 20px 0; 
+    display: flex; 
+    justify-content: left; /* 👈 核心改动：从 space-between 改为 center */
+    align-items: left; 
+    gap: 15px; /* 👈 新增：让标签和下拉框之间保持舒适距离 */
+}
+
+/* 稍微优化下标签，防止换行 */
+.config-row label {
+    white-space: nowrap;
+    font-weight: bold;
+    color: #555;
+}
+
+/* 稍微美化下拉框 */
+.config-row select {
+    padding: 8px 12px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    font-size: 14px;
+    outline: none;
+    cursor: pointer;
+    background-color: #f9f9f9;
+}
+/* ============ 弹窗按钮样式优化 ============ */
+
+/* 统一按钮容器布局：居中显示更美观 */
+.config-actions { 
+    display: flex; 
+    gap: 20px; 
+    justify-content: center; /* 按钮居中 */
+    margin-top: 30px; 
+}
+
+/* 1. 新增：取消按钮 (灰色背景) */
+.btn-cancel {
+    background: #f0f2f5;       /* 浅灰背景 */
+    color: #666;               /* 深灰文字 */
+    padding: 10px 35px;        /* 👈 增加内边距，让按钮看起来更大气 */
+    border-radius: 8px;
+    font-size: 15px;
+    font-weight: bold;
+    border: 1px solid #e0e0e0; /* 淡淡的边框增加质感 */
+    transition: all 0.2s;
+    margin-top: 30px;
+}
+
+.btn-cancel:hover {
+    background: #e4e6eb;       /* 悬停加深 */
+    color: #333;
+    transform: translateY(-1px);
+}
+
+/* 2. 更新：确认按钮 (确保与取消按钮大小一致) */
+.btn-confirm { 
+    background: var(--primary); 
+    color: #fff; 
+    padding: 10px 35px;        /* 👈 保持与 btn-cancel 完全一致 */
+    border-radius: 8px; 
+    font-size: 15px;
+    font-weight: bold;
+    box-shadow: 0 4px 12px rgba(91, 103, 241, 0.3); /* 加点投影更突出 */
+    transition: all 0.2s;
+    margin-top: 30px;
+}
+
+.btn-confirm:hover {
+    transform: translateY(-1px);
+    box-shadow: 0 6px 15px rgba(91, 103, 241, 0.4);
+}
+
 
 /* ============ 🎬 游戏场景与视频背景 ============ */
 #game-fullscreen-container {
@@ -1122,54 +1198,64 @@ input:checked + .slider:before { transform: translateX(16px); }
 }
 
 
-/* ============ 修改卡牌背面 ============ */
-.face.back {
-    /* 1. 设置背景色 (图片加载前的底色) */
-    background-color: #fff; 
+/* ============ 🎨 动态主题支持 ============ */
 
-    /* 2. 设置背景图 (替换这里的链接) */
-    background-image: url('https://cdn.jsdelivr.net/gh/mengmeng0415/wordpic01/spookybackn.png');
-    
-    /* 3. 让图片充满卡牌 */
+/* 1. 卡牌背面 */
+.face.back {
+    background-color: #fff; 
+    /* 👇 核心修改：使用变量，如果没有变量则使用默认图 */
+    background-image: var(--card-back, url('https://cdn.jsdelivr.net/gh/mengmeng0415/wordpic01/spookythumb.png'));
     background-size: cover; 
     background-position: center;
     background-repeat: no-repeat;
-
-    
-    
-    /* 5. 调整文字/图标颜色 (如果你还保留中间的 logo) */
-    color: transparent; /* 如果你想隐藏那个 🕷️，就把颜色设为透明 */
-     border: 2px solid rgba(255,255,255,0.6);
+    border: 2px solid rgba(255,255,255,0.6);
 }
 /* ============ 修改卡牌正面样式 (统一图文版) ============ */
 
-/* 1. 正面容器布局 */
+/* 2. 卡牌正面背景 */
 .face.front {
-    /* 1. 核心翻转逻辑 (不动) */
     transform: rotateY(180deg);
-    
-    /* 2. 【关键修复】背景图设置 */
-    background-color: #fff; /* 图片加载前的底色 */
-    
-    
-    background-image: url('https://cdn.jsdelivr.net/gh/mengmeng0415/wordpic01/spookyface.png');
-    
-    background-size: cover;  /* 铺满卡片 */
+    background-color: #fff; 
+    /* 👇 核心修改：使用变量 */
+    background-image: var(--card-front-bg, url('https://cdn.jsdelivr.net/gh/mengmeng0415/wordpic01/spookyface.png'));
+    background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-
-    /* 3. 边框与内边距 */
     border: 3px solid #fff; 
     box-sizing: border-box; 
     padding: 10px;
-
-    /* 4. 布局模式：垂直排列 (图在上，文在下) */
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 5px; /* 图文之间的间距 */
+    gap: 5px;
 }
+/* 3. 新增：主题选择器样式 (用于弹窗和开始界面) */
+.theme-selector {
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+    margin: 15px 0;
+}
+.theme-option {
+    width: 120px;
+    height: 90px;
+    border-radius: 8px;
+    border: 3px solid transparent;
+    cursor: pointer;
+    background-size: cover;
+    background-position: center;
+    transition: transform 0.2s;
+    position: relative;
+}
+.theme-option:hover { transform: scale(1.1); }
+.theme-option.selected { border-color: var(--primary); box-shadow: 0 0 10px var(--primary); transform: scale(1.1); }
+.theme-option span {
+    position: absolute; bottom: -20px; left: 50%; transform: translateX(-50%);
+    font-size: 10px; white-space: nowrap; color: #333; font-weight: bold;
+}
+/* 开始界面上的主题选项文字要是白色的 */
+#game-start-overlay .theme-option span { color: #fff; text-shadow: 0 1px 3px #000; }
 
 /* 2. 图片容器 (用于控制1:1比例) */
 .front-img-container {
