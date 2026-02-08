@@ -1270,6 +1270,7 @@ function startSpookyGame(gameIndex) {
     
     // 1. 强制添加 playsinline 和 webkit-playsinline 属性，这对 iOS/平板 至关重要
     // 2. 添加海报 poster (背景图)，万一视频加载不出来，至少有个背景，不是黑屏
+  // 👇 【修改】container.innerHTML 部分，加入了 id="victory-view" 的结构
     container.innerHTML = `
         <video id="game-video-bg" playsinline webkit-playsinline muted style="position: absolute; width: 100%; height: 100%; object-fit: cover; z-index: 1; background: #000;">
             <source src="https://cdn.jsdelivr.net/gh/mengmeng0415/wordpic01/spooky.mp4" type="video/mp4">
@@ -1285,6 +1286,11 @@ function startSpookyGame(gameIndex) {
         
         <div id="game-board-layer" style="opacity: 0; transition: opacity 1s; width: 100%; height: 100%; display: flex; align-items: center; justify-content: center; position: relative; z-index: 10;">
             <div id="spooky-grid" class="spooky-grid"></div>
+        </div>
+
+        <div id="victory-view" class="victory-overlay">
+            <img src="https://cdn.jsdelivr.net/gh/mengmeng0415/wordpic01/youwin.png" class="victory-img" alt="You Win">
+            <button class="btn-victory-ok" onclick="exitSpookyGame()">OK</button>
         </div>
     `;
 
@@ -1332,29 +1338,23 @@ function startSpookyGame(gameIndex) {
         const overlay = document.getElementById('game-start-overlay');
         if(overlay) overlay.style.display = 'none';
 
-        // 获取所有媒体元素
         gameVideo = document.getElementById('game-video-bg');
-        
-        // 1. 【视频播放】
         gameVideo.muted = true; 
         gameVideo.play().catch(e => console.warn("Video autoplay blocked:", e));
 
-        // 2. 【音频全员激活 (解锁)】
-        // 先把所有音频都“摸”一遍 (play然后立即pause)，获取浏览器信任
-        const audioIds = ['bgm-spooky', 'sfx-open', 'sfx-shuffle', 'sfx-match', 'sfx-notmatch', 'sfx-flip'];
+        // 👇 【修改】把 'sfx-win' 加进去
+        const audioIds = ['bgm-spooky', 'sfx-open', 'sfx-shuffle', 'sfx-match', 'sfx-notmatch', 'sfx-flip', 'sfx-win'];
         
         audioIds.forEach(id => {
             const audio = document.getElementById(id);
             if (audio) {
-                audio.muted = false; // 取消静音
-                // 设置音量：背景音乐小一点，音效大一点
+                audio.muted = false; 
+                // 设置音量
                 audio.volume = (id === 'bgm-spooky' || id === 'sfx-open') ? 0.6 : 1.0; 
                 
                 const p = audio.play();
                 if (p !== undefined) {
                     p.then(() => {
-                        // ⚡️ 重点：激活后立刻暂停所有声音！
-                        // 也就是：点击瞬间，什么都别响，等待后续指令
                         audio.pause();
                         audio.currentTime = 0;
                     }).catch(e => console.warn(`Audio ${id} blocked:`, e));
@@ -1406,8 +1406,6 @@ function startSpookyGame(gameIndex) {
 
     resetSpookyLogic();
 
-
-    resetSpookyLogic();
 }
 
 function exitSpookyGame() {
@@ -1425,51 +1423,51 @@ function resetSpookyLogic() {
     [sCard1, sCard2, sLock] = [null, null, false];
 }
 
-// ============ 翻牌逻辑 (零延迟优化版) ============
-// ============ 翻牌逻辑 (零延迟优化版) ============
-// ============ 翻牌逻辑 (绝对流畅版) ============
-// ============ 翻牌逻辑 (极致流畅版：先动画面，再出声音) ============
-// ============ 翻牌逻辑 (防手快/防多点修复版) ============
+
+// ============ 翻牌逻辑 (防双重触发·终极稳定版) ============
 function flipSpookyCard(el, uid, wordText) {
     // 1. 基础拦截
     if (sLock) return;
-    // 防止重复点击同一张
     if (sCard1 && el === sCard1.el) return;
-    // 防止点击已经配对的
     if (el.classList.contains('matched')) return;
 
-    // 2. 【核心修复】点击瞬间立即更新状态 (占位)
-    // 不要等 350ms 后再记录，现在立刻记录，防止用户手快点第三张
+    // 2. 状态记录
     let isSecondCard = false;
-    
     if (!sCard1) {
-        // 这是第一张牌
         sCard1 = { el, uid };
     } else {
-        // 这是第二张牌：立刻上锁！
         sCard2 = { el, uid };
-        sLock = true; // ⛔️ 关键：立刻锁住游戏，不让点第三张
+        sLock = true; // 立刻上锁
         isSecondCard = true;
     }
 
-    // 3. 视觉翻转 (立即执行)
+    // 3. 视觉翻转
     el.classList.add('flipped');
     
-    // 4. 播放音效 (微小延迟防卡顿)
+    // 4. 播放翻牌音效
     setTimeout(() => {
         safePlayAudio('sfx-flip'); 
     }, 50);
 
-    // 5. 读单词 & 触发判断 (延迟执行，配合动画)
+    // 5. 读单词 & 触发判断 (核心修复部分)
     setTimeout(() => {
-        const onSpeechEnd = () => {
-            // 只有当这是第二张牌时，才去触发比对逻辑
-            // 第一张牌读完就读完了，不需要做任何事
+        // --- 🛡️ 定义一个只执行一次的控制器 ---
+        let hasTriggered = false;
+        let safetyTimer = null;
+
+        const triggerNextStep = () => {
+            if (hasTriggered) return; // 如果已经执行过，直接退出，防止双重触发
+            hasTriggered = true;      // 标记为已执行
+            
+            if (safetyTimer) clearTimeout(safetyTimer); // 清除保底定时器
+
+            // 只有第二张牌才需要触发比对
             if (isSecondCard) {
                 checkSpookyMatch();
             }
         };
 
+        // --- 尝试播放语音 ---
         let hasSpeech = false;
         try {
             if ('speechSynthesis' in window) {
@@ -1479,29 +1477,29 @@ function flipSpookyCard(el, uid, wordText) {
                 if (preferredVoice) u.voice = preferredVoice;
                 u.volume = 1;
                 
-                // 绑定读完的回调
-                u.onend = onSpeechEnd;
+                // ✅ 正常读完触发
+                u.onend = triggerNextStep;
                 
-                // 安卓/平板保底：如果读音卡住不回调，1.2秒后强制继续
-                if (isSecondCard) {
-                    setTimeout(() => {
-                        // 如果锁还没解开(说明还没check)，手动触发
-                        if (sLock && sCard2) onSpeechEnd();
-                    }, 1200);
-                }
+                // ❌ 错误时也触发（防止卡死）
+                u.onerror = triggerNextStep;
 
                 speechSynthesis.speak(u);
                 hasSpeech = true;
+                
+                // ⏰ 【保底定时器】
+                // 如果 1.2秒后 u.onend 还没来（浏览器卡了/没读出声），强制触发
+                safetyTimer = setTimeout(triggerNextStep, 1200);
             }
         } catch (e) {
             console.warn("TTS failed:", e);
         }
 
-        // 如果不支持语音，或者没声音，直接延迟触发
+        // 如果浏览器根本不支持语音，直接触发
         if (!hasSpeech) {
-            setTimeout(onSpeechEnd, 600);
+            triggerNextStep();
         }
-    }, 350); 
+
+    }, 350); // 视觉延迟
 }
 
 // ============ 核心：判断与动画序列 (修复遮罩层逻辑) ============
@@ -1549,7 +1547,21 @@ function checkSpookyMatch() {
                 card1.el.classList.add('matched');
                 card2.el.classList.add('matched');
                 const left = document.querySelectorAll('.spooky-card:not(.matched)').length;
-                if (left === 0) setTimeout(() => alert("🎉 Group Complete!"), 500);
+                if (left === 0) {
+                    setTimeout(() => {
+                        // 1. 停止背景音乐
+                        const bgm = document.getElementById('bgm-spooky');
+                        if (bgm) bgm.pause();
+
+                        // 2. 播放胜利音效
+                        safePlayAudio('sfx-win');
+
+                        // 3. 显示胜利蒙层
+                        const victoryView = document.getElementById('victory-view');
+                        if (victoryView) victoryView.classList.add('show');
+                        
+                    }, 500);
+                }
             }, 3000); 
 
             setTimeout(() => {

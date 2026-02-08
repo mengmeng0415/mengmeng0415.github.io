@@ -1382,3 +1382,67 @@ input:checked + .slider:before { transform: translateX(16px); }
     background-size: cover;
     background-position: center;
 }
+/* ============ 🏆 胜利结算界面样式 ============ */
+.victory-overlay {
+    position: absolute;
+    top: 0; left: 0; width: 100%; height: 100%;
+    background: rgba(0, 0, 0, 0.85); /* 深色半透明背景 */
+    z-index: 10000; /* 最高层级 */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    pointer-events: none; /* 未显示时不可点击 */
+    transition: opacity 0.5s ease;
+}
+
+.victory-overlay.show {
+    opacity: 1;
+    pointer-events: auto; /* 显示后可点击 */
+}
+
+/* 胜利图片 */
+.victory-img {
+    width: 60%; /* 默认宽度 */
+    max-width: 500px; /* 最大宽度 */
+    height: auto;
+    object-fit: contain;
+    animation: popIn 0.8s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    margin-bottom: 30px;
+}
+
+/* OK 按钮 */
+.btn-victory-ok {
+    padding: 12px 40px;
+    font-size: 24px;
+    font-weight: 800;
+    color: #fff;
+    background: linear-gradient(135deg, #4caf50 0%, #2e7d32 100%); /* 绿色渐变 */
+    border: 3px solid #fff;
+    border-radius: 50px;
+    cursor: pointer;
+    box-shadow: 0 5px 20px rgba(76, 175, 80, 0.5);
+    transition: transform 0.2s;
+    animation: fadeInUp 1s ease 0.5s backwards; /* 延迟出现 */
+}
+
+.btn-victory-ok:hover {
+    transform: scale(1.1);
+}
+
+.btn-victory-ok:active {
+    transform: scale(0.95);
+}
+
+/* 弹跳动画 */
+@keyframes popIn {
+    0% { transform: scale(0); opacity: 0; }
+    100% { transform: scale(1); opacity: 1; }
+}
+
+/* 上浮动画 */
+@keyframes fadeInUp {
+    0% { transform: translateY(20px); opacity: 0; }
+    100% { transform: translateY(0); opacity: 1; }
+}
