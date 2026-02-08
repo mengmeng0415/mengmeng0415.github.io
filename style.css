@@ -99,7 +99,7 @@ input:checked + .slider:before { transform: translateX(16px); }
 .series-scroll-container::-webkit-scrollbar-thumb { background: #ddd; border-radius: 4px; }
 .book-card { flex: 0 0 220px; background: #fff; border-radius: 12px; box-shadow: 0 4px 12px rgba(0,0,0,0.05); cursor: pointer; transition: all 0.3s ease; overflow: hidden; padding-bottom: 12px; border: 1px solid transparent; }
 .book-card:hover { transform: translateY(-5px); box-shadow: 0 8px 20px rgba(91, 103, 241, 0.15); border-color: var(--primary-light); }
-.book-cover { width: 100%; height: 280px; background-color: #eee; background-size: cover; background-position: center; margin-bottom: 12px; }
+.book-cover { width: 100%; height: 230px; background-color: #eee; background-size: cover; background-position: center; margin-bottom: 12px; }
 .book-info { padding: 0 12px; text-align: left; }
 .book-title { font-size: 15px; font-weight: 700; color: #333; margin-bottom: 4px; line-height: 1.4; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; }
 .book-count { font-size: 13px; color: #999; font-weight: 500; }
