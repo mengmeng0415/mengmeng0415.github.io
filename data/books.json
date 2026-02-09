@@ -8,10 +8,10 @@
     "chapters": [
     { "id": "dm3-c1", "name": "Chapter 1", "wordIds": ["w001", "w002", "w003", "w004", "w005", "w006"], "quizIds": ["q_w001", "q_w002", "q_w003", "q_w004", "q_w005", "q_w006"] },
     { "id": "dm3-c2", "name": "Chapter 2", "wordIds": ["w007", "w008", "w009"], "quizIds": ["q_w007", "q_w007", "q_w009"] },
-    { "id": "dm3-c3", "name": "Chapter 3", "wordIds": ["w0010", "w0011", "w0012", "w0013", "w0014", "w0015"], "quizIds": ["q_w0010", "q_w0011", "q_w0012", "q_w0013", "q_w0014", "q_w0015"] },
-    { "id": "dm3-c4", "name": "Chapter 4", "wordIds": ["w0016"], "quizIds": ["q_w0016"] },  
-    { "id": "dm3-c5", "name": "Chapter 5", "wordIds": ["w0017", "w0018", "w0019", "w0020", "w0021", "w0022","w0023"], "quizIds": ["q_w0017", "q_w0018", "q_w0019", "q_w0020", "q_w0021", "q_w0022", "q_w0023"] },
-    { "id": "dm3-c6", "name": "Chapter 6", "wordIds": ["w0024", "w0025", "w0026", "w0027", "w0028"], "quizIds": ["q_w0024", "q_w0025", "q_w0026", "q_w0027", "q_w0028"] }
+    { "id": "dm3-c3", "name": "Chapter 3", "wordIds": ["w010", "w011", "w012", "w013", "w014", "w015"], "quizIds": ["q_w010", "q_w011", "q_w012", "q_w013", "q_w014", "q_w015"] },
+    { "id": "dm3-c4", "name": "Chapter 4", "wordIds": ["w016"], "quizIds": ["q_w016"] },  
+    { "id": "dm3-c5", "name": "Chapter 5", "wordIds": ["w017", "w018", "w019", "w020", "w021", "w022","w023"], "quizIds": ["q_w017", "q_w018", "q_w019", "q_w020", "q_w021", "q_w022", "q_w023"] },
+    { "id": "dm3-c6", "name": "Chapter 6", "wordIds": ["w024", "w025", "w026", "w027", "w028"], "quizIds": ["q_w024", "q_w025", "q_w026", "q_w027", "q_w028"] }
     ],
 
     "bookPractices": [
