@@ -2,25 +2,24 @@
   "w001": {
     "word": "steady",
     "images": {
-      "scene": ["infopic01/shade.webp"],
-      "card": ["wordpic01/ex5.png"]
+      "scene": ["infopic01/steady.webp"],
+      "card": ["wordpic01/steady.webp"]
     },
     "richDetail": [
-      "[TITLE]解释[/TITLE][DEF][EN]Not shaking or moving (used in the book when Griffith tells everyone to keep the dragon calm while putting on the saddle)[/EN][CN]平稳的；稳定的（书中指格里菲斯让大家给龙装马鞍时，让龙保持不摇晃）[/CN][POS]adj.[/POS][PH]/ˈstedɪ/[/PH][DU]\"Steady now,\" warned Griffith, the king's wizard.|(原文例句)“现在稳住，”国王的巫师格里菲斯警告道。[/DU][DU]Keep steady when you stand on the dragon's back.|站在龙背上时要保持平稳。[/DU][DU]The little bird stayed steady on the thin branch.|小鸟稳稳地停在细树枝上。[/DU][/DEF][IMG]infopic01/shade.webp|wordpic01/ex1.png[/IMG][DEF][EN]To make something stop shaking or moving[/EN][CN]使平稳；稳住[/CN][POS]v.[/POS][DU]Bo steadied the saddle before putting it on Shu.|波在给舒装马鞍前先稳住了它。[/DU][DU]She steadied the bowl with both hands.|她用双手稳住了碗。[/DU][DU]The hiker steadied himself against the rock.|徒步旅行者靠着石头稳住了身体。[/DU][/DEF]",
+      "[TITLE]解释[/TITLE][DEF][EN]Not shaking or moving (used in the book when Griffith tells everyone to keep the dragon calm while putting on the saddle)[/EN][CN]平稳的；稳定的（书中指格里菲斯让大家给龙装马鞍时，让龙保持不摇晃）[/CN][POS]adj.[/POS][PH]/ˈstedɪ/[/PH][DU]\"Steady now,\" warned Griffith, the king's wizard.|(原文例句)“现在稳住，”国王的巫师格里菲斯警告道。[/DU][DU]Keep steady when you stand on the dragon's back.|站在龙背上时要保持平稳。[/DU][DU]The little bird stayed steady on the thin branch.|小鸟稳稳地停在细树枝上。[/DU][/DEF][IMG]infopic01/steady.webp|wordpic01/steady.webp[/IMG][DEF][EN]To make something stop shaking or moving[/EN][CN]使平稳；稳住[/CN][POS]v.[/POS][DU]Bo steadied the saddle before putting it on Shu.|波在给舒装马鞍前先稳住了它。[/DU][DU]She steadied the bowl with both hands.|她用双手稳住了碗。[/DU][DU]The hiker steadied himself against the rock.|徒步旅行者靠着石头稳住了身体。[/DU][/DEF]",
       "[TITLE]常见用法[/TITLE][COLL][H]steady hand|平稳的手[POS]n.[/POS][/H][EX]You need a steady hand to feed the small dragon.|喂小龙需要手稳。[/EX][EX]The artist has a steady hand to draw fine lines.|艺术家有一双平稳的手来画细线。[/EX][C]a steady hand for painting|画画用的平稳的手[/C][C]a steady hand for cooking|做饭用的平稳的手[/C][/COLL][COLL][H]steady oneself|稳住自己[POS]v.[/POS][/H][EX]He steadied himself on the dragon's saddle.|他在龙的马鞍上稳住了自己。[/EX][EX]She steadied herself when the wind blew hard.|大风刮起时，她稳住了自己。[/EX][C]steady oneself against the wind|逆风稳住自己[/C][C]steady oneself on the ladder|在梯子上稳住自己[/C][/COLL]",
       "[TITLE]额外例句[/TITLE][EX]The dragon flew at a steady pace through the sky.[POS]adj.[/POS]|龙以平稳的速度在空中飞行。[/EX][EX]The water in the lake is steady on calm days.[POS]adj.[/POS]|无风的日子里，湖面很平稳。[/EX][EX]He steadied the box so it wouldn't fall off the table.[POS]v.[/POS]|他稳住了盒子，不让它从桌子上掉下来。[/EX][EX]The teacher steadied the student's hand to write neatly.[POS]v.[/POS]|老师稳住学生的手，让他写得工整。[/EX]",
       "[TITLE]常见错误[/TITLE][ERR]不要混淆 steady 和 stable！steady 侧重“动作、状态不摇晃”，stable 侧重“结构、局势稳定”，比如“稳定的工作”是 a stable job，不是 a steady job。[/ERR][ERR]作动词时，直接接宾语，不能说“steady on sth”，正确表达：steady the saddle（稳住马鞍）。[/ERR][ERR]作形容词时，修饰名词要放在前面，不能说“a hand steady”，正确表达：a steady hand（平稳的手）。[/ERR]"
     ]
   },
-  
   "w002": {
     "word": "saddle",
     "images": {
-      "scene": ["infopic01/bring.webp"],
-      "card": ["wordpic01/ex6.png"]
+      "scene": ["infopic01/saddle.webp"],
+      "card": ["wordpic01/saddle.webp"]
     },
     "richDetail": [
-      "[TITLE]解释[/TITLE][DEF][EN]A seat for riding a dragon or horse (used in the book when the Dragon Masters put seats on their dragons for travel)[/EN][CN]马鞍；鞍具（书中指龙法师们给龙装的供骑行的座位）[/CN][POS]n.[/POS][PH]/ˈsædl/[/PH][DU]We have never tried putting a saddle on a dragon before.|(原文例句)我们以前从未试过给龙装马鞍。[/DU][DU]The cowboy put a saddle on his horse before riding.|牛仔骑马前给马装上了马鞍。[/DU][DU]The dragon's saddle is made of soft cloth.|龙的鞍具是用柔软的布料做的。[/DU][/DEF][IMG]infopic01/bring.webp|wordpic01/ex2.png[/IMG][DEF][EN]To put a saddle on an animal[/EN][CN]给……装马鞍；套上鞍具[/CN][POS]v.[/POS][DU]Bo saddled Shu carefully to avoid hurting her.|(原文相关例句)波小心地给舒装鞍具，以免弄伤她。[/DU][DU]They saddled the horses early in the morning for the trip.|他们一大早给马装鞍，准备出发。[/DU][DU]Can you help me saddle the pony?|你能帮我给小马装鞍具吗？[/DU][/DEF]",
+      "[TITLE]解释[/TITLE][DEF][EN]A seat for riding a dragon or horse (used in the book when the Dragon Masters put seats on their dragons for travel)[/EN][CN]马鞍；鞍具（书中指龙法师们给龙装的供骑行的座位）[/CN][POS]n.[/POS][PH]/ˈsædl/[/PH][DU]We have never tried putting a saddle on a dragon before.|(原文例句)我们以前从未试过给龙装马鞍。[/DU][DU]The cowboy put a saddle on his horse before riding.|牛仔骑马前给马装上了马鞍。[/DU][DU]The dragon's saddle is made of soft cloth.|龙的鞍具是用柔软的布料做的。[/DU][/DEF][IMG]infopic01/saddle.webp|wordpic01/saddle.webp[/IMG][DEF][EN]To put a saddle on an animal[/EN][CN]给……装马鞍；套上鞍具[/CN][POS]v.[/POS][DU]Bo saddled Shu carefully to avoid hurting her.|(原文相关例句)波小心地给舒装鞍具，以免弄伤她。[/DU][DU]They saddled the horses early in the morning for the trip.|他们一大早给马装鞍，准备出发。[/DU][DU]Can you help me saddle the pony?|你能帮我给小马装鞍具吗？[/DU][/DEF]",
       "[TITLE]常见用法[/TITLE][COLL][H]put a saddle on|给……装马鞍[POS]v.[/POS][/H][EX]The Dragon Masters put a saddle on each dragon.|龙法师们给每条龙都装了马鞍。[/EX][EX]She put a saddle on her pet goat for fun.|她给宠物山羊装了鞍具，玩得很开心。[/EX][C]put a saddle on a dragon|给龙装马鞍[/C][C]put a saddle on a horse|给马装马鞍[/C][/COLL][COLL][H]ride with a saddle|骑着带鞍具的……[POS]v.[/POS][/H][EX]Riding with a saddle is safer than riding without.|骑着带鞍具的动物比没装鞍具更安全。[/EX][EX]The knight rode with a shiny saddle on his horse.|骑士骑着带有闪亮鞍具的马。[/EX][C]ride a dragon with a saddle|骑着带鞍具的龙[/C][C]ride a horse with a saddle|骑着带鞍具的马[/C][/COLL]",
       "[TITLE]额外例句[/TITLE][EX]The saddle on Vulcan was red like his scales.[POS]n.[/POS]|伏尔坎背上的鞍具和他的鳞片一样红。[/EX][EX]We need to clean the saddle after riding in the mud.[POS]n.[/POS]|在泥地里骑完后，我们需要清理鞍具。[/EX][EX]He saddled the dragon quickly and climbed on its back.[POS]v.[/POS]|他快速给龙装完鞍具，爬上了龙背。[/EX][EX]She saddled her toy dragon and pretended to fly.[POS]v.[/POS]|她给玩具龙装了鞍具，假装飞行。[/EX]",
       "[TITLE]常见错误[/TITLE][ERR]作名词时，复数形式是 saddles，不能说“a saddle of dragon”，正确表达是 a dragon's saddle（龙的马鞍）。[/ERR][ERR]作动词时，直接接宾语，不能说“saddle on the dragon”，正确表达：saddle the dragon（给龙装鞍具）。[/ERR][ERR]不要混淆 saddle 和 seat！saddle 是“专门用于骑马/龙的鞍具”，seat 是泛指“座位”，比如“椅子上的座位”是 a seat on the chair。[/ERR]"
@@ -30,7 +29,7 @@
     "word": "buckle",
     "images": {
       "scene": ["infopic01/buckle.webp"],
-      "card": ["wordpic01/ex7.png"]
+      "card": ["wordpic01/buckle.webp"]
     },
     "richDetail": [
       "[TITLE]解释[/TITLE][DEF][EN]A fastener for a strap or belt (used in the book when Bo uses the fastener to fix the saddle on Shu)[/EN][CN]带扣；搭扣（书中指波用来固定龙鞍具的扣件）[/CN][POS]n.[/POS][PH]/ˈbʌkl/[/PH][DU]Bo, bring the buckle under Shu's belly.|(原文例句)波，把带扣绕到舒的肚子底下。[/DU][DU]The buckle on my backpack keeps the strap tight.|我背包上的带扣让带子保持紧绷。[/DU][DU]The cowboy's belt has a silver buckle.|牛仔的腰带上有一个银色的带扣。[/DU][/DEF][IMG]infopic01/buckle.webp|wordpic01/buckle.webp[/IMG][DEF][EN]To fasten with a buckle[/EN][CN]扣上；扣紧[/CN][POS]v.[/POS][DU]Bo buckled the saddle strap tightly under Shu's belly.|(原文相关例句)波把鞍具的带子在舒的肚子底下扣紧。[/DU][DU]She buckled her shoes before running outside.|她跑出去前扣好了鞋子的搭扣。[/DU][DU]Can you help me buckle this belt?|你能帮我扣上这条腰带吗？[/DU][/DEF]",
@@ -43,7 +42,7 @@
     "word": "tighten",
     "images": {
       "scene": ["infopic01/tighten.webp"],
-      "card": ["wordpic01/ex8.png"]
+      "card": ["wordpic01/tighten.webp"]
     },
     "richDetail": [
       "[TITLE]解释[/TITLE][DEF][EN]To make something more tight (used in the book when Bo makes the saddle buckle more firm on Shu)[/EN][CN]拉紧；拧紧；使变紧（书中指波把舒身上的鞍具带扣拉得更紧）[/CN][POS]v.[/POS][PH]/ˈtaɪtn/[/PH][DU]Now tighten the buckle. Good!|(原文例句)现在把带扣拉紧。很好！[/DU][DU]Tighten the rope so the box won't move.|拉紧绳子，让箱子不会动。[/DU][DU]Can you tighten this screw with a screwdriver?|你能用螺丝刀把这个螺丝拧紧吗？[/DU][/DEF][IMG]infopic01/tighten.webp|wordpic01/tighten.webp[/IMG][DEF][EN]To become more tight[/EN][CN]变紧；收紧[/CN][POS]v.[/POS][DU]The belt tightens up when you pull it hard.|你用力一拉，腰带就会收紧。[/DU][DU]The cold air makes the rubber band tighten up.|冷空气让橡皮筋变紧了。[/DU][DU]The rope tightens as the boat moves away.|船开走时，绳子会变紧。[/DU][/DEF]",
@@ -77,5 +76,293 @@
       "[TITLE]额外例句[/TITLE][EX]The slim snake moved quickly through the grass.[POS]adj.[/POS]|纤细的蛇快速地穿过草丛。[/EX][EX]The slim tree grows tall and straight in the garden.[POS]adj.[/POS]|这棵纤细的树在花园里长得又高又直。[/EX][EX]Her slim fingers can play the piano skillfully.[POS]adj.[/POS]|她纤细的手指能熟练地弹钢琴。[/EX][EX]The slim river flows gently through the village.[POS]adj.[/POS]|纤细的小河温柔地流过村庄。[/EX]",
       "[TITLE]常见错误[/TITLE][ERR]不要混淆 slim 和 thin！slim 侧重“纤细且优美”，是褒义；thin 可指“瘦的”，可能带“单薄”意味，比如“他太瘦了，看起来不健康”是 He is too thin and looks unhealthy，“她身材苗条，很优雅”是 She has a slim figure and is very elegant。[/ERR][ERR]不要说“slimly body”（错误），正确表达：slim body（纤细的身体），副词形式是 slimly，修饰动词，比如“slimly built”（身材纤细的）。[/ERR][ERR]slim 的比较级是 slimmer，最高级是 slimmest，不要写成“more slim”（错误）。[/ERR]"
     ]
+  },
+  "w007": {
+    "word": "bother",
+    "images": {
+      "scene": ["infopic01/bother.webp"],
+      "card": ["wordpic01/bother.webp"]
+    },
+    "richDetail": [
+      "[TITLE]解释[/TITLE][DEF][EN]To make someone feel worried or upset (used in the book when Drake finds Bo is upset by something unknown)[/EN][CN]使烦恼；使不安（书中指德雷克发现有事情让波感到心烦意乱）[/CN][POS]v.[/POS][PH]/ˈbɒðə(r)/（英式）/ˈbɑːðər/（美式）[/PH][DU]Drake could tell that something was bothering Bo.|(原文例句)德雷克能看出有什么事情在困扰着波。[/DU][DU]The loud noise bothers the little cat when it sleeps.|吵闹的声音会让睡觉的小猫感到烦躁。[/DU][DU]Don't bother him when he is doing his homework.|他做作业的时候不要打扰他。[/DU][/DEF][IMG]infopic01/bother.webp|wordpic01/bother.webp[/IMG][DEF][EN]To take the time or effort to do something[/EN][CN]费心；麻烦（做某事）[/CN][POS]v.[/POS][DU]She didn't bother to close the window before leaving.|她离开前懒得费心去关窗户。[/DU][DU]I won't bother to buy that toy, it's too expensive.|我懒得费心买那个玩具，它太贵了。[/DU][DU]He never bothers to say hello to his classmates.|他从不费心和同学们打招呼。[/DU][/DEF][DEF][EN]A feeling of worry or slight trouble[/EN][CN]烦恼；小麻烦[/CN][POS]n.[/POS][DU]It's just a little bother, don't worry about it.|这只是个小麻烦，别担心。[/DU][DU]She had a lot of bother with her broken bike.|她的自行车坏了，给她添了很多麻烦。[/DU][DU]The little boy is such a bother when he cries all day.|小男孩整天哭，真是个小麻烦。[/DU][/DEF]",
+      "[TITLE]常见用法[/TITLE][COLL][H]bother sb|使某人烦恼[POS]v.[/POS][/H][EX]What's bothering you today?|你今天怎么闷闷不乐的？[/EX][EX]The strange noise bothers the little girl at night.|夜里奇怪的声音让小女孩感到害怕。[/EX][C]something bothers sb|某事让某人烦恼[/C][C]a person bothers sb|某人打扰某人[/C][/COLL][COLL][H]bother to do sth|费心做某事[POS]v.[/POS][/H][EX]He didn't bother to finish his drawing.|他懒得费心完成他的画。[/EX][EX]Do you bother to clean your room every day?|你会每天费心打扫房间吗？[/EX][C]bother to read|费心阅读[/C][C]bother to cook|费心做饭[/C][/COLL][COLL][H]a little bother|一点小麻烦[POS]n.[/POS][/H][EX]We met a little bother on our way to the park.|我们去公园的路上遇到了一点小麻烦。[/EX][EX]It's just a little bother, we can solve it easily.|这只是一点小麻烦，我们能轻松解决。[/EX][C]a big bother|一个大麻烦[/C][C]no bother at all|一点也不麻烦[/C][/COLL]",
+      "[TITLE]额外例句[/TITLE][EX]The fly keeps bothering me when I eat dinner.[POS]v.[/POS]|我吃晚饭时，苍蝇一直缠着我烦。[/EX][EX]She doesn't bother about small things in life.[POS]v.[/POS]|她对生活中的小事从不计较。[/EX][EX]I have no bother in learning to ride a bike.[POS]n.[/POS]|我学骑自行车一点也不费劲。[/EX][EX]The heavy rain caused a lot of bother for the farmers.[POS]n.[/POS]|大雨给农民们带来了很多麻烦。[/EX]",
+      "[TITLE]常见错误[/TITLE][ERR]不要混淆 bother 和 trouble！bother 偏口语化，指轻微的“烦恼、打扰”；trouble 更正式，指较严重的“麻烦、困扰”，比如“他遇到了大麻烦”是 He is in great trouble，不是 He has a great bother。[/ERR][ERR]bother 作“费心做某事”时，否定句常用 not bother to do sth，不要说 not bother doing sth（错误），正确表达：I didn't bother to go out。[/ERR][ERR]hardly 和 bother 不要混用，hardly 是“几乎不”，bother 是“烦恼”，比如“我几乎不觉得烦恼”是 I hardly feel bothered，不是 I hard bother。[/ERR][ERR]作名词时是可数名词，单数前可加 a，复数为 bothers，不要说“many bother”（错误），正确：many bothers。[/ERR]"
+    ]
+  },
+  "w008": {
+    "word": "sleepyhead",
+    "images": {
+      "scene": ["infopic01/sleepyhead.webp"],
+      "card": ["wordpic01/sleepyhead.webp"]
+    },
+    "richDetail": [
+      "[TITLE]解释[/TITLE][DEF][EN]A person who likes to sleep or is slow to wake up (used in the book when Rori calls Drake and Bo lazy for getting up late)[/EN][CN]瞌睡虫；懒虫（书中指罗里戏称起床晚的德雷克和波为瞌睡虫）[/CN][POS]n.[/POS][PH]/ˈsliːpihed/[/PH][DU]\"It's about time you two sleepyheads got here,\" said Rori.|(原文例句)罗里说：“你们这两个瞌睡虫，终于到了。”[/DU][DU]Wake up, sleepyhead! It's time for school.|醒醒，瞌睡虫！该上学了。[/DU][DU]My little sister is a sleepyhead who always gets up late on weekends.|我的小妹妹是个瞌睡虫，周末总是起得很晚。[/DU][/DEF][IMG]infopic01/sleepyhead.webp|wordpic01/sleepyhead.webp[/IMG]",
+      "[TITLE]常见用法[/TITLE][COLL][H]you sleepyhead|你这个瞌睡虫[POS]n.[/POS][/H][EX]You sleepyhead, the sun is already high in the sky!|你这个瞌睡虫，太阳都晒屁股了！[/EX][EX]Come on, you sleepyhead, let's go to the zoo.|快点，你这个瞌睡虫，我们去动物园吧。[/EX][C]little sleepyhead|小瞌睡虫[/C][C]silly sleepyhead|傻瞌睡虫[/C][/COLL][COLL][H]two sleepyheads|两个瞌睡虫[POS]n.[/POS][/H][EX]The two sleepyheads missed the morning cartoon.|这两个瞌睡虫错过了早上的动画片。[/EX][EX]Mom called the two sleepyheads down for breakfast.|妈妈喊两个瞌睡虫下楼吃早饭。[/EX][C]three sleepyheads|三个瞌睡虫[/C][C]those sleepyheads|那些瞌睡虫[/C][/COLL]",
+      "[TITLE]额外例句[/TITLE][EX]Dad laughed and said, \"You're such a sleepyhead!\" when I woke up at noon.[POS]n.[/POS]|我中午才醒，爸爸笑着说：“你可真是个瞌睡虫！”[/EX][EX]The sleepyhead forgot to do his homework because he slept too late.|这个懒虫因为睡得太晚，忘了做家庭作业。[/EX][EX]Don't be a sleepyhead, or you'll be late for the dragon show.|别当懒虫了，不然你会错过龙的表演的。[/EX][EX]My cat is a little sleepyhead that sleeps all day on the sofa.[POS]n.[/POS]|我的小猫是个小瞌睡虫，整天在沙发上睡觉。[/EX]",
+      "[TITLE]常见错误[/TITLE][ERR]sleepyhead 是可数名词，复数形式直接加s为 sleepyheads，不要写成 sleepyheads' 或 sleepyheades（错误拼写）。[/ERR][ERR]这是口语化的亲昵用词，多用于家人、朋友之间，正式场合（如作文、演讲）不要使用，正式表达可用“a person who likes sleeping”。[/ERR][ERR]不要将 sleepyhead 和 sleepy 混淆，sleepy 是形容词“困倦的”，比如“I feel sleepy”（我感到困倦），sleepyhead 是名词“瞌睡虫”，比如“You are a sleepyhead”（你是个瞌睡虫）。[/ERR][ERR]不能说“a sleepyhead boy”，正确表达是“a boy who is a sleepyhead”或直接说“the sleepyhead boy”（口语）。[/ERR]"
+    ]
+  },
+  "w009": {
+    "word": "hardly",
+    "images": {
+      "scene": ["infopic01/hardly.webp"],
+      "card": ["wordpic01/hardly.webp"]
+    },
+    "richDetail": [
+      "[TITLE]解释[/TITLE][DEF][EN]Almost not or almost none (used in the book when Bo ate very little breakfast)[/EN][CN]几乎不；几乎没有（书中指波几乎没吃早饭）[/CN][POS]adv.[/POS][PH]/ˈhɑːdli/（英式）/ˈhɑːrdli/（美式）[/PH][DU]As they left, Drake looked back. Bo had hardly eaten breakfast.|(原文例句)当他们离开时，德雷克回头看了看，波几乎没吃早饭。[/DU][DU]I was so full that I could hardly eat another cookie.|我太饱了，几乎吃不下另一块饼干了。[/DU][DU]The little bird was so scared that it could hardly move.|小鸟吓得几乎一动也不能动。[/DU][/DEF][IMG]infopic01/hardly.webp|wordpic01/hardly.webp[/IMG][DEF][EN]Only just; almost not[/EN][CN]刚刚；勉强才[/CN][POS]adv.[/POS][DU]I hardly caught the school bus this morning.|我今天早上勉强赶上了校车。[/DU][DU]He hardly finished his homework before bedtime.|他睡前才勉强做完家庭作业。[/DU][DU]The movie had hardly started when we arrived at the cinema.|我们到电影院时，电影才刚刚开始。[/DU][/DEF]",
+      "[TITLE]常见用法[/TITLE][COLL][H]hardly eat|几乎没吃[POS]adv.[/POS][/H][EX]He was sad and hardly ate anything for dinner.|他心情不好，晚饭几乎什么都没吃。[/EX][EX]The dog was sick and hardly ate its food.|小狗生病了，几乎不吃东西。[/EX][C]hardly drink|几乎没喝[/C][C]hardly sleep|几乎没睡[/C][/COLL][COLL][H]hardly ever|几乎从不[POS]adv.[/POS][/H][EX]The little girl hardly ever cries.|这个小女孩几乎从不哭。[/EX][EX]We hardly ever go to the park in winter.|我们冬天几乎从不去公园。[/EX][C]hardly ever watch TV|几乎从不看电视[/C][C]hardly ever play games|几乎从不玩游戏[/C][/COLL][COLL][H]hardly ... when ...|刚……就……[POS]adv.[/POS][/H][EX]I had hardly opened the door when the cat ran out.|我刚打开门，小猫就跑出去了。[/EX][EX]It had hardly rained when the flowers started to grow.|刚下过雨，花儿就开始长了。[/EX][C]hardly arrive when|刚到就[/C][C]hardly start when|刚开始就[/C][/COLL]",
+      "[TITLE]额外例句[/TITLE][EX]He is so short that he can hardly reach the top shelf.[POS]adv.[/POS]|他个子太矮了，几乎够不到最上面的架子。[/EX][EX]The book is so hard that I can hardly understand it.[POS]adv.[/POS]|这本书太难了，我几乎看不懂。[/EX][EX]We hardly have any milk left in the fridge.[POS]adv.[/POS]|冰箱里我们几乎没有牛奶了。[/EX][EX]She hardly spoke a word during the whole trip.[POS]adv.[/POS]|整个旅途中她几乎一句话也没说。[/EX][EX]The dragon flew so fast that I could hardly see it.[POS]adv.[/POS]|龙飞得太快了，我几乎看不见它。[/EX]",
+      "[TITLE]常见错误[/TITLE][ERR]hardly 是**否定副词**，本身含有否定意味，不能再和 not 连用，比如“我几乎不认识他”是 I hardly know him（正确），不是 I don't hardly know him（错误）。[/ERR][ERR]不要混淆 hardly 和 hard！hard 可作形容词“努力的；硬的”或副词“努力地”，比如 work hard（努力工作）、a hard stone（一块硬石头）；hardly 是副词“几乎不”，和 hard 意思完全不同。[/ERR][ERR]hardly 修饰动词时要放在实义动词前，助动词/情态动词后，比如 I can hardly believe it（正确），不是 I hardly can believe it（错误）；He hardly eats meat（正确），不是 He eats hardly meat（错误）。[/ERR][ERR]hardly any 后接可数名词复数或不可数名词，表示“几乎没有”，不要说 hardly a any（错误），正确：hardly any apples（几乎没有苹果）、hardly any water（几乎没有水）。[/ERR]"
+    ]
+  },
+  
+  "w010": {
+    "word": "charm",
+    "images": {
+      "scene": ["infopic01/charm.webp"],
+      "card": ["wordpic01/charm.webp"]
+    },
+    "richDetail": [
+      "[TITLE]解释[/TITLE][DEF][EN]A magical object or spell that protects something (used in the book when Griffith uses invisible magical spells to protect the Dragon Stone)[/EN][CN]魔法符咒；护身符（书中指格里菲斯用来保护龙石的隐形魔法咒语或物件）[/CN][POS]n.[/POS][PH]/tʃɑːm/（英式）/tʃɑːrm/（美式）[/PH][DU]I always protect the stone with magic charms.|(原文例句)我总是用魔法符咒来保护这块石头。[/DU][DU]The wizard made a magic charm to keep evil away.|巫师制作了一个魔法符咒来驱邪。[/DU][DU]The magic charm glowed brightly around the treasure chest.|魔法符咒在宝箱周围明亮地发光。[/DU][/DEF][IMG]infopic01/charm.webp|wordpic01/charm.webp[/IMG][DEF][EN]A quality that makes someone or something attractive[/EN][CN]魅力；吸引力[/CN][POS]n.[/POS][DU]The little girl has a lot of charm that makes everyone like her.|这个小女孩很有魅力，大家都喜欢她。[/DU][DU]The old town is full of charm with its small streets and cute houses.|这座老城有着小街道和可爱的房子，充满了魅力。[/DU][DU]The singer's smile and voice won her many fans with their charm.|这位歌手的笑容和歌声以其魅力赢得了许多粉丝。[/DU][/DEF][DEF][EN]To attract or delight someone[/EN][CN]吸引；使着迷[/CN][POS]v.[/POS][DU]The magician charmed the audience with his amazing tricks.|魔术师用他惊人的魔术迷住了观众。[/DU][DU]The colorful butterflies charmed the children in the garden.|彩色的蝴蝶吸引了花园里的孩子们。[/DU][DU]Her kind words charmed everyone at the party.|她亲切的话语让派对上的每个人都感到愉悦。[/DU][/DEF]",
+      "[TITLE]常见用法[/TITLE][COLL][H]magic charm|魔法符咒[POS]n.[/POS][/H][EX]The magic charm formed an invisible net around the Dragon Stone.|魔法符咒在龙石周围形成了一张隐形网。[/EX][EX]We need to find a powerful magic charm to protect the castle.|我们需要找到一个强大的魔法符咒来保护城堡。[/EX][C]protective magic charm|防护魔法符咒[/C][C]invisible magic charm|隐形魔法符咒[/C][/COLL][COLL][H]charm sb with sth|用某物吸引/迷住某人[POS]v.[/POS][/H][EX]The storyteller charmed the kids with funny tales about dragons.|讲故事的人用有趣的龙的故事迷住了孩子们。[/EX][EX]He charmed everyone with his kind personality and sense of humor.|他用善良的性格和幽默感吸引了所有人。[/EX][C]charm sb with smiles|用微笑迷住某人[/C][C]charm sb with magic|用魔法吸引某人[/C][/COLL]",
+      "[TITLE]额外例句[/TITLE][EX]The magic charm prevented the thief from touching the Dragon Stone.[POS]n.[/POS]|魔法符咒阻止了小偷触碰龙石。[/EX][EX]The necklace has a special charm that brings good luck.[POS]n.[/POS]|这条项链有一个能带来好运的特殊护身符。[/EX][EX]The little rabbit charmed the farmer with its cute appearance.[POS]v.[/POS]|小兔子用它可爱的样子打动了农夫。[/EX][EX]The music charmed the birds to sing along.[POS]v.[/POS]|音乐吸引着鸟儿一起歌唱。[/EX]",
+      "[TITLE]常见错误[/TITLE][ERR]不要混淆 charm 和 spell！charm 侧重“有保护或吸引作用的魔法符咒/魅力”，spell 侧重“需要念诵的咒语”，比如“施法”是 cast a spell，“魔法符咒”是 magic charm。[/ERR][ERR]作名词“魅力”时是不可数名词，不能说“a charm of her smile”，正确表达：the charm of her smile（她微笑的魅力）。[/ERR][ERR]作动词时，“迷住某人”是 charm sb（及物动词），不要说“charm to sb”（错误）。[/ERR]"
+    ]
+  },
+  "w011": {
+    "word": "upset",
+    "images": {
+      "scene": ["infopic01/upset.webp"],
+      "card": ["wordpic01/upset.webp"]
+    },
+    "richDetail": [
+      "[TITLE]解释[/TITLE][DEF][EN]To disturb or break the effect of something (used in the book when something made the magic charms stop working properly)[/EN][CN]扰乱；使失效（书中指某物导致魔法符咒的效果被破坏）[/CN][POS]v.[/POS][PH]/ʌpˈset/[/PH][DU]This morning, I found that something had upset the magic of the charms.|(原文例句)今天早上，我发现有东西扰乱了符咒的魔法效果。[/DU][DU]The loud noise upset the sleeping dragon.|吵闹的声音惊动了沉睡的龙。[/DU][DU]The dark magic upset the balance of the magical forest.|黑魔法扰乱了魔法森林的平衡。[/DU][/DEF][IMG]infopic01/upset.webp|wordpic01/upset.webp[/IMG][DEF][EN]To make someone feel sad, worried, or angry[/EN][CN]使难过；使心烦；使生气[/CN][POS]v.[/POS][DU]Bo was upset when he received the note about his family.|波收到关于家人的纸条时很心烦。[/DU][DU]The broken toy upset the little boy.|坏掉的玩具让小男孩很伤心。[/DU][DU]It upsets me when people are mean to dragons.|看到人们对龙不好，我会很生气。[/DU][/DEF][DEF][EN]Feeling sad, worried, or angry[/EN][CN]难过的；心烦的；生气的[/CN][POS]adj.[/POS][DU]Ana looked upset when she thought Kepri might be in danger.|安娜想到凯普丽可能有危险时，看起来很心烦。[/DU][DU]I felt upset when I missed the dragon show.|我没赶上龙的表演，感到很遗憾。[/DU][DU]The emperor was upset when Bo didn't bring the Dragon Stone.|波没有带来龙石，皇帝很生气。[/DU][/DEF]",
+      "[TITLE]常见用法[/TITLE][COLL][H]upset the magic|扰乱魔法[POS]v.[/POS][/H][EX]The evil wizard tried to upset the magic that protected the castle.|邪恶巫师试图扰乱保护城堡的魔法。[/EX][EX]The red orb upset the magic of the dragon's cave.|红色球体扰乱了龙穴的魔法。[/EX][C]upset the magical balance|扰乱魔法平衡[/C][C]upset the charm's power|破坏符咒的力量[/C][/COLL][COLL][H]be upset about sth|为某事心烦/难过[POS]adj.[/POS][/H][EX]Bo was upset about his family being in prison.|波为家人入狱而心烦。[/EX][EX]She was upset about missing the chance to ride the dragon.|她为错过骑龙的机会而难过。[/EX][C]be upset about a mistake|为一个错误而心烦[/C][C]be upset about bad news|为坏消息而难过[/C][/COLL]",
+      "[TITLE]额外例句[/TITLE][EX]The sudden storm upset our plan to play with the dragons.[POS]v.[/POS]|突如其来的暴风雨打乱了我们和龙玩耍的计划。[/EX][EX]His rude words upset the other Dragon Masters.[POS]v.[/POS]|他粗鲁的话惹恼了其他龙法师。[/EX][EX]The little girl was upset when her dragon toy went missing.[POS]adj.[/POS]|小女孩的龙玩具不见了，她很伤心。[/EX][EX]Drake was upset that he couldn't help Bo right away.[POS]adj.[/POS]|德雷克因为不能立刻帮助波而心烦。[/EX]",
+      "[TITLE]常见错误[/TITLE][ERR]upset 的过去式和过去分词还是 upset，不要写成“upsetted”（错误拼写）。[/ERR][ERR]作形容词时，主语是人，不能说“the magic is upset”（错误），正确表达：the magic is disturbed（魔法被扰乱）；人作主语时用 be upset，如“he is upset”（他很心烦）。[/ERR][ERR]不要混淆 upset 和 disturb！upset 侧重“情绪上的心烦或计划/效果的打乱”，disturb 侧重“打扰他人休息、工作”，比如“打扰别人睡觉”是 disturb someone's sleep，“让人心烦”是 upset someone。[/ERR]"
+    ]
+  },
+  "w012": {
+    "word": "care",
+    "images": {
+      "scene": ["infopic01/care.webp"],
+      "card": ["wordpic01/care.webp"]
+    },
+    "richDetail": [
+      "[TITLE]解释[/TITLE][DEF][EN]To look after or protect someone or something (used in the book when Griffith takes responsibility for the Dragon Stone)[/EN][CN]照顾；照料；保护（书中指格里菲斯负责保护龙石）[/CN][POS]v.[/POS][PH]/keə(r)/（英式）/ker/（美式）[/PH][DU]As long as the stone is in my care, I can keep it safe.|(原文例句)只要这块石头在我保管下，我就能保证它的安全。[/DU][DU]Bo promised to care for Shu and keep her safe.|波承诺会照顾舒，保护她的安全。[/DU][DU]The wizard cares for all the dragons in the castle.|巫师照顾着城堡里所有的龙。[/DU][/DEF][IMG]infopic01/care.webp|wordpic01/care.webp[/IMG][DEF][EN]Concern or attention for someone or something[/EN][CN]关心；在意[/CN][POS]n.[/POS][DU]Drake showed care for his friend Bo by helping him save his family.|德雷克通过帮助波拯救家人，表达了对朋友的关心。[/DU][DU]The king has no care for the dragons' feelings.|国王根本不在意龙的感受。[/DU][DU]We should have care for all living creatures.|我们应该关心所有生物。[/DU][/DEF][DEF][EN]To feel worried or concerned about someone or something[/EN][CN]担心；关心[/CN][POS]v.[/POS][DU]Ana cares about Kepri more than anything else.|安娜比任何事情都关心凯普丽。[/DU][DU]Do you care if we ride the dragons tomorrow?|你介意我们明天骑龙吗？[/DU][DU]My mom cares about me when I'm away from home.|我离家时，妈妈很担心我。[/DU][/DEF]",
+      "[TITLE]常见用法[/TITLE][COLL][H]take care of|照顾；照料[POS]v.[/POS][/H][EX]Griffith takes care of the Dragon Stone day and night.|格里菲斯日夜照料着龙石。[/EX][EX]Can you take care of my dragon while I'm gone?|我离开时，你能照顾我的龙吗？[/EX][C]take care of a sick dragon|照顾生病的龙[/C][C]take care of a magical object|保管魔法物件[/C][/COLL][COLL][H]care about|关心；在意[POS]v.[/POS][/H][EX]The Dragon Masters care about each other and their dragons.|龙法师们关心彼此和他们的龙。[/EX][EX]He doesn't care about what other people think.|他不在乎别人怎么想。[/EX][C]care about someone's safety|关心某人的安全[/C][C]care about the environment|关心环境[/C][/COLL][COLL][H]in one's care|在某人的照顾/保管下[POS]n.[/POS][/H][EX]The dragon was safe in Bo's care.|这条龙在波的照顾下很安全。[/EX][EX]The important spell book is in the wizard's care.|这本重要的咒语书由巫师保管。[/EX][C]leave sth in one's care|把某物交给某人保管[/C][C]trust sth in one's care|放心把某物交给某人照顾[/C][/COLL]",
+      "[TITLE]额外例句[/TITLE][EX]She cares for the baby dragon as if it were her own.[POS]v.[/POS]|她照顾这只小龙，就像照顾自己的孩子一样。[/EX][EX]Drake cares deeply about his friend Bo's happiness.[POS]v.[/POS]|德雷克非常关心朋友波的幸福。[/EX][EX]The teacher's care helped the student feel welcome.[POS]n.[/POS]|老师的关心让学生感到受欢迎。[/EX][EX]We should show care for animals in need.|我们应该关心有需要的动物。[/EX]",
+      "[TITLE]常见错误[/TITLE][ERR]care 作“照顾”时是及物动词，可直接接宾语，如 care for sb/sth（正确），不要说“care sb”（错误）。[/ERR][ERR]care about 后面接名词或代词，不要接不定式，比如“关心他的安全”是 care about his safety（正确），不是 care about to keep him safe（错误）。[/ERR][ERR]in care of 表示“由……转交”，不要和 in one's care 混淆，比如“信件由他转交”是 in care of him，“由他照顾”是 in his care。[/ERR]"
+    ]
+  },
+  "w013": {
+    "word": "careless",
+    "images": {
+      "scene": ["infopic01/careless.webp"],
+      "card": ["wordpic01/careless.webp"]
+    },
+    "richDetail": [
+      "[TITLE]解释[/TITLE][DEF][EN]Not being careful; doing things without thinking about possible problems (used in the book when Griffith says Maldred wouldn't act without planning)[/EN][CN]粗心的；疏忽的（书中指格里菲斯说马尔德雷德不会做事没计划，不会如此粗心）[/CN][POS]adj.[/POS][PH]/ˈkeələs/（英式）/ˈkerləs/（美式）[/PH][DU]Maldred would not have been so careless.|(原文例句)马尔德雷德不会这么粗心大意。[/DU][DU]The careless guard forgot to lock the dragon cave.|粗心的卫兵忘了锁龙穴的门。[/DU][DU]Don't be careless when feeding the fire dragon.|给火龙喂食时别粗心大意。[/DU][/DEF][IMG]infopic01/careless.webp|wordpic01/careless.webp[/IMG][DEF][EN]Not giving enough attention or thought to something[/EN][CN]漫不经心的；不认真的[/CN][POS]adj.[/POS][DU]The careless student made many mistakes in his spell practice.|这个漫不经心的学生在咒语练习中犯了很多错误。[/DU][DU]She was careless with the magic wand and dropped it.|她拿魔杖时很不认真，把它掉在了地上。[/DU][DU]A careless mistake can be dangerous when dealing with magic.|处理魔法时，一个粗心的错误可能会很危险。[/DU][/DEF]",
+      "[TITLE]常见用法[/TITLE][COLL][H]careless mistake|粗心的错误[POS]adj.[/POS][/H][EX]The thief made a careless mistake by not noticing the magic charms.|小偷没注意到魔法符咒，犯了一个粗心的错误。[/EX][EX]He corrected his careless mistake before casting the spell.|他在施法前纠正了自己粗心的错误。[/EX][C]a careless spelling mistake|粗心的拼写错误[/C][C]a careless magic mistake|粗心的魔法失误[/C][/COLL][COLL][H]be careless with|对……粗心大意[POS]adj.[/POS][/H][EX]Don't be careless with the Dragon Stone—it's very important.|别对龙石粗心大意，它非常重要。[/EX][EX]She was careless with the potion and spilled some on the floor.|她对药剂很不注意，洒了一些在地上。[/EX][C]be careless with magical objects|对魔法物件粗心[/C][C]be careless with fire|对火粗心[/C][/COLL]",
+      "[TITLE]额外例句[/TITLE][EX]The careless driver almost hit the little dragon.[POS]adj.[/POS]|那个粗心的司机差点撞到小龙。[/EX][EX]His careless words hurt his friend's feelings.[POS]adj.[/POS]|他漫不经心的话伤害了朋友的感情。[/EX][EX]The careless wizard forgot to add an important ingredient to the potion.[POS]adj.[/POS]|粗心的巫师忘了往药剂里加一种重要的配料。[/EX][EX]Being careless with dragons can be very dangerous.[POS]adj.[/POS]|对龙粗心大意可能会非常危险。[/EX]",
+      "[TITLE]常见错误[/TITLE][ERR]不要混淆 careless 和 careful！careless 是“粗心的”（否定），careful 是“细心的”（肯定），比如“细心照顾”是 take careful care of，“粗心对待”是 be careless with。[/ERR][ERR]careless 是形容词，不要写成副词形式“carelessily”（错误），正确副词是 carelessly，比如“他粗心地打翻了杯子”是 He knocked over the cup carelessly。[/ERR][ERR]不要说“careless of sb to do sth”，正确表达是“it's careless of sb to do sth”，比如“他粗心地忘了锁门”是 It's careless of him to forget to lock the door。[/ERR]"
+    ]
+  },
+  "w014": {
+    "word": "continue",
+    "images": {
+      "scene": ["infopic01/continue.webp"],
+      "card": ["wordpic01/continue.webp"]
+    },
+    "richDetail": [
+      "[TITLE]解释[/TITLE][DEF][EN]To keep doing something without stopping (used in the book when Griffith goes on speaking about protecting the Dragon Stone)[/EN][CN]继续；持续（书中指格里菲斯继续谈论保护龙石的事情）[/CN][POS]v.[/POS][PH]/kənˈtɪnjuː/[/PH][DU]\"To protect the Dragon Stone, I must find a better hiding place for it,\" Griffith continued.|(原文例句)“为了保护龙石，我必须找一个更好的藏身之处，”格里菲斯继续说道。[/DU][DU]The Dragon Masters continued their journey to save Bo's family.|龙法师们继续他们拯救波家人的旅程。[/DU][DU]The rain continued all night, making the dragon cave wet.|雨下了一整晚，把龙穴弄湿了。[/DU][/DEF][IMG]infopic01/continue.webp|wordpic01/continue.webp[/IMG][DEF][EN]To start doing something again after stopping[/EN][CN]继续；重拾（停止后再开始）[/CN][POS]v.[/POS][DU]After resting for a while, they continued to fly toward the emperor's palace.|休息了一会儿后，他们继续朝着皇宫飞去。[/DU][DU]The wizard continued his spell after being interrupted.|巫师被打断后，继续念他的咒语。[/DU][DU]We can continue our dragon training tomorrow morning.|我们明天早上可以继续我们的龙训练。[/DU][/DEF]",
+      "[TITLE]常见用法[/TITLE][COLL][H]continue to do sth|继续做某事[POS]v.[/POS][/H][EX]Griffith continued to explain how to protect the Dragon Stone.|格里菲斯继续解释如何保护龙石。[/EX][EX]The dragon continued to fly even when the wind was strong.|即使风很大，龙还是继续飞行。[/EX][C]continue to practice magic|继续练习魔法[/C][C]continue to help friends|继续帮助朋友[/C][/COLL][COLL][H]continue doing sth|继续做某事[POS]v.[/POS][/H][EX]Bo continued talking about his hometown and Emperor Song.|波继续谈论他的家乡和宋皇帝。[/EX][EX]The fire continued burning after the wizard cast the spell.|巫师施法后，火还在继续燃烧。[/EX][C]continue studying dragons|继续研究龙[/C][C]continue building the saddle|继续制作马鞍[/C][/COLL]",
+      "[TITLE]额外例句[/TITLE][EX]The magic light continued to glow even in the dark.[POS]v.[/POS]|即使在黑暗中，魔法光仍然继续发光。[/EX][EX]Drake continued to trust Bo even when he acted strangely.[POS]v.[/POS]|即使波行为奇怪，德雷克仍然继续信任他。[/EX][EX]After the break, the class continued learning about dragon history.[POS]v.[/POS]|休息后，全班继续学习龙的历史。[/EX][EX]The water dragon continued splashing water to put out the fire.[POS]v.[/POS]|水龙继续喷水灭火。[/EX]",
+      "[TITLE]常见错误[/TITLE][ERR]continue 后面可接 to do 或 doing，意思基本相同，不要误以为只能接其中一种，比如“继续读书”可以说 continue to read 或 continue reading。[/ERR][ERR]不要说“continue on doing sth”（多余的 on），正确表达：continue doing sth。[/ERR][ERR]continue 是及物动词，后面可直接接宾语，也可接不定式，不要遗漏宾语，比如“继续这个故事”是 continue the story（正确），不是 continue（错误，缺少宾语）。[/ERR][ERR]continue 的名词形式是 continuation，不要写成“continueation”（错误拼写）。[/ERR]"
+    ]
+  },
+  "w015": {
+    "word": "hang out",
+    "images": {
+      "scene": ["infopic01/hang out.webp"],
+      "card": ["wordpic01/hang out.webp"]
+    },
+    "richDetail": [
+      "[TITLE]解释[/TITLE][DEF][EN]To spend time relaxing or doing nothing special with someone (used in the book when Drake suggests spending time with the dragons in the caves)[/EN][CN]闲逛；待在一起（书中指德雷克建议和龙们在洞穴里待着、放松）[/CN][POS]v. phr.[/POS][PH]/hæŋ aʊt/[/PH][DU]We can hang out with them in the caves.|(原文例句)我们可以和它们在洞穴里待着。[/DU][DU]Drake and Bo like to hang out with their dragons after training.|德雷克和波喜欢在训练后和他们的龙待在一起。[/DU][DU]The Dragon Masters hang out in the Training Room when they have free time.|龙法师们有空时会在训练室里闲逛。[/DU][/DEF][IMG]infopic01/hang out.webp|wordpic01/hang out.webp[/IMG][DEF][EN]To stay in a place for a while, usually relaxing[/EN][CN]在某处逗留；闲逛[/CN][POS]v. phr.[/POS][DU]The kids hang out at the park every weekend to watch dragons fly.|孩子们每个周末都在公园逗留，看龙飞行。[/DU][DU]We can hang out by the lake and feed the water dragons.|我们可以在湖边闲逛，喂水龙。[/DU][DU]My friends and I hang out at the library after school.|我和朋友们放学后在图书馆待着。[/DU][/DEF]",
+      "[TITLE]常见用法[/TITLE][COLL][H]hang out with sb|和某人待在一起；和某人闲逛[POS]v. phr.[/POS][/H][EX]Ana likes to hang out with Kepri when she's not training.|安娜不训练的时候喜欢和凯普丽待在一起。[/EX][EX]I love to hang out with my friends and talk about dragons.|我喜欢和朋友们待在一起，谈论龙的事情。[/EX][C]hang out with family|和家人待在一起[/C][C]hang out with classmates|和同学闲逛[/C][/COLL][H]hang out in/at sth|在某处闲逛/逗留[POS]v. phr.[/POS][/H][EX]The Dragon Masters often hang out in the Valley of Clouds.|龙法师们经常在云谷闲逛。[/EX][EX]We can hang out at the dragon caves and play games.|我们可以在龙穴逗留，玩游戏。[/EX][C]hang out in the garden|在花园闲逛[/C][C]hang out at the castle|在城堡逗留[/C][/COLL]",
+      "[TITLE]额外例句[/TITLE][EX]They hang out together every evening to practice dragon calls.[POS]v. phr.[/POS]|他们每天晚上都待在一起练习召唤龙。[/EX][EX]The little dragon likes to hang out near the pond to drink water.[POS]v. phr.[/POS]|小龙喜欢在池塘边逗留喝水。[/EX][EX]My brother and I hang out with our pet dragons on weekends.[POS]v. phr.[/POS]|我和哥哥周末和我们的宠物龙待在一起。[/EX][EX]We can hang out in the forest and look for magical plants.[POS]v. phr.[/POS]|我们可以在森林里闲逛，寻找魔法植物。[/EX]",
+      "[TITLE]常见错误[/TITLE][ERR]hang out 是口语化的动词短语，正式写作中建议用“spend time with”或“stay”，比如作文中写“和朋友待在一起”用“spend time with friends”比“hang out with friends”更合适。[/ERR][ERR]hang out 的过去式是 hung out，不要写成“hanged out”（hanged 用于“绞死”的含义）。[/ERR][ERR]不要遗漏 out，说成“hang with sb”（口语中可能出现，但规范表达是 hang out with sb）。[/ERR][ERR]后面接地点时要用介词 in/at，比如“在公园闲逛”是 hang out in the park（正确），不是 hang out the park（错误）。[/ERR]"
+    ]
+  },
+  "w016": {
+    "word": "jerk",
+    "images": {
+      "scene": ["infopic01/jerk.webp"],
+      "card": ["wordpic01/jerk.webp"]
+    },
+    "richDetail": [
+      "[TITLE]解释[/TITLE][DEF][EN]To move suddenly and quickly (used in the book when Worm's neck moved sharply upward)[/EN][CN]猛地一动；急拉（书中指沃姆的脖子突然向上一抬）[/CN][POS]v.[/POS][PH]/dʒɜːk/（英式）/dʒɜːrk/（美式）[/PH][DU]Suddenly, Worm's neck jerked up.|(原文例句)突然，沃姆的脖子猛地向上一抬。[/DU][DU]The cat jerked its tail when it saw the mouse.|小猫看到老鼠时，尾巴猛地一甩。[/DU][DU]He jerked the rope to pull the box closer.|他猛地一拉绳子，把箱子拉近。[/DU][/DEF][IMG]infopic01/jerk.webp|wordpic01/jerk.webp[/IMG][DEF][EN]A sudden sharp movement[/EN][CN]猛动；急拉[/CN][POS]n.[/POS][DU]The sudden jerk of the dragon made Drake hold on tight.|龙突然一颠，让德雷克紧紧抓住。[/DU][DU]She felt a jerk when the car started quickly.|汽车猛地启动时，她感到一阵颠簸。[/DU][DU]The fish gave a jerk before jumping out of the water.|鱼猛地一动，然后跳出了水面。[/DU][/DEF]",
+      "[TITLE]常见用法[/TITLE][COLL][H]jerk up|猛地抬起[POS]v.[/POS][/H][EX]The dragon jerked up its head to look at the sky.|龙猛地抬起头看天空。[/EX][EX]He jerked up his hand to catch the falling apple.|他猛地抬起手去接掉落的苹果。[/EX][C]jerk up one's head|猛地抬头[/C][C]jerk up a rope|猛地拉起绳子[/C][/COLL][COLL][H]a sudden jerk|突然一颠[POS]n.[/POS][/H][EX]The sudden jerk of the saddle scared the little girl.|马鞍突然一颠，吓了小女孩一跳。[/EX][EX]I felt a sudden jerk when the elevator stopped.|电梯停下时，我感到突然一颠。[/EX][C]a jerk of the body|身体猛地一动[/C][C]a jerk of the car|汽车猛地一颠[/C][/COLL]",
+      "[TITLE]额外例句[/TITLE][EX]The dog jerked the toy out of the boy's hand.[POS]v.[/POS]|狗猛地把玩具从男孩手里拽了出来。[/EX][EX]She jerked back when she saw the spider.[POS]v.[/POS]|看到蜘蛛时，她猛地后退了一步。[/EX][EX]The jerk of the dragon's wings made the air rush.[POS]n.[/POS]|龙翅膀猛地一动，产生了一阵风。[/EX][EX]He gave the door a jerk to open it.[POS]n.[/POS]|他猛地一拉，把门打开了。[/EX]",
+      "[TITLE]常见错误[/TITLE][ERR]jerk 作动词时是及物或不及物动词，接宾语时直接接，不要说“jerk at sth”（错误），正确表达：jerk the rope（猛拉绳子）。[/ERR][ERR]不要混淆 jerk 和 pull！jerk 强调“突然、快速的拉”，pull 是泛指“拉”，比如“慢慢拉”是 pull slowly，“猛地拉”是 jerk。[/ERR][ERR]作名词时是可数名词，复数形式是 jerks，不要说“a jerk of”（错误），正确：a jerk of the arm（胳膊猛地一动）。[/ERR]"
+    ]
+  },
+  "w017": {
+    "word": "obey",
+    "images": {
+      "scene": ["infopic01/obey.webp"],
+      "card": ["wordpic01/obey.webp"]
+    },
+    "richDetail": [
+      "[TITLE]解释[/TITLE][DEF][EN]To do what someone tells you to do (used in the book when Drake did what Griffith asked him to do)[/EN][CN]服从；听从（书中指德雷克按照格里菲斯的要求去做）[/CN][POS]v.[/POS][PH]/əˈbeɪ/[/PH][DU]\"Come in, Drake,\" Griffith said. Drake obeyed.|(原文例句)“进来，德雷克，”格里菲斯说。德雷克照做了。[/DU][DU]The dragon obeyed its master's command to fly.|龙听从主人的命令飞了起来。[/DU][DU]Children should obey their parents' safe rules.|孩子们应该遵守父母定的安全规则。[/DU][/DEF][IMG]infopic01/obey.webp|wordpic01/obey.webp[/IMG][DEF][EN]To follow a rule or law[/EN][CN]遵守（规则、法律）[/CN][POS]v.[/POS][DU]The Raven Guards must obey the emperor's orders.|乌鸦卫队必须遵守皇帝的命令。[/DU][DU]We must obey the castle's rules to stay safe.|我们必须遵守城堡的规则才能保证安全。[/DU][DU]Dogs often obey the commands of their owners.|狗通常会听从主人的指令。[/DU][/DEF]",
+      "[TITLE]常见用法[/TITLE][COLL][H]obey sb|听从某人[POS]v.[/POS][/H][EX]The Dragon Masters obey Griffith's instructions for training.|龙法师们听从格里菲斯的训练指示。[/EX][EX]The soldier obeyed the general's order without question.|士兵毫无异议地听从了将军的命令。[/EX][C]obey one's teacher|听从老师[/C][C]obey the wizard|听从巫师[/C][/COLL][COLL][H]obey rules|遵守规则[POS]v.[/POS][/H][EX]Everyone in the castle must obey the magic rules.|城堡里的每个人都必须遵守魔法规则。[/EX][EX]The dragons learn to obey the safety rules of the cave.|龙们学会了遵守洞穴的安全规则。[/EX][C]obey school rules|遵守校规[/C][C]obey magic rules|遵守魔法规则[/C][/COLL]",
+      "[TITLE]额外例句[/TITLE][EX]The little dragon obeyed Ana when she told it to land.[POS]v.[/POS]|当安娜让小龙降落时，它照做了。[/EX][EX]He obeyed the sign and didn't enter the dragon's cave.[POS]v.[/POS]|他遵守指示牌，没有进入龙穴。[/EX][EX]Cats sometimes obey their owners, but not always.[POS]v.[/POS]|猫有时会听从主人，但不总是这样。[/EX][EX]We must obey the law to live in peace.[POS]v.[/POS]|我们必须遵守法律才能和平生活。[/EX]",
+      "[TITLE]常见错误[/TITLE][ERR]obey 是及物动词，直接接宾语，不要说“obey to sb”（错误），正确表达：obey sb（听从某人）。[/ERR][ERR]不要混淆 obey 和 follow！obey 侧重“服从权威或命令”，follow 侧重“跟随、遵循流程”，比如“遵循指示”是 follow instructions，“服从命令”是 obey orders。[/ERR][ERR]obey 的反义词是 disobey（不服从），不要写成“unobey”（错误拼写）。[/ERR]"
+    ]
+  },
+  "w018": {
+    "word": "blurt",
+    "images": {
+      "scene": ["infopic01/blurt.webp"],
+      "card": ["wordpic01/blurt.webp"]
+    },
+    "richDetail": [
+      "[TITLE]解释[/TITLE][DEF][EN]To say something suddenly without thinking (used in the book when Drake said something quickly without planning)[/EN][CN]脱口而出；突然说出（书中指德雷克没多想就快速说出了话）[/CN][POS]v.[/POS][PH]/blɜːt/（英式）/blɜːrt/（美式）[/PH][DU]\"Please, Bo!\" Drake blurted out.|(原文例句)“求你了，波！”德雷克脱口而出。[/DU][DU]She blurted out the secret when she was excited.|她兴奋时不小心把秘密脱口说了出来。[/DU][DU]The boy blurted out the answer before the teacher finished asking.|老师还没问完，男孩就脱口说出了答案。[/DU][/DEF][IMG]infopic01/blurt.webp|wordpic01/blurt.webp[/IMG][DEF][EN]To speak suddenly and without control[/EN][CN]贸然说出；不由自主地说[/CN][POS]v.[/POS][DU]He blurted that he had seen the dragon when he was nervous.|他紧张时贸然说出自己见过龙。[/DU][DU]I blurted out my favorite food when Mom asked what I wanted.|妈妈问我想吃什么时，我脱口说出了自己最喜欢的食物。[/DU][DU]She blurted that she liked the dragon show very much.|她不由自主地说自己非常喜欢龙的表演。[/DU][/DEF]",
+      "[TITLE]常见用法[/TITLE][COLL][H]blurt out|脱口而出[POS]v.[/POS][/H][EX]Drake blurted out that Bo wouldn't steal anything.|德雷克脱口而出说波不会偷任何东西。[/EX][EX]The little girl blurted out that she had hidden the toy.|小女孩脱口而出说玩具是她藏起来的。[/EX][C]blurt out a secret|脱口说出一个秘密[/C][C]blurt out the truth|脱口说出真相[/C][/COLL][COLL][H]blurt sth|贸然说出某事[POS]v.[/POS][/H][EX]He blurted the news without checking if it was true.|他没确认消息是否属实就贸然说了出来。[/EX][EX]She blurted her opinion about the dragon without thinking.|她没多想就贸然说出了对龙的看法。[/EX][C]blurt a question|贸然提出一个问题[/C][C]blurt a comment|贸然发表评论[/C][/COLL]",
+      "[TITLE]额外例句[/TITLE][EX]When asked about the dragon, he blurted out everything he knew.[POS]v.[/POS]|当被问到龙的事情时，他把知道的都脱口说了出来。[/EX][EX]She blurted out that she wanted to ride the water dragon.[POS]v.[/POS]|她脱口而出说自己想骑水龙。[/EX][EX]The boy blurted that he had never seen a magic stone before.[POS]v.[/POS]|男孩贸然说自己以前从没见过魔法石。[/EX][EX]I blurted out my mistake before I could stop myself.[POS]v.[/POS]|我没忍住就脱口说出了自己的错误。[/EX]",
+      "[TITLE]常见错误[/TITLE][ERR]blurt 通常和 out 连用，构成短语 blurt out，单独使用时较少，比如“脱口说出真相”是 blurt out the truth（正确），不是 blurt the truth（不自然）。[/ERR][ERR]blurt 是及物动词，后面必须接宾语，不能说“he blurted”（错误，缺少宾语），正确表达：he blurted a word（他脱口说了一个词）。[/ERR][ERR]不要混淆 blurt 和 say！blurt 强调“突然、无准备地说”，say 是泛指“说”，比如“慢慢说”是 say slowly，“脱口说”是 blurt out。[/ERR]"
+    ]
+  },
+  "w019": {
+    "word": "honor",
+    "images": {
+      "scene": ["infopic01/honor.webp"],
+      "card": ["wordpic01/honor.webp"]
+    },
+    "richDetail": [
+      "[TITLE]解释[/TITLE][DEF][EN]A great respect or pride (used in the book when Bo's parents thought serving the king was a proud thing)[/EN][CN]荣誉；荣幸（书中指波的父母认为为国王效力是一件光荣的事）[/CN][POS]n.[/POS][PH]/ˈɒnə(r)/（英式）/ˈɑːnər/（美式）[/PH][DU]But my parents said it would be an honor to our kingdom.|(原文例句)但我父母说这对我们的王国来说是一种荣誉。[/DU][DU]It's an honor to meet the great wizard.|能见到伟大的巫师是一种荣幸。[/DU][DU]Winning the dragon race is a big honor for the young master.|赢得龙赛对年轻的法师来说是极大的荣誉。[/DU][/DEF][IMG]infopic01/honor.webp|wordpic01/honor.webp[/IMG][DEF][EN]To show respect to someone or something[/EN][CN]尊敬；给……荣誉[/CN][POS]v.[/POS][DU]The kingdom honors the brave Dragon Masters for saving the dragons.|王国为勇敢的龙法师们拯救龙的行为授予荣誉。[/DU][DU]We honor the wizard for his kind help.|我们尊敬这位巫师的好心帮助。[/DU][DU]The villagers honor the dragon that protected their home.|村民们尊敬那条保护了他们家园的龙。[/DU][/DEF]",
+      "[TITLE]常见用法[/TITLE][COLL][H]it's an honor to do sth|做某事是一种荣幸[POS]n.[/POS][/H][EX]It's an honor to train with the famous dragons.|能和著名的龙一起训练是一种荣幸。[/EX][EX]It's an honor to help the kingdom stay safe.|能帮助王国保持安全是一种荣幸。[/EX][C]it's an honor to meet sb|见到某人是一种荣幸[/C][C]it's an honor to serve|服务是一种荣幸[/C][/COLL][COLL][H]honor sb for sth|因某事尊敬/表彰某人[POS]v.[/POS][/H][EX]The king honored Bo for his bravery in saving the dragon stone.|国王因波拯救龙石的勇敢行为表彰了他。[/EX][EX]We honor the soldier for protecting the village.|我们尊敬那位保护村庄的士兵。[/EX][C]honor a hero for courage|因勇气表彰英雄[/C][C]honor a wizard for magic|因魔法尊敬巫师[/C][/COLL]",
+      "[TITLE]额外例句[/TITLE][EX]She felt great honor when the dragon chose her as its master.[POS]n.[/POS]|当龙选择她作为主人时，她感到无比光荣。[/EX][EX]The honor of saving the kingdom belongs to all Dragon Masters.[POS]n.[/POS]|拯救王国的荣誉属于所有龙法师。[/EX][EX]The school honors students who help others selflessly.[POS]v.[/POS]|学校表彰那些无私帮助他人的学生。[/EX][EX]We honor the tradition of protecting dragons in our family.[POS]v.[/POS]|我们家尊重保护龙的传统。[/EX]",
+      "[TITLE]常见错误[/TITLE][ERR]honor 作“荣誉”时是不可数名词，不要说“an honor of”（错误），正确表达：the honor of being a master（成为法师的荣誉）。[/ERR][ERR]美式拼写是 honor，英式拼写是 honour，不要混淆两种拼写的用法，保持一致即可。[/ERR][ERR]不要混淆 honor 和 proud！honor 是名词“荣誉”或动词“尊敬”，proud 是形容词“骄傲的”，比如“感到骄傲”是 feel proud，“获得荣誉”是 get honor。[/ERR]"
+    ]
+  },
+  "w020": {
+    "word": "choke",
+    "images": {
+      "scene": ["infopic01/choke.webp"],
+      "card": ["wordpic01/choke.webp"]
+    },
+    "richDetail": [
+      "[TITLE]解释[/TITLE][DEF][EN]To have trouble speaking because of strong feelings (used in the book when Bo's voice was blocked by sadness)[/EN][CN]哽咽；说不出话（书中指波因悲伤而声音哽咽）[/CN][POS]v.[/POS][PH]/tʃəʊk/（英式）/tʃoʊk/（美式）[/PH][DU]\"It says -\" His voice choked.|(原文例句)“上面写着——”他的声音哽咽了。[/DU][DU]She choked when she talked about her lost dragon.|谈起她失踪的龙时，她哽咽了。[/DU][DU]The little boy choked with joy when he saw the magic stone.|小男孩看到魔法石时，高兴得说不出话。[/DU][/DEF][IMG]infopic01/choke.webp|wordpic01/choke.webp[/IMG][DEF][EN]To have difficulty breathing because something is blocking the throat[/EN][CN]窒息；呛到[/CN][POS]v.[/POS][DU]The dragon choked on a big piece of meat and coughed.|龙被一大块肉呛到，咳嗽起来。[/DU][DU]Be careful not to choke on small candies.|小心不要被小糖果呛到。[/DU][DU]The bird choked when it ate the seed too quickly.|小鸟吃得太快，被种子呛到了。[/DU][/DEF]",
+      "[TITLE]常见用法[/TITLE][COLL][H]choke up|哽咽；说不出话[POS]v.[/POS][/H][EX]Bo choked up when he talked about his family in prison.|波谈起在监狱里的家人时，哽咽得说不出话。[/EX][EX]She choked up with pride when her dragon won the race.|当她的龙赢得比赛时，她骄傲得哽咽了。[/EX][C]choke up with sadness|因悲伤哽咽[/C][C]choke up with joy|因喜悦哽咽[/C][/COLL][COLL][H]choke on sth|被某物呛到[POS]v.[/POS][/H][EX]The child choked on a peanut and needed help.|孩子被花生呛到，需要帮助。[/EX][EX]The dragon almost choked on the big bone.|龙差点被大骨头呛到。[/EX][C]choke on food|被食物呛到[/C][C]choke on water|被水呛到[/C][/COLL]",
+      "[TITLE]额外例句[/TITLE][EX]His voice choked when he thanked the wizard for saving his family.[POS]v.[/POS]|当他感谢巫师拯救了他的家人时，声音哽咽了。[/EX][EX]She choked up and couldn't finish her story about the dragon.[POS]v.[/POS]|她哽咽着，没能讲完关于龙的故事。[/EX][EX]The dog choked on a stick while playing.|小狗玩耍时被一根棍子呛到了。[/EX][EX]Be slow when eating to avoid choking.[POS]v.[/POS]|吃饭要慢，避免呛到。[/EX]",
+      "[TITLE]常见错误[/TITLE][ERR]choke 作“哽咽”时常用短语 choke up，单独使用时也可，但不如 choke up 自然，比如“因感动哽咽”是 choke up with emotion（正确）。[/ERR][ERR]作“呛到”时，必须接介词 on，不能说“choke sth”（错误），正确表达：choke on sth（被某物呛到）。[/ERR][ERR]不要混淆 choke 和 cry！choke 侧重“因情绪或异物导致说不出话/呼吸困难”，cry 是“哭泣”，比如“哭着说”是 cry and say，“哽咽着说”是 choke out。[/ERR]"
+    ]
+  },
+  "w021": {
+    "word": "evil",
+    "images": {
+      "scene": ["infopic01/evil.webp"],
+      "card": ["wordpic01/evil.webp"]
+    },
+    "richDetail": [
+      "[TITLE]解释[/TITLE][DEF][EN]Very bad and harmful (used in the book when Bo thought something bad had affected Emperor Song)[/EN][CN]邪恶的；有害的（书中指波认为有邪恶的东西影响了宋皇帝）[/CN][POS]adj.[/POS][PH]/ˈiːvl/[/PH][DU]I fear that some evil has come over him.|(原文例句)我担心有某种邪恶的东西影响了他。[/DU][DU]The evil wizard used dark magic to hurt dragons.|邪恶的巫师用黑魔法伤害龙。[/DU][DU]The evil plan to steal the Dragon Stone failed.|偷窃龙石的邪恶计划失败了。[/DU][/DEF][IMG]infopic01/evil.webp|wordpic01/evil.webp[/IMG][DEF][EN]Something that is bad or harmful[/EN][CN]邪恶；恶行[/CN][POS]n.[/POS][DU]The Dragon Masters fight against evil to protect the kingdom.|龙法师们与邪恶作斗争，保护王国。[/DU][DU]Dark magic is a kind of evil that hurts others.|黑魔法是一种伤害他人的邪恶力量。[/DU][DU]The hero defeated the evil and saved the village.|英雄战胜了邪恶，拯救了村庄。[/DU][/DEF]",
+      "[TITLE]常见用法[/TITLE][COLL][H]evil wizard|邪恶的巫师[POS]adj.[/POS][/H][EX]Maldred is an evil wizard who uses dark magic.|马尔德雷德是一个使用黑魔法的邪恶巫师。[/EX][EX]The evil wizard tried to control the dragons.|邪恶的巫师试图控制龙。[/EX][C]evil magic|邪恶的魔法[/C][C]evil plan|邪恶的计划[/C][/COLL][COLL][H]fight against evil|与邪恶作斗争[POS]n.[/POS][/H][EX]The Dragon Masters are brave enough to fight against evil.|龙法师们足够勇敢，敢于与邪恶作斗争。[/EX][EX]We must unite to fight against evil in the kingdom.|我们必须团结起来，与王国里的邪恶作斗争。[/EX][C]defeat evil|战胜邪恶[/C][C]resist evil|抵制邪恶[/C][/COLL]",
+      "[TITLE]额外例句[/TITLE][EX]The evil dragon was controlled by the dark wizard.[POS]adj.[/POS]|那条恶龙被黑巫师控制了。[/EX][EX]His evil words made the other children sad.[POS]adj.[/POS]|他邪恶的话语让其他孩子感到难过。[/EX][EX]Kindness can always beat evil in the end.[POS]n.[/POS]|善良最终总能战胜邪恶。[/EX][EX]The wizard used good magic to drive away evil.[POS]n.[/POS]|巫师用善良的魔法赶走了邪恶。[/EX]",
+      "[TITLE]常见错误[/TITLE][ERR]evil 作形容词时修饰名词，不要说“an evil”（错误，缺少名词），正确表达：an evil wizard（一个邪恶的巫师）。[/ERR][ERR]不要混淆 evil 和 bad！evil 程度更深，指“邪恶的、道德败坏的”，bad 是泛指“坏的”，比如“坏天气”是 bad weather，“邪恶的魔法”是 evil magic。[/ERR][ERR]evil 的副词形式是 evilly，不要写成“evilily”（错误拼写），比如“邪恶地笑”是 smile evilly。[/ERR]"
+    ]
+  },
+  "w022": {
+    "word": "come over",
+    "images": {
+      "scene": ["infopic01/come over.webp"],
+      "card": ["wordpic01/come over.webp"]
+    },
+    "richDetail": [
+      "[TITLE]解释[/TITLE][DEF][EN]To affect someone suddenly (used in the book when Bo thought evil had suddenly influenced Emperor Song)[/EN][CN]突然降临；影响（书中指波认为邪恶的东西突然影响了宋皇帝）[/CN][POS]v. phr.[/POS][PH]/kʌm ˈəʊvə(r)/（英式）/kʌm ˈoʊvər/（美式）[/PH][DU]I fear that some evil has come over him.|(原文例句)我担心有某种邪恶的东西影响了他。[/DU][DU]A feeling of sleepiness came over her when she sat down.|她坐下后，一阵睡意突然袭来。[/DU][DU]A sense of joy came over the children when they saw the dragons.|孩子们看到龙时，一阵喜悦涌上心头。[/DU][/DEF][IMG]infopic01/come over.webp|wordpic01/come over.webp[/IMG][DEF][EN]To visit someone at their home or a place they are in[/EN][CN]顺便拜访；过来（访问）[/CN][POS]v. phr.[/POS][DU]Can you come over to the dragon cave to play with us?|你能来龙穴和我们一起玩吗？[/DU][DU]The wizard came over to check on the sick dragon.|巫师过来查看生病的龙。[/DU][DU]My friend came over to my house after school.|我的朋友放学后顺便来我家拜访。[/DU][/DEF]",
+      "[TITLE]常见用法[/TITLE][COLL][H]a feeling comes over sb|某人突然产生某种感觉[POS]v. phr.[/POS][/H][EX]A feeling of fear came over Drake when he saw the evil wizard.|德雷克看到邪恶巫师时，突然感到一阵恐惧。[/EX][EX]A sense of calm came over Bo when Shu spoke to him.|当舒和波交流时，他突然感到一阵平静。[/EX][C]a sense of excitement comes over sb|某人突然感到兴奋[/C][C]a feeling of sadness comes over sb|某人突然感到悲伤[/C][/COLL][COLL][H]come over to sp|过来某地[POS]v. phr.[/POS][/H][EX]Come over to the Training Room; we need your help.|过来训练室，我们需要你的帮助。[/EX][EX]The Dragon Masters came over to the castle to meet the king.|龙法师们过来城堡见国王。[/EX][C]come over to the park|过来公园[/C][C]come over to the workshop|过来工坊[/C][/COLL]",
+      "[TITLE]额外例句[/TITLE][EX]A sudden cold came over her when the dark magic appeared.[POS]v. phr.[/POS]|黑魔法出现时，她突然感到一阵寒冷。[/EX][EX]A feeling of hope came over them when they found the magic feather.[POS]v. phr.[/POS]|当他们找到魔法羽毛时，一阵希望涌上心头。[/EX][EX]Can you come over to help me feed the dragons?[POS]v. phr.[/POS]|你能过来帮我喂龙吗？[/EX][EX]The king came over to praise the Dragon Masters for their bravery.[POS]v. phr.[/POS]|国王过来表扬了龙法师们的勇敢。[/EX]",
+      "[TITLE]常见错误[/TITLE][ERR]come over 作“突然影响”时，主语通常是 feeling、sense 等抽象名词，不要说“sb comes over”（错误），正确表达：a feeling comes over sb（某人突然产生某种感觉）。[/EX][ERR]作“拜访”时，后面接介词 to 加地点，不要说“come over sp”（错误），正确表达：come over to sp（过来某地）。[/ERR][ERR]不要混淆 come over 和 come to！come to 是“苏醒；到达”，come over 是“突然影响；拜访”，比如“醒来”是 come to，“突然感到害怕”是 a fear comes over sb。[/ERR]"
+    ]
+  },
+  "w023": {
+    "word": "raven",
+    "images": {
+      "scene": ["infopic01/raven.webp"],
+      "card": ["wordpic01/raven.webp"]
+    },
+    "richDetail": [
+      "[TITLE]解释[/TITLE][DEF][EN]A large black bird (used in the book as the name of the emperor's guard group: Raven Guard)[/EN][CN]渡鸦；大乌鸦（书中用作皇帝卫队的名称：乌鸦卫队）[/CN][POS]n.[/POS][PH]/ˈreɪvn/[/PH][DU]The black feather is a symbol of the Raven Guard.|(原文例句)黑色羽毛是乌鸦卫队的象征。[/DU][DU]A raven flew over the castle and landed on the tower.|一只渡鸦飞过城堡，落在了塔上。[/DU][DU]The Raven Guard is a group of skilled fighters who serve the emperor.|乌鸦卫队是一群为皇帝效力的熟练战士。[/DU][/DEF][IMG]infopic01/raven.webp|wordpic01/raven.webp[/IMG][DEF][EN]Black in color (like a raven's feathers)[/EN][CN]乌黑的；漆黑的[/CN][POS]adj.[/POS][DU]The knight wore a raven cloak that matched the night sky.|骑士穿着一件乌黑的斗篷，和夜空融为一体。[/DU][DU]Her raven hair shone in the sunlight.|她乌黑的头发在阳光下闪闪发光。[/DU][DU]The raven wings of the dragon looked very powerful.|龙乌黑的翅膀看起来非常有力。[/DU][/DEF]",
+      "[TITLE]常见用法[/TITLE][COLL][H]Raven Guard|乌鸦卫队[POS]n.[/POS][/H][EX]The Raven Guard dressed all in black and moved silently.|乌鸦卫队全身黑衣，行动无声。[/EX][EX]The Raven Guard followed the emperor's orders without question.|乌鸦卫队毫无异议地听从皇帝的命令。[/EX][C]members of the Raven Guard|乌鸦卫队成员[/C][C]the symbol of the Raven Guard|乌鸦卫队的象征[/C][/COLL][COLL][H]raven black|乌黑的[POS]adj.[/POS][/H][EX]The dragon's scales were raven black and shiny.|龙的鳞片乌黑发亮。[/EX][EX]He had raven black eyes that looked serious.|他有着乌黑的眼睛，看起来很严肃。[/EX][C]raven black hair|乌黑的头发[/C][C]raven black feathers|乌黑的羽毛[/C][/COLL]",
+      "[TITLE]额外例句[/TITLE][EX]A raven perched on the branch and watched the Dragon Masters.[POS]n.[/POS]|一只渡鸦停在树枝上，看着龙法师们。[/EX][EX]The Raven Guard is known for their skillful fighting and silent movement.[POS]n.[/POS]|乌鸦卫队以其熟练的战斗技巧和无声的行动而闻名。[/EX][EX]The raven night made it hard to see the path.[POS]adj.[/POS]|漆黑的夜晚让道路难以看清。[/EX][EX]She wore a dress with raven black patterns.|她穿着一件带有乌黑花纹的裙子。[/EX]",
+      "[TITLE]常见错误[/TITLE][ERR]raven 作名词“渡鸦”时是可数名词，复数形式是 ravens，不要写成“ravenes”（错误拼写）。[/ERR][ERR]作形容词时，通常修饰颜色相关的名词，不要说“a raven coat”（不自然），正确表达：a raven black coat（一件乌黑的外套）。[/ERR][ERR]专有名词 Raven Guard 首字母必须大写，不要写成“raven guard”（错误），表示特定的卫队名称。[/ERR]"
+    ]
+  },
+  "w024": {
+    "word": "silent",
+    "images": {
+      "scene": ["infopic01/silent.webp"],
+      "card": ["wordpic01/silent.webp"]
+    },
+    "richDetail": [
+      "[TITLE]解释[/TITLE][DEF][EN]Making no sound; quiet (used in the book when describing the Raven Guard's movement without noise)[/EN][CN]寂静的；无声的（书中指乌鸦卫队行动时没有声音）[/CN][POS]adj.[/POS][PH]/ˈsaɪlənt/[/PH][DU]They can move silently without being seen.|(原文例句)他们能无声地移动，不被人发现。[/DU][DU]The silent forest was only broken by the sound of birds.|寂静的森林里，只有鸟儿的叫声打破宁静。[/DU][DU]The children stayed silent when the wizard told them the secret.|当巫师告诉孩子们秘密时，他们保持沉默。[/DU][/DEF][IMG]infopic01/silent.webp|wordpic01/silent.webp[/IMG][DEF][EN]Not speaking or making noise[/EN][CN]沉默的；不说话的[/CN][POS]adj.[/POS][DU]Bo was silent when he thought about his family.|波想起家人时，变得沉默不语。[/DU][DU]The silent dragon watched the visitors carefully.|那条沉默的龙仔细地观察着来访者。[/DU][DU]She remained silent during the meeting to listen to others.|她在会议中保持沉默，倾听别人的意见。[/DU][/DEF]",
+      "[TITLE]常见用法[/TITLE][COLL][H]move silently|无声地移动[POS]adj.[/POS][/H][EX]The spy moved silently through the castle to avoid being caught.|间谍无声地穿过城堡，以免被发现。[/EX][EX]The cat moved silently toward the mouse.|小猫无声地朝着老鼠移动。[/EX][C]walk silently|无声地走路[/C][C]sneak silently|无声地潜行[/C][/COLL][COLL][H]stay silent|保持沉默[POS]adj.[/POS][/H][EX]He stayed silent to keep the dragon's secret.|他保持沉默，以保守龙的秘密。[/EX][EX]The students stayed silent when the teacher asked a difficult question.|当老师提出一个难题时，学生们保持沉默。[/EX][C]remain silent|保持沉默[/C][C]keep silent|保持沉默[/C][/COLL]",
+      "[TITLE]额外例句[/TITLE][EX]The silent night made the magic stone glow brighter.[POS]adj.[/POS]|寂静的夜晚让魔法石发光更亮。[/EX][EX]The Raven Guard moved silently through the dark tunnel.[POS]adj.[/POS]|乌鸦卫队无声地穿过黑暗的隧道。[/EX][EX]She was silent for a moment before answering the question.[POS]adj.[/POS]|她沉默了一会儿才回答问题。[/EX][EX]The silent dragon didn't make any noise when it flew.|那条沉默的龙飞行时没有发出任何声音。[/EX]",
+      "[TITLE]常见错误[/TITLE][ERR]silent 是形容词，不要混淆副词形式 silently，比如“无声地走路”是 walk silently（正确），不是 walk silent（错误）。[/ERR][ERR]不要混淆 silent 和 quiet！silent 强调“完全没有声音”，quiet 强调“安静、不吵闹”，比如“安静的房间”是 quiet room，“寂静的森林”是 silent forest。[/ERR][ERR]silent 的名词形式是 silence，不要写成“silentness”（错误拼写），比如“保持沉默”是 keep silence 或 stay silent。[/ERR]"
+    ]
+  },
+  "w025": {
+    "word": "skilled",
+    "images": {
+      "scene": ["infopic01/skilled.webp"],
+      "card": ["wordpic01/skilled.webp"]
+    },
+    "richDetail": [
+      "[TITLE]解释[/TITLE][DEF][EN]Having the ability to do something well (used in the book when describing the Raven Guard's good fighting ability)[/EN][CN]熟练的；有技能的（书中指乌鸦卫队的战斗技能高超）[/CN][POS]adj.[/POS][PH]/skɪld/[/PH][DU]The Raven Guard is a group of skilled fighters who serve the emperor.|(原文例句)乌鸦卫队是一群为皇帝效力的熟练战士。[/DU][DU]The skilled wizard can cast powerful magic spells.|这位熟练的巫师能施加强大的魔法咒语。[/DU][DU]The skilled dragon trainer knows how to communicate with dragons.|这位熟练的龙训练师知道如何与龙交流。[/DU][/DEF][IMG]infopic01/skilled.webp|wordpic01/skilled.webp[/IMG][DEF][EN]Good at doing a particular job or activity because of training or experience[/EN][CN]精通的；技艺高超的[/CN][POS]adj.[/POS][DU]She is a skilled artist who draws beautiful pictures of dragons.|她是一位技艺高超的艺术家，画的龙非常漂亮。[/DU][DU]The skilled carpenter made a strong saddle for the dragon.|这位熟练的木匠为龙做了一个坚固的马鞍。[/DU][DU]He is skilled at playing the magic flute that calms dragons.|他精通吹奏能安抚龙的魔法长笛。[/DU][/DEF]",
+      "[TITLE]常见用法[/TITLE][COLL][H]skilled fighter|熟练的战士[POS]adj.[/POS][/H][EX]The skilled fighter defeated the evil monster easily.|这位熟练的战士轻松打败了邪恶的怪物。[/EX][EX]The Raven Guard are all skilled fighters with years of training.|乌鸦卫队的成员都是经过多年训练的熟练战士。[/EX][C]skilled magic user|熟练的魔法使用者[/C][C]skilled dragon rider|熟练的龙骑士[/C][/COLL][COLL][H]skilled at sth/doing sth|擅长某事/做某事[POS]adj.[/POS][/H][EX]She is skilled at training water dragons.|她擅长训练水龙。[/EX][EX]He is skilled at making magic potions.|他擅长制作魔法药剂。[/EX][C]skilled at drawing|擅长画画[/C][C]skilled at fighting|擅长战斗[/C][/COLL]",
+      "[TITLE]额外例句[/TITLE][EX]The skilled blacksmith made a sharp sword for the knight.[POS]adj.[/POS]|这位熟练的铁匠为骑士打造了一把锋利的剑。[/EX][EX]The Dragon Masters became more skilled at dragon training with practice.[POS]adj.[/POS]|经过练习，龙法师们在龙训练方面变得更加熟练。[/EX][EX]She is skilled at solving difficult magic problems.[POS]adj.[/POS]|她擅长解决复杂的魔法问题。[/EX][EX]The skilled pilot flew the dragon safely through the storm.[POS]adj.[/POS]|这位熟练的驾驶者驾驶着龙安全穿过了暴风雨。[/EX]",
+      "[TITLE]常见错误[/TITLE][ERR]skilled 后面接介词 at 或 in，不要说“skilled to do sth”（错误），正确表达：skilled at doing sth（擅长做某事）。[/ERR][ERR]不要混淆 skilled 和 skillful！两者意思基本相同，但 skilled 更侧重“经过训练获得的技能”，skillful 更侧重“天生或自然具备的技巧”，比如“熟练的工人”是 skilled worker，“灵巧的手指”是 skillful fingers。[/ERR][ERR]skilled 的副词形式是 skillfully，不要写成“skilledly”（错误拼写），比如“熟练地操作”是 operate skillfully。[/ERR]"
+    ]
+  },
+  "w026": {
+    "word": "grunt",
+    "images": {
+      "scene": ["infopic01/grunt.webp"],
+      "card": ["wordpic01/grunt.webp"]
+    },
+    "richDetail": [
+      "[TITLE]解释[/TITLE][DEF][EN]To make a low, short sound instead of speaking (used in the book when Simon the guard replied with a low sound)[/EN][CN]咕哝；哼了一声（书中指西蒙卫兵用低沉的声音回应）[/CN][POS]v.[/POS][PH]/ɡrʌnt/[/PH][DU]Simon grunted in reply, and the three of them rushed out of the workshop.|(原文例句)西蒙咕哝着回应了一声，然后他们三个人冲出了工坊。[/DU][DU]The dragon grunted when it was given food.|龙得到食物时哼了一声。[/DU][DU]He grunted to show he agreed with the plan.|他咕哝了一声，表示同意这个计划。[/DU][/DEF][IMG]infopic01/grunt.webp|wordpic01/grunt.webp[/IMG][DEF][EN]A low, short sound made by a person or animal[/EN][CN]咕哝声；哼声[/CN][POS]n.[/POS][DU]The guard gave a grunt and opened the castle gate.|卫兵哼了一声，打开了城堡大门。[/DU][DU]We heard a grunt from the dragon's cave and went to check.|我们听到龙穴里传来一声哼声，就过去查看。[/DU][DU]The little boy let out a grunt when he lifted the heavy box.|小男孩抬起重箱子时，发出了一声哼声。[/DU][/DEF]",
+      "[TITLE]常见用法[/TITLE][COLL][H]grunt in reply|咕哝着回应[POS]v.[/POS][/H][EX]The old wizard grunted in reply and continued his work.|老巫师咕哝着回应了一声，继续做他的工作。[/EX][EX]The dragon grunted in reply when its master called it.|主人呼唤龙时，它咕哝着回应。[/EX][C]grunt in agreement|咕哝着表示同意[/C][C]grunt in disagreement|咕哝着表示不同意[/C][/COLL][COLL][H]give a grunt|发出哼声[POS]n.[/POS][/H][EX]He gave a grunt and stood up from the chair.|他哼了一声，从椅子上站了起来。[/EX][EX]The pig gave a grunt and went back to eating.|小猪哼了一声，继续吃东西。[/EX][C]let out a grunt|发出哼声[/C][C]hear a grunt|听到哼声[/C][/COLL]",
+      "[TITLE]额外例句[/TITLE][EX]The strong man grunted as he carried the heavy stone.[POS]v.[/POS]|那个强壮的男人搬着重石头时，发出了咕哝声。[/EX][EX]The dog grunted when someone stepped on its tail.[POS]v.[/POS]|有人踩到狗尾巴时，它哼了一声。[/EX][EX]A loud grunt came from the forest, scaring the children.[POS]n.[/POS]|森林里传来一声响亮的哼声，吓了孩子们一跳。[/EX][EX]She gave a grunt of satisfaction after finishing the task.[POS]n.[/POS]|完成任务后，她发出了一声满意的哼声。[/EX]",
+      "[TITLE]常见错误[/TITLE][ERR]grunt 作动词时是不及物动词，后面不能直接接宾语，要接介词，比如“咕哝着说再见”是 grunt goodbye（正确，再见是宾语），但“咕哝着回应”是 grunt in reply（正确）。[/ERR][ERR]作名词时是可数名词，复数形式是 grunts，不要说“a grunt of”（错误），正确表达：a grunt of pain（痛苦的哼声）。[/ERR][ERR]不要混淆 grunt 和 groan！grunt 是“短促的哼声”，groan 是“拉长的呻吟声”，比如“累得哼了一声”是 grunt with tiredness，“疼得呻吟”是 groan with pain。[/ERR]"
+    ]
+  },
+  "w027": {
+    "word": "truth",
+    "images": {
+      "scene": ["infopic01/truth.webp"],
+      "card": ["wordpic01/truth.webp"]
+    },
+    "richDetail": [
+      "[TITLE]解释[/TITLE][DEF][EN]The real facts about something (used in the book when the spy made Rori and Ana tell the real situation)[/EN][CN]真相；实情（书中指间谍让罗里和安娜说出了真实情况）[/CN][POS]n.[/POS][PH]/truːθ/[/PH][DU]Somehow he made us tell the truth, even though we did not want to.|(原文例句)不知怎么的，他让我们说出了真相，尽管我们并不想这样做。[/DU][DU]The wizard knew the truth about the Dragon Stone's power.|巫师知道龙石力量的真相。[/DU][DU]Tell me the truth: did you see the dragon fly?|告诉我真相：你看到龙飞了吗？[/DU][/DEF][IMG]infopic01/truth.webp|wordpic01/truth.webp[/IMG][DEF][EN]The quality of being honest[/EN][CN]诚实；真实性[/CN][POS]n.[/POS][DU]Honesty and truth are important for a Dragon Master.|诚实和真诚对龙法师来说很重要。[/DU][DU]The truth of his words was proven by the magic stone.|他话语的真实性被魔法石证实了。[/DU][DU]We should always tell the truth to our friends.|我们应该总是对朋友说真话。[/DU][/DEF]",
+      "[TITLE]常见用法[/TITLE][COLL][H]tell the truth|说真话；说出真相[POS]n.[/POS][/H][EX]The spy used dark magic to make them tell the truth.|间谍用黑魔法让他们说出了真相。[/EX][EX]It's better to tell the truth than to lie.|说真话比撒谎好。[/EX][C]tell the whole truth|说出全部真相[/C][C]refuse to tell the truth|拒绝说出真相[/C][/COLL][COLL][H]the truth about sth|关于某事的真相[POS]n.[/POS][/H][EX]They finally found out the truth about the evil wizard.|他们终于查明了关于邪恶巫师的真相。[/EX][EX]The truth about the dragon's illness surprised everyone.|关于龙生病的真相让所有人都感到惊讶。[/EX][C]the truth about the magic|关于魔法的真相[/C][C]the truth about the past|关于过去的真相[/C][/COLL]",
+      "[TITLE]额外例句[/TITLE][EX]The truth is that the dragon was trying to protect the village.[POS]n.[/POS]|真相是那条龙在努力保护村庄。[/EX][EX]She couldn't hide the truth from her friends any longer.[POS]n.[/POS]|她再也不能对朋友们隐瞒真相了。[/EX][EX]The truth of his story was confirmed by the wizard.[POS]n.[/POS]|他故事的真实性得到了巫师的证实。[/EX][EX]We should always seek the truth and not believe lies.[POS]n.[/POS]|我们应该总是追求真相，不相信谎言。[/EX]",
+      "[TITLE]常见错误[/TITLE][ERR]truth 是不可数名词，不要说“a truth”（错误），但表示“一个真相”时可以说“a piece of truth”。[/ERR][ERR]不要混淆 truth 和 true！truth 是名词“真相”，true 是形容词“真实的”，比如“真实的故事”是 a true story，“故事的真相”是 the truth of the story。[/ERR][ERR]truth 的反义词是 lie（谎言）或 untruth（不实之事），不要写成“untruth”（较少用），常用 lie，比如“说谎”是 tell a lie，“说真话”是 tell the truth。[/ERR]"
+    ]
+  },
+   "w028": {
+    "word": "conk",
+    "images": {
+      "scene": ["infopic01/conk.webp"],
+      "card": ["wordpic01/conk.webp"]
+    },
+    "richDetail": [
+      "[TITLE]解释[/TITLE][DEF][EN]To fall asleep suddenly or faint (used in the book when Simon the guard fell unconscious on the floor due to the Raven Guard's trick)[/EN][CN]突然睡着；晕倒，不省人事（书中指西蒙卫兵被乌鸦卫队暗算后晕倒在地上）[/CN][POS]v.[/POS][PH]/kɒŋk/（英式）/kɑːŋk/（美式）[/PH][DU]When they got to Griffith's office, Simon the guard was conked out on the floor!|(原文例句)当他们到达格里菲斯的办公室时，西蒙卫兵已经晕倒在地上了！[/DU][DU]The tired knight conked out on the chair as soon as he got back to the castle.|疲惫的骑士一回到城堡，就倒在椅子上睡着了。[/DU][DU]He conked out from the magic mist and woke up an hour later.|他被魔法雾气熏晕，一小时后才醒过来。[/DU][/DEF][IMG]infopic01/conk.webp|wordpic01/conk.webp[/IMG][DEF][EN]To hit someone hard on the head, making them unconscious[/EN][CN]猛击（头部）使晕倒[/CN][POS]v.[/POS][DU]The Raven Guard conked the castle guard on the head to sneak in.|乌鸦卫队猛击城堡卫兵的头部，趁机溜了进去。[/DU][DU]He accidentally conked his head on the dragon's hard scale and felt dizzy.|他不小心把头撞到了龙坚硬的鳞片上，一阵头晕。[/DU][DU]The thief tried to conk the wizard but was stopped by magic.|小偷想把巫师打晕，却被魔法阻拦了。[/DU][/DEF]",
+      "[TITLE]常见用法[/TITLE][COLL][H]conk out|突然睡着；晕倒[POS]v.[/POS][/H][EX]The guard conked out after breathing in the Raven Guard's sleeping powder.|卫兵吸入了乌鸦卫队的迷药后晕倒了。[/EX][EX]After flying for the whole day, the dragon conked out on the grassland.|飞了一整天后，这条龙在草地上沉沉睡去。[/EX][C]conk out on the floor|晕倒在地上[/C][C]conk out from tiredness|累得昏睡过去[/C][/COLL][COLL][H]conk sb on the head|猛击某人的头部[POS]v.[/POS][/H][EX]The spy tried to conk Drake on the head but missed him quickly.|间谍想猛击德雷克的头部，却被他躲开了。[/EX][C]conk sb on the forehead|猛击某人的额头[/C][C]conk the guard on the skull|猛击卫兵的后脑勺[/C][/COLL]",
+      "[TITLE]额外例句[/TITLE][EX]The little boy conked out during the boring magic lesson and snored loudly.|小男孩在枯燥的魔法课上睡着了，还打起了呼噜。[/EX][EX]The wizard conked out after casting too many powerful spells in a row.|巫师连续施了太多强力咒语，累得晕了过去。[/EX][EX]A stone fell from the tower and conked him on the head, making him conk out at once.|一块石头从塔上掉下来砸中了他的头，他当场就晕了。[/EX][EX]My pet dragon conks out every time after eating a big bag of magic crystals.|我的宠物龙每次吃完一大袋魔法晶石，都会倒头就睡。[/EX]",
+      "[TITLE]常见错误[/TITLE][ERR]conk作“晕倒、睡着”时，**必须和out连用**构成固定短语conk out，不能单独说sb conked on the floor（错误），正确表达是sb conked out on the floor。[/ERR][ERR]conk是**口语化词汇**，正式书面语中建议用faint（晕倒）、fall asleep（睡着）、knock unconscious（打晕）等表达，比如作文中不用the guard conked out，而用the guard fainted。[/ERR][ERR]conk的过去式和过去分词是conked，现在分词是conking，不要写成conkeded、conkingg等错误形式，比如he conked out yesterday（正确）。[/ERR][ERR]conk作“猛击”时，后接身体部位需加介词on，不能说conk his head（虽口语可用），规范表达是conk him on the head。[/ERR]"
+    ]
   }
+   
 }
