@@ -11,7 +11,8 @@
     { "id": "dm3-c3", "name": "Chapter 3", "wordIds": ["w010", "w011", "w012", "w013", "w014", "w015"], "quizIds": ["q_w010", "q_w011", "q_w012", "q_w013", "q_w014", "q_w015"] },
     { "id": "dm3-c4", "name": "Chapter 4", "wordIds": ["w016"], "quizIds": ["q_w016"] },  
     { "id": "dm3-c5", "name": "Chapter 5", "wordIds": ["w017", "w018", "w019", "w020", "w021", "w022","w023"], "quizIds": ["q_w017", "q_w018", "q_w019", "q_w020", "q_w021", "q_w022", "q_w023"] },
-    { "id": "dm3-c6", "name": "Chapter 6", "wordIds": ["w024", "w025", "w026", "w027", "w028"], "quizIds": ["q_w024", "q_w025", "q_w026", "q_w027", "q_w028"] }
+    { "id": "dm3-c6", "name": "Chapter 6", "wordIds": ["w024", "w025", "w026", "w027", "w028"], "quizIds": ["q_w024", "q_w025", "q_w026", "q_w027", "q_w028"] },
+    { "id": "dm3-c7", "name": "Chapter 7", "wordIds": ["w029", "w030", "w031", "w032","w033","w034","w035","w036"], "quizIds": ["q_w029", "q_w030", "q_w031", "q_w032","q_w033","q_w034","q_w035","q_w036"] }
     ],
 
     "bookPractices": [
