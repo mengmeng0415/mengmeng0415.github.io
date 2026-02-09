@@ -11,7 +11,7 @@
     { "id": "dm3-c3", "name": "Chapter 3", "wordIds": ["w0010", "w0011", "w0012", "w0013", "w0014", "w0015"], "quizIds": ["q_w0010", "q_w0011", "q_w0012", "q_w0013", "q_w0014", "q_w0015"] },
     { "id": "dm3-c4", "name": "Chapter 4", "wordIds": ["w0016"], "quizIds": ["q_w0016"] },  
     { "id": "dm3-c5", "name": "Chapter 5", "wordIds": ["w0017", "w0018", "w0019", "w0020", "w0021", "w0022","w0023"], "quizIds": ["q_w0017", "q_w0018", "q_w0019", "q_w0020", "q_w0021", "q_w0022", "q_w0023"] },
-    { "id": "dm3-c5", "name": "Chapter 6", "wordIds": ["w0024", "w0025", "w0026", "w0027", "w0028"], "quizIds": ["q_w0024", "q_w0025", "q_w0026", "q_w0027", "q_w0028"] }
+    { "id": "dm3-c6", "name": "Chapter 6", "wordIds": ["w0024", "w0025", "w0026", "w0027", "w0028"], "quizIds": ["q_w0024", "q_w0025", "q_w0026", "q_w0027", "q_w0028"] }
     ],
 
     "bookPractices": [
