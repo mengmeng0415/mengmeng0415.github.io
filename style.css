@@ -1258,34 +1258,42 @@ input:checked + .slider:before { transform: translateX(16px); }
 #game-start-overlay .theme-option span { color: #fff; text-shadow: 0 1px 3px #000; }
 
 /* 2. 图片容器 (用于控制1:1比例) */
+/* 2. 图片容器 (用于控制1:1比例) - 强制生效版 */
 .front-img-container {
-/* 👇 关键：宽度 100% 才能撑满左右两边 */
-    width: 100%;          
+    /* 👇 核心：强制宽度 90%，横向撑开 */
+    width: 90% !important;          
     
-    /* 保持 1:1 正方形 */
+    /* 保持 1:1 的正方形比例 */
     aspect-ratio: 1 / 1;  
     
     display: flex;
     justify-content: center;
     align-items: center;
     
- 
+    /* 强制去掉背景和阴影 */
+    background: transparent !important; 
+    box-shadow: none !important; 
     
-    /* 👇 关键：上方给圆角(贴合卡片)，下方直角 */
-    /* 卡片圆角通常是12px，减去边框3px，这里设9px比较平滑 */
-    border-radius: 12px; 
+    /* 👇 核心：强制设置上方圆角 */
+    border-radius: 12px  !important; 
     
-    overflow: hidden;    
-    margin-bottom: 5px; /* 图片和文字留一点点距离 */
+    /* 👇 核心：强制隐藏溢出，这样图片才会被切成圆角 */
+    overflow: hidden !important;    
+    
+    margin-bottom: 10px;
 }
 
-/* 3. 图片本身 */
+/* 3. 图片本身 - 强制生效版 */
 .front-img-container img {
-    width: 100%;
-    height: 100%;
-    object-fit: contain; /* 保证图片完整显示在正方形内，不裁切 */
-    display: block;
+    /* 👇 核心：强制尺寸撑满容器 */
+    width: 100% !important;
+    height: 100% !important;
     
+    /* 👇 核心：强制按比例填满，不留白 */
+    object-fit: center !important; 
+    
+    display: block; 
+    border-radius: 0 !important; /* 防止图片自身带有其他圆角干扰 */
 }
 
 /* (可选) 没有图片时的占位文字 */
