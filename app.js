@@ -589,92 +589,166 @@ function renderHeaderStars(uid) {
 function renderTabContent(type, word, container) {
     container.innerHTML = ''; 
     container.scrollTop = 0;
+
+    // ============ 🌟 0. 全局 Zoom 状态控制 ============
+    // 只要 state.isImageZoom 为 true，容器就进入全屏
+    if (state.isImageZoom) {
+        if (!container.classList.contains('pseudo-fullscreen')) {
+            container.classList.add('pseudo-fullscreen');
+        }
+        // 根据不同类型微调背景色
+        if (type === 'text') {
+            container.style.background = "#f5f5f7"; // 阅读模式淡灰底
+            container.style.padding = "0";          // 贴边
+        } else {
+            container.style.background = "#f8f9fa"; // 其他模式
+            container.style.padding = "20px";
+        }
+    } else {
+        // 退出全屏
+        container.classList.remove('pseudo-fullscreen');
+        if (document.fullscreenElement && document.exitFullscreen) {
+            document.exitFullscreen().catch(()=>{});
+        }
+        container.style.background = "";
+        container.style.padding = "";
+    }
+
+    // 通用的 Zoom 按钮 HTML (右下角)
+    // 根据状态显示 放大镜 或 缩小图标
+    const zoomIcon = state.isImageZoom ? 
+        `<svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2"><path d="M8 3v3a2 2 0 0 1-2 2H3m18 0h-3a2 2 0 0 1-2-2V3m0 18v-3a2 2 0 0 1 2-2h3M3 16h3a2 2 0 0 1 2 2v3"></path></svg>` : 
+        `<svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2"><path d="M15 3h6v6M9 21H3v-6M21 3l-7 7M3 21l7-7"/></svg>`;
     
+    // 只有 Quiz/Text/Scene 需要这个按钮
+    const fixedZoomBtn = document.createElement('button');
+    fixedZoomBtn.className = 'btn-fixed-zoom';
+    fixedZoomBtn.innerHTML = zoomIcon;
+    fixedZoomBtn.onclick = toggleImageZoom; // 绑定切换函数
+
+    // ============ 🖼️ SCENE (图片) ============
     if (type === 'scene') {
-        if (word.displayImages.length) {
-            const imgs = word.displayImages.map(src => 
-                `<div class="scene-img-wrapper">
-                    <img src="${src}" class="scene-image" onclick="openModal('${src}')">
-                 </div>`
-            ).join('');
+        let allImages = [];
+        if (word.displayImages) allImages = allImages.concat(word.displayImages);
+        if (word.images && word.images.card) {
+            const cards = word.images.card.map(u => u.startsWith('http') ? u : CONFIG.assetUrl + CONFIG.imgFolder + u);
+            allImages = allImages.concat(cards);
+        }
+        allImages = [...new Set(allImages)];
+
+        if (allImages.length === 0) {
+            container.innerHTML = `<div class="empty-tip">暂无图片</div>`;
+        } 
+        else if (state.isImageZoom) {
+            // ✅ [Scene Zoom 模式]
+            if (state.currentImgIdx >= allImages.length) state.currentImgIdx = 0;
+            const currImg = allImages[state.currentImgIdx];
+
+            container.innerHTML = `
+                <button class="btn-zoom-nav prev" onclick="navigateInZoom(-1)">❮</button>
+                <div style="flex:1; display:flex; justify-content:center; align-items:center; height:100%;">
+                    <img src="${currImg}" style="max-width:90%; max-height:90%; object-fit:contain; border-radius:10px; box-shadow:0 10px 30px rgba(0,0,0,0.1);">
+                </div>
+                <div style="position:absolute; bottom:30px; left:50%; transform:translateX(-50%); color:#999; font-weight:bold;">
+                    ${state.currentImgIdx + 1} / ${allImages.length}
+                </div>
+                <button class="btn-zoom-nav next" onclick="navigateInZoom(1)">❯</button>
+            `;
+            container.appendChild(fixedZoomBtn); // 加按钮
+        } 
+        else {
+            // ✅ [Scene 普通模式]
+            const imgsHtml = allImages.map((src, idx) => `
+                <div class="scene-img-wrapper" style="position:relative;" onclick="enterImageZoom(${idx})">
+                    <img src="${src}" class="scene-image">
+                </div>`).join('');
             
             container.innerHTML = `
                 <div class="image-box">
-                    <div class="scene-images" data-count="${word.displayImages.length}">
-                        ${imgs}
+                    <div class="scene-images" data-count="${allImages.length}">
+                        ${imgsHtml}
                     </div>
                 </div>`;
+            container.appendChild(fixedZoomBtn); // 加按钮
+        }
+    } 
+    // ============ 📖 TEXT (富文本) ============
+    else if (type === 'text') {
+        let navHtml = '', bodyHtml = '';
+        if (word.richDetail) {
+            navHtml = '<div class="rich-nav">';
+            word.richDetail.forEach((s, i) => {
+                // 普通模式用 scrollToSection, Zoom 模式用 scrollToSectionInZoom
+                const func = state.isImageZoom ? 'scrollToSectionInZoom' : 'scrollToSection';
+                navHtml += `<button onclick="${func}('s-${i}')">${s.title}</button>`;
+                bodyHtml += `<div id="s-${i}" class="rich-section"><h3>${s.title}</h3><div class="rich-content-body">${s.content}</div></div>`;
+            });
+            navHtml += '</div>';
         } else {
-            container.innerHTML = `<div class="empty-tip">暂无图片</div>`;
+            bodyHtml = `<div class="empty-tip">暂无详解</div>`;
         }
-    } else if (type === 'text') {
-        if(word.richDetail) {
-            let nav='<div class="rich-nav">', body='';
-            word.richDetail.forEach((s,i) => { nav+=`<button onclick="scrollToSection('s-${i}')">${s.title}</button>`; body+=`<div id="s-${i}" class="rich-section"><h3>${s.title}</h3><div class="rich-content-body">${s.content}</div></div>`; });
-            container.innerHTML = nav+'</div>'+body;
+
+        if (state.isImageZoom) {
+            // ✅ [Text Zoom 模式 - 阅读器]
+            container.innerHTML = `
+                <button class="btn-zoom-nav prev" onclick="navigateInZoom(-1)">❮</button>
+                
+                <div class="reader-layout">
+                    <div class="reader-header">${navHtml}</div>
+                    <div id="reader-scroll" class="reader-body">
+                        <h1 style="text-align:center; margin-bottom:40px; color:#333;">${word.word}</h1>
+                        ${bodyHtml}
+                    </div>
+                </div>
+
+                <button class="btn-zoom-nav next" onclick="navigateInZoom(1)">❯</button>
+            `;
+            container.appendChild(fixedZoomBtn);
+        } else {
+            // ✅ [Text 普通模式]
+            container.innerHTML = navHtml + bodyHtml;
+            container.appendChild(fixedZoomBtn);
         }
-    } else if (type === 'quiz') {
+    }
+    // ============ ⚔️ QUIZ (挑战) ============
+    else if (type === 'quiz') {
+        // ... (Quiz 逻辑保持不变，但要记得把 renderMixedPagination 里的按钮也改掉) ...
+        // 为了方便，这里把 Quiz 逻辑再写一遍，确保没有遗漏
         if (state.customGames && state.customGames.length > 0) {
             const gamesListHtml = state.customGames.map((g, idx) => `
-                <div class="quiz-box" onclick="startSpookyGame(${idx})" style="min-height:200px; cursor:pointer; align-items:center; transition:0.2s; border:2px solid transparent;">
-                  
-                    <div class="quiz-q" style="margin:10px; text-align:center;">
-                        ${g.title}
+                <div class="game-group-card" onclick="startSpookyGame(${idx})">
+                    <div class="game-group-content">
+                        <div class="game-group-icon">🎃</div>
+                        <div class="game-group-title">${g.title}</div>
+                        <div class="game-group-info">包含 ${g.words.length} 个单词</div>
                     </div>
-                    <div style="color:#666;">
-                        包含 ${g.words.length} 个单词 / 点击开始
-                    </div>
-                </div>
-            `).join('');
-
-            container.innerHTML = `
-                <div style="width:100%; max-width:1000px; padding-top:20px;">
-                    <h3 style="text-align:center; color:var(--primary); margin-bottom:30px;">
-                        已生成 ${state.customGames.length} 组翻牌游戏
-                    </h3>
-                    <div style="display:grid; gap:30px; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));">
-                        ${gamesListHtml}
-                    </div>
-                    <div style="text-align:center; margin-top:40px;">
-                         <button onclick="clearCustomGames()" style="color:#999; text-decoration:underline;">清空游戏并返回</button>
-                    </div>
-                </div>
-            `;
+                </div>`).join('');
+            container.innerHTML = `<div class="custom-games-container"><h3 class="custom-games-header">已生成 ${state.customGames.length} 组翻牌游戏</h3><div class="custom-games-grid">${gamesListHtml}</div><div style="text-align:center; margin-top:40px;"><button onclick="clearCustomGames()" style="color:#999; text-decoration:underline;">清空游戏并返回</button></div></div>`;
             return;
         }
 
         let allQuizzes = [];
         let linked = word.linkedQuizzes || [];
         if (word.chapterQuizIds && word.chapterQuizIds.length > 0) {
-            linked = linked.filter(q => word.chapterQuizIds.includes(q.id));
+             linked = linked.filter(q => word.chapterQuizIds.includes(q.id));
         }
-        allQuizzes = linked.filter(q => q.question && q.question.trim().length > 0).map(q => ({ type: 'quiz', content: q, id: q.id }));
-        
-        if (word.quizGames && word.quizGames.length > 0) {
-            word.quizGames.forEach((g, idx) => {
-                allQuizzes.push({ type: 'game', content: g.url, id: `game-${idx}` });
-            });
+        allQuizzes = linked.filter(q => q.question).map(q => ({ type: 'quiz', content: q, id: q.id }));
+        if (word.quizGames) {
+            word.quizGames.forEach((g, idx) => allQuizzes.push({ type: 'game', content: g.url, id: `game-${idx}` }));
         }
 
         if (allQuizzes.length > 0) {
             renderMixedPagination(allQuizzes, container, 0);
         } else {
             container.innerHTML = `<div class="empty-tip">暂无挑战</div>`;
+            container.appendChild(fixedZoomBtn);
         }
-    } else if (type === 'game') {
-        if (word.games && word.games.length > 0) {
-            const gamesHtml = word.games.map(url => `
-                <div class="rich-game-item">
-                    <iframe src="${url}" frameborder="0" allowfullscreen></iframe>
-                </div>
-            `).join('');
-            
-            container.innerHTML = `
-                <div class="rich-section" style="margin-top:0;">
-                    <div class="rich-game-group">
-                        ${gamesHtml}
-                    </div>
-                </div>`;
+    }
+    // ============ 🎮 GAME ============
+    else if (type === 'game') {
+         if (word.games && word.games.length > 0) {
+            const gamesHtml = word.games.map(url => `<div class="rich-game-item"><iframe src="${url}" frameborder="0" allowfullscreen></iframe></div>`).join('');
+            container.innerHTML = `<div class="rich-section" style="margin-top:0;"><div class="rich-game-group">${gamesHtml}</div></div>`;
         } else {
             container.innerHTML = `<div class="empty-tip">暂无游戏</div>`;
         }
@@ -766,6 +840,8 @@ function getQuizProgressInfo(activeIndex, currentItemTotal) {
 function renderMixedPagination(items, container, activeIndex) {
     container.innerHTML = ''; 
     container.scrollTop = 0;
+    
+    // 1. 生成分页圆圈
     const pageContainer = document.createElement('div');
     pageContainer.className = 'quiz-pagination';
     if (items.length > 1) {
@@ -787,13 +863,23 @@ function renderMixedPagination(items, container, activeIndex) {
         pageContainer.appendChild(dummyBtn);
     }
     container.appendChild(pageContainer);
+
+    // 2. 准备内容
     const item = items[activeIndex];
     let contentHtml = '';
-    const zoomIcon = `<svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 3h6v6M9 21H3v-6M21 3l-7 7M3 21l7-7"/></svg>`;
-    const zoomBtnHtml = `<button class="btn-quiz-zoom" onclick="toggleFullScreen()" title="全屏模式">${zoomIcon}</button>`;
+
+    // 🔥 修复 1: 根据状态动态显示图标 (和 Scene/Text 保持一致)
+    const zoomIcon = state.isImageZoom ? 
+        `<svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2"><path d="M8 3v3a2 2 0 0 1-2 2H3m18 0h-3a2 2 0 0 1-2-2V3m0 18v-3a2 2 0 0 1 2-2h3M3 16h3a2 2 0 0 1 2 2v3"></path></svg>` : 
+        `<svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2"><path d="M15 3h6v6M9 21H3v-6M21 3l-7 7M3 21l7-7"/></svg>`;
+    
+    // 🔥 修复 2: 绑定 toggleImageZoom (卡片右上角的小按钮，如果 CSS 没删的话)
+    const zoomBtnHtml = `<button class="btn-quiz-zoom" onclick="toggleImageZoom()" title="${state.isImageZoom ? '退出全屏' : '全屏模式'}" style="z-index:55;">${zoomIcon}</button>`;
+    
     const progress = getQuizProgressInfo(activeIndex, items.length);
     const infoHtml = `<div class="quiz-info-text"><div>${progress.line1}</div><div>${progress.line2}</div></div>`;
 
+    // 3. 渲染 Quiz/Game 内容
     if (item.type === 'game') {
         contentHtml = `
             <div class="quiz-box">
@@ -841,10 +927,13 @@ function renderMixedPagination(items, container, activeIndex) {
             contentHtml += `</div></div>`;
         }
     }
+
     const wrapper = document.createElement('div');
     wrapper.style.width = '100%'; 
     wrapper.innerHTML = contentHtml;
     container.appendChild(wrapper);
+
+    // 4. Next 按钮
     const nextBtn = document.createElement('button');
     nextBtn.className = 'btn-big-next';
     const arrowIcon = `<svg style="width:20px; height:20px; margin-left:8px;" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>`;
@@ -859,12 +948,20 @@ function renderMixedPagination(items, container, activeIndex) {
     }
     nextBtn.onclick = () => handleBigNextClick(items, container, activeIndex);
     container.appendChild(nextBtn);
-    const fourArrowsIcon = `<svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 3h6v6M9 21H3v-6M21 3l-7 7M3 21l7-7"/></svg>`;
+
+    // 5. 🔥 修复 3: 右下角悬浮按钮 (State Sync)
     const zoomBtn = document.createElement('button');
     zoomBtn.className = 'btn-fixed-zoom';
-    zoomBtn.innerHTML = fourArrowsIcon;
-    zoomBtn.title = "全屏专注模式";
-    zoomBtn.onclick = toggleFullScreen;
+    // 根据状态使用 放大或缩小 图标
+    zoomBtn.innerHTML = state.isImageZoom ? 
+        `<svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2"><path d="M8 3v3a2 2 0 0 1-2 2H3m18 0h-3a2 2 0 0 1-2-2V3m0 18v-3a2 2 0 0 1 2-2h3M3 16h3a2 2 0 0 1 2 2v3"></path></svg>` : 
+        `<svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2"><path d="M15 3h6v6M9 21H3v-6M21 3l-7 7M3 21l7-7"/></svg>`;
+    
+    zoomBtn.title = state.isImageZoom ? "退出全屏" : "全屏专注模式";
+    
+    // ⚠️ 关键：这里必须绑定 toggleImageZoom，不能是 toggleFullScreen
+    zoomBtn.onclick = toggleImageZoom; 
+    
     container.appendChild(zoomBtn);
 }
 
@@ -1159,37 +1256,7 @@ function handleBigNextClick(items, container, activeIndex) {
     }
 }
 
-window.toggleFullScreen = function() {
-    const elem = document.getElementById('tab-content-area');
-    if (!elem) return;
-    const isPseudo = elem.classList.contains('pseudo-fullscreen');
-    const isNative = document.fullscreenElement || document.webkitFullscreenElement || document.mozFullScreenElement || document.msFullscreenElement;
-    if (isPseudo) {
-        elem.classList.remove('pseudo-fullscreen');
-        return;
-    }
-    if (isNative) {
-        if (document.exitFullscreen) document.exitFullscreen();
-        else if (document.webkitExitFullscreen) document.webkitExitFullscreen();
-        return;
-    }
-    let requestPromise;
-    try {
-        if (elem.requestFullscreen) requestPromise = elem.requestFullscreen();
-        else if (elem.webkitRequestFullscreen) requestPromise = elem.webkitRequestFullscreen();
-        else if (elem.msRequestFullscreen) requestPromise = elem.msRequestFullscreen();
-    } catch (e) { console.log("Native API error, forcing pseudo."); }
-    if (requestPromise && requestPromise.catch) {
-        requestPromise.catch(err => {
-            console.log("Native blocked, forcing pseudo.");
-            elem.classList.add('pseudo-fullscreen');
-        });
-    }
-    setTimeout(() => {
-        const currentNative = document.fullscreenElement || document.webkitFullscreenElement;
-        if (!currentNative && !elem.classList.contains('pseudo-fullscreen')) elem.classList.add('pseudo-fullscreen');
-    }, 100);
-};
+
 
 // ============ 🃏 选词模式控制逻辑 ============
 let isCreationMode = false;
@@ -1712,5 +1779,102 @@ function safePlayAudio(audioId) {
         }
     } catch (e) {
         console.warn("Audio element error:", e);
+    }
+}
+// ============ 🚀 Zoom 核心控制器 (最终修正版) ============
+
+// 1. 切换 Zoom 开关 (入口)
+window.toggleImageZoom = function() {
+    state.isImageZoom = !state.isImageZoom;
+    if (state.isImageZoom) {
+        state.currentImgIdx = 0; // 每次进入全屏重置图片索引
+    }
+    refreshCurrentTab(); // 触发界面更新
+}
+
+// 2. 智能刷新当前 Tab (防止跳去 Scene)
+function refreshCurrentTab() {
+    const area = document.getElementById('tab-content-area');
+    const currentWord = state.currentWordList[state.currentWordIndex];
+    
+    if (currentWord) {
+        const fullDetail = DataManager.getWordDetail(currentWord.uid);
+        
+        let type = 'scene'; // 默认值
+        
+        // 🕵️ 侦探逻辑：看现在哪个 Tab 按钮是亮(active)的
+        const activeBtn = document.querySelector('#detail-tabs button.active');
+        if (activeBtn) {
+            const t = activeBtn.innerText;
+            if (t === '单词详解') type = 'text';
+            else if (t === '挑战一下') type = 'quiz';
+            else if (t === '趣味游戏') type = 'game';
+            else if (t === '图片') type = 'scene';
+        }
+
+        // 调用渲染函数 (它会根据 state.isImageZoom 决定是否全屏)
+        renderTabContent(type, fullDetail, area);
+    }
+}
+
+// 3. Zoom 模式下的前后导航 (统一处理 Scene 和 Text)
+window.navigateInZoom = function(direction) {
+    const activeBtn = document.querySelector('#detail-tabs button.active');
+    const tabName = activeBtn ? activeBtn.innerText : '';
+    
+    // === Scene 模式特殊逻辑：优先切图 ===
+    if (tabName === '图片') {
+        const currentWord = state.currentWordList[state.currentWordIndex];
+        const fullDetail = DataManager.getWordDetail(currentWord.uid);
+        
+        let allImages = [];
+        if (fullDetail.displayImages) allImages = allImages.concat(fullDetail.displayImages);
+        if (fullDetail.images && fullDetail.images.card) {
+            const cards = fullDetail.images.card.map(u => u.startsWith('http') ? u : CONFIG.assetUrl + CONFIG.imgFolder + u);
+            allImages = allImages.concat(cards);
+        }
+        allImages = [...new Set(allImages)];
+
+        const newIdx = state.currentImgIdx + direction;
+        // 如果还有图，只切图，不切单词
+        if (newIdx >= 0 && newIdx < allImages.length) {
+            state.currentImgIdx = newIdx;
+            refreshCurrentTab();
+            return; 
+        }
+    }
+
+    // === 通用逻辑：切换到前一个/后一个模块 (切换单词) ===
+    const newWordIdx = state.currentWordIndex + direction;
+    
+    if (newWordIdx >= 0 && newWordIdx < state.currentWordList.length) {
+        state.currentWordIndex = newWordIdx;
+        state.currentImgIdx = 0; // 新单词重置图片索引
+        
+        // 渲染新单词详情 (这会更新 Header 和 播放读音)
+        const nextUid = state.currentWordList[newWordIdx].uid;
+        renderWordDetail(nextUid);
+        
+        // ⚠️ 关键：renderWordDetail 可能会默认切回第一个Tab，我们需要保持当前的 Tab 类型
+        const tabs = document.getElementById('detail-tabs');
+        Array.from(tabs.children).forEach(btn => {
+            btn.classList.remove('active');
+            if (btn.innerText === tabName) btn.classList.add('active'); // 保持 Tab 不变
+        });
+        
+        // 刷新内容 (保持 Zoom 状态)
+        refreshCurrentTab(); 
+        
+    } else {
+        alert("到底啦！没有更多单词了。");
+    }
+}
+
+// 4. 辅助函数：全屏时的 Text 内部滚动
+window.scrollToSectionInZoom = function(id) {
+    const t = document.getElementById(id);
+    const s = document.getElementById('reader-scroll'); // 对应 Text 里的滚动容器
+    if(t && s) {
+        s.scrollTo({ top: t.offsetTop - s.offsetTop - 20, behavior: 'smooth' });
     }
 }

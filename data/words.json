@@ -1,10 +1,9 @@
 {
-  
   "w001": {
     "word": "steady",
     "images": {
       "scene": ["infopic01/shade.webp"],
-      "card": ["wordpic01/ex1.png"]
+      "card": ["wordpic01/ex5.png"]
     },
     "richDetail": [
       "[TITLE]解释[/TITLE][DEF][EN]Not shaking or moving (used in the book when Griffith tells everyone to keep the dragon calm while putting on the saddle)[/EN][CN]平稳的；稳定的（书中指格里菲斯让大家给龙装马鞍时，让龙保持不摇晃）[/CN][POS]adj.[/POS][PH]/ˈstedɪ/[/PH][DU]\"Steady now,\" warned Griffith, the king's wizard.|(原文例句)“现在稳住，”国王的巫师格里菲斯警告道。[/DU][DU]Keep steady when you stand on the dragon's back.|站在龙背上时要保持平稳。[/DU][DU]The little bird stayed steady on the thin branch.|小鸟稳稳地停在细树枝上。[/DU][/DEF][IMG]infopic01/shade.webp|wordpic01/ex1.png[/IMG][DEF][EN]To make something stop shaking or moving[/EN][CN]使平稳；稳住[/CN][POS]v.[/POS][DU]Bo steadied the saddle before putting it on Shu.|波在给舒装马鞍前先稳住了它。[/DU][DU]She steadied the bowl with both hands.|她用双手稳住了碗。[/DU][DU]The hiker steadied himself against the rock.|徒步旅行者靠着石头稳住了身体。[/DU][/DEF]",
@@ -12,104 +11,71 @@
       "[TITLE]额外例句[/TITLE][EX]The dragon flew at a steady pace through the sky.[POS]adj.[/POS]|龙以平稳的速度在空中飞行。[/EX][EX]The water in the lake is steady on calm days.[POS]adj.[/POS]|无风的日子里，湖面很平稳。[/EX][EX]He steadied the box so it wouldn't fall off the table.[POS]v.[/POS]|他稳住了盒子，不让它从桌子上掉下来。[/EX][EX]The teacher steadied the student's hand to write neatly.[POS]v.[/POS]|老师稳住学生的手，让他写得工整。[/EX]",
       "[TITLE]常见错误[/TITLE][ERR]不要混淆 steady 和 stable！steady 侧重“动作、状态不摇晃”，stable 侧重“结构、局势稳定”，比如“稳定的工作”是 a stable job，不是 a steady job。[/ERR][ERR]作动词时，直接接宾语，不能说“steady on sth”，正确表达：steady the saddle（稳住马鞍）。[/ERR][ERR]作形容词时，修饰名词要放在前面，不能说“a hand steady”，正确表达：a steady hand（平稳的手）。[/ERR]"
     ]
+  },
   
- },
-
   "w002": {
-    "word": "practice",
-    "images": { "scene": ["infopic01/practice.webp","infopic01/practice.webp","infopic01/potion.webp"] ,
-      "card": [
-        "wordpic01/ex2.png"
-      ] },
+    "word": "saddle",
+    "images": {
+      "scene": ["infopic01/bring.webp"],
+      "card": ["wordpic01/ex6.png"]
+    },
     "richDetail": [
-      "[TITLE]解释[/TITLE][DEF][EN]To do something again and again to get better[/EN][CN]练习；操练[/CN][POS]v.[/POS][PH]/ˈpræktɪs/（美式）/ˈpræktɪs/（英式）[/PH][DU]We practice riding bikes.|我们练习骑自行车。[/DU][DU]She practices singing every day.|她每天练习唱歌。[/DU][/DEF][DEF][EN]Doing something again to learn it[/EN][CN]练习；训练[/CN][POS]n.[/POS][PH]/ˈpræktɪs/（美式）/ˈpræktɪs/（英式）[/PH][DU]Practice makes perfect.|熟能生巧。[/DU][DU]We have dragon practice.|我们有龙的训练。[/DU][/DEF]",
-      "[TITLE]常见用法[/TITLE][COLL][H]practice doing sth|练习做某事[/H][POS]v.[/POS][EX]He practices drawing dragons.|他练习画龙。[/EX][EX]They practice flying with dragons.|他们练习和龙一起飞行。[/EX][C]practice 练习[/C][C]doing sth 做某事[/C][/COLL][COLL][H]daily practice|日常练习[/H][POS]n.[/POS][EX]Daily practice helps you improve.|日常练习能帮你进步。[/EX][EX]My daily practice is reading.|我的日常练习是读书。[/EX][C]daily 日常的[/C][C]practice 练习[/C][/COLL]",
-      "[TITLE]额外例句[/TITLE][EX]The Dragon Masters practice training dragons.|(原文相关例句)龙法师们练习训练龙。[/EX][EX]She does piano practice every evening.|她每天晚上练钢琴。[/EX]",
-      "[TITLE]常见错误[/TITLE][ERR]不要混淆 practice 和 practise！美式英语中动词和名词都写 practice，英式英语中动词是 practise，名词是 practice。[/ERR][ERR]作动词时，后面不能接“to do”，要接“doing”，比如“practice swimming”（正确），不是“practice to swim”（错误）。[/ERR][ERR]作名词时，不可数，不能说“a practice”，要说“do practice”或“have practice”。[/ERR]"
+      "[TITLE]解释[/TITLE][DEF][EN]A seat for riding a dragon or horse (used in the book when the Dragon Masters put seats on their dragons for travel)[/EN][CN]马鞍；鞍具（书中指龙法师们给龙装的供骑行的座位）[/CN][POS]n.[/POS][PH]/ˈsædl/[/PH][DU]We have never tried putting a saddle on a dragon before.|(原文例句)我们以前从未试过给龙装马鞍。[/DU][DU]The cowboy put a saddle on his horse before riding.|牛仔骑马前给马装上了马鞍。[/DU][DU]The dragon's saddle is made of soft cloth.|龙的鞍具是用柔软的布料做的。[/DU][/DEF][IMG]infopic01/bring.webp|wordpic01/ex2.png[/IMG][DEF][EN]To put a saddle on an animal[/EN][CN]给……装马鞍；套上鞍具[/CN][POS]v.[/POS][DU]Bo saddled Shu carefully to avoid hurting her.|(原文相关例句)波小心地给舒装鞍具，以免弄伤她。[/DU][DU]They saddled the horses early in the morning for the trip.|他们一大早给马装鞍，准备出发。[/DU][DU]Can you help me saddle the pony?|你能帮我给小马装鞍具吗？[/DU][/DEF]",
+      "[TITLE]常见用法[/TITLE][COLL][H]put a saddle on|给……装马鞍[POS]v.[/POS][/H][EX]The Dragon Masters put a saddle on each dragon.|龙法师们给每条龙都装了马鞍。[/EX][EX]She put a saddle on her pet goat for fun.|她给宠物山羊装了鞍具，玩得很开心。[/EX][C]put a saddle on a dragon|给龙装马鞍[/C][C]put a saddle on a horse|给马装马鞍[/C][/COLL][COLL][H]ride with a saddle|骑着带鞍具的……[POS]v.[/POS][/H][EX]Riding with a saddle is safer than riding without.|骑着带鞍具的动物比没装鞍具更安全。[/EX][EX]The knight rode with a shiny saddle on his horse.|骑士骑着带有闪亮鞍具的马。[/EX][C]ride a dragon with a saddle|骑着带鞍具的龙[/C][C]ride a horse with a saddle|骑着带鞍具的马[/C][/COLL]",
+      "[TITLE]额外例句[/TITLE][EX]The saddle on Vulcan was red like his scales.[POS]n.[/POS]|伏尔坎背上的鞍具和他的鳞片一样红。[/EX][EX]We need to clean the saddle after riding in the mud.[POS]n.[/POS]|在泥地里骑完后，我们需要清理鞍具。[/EX][EX]He saddled the dragon quickly and climbed on its back.[POS]v.[/POS]|他快速给龙装完鞍具，爬上了龙背。[/EX][EX]She saddled her toy dragon and pretended to fly.[POS]v.[/POS]|她给玩具龙装了鞍具，假装飞行。[/EX]",
+      "[TITLE]常见错误[/TITLE][ERR]作名词时，复数形式是 saddles，不能说“a saddle of dragon”，正确表达是 a dragon's saddle（龙的马鞍）。[/ERR][ERR]作动词时，直接接宾语，不能说“saddle on the dragon”，正确表达：saddle the dragon（给龙装鞍具）。[/ERR][ERR]不要混淆 saddle 和 seat！saddle 是“专门用于骑马/龙的鞍具”，seat 是泛指“座位”，比如“椅子上的座位”是 a seat on the chair。[/ERR]"
     ]
   },
-"w003": {
-"word": "glow",
-"images": {"scene": ["infopic01/glow.webp"],
-      "card": [
-        "wordpic01/ex3.png"
-      ]  },
-"richDetail": [
-"[TITLE] 解释 [/TITLE][DEF][EN] To shine softly and steadily [/EN][CN] 发光；发亮 [/CN][POS] v.[/POS][PH]/ɡləʊ/（英式）/ɡloʊ/（美式）[/PH][DU] Worm's eyes glowed bright green.| 沃姆的眼睛发出明亮的绿光。[/DU][DU] The candle glows in the dark.| 蜡烛在黑暗中发光。[/DU][/DEF][DEF][EN] A soft steady light [/EN][CN] 微光；光泽 [/CN][POS] n.[/POS][PH]/ɡləʊ/（英式）/ɡloʊ/（美式）[/PH][DU] The glow of the Dragon Stone is green.| 龙石的微光是绿色的。[/DU][DU] We saw the glow from the cave.| 我们看到了洞穴里的亮光。[/DU][/DEF]",
-"[TITLE] 常见用法 [/TITLE][COLL][H] glow brightly | 明亮地发光 [/H][POS] v.[/POS][EX] The sun dragon glows brightly in the sky.| 太阳龙在天空中明亮地发光。[/EX][EX] The magic stone glows brightly at night.| 魔法石在晚上明亮地发光。[/EX][C] glow 发光 [/C][C] brightly 明亮地 [/C][/COLL][COLL][H] a soft glow | 柔和的微光 [/H][POS] n.[/POS][EX] There's a soft glow from the potion.| 药剂发出柔和的微光。[/EX][EX] The moon gives a soft glow.| 月亮发出柔和的微光。[/EX][C] soft 柔和的 [/C][C] glow 微光 [/C][/COLL]",
-"[TITLE] 额外例句 [/TITLE][POS] v.[/POS][EX] Worm's eyes glowed bright green.|(原文例句) 沃姆的眼睛发出明亮的绿光。[/EX][EX] The stars glow in the night sky.| 星星在夜空中发光。[/EX]",
-"[TITLE] 常见错误 [/TITLE][ERR] 不要混淆 glow 和 shine！glow 是 “柔和、持续地发光”，shine 是 “强烈、耀眼地照耀”。[/ERR][ERR] 作动词时，不能说 “glow light”，直接说 “glow” 即可，比如 “The lamp glows”（正确）。[/ERR][ERR] 作名词时，不可数，不能说 “a glow of the lamp”，要说 “the glow of the lamp”。[/ERR]"
-]
-},
-"w004": {
-"word": "cave",
-"images": { "scene": ["infopic01/cave.webp"],
-      "card": [
-        "wordpic01/ex4.png"
-      ]  },
-"richDetail": [
-"[TITLE] 解释 [/TITLE][DEF][EN] A big hole in the side of a hill or under the ground [/EN][CN] 洞穴；山洞 [/CN][POS] n.[/POS][PH]/keɪv/[/PH][DU] Each dragon has a small cave.| 每条龙都有一个小洞穴。[/DU][DU] We explored the dark cave.| 我们探索了黑暗的山洞。[/DU][/DEF][DEF][EN] To fall in suddenly [/EN][CN] 塌陷；倒塌 [/CN][POS] v.[/POS][PH]/keɪv/[/PH][DU] The tunnel caved in after the dragon hit it.| 龙撞到隧道后，隧道塌陷了。[/DU][DU] The old mine caved in slowly.| 旧矿井慢慢塌陷了。[/DU][/DEF]",
-"[TITLE] 常见用法 [/TITLE][COLL][H] dragon cave | 龙穴 [/H][POS] n.[/POS][EX] The dragon returned to its cave.| 龙回到了它的洞穴。[/EX][EX] We visited the dragon cave carefully.| 我们小心翼翼地参观了龙穴。[/EX][C] dragon 龙 [/C][C] cave 洞穴 [/C][/COLL][COLL][H] cave in | 塌陷；倒塌 [/H][POS] v.[/POS][EX] The tunnel caved in during the storm.| 隧道在暴风雨中塌陷了。[/EX][EX] The roof of the old house caved in.| 老房子的屋顶倒塌了。[/EX][C] cave 塌陷 [/C][C] in 进去 [/C][/COLL]",
-"[TITLE] 额外例句 [/TITLE][EX] Each dragon had a small cave.|(原文例句) 每条龙都有一个小洞穴。[/EX][EX] Bears sleep in caves in winter.| 熊冬天在山洞里睡觉。[/EX]",
-"[TITLE] 常见错误 [/TITLE][ERR] 不要混淆 cave（名词，洞穴）和 cave in（动词短语，塌陷）！比如 “隧道塌陷了” 是 “The tunnel caved in”（正确），不是 “The tunnel cave”。[/ERR][ERR] 作名词时，复数是 caves，不能说 “cavees”（错误）。[/ERR][ERR] 作动词 “塌陷” 时，必须加 in，不能单独说 “cave”，比如 “The wall caved in”（正确），不是 “The wall caved”。[/ERR]"
-]
-},
-
-  "w009": {
-    "word": "glow",
-    "images": { "scene": ["infopic01/glow.webp"] ,
-      "card": [
-        "wordpic01/pb4.png"
-      ] },
+  "w003": {
+    "word": "buckle",
+    "images": {
+      "scene": ["infopic01/buckle.webp"],
+      "card": ["wordpic01/ex7.png"]
+    },
     "richDetail": [
-      "[TITLE]解释[/TITLE][DEF][EN]To shine softly and steadily (used in the book when Worm's eyes or the Dragon Stone gives out soft, steady light)[/EN][CN]发光；发亮（书中指沃姆的眼睛或龙石发出柔和稳定的光）[/CN][POS]v.[/POS][PH]/ɡləʊ/（英式）/ɡloʊ/（美式）[/PH][DU]Worm's eyes glowed bright green.|(原文例句)沃姆的眼睛发出明亮的绿光。[/DU][DU]The Dragon Stone around Drake's neck glowed brightly when Worm called him.|德雷克脖子上的龙石在沃姆呼唤他时明亮地发光。[/DU][DU]The fireflies glow in the garden at night.|萤火虫晚上在花园里发光。[/DU][/DEF][DEF][EN]A soft, steady light[/EN][CN]微光；光泽[/CN][POS]n.[/POS][DU]The glow of the potion lit up the dark cave.|药剂的微光照亮了黑暗的洞穴。[/DU][DU]We saw the warm glow from the cottage window.|我们看到小屋窗户透出温暖的微光。[/DU][DU]The moon casts a silvery glow on the lake.|月亮在湖面上洒下银色的光泽。[/DU][/DEF]",
-      "[TITLE]常见用法[/TITLE][COLL][H]glow brightly|明亮地发光[/H][POS]v.[/POS][EX]The sun dragon glows brightly in the sky.|太阳龙在天空中明亮地发光。[/EX][EX]The magic crystal glows brightly at midnight.|魔法水晶在午夜明亮地发光。[/EX][C]glow brightly in the dark|在黑暗中明亮发光[/C][C]glow brightly with joy|因喜悦而明亮发光[/C][/COLL][COLL][H]a soft glow|柔和的微光[/H][POS]n.[/POS][EX]There's a soft glow from the candle on the table.|桌子上的蜡烛发出柔和的微光。[/EX][EX]The fireplace gives off a warm glow.|壁炉散发出温暖的微光。[/EX][C]a warm glow of happiness|幸福的温暖微光[/C][C]a silvery glow of the moon|月亮的银色微光[/C][/COLL]",
-      "[TITLE]额外例句[/TITLE][EX]The stars glow gently in the night sky.[POS]v.[/POS]|星星在夜空中温柔地发光。[/EX][EX]Her face glows with excitement when she sees the dragons.[POS]v.[/POS]|看到龙时，她的脸上因兴奋而发光。[/EX][EX]The glow of the sunset paints the sky pink.[POS]n.[/POS]|夕阳的微光把天空染成了粉色。[/EX][EX]The magic stone emits a faint glow that guides the way.[POS]n.[/POS]|魔法石发出微弱的微光指引方向。[/EX]",
-      "[TITLE]常见错误[/TITLE][ERR]不要混淆 glow 和 shine！glow 是“柔和、持续地发光”，比如萤火虫发光；shine 是“强烈、耀眼地照耀”，比如太阳照耀。[/ERR][ERR]作动词时，不能说“glow light”，直接用“glow”即可，正确表达：The lamp glows（台灯发光）。[/ERR][ERR]作名词时是不可数名词，不能说“a glow of the lamp”，要加定冠词“the”，正确表达：the glow of the lamp（台灯的微光）。[/ERR]"
+      "[TITLE]解释[/TITLE][DEF][EN]A fastener for a strap or belt (used in the book when Bo uses the fastener to fix the saddle on Shu)[/EN][CN]带扣；搭扣（书中指波用来固定龙鞍具的扣件）[/CN][POS]n.[/POS][PH]/ˈbʌkl/[/PH][DU]Bo, bring the buckle under Shu's belly.|(原文例句)波，把带扣绕到舒的肚子底下。[/DU][DU]The buckle on my backpack keeps the strap tight.|我背包上的带扣让带子保持紧绷。[/DU][DU]The cowboy's belt has a silver buckle.|牛仔的腰带上有一个银色的带扣。[/DU][/DEF][IMG]infopic01/buckle.webp|wordpic01/buckle.webp[/IMG][DEF][EN]To fasten with a buckle[/EN][CN]扣上；扣紧[/CN][POS]v.[/POS][DU]Bo buckled the saddle strap tightly under Shu's belly.|(原文相关例句)波把鞍具的带子在舒的肚子底下扣紧。[/DU][DU]She buckled her shoes before running outside.|她跑出去前扣好了鞋子的搭扣。[/DU][DU]Can you help me buckle this belt?|你能帮我扣上这条腰带吗？[/DU][/DEF]",
+      "[TITLE]常见用法[/TITLE][COLL][H]fasten the buckle|扣上带扣[POS]v.[/POS][/H][EX]Fasten the buckle before riding the dragon.|骑龙前把带扣扣紧。[/EX][EX]He fastened the buckle on his suitcase tightly.|他把行李箱上的带扣紧紧扣上。[/EX][C]fasten a belt buckle|扣上腰带扣[/C][C]fasten a saddle buckle|扣上鞍具带扣[/C][/COLL][COLL][H]buckle up|系好安全带（口语常用）[POS]v.[/POS][/H][EX]Buckle up before the car starts.|车启动前系好安全带。[/EX][EX]The teacher told the kids to buckle up on the school bus.|老师让孩子们在校车上系好安全带。[/EX][C]buckle up for safety|为安全系好安全带[/C][C]buckle up quickly|快速系好安全带[/C][/COLL]",
+      "[TITLE]额外例句[/TITLE][EX]The buckle on the saddle is made of strong metal.[POS]n.[/POS]|鞍具上的带扣是用坚固的金属做的。[/EX][EX]I lost the buckle of my favorite bag.|我弄丢了我最喜欢的包的带扣。[/EX][EX]She buckled the strap so the bag wouldn't fall off.|她扣紧了带子，这样包就不会掉下来了。[/EX][EX]He buckled his helmet before riding the bike.|他骑自行车前扣紧了头盔。[/EX]",
+      "[TITLE]常见错误[/TITLE][ERR]不要混淆 buckle 和 button！buckle 是“带扣”，用于固定带子；button 是“纽扣”，用于固定衣服，比如“衬衫纽扣”是 shirt button。[/ERR][ERR]作动词时，“扣上带扣”是 buckle the buckle（正确），不要重复表达为“buckle the fastener”（错误）。[/ERR][ERR]作名词时，复数形式是 buckles，不能说“bucklees”（错误拼写）。[/ERR]"
     ]
   },
-  "w010": {
-    "word": "cave",
-    "images": { "scene": ["infopic01/cave.webp"] },
+  "w004": {
+    "word": "tighten",
+    "images": {
+      "scene": ["infopic01/tighten.webp"],
+      "card": ["wordpic01/ex8.png"]
+    },
     "richDetail": [
-      "[TITLE]解释[/TITLE][DEF][EN]A small underground room for dragons (used in the book when each dragon has its own underground space in the Dragon Room)[/EN][CN]龙穴；洞穴（书中指龙屋里每条龙专属的地下空间）[/CN][POS]n.[/POS][PH]/keɪv/[/PH][DU]Each dragon had a small cave.|(原文例句)每条龙都有一个小洞穴。[/DU][DU]Kepri rested in her cave to recover from illness.|凯普丽在她的洞穴里休息，以便从病痛中恢复。[/DU][DU]The little bear hibernates in a warm cave in winter.|小熊冬天在温暖的洞穴里冬眠。[/DU][/DEF][DEF][EN]To fall in suddenly (used in the book when the tunnel collapsed after Vulcan hit the walls)[/EN][CN]塌陷；倒塌（书中指沃肯撞到隧道墙壁后，隧道突然坍塌）[/CN][POS]v.[/POS][DU]The tunnel caved in after Vulcan banged into the walls.|(原文例句)沃肯撞到墙壁后，隧道塌陷了。[/DU][DU]The old mine caved in because of the heavy rain.|旧矿井因为大雨而塌陷了。[/DU][DU]The roof of the abandoned house caved in slowly.|废弃房屋的屋顶慢慢倒塌了。[/DU][/DEF]",
-      "[TITLE]常见用法[/TITLE][COLL][H]dragon cave|龙穴[/H][POS]n.[/POS][EX]The dragon returned to its cave with food.|龙带着食物回到了它的洞穴。[/EX][EX]We visited the dragon cave quietly to not disturb the dragon.|我们安静地参观龙穴，以免打扰龙。[/EX][C]rest in the dragon cave|在龙穴休息[/C][C]hide in the dragon cave|躲在龙穴里[/C][/COLL][COLL][H]cave in|塌陷；倒塌[/H][POS]v.[/POS][EX]The road caved in after the earthquake.|地震后道路塌陷了。[/EX][EX]The sand dune caved in when the wind blew hard.|大风刮起时，沙丘塌陷了。[/EX][C]tunnel cave in|隧道塌陷[/C][C]mine cave in|矿井倒塌[/C][/COLL]",
-      "[TITLE]额外例句[/TITLE][EX]The explorers found ancient paintings in the deep cave.[POS]n.[/POS]|探险家们在深洞里发现了古老的壁画。[/EX][EX]The rabbit dug a small cave under the tree to hide.[POS]n.[/POS]|兔子在树下挖了一个小洞穴来躲藏。[/EX][EX]The wall caved in when the truck crashed into it.[POS]v.[/POS]|卡车撞到墙上时，墙壁倒塌了。[/EX][EX]The soil caved in and trapped the little squirrel.[POS]v.[/POS]|泥土塌陷，困住了小松鼠。[/EX]",
-      "[TITLE]常见错误[/TITLE][ERR]不要混淆 cave 的名词和动词用法！作名词时表示“洞穴”，常用搭配“in the cave”；作动词时表示“塌陷”，必须和 in 连用，构成短语“cave in”。[/ERR][ERR]作名词时，复数形式是 caves，不能写成“cavees”（错误拼写）。[/ERR][ERR]作动词“塌陷”时，不能单独使用“cave”，必须加 in，正确表达：The tunnel caved in（隧道塌陷了），错误表达：The tunnel caved（隧道塌陷了）。[/ERR]"
+      "[TITLE]解释[/TITLE][DEF][EN]To make something more tight (used in the book when Bo makes the saddle buckle more firm on Shu)[/EN][CN]拉紧；拧紧；使变紧（书中指波把舒身上的鞍具带扣拉得更紧）[/CN][POS]v.[/POS][PH]/ˈtaɪtn/[/PH][DU]Now tighten the buckle. Good!|(原文例句)现在把带扣拉紧。很好！[/DU][DU]Tighten the rope so the box won't move.|拉紧绳子，让箱子不会动。[/DU][DU]Can you tighten this screw with a screwdriver?|你能用螺丝刀把这个螺丝拧紧吗？[/DU][/DEF][IMG]infopic01/tighten.webp|wordpic01/tighten.webp[/IMG][DEF][EN]To become more tight[/EN][CN]变紧；收紧[/CN][POS]v.[/POS][DU]The belt tightens up when you pull it hard.|你用力一拉，腰带就会收紧。[/DU][DU]The cold air makes the rubber band tighten up.|冷空气让橡皮筋变紧了。[/DU][DU]The rope tightens as the boat moves away.|船开走时，绳子会变紧。[/DU][/DEF]",
+      "[TITLE]常见用法[/TITLE][COLL][H]tighten a buckle|拉紧带扣[POS]v.[/POS][/H][EX]Bo tightened the buckle to keep the saddle in place.|波拉紧了带扣，让鞍具固定住。[/EX][EX]She tightened the buckle on her shoes before walking.|她走路前拉紧了鞋子的搭扣。[/EX][C]tighten a saddle buckle|拉紧鞍具带扣[/C][C]tighten a belt buckle|拉紧腰带扣[/C][/COLL][COLL][H]tighten up|变紧；收紧[POS]v.[/POS][/H][EX]The muscles in his legs tightened up after running.|跑步后他腿上的肌肉收紧了。[/EX][EX]The rope tightens up when the wind blows.|刮风时，绳子会变紧。[/EX][C]tighten up the rules|收紧规则[/C][C]tighten up the budget|收紧预算[/C][/COLL]",
+      "[TITLE]额外例句[/TITLE][EX]He tightened the lid of the jar so the food wouldn't go bad.[POS]v.[/POS]|他拧紧了瓶盖，让食物不会变质。[/EX][EX]The coach told the players to tighten their shoelaces.[POS]v.[/POS]|教练让球员们系紧鞋带。[/EX][EX]The dress tightens up when you sit down.[POS]v.[/POS]|你坐下时，裙子会变紧。[/EX][EX]The rope tightens up as the weight pulls it down.[POS]v.[/POS]|重物往下拉时，绳子会变紧。[/EX]",
+      "[TITLE]常见错误[/TITLE][ERR]不要混淆 tighten 和 fasten！tighten 侧重“使已有的变得更紧”，fasten 侧重“将分开的固定在一起”，比如“扣上纽扣”是 fasten the button，“拉紧腰带”是 tighten the belt。[/ERR][ERR]作及物动词时直接接宾语，不要说“tighten up the rope”（虽可，但 tighten the rope 更简洁）。[/ERR][ERR]不要写成“tightenning”（错误拼写），正确现在分词形式是 tightening。[/ERR]"
     ]
   },
-  "w011": {
-    "word": "potion",
-    "images": { "scene": ["infopic01/potion.webp"] },
+  "w005": {
+    "word": "crafter",
+    "images": {
+      "scene": ["infopic01/crafter.webp"],
+      "card": ["wordpic01/crafter.webp"]
+    },
     "richDetail": [
-      "[TITLE]解释[/TITLE][DEF][EN]A magic liquid that can heal or do special things (used in the book when Griffith and the Dragon Masters make a healing liquid for sick Kepri)[/EN][CN]魔法药剂；药水（书中指格里菲斯和龙法师们为生病的凯普丽制作的治愈液体）[/CN][POS]n.[/POS][PH]/ˈpəʊʃn/（英式）/ˈpoʊʃn/（美式）[/PH][DU]They made a healing potion for Kepri.|(原文例句)他们给凯普丽做了一瓶治愈药剂。[/DU][DU]Griffith handed the jar of potion to Ana to feed Kepri.|格里菲斯把装有药剂的罐子递给安娜，让她喂给凯普丽。[/DU][DU]The wizard mixed herbs to make a magic potion.|巫师混合草药制作魔法药剂。[/DU][/DEF][DEF][EN]A liquid with special effects (often in stories)[/EN][CN]（故事中）有特殊功效的液体[/CN][POS]n.[/POS][DU]The fairy gave the princess a potion to sleep peacefully.|仙女给了公主一瓶药水，让她安稳入睡。[/DU][DU]The knight drank a strength potion to fight the monster.|骑士喝了一瓶力量药水来对抗怪物。[/DU][DU]The witch's potion can turn stones into gold.|女巫的药水能把石头变成金子。[/DU][/DEF]",
-      "[TITLE]常见用法[/TITLE][COLL][H]healing potion|治愈药剂[/H][POS]n.[/POS][EX]The healing potion cured the sick dragon quickly.|治愈药剂很快治好了生病的龙。[/EX][EX]We need to collect rare flowers to make a healing potion.|我们需要收集稀有花朵来制作治愈药剂。[/EX][C]make a healing potion|制作治愈药剂[/C][C]drink a healing potion|喝治愈药剂[/C][/COLL][COLL][H]magic potion|魔法药剂[/H][POS]n.[/POS][EX]The wizard's magic potion can grant wishes.|巫师的魔法药剂能实现愿望。[/EX][EX]The children dreamed of finding a bottle of magic potion.|孩子们梦想找到一瓶魔法药剂。[/EX][C]mix a magic potion|调制魔法药剂[/C][C]carry a magic potion|携带魔法药剂[/C][/COLL]",
-      "[TITLE]额外例句[/TITLE][EX]The blue potion glows softly and smells like flowers.[POS]n.[/POS]|这瓶蓝色药剂柔和地发光，闻起来像花朵。[/EX][EX]Ana poured the potion into Kepri's mouth gently.[POS]n.[/POS]|安娜轻轻地把药剂倒进凯普丽的嘴里。[/EX][EX]The magic potion made the little mouse grow big.[POS]n.[/POS]|魔法药剂让小老鼠变大了。[/EX][EX]They stored the potion in a glass jar to keep it fresh.[POS]n.[/POS]|他们把药剂放在玻璃罐里保鲜。[/EX]",
-      "[TITLE]常见错误[/TITLE][ERR]potion 是可数名词，单数形式前面要加 a 或 the，正确表达：a potion（一瓶药剂），the potion（那瓶药剂），错误表达：potion（药剂）。[/ERR][ERR]不要混淆 potion 和 medicine！potion 是“魔法类、故事中的药剂”，medicine 是“现实中的药物”，比如“感冒吃药”是 take medicine，“魔法治愈药剂”是 healing potion。[/ERR][ERR]常用搭配“make a potion”（制作药剂），不能说“do a potion”（错误表达）。[/ERR]"
+      "[TITLE]解释[/TITLE][DEF][EN]A person who makes things by hand (used in the book when the castle workers make saddles for dragons)[/EN][CN]工匠；手艺人（书中指城堡里为龙制作鞍具的手工制作者）[/CN][POS]n.[/POS][PH]/ˈkrɑːftə(r)/（英式）/ˈkræftər/（美式）[/PH][DU]King Roland's crafters are making a saddle for each dragon.|(原文例句)罗兰德国王的工匠们正在给每条龙做马鞍。[/DU][DU]The crafter made a beautiful toy dragon with wood.|工匠用木头做了一个漂亮的玩具龙。[/DU][DU]My grandma is a crafter who knits warm sweaters.|我奶奶是个手艺人，会织温暖的毛衣。[/DU][/DEF][IMG]infopic01/crafter.webp|wordpic01/crafter.webp[/IMG][DEF][EN]A skilled worker who creates things with their hands[/EN][CN]技艺精湛的手工创作者[/CN][POS]n.[/POS][DU]The glass crafter made a shiny vase with colorful patterns.|玻璃工匠做了一个带有彩色花纹的闪亮花瓶。[/DU][DU]The leather crafter made a strong belt for the knight.|皮革工匠给骑士做了一条坚固的腰带。[/DU][DU]The crafter spent three days making the paper dragon.|工匠花了三天时间做这只纸龙。[/DU][/DEF]",
+      "[TITLE]常见用法[/TITLE][COLL][H]dragon saddle crafter|龙鞍具工匠[POS]n.[/POS][/H][EX]The dragon saddle crafter works hard to make safe saddles.|龙鞍具工匠努力制作安全的鞍具。[/EX][EX]We visited the dragon saddle crafter's workshop.|我们参观了龙鞍具工匠的工坊。[/EX][C]a skilled dragon saddle crafter|熟练的龙鞍具工匠[/C][C]a hardworking dragon saddle crafter|勤劳的龙鞍具工匠[/C][/COLL][COLL][H]skilled crafter|熟练的手艺人[POS]n.[/POS][/H][EX]She is a skilled crafter who makes cloth dolls.|她是个熟练的手艺人，会做布娃娃。[/EX][EX]The skilled crafter can make many kinds of toys.|这个熟练的手艺人能做很多种玩具。[/EX][C]a skilled wood crafter|熟练的木雕工匠[/C][C]a skilled metal crafter|熟练的金属工匠[/C][/COLL]",
+      "[TITLE]额外例句[/TITLE][EX]The crafter in the castle is good at making metal tools.[POS]n.[/POS]|城堡里的工匠擅长做金属工具。[/EX][EX]The crafter used colorful threads to make the tapestry.[POS]n.[/POS]|工匠用彩色的线做了挂毯。[/EX][EX]We bought a handmade necklace from the crafter.|我们从手艺人那里买了一条手工项链。[/EX][EX]The crafter taught the kids how to make paper flowers.[POS]n.[/POS]|手艺人教孩子们如何做纸花。[/EX]",
+      "[TITLE]常见错误[/TITLE][ERR]crafter 是可数名词，复数形式是 crafters，不要写成“craftman”（错误拼写），正确复数是 craftsmen（工匠们）。[/ERR][ERR]不要混淆 crafter 和 artist！crafter 侧重“手工制作”，artist 侧重“艺术创作”，比如“画家”是 artist，“陶艺工匠”是 crafter。[/ERR][ERR]不要说“a crafter of wood”，正确表达是 a wood crafter（木雕工匠）。[/ERR]"
     ]
   },
-  "w012": {
-    "word": "robber",
-    "images": { "scene": ["infopic01/robber.webp"] },
+  "w006": {
+    "word": "slim",
+    "images": {
+      "scene": ["infopic01/slim.webp"],
+      "card": ["wordpic01/slim.webp"]
+    },
     "richDetail": [
-      "[TITLE]解释[/TITLE][DEF][EN]A person who steals things from others (used in the book when people come to the pyramid to steal treasures or capture dragons)[/EN][CN]强盗；盗贼（书中指来金字塔偷宝藏或捕捉龙的人）[/CN][POS]n.[/POS][PH]/ˈrɒbə(r)/（英式）/ˈrɑːbər/（美式）[/PH][DU]Robbers often come to the pyramids to steal things.|(原文例句)强盗们经常来金字塔偷东西。[/DU][DU]The robbers tried to capture the dragons for money.|强盗们试图捕捉龙来赚钱。[/DU][DU]The little girl hid from the robber in the closet.|小女孩躲在壁橱里躲避强盗。[/DU][/DEF][DEF][EN]A person who takes something illegally from a place or person[/EN][CN]抢劫犯；窃贼[/CN][POS]n.[/POS][DU]The robber broke into the house and stole the jewels.|窃贼闯入房子偷走了珠宝。[/DU][DU]The police caught the robber who stole the bank's money.|警察抓住了偷银行钱的抢劫犯。[/DU][DU]The traveler was robbed by a group of robbers on the road.|旅行者在路上被一群抢劫犯抢劫了。[/DU][/DEF]",
-      "[TITLE]常见用法[/TITLE][COLL][H]steal from|偷……的东西[/H][POS]v.[/POS][EX]Robbers steal gold and treasures from the pyramids.|强盗们从金字塔偷金子和宝藏。[/EX][EX]The robber stole money from the old man.|窃贼偷了老人的钱。[/EX][C]steal treasures from pyramids|从金字塔偷宝藏[/C][C]steal money from banks|从银行偷钱[/C][/COLL][COLL][H]capture|捕捉；捕获[/H][POS]v.[/POS][EX]The robbers tried to capture the dragons to sell them.|强盗们试图捕捉龙来卖掉它们。[/EX][EX]The hunter captured a rabbit in the forest.|猎人在森林里捕获了一只兔子。[/EX][C]capture dragons|捕捉龙[/C][C]capture thieves|捕获小偷[/C][/COLL]",
-      "[TITLE]额外例句[/TITLE][EX]The robbers ran away when they saw the dragons roar.[POS]n.[/POS]|强盗们看到龙咆哮就逃跑了。[/EX][EX]The store owner called the police when a robber tried to steal food.[POS]n.[/POS]|当窃贼试图偷食物时，店主报警了。[/EX][EX]The robber wore a mask to hide his face.[POS]n.[/POS]|抢劫犯戴着面具来隐藏他的脸。[/EX][EX]The villagers worked together to stop the robbers from stealing their crops.[POS]n.[/POS]|村民们一起阻止强盗偷他们的庄稼。[/EX]",
-      "[TITLE]常见错误[/TITLE][ERR]robber 的复数形式是 robbers，不是 robberes（错误拼写）。[/ERR][ERR]不要混淆 robber 和 thief！robber 指“使用暴力或威胁抢劫的人”，thief 指“偷偷摸摸偷窃的人”，比如“银行抢劫犯”是 bank robber，“小偷小摸的窃贼”是 thief。[/ERR][ERR]常用搭配“rob sb of sth”（抢劫某人某物），不能说“rob sb's sth”，正确表达：The robber robbed him of his phone（抢劫犯抢走了他的手机），错误表达：The robber robbed his phone（抢劫犯抢走了他的手机）。[/ERR]"
-    ]
-  },
-  "w013": {
-    "word": "pyramid",
-    "images": { "scene": ["infopic01/pyramid.webp"] },
-    "richDetail": [
-      "[TITLE]解释[/TITLE][DEF][EN]A tall building with four triangle sides and a pointy top (used in the book when Ana and the Dragon Masters go to her homeland and see the ancient building)[/EN][CN]金字塔（书中指安娜和龙法师们去她的故乡时看到的古老建筑，有四个三角形侧面和一个尖顶）[/CN][POS]n.[/POS][PH]/ˈpɪrəmɪd/[/PH][DU]Ana cried out when she saw the pyramid in her homeland.|(原文例句)安娜在故乡看到金字塔时大喊起来。[/DU][DU]The pyramid's pointy top is capped with shining gold.|金字塔的尖顶覆盖着闪闪发光的金子。[/DU][DU]The ancient Egyptians built many pyramids as tombs.|古埃及人建造了许多金字塔作为陵墓。[/DU][/DEF][DEF][EN]A shape with a square base and four triangle sides meeting at a point[/EN][CN]棱锥体（一种底面为正方形、四个侧面为三角形且交于一点的形状）[/CN][POS]n.[/POS][DU]The child made a pyramid with toy blocks.|孩子用积木搭了一个棱锥体。[/DU][DU]The math teacher showed the class a model of a pyramid.|数学老师给全班看了一个棱锥体模型。[/DU][DU]The cake is decorated in the shape of a small pyramid.|蛋糕被装饰成小棱锥体的形状。[/DU][/DEF]",
-      "[TITLE]常见用法[/TITLE][COLL][H]ancient pyramid|古金字塔[/H][POS]n.[/POS][EX]Tourists from all over the world visit the ancient pyramids in Egypt.|来自世界各地的游客参观埃及的古金字塔。[/EX][EX]The ancient pyramid is a famous historical site.|古金字塔是著名的历史遗迹。[/EX][C]visit ancient pyramids|参观古金字塔[/C][C]explore ancient pyramids|探索古金字塔[/C][/COLL][COLL][H]build a pyramid|建造金字塔/棱锥体[/H][POS]v.[/POS][EX]The workers spent many years building the huge pyramid.|工人们花了很多年建造这座巨大的金字塔。[/EX][EX]We can build a small pyramid with sand on the beach.|我们可以在沙滩上用沙子堆一个小棱锥体。[/EX][C]build a sand pyramid|堆沙棱锥体[/C][C]build a block pyramid|搭积木棱锥体[/C][/COLL]",
-      "[TITLE]额外例句[/TITLE][EX]The pyramid stands tall in the middle of the desert.[POS]n.[/POS]|金字塔矗立在沙漠中央。[/EX][EX]Ana told her friends stories about the pyramids near her hometown.[POS]n.[/POS]|安娜给朋友们讲了她家乡附近金字塔的故事。[/EX][EX]The student drew a pyramid in his math notebook.[POS]n.[/POS]|学生在他的数学笔记本上画了一个棱锥体。[/EX][EX]The museum has a model of a pyramid from ancient times.[POS]n.[/POS]|博物馆里有一个古代金字塔的模型。[/EX]",
-      "[TITLE]常见错误[/TITLE][ERR]pyramid 是可数名词，复数形式是 pyramids，不是 pyramidss（错误拼写）。[/ERR][ERR]不要混淆 pyramid 和 mountain！pyramid 是“人工建造的金字塔或几何棱锥体”，mountain 是“自然形成的山”，比如“埃及金字塔”是 Egyptian pyramids，“高山”是 high mountain。[/ERR][ERR]表示“在金字塔里”用“in the pyramid”，表示“在金字塔顶上”用“on the top of the pyramid”，不能说“on the pyramid”（在金字塔上）。[/ERR]"
+      "[TITLE]解释[/TITLE][DEF][EN]Having a thin and graceful body (used in the book when describing Kepri the Sun Dragon's body shape)[/EN][CN]纤细的；苗条的；修长的（书中用于描述太阳龙凯普丽的身材）[/CN][POS]adj.[/POS][PH]/slɪm/[/PH][DU]Kepri was a Sun Dragon with a slim body and white scales.|(原文例句)凯普丽是一条身材纤细、长着白色鳞片的太阳龙。[/DU][DU]The ballerina has a slim figure to dance easily.|芭蕾舞演员身材纤细，方便跳舞。[/DU][DU]The deer has slim legs that help it run fast.|小鹿有纤细的腿，能跑得很快。[/DU][/DEF][IMG]infopic01/slim.webp|wordpic01/slim.webp[/IMG][DEF][EN]Thin in a pleasant and healthy way[/EN][CN]苗条的；修长的（褒义，指健康好看的瘦）[/CN][POS]adj.[/POS][DU]The swan has a slim neck and white feathers.|天鹅有修长的脖子和白色的羽毛。[/DU][DU]My sister has a slim face with big eyes.|我姐姐有一张修长的脸，眼睛很大。[/DU][DU]The tree has slim branches that sway in the wind.|这棵树有纤细的树枝，在风中摇晃。[/DU][/DEF]",
+      "[TITLE]常见用法[/TITLE][COLL][H]slim body|纤细的身体[POS]adj.[/POS][/H][EX]The Sun Dragon has a slim body to fly quickly.|太阳龙有纤细的身体，能飞得很快。[/EX][EX]The fairy has a slim body that can fit through small gaps.|仙女有纤细的身体，能穿过小缝隙。[/EX][C]a slim body of a bird|小鸟纤细的身体[/C][C]a slim body of a dragon|龙纤细的身体[/C][/COLL][COLL][H]slim figure|苗条的身材[POS]adj.[/POS][/H][EX]The model has a slim figure that looks good in clothes.|模特身材苗条，穿衣服很好看。[/EX][EX]She keeps a slim figure by exercising every day.|她每天锻炼，保持苗条的身材。[/EX][C]a slim figure of a dancer|舞者苗条的身材[/C][C]a slim figure of a gymnast|体操运动员苗条的身材[/C][/COLL]",
+      "[TITLE]额外例句[/TITLE][EX]The slim snake moved quickly through the grass.[POS]adj.[/POS]|纤细的蛇快速地穿过草丛。[/EX][EX]The slim tree grows tall and straight in the garden.[POS]adj.[/POS]|这棵纤细的树在花园里长得又高又直。[/EX][EX]Her slim fingers can play the piano skillfully.[POS]adj.[/POS]|她纤细的手指能熟练地弹钢琴。[/EX][EX]The slim river flows gently through the village.[POS]adj.[/POS]|纤细的小河温柔地流过村庄。[/EX]",
+      "[TITLE]常见错误[/TITLE][ERR]不要混淆 slim 和 thin！slim 侧重“纤细且优美”，是褒义；thin 可指“瘦的”，可能带“单薄”意味，比如“他太瘦了，看起来不健康”是 He is too thin and looks unhealthy，“她身材苗条，很优雅”是 She has a slim figure and is very elegant。[/ERR][ERR]不要说“slimly body”（错误），正确表达：slim body（纤细的身体），副词形式是 slimly，修饰动词，比如“slimly built”（身材纤细的）。[/ERR][ERR]slim 的比较级是 slimmer，最高级是 slimmest，不要写成“more slim”（错误）。[/ERR]"
     ]
   }
-
 }
-
-
-

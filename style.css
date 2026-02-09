@@ -1223,12 +1223,12 @@ input:checked + .slider:before { transform: translateX(16px); }
     background-repeat: no-repeat;
     border: 3px solid #fff; 
     box-sizing: border-box; 
-    padding: 10px;
+    padding: 0;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+  /*  justify-content: center; */
     align-items: center;
-    gap: 5px;
+    /*gap: 5px;*/
 }
 /* 3. 新增：主题选择器样式 (用于弹窗和开始界面) */
 .theme-selector {
@@ -1259,17 +1259,24 @@ input:checked + .slider:before { transform: translateX(16px); }
 
 /* 2. 图片容器 (用于控制1:1比例) */
 .front-img-container {
-    width: 90%;          /* 宽度占卡片的 90% */
-    aspect-ratio: 1 / 1; /* 【核心】强制 1:1 正方形 */
+/* 👇 关键：宽度 100% 才能撑满左右两边 */
+    width: 100%;          
+    
+    /* 保持 1:1 正方形 */
+    aspect-ratio: 1 / 1;  
     
     display: flex;
     justify-content: center;
     align-items: center;
     
-    background: #f8f9fa; /* 给一个浅灰背景框，让画面更整洁 */
-    border-radius: 8px;  /* 圆角 */
-    box-shadow: inset 0 0 10px rgba(0,0,0,0.05); /* 内阴影增加质感 */
-    overflow: hidden;    /* 超出部分隐藏 */
+ 
+    
+    /* 👇 关键：上方给圆角(贴合卡片)，下方直角 */
+    /* 卡片圆角通常是12px，减去边框3px，这里设9px比较平滑 */
+    border-radius: 12px; 
+    
+    overflow: hidden;    
+    margin-bottom: 5px; /* 图片和文字留一点点距离 */
 }
 
 /* 3. 图片本身 */
@@ -1278,6 +1285,7 @@ input:checked + .slider:before { transform: translateX(16px); }
     height: 100%;
     object-fit: contain; /* 保证图片完整显示在正方形内，不裁切 */
     display: block;
+    
 }
 
 /* (可选) 没有图片时的占位文字 */
@@ -1531,4 +1539,269 @@ input:checked + .slider:before { transform: translateX(16px); }
 @keyframes fadeInUp {
     0% { transform: translateY(20px); opacity: 0; }
     100% { transform: translateY(0); opacity: 1; }
+}
+/* ============================================================
+   🚀 全屏沉浸模式核心系统 (Unified Zoom System) v2.0
+   适用模块: Scene (图片), Text (富文本), Quiz (挑战)
+   ============================================================ */
+
+/* 1. 伪全屏容器 (由 JS 动态添加/移除此 Class) */
+.pseudo-fullscreen {
+    position: fixed !important;
+    top: 0 !important;
+    left: 0 !important;
+    width: 100vw !important;
+    height: 100vh !important;
+    z-index: 9999 !important; /* 保证覆盖一切 */
+    margin: 0 !important;
+    box-sizing: border-box !important;
+    overflow-y: auto !important; /* 允许内容滚动 */
+}
+
+/* 2. 统一的右下角 Zoom 悬浮按钮 */
+.btn-fixed-zoom {
+    position: fixed;
+    bottom: 30px; 
+    right: 30px;
+    width: 50px; 
+    height: 50px;
+    background: #fff;
+    border-radius: 50%;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.15);
+    border: 1px solid #eee;
+    color: #555;
+    cursor: pointer;
+    display: flex; 
+    align-items: center; 
+    justify-content: center;
+    transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    z-index: 10001; /* 最高层级，保证能点到 */
+}
+
+.btn-fixed-zoom:hover {
+    transform: scale(1.15);
+    color: var(--primary);
+    box-shadow: 0 8px 25px rgba(91, 103, 241, 0.3);
+}
+
+/* 3. 左右切换大箭头 (Scene & Text Zoom 模式专用) */
+.btn-zoom-nav {
+    position: fixed;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 60px; 
+    height: 120px;
+    background: transparent;
+    border: none;
+    color: #ccc; /* 默认浅灰色 */
+    font-size: 40px;
+    cursor: pointer;
+    display: flex; 
+    align-items: center; 
+    justify-content: center;
+    transition: all 0.2s;
+    z-index: 10000; /* 在内容之上，但在退出按钮之下 */
+}
+
+.btn-zoom-nav:hover {
+    background: rgba(0,0,0,0.05);
+    color: var(--primary);
+    transform: translateY(-50%) scale(1.1);
+}
+
+.btn-zoom-nav.prev { left: 0; }
+.btn-zoom-nav.next { right: 0; }
+
+
+/* ============================================================
+   📖 Text Tab: 阅读器模式布局
+   ============================================================ */
+
+/* 全屏下的弹性布局容器 */
+    .reader-layout {
+    display: flex; 
+    flex-direction: column;
+    
+    /* 👇 修改这两行：保持与普通模式 (.rich-section) 一致的宽度 */
+    width: calc(100% - 40px); 
+    max-width: 1200px; 
+    
+    height: 100%;
+    background: #fff;
+    margin: 0 auto;   /* 水平居中 */
+    box-shadow: 0 0 60px rgba(0,0,0,0.05); 
+    border-radius: 20px; /* 可选：加个圆角让它更像原来的卡片 */
+    overflow: hidden;    /* 防止圆角被内容溢出盖住 */
+}
+
+/* 头部：胶囊导航 (固定吸顶) */
+.reader-header {
+    flex-shrink: 0; /* 禁止高度收缩 */
+    padding: 15px 0;
+    background: #fff;
+    border-bottom: 1px solid #f0f0f0;
+    z-index: 10;
+    text-align: center;
+}
+
+/* 复用原有的 rich-nav 样式，微调以适应全屏 */
+.reader-header .rich-nav {
+    position: static; /* 取消 sticky，由 flex 控制 */
+    box-shadow: none; 
+    border: none; 
+    padding: 5px;
+    justify-content: center;
+}
+
+/* 内容：滚动区域 */
+.reader-body {
+    flex: 1; /* 占满剩余高度 */
+    overflow-y: auto; /* 仅此处产生滚动条 */
+    padding: 40px 80px 120px; /* 底部留白，防止被右下角按钮遮挡 */
+    scroll-behavior: smooth;
+}
+
+/* 隐藏滚动条但保留功能 */
+.reader-body::-webkit-scrollbar { display: none; }
+.reader-body { scrollbar-width: none; }
+
+
+/* ============================================================
+   🖼️ Scene Tab: 全屏图片布局
+   ============================================================ */
+.scene-zoom-layout {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.scene-zoom-img {
+    max-width: 90%;
+    max-height: 90%;
+    object-fit: contain;
+    border-radius: 12px;
+    box-shadow: 0 20px 50px rgba(0,0,0,0.15);
+    transition: transform 0.3s;
+}
+
+.scene-zoom-counter {
+    position: absolute;
+    bottom: 30px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: rgba(0,0,0,0.6);
+    color: #fff;
+    padding: 4px 12px;
+    border-radius: 20px;
+    font-size: 14px;
+    font-weight: bold;
+    pointer-events: none;
+}
+
+
+/* ============================================================
+   📱 移动端适配 (Mobile Responsive)
+   ============================================================ */
+@media (max-width: 768px) {
+    /* 缩小左右箭头区域，避免误触 */
+    .btn-zoom-nav { 
+        width: 40px; 
+        font-size: 24px; 
+        background: rgba(0,0,0,0.02); /* 稍微给点背景提示 */
+    }
+    
+    /* 减小阅读内边距 */
+    .reader-body { 
+        padding: 20px 20px 100px; 
+    }
+    
+    /* 调整右下角按钮位置 */
+    .btn-fixed-zoom {
+        bottom: 20px;
+        right: 20px;
+        width: 45px;
+        height: 45px;
+    }
+}
+/* ============ 🎃 自定义游戏列表样式 (Custom Games) ============ */
+
+/* 列表容器 */
+.custom-games-container {
+    width: 100%;
+    max-width: 1000px;
+    padding-top: 20px;
+    margin: 0 auto;
+}
+
+/* 标题 */
+.custom-games-header {
+    text-align: center;
+    color: var(--primary);
+    margin-bottom: 30px;
+    font-size: 24px;
+    font-weight: 800;
+}
+
+/* 网格布局 */
+.custom-games-grid {
+    display: grid;
+    gap: 30px;
+    /* 自适应列宽，手机单列，电脑多列 */
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    padding: 0 20px;
+}
+
+/* 单个游戏卡片 */
+.game-group-card {
+    background: #fff;
+    border-radius: 16px;
+    padding: 30px 20px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+    cursor: pointer;
+    transition: all 0.3s ease;
+    border: 2px solid transparent;
+    
+    /* 垂直居中内容 */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 200px; /* 保证卡片高度一致 */
+}
+
+/* 鼠标悬停效果 */
+.game-group-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(91, 103, 241, 0.15);
+    border-color: var(--primary-light);
+}
+
+/* 卡片内容区 */
+.game-group-content {
+    text-align: center;
+}
+
+/* 南瓜图标 */
+.game-group-icon {
+    font-size: 48px;
+    margin-bottom: 15px;
+}
+
+/* 游戏标题 (Group 1) */
+.game-group-title {
+    font-size: 20px;
+    font-weight: 800;
+    color: #333;
+    margin-bottom: 8px;
+}
+
+/* 游戏信息 (包含X个单词) */
+.game-group-info {
+    font-size: 14px;
+    color: #999;
+    font-weight: 500;
 }
