@@ -440,5 +440,122 @@
 "question": "We can't ______ waiting for Maldred to attack again.",
 "options": ["trail off", "risk", "by nature", "undo"],
 "answer": 1
+},
+
+
+
+
+"q_w064": {
+"type": "choice_text",
+"wordIds": ["w064"],
+"question": "The boy tried to ______ into the kitchen to steal a cookie without being noticed.",
+"options": ["scramble", "sneak", "bacon", "decorate"],
+"answer": 1
+},
+"q_w065": {
+"type": "choice_text",
+"wordIds": ["w065"],
+"question": "Mom asked me to ______ the eggs in the bowl before frying them.",
+"options": ["sneak", "scramble", "bacon", "decorate"],
+"answer": 1
+},
+"q_w066": {
+"type": "choice_text",
+"wordIds": ["w066"],
+"question": "Dad fried the ______ until it was crispy and served it with toast for breakfast.",
+"options": ["sneak", "scramble", "bacon", "decorate"],
+"answer": 2
+},
+"q_w067": {
+"type": "choice_text",
+"wordIds": ["w067"],
+"question": "We used flowers and cards to ______ the tray for Mom's birthday breakfast.",
+"options": ["sneak", "scramble", "bacon", "decorate"],
+"answer": 3
+},
+"q_w068": {
+"type": "choice_text",
+"wordIds": ["w068"],
+"question": "Jen found a second-hand bike at the ______ store with a low price.",
+"options": ["outgrow", "thrift", "streamer", "fall in love with"],
+"answer": 1
+},
+"q_w069": {
+"type": "choice_text",
+"wordIds": ["w069"],
+"question": "Jen ______ her old bike and needed a new one because she grew too fast.",
+"options": ["thrift", "outgrow", "streamer", "fall in love with"],
+"answer": 1
+},
+"q_w070": {
+"type": "choice_text",
+"wordIds": ["w070"],
+"question": "The children hung colorful ______ on the bike to make it more attractive.",
+"options": ["thrift", "outgrow", "streamer", "fall in love with"],
+"answer": 2
+},
+"q_w071": {
+"type": "choice_text",
+"wordIds": ["w071"],
+"question": "After decorating the second-hand bike, Jen ______ it at once.",
+"options": ["thrift", "outgrow", "streamer", "fall in love with"],
+"answer": 3
+},
+"q_w072": {
+"type": "choice_text",
+"wordIds": ["w072"],
+"question": "The book has a short ______ that introduces community workers' jobs.",
+"options": ["introduction", "mail carrier", "keep in touch", "conclusion"],
+"answer": 0
+},
+"q_w073": {
+"type": "choice_text",
+"wordIds": ["w073"],
+"question": "The ______ delivers letters and packages to every house in the neighborhood daily.",
+"options": ["introduction", "mail carrier", "keep in touch", "conclusion"],
+"answer": 1
+},
+"q_w074": {
+"type": "choice_text",
+"wordIds": ["w074"],
+"question": "We ______ with our grandparents by calling them every weekend.",
+"options": ["introduction", "mail carrier", "keep in touch", "conclusion"],
+"answer": 2
+},
+"q_w075": {
+"type": "choice_text",
+"wordIds": ["w075"],
+"question": "In ______, community workers play an important role in our daily lives.",
+"options": ["introduction", "mail carrier", "keep in touch", "conclusion"],
+"answer": 3
+},
+"q_w076": {
+"type": "choice_text",
+"wordIds": ["w076"],
+"question": "Snakes go into ______ when the winter temperature drops below zero.",
+"options": ["hibernation", "active", "nectar", "clam"],
+"answer": 0
+},
+"q_w077": {
+"type": "choice_text",
+"wordIds": ["w077"],
+"question": "Owls are ______ at night and sleep during the day.",
+"options": ["hibernation", "active", "nectar", "clam"],
+"answer": 1
+},
+"q_w078": {
+"type": "choice_text",
+"wordIds": ["w078"],
+"question": "Bees fly from flower to flower to collect ______ for making honey.",
+"options": ["hibernation", "active", "nectar", "clam"],
+"answer": 2
+},
+"q_w079": {
+"type": "choice_text",
+"wordIds": ["w079"],
+"question": "The nurse shark finds crabs and ______ in the dark sea at night.",
+"options": ["hibernation", "active", "nectar", "clam"],
+"answer": 3
 }
+
 }

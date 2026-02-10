@@ -821,8 +821,220 @@
       "[TITLE]额外例句[/TITLE][EX]The wizard warned us not to risk going to the forbidden cave, for it's full of powerful dark magic.|巫师警告我们不要冒险去禁洞，因为里面充满了强大的黑魔法。[/EX][EX]He risked his life to protect the baby dragon from the fire monster, and all the dragon masters admired him for it.|他冒着生命危险保护小龙崽免受火焰怪兽的伤害，所有龙法师都为此敬佩他。[/EX][EX]There is no need to take a risk, we can use the Finding Feather to find the Raven Guard safely.|没必要冒险，我们可以用寻踪羽毛安全地找到乌鸦卫队。[/EX][EX]Putting the Dragon Stone outside the magic shield will put the whole dragon kingdom at risk.|把龙石放在魔法屏障外面，会让整个龙之国处于危险之中。[/EX]",
       "[TITLE]常见错误[/TITLE][ERR]risk作动词时，固定搭配是**risk doing sth**，**绝对不能接to do sth**（错误：risk to enter the forest），这是最核心易错点，正确是risk entering the forest。[/ERR][ERR]risk作名词“风险”时，可作可数或不可数名词，表“一种风险”用a risk，表“多种风险”用risks；take a risk是固定搭配，a不可少（错误：take risk），正确是take a risk。[/ERR][ERR]不要混淆risk和danger！risk侧重“可能发生危险的**概率或风险**，也可作动词表冒险”；danger侧重“实际存在的**危险、险境**，仅作名词”，如There is a risk of danger / The dragon is in great danger。[/ERR][ERR]at risk是固定短语，**不加the**（错误：at the risk）；the risk of doing sth 中必须加the，表“做某事的风险”。[/ERR]"
     ]
-  }
- 
+  },
+  
+
+
+  
+
+"w064": {
+"word": "sneak",
+"images": {
+"scene": ["infopic01/sneak.webp"],
+"card": ["wordpic01/sneak.webp"]
+},
+"richDetail": [
+"[TITLE] 解释 [/TITLE][DEF][EN] To move quietly and secretly so that no one notices you; to take something secretly (used in the book when Dad and the kid moved quietly downstairs to make breakfast for Mom)[/EN][CN] 潜行；偷偷走；偷偷拿；窃取（书中指爸爸和孩子悄悄下楼给妈妈做早餐）[/CN][POS] v.[/POS][PH]/sniːk/[/PH][DU] Dad and I sneak downstairs. Quietly, quietly, quietly.|(原文例句) 爸爸和我悄悄下楼，轻手轻脚，不发出一点声音。[/DU][DU] She sneaked a cookie from the jar when her mom wasn't looking.| 趁妈妈不注意，她从罐子里偷偷拿了一块饼干。[/DU][/DEF][IMG] infopic01/sneak.webp [/IMG]",
+"[TITLE] 常见用法 [/TITLE][COLL][H] sneak + 地点 (downstairs/into/out of)[/POS] v.[/POS][/H][EX] The little boy sneaked into the kitchen to steal a piece of bread before dinner.| 小男孩晚饭前偷偷溜进厨房，想偷一块面包。[/EX][EX] He sneaked out of the classroom to watch the bird outside the window.| 他偷偷溜出教室去看窗外的小鸟。[/EX][C] sneak in | 偷偷进入 [/C][C] sneak out | 偷偷溜走 [/C][/COLL][H] sneak sth (from sb/sth)| 偷偷拿某物（从某人 / 某处）[POS] v.[/POS][/H][EX] The girl sneaked an apple from the fruit bowl when her dad fell asleep.| 爸爸睡着时，小女孩从果盘里偷偷拿了一个苹果。[/EX][EX] She sneaked a look at the storybook during the math class.| 数学课上，她偷偷看了一眼故事书。[/EX][/COLL]",
+"[TITLE] 额外例句 [/TITLE][EX] The student sneaked through the crowded hallway to avoid the teacher's patrol.| 学生潜行穿过拥挤的走廊，躲避老师的巡视。[/EX][EX] He sneaked his favorite snack into the school bag without his mom knowing.| 他瞒着妈妈，把自己最爱的零食偷偷放进了书包。[/EX][EX] The cat sneaked up to the bird feeder and caught a sparrow.| 小猫悄悄靠近喂鸟器，抓住了一只麻雀。[/EX]",
+"[TITLE] 常见错误 [/TITLE][ERR] sneak 的过去式和过去分词有两种形式：sneaked 或 snuck（美式口语常用），不要记错成 sneakeded（错误），正确：She sneaked/snuck out last night。[/ERR][ERR] sneak 是不及物动词，表示 “偷偷拿某物” 时必须加介词 from/into 等，不要直接接宾语（错误：sneak the cookie），正确是 sneak the cookie from the jar。[/ERR][ERR] 不要混淆 sneak 和 creep！sneak 侧重 “偷偷摸摸、带有目的的潜行”；creep 侧重 “缓慢、小心翼翼地爬行或移动”，如 sneak out of the room /creep along the wall。[/ERR]"
+]
+},
+"w065": {
+"word": "scramble",
+"images": {
+"scene": ["infopic01/scramble.webp"],
+"card": ["wordpic01/scramble.webp"]
+},
+"richDetail": [
+"[TITLE] 解释 [/TITLE][DEF][EN] To mix eggs thoroughly with a fork or whisk before cooking; to climb quickly and awkwardly; to move or act in a hurried, disorganized way (used in the book when mixing eggs for Mom's breakfast)[/EN][CN] 搅拌（鸡蛋）；攀爬；仓促行动（书中指给妈妈做早餐时搅拌鸡蛋）[/CN][POS] v.[/POS][PH]/ˈskræmbl/[/PH][DU] First we make her eggs. I help crack the eggs in the bowl. Scramble, scramble, scramble.|(原文例句) 我们先给她做鸡蛋。我帮忙把鸡蛋磕进碗里，搅拌，搅拌，不停地搅拌。[/DU][DU] The young boy scrambled up the hill to reach the picnic area.| 小男孩笨拙地爬上小山，想去野餐的地方。[/DU][/DEF][IMG] infopic01/scramble.webp [/IMG]",
+"[TITLE] 常见用法 [/TITLE][COLL][H] scramble eggs | 搅拌鸡蛋 [POS] v.[/POS][/H][EX] Mom taught me to scramble eggs with green onions for a tasty breakfast.| 妈妈教我用葱花搅拌鸡蛋，做一顿美味的早餐。[/EX][EX] We need to scramble eggs quickly before our friends come over.| 我们得在朋友们来之前赶紧搅拌好鸡蛋。[/EX][/COLL][H] scramble up/down | 攀爬上去 / 下来 [POS] v.[/POS][/H][EX] The hikers scrambled up the rocky path to find the beautiful view.| 徒步旅行者们攀爬陡峭的小路，寻找美丽的风景。[/EX][EX] The little girl scrambled down the tree and ran to her mom.| 小女孩从树上爬下来，跑向妈妈。[/EX][/COLL][H] scramble for sth | 争抢某物 [POS] v.[/POS][/H][EX] The children scrambled for the candies that fell from the box.| 孩子们争抢着从盒子里掉出来的糖果。[/EX][EX] Kids scrambled for the seats near the window on the school bus.| 孩子们争抢着校车上靠窗的座位。[/EX][/COLL]",
+"[TITLE] 额外例句 [/TITLE][EX] She scrambled to finish her homework before the sun went down.| 她仓促赶完作业，以免太阳落山。[/EX][EX] The students scrambled up the stairs to get to class on time.| 学生们争相跑上楼梯，以便准时上课。[/EX][EX] He scrambled the eggs with tomatoes and served them to the tired guests.| 他把鸡蛋和西红柿搅拌在一起，端给疲惫的客人们。[/EX]",
+"[TITLE] 常见错误 [/TITLE][ERR] scramble 作 “搅拌鸡蛋” 时是及物动词，直接接 eggs，不要加介词（错误：scramble with eggs），正确是 scramble eggs。[/ERR][ERR] 不要混淆 scramble 和 mix！scramble 特指 “快速用力搅拌（鸡蛋等）”；mix 侧重 “混合多种物质，搅拌力度较温和”，如 scramble eggs /mix flour and water。[/ERR][ERR] scramble 的现在分词是 scrambling，过去式和过去分词是 scrambled，不要记错成 scrambleing（错误）。[/ERR]"
+]
+},
+"w066": {
+"word": "bacon",
+"images": {
+"scene": ["infopic01/bacon.webp"],
+"card": ["wordpic01/bacon.webp"]
+},
+"richDetail": [
+"[TITLE] 解释 [/TITLE][DEF][EN] Salted or smoked meat from the back or sides of a pig, often eaten for breakfast (used in the book when making breakfast for Mom on Mother's Day)[/EN][CN] 培根；咸肉；熏肉（通常由猪背或猪肋部的肉腌制或熏制而成，常作为早餐食用，书中指母亲节给妈妈做早餐时用到）[/CN][POS] n.[/POS][PH]/ˈbeɪkən/[/PH][DU] I help lay the bacon in the pan. Sizzle, sizzle, sizzle.|(原文例句) 我帮忙把培根放进平底锅，滋滋滋，香味四溢。[/DU][DU] The cook prepared bacon and eggs for the guests after the overnight trip.| 厨师为过夜旅行回来的客人准备了培根和鸡蛋。[/DU][/DEF][IMG] infopic01/bacon.webp [/IMG]",
+"[TITLE] 常见用法 [/TITLE][COLL][H] cook/fry bacon | 烹饪 / 煎培根 [POS] n.[/POS][/H][EX] Dad fried the bacon until it was crispy and served it with toast.| 爸爸把培根煎得酥脆，搭配吐司一起端上桌。[/EX][EX] She cooked the bacon in a non-stick pan that didn't burn food.| 她用一口不粘锅煎培根，不会烧糊。[/EX][/COLL][H] bacon and eggs | 培根和鸡蛋（经典早餐搭配）[POS] n.[/POS][/H][EX] Bacon and eggs is a popular breakfast in many Western countries.| 培根和鸡蛋是许多西方国家很受欢迎的早餐。[/EX][EX] The traveler ordered bacon and eggs at the small inn to regain energy.| 旅行者在小客栈点了培根和鸡蛋，以便恢复体力。[/EX][/COLL][H] eat bacon | 吃培根 [POS] n.[/POS][/H][EX] The little boy was curious and tried a piece of bacon, but he preferred eggs.| 小男孩很好奇，尝了一块培根，但他还是更喜欢鸡蛋。[/EX][EX] We ate bacon with fresh fruit for breakfast before starting our trip.| 出发前，我们早餐吃了培根和新鲜水果。[/EX][/COLL]",
+"[TITLE] 额外例句 [/TITLE][EX] The crispy bacon is perfect for making sandwiches for school lunches.| 酥脆的培根很适合做学校午餐的三明治。[/EX][EX] Mom wrapped the leftover bacon in plastic wrap to keep it fresh.| 妈妈用保鲜膜把剩下的培根包起来，以保持新鲜。[/EX][EX] The chef added chopped bacon to the soup to make it more flavorful.| 厨师往汤里加了切碎的培根，让味道更浓郁。[/EX]",
+"[TITLE] 常见错误 [/TITLE][ERR] bacon 是不可数名词，表示 “一片培根” 用 a slice of bacon，“多片培根” 用 slices of bacon，不要直接说 a bacon（错误）。[/ERR][ERR] 不要混淆 bacon 和 ham！bacon 是 “培根，咸熏肉”，通常切薄片煎制；ham 是 “火腿”，多为熟肉，可直接食用或加热，如 fried bacon /baked ham。[/ERR][ERR]“煎培根” 的正确表达是 fry bacon，不要用 cook bacon with oil（错误），因为培根本身含有油脂，煎制时无需额外加油。[/ERR]"
+]
+},
+"w067": {
+"word": "decorate",
+"images": {
+"scene": ["infopic01/decorate.webp"],
+"card": ["wordpic01/decorate.webp"]
+},
+"richDetail": [
+"[TITLE] 解释 [/TITLE][DEF][EN] To add something to make a place or object more attractive; to adorn (used in the book when decorating the breakfast tray for Mom with a flower and a card)[/EN][CN] 装饰；点缀；布置（书中指用花和卡片装饰给妈妈的早餐托盘）[/CN][POS] v.[/POS][PH]/ˈdekəreɪt/[/PH][DU] I help decorate the tray with a flower and a card.|(原文例句) 我帮忙用一朵花和一张卡片装饰托盘。[/DU][DU] The villagers decorated the town square with balloons to celebrate the festival.| 村民们用气球装饰小镇广场，庆祝节日。[/DU][/DEF][IMG] infopic01/decorate.webp [/IMG]",
+"[TITLE] 常见用法 [/TITLE][COLL][H] decorate sth with sth | 用某物装饰某物 [POS] v.[/POS][/H][EX] She decorated the Christmas tree with colorful lights and small gifts.| 她用彩色的灯和小礼物装饰圣诞树。[/EX][EX] The children decorated their party masks with feathers and stickers.| 孩子们用羽毛和贴纸装饰他们的派对面具。[/EX][/COLL][H] decorate a place (for sth)|（为某事）装饰某个地方 [POS] v.[/POS][/H][EX] They decorated the classroom with streamers and balloons for the birthday party.| 他们用彩带和气球装饰教室，准备生日派对。[/EX][EX] The students decorated the school hallway with drawings to welcome the new term.| 学生们用画作装饰学校走廊，迎接新学期。[/EX][/COLL][H] decorate sth with sb | 和某人一起装饰某物 [POS] v.[/POS][/H][EX] Mom and I decorated the living room with garlands for the holiday.| 妈妈和我一起用花环装饰客厅，迎接节日。[/EX][EX] The classmates decorated the classroom bulletin board with photos together.| 同学们一起用照片装饰教室的公告栏。[/EX][/COLL]",
+"[TITLE] 额外例句 [/TITLE][EX] He decorated the gift box with ribbons before giving it to his friend.| 他在礼物盒子上系了丝带，然后送给了朋友。[/EX][EX] The park was decorated with lanterns that glowed in different colors at night.| 公园里装饰着灯笼，晚上会发出不同颜色的光。[/EX][EX] She decorated her backpack with patches that had her favorite cartoon characters.| 她用印有自己最爱的卡通人物的补丁装饰书包。[/EX]",
+"[TITLE] 常见错误 [/TITLE][ERR] decorate 是及物动词，直接接被装饰的对象，后接 “用某物装饰” 时必须加介词 with，不要用 by（错误：decorate the tray by flowers），正确是 decorate the tray with flowers。[/ERR][ERR] decorate 的名词形式是 decoration（可数 / 不可数），不要用 decoratement（错误），如 Christmas decorations（圣诞装饰品）。[/ERR][ERR] 不要混淆 decorate 和 ornament！decorate 侧重 “为某个场合或目的进行装饰，动作性强”；ornament 侧重 “用精美物品点缀，强调装饰效果”，如 decorate the house for a party /ornament the shelf with small dolls。[/ERR]"
+]
+},
+"w068": {
+"word": "thrift",
+"images": {
+"scene": ["infopic01/thrift.webp"],
+"card": ["wordpic01/thrift.webp"]
+},
+"richDetail": [
+"[TITLE] 解释 [/TITLE][DEF][EN] The quality of using money and other resources carefully and not wasting them; a shop that sells second-hand clothes, furniture, etc., often to raise money for charity (used in the book when Jen went to a thrift store to find a bike)[/EN][CN] 节俭；节约；旧货店；慈善商店（出售二手衣物、家具等，常为慈善筹款，书中指珍去旧货店找自行车）[/CN][POS] n.[/POS][PH]/θrɪft/[/PH][DU]“Maybe the thrift store has a bike,” Dad said.|(原文例句) 爸爸说：“也许旧货店里有自行车。”[/DU][DU] Thrift is an important quality for everyone, as resources are precious.| 节俭是每个人的重要品质，因为资源十分珍贵。[/DU][/DEF][IMG] infopic01/thrift.webp [/IMG]",
+"[TITLE] 常见用法 [/TITLE][COLL][H] thrift store | 旧货店；慈善商店 [POS] n.[/POS][/H][EX] She found a beautiful dress at the thrift store for a low price.| 她在旧货店以低价买到了一件漂亮的裙子。[/EX][EX] Many people donate their unused clothes to thrift stores to help those in need.| 很多人把不用的衣服捐给慈善商店，帮助有需要的人。[/EX][/COLL][H] the spirit of thrift | 节俭精神 [POS] n.[/POS][/H][EX] The teacher taught the students the spirit of thrift, telling them not to waste paper and pencils.| 老师教导学生们要节俭，不要浪费纸张和铅笔。[/EX][EX] Our family encourages the spirit of thrift to save money for travel.| 我们家倡导节俭精神，为旅行存钱。[/EX][/COLL][H] practice thrift | 厉行节俭 [POS] n.[/POS][/H][EX] We should practice thrift in daily life, such as reusing water bottles.| 我们在日常生活中应该厉行节俭，比如重复使用水杯。[/EX][EX] The family practiced thrift by repairing old toys instead of buying new ones.| 这家人通过修理旧玩具而不是买新的来厉行节俭。[/EX][/COLL]",
+"[TITLE] 额外例句 [/TITLE][EX] The thrift store in our neighborhood sells not only second-hand goods but also handmade crafts.| 我们小区的旧货店不仅卖二手物品，还卖手工工艺品。[/EX][EX] His thrift helped him save enough money to buy a new school bag.| 他的节俭让他攒够了钱，买到了一个新书包。[/EX][EX] The school teaches students the value of thrift through various activities.| 学校通过各种活动教导学生们节俭的价值。[/EX]",
+"[TITLE] 常见错误 [/TITLE][ERR] thrift 作 “旧货店” 时是可数名词，“一家旧货店” 用 a thrift store，“多家旧货店” 用 thrift stores，不要说 a thrift（错误）。[/ERR][ERR] 不要混淆 thrift 和 saving！thrift 侧重 “节俭的品质或行为”；saving 侧重 “节省下来的钱或物”，如 a life of thrift /savings from monthly pocket money。[/ERR][ERR] thrift 的形容词是 thrifty（节俭的），不要用 thrift 作形容词（错误：a thrift person），正确是 a thrifty person。[/ERR]"
+]
+},
+"w069": {
+"word": "outgrow",
+"images": {
+"scene": ["infopic01/outgrow.webp"],
+"card": ["wordpic01/outgrow.webp"]
+},
+"richDetail": [
+"[TITLE] 解释 [/TITLE][DEF][EN] To grow too big for clothes, shoes, etc.; to grow faster or taller than someone or something; to stop being interested in something because you are older (used in the book when Jen had grown too big for her old bike)[/EN][CN] 长得穿不下（衣服、鞋子等）；长得比…… 高 / 快；因长大而不再感兴趣（书中指珍长得穿不下旧自行车了）[/CN][POS] v.[/POS][PH]/ˌaʊtˈɡrəʊ/（英式）/ˌaʊtˈɡroʊ/（美式）[/PH][DU] Jen had outgrown her bike. She wanted a new one.|(原文例句) 珍长得骑不下她的旧自行车了，她想要一辆新的。[/DU][DU] The little girl outgrew her favorite dress in just six months because she was growing so fast.| 这个小女孩长得太快了，短短六个月就穿不下她最爱的裙子了。[/DU][/DEF][IMG] infopic01/outgrow.webp [/IMG]",
+"[TITLE] 常见用法 [/TITLE][COLL][H] outgrow sth | 长得穿不下某物；因长大而不再需要 / 感兴趣某物 [POS] v.[/POS][/H][EX] He outgrew his winter boots in just one year and needed a new pair.| 他仅用一年就穿不下冬靴了，需要一双新的。[/EX][EX] Many children outgrow their love for stuffed animals as they get older.| 很多孩子长大后就不再喜欢毛绒玩具了。[/EX][/COLL][H] outgrow sb | 长得比某人高 / 快 [POS] v.[/POS][/H][EX] The little boy outgrew his older sister by the time he was ten.| 这个小男孩十岁时就长得比他姐姐还高了。[/EX][EX] The puppy outgrew its mother in just eight months, which was surprising.| 这只小狗仅用八个月就长得比妈妈还大，让人惊讶。[/EX][/COLL][H] outgrow the need for sth | 不再需要某物 [POS] v.[/POS][/H][EX] As she learned more skills, she outgrew the need for her mom's help with homework.| 随着她学会了更多技能，她不再需要妈妈帮忙辅导作业了。[/EX][EX] The town outgrew the old playground and built a new one with more equipment.| 这个小镇不再需要那座旧操场，建了一座设备更全的新操场。[/EX][/COLL]",
+"[TITLE] 额外例句 [/TITLE][EX] She outgrew her interest in collecting stickers and started collecting postcards instead.| 她不再对收集贴纸感兴趣，转而开始收集明信片。[/EX][EX] The plant outgrew its small pot and had to be transplanted to the garden.| 这株植物长得超出了小花盆，不得不移栽到花园里。[/EX][EX] He outgrew the small desk and needed a bigger one for his school books.| 他长得太高，小书桌容不下了，需要一张更大的书桌放课本。[/EX]",
+"[TITLE] 常见错误 [/TITLE][ERR] outgrow 的过去式是 outgrew，过去分词是 outgrown，不要记错成 outgrowed（错误），正确：She outgrew her coat last winter。[/ERR][ERR] outgrow 是及物动词，直接接宾语，不要加介词（错误：outgrow from the bike），正确是 outgrow the bike。[/ERR][ERR] 不要混淆 outgrow 和 grow out of！二者含义基本相同，outgrow 更正式，grow out of 更口语化，如 outgrow a dress /grow out of a dress。[/ERR]"
+]
+},
+"w070": {
+"word": "streamer",
+"images": {
+"scene": ["infopic01/streamer.webp"],
+"card": ["wordpic01/streamer.webp"]
+},
+"richDetail": [
+"[TITLE] 解释 [/TITLE][DEF][EN] A long, narrow piece of paper, cloth, or plastic used for decorating rooms, parties, etc. (used in the book when Jen found streamers to decorate her second-hand bike)[/EN][CN]（装饰用的）彩带；彩条；飘带（通常由纸、布或塑料制成，用于装饰房间、派对等，书中指珍找到彩带来装饰她的二手自行车）[/CN][POS] n.[/POS][PH]/ˈstriːmə(r)/[/PH][DU] Jen found streamers. “Cool,” she said. She thought maybe the bike could look cool, too.|(原文例句) 珍找到了彩带。“真酷，” 她说。她觉得也许自行车也能变得很酷。[/DU][DU] The children hung colorful streamers around the classroom for the end-of-year party.| 孩子们在教室周围挂上了彩色彩带，准备年终派对。[/DU][/DEF][IMG] infopic01/streamer.webp [/IMG]",
+"[TITLE] 常见用法 [/TITLE][COLL][H] colorful streamers | 彩色彩带 [POS] n.[/POS][/H][EX] Colorful streamers fluttered in the wind, making the birthday party more lively.| 彩色彩带在风中飘动，让生日派对更加热闹。[/EX][EX] She bought a roll of colorful streamers to decorate her tree house.| 她买了一卷彩色彩带，装饰她的树屋。[/EX][/COLL][H] hang streamers | 挂彩带 [POS] n.[/POS][/H][EX] We hung streamers from the ceiling to celebrate the team's success.| 我们从天花板上垂下彩带，庆祝团队取得成功。[/EX][EX] The villagers hung streamers across the streets to welcome the visiting performers.| 村民们在街道上悬挂彩带，欢迎来访的表演者。[/EX][/COLL][H] decorate with streamers | 用彩带装饰 [POS] n.[/POS][/H][EX] The party room was decorated with streamers and balloons during the holiday season.| 节日期间，派对房间用彩带和气球装饰得很漂亮。[/EX][EX] They decorated the bike with red and gold streamers to make it stand out in the parade.| 他们用红色和金色的彩带装饰自行车，让它在游行中更加显眼。[/EX][/COLL]",
+"[TITLE] 额外例句 [/TITLE][EX] The streamers on the school gate sparkled in the sun, attracting many students to take photos.| 学校大门上的彩带在阳光下闪闪发光，吸引了很多学生拍照。[/EX][EX] She tied streamers to her backpack to make it easier to find in the crowd.| 她把彩带系在书包上，以便在人群中更容易找到。[/EX][EX] The wind blew the streamers away, but we quickly tied them back up.| 风把彩带吹走了，但我们很快就把它们重新系好了。[/EX]",
+"[TITLE] 常见错误 [/TITLE][ERR] streamer 是可数名词，“一根彩带” 用 a streamer，“多根彩带” 用 streamers，不要说 many streamer（错误）。[/ERR][ERR] 不要混淆 streamer 和 ribbon！streamer 特指 “用于装饰的长彩带、彩条”，通常较长较宽；ribbon 特指 “丝带、缎带”，通常较窄较精致，如 party streamers /a silk ribbon。[/ERR][ERR]“挂彩带” 的正确表达是 hang streamers，不要用 put streamers（错误），put 更侧重 “放置”，hang 侧重 “悬挂”。[/ERR]"
+]
+},
+"w071": {
+"word": "fall in love with",
+"images": {
+"scene": ["infopic01/fall-in-love-with.webp"],
+"card": ["wordpic01/fall-in-love-with.webp"]
+},
+"richDetail": [
+"[TITLE] 解释 [/TITLE][DEF][EN] To start to love someone or something very much (used in the book when Jen started to love the second-hand bike after decorating it)[/EN][CN] 爱上；喜欢上（某人或某物）（书中指珍装饰完二手自行车后，开始喜欢上它）[/CN][POS] v. phr.[/POS][PH]/fɔːl ɪn lʌv wɪð/（英式）/fɔːl ɪn lʌv wɪð/（美式）[/PH][DU] Jen went to work on the bike. She fell in love with it.|(原文例句) 珍开始打理这辆自行车，她爱上了它。[/DU][DU] The little girl fell in love with the puppy the first time she saw it.| 这个小女孩第一次见到小狗就爱上了它。[/DU][/DEF][IMG] infopic01/fall-in-love-with.webp [/IMG]",
+"[TITLE] 常见用法 [/TITLE][COLL][H] fall in love with sb | 爱上某人 [POS] v. phr.[/POS][/H][EX] He fell in love with the girl who shared the same hobby as him.| 他爱上了那位和他有相同爱好的女孩。[/EX][EX] The old man fell in love with a kind-hearted woman who lived next door.| 老人爱上了住在隔壁的善良女士。[/EX][/COLL][H] fall in love with sth | 喜欢上某物 [POS] v. phr.[/POS][/H][EX] She fell in love with the old storybook because of its interesting pictures.| 她因为那些有趣的插图，喜欢上了这本旧故事书。[/EX][EX] The traveler fell in love with the beautiful scenery of the small town at first sight.| 旅行者第一眼就爱上了小镇的美丽景色。[/EX][/COLL][H] fall in love with sth at first sight | 一见钟情于某物 [POS] v. phr.[/POS][/H][EX] He fell in love with the guitar at first sight and decided to learn to play it.| 他第一眼就看中了这把吉他，决定学习弹奏。[/EX][EX] The children fell in love with the amusement park at first sight.| 孩子们第一眼就喜欢上了这个游乐园。[/EX][/COLL]",
+"[TITLE] 额外例句 [/TITLE][EX] After spending time with the little cat, she fell in love with its lovely personality.| 和小猫相处一段时间后，她爱上了它可爱的性格。[/EX][EX] He fell in love with the quiet life in the countryside and decided to stay there.| 他爱上了乡村宁静的生活，决定留在那里。[/EX][EX] She fell in love with the old library and visited it every weekend.| 她喜欢上了这座古老的图书馆，每个周末都去参观。[/EX]",
+"[TITLE] 常见错误 [/TITLE][ERR] fall in love with 是固定短语，中间不能加冠词（错误：fall in a love with），也不能漏掉 in（错误：fall love with）。[/ERR][ERR] fall 的过去式是 fell，过去分词是 fallen，不要记错成 fall in love with 的过去式是 fall in loved with（错误），正确：She fell in love with the bike。[/ERR][ERR] 不要混淆 fall in love with 和 like！fall in love with 侧重 “深深爱上、非常喜欢”，情感强度更强；like 侧重 “普通的喜欢”，如 I like this book / I fell in love with this book。[/ERR]"
+]
+},
+"w072": {
+"word": "introduction",
+"images": {
+"scene": ["infopic01/introduction.webp"],
+"card": ["wordpic01/introduction.webp"]
+},
+"richDetail": [
+"[TITLE] 解释 [/TITLE][DEF][EN] A section at the beginning of a book, speech, etc., that introduces the topic; the act of introducing someone to another person (used in the book as the first section introducing community workers)[/EN][CN] 引言；导论；介绍；引言部分（书籍、演讲等开头介绍主题的部分；把某人介绍给另一人的行为，书中作为介绍社区工作者的开篇部分）[/CN][POS] n.[/POS][PH]/ˌɪntrəˈdʌkʃn/[/PH][DU] Introduction: Community workers are people who work in a community.|(原文例句) 引言：社区工作者是在社区里工作的人。[/DU][DU] The book has a short introduction that explains what community workers do.| 这本书有一个简短的引言，解释了社区工作者的工作内容。[/DU][/DEF][IMG] infopic01/introduction.webp [/IMG]",
+"[TITLE] 常见用法 [/TITLE][COLL][H] a brief/short/long introduction | 简短 / 简短 / 长篇的引言 / 介绍 [POS] n.[/POS][/H][EX] The teacher gave a brief introduction to the new community worker who came to the school.| 老师给新来学校的社区工作者做了一个简短的介绍。[/EX][EX] The article includes a long introduction about the history of community service.| 这篇文章有一个长篇引言，讲述了社区服务的历史。[/EX][/COLL][H] introduction to sth | 对某物的介绍 / 引言 [POS] n.[/POS][/H][EX] This is an introduction to the different types of community workers.| 这是对不同类型社区工作者的介绍。[/EX][EX] The introduction to the book helps readers understand the importance of community workers.| 这本书的引言帮助读者理解社区工作者的重要性。[/EX][/COLL][H] give an introduction | 做介绍；发表引言 [POS] n.[/POS][/H][EX] The mayor gave an introduction at the meeting to welcome the new community workers.| 市长在会议上做了介绍，欢迎新来的社区工作者。[/EX][EX] She gave an introduction about the community's new service center.| 她就社区新的服务中心做了介绍。[/EX][/COLL]",
+"[TITLE] 额外例句 [/TITLE][EX] The introduction of the new community program has helped many families.| 新社区项目的推出帮助了很多家庭。[/EX][EX] He asked the teacher for an introduction to the community volunteer group.| 他请求老师把他介绍给社区志愿者小组。[/EX][EX] The introduction in the manual explains how to contact community workers when in need.| 手册中的引言部分说明了需要时如何联系社区工作者。[/EX]",
+"[TITLE] 常见错误 [/TITLE][ERR] introduction 是可数名词，“一个引言 / 介绍” 用 an introduction，“多个引言 / 介绍” 用 introductions，不要说 a introduction（错误），注意元音音素前用 an。[/ERR][ERR] 不要混淆 introduction 和 intro！intro 是 introduction 的缩写，多用于口语或非正式场合，正式写作中应使用完整形式 introduction。[/ERR][ERR]“对…… 的介绍” 用 introduction to sth，不要用 introduction of sth（错误），如 an introduction to community workers（正确）。[/ERR]"
+]
+},
+"w073": {
+"word": "mail carrier",
+"images": {
+"scene": ["infopic01/mail carrier.webp"],
+"card": ["wordpic01/mail carrier.webp"]
+},
+"richDetail": [
+"[TITLE] 解释 [/TITLE][DEF][EN] A person whose job is to collect and deliver mail to people's homes or offices (used in the book as a type of community worker who helps people keep in touch)[/EN][CN] 邮递员；邮差（负责收集和投递邮件到人们家中或办公室的人，书中作为帮助人们保持联系的社区工作者类型）[/CN][POS] n.[/POS][PH]/ˈmeɪl ˌkæriə(r)/（英式）/ˈmeɪl ˌkæriər/（美式）[/PH][DU] He is a mail carrier. He helps people keep in touch.|(原文例句) 他是一名邮递员，他帮助人们保持联系。[/DU][DU] The mail carrier delivers letters and packages to every house in the neighborhood every day.| 邮递员每天给小区里的每家每户投递信件和包裹。[/DU][/DEF][IMG] infopic01/mail carrier.webp [/IMG]",
+"[TITLE] 常见用法 [/TITLE][COLL][H] a mail carrier | 一名邮递员 [POS] n.[/POS][/H][EX] The mail carrier wears a uniform and carries a big bag for mail.| 邮递员穿着制服，背着一个装邮件的大袋子。[/EX][EX] We saw a mail carrier riding a bike to deliver mail in the rain.| 我们看到一名邮递员在雨中骑自行车投递邮件。[/EX][/COLL][H] mail carrier + 动词（deliver/collect 等）| 邮递员做……（投递 / 收集等）[POS] n.[/POS][/H][EX] The mail carrier collects mail from the post box every morning.| 邮递员每天早上从邮箱里收集邮件。[/EX][EX] Our neighborhood mail carrier is very kind and always greets people with a smile.| 我们小区的邮递员非常善良，总是微笑着和人们打招呼。[/EX][/COLL][H] thank the mail carrier | 感谢邮递员 [POS] n.[/POS][/H][EX] The children made cards to thank the mail carrier for his hard work during the holiday.| 孩子们制作了卡片，感谢邮递员在节日期间的辛勤工作。[/EX][EX] We should thank the mail carrier for delivering important letters on time.| 我们应该感谢邮递员准时投递重要信件。[/EX][/COLL]",
+"[TITLE] 额外例句 [/TITLE][EX] The mail carrier had to walk up many stairs to deliver the package to the top floor.| 邮递员不得不爬很多楼梯，把包裹送到顶楼。[/EX][EX] During snow days, the mail carrier still works hard to make sure mail is delivered.| 下雪天，邮递员仍然努力工作，确保邮件按时投递。[/EX][EX] My uncle used to be a mail carrier and traveled all over the town every day.| 我叔叔以前是一名邮递员，每天走遍全镇。[/EX]",
+"[TITLE] 常见错误 [/TITLE][ERR] mail carrier 是复合名词，由 mail 和 carrier 组成，中间必须空格，不要连写成 mailcarrier（错误）。[/ERR][ERR] mail carrier 是可数名词，“一名邮递员” 用 a mail carrier，“多名邮递员” 用 mail carriers，不要遗漏冠词 a（错误：mail carrier）。[/ERR][ERR] 不要混淆 mail carrier 和 postman！mail carrier 是通用表达，男女通用；postman 特指 “男邮递员”，对应的 “女邮递员” 是 postwoman，如 a mail carrier /a postman。[/ERR]"
+]
+},
+"w074": {
+"word": "keep in touch",
+"images": {
+"scene": ["infopic01/keep-in-touch.webp"],
+"card": ["wordpic01/keep-in-touch.webp"]
+},
+"richDetail": [
+"[TITLE] 解释 [/TITLE][DEF][EN] To continue to communicate with someone, especially by writing, calling, or meeting (used in the book to describe how mail carriers help people stay connected)[/EN][CN] 保持联系（尤指通过写信、打电话或见面继续与某人交流，书中指邮递员帮助人们保持联系）[/CN][POS] v. phr.[/POS][PH]/kiːp ɪn tʌtʃ/[/PH][DU] He is a mail carrier. He helps people keep in touch.|(原文例句) 他是一名邮递员，他帮助人们保持联系。[/DU][DU] We keep in touch with our grandparents by calling them every weekend.| 我们每个周末给祖父母打电话，保持联系。[/DU][/DEF][IMG] infopic01/keep-in-touch.webp [/IMG]",
+"[TITLE] 常见用法 [/TITLE][COLL][H] keep in touch with sb | 与某人保持联系 [POS] v. phr.[/POS][/H][EX] She keeps in touch with her old classmates by sending messages.| 她通过发信息与老同学保持联系。[/EX][EX] It's important to keep in touch with family members who live far away.| 与住在远方的家人保持联系很重要。[/EX][/COLL][H] keep in touch by sth | 通过某物保持联系 [POS] v. phr.[/POS][/H][EX] They keep in touch by email because they are in different countries.| 他们因为在不同的国家，通过电子邮件保持联系。[/EX][EX] We keep in touch by meeting for coffee once a month.| 我们每个月聚在一起喝一次咖啡，保持联系。[/EX][/COLL][H] stay in touch (与 keep in touch 同义)| 保持联系 [POS] v. phr.[/POS][/H][EX] Stay in touch and let me know how your new school is.| 保持联系，让我知道你的新学校怎么样。[/EX][EX] We promised to stay in touch after graduation.| 我们承诺毕业后保持联系。[/EX][/COLL]",
+"[TITLE] 额外例句 [/TITLE][EX] Even though we moved to different cities, we still keep in touch with each other.| 尽管我们搬到了不同的城市，我们仍然保持着联系。[/EX][EX] The old friends kept in touch by sending each other postcards during travels.| 老朋友们在旅行期间通过互寄明信片保持联系。[/EX][EX] Technology makes it easier for people to keep in touch no matter how far they are.| 科技让人们无论相隔多远，都能更容易地保持联系。[/EX]",
+"[TITLE] 常见错误 [/TITLE][ERR] keep in touch 是固定短语，中间不能漏掉 in（错误：keep touch），也不能加多余的冠词（错误：keep in a touch）。[/ERR][ERR] keep in touch 后接 “与某人” 时必须加介词 with，不要直接接宾语（错误：keep in touch my friend），正确是 keep in touch with my friend。[/ERR][ERR] 不要混淆 keep in touch 和 contact！keep in touch 侧重 “长期持续保持联系”；contact 侧重 “单次联系或取得联系”，如 keep in touch with him /contact him by phone。[/ERR]"
+]
+},
+"w075": {
+"word": "conclusion",
+"images": {
+"scene": ["infopic01/conclusion.webp"],
+"card": ["wordpic01/conclusion.webp"]
+},
+"richDetail": [
+"[TITLE] 解释 [/TITLE][DEF][EN] The end part of a book, speech, or piece of writing that summarizes the main points; a decision or judgment made after considering all the facts (used in the book as the final section about community workers)[/EN][CN] 结论；结尾；总结（书籍、演讲或文章的最后部分，总结主要观点；考虑所有事实后做出的决定或判断，书中作为关于社区工作者的最后部分）[/CN][POS] n.[/POS][PH]/kənˈkluːʒn/[/PH][DU] Conclusion: Community workers help people everywhere.|(原文例句) 结论：社区工作者在各个地方帮助人们。[/DU][DU] The conclusion of the report summarizes the importance of protecting the environment.| 报告的结论总结了保护环境的重要性。[/DU][/DEF][IMG] infopic01/conclusion.webp [/IMG]",
+"[TITLE] 常见用法 [/TITLE][COLL][H] in conclusion | 总之；最后（用于文章或演讲结尾）[POS] n.[/POS][/H][EX] In conclusion, community workers play an important role in our daily lives.| 总之，社区工作者在我们的日常生活中扮演着重要角色。[/EX][EX] In conclusion, we should try our best to help those in need.| 最后，我们应该尽力帮助那些有需要的人。[/EX][/COLL][H] draw a conclusion | 得出结论 [POS] n.[/POS][/H][EX] After discussing for a long time, we drew a conclusion about the activity plan.| 经过长时间的讨论，我们就活动计划得出了结论。[/EX][EX] Scientists draw conclusions based on careful research.| 科学家们基于仔细的研究得出结论。[/EX][/COLL][H] the conclusion of sth | 某物的结尾 / 结论 [POS] n.[/POS][/H][EX] We read the conclusion of the story to know how it ended.| 我们读了故事的结尾，想知道它是如何结束的。[/EX][EX] The conclusion of the meeting was that we would start the project next month.| 会议的结论是我们下个月开始这个项目。[/EX][/COLL]",
+"[TITLE] 额外例句 [/TITLE][EX] The teacher asked us to write a conclusion for our science experiment report.| 老师让我们为科学实验报告写一个结论。[/EX][EX] The conclusion of the film surprised everyone because it was so unexpected.| 电影的结尾让所有人都很惊讶，因为它太出人意料了。[/EX][EX] She came to the conclusion that she should study harder to improve her grades.| 她得出结论，为了提高成绩，她应该更加努力学习。[/EX]",
+"[TITLE] 常见错误 [/TITLE][ERR] conclusion 是可数名词，“一个结论” 用 a conclusion，“多个结论” 用 conclusions，不要说 draw conclusion（错误），正确是 draw a conclusion。[/ERR][ERR] in conclusion 是固定短语，不要写成 on conclusion（错误），且后面通常接逗号，引出总结内容。[/ERR][ERR] 不要混淆 conclusion 和 summary！conclusion 侧重 “基于事实的结论或文章的结尾总结”；summary 侧重 “对内容的简要概括，不一定在结尾”，如 the conclusion of the essay /a summary of the book。[/ERR]"
+]
+},
+"w076": {
+"word": "hibernation",
+"images": {
+"scene": ["infopic01/hibernation.webp"],
+"card": ["wordpic01/hibernation.webp"]
+},
+"richDetail": [
+"[TITLE] 解释 [/TITLE][DEF][EN] The state of inactivity and metabolic depression in animals during winter, characterized by lower body temperature, slower breathing, and reduced heart rate (used in the book to describe how some animals survive winter)[/EN][CN] 冬眠（动物在冬季的不活动状态和代谢抑制，特点是体温降低、呼吸变慢、心率减慢，书中指一些动物如何度过冬季）[/CN][POS] n.[/POS][PH]/ˌhaɪbəˈneɪʃn/[/PH][DU] Some animals can't find food in winter, so they go into hibernation.|(原文例句) 有些动物在冬天找不到食物，所以它们会进入冬眠。[/DU][DU] Bears are famous for their long hibernation during cold winters.| 熊以在寒冷的冬天长时间冬眠而闻名。[/DU][/DEF][IMG] infopic01/hibernation.webp [/IMG]",
+"[TITLE] 常见用法 [/TITLE][COLL][H] go into hibernation | 进入冬眠 [POS] n.[/POS][/H][EX] Snakes go into hibernation when the temperature drops below zero.| 当气温降到零度以下时，蛇就会进入冬眠。[/EX][EX] Turtles go into hibernation in the mud at the bottom of rivers.| 乌龟在河底的泥里进入冬眠。[/EX][/COLL][H] during hibernation | 在冬眠期间 [POS] n.[/POS][/H][EX] During hibernation, animals don't eat or drink much.| 在冬眠期间，动物很少进食或喝水。[/EX][EX] Animals' body functions slow down during hibernation to save energy.| 在冬眠期间，动物的身体机能变慢，以节省能量。[/EX][/COLL][H] wake up from hibernation | 从冬眠中醒来 [POS] n.[/POS][/H][EX] Animals wake up from hibernation when spring comes and food becomes available.| 当春天到来，食物出现时，动物们就会从冬眠中醒来。[/EX][EX] The little squirrel woke up from hibernation and looked for nuts in the tree.| 小松鼠从冬眠中醒来，在树上寻找坚果。[/EX][/COLL]",
+"[TITLE] 额外例句 [/TITLE][EX] Hibernation helps animals survive the cold winter when food is scarce.| 冬眠帮助动物在食物稀缺的寒冷冬天存活下来。[/EX][EX] Scientists are studying the mechanism of hibernation to learn more about animal survival.| 科学家们正在研究冬眠的机制，以更多地了解动物的生存方式。[/EX][EX] Some frogs can survive freezing temperatures during hibernation.| 有些青蛙在冬眠期间能忍受冰冻的温度。[/EX]",
+"[TITLE] 常见错误 [/TITLE][ERR] hibernation 是不可数名词，不要加 a/an（错误：a hibernation），也没有复数形式（错误：hibernations）。[/ERR][ERR] 不要混淆 hibernation 和 sleep！hibernation 是 “冬眠，长期低温代谢抑制状态”；sleep 是 “普通睡眠”，时间短，代谢正常，如 go into hibernation /go to sleep。[/ERR][ERR]“进入冬眠” 的正确表达是 go into hibernation，不要用 enter hibernation（错误，虽可理解但不常用），或 go to hibernation（错误）。[/ERR]"
+]
+},
+"w077": {
+"word": "active",
+"images": {
+"scene": ["infopic01/active.webp"],
+"card": ["wordpic01/active.webp"]
+},
+"richDetail": [
+"[TITLE] 解释 [/TITLE][DEF][EN] Doing things or moving around a lot; busy with activities; (of animals) active at a particular time (used in the book to describe animals that are busy at night)[/EN][CN] 活跃的；积极的；好动的；（动物）在特定时间活动的（书中指在夜间活动的动物）[/CN][POS] adj.[/POS][PH]/ˈæktɪv/[/PH][DU] Some animals are active at night, when it is dark.|(原文例句) 有些动物在天黑的晚上很活跃。[/DU][DU] The little boy is very active and loves to play sports after school.| 这个小男孩非常活跃，放学后喜欢做运动。[/DU][/DEF][IMG] infopic01/active.webp [/IMG]",
+"[TITLE] 常见用法 [/TITLE][COLL][H] be active at + 时间 | 在某个时间活跃 [POS] adj.[/POS][/H][EX] Owls are active at night and sleep during the day.| 猫头鹰在夜间活跃，白天睡觉。[/EX][EX] Many children are active in the morning and feel tired in the afternoon.| 很多孩子早上很活跃，下午会感到疲惫。[/EX][/COLL][H] be active in sth | 在某事中积极参与 [POS] adj.[/POS][/H][EX] She is active in the school's music club and sings in every performance.| 她积极参与学校的音乐俱乐部，每场表演都参加演唱。[/EX][EX] People should be active in protecting the natural environment.| 人们应该积极参与保护环境。[/EX][/COLL][H] an active lifestyle | 积极的生活方式 [POS] adj.[/POS][/H][EX] Keeping an active lifestyle helps people stay healthy.| 保持积极的生活方式有助于人们保持健康。[/EX][EX] My grandparents have an active lifestyle, walking every morning and gardening in the afternoon.| 我的祖父母生活方式很积极，每天早上散步，下午种花种草。[/EX][/COLL]",
+"[TITLE] 额外例句 [/TITLE][EX] The active puppy runs around the yard all day and never seems to get tired.| 这只好动的小狗整天在院子里跑来跑去，似乎永远不会累。[/EX][EX] Bees are active in collecting nectar from flowers during spring and summer.| 蜜蜂在春夏季节积极地从花中采集花蜜。[/EX][EX] The old man is still active in community activities even though he is over 70.| 这位老人虽然已经 70 多岁了，仍然积极参与社区活动。[/EX]",
+"[TITLE] 常见错误 [/TITLE][ERR] active 是形容词，不要当作副词使用（错误：he works active），正确是 he works actively；其名词形式是 activity（活动），不要混淆（错误：an active of reading），正确是 an activity of reading。[/ERR][ERR] 不要混淆 active 和 energetic！active 侧重 “好动的、积极参与的”；energetic 侧重 “精力充沛的”，如 an active child /an energetic athlete。[/ERR][ERR]“在夜间活跃” 的正确表达是 active at night，不要用 active in night（错误），in 用于较长的时间段，如 in the evening。[/ERR]"
+]
+},
+"w078": {
+"word": "nectar",
+"images": {
+"scene": ["infopic01/nectar.webp"],
+"card": ["wordpic01/nectar.webp"]
+},
+"richDetail": [
+"[TITLE] 解释 [/TITLE][DEF][EN] A sweet liquid produced by flowers, which bees and other insects collect to make honey; a sweet drink (used in the book when bats eat fruit and nectar at night)[/EN][CN] 花蜜（花产生的甜味液体，蜜蜂和其他昆虫采集来制作蜂蜜）；甜饮料（书中指蝙蝠在夜间食用的食物）[/CN][POS] n.[/POS][PH]/ˈnektə(r)/[/PH][DU] This bat is active at night. It eats fruit and nectar in the dark.|(原文例句) 这只蝙蝠在夜间活跃，它在黑暗中吃水果和花蜜。[/DU][DU] Bees fly from flower to flower to collect nectar for honey.| 蜜蜂从一朵花飞到另一朵花，采集花蜜制作蜂蜜。[/DU][/DEF][IMG] infopic01/nectar.webp [/IMG]",
+"[TITLE] 常见用法 [/TITLE][COLL][H] collect nectar | 采集花蜜 [POS] n.[/POS][/H][EX] Butterflies also collect nectar from colorful flowers in the garden.| 蝴蝶也从花园里五颜六色的花中采集花蜜。[/EX][EX] The little bird uses its long beak to collect nectar from deep flowers.| 这只小鸟用它长长的喙从深花中采集花蜜。[/EX][/COLL][H] nectar of + 花名 | 某种花的花蜜 [POS] n.[/POS][/H][EX] The nectar of roses is very sweet and attracts many bees.| 玫瑰的花蜜非常甜，吸引了很多蜜蜂。[/EX][EX] Hummingbirds feed on the nectar of tropical flowers.| 蜂鸟以热带花朵的花蜜为食。[/EX][/COLL][H] sweet nectar | 甜花蜜 [POS] n.[/POS][/H][EX] The sweet nectar from clover is a favorite food of many insects.| 三叶草的甜花蜜是许多昆虫最爱的食物。[/EX][EX] We tasted the sweet nectar from the apple blossoms and it was delicious.| 我们尝了尝苹果花的甜花蜜，味道很好。[/EX][/COLL]",
+"[TITLE] 额外例句 [/TITLE][EX] The bees store the collected nectar in honeycombs to make honey.| 蜜蜂把采集到的花蜜储存在蜂巢里制作蜂蜜。[/EX][EX] Flowers produce nectar to attract insects that help them pollinate.| 花产生花蜜是为了吸引昆虫帮助它们授粉。[/EX][EX] The little girl enjoyed the sweet nectar from the orange blossoms in her backyard.| 小女孩喜欢后院橘子花的甜花蜜。[/EX]",
+"[TITLE] 常见错误 [/TITLE][ERR] nectar 是不可数名词，表示 “一滴花蜜” 用 a drop of nectar，“许多花蜜” 用 much nectar，不要直接说 a nectar（错误）。[/ERR][ERR] 不要混淆 nectar 和 honey！nectar 是 “花蜜”，是花产生的原始甜味液体；honey 是 “蜂蜜”，是蜜蜂加工花蜜后形成的产物，如 collect nectar /eat honey。[/ERR][ERR]“采集花蜜” 的正确表达是 collect nectar，不要用 gather nectar（错误，虽可理解但不常用），collect 更侧重 “有目的的收集”。[/ERR]"
+]
+},
+"w079": {
+"word": "clam",
+"images": {
+"scene": ["infopic01/clam.webp"],
+"card": ["wordpic01/clam.webp"]
+},
+"richDetail": [
+"[TITLE] 解释 [/TITLE][DEF][EN] A type of shellfish with a soft body inside two hard shells that close tightly; to close tightly (used in the book when nurse sharks find clams in the dark)[/EN][CN] 蛤蜊；蚌；紧闭（一种贝类，柔软的身体包裹在两个能紧密闭合的硬壳中，书中指护士鲨在黑暗中寻找蛤蜊作为食物）[/CN][POS] n./v.[/POS][PH]/klæm/[/PH][DU] This nurse shark is active at night. It finds crabs and clams in the dark.|(原文例句) 这只护士鲨在夜间活跃，它在黑暗中寻找螃蟹和蛤蜊。[/DU][DU] The little boy tried to open the clam, but it clamped tightly shut.| 小男孩想打开蛤蜊，但它紧紧地闭着壳。[/DU][/DEF][IMG] infopic01/clam.webp [/IMG]",
+"[TITLE] 常见用法 [/TITLE][COLL][H] eat clams | 吃蛤蜊 [POS] n.[/POS][/H][EX] We went to the beach and ate fresh clams for dinner.| 我们去了海滩，晚餐吃了新鲜的蛤蜊。[/EX][EX] Seagulls often eat small clams they find on the sand.| 海鸥经常吃在沙滩上找到的小蛤蜊。[/EX][/COLL][H] open a clam | 打开蛤蜊 [POS] n.[/POS][/H][EX] Dad used a small knife to open the clam carefully.| 爸爸用一把小刀小心地打开蛤蜊。[/EX][EX] It's not easy to open a clam because its shell is hard.| 打开蛤蜊不容易，因为它的壳很硬。[/EX][/COLL][H] clam up|（非正式）突然闭口不言；守口如瓶 [POS] v. phr.[/POS][/H][EX] When the teacher asked who broke the vase, the student clammed up.| 老师问谁打碎了花瓶，那个学生突然闭口不言。[/EX][EX] He clammed up when his mom asked about his test score.| 妈妈问他考试成绩时，他守口如瓶。[/EX][/COLL]",
+"[TITLE] 额外例句 [/TITLE][EX] Many people like to dig for clams at low tide on the beach.| 很多人喜欢在海滩退潮时挖蛤蜊。[/EX][EX] The clam buried itself in the sand to avoid being found by predators.| 蛤蜊把自己埋在沙子里，避免被掠食者发现。[/EX][EX] She added chopped clams to the soup to make it more delicious.| 她往汤里加了切碎的蛤蜊，让味道更浓郁。[/EX]",
+"[TITLE] 常见错误 [/TITLE][ERR] clam 作 “蛤蜊” 时是可数名词，“一个蛤蜊” 用 a clam，“多个蛤蜊” 用 clams，不要说 many clam（错误）。[/ERR][ERR] 不要混淆 clam 和 oyster！clam 是 “蛤蜊，蚌”，壳较圆且薄；oyster 是 “牡蛎，蚝”，壳较厚且不规则，如 fresh clams /raw oysters。[/ERR][ERR] clam 作动词 “紧闭” 时，过去式和过去分词是 clamped，不要记错成 clammed（错误），正确：The door clamped shut in the wind。[/ERR]"
+]
+} 
 
 }
 

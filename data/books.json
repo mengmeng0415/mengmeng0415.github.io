@@ -20,19 +20,19 @@
     { "id": "dm3-c12", "name": "Chapter 12", "wordIds": ["w051", "w052", "w053", "w054", "w055"], "quizIds": ["q_w051", "q_w052", "q_w053", "q_w054", "q_w055"] },
     { "id": "dm3-c13", "name": "Chapter 13", "wordIds": ["w056", "w057"], "quizIds": ["q_w056", "q_w057"] },
     { "id": "dm3-c14", "name": "Chapter 14", "wordIds": ["w058", "w059", "w060", "w061", "w062", "w063"], "quizIds": ["q_w058", "q_w059", "q_w060", "q_w061", "q_w062", "q_w063"] }
-    ],
-
-    "bookPractices": [
-      {
-        "name": "chapter1 ", 
-        "quizIds": ["qc_w001", "qc_w002", "qc_w003", "qc_w004", "qc_w005", "qc_w006"] 
-      },
-      {
-        "name": "chapter2", 
-        "quizIds": []
-      }
-
+    ]
+  },
+  {
+    "id": "RAZ-F",
+    "type": "RAZ分级",
+    "series": "RAZ分级阅读",
+    "title": "RAZ-F ",
+    "cover": "infopic01/razf.png",
+    "chapters": [
+    { "id": "RAZ(F)-B1", "name": "Mother’s Day", "wordIds": ["w064", "w065", "w066", "w067"], "quizIds": ["q_w064", "q_w065", "q_w066", "q_w067"] },
+    { "id": "RAZ(F)-B2", "name": "Super Thrift", "wordIds": ["w068", "w069", "w070", "w071"], "quizIds": ["q_w068", "q_w069", "q_w070", "q_w071"] },
+    { "id": "RAZ(F)-B3", "name": "Community Workers", "wordIds": ["w072", "w073", "w074", "w075"], "quizIds": ["q_w072", "q_w073", "q_w074", "q_w075"] },
+    { "id": "RAZ(F)-B4", "name": "Night Animals", "wordIds": ["w076", "w077", "w078"], "quizIds": ["q_w076", "q_w077", "q_w078"] }
     ]
   }
-  
 ]
