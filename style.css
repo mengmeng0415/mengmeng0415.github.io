@@ -1813,3 +1813,81 @@ input:checked + .slider:before { transform: translateX(16px); }
     color: #999;
     font-weight: 500;
 }
+/* ============================================================
+   📱 移动端 Text Zoom 专属优化 (Mobile Reader Mode)
+   ============================================================ */
+@media (max-width: 768px) {
+
+    /* 1. 外层容器：完全撑满，去圆角，去阴影 */
+    .reader-layout {
+        width: 100% !important;
+        max-width: 100% !important;
+        border-radius: 0 !important;
+        box-shadow: none !important;
+        margin: 0 !important;
+    }
+
+    /* 2. 滚动区域：减小内边距，让可视范围更大 */
+    .reader-body {
+        padding: 20px 20px 100px 20px !important; /* 上 右 下 左 */
+    }
+
+    /* 3. 内部卡片/区块：去掉多余边距，紧凑排列 */
+    .rich-section {
+        width: 100% !important;
+        padding: 20px 15px !important; /* 卡片内部变紧凑 */
+        margin-top: 15px !important;
+        border-radius: 12px !important; /* 圆角改小一点 */
+    }
+
+    /* ============ 🔠 字体缩小适配 ============ */
+    
+    /* 单词主标题 */
+    #reader-scroll h1 {
+        font-size: 28px !important; /* 原来是 36px */
+        margin: 20px 0 !important;
+    }
+
+    /* 章节小标题 (详细内容、例句等) */
+    .rich-section h3 {
+        font-size: 20px !important;
+        margin-bottom: 10px !important;
+    }
+
+    /* 英文释义/例句 (大号字) */
+    .level-1, .text-en, .col-header .text-en, .block-example .en {
+        font-size: 18px !important; /* 原来是 20px-30px */
+        line-height: 1.4 !important;
+    }
+
+    /* 中文释义 (小号字) */
+    .text-cn, .block-example .cn {
+        font-size: 15px !important; /* 原来是 18px */
+        line-height: 1.5 !important;
+        margin-top: 4px !important;
+    }
+
+    /* 标签 (词性等) */
+    .rich-tag, .rich-phonetic {
+        font-size: 14px !important;
+        padding: 1px 6px !important;
+    }
+
+    /* 胶囊标签 (中文解释、英文解释等前缀) */
+    .def-block .text-en::before, 
+    .def-block .text-cn::before,
+    .block-example .en::before,
+    .col-header .text-en::before {
+        font-size: 12px !important;
+        padding: 1px 5px !important;
+        margin-right: 5px !important;
+    }
+
+    /* ============ 🎮 左右切换按钮微调 ============ */
+    /* 放在屏幕边缘，半透明，防止挡住文字 */
+    .btn-zoom-nav {
+        width: 40px !important;
+        background: rgba(255, 255, 255, 0.5) !important; /* 半透明防遮挡 */
+        font-size: 20px !important;
+    }
+}

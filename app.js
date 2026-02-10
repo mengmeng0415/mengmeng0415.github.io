@@ -644,7 +644,7 @@ function renderTabContent(type, word, container) {
                 <div style="flex:1; display:flex; justify-content:center; align-items:center; height:100%;">
                     <img src="${currImg}" 
                          onclick="toggleImageZoom()" 
-                         style="max-width:90%; max-height:90%; object-fit:contain; border-radius:10px; box-shadow:0 10px 30px rgba(0,0,0,0.1); cursor: zoom-out;">
+                         style="max-width:100%; max-height:100%; object-fit:contain; border-radius:10px; box-shadow:0 10px 30px rgba(0,0,0,0.1); cursor: zoom-out;">
                 </div>
                 <div style="position:absolute; bottom:30px; left:50%; transform:translateX(-50%); color:#999; font-weight:bold;">
                     ${state.currentImgIdx + 1} / ${allImages.length}
