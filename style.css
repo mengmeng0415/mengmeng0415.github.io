@@ -579,7 +579,7 @@ input:checked + .slider:before { transform: translateX(16px); }
 
 /* 2. 题干文字*/
 .quiz-q { 
-    font-size: 38px; 
+    font-size: 45px; 
     line-height: 1.5; 
     font-weight: 600; 
     color: #2c3e50; 
@@ -605,7 +605,7 @@ input:checked + .slider:before { transform: translateX(16px); }
     padding: 20px 30px; 
     border-radius: 12px; 
     text-align: left; 
-    font-size: 38px; 
+    font-size: 45px; 
     color: #444; 
     transition: all 0.2s ease; 
     
@@ -1818,7 +1818,7 @@ input:checked + .slider:before { transform: translateX(16px); }
    ============================================================ */
 @media (max-width: 768px) {
 
-    /* 1. 外层容器：完全撑满，去圆角，去阴影 */
+    /* 1. 外层容器：完全撑满，去圆角 */
     .reader-layout {
         width: 100% !important;
         max-width: 100% !important;
@@ -1827,67 +1827,508 @@ input:checked + .slider:before { transform: translateX(16px); }
         margin: 0 !important;
     }
 
-    /* 2. 滚动区域：减小内边距，让可视范围更大 */
+    /* 2. 滚动区域：减小内边距 */
     .reader-body {
-        padding: 20px 20px 100px 20px !important; /* 上 右 下 左 */
+        padding: 15px 15px 100px 15px !important; /* 更紧凑的边距 */
     }
 
-    /* 3. 内部卡片/区块：去掉多余边距，紧凑排列 */
+    /* 3. 内部卡片：紧凑排列 */
     .rich-section {
         width: 100% !important;
-        padding: 20px 15px !important; /* 卡片内部变紧凑 */
+        padding: 20px 15px !important; 
         margin-top: 15px !important;
-        border-radius: 12px !important; /* 圆角改小一点 */
+        border-radius: 12px !important;
     }
 
-    /* ============ 🔠 字体缩小适配 ============ */
+    /* ▼▼▼▼▼▼ 新增：顶部胶囊导航缩小 ▼▼▼▼▼▼ */
     
-    /* 单词主标题 */
+    /* 导航栏容器变矮 */
+    .reader-header {
+        padding: 5px 0 !important; /* 减少上下留白 */
+        border-bottom: 1px solid #eee !important;
+    }
+
+    /* 胶囊滚动区域 */
+    .reader-header .rich-nav {
+        padding: 5px 10px !important; /* 左右留一点空隙 */
+        gap: 8px !important;          /* 按钮之间的间距变小 */
+        justify-content: flex-start !important; /* 内容多时从左开始排，允许滚动 */
+    }
+
+    /* 胶囊按钮本体 */
+    .rich-nav button {
+        font-size: 13px !important;   /* 字体调小 (原来是20px) */
+        padding: 4px 12px !important; /* 按钮变瘦 */
+        border-radius: 14px !important;
+        background: #f0f2f5 !important;
+        color: #666 !important;
+        font-weight: 600 !important;
+        height: auto !important;
+        line-height: 1.4 !important;
+        flex-shrink: 0 !important;    /* 防止被挤压 */
+    }
+    
+    /* 选中的胶囊 (如果有active状态的话) */
+    .rich-nav button:active {
+        background: #e0e6ed !important;
+    }
+
+    /* ▲▲▲▲▲▲ 新增结束 ▲▲▲▲▲▲ */
+
+
+    /* ============ 🔠 内容字体缩小适配 ============ */
+    
     #reader-scroll h1 {
-        font-size: 28px !important; /* 原来是 36px */
-        margin: 20px 0 !important;
+        font-size: 26px !important; 
+        margin: 15px 0 !important;
     }
 
-    /* 章节小标题 (详细内容、例句等) */
     .rich-section h3 {
-        font-size: 20px !important;
+        font-size: 18px !important;
         margin-bottom: 10px !important;
+        padding-bottom: 8px !important;
     }
 
-    /* 英文释义/例句 (大号字) */
+    /* 英文释义/例句 */
     .level-1, .text-en, .col-header .text-en, .block-example .en {
-        font-size: 18px !important; /* 原来是 20px-30px */
+        font-size: 17px !important; 
         line-height: 1.4 !important;
     }
 
-    /* 中文释义 (小号字) */
+    /* 中文释义 */
     .text-cn, .block-example .cn {
-        font-size: 15px !important; /* 原来是 18px */
+        font-size: 15px !important; 
         line-height: 1.5 !important;
         margin-top: 4px !important;
     }
 
-    /* 标签 (词性等) */
-    .rich-tag, .rich-phonetic {
-        font-size: 14px !important;
-        padding: 1px 6px !important;
-    }
-
-    /* 胶囊标签 (中文解释、英文解释等前缀) */
+    /* 标签与胶囊前缀 */
+    .rich-tag, .rich-phonetic,
     .def-block .text-en::before, 
     .def-block .text-cn::before,
     .block-example .en::before,
     .col-header .text-en::before {
         font-size: 12px !important;
         padding: 1px 5px !important;
+        margin-right: 4px !important;
+    }
+
+    /* 左右切换按钮 (半透明防遮挡) */
+    .btn-zoom-nav {
+        width: 36px !important;
+        background: rgba(255, 255, 255, 0.6) !important;
+        font-size: 18px !important;
+    }
+}
+/* ============================================================
+   📱 移动端列表优化 (Sidebar & Word List)
+   缩小宽度、字体、间距，适应竖屏操作
+   ============================================================ */
+@media (max-width: 768px) {
+
+    /* 1. 核心变量重写：缩小侧边栏整体宽度 */
+    :root {
+        --sidebar-width: 150px; /* 电脑端是 280px，手机端改窄到 220px */
+    }
+
+    /* 2. 搜索框变紧凑 */
+    .search-box {
+        padding: 10px 10px 5px 10px !important;
+    }
+    .search-box input {
+        padding: 6px 10px !important;
+        font-size: 13px !important;
+        height: 36px !important;
+    }
+
+    /* 3. 分组标题 (如 A, B, Chapter 1) 变矮 */
+    .abc-group-header {
+        padding: 6px 12px !important; /* 减少上下内边距 */
+        font-size: 12px !important;   /* 字体变小 */
+        height: 32px !important;      /* 强制高度 */
+        box-sizing: border-box !important;
+    }
+
+    /* 4. 单词列表项 (li) 变矮 */
+    #abc-list li, 
+    #chapter-list-container li {
+        padding: 8px 12px !important; /* 原来是 14px 20px，大幅压缩 */
+        min-height: 40px !important;  /* 限制最小高度 */
+    }
+
+    /* 5. 单词主文字缩小 */
+    .word-text {
+        font-size: 14px !important; /* 原来是 16px */
+    }
+
+    /* 6. 辅助文字 (系列名) 缩小 */
+    .series-text {
+        font-size: 10px !important; /* 原来是 12px */
+        margin-top: 2px !important;
+    }
+
+    /* 7. 星级评分数字缩小 */
+    .rating-num {
+        font-size: 12px !important;
+    }
+
+    /* 8. 侧边栏头部高度压缩 */
+    .sidebar-header {
+        height: 50px !important;
+        padding: 0 10px !important;
+    }
+    .sidebar-header h2 {
+        font-size: 15px !important;
+    }
+}
+/* ============================================================
+   📱 移动端首页优化 (Home View Mobile)
+   按钮、标签、书本卡片、字体全面缩小
+   ============================================================ */
+@media (max-width: 768px) {
+
+    /* 1. 顶部固定导航栏：变矮、内边距变小 */
+    .home-fixed-header {
+        height: 50px !important;       /* 原来是 60px */
+        padding: 0 15px !important;    /* 左右边距缩小 */
+    }
+
+    /* 2. 首页大标题 (Books) */
+    .home-fixed-header h1 {
+        font-size: 10px !important;    /* 字体缩小 */
+        gap: 6px !important;
+    }
+
+    /* 3. 书本分类标签 (Tab 按钮) */
+    .book-type-nav button {
+        padding: 4px 10px !important;  /* 按钮变瘦 */
+        font-size: 8px !important;    /* 字体变小 */
+        border-radius: 12px !important;
+    }
+    .book-type-nav { gap: 5px !important; }
+
+    /* 4. 右上角开关 (按键音) */
+    .header-right {
+        gap: 5px !important;
+    }
+    .header-right span {
+        font-size: 11px !important;    /* 文字变小 */
+    }
+    .switch {
+        transform: scale(0.7);         /* 直接缩放开关大小 */
+        margin-right: -5px;            /* 修正缩放后的留白 */
+    }
+
+    /* ============ 📚 书本列表区域 ============ */
+
+    /* 5. 画廊容器：减少外边距 */
+    .book-gallery {
+        padding: 20px 15px !important; /* 上下左右留白减少 */
+    }
+
+    /* 6. 系列标题 (Series Title) */
+    .series-header {
+        margin-bottom: 10px !important;
+        padding-left: 10px !important;
+        border-left-width: 3px !important;
+    }
+    .series-title {
+        font-size: 15px !important;    /* 字体缩小 */
+    }
+    .series-section {
+        margin-bottom: 30px !important; /* 系列间距缩小 */
+    }
+
+    /* 7. 书本卡片 (Book Card) - 核心修改 */
+    .book-card {
+        flex: 0 0 120px !important;    /* 宽度从 220px -> 120px */
+        border-radius: 8px !important;
+    }
+
+    /* 8. 书本封面图 */
+    .book-cover {
+        height: 120px !important;      /* 高度从 230px -> 140px */
+        margin-bottom: 8px !important;
+    }
+
+    /* 9. 书本信息文字 */
+    .book-info {
+        padding: 0 4px 4px !important;
+    }
+    .book-title {
+        font-size: 13px !important;    /* 书名变小 */
+        margin-bottom: 2px !important;
+        line-height: 1.3 !important;
+    }
+    .book-count {
+        font-size: 10px !important;    /* 单词数变小 */
+    }
+
+    /* 10. 横向滚动条间距 */
+    .series-scroll-container {
+        gap: 15px !important;          /* 卡片之间的间距变小 */
+        padding-bottom: 15px !important;
+    }
+}
+@media (max-width: 768px) {
+    /* ============ 💾 导出按钮缩小 ============ */
+    .save-btn {
+        padding: 4px 8px !important;   /* 减小按钮内边距 */
+        font-size: 8px !important;    /* 字体变小 */
+        border-radius: 4px !important; /* 圆角变小 */
+        gap: 3px !important;           /* 图标和文字靠得更近 */
+        height: 24px !important;       /* 强制限制高度 */
+        line-height: 1 !important;     /* 垂直居中修正 */
+    }
+    
+    /* 如果列表标题 (Word List) 还是太大，可以再微调一下 */
+    .sidebar-header h2 {
+        font-size: 10px !important;
+    }
+    
+    /* 列表计数 (0) 也同步变小 */
+    .list-count {
+        font-size: 8px !important;
+        padding: 1px 4px !important;
+    }
+}
+/* ============================================================
+   📱 移动端详情页顶部优化 (Detail Header Mobile)
+   两行布局：上排功能按钮，下排单词+星星
+   ============================================================ */
+@media (max-width: 768px) {
+
+   /* 1. 顶部容器：允许换行 (Wrap) */
+    .word-top-bar {
+        height: auto !important;       /* 高度自适应 */
+        min-height: 80px !important;
+        padding: 10px 15px !important;
+        
+        /* 👇 关键：改为 Row 布局，但允许换行 */
+        flex-direction: row !important; 
+        flex-wrap: wrap !important;    
+        align-items: center !important;
+        gap: 10px 0 !important;        /* 上下行间距10px，左右0 */
+    }
+
+    /* 2. 左侧按钮组 (菜单、Home...): 排序 1 */
+    .bar-left {
+        order: 1 !important;
+        width: auto !important;
+        flex: 1 1 auto !important;     /* 自动占据剩余空间 */
+        flex-wrap: wrap !important;    /* 👇 关键：内部按钮也允许换行 */
+        justify-content: flex-start !important;
+        gap: 8px !important;
+    }
+
+    /* 3. 右侧按钮组 (Prev/Next): 排序 2 */
+    .bar-right {
+        order: 2 !important;
+        position: static !important;   /* 👇 关键：取消绝对定位，回归文档流 */
+        width: auto !important;
+        margin-left: auto !important;  /* 靠右对齐 */
+        
+        display: flex !important;
+        gap: 8px !important;
+        white-space: nowrap !important; /* 尽量不让这两个按钮拆开 */
+    }
+
+    /* 4. 中间单词组 (Word+Stars): 排序 3 (强制换行) */
+    .bar-center {
+        order: 3 !important;           /* 排在最后 */
+        position: static !important;   /* 取消绝对居中 */
+        transform: none !important;
+        
+        width: 100% !important;        /* 👇 关键：强占一行 */
+        margin-top: 5px !important;
+        padding-top: 10px !important;
+        border-top: 1px dashed #eee !important; /* 加个虚线分隔，更清晰 */
+        
+        flex-direction: row !important;
+        justify-content: space-between !important;
+    }
+
+    /* ============ 元素瘦身 (保持之前的缩小设置) ============ */
+    .icon-btn { font-size: 16px !important; padding: 4px !important; width: 28px !important; height: 28px !important; }
+    .home-icon-img { width: 16px !important; height: 16px !important; }
+    .practice-btn { padding: 4px 10px !important; font-size: 11px !important; height: 28px !important; }
+    .toggle-word-btn { padding: 4px 10px !important; font-size: 11px !important; height: 28px !important; }
+    .nav-arrow { padding: 4px 10px !important; font-size: 10px !important; height: 26px !important; }
+    
+    #word-main { font-size: 22px !important; } /* 单词稍微再小一点，防溢出 */
+    .main-audio { width: 24px !important; height: 24px !important; }
+    .main-audio svg { width: 14px !important; height: 14px !important; }
+    .star-icon { width: 18px !important; height: 18px !important; }
+    .rating-box { gap: 3px !important; }
+    .detail-tabs { padding-top: 0 !important; }
+    .detail-tabs button { padding: 8px 15px !important; font-size: 13px !important; }
+
+}
+/* ============================================================
+   📱 移动端 Quiz 挑战页优化
+   题目、选项、按钮全面缩小，适配竖屏
+   ============================================================ */
+@media (max-width: 768px) {
+
+    /* 1. 白底大卡片：去死板高度，减少内边距 */
+    .quiz-box {
+        padding: 20px 15px !important;  /* 原来是 40px */
+        min-height: auto !important;    /* 取消固定最小高度，防止留白太多 */
+        border-radius: 12px !important;
+        margin-top: 10px !important;
+    }
+
+    /* 2. 题干文字 (Question) */
+    .quiz-q {
+        font-size: 18px !important;     /* 原来是 38px -> 缩小到 18px */
+        margin-bottom: 20px !important; /* 间距缩小 */
+        line-height: 1.4 !important;
+    }
+    
+    /* 题干前的 Q1. 标签 */
+    .quiz-q span {
+        font-size: 14px !important;
         margin-right: 5px !important;
     }
 
-    /* ============ 🎮 左右切换按钮微调 ============ */
-    /* 放在屏幕边缘，半透明，防止挡住文字 */
-    .btn-zoom-nav {
-        width: 40px !important;
-        background: rgba(255, 255, 255, 0.5) !important; /* 半透明防遮挡 */
-        font-size: 20px !important;
+    /* 3. 选项容器 (Options) */
+    .quiz-opts {
+        gap: 10px !important;           /* 选项间距变小 */
+        grid-template-columns: 1fr !important; /* 强制单列显示 */
     }
+
+    /* 4. 选项按钮 (A, B, C, D) */
+    .opt-btn {
+        font-size: 15px !important;     /* 原来是 38px -> 缩小到 15px */
+        padding: 10px 12px !important;  /* 内边距缩小 */
+        min-height: auto !important;    /* 取消固定高度 */
+        border-radius: 8px !important;
+        gap: 8px !important;
+    }
+
+    /* 5. 选项前的圆圈 (A/B/C/D) */
+    .opt-btn span {
+        width: 26px !important;         /* 缩小圆圈尺寸 */
+        height: 26px !important;
+        font-size: 13px !important;     /* 圆圈内文字缩小 */
+        flex-shrink: 0 !important;      /* 防止被挤压 */
+        margin-right: 0 !important;
+    }
+
+    /* 6. 顶部页码条 (Pagination) */
+    .quiz-pagination {
+        gap: 6px !important;
+        margin-bottom: 10px !important;
+    }
+    .quiz-page-btn {
+        width: 28px !important;
+        height: 28px !important;
+        font-size: 12px !important;
+    }
+
+    /* 7. 底部大号 Next 按钮 */
+    .btn-big-next {
+        font-size: 16px !important;     /* 字体缩小 */
+        padding: 10px 0 !important;     /* 按钮变矮 */
+        margin: 35px auto 40px !important; /* 调整外边距 */
+        width: 80% !important;          /* 宽度稍微收一点 */
+        border-radius: 30px !important;
+    }
+    .btn-big-next svg {
+        width: 16px !important;
+        height: 16px !important;
+    }
+
+    /* 8. 底部进度文字 */
+    .quiz-info-text {
+        font-size: 12px !important;
+        bottom: -35px !important;       /* 贴近底部 */
+    }
+
+    /* ============ 🧩 配对题 (Matching) 适配 ============ */
+    .match-container {
+        flex-direction: row !important; /* 保持左右并排，或者改成 column 上下排 */
+        gap: 10px !important;
+    }
+    .match-item {
+        font-size: 13px !important;
+        padding: 8px 5px !important;
+        min-height: auto !important;
+    }
+    .match-img {
+        max-height: 60px !important;    /* 图片选项变小 */
+    }
+}
+/* ============================================================
+   📱 手机端顶部：强制分行 (Buttons Top, Word Bottom)
+   ============================================================ */
+@media (max-width: 768px) {
+
+    /* 1. 容器设置：允许换行 */
+    .word-top-bar {
+        display: flex !important;
+        flex-wrap: wrap !important;    /* 关键：允许内容折行 */
+        height: auto !important;       /* 高度随内容自动撑开 */
+        padding: 10px 15px !important;
+        align-items: center !important;
+    }
+
+    /* 2. 第一行左侧：功能按钮组 (菜单、Home...) */
+    .bar-left {
+        order: 1 !important;           /* 排位：1 */
+        width: auto !important;        /* 宽度自动 */
+        flex-grow: 1 !important;       /* 占据左侧剩余空间 */
+        justify-content: flex-start !important;
+        margin-bottom: 0 !important;   /* 紧贴下一行 */
+    }
+
+    /* 3. 第一行右侧：翻页按钮组 (Prev/Next) */
+    .bar-right {
+        order: 2 !important;           /* 排位：2 */
+        position: static !important;   /* 取消绝对定位 */
+        width: auto !important;
+        margin-left: auto !important;  /* 靠右对齐 */
+    }
+
+    /* 4. 第二行：单词主体 (强制换行核心) */
+    .bar-center {
+        order: 3 !important;           /* 排位：3 (最后) */
+        
+        /* 👇👇👇 核心代码：强制换行 👇👇👇 */
+        width: 100% !important;        /* 宽度100%，强迫自己独占一行 */
+        flex-basis: 100% !important;   /* Flex 里的强制换行符 */
+        
+        margin-top: 12px !important;   /* 与上面按钮拉开距离 */
+        padding-top: 12px !important;  /* 内部留白 */
+        border-top: 1px dashed #eee !important; /* 加条虚线，界限更清晰 */
+        
+        /* 内部样式复位 */
+        position: static !important;
+        transform: none !important;
+        display: flex !important;
+        justify-content: space-between !important; /* 单词在左，星星在右 */
+        align-items: center !important;
+    }
+
+    /* ============ 细节微调 ============ */
+    /* 单词字体大小 */
+    #word-main { font-size: 24px !important; margin: 0 !important; }
+    
+    /* 调整星星区域，防止太挤 */
+    .rating-box { margin-left: auto !important; }
+}
+/* ============================================================
+   🛠️ 修复：选错时去掉文字倒排特效
+   保持红色和抖动，但强制文字方向正常
+   ============================================================ */
+
+/* 针对被标记为 wrong 的选项按钮，以及它内部的所有元素（包括圆圈和文字） */
+.opt-btn.wrong,
+.opt-btn.wrong * {
+    /* 强制 Y 轴缩放为 1 (正常，非镜像) */
+    /* 强制 X 轴旋转为 0度 (不翻转) */
+    /* 使用 !important 最高优先级覆盖之前的设置 */
+    transform: scaleY(1) rotateX(0deg) !important;
+    
+    /* 注意：我们没有触碰 translateX，所以不会影响左右抖动 (shake) 动画 */
 }
