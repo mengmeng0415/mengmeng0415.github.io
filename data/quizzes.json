@@ -194,5 +194,251 @@
     "question": "The Raven Guard's trick made Simon the guard ______ out on the floor.",
     "options": ["grunt", "conk", "silent", "skilled"],
     "answer": 1
-  }
+  },
+  
+  "q_w029": {
+"type": "choice_text",
+"wordIds": ["w029"],
+"question": "'Feather, find the stone!' Griffith ______ firmly.",
+"options": ["zip", "command", "beyond", "ahead"],
+"answer": 1
+},
+"q_w030": {
+"type": "choice_text",
+"wordIds": ["w030"],
+"question": "The magic Finding Feather ______ toward the tunnels in a flash.",
+"options": ["beyond", "ahead", "zip", "pluck"],
+"answer": 2
+},
+"q_w031": {
+"type": "choice_text",
+"wordIds": ["w031"],
+"question": "The dragons flew over the hills to the deep forest ______.",
+"options": ["ahead", "pluck", "beyond", "gleam"],
+"answer": 2
+},
+"q_w032": {
+"type": "choice_text",
+"wordIds": ["w032"],
+"question": "Up ______, Drake saw the Raven Guard moving across the treetops.",
+"options": ["pluck", "gleam", "ahead", "pick up"],
+"answer": 2
+},
+"q_w033": {
+"type": "choice_text",
+"wordIds": ["w033"],
+"question": "Griffith ______ the Finding Feather from the air to change direction.",
+"options": ["gleam", "pick up", "handful", "pluck"],
+"answer": 3
+},
+"q_w034": {
+"type": "choice_text",
+"wordIds": ["w034"],
+"question": "Ana's dark eyes ______ with excitement when they chased the spy.",
+"options": ["pick up", "handful", "gleam", "conk"],
+"answer": 2
+},
+"q_w035": {
+"type": "choice_text",
+"wordIds": ["w035"],
+"question": "Kepri ______ speed to fly past the Raven Guard and block him.",
+"options": ["handful", "conk", "pick up", "command"],
+"answer": 2
+},
+"q_w036": {
+"type": "choice_text",
+"wordIds": ["w036"],
+"question": "The Raven Guard pulled out a ______ of glittering red dust from his pocket.",
+"options": ["conk", "command", "zip", "handful"],
+"answer": 3
+},
+"q_w037": {
+"type": "choice_text",
+"wordIds": ["w037"],
+"question": "The Raven Guard ______ through the forest to escape from the Dragon Masters.",
+"options": ["borrow", "streak", "in person", "trust"],
+"answer": 1
+},
+"q_w038": {
+"type": "choice_text",
+"wordIds": ["w038"],
+"question": "Can I ______ your Finding Feather to track the Raven Guard?",
+"options": ["streak", "borrow", "in person", "trust"],
+"answer": 1
+},
+"q_w039": {
+"type": "choice_text",
+"wordIds": ["w039"],
+"question": "Griffith decided to go to the dark forest ______ to stop the evil plan.",
+"options": ["streak", "borrow", "in person", "trust"],
+"answer": 2
+},
+"q_w040": {
+"type": "choice_text",
+"wordIds": ["w040"],
+"question": "We all ______ Bo because he would never betray the Dragon Masters.",
+"options": ["assist", "trust", "strengthen", "remove"],
+"answer": 1
+},
+"q_w041": {
+"type": "choice_text",
+"wordIds": ["w041"],
+"question": "The young Dragon Masters agreed to ______ Griffith in tracking the Raven Guard.",
+"options": ["trust", "assist", "strengthen", "remove"],
+"answer": 1
+},
+"q_w042": {
+"type": "choice_text",
+"wordIds": ["w042"],
+"question": "Griffith used magic to ______ the protection of the Dragon Stone.",
+"options": ["assist", "strengthen", "remove", "turn over"],
+"answer": 1
+},
+"q_w043": {
+"type": "choice_text",
+"wordIds": ["w043"],
+"question": "Shu can ______ the dark spell from Emperor Song with her power.",
+"options": ["strengthen", "remove", "turn over", "rise"],
+"answer": 1
+},
+"q_w044": {
+"type": "choice_text",
+"wordIds": ["w044"],
+"question": "Bo ______ the magic box to check for hidden red dust.",
+"options": ["remove", "turn over", "rise", "pattern"],
+"answer": 1
+},
+"q_w045": {
+"type": "choice_text",
+"wordIds": ["w045"],
+"question": "A thin cloud of red smoke ______ from the guard's palm.",
+"options": ["turn over", "rise", "pattern", "column"],
+"answer": 1
+},
+"q_w046": {
+"type": "choice_text",
+"wordIds": ["w046"],
+"question": "There is a strange star ______ on the bottom of the magic box.",
+"options": ["rise", "pattern", "column", "deal with"],
+"answer": 1
+},
+"q_w047": {
+"type": "choice_text",
+"wordIds": ["w047"],
+"question": "A ______ of Raven Guard marched toward the castle gate.",
+"options": ["pattern", "column", "deal with", "fail"],
+"answer": 1
+},
+"q_w048": {
+"type": "choice_text",
+"wordIds": ["w048"],
+"question": "We need to ______ the Raven Guard before they use dark magic.",
+"options": ["column", "deal with", "fail", "dare"],
+"answer": 1
+},
+"q_w049": {
+"type": "choice_text",
+"wordIds": ["w049"],
+"question": "The magic shield ______ to stop the red dust from spreading.",
+"options": ["deal with", "fail", "dare", "woozy"],
+"answer": 1
+},
+"q_w050": {
+"type": "choice_text",
+"wordIds": ["w050"],
+"question": "How ______ you hurt the baby dragon?",
+"options": ["fail", "dare", "woozy", "misty"],
+"answer": 1
+},
+"q_w051": {
+"type": "choice_text",
+"wordIds": ["w051"],
+"question": "Ana felt ______ after breathing in a little red dust.",
+"options": ["dare", "woozy", "misty", "terrified"],
+"answer": 1
+},
+"q_w052": {
+"type": "choice_text",
+"wordIds": ["w052"],
+"question": "The dark forest became ______ after the red dust spread.",
+"options": ["woozy", "misty", "terrified", "force"],
+"answer": 1
+},
+"q_w053": {
+"type": "choice_text",
+"wordIds": ["w053"],
+"question": "The baby dragon was ______ of the Raven Guard's dark magic.",
+"options": ["misty", "terrified", "force", "swarm"],
+"answer": 1
+},
+"q_w054": {
+"type": "choice_text",
+"wordIds": ["w054"],
+"question": "The Raven Guard tried to ______ Bo to tell the secret of the Dragon Stone.",
+"options": ["terrified", "force", "swarm", "harm"],
+"answer": 1
+},
+"q_w055": {
+"type": "choice_text",
+"wordIds": ["w055"],
+"question": "A ______ of glowing red orbs flew into the throne room.",
+"options": ["force", "swarm", "harm", "bravery"],
+"answer": 1
+},
+"q_w056": {
+"type": "choice_text",
+"wordIds": ["w056"],
+"question": "The red dust won't ______ you if you don't breathe it in.",
+"options": ["swarm", "harm", "bravery", "cot"],
+"answer": 1
+},
+"q_w057": {
+"type": "choice_text",
+"wordIds": ["w057"],
+"question": "Bo's ______ to face the Raven Guard alone impressed Griffith.",
+"options": ["harm", "bravery", "cot", "undo"],
+"answer": 1
+},
+"q_w058": {
+"type": "choice_text",
+"wordIds": ["w058"],
+"question": "Diego lay on a ______ in Griffith's workshop after the spell backfired.",
+"options": ["bravery", "cot", "undo", "by nature"],
+"answer": 1
+},
+"q_w059": {
+"type": "choice_text",
+"wordIds": ["w059"],
+"question": "Shu can ______ the dark spell that Maldred cast on Emperor Song.",
+"options": ["cot", "undo", "by nature", "trail off"],
+"answer": 1
+},
+"q_w060": {
+"type": "choice_text",
+"wordIds": ["w060"],
+"question": "Her eyes were ______ with tears when she saw her lost dragon.",
+"options": ["undo", "misty", "by nature", "trail off"],
+"answer": 1
+},
+"q_w061": {
+"type": "choice_text",
+"wordIds": ["w061"],
+"question": "Dragons are ______ protective of their masters.",
+"options": ["misty", "by nature", "trail off", "risk"],
+"answer": 1
+},
+"q_w062": {
+"type": "choice_text",
+"wordIds": ["w062"],
+"question": "Griffith's voice ______ when he talked about Maldred's evil dragon.",
+"options": ["by nature", "trail off", "risk", "misty"],
+"answer": 1
+},
+"q_w063": {
+"type": "choice_text",
+"wordIds": ["w063"],
+"question": "We can't ______ waiting for Maldred to attack again.",
+"options": ["trail off", "risk", "by nature", "undo"],
+"answer": 1
+}
 }
