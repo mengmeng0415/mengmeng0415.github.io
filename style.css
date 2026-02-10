@@ -2332,3 +2332,78 @@ input:checked + .slider:before { transform: translateX(16px); }
     
     /* 注意：我们没有触碰 translateX，所以不会影响左右抖动 (shake) 动画 */
 }
+/* ============================================================
+   📱 移动端 Scene 图片大小优化
+   ============================================================ */
+@media (max-width: 768px) {
+    
+    /* 1. 普通模式：单张大图去除高度限制，强制撑满宽度 */
+    .scene-images[data-count="1"] .scene-image {
+        width: 100% !important;       /* 宽度强制撑满容器 */
+        max-width: 100% !important;
+        height: auto !important;      /* 高度自动，按比例伸缩 */
+        max-height: none !important;  /* ❌ 核心：去掉 500px 的高度限制 */
+        object-fit: cover !important; /* 稍微裁切一点边缘以换取更饱满的视觉 */
+        border-radius: 8px !important;
+    }
+
+    /* 2. 优化图片容器的内边距，让图片更贴边 */
+    .image-box {
+        padding: 5px !important; /* 减少留白 */
+    }
+}
+/* ============================================================
+   💻 电脑端 Text Zoom 留白优化 (Desktop Reader Spacing)
+   ============================================================ */
+
+/* 1. 滚动区域：大幅减小顶部内边距 */
+.reader-body {
+    /* 原来顶部是 40px，现在减小到 10px */
+    /* 顺序：上 | 右 | 下 | 左 */
+    padding: 10px 80px 120px 80px !important;
+}
+
+/* 2. 单词主标题 (h1)：去除默认的大间距 */
+#reader-scroll h1 {
+    font-size: 36px; /* 保持大字体 */
+    
+    /* 👇 核心修改：紧贴顶部导航 */
+    margin-top: 5px !important;    
+    margin-bottom: 20px !important; 
+    
+    line-height: 1.2 !important;
+}
+
+/* 3. (可选) 如果第一张卡片离标题还是太远，可以把这个也加上 */
+.rich-section:first-of-type {
+    margin-top: 10px !important;
+}
+/* ============================================================
+   📱 移动端：提示块瘦身 (Mistakes, Critical, Notes)
+   ============================================================ */
+@media (max-width: 768px) {
+
+    /* 针对：常见误区(mistake), 重要(cr), 注意(co), 笔记(cb) */
+    .block-mistake, 
+    .block-cr, 
+    .block-co, 
+    .block-cb {
+        font-size: 16px !important;       /* 核心：从 28px 缩小到 16px */
+        line-height: 1.6 !important;      /* 增加行高，阅读更舒适 */
+        
+        padding: 12px 15px !important;    /* 缩小内边距 */
+        margin: 15px 0 !important;        /* 缩小上下外边距 */
+        
+        border-radius: 8px !important;    /* 圆角变小 */
+        border-width: 1px !important;     /* 确保边框纤细 */
+    }
+
+    /* 提示块里面的加粗标题 (如 "常见误区:") */
+    .block-mistake b, 
+    .block-cr b, 
+    .block-co b, 
+    .block-cb b {
+        font-size: 16px !important;       /* 标题保持和正文一致或稍大 */
+        margin-right: 5px !important;
+    }
+}

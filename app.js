@@ -595,13 +595,27 @@ function renderTabContent(type, word, container) {
         if (!container.classList.contains('pseudo-fullscreen')) {
             container.classList.add('pseudo-fullscreen');
         }
-        if (type === 'text') {
+        
+        // 👇 修改点：背景色设为黑色，且根据不同类型决定是否允许容器滚动
+        if (type === 'scene') {
+            container.style.background = "#000"; 
+            container.style.padding = "0";
+            container.style.overflowY = "auto"; // ✅ Scene模式：允许Y轴滚动
+            container.style.display = "block";  // ✅ Scene模式：块级布局，不再强制Flex居中
+        } 
+        else if (type === 'text') {
             container.style.background = "#f5f5f7"; 
-            container.style.padding = "0";          
-        } else {
+            container.style.padding = "0";
+            container.style.overflowY = "hidden"; // Text模式内部有滚动条
+            container.style.display = "flex";     
+        } 
+        else {
             container.style.background = "#f8f9fa"; 
             container.style.padding = "20px";
+            container.style.overflowY = "auto";
+            container.style.display = "flex";
         }
+
     } else {
         container.classList.remove('pseudo-fullscreen');
         if (document.fullscreenElement && document.exitFullscreen) {
@@ -609,6 +623,8 @@ function renderTabContent(type, word, container) {
         }
         container.style.background = "";
         container.style.padding = "";
+        container.style.overflowY = ""; 
+        container.style.display = "";
     }
 
     // 通用 Zoom 按钮图标
@@ -623,8 +639,6 @@ function renderTabContent(type, word, container) {
 
     // ============ 🖼️ SCENE (图片) ============
     if (type === 'scene') {
-        
-        // 1. 只收集 Scene 图片 (过滤掉 Card)
         let allImages = [];
         if (word.images && word.images.scene) {
             allImages = word.images.scene.map(u => u.startsWith('http') ? u : CONFIG.assetUrl + CONFIG.imgFolder + u);
@@ -635,32 +649,35 @@ function renderTabContent(type, word, container) {
             container.innerHTML = `<div class="empty-tip">暂无图片</div>`;
         } 
         else if (state.isImageZoom) {
-            // ✅ [Scene Zoom 模式] (全屏大图)
+            // ✅ [Scene Zoom 模式] (全屏滚动版)
             if (state.currentImgIdx >= allImages.length) state.currentImgIdx = 0;
             const currImg = allImages[state.currentImgIdx];
 
             container.innerHTML = `
-                <button class="btn-zoom-nav prev" onclick="navigateInZoom(-1)">❮</button>
-                <div style="flex:1; display:flex; justify-content:center; align-items:center; height:100%;">
-                    <img src="${currImg}" 
+                <button class="btn-zoom-nav prev" onclick="navigateInZoom(-1)" style="position:fixed;">❮</button>
+                <button class="btn-zoom-nav next" onclick="navigateInZoom(1)" style="position:fixed;">❯</button>
+
+                <div style="width:100%; min-height:100%; position:relative; padding-bottom: 60px;"> <img src="${currImg}" 
                          onclick="toggleImageZoom()" 
-                         style="max-width:100%; max-height:100%; object-fit:contain; border-radius:10px; box-shadow:0 10px 30px rgba(0,0,0,0.1); cursor: zoom-out;">
+                         style="width:100%; height:auto; display:block; cursor:zoom-out; margin: 0 auto;">
+                    
+                    <div style="position:fixed; bottom:30px; left:50%; transform:translateX(-50%); 
+                                color:rgba(255,255,255,0.8); font-weight:bold; font-size:16px; 
+                                background:rgba(0,0,0,0.5); padding:4px 12px; border-radius:20px; pointer-events:none;">
+                        ${state.currentImgIdx + 1} / ${allImages.length}
+                    </div>
                 </div>
-                <div style="position:absolute; bottom:30px; left:50%; transform:translateX(-50%); color:#999; font-weight:bold;">
-                    ${state.currentImgIdx + 1} / ${allImages.length}
-                </div>
-                <button class="btn-zoom-nav next" onclick="navigateInZoom(1)">❯</button>
             `;
             container.appendChild(fixedZoomBtn);
         } 
         else {
-            // ✅ [Scene 普通模式] (九宫格)
-            // 👇👇👇 重点修改：容器和图片都加 onclick，并给小图标加穿透 👇👇👇
+            // ✅ [Scene 普通模式]
             const imgsHtml = allImages.map((src, idx) => `
                 <div class="scene-img-wrapper" style="position:relative; cursor: zoom-in;" onclick="enterImageZoom(${idx})">
                     <img src="${src}" 
                          class="scene-image" 
-                         style="pointer-events: none;"> <div style="position:absolute; right:5px; bottom:5px; background:rgba(0,0,0,0.5); color:#fff; border-radius:4px; padding:2px 6px; font-size:10px; pointer-events: none;">
+                         style="pointer-events: none;">
+                    <div style="position:absolute; right:5px; bottom:5px; background:rgba(0,0,0,0.5); color:#fff; border-radius:4px; padding:2px 6px; font-size:10px; pointer-events: none;">
                          🔍
                     </div>
                 </div>`).join('');
