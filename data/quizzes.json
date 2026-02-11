@@ -531,31 +531,158 @@
 },
 "q_w076": {
 "type": "choice_text",
-"wordIds": ["w076"],
-"question": "Snakes go into ______ when the winter temperature drops below zero.",
-"options": ["hibernation", "active", "nectar", "clam"],
-"answer": 0
-},
-"q_w077": {
-"type": "choice_text",
 "wordIds": ["w077"],
 "question": "Owls are ______ at night and sleep during the day.",
 "options": ["hibernation", "active", "nectar", "clam"],
 "answer": 1
 },
-"q_w078": {
+"q_w077": {
 "type": "choice_text",
 "wordIds": ["w078"],
 "question": "Bees fly from flower to flower to collect ______ for making honey.",
 "options": ["hibernation", "active", "nectar", "clam"],
 "answer": 2
 },
-"q_w079": {
+"q_w078": {
 "type": "choice_text",
 "wordIds": ["w079"],
 "question": "The nurse shark finds crabs and ______ in the dark sea at night.",
 "options": ["hibernation", "active", "nectar", "clam"],
 "answer": 3
+},
+"q_w080": {
+"type": "choice_text",
+"wordIds": ["w080"],
+"question": "Many people ______ every morning to stay relaxed and strong.",
+"options": ["yoga", "pose", "arch", "cobra"],
+"answer": 0
+},
+"q_w081": {
+"type": "choice_text",
+"wordIds": ["w081"],
+"question": "The dancer struck a beautiful ______ at the end of the performance.",
+"options": ["yoga", "pose", "arch", "cobra"],
+"answer": 1
+},
+"q_w082": {
+"type": "choice_text",
+"wordIds": ["w082"],
+"question": "The cat ______ its back when it sensed danger nearby.",
+"options": ["stork", "balance", "arch", "floppy"],
+"answer": 2
+},
+"q_w083": {
+"type": "choice_text",
+"wordIds": ["w083"],
+"question": "The ______ pose in yoga helps stretch the chest and back muscles.",
+"options": ["stork", "cobra", "balance", "polka-dot"],
+"answer": 1
+},
+"q_w084": {
+"type": "choice_text",
+"wordIds": ["w084"],
+"question": "The ______ is a large bird with long legs, and its namesake yoga pose requires balancing on one leg.",
+"options": ["stork", "cobra", "balance", "fuzzy"],
+"answer": 0
+},
+"q_w085": {
+"type": "choice_text",
+"wordIds": ["w085"],
+"question": "You need good ______ to walk on the narrow path without falling.",
+"options": ["stork", "balance", "put on", "floppy"],
+"answer": 1
+},
+"q_w086": {
+"type": "choice_text",
+"wordIds": ["w086"],
+"question": "Please ______ your coat before going out—it's cold outside.",
+"options": ["fuzzy", "put on", "polka-dot", "floppy"],
+"answer": 1
+},
+"q_w087": {
+"type": "choice_text",
+"wordIds": ["w087"],
+"question": "The little girl hugged her ______ teddy bear tightly when she slept.",
+"options": ["fuzzy", "polka-dot", "floppy", "direction"],
+"answer": 0
+},
+"q_w088": {
+"type": "choice_text",
+"wordIds": ["w088"],
+"question": "She wore a red ______ dress to the birthday party and looked lively.",
+"options": ["fuzzy", "polka-dot", "floppy", "direction"],
+"answer": 1
+},
+"q_w089": {
+"type": "choice_text",
+"wordIds": ["w089"],
+"question": "The clown's ______ shoes made a funny sound when he walked.",
+"options": ["polka-dot", "floppy", "direction", "passage"],
+"answer": 1
+},
+"q_w090": {
+"type": "choice_text",
+"wordIds": ["w090"],
+"question": "It's important to follow the ______ on the medicine bottle carefully.",
+"options": ["direction", "passage", "shut down", "prefix"],
+"answer": 0
+},
+"q_w091": {
+"type": "choice_text",
+"wordIds": ["w091"],
+"question": "We walked through an underground ______ to cross the busy street safely.",
+"options": ["passage", "shut down", "prefix", "load"],
+"answer": 0
+},
+"q_w092": {
+"type": "choice_text",
+"wordIds": ["w092"],
+"question": "The factory had to ______ for two weeks due to the heavy storm.",
+"options": ["shut down", "prefix", "load", "overload"],
+"answer": 0
+},
+"q_w093": {
+"type": "choice_text",
+"wordIds": ["w093"],
+"question": "Adding the ______ “un-” to “happy” makes the word “unhappy”.",
+"options": ["prefix", "load", "overload", "make sense"],
+"answer": 0
+},
+"q_w094": {
+"type": "choice_text",
+"wordIds": ["w094"],
+"question": "They need to ______ the boxes onto the truck before noon.",
+"options": ["load", "overload", "make sense", "nonsense"],
+"answer": 0
+},
+"q_w095": {
+"type": "choice_text",
+"wordIds": ["w095"],
+"question": "Don't ______ the shelf with too many books—it might break.",
+"options": ["overload", "make sense", "nonsense", "preschool"],
+"answer": 0
+},
+"q_w096": {
+"type": "choice_text",
+"wordIds": ["w096"],
+"question": "Your explanation doesn't ______—can you explain it again?",
+"options": ["make sense", "nonsense", "preschool", "direction"],
+"answer": 0
+},
+"q_w097": {
+"type": "choice_text",
+"wordIds": ["w097"],
+"question": "Stop talking ______ and tell me the truth about what happened.",
+"options": ["nonsense", "preschool", "passage", "shut down"],
+"answer": 0
+},
+"q_w098": {
+"type": "choice_text",
+"wordIds": ["w098"],
+"question": "My little sister goes to a ______ near our home and likes her teacher.",
+"options": ["preschool", "prefix", "load", "overload"],
+"answer": 0
 }
+
 
 }

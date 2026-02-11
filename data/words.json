@@ -984,19 +984,6 @@
 ]
 },
 "w076": {
-"word": "hibernation",
-"images": {
-"scene": ["infopic01/hibernation.webp"],
-"card": ["wordpic01/hibernation.webp"]
-},
-"richDetail": [
-"[TITLE] 解释 [/TITLE][DEF][EN] The state of inactivity and metabolic depression in animals during winter, characterized by lower body temperature, slower breathing, and reduced heart rate (used in the book to describe how some animals survive winter)[/EN][CN] 冬眠（动物在冬季的不活动状态和代谢抑制，特点是体温降低、呼吸变慢、心率减慢，书中指一些动物如何度过冬季）[/CN][POS] n.[/POS][PH]/ˌhaɪbəˈneɪʃn/[/PH][DU] Some animals can't find food in winter, so they go into hibernation.|(原文例句) 有些动物在冬天找不到食物，所以它们会进入冬眠。[/DU][DU] Bears are famous for their long hibernation during cold winters.| 熊以在寒冷的冬天长时间冬眠而闻名。[/DU][/DEF][IMG] infopic01/hibernation.webp [/IMG]",
-"[TITLE] 常见用法 [/TITLE][COLL][H] go into hibernation | 进入冬眠 [POS] n.[/POS][/H][EX] Snakes go into hibernation when the temperature drops below zero.| 当气温降到零度以下时，蛇就会进入冬眠。[/EX][EX] Turtles go into hibernation in the mud at the bottom of rivers.| 乌龟在河底的泥里进入冬眠。[/EX][/COLL][H] during hibernation | 在冬眠期间 [POS] n.[/POS][/H][EX] During hibernation, animals don't eat or drink much.| 在冬眠期间，动物很少进食或喝水。[/EX][EX] Animals' body functions slow down during hibernation to save energy.| 在冬眠期间，动物的身体机能变慢，以节省能量。[/EX][/COLL][H] wake up from hibernation | 从冬眠中醒来 [POS] n.[/POS][/H][EX] Animals wake up from hibernation when spring comes and food becomes available.| 当春天到来，食物出现时，动物们就会从冬眠中醒来。[/EX][EX] The little squirrel woke up from hibernation and looked for nuts in the tree.| 小松鼠从冬眠中醒来，在树上寻找坚果。[/EX][/COLL]",
-"[TITLE] 额外例句 [/TITLE][EX] Hibernation helps animals survive the cold winter when food is scarce.| 冬眠帮助动物在食物稀缺的寒冷冬天存活下来。[/EX][EX] Scientists are studying the mechanism of hibernation to learn more about animal survival.| 科学家们正在研究冬眠的机制，以更多地了解动物的生存方式。[/EX][EX] Some frogs can survive freezing temperatures during hibernation.| 有些青蛙在冬眠期间能忍受冰冻的温度。[/EX]",
-"[TITLE] 常见错误 [/TITLE][ERR] hibernation 是不可数名词，不要加 a/an（错误：a hibernation），也没有复数形式（错误：hibernations）。[/ERR][ERR] 不要混淆 hibernation 和 sleep！hibernation 是 “冬眠，长期低温代谢抑制状态”；sleep 是 “普通睡眠”，时间短，代谢正常，如 go into hibernation /go to sleep。[/ERR][ERR]“进入冬眠” 的正确表达是 go into hibernation，不要用 enter hibernation（错误，虽可理解但不常用），或 go to hibernation（错误）。[/ERR]"
-]
-},
-"w077": {
 "word": "active",
 "images": {
 "scene": ["infopic01/active.webp"],
@@ -1009,7 +996,7 @@
 "[TITLE] 常见错误 [/TITLE][ERR] active 是形容词，不要当作副词使用（错误：he works active），正确是 he works actively；其名词形式是 activity（活动），不要混淆（错误：an active of reading），正确是 an activity of reading。[/ERR][ERR] 不要混淆 active 和 energetic！active 侧重 “好动的、积极参与的”；energetic 侧重 “精力充沛的”，如 an active child /an energetic athlete。[/ERR][ERR]“在夜间活跃” 的正确表达是 active at night，不要用 active in night（错误），in 用于较长的时间段，如 in the evening。[/ERR]"
 ]
 },
-"w078": {
+"w077": {
 "word": "nectar",
 "images": {
 "scene": ["infopic01/nectar.webp"],
@@ -1022,7 +1009,7 @@
 "[TITLE] 常见错误 [/TITLE][ERR] nectar 是不可数名词，表示 “一滴花蜜” 用 a drop of nectar，“许多花蜜” 用 much nectar，不要直接说 a nectar（错误）。[/ERR][ERR] 不要混淆 nectar 和 honey！nectar 是 “花蜜”，是花产生的原始甜味液体；honey 是 “蜂蜜”，是蜜蜂加工花蜜后形成的产物，如 collect nectar /eat honey。[/ERR][ERR]“采集花蜜” 的正确表达是 collect nectar，不要用 gather nectar（错误，虽可理解但不常用），collect 更侧重 “有目的的收集”。[/ERR]"
 ]
 },
-"w079": {
+"w078": {
 "word": "clam",
 "images": {
 "scene": ["infopic01/clam.webp"],
@@ -1034,7 +1021,268 @@
 "[TITLE] 额外例句 [/TITLE][EX] Many people like to dig for clams at low tide on the beach.| 很多人喜欢在海滩退潮时挖蛤蜊。[/EX][EX] The clam buried itself in the sand to avoid being found by predators.| 蛤蜊把自己埋在沙子里，避免被掠食者发现。[/EX][EX] She added chopped clams to the soup to make it more delicious.| 她往汤里加了切碎的蛤蜊，让味道更浓郁。[/EX]",
 "[TITLE] 常见错误 [/TITLE][ERR] clam 作 “蛤蜊” 时是可数名词，“一个蛤蜊” 用 a clam，“多个蛤蜊” 用 clams，不要说 many clam（错误）。[/ERR][ERR] 不要混淆 clam 和 oyster！clam 是 “蛤蜊，蚌”，壳较圆且薄；oyster 是 “牡蛎，蚝”，壳较厚且不规则，如 fresh clams /raw oysters。[/ERR][ERR] clam 作动词 “紧闭” 时，过去式和过去分词是 clamped，不要记错成 clammed（错误），正确：The door clamped shut in the wind。[/ERR]"
 ]
-} 
+},
+
+"w079": {
+"word": "hockey",
+"images": {
+"scene": ["infopic01/hockey.webp"],
+"card": ["wordpic01/hockey.webp"]
+},
+"richDetail": [
+"[TITLE] 解释 [/TITLE][DEF][EN] A game played on ice or grass where players use sticks to hit a small puck or ball into the opponent's goal; a sport that helps people exercise and make friends (used in the book when talking about fun ways to exercise)[/EN][CN] 曲棍球（在冰面或草地上进行的运动，球员用球杆将小冰球或小球击入对方球门）；一项能帮助人们锻炼和交友的运动（书中指有趣的锻炼方式）[/CN][POS] n.[/POS][PH]/ˈhɒki/（英式）/ˈhɑːki/（美式）[/PH][DU] You are exercising when you play hockey.|(原文例句) 打曲棍球时，你就在锻炼啦。[/DU][DU] We played hockey with our classmates on the school field after class.| 课后我们和同学在学校操场上打曲棍球。[/DU][/DEF][IMG] infopic01/hockey.webp [/IMG]",
+"[TITLE] 常见用法 [/TITLE][COLL][H] play hockey | 打曲棍球 [POS] n.[/POS][/H][EX] He learns to play hockey every Saturday at the community center.| 他每周六在社区中心学习打曲棍球。[/EX][EX] Girls can play hockey too—our school has a girls' hockey team.| 女孩也能打曲棍球，我们学校有一支女子曲棍球队。[/EX][/COLL][H] ice hockey | 冰球 [POS] n.[/POS][/H][EX] Ice hockey is a popular sport in cold countries like Canada.| 冰球在加拿大等寒冷国家是很受欢迎的运动。[/EX][EX] We watched an exciting ice hockey game on TV last night.| 昨晚我们在电视上看了一场精彩的冰球比赛。[/EX][/COLL][H] field hockey | 草地曲棍球 [POS] n.[/POS][/H][EX] Field hockey is played on grass, and players use a small ball instead of a puck.| 草地曲棍球在草地上进行，球员用小球而不是冰球。[/EX][EX] Our PE teacher taught us how to hold a field hockey stick correctly.| 体育老师教我们如何正确握草地曲棍球杆。[/EX][/COLL]",
+"[TITLE] 额外例句 [/TITLE][EX] The hockey puck slid across the ice and into the goal.| 冰球滑过冰面，进了球门。[/EX][EX] She bought a new hockey stick for her brother's birthday.| 她给弟弟买了一根新的曲棍球杆作为生日礼物。[/EX][EX] Playing hockey helps improve teamwork and speed.| 打曲棍球有助于提高团队合作能力和速度。[/EX]",
+"[TITLE] 常见错误 [/TITLE][ERR] hockey 是不可数名词，表示 “一场曲棍球比赛” 用 a hockey game，不要说 a hockey（错误）。[/ERR][ERR] 不要混淆 hockey 和 soccer！hockey 是 “曲棍球”，用球杆击球；soccer 是 “足球”，用脚踢球，如 play hockey /play soccer。[/ERR][ERR]“打曲棍球” 的正确表达是 play hockey，不要用 play the hockey（错误），球类运动前不加定冠词 the。[/ERR]"
+]
+},
+"w080": {
+"word": "yoga",
+"images": {
+"scene": ["infopic01/yoga.webp"],
+"card": ["wordpic01/yoga.webp"]
+},
+"richDetail": [
+"[TITLE] 解释 [/TITLE][DEF][EN] A form of exercise that involves moving the body into different positions to stay strong and relaxed; a fun activity that makes people healthy (used in the book about different yoga poses)[/EN][CN] 瑜伽（一种通过摆出不同姿势来保持强壮和放松的运动；一种能让人保持健康的有趣活动，书中介绍了多种瑜伽姿势）[/CN][POS] n.[/POS][PH]/ˈjəʊɡə/（英式）/ˈjoʊɡə/（美式）[/PH][DU] We Do Yoga. Yoga makes us strong. Yoga is fun.|(原文例句) 我们做瑜伽。瑜伽让我们变得强壮，瑜伽很有趣。[/DU][DU] My mom does yoga every morning to keep her body flexible.| 我妈妈每天早上做瑜伽，保持身体柔韧性。[/DU][/DEF][IMG] infopic01/yoga.webp [/IMG]",
+"[TITLE] 常见用法 [/TITLE][COLL][H] do yoga | 做瑜伽 [POS] n.[/POS][/H][EX] We do yoga in PE class to stretch our bodies.| 我们在体育课上做瑜伽，拉伸身体。[/EX][EX] She likes to do yoga before going to bed to relax.| 她喜欢睡前做瑜伽放松身心。[/EX][/COLL][H] yoga pose | 瑜伽姿势 [POS] n.[/POS][/H][EX] The teacher showed us how to do the tree yoga pose correctly.| 老师教我们如何正确做树式瑜伽姿势。[/EX][EX] This yoga pose helps improve balance and focus.| 这个瑜伽姿势有助于提高平衡感和专注力。[/EX][/COLL][H] yoga class | 瑜伽课 [POS] n.[/POS][/H][EX] I joined a yoga class at the community center last month.| 上个月我在社区中心报了一节瑜伽课。[/EX][EX] The yoga class starts at 7 o'clock in the evening.| 瑜伽课晚上 7 点开始。[/EX][/COLL]",
+"[TITLE] 额外例句 [/TITLE][EX] Yoga teaches us to breathe slowly and stay calm.| 瑜伽教我们缓慢呼吸，保持冷静。[/EX][EX] You don't need special equipment to do yoga at home.| 在家做瑜伽不需要特殊装备。[/EX][EX] Many people do yoga to relieve stress from work or study.| 很多人通过做瑜伽来缓解工作或学习的压力。[/EX]",
+"[TITLE] 常见错误 [/TITLE][ERR] yoga 是不可数名词，不要加 a/an（错误：a yoga），也没有复数形式（错误：yogas）。[/ERR][ERR] 不要混淆 yoga 和 exercise！yoga 是 “瑜伽”，特指一种拉伸放松的运动；exercise 是 “锻炼” 的总称，范围更广，如 do yoga /do exercise。[/ERR][ERR]“做瑜伽” 的正确表达是 do yoga，不要用 play yoga（错误），play 多用于球类或游戏类运动。[/ERR]"
+]
+},
+"w081": {
+"word": "pose",
+"images": {
+"scene": ["infopic01/pose.webp"],
+"card": ["wordpic01/pose.webp"]
+},
+"richDetail": [
+"[TITLE] 解释 [/TITLE][DEF][EN] A position of the body; to put the body into a particular position (used in the book about different yoga positions and clown faces)[/EN][CN] 姿势；摆姿势（身体的一种姿态；将身体摆出特定姿势，书中涉及瑜伽姿势和小丑扮相）[/CN][POS] n./v.[/POS][PH]/pəʊz/（英式）/poʊz/（美式）[/PH][DU] I do a dog pose. I try to stretch down like my dog.|(原文例句) 我做狗式姿势，试着像我的小狗一样向下拉伸。[/DU][DU] The clown posed for photos with the children after the show.| 表演结束后，小丑和孩子们一起摆姿势拍照。[/DU][/DEF][IMG] infopic01/pose.webp [/IMG]",
+"[TITLE] 常见用法 [/TITLE][COLL][H] yoga pose | 瑜伽姿势 [POS] n.[/POS][/H][EX] Can you hold this yoga pose for one minute?| 你能保持这个瑜伽姿势一分钟吗？[/EX][EX] She learned three new yoga poses in today's class.| 她在今天的课上学了三个新的瑜伽姿势。[/EX][/COLL][H] strike a pose | 摆姿势（拍照或展示）[POS] v. phr.[/POS][/H][EX] The model struck a pose and smiled at the camera.| 模特摆了个姿势，对着镜头微笑。[/EX][EX] We struck funny poses for the family photo.| 我们为全家福摆了有趣的姿势。[/EX][/COLL][H] pose for sb | 为某人摆姿势 [POS] v.[/POS][/H][EX] The little girl posed for her dad while he painted a picture of her.| 爸爸给小女孩画画时，她为爸爸摆了姿势。[/EX][EX] They posed for a group photo in front of the school gate.| 他们在学校大门前摆姿势拍集体照。[/EX][/COLL]",
+"[TITLE] 额外例句 [/TITLE][EX] His favorite yoga pose is the airplane pose—he feels like flying.| 他最喜欢的瑜伽姿势是飞机式，他觉得自己像在飞。[/EX][EX] The dancer held a beautiful pose at the end of the performance.| 舞者在表演结束时摆出了一个优美的姿势。[/EX][EX] It's not easy to keep a pose for a long time without moving.| 长时间不动保持一个姿势并不容易。[/EX]",
+"[TITLE] 常见错误 [/TITLE][ERR] pose 作名词 “姿势” 时是可数名词，“一个姿势” 用 a pose，“多个姿势” 用 poses，不要说 many pose（错误）。[/ERR][ERR] 不要混淆 pose 和 position！pose 特指 “为展示、拍照等摆出的姿势”；position 泛指 “身体的位置或姿态”，如 strike a pose /sit in a comfortable position。[/ERR][ERR] pose 作动词时是及物动词，直接接宾语，如 pose a question（提出问题），不要遗漏宾语（错误：pose for the photo），正确是 pose for the photo（为照片摆姿势）或 pose a photo（拍摄照片，较少用）。[/ERR]"
+]
+},
+"w082": {
+"word": "arch",
+"images": {
+"scene": ["infopic01/arch.webp"],
+"card": ["wordpic01/arch.webp"]
+},
+"richDetail": [
+"[TITLE] 解释 [/TITLE][DEF][EN] To bend into a curved shape; a curved structure (used in the book when talking about the cat yoga pose where the back is bent)[/EN][CN] 弓起；使成弓形；拱门；拱形结构（弯曲成曲线形状；弯曲的结构，书中指猫式瑜伽姿势中弓起背部）[/CN][POS] v./n.[/POS][PH]/ɑːtʃ/（英式）/ɑːrtʃ/（美式）[/PH][DU] I do a cat pose. My cat and I both arch our backs.|(原文例句) 我做猫式姿势，我和我的猫都弓起背部。[/DU][DU] The bridge has a big arch that looks like a rainbow.| 这座桥有一个大大的拱门，看起来像彩虹。[/DU][/DEF][IMG] infopic01/arch.webp [/IMG]",
+"[TITLE] 常见用法 [/TITLE][COLL][H] arch one's back | 弓起背部 [POS] v. phr.[/POS][/H][EX] The cat arched its back when it saw a dog nearby.| 猫看到附近有狗时，弓起了背部。[/EX][EX] You need to arch your back slightly for this yoga pose.| 做这个瑜伽姿势时，你需要轻轻弓起背部。[/EX][/COLL][H] arch the eyebrows | 皱起眉毛 [POS] v. phr.[/POS][/H][EX] She arched her eyebrows when she heard the surprising news.| 听到这个令人惊讶的消息，她皱起了眉毛。[/EX][EX] He arched his eyebrows and asked, “Are you sure?”| 他皱了皱眉毛，问道：“你确定吗？”[/EX][/COLL][H] a stone arch | 石拱门 [POS] n.[/POS][/H][EX] We walked through a small stone arch to enter the garden.| 我们穿过一个小小的石拱门进入花园。[/EX][EX] The old building has many beautiful arches on the windows.| 这座老建筑的窗户上有许多漂亮的拱形结构。[/EX][/COLL]",
+"[TITLE] 额外例句 [/TITLE][EX] The rainbow arched across the sky after the rain.| 雨后，彩虹在天空中拱起一道弧线。[/EX][EX] She arched her legs and stretched them towards the ceiling.| 她弓起双腿，向天花板方向伸展。[/EX][EX] The arch of the door is decorated with colorful flowers.| 门的拱形部分装饰着五颜六色的花。[/EX]",
+"[TITLE] 常见错误 [/TITLE][ERR] arch 作动词 “弓起” 时是及物动词，直接接宾语（如 back/eyebrows），不要加介词（错误：arch up the back），正确是 arch the back。[/ERR][ERR] 不要混淆 arch 和 bend！arch 特指 “弓成弧形”，弯曲程度较明显；bend 泛指 “弯曲”，可指任何角度的弯曲，如 arch the back /bend the knees。[/ERR][ERR] arch 作名词 “拱门” 时是可数名词，“一个拱门” 用 an arch（元音音素开头），不要说 a arch（错误）。[/ERR]"
+]
+},
+"w083": {
+"word": "cobra",
+"images": {
+"scene": ["infopic01/cobra.webp"],
+"card": ["wordpic01/cobra.webp"]
+},
+"richDetail": [
+"[TITLE] 解释 [/TITLE][DEF][EN] A type of poisonous snake with a wide hood on its head; a yoga pose where the upper body is lifted off the ground (used in the book about yoga poses and Indian animals)[/EN][CN] 眼镜蛇（一种头部有宽阔兜帽状皮褶的毒蛇）；眼镜蛇式瑜伽姿势（上半身抬离地面的瑜伽动作，书中涉及瑜伽姿势和印度动物）[/CN][POS] n.[/POS][PH]/ˈkəʊbrə/（英式）/ˈkoʊbrə/（美式）[/PH][DU] I do a cobra pose. I won’t bite if you won’t!|(原文例句) 我做眼镜蛇式姿势，你不咬我，我也不咬你哦！[/DU][DU] The king cobra is one of the most dangerous snakes in the world.| 眼镜王蛇是世界上最危险的蛇之一。[/DU][/DEF][IMG] infopic01/cobra.webp [/IMG]",
+"[TITLE] 常见用法 [/TITLE][COLL][H] cobra pose | 眼镜蛇式瑜伽姿势 [POS] n.[/POS][/H][EX] The cobra pose helps stretch the chest and back muscles.| 眼镜蛇式姿势有助于拉伸胸部和背部肌肉。[/EX][EX] She learned how to do the cobra pose in her first yoga class.| 她在第一节瑜伽课上学会了做眼镜蛇式姿势。[/EX][/COLL][H] king cobra | 眼镜王蛇 [POS] n.[/POS][/H][EX] King cobras live in forests in Asia, including India.| 眼镜王蛇生活在亚洲的森林里，包括印度。[/EX][EX] The zookeeper told us that king cobras can grow up to 5 meters long.| 动物园管理员告诉我们，眼镜王蛇能长到 5 米长。[/EX][/COLL][H] poisonous cobra | 有毒的眼镜蛇 [POS] n.[/POS][/H][EX] We saw a poisonous cobra at the zoo, but it was in a safe cage.| 我们在动物园看到了一条有毒的眼镜蛇，但它在安全的笼子里。[/EX][EX] People should stay away from wild cobras because they are dangerous.| 人们应该远离野生眼镜蛇，因为它们很危险。[/EX][/COLL]",
+"[TITLE] 额外例句 [/TITLE][EX] In the cobra pose, you lie on your stomach and lift your chest up.| 做眼镜蛇式姿势时，你趴在地上，抬起胸部。[/EX][EX] The cobra spread its hood to scare away the other animal.| 眼镜蛇展开兜帽状皮褶，吓跑了另一只动物。[/EX][EX] Yoga teachers often teach the cobra pose after the cat pose.| 瑜伽老师通常在猫式姿势之后教眼镜蛇式姿势。[/EX]",
+"[TITLE] 常见错误 [/TITLE][ERR] cobra 是可数名词，“一条眼镜蛇” 用 a cobra，“多条眼镜蛇” 用 cobras，不要说 many cobra（错误）。[/ERR][ERR] 不要混淆 cobra 和 snake！cobra 是 “眼镜蛇”，是蛇的一种，特指有毒且有兜帽的蛇；snake 是 “蛇” 的总称，如 a king cobra /a small snake。[/ERR][ERR]“眼镜蛇式瑜伽姿势” 的正确表达是 cobra pose，不要说 cobra's pose（错误），不需要所有格形式。[/ERR]"
+]
+},
+"w084": {
+"word": "stork",
+"images": {
+"scene": ["infopic01/stork.webp"],
+"card": ["wordpic01/stork.webp"]
+},
+"richDetail": [
+"[TITLE] 解释 [/TITLE][DEF][EN] A large bird with long legs and a long beak; a yoga pose where you balance on one leg (used in the book about yoga poses and African watering hole animals)[/EN][CN] 鹳（一种长腿、长喙的大鸟）；鹳式瑜伽姿势（单腿站立保持平衡的瑜伽动作，书中涉及瑜伽姿势和非洲水坑边的动物）[/CN][POS] n.[/POS][PH]/stɔːk/（英式）/stɔːrk/（美式）[/PH][DU] I do a stork pose. I balance on one leg.|(原文例句) 我做鹳式姿势，单腿保持平衡。[/DU][DU] A flock of storks came to the watering hole to drink water.| 一群鹳飞到水坑边喝水。[/DU][/DEF][IMG] infopic01/stork.webp [/IMG]",
+"[TITLE] 常见用法 [/TITLE][COLL][H] stork pose | 鹳式瑜伽姿势 [POS] n.[/POS][/H][EX] The stork pose is good for improving balance and leg strength.| 鹳式姿势有助于提高平衡感和腿部力量。[/EX][EX] It takes practice to hold the stork pose for more than 10 seconds.| 要保持鹳式姿势超过 10 秒需要练习。[/EX][/COLL][H] a flock of storks | 一群鹳 [POS] n.[/POS][/H][EX] We saw a big flock of storks flying south for the winter.| 我们看到一大群鹳向南飞去过冬。[/EX][EX] A flock of storks rested on the roof of the old building.| 一群鹳在老建筑的屋顶上休息。[/EX][/COLL][H] white stork | 白鹳 [POS] n.[/POS][/H][EX] White storks build large nests on top of trees or buildings.| 白鹳在树顶或建筑物上筑大型巢穴。[/EX][EX] White storks are considered a symbol of good luck in some countries.| 在一些国家，白鹳被视为好运的象征。[/EX][/COLL]",
+"[TITLE] 额外例句 [/TITLE][EX] In the stork pose, you stand on one leg and put the other foot against your knee.| 做鹳式姿势时，你单腿站立，另一只脚靠在膝盖上。[/EX][EX] The stork used its long beak to catch fish in the river.| 鹳用它长长的喙在河里捕鱼。[/EX][EX] She struggled to balance in the stork pose at first, but now she can do it easily.| 起初她很难在鹳式姿势中保持平衡，但现在她能轻松做到了。[/EX]",
+"[TITLE] 常见错误 [/TITLE][ERR] stork 是可数名词，“一只鹳” 用 a stork，“多只鹳” 用 storks，不要说 many stork（错误）。[/ERR][ERR] 不要混淆 stork 和 crane！stork 是 “鹳”，喙较粗短，常栖息在屋顶或树顶；crane 是 “鹤”，喙细长，常栖息在湿地，如 a white stork /a red-crowned crane。[/ERR][ERR]“鹳式瑜伽姿势” 的正确表达是 stork pose，不要说 stork's pose（错误），不需要所有格形式。[/ERR]"
+]
+},
+"w085": {
+"word": "balance",
+"images": {
+"scene": ["infopic01/balance.webp"],
+"card": ["wordpic01/balance.webp"]
+},
+"richDetail": [
+"[TITLE] 解释 [/TITLE][DEF][EN] To stay steady on one's feet or in a particular position; a state of being steady (used in the book about yoga poses and daily activities)[/EN][CN] 平衡；保持平衡（双脚或在特定姿势中保持稳定；稳定的状态，书中涉及瑜伽姿势和日常活动）[/CN][POS] v./n.[/POS][PH]/ˈbæləns/[/PH][DU] I do a tree pose. My arms are like branches that reach up high. I balance on one leg.|(原文例句) 我做树式姿势，我的手臂像树枝一样高高举起，单腿保持平衡。[/DU][DU] You need good balance to ride a bike without falling.| 骑自行车不摔倒需要良好的平衡感。[/DU][/DEF][IMG] infopic01/balance.webp [/IMG]",
+"[TITLE] 常见用法 [/TITLE][COLL][H] balance on one leg | 单腿平衡 [POS] v. phr.[/POS][/H][EX] The little boy practiced balancing on one leg in the park.| 小男孩在公园里练习单腿平衡。[/EX][EX] Can you balance on one leg for a minute?| 你能单腿平衡一分钟吗？[/EX][/COLL][H] keep balance | 保持平衡 [POS] v. phr.[/POS][/H][EX] She spread her arms out to keep balance while walking on the narrow path.| 她在狭窄的小路上行走时，张开手臂保持平衡。[/EX][EX] Yoga helps you learn how to keep balance in daily life.| 瑜伽帮助你学会在日常生活中保持平衡。[/EX][/COLL][H] lose balance | 失去平衡 [POS] v. phr.[/POS][/H][EX] He lost his balance and fell off the skateboard.| 他失去了平衡，从滑板上摔了下来。[/EX][EX] Be careful not to lose balance on the wet floor.| 小心不要在湿滑的地板上失去平衡。[/EX][/COLL]",
+"[TITLE] 额外例句 [/TITLE][EX] The gymnast showed amazing balance on the balance beam.| 体操运动员在平衡木上展现了惊人的平衡感。[/EX][EX] You need to balance work and rest to stay healthy.| 你需要平衡工作和休息，才能保持健康。[/EX][EX] She balanced a book on her head and walked across the room.| 她把一本书顶在头上，穿过了房间。[/EX]",
+"[TITLE] 常见错误 [/TITLE][ERR] balance 作动词 “平衡” 时是及物或不及物动词，不及物时直接用（如 balance on one leg），及物时接宾语（如 balance a book），不要加介词（错误：balance on a book）。[/ERR][ERR] 不要混淆 balance 和 steady！balance 侧重 “通过调整保持平衡”；steady 侧重 “使稳定，不晃动”，如 balance on a rope /steady the table。[/ERR][ERR] balance 作名词 “平衡感” 时是不可数名词，不要加 a/an（错误：a good balance），正确是 good balance（如 She has good balance）。[/ERR]"
+]
+},
+"w086": {
+"word": "put on",
+"images": {
+"scene": ["infopic01/put on.webp"],
+"card": ["wordpic01/put on.webp"]
+},
+"richDetail": [
+"[TITLE] 解释 [/TITLE][DEF][EN] To place clothing, shoes, etc., on one's body; to turn on a machine or device (used in the book about getting dressed and preparing for activities)[/EN][CN] 穿上；戴上；打开（把衣服、鞋子等穿在身上；启动机器或设备，书中涉及穿衣和准备活动）[/CN][POS] v. phr.[/POS][PH]/pʊt ɒn/（英式）/pʊt ɑːn/（美式）[/PH][DU] First, she puts on white face paint. Next, she puts on big, fuzzy eyebrows.|(原文例句) 首先，她涂上白色的脸谱漆，然后戴上大大的毛茸茸的眉毛。[/DU][DU] I put on my coat and boots before going out in the snow.| 下雪天出门前，我穿上了外套和靴子。[/DU][/DEF][IMG] infopic01/put on.webp [/IMG]",
+"[TITLE] 常见用法 [/TITLE][COLL][H] put on + 衣物 / 饰品 | 穿上 / 戴上……[POS] v. phr.[/POS][/H][EX] She put on her favorite dress for the birthday party.| 她穿上最喜欢的裙子去参加生日派对。[/EX][EX] He put on a hat and sunglasses to protect himself from the sun.| 他戴上帽子和太阳镜，防晒。[/EX][/COLL][H] put on + 电器 / 设备 | 打开……[POS] v. phr.[/POS][/H][EX] Can you put on the TV? I want to watch the cartoon.| 你能打开电视吗？我想看动画片。[/EX][EX] She put on the radio and listened to music while cooking.| 她打开收音机，边做饭边听音乐。[/EX][/COLL][H] put on a show | 表演节目 [POS] v. phr.[/POS][/H][EX] The children put on a show for their parents at the end of the semester.| 学期结束时，孩子们为父母表演了节目。[/EX][EX] We put on a talent show to raise money for the school library.| 我们举办了才艺表演，为学校图书馆筹款。[/EX][/COLL]",
+"[TITLE] 额外例句 [/TITLE][EX] Put on your gloves—it's cold outside!| 戴上手套，外面很冷！[/EX][EX] He put on his backpack and walked to school.| 他背上书包，步行去上学。[/EX][EX] She put on the lights because it was getting dark.| 天变黑了，她打开了灯。[/EX]",
+"[TITLE] 常见错误 [/TITLE][ERR] put on 是短暂性动词短语，表示 “穿 / 戴” 的动作，不要与 wear（表示 “穿 / 戴” 的状态）混淆，如 He put on his jacket and went out.（他穿上夹克出去了）/ He is wearing a jacket today.（他今天穿了一件夹克）。[/ERR][ERR] put on 的过去式和过去分词还是 put on，不要记错成 putted on（错误），正确：She put on her shoes five minutes ago。[/ERR][ERR]“穿上衣服” 的正确表达是 put on clothes，不要说 put clothes on（虽然可理解，但不如 put on clothes 常用），且不要遗漏 on（错误：put clothes）。[/ERR]"
+]
+},
+"w087": {
+"word": "fuzzy",
+"images": {
+"scene": ["infopic01/fuzzy.webp"],
+"card": ["wordpic01/fuzzy.webp"]
+},
+"richDetail": [
+"[TITLE] 解释 [/TITLE][DEF][EN] Covered with soft, short hair or fur; not clear or sharp (used in the book about clown costumes and soft toys)[/EN][CN] 毛茸茸的；模糊的（覆盖着柔软的短毛；不清晰的，书中涉及小丑服装和毛绒玩具）[/CN][POS] adj.[/POS][PH]/ˈfʌzi/[/PH][DU] Next, she puts on big, fuzzy eyebrows.|(原文例句) 然后，她戴上大大的毛茸茸的眉毛。[/DU][DU] The little girl hugged her fuzzy teddy bear and fell asleep.| 小女孩抱着她毛茸茸的泰迪熊睡着了。[/DU][/DEF][IMG] infopic01/fuzzy.webp [/IMG]",
+"[TITLE] 常见用法 [/TITLE][COLL][H] fuzzy + 名词（玩具 / 毛发 / 物体）| 毛茸茸的……；模糊的……[POS] adj.[/POS][/H][EX] He bought a fuzzy rabbit toy for his little sister.| 他给妹妹买了一个毛茸茸的兔子玩具。[/EX][EX] The baby has fuzzy hair on his head.| 这个小宝宝头上长着柔软的绒毛。[/EX][/COLL][H] fuzzy picture/memory | 模糊的照片 / 记忆 [POS] adj.[/POS][/H][EX] The old photo is fuzzy, but we can still recognize our grandparents.| 这张老照片很模糊，但我们仍然能认出祖父母。[/EX][EX] I have a fuzzy memory of my first day at school.| 我对上学第一天的记忆很模糊。[/EX][/COLL][H] fuzzy sweater | 毛茸茸的毛衣 [POS] adj.[/POS][/H][EX] She wore a fuzzy sweater to keep warm in the cold weather.| 寒冷的天气里，她穿了一件毛茸茸的毛衣保暖。[/EX][EX] The fuzzy sweater is made of sheep's wool.| 这件毛茸茸的毛衣是羊毛做的。[/EX][/COLL]",
+"[TITLE] 额外例句 [/TITLE][EX] The cat's paws are fuzzy and soft to touch.| 猫的爪子毛茸茸的，摸起来很软。[/EX][EX] The fuzzy blanket feels comfortable on the couch.| 沙发上的毛茸茸毯子摸起来很舒服。[/EX][EX] The TV screen went fuzzy because of the bad signal.| 由于信号不好，电视屏幕变得模糊。[/EX]",
+"[TITLE] 常见错误 [/TITLE][ERR] fuzzy 是形容词，不要当作名词使用（错误：a fuzzy），正确是 a fuzzy toy（一个毛茸茸的玩具）。[/ERR][ERR] 不要混淆 fuzzy 和 fluffy！fuzzy 侧重 “短而密的绒毛，手感柔软”；fluffy 侧重 “蓬松的，像棉花一样的”，如 a fuzzy cat /a fluffy cloud。[/ERR][ERR] fuzzy 的比较级是 fuzzier，最高级是 fuzziest，不要加 more/most（错误：more fuzzy），正确：This teddy bear is fuzzier than that one。[/ERR]"
+]
+},
+"w088": {
+"word": "polka-dot",
+"images": {
+"scene": ["infopic01/polka-dot.webp"],
+"card": ["wordpic01/polka-dot.webp"]
+},
+"richDetail": [
+"[TITLE] 解释 [/TITLE][DEF][EN] Having small round dots on a surface; a pattern of small round dots (used in the book about clown costumes and colorful clothes)[/EN][CN] 带圆点的；圆点图案的（表面有小圆点；小圆点组成的图案，书中涉及小丑服装和彩色衣物）[/CN][POS] adj./n.[/POS][PH]/ˈpɒlkə dɒt/（英式）/ˈpoʊlkə dɑːt/（美式）[/PH][DU] She puts on a polka-dot jacket and striped pants.|(原文例句) 她穿上带圆点的夹克和条纹裤子。[/DU][DU] My mom bought me a polka-dot dress for the party.| 妈妈给我买了一条带圆点的裙子去参加派对。[/DU][/DEF][IMG] infopic01/polka-dot.webp [/IMG]",
+"[TITLE] 常见用法 [/TITLE][COLL][H] polka-dot + 衣物 / 物品 | 带圆点的……[POS] adj.[/POS][/H][EX] The little girl wore a red polka-dot skirt to school.| 小女孩穿着红色带圆点的裙子去上学。[/EX][EX] We wrapped the gift in polka-dot paper.| 我们用带圆点的纸包装了礼物。[/EX][/COLL][H] a polka-dot pattern | 圆点图案 [POS] n.[/POS][/H][EX] The curtains have a blue and white polka-dot pattern.| 窗帘是蓝白相间的圆点图案。[/EX][EX] She likes clothes with a polka-dot pattern because they look lively.| 她喜欢带圆点图案的衣服，因为看起来很活泼。[/EX][/COLL][H] polka-dot socks | 圆点袜子 [POS] adj.[/POS][/H][EX] He put on his polka-dot socks and sneakers before playing basketball.| 打篮球前，他穿上了圆点袜子和运动鞋。[/EX][EX] These polka-dot socks match my new shoes perfectly.| 这双圆点袜子和我的新鞋很配。[/EX][/COLL]",
+"[TITLE] 额外例句 [/TITLE][EX] The clown's polka-dot jacket made all the children laugh.| 小丑带圆点的夹克让所有孩子都笑了。[/EX][EX] I saw a polka-dot umbrella in the store— it was very cute.| 我在商店里看到一把圆点雨伞，非常可爱。[/EX][EX] Her backpack has a polka-dot design on the front.| 她的书包正面有圆点图案。[/EX]",
+"[TITLE] 常见错误 [/TITLE][ERR] polka-dot 作形容词时，中间必须加连字符（-），不要写成 polkadot（错误）或 polka dot（错误，分开写是名词短语），正确：a polka-dot shirt。[/ERR][ERR] 不要混淆 polka-dot 和 striped！polka-dot 是 “圆点图案的”；striped 是 “条纹图案的”，如 a polka-dot dress /a striped shirt。[/ERR][ERR] polka-dot 作名词 “圆点图案” 时，通常用复数形式 polka dots，如 The dress is covered with polka dots（这条裙子布满了圆点）。[/ERR]"
+]
+},
+"w089": {
+"word": "floppy",
+"images": {
+"scene": ["infopic01/floppy.webp"],
+"card": ["wordpic01/floppy.webp"]
+},
+"richDetail": [
+"[TITLE] 解释 [/TITLE][DEF][EN] Hanging loosely or bending easily; not firm or stiff (used in the book about clown costumes and soft objects)[/EN][CN] 松软的；下垂的；易弯曲的（松散地垂着或容易弯曲；不坚硬的，书中涉及小丑服装和柔软物品）[/CN][POS] adj.[/POS][PH]/ˈflɒpi/（英式）/ˈflɑːpi/（美式）[/PH][DU] And she puts on big, floppy shoes.|(原文例句) 然后她穿上大大的松软鞋子。[/DU][DU] The puppy has floppy ears that hang down to its cheeks.| 这只小狗有松软的耳朵，垂到脸颊上。[/DU][/DEF][IMG] infopic01/floppy.webp [/IMG]",
+"[TITLE] 常见用法 [/TITLE][COLL][H] floppy + 名词（鞋子 / 耳朵 / 毛发）| 松软的……；下垂的……[POS] adj.[/POS][/H][EX] She wore floppy sandals to the beach because they are comfortable.| 她穿了松软的凉鞋去海滩，因为很舒服。[/EX][EX] The old teddy bear has floppy arms and legs.| 这只旧泰迪熊的胳膊和腿都很松软。[/EX][/COLL][H] floppy hair | 松软的头发 [POS] adj.[/POS][/H][EX] Her floppy hair fell over her shoulders as she read the book.| 她看书时，松软的头发垂落在肩膀上。[/EX][EX] He has curly floppy hair that looks very cute.| 他有一头卷曲的松软头发，看起来很可爱。[/EX][/COLL][H] floppy hat | 宽边软帽 [POS] adj.[/POS][/H][EX] She put on a floppy straw hat to protect her face from the sun.| 她戴上宽边软草帽，保护脸不被太阳晒。[/EX][EX] The floppy hat kept the rain off her head.| 宽边软帽挡住了她头上的雨。[/EX][/COLL]",
+"[TITLE] 额外例句 [/TITLE][EX] The flowers in the vase are floppy because they haven't been watered.| 花瓶里的花因为没浇水而枯萎下垂了。[/EX][EX] These floppy socks are perfect for wearing around the house.| 这双松软的袜子很适合在家穿。[/EX][EX] The clown's floppy shoes made a funny sound when he walked.| 小丑的松软鞋子走路时发出了有趣的声音。[/EX]",
+"[TITLE] 常见错误 [/TITLE][ERR] floppy 是形容词，不要当作名词使用（错误：a floppy），正确是 a floppy hat（一顶宽边软帽）。[/ERR][ERR] 不要混淆 floppy 和 soft！floppy 侧重 “松软且下垂、易弯曲”；soft 侧重 “质地柔软，不坚硬”，如 floppy ears /soft fur。[/ERR][ERR] floppy 的比较级是 floppier，最高级是 floppiest，不要加 more/most（错误：more floppy），正确：This toy rabbit's ears are floppier than that one。[/ERR]"
+]
+},
+"w090": {
+"word": "direction",
+"images": {
+"scene": ["infopic01/direction.webp"],
+"card": ["wordpic01/direction.webp"]
+},
+"richDetail": [
+"[TITLE] 解释 [/TITLE][DEF][EN] A way that a person or thing moves or faces; instructions on how to do something (used in the book about following steps and finding places)[/EN][CN] 方向；指示；说明（人或物体移动或面对的方向；做某事的步骤说明，书中涉及遵循步骤和寻找地点）[/CN][POS] n.[/POS][PH]/dəˈrekʃn/[/PH][DU] Why is it important to follow directions?|(原文例句) 遵循指示为什么很重要？[/DU][DU] The teacher gave us clear directions on how to finish the project.| 老师给了我们明确的指示，告诉我们如何完成项目。[/DU][/DEF][IMG] infopic01/direction.webp [/IMG]",
+"[TITLE] 常见用法 [/TITLE][COLL][H] follow directions | 遵循指示 [POS] n.[/POS][/H][EX] You must follow the directions on the medicine bottle carefully.| 你必须仔细遵循药瓶上的说明。[/EX][EX] The students who follow directions can finish the task quickly.| 遵循指示的学生能快速完成任务。[/EX][/COLL][H] in the direction of | 朝…… 方向 [POS] n.[/POS][/H][EX] We walked in the direction of the park after dinner.| 晚饭后，我们朝公园的方向走去。[/EX][EX] The bird flew in the direction of the sun.| 小鸟朝着太阳的方向飞去。[/EX][/COLL][H] give directions | 给出指示 / 指路 [POS] n.[/POS][/H][EX] Can you give me directions to the nearest library?| 你能告诉我去最近的图书馆怎么走吗？[/EX][EX] She gave clear directions on how to bake the cake.| 她详细说明了如何烤蛋糕。[/EX][/COLL]",
+"[TITLE] 额外例句 [/TITLE][EX] The map shows the directions of north, south, east, and west.| 地图上标有东、南、西、北四个方向。[/EX][EX] I asked a stranger for directions when I got lost.| 我迷路时向一个陌生人问了路。[/EX][EX] Read the directions before using the new machine.| 使用新机器前，请阅读说明书。[/EX]",
+"[TITLE] 常见错误 [/TITLE][ERR] direction 作 “指示、说明” 时是可数名词，常用复数形式 directions，不要用单数（错误：follow the direction），正确：follow the directions。[/ERR][ERR] 不要混淆 direction 和 instruction！direction 侧重 “行动的方向或简单指示”；instruction 侧重 “详细的操作说明或命令”，如 ask for directions（问路）/follow the instructions（遵循操作说明）。[/ERR][ERR]“朝…… 方向” 的正确表达是 in the direction of，不要用 to the direction of（错误）。[/ERR]"
+]
+},
+"w091": {
+"word": "passage",
+"images": {
+"scene": ["infopic01/passage.webp"],
+"card": ["wordpic01/passage.webp"]
+},
+"richDetail": [
+"[TITLE] 解释 [/TITLE][DEF][EN] A long, narrow space that connects two places; a short section of a book, speech, or piece of writing (used in the book about tunnels and reading comprehension)[/EN][CN] 通道；走廊；（文章、演讲等的）段落（连接两个地方的狭长空间；书籍、演讲或文章的短节，书中涉及隧道和阅读理解）[/CN][POS] n.[/POS][PH]/ˈpæsɪdʒ/[/PH][DU] Tunnels are long, narrow, covered passages.|(原文例句) 隧道是长长的、狭窄的、有遮盖的通道。[/DU][DU] The teacher asked us to read the third passage and answer the questions.| 老师让我们读第三段并回答问题。[/DU][/DEF][IMG] infopic01/passage.webp [/IMG]",
+"[TITLE] 常见用法 [/TITLE][COLL][H] underground passage | 地下通道 [POS] n.[/POS][/H][EX] We walked through an underground passage to cross the busy street.| 我们穿过地下通道，穿过繁忙的街道。[/EX][EX] The underground passage is safe and dry even on rainy days.| 即使在下雨天，地下通道也安全干燥。[/EX][/COLL][H] a passage from a book | 书中的一段文字 [POS] n.[/POS][/H][EX] The teacher read a passage from her favorite novel to the class.| 老师给全班同学读了她最喜欢的小说中的一段。[/EX][EX] I highlighted an interesting passage in the textbook.| 我在课本中划出了一段有趣的文字。[/EX][/COLL][H] narrow passage | 狭窄的通道 [POS] n.[/POS][/H][EX] The narrow passage between the two buildings leads to a small garden.| 两栋楼之间的狭窄通道通向一个小花园。[/EX][EX] We had to walk single file through the narrow passage.| 我们不得不排成一列穿过狭窄的通道。[/EX][/COLL]",
+"[TITLE] 额外例句 [/TITLE][EX] The old castle has many secret passages that few people know about.| 这座老城堡有许多秘密通道，很少有人知道。[/EX][EX] Can you find the passage that talks about climate change in the article?| 你能在文章中找到谈论气候变化的段落吗？[/EX][EX] The passage of time makes us grow older and wiser.| 时间的流逝让我们变得更成熟、更聪明。[/EX]",
+"[TITLE] 常见错误 [/TITLE][ERR] passage 是可数名词，“一个通道 / 段落” 用 a passage，“多个通道 / 段落” 用 passages，不要说 many passage（错误）。[/ERR][ERR] 不要混淆 passage 和 path！passage 侧重 “人工建造的狭长通道”；path 侧重 “自然形成的小路或路径”，如 an underground passage /a path in the forest。[/ERR][ERR]“一段文章” 的正确表达是 a passage from a book，不要用 a part of a book（虽然可理解，但 passage 更准确，特指文章段落）。[/ERR]"
+]
+},
+"w092": {
+"word": "shut down",
+"images": {
+"scene": ["infopic01/shut down.webp"],
+"card": ["wordpic01/shut down.webp"]
+},
+"richDetail": [
+"[TITLE] 解释 [/TITLE][DEF][EN] To stop operating or working; to close a business, machine, or service completely (used in the book when subways stop running due to heavy snow)[/EN][CN] 关闭；停止运转；停业（停止运行或工作；彻底关闭企业、机器或服务，书中指地铁因大雪而停运）[/CN][POS] v. phr.[/POS][PH]/ʃʌt daʊn/[/PH][DU] Let it snow so much that the subways are shut down.|(原文例句) 让雪下得再大些，让地铁都停运吧！[/DU][DU] The factory shut down for two weeks during the holiday.| 这家工厂在假期期间停工了两周。[/DU][/DEF][IMG] infopic01/shut down.webp [/IMG]",
+"[TITLE] 常见用法 [/TITLE][COLL][H] shut down + 机器 / 服务 / 企业 | 关闭……；使…… 停运 [POS] v. phr.[/POS][/H][EX] They had to shut down the computer because it kept crashing.| 电脑总是死机，他们不得不把它关掉。[/EX][EX] The city shut down the bus service during the heavy storm.| 暴雨期间，这座城市暂停了公交服务。[/EX][/COLL][H] be shut down | 被关闭；被停运 [POS] v. phr.（被动）[/POS][/H][EX] The restaurant was shut down because it didn't meet health standards.| 这家餐厅因为不符合卫生标准而被关闭了。[/EX][EX] Many schools were shut down due to the bad weather.| 由于天气恶劣，许多学校停课了。[/EX][/COLL][H] shut down completely | 彻底关闭 [POS] v. phr.[/POS][/H][EX] The company decided to shut down its overseas branch completely.| 这家公司决定彻底关闭其海外分公司。[/EX][EX] Please shut down the power completely before leaving the room.| 离开房间前，请彻底关闭电源。[/EX][/COLL]",
+"[TITLE] 额外例句 [/TITLE][EX] The app shuts down automatically if there's no activity for 10 minutes.| 如果 10 分钟内没有操作，这个应用会自动关闭。[/EX][EX] The government ordered all non-essential businesses to shut down during the emergency.| 紧急情况下，政府下令所有非必需企业停业。[/EX][EX] The old factory was shut down to protect the environment.| 为了保护环境，这家旧工厂被关闭了。[/EX]",
+"[TITLE] 常见错误 [/TITLE][ERR] shut down 是固定短语，中间不能加介词（错误：shut down with the machine），直接接宾语即可，正确：shut down the machine。[/ERR][ERR] shut 的过去式和过去分词是 shut，不要记错成 shut down 的过去式是 shutted down（错误），正确：The subway shut down yesterday。[/ERR][ERR] 不要混淆 shut down 和 close！shut down 侧重 “彻底停止运转（机器、服务等）”；close 侧重 “关闭（门窗、店铺等）”，如 shut down the factory /close the door。[/ERR]"
+]
+},
+"w093": {
+"word": "prefix",
+"images": {
+"scene": ["infopic01/prefix.webp"],
+"card": ["wordpic01/prefix.webp"]
+},
+"richDetail": [
+"[TITLE] 解释 [/TITLE][DEF][EN] A letter or group of letters added to the beginning of a word to change its meaning or form a new word (used in the book when Princess Prefix adds letters to words to make new ones)[/EN][CN] 前缀（加在单词开头以改变其含义或构成新词的一个或一组字母，书中指前缀公主通过添加字母创造新词）[/CN][POS] n.[/POS][PH]/ˈpriːfɪks/[/PH][DU] Princess Prefix likes to change things. Add a prefix, change a meaning.|(原文例句) 前缀公主喜欢改变事物。加上一个前缀，就能改变意思。[/DU][DU] The prefix “un-” added to “happy” makes “unhappy”, which means not happy.| 在 “happy” 前加上前缀 “un-”，就变成了 “unhappy”，意思是不高兴。[/DU][/DEF][IMG] infopic01/prefix.webp [/IMG]",
+"[TITLE] 常见用法 [/TITLE][COLL][H] prefix + 介词 “to”| 前缀…… 加在…… 前 [POS] n.[/POS][/H][EX] We often add the prefix “pre-” to words to mean “before”.| 我们经常在单词前加前缀 “pre-”，表示 “在…… 之前”。[/EX][EX] The prefix “over-” can be added to “load” to make “overload”.| 前缀 “over-” 可以加在 “load” 前，构成 “overload”（超载）。[/EX][/COLL][H] common prefixes | 常见前缀 [POS] n.[/POS][/H][EX] Some common prefixes are “un-”, “pre-”, “over-”, and “im-”.| 一些常见的前缀有 “un-”“pre-”“over-” 和 “im-”。[/EX][EX] The prefix “im-” added to “possible” makes “impossible” (not possible).| 在 “possible” 前加前缀 “im-”，构成 “impossible”（不可能的）。[/EX][/COLL][H] with a prefix | 带有前缀的 [POS] n.[/POS][/H][EX]“Preschool” is a word with the prefix “pre-”, meaning “before school”.|“Preschool” 是一个带有前缀 “pre-” 的单词，意思是 “学前的”。[/EX][EX]“Nonsense” has the prefix “non-”, which means “not”.|“Nonsense” 带有前缀 “non-”，表示 “不”。[/EX][/COLL]",
+"[TITLE] 额外例句 [/TITLE][EX] Can you think of another word with the prefix “un-”?| 你能再想一个带有 “un-” 前缀的单词吗？[/EX][EX] The prefix “mis-” added to “understand” makes “misunderstand” (understand wrongly).| 在 “understand” 前加前缀 “mis-”，构成 “misunderstand”（误解）。[/EX][EX] We learned three new prefixes in English class today.| 今天英语课上我们学了三个新前缀。[/EX]",
+"[TITLE] 常见错误 [/TITLE][ERR] prefix 是可数名词，“一个前缀” 用 a prefix，“多个前缀” 用 prefixes，不要说 many prefix（错误）。[/ERR][ERR] 不要混淆 prefix 和 suffix！prefix 是 “前缀”，加在单词开头；suffix 是 “后缀”，加在单词结尾，如 prefix “un-” /suffix “-ful”。[/ERR][ERR] 添加前缀时不要改变原单词的拼写，错误：pre-school（正确是 preschool），un-happy（正确是 unhappy）。[/ERR]"
+]
+},
+"w094": {
+"word": "load",
+"images": {
+"scene": ["infopic01/load.webp"],
+"card": ["wordpic01/load.webp"]
+},
+"richDetail": [
+"[TITLE] 解释 [/TITLE][DEF][EN] To put something into a vehicle, machine, or container; the amount of something that is carried or transported (used in the book when talking about loading things onto trucks or machines)[/EN][CN] 装载；装填；负载；负荷（把东西放进交通工具、机器或容器里；被搬运或运输的量，书中涉及往卡车或机器上装载物品）[/CN][POS] v./n.[/POS][PH]/ləʊd/（英式）/loʊd/（美式）[/PH][DU] Princess Prefix changes “load” to “overload” by adding a prefix.|(原文例句) 前缀公主通过加前缀，把 “load” 变成了 “overload”（超载）。[/DU][DU] We need to load the boxes onto the truck before noon.| 我们需要在中午前把箱子装上卡车。[/DU][/DEF][IMG] infopic01/load.webp [/IMG]",
+"[TITLE] 常见用法 [/TITLE][COLL][H] load sth into/onto sth | 把某物装载到某物上 [POS] v.[/POS][/H][EX] Dad helped load the luggage onto the car.| 爸爸帮忙把行李装上了车。[/EX][EX] She loaded the paper into the printer carefully.| 她小心地把纸装进打印机。[/EX][/COLL][H] a heavy load | 沉重的负荷 [POS] n.[/POS][/H][EX] Carrying a heavy load for a long time will make you tired.| 长时间扛重物会让你很累。[/EX][EX] The truck was carrying a heavy load of vegetables.| 这辆卡车装载着沉重的蔬菜。[/EX][/COLL][H] load a machine | 给机器装料 [POS] v.[/POS][/H][EX] He loaded the washing machine with dirty clothes.| 他把脏衣服放进洗衣机。[/EX][EX] The worker loaded the machine with coal to keep it running.| 工人给机器加煤，让它继续运转。[/EX][/COLL]",
+"[TITLE] 额外例句 [/TITLE][EX] The computer is loading the game—please wait a minute.| 电脑正在加载游戏，请稍等。[/EX][EX] She carried a load of books in her backpack.| 她的书包里装着一堆书。[/EX][EX] They need three people to load the furniture onto the truck.| 他们需要三个人把家具装上卡车。[/EX]",
+"[TITLE] 常见错误 [/TITLE][ERR] load 作动词 “装载” 时是及物动词，直接接宾语，后接 “到某处” 需加介词 into/onto，不要直接接地点（错误：load the truck with boxes），正确是 load boxes onto the truck 或 load the truck with boxes。[/ERR][ERR] 不要混淆 load 和 unload！load 是 “装载”；unload 是 “卸载”，动作相反，如 load the ship /unload the ship。[/ERR][ERR] load 作名词 “负荷” 时是可数 / 不可数名词，表示 “一次装载的量” 用 a load，不要说 a heavy loads（错误），正确是 a heavy load。[/ERR]"
+]
+},
+"w095": {
+"word": "overload",
+"images": {
+"scene": ["infopic01/overload.webp"],
+"card": ["wordpic01/overload.webp"]
+},
+"richDetail": [
+"[TITLE] 解释 [/TITLE][DEF][EN] To put too much of something into or onto a vehicle, machine, or container; too much of a load (used in the book when Princess Prefix adds the prefix “over-” to “load” to make a new word)[/EN][CN] 使超载；使过载；超载；过载（往交通工具、机器或容器里装太多东西；过多的负荷，书中指前缀公主给 “load” 加前缀 “over-” 构成新词）[/CN][POS] v./n.[/POS][PH]/ˌəʊvəˈləʊd/（英式）/ˌoʊvərˈloʊd/（美式）[/PH][DU] Your load becomes an overload. Oh, Princess.|(原文例句) 你的负荷变成了超载，哦，公主。[/DU][DU] Don't overload the shelf— it might break.| 别给架子装太多东西，它可能会坏。[/DU][/DEF][IMG] infopic01/overload.webp [/IMG]",
+"[TITLE] 常见用法 [/TITLE][COLL][H] overload sth with sth | 用某物使某物超载 [POS] v.[/POS][/H][EX] People often overload their backpacks with books at the beginning of the semester.| 学期开始时，人们经常在书包里装太多书，导致超载。[/EX][EX] Don't overload the washing machine with clothes— it won't work well.| 别往洗衣机里塞太多衣服，它会运转不好的。[/EX][/COLL][H] an overload of sth | 某物过多；超载 [POS] n.[/POS][/H][EX] An overload of homework makes students feel stressed.| 过多的作业让学生感到压力很大。[/EX][EX] The truck had an overload of goods and was stopped by the police.| 这辆卡车货物超载，被警察拦下了。[/EX][/COLL][H] electrical overload | 电路过载 [POS] n.[/POS][/H][EX] The electrical overload caused the lights to go out.| 电路过载导致灯灭了。[/EX][EX] We need to fix the problem to avoid electrical overload.| 我们需要解决这个问题，避免电路过载。[/EX][/COLL]",
+"[TITLE] 额外例句 [/TITLE][EX] The computer crashed because of an overload of data.| 电脑因为数据过载而崩溃了。[/EX][EX] She overloaded the table with food for the party.| 她为派对在桌子上摆满了食物，显得太多了。[/EX][EX] Overloading the bike with bags is dangerous when riding.| 骑自行车时，车筐里装太多包很危险。[/EX]",
+"[TITLE] 常见错误 [/TITLE][ERR] overload 作动词时是及物动词，后接宾语，不要遗漏（错误：overload with books），正确是 overload the backpack with books。[/ERR][ERR] 不要混淆 overload 和 load！overload 强调 “过量装载”，而 load 是 “正常装载”，如 load the car /overload the car。[/ERR][ERR] overload 的名词形式是 overload（不可数）或 overloads（可数），不要写成 overloadment（错误），正确：an overload of work。[/ERR]"
+]
+},
+"w096": {
+"word": "make sense",
+"images": {
+"scene": ["infopic01/makesense.webp"],
+"card": ["wordpic01/makesense.webp"]
+},
+"richDetail": [
+"[TITLE] 解释 [/TITLE][DEF][EN] To be easy to understand; to have a clear meaning; to be logical (used in the book when talking about words that have a clear meaning before adding a prefix)[/EN][CN] 讲得通；有意义；合乎逻辑（容易理解；有明确含义；符合逻辑，书中指加前缀前有明确含义的单词）[/CN][POS] v. phr.[/POS][PH]/meɪk sens/[/PH][DU] What makes sense becomes nonsense. Oh, Princess.|(原文例句) 有意义的东西变成了无意义的胡言，哦，公主。[/DU][DU] Your explanation doesn't make sense— can you say it again?| 你的解释讲不通，你能再说一遍吗？[/DU][/DEF][IMG] infopic01/makesense.webp [/IMG]",
+"[TITLE] 常见用法 [/TITLE][COLL][H] make sense | 讲得通；有意义 [POS] v. phr.[/POS][/H][EX] This sentence makes sense— everyone can understand it.| 这个句子讲得通，每个人都能理解。[/EX][EX] It doesn't make sense to wear a coat in summer.| 夏天穿外套是不合情理的。[/EX][/COLL][H] make sense to sb | 对某人来说讲得通 [POS] v. phr.[/POS][/H][EX] The math problem makes sense to me now.| 这道数学题现在我能理解了。[/EX][EX] His idea makes sense to most of the students.| 他的想法对大多数学生来说是有道理的。[/EX][/COLL][H] make sense of sth | 理解某物；弄明白某物 [POS] v. phr.[/POS][/H][EX] I can't make sense of this note— it's too messy.| 我看不懂这张便条，太乱了。[/EX][EX] She helped me make sense of the difficult story.| 她帮我弄明白了这个难懂的故事。[/EX][/COLL]",
+"[TITLE] 额外例句 [/TITLE][EX] Does this plan make sense to you?| 你觉得这个计划有道理吗？[/EX][EX] The rules make sense because they keep us safe.| 这些规则是有意义的，因为它们能保护我们。[/EX][EX] I need time to make sense of all the new information.| 我需要时间来理解所有的新信息。[/EX]",
+"[TITLE] 常见错误 [/TITLE][ERR] make sense 是固定短语，中间不能加冠词（错误：make a sense），也不能加介词（错误：make sense with）。[/ERR][ERR] 不要混淆 make sense 和 understand！make sense 侧重 “事物本身有意义、讲得通”；understand 侧重 “人主动理解”，如 This book makes sense / I understand this book。[/ERR][ERR] make sense of sth 是固定搭配，不要漏掉 of（错误：make sense this problem），正确是 make sense of this problem。[/ERR]"
+]
+},
+"w097": {
+"word": "nonsense",
+"images": {
+"scene": ["infopic01/nonsense.webp"],
+"card": ["wordpic01/nonsense.webp"]
+},
+"richDetail": [
+"[TITLE] 解释 [/TITLE][DEF][EN] Ideas, words, or statements that have no meaning or are not true; silly talk (used in the book when Princess Prefix changes meaningful words into meaningless ones)[/EN][CN] 胡说；废话；无意义的话或想法（没有意义或不真实的想法、话语或陈述；愚蠢的言论，书中指前缀公主把有意义的单词变成无意义的话）[/CN][POS] n.[/POS][PH]/ˈnɒnsns/（英式）/ˈnɑːnsens/（美式）[/PH][DU] What makes sense becomes nonsense. Oh, Princess.|(原文例句) 有意义的东西变成了无意义的胡言，哦，公主。[/DU][DU] Don't talk nonsense— tell me the truth about what happened.| 别胡说八道，告诉我发生了什么事的真相。[/DU][/DEF][IMG] infopic01/nonsense.webp [/IMG]",
+"[TITLE] 常见用法 [/TITLE][COLL][H] talk nonsense | 胡说八道；说废话 [POS] n.[/POS][/H][EX] The little boy likes to talk nonsense to make his friends laugh.| 这个小男孩喜欢说废话逗朋友们笑。[/EX][EX] Stop talking nonsense and listen to the teacher.| 别胡说了，听老师讲课。[/EX][/COLL][H] that's nonsense | 那是胡说；那毫无意义 [POS] n.[/POS][/H][EX] That's nonsense— cats can't fly!| 那是胡说，猫不会飞！[/EX][EX] He said he could run faster than a car— that's nonsense.| 他说他能跑得比汽车还快，那纯属胡说。[/EX][/COLL][H] a lot of nonsense | 很多废话 [POS] n.[/POS][/H][EX] The story has a lot of nonsense, but it's very funny.| 这个故事有很多无厘头的内容，但非常有趣。[/EX][EX] She wasted time on a lot of nonsense instead of doing homework.| 她浪费时间说废话，而不是做作业。[/EX][/COLL]",
+"[TITLE] 额外例句 [/TITLE][EX] His explanation was full of nonsense— no one believed him.| 他的解释全是废话，没人相信他。[/EX][EX] Don't write nonsense in your homework— be serious.| 别在作业里写无意义的内容，认真点。[/EX][EX] The old man told stories that were not nonsense— they taught us lessons.| 这位老人讲的故事不是废话，它们给了我们启示。[/EX]",
+"[TITLE] 常见错误 [/TITLE][ERR] nonsense 是不可数名词，不要加 a/an（错误：a nonsense），也没有复数形式（错误：nonsenses）。[/ERR][ERR] 不要混淆 nonsense 和 rubbish！nonsense 侧重 “无意义的话、胡说”；rubbish 侧重 “垃圾” 或 “糟糕的东西”，如 talk nonsense /throw rubbish。[/ERR][ERR] nonsense 前可以加 much/lots of/a lot of，不要加 many（错误：many nonsense），正确：much nonsense。[/ERR]"
+]
+},
+"w098": {
+"word": "preschool",
+"images": {
+"scene": ["infopic01/preschool.webp"],
+"card": ["wordpic01/preschool.webp"]
+},
+"richDetail": [
+"[TITLE] 解释 [/TITLE][DEF][EN] A school for young children who are not yet old enough to go to primary school; relating to the time before a child starts primary school (used in the book when Princess Prefix adds the prefix “pre-” to “school”)[/EN][CN] 学前班；幼儿园；学前的（为尚未到上小学年龄的幼儿开设的学校；与孩子上小学前相关的，书中指前缀公主给 “school” 加前缀 “pre-” 构成新词）[/CN][POS] n./adj.[/POS][PH]/ˈpriːskuːl/[/PH][DU] Your school becomes a preschool. Oh, Princess.|(原文例句) 你的学校变成了学前班，哦，公主。[/DU][DU] My little sister goes to a preschool near our home.| 我的小妹妹在我们家附近的一所幼儿园上学。[/DU][/DEF][IMG] infopic01/preschool.webp [/IMG]",
+"[TITLE] 常见用法 [/TITLE][COLL][H] go to preschool | 上幼儿园；上学前班 [POS] n.[/POS][/H][EX] Most children go to preschool when they are three or four years old.| 大多数孩子在三四岁时上幼儿园。[/EX][EX] She started to go to preschool last month and made many friends.| 她上个月开始上学前班，交了很多朋友。[/EX][/COLL][H] preschool teacher | 学前教师；幼儿园老师 [POS] adj.+n.[/POS][/H][EX] The preschool teacher sang songs with the children.| 幼儿园老师和孩子们一起唱歌。[/EX][EX] My aunt is a kind preschool teacher— all the kids like her.| 我的姑姑是一位善良的幼儿园老师，所有孩子都喜欢她。[/EX][/COLL][H] preschool education | 学前教育 [POS] adj.+n.[/POS][/H][EX] Preschool education is very important for children's growth.| 学前教育对孩子的成长非常重要。[/EX][EX] Many families pay attention to preschool education for their kids.| 很多家庭都重视孩子的学前教育。[/EX][/COLL]",
+"[TITLE] 额外例句 [/TITLE][EX] The preschool has a big playground for children to play on.| 这所幼儿园有一个大操场，供孩子们玩耍。[/EX][EX] We bought some preschool books to help her learn letters.| 我们买了一些学前读物，帮助她学习字母。[/EX][EX] Preschool children learn through playing games.| 学前儿童通过玩游戏学习。[/EX]",
+"[TITLE] 常见错误 [/TITLE][ERR] preschool 是可数名词（作 “学前班、幼儿园” 时），“一所幼儿园” 用 a preschool，不要写成 pre-school（错误，虽可理解但规范写法是 preschool）。[/ERR][ERR] 不要混淆 preschool 和 kindergarten！preschool 是 “学前班、幼儿园” 的统称，年龄范围更广；kindergarten 特指 “幼儿园大班”，更侧重正式的学前教育阶段，如 a preschool /a kindergarten。[/ERR][ERR] preschool 作形容词时，直接修饰名词，不要加连字符（错误：pre-school teacher），正确是 preschool teacher。[/ERR]"
+]
+}
 
 }
 
