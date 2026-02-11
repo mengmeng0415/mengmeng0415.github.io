@@ -590,23 +590,29 @@ function renderTabContent(type, word, container) {
     container.innerHTML = ''; 
     container.scrollTop = 0;
 
-    // ============ 🌟 0. 全局 Zoom 状态控制 ============
+    // ============ 🌟 1. 容器样式设置 (这里就是您刚才发的那段核心代码) ============
     if (state.isImageZoom) {
         if (!container.classList.contains('pseudo-fullscreen')) {
             container.classList.add('pseudo-fullscreen');
         }
         
-        // 👇 修改点：背景色设为黑色，且根据不同类型决定是否允许容器滚动
+        // 👇👇👇 核心修改 A：设置容器禁止滚动 + Flex居中 👇👇👇
         if (type === 'scene') {
             container.style.background = "#000"; 
             container.style.padding = "0";
-            container.style.overflowY = "auto"; // ✅ Scene模式：允许Y轴滚动
-            container.style.display = "block";  // ✅ Scene模式：块级布局，不再强制Flex居中
+            // ❌ 禁止滚动，强制隐藏溢出
+            container.style.setProperty('overflow', 'hidden', 'important'); 
+            // ✅ 使用 Flex 完美居中
+            container.style.display = "flex";  
+            container.style.justifyContent = "center";
+            container.style.alignItems = "center";
+            container.style.width = "100%";
+            container.style.height = "100%";
         } 
         else if (type === 'text') {
             container.style.background = "#f5f5f7"; 
             container.style.padding = "0";
-            container.style.overflowY = "hidden"; // Text模式内部有滚动条
+            container.style.overflowY = "hidden"; 
             container.style.display = "flex";     
         } 
         else {
@@ -617,6 +623,7 @@ function renderTabContent(type, word, container) {
         }
 
     } else {
+        // ... (退出全屏时的重置代码)
         container.classList.remove('pseudo-fullscreen');
         if (document.fullscreenElement && document.exitFullscreen) {
             document.exitFullscreen().catch(()=>{});
@@ -625,6 +632,8 @@ function renderTabContent(type, word, container) {
         container.style.padding = "";
         container.style.overflowY = ""; 
         container.style.display = "";
+        container.style.justifyContent = "";
+        container.style.alignItems = "";
     }
 
     // 通用 Zoom 按钮图标
@@ -637,7 +646,7 @@ function renderTabContent(type, word, container) {
     fixedZoomBtn.innerHTML = zoomIcon;
     fixedZoomBtn.onclick = toggleImageZoom;
 
-    // ============ 🖼️ SCENE (图片) ============
+    // ============ 🖼️ SCENE (图片内容渲染) ============
     if (type === 'scene') {
         let allImages = [];
         if (word.images && word.images.scene) {
@@ -649,7 +658,7 @@ function renderTabContent(type, word, container) {
             container.innerHTML = `<div class="empty-tip">暂无图片</div>`;
         } 
         else if (state.isImageZoom) {
-            // ✅ [Scene Zoom 模式] (全屏滚动版)
+            // ✅ [Scene Zoom 模式] (全屏无滚动完美居中版)
             if (state.currentImgIdx >= allImages.length) state.currentImgIdx = 0;
             const currImg = allImages[state.currentImgIdx];
 
@@ -657,9 +666,11 @@ function renderTabContent(type, word, container) {
                 <button class="btn-zoom-nav prev" onclick="navigateInZoom(-1)" style="position:fixed;">❮</button>
                 <button class="btn-zoom-nav next" onclick="navigateInZoom(1)" style="position:fixed;">❯</button>
 
-                <div style="width:100%; min-height:100%; position:relative; padding-bottom: 60px;"> <img src="${currImg}" 
+                <div style="width:100%; height:100%; display:flex; justify-content:center; align-items:center;">
+                    
+                    <img src="${currImg}" 
                          onclick="toggleImageZoom()" 
-                         style="width:100%; height:auto; display:block; cursor:zoom-out; margin: 0 auto;">
+                         style="max-width:100%; max-height:100%; width:auto; height:auto; object-fit:contain; display:block; cursor:zoom-out; margin: 0 auto; box-shadow:none;">
                     
                     <div style="position:fixed; bottom:30px; left:50%; transform:translateX(-50%); 
                                 color:rgba(255,255,255,0.8); font-weight:bold; font-size:16px; 
@@ -671,7 +682,7 @@ function renderTabContent(type, word, container) {
             container.appendChild(fixedZoomBtn);
         } 
         else {
-            // ✅ [Scene 普通模式]
+            // ✅ [Scene 普通模式] (九宫格，保持不变)
             const imgsHtml = allImages.map((src, idx) => `
                 <div class="scene-img-wrapper" style="position:relative; cursor: zoom-in;" onclick="enterImageZoom(${idx})">
                     <img src="${src}" 
@@ -691,7 +702,7 @@ function renderTabContent(type, word, container) {
             container.appendChild(fixedZoomBtn);
         }
     } 
-    // ============ 📖 TEXT (富文本) ============
+    // ============ 📖 TEXT (富文本) (保持不变) ============
     else if (type === 'text') {
         let navHtml = '', bodyHtml = '';
         if (word.richDetail) {
@@ -733,7 +744,7 @@ function renderTabContent(type, word, container) {
             };
         }
     }
-    // ============ ⚔️ QUIZ (挑战) ============
+    // ============ ⚔️ QUIZ (挑战) (保持不变) ============
     else if (type === 'quiz') {
         if (state.customGames && state.customGames.length > 0) {
             const gamesListHtml = state.customGames.map((g, idx) => `
@@ -765,7 +776,7 @@ function renderTabContent(type, word, container) {
             container.appendChild(fixedZoomBtn);
         }
     }
-    // ============ 🎮 GAME ============
+    // ============ 🎮 GAME (保持不变) ============
     else if (type === 'game') {
          if (word.games && word.games.length > 0) {
             const gamesHtml = word.games.map(url => `<div class="rich-game-item"><iframe src="${url}" frameborder="0" allowfullscreen></iframe></div>`).join('');

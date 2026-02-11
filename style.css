@@ -400,14 +400,84 @@ input:checked + .slider:before { transform: translateX(16px); }
 .block-co { color: #F59A23; border-color: #F59A23; background: rgba(245, 154, 35, 0.06); }
 .block-cb { color: #02A7F0; border-color: #02A7F0; background: rgba(2, 167, 240, 0.06); }
 
-/* ============ 图片/游戏/Quiz 样式 (保持原样) ============ */
-.image-modal { display: none; position: fixed; z-index: 9999; left: 0; top: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.9); }
-.modal-content { display: block; max-width: 90%; max-height: 90vh; margin: 50px auto; border-radius: 8px; }
-.close-btn { position: absolute; top: 30px; right: 40px; color: white; font-size: 40px; font-weight: bold; cursor: pointer; }
+
+/* ============ [IMG] 点击放大后的弹窗样式 (Text Tab 优化版) ============ */
+
+/* 1. 弹窗容器 */
+.image-modal { 
+    display: none;        /* JS 控制显示/隐藏 */
+    position: fixed; 
+    z-index: 10000;       /* 保证层级最高 */
+    left: 0; 
+    top: 0; 
+    width: 100%; 
+    height: 100%; 
+    
+    /* 👇 修改点 1：背景改为纯白 */
+    background-color: #fff !important; 
+    
+    /* 👇 修改点 2：禁止滚动条 */
+    overflow: hidden !important; 
+}
+
+/* 2. 图片本体 (全屏居中) */
+.modal-content { 
+    display: block;
+    position: absolute;   /* 使用绝对定位 */
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); /* 配合 top/left 实现完美垂直水平居中 */
+    
+    /* 👇 修改点 3：最大限度放大，撑满宽高 */
+    width: 100% !important; 
+    height: 100% !important; 
+    max-width: 100% !important; 
+    max-height: 100% !important; 
+    
+    /* 👇 核心：保持比例完整显示 (类似 Scene 的效果) */
+    object-fit: contain !important; 
+    
+    /* 去掉多余样式 */
+    margin: 0 !important; 
+    border-radius: 0 !important; 
+    box-shadow: none !important; 
+    background: #fff; /* 确保图片透明部分背景也是白的 */
+}
+
+/* 3. 关闭按钮 (适配白底) */
+.close-btn { 
+    position: absolute; 
+    top: 20px; 
+    right: 20px; 
+    
+    /* 👇 修改点 4：颜色改为深灰，否则在白底上看不见 */
+    color: #555 !important; 
+    
+    font-size: 40px; 
+    font-weight: bold; 
+    cursor: pointer; 
+    z-index: 10001;       /* 保证在图片上层 */
+    
+    /* 增加一个半透明圆底，防止图片如果是深色时看不清按钮 */
+    width: 50px;
+    height: 50px;
+    line-height: 45px;
+    text-align: center;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.8); 
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    transition: all 0.2s;
+}
+
+.close-btn:hover {
+    color: #000 !important;
+    background: #f0f0f0;
+    transform: scale(1.1);
+}
 .big-image { display: block; width: calc(100% - 40px); max-width: 800px; margin: 0 auto 30px; border-radius: 12px; box-shadow: 0 4px 15px rgba(0,0,0,0.1); cursor: zoom-in; }
 
 .rich-img-group { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; padding: 0 20px; margin: 20px 0; width: 100%; box-sizing: border-box; }
-.rich-img-group img { width: 100%; aspect-ratio: 16 / 9; object-fit: cover; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.05); cursor: zoom-in; transition: transform 0.2s ease; display: block; background: #f0f0f0; }
+.rich-img-group img { width: 100%; aspect-ratio: 1.414 / 1; object-fit: cover; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.05); cursor: zoom-in; transition: transform 0.2s ease; display: block; background: #f0f0f0; }
 .rich-img-group img:hover { transform: scale(1.03); box-shadow: 0 5px 15px rgba(0,0,0,0.15); }
 @media (max-width: 600px) { .rich-img-group { grid-template-columns: repeat(2, 1fr); } }
 
@@ -420,34 +490,40 @@ input:checked + .slider:before { transform: translateX(16px); }
 .scene-images[data-count="2"] { grid-template-columns: 1fr 1fr; }
 .scene-images:not([data-count="1"]):not([data-count="2"]) { grid-template-columns: 1fr 1fr 1fr; }
 
-/* ============ [IMG] 单张图片特大号显示优化 ============ */
+/* ============ [IMG] 单张图片缩略图优化 (Text Tab) ============ */
 
-/* 1. 容器改为居中布局 (覆盖原来的 Grid 3列) */
+/* 1. 容器布局：保持 Flex 居中 */
 .rich-img-group[data-count="1"] {
-    display: flex !important;    /* 强制改为 Flex */
-    justify-content: center;     /* 水平居中 */
-    grid-template-columns: none; /* 取消网格列限制 */
-    padding: 0;                  /* 去掉多余边距 */
+    display: flex !important;    /* 强制 Flex */
+    justify-content: left;     /* 水平居中 */
+    grid-template-columns: none; /* 取消网格 */
+    padding: 0;
+    margin: 15px 0;              /* 上下留一点间距 */
 }
 
-/* 2. 图片本身放大并保持原比例 */
+/* 2. 图片尺寸控制 (核心修改) */
 .rich-img-group[data-count="1"] img {
-    /* 【宽度调整】 */
-    width: auto;                 /* 宽度自动，不再强制 100% 撑满格子 */
-    max-width: 100%;             /* 保证不超过屏幕宽度 */
+    /* 👇 核心修改点：调小这里的数值 👇 */
+    max-height: 200px !important;   /* 高度限制：从 500px 改为 200px (根据喜好调整) */
+    max-width: 60% !important;      /* 宽度限制：只占屏幕/容器宽度的 60% */
     
-    /* 如果您想让它尽可能大，可以设置最小宽度，比如： */
-    /* min-width: 300px; */
+    /* 其它保持不变，确保比例正确 */
+    width: auto !important;         /* 宽度自动，保持比例 */
+    height: auto !important;        /* 高度自动 */
+    aspect-ratio: auto !important;  /* 取消 16:9 或 4:3 的强制裁剪 */
+    
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1); /* 加点阴影更像卡片 */
+    border-radius: 8px;
+    cursor: zoom-in;                /* 鼠标指针变为放大镜 */
+    background: #fff;
+}
 
-    /* 【高度限制】防止竖图太高占满屏幕 */
-    max-height: 500px;           
-    
-    /* 【比例恢复】关键！取消默认的 4/3 裁剪，显示完整原图 */
-    aspect-ratio: auto;          
-    
-    /* 增加阴影，更有质感 */
-    box-shadow: 0 5px 15px rgba(0,0,0,0.1); 
-    margin: 0 auto;
+/* 📱 手机端适配：手机屏幕小，可以让缩略图稍微宽一点 */
+@media (max-width: 768px) {
+    .rich-img-group[data-count="1"] img {
+        max-width: 90% !important;  /* 手机上允许占宽一点，看清内容 */
+        max-height: 220px !important;
+    }
 }
 
 /* ============ 1. 游戏容器 (用于 Tab 页和 Quiz 页) ============ */
@@ -1665,7 +1741,7 @@ input:checked + .slider:before { transform: translateX(16px); }
 .reader-body {
     flex: 1; /* 占满剩余高度 */
     overflow-y: auto; /* 仅此处产生滚动条 */
-    padding: 40px 80px 120px; /* 底部留白，防止被右下角按钮遮挡 */
+    padding: 10px 80px 120px 80px;  /* 顺序：上 | 右 | 下 | 左 */
     scroll-behavior: smooth;
 }
 
@@ -2352,32 +2428,7 @@ input:checked + .slider:before { transform: translateX(16px); }
         padding: 5px !important; /* 减少留白 */
     }
 }
-/* ============================================================
-   💻 电脑端 Text Zoom 留白优化 (Desktop Reader Spacing)
-   ============================================================ */
 
-/* 1. 滚动区域：大幅减小顶部内边距 */
-.reader-body {
-    /* 原来顶部是 40px，现在减小到 10px */
-    /* 顺序：上 | 右 | 下 | 左 */
-    padding: 10px 80px 120px 80px !important;
-}
-
-/* 2. 单词主标题 (h1)：去除默认的大间距 */
-#reader-scroll h1 {
-    font-size: 36px; /* 保持大字体 */
-    
-    /* 👇 核心修改：紧贴顶部导航 */
-    margin-top: 5px !important;    
-    margin-bottom: 20px !important; 
-    
-    line-height: 1.2 !important;
-}
-
-/* 3. (可选) 如果第一张卡片离标题还是太远，可以把这个也加上 */
-.rich-section:first-of-type {
-    margin-top: 10px !important;
-}
 /* ============================================================
    📱 移动端：提示块瘦身 (Mistakes, Critical, Notes)
    ============================================================ */
