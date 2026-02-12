@@ -2458,3 +2458,48 @@ input:checked + .slider:before { transform: translateX(16px); }
         margin-right: 5px !important;
     }
 }
+/* ============ 💻 电脑端 Zoom 模式 Quiz 专属优化 (特大字体) ============ */
+@media (min-width: 769px) {
+
+    /* 1. 选项按钮 (整体变大) */
+    #tab-content-area:fullscreen .opt-btn,
+    #tab-content-area.pseudo-fullscreen .opt-btn {
+        font-size: 45px !important;      /* 字体：从 26px -> 36px */
+        font-weight: 600 !important;     /* 加粗 */
+        
+        padding: 30px 50px !important;   /* 内边距：让按钮更肥 */
+        min-height: 130px !important;    /* 高度：强制增高 */
+        border-radius: 20px !important;  /* 圆角：更圆润 */
+        gap: 30px !important;            /* 图标和文字的间距 */
+        
+        line-height: 1.3 !important;
+    }
+
+    /* 2. 选项前的 ABCD 圆圈 */
+    #tab-content-area:fullscreen .opt-btn span,
+    #tab-content-area.pseudo-fullscreen .opt-btn span {
+        width: 70px !important;          /* 圆圈直径变大 */
+        height: 70px !important;
+        flex-shrink: 0 !important;       /* 防止被挤压 */
+        
+        font-size: 32px !important;      /* 圆圈里的字母变大 */
+        border-width: 3px !important;    /* 边框加粗 */
+        box-shadow: 0 4px 10px rgba(0,0,0,0.1) !important;
+    }
+
+    /* 3. 题干文字 (配合选项同步放大) */
+    #tab-content-area:fullscreen .quiz-q,
+    #tab-content-area.pseudo-fullscreen .quiz-q {
+        font-size: 48px !important;      /* 题目超大号 */
+        line-height: 1.4 !important;
+        margin-bottom: 60px !important;  /* 增加与选项的距离 */
+        text-shadow: 0 1px 2px rgba(0,0,0,0.05); /* 增加一点质感 */
+    }
+    
+    /* 4. 调整一下全屏时的最大宽度，防止字太大了换行太频繁 */
+    #tab-content-area:fullscreen .quiz-box,
+    #tab-content-area.pseudo-fullscreen .quiz-box {
+        max-width: 1600px !important;    /* 允许内容占据更宽的屏幕 */
+        padding: 80px 100px !important;  /* 增加卡片内边距 */
+    }
+}

@@ -682,7 +682,467 @@
 "question": "My little sister goes to a ______ near our home and likes her teacher.",
 "options": ["preschool", "prefix", "load", "overload"],
 "answer": 0
+},
+"q_w099": {
+"type": "choice_text",
+"wordIds": ["w099"],
+"question": "The wise king ______ the peaceful kingdom with kindness for many years.",
+"options": ["gaggle", "rule over", "colony", "murder"],
+"answer": 1
+},
+"q_w100": {
+"type": "choice_text",
+"wordIds": ["w100"],
+"question": "We saw a large ______ of geese flying south for the winter.",
+"options": ["gaggle", "colony", "murder", "pod"],
+"answer": 0
+},
+"q_w101": {
+"type": "choice_text",
+"wordIds": ["w101"],
+"question": "A ______ of bats lives in the old cave near the village.",
+"options": ["gaggle", "colony", "murder", "pod"],
+"answer": 1
+},
+"q_w102": {
+"type": "choice_text",
+"wordIds": ["w102"],
+"question": "A ______ of crows sat on the roof and made loud calls at sunset.",
+"options": ["pod", "smack", "murder", "herd"],
+"answer": 2
+},
+"q_w103": {
+"type": "choice_text",
+"wordIds": ["w103"],
+"question": "We watched a ______ of dolphins jumping out of the water near the boat.",
+"options": ["smack", "pod", "herd", "pack"],
+"answer": 1
+},
+"q_w104": {
+"type": "choice_text",
+"wordIds": ["w104"],
+"question": "A ______ of jellyfish floated near the beach, so we didn't go swimming.",
+"options": ["herd", "pack", "smack", "gaggle"],
+"answer": 2
+},
+"q_w105": {
+"type": "choice_text",
+"wordIds": ["w105"],
+"question": "A ______ of zebras ran across the African savanna together in the rain.",
+"options": ["pack", "herd", "pod", "murder"],
+"answer": 1
+},
+"q_w106": {
+"type": "choice_text",
+"wordIds": ["w106"],
+"question": "A ______ of wolves howled at the moon in the quiet forest night.",
+"options": ["herd", "pack", "smack", "colony"],
+"answer": 1
+},
+"q_w107": {
+"type": "choice_text",
+"wordIds": ["w107"],
+"question": "We plan to go ______ in the mountains with friends next weekend.",
+"options": ["rock climbing", "toboggan", "inner tube", "bobsled"],
+"answer": 0
+},
+"q_w108": {
+"type": "choice_text",
+"wordIds": ["w108"],
+"question": "The little boy was ______ enough to try rock climbing for the first time.",
+"options": ["brave", "floppy", "fuzzy", "polka-dot"],
+"answer": 0
+},
+"q_w109": {
+"type": "choice_text",
+"wordIds": ["w109"],
+"question": "The children love to ride a ______ down the snow hill in winter.",
+"options": ["toboggan", "inner tube", "bobsled", "steer"],
+"answer": 0
+},
+"q_w110": {
+"type": "choice_text",
+"wordIds": ["w110"],
+"question": "We used an ______ to slide down the snow hill and had great fun.",
+"options": ["toboggan", "inner tube", "bobsled", "sharp bend"],
+"answer": 1
+},
+"q_w111": {
+"type": "choice_text",
+"wordIds": ["w111"],
+"question": "The team won the gold medal in the ______ race at the Winter Olympics.",
+"options": ["toboggan", "inner tube", "bobsled", "steer"],
+"answer": 2
+},
+"q_w112": {
+"type": "choice_text",
+"wordIds": ["w112"],
+"question": "The athlete needs to ______ the bobsled carefully around the sharp bends.",
+"options": ["steer", "brave", "sharp", "pack"],
+"answer": 0
+},
+"q_w113": {
+"type": "choice_text",
+"wordIds": ["w113"],
+"question": "Drivers must slow down when they see a ______ ahead on the mountain road.",
+"options": ["steer", "sharp bend", "brave", "herd"],
+"answer": 1
+},
+"q_w114": {
+"type": "choice_text",
+"wordIds": ["w114"],
+"question": "It rained for three days ______, so we couldn't go out to play.",
+"options": ["in a row", "in a line", "in a box", "in a tree"],
+"answer": 0
+},
+"q_w115": {
+"type": "choice_text",
+"wordIds": ["w115"],
+"question": "Farmers grow different ______ in the field to make a living for their families.",
+"options": ["crops", "dams", "chores", "details"],
+"answer": 0
+},
+"q_w116": {
+"type": "choice_text",
+"wordIds": ["w116"],
+"question": "The government built a big ______ on the river to store water and prevent floods.",
+"options": ["dam", "crop", "chore", "detail"],
+"answer": 0
+},
+"q_w117": {
+"type": "choice_text",
+"wordIds": ["w117"],
+"question": "Washing dishes and sweeping the floor are my daily household ______.",
+"options": ["chores", "dams", "crops", "supplies"],
+"answer": 0
+},
+"q_w118": {
+"type": "choice_text",
+"wordIds": ["w118"],
+"question": "Everyone should ______ well in public places like cinemas and libraries.",
+"options": ["behave", "detail", "supply", "base"],
+"answer": 0
+},
+"q_w119": {
+"type": "choice_text",
+"wordIds": ["w119"],
+"question": "Can you tell me all the ______ of the new plan, such as the time and the steps?",
+"options": ["details", "supplies", "bases", "materials"],
+"answer": 0
+},
+"q_w120": {
+"type": "choice_text",
+"wordIds": ["w120"],
+"question": "We need to buy some camping ______ like tents and sleeping bags for the trip.",
+"options": ["supplies", "bases", "materials", "matches"],
+"answer": 0
+},
+"q_w121": {
+"type": "choice_text",
+"wordIds": ["w121"],
+"question": "The ______ of the big lamp is made of solid wood and can support it well.",
+"options": ["base", "material", "match", "gobble"],
+"answer": 0
+},
+"q_w122": {
+"type": "choice_text",
+"wordIds": ["w122"],
+"question": "Tunnels can be made of different ______ like stone, concrete and steel.",
+"options": ["materials", "bases", "matches", "invites"],
+"answer": 0
+},
+"q_w123": {
+"type": "choice_text",
+"wordIds": ["w123"],
+"question": "Her blue scarf ______ her white coat very well and looks beautiful.",
+"options": ["matches", "gobbles", "invites", "stands"],
+"answer": 0
+},
+"q_w124": {
+"type": "choice_text",
+"wordIds": ["w124"],
+"question": "The hungry little boy ______ up the cake in just a few seconds.",
+"options": ["gobbles", "matches", "invites", "stands"],
+"answer": 0
+},
+"q_w125": {
+"type": "choice_text",
+"wordIds": ["w125"],
+"question": "We will ______ our best friends to our birthday party next Sunday.",
+"options": ["invite", "gobble", "match", "stand"],
+"answer": 0
+},
+"q_w126": {
+"type": "choice_text",
+"wordIds": ["w126"],
+"question": "A tall old tree ______ in front of our school gate for many years.",
+"options": ["stands", "gobbles", "invites", "matches"],
+"answer": 0
+},
+
+  "q_w127": {
+    "type": "choice_text",
+    "wordIds": ["w127"],
+    "question": "The basketball player ______ a basket at the last minute of the game.",
+    "options": ["scored", "buddied", "rode", "felt"],
+    "answer": 0
+  },
+  "q_w128": {
+    "type": "choice_text",
+    "wordIds": ["w128"],
+    "question": "My best ______ helps me with my homework every weekend.",
+    "options": ["buddy", "score", "motorcycle", "sidecar"],
+    "answer": 0
+  },
+  "q_w129": {
+    "type": "choice_text",
+    "wordIds": ["w129"],
+    "question": "You must wear a helmet when you ride a ______ on the road.",
+    "options": ["motorcycle", "buddy", "period", "initial"],
+    "answer": 0
+  },
+  "q_w130": {
+    "type": "choice_text",
+    "wordIds": ["w130"],
+    "question": "This type of motorcycle is very ______ for long trips in the mountains.",
+    "options": ["comfortable", "sidecar", "initial", "ape"],
+    "answer": 0
+  },
+  "q_w131": {
+    "type": "choice_text",
+    "wordIds": ["w131"],
+    "question": "The old motorcycle has a small ______ for carrying a child.",
+    "options": ["sidecar", "period", "ape", "solve"],
+    "answer": 0
+  },
+  "q_w132": {
+    "type": "choice_text",
+    "wordIds": ["w132"],
+    "question": "We lived in Shanghai for a ______ of three years when I was young.",
+    "options": ["period", "initial", "ape", "fetch"],
+    "answer": 0
+  },
+  "q_w133": {
+    "type": "choice_text",
+    "wordIds": ["w133"],
+    "question": "The ______ step to make a kite is to prepare bamboo and paper.",
+    "options": ["initial", "ape", "fetch", "indoor"],
+    "answer": 0
+  },
+  "q_w134": {
+    "type": "choice_text",
+    "wordIds": ["w134"],
+    "question": "According to the book, crows are as smart as ______ in the forest.",
+    "options": ["apes", "solves", "fetches", "indoors"],
+    "answer": 0
+  },
+  "q_w135": {
+    "type": "choice_text",
+    "wordIds": ["w135"],
+    "question": "We need to work together to ______ the difficult problem in our project.",
+    "options": ["solve", "fetch", "indoor", "defend"],
+    "answer": 0
+  },
+  "q_w136": {
+    "type": "choice_text",
+    "wordIds": ["w136"],
+    "question": "When the light turns red, the crows hop out to ______ their broken nut snacks.",
+    "options": ["fetch", "indoor", "defend", "passage"],
+    "answer": 0
+  },
+  "q_w137": {
+    "type": "choice_text",
+    "wordIds": ["w137"],
+    "question": "We play ______ games like chess when it rains heavily outside.",
+    "options": ["indoor", "defend", "passage", "avoid"],
+    "answer": 0
+  },
+  "q_w138": {
+    "type": "choice_text",
+    "wordIds": ["w138"],
+    "question": "Crows will ______ their family from other animals in the wild.",
+    "options": ["defend", "passage", "avoid", "score"],
+    "answer": 0
+  },
+  "q_w139": {
+    "type": "choice_text",
+    "wordIds": ["w139"],
+    "question": "Tunnels are long and narrow covered ______ under the ground.",
+    "options": ["passages", "avoids", "scores", "buddies"],
+    "answer": 0
+  },
+  "q_w140": {
+    "type": "choice_text",
+    "wordIds": ["w140"],
+    "question": "Underground tunnels help people ______ the busy traffic on the street.",
+    "options": ["avoid", "score", "buddy", "motorcycle"],
+    "answer": 0
+  },
+
+
+  "q_w141": {
+    "type": "choice_text",
+    "wordIds": ["w141"],
+    "question": "The gardener ______ the hedges to make them look neat and tidy.",
+    "options": ["trimmed", "rhea", "marmoset", "jawfish"],
+    "answer": 0
+  },
+  "q_w142": {
+    "type": "choice_text",
+    "wordIds": ["w142"],
+    "question": "The ______ is a large flightless bird that lives in the grasslands of South America.",
+    "options": ["rhea", "jackal", "emperor", "mane"],
+    "answer": 0
+  },
+  "q_w143": {
+    "type": "choice_text",
+    "wordIds": ["w143"],
+    "question": "The ______ is a tiny long-tailed monkey that is native to Brazil's rainforests.",
+    "options": ["marmoset", "capybara", "anaconda", "piranha"],
+    "answer": 0
+  },
+  "q_w144": {
+    "type": "choice_text",
+    "wordIds": ["w144"],
+    "question": "The male ______ keeps its eggs in its mouth to keep them safe until they hatch.",
+    "options": ["jawfish", "trim", "rhea", "marmoset"],
+    "answer": 0
+  },
+  "q_w145": {
+    "type": "choice_text",
+    "wordIds": ["w145"],
+    "question": "The male ______ spits up food to feed its young pups in Africa and Asia.",
+    "options": ["jackal", "jawfish", "emperor", "mane"],
+    "answer": 0
+  },
+  "q_w146": {
+    "type": "choice_text",
+    "wordIds": ["w146"],
+    "question": "The male ______ penguin holds the egg on its feet to keep it warm in Antarctica.",
+    "options": ["emperor", "jackal", "capybara", "anaconda"],
+    "answer": 0
+  },
+  "q_w147": {
+    "type": "choice_text",
+    "wordIds": ["w147"],
+    "question": "The male lion has a thick ______ around its neck that makes it look powerful.",
+    "options": ["mane", "emperor", "capybara", "anaconda"],
+    "answer": 0
+  },
+  "q_w148": {
+    "type": "choice_text",
+    "wordIds": ["w148"],
+    "question": "The ______ is the biggest rodent in the world and likes to live near water in Brazil.",
+    "options": ["capybara", "mane", "anaconda", "piranha"],
+    "answer": 0
+  },
+  "q_w149": {
+    "type": "choice_text",
+    "wordIds": ["w149"],
+    "question": "The ______ is the heaviest snake in the world and lives in the Amazon rainforest.",
+    "options": ["anaconda", "capybara", "piranha", "trim"],
+    "answer": 0
+  },
+  "q_w150": {
+    "type": "choice_text",
+    "wordIds": ["w150"],
+    "question": "The ______ is a small fierce fish with sharp teeth in the rivers of South America.",
+    "options": ["piranha", "anaconda", "rhea", "marmoset"],
+    "answer": 0
+  },
+  "q_w151": {
+"type": "choice_text",
+"wordIds": ["w151"],
+"question": "A skilled ______ can make beautiful glass art with hot molten glass.",
+"options": ["glassblower", "runny", "pipe", "gooey"],
+"answer": 0
+},
+"q_w152": {
+"type": "choice_text",
+"wordIds": ["w152"],
+"question": "The molten glass is ______ when heated, flowing easily like warm honey.",
+"options": ["runny", "crater", "gravity", "prize"],
+"answer": 0
+},
+"q_w153": {
+"type": "choice_text",
+"wordIds": ["w153"],
+"question": "The glassblower holds a long ______ to shape and blow the hot gooey glass.",
+"options": ["pipe", "Piñatas", "inch", "grownup"],
+"answer": 0
+},
+"q_w154": {
+"type": "choice_text",
+"wordIds": ["w154"],
+"question": "We must be careful with the ______ molten glass because it sticks to every surface.",
+"options": ["gooey", "brag", "steady", "dishwasher"],
+"answer": 0
+},
+"q_w155": {
+"type": "choice_text",
+"wordIds": ["w155"],
+"question": "A huge ______ on the Moon was formed by a meteorite impact millions of years ago.",
+"options": ["crater", "glassblower", "runny", "pipe"],
+"answer": 0
+},
+"q_w156": {
+"type": "choice_text",
+"wordIds": ["w156"],
+"question": "The Moon has much less ______ than Earth, so people can jump much higher there.",
+"options": ["gravity", "gooey", "crater", "Piñatas"],
+"answer": 0
+},
+"q_w157": {
+"type": "choice_text",
+"wordIds": ["w157"],
+"question": "Colorful ______ filled with candy and toys are very popular at children's birthday parties.",
+"options": ["Piñatas", "prize", "inch", "grownup"],
+"answer": 0
+},
+"q_w158": {
+"type": "choice_text",
+"wordIds": ["w158"],
+"question": "Candy and small ______ fall out when kids break the Piñata at the party.",
+"options": ["prize", "brag", "steady", "dishwasher"],
+"answer": 0
+},
+"q_w159": {
+"type": "choice_text",
+"wordIds": ["w159"],
+"question": "You need to dig the soil about one ______ deep to plant the sunflower seeds properly.",
+"options": ["inch", "glassblower", "runny", "pipe"],
+"answer": 0
+},
+"q_w160": {
+"type": "choice_text",
+"wordIds": ["w160"],
+"question": "If you can't reach the high shelf, you should ask a ______ for help.",
+"options": ["grownup", "gooey", "crater", "Piñatas"],
+"answer": 0
+},
+"q_w161": {
+"type": "choice_text",
+"wordIds": ["w161"],
+"question": "The hare likes to ______ about how fast he can run in the race with the tortoise.",
+"options": ["brag", "prize", "inch", "grownup"],
+"answer": 0
+},
+"q_w162": {
+"type": "choice_text",
+"wordIds": ["w162"],
+"question": "'Slow and ______ wins the race' is a famous saying from The Tortoise and the Hare.",
+"options": ["steady", "brag", "dishwasher", "glassblower"],
+"answer": 0
+},
+"q_w163": {
+"type": "choice_text",
+"wordIds": ["w163"],
+"question": "Using a full ______ saves more water and energy than washing dishes by hand.",
+"options": ["dishwasher", "steady", "brag", "prize"],
+"answer": 0
 }
+
+
 
 
 }
