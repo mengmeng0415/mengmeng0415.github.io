@@ -2129,7 +2129,585 @@
 "[TITLE] 额外例句 [/TITLE][EX] The dishwasher can hold up to 12 place settings.| 这台洗碗机最多能容纳 12 套餐具。[/EX][EX] We need to load the dishwasher before it gets too full.| 我们需要在洗碗机太满之前把餐具放进去。[/EX][EX] The dishwasher uses less water than hand-washing if it’s fully loaded.| 如果洗碗机装满了，它比手洗更省水。[/EX]",
 "[TITLE] 常见错误 [/TITLE][ERR] dishwasher 是复合名词，由 dish + washer 组成，不要分开写（错误：dish washer），规范写法是 dishwasher。[/ERR][ERR] dishwasher 是可数名词，“一台洗碗机” 用 a dishwasher，复数形式是 dishwashers，不要说 many dishwasher（错误）。[/ERR][ERR] 不要混淆 dishwasher 和 dishwashing！dishwasher 是 “洗碗机 / 洗碗工”（名词）；dishwashing 是 “洗碗”（名词 / 形容词），如 a dishwasher /dishwashing liquid（洗洁精）。[/ERR]"
 ]
+},
+
+
+
+
+"w164": {
+"word": "scone",
+"images": {
+"scene": ["infopic01/scone.webp"],
+"card": ["wordpic01/scone.webp"]
+},
+"richDetail": [
+"[TITLE] 解释 [/TITLE][DEF][EN] A small, round cake made of flour, butter, and milk, usually eaten with jam or cream; a sweet baked good (used in Chapter 1 of The Princess in Black, with chocolate and scones as a snack)[/EN][CN] 司康饼；烤饼（用面粉、黄油和牛奶制作的小圆糕饼，通常搭配果酱或奶油食用；甜味烘焙点心，出自《黑衣公主》第一章，是公主与女公爵的点心，搭配热巧克力食用）[/CN][POS] n.[/POS][PH]/skɒn/（英式）/skoʊn/（美式）[/PH][DU] Princess Magnolia was having chocolate and scones with Duchess Wigtower.|(原文例句) 玛格诺莉亚公主正和维格塔女公爵一起享用热巧克力和司康饼。[/DU][DU] The scones were sweet and matched the hot chocolate perfectly.| 司康饼甜甜的，和热巧克力搭配得天衣无缝。[/DU][/DEF][IMG] infopic01/scone.webp [/IMG]",
+"[TITLE] 常见用法 [/TITLE][COLL][H] chocolate and scones | 热巧克力配司康饼 [POS] n.[/POS][/H][EX] We often have chocolate and scones for afternoon tea.| 我们下午茶常吃热巧克力配司康饼。[/EX][EX] The princess prepared chocolate and scones for her guest.| 公主为客人准备了热巧克力和司康饼。[/EX][/COLL][H] sweet/savory scone | 甜味 / 咸味司康饼 [POS] n.[/POS][/H][EX] I prefer sweet scones with strawberry jam.| 我更喜欢搭配草莓果酱的甜味司康饼。[/EX][EX] Savory scones with cheese are popular for breakfast.| 芝士咸味司康饼是很受欢迎的早餐。[/EX][/COLL][H] a plate of scones | 一盘司康饼 [POS] n.[/POS][/H][EX] The maid brought a plate of scones to the tower room.| 女仆端着一盘司康饼送到了塔楼房间。[/EX][/COLL]",
+"[TITLE] 额外例句 [/TITLE][EX] She baked a batch of fresh scones for the afternoon tea party.| 她为下午茶派对烤了一批新鲜的司康饼。[/EX][EX] The scone is soft and fluffy when it’s just out of the oven.| 刚出炉的司康饼松软又蓬松。[/EX][EX] He spread some cream on the scone before eating it.| 他吃司康饼前在上面抹了些奶油。[/EX]",
+"[TITLE] 常见错误 [/TITLE][ERR] scone 是可数名词，复数形式是 scones，不要说 many scone（错误），正确：many scones。[/ERR][ERR] 注意发音差异：英式 /skɒn/，美式 /skoʊn/，不要将美式发音读成 /skɒn/。[/ERR][ERR] 不要混淆 scone 和 muffin！scone 质地更紧实，多为圆形；muffin 更蓬松，杯状烘焙，口感差异大。[/ERR]"
+]
+},
+"w165": {
+"word": "breeze",
+"images": {
+"scene": ["infopic01/breeze.webp"],
+"card": ["wordpic01/breeze.webp"]
+},
+"richDetail": [
+"[TITLE] 解释 [/TITLE][DEF][EN] A light, gentle wind; to move quickly and easily (used in Chapter 1 of The Princess in Black, describing the warm wind from the window)[/EN][CN] 微风；轻风；轻快地走（轻柔的小风；快速轻松地移动，出自《黑衣公主》第一章，形容从窗户吹进来的温暖风儿）[/CN][POS] n./v.[/POS][PH]/briːz/（英美）[/PH][DU] The breeze from the window was warm and wishy.|(原文例句) 从窗户吹进来的微风温暖又轻柔。[/DU][DU] The breeze knocked her curls into her face.| 微风把她的卷发吹到了脸上。[/DU][/DEF][IMG] infopic01/breeze.webp [/IMG]",
+"[TITLE] 常见用法 [/TITLE][COLL][H] warm breeze | 温暖的微风 [POS] n.[/POS][/H][EX] A warm breeze blew through the castle window in summer.| 夏天，一阵温暖的微风从城堡的窗户吹进来。[/EX][EX] The warm breeze made her feel a little sleepy.| 温暖的微风让她觉得有点犯困。[/EX][/COLL][H] a breeze through sth | 轻松完成某事 [POS] v.[/POS][/H][EX] She breezed through the princess’s etiquette lesson.| 她轻松完成了公主的礼仪课。[/EX][/COLL][H] the breeze from...| 从…… 吹来的微风 [POS] n.[/POS][/H][EX] The breeze from the forest carried the smell of flowers.| 从森林吹来的微风带着花香。[/EX][/COLL]",
+"[TITLE] 额外例句 [/TITLE][EX] A cool breeze swept across the goat pasture in the evening.| 傍晚，一阵凉风掠过山羊牧场。[/EX][EX] He breezed into the room with a big smile on his face.| 他笑容满面，轻快地走进了房间。[/EX][EX] The leaves danced in the soft breeze.| 树叶在轻柔的微风中舞动。[/EX]",
+"[TITLE] 常见错误 [/TITLE][ERR] breeze 作 “微风” 时多为不可数名词，表 “阵阵微风” 可用 breezes，不要随意加 s（错误：a light breezes），正确：a light breeze。[/ERR][ERR] 不要混淆 breeze 和 wind！breeze 特指 “轻柔的微风”；wind 是通用词，可指任何风，大风用 strong wind 而非 strong breeze。[/ERR][ERR] breeze 作动词时是不及物动词，后接介词时需搭配正确，不要直接接宾语（错误：breeze the room）。[/ERR]"
+]
+},
+"w166": {
+"word": "uncover",
+"images": {
+"scene": ["infopic01/uncover.webp"],
+"card": ["wordpic01/uncover.webp"]
+},
+"richDetail": [
+"[TITLE] 解释 [/TITLE][DEF][EN] To find out or discover something that is hidden or secret; to remove a cover from something (used in Chapter 1 of The Princess in Black, the duchess’s hobby to find others’ secrets)[/EN][CN] 揭露；发现；揭开（发现隐藏或秘密的事情；移去某物的遮盖物，出自《黑衣公主》第一章，是维格塔女公爵的爱好，喜欢发现别人的秘密）[/CN][POS] v.[/POS][PH]/ʌnˈkʌvə(r)/（英式）/ʌnˈkʌvər/（美式）[/PH][DU]“I love to meet people in their homes,” said Duchess Wigtower. “I always uncover secrets.”|(原文例句) 维格塔女公爵说：“我喜欢去别人家里做客，总能发现一些秘密。”[/DU][DU] She was afraid the duchess would uncover her huge secret.| 她害怕女公爵会揭露她那个天大的秘密。[/DU][/DEF][IMG] infopic01/uncover.webp [/IMG]",
+"[TITLE] 常见用法 [/TITLE][COLL][H] uncover a secret | 揭露一个秘密 [POS] v.[/POS][/H][EX] The duchess was determined to uncover a secret in Princess Magnolia’s castle.| 女公爵下定决心要在玛格诺莉亚公主的城堡里发现一个秘密。[/EX][EX] No one could uncover the princess’s secret identity as the Princess in Black.| 没人能揭露公主作为黑衣公主的秘密身份。[/EX][/COLL][H] uncover the truth | 发现真相 [POS] v.[/POS][/H][EX] She tried to uncover the truth about the strange noise in the castle.| 她试图找出城堡里奇怪声响的真相。[/EX][/COLL][H] uncover sth hidden | 发现隐藏的东西 [POS] v.[/POS][/H][EX] The duchess yanked the door and uncovered something stuck beneath it.| 女公爵猛拉门，发现了卡在门底下的东西。[/EX][/COLL]",
+"[TITLE] 额外例句 [/TITLE][EX] The detective worked hard to uncover the mystery of the missing treasure.| 侦探努力揭开失踪宝藏的谜团。[/EX][/EX] She uncovered the bowl and found a big red apple inside.| 她掀开碗，发现里面有一个大红苹果。[/EX][EX] It took a long time to uncover the truth about the monster’s rule.| 花了很久才发现关于怪兽规则的真相。[/EX]",
+"[TITLE] 常见错误 [/TITLE][ERR] uncover 是及物动词，可直接接宾语，不要加多余介词（错误：uncover about the secret），正确：uncover the secret。[/ERR][ERR] 不要混淆 uncover 和 discover！uncover 侧重 “揭开被隐藏、刻意掩盖的事物”；discover 侧重 “发现原本存在但不为人知的事物”。[/ERR][ERR] uncover 的过去式和过去分词是 uncovered，不要漏写 ed（错误：uncover），正确：She uncovered the stockings under the door。[/ERR]"
+]
+},
+"w167": {
+"word": "prim",
+"images": {
+"scene": ["infopic01/prim.webp"],
+"card": ["wordpic01/prim.webp"]
+},
+"richDetail": [
+"[TITLE] 解释 [/TITLE][DEF][EN] Very neat and proper in appearance and behavior; formal and not relaxed, often in a way that seems a little stiff (used in Chapter 1 of The Princess in Black, describing Princess Magnolia’s outward look)[/EN][CN] 端庄的；一本正经的；拘谨的（外表和行为非常整洁得体；正式且不放松，有时显得有点僵硬，出自《黑衣公主》第一章，形容玛格诺莉亚公主的外在模样）[/CN][POS] adj.[/POS][PH]/prɪm/（英美）[/PH][DU]“You seem so prim and perfect.” Duchess Wigtower leaned forward.|(原文例句) 维格塔女公爵探过身来说：“你看起来如此端庄完美。”[/DU][DU] She tried to look prim and calm when the monster alarm rang.| 怪兽警报响起时，她努力装出端庄平静的样子。[/DU][/DEF][IMG] infopic01/prim.webp [/IMG]",
+"[TITLE] 常见用法 [/TITLE][COLL][H] prim and perfect | 端庄又完美 [POS] adj.[/POS][/H][EX] Everyone thought the princess was prim and perfect with no secrets.| 所有人都觉得这位公主端庄完美，毫无秘密。[/EX][EX] She always looked prim and perfect in her pink frilly dress.| 她穿着粉色荷叶边裙子，总是显得端庄又完美。[/EX][/COLL][H] a prim smile | 拘谨的微笑 [POS] adj.[/POS][/H][EX] Princess Magnolia gave the duchess a prim smile before leaving the room.| 玛格诺莉亚公主离开房间前，给了女公爵一个拘谨的微笑。[/EX][/COLL][H] prim behavior | 端庄的行为 [POS] adj.[/POS][/H][EX] The princess’s prim behavior made the duchess more curious about her secret.| 公主端庄的行为让女公爵对她的秘密更加好奇。[/EX][/COLL]",
+"[TITLE] 额外例句 [/TITLE][EX] She sat in a prim position on the couch, with her hands on her knees.| 她双手放在膝盖上，拘谨地坐在沙发上。[/EX][EX] The lady spoke in a prim voice and never laughed loudly.| 这位女士说话的语气一本正经，从不高声大笑。[/EX][EX] He thought her prim look was just a disguise for her bold personality.| 他觉得她端庄的外表只是她大胆性格的伪装。[/EX]",
+"[TITLE] 常见错误 [/TITLE][ERR] prim 的比较级是 primmer，最高级是 primmest，不要用 more prim/most prim（错误），这是不规则变化的形容词。[/ERR][ERR] prim 多用来形容人的外表、行为或表情，不要用来形容事物（错误：a prim cake），可换用 neat/pretty。[/ERR][ERR] 不要混淆 prim 和 proper！prim 侧重 “过于拘谨、一本正经的得体”；proper 侧重 “符合规范、恰当的得体”，语气更中性。[/ERR]"
+]
+},
+"w168": {
+"word": "frilly",
+"images": {
+"scene": ["infopic01/frilly.webp"],
+"card": ["wordpic01/frilly.webp"]
+},
+"richDetail": [
+"[TITLE] 解释 [/TITLE][DEF][EN] Having many frills (small, decorative folds of cloth); decorated with frills, usually used to describe clothes for girls or princesses (used in Chapter 1 of The Princess in Black, describing Princess Magnolia’s pink dress)[/EN][CN] 饰有褶边的；带荷叶边的（有许多装饰性的小布褶；用褶边装饰的，通常用来形容女孩或公主的衣服，出自《黑衣公主》第一章，形容玛格诺莉亚公主的粉色裙子）[/CN][POS] adj.[/POS][PH]/ˈfrɪli/（英美）[/PH][DU] Princess Magnolia brushed crumbs off her frilly pink dress.|(原文例句) 玛格诺莉亚公主拂掉了她粉色荷叶边裙子上的面包屑。[/DU][DU] Princesses do not stuff frilly pink dresses into broom closets.|(原文例句) 公主们可不会把粉色荷叶边裙子塞进扫帚间。[/DU][/DEF][IMG] infopic01/frilly.webp [/IMG]",
+"[TITLE] 常见用法 [/TITLE][COLL][H] frilly pink dress | 粉色荷叶边裙子 [POS] adj.[/POS][/H][EX] The princess’s favorite clothes are her frilly pink dresses.| 公主最喜欢的衣服就是她的粉色荷叶边裙子。[/EX][EX] She had to take off her frilly pink dress to become the Princess in Black.| 她必须脱下粉色荷叶边裙子，才能变身成黑衣公主。[/EX][/COLL][H] frilly skirt/bonnet | 荷叶边裙子 / 荷叶边软帽 [POS] adj.[/POS][/H][EX] The little princess wore a frilly bonnet on her head.| 小公主头上戴着一顶荷叶边软帽。[/EX][/COLL][H] frilly clothes | 荷叶边衣服 [POS] adj.[/POS][/H][EX] All her princess clothes are frilly clothes with bright colors.| 她所有的公主裙都是色彩鲜艳的荷叶边衣服。[/EX][/COLL]",
+"[TITLE] 额外例句 [/TITLE][EX] She sewed some lace on the frilly dress to make it more beautiful.| 她在荷叶边裙子上缝了些蕾丝，让它变得更漂亮。[/EX][EX] The frilly sleeves of the dress are a little too long for her.| 这条裙子的荷叶边袖子对她来说有点太长了。[/EX][EX] She didn’t like wearing frilly clothes when she was fighting monsters.| 她打怪兽的时候，一点也不喜欢穿荷叶边衣服。[/EX]",
+"[TITLE] 常见错误 [/TITLE][ERR] frilly 的比较级是 frillier，最高级是 frilliest，需变 y 为 i 加 - er/-est，不要写成 more frilly/most frilly（错误）。[/ERR][ERR] 注意拼写：frilly 是双 l 加 y，不要漏写一个 l（错误：frily），正确拼写为 frilly。[/ERR][ERR] frilly 是形容词，不要误用作名词（错误：the frilly of the dress），正确：the frilly dress（荷叶边裙子）。[/ERR]"
+]
+},
+"w169": {
+"word": "glitter-stone",
+"images": {
+"scene": ["infopic01/glitter-stone.webp"],
+"card": ["wordpic01/glitter-stone.webp"]
+},
+"richDetail": [
+"[TITLE] 解释 [/TITLE][DEF][EN] A small stone that shines and sparkles; a decorative stone with glitter, used to make jewelry or ornaments (used in The Princess in Black, as the material of the monster alarm ring and horseshoe)[/EN][CN] 闪光石；镶闪石的（能闪闪发光的小石头；带有闪粉的装饰石，用于制作首饰或饰品，出自《黑衣公主》，是怪兽警报戒指和马蹄铁的制作材料）[/CN][POS] n.（复合名词）[/POS][PH]/ˈɡlɪtə stəʊn/（英式）/ˈɡlɪtər stoʊn/（美式）[/PH][DU] Just then, Princess Magnolia’s glitter-stone ring rang.|(原文例句) 就在这时，玛格诺莉亚公主的闪光石戒指响了。[/DU][DU] Frimplepants’s glitter-stone horse shoe rang. The monster alarm![(原文例句) 弗林普潘茨的闪光石马蹄铁响了，是怪兽警报！][/DU][/DEF][IMG] infopic01/glitter-stone.webp [/IMG]",
+"[TITLE] 常见用法 [/TITLE][COLL][H] glitter-stone ring | 闪光石戒指 [POS] n.[/POS][/H][EX] The glitter-stone ring is the princess’s monster alarm and her secret tool.| 闪光石戒指是公主的怪兽警报，也是她的秘密工具。[/EX][EX] The glitter-stone ring rang loudly when the monster came out of the hole.| 怪兽从洞里出来时，闪光石戒指大声响了起来。[/EX][/COLL][H] glitter-stone horse shoe | 闪光石马蹄铁 [POS] n.[/POS][/H][EX] The glitter-stone horse shoe is the unicorn’s monster alarm too.| 闪光石马蹄铁也是这只独角兽的怪兽警报。[/EX][/COLL][H] glitter-stone jewelry | 闪光石首饰 [POS] n.[/POS][/H][EX] The princess has a lot of glitter-stone jewelry in her castle.| 公主的城堡里有许多闪光石首饰。[/EX][/COLL]",
+"[TITLE] 额外例句 [/TITLE][EX] She made a small necklace with a glitter-stone for her pony.| 她用一颗闪光石给她的小马做了一条小项链。[/EX][EX] The glitter-stone on the ring sparkled in the sunlight.| 戒指上的闪光石在阳光下闪闪发光。[/EX][EX] The glitter-stone horse shoe would ring when monsters were coming.| 怪兽要来的时候，闪光石马蹄铁就会响。[/EX]",
+"[TITLE] 常见错误 [/TITLE][ERR] glitter-stone 是复合名词，规范写法带连字符，不要分开写（错误：glitter stone），作定语时也需保留连字符（glitter-stone ring）。[/ERR][ERR] glitter-stone 是可数名词，复数形式是 glitter-stones，不要说 many glitter-stone（错误），正确：many glitter-stones。[/ERR][ERR] 不要混淆 glitter-stone 和 diamond！glitter-stone 是普通的闪光装饰石；diamond 是钻石，质地坚硬且珍贵，二者价值和材质不同。[/ERR]"
+]
+},
+"w170": {
+"word": "mince",
+"images": {
+"scene": ["infopic01/mince.webp"],
+"card": ["wordpic01/mince.webp"]
+},
+"richDetail": [
+"[TITLE] 解释 [/TITLE][DEF][EN] To walk with small, quick steps, in a way that is typical of a prim and proper princess; to cut food into very small pieces (used in Chapter 1 of The Princess in Black, describing Princess Magnolia’s walking way)[/EN][CN] 小步快走；迈碎步（迈着小巧、快速的步子走，是端庄得体的公主的典型走路方式；将食物切成碎末，出自《黑衣公主》第一章，形容玛格诺莉亚公主的走路姿态）[/CN][POS] v.[/POS][PH]/mɪns/（英美）[/PH][DU] Princess Magnolia minced to the door.|(原文例句) 玛格诺莉亚公主迈着碎步走向门口。[/DU][DU] Her glass slippers went tink-tink-tink-tink as she minced to the door.| 她迈着碎步走向门口，玻璃鞋发出叮叮叮的声响。[/DU][/DEF][IMG] infopic01/mince.webp [/IMG]",
+"[TITLE] 常见用法 [/TITLE][COLL][H] mince to the door | 迈着碎步走向门口 [POS] v.[/POS][/H][EX] She had to mince to the door to keep her princess image.| 为了维持公主的形象，她不得不迈着碎步走向门口。[/EX][EX] The little girl minced to her mother with a small gift in her hand.| 小女孩手里拿着小礼物，迈着碎步走向妈妈。[/EX][/COLL][H] mince across/along sp | 迈着碎步穿过 / 沿着某地走 [POS] v.[/POS][/H][EX] She minced across the ballroom to greet the guests.| 她迈着碎步穿过舞厅，去迎接宾客。[/EX][/COLL][H] mince meat/vegetables | 把肉 / 蔬菜切成碎末 [POS] v.[/POS][/H][EX] The cook would mince meat to make dumplings for the princess.| 厨师会把肉切成碎末，给公主做饺子。[/EX][/COLL]",
+"[TITLE] 额外例句 [/TITLE][EX] She stopped mincing and ran as fast as she could when no one was looking.| 没人看见的时候，她不再迈碎步，而是拼命地跑。[/EX][EX] The cat minced along the wall, afraid of the big dog.| 小猫沿着墙迈着小碎步走，害怕那只大狗。[/EX][EX] He taught his daughter how to mince carrots for the salad.| 他教女儿如何把胡萝卜切成碎末做沙拉。[/EX]",
+"[TITLE] 常见错误 [/TITLE][ERR] mince 作 “迈碎步” 时是不及物动词，后接地点需加介词（to/across/along），不要直接接宾语（错误：mince the door），正确：mince to the door。[/ERR][ERR] 不要混淆 mince 的两个含义，结合语境区分：描述走路时是 “迈碎步”；描述食物时是 “切碎”。[/ERR][ERR] mince 的过去式和过去分词是 minced，不要加 ed 以外的后缀（错误：mincinged），正确：She minced to the door and then ran away。[/ERR]"
+]
+},
+"w171": {
+"word": "glass slipper",
+"images": {
+"scene": ["infopic01/glass slipper.webp"],
+"card": ["wordpic01/glass slipper.webp"]
+},
+"richDetail": [
+"[TITLE] 解释 [/TITLE][DEF][EN] A slipper made of glass, a typical shoe for a fairy-tale princess; a delicate glass shoe (used in Chapter 1 of The Princess in Black, Princess Magnolia’s princess shoes that make tinkling sounds)[/EN][CN] 玻璃鞋；水晶鞋（用玻璃做的拖鞋，是童话公主的经典鞋子；精致的玻璃鞋子，出自《黑衣公主》第一章，是玛格诺莉亚公主的公主鞋，走路会发出叮叮的声响）[/CN][POS] n.（名词短语）[/POS][PH]/ɡlɑːs ˈslɪpə(r)/（英式）/ɡlæ sˈslɪpər/（美式）[/PH][DU] Her glass slippers went tink-tink-tink-tink.|(原文例句) 她的玻璃鞋发出叮叮叮叮的声响。[/DU][DU] No one would suspect a girl in glass slippers to be a monster fighter.|(原文例句) 没人会怀疑一个穿着玻璃鞋的女孩是打怪兽的勇士。[/DU][/DEF][IMG] infopic01/glass slipper.webp [/IMG]",
+"[TITLE] 常见用法 [/TITLE][COLL][H] wear glass slippers | 穿着玻璃鞋 [POS] n.[/POS][/H][EX] Princess Magnolia had to wear glass slippers to keep her princess look.| 玛格诺莉亚公主必须穿着玻璃鞋，维持她的公主模样。[/EX][EX] She took off her glass slippers before sliding down the secret chute.| 她滑下秘密滑道前，脱掉了她的玻璃鞋。[/EX][/COLL][H] a pair of glass slippers | 一双玻璃鞋 [POS] n.[/POS][/H][EX] The princess has a beautiful pair of glass slippers in her closet.| 公主的衣橱里有一双漂亮的玻璃鞋。[/EX][/COLL][H] the sound of glass slippers | 玻璃鞋的声响 [POS] n.[/POS][/H][EX] The duchess heard the sound of glass slippers from the hallway.| 女公爵听到走廊里传来玻璃鞋的声响。[/EX][/COLL]",
+"[TITLE] 额外例句 [/TITLE][EX] The glass slippers sparkled like stars in the castle’s light.| 玻璃鞋在城堡的灯光下像星星一样闪闪发光。[/EX][EX] She didn’t want to wear glass slippers when she was galloping on her pony.| 她骑着小马飞奔的时候，一点也不想穿玻璃鞋。[/EX][EX] A girl in glass slippers is the last person people would think of as a hero.| 穿着玻璃鞋的女孩，是人们最不会想到的英雄。[/EX]",
+"[TITLE] 常见错误 [/TITLE][ERR] glass slipper 是名词短语，复数形式是 glass slippers，只需给 slipper 加 s，不要写成 glass slipperes（错误）。[/ERR][ERR] 规范写法为分开写的 glass slipper，不要连写（错误：glassslipper），作定语时可写 glass-slipper（如 glass-slipper sound）。[/ERR][ERR] glass slipper 表 “玻璃鞋” 时，常用 a pair of 修饰，不要单独说 a glass slipper（虽语法正确，但不符合童话和原文的表达习惯）。[/ERR]"
+]
+},
+"w172": {
+"word": "stuff",
+"images": {
+"scene": ["infopic01/stuff.webp"],
+"card": ["wordpic01/stuff.webp"]
+},
+"richDetail": [
+"[TITLE] 解释 [/TITLE][DEF][EN] To push or put something into a small space quickly and carelessly; to fill a space with something (used in Chapter 2 of The Princess in Black, describing hiding the princess dress)[/EN][CN] 把…… 塞进；胡乱填满（快速、随意地把东西推进或放进小空间里；用某物填满某个空间，出自《黑衣公主》第二章，形容藏公主裙的动作）[/CN][POS] v./n.[/POS][PH]/stʌf/（英美）[/PH][DU] Princesses do not stuff frilly pink dresses into broom closets.|(原文例句) 公主们可不会把粉色荷叶边裙子塞进扫帚间。[/DU][DU] She had to stuff her princess dress into the closet and put on her black clothes.| 她不得不把公主裙塞进衣橱，换上黑色的衣服。[/DU][/DEF][IMG] infopic01/stuff.webp [/IMG]",
+"[TITLE] 常见用法 [/TITLE][COLL][H] stuff sth into sp | 把某物塞进某地 [POS] v.[/POS][/H][EX] She had to stuff her glass slippers into a box before becoming the Princess in Black.| 变身黑衣公主前，她不得不把玻璃鞋塞进盒子里。[/EX][EX] He stuffed the popcorn into his mouth while watching the monster battle.| 他一边看怪兽大战，一边把爆米花塞进嘴里。[/EX][/COLL][H] stuff sth with sth | 用某物填满某物 [POS] v.[/POS][/H][EX] She stuffed the bag with her black clothes and scepter.| 她把黑色的衣服和权杖塞进了包里。[/EX][/COLL][H] stuff (n.)| 东西；物品（口语）[POS] n.[/POS][/H][EX] There are a lot of strange stuff in the princess’s broom closet.| 公主的扫帚间里有许多奇怪的东西。[/EX][/COLL]",
+"[TITLE] 额外例句 [/TITLE][EX] Don’t stuff too many books into your schoolbag—it’s too heavy.| 别往书包里塞太多书，太重了。[/EX][EX] He stuffed the letter into his pocket and ran out of the room.| 他把信塞进口袋，跑出了房间。[/EX][EX] The box is stuffed with all kinds of princess jewelry.| 这个盒子里塞满了各种各样的公主首饰。[/EX]",
+"[TITLE] 常见错误 [/TITLE][ERR] stuff 作动词 “塞进” 时是及物动词，stuff into 是固定搭配，不要漏掉 into（错误：stuff the dress the closet），正确：stuff the dress into the closet。[/ERR][ERR] stuff 的过去式和过去分词是 stuffed，无需双写 f，不要写成 stufffed（错误）。[/ERR][ERR] stuff 作不可数名词 “东西” 时，不要加 s（错误：stuffs），正确：There is a lot of stuff in the room。[/ERR]"
+]
+},
+"w173": {
+"word": "broom closet",
+"images": {
+"scene": ["infopic01/broom closet.webp"],
+"card": ["wordpic01/broom closet.webp"]
+},
+"richDetail": [
+"[TITLE] 解释 [/TITLE][DEF][EN] A small closet or room where brooms, mops and other cleaning tools are kept; Princess Magnolia’s secret place to change into the Princess in Black (used in Chapter 2 of The Princess in Black, the hidden chute entrance)[/EN][CN] 扫帚间；杂物间（存放扫帚、拖把和其他清洁工具的小储藏室；玛格诺莉亚公主变身黑衣公主的秘密地点，出自《黑衣公主》第二章，是秘密滑道的入口）[/CN][POS] n.（名词短语）[/POS][PH]/bruːm ˈklɒzɪt/（英式）/bruːm ˈklɑːzɪt/（美式）[/PH][DU] Princesses do not stuff frilly pink dresses into broom closets.|(原文例句) 公主们可不会把粉色荷叶边裙子塞进扫帚间。[/DU][DU] The tunnel ended in the broom closet.|(原文例句) 那条秘密通道的尽头就是扫帚间。[/DU][/DEF][IMG] infopic01/broom closet.webp [/IMG]",
+"[TITLE] 常见用法 [/TITLE][COLL][H] stuff sth into the broom closet | 把某物塞进扫帚间 [POS] n.[/POS][/H][EX] Princess Magnolia stuffed her pink dress into the broom closet quickly.| 玛格诺莉亚公主迅速把她的粉色裙子塞进了扫帚间。[/EX][/COLL][H] in the broom closet | 在扫帚间里 [POS] n.[/POS][/H][EX] The duchess found a pair of black stockings in the broom closet.| 女公爵在扫帚间里发现了一双黑色长袜。[/EX][/COLL][H] the entrance of the broom closet | 扫帚间的入口 [POS] n.[/POS][/H][EX] The secret chute’s entrance is at the back of the broom closet.| 秘密滑道的入口在扫帚间的深处。[/EX][/COLL]",
+"[TITLE] 额外例句 [/TITLE][EX] No one was allowed to enter the broom closet in Princess Magnolia’s castle.| 玛格诺莉亚公主的城堡里，没人被允许进入那个扫帚间。[/EX][EX] She emerged from the broom closet as the Princess in Black, ready to fight monsters.| 她从扫帚间出来，变身成黑衣公主，准备迎战怪兽。[/EX][EX] The broom closet looked ordinary, but it had a secret chute inside.| 这个扫帚间看起来平平无奇，里面却有一条秘密滑道。[/EX]",
+"[TITLE] 常见错误 [/TITLE][ERR] broom closet 是名词短语，规范写法分开写，不要连写（错误：broomcloset），作定语时可加连字符（broom-closet door）。[/ERR][ERR] broom closet 是可数名词，复数形式是 broom closets，不要说 many broom closet（错误），正确：many broom closets。[/ERR][ERR] 不要混淆 broom closet 和 storage room！broom closet 是小型的、专门放清洁工具的储藏室；storage room 是大型的、存放各类物品的储藏室，空间更大。[/ERR]"
+]
+},
+"w174": {
+"word": "chute",
+"images": {
+"scene": ["infopic01/chute.webp"],
+"card": ["wordpic01/chute.webp"]
+},
+"richDetail": [
+"[TITLE] 解释 [/TITLE][DEF][EN] A narrow, steep passage that things or people can slide down; a secret slide in Princess Magnolia’s castle (used in Chapter 2 of The Princess in Black, the secret passage to the courtyard)[/EN][CN] 滑道；滑槽；滑筒（供人或物滑下的狭窄陡峭通道；玛格诺莉亚公主城堡里的秘密滑筒，出自《黑衣公主》第二章，是通往庭院的秘密通道）[/CN][POS] n.[/POS][PH]/ʃuːt/（英美）[/PH][DU] And princesses most definitely do not slide down secret chutes and highjump castle walls.|(原文例句) 公主们当然更不会滑下秘密滑道，跳过高高的城墙。[/DU][DU] She crawled up the secret chute. Going up was much slower than going down.|(原文例句) 她爬上了秘密滑道，往上爬可比往下滑慢多了。[/DU][/DEF][IMG] infopic01/chute.webp [/IMG]",
+"[TITLE] 常见用法 [/TITLE][COLL][H] secret chute | 秘密滑道 [POS] n.[/POS][/H][EX] The secret chute in the castle leads straight to the courtyard.| 城堡里的秘密滑道直通庭院。[/EX][EX] Only Princess Magnolia knew where the secret chute was.| 只有玛格诺莉亚公主知道秘密滑道在哪里。[/EX][/COLL][H] slide down a chute | 滑下滑道 [POS] n.[/POS][/H][EX] She would slide down the secret chute to meet her pony Blacky.| 她会滑下秘密滑道，去见她的小马小黑。[/EX][/COLL][H] crawl up a chute | 爬上滑道 [POS] n.[/POS][/H][EX] It was hard for her to crawl up the chute with her black clothes on.| 她穿着黑色的衣服，爬上滑道很费劲。[/EX][/COLL]",
+"[TITLE] 额外例句 [/TITLE][EX] There were some spiders and bats in the secret chute, but she was not afraid.| 秘密滑道里有几只蜘蛛和蝙蝠，但她一点也不害怕。[/EX][/EX] The chute was dark and narrow, but it was the fastest way to the courtyard.| 这条滑道又黑又窄，却是到庭院最快的路。[/EX][EX] She held on to the side of the chute to slow down when sliding down.| 她滑下滑道时，抓着滑道边缘减速。[/EX]",
+"[TITLE] 常见错误 [/TITLE][ERR] chute 是可数名词，复数形式是 chutes，不要说 many chute（错误），正确：many chutes。[/ERR][ERR] 注意拼写和词义区分：不要和 shoot 混淆！chute 是 /ʃuːt/（滑道），名词；shoot 是 /ʃuːt/（射击、发射），动词 / 名词，二者同音不同形不同义。[/ERR][ERR] chute 前常用冠词 a/the，不要单独使用（错误：slide down chute），正确：slide down the chute。[/ERR]"
+]
+},
+"w175": {
+"word": "highjump",
+"images": {
+"scene": ["infopic01/highjump.webp"],
+"card": ["wordpic01/highjump.webp"]
+},
+"richDetail": [
+"[TITLE] 解释 [/TITLE][DEF][EN] To jump high over something; the sport of jumping as high as possible over a bar (used in Chapter 2 of The Princess in Black, describing Princess Magnolia’s action to leave the castle)[/EN][CN] 跳过高；跳高（高高地跳过某物；越过横杆跳得尽可能高的运动，出自《黑衣公主》第二章，形容玛格诺莉亚公主离开城堡的动作）[/CN][POS] v./n.（复合词）[/POS][PH]/ˈhaɪdʒʌmp/（英美）[/PH][DU] And princesses most definitely do not slide down secret chutes and highjump castle walls.|(原文例句) 公主们当然更不会滑下秘密滑道，跳过高高的城墙。[/DU][DU] The Princess in Black high-jumped the castle wall and landed on Blacky’s back.|(原文例句) 黑衣公主跳过高高的城墙，落在了小黑的背上。[/DU][/DEF][IMG] infopic01/highjump.webp [/IMG]",
+"[TITLE] 常见用法 [/TITLE][COLL][H] highjump the castle wall | 跳过高高的城墙 [POS] v.[/POS][/H][EX] She could highjump the castle wall easily when she was the Princess in Black.| 变身黑衣公主后，她能轻松地跳过高高的城墙。[/EX][/COLL][H] highjump a fence/bar | 跳过栅栏 / 横杆 [POS] v.[/POS][/H][EX] The pony Blacky could highjump a fence to run into the forest.| 小马小黑能跳过栅栏，跑进森林里。[/EX][/COLL][H] do a highjump | 跳高；跳一下高跳 [POS] n.[/POS][/H][EX] She did a highjump and landed lightly on the grass.| 她跳了一个高跳，轻轻落在了草地上。[/EX][/COLL]",
+"[TITLE] 额外例句 [/TITLE][EX] The Princess in Black can highjump any wall in the castle with her ninja skills.| 黑衣公主靠着她的忍者技能，能跳过城堡里的任何一道墙。[/EX][EX] He practiced to highjump the big stone to meet the princess.| 他练习跳过大石头，去见公主。[/EX][EX] The monster was too big to highjump the small hole back to Monster Land.| 这只怪兽太大了，跳不回怪兽之地的那个小洞。[/EX]",
+"[TITLE] 常见错误 [/TITLE][ERR] highjump 作动词时，过去式和过去分词是highjumped，无需双写 p，不要写成 highjumped（正确）/highjumpped（错误）。[/ERR][ERR] highjump 是复合词，可连写（highjump）也可加连字符（high-jump），不要分开写（错误：high jump）作动词，分开写多作名词（the high jump）。[/ERR][ERR] highjump 作动词时是及物动词，直接接被跳过的事物（错误：highjump over the wall），无需加 over，正确：highjump the wall。[/ERR]"
+]
+},
+"w176": {
+"word": "courtyard",
+"images": {
+"scene": ["infopic01/courtyard.webp"],
+"card": ["wordpic01/courtyard.webp"]
+},
+"richDetail": [
+"[TITLE] 解释 [/TITLE][DEF][EN] An open area of ground surrounded by the walls of a castle or building, usually with a paved or grassy surface; the open space in Princess Magnolia’s castle (used in Chapter 3 of The Princess in Black, where Frimplepants was nibbling an apple)[/EN][CN] 庭院；院子（被城堡或建筑的墙壁环绕的露天空地，通常铺有地砖或长有青草；玛格诺莉亚公主城堡里的露天场地，出自《黑衣公主》第三章，弗林普潘茨在这儿啃苹果）[/CN][POS] n.[/POS][PH]/ˈkɔːtjɑːd/（英式）/ˈkɔːrtjɑːrd/（美式）[/PH][DU] In the courtyard, Frimplepants was nibbling an apple.|(原文例句) 在庭院里，弗林普潘茨正啃着一个苹果。[/DU][DU] The secret passage in the castle leads from the broom closet to the courtyard.| 城堡里的秘密通道从扫帚间通往庭院。[/DU][/DEF][IMG] infopic01/courtyard.webp [/IMG]",
+"[TITLE] 常见用法 [/TITLE][COLL][H] in the courtyard | 在庭院里 [POS] n.[/POS][/H][EX] The princess’s pony waited for her in the courtyard every time the monster alarm rang.| 每次怪兽警报响起，公主的小马都会在庭院里等她。[/EX][EX] We saw a unicorn nibbling an apple in the castle’s courtyard.| 我们看到一只独角兽在城堡的庭院里啃苹果。[/EX][/COLL][H] castle courtyard | 城堡庭院 [POS] n.[/POS][/H][EX] The castle courtyard is a quiet place with green grass and beautiful flowers.| 城堡庭院是个安静的地方，长着青草，开着漂亮的花。[/EX][/COLL][H] walk in the courtyard | 在庭院里散步 [POS] n.[/POS][/H][EX] Duchess Wigtower wanted to walk in the courtyard when she toured the castle.| 维格塔女公爵参观城堡时，想在庭院里散散步。[/EX][/COLL]",
+"[TITLE] 额外例句 [/TITLE][EX] The children played with a ball in the big courtyard of the palace.| 孩子们在宫殿的大庭院里玩球。[/EX][EX] A small fountain stands in the middle of the castle courtyard.| 城堡庭院的中央立着一座小喷泉。[/EX][EX] She met her faithful pony in the courtyard before charging into the forest.| 她在庭院里见到了忠实的小马，然后冲进了森林。[/EX]",
+"[TITLE] 常见错误 [/TITLE][ERR] courtyard 是可数名词，复数形式是 courtyards，不要说 many courtyard（错误），正确：many courtyards。[/ERR][ERR] 表示 “在庭院里” 用介词 in，不要用 on（错误：on the courtyard），正确：in the courtyard。[/ERR][ERR] 不要混淆 courtyard 和 garden！courtyard 是建筑环绕的露天空地，多为硬地或短草；garden 是专门种植花草的花园，侧重绿植景观。[/ERR]"
+]
+},
+"w177": {
+"word": "nibble",
+"images": {
+"scene": ["infopic01/nibble.webp"],
+"card": ["wordpic01/nibble.webp"]
+},
+"richDetail": [
+"[TITLE] 解释 [/TITLE][DEF][EN] To eat something in small, gentle bites; to take tiny mouthfuls of food (used in Chapter 3 of The Princess in Black, describing Frimplepants eating an apple)[/EN][CN] 小口咬；啃；一点点地吃（用小巧、轻柔的咬动吃东西；小口小口地进食，出自《黑衣公主》第三章，形容弗林普潘茨吃苹果的样子）[/CN][POS] v./n.[/POS][PH]/ˈnɪbl/（英美）[/PH][DU] In the courtyard, Frimplepants was nibbling an apple.|(原文例句) 在庭院里，弗林普潘茨正小口啃着一个苹果。[/DU][DU] Duff nibbled some popcorn while watching the Princess in Black battle the monster.|(原文例句) 达夫一边看黑衣公主和怪兽战斗，一边小口吃着爆米花。[/DU][/DEF][IMG] infopic01/nibble.webp [/IMG]",
+"[TITLE] 常见用法 [/TITLE][COLL][H] nibble an apple | 小口啃苹果 [POS] v.[/POS][/H][EX] The unicorn nibbled an apple and pranced on its golden hooves in the courtyard.| 独角兽在庭院里小口啃着苹果，迈着金蹄腾跃。[/EX][EX] She likes to nibble an apple as a snack in the afternoon.| 她喜欢下午小口啃苹果当点心。[/EX][/COLL][H] nibble at sth | 小口咬某物；慢慢啃某物 [POS] v.[/POS][/H][EX] The goat nibbled at the grass by the fence of the pasture.| 山羊在牧场的围栏边小口啃着草。[/EX][/COLL][H] nibble some popcorn | 小口吃爆米花 [POS] v.[/POS][/H][EX] The boy nibbled some popcorn while watching the cartoon.| 小男孩看动画片时，小口吃着爆米花。[/EX][/COLL]",
+"[TITLE] 额外例句 [/TITLE][EX] The rabbit nibbled the carrot until there was nothing left.| 兔子小口啃着胡萝卜，直到啃得一干二净。[/EX][EX] She nibbled at a cookie and drank a cup of hot chocolate.| 她小口咬着饼干，喝着一杯热巧克力。[/EX][EX] The pony nibbled the grass in the courtyard after returning from the forest.| 小马从森林回来后，在庭院里小口啃着草。[/EX]",
+"[TITLE] 常见错误 [/TITLE][ERR] nibble 的过去式和过去分词是 nibbled，无需双写 l，不要写成 nibbled（正确）/nibbledd（错误）。[/ERR][ERR] nibble 作动词表 “啃食” 时，后接具体食物可直接用 nibble sth，接表示食物的介词短语用 nibble at sth，不要漏用 at（错误：nibble the grass），二者均可，nibble at 更侧重 “轻轻啃”。[/ERR][ERR] 不要混淆 nibble 和 bite！nibble 是 “小口、轻柔地咬”；bite 是 “用力咬、啃”，动作幅度更大，如 nibble a cake /bite a sandwich。[/ERR]"
+]
+},
+"w178": {
+"word": "prance",
+"images": {
+"scene": ["infopic01/prance.webp"],
+"card": ["wordpic01/prance.webp"]
+},
+"richDetail": [
+"[TITLE] 解释 [/TITLE][DEF][EN] To walk or move with quick, lively steps, lifting the feet high; to move in a proud, playful way (used in Chapter 3 of The Princess in Black, describing Frimplepants’s movement on golden hooves)[/EN][CN] 腾跃；昂首阔步；欢快地蹦跳（迈着轻快、活泼的步子走或移动，抬脚很高；以骄傲、嬉戏的方式走动，出自《黑衣公主》第三章，形容弗林普潘茨踩着金蹄的样子）[/CN][POS] v.[/POS][PH]/prɑːns/（英式）/præns/（美式）[/PH][DU] He pranced on his golden hooves.|(原文例句) 他踩着金色的蹄子昂首腾跃。[/DU][DU] The pony pranced around the courtyard when it saw the Princess in Black.| 小马见到黑衣公主后，在庭院里欢快地蹦跳。[/DU][/DEF][IMG] infopic01/prance.webp [/IMG]",
+"[TITLE] 常见用法 [/TITLE][COLL][H] prance on hooves | 踩着蹄子腾跃 [POS] v.[/POS][/H][EX] The unicorn pranced on its golden hooves and swished its sparkly tail.| 独角兽踩着金蹄腾跃，甩动着闪亮的尾巴。[/EX][EX] The horse pranced on its strong hooves when it heard the call of its master.| 马儿听到主人的呼唤，踩着健壮的蹄子腾跃。[/EX][/COLL][H] prance around sp | 在某地四处蹦跳 [POS] v.[/POS][/H][EX] The little dog pranced around the garden when it got a new toy.| 小狗得到新玩具后，在花园里四处蹦跳。[/EX][EX] The pony pranced around the courtyard before charging into the forest.| 小马在庭院里四处蹦跳，然后冲进了森林。[/EX][/COLL][H] prance forward | 欢快地向前蹦跳 [POS] v.[/POS][/H][EX] The faithful pony pranced forward to meet the Princess in Black.| 忠实的小马欢快地向前蹦跳，迎接黑衣公主。[/EX][/COLL]",
+"[TITLE] 额外例句 [/TITLE][EX] The children pranced around the room when they heard the good news.| 孩子们听到好消息后，在房间里欢快地蹦跳。[/EX][EX] The peacock pranced about the lawn, showing off its beautiful tail.| 孔雀在草坪上昂首阔步，炫耀着它漂亮的尾巴。[/EX][EX] She pranced into the ballroom in her new frilly dress.| 她穿着新的荷叶边裙子，欢快地蹦跳着走进舞厅。[/EX]",
+"[TITLE] 常见错误 [/TITLE][ERR] prance 的过去式和过去分词是 pranced，无需双写 n，不要写成 prannced（错误），正确：pranced。[/ERR][ERR] prance 是不及物动词，后接地点需加介词（around/on/in），不要直接接宾语（错误：prance the courtyard），正确：prance around the courtyard。[/ERR][ERR] 不要混淆 prance 和 skip！prance 侧重 “抬脚高、骄傲或欢快的蹦跳”，多形容动物或骄傲的人；skip 侧重 “轻快的小步跳”，多形容孩子。[/ERR]"
+]
+},
+"w179": {
+"word": "unicorn",
+"images": {
+"scene": ["infopic01/unicorn.webp"],
+"card": ["wordpic01/unicorn.webp"]
+},
+"richDetail": [
+"[TITLE] 解释 [/TITLE][DEF][EN] A mythical animal that looks like a white horse with a single long, pointed horn on its forehead; Frimplepants’s disguise in the castle (used in Chapter 3 of The Princess in Black, a fake unicorn that turns into a pony)[/EN][CN] 独角兽（神话中的动物，形似白马，前额有一只长长的尖角；弗林普潘茨在城堡里的伪装，出自《黑衣公主》第三章，是能变成小马的假独角兽）[/CN][POS] n.[/POS][PH]/ˈjuːnɪkɔːn/（英式）/ˈjuːnɪkɔːrn/（美式）[/PH][DU] Clearly, Frimplepants was a unicorn. Or was he?|(原文例句) 很明显，弗林普潘茨是一只独角兽。可他真的是吗？[/DU][DU] The unicorn’s horn lifted off, and it turned into a faithful black pony.| 这只独角兽的角摘了下来，变成了一匹忠实的小黑马。[/DU][/DEF][IMG] infopic01/unicorn.webp [/IMG]",
+"[TITLE] 常见用法 [/TITLE][COLL][H] a fake unicorn | 假独角兽 [POS] n.[/POS][/H][EX] Frimplepants was a fake unicorn in the castle, and his real identity was Blacky the pony.| 弗林普潘茨是城堡里的假独角兽，他的真实身份是小马小黑。[/EX][/COLL][H] a unicorn with a golden horn | 长着金角的独角兽 [POS] n.[/POS][/H][EX] The children drew a unicorn with a golden horn and a sparkly mane.| 孩子们画了一只长着金角、有着闪亮鬃毛的独角兽。[/EX][/COLL][H] disguise as a unicorn | 伪装成独角兽 [POS] n.[/POS][/H][EX] The pony disguised as a unicorn to stay with the Princess in the castle.| 这匹小马伪装成独角兽，在城堡里陪伴公主。[/EX][/COLL]",
+"[TITLE] 额外例句 [/TITLE][EX] Unicorns are popular mythical animals in fairy tales for little girls.| 独角兽是小女孩童话里很受欢迎的神话动物。[/EX][EX] The fake unicorn nibbled an apple and pranced in the castle courtyard every day.| 这只假独角兽每天都在城堡庭院里啃苹果、腾跃。[/EX][EX] No one in the castle knew the pretty unicorn was actually a pony in disguise.| 城堡里没人知道这只漂亮的独角兽其实是一匹伪装的小马。[/EX]",
+"[TITLE] 常见错误 [/TITLE][ERR] unicorn 是可数名词，复数形式是 unicorns，因以元音音素开头，“一只独角兽” 用 a unicorn（美式）/an unicorn（英式，均可），不要说 a unicorn（正确）/an unicorn（也正确）。[/ERR][ERR] 不要将 unicorn 拼写错误，注意是 uni-+corn，不要写成 unicornn（错误）/unicron（错误）。[/ERR][ERR] unicorn 是神话动物，描述书中的角色时要注意区分fake unicorn（假独角兽）和 mythical unicorn（神话独角兽），避免语境混淆。[/ERR]"
+]
+},
+"w180": {
+"word": "passage",
+"images": {
+"scene": ["infopic01/passage2.webp"],
+"card": ["wordpic01/passage2.webp"]
+},
+"richDetail": [
+"[TITLE] 解释 [/TITLE][DEF][EN] A narrow way through a building or wall; a secret path that leads from one place to another (used in Chapter 3 of The Princess in Black, the path Frimplepants took to change his form)[/EN][CN] 通道；走廊；暗道（穿过建筑或墙壁的狭窄小路；连接一个地方到另一个地方的秘密小路，出自《黑衣公主》第三章，弗林普潘茨变身时走的小路）[/CN][POS] n.[/POS][PH]/ˈpæsɪdʒ/（英美）[/PH][DU] No one was watching. So Frimplepants entered a secret passage.|(原文例句) 没人看见，于是弗林普潘茨走进了一条秘密通道。[/DU][DU] The secret passage in the castle led the unicorn to a place where he could turn into a pony.| 城堡里的秘密通道，把这只独角兽带到了他能变身成小马的地方。[/DU][/DEF][IMG] infopic01/passage2.webp [/IMG]",
+"[TITLE] 常见用法 [/TITLE][COLL][H] a secret passage | 秘密通道 [POS] n.[/POS][/H][EX] Only Frimplepants and the Princess knew where the secret passage in the castle was.| 只有弗林普潘茨和公主知道城堡里的秘密通道在哪里。[/EX][EX] The secret passage was hidden behind a wall in the castle courtyard.| 秘密通道藏在城堡庭院的一面墙后。[/EX][/COLL][H] enter a passage | 走进通道 [POS] n.[/POS][/H][EX] The pony entered the secret passage and came out as a unicorn minutes later.| 这匹小马走进秘密通道，几分钟后变成独角兽走了出来。[/EX][/COLL][H] a narrow passage | 狭窄的通道 [POS] n.[/POS][/H][EX] The narrow passage connected the broom closet to the castle courtyard.| 这条狭窄的通道连接着扫帚间和城堡庭院。[/EX][/COLL]",
+"[TITLE] 额外例句 [/TITLE][EX] We found a dark passage behind the bookshelf in the castle tower.| 我们在城堡塔楼的书架后，发现了一条黑暗的通道。[/EX][EX] The secret passage was small, so only the pony and the princess could walk through it.| 秘密通道很小，只有小马和公主能走过去。[/EX][EX] He walked through the passage and saw his faithful pony waiting for him outside.| 他走过通道，看到忠实的小马在外面等他。[/EX]",
+"[TITLE] 常见错误 [/TITLE][ERR] passage 是可数名词，复数形式是 passages，不要说 many passage（错误），正确：many passages。[/ERR][ERR] 表示 “走进通道” 用 enter a passage 或 walk through a passage，不要用 walk in a passage（错误），in 侧重 “在通道里”，through 侧重 “穿过通道”。[/ERR][ERR] 不要混淆 passage 和 path！passage 多指建筑内部、墙壁中的狭窄通道；path 多指户外的小路、小径，如 a secret passage in the castle /a small path in the forest。[/ERR]"
+]
+},
+"w181": {
+"word": "mane",
+"images": {
+"scene": ["infopic01/mane1.webp"],
+"card": ["wordpic01/mane1.webp"]
+},
+"richDetail": [
+"[TITLE] 解释 [/TITLE][DEF][EN] The long thick hair growing on the neck of a horse, unicorn, or lion; the sparkly hair on Frimplepants’s neck (used in Chapter 3 of The Princess in Black, part of Frimplepants’s unicorn disguise)[/EN][CN] 鬃毛（马、独角兽或狮子等动物颈部生长的又长又密的毛发；弗林普潘茨颈部的闪亮毛发，出自《黑衣公主》第三章，是他独角兽伪装的一部分）[/CN][POS] n.[/POS][PH]/meɪn/（英美）[/PH][DU] Sparkly mane and tail shook free.|(原文例句) 闪亮的鬃毛和尾巴舒展开来。[/DU][DU] The unicorn’s sparkly mane fell off when he turned into a black pony.| 这只独角兽变身成小黑马时，闪亮的鬃毛就掉了下来。[/DU][/DEF][IMG] infopic01/mane1.webp [/IMG]",
+"[TITLE] 常见用法 [/TITLE][COLL][H] sparkly mane | 闪亮的鬃毛 [POS] n.[/POS][/H][EX] Frimplepants had a sparkly mane as a unicorn, and it was part of his disguise.| 弗林普潘茨作为独角兽，有一头闪亮的鬃毛，这是他伪装的一部分。[/EX][EX] The little girl drew a unicorn with a sparkly golden mane on the paper.| 小女孩在纸上画了一只长着闪亮金鬃毛的独角兽。[/EX][/COLL][H] the mane of a pony/unicorn | 小马 / 独角兽的鬃毛 [POS] n.[/POS][/H][EX] The mane of the black pony was short and black, very different from the unicorn’s sparkly one.| 小黑马的鬃毛又短又黑，和独角兽那闪亮的鬃毛大不相同。[/EX][/COLL][H] shake one’s mane | 甩动鬃毛 [POS] n.[/POS][/H][EX] The unicorn shook its mane and pranced on its golden hooves in the courtyard.| 独角兽甩动鬃毛，在庭院里踩着金蹄腾跃。[/EX][/COLL]",
+"[TITLE] 额外例句 [/TITLE][EX] The horse’s brown mane flowed in the wind when it galloped through the forest.| 马儿飞奔穿过森林时，棕色的鬃毛在风中飘动。[/EX][EX] She stroked the pony’s soft mane and patted its head gently.| 她抚摸着小马柔软的鬃毛，轻轻拍了拍它的头。[/EX][EX] The lion’s thick mane made it look very powerful in the zoo.| 动物园里，狮子浓密的鬃毛让它看起来威风凛凛。[/EX]",
+"[TITLE] 常见错误 [/TITLE][ERR] mane 是可数名词，表 “一缕鬃毛” 用 a lock of mane，表整体的鬃毛可用 the mane（特指），不要单独说 a mane（易歧义）。[/ERR][ERR] 注意发音：/meɪn/，和 main（主要的）同音，不要读成 /mæn/（错误），避免发音混淆。[/ERR][ERR] 不要混淆 mane 和 fur！mane 特指动物颈部的长鬃毛；fur 是动物全身的皮毛，如 the unicorn’s sparkly mane /the pony’s black fur。[/ERR]"
+]
+},
+"w182": {
+"word": "faithful",
+"images": {
+"scene": ["infopic01/faithful.webp"],
+"card": ["wordpic01/faithful.webp"]
+},
+"richDetail": [
+"[TITLE] 解释 [/TITLE][DEF][EN] Loyal and reliable; always staying with and supporting someone (used in Chapter 3 of The Princess in Black, describing Blacky the pony’s attitude to the Princess in Black)[/EN][CN] 忠实的；忠诚的；可靠的（始终陪伴、支持某人，出自《黑衣公主》第三章，形容小马小黑对黑衣公主的态度）[/CN][POS] adj.[/POS][PH]/ˈfeɪθfl/（英美）[/PH][DU] He came out the other side. He was no longer Frimplepants the unicorn. He was Blacky, the Princess in Black’s faithful pony!|(原文例句) 他从通道另一头走出来，不再是弗林普潘茨独角兽，而是黑衣公主忠实的小马小黑！[/DU][DU] The faithful pony always followed the Princess in Black to fight monsters.| 这匹忠实的小马总是跟着黑衣公主去打怪兽。[/DU][/DEF][IMG] infopic01/faithful.webp [/IMG]",
+"[TITLE] 常见用法 [/TITLE][COLL][H] faithful pony | 忠实的小马 [POS] adj.[/POS][/H][EX] Blacky is the Princess in Black’s faithful pony and her best friend in fighting monsters.| 小黑是黑衣公主忠实的小马，也是她打怪兽时最好的伙伴。[/EX][/COLL][H] faithful friend | 忠实的朋友 [POS] adj.[/POS][/H][EX] The princess has a few faithful friends who know her secret identity.| 公主有几个忠实的朋友，他们知道她的秘密身份。[/EX][/COLL][H] be faithful to sb | 对某人忠诚 [POS] adj.[/POS][/H][EX] The faithful pony is always faithful to the Princess in Black, no matter what happens.| 无论发生什么，这匹忠实的小马都始终对黑衣公主忠心耿耿。[/EX][/COLL]",
+"[TITLE] 额外例句 [/TITLE][EX] The dog is a faithful animal and always stays with its owner.| 狗是一种忠实的动物，总是陪伴着主人。[/EX][EX] She is a faithful reader of the Princess in Black series of books.| 她是《黑衣公主》系列书籍的忠实读者。[/EX][EX] The faithful pony galloped with the princess through the forest to the goat pasture.| 忠实的小马载着公主，飞奔穿过森林来到山羊牧场。[/EX]",
+"[TITLE] 常见错误 [/TITLE][ERR] faithful 的副词形式是 faithfully，不要写成 faithfuly（错误），需加 ll，正确：She followed her master faithfully。[/ERR][ERR] faithful 是形容词，修饰名词放于其前，不要放于其后（错误：pony faithful），正确：faithful pony。[/ERR][ERR] 不要混淆 faithful 和 loyal！faithful 侧重 “始终陪伴、不离不弃的忠实”，多形容宠物、朋友；loyal 侧重 “对信念、国家、主人的忠诚”，语气更正式，如 a faithful pony /a loyal soldier。[/ERR]"
+]
+},
+"w183": {
+"word": "pony",
+"images": {
+"scene": ["infopic01/pony.webp"],
+"card": ["wordpic01/pony.webp"]
+},
+"richDetail": [
+"[TITLE] 解释 [/TITLE][DEF][EN] A small horse; Blacky, the Princess in Black’s loyal animal friend who helps her fight monsters (used in Chapter 3 of The Princess in Black, Frimplepants’s real identity)[/EN][CN] 小马；矮马（黑衣公主忠诚的动物伙伴小黑，帮她一起打怪兽，出自《黑衣公主》第三章，是弗林普潘茨的真实身份）[/CN][POS] n.[/POS][PH]/ˈpəʊni/（英式）/ˈpoʊni/（美式）[/PH][DU] He was Blacky, the Princess in Black’s faithful pony!|(原文例句) 他是黑衣公主忠实的小马小黑！[/DU][DU] The black pony galloped into the goat pasture with the Princess in Black on its back.| 小黑马载着黑衣公主，飞奔进了山羊牧场。[/DU][/DEF][IMG] infopic01/pony.webp [/IMG]",
+"[TITLE] 常见用法 [/TITLE][COLL][H] faithful pony | 忠实的小马 [POS] n.[/POS][/H][EX] The faithful pony is the Princess in Black’s most important helper in stopping monsters.| 这匹忠实的小马是黑衣公主阻止怪兽时最重要的帮手。[/EX][/COLL][H] black pony | 小黑马 [POS] n.[/POS][/H][EX] The black pony’s real disguise in the castle is a sparkly unicorn.| 这匹小黑马在城堡里的伪装，是一只闪亮的独角兽。[/EX][/COLL][H] ride a pony | 骑小马 [POS] n.[/POS][/H][EX] The Princess in Black rode her pony and charged through the forest to the goat pasture.| 黑衣公主骑着小马，冲过森林来到山羊牧场。[/EX][/COLL]",
+"[TITLE] 额外例句 [/TITLE][EX] The little girl learned to ride a pony in the countryside during the holiday.| 小女孩假期在乡下学会了骑小马。[/EX][EX] The pony neighed loudly to warn the princess that the monster was coming.| 小马大声嘶鸣，提醒公主怪兽来了。[/EX][EX] After the battle, the princess patted her pony’s head and fed it an apple.| 战斗结束后，公主拍了拍小马的头，喂了它一个苹果。[/EX]",
+"[TITLE] 常见错误 [/TITLE][ERR] pony 是可数名词，复数形式是 ponies，需变 y 为 i 加 es，不要写成 ponys（错误），正确：many ponies。[/ERR][ERR] 不要混淆 pony 和 horse！pony 是体型矮小的小马，多为儿童骑乘或作为伙伴；horse 是体型较大的马，可用于骑行、劳作等，如 a small pony /a big horse。[/ERR][ERR] 表示 “骑小马” 用 ride a pony，不要用 ride on a pony（错误，虽可理解，但规范用法是直接 ride a pony）。[/ERR]"
+]
+},
+"w184": {
+"word": "soar",
+"images": {
+"scene": ["infopic01/soar.webp"],
+"card": ["wordpic01/soar.webp"]
+},
+"richDetail": [
+"[TITLE] 解释 [/TITLE][DEF][EN] To fly or rise high in the air; to move quickly and smoothly over something (used in Chapter 3 of The Princess in Black, describing the Princess in Black jumping over the castle wall)[/EN][CN] 翱翔；高飞；腾空跃过（在空中高飞；快速平稳地跃过某物，出自《黑衣公主》第三章，形容黑衣公主跳过高高的城墙）[/CN][POS] v.[/POS][PH]/sɔː(r)/（英式）/sɔːr/（美式）[/PH][DU] Just then, the Princess in Black was soaring over the castle wall. She landed on Blacky’s back.|(原文例句) 就在这时，黑衣公主腾空跃过城墙，落在了小黑的背上。[/DU][DU] The birds soar high in the sky when they see the pony charging through the forest.| 鸟儿看到小马冲过森林时，便在天空中高飞。[/DU][/DEF][IMG] infopic01/soar.webp [/IMG]",
+"[TITLE] 常见用法 [/TITLE][COLL][H] soar over the castle wall | 腾空跃过城墙 [POS] v.[/POS][/H][EX] The Princess in Black can soar over the castle wall easily with her ninja skills.| 黑衣公主靠着她的忍者技能，能轻松地腾空跃过城墙。[/EX][/COLL][H] soar into the sky | 飞向天空；翱翔在天空 [POS] v.[/POS][/H][EX] Eagles soar into the sky and look for food on the ground.| 老鹰翱翔在天空，寻找地上的食物。[/EX][/COLL][H] soar over the forest | 飞跃森林 [POS] v.[/POS][/H][EX] The princess soared over the forest and landed on her pony’s back.| 公主飞跃森林，落在了她的小马背上。[/EX][/COLL]",
+"[TITLE] 额外例句 [/TITLE][EX] The airplane soared high in the blue sky and flew to the far city.| 飞机在蓝天上高飞，飞向遥远的城市。[/EX][EX] She soared over the fence and ran to the other side of the field.| 她腾空跃过栅栏，跑到了田野的另一边。[/EX][EX] The kite soared in the wind, and the children laughed happily.| 风筝在风中高飞，孩子们笑得很开心。[/EX]",
+"[TITLE] 常见错误 [/TITLE][ERR] soar 的过去式和过去分词是 soared，无需双写 r，不要写成 soarrd（错误），正确：soared。[/ERR][ERR] soar 是不及物动词，后接地点需加介词（over/into/above），不要直接接宾语（错误：soar the wall），正确：soar over the wall。[/ERR][ERR] 不要混淆 soar 和 fly！soar 侧重 “无动力地高飞、滑翔或腾空跃过”；fly 侧重 “依靠翅膀或工具主动飞行”，如 the princess soared over the wall /birds fly in the sky。[/ERR]"
+]
+},
+"w185": {
+"word": "charge",
+"images": {
+"scene": ["infopic01/charge.webp"],
+"card": ["wordpic01/charge.webp"]
+},
+"richDetail": [
+"[TITLE] 解释 [/TITLE][DEF][EN] To move forward quickly and bravely; to rush forward with force (used in Chapter 3 of The Princess in Black, describing the Princess and Blacky moving through the forest)[/EN][CN] 猛冲；冲锋；疾驰（快速勇敢地向前移动；用力向前冲，出自《黑衣公主》第三章，形容公主和小黑穿过森林的样子）[/CN][POS] v./n.[/POS][PH]/tʃɑːdʒ/（英式）/tʃɑːrdʒ/（美式）[/PH][DU] They charged through the forest.|(原文例句) 他们猛冲穿过森林。[/DU][DU] The faithful pony charged toward the goat pasture with the princess on its back.| 忠实的小马载着公主，朝山羊牧场疾驰而去。[/DU][/DEF][IMG] infopic01/charge.webp [/IMG]",
+"[TITLE] 常见用法 [/TITLE][COLL][H] charge through the forest | 猛冲穿过森林 [POS] v.[/POS][/H][EX] The Princess in Black and her pony charged through the forest to save the goats.| 黑衣公主和她的小马猛冲穿过森林，去拯救山羊。[/EX][/COLL][H] charge toward sp | 朝某地疾驰 / 冲去 [POS] v.[/POS][/H][EX] The pony charged toward the big blue monster to help the princess.| 小马朝蓝色大怪兽冲去，去帮助公主。[/EX][/COLL][H] charge at sb/sth | 向某人 / 某物冲去 [POS] v.[/POS][/H][EX] The dog charged at the stranger who came to the door.| 小狗朝走到门口的陌生人冲去。[/EX][/COLL]",
+"[TITLE] 额外例句 [/TITLE][EX] The soldiers charged forward and fought with the enemy bravely.| 士兵们向前冲锋，勇敢地和敌人战斗。[/EX][EX] The children charged into the park when the gate opened.| 大门打开时，孩子们冲进了公园。[/EX][EX] After soaring over the wall, they charged through the forest to the goat pasture.| 腾空跃过城墙后，他们猛冲穿过森林，来到了山羊牧场。[/EX]",
+"[TITLE] 常见错误 [/TITLE][ERR] charge 作动词 “猛冲” 时是不及物动词，后接地点需加介词（through/toward/at），不要直接接宾语（错误：charge the forest），正确：charge through the forest。[/ERR][ERR] charge 的过去式和过去分词是 charged，无需双写 g，不要写成 charrged（错误），正确：charged。[/ERR][ERR] 注意 charge 的多义，不要和 “收费；指控” 混淆，结合语境区分：描述动作时是 “猛冲”；描述交易时是 “收费”；描述法律时是 “指控”，如 charge through the forest /charge 10 yuan for the cake。[/ERR]"
+]
+},
+"w186": {
+"word": "squawk",
+"images": {
+"scene": ["infopic01/squawk.webp"],
+"card": ["wordpic01/squawk.webp"]
+},
+"richDetail": [
+"[TITLE] 解释 [/TITLE][DEF][EN] To make a loud, harsh noise like a parrot or a large bird; the loud cry of a bird (used in Chapter 3 of The Princess in Black, describing the birds’ noise when scared)[/EN][CN] 发出粗厉的叫声；嘎嘎叫（像鹦鹉或大鸟一样发出响亮、刺耳的声音；鸟类的粗厉叫声，出自《黑衣公主》第三章，形容鸟儿受惊时的叫声）[/CN][POS] v./n.[/POS][PH]/skwɔːk/（英式）/skwɔːk/（美式）[/PH][DU] The birds squawked. The birds cheeped. The birds sounded nothing like a ringing ring.|(原文例句) 鸟儿们嘎嘎叫，鸟儿们吱吱鸣，这些声音和戒指的铃声一点也不像。[/DU][DU] The big bird squawked loudly when the pony charged near its nest.| 小马冲到鸟巢附近时，这只大鸟大声地嘎嘎叫。[/DU][/DEF][IMG] infopic01/squawk.webp [/IMG]",
+"[TITLE] 常见用法 [/TITLE][COLL][H] the birds squawk | 鸟儿嘎嘎叫 [POS] v.[/POS][/H][EX] The birds squawk when they see something dangerous coming near them.| 鸟儿看到危险靠近时，就会嘎嘎叫。[/EX][/COLL][H] squawk loudly | 大声地嘎嘎叫 [POS] v.[/POS][/H][EX] The parrot squawked loudly when someone walked into the room.| 有人走进房间时，这只鹦鹉大声地嘎嘎叫。[/EX][/COLL][H] a loud squawk | 一声响亮的粗厉叫声 [POS] n.[/POS][/H][EX] We heard a loud squawk from the tree and saw a big bird flying away.| 我们听到树上传来一声响亮的粗厉叫声，然后看到一只大鸟飞走了。[/EX][/COLL]",
+"[TITLE] 额外例句 [/TITLE][EX] The seagulls squawked over the sea and looked for fish to eat.| 海鸥在海面上嘎嘎叫，寻找鱼吃。[/EX][/EX] The bird squawked and flew away when the cat tried to catch it.| 小猫想抓这只鸟时，它嘎嘎叫着飞走了。[/EX][EX] All the birds squawked and cheeped when the princess and her pony charged through the forest.| 公主和她的小马猛冲穿过森林时，所有的鸟儿都嘎嘎叫、吱吱鸣。[/EX]",
+"[TITLE] 常见错误 [/TITLE][ERR] squawk 的过去式和过去分词是 squawked，直接加 ed，不要写成 squawkked（错误），正确：squawked。[/ERR][ERR] squawk 多用来形容大鸟的粗厉叫声，不要用来形容小鸟（小鸟用 cheep），避免语境搭配错误。[/ERR][ERR] squawk 作动词时是不及物动词，后接原因可加 at，不要直接接宾语（错误：squawk the pony），正确：squawk at the pony。[/ERR]"
+]
+},
+"w187": {
+"word": "cheep",
+"images": {
+"scene": ["infopic01/cheep.webp"],
+"card": ["wordpic01/cheep.webp"]
+},
+"richDetail": [
+"[TITLE] 解释 [/TITLE][DEF][EN] To make a soft, high-pitched noise like a small bird or a chick; the quiet cry of a baby bird (used in Chapter 3 of The Princess in Black, describing the small birds’ soft noise)[/EN][CN] 吱吱叫；啾啾鸣（像小鸟或小鸡一样发出轻柔、尖细的声音；雏鸟的轻柔叫声，出自《黑衣公主》第三章，形容小鸟的轻柔叫声）[/CN][POS] v./n.[/POS][PH]/tʃiːp/（英美）[/PH][DU] The birds squawked. The birds cheeped. The birds sounded nothing like a ringing ring.|(原文例句) 鸟儿们嘎嘎叫，鸟儿们吱吱鸣，这些声音和戒指的铃声一点也不像。[/DU][DU] The baby birds cheeped in the nest, waiting for their mother to bring food.| 雏鸟在巢里吱吱叫，等着妈妈带回食物。[/DU][/DEF][IMG] infopic01/cheep.webp [/IMG]",
+"[TITLE] 常见用法 [/TITLE][COLL][H] the birds cheep | 鸟儿吱吱叫 [POS] v.[/POS][/H][EX] The small birds cheep in the tree every morning, making the forest very lively.| 每天早上，小鸟们在树上吱吱叫，让森林变得很热闹。[/EX][/COLL][H] cheep softly | 轻柔地吱吱叫 [POS] v.[/POS][/H][EX] The chick cheeped softly and followed its mother around the yard.| 小鸡轻柔地吱吱叫，跟在妈妈身后绕着院子走。[/EX][/COLL][H] a soft cheep | 一声轻柔的吱吱声 [POS] n.[/POS][/H][EX] We heard a soft cheep from the grass and found a little baby bird there.| 我们听到草丛里传来一声轻柔的吱吱声，在那里发现了一只小雏鸟。[/EX][/COLL]",
+"[TITLE] 额外例句 [/TITLE][EX] The little birds cheeped and flew away when the pony ran past the tree.| 小马跑过树旁时，小鸟们吱吱叫着飞走了。[/EX][EX] She smiled when she heard the baby birds cheep in the nest outside her window.| 听到窗外巢里雏鸟的吱吱声，她笑了。[/EX][EX] The squawk of big birds and the cheep of small birds mixed together in the forest.| 森林里，大鸟的嘎嘎声和小鸟的吱吱声交织在一起。[/EX]",
+"[TITLE] 常见错误 [/TITLE][ERR] cheep 的过去式和过去分词是 cheeped，直接加 ed，不要写成 cheepped（错误），正确：cheeped。[/ERR][ERR] cheep 多用来形容小鸟 / 雏鸟的轻柔叫声，不要用来形容大鸟（大鸟用 squawk），避免语境搭配错误。[/ERR][ERR] 注意拼写：cheep 是 ch+ee+p，不要写成 cheap（错误），cheap 是 “便宜的”，二者同音不同形不同义。[/ERR]"
+]
+},
+"w188": {
+"word": "drool",
+"images": {
+"scene": ["infopic01/drool.webp"],
+"card": ["wordpic01/drool.webp"]
+},
+"richDetail": [
+"[TITLE] 解释 [/TITLE][DEF][EN] To let saliva flow out of the mouth, usually because of hunger or wanting something very much; to slobber (used in Chapter 4 of The Princess in Black, describing the big blue monster’s reaction to the smell of goats)[/EN][CN] 流口水；垂涎（口水从嘴里流出来，通常因为饥饿或非常想要某物，出自《黑衣公主》第四章，形容蓝色大怪兽闻到山羊气味后的反应）[/CN][POS] v./n.[/POS][PH]/druːl/（英美）[/PH][DU] The big blue monster began to drool.|(原文例句) 这只蓝色大怪兽开始流口水。[/DU][DU] The monster drooled at the smell of plump goats from the hole in the ceiling.| 怪兽闻到从天花板的洞里飘来的肥山羊的味道，开始垂涎三尺。[/DU][/DEF][IMG] infopic01/drool.webp [/IMG]",
+"[TITLE] 常见用法 [/TITLE][COLL][H] begin to drool | 开始流口水 [POS] v.[/POS][/H][EX] The big blue monster began to drool when it smelled the delicious goats.| 蓝色大怪兽闻到美味的山羊味，就开始流口水。[/EX][/COLL][H] drool at the smell of sth | 闻到某物的味道流口水 [POS] v.[/POS][/H][EX] The dog drools at the smell of meat and runs to the kitchen quickly.| 狗狗闻到肉味就流口水，飞快地跑到厨房。[/EX][/COLL][H] drool over sth | 对某物垂涎三尺 [POS] v.[/POS][/H][EX] The monster drools over the plump goats and wants to eat them very much.| 这只怪兽对肥山羊垂涎三尺，非常想吃它们。[/EX][/COLL]",
+"[TITLE] 额外例句 [/TITLE][EX] The baby drools a lot when he is teething, so his mom always wipes his chin.| 宝宝长牙时流很多口水，所以妈妈总是擦他的下巴。[/EX][EX] The cat drools at the smell of fish and sits by the bowl waiting for it.| 小猫闻到鱼味就流口水，坐在碗边等着。[/EX][EX] The big monster drooled and climbed through the hole to the goat pasture.| 这只大怪兽流着口水，穿过洞口来到了山羊牧场。[/EX]",
+"[TITLE] 常见错误 [/TITLE][ERR] drool 的过去式和过去分词是 drooled，直接加 ed，不要写成 droolded（错误），正确：drooled。[/ERR][ERR] drool 作动词表 “因某物流口水” 时，后接介词 at/over，不要直接接宾语（错误：drool the goats），正确：drool at the goats。[/ERR][ERR] 不要混淆 drool 和 slobber！drool 侧重 “因饥饿、渴望而流口水”；slobber 侧重 “因笨拙、年幼而口水直流”，如 the monster drools at goats /the baby slobbers on his clothes。[/ERR]"
+]
+},
+"w189": {
+"word": "emerge",
+"images": {
+"scene": ["infopic01/emerge.webp"],
+"card": ["wordpic01/emerge.webp"]
+},
+"richDetail": [
+"[TITLE] 解释 [/TITLE][DEF][EN] To come out of a dark or hidden place; to appear or become visible (used in Chapter 5 of The Princess in Black, describing the big blue monster coming out of the hole)[/EN][CN] 出现；浮现；从隐蔽处走出（从黑暗或隐蔽的地方出来；显现、变得可见，出自《黑衣公主》第五章，形容蓝色大怪兽从洞里钻出来）[/CN][POS] v.[/POS][PH]/ɪˈmɜːdʒ/（英式）/ɪˈmɜːrdʒ/（美式）[/PH][DU] A blue monster emerged. It was big.|(原文例句) 一只蓝色的怪兽出现了，它个头很大。[/DU][DU] When she emerged from the closet, she was no longer the Princess in Black.|(原文例句) 当她从储藏室走出来时，她已经不再是黑衣公主了。[/DU]",
+"[TITLE] 常见用法 [/TITLE][COLL][H] emerge from sp | 从某处出现 / 走出 [POS] v.[/POS][/H][EX] The big blue monster emerged from the hole in the ceiling of Monster Land.| 蓝色大怪兽从怪兽之地天花板的洞里钻了出来。[/EX][EX] She emerged from the broom closet and turned back into Princess Magnolia.| 她从扫帚间走出来，变回了玛格诺莉亚公主。[/EX][/COLL][H] emerge into the open | 出现在开阔处 [POS] v.[/POS][/H][EX] The monster emerged into the open goat pasture and wanted to eat the goats.| 怪兽出现在开阔的山羊牧场，想要吃掉山羊。[/EX][/COLL]",
+"[TITLE] 额外例句 [/TITLE][EX] The sun emerged from behind the clouds and lit up the castle courtyard.| 太阳从云层后露出来，照亮了城堡的庭院。[/EX][EX] A little bird emerged from the nest and tried to fly for the first time.| 一只小鸟从巢里钻出来，第一次尝试飞翔。[/EX][EX] After the battle, the Princess in Black emerged from the forest and galloped back to the castle.| 战斗结束后，黑衣公主从森林里走出来，策马赶回城堡。[/EX]",
+"[TITLE] 常见错误 [/TITLE][ERR] emerge 是不及物动词，后接地点必须加介词 from，不要直接接宾语（错误：emerge the hole），正确：emerge from the hole。[/ERR][ERR] emerge 的过去式和过去分词是 emerged，直接加 ed，不要写成 emergedd（错误），注意不要漏写 e。[/ERR][ERR] 不要混淆 emerge 和 appear！emerge 侧重 “从隐蔽、封闭的地方出来而显现”；appear 侧重 “凭空出现或突然看见”，如 the monster emerged from the hole /a star appeared in the sky。[/ERR]"
+]
+},
+"w190": {
+"word": "crook",
+"images": {
+"scene": ["infopic01/crook.webp"],
+"card": ["wordpic01/crook.webp"]
+},
+"richDetail": [
+"[TITLE] 解释 [/TITLE][DEF][EN] A long stick with a curved end, used by farmers to control sheep or goats; Duff the goat boy’s tool for herding goats (used in Chapter 5 of The Princess in Black, the tool Duff picked up to face the monster)[/EN][CN] 牧羊杖；弯柄杖（一端弯曲的长棍子，农夫用来驱赶牛羊；牧羊男孩达夫的放羊工具，出自《黑衣公主》第五章，达夫面对怪兽时拿起的工具）[/CN][POS] n.[/POS][PH]/krʊk/（英美）[/PH][DU]“Not another one,” said Duff. He picked up his crook.|(原文例句)“怎么又来一只，” 达夫说道，捡起了他的牧羊杖。[/DU][DU] Duff dropped his crook in fear when the big blue monster roared loudly.|(原文例句) 当蓝色大怪兽大声咆哮时，达夫吓得扔掉了他的牧羊杖。[/DU]",
+"[TITLE] 常见用法 [/TITLE][COLL][H] pick up one’s crook | 捡起牧羊杖 [POS] n.[/POS][/H][EX] The goat boy picked up his crook and walked to the pasture to herd the goats.| 牧羊男孩捡起牧羊杖，走向牧场放羊。[/EX][/COLL][H] drop one’s crook | 扔掉牧羊杖 [POS] n.[/POS][/H][EX] Duff dropped his crook when he saw the huge blue monster coming out of the hole.| 达夫看到巨大的蓝色怪兽从洞里出来，吓得扔掉了牧羊杖。[/EX][/COLL][H] a goat crook | 牧羊杖 [POS] n.[/POS][/H][EX] The wooden goat crook is Duff’s most important tool for taking care of goats.| 木质牧羊杖是达夫照看山羊最重要的工具。[/EX][/COLL]",
+"[TITLE] 额外例句 [/TITLE][EX] The old farmer leaned on his crook and watched his sheep eating grass on the hill.| 老农夫拄着牧羊杖，看着羊群在山上吃草。[/EX][/EX] Duff made a new crook with a long stick and a curved branch by himself.| 达夫用一根长棍和一根弯曲的树枝，自己做了一根新的牧羊杖。[/EX][EX] The crook fell on the grass, and the little goat ran over and nuzzled it with its nose.| 牧羊杖掉在草地上，小山羊跑过来用鼻子蹭了蹭它。[/EX]",
+"[TITLE] 常见错误 [/TITLE][ERR] crook 作 “牧羊杖” 时是可数名词，复数形式是 crooks，直接加 s，不要写成 crookes（错误）。[/ERR][ERR] 注意 crook 的多义，不要和 “骗子；弯曲处” 混淆，结合语境区分：描述牧羊工具时是 “牧羊杖”；表人时是 “骗子”，如 a goat crook /a crook who steals money。[/ERR][ERR] 不要把 crook 拼写为 crok（错误），注意双写 o，正确拼写为 crook。[/ERR]"
+]
+},
+"w191": {
+"word": "croak",
+"images": {
+"scene": ["infopic01/croak.webp"],
+"card": ["wordpic01/croak.webp"]
+},
+"richDetail": [
+"[TITLE] 解释 [/TITLE][DEF][EN] To speak in a rough, low voice because of fear or illness; to make a deep, hoarse sound like a frog (used in Chapter 5 of The Princess in Black, describing Duff’s scared voice when calling for help)[/EN][CN] 用沙哑的声音说；呱呱叫（因恐惧或生病而用粗哑、低沉的声音说话；发出像青蛙一样低沉沙哑的叫声，出自《黑衣公主》第五章，形容达夫求救时害怕的声音）[/CN][POS] v.[/POS][PH]/krəʊk/（英式）/kroʊk/（美式）[/PH][DU]“H-h-help!” he croaked.|(原文例句)“救、救命！” 他用沙哑的声音喊道。[/DU][DU] The frog croaked loudly by the pond while the princess and her pony passed by.| 公主和她的小马经过时，池塘边的青蛙呱呱地大声叫着。[/DU]",
+"[TITLE] 常见用法 [/TITLE][COLL][H] croak for help | 沙哑地呼救 [POS] v.[/POS][/H][EX] The goat boy croaked for help when he saw the big monster coming to eat the goats.| 牧羊男孩看到大怪兽要来吃山羊，沙哑地大声呼救。[/EX][/COLL][H] croak a word/sentence | 沙哑地说出一个词 / 一句话 [POS] v.[/POS][/H][EX] He was so scared that he could only croak a few words to ask for help.| 他吓得只能沙哑地说出几个字求救。[/EX][/COLL][H] frogs croak | 青蛙呱呱叫 [POS] v.[/POS][/H][EX] Frogs croak day and night in the pond near the goat pasture.| 山羊牧场附近的池塘里，青蛙日夜呱呱叫。[/EX][/COLL]",
+"[TITLE] 额外例句 [/TITLE][EX] The old man croaked his answer because he had a sore throat.| 这位老人因为嗓子疼，沙哑地说出了答案。[/EX][EX] She was so nervous that her voice croaked when she spoke to the duchess.| 她和女公爵说话时紧张得声音都沙哑了。[/EX][EX] The raven croaked on the tree branch, and the wind blew through the forest.| 渡鸦在树枝上发出沙哑的叫声，风吹过了森林。[/EX]",
+"[TITLE] 常见错误 [/TITLE][ERR] croak 的过去式和过去分词是 croaked，直接加 ed，不要写成 croakedd（错误），也不要漏写 e。[/ERR][ERR] croak 作 “说话沙哑” 时是不及物动词，后接说话的内容需加介词 out（croak out a cry），不要直接接宾语（错误：croak a cry）。[/ERR][ERR] 不要混淆 croak 和 squeak！croak 是 “低沉沙哑的叫声 / 说话声”；squeak 是 “尖细的吱吱声”，如 the boy croaked for help /the mouse squeaked in the corner。[/ERR]"
+]
+},
+"w192": {
+"word": "gallop",
+"images": {
+"scene": ["infopic01/gallop.webp"],
+"card": ["wordpic01/gallop.webp"]
+},
+"richDetail": [
+"[TITLE] 解释 [/TITLE][DEF][EN] To run very fast, especially of a horse or pony; the fastest speed of a horse (used in Chapter 6 of The Princess in Black, describing Blacky running fast to the goat pasture)[/EN][CN]（马、小马）飞奔；疾驰；奔驰（以极快的速度奔跑，尤指马类；马的最快速度，出自《黑衣公主》第六章，形容小黑马飞快地奔向山羊牧场）[/CN][POS] v./n.[/POS][PH]/ˈɡæləp/（英美）[/PH][DU] The Princess in Black galloped into the goat pasture.|(原文例句) 黑衣公主策马飞奔进了山羊牧场。[/DU][DU] Blacky galloped toward the big tree with the Princess in Black on his back.|(原文例句) 小黑马载着黑衣公主，朝那棵大树飞奔而去。[/DU]",
+"[TITLE] 常见用法 [/TITLE][COLL][H] gallop into sp | 飞奔进入某地 [POS] v.[/POS][/H][EX] The pony galloped into the forest and left the castle far behind.| 小马飞奔进森林，把城堡远远甩在了身后。[/EX][/COLL][H] gallop toward sp | 朝某地飞奔 [POS] v.[/POS][/H][EX] The faithful pony galloped toward the monster to help the princess fight it.| 忠实的小马朝怪兽飞奔而去，帮公主对抗它。[/EX][/COLL][H] at a gallop | 以飞奔的速度 [POS] n.[/POS][/H][EX] The princess rode her pony at a gallop and arrived at the goat pasture in minutes.| 公主骑着小马疾驰，几分钟就到了山羊牧场。[/EX][/COLL]",
+"[TITLE] 额外例句 [/TITLE][EX] The horses galloped across the grassland, and their hooves made loud sounds.| 马儿们奔驰过草原，马蹄发出响亮的声音。[/EX][EX] After the battle, the princess and her pony galloped back to the castle as fast as they could.| 战斗结束后，公主和她的小马以最快的速度策马赶回城堡。[/EX][EX] The unicorn galloped around the courtyard before turning into a black pony.| 这只独角兽在庭院里飞奔，然后变成了一匹小黑马。[/EX]",
+"[TITLE] 常见错误 [/TITLE][ERR] gallop 作动词时是不及物动词，后接地点需加介词（into/toward/across），不要直接接宾语（错误：gallop the pasture），正确：gallop into the pasture。[/ERR][ERR] gallop 的过去式和过去分词是 galloped，直接加 ed，不要写成 galloppped（错误），注意中间是两个 l。[/ERR][ERR] 不要混淆 gallop 和 run！gallop 专指马、小马等马科动物的飞奔；run 是通用词，指所有动物和人的跑，如 the pony galloped /the boy ran fast。[/ERR]"
+]
+},
+"w193": {
+"word": "backflip",
+"images": {
+"scene": ["infopic01/backflip.webp"],
+"card": ["wordpic01/backflip.webp"]
+},
+"richDetail": [
+"[TITLE] 解释 [/TITLE][DEF][EN] A jump in which you turn your body backwards in the air and land on your feet; to do such a jump (used in Chapter 6 of The Princess in Black, describing the Princess in Black’s ninja skill)[/EN][CN] 后空翻；做后空翻（在空中向后翻转身体再双脚落地的跳跃动作；做出该动作，出自《黑衣公主》第六章，是黑衣公主的忍者技能之一）[/CN][POS] n./v.[/POS][PH]/ˈbækflɪp/（英美）[/PH][DU] The Princess in Black did a backflip onto the grass.|(原文例句) 黑衣公主向后空翻，落到了草地上。[/DU][DU] She can backflip easily and land on her feet because she has great ninja skills.| 她能轻松做后空翻并双脚落地，因为她的忍者技能非常厉害。[/DU]",
+"[TITLE] 常见用法 [/TITLE][COLL][H] do a backflip | 做一个后空翻 [POS] n.[/POS][/H][EX] The Princess in Black did a backflip to avoid the monster’s attack.| 黑衣公主做了一个后空翻，躲开了怪兽的攻击。[/EX][/COLL][H] backflip onto sp | 后空翻落到某地 [POS] v.[/POS][/H][EX] She backflipped onto the grass and got ready to fight the big blue monster.| 她后空翻落到草地上，准备和蓝色大怪兽战斗。[/EX][/COLL][H] a ninja backflip | 忍者后空翻 [POS] n.[/POS][/H][EX] The princess’s ninja backflip is so cool that Duff always admires it.| 公主的忍者后空翻太酷了，达夫总是很羡慕。[/EX][/COLL]",
+"[TITLE] 额外例句 [/TITLE][EX] The acrobat did a backflip and landed on the tightrope without falling.| 杂技演员做了一个后空翻，落在钢丝上却没有掉下来。[/EX][EX] She practiced hard to backflip and finally succeeded after many tries.| 她刻苦练习后空翻，经过多次尝试终于成功了。[/EX][EX] The Princess in Black did a backflip from the pony’s back and jumped onto the tree branch.| 黑衣公主从马背上后空翻，跳到了树枝上。[/EX]",
+"[TITLE] 常见错误 [/TITLE][ERR] backflip 是复合名词 / 动词，规范写法连写，不要分开写（错误：back flip），作动词时过去式是 backflipped，直接加 ed。[/ERR][ERR] do a backflip 是固定搭配，不要用 make a backflip（错误），这是中式表达，不符合英文习惯。[/ERR][ERR] backflip 作动词时是不及物动词，后接落地的地点需加介词 onto/to，不要直接接宾语（错误：backflip the grass），正确：backflip onto the grass。[/ERR]"
+]
+},
+"w194": {
+"word": "scepter",
+"images": {
+"scene": ["infopic01/scepter.webp"],
+"card": ["wordpic01/scepter.webp"]
+},
+"richDetail": [
+"[TITLE] 解释 [/TITLE][DEF][EN] A decorated stick carried by a king, queen or princess as a symbol of power; the Princess in Black’s magic tool that can turn into a staff (used in Chapter 6 of The Princess in Black, the princess’s weapon with a switch)[/EN][CN] 权杖；王杖（国王、王后或公主手持的装饰性手杖，是权力的象征；黑衣公主的魔法工具，能变成长杖，出自《黑衣公主》第六章，公主带有开关的武器）[/CN][POS] n.[/POS][PH]/ˈseptə(r)/（英式）/ˈseptər/（美式）[/PH][DU] She pushed a switch on her scepter. It turned into a staff.|(原文例句) 她按了一下权杖上的开关，它就变成了一根长杖。[/DU][DU] The golden scepter is not only a symbol of the princess’s power but also her magic weapon.| 这根金色权杖不仅是公主权力的象征，还是她的魔法武器。[/DU]",
+"[TITLE] 常见用法 [/TITLE][COLL][H] a magic scepter | 魔法权杖 [POS] n.[/POS][/H][EX] The Princess in Black’s magic scepter can turn into a strong staff to fight monsters.| 黑衣公主的魔法权杖能变成一根结实的长杖，用来对抗怪兽。[/EX][/COLL][H] push a switch on the scepter | 按权杖上的开关 [POS] n.[/POS][/H][EX] She pushed a switch on the scepter quickly, and it changed into a staff at once.| 她快速按了一下权杖上的开关，它立刻就变成了长杖。[/EX][/COLL][H] princess’s scepter | 公主的权杖 [POS] n.[/POS][/H][EX] The princess’s scepter is made of gold and sparkly stones, very beautiful.| 公主的权杖由黄金和闪光石制成，非常漂亮。[/EX][/COLL]",
+"[TITLE] 额外例句 [/TITLE][EX] The queen held a precious scepter in her hand when she walked into the ballroom.| 王后走进舞厅时，手里拿着一根珍贵的权杖。[/EX][EX] He made a small wooden scepter for the little girl who liked to play the princess.| 他给喜欢扮演公主的小女孩做了一根小小的木质权杖。[/EX][EX] The magic scepter has many special functions and can help the princess fight all kinds of monsters.| 这根魔法权杖有很多特殊功能，能帮公主对抗各种各样的怪兽。[/EX]",
+"[TITLE] 常见错误 [/TITLE][ERR] scepter 是可数名词，复数形式是 scepters，直接加 s，也可写作 sceptres（英式拼写），二者均可。[/ERR][ERR] 不要把 scepter 拼写为 scepterr（错误）或 septar（错误），注意正确拼写是 s-c-e-p-t-e-r。[/ERR][ERR] 不要混淆 scepter 和 sceptic！scepter 是 “权杖”；sceptic（skeptic）是 “怀疑论者”，二者发音和拼写相近，注意区分。[/ERR]"
+]
+},
+"w195": {
+"word": "staff",
+"images": {
+"scene": ["infopic01/staff.webp"],
+"card": ["wordpic01/staff.webp"]
+},
+"richDetail": [
+"[TITLE] 解释 [/TITLE][DEF][EN] A long, strong stick used as a weapon or for support; the form the Princess in Black’s scepter turns into (used in Chapter 6 of The Princess in Black, the princess’s fighting weapon)[/EN][CN] 长杖；法杖；手杖（一根又长又结实的棍子，用作武器或支撑物；黑衣公主的权杖变身之后的形态，出自《黑衣公主》第六章，公主的战斗武器）[/CN][POS] n.[/POS][PH]/stɑːf/（英式）/stæf/（美式）[/PH][DU] She pushed a switch on her scepter. It turned into a staff.|(原文例句) 她按了一下权杖上的开关，它就变成了一根长杖。[/DU][DU] The big blue monster roared and swung the tree. The staff met it.|(原文例句) 蓝色大怪兽咆哮着挥舞着大树，长杖迎了上去。[/DU]",
+"[TITLE] 常见用法 [/TITLE][COLL][H] turn into a staff | 变成长杖 [POS] n.[/POS][/H][EX] The princess’s magic scepter can turn into a strong staff to fight monsters.| 公主的魔法权杖能变成一根结实的长杖，用来对抗怪兽。[/EX][/COLL][H] swing a staff | 挥舞长杖 [POS] n.[/POS][/H][EX] The Princess in Black swung the staff and hit the big blue monster hard.| 黑衣公主挥舞着长杖，狠狠打向蓝色大怪兽。[/EX][/COLL][H] a fighting staff | 战斗长杖 [POS] n.[/POS][/H][EX] The fighting staff is the Princess in Black’s most commonly used weapon to stop monsters.| 战斗长杖是黑衣公主阻止怪兽时最常用的武器。[/EX][/COLL]",
+"[TITLE] 额外例句 [/TITLE][EX] The old wizard held a wooden staff in his hand and walked slowly through the forest.| 老巫师手里拿着一根木质法杖，慢慢穿过森林。[/EX][EX] He used a strong staff to support himself when he climbed up the mountain.| 他爬山时用一根结实的手杖支撑身体。[/EX][EX] The staff hit the tree with a loud bang, and the monster dropped the tree in surprise.| 长杖重重砸在树上，发出巨响，怪兽吃惊地扔掉了大树。[/EX]",
+"[TITLE] 常见错误 [/TITLE][ERR] staff 作 “长杖、法杖” 时，复数形式是staves /steɪvz/，不要写成 staffs（staffs 仅作 “员工” 时的复数），注意词义不同复数形式不同。[/ERR][ERR] staff 的发音注意英式 /stɑːf/、美式 /stæf/，不要读成 /stɑːf/（美式错误）。[/ERR][ERR] 不要混淆 staff 和 stick！staff 特指 “用作武器、魔法工具或支撑的长杖”，更正式；stick 是通用词，指普通的棍子，如 a magic staff /a wooden stick。[/ERR]"
+]
+},
+"w196": {
+"word": "wage",
+"images": {
+"scene": ["infopic01/wage.webp"],
+"card": ["wordpic01/wage.webp"]
+},
+"richDetail": [
+"[TITLE] 解释 [/TITLE][DEF][EN] To start and continue a war or battle against someone or something; to carry on a fight (used in Chapter 6 of The Princess in Black, describing the Princess in Black fighting the big blue monster)[/EN][CN] 发动；进行（战争、战斗）；与…… 作战（发起并持续与某人或某物的战争、战斗，出自《黑衣公主》第六章，形容黑衣公主与蓝色大怪兽展开战斗）[/CN][POS] v.[/POS][PH]/weɪdʒ/（英美）[/PH][DU] The Princess in Black and the big blue monster waged battle.|(原文例句) 黑衣公主和蓝色大怪兽展开了战斗。[/DU][DU] The princess is brave enough to wage war against all the monsters in Monster Land.| 这位公主足够勇敢，敢和怪兽之地的所有怪兽作战。[/DU]",
+"[TITLE] 常见用法 [/TITLE][COLL][H] wage battle | 展开战斗；作战 [POS] v.[/POS][/H][EX] The Princess in Black waged battle with the big blue monster to protect the goats.| 黑衣公主为了保护山羊，和蓝色大怪兽展开了战斗。[/EX][/COLL][H] wage war against sb/sth | 向某人 / 某物宣战；与…… 作战 [POS] v.[/POS][/H][EX] She decided to wage war against all the monsters that wanted to eat the goats.| 她决定向所有想吃山羊的怪兽宣战。[/EX][/COLL][H] wage a fight | 发起战斗 [POS] v.[/POS][/H][EX] The Goat Avenger wanted to wage a fight beside the Princess in Black to stop the monsters.| 山羊复仇者想和黑衣公主并肩作战，阻止怪兽。[/EX][/COLL]",
+"[TITLE] 额外例句 [/TITLE][EX] The soldiers waged a long battle against the enemy and finally won.| 士兵们和敌人展开了一场持久战，最终取得了胜利。[/EX][EX] We should wage a fight against pollution to protect our earth.| 我们应该向污染宣战，保护我们的地球。[/EX][EX] She waged battle with the monster alone and didn’t ask for help from anyone.| 她独自和怪兽作战，没有向任何人求助。[/EX]",
+"[TITLE] 常见错误 [/TITLE][ERR] wage 作 “发动战斗” 时是及物动词，常用搭配为 wage battle/war/fight，不要漏写宾语（错误：waged against the monster），正确：waged battle against the monster。[/ERR][ERR] wage 的过去式和过去分词是 waged，直接加 ed，不要写成 wagedd（错误），注意不要和 wag（摇摆）混淆拼写。[/ERR][ERR] 不要用 wage do battle（错误），wage 本身已含 “进行、发动” 之意，直接接 battle/war 即可。[/ERR]"
+]
+},
+"w197": {
+"word": "battle",
+"images": {
+"scene": ["infopic01/battle.webp"],
+"card": ["wordpic01/battle.webp"]
+},
+"richDetail": [
+"[TITLE] 解释 [/TITLE][DEF][EN] A fight between two or more people or groups, especially a violent one; to fight against someone or something (used in Chapter 6 of The Princess in Black, the fight between the Princess in Black and the big blue monster)[/EN][CN] 战斗；搏斗；交战；与…… 战斗（两人或群体间的打斗，尤指激烈的争斗；与某人或某物打斗，出自《黑衣公主》第六章，黑衣公主和蓝色大怪兽之间的打斗）[/CN][POS] n./v.[/POS][PH]/ˈbætl/（英美）[/PH][DU] The Princess in Black and the big blue monster waged battle.|(原文例句) 黑衣公主和蓝色大怪兽展开了战斗。[/DU][DU] With luck, the battle would be quick.|(原文例句) 但愿这场战斗能快点结束。[/DU]",
+"[TITLE] 常见用法 [/TITLE][COLL][H] wage battle | 展开战斗 [POS] n.[/POS][/H][EX] The brave princess waged battle with the huge monster to save the goats.| 勇敢的公主为了拯救山羊，和巨大的怪兽展开了战斗。[/EX][/COLL][H] a fierce battle | 一场激烈的战斗 [POS] n.[/POS][/H][EX] The Princess in Black and the big blue monster had a fierce battle in the goat pasture.| 黑衣公主和蓝色大怪兽在山羊牧场进行了一场激烈的战斗。[/EX][/COLL][H] battle against sb/sth | 与…… 战斗 [POS] v.[/POS][/H][EX] She battled against the monster for a long time and finally tied it up.| 她和怪兽战斗了很久，终于把它绑了起来。[/EX][/COLL]",
+"[TITLE] 额外例句 [/TITLE][EX] The two armies fought a big battle on the plain and many soldiers were hurt.| 两军在平原上展开了一场大战，很多士兵受伤了。[/EX][EX] He battled against illness for many years and never gave up hope.| 他和病魔斗争了很多年，从未放弃希望。[/EX][EX] The battle ended when the monster rolled back into the hole of Monster Land.| 当怪兽滚回怪兽之地的洞里时，这场战斗就结束了。[/EX]",
+"[TITLE] 常见错误 [/TITLE][ERR] battle 作名词时是可数名词，复数形式是 battles，直接加 s，不要写成 battless（错误）。[/ERR][ERR] battle 作动词时是不及物动词，后接战斗的对象需加介词 against/with，不要直接接宾语（错误：battle the monster），正确：battle against the monster。[/ERR][ERR] 不要混淆 battle 和 war！battle 指 “单次的战斗、搏斗”；war 指 “持续的、大规模的战争”，如 a fierce battle /a long war。[/ERR]"
+]
+},
+"w198": {
+"word": "pounce",
+"images": {
+"scene": ["infopic01/pounce.webp"],
+"card": ["wordpic01/pounce.webp"]
+},
+"richDetail": [
+"[TITLE] 解释 [/TITLE][DEF][EN] To jump suddenly and quickly at someone or something, especially to attack; a sudden jumping attack (used in Chapter 6 of The Princess in Black, one of the Princess in Black’s fighting moves: Princess Pounce)[/EN][CN] 猛扑；突袭；突然扑向（突然快速地扑向某人或某物，尤指为了攻击；突然的扑击，出自《黑衣公主》第六章，黑衣公主的战斗招式之一：公主猛扑）[/CN][POS] v./n.[/POS][PH]/paʊns/（英美）[/PH][DU] PRINCESS POUNCE!|(原文例句) 公主猛扑！[/DU][DU] The cat pounced on the mouse, but it ran away quickly and escaped.| 猫猛扑向老鼠，可老鼠飞快地跑掉了，逃过一劫。[/DU]",
+"[TITLE] 常见用法 [/TITLE][COLL][H] pounce on sb/sth | 猛扑向某人 / 某物 [POS] v.[/POS][/H][EX] The Princess in Black pounced on the monster and knocked it off balance.| 黑衣公主猛扑向怪兽，把它撞得失去了平衡。[/EX][/COLL][H] Princess Pounce | 公主猛扑 [POS] n.[/POS][/H][EX] Princess Pounce is a powerful fighting move of the Princess in Black.| 公主猛扑是黑衣公主一招威力十足的战斗招式。[/EX][/COLL][H] a sudden pounce | 突然的猛扑 [POS] n.[/POS][/H][EX] The monster fell down because of the princess’s sudden pounce.| 怪兽因为公主的突然猛扑摔倒在地。[/EX][/COLL]",
+"[TITLE] 额外例句 [/TITLE][EX] The eagle pounced on the rabbit from the sky and caught it with its claws.| 老鹰从天上猛扑向兔子，用爪子抓住了它。[/EX][/EX] She pounced on the chance to learn ninja skills from a master and practiced hard every day.| 她抓住机会向一位大师学习忍者技能，每天刻苦练习。[/EX][EX] The dog pounced on the ball when its owner threw it far away.| 主人把球扔远后，小狗猛扑向那个球。[/EX]",
+"[TITLE] 常见错误 [/TITLE][ERR] pounce 作动词时是不及物动词，后接扑击的对象必须加介词 on，不要直接接宾语（错误：pounce the monster），正确：pounce on the monster。[/ERR][ERR] pounce 的过去式和过去分词是 pounced，直接加 ed，不要写成 pounceed（错误），也不要漏写 e。[/ERR][ERR] 不要混淆 pounce 和 pounce at（错误），固定搭配只有 pounce on，没有 pounce at，注意介词搭配正确。[/ERR]"
+]
+},
+"w199": {
+"word": "buck",
+"images": {
+"scene": ["infopic01/buck.webp"],
+"card": ["wordpic01/buck.webp"]
+},
+"richDetail": [
+"[TITLE] 解释 [/TITLE][DEF][EN] To jump straight up with the front legs in the air, especially of a horse or pony; to throw a rider off by doing this (used in Chapter 6 of The Princess in Black, one of Blacky’s fighting moves: Blacky Buck)[/EN][CN]（马、小马）猛然弓背跃起；尥蹶子（前腿腾空直挺向上跳，尤指马类；以此动作把骑手摔下来，出自《黑衣公主》第六章，小黑马的战斗招式之一：小黑尥蹶子）[/CN][POS] v.[/POS][PH]/bʌk/（英美）[/PH][DU] BLACKY BUCK!|(原文例句) 小黑尥蹶子！[/DU][DU] The pony bucked hard and tried to throw the monster off its back when it attacked.| 当怪兽发起攻击时，小马猛地尥蹶子，想把怪兽从背上摔下去。[/DU]",
+"[TITLE] 常见用法 [/TITLE][COLL][H] buck hard | 猛地尥蹶子；用力弓背跃起 [POS] v.[/POS][/H][EX] Blacky bucked hard to help the Princess in Black fight the big blue monster.| 小黑马猛地尥蹶子，帮黑衣公主对抗蓝色大怪兽。[/EX][/COLL][H] buck off sb/sth | 把某人 / 某物从背上摔下来 [POS] v.[/POS][/H][EX] The horse bucked off the stranger who tried to ride it without permission.| 这匹马把未经允许就想骑它的陌生人摔了下来。[/EX][/COLL][H] Blacky Buck | 小黑尥蹶子 [POS] n.[/POS][/H][EX] Blacky Buck is a useful fighting move that the pony uses to help the princess.| 小黑尥蹶子是小马帮公主作战的一招实用招式。[/EX][/COLL]",
+"[TITLE] 额外例句 [/TITLE][EX] The horse bucked when it saw a snake on the road and scared the rider a lot.| 马儿看到路上有一条蛇，突然尥蹶子，把骑手吓了一大跳。[/EX][EX] The wild horse bucked many times, but the cowboy still held on to the reins tightly.| 野马多次尥蹶子，可牛仔还是紧紧抓住缰绳。[/EX][EX] Blacky bucked into the monster and made it step back a few steps.| 小黑马朝怪兽猛尥蹶子，把它逼得后退了几步。[/EX]",
+"[TITLE] 常见错误 [/TITLE][ERR] buck 作 “马尥蹶子” 时是不及物动词，后接摔下的对象需加介词 off，不要直接接宾语（错误：buck the monster），正确：buck off the monster。[/ERR][ERR] buck 的过去式和过去分词是 bucked，直接加 ed，不要写成 buckked（错误），注意不要双写 k。[/ERR][ERR] 不要混淆 buck 和 kick！buck 是 “马弓背跃起、尥蹶子”，整体身体向上；kick 是 “马用腿踢”，仅腿部动作，如 the pony bucked /the horse kicked the stone。[/ERR]"
+]
+},
+"w200": {
+"word": "hornswoggle",
+"images": {
+"scene": ["infopic01/hornswoggle.webp"],
+"card": ["wordpic01/hornswoggle.webp"]
+},
+"richDetail": [
+"[TITLE] 解释 [/TITLE][DEF][EN] A playful or tricky fighting move (used in Chapter 6 of The Princess in Black, a special fighting move in the battle between the Princess in Black and the big blue monster)[/EN][CN] 花式诱敌；巧计突袭（一种耍花招或巧妙的战斗招式，出自《黑衣公主》第六章，是黑衣公主与蓝色大怪兽战斗中的专属招式）[/CN][POS] n./v.[/POS][PH]/ˈhɔːnswɒɡl/（英式）/ˈhɔːrnswɑːɡl/（美式）[/PH][DU] HORNSWOGGLE!|(原文例句) 花式诱敌！[/DU][DU] The Princess in Black used a clever hornswoggle to confuse the big blue monster.|(原文例句) 黑衣公主用一招巧妙的花式诱敌，把蓝色大怪兽弄糊涂了。[/DU]",
+"[TITLE] 常见用法 [/TITLE][COLL][H] use a hornswoggle | 使用花式诱敌招式 [POS] n.[/POS][/H][EX] The Princess in Black used a hornswoggle to make the monster lose its way.| 黑衣公主用了一招花式诱敌，让怪兽迷失了方向。[/EX][/COLL][H] hornswoggle the monster | 用巧计迷惑怪兽 [POS] v.[/POS][/H][EX] She could hornswoggle the monster easily with her smart ninja skills.| 她靠着灵巧的忍者技能，能轻松用巧计迷惑怪兽。[/EX][/COLL][H] a clever hornswoggle | 一招巧妙的花式诱敌 [POS] n.[/POS][/H][EX] The clever hornswoggle made the big blue monster stand there and do nothing.| 这招巧妙的花式诱敌，让蓝色大怪兽站在原地一动不动。[/EX][/COLL]",
+"[TITLE] 额外例句 [/TITLE][EX] The little fox hornswoggled the rabbit and got the delicious carrot easily.| 小狐狸用巧计迷惑了兔子，轻松得到了美味的胡萝卜。[/EX][EX] He used a funny hornswoggle to trick his friend and made everyone laugh.| 他用一个有趣的小花招捉弄了朋友，让大家都笑了。[/EX][EX] The Princess in Black’s hornswoggle is always very useful in fighting monsters.| 黑衣公主的花式诱敌招式在对抗怪兽时总是非常管用。[/EX]",
+"[TITLE] 常见错误 [/TITLE][ERR] hornswoggle 是口语化词汇，作名词时可数，复数形式是 hornswoggles，直接加 s，不要写成 hornswogglees（错误）。[/ERR][ERR] 注意拼写：hornswoggle 是 horn+swoggle，不要漏写 w（错误：hornsoggle），正确拼写为 hornswoggle。[/ERR][ERR] hornswoggle 作动词时是及物动词，可直接接宾语（hornswoggle the monster），无需加介词，这是和其他战斗动词的不同之处。[/ERR]"
+]
+},
+"w201": {
+"word": "spotless",
+"images": {
+"scene": ["infopic01/spotless.webp"],
+"card": ["wordpic01/spotless.webp"]
+},
+"richDetail": [
+"[TITLE] 解释 [/TITLE][DEF][EN] Completely clean and free of any dirt, marks or spots; absolutely tidy (used in Chapter 7 of The Princess in Black, describing Princess Magnolia’s totally clean tower)[/EN][CN] 一尘不染的；洁净无瑕的；极其整洁的（完全干净，没有任何灰尘、污渍或斑点；非常整洁，出自《黑衣公主》第七章，形容玛格诺莉亚公主那间干干净净的塔楼）[/CN][POS] adj.[/POS][PH]/ˈspɒtləs/（英式）/ˈspɑːtləs/（美式）[/PH][DU] Princess Magnolia’s tower was spotless.|(原文例句) 玛格诺莉亚公主的塔楼一尘不染。[/DU][DU] The princess keeps her room spotless every day and never leaves any mess.|(原文例句) 公主每天都把房间收拾得一尘不染，从不留一点凌乱。[/DU]",
+"[TITLE] 常见用法 [/TITLE][COLL][H] spotless room/tower | 一尘不染的房间 / 塔楼 [POS] adj.[/POS][/H][EX] Duchess Wigtower was surprised that Princess Magnolia’s tower was spotless.| 维格塔女公爵对玛格诺莉亚公主一尘不染的塔楼感到很惊讶。[/EX][/COLL][H] keep sp spotless | 保持某地一尘不染 [POS] adj.[/POS][/H][EX] The maid works hard every day to keep the castle spotless for the princess.| 女仆每天辛勤工作，为公主保持城堡一尘不染。[/EX][/COLL][H] spotless clothes | 干干净净的衣服 [POS] adj.[/POS][/H][EX] Princess Magnolia always wears spotless frilly pink dresses as a prim princess.| 作为一位端庄的公主，玛格诺莉亚总是穿着干干净净的粉色荷叶边裙子。[/EX][/COLL]",
+"[TITLE] 额外例句 [/TITLE][EX] The little girl’s white dress was spotless and looked like a new one.| 小女孩的白裙子干干净净的，看起来像新的一样。[/EX][EX] He wiped the table until it was spotless and put the dishes on it carefully.| 他把桌子擦得一尘不染，然后小心地把盘子放上去。[/EX][EX] The snow covered the ground and made the whole forest spotless and white.| 大雪覆盖了大地，让整片森林变得洁白无瑕。[/EX]",
+"[TITLE] 常见错误 [/TITLE][ERR] spotless 是形容词，没有比较级和最高级的不规则变化，加 more/most 即可（more spotless/most spotless），不要写成 spotlesser/spotlessest（错误）。[/ERR][ERR] 不要把 spotless 拼写为 spotles（错误），注意结尾是 less，不是 les。[/ERR][ERR] 不要混淆 spotless 和 clean！spotless 侧重 “极其干净，一点污渍都没有”，程度更深；clean 是通用词，指 “干净的”，程度较轻，如 a spotless tower /a clean desk。[/ERR]"
+]
+},
+"w202": {
+"word": "cushion",
+"images": {
+"scene": ["infopic01/cushion.webp"],
+"card": ["wordpic01/cushion.webp"]
+},
+"richDetail": [
+"[TITLE] 解释 [/TITLE][DEF][EN] A soft bag filled with material such as feathers or foam, used to make seats more comfortable; a soft pad (used in Chapter 7 of The Princess in Black, describing the soft couches in Princess Magnolia’s tower)[/EN][CN] 软垫；靠垫；坐垫（装满羽毛、泡沫等材料的软包，让座椅更舒适；软垫子，出自《黑衣公主》第七章，形容玛格诺莉亚公主塔楼里柔软的沙发坐垫）[/CN][POS] n.[/POS][PH]/ˈkʊʃn/（英美）[/PH][DU] The couches were as soft as cushions.|(原文例句) 那些沙发软得像软垫一样。[/DU][DU] She sat on a pink cushion on the couch and drank a cup of hot chocolate.|(原文例句) 她坐在沙发上的粉色靠垫上，喝着一杯热巧克力。[/DU]",
+"[TITLE] 常见用法 [/TITLE][COLL][H] as soft as cushions | 像软垫一样柔软 [POS] n.[/POS][/H][EX] The bed in the princess’s tower is as soft as cushions and very comfortable to sleep on.| 公主塔楼里的床软得像软垫一样，睡上去非常舒服。[/EX][/COLL][H] a pink/soft cushion | 粉色 / 柔软的靠垫 [POS] n.[/POS][/H][EX] There are many beautiful pink cushions on the couches in the princess’s room.| 公主房间的沙发上有很多漂亮的粉色靠垫。[/EX][/COLL][H] sit on a cushion | 坐在靠垫上 [POS] n.[/POS][/H][EX] Duchess Wigtower sat on a soft cushion and waited for Princess Magnolia to come back.| 维格塔女公爵坐在柔软的靠垫上，等着玛格诺莉亚公主回来。[/EX][/COLL]",
+"[TITLE] 额外例句 [/TITLE][EX] She put a warm cushion on the chair for the old lady to sit on.| 她在椅子上放了一个暖和的坐垫，让老奶奶坐。[/EX][EX] The little boy hugged a big cushion and fell asleep on the couch.| 小男孩抱着一个大靠垫，在沙发上睡着了。[/EX][EX] The cushions on the couch are all made of silk and feel very smooth.| 沙发上的靠垫都是丝绸做的，摸起来非常顺滑。[/EX]",
+"[TITLE] 常见错误 [/TITLE][ERR] cushion 是可数名词，复数形式是 cushions，直接加 s，不要写成 cushiones（错误）。[/ERR][ERR] 不要混淆 cushion 和 pillow！cushion 是 “靠垫、坐垫”，放在沙发、椅子上；pillow 是 “枕头”，放在床上，如 a couch cushion /a bed pillow。[/ERR][ERR] 不要把 cushion 拼写为 cushon（错误），注意中间是 si，不是 s。[/ERR]"
+]
+},
+"w203": {
+"word": "amiss",
+"images": {
+"scene": ["infopic01/amiss.webp"],
+"card": ["wordpic01/amiss.webp"]
+},
+"richDetail": [
+"[TITLE] 解释 [/TITLE][DEF][EN] Wrong or not as it should be; something wrong or unusual (used in Chapter 7 of The Princess in Black, the duchess thinking something was wrong with Princess Magnolia’s perfect tower)[/EN][CN] 不对劲的；有差错的；失常的；差错；异常（错误的、并非原本应有的样子；不对劲的事情、异常情况，出自《黑衣公主》第七章，女公爵觉得玛格诺莉亚公主完美的塔楼里一定有什么不对劲）[/CN][POS] adj./adv./n.[/POS][PH]/əˈmɪs/（英美）[/PH][DU] It was almost too perfect. Something must be amiss.|(原文例句) 这里完美得过分了，一定有什么不对劲。[/DU][DU] Duchess Wigtower was sure that nothing was as amiss as it seemed in the castle.|(原文例句) 维格塔女公爵确信，城堡里的一切并不像表面看起来那样毫无异常。[/DU]",
+"[TITLE] 常见用法 [/TITLE][COLL][H] something must be amiss | 一定有什么不对劲 [POS] adj.[/POS][/H][EX] Everything is too quiet in the forest, and something must be amiss.| 森林里太安静了，一定有什么不对劲。[/EX][/COLL][H] go amiss | 出岔子；出差错 [POS] v.[/POS][/H][EX] If you are not careful, something will go amiss in your plan to fight the monster.| 如果你不小心，你对抗怪兽的计划就会出岔子。[/EX][/COLL][H] nothing amiss | 没有任何不对劲 [POS] adj.[/POS][/H][EX] The duchess checked the room many times, but found nothing amiss.| 女公爵检查了房间很多次，却没发现任何不对劲。[/EX][/COLL]",
+"[TITLE] 额外例句 [/TITLE][EX] He looked around and felt that something was amiss in the empty castle.| 他环顾四周，觉得空荡荡的城堡里有什么不对劲。[/EX][EX] Her plan to surprise her friend went amiss because someone told the secret.| 她给朋友制造惊喜的计划出了岔子，因为有人泄露了秘密。[/EX][EX] The teacher checked the students’ homework and found nothing amiss in it.| 老师检查了学生的作业，没发现里面有任何差错。[/EX]",
+"[TITLE] 常见错误 [/TITLE][ERR] amiss 作形容词时只能作表语，不能放在名词前作定语（错误：an amiss thing），正确表达为 something amiss。[/ERR][ERR] amiss 作名词时是不可数名词，不要加 s（错误：amisses），也不要用 a/an 修饰（错误：an amiss）。[/ERR][ERR] 不要把 amiss 和 miss 混淆！amiss 是 “不对劲的、出差错”；miss 是 “错过、想念”，二者发音和拼写不同，注意区分。[/ERR]"
+]
+},
+"w204": {
+"word": "headband",
+"images": {
+"scene": ["infopic01/headband.webp"],
+"card": ["wordpic01/headband.webp"]
+},
+"richDetail": [
+"[TITLE] 解释 [/TITLE][DEF][EN] A narrow band worn around the head to hold hair back or as a decoration; a hair band (used in Chapter 7 of The Princess in Black, one of Princess Magnolia’s princess accessories in the drawers)[/EN][CN] 发带；头带（戴在头上的窄带子，用来束发或作装饰；发卡带，出自《黑衣公主》第七章，玛格诺莉亚公主抽屉里的公主配饰之一）[/CN][POS] n.[/POS][PH]/ˈhedbænd/（英美）[/PH][DU] She opened drawers. White gloves and flowered headbands.|(原文例句) 她打开抽屉，里面有白手套和带花纹的发带。[/DU][DU] Princess Magnolia likes to wear a pink flowered headband with her frilly pink dress.|(原文例句) 玛格诺莉亚公主喜欢搭配粉色荷叶边裙子，戴粉色的花纹发带。[/DU]",
+"[TITLE] 常见用法 [/TITLE][COLL][H] flowered headband | 带花纹的发带 [POS] n.[/POS][/H][EX] The drawers in the princess’s room are filled with beautiful flowered headbands of different colors.| 公主房间的抽屉里装满了各种颜色、漂亮的花纹发带。[/EX][/COLL][H] wear a headband | 戴发带 [POS] n.[/POS][/H][EX] The little princess likes to wear a sparkly headband with a small flower on it.| 小公主喜欢戴有小花装饰的闪光发带。[/EX][/COLL][H] a pink headband | 粉色发带 [POS] n.[/POS][/H][EX] She picked a pink headband from the drawer and put it on her head.| 她从抽屉里挑了一根粉色发带，戴在了头上。[/EX][/COLL]",
+"[TITLE] 额外例句 [/TITLE][EX] The girl wore a blue headband to hold her long hair back when she ran.| 这个女孩跑步时戴了一根蓝色发带，把长发束在后面。[/EX][EX] Her mother made a beautiful cloth headband with a bow for her birthday.| 妈妈为她的生日做了一根带蝴蝶结的漂亮布艺发带。[/EX][EX] There are many sparkly headbands in the princess’s jewelry box, all for different occasions.| 公主的首饰盒里有很多闪光发带，适用于不同的场合。[/EX]",
+"[TITLE] 常见错误 [/TITLE][ERR] headband 是复合名词，规范写法连写，不要分开写（错误：head band），复数形式是 headbands，直接加 s。[/ERR][ERR] 不要把 headband 拼写为 headban（错误），注意结尾是 d，不要漏写。[/ERR][ERR] 不要混淆 headband 和 tiara！headband 是 “普通的发带、头带”，用于束发或简单装饰；tiara 是 “公主 / 王后的皇冠、头饰”，更华丽，是权力和身份的象征，如 a flowered headband /a sparkly tiara。[/ERR]"
+]
+},
+"w205": {
+"word": "bead",
+"images": {
+"scene": ["infopic01/bead.webp"],
+"card": ["wordpic01/bead.webp"]
+},
+"richDetail": [
+"[TITLE] 解释 [/TITLE][DEF][EN] A small round piece of glass, crystal or plastic with a hole through it, used to make jewelry or decorate cloth; its adjective form beaded means decorated with such small pieces (used in Chapter 7 of The Princess in Black, describing the decorative handkerchiefs Duchess Wigtower found in Princess Magnolia’s drawer)[/EN][CN] 珠子；圆珠（玻璃、水晶或塑料制成的带孔小圆片，可制作首饰或装饰布料；形容词形式 beaded 意为 “饰有珠子的”，出自《黑衣公主》第七章，描述维格塔女公爵在玛格诺莉亚公主抽屉中发现的装饰手帕）[/CN][POS] n./v.[/POS][PH]/biːd/（英美）[/PH][DU] She opened drawers. White gloves and flowered headbands. Beaded handkerchiefs and crystal bracelets.|(原文例句) 她打开抽屉，里面有白手套、带花纹的发带、饰珠手帕和水晶手链。[/DU]",
+"[TITLE] 常见用法 [/TITLE][COLL][H] beaded handkerchief | 饰珠手帕 [POS] n.[/POS][/H][EX] Duchess Wigtower saw many beaded handkerchiefs in Princess Magnolia’s drawer when she was snooping.| 维格塔女公爵翻找时，在玛格诺莉亚公主的抽屉里看到了许多饰珠手帕。[/EX][/COLL][H] crystal bead | 水晶珠 [POS] n.[/POS][/H][EX] The beaded handkerchiefs are decorated with tiny crystal beads and look very delicate.| 饰珠手帕上点缀着细小的水晶珠，看起来十分精致。[/EX][/COLL][H] bead a dress | 给裙子饰珠 [POS] v.[/POS][/H][EX] Princess Magnolia likes to wear frilly pink dresses beaded with pink beads.| 玛格诺莉亚公主喜欢穿饰有粉色珠子的粉色荷叶边裙子。[/EX][/COLL]",
+"[TITLE] 额外例句 [/TITLE][EX] The crystal bracelets in the drawer are strung with colorful beads and match the beaded handkerchiefs well.| 抽屉里的水晶手链由各色珠子串成，和饰珠手帕十分相配。[/EX][EX] The maid used red beads to bead the edge of the princess’s handkerchief.| 女仆用红珠子给公主的手帕边缘做了饰珠装饰。[/EX][EX] A small bead fell off the beaded handkerchief when the duchess opened the drawer.| 女公爵打开抽屉时，一颗小珠子从饰珠手帕上掉了下来。[/EX]",
+"[TITLE] 常见错误 [/TITLE][ERR] bead 作 “珠子” 讲时为可数名词，复数形式直接加 s 为beads，切勿误写为 beades。[/ERR][ERR] 其形容词形式为 beaded，用于描述饰有珠子的物品，不要错写为 beadied 或 beadful。[/ERR][ERR] 注意区分同音词 bleed（v. 流血），二者发音均为 /biːd/，避免拼写和使用混淆。[/ERR]"
+]
+},
+"w206": {
+"word": "bracelet",
+"images": {
+"scene": ["infopic01/bracelet.webp"],
+"card": ["wordpic01/bracelet.webp"]
+},
+"richDetail": [
+"[TITLE] 解释 [/TITLE][DEF][EN] A piece of jewelry worn around the wrist, usually made of crystal, beads, metal or silver; a delicate accessory for ladies and princesses (used in Chapter 7 of The Princess in Black, describing the jewelry Duchess Wigtower found in Princess Magnolia’s drawer)[/EN][CN] 手链；手镯（戴在手腕上的首饰，通常由水晶、珠子、金属或银制成，是女士和公主的精致配饰，出自《黑衣公主》第七章，描述维格塔女公爵在玛格诺莉亚公主抽屉中发现的首饰）[/CN][POS] n.[/POS][PH]/ˈbreɪslət/（英美）[/PH][DU] She opened drawers. White gloves and flowered headbands. Beaded handkerchiefs and crystal bracelets.|(原文例句) 她打开抽屉，里面有白手套、带花纹的发带、饰珠手帕和水晶手链。[/DU]",
+"[TITLE] 常见用法 [/TITLE][COLL][H] crystal bracelet | 水晶手链 [POS] n.[/POS][/H][EX] Princess Magnolia has many crystal bracelets in her drawer and matches them with different dresses.| 玛格诺莉亚公主的抽屉里有许多水晶手链，会搭配不同的裙子佩戴。[/EX][/COLL][H] beaded bracelet | 串珠手链 [POS] n.[/POS][/H][EX] The beaded bracelet is made of colorful beads and is a lovely accessory for young princesses.| 串珠手链由各色珠子串成，是小公主们的可爱配饰。[/EX][/COLL][H] wear a bracelet | 戴手链 [POS] v.[/POS][/H][EX] Princess Magnolia likes to wear a crystal bracelet with her glass slippers every day.| 玛格诺莉亚公主每天穿玻璃鞋时，都会搭配佩戴一条水晶手链。[/EX][/COLL]",
+"[TITLE] 额外例句 [/TITLE][EX] Duchess Wigtower admired the crystal bracelets in the drawer and thought they were very beautiful.| 维格塔女公爵赞叹抽屉里的水晶手链，觉得它们十分精美。[/EX][EX] A small crystal on the princess’s bracelet fell off when she ran to the broom closet.| 公主跑向扫帚间时，手链上的一颗小水晶掉了下来。[/EX][EX] There are various bracelets in Princess Magnolia’s tower, including crystal ones and beaded ones.| 玛格诺莉亚公主的塔楼里有各式各样的手链，有水晶的，也有串珠的。[/EX]",
+"[TITLE] 常见错误 [/TITLE][ERR] bracelet 为可数名词，复数形式直接加 s 为bracelets，切勿误写为 braceletts（多余双写 t）。[/ERR][ERR] 拼写易漏中间的字母 e，正确拼写为 b-r-a-c-e-l-e-t，避免误写为 braclet。[/ERR][ERR] 不要混淆 bracelet 和 bangle，bracelet 多指带装饰的精致手链 / 手镯，可调节；bangle 指无扣的圆形硬手镯，多为金属材质。[/ERR]"
+]
+},
+"w207": {
+"word": "determine",
+"images": {
+"scene": ["infopic01/determine.webp"],
+"card": ["wordpic01/determine.webp"]
+},
+"richDetail": [
+"[TITLE] 解释 [/TITLE][DEF][EN] To make a firm decision to do something; to find out or settle something definitely (used in Chapter 7 of The Princess in Black, describing Duchess Wigtower’s firm decision to find Princess Magnolia’s secret)[/EN][CN] 决心；决意；查明；确定（下定决心做某事；明确发现或查清某事，出自《黑衣公主》第七章，描述维格塔女公爵下定决心要找出玛格诺莉亚公主的秘密）[/CN][POS] v.[/POS][PH]/dɪˈtɜːmɪn/（英式）/dɪˈtɜːrmɪn/（美式）[/PH][DU] The duchess was determined to uncover a secret in Princess Magnolia’s castle. She just had to look harder.|(原文例句) 女公爵下定决心要在玛格诺莉亚公主的城堡里揭开一个秘密，她只需要更仔细地寻找。[/DU]",
+"[TITLE] 常见用法 [/TITLE][COLL][H] be determined to do sth | 下定决心做某事 [POS] adj.[/POS][/H][EX] Duchess Wigtower was determined to find something amiss in Princess Magnolia’s tower when she started snooping.| 维格塔女公爵开始翻找时，下定决心要在玛格诺莉亚公主的塔楼里找出不对劲的地方。[/EX][/COLL][H] determine to do sth | 决心做某事 [POS] v.[/POS][/H][EX] Duff determined to learn ninja skills to fight monsters with the Princess in Black after the battle.| 战斗结束后，达夫决心学习忍者技能，和黑衣公主一起对抗怪兽。[/EX][/COLL][H] determine sth | 查明；确定某事 [POS] v.[/POS][/H][EX] The Princess in Black tried to determine the reason why the big blue monster climbed through the hole to the goat pasture.| 黑衣公主试图查明蓝色大怪兽从洞里钻到山羊牧场的原因。[/EX][/COLL]",
+"[TITLE] 额外例句 [/TITLE][EX] He is determined to become the Goat Avenger and protect the goats from being eaten by monsters.| 他下定决心要成为山羊复仇者，保护山羊不被怪兽吃掉。[/EX][EX] We need to determine the time when the monster may climb out of the hole again to prepare for it.| 我们需要确定怪兽下次可能从洞里钻出来的时间，做好准备。[/EX][EX] Princess Magnolia determined to get back to the tower before the duchess found her broom closet secret.| 玛格诺莉亚公主决心在女公爵发现她扫帚间的秘密前赶回塔楼。[/EX]",
+"[TITLE] 常见错误 [/TITLE][ERR] 其形容词形式为determined，常用搭配 be determined to do sth，不要用动词原形 determine 作形容词（错误：be determine to do）。[/ERR][ERR] determine 作动词时，后接不定式 to do 作宾语，不要接动名词 doing（错误：determine fighting）。[/ERR][ERR] 过去式和过去分词为 determined，现在分词为 determining（需双写 e 加 ing），避免误写为 determineing。[/ERR][ERR] 不要混淆 determine 和 decide，determine 侧重 “经过深思熟虑后下定坚定的决心”，语气更强；decide 侧重 “简单做出选择或决定”，语气较轻松。[/ERR]"
+]
 }
+
+
 
   
 
