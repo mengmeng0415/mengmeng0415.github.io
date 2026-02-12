@@ -1,438 +1,437 @@
 {
   "q_w001": {
-    "type": "choice_text",
-    "wordIds": ["w001"],
-    "question": "Griffith told everyone to keep ______ while putting the saddle on Shu.",
-    "options": ["steady", "saddle", "buckle", "tighten"],
-    "answer": 0
-  },
-  "q_w002": {
-    "type": "choice_text",
-    "wordIds": ["w002"],
-    "question": "The Dragon Masters put a ______ on each dragon for riding.",
-    "options": ["buckle", "saddle", "tighten", "crafter"],
-    "answer": 1
-  },
-  "q_w003": {
-    "type": "choice_text",
-    "wordIds": ["w003"],
-    "question": "Bo used the metal ______ to fasten the saddle strap under Shu's belly.",
-    "options": ["tighten", "saddle", "buckle", "steady"],
-    "answer": 2
-  },
-  "q_w004": {
-    "type": "choice_text",
-    "wordIds": ["w004"],
-    "question": "Please ______ the buckle so the saddle won't move.",
-    "options": ["buckle", "tighten", "saddle", "crafter"],
-    "answer": 1
-  },
-  "q_w005": {
-    "type": "choice_text",
-    "wordIds": ["w005"],
-    "question": "King Roland's ______ made strong saddles for the dragons.",
-    "options": ["slim", "crafter", "bother", "sleepyhead"],
-    "answer": 1
-  },
-  "q_w006": {
-    "type": "choice_text",
-    "wordIds": ["w006"],
-    "question": "Kepri the Sun Dragon has a ______ body and white scales.",
-    "options": ["bother", "slim", "sleepyhead", "hardly"],
-    "answer": 1
-  },
-  "q_w007": {
-    "type": "choice_text",
-    "wordIds": ["w007"],
-    "question": "Something was ______ Bo, but he didn't want to tell anyone.",
-    "options": ["sleepyhead", "bother", "hardly", "charm"],
-    "answer": 1
-  },
-  "q_w008": {
-    "type": "choice_text",
-    "wordIds": ["w008"],
-    "question": "Rori called Drake and Bo ______ because they got up late.",
-    "options": ["hardly", "sleepyhead", "charm", "upset"],
-    "answer": 1
-  },
-  "q_w009": {
-    "type": "choice_text",
-    "wordIds": ["w009"],
-    "question": "Bo was so worried that he ______ ate any breakfast.",
-    "options": ["charm", "hardly", "upset", "care"],
-    "answer": 1
-  },
-  "q_w010": {
-    "type": "choice_text",
-    "wordIds": ["w010"],
-    "question": "Griffith used magic ______ to protect the Dragon Stone.",
-    "options": ["upset", "charm", "care", "careless"],
-    "answer": 1
-  },
-  "q_w011": {
-    "type": "choice_text",
-    "wordIds": ["w011"],
-    "question": "The dark magic ______ the effect of the wizard's charms.",
-    "options": ["care", "upset", "careless", "continue"],
-    "answer": 1
-  },
-  "q_w012": {
-    "type": "choice_text",
-    "wordIds": ["w012"],
-    "question": "Griffith promised to ______ for the Dragon Stone day and night.",
-    "options": ["careless", "care", "continue", "hang out"],
-    "answer": 1
-  },
-  "q_w013": {
-    "type": "choice_text",
-    "wordIds": ["w013"],
-    "question": "Maldred is not ______—he always plans his evil acts carefully.",
-    "options": ["continue", "careless", "hang out", "jerk"],
-    "answer": 1
-  },
-  "q_w014": {
-    "type": "choice_text",
-    "wordIds": ["w014"],
-    "question": "Griffith ______ to talk about finding a better hiding place for the Dragon Stone.",
-    "options": ["hang out", "continue", "jerk", "obey"],
-    "answer": 1
-  },
-  "q_w015": {
-    "type": "choice_text",
-    "wordIds": ["w015"],
-    "question": "The Dragon Masters decided to ______ with the dragons in the caves.",
-    "options": ["jerk", "hang out", "obey", "blurt"],
-    "answer": 1
-  },
-  "q_w016": {
-    "type": "choice_text",
-    "wordIds": ["w016"],
-    "question": "Suddenly, Worm's neck ______ up when he sensed danger.",
-    "options": ["obey", "jerk", "blurt", "honor"],
-    "answer": 1
-  },
-  "q_w017": {
-    "type": "choice_text",
-    "wordIds": ["w017"],
-    "question": "The Dragon Masters must ______ Griffith's instructions for training.",
-    "options": ["blurt", "obey", "honor", "choke"],
-    "answer": 1
-  },
-  "q_w018": {
-    "type": "choice_text",
-    "wordIds": ["w018"],
-    "question": "Drake ______ out that Bo would never steal the Dragon Stone.",
-    "options": ["honor", "blurt", "choke", "evil"],
-    "answer": 1
-  },
-  "q_w019": {
-    "type": "choice_text",
-    "wordIds": ["w019"],
-    "question": "Bo's parents said serving the king was an ______ for their kingdom.",
-    "options": ["choke", "honor", "evil", "come over"],
-    "answer": 1
-  },
-  "q_w020": {
-    "type": "choice_text",
-    "wordIds": ["w020"],
-    "question": "Bo's voice ______ when he talked about his family in prison.",
-    "options": ["evil", "choke", "come over", "raven"],
-    "answer": 1
-  },
-  "q_w021": {
-    "type": "choice_text",
-    "wordIds": ["w021"],
-    "question": "The ______ wizard used dark magic to control Emperor Song.",
-    "options": ["come over", "evil", "raven", "silent"],
-    "answer": 1
-  },
-  "q_w022": {
-    "type": "choice_text",
-    "wordIds": ["w022"],
-    "question": "A feeling of fear ______ Drake when he saw the Raven Guard.",
-    "options": ["raven", "come over", "silent", "skilled"],
-    "answer": 1
-  },
-  "q_w023": {
-    "type": "choice_text",
-    "wordIds": ["w023"],
-    "question": "The black feather is the symbol of the ______ Guard.",
-    "options": ["silent", "raven", "skilled", "grunt"],
-    "answer": 1
-  },
-  "q_w024": {
-    "type": "choice_text",
-    "wordIds": ["w024"],
-    "question": "The Raven Guard can move ______ without being noticed.",
-    "options": ["skilled", "silent", "grunt", "truth"],
-    "answer": 1
-  },
-  "q_w025": {
-    "type": "choice_text",
-    "wordIds": ["w025"],
-    "question": "The ______ fighters of the Raven Guard serve the emperor.",
-    "options": ["grunt", "skilled", "truth", "conk"],
-    "answer": 1
-  },
-  "q_w026": {
-    "type": "choice_text",
-    "wordIds": ["w026"],
-    "question": "Simon the guard ______ in reply when Griffith called him.",
-    "options": ["truth", "grunt", "conk", "steady"],
-    "answer": 1
-  },
-  "q_w027": {
-    "type": "choice_text",
-    "wordIds": ["w027"],
-    "question": "The spy used dark magic to make Rori and Ana tell the ______.",
-    "options": ["conk", "truth", "saddle", "buckle"],
-    "answer": 1
-  },
-  "q_w028": {
-    "type": "choice_text",
-    "wordIds": ["w028"],
-    "question": "The Raven Guard's trick made Simon the guard ______ out on the floor.",
-    "options": ["grunt", "conk", "silent", "skilled"],
-    "answer": 1
-  },
-  
-  "q_w029": {
+"type": "choice_text",
+"wordIds": ["w001"],
+"question": "Griffith told everyone to keep ______ while putting the saddle on Shu.",
+"options": ["saddle", "steady", "buckle", "tighten"],
+"answer": 1
+},
+"q_w002": {
+"type": "choice_text",
+"wordIds": ["w002"],
+"question": "The Dragon Masters put a ______ on each dragon for riding.",
+"options": ["buckle", "tighten", "crafter", "saddle"],
+"answer": 3
+},
+"q_w003": {
+"type": "choice_text",
+"wordIds": ["w003"],
+"question": "Bo used the metal ______ to fasten the saddle strap under Shu's belly.",
+"options": ["buckle", "tighten", "saddle", "steady"],
+"answer": 0
+},
+"q_w004": {
+"type": "choice_text",
+"wordIds": ["w004"],
+"question": "Please ______ the buckle so the saddle won't move.",
+"options": ["buckle", "saddle", "tighten", "crafter"],
+"answer": 2
+},
+"q_w005": {
+"type": "choice_text",
+"wordIds": ["w005"],
+"question": "King Roland's ______ made strong saddles for the dragons.",
+"options": ["slim", "bother", "crafter", "sleepyhead"],
+"answer": 2
+},
+"q_w006": {
+"type": "choice_text",
+"wordIds": ["w006"],
+"question": "Kepri the Sun Dragon has a ______ body and white scales.",
+"options": ["sleepyhead", "bother", "hardly", "slim"],
+"answer": 3
+},
+"q_w007": {
+"type": "choice_text",
+"wordIds": ["w007"],
+"question": "Something was ______ Bo, but he didn't want to tell anyone.",
+"options": ["bother", "sleepyhead", "hardly", "charm"],
+"answer": 0
+},
+"q_w008": {
+"type": "choice_text",
+"wordIds": ["w008"],
+"question": "Rori called Drake and Bo ______ because they got up late.",
+"options": ["hardly", "sleepyhead", "charm", "upset"],
+"answer": 1
+},
+"q_w009": {
+"type": "choice_text",
+"wordIds": ["w009"],
+"question": "Bo was so worried that he ______ ate any breakfast.",
+"options": ["charm", "upset", "care", "hardly"],
+"answer": 3
+},
+"q_w010": {
+"type": "choice_text",
+"wordIds": ["w010"],
+"question": "Griffith used magic ______ to protect the Dragon Stone.",
+"options": ["care", "upset", "careless", "charm"],
+"answer": 3
+},
+"q_w011": {
+"type": "choice_text",
+"wordIds": ["w011"],
+"question": "The dark magic ______ the effect of the wizard's charms.",
+"options": ["upset", "care", "careless", "continue"],
+"answer": 0
+},
+"q_w012": {
+"type": "choice_text",
+"wordIds": ["w012"],
+"question": "Griffith promised to ______ for the Dragon Stone day and night.",
+"options": ["care", "careless", "continue", "hang out"],
+"answer": 0
+},
+"q_w013": {
+"type": "choice_text",
+"wordIds": ["w013"],
+"question": "Maldred is not ______—he always plans his evil acts carefully.",
+"options": ["continue", "hang out", "jerk", "careless"],
+"answer": 3
+},
+"q_w014": {
+"type": "choice_text",
+"wordIds": ["w014"],
+"question": "Griffith ______ to talk about finding a better hiding place for the Dragon Stone.",
+"options": ["jerk", "hang out", "obey", "continue"],
+"answer": 3
+},
+"q_w015": {
+"type": "choice_text",
+"wordIds": ["w015"],
+"question": "The Dragon Masters decided to ______ with the dragons in the caves.",
+"options": ["blurt", "jerk", "obey", "hang out"],
+"answer": 3
+},
+"q_w016": {
+"type": "choice_text",
+"wordIds": ["w016"],
+"question": "Suddenly, Worm's neck ______ up when he sensed danger.",
+"options": ["jerk", "obey", "blurt", "honor"],
+"answer": 0
+},
+"q_w017": {
+"type": "choice_text",
+"wordIds": ["w017"],
+"question": "The Dragon Masters must ______ Griffith's instructions for training.",
+"options": ["blurt", "honor", "choke", "obey"],
+"answer": 3
+},
+"q_w018": {
+"type": "choice_text",
+"wordIds": ["w018"],
+"question": "Drake ______ out that Bo would never steal the Dragon Stone.",
+"options": ["choke", "honor", "evil", "blurt"],
+"answer": 3
+},
+"q_w019": {
+"type": "choice_text",
+"wordIds": ["w019"],
+"question": "Bo's parents said serving the king was an ______ for their kingdom.",
+"options": ["honor", "choke", "evil", "come over"],
+"answer": 0
+},
+"q_w020": {
+"type": "choice_text",
+"wordIds": ["w020"],
+"question": "Bo's voice ______ when he talked about his family in prison.",
+"options": ["choke", "evil", "come over", "raven"],
+"answer": 0
+},
+"q_w021": {
+"type": "choice_text",
+"wordIds": ["w021"],
+"question": "The ______ wizard used dark magic to control Emperor Song.",
+"options": ["raven", "come over", "silent", "evil"],
+"answer": 3
+},
+"q_w022": {
+"type": "choice_text",
+"wordIds": ["w022"],
+"question": "A feeling of fear ______ Drake when he saw the Raven Guard.",
+"options": ["silent", "raven", "skilled", "come over"],
+"answer": 3
+},
+"q_w023": {
+"type": "choice_text",
+"wordIds": ["w023"],
+"question": "The black feather is the symbol of the ______ Guard.",
+"options": ["raven", "silent", "skilled", "grunt"],
+"answer": 0
+},
+"q_w024": {
+"type": "choice_text",
+"wordIds": ["w024"],
+"question": "The Raven Guard can move ______ without being noticed.",
+"options": ["silent", "skilled", "grunt", "truth"],
+"answer": 0
+},
+"q_w025": {
+"type": "choice_text",
+"wordIds": ["w025"],
+"question": "The ______ fighters of the Raven Guard serve the emperor.",
+"options": ["grunt", "truth", "conk", "skilled"],
+"answer": 3
+},
+"q_w026": {
+"type": "choice_text",
+"wordIds": ["w026"],
+"question": "Simon the guard ______ in reply when Griffith called him.",
+"options": ["conk", "truth", "steady", "grunt"],
+"answer": 3
+},
+"q_w027": {
+"type": "choice_text",
+"wordIds": ["w027"],
+"question": "The spy used dark magic to make Rori and Ana tell the ______.",
+"options": ["truth", "conk", "steady", "saddle"],
+"answer": 0
+},
+"q_w028": {
+"type": "choice_text",
+"wordIds": ["w028"],
+"question": "The Raven Guard's trick made Simon the guard ______ out on the floor.",
+"options": ["silent", "grunt", "skilled", "conk"],
+"answer": 3
+},
+"q_w029": {
 "type": "choice_text",
 "wordIds": ["w029"],
 "question": "'Feather, find the stone!' Griffith ______ firmly.",
-"options": ["zip", "command", "beyond", "ahead"],
-"answer": 1
+"options": ["beyond", "zip", "ahead", "command"],
+"answer": 3
 },
 "q_w030": {
 "type": "choice_text",
 "wordIds": ["w030"],
 "question": "The magic Finding Feather ______ toward the tunnels in a flash.",
-"options": ["beyond", "ahead", "zip", "pluck"],
-"answer": 2
+"options": ["zip", "beyond", "pluck", "ahead"],
+"answer": 0
 },
 "q_w031": {
 "type": "choice_text",
 "wordIds": ["w031"],
 "question": "The dragons flew over the hills to the deep forest ______.",
-"options": ["ahead", "pluck", "beyond", "gleam"],
-"answer": 2
+"options": ["gleam", "ahead", "pluck", "beyond"],
+"answer": 3
 },
 "q_w032": {
 "type": "choice_text",
 "wordIds": ["w032"],
 "question": "Up ______, Drake saw the Raven Guard moving across the treetops.",
-"options": ["pluck", "gleam", "ahead", "pick up"],
-"answer": 2
+"options": ["ahead", "pluck", "gleam", "pick up"],
+"answer": 0
 },
 "q_w033": {
 "type": "choice_text",
 "wordIds": ["w033"],
 "question": "Griffith ______ the Finding Feather from the air to change direction.",
-"options": ["gleam", "pick up", "handful", "pluck"],
-"answer": 3
+"options": ["pluck", "gleam", "pick up", "handful"],
+"answer": 0
 },
 "q_w034": {
 "type": "choice_text",
 "wordIds": ["w034"],
 "question": "Ana's dark eyes ______ with excitement when they chased the spy.",
-"options": ["pick up", "handful", "gleam", "conk"],
-"answer": 2
+"options": ["conk", "pick up", "handful", "gleam"],
+"answer": 3
 },
 "q_w035": {
 "type": "choice_text",
 "wordIds": ["w035"],
 "question": "Kepri ______ speed to fly past the Raven Guard and block him.",
-"options": ["handful", "conk", "pick up", "command"],
-"answer": 2
+"options": ["pick up", "handful", "conk", "command"],
+"answer": 0
 },
 "q_w036": {
 "type": "choice_text",
 "wordIds": ["w036"],
 "question": "The Raven Guard pulled out a ______ of glittering red dust from his pocket.",
-"options": ["conk", "command", "zip", "handful"],
-"answer": 3
+"options": ["handful", "conk", "command", "zip"],
+"answer": 0
 },
 "q_w037": {
 "type": "choice_text",
 "wordIds": ["w037"],
 "question": "The Raven Guard ______ through the forest to escape from the Dragon Masters.",
-"options": ["borrow", "streak", "in person", "trust"],
-"answer": 1
+"options": ["in person", "borrow", "trust", "streak"],
+"answer": 3
 },
 "q_w038": {
 "type": "choice_text",
 "wordIds": ["w038"],
 "question": "Can I ______ your Finding Feather to track the Raven Guard?",
-"options": ["streak", "borrow", "in person", "trust"],
-"answer": 1
+"options": ["in person", "trust", "borrow", "streak"],
+"answer": 2
 },
 "q_w039": {
 "type": "choice_text",
 "wordIds": ["w039"],
 "question": "Griffith decided to go to the dark forest ______ to stop the evil plan.",
-"options": ["streak", "borrow", "in person", "trust"],
-"answer": 2
+"options": ["trust", "streak", "borrow", "in person"],
+"answer": 3
 },
 "q_w040": {
 "type": "choice_text",
 "wordIds": ["w040"],
 "question": "We all ______ Bo because he would never betray the Dragon Masters.",
-"options": ["assist", "trust", "strengthen", "remove"],
-"answer": 1
+"options": ["strengthen", "assist", "remove", "trust"],
+"answer": 3
 },
 "q_w041": {
 "type": "choice_text",
 "wordIds": ["w041"],
 "question": "The young Dragon Masters agreed to ______ Griffith in tracking the Raven Guard.",
-"options": ["trust", "assist", "strengthen", "remove"],
-"answer": 1
+"options": ["strengthen", "trust", "remove", "assist"],
+"answer": 3
 },
 "q_w042": {
 "type": "choice_text",
 "wordIds": ["w042"],
 "question": "Griffith used magic to ______ the protection of the Dragon Stone.",
-"options": ["assist", "strengthen", "remove", "turn over"],
-"answer": 1
+"options": ["remove", "assist", "turn over", "strengthen"],
+"answer": 3
 },
 "q_w043": {
 "type": "choice_text",
 "wordIds": ["w043"],
 "question": "Shu can ______ the dark spell from Emperor Song with her power.",
-"options": ["strengthen", "remove", "turn over", "rise"],
-"answer": 1
+"options": ["remove", "strengthen", "rise", "turn over"],
+"answer": 0
 },
 "q_w044": {
 "type": "choice_text",
 "wordIds": ["w044"],
 "question": "Bo ______ the magic box to check for hidden red dust.",
-"options": ["remove", "turn over", "rise", "pattern"],
-"answer": 1
+"options": ["rise", "remove", "pattern", "turn over"],
+"answer": 3
 },
 "q_w045": {
 "type": "choice_text",
 "wordIds": ["w045"],
 "question": "A thin cloud of red smoke ______ from the guard's palm.",
-"options": ["turn over", "rise", "pattern", "column"],
-"answer": 1
+"options": ["pattern", "turn over", "column", "rise"],
+"answer": 3
 },
 "q_w046": {
 "type": "choice_text",
 "wordIds": ["w046"],
 "question": "There is a strange star ______ on the bottom of the magic box.",
-"options": ["rise", "pattern", "column", "deal with"],
-"answer": 1
+"options": ["column", "rise", "deal with", "pattern"],
+"answer": 3
 },
 "q_w047": {
 "type": "choice_text",
 "wordIds": ["w047"],
 "question": "A ______ of Raven Guard marched toward the castle gate.",
-"options": ["pattern", "column", "deal with", "fail"],
-"answer": 1
+"options": ["deal with", "pattern", "fail", "column"],
+"answer": 3
 },
 "q_w048": {
 "type": "choice_text",
 "wordIds": ["w048"],
 "question": "We need to ______ the Raven Guard before they use dark magic.",
-"options": ["column", "deal with", "fail", "dare"],
-"answer": 1
+"options": ["fail", "column", "dare", "deal with"],
+"answer": 3
 },
 "q_w049": {
 "type": "choice_text",
 "wordIds": ["w049"],
 "question": "The magic shield ______ to stop the red dust from spreading.",
-"options": ["deal with", "fail", "dare", "woozy"],
-"answer": 1
+"options": ["fail", "deal with", "woozy", "dare"],
+"answer": 0
 },
 "q_w050": {
 "type": "choice_text",
 "wordIds": ["w050"],
 "question": "How ______ you hurt the baby dragon?",
-"options": ["fail", "dare", "woozy", "misty"],
-"answer": 1
+"options": ["woozy", "fail", "misty", "dare"],
+"answer": 3
 },
 "q_w051": {
 "type": "choice_text",
 "wordIds": ["w051"],
 "question": "Ana felt ______ after breathing in a little red dust.",
-"options": ["dare", "woozy", "misty", "terrified"],
-"answer": 1
+"options": ["misty", "terrified", "dare", "woozy"],
+"answer": 3
 },
 "q_w052": {
 "type": "choice_text",
 "wordIds": ["w052"],
 "question": "The dark forest became ______ after the red dust spread.",
-"options": ["woozy", "misty", "terrified", "force"],
-"answer": 1
+"options": ["terrified", "force", "woozy", "misty"],
+"answer": 3
 },
 "q_w053": {
 "type": "choice_text",
 "wordIds": ["w053"],
 "question": "The baby dragon was ______ of the Raven Guard's dark magic.",
-"options": ["misty", "terrified", "force", "swarm"],
-"answer": 1
+"options": ["swarm", "misty", "force", "terrified"],
+"answer": 3
 },
 "q_w054": {
 "type": "choice_text",
 "wordIds": ["w054"],
 "question": "The Raven Guard tried to ______ Bo to tell the secret of the Dragon Stone.",
-"options": ["terrified", "force", "swarm", "harm"],
-"answer": 1
+"options": ["harm", "terrified", "swarm", "force"],
+"answer": 3
 },
 "q_w055": {
 "type": "choice_text",
 "wordIds": ["w055"],
 "question": "A ______ of glowing red orbs flew into the throne room.",
-"options": ["force", "swarm", "harm", "bravery"],
-"answer": 1
+"options": ["bravery", "force", "harm", "swarm"],
+"answer": 3
 },
 "q_w056": {
 "type": "choice_text",
 "wordIds": ["w056"],
 "question": "The red dust won't ______ you if you don't breathe it in.",
-"options": ["swarm", "harm", "bravery", "cot"],
-"answer": 1
+"options": ["cot", "swarm", "bravery", "harm"],
+"answer": 3
 },
 "q_w057": {
 "type": "choice_text",
 "wordIds": ["w057"],
 "question": "Bo's ______ to face the Raven Guard alone impressed Griffith.",
-"options": ["harm", "bravery", "cot", "undo"],
-"answer": 1
+"options": ["undo", "harm", "cot", "bravery"],
+"answer": 3
 },
 "q_w058": {
 "type": "choice_text",
 "wordIds": ["w058"],
 "question": "Diego lay on a ______ in Griffith's workshop after the spell backfired.",
-"options": ["bravery", "cot", "undo", "by nature"],
-"answer": 1
+"options": ["by nature", "bravery", "undo", "cot"],
+"answer": 3
 },
 "q_w059": {
 "type": "choice_text",
 "wordIds": ["w059"],
 "question": "Shu can ______ the dark spell that Maldred cast on Emperor Song.",
-"options": ["cot", "undo", "by nature", "trail off"],
-"answer": 1
+"options": ["trail off", "cot", "by nature", "undo"],
+"answer": 3
 },
 "q_w060": {
 "type": "choice_text",
 "wordIds": ["w060"],
 "question": "Her eyes were ______ with tears when she saw her lost dragon.",
-"options": ["undo", "misty", "by nature", "trail off"],
-"answer": 1
+"options": ["trail off", "undo", "by nature", "misty"],
+"answer": 3
 },
 "q_w061": {
 "type": "choice_text",
 "wordIds": ["w061"],
 "question": "Dragons are ______ protective of their masters.",
-"options": ["misty", "by nature", "trail off", "risk"],
-"answer": 1
+"options": ["risk", "misty", "trail off", "by nature"],
+"answer": 3
 },
 "q_w062": {
 "type": "choice_text",
 "wordIds": ["w062"],
 "question": "Griffith's voice ______ when he talked about Maldred's evil dragon.",
-"options": ["by nature", "trail off", "risk", "misty"],
-"answer": 1
+"options": ["misty", "by nature", "risk", "trail off"],
+"answer": 3
 },
 "q_w063": {
 "type": "choice_text",
@@ -792,22 +791,22 @@
 "type": "choice_text",
 "wordIds": ["w114"],
 "question": "It rained for three days ______, so we couldn't go out to play.",
-"options": ["in a row", "in a line", "in a box", "in a tree"],
-"answer": 0
+"options": ["in a box", "in a row", "in a tree", "in a line"],
+"answer": 1
 },
 "q_w115": {
 "type": "choice_text",
 "wordIds": ["w115"],
 "question": "Farmers grow different ______ in the field to make a living for their families.",
-"options": ["crops", "dams", "chores", "details"],
-"answer": 0
+"options": ["chores", "details", "crops", "dams"],
+"answer": 2
 },
 "q_w116": {
 "type": "choice_text",
 "wordIds": ["w116"],
 "question": "The government built a big ______ on the river to store water and prevent floods.",
-"options": ["dam", "crop", "chore", "detail"],
-"answer": 0
+"options": ["detail", "crop", "chore", "dam"],
+"answer": 3
 },
 "q_w117": {
 "type": "choice_text",
@@ -820,22 +819,22 @@
 "type": "choice_text",
 "wordIds": ["w118"],
 "question": "Everyone should ______ well in public places like cinemas and libraries.",
-"options": ["behave", "detail", "supply", "base"],
-"answer": 0
+"options": ["supply", "behave", "base", "detail"],
+"answer": 1
 },
 "q_w119": {
 "type": "choice_text",
 "wordIds": ["w119"],
 "question": "Can you tell me all the ______ of the new plan, such as the time and the steps?",
-"options": ["details", "supplies", "bases", "materials"],
-"answer": 0
+"options": ["bases", "materials", "details", "supplies"],
+"answer": 2
 },
 "q_w120": {
 "type": "choice_text",
 "wordIds": ["w120"],
 "question": "We need to buy some camping ______ like tents and sleeping bags for the trip.",
-"options": ["supplies", "bases", "materials", "matches"],
-"answer": 0
+"options": ["matches", "supplies", "bases", "materials"],
+"answer": 1
 },
 "q_w121": {
 "type": "choice_text",
@@ -848,15 +847,15 @@
 "type": "choice_text",
 "wordIds": ["w122"],
 "question": "Tunnels can be made of different ______ like stone, concrete and steel.",
-"options": ["materials", "bases", "matches", "invites"],
-"answer": 0
+"options": ["invites", "bases", "materials", "matches"],
+"answer": 2
 },
 "q_w123": {
 "type": "choice_text",
 "wordIds": ["w123"],
 "question": "Her blue scarf ______ her white coat very well and looks beautiful.",
-"options": ["matches", "gobbles", "invites", "stands"],
-"answer": 0
+"options": ["invites", "stands", "gobbles", "matches"],
+"answer": 3
 },
 "q_w124": {
 "type": "choice_text",
@@ -869,188 +868,185 @@
 "type": "choice_text",
 "wordIds": ["w125"],
 "question": "We will ______ our best friends to our birthday party next Sunday.",
-"options": ["invite", "gobble", "match", "stand"],
-"answer": 0
+"options": ["match", "invite", "gobble", "stand"],
+"answer": 1
 },
 "q_w126": {
 "type": "choice_text",
 "wordIds": ["w126"],
 "question": "A tall old tree ______ in front of our school gate for many years.",
-"options": ["stands", "gobbles", "invites", "matches"],
+"options": ["invites", "matches", "stands", "gobbles"],
+"answer": 2
+},
+"q_w127": {
+"type": "choice_text",
+"wordIds": ["w127"],
+"question": "The basketball player ______ a basket at the last minute of the game.",
+"options": ["rode", "felt", "scored", "buddied"],
+"answer": 2
+},
+"q_w128": {
+"type": "choice_text",
+"wordIds": ["w128"],
+"question": "My best ______ helps me with my homework every weekend.",
+"options": ["sidecar", "buddy", "score", "motorcycle"],
+"answer": 1
+},
+"q_w129": {
+"type": "choice_text",
+"wordIds": ["w129"],
+"question": "You must wear a helmet when you ride a ______ on the road.",
+"options": ["motorcycle", "buddy", "period", "initial"],
 "answer": 0
 },
-
-  "q_w127": {
-    "type": "choice_text",
-    "wordIds": ["w127"],
-    "question": "The basketball player ______ a basket at the last minute of the game.",
-    "options": ["scored", "buddied", "rode", "felt"],
-    "answer": 0
-  },
-  "q_w128": {
-    "type": "choice_text",
-    "wordIds": ["w128"],
-    "question": "My best ______ helps me with my homework every weekend.",
-    "options": ["buddy", "score", "motorcycle", "sidecar"],
-    "answer": 0
-  },
-  "q_w129": {
-    "type": "choice_text",
-    "wordIds": ["w129"],
-    "question": "You must wear a helmet when you ride a ______ on the road.",
-    "options": ["motorcycle", "buddy", "period", "initial"],
-    "answer": 0
-  },
-  "q_w130": {
-    "type": "choice_text",
-    "wordIds": ["w130"],
-    "question": "This type of motorcycle is very ______ for long trips in the mountains.",
-    "options": ["comfortable", "sidecar", "initial", "ape"],
-    "answer": 0
-  },
-  "q_w131": {
-    "type": "choice_text",
-    "wordIds": ["w131"],
-    "question": "The old motorcycle has a small ______ for carrying a child.",
-    "options": ["sidecar", "period", "ape", "solve"],
-    "answer": 0
-  },
-  "q_w132": {
-    "type": "choice_text",
-    "wordIds": ["w132"],
-    "question": "We lived in Shanghai for a ______ of three years when I was young.",
-    "options": ["period", "initial", "ape", "fetch"],
-    "answer": 0
-  },
-  "q_w133": {
-    "type": "choice_text",
-    "wordIds": ["w133"],
-    "question": "The ______ step to make a kite is to prepare bamboo and paper.",
-    "options": ["initial", "ape", "fetch", "indoor"],
-    "answer": 0
-  },
-  "q_w134": {
-    "type": "choice_text",
-    "wordIds": ["w134"],
-    "question": "According to the book, crows are as smart as ______ in the forest.",
-    "options": ["apes", "solves", "fetches", "indoors"],
-    "answer": 0
-  },
-  "q_w135": {
-    "type": "choice_text",
-    "wordIds": ["w135"],
-    "question": "We need to work together to ______ the difficult problem in our project.",
-    "options": ["solve", "fetch", "indoor", "defend"],
-    "answer": 0
-  },
-  "q_w136": {
-    "type": "choice_text",
-    "wordIds": ["w136"],
-    "question": "When the light turns red, the crows hop out to ______ their broken nut snacks.",
-    "options": ["fetch", "indoor", "defend", "passage"],
-    "answer": 0
-  },
-  "q_w137": {
-    "type": "choice_text",
-    "wordIds": ["w137"],
-    "question": "We play ______ games like chess when it rains heavily outside.",
-    "options": ["indoor", "defend", "passage", "avoid"],
-    "answer": 0
-  },
-  "q_w138": {
-    "type": "choice_text",
-    "wordIds": ["w138"],
-    "question": "Crows will ______ their family from other animals in the wild.",
-    "options": ["defend", "passage", "avoid", "score"],
-    "answer": 0
-  },
-  "q_w139": {
-    "type": "choice_text",
-    "wordIds": ["w139"],
-    "question": "Tunnels are long and narrow covered ______ under the ground.",
-    "options": ["passages", "avoids", "scores", "buddies"],
-    "answer": 0
-  },
-  "q_w140": {
-    "type": "choice_text",
-    "wordIds": ["w140"],
-    "question": "Underground tunnels help people ______ the busy traffic on the street.",
-    "options": ["avoid", "score", "buddy", "motorcycle"],
-    "answer": 0
-  },
-
-
-  "q_w141": {
-    "type": "choice_text",
-    "wordIds": ["w141"],
-    "question": "The gardener ______ the hedges to make them look neat and tidy.",
-    "options": ["trimmed", "rhea", "marmoset", "jawfish"],
-    "answer": 0
-  },
-  "q_w142": {
-    "type": "choice_text",
-    "wordIds": ["w142"],
-    "question": "The ______ is a large flightless bird that lives in the grasslands of South America.",
-    "options": ["rhea", "jackal", "emperor", "mane"],
-    "answer": 0
-  },
-  "q_w143": {
-    "type": "choice_text",
-    "wordIds": ["w143"],
-    "question": "The ______ is a tiny long-tailed monkey that is native to Brazil's rainforests.",
-    "options": ["marmoset", "capybara", "anaconda", "piranha"],
-    "answer": 0
-  },
-  "q_w144": {
-    "type": "choice_text",
-    "wordIds": ["w144"],
-    "question": "The male ______ keeps its eggs in its mouth to keep them safe until they hatch.",
-    "options": ["jawfish", "trim", "rhea", "marmoset"],
-    "answer": 0
-  },
-  "q_w145": {
-    "type": "choice_text",
-    "wordIds": ["w145"],
-    "question": "The male ______ spits up food to feed its young pups in Africa and Asia.",
-    "options": ["jackal", "jawfish", "emperor", "mane"],
-    "answer": 0
-  },
-  "q_w146": {
-    "type": "choice_text",
-    "wordIds": ["w146"],
-    "question": "The male ______ penguin holds the egg on its feet to keep it warm in Antarctica.",
-    "options": ["emperor", "jackal", "capybara", "anaconda"],
-    "answer": 0
-  },
-  "q_w147": {
-    "type": "choice_text",
-    "wordIds": ["w147"],
-    "question": "The male lion has a thick ______ around its neck that makes it look powerful.",
-    "options": ["mane", "emperor", "capybara", "anaconda"],
-    "answer": 0
-  },
-  "q_w148": {
-    "type": "choice_text",
-    "wordIds": ["w148"],
-    "question": "The ______ is the biggest rodent in the world and likes to live near water in Brazil.",
-    "options": ["capybara", "mane", "anaconda", "piranha"],
-    "answer": 0
-  },
-  "q_w149": {
-    "type": "choice_text",
-    "wordIds": ["w149"],
-    "question": "The ______ is the heaviest snake in the world and lives in the Amazon rainforest.",
-    "options": ["anaconda", "capybara", "piranha", "trim"],
-    "answer": 0
-  },
-  "q_w150": {
-    "type": "choice_text",
-    "wordIds": ["w150"],
-    "question": "The ______ is a small fierce fish with sharp teeth in the rivers of South America.",
-    "options": ["piranha", "anaconda", "rhea", "marmoset"],
-    "answer": 0
-  },
-  "q_w151": {
+"q_w130": {
+"type": "choice_text",
+"wordIds": ["w130"],
+"question": "This type of motorcycle is very ______ for long trips in the mountains.",
+"options": ["initial", "ape", "sidecar", "comfortable"],
+"answer": 3
+},
+"q_w131": {
+"type": "choice_text",
+"wordIds": ["w131"],
+"question": "The old motorcycle has a small ______ for carrying a child.",
+"options": ["sidecar", "period", "ape", "solve"],
+"answer": 0
+},
+"q_w132": {
+"type": "choice_text",
+"wordIds": ["w132"],
+"question": "We lived in Shanghai for a ______ of three years when I was young.",
+"options": ["fetch", "period", "initial", "ape"],
+"answer": 1
+},
+"q_w133": {
+"type": "choice_text",
+"wordIds": ["w133"],
+"question": "The ______ step to make a kite is to prepare bamboo and paper.",
+"options": ["fetch", "indoor", "initial", "ape"],
+"answer": 2
+},
+"q_w134": {
+"type": "choice_text",
+"wordIds": ["w134"],
+"question": "According to the book, crows are as smart as ______ in the forest.",
+"options": ["fetches", "indoors", "solves", "apes"],
+"answer": 3
+},
+"q_w135": {
+"type": "choice_text",
+"wordIds": ["w135"],
+"question": "We need to work together to ______ the difficult problem in our project.",
+"options": ["solve", "fetch", "indoor", "defend"],
+"answer": 0
+},
+"q_w136": {
+"type": "choice_text",
+"wordIds": ["w136"],
+"question": "When the light turns red, the crows hop out to ______ their broken nut snacks.",
+"options": ["defend", "fetch", "indoor", "passage"],
+"answer": 1
+},
+"q_w137": {
+"type": "choice_text",
+"wordIds": ["w137"],
+"question": "We play ______ games like chess when it rains heavily outside.",
+"options": ["avoid", "defend", "indoor", "passage"],
+"answer": 2
+},
+"q_w138": {
+"type": "choice_text",
+"wordIds": ["w138"],
+"question": "Crows will ______ their family from other animals in the wild.",
+"options": ["score", "avoid", "passage", "defend"],
+"answer": 3
+},
+"q_w139": {
+"type": "choice_text",
+"wordIds": ["w139"],
+"question": "Tunnels are long and narrow covered ______ under the ground.",
+"options": ["passages", "avoids", "scores", "buddies"],
+"answer": 0
+},
+"q_w140": {
+"type": "choice_text",
+"wordIds": ["w140"],
+"question": "Underground tunnels help people ______ the busy traffic on the street.",
+"options": ["motorcycle", "score", "avoid", "buddy"],
+"answer": 2
+},
+"q_w141": {
+"type": "choice_text",
+"wordIds": ["w141"],
+"question": "The gardener ______ the hedges to make them look neat and tidy.",
+"options": ["marmoset", "trimmed", "rhea", "jawfish"],
+"answer": 1
+},
+"q_w142": {
+"type": "choice_text",
+"wordIds": ["w142"],
+"question": "The ______ is a large flightless bird that lives in the grasslands of South America.",
+"options": ["emperor", "jackal", "mane", "rhea"],
+"answer": 3
+},
+"q_w143": {
+"type": "choice_text",
+"wordIds": ["w143"],
+"question": "The ______ is a tiny long-tailed monkey that is native to Brazil's rainforests.",
+"options": ["marmoset", "capybara", "anaconda", "piranha"],
+"answer": 0
+},
+"q_w144": {
+"type": "choice_text",
+"wordIds": ["w144"],
+"question": "The male ______ keeps its eggs in its mouth to keep them safe until they hatch.",
+"options": ["rhea", "trim", "marmoset", "jawfish"],
+"answer": 3
+},
+"q_w145": {
+"type": "choice_text",
+"wordIds": ["w145"],
+"question": "The male ______ spits up food to feed its young pups in Africa and Asia.",
+"options": ["jackal", "jawfish", "emperor", "mane"],
+"answer": 0
+},
+"q_w146": {
+"type": "choice_text",
+"wordIds": ["w146"],
+"question": "The male ______ penguin holds the egg on its feet to keep it warm in Antarctica.",
+"options": ["capybara", "jackal", "emperor", "anaconda"],
+"answer": 2
+},
+"q_w147": {
+"type": "choice_text",
+"wordIds": ["w147"],
+"question": "The male lion has a thick ______ around its neck that makes it look powerful.",
+"options": ["anaconda", "mane", "emperor", "capybara"],
+"answer": 1
+},
+"q_w148": {
+"type": "choice_text",
+"wordIds": ["w148"],
+"question": "The ______ is the biggest rodent in the world and likes to live near water in Brazil.",
+"options": ["piranha", "mane", "anaconda", "capybara"],
+"answer": 3
+},
+"q_w149": {
+"type": "choice_text",
+"wordIds": ["w149"],
+"question": "The ______ is the heaviest snake in the world and lives in the Amazon rainforest.",
+"options": ["capybara", "anaconda", "piranha", "trim"],
+"answer": 1
+},
+"q_w150": {
+"type": "choice_text",
+"wordIds": ["w150"],
+"question": "The ______ is a small fierce fish with sharp teeth in the rivers of South America.",
+"options": ["anaconda", "rhea", "marmoset", "piranha"],
+"answer": 3
+},
+"q_w151": {
 "type": "choice_text",
 "wordIds": ["w151"],
 "question": "A skilled ______ can make beautiful glass art with hot molten glass.",
@@ -1061,22 +1057,22 @@
 "type": "choice_text",
 "wordIds": ["w152"],
 "question": "The molten glass is ______ when heated, flowing easily like warm honey.",
-"options": ["runny", "crater", "gravity", "prize"],
-"answer": 0
+"options": ["prize", "crater", "runny", "gravity"],
+"answer": 2
 },
 "q_w153": {
 "type": "choice_text",
 "wordIds": ["w153"],
 "question": "The glassblower holds a long ______ to shape and blow the hot gooey glass.",
-"options": ["pipe", "Piñatas", "inch", "grownup"],
-"answer": 0
+"options": ["inch", "Piñatas", "grownup", "pipe"],
+"answer": 3
 },
 "q_w154": {
 "type": "choice_text",
 "wordIds": ["w154"],
 "question": "We must be careful with the ______ molten glass because it sticks to every surface.",
-"options": ["gooey", "brag", "steady", "dishwasher"],
-"answer": 0
+"options": ["steady", "brag", "gooey", "dishwasher"],
+"answer": 2
 },
 "q_w155": {
 "type": "choice_text",
@@ -1089,29 +1085,29 @@
 "type": "choice_text",
 "wordIds": ["w156"],
 "question": "The Moon has much less ______ than Earth, so people can jump much higher there.",
-"options": ["gravity", "gooey", "crater", "Piñatas"],
-"answer": 0
+"options": ["Piñatas", "gravity", "gooey", "crater"],
+"answer": 1
 },
 "q_w157": {
 "type": "choice_text",
 "wordIds": ["w157"],
 "question": "Colorful ______ filled with candy and toys are very popular at children's birthday parties.",
-"options": ["Piñatas", "prize", "inch", "grownup"],
-"answer": 0
+"options": ["inch", "prize", "Piñatas", "grownup"],
+"answer": 2
 },
 "q_w158": {
 "type": "choice_text",
 "wordIds": ["w158"],
 "question": "Candy and small ______ fall out when kids break the Piñata at the party.",
-"options": ["prize", "brag", "steady", "dishwasher"],
-"answer": 0
+"options": ["dishwasher", "steady", "brag", "prize"],
+"answer": 3
 },
 "q_w159": {
 "type": "choice_text",
 "wordIds": ["w159"],
 "question": "You need to dig the soil about one ______ deep to plant the sunflower seeds properly.",
-"options": ["inch", "glassblower", "runny", "pipe"],
-"answer": 0
+"options": ["pipe", "inch", "glassblower", "runny"],
+"answer": 1
 },
 "q_w160": {
 "type": "choice_text",
@@ -1124,15 +1120,15 @@
 "type": "choice_text",
 "wordIds": ["w161"],
 "question": "The hare likes to ______ about how fast he can run in the race with the tortoise.",
-"options": ["brag", "prize", "inch", "grownup"],
-"answer": 0
+"options": ["inch", "grownup", "brag", "prize"],
+"answer": 2
 },
 "q_w162": {
 "type": "choice_text",
 "wordIds": ["w162"],
 "question": "'Slow and ______ wins the race' is a famous saying from The Tortoise and the Hare.",
-"options": ["steady", "brag", "dishwasher", "glassblower"],
-"answer": 0
+"options": ["dishwasher", "glassblower", "brag", "steady"],
+"answer": 3
 },
 "q_w163": {
 "type": "choice_text",
@@ -1140,7 +1136,320 @@
 "question": "Using a full ______ saves more water and energy than washing dishes by hand.",
 "options": ["dishwasher", "steady", "brag", "prize"],
 "answer": 0
+},
+
+
+
+"q_w164": {
+"type": "choice_text",
+"wordIds": ["w164"],
+"question": "Princess Magnolia enjoyed hot chocolate and sweet ______ for her snack.",
+"options": ["breeze", "scone", "uncover", "prim"],
+"answer": 1
+},
+"q_w165": {
+"type": "choice_text",
+"wordIds": ["w165"],
+"question": "A soft warm ______ came through the window and blew her curls gently.",
+"options": ["frilly", "glitter-stone", "breeze", "mince"],
+"answer": 2
+},
+"q_w166": {
+"type": "choice_text",
+"wordIds": ["w166"],
+"question": "Duchess Wigtower loved to visit and try to ______ other people’s secrets.",
+"options": ["glass slipper", "stuff", "broom closet", "uncover"],
+"answer": 3
+},
+"q_w167": {
+"type": "choice_text",
+"wordIds": ["w167"],
+"question": "The princess tried to look ______ and proper in front of the duchess.",
+"options": ["prim", "chute", "highjump", "scone"],
+"answer": 0
+},
+"q_w168": {
+"type": "choice_text",
+"wordIds": ["w168"],
+"question": "She brushed crumbs off her beautiful ______ pink dress carefully.",
+"options": ["breeze", "frilly", "uncover", "prim"],
+"answer": 1
+},
+"q_w169": {
+"type": "choice_text",
+"wordIds": ["w169"],
+"question": "Suddenly the ______ ring began to ring—it was the monster alarm!",
+"options": ["mince", "glass slipper", "glitter-stone", "stuff"],
+"answer": 2
+},
+"q_w170": {
+"type": "choice_text",
+"wordIds": ["w170"],
+"question": "To keep her princess look, she had to ______ quietly to the door in small steps.",
+"options": ["broom closet", "chute", "highjump", "mince"],
+"answer": 3
+},
+"q_w171": {
+"type": "choice_text",
+"wordIds": ["w171"],
+"question": "Her ______ made a tinkling sound as she walked across the room.",
+"options": ["glass slippers", "scone", "breeze", "uncover"],
+"answer": 0
+},
+"q_w172": {
+"type": "choice_text",
+"wordIds": ["w172"],
+"question": "She had to ______ her fancy dress into the closet quickly and change.",
+"options": ["frilly", "stuff", "glitter-stone", "mince"],
+"answer": 1
+},
+"q_w173": {
+"type": "choice_text",
+"wordIds": ["w173"],
+"question": "The secret passage started inside the small ______ in the castle.",
+"options": ["glass slipper", "chute", "broom closet", "highjump"],
+"answer": 2
+},
+"q_w174": {
+"type": "choice_text",
+"wordIds": ["w174"],
+"question": "She used the dark secret ______ to slide down fast to the courtyard.",
+"options": ["scone", "breeze", "uncover", "chute"],
+"answer": 3
+},
+"q_w175": {
+"type": "choice_text",
+"wordIds": ["w175"],
+"question": "The brave princess could ______ the high castle wall in one jump.",
+"options": ["highjump", "frilly", "glitter-stone", "mince"],
+"answer": 0
+},
+"q_w176": {
+"type": "choice_text",
+"wordIds": ["w176"],
+"question": "Frimplepants sat and ate an apple in the castle’s open ______ with green grass.",
+"options": ["passage", "courtyard", "mane", "pony"],
+"answer": 1
+},
+"q_w177": {
+"type": "choice_text",
+"wordIds": ["w177"],
+"question": "The unicorn would ______ at the sweet apple instead of taking a big bite.",
+"options": ["prance", "soar", "charge", "nibble"],
+"answer": 3
+},
+"q_w178": {
+"type": "choice_text",
+"wordIds": ["w178"],
+"question": "______ around the courtyard is the favorite thing the unicorn does in the castle.",
+"options": ["prance", "cheep", "drool", "squawk"],
+"answer": 0
+},
+"q_w179": {
+"type": "choice_text",
+"wordIds": ["w179"],
+"question": "The magical animal with a long horn on its forehead is called a .",
+"options": ["pony", "mane", "unicorn", "passage"],
+"answer": 2
+},
+"q_w180": {
+"type": "choice_text",
+"wordIds": ["w180"],
+"options": ["mane", "passage", "faithful", "soar"],
+"question": "Frimplepants hid in a secret ______ to change his look from a pony to a unicorn.",
+"answer": 1
+},
+"q_w181": {
+"type": "choice_text",
+"wordIds": ["w181"],
+"question": "The sparkly hair on the unicorn’s neck is its beautiful .",
+"options": ["charge", "courtyard", "cheep", "mane"],
+"answer": 3
+},
+"q_w182": {
+"type": "choice_text",
+"wordIds": ["w182"],
+"question": " to the princess, Blacky never leaves her side when fighting monsters.",
+"options": ["faithful", "squawk", "drool", "prance"],
+"answer": 0
+},
+"q_w183": {
+"type": "choice_text",
+"wordIds": ["w183"],
+"question": "The Princess in Black rides her black ______ when she charges through the forest.",
+"options": ["unicorn", "passage", "pony", "mane"],
+"answer": 2
+},
+"q_w184": {
+"type": "choice_text",
+"wordIds": ["w184"],
+"question": "With great skills, the princess can ______ over the high castle wall easily.",
+"options": ["nibble", "soar", "cheep", "charge"],
+"answer": 1
+},
+"q_w185": {
+"type": "choice_text",
+"wordIds": ["w185"],
+"question": "The princess and Blacky ______ through the thick forest to save the goats.",
+"options": ["soar", "mane", "cheep", "charge"],
+"answer": 3
+},
+"q_w186": {
+"type": "choice_text",
+"wordIds": ["w186"],
+"question": " loudly, the big birds flew away when they saw the monster.",
+"options": ["squawk", "drool", "prance", "nibble"],
+"answer": 0
+},
+"q_w187": {
+"type": "choice_text",
+"wordIds": ["w187"],
+"question": "The little baby birds ______ softly in the nest for their mother’s food.",
+"options": ["soar", "charge", "cheep", "drool"],
+"answer": 2
+},
+"q_w188": {
+"type": "choice_text",
+"wordIds": ["w188"],
+"question": "The hungry blue monster started to ______ when it smelled the plump goats.",
+"options": ["prance", "squawk", "mane", "drool"],
+"answer": 3
+},
+"q_w189": {
+"type": "choice_text",
+"wordIds": ["w189"],
+"question": "A big blue monster began to ______ from the dark hole in the ceiling.",
+"options": ["emerge", "crook", "croak", "gallop"],
+"answer": 0
+},
+"q_w190": {
+"type": "choice_text",
+"wordIds": ["w190"],
+"question": "Duff the goat boy held his wooden ______ to protect the goats from danger.",
+"options": ["backflip", "crook", "scepter", "staff"],
+"answer": 1
+},
+"q_w191": {
+"type": "choice_text",
+"wordIds": ["w191"],
+"question": "He was so scared that he could only ______, “H-help!” in a low rough voice.",
+"options": ["wage", "battle", "croak", "pounce"],
+"answer": 2
+},
+"q_w192": {
+"type": "choice_text",
+"wordIds": ["w192"],
+"question": "The Princess in Black watched Blacky ______ fast toward the goat pasture.",
+"options": ["buck", "hornswoggle", "spotless", "gallop"],
+"answer": 3
+},
+"q_w193": {
+"type": "choice_text",
+"wordIds": ["w193"],
+"question": "The brave princess did a cool ______ and landed softly on the grass.",
+"options": ["cushion", "backflip", "amiss", "headband"],
+"answer": 1
+},
+"q_w194": {
+"type": "choice_text",
+"wordIds": ["w194"],
+"question": "She pressed a switch on her golden ______ and it turned into a strong stick.",
+"options": ["bead", "bracelet", "scepter", "determine"],
+"answer": 2
+},
+"q_w195": {
+"type": "choice_text",
+"wordIds": ["w195"],
+"question": "The magic scepter changed into a long hard ______ for fighting monsters.",
+"options": ["staff", "emerge", "crook", "croak"],
+"answer": 0
+},
+"q_w196": {
+"type": "choice_text",
+"wordIds": ["w196"],
+"question": "The Princess in Black decided to ______ battle against the huge blue monster.",
+"options": ["gallop", "wage", "backflip", "scepter"],
+"answer": 1
+},
+"q_w197": {
+"type": "choice_text",
+"wordIds": ["w197"],
+"question": "The fierce ______ between the princess and the monster didn’t last long.",
+"options": ["staff", "pounce", "battle", "buck"],
+"answer": 2
+},
+"q_w198": {
+"type": "choice_text",
+"wordIds": ["w198"],
+"question": "PRINCESS POUNCE! She prepared to ______ on the monster and knock it down.",
+"options": ["hornswoggle", "spotless", "cushion", "pounce"],
+"answer": 3
+},
+"q_w199": {
+"type": "choice_text",
+"wordIds": ["w199"],
+"question": "BLACKY BUCK! The little pony began to ______ and kick backward suddenly.",
+"options": ["amiss", "headband", "bead", "buck"],
+"answer": 3
+},
+"q_w200": {
+"type": "choice_text",
+"wordIds": ["w200"],
+"question": "HORNSWOGGLE! She used a clever trick to ______ the monster and win the fight.",
+"options": ["bracelet", "determine", "hornswoggle", "emerge"],
+"answer": 2
+},
+"q_w201": {
+"type": "choice_text",
+"wordIds": ["w201"],
+"question": "Princess Magnolia’s tower was clean and ______, with no dirt at all.",
+"options": ["spotless", "crook", "croak", "gallop"],
+"answer": 0
+},
+"q_w202": {
+"type": "choice_text",
+"wordIds": ["w202"],
+"question": "The soft sofa had a pink ______ to make people feel comfortable sitting on it.",
+"options": ["backflip", "cushion", "scepter", "staff"],
+"answer": 1
+},
+"q_w203": {
+"type": "choice_text",
+"wordIds": ["w203"],
+"question": "Everything looked too perfect, so the duchess thought something was ______.",
+"options": ["wage", "battle", "amiss", "pounce"],
+"answer": 2
+},
+"q_w204": {
+"type": "choice_text",
+"wordIds": ["w204"],
+"question": "She found beautiful flowered ______ in the drawer to hold her hair back.",
+"options": ["buck", "headband", "hornswoggle", "spotless"],
+"answer": 1
+},
+"q_w205": {
+"type": "choice_text",
+"wordIds": ["w205"],
+"question": "The pretty handkerchief was decorated with a small glass ______ on the corner.",
+"options": ["cushion", "bead", "amiss", "determine"],
+"answer": 1
+},
+"q_w206": {
+"type": "choice_text",
+"wordIds": ["w206"],
+"question": "She wore a shiny crystal ______ on her wrist as a nice princess accessory.",
+"options": ["emerge", "crook", "bracelet", "croak"],
+"answer": 2
+},
+"q_w207": {
+"type": "choice_text",
+"wordIds": ["w207"],
+"question": "The duchess was ______ to find out the secret hidden in the princess’s castle.",
+"options": ["determined", "gallop", "backflip", "scepter"],
+"answer": 0
 }
+
+
 
 
 

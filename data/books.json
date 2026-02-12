@@ -57,13 +57,35 @@
     { "id": "RAZ(F)-B26", "name": "Tunnels", "wordIds": ["w139", "w140"], "quizIds": ["q_w139", "q_w140"] },
     { "id": "RAZ(F)-B27", "name": "Weird White House Pets", "wordIds": ["w141"], "quizIds": ["q_w141"] },
     { "id": "RAZ(F)-B28", "name": "Animal Dads", "wordIds": ["w142", "w143", "w144", "w145", "w146"], "quizIds": ["q_w142", "q_w143", "q_w144", "q_w145", "q_w146"] },
-    { "id": "RAZ(F)-B29", "name": "Are You From Brazil", "wordIds": ["w147", "w148", "w149", "w150", "w151", "w152"], "quizIds": ["q_w147", "q_w148", "q_w149", "q_w150", "q_w151", "q_w152"] },
-    { "id": "RAZ(F)-B30", "name": "Glassblowing", "wordIds": ["w153", "w154", "w155", "w156"], "quizIds": ["q_w153", "q_w154", "q_w155", "q_w156"] },
-    { "id": "RAZ(F)-B31", "name": "On the Moon", "wordIds": ["w157", "w158"], "quizIds": ["q_w157", "q_w158"] },
-    { "id": "RAZ(F)-B32", "name": "Piñatas Are Fun!", "wordIds": ["w159", "w160"], "quizIds": ["q_w159", "q_w160"] },
-    { "id": "RAZ(F)-B33", "name": "The Sunflower Hut", "wordIds": ["w161", "w162"], "quizIds": ["q_w161", "q_w162"] },
-    { "id": "RAZ(F)-B34", "name": "The Tortoise and the Hare", "wordIds": ["w163", "w164"], "quizIds": ["q_w163", "q_w164"] },
-    { "id": "RAZ(F)-B35", "name": "Using Less Energy", "wordIds": ["w165"], "quizIds": ["q_w165"] }
+    { "id": "RAZ(F)-B29", "name": "Are You From Brazil", "wordIds": ["w147", "w148", "w149", "w150"], "quizIds": ["q_w147", "q_w148", "q_w149", "q_w150"] },
+    { "id": "RAZ(F)-B29", "name": "Glassblowing", "wordIds": ["w151", "w152", "w153", "w154"], "quizIds": ["q_w151", "q_w152", "q_w153", "q_w154"] },
+    { "id": "RAZ(F)-B30", "name": "On the Moon", "wordIds": ["w155", "w156"], "quizIds": ["q_w155", "q_w156"] },
+    { "id": "RAZ(F)-B31", "name": "Piñatas Are Fun!", "wordIds": ["w157", "w158"], "quizIds": ["q_w157", "q_w158"] },
+    { "id": "RAZ(F)-B32", "name": "The Sunflower Hut", "wordIds": ["w159", "w160"], "quizIds": ["q_w159", "q_w160"] },
+    { "id": "RAZ(F)-B33", "name": "The Tortoise and the Hare", "wordIds": ["w161", "w162"], "quizIds": ["q_w161", "q_w162"] },
+    { "id": "RAZ(F)-B35", "name": "Using Less Energy", "wordIds": ["w163"], "quizIds": ["q_w163"] }
+    ]
+  },
+   {
+    "id": "pb1",
+    "type": "初章书",
+    "series": "The Pincess in Black",
+    "title": "The Pincess in Black 1",
+    "cover": "infopic01/pb1.png",
+    "chapters": [
+    { "id": "pb1-c1", "name": "Chapter 1", "wordIds": ["w164", "w165", "w166", "w167", "w168", "w169", "w170", "w171"], "quizIds": ["q_w164", "q_w165", "q_w166", "q_w167", "q_w168", "q_w169", "q_w170", "q_w171"] },
+    { "id": "pb1-c2", "name": "Chapter 2", "wordIds": ["w172", "w173", "w174", "w175"], "quizIds": ["q_w172", "q_w173", "q_w174", "q_w175"] },
+    { "id": "pb1-c3", "name": "Chapter 3", "wordIds": ["w176", "w177", "w178", "w179", "w180", "w181", "w182", "w183", "w184", "w185", "w186", "w187"], "quizIds": ["q_w176", "q_w177", "q_w178", "q_w179", "q_w180", "q_w181", "q_w182", "q_w183", "q_w184", "q_w185", "q_w186", "q_w187"] },
+    { "id": "pb1-c4", "name": "Chapter 4", "wordIds": ["w188"], "quizIds": ["q_w188"] },
+    { "id": "pb1-c5", "name": "Chapter 5", "wordIds": ["w189", "w190", "w191"], "quizIds": ["q_w189", "q_w190", "q_w191"] },
+    { "id": "pb1-c6", "name": "Chapter 6", "wordIds": ["w192", "w193", "w194", "w195", "w196", "w197", "w198", "w199", "w200"], "quizIds": ["q_w192", "q_w193", "q_w194", "q_w195", "q_w196", "q_w197", "q_w198", "q_w199", "q_w200"] },
+    { "id": "pb1-c7", "name": "Chapter 7", "wordIds": ["w201", "w202", "w203", "w204", "w205", "w206", "w207"], "quizIds": ["q_w201", "q_w202", "q_w203", "q_w204", "q_w205", "q_w206", "q_w207"] },
+    { "id": "pb1-c9", "name": "Chapter 9", "wordIds": ["w208", "w209", "w210", "w211", "w212"], "quizIds": ["q_w208", "q_w209", "q_w210", "q_w211", "q_w212"] },
+    { "id": "pb1-c11", "name": "Chapter 11", "wordIds": ["w213", "w214", "w215"], "quizIds": ["q_w213", "q_w214", "q_w215"] },
+    { "id": "pb1-c12", "name": "Chapter 12", "wordIds": ["w216", "w217", "w218"], "quizIds": ["q_w216", "q_w217", "q_w218"] },
+    { "id": "pb1-c13", "name": "Chapter 13", "wordIds": ["w219", "w220"], "quizIds": ["q_w219", "q_w220"] },
+    { "id": "pb1-c14", "name": "Chapter 14", "wordIds": ["w221"], "quizIds": ["q_w221"] },
+    { "id": "pb1-c15", "name": "Chapter 15", "wordIds": ["w222", "w223", "w224"], "quizIds": ["q_w222", "q_w223", "q_w224"] }
     ]
   }
 ]
