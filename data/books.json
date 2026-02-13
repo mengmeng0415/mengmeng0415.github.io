@@ -58,12 +58,29 @@
     { "id": "RAZ(F)-B27", "name": "Weird White House Pets", "wordIds": ["w141"], "quizIds": ["q_w141"] },
     { "id": "RAZ(F)-B28", "name": "Animal Dads", "wordIds": ["w142", "w143", "w144", "w145", "w146"], "quizIds": ["q_w142", "q_w143", "q_w144", "q_w145", "q_w146"] },
     { "id": "RAZ(F)-B29", "name": "Are You From Brazil", "wordIds": ["w147", "w148", "w149", "w150"], "quizIds": ["q_w147", "q_w148", "q_w149", "q_w150"] },
-    { "id": "RAZ(F)-B29", "name": "Glassblowing", "wordIds": ["w151", "w152", "w153", "w154"], "quizIds": ["q_w151", "q_w152", "q_w153", "q_w154"] },
-    { "id": "RAZ(F)-B30", "name": "On the Moon", "wordIds": ["w155", "w156"], "quizIds": ["q_w155", "q_w156"] },
-    { "id": "RAZ(F)-B31", "name": "Piñatas Are Fun!", "wordIds": ["w157", "w158"], "quizIds": ["q_w157", "q_w158"] },
-    { "id": "RAZ(F)-B32", "name": "The Sunflower Hut", "wordIds": ["w159", "w160"], "quizIds": ["q_w159", "q_w160"] },
-    { "id": "RAZ(F)-B33", "name": "The Tortoise and the Hare", "wordIds": ["w161", "w162"], "quizIds": ["q_w161", "q_w162"] },
-    { "id": "RAZ(F)-B35", "name": "Using Less Energy", "wordIds": ["w163"], "quizIds": ["q_w163"] }
+    { "id": "RAZ(F)-B30", "name": "Glassblowing", "wordIds": ["w151", "w152", "w153", "w154"], "quizIds": ["q_w151", "q_w152", "q_w153", "q_w154"] },
+    { "id": "RAZ(F)-B31", "name": "On the Moon", "wordIds": ["w155", "w156"], "quizIds": ["q_w155", "q_w156"] },
+    { "id": "RAZ(F)-B32", "name": "Piñatas Are Fun!", "wordIds": ["w157", "w158"], "quizIds": ["q_w157", "q_w158"] },
+    { "id": "RAZ(F)-B33", "name": "The Sunflower Hut", "wordIds": ["w159", "w160"], "quizIds": ["q_w159", "q_w160"] },
+    { "id": "RAZ(F)-B34", "name": "The Tortoise and the Hare", "wordIds": ["w161", "w162"], "quizIds": ["q_w161", "q_w162"] },
+    { "id": "RAZ(F)-B35", "name": "Using Less Energy", "wordIds": ["w163"], "quizIds": ["q_w163"] },
+    { "id": "RAZ(F)-B36", "name": "Battery Powers", "wordIds": ["w225", "w226", "w227"], "quizIds": ["q_w225", "q_w226", "q_w227"] },
+    { "id": "RAZ(F)-B37", "name": "Color Color Wheel Colors", "wordIds": ["w228", "w229", "w230", "w231", "w232", "w233", "w234"], "quizIds": ["q_w228", "q_w229", "q_w230", "q_w231", "q_w232", "q_w233", "q_w234"] },
+    { "id": "RAZ(F)-B38", "name": "Stella Storyteller", "wordIds": ["w235"], "quizIds": ["q_w235"] },
+    { "id": "RAZ(F)-B39", "name": "Are You Okay", "wordIds": ["w236"], "quizIds": ["q_w236"] },
+    { "id": "RAZ(F)-B40", "name": "Bake Sale", "wordIds": ["w237", "w238", "w239", "w240"], "quizIds": ["q_w237", "q_w238", "q_w239", "q_w240"] },
+    { "id": "RAZ(F)-B41", "name": "Jobs for James", "wordIds": ["w241"], "quizIds": ["q_w241"] },
+    { "id": "RAZ(F)-B42", "name": "Some Birds Go", "wordIds": ["w242", "w243", "w244", "w245", "w246", "w247", "w248", "w249"], "quizIds": ["q_w242", "q_w243", "q_w244", "q_w245", "q_w246", "q_w247", "q_w248", "q_w249"] },
+    { "id": "RAZ(F)-B43", "name": "The Giant Turnip", "wordIds": ["w250", "w251", "w252"], "quizIds": ["q_w250", "q_w251", "q_w252"] },
+    { "id": "RAZ(F)-B44", "name": "Trucking", "wordIds": ["w253", "w254", "w255"], "quizIds": ["q_w253", "q_w254", "q_w255"] },
+    { "id": "RAZ(F)-B45", "name": "Ramadan Is Here", "wordIds": ["w256", "w257", "w258", "w259", "w260", "w261", "w262"], "quizIds": ["q_w256", "q_w257", "q_w258", "q_w259", "q_w260", "q_w261", "q_w262"] },
+    { "id": "RAZ(F)-B46", "name": "Seashells", "wordIds": ["w263", "w264", "w265", "w266", "w267", "w268", "w269"], "quizIds": ["q_w263", "q_w264", "q_w265", "q_w266", "q_w267", "q_w268", "q_w269"] },
+    { "id": "RAZ(F)-B47", "name": "At the Watering Hole", "wordIds": ["w270", "w271", "w272", "w273", "w274", "w275", "w276"], "quizIds": ["q_w270", "q_w271", "q_w272", "q_w273", "q_w274", "q_w275", "q_w276"] },
+    { "id": "RAZ(F)-B48", "name": "A Look at Fossils", "wordIds": ["w277", "w278", "w279", "w280"], "quizIds": ["q_w277", "q_w278", "q_w279", "q_w280"] },
+    { "id": "RAZ(F)-B49", "name": "At the Airport", "wordIds": ["w281", "w282", "w283", "w284", "w285"], "quizIds": ["q_w281", "q_w282", "q_w283", "q_w284", "q_w285"] },
+    { "id": "RAZ(F)-B49", "name": "Are You From India", "wordIds": ["w286", "w287", "w288", "w289", "w290", "w291", "w292", "w293", "w294", "w295"], "quizIds": ["q_w286", "q_w287", "q_w288", "q_w289", "q_w290", "q_w291", "q_w292", "q_w293", "q_w294", "q_w295"] },
+    { "id": "RAZ(F)-B50", "name": "Hatching Eggs", "wordIds": ["w296"], "quizIds": ["q_w296"] },
+    { "id": "RAZ(F)-B51", "name": "The Bald Eagle", "wordIds": ["w297", "w298", "w299", "w300", "w301", "w302", "w303", "w304", "w305"], "quizIds": ["q_w297", "q_w298", "q_w299", "q_w300", "q_w301", "q_w302", "q_w303", "q_w304", "q_w305"] }
     ]
   },
    {
@@ -86,6 +103,7 @@
     { "id": "pb1-c13", "name": "Chapter 13", "wordIds": ["w219", "w220"], "quizIds": ["q_w219", "q_w220"] },
     { "id": "pb1-c14", "name": "Chapter 14", "wordIds": ["w221"], "quizIds": ["q_w221"] },
     { "id": "pb1-c15", "name": "Chapter 15", "wordIds": ["w222", "w223", "w224"], "quizIds": ["q_w222", "q_w223", "q_w224"] }
+    
     ]
   }
 ]

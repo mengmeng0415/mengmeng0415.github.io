@@ -1447,7 +1447,696 @@
 "question": "The duchess was ______ to find out the secret hidden in the princess’s castle.",
 "options": ["determined", "gallop", "backflip", "scepter"],
 "answer": 0
+},
+"q_w208": {
+"type": "choice_text",
+"wordIds": ["w208"],
+"question": "The duchess wanted to ______ under the table to find the princess’s secret.",
+"options": ["peek", "wad", "ballroom", "inspect"],
+"answer": 2
+},
+"q_w209": {
+"type": "choice_text",
+"wordIds": ["w209"],
+"question": "She crumpled the paper into a ______ and threw it away.",
+"options": ["ballroom", "wad", "coal-black", "plop"],
+"answer": 3
+},
+"q_w210": {
+"type": "choice_text",
+"wordIds": ["w210"],
+"question": "The king and queen held a big party in the huge ______.",
+"options": ["ballroom", "toenail", "clipping", "whistle"],
+"answer": 0
+},
+"q_w211": {
+"type": "choice_text",
+"wordIds": ["w211"],
+"question": "The duchess stopped to ______ the cookies one by one carefully.",
+"options": ["disguise", "suspect", "inspect", "fashion"],
+"answer": 2
+},
+"q_w212": {
+"type": "choice_text",
+"wordIds": ["w212"],
+"question": "She found a pair of ______ stockings under the door.",
+"options": ["coal-black", "filthy", "cheeky", "tweet"],
+"answer": 1
+},
+"q_w213": {
+"type": "choice_text",
+"wordIds": ["w213"],
+"question": "The big monster ______ down into the soft ground suddenly.",
+"options": ["whistled", "plopped", "fashioned", "avenged"],
+"answer": 0
+},
+"q_w214": {
+"type": "choice_text",
+"wordIds": ["w214"],
+"question": "It is important to keep your fingers and ______ clean and tidy.",
+"options": ["toenail", "clipping", "ballroom", "peek"],
+"answer": 3
+},
+"q_w215": {
+"type": "choice_text",
+"wordIds": ["w215"],
+"question": "The monster found a pile of ______ on the ground and ate them.",
+"options": ["ballrooms", "clippings", "whistles", "disguises"],
+"answer": 1
+},
+"q_w216": {
+"type": "choice_text",
+"wordIds": ["w216"],
+"question": "The boy was happy and began to ______ a happy tune.",
+"options": ["whistle", "suspect", "tour", "filthy"],
+"answer": 0
+},
+"q_w217": {
+"type": "choice_text",
+"wordIds": ["w217"],
+"question": "The hero wore a ______ so that no one could recognize him.",
+"options": ["disguise", "fashion", "avenge", "cheeky"],
+"answer": 0
+},
+"q_w218": {
+"type": "choice_text",
+"wordIds": ["w218"],
+"question": "No one would ______ that the nice princess is a brave hero.",
+"options": ["suspect", "fashion", "avenge", "tour"],
+"answer": 0
+},
+"q_w219": {
+"type": "choice_text",
+"wordIds": ["w219"],
+"question": "He can ______ a small house out of boxes and paper.",
+"options": ["fashion", "avenge", "cheeky", "tweet"],
+"answer": 0
+},
+"q_w220": {
+"type": "choice_text",
+"wordIds": ["w220"],
+"question": "The brave hero wanted to ______ his friends from the bad monster.",
+"options": ["avenge", "tweet", "tour", "filthy"],
+"answer": 0
+},
+"q_w221": {
+"type": "choice_text",
+"wordIds": ["w221"],
+"question": "That ______ little monkey took the food and ran away quickly.",
+"options": ["cheeky", "tweet", "tour", "filthy"],
+"answer": 0
+},
+"q_w222": {
+"type": "choice_text",
+"wordIds": ["w222"],
+"question": "Listen! The birds ______ loudly in the tree outside the window.",
+"options": ["tweet", "tour", "filthy", "peek"],
+"answer": 0
+},
+"q_w223": {
+"type": "choice_text",
+"wordIds": ["w223"],
+"question": "The duchess said: 'I ______ your castle while you were out.'",
+"options": ["toured", "filthied", "peeked", "wadded"],
+"answer": 0
+},
+"q_w224": {
+"type": "choice_text",
+"wordIds": ["w224"],
+"question": "His shoes were ______ with mud after playing outside.",
+"options": ["filthy", "coal-black", "cheeky", "tweet"],
+"answer": 0
+},
+"q_w225": {
+"type": "choice_text",
+"wordIds": ["w225"],
+"question": "Batteries can ______ electricity for later use to power toys.",
+"options": ["release", "store", "rod", "primary"],
+"answer": 1
+},
+"q_w226": {
+"type": "choice_text",
+"wordIds": ["w226"],
+"question": "When you turn on the light, batteries ______ energy slowly.",
+"options": ["secondary", "warm color", "release", "shade"],
+"answer": 2
+},
+"q_w227": {
+"type": "choice_text",
+"wordIds": ["w227"],
+"question": "A battery has a thin metal ______ inside as its important part.",
+"options": ["rod", "tint", "complementary", "playdate"],
+"answer": 0
+},
+"q_w228": {
+"type": "choice_text",
+"wordIds": ["w228"],
+"question": "Red, yellow and blue are the ______ colors that make other colors.",
+"options": ["trip", "upset", "primary", "treat"],
+"answer": 2
+},
+"q_w229": {
+"type": "choice_text",
+"wordIds": ["w229"],
+"question": "Orange, green and purple are ______ colors mixed by two primary colors.",
+"options": ["applesauce", "tart", "secondary", "store"],
+"answer": 2
+},
+"q_w230": {
+"type": "choice_text",
+"wordIds": ["w230"],
+"question": "Red and yellow are ______ that make people feel warm and cozy.",
+"options": ["cool color", "warm color", "shade", "tint"],
+"answer": 1
+},
+"q_w231": {
+"type": "choice_text",
+"wordIds": ["w231"],
+"question": "Blue and green are ______ that help people feel calm and relaxed.",
+"options": ["complementary", "playdate", "cool color", "trip"],
+"answer": 2
+},
+"q_w232": {
+"type": "choice_text",
+"wordIds": ["w232"],
+"question": "Adding black to a color can make a darker ______ of it.",
+"options": ["upset", "treat", "shade", "applesauce"],
+"answer": 2
+},
+"q_w233": {
+"type": "choice_text",
+"wordIds": ["w233"],
+"question": "Adding white to a color will create a light and soft ______.",
+"options": ["tart", "tint", "release", "rod"],
+"answer": 1
+},
+"q_w234": {
+"type": "choice_text",
+"wordIds": ["w234"],
+"question": "Red and green are ______ colors that look bright and nice together.",
+"options": ["primary", "warm color", "complementary", "playdate"],
+"answer": 2
+},
+"q_w235": {
+"type": "choice_text",
+"wordIds": ["w235"],
+"question": "The little girl has a ______ with her friend to play at the park.",
+"options": ["trip", "upset", "treat", "playdate"],
+"answer": 3
+},
+"q_w236": {
+"type": "choice_text",
+"wordIds": ["w236"],
+"question": "Be careful, or you will ______ over the stone and fall down.",
+"options": ["store", "trip", "release", "shade"],
+"answer": 1
+},
+"q_w237": {
+"type": "choice_text",
+"wordIds": ["w237"],
+"question": "He looks ______ because he lost his favorite toy this morning.",
+"options": ["tart", "applesauce", "upset", "secondary"],
+"answer": 2
+},
+"q_w238": {
+"type": "choice_text",
+"wordIds": ["w238"],
+"question": "Ice cream and cookies are yummy ______ for kids on special days.",
+"options": ["treat", "rod", "primary", "cool color"],
+"answer": 0
+},
+"q_w239": {
+"type": "choice_text",
+"wordIds": ["w239"],
+"question": "My mom made sweet ______ with fresh apples for breakfast.",
+"options": ["tint", "applesauce", "complementary", "trip"],
+"answer": 1
+},
+"q_w240": {
+"type": "choice_text",
+"wordIds": ["w240"],
+"question": "We bought some small apple ______ from the bakery at the sale.",
+"options": ["warm color", "shade", "tart", "release"],
+"answer": 2
+},
+"q_w241": {
+"type": "choice_text",
+"wordIds": ["w241"],
+"question": "James can ______ money by doing chores for his family.",
+"options": ["earn", "area", "year-round", "eastern"],
+"answer": 0
+},
+"q_w242": {
+"type": "choice_text",
+"wordIds": ["w242"],
+"question": "Many birds fly to a warm ______ to spend the winter.",
+"options": ["in order to", "survive", "area", "flock"],
+"answer": 2
+},
+"q_w243": {
+"type": "choice_text",
+"wordIds": ["w243"],
+"question": "Some birds live in a ______ area and do not migrate.",
+"options": ["hummingbird", "year-round", "swallow", "turnip"],
+"answer": 1
+},
+"q_w244": {
+"type": "choice_text",
+"wordIds": ["w244"],
+"question": "The ______ bluebird is a small beautiful bird in North America.",
+"options": ["sprout", "eastern", "budge", "earn"],
+"answer": 1
+},
+"q_w245": {
+"type": "choice_text",
+"wordIds": ["w245"],
+"question": "Birds fly long distances ______ find enough food and warm places.",
+"options": ["in order to", "survive", "flock", "hummingbird"],
+"answer": 0
+},
+"q_w246": {
+"type": "choice_text",
+"wordIds": ["w246"],
+"question": "Animals must find food and safe places to ______ in winter.",
+"options": ["turnip", "sprout", "survive", "area"],
+"answer": 2
+},
+"q_w247": {
+"type": "choice_text",
+"wordIds": ["w247"],
+"question": "A ______ of geese flies in a V shape when they migrate.",
+"options": ["flock", "swallow", "budge", "year-round"],
+"answer": 0
+},
+"q_w248": {
+"type": "choice_text",
+"wordIds": ["w248"],
+"question": "The ______ is a very small colorful bird that can hover in the air.",
+"options": ["eastern", "hummingbird", "turnip", "sprout"],
+"answer": 1
+},
+"q_w249": {
+"type": "choice_text",
+"wordIds": ["w249"],
+"question": "We can see a ______ flying fast and building nests under the roof in spring.",
+"options": ["swallow", "budge", "earn", "survive"],
+"answer": 0
+},
+"q_w250": {
+"type": "choice_text",
+"wordIds": ["w250"],
+"question": "Grandpa planted a seed and grew a giant ______ in his garden.",
+"options": ["turnip", "sprout", "flock", "area"],
+"answer": 0
+},
+"q_w251": {
+"type": "choice_text",
+"wordIds": ["w251"],
+"question": "The seeds will ______ and grow into small plants after a few days.",
+"options": ["budge", "sprout", "earn", "year-round"],
+"answer": 1
+},
+"q_w252": {
+"type": "choice_text",
+"wordIds": ["w252"],
+"question": "The giant turnip was so heavy that it did not ______ at all.",
+"options": ["survive", "flock", "budge", "hummingbird"],
+"answer": 2
+},
+"q_w253": {
+"type": "choice_text",
+"wordIds": ["w253"],
+"question": "A ______ is often pulled by a car to carry heavy or big things.",
+"options": ["delivery", "flatbed", "trailer", "Ramadan"],
+"answer": 2
+},
+"q_w254": {
+"type": "choice_text",
+"wordIds": ["w254"],
+"question": "The ______ of my online order came early this morning.",
+"options": ["sunset", "delivery", "sunrise", "poem"],
+"answer": 1
+},
+"q_w255": {
+"type": "choice_text",
+"wordIds": ["w255"],
+"question": "A ______ truck is good for carrying large furniture and machines.",
+"options": ["flatbed", "award", "reward", "receive"],
+"answer": 0
+},
+"q_w256": {
+"type": "choice_text",
+"wordIds": ["w256"],
+"question": "______ is a special and important month for Muslim people.",
+"options": ["Sunrise", "Ramadan", "Sunset", "Poem"],
+"answer": 1
+},
+"q_w257": {
+"type": "choice_text",
+"wordIds": ["w257"],
+"question": "During Ramadan, people can have meals together after ______.",
+"options": ["award", "sunrise", "sunset", "poem"],
+"answer": 2
+},
+"q_w258": {
+"type": "choice_text",
+"wordIds": ["w258"],
+"question": "We need to finish eating before ______ during the holy month.",
+"options": ["sunset", "receive", "sunrise", "reward"],
+"answer": 2
+},
+"q_w259": {
+"type": "choice_text",
+"wordIds": ["w259"],
+"question": "The writer used beautiful words to make a wonderful ______.",
+"options": ["trailer", "poem", "delivery", "flatbed"],
+"answer": 1
+},
+"q_w260": {
+"type": "choice_text",
+"wordIds": ["w260"],
+"question": "He did a great job and got an ______ for his wonderful work.",
+"options": ["reward", "receive", "award", "trailer"],
+"answer": 2
+},
+"q_w261": {
+"type": "choice_text",
+"wordIds": ["w261"],
+"question": "She got a small ______ as a thank-you for helping the old man.",
+"options": ["receive", "award", "trailer", "reward"],
+"answer": 3
+},
+"q_w262": {
+"type": "choice_text",
+"wordIds": ["w262"],
+"question": "I will ______ a nice present from my uncle during the holiday.",
+"options": ["reward", "receive", "award", "delivery"],
+"answer": 1
+},
+"q_w263": {
+"type": "choice_text",
+"wordIds": ["w263"],
+"question": "A ______ is a sea animal with a hard shell and big claws.",
+"options": ["lobster", "cowrie", "scallop", "conch"],
+"answer": 0
+},
+"q_w264": {
+"type": "choice_text",
+"wordIds": ["w264"],
+"question": "A ______ has a small, smooth, spotted shell.",
+"options": ["scallop", "cowrie", "oyster", "nautilus"],
+"answer": 1
+},
+"q_w265": {
+"type": "choice_text",
+"wordIds": ["w265"],
+"question": "A ______ is a mollusk with two fan-shaped shells.",
+"options": ["conch", "lobster", "scallop", "mollusk"],
+"answer": 2
+},
+"q_w266": {
+"type": "choice_text",
+"wordIds": ["w266"],
+"question": "A ______ is a large sea snail with a spiral shell.",
+"options": ["oyster", "nautilus", "cowrie", "conch"],
+"answer": 3
+},
+"q_w267": {
+"type": "choice_text",
+"wordIds": ["w267"],
+"question": "An ______ can make pearls inside its bumpy shell.",
+"options": ["conch", "oyster", "lobster", "scallop"],
+"answer": 1
+},
+"q_w268": {
+"type": "choice_text",
+"wordIds": ["w268"],
+"question": "A ______ is a soft-bodied animal that often has a hard shell.",
+"options": ["nautilus", "mollusk", "rhino", "stork"],
+"answer": 1
+},
+"q_w269": {
+"type": "choice_text",
+"wordIds": ["w269"],
+"question": "A ______ is a rare deep-sea mollusk with a striped spiral shell.",
+"options": ["cowrie", "scallop", "nautilus", "conch"],
+"answer": 2
+},
+"q_w270": {
+"type": "choice_text",
+"wordIds": ["w270"],
+"question": "The ______ savanna is home to many wild animals.",
+"options": ["savanna", "rhino", "African", "leopard"],
+"answer": 2
+},
+"q_w271": {
+"type": "choice_text",
+"wordIds": ["w271"],
+"question": "A ______ is a large grassy area with few trees in Africa.",
+"options": ["savanna", "rhino", "flock", "hyena"],
+"answer": 0
+},
+"q_w272": {
+"type": "choice_text",
+"wordIds": ["w272"],
+"question": "A ______ is a big heavy animal with thick skin and a horn on its nose.",
+"options": ["leopard", "rhino", "stork", "hyena"],
+"answer": 1
+},
+"q_w273": {
+"type": "choice_text",
+"wordIds": ["w273"],
+"question": "A ______ of birds flies together to the watering hole.",
+"options": ["stork", "leopard", "flock", "hyena"],
+"answer": 2
+},
+"q_w274": {
+"type": "choice_text",
+"wordIds": ["w274"],
+"question": "A ______ is a big bird with long legs and a long beak.",
+"options": ["rhino", "stork", "leopard", "hyena"],
+"answer": 1
+},
+"q_w275": {
+"type": "choice_text",
+"wordIds": ["w275"],
+"question": "A ______ is a wild cat with yellow fur and black spots.",
+"options": ["hyena", "rhino", "leopard", "stork"],
+"answer": 2
+},
+"q_w276": {
+"type": "choice_text",
+"wordIds": ["w276"],
+"question": "A ______ is an African animal that often makes a laughing sound.",
+"options": ["leopard", "hyena", "rhino", "stork"],
+"answer": 1
+},
+"q_w277": {
+"type": "choice_text",
+"wordIds": ["w277"],
+"question": "A ______ is a thin sheet or level of something.",
+"options": ["layer", "uncover", "detail", "poop"],
+"answer": 0
+},
+"q_w278": {
+"type": "choice_text",
+"wordIds": ["w278"],
+"question": "To ______ means to find or uncover something hidden.",
+"options": ["detail", "traveler", "flight", "uncover"],
+"answer": 3
+},
+"q_w279": {
+"type": "choice_text",
+"wordIds": ["w279"],
+"question": "A small part or fact is called a ______.",
+"options": ["poop", "layer", "detail", "airline"],
+"answer": 2
+},
+"q_w280": {
+"type": "choice_text",
+"wordIds": ["w280"],
+"question": "Animal waste is also called ______.",
+"options": ["detail", "flight", "layer", "poop"],
+"answer": 3
+},
+"q_w281": {
+"type": "choice_text",
+"wordIds": ["w281"],
+"question": "A person who travels is a ______.",
+"options": ["traveler", "airline", "hand over", "detail"],
+"answer": 0
+},
+"q_w282": {
+"type": "choice_text",
+"wordIds": ["w282"],
+"question": "A company that flies planes is an ______.",
+"options": ["flight", "airline", "traveler", "layer"],
+"answer": 1
+},
+"q_w283": {
+"type": "choice_text",
+"wordIds": ["w283"],
+"question": "To give something to someone is to ______ it.",
+"options": ["uncover", "flight", "hand over", "poop"],
+"answer": 2
+},
+"q_w284": {
+"type": "choice_text",
+"wordIds": ["w284"],
+"question": "A moving floor at the airport is a ______.",
+"options": ["hand over", "moving sidewalk", "airline", "detail"],
+"answer": 1
+},
+"q_w285": {
+"type": "choice_text",
+"wordIds": ["w285"],
+"question": "A trip by plane is called a ______.",
+"options": ["flight", "layer", "poop", "uncover"],
+"answer": 0
+},
+"q_w286": {
+"type": "choice_text",
+"wordIds": ["w286"],
+"question": "A ______ is a colorful bird with a long fan-like tail.",
+"options": ["peacock", "cobra", "yak", "gharial"],
+"answer": 0
+},
+"q_w287": {
+"type": "choice_text",
+"wordIds": ["w287"],
+"question": "A ______ is a dark-faced monkey that leaps in trees.",
+"options": ["cobra", "langur monkey", "mongoose", "tiger"],
+"answer": 1
+},
+"q_w288": {
+"type": "choice_text",
+"wordIds": ["w288"],
+"question": "A ______ is a poisonous snake with a hood-like head.",
+"options": ["gharial", "peacock", "cobra", "mongoose"],
+"answer": 2
+},
+"q_w289": {
+"type": "choice_text",
+"wordIds": ["w289"],
+"question": "The ______ is a large orange and black striped cat from India.",
+"options": ["cobra", "yak", "gharial","Bengal tiger"],
+"answer": 3
+},
+"q_w290": {
+"type": "choice_text",
+"wordIds": ["w290"],
+"question": "A ______ is a river reptile with a long thin snout.",
+"options": ["mongoose", "gharial", "peacock", "cobra"],
+"answer": 1
+},
+"q_w291": {
+"type": "choice_text",
+"wordIds": ["w291"],
+"question": "A ______ is a small brave animal that hunts snakes.",
+"options": ["yak", "mongoose", "gharial", "langur monkey"],
+"answer": 1
+},
+"q_w292": {
+"type": "choice_text",
+"wordIds": ["w292"],
+"question": "If you are not afraid of danger, you are .",
+"options": ["shaggy", "brave", "protected", "silent"],
+"answer": 1
+},
+"q_w293": {
+"type": "choice_text",
+"wordIds": ["w293"],
+"question": "A ______ is a big mountain animal with thick shaggy fur.",
+"options": ["peacock", "yak", "cobra", "mongoose"],
+"answer": 1
+},
+"q_w294": {
+"type": "choice_text",
+"wordIds": ["w294"],
+"question": " means having long, thick, messy fur or hair.",
+"options": ["Brave", "Protected", "Shaggy", "Colorful"],
+"answer": 2
+},
+"q_w295": {
+"type": "choice_text",
+"wordIds": ["w295"],
+"question": "To ______ means to keep someone or something safe from harm.",
+"options": ["protect", "hunt", "leap", "spread"],
+"answer": 0
+},
+"q_w296": {
+"type": "choice_text",
+"wordIds": ["w296"],
+"question": "An ______ keeps eggs warm so they can hatch.",
+"options": ["memorial", "city hall", "incubator", "state"],
+"answer": 2
+},
+"q_w297": {
+"type": "choice_text",
+"wordIds": ["w297"],
+"question": "______ means freedom and being able to do what you want.",
+"options": ["Memorial", "State", "Incubator", "Liberty"],
+"answer": 3
+},
+"q_w298": {
+"type": "choice_text",
+"wordIds": ["w298"],
+"question": "A ______ is a building to remember a person or event.",
+"options": ["liberty", "incubator", "city hall", "memorial"],
+"answer": 3
+},
+"q_w299": {
+"type": "choice_text",
+"wordIds": ["w299"],
+"question": "To ______ means to represent or symbolize something.",
+"options": ["unite", "stand for", "protect", "hatch"],
+"answer": 1
+},
+"q_w300": {
+"type": "choice_text",
+"wordIds": ["w300"],
+"question": "A ______ eagle has white feathers on its head.",
+"options": ["national", "free", "brave", "bald"],
+"answer": 3
+},
+"q_w301": {
+"type": "choice_text",
+"wordIds": ["w301"],
+"question": "______ is the right to live and act as you wish.",
+"options": ["Memorial", "Freedom", "State", "Incubator"],
+"answer": 1
+},
+"q_w302": {
+"type": "choice_text",
+"wordIds": ["w302"],
+"question": "To ______ means to join together as one group.",
+"options": ["memorial", "stand for", "protect", "unite"],
+"answer": 3
+},
+"q_w303": {
+"type": "choice_text",
+"wordIds": ["w303"],
+"question": "A ______ is a part of a country with its own government.",
+"options": ["liberty", "memorial", "city hall", "state"],
+"answer": 3
+},
+"q_w304": {
+"type": "choice_text",
+"wordIds": ["w304"],
+"question": "A ______ is where a city’s government works.",
+"options": ["state", "incubator", "memorial", "city hall"],
+"answer": 3
+},
+"q_w305": {
+"type": "choice_text",
+"wordIds": ["w305"],
+"question": "______ means relating to a whole country.",
+"options": ["Local", "Brave", "National", "Shaggy"],
+"answer": 2
 }
+
+
+
 
 
 

@@ -3136,8 +3136,852 @@
     "[TITLE] 额外例句 [/TITLE][EX]The bakery on the street sells delicious strawberry tarts every weekend.|街上的面包店每个周末都卖美味的草莓馅饼。[/EX][EX]This grape is too tart for my little sister— she likes sweet fruits.|这颗葡萄对我妹妹来说太酸了，她喜欢甜水果。[/EX][EX]His tart response made the conversation awkward.|他尖锐的回应让谈话变得很尴尬。[/EX]",
     "[TITLE] 常见错误 [/TITLE][ERR]tart作“果馅饼”讲时，复数形式为tarts，直接加s，不要写成tartes或tartts。[/ERR][ERR]tart作形容词表示“酸的”时，比较级是tarter，最高级是tartest，不要写成more tart/most tart（非正式可使用，规范形式为tarter/tartest）。[/ERR][ERR]不要混淆tart和pie，tart通常是小型、薄底的馅饼，pie是大型、厚底的派，二者大小和饼底厚度有区别，不可完全通用。[/ERR]"
   ]
+},
+"w241": {
+  "word": "earn",
+  "images": {
+    "scene": ["infopic01/earn.webp"],
+    "card": ["wordpic01/earn.webp"]
+  },
+  "richDetail": [
+    "[TITLE] 解释 [/TITLE][DEF][EN]To get money by working (used in Jobs for James Level F, referring to James getting money by doing chores)[/EN][CN]赚得；挣得（通过工作获得金钱，出自《Jobs for James》Level F，指詹姆斯通过做家务赚钱）[/CN][POS]v.[/POS][PH]/ɜːn/（英美）[/PH][DU]James earned money by pulling weeds, cleaning the garage, and raking leaves.|(原文衍生例句) 詹姆斯通过拔草、打扫车库和耙树叶赚钱。[/DU][DU]She earns $10 an hour by helping her neighbor walk the dog.|她帮邻居遛狗，每小时赚10美元。[/DU][/DEF][IMG]infopic01/earn.webp[/IMG][DEF][EN]To gain or deserve something because of your actions or qualities[/EN][CN]赢得；获得（因自身行为或品质而获得某物）[/CN][POS]v.[/POS][DU]He earned the respect of his classmates by being honest and helpful.|他因诚实乐于助人而赢得了同学们的尊重。[/DU][DU]The team earned a chance to compete in the final by winning all their games.|这支队伍赢了所有比赛，赢得了晋级决赛的机会。[/DU][/DEF]",
+    "[TITLE] 常见用法 [/TITLE][COLL][H]earn money|赚钱[POS]v.[/POS][/H][EX]James earned enough money to buy a new hamster cage by doing chores for his family and neighbors.|詹姆斯通过给家人和邻居做家务，赚够了买新仓鼠笼的钱。[/EX][C]earn a living|谋生[/C][C]earn wages|挣工资[/C][/COLL][COLL][H]earn respect|赢得尊重[POS]v.[/POS][/H][EX]The teacher earns the students' respect by treating everyone fairly.|这位老师因公平对待每个人而赢得学生们的尊重。[/EX][C]earn praise|赢得赞扬[/C][C]earn trust|获得信任[/C][/COLL][COLL][H]earn sth by doing sth|通过做某事获得某物[POS]v.[/POS][/H][EX]She earned a scholarship by studying hard every day.|她通过每天努力学习获得了奖学金。[/EX][C]earn a reward by helping others|通过帮助他人获得奖励[/C][/COLL]",
+    "[TITLE] 额外例句 [/TITLE][EX]The restaurant earns a lot of money on weekends because many people come to eat.|这家餐厅周末赚了很多钱，因为有很多人来吃饭。[/EX][EX]His hard work earned him a promotion at work.|他的努力工作让他在工作中得到了晋升。[/EX][EX]You can earn points by shopping at this store, and exchange them for gifts.|你在这家店购物可以积分，然后用积分兑换礼物。[/EX]",
+    "[TITLE] 常见错误 [/TITLE][ERR]earn的过去式和过去分词为earned，直接加ed，不要写成earnt（英式口语中可使用，规范写法为earned）。[/ERR][ERR]earn表示“赚钱”时，是及物动词，直接接宾语，无需加介词for，错误：earn money for working，正确：earn money by working。[/ERR][ERR]不要混淆earn和win，earn侧重“通过努力获得（金钱、尊重等）”，win侧重“赢得比赛、奖品等”，错误：earn the game，正确：win the game。[/ERR]"
+  ]
+},
+"w242": {
+  "word": "area",
+  "images": {
+    "scene": ["infopic01/area.webp"],
+    "card": ["wordpic01/area.webp"]
+  },
+  "richDetail": [
+    "[TITLE] 解释 [/TITLE][DEF][EN]A part of a place or country (used in Some Birds Go Level F, referring to places where birds live in different seasons)[/EN][CN]区域；地区（地方或国家的一部分，出自《Some Birds Go》Level F，指鸟类不同季节栖息的区域）[/CN][POS]n.[/POS][PH]/ˈeəriə/（英式）/ˈeriə/（美式）[/PH][DU]Bluebirds have summer area, winter area, and year-round area.|(原文衍生例句) 蓝鸟有夏季栖息地、冬季栖息地和全年栖息地。[/DU][DU]We visited a rural area in the north of the country during the holiday.|我们假期去了这个国家北部的一个农村地区。[/DU][/DEF][IMG]infopic01/area.webp[/IMG][DEF][EN]A particular subject or field of activity; the size of a surface[/EN][CN]领域；范围；面积（特定的主题或活动领域；表面的大小）[/CN][POS]n.[/POS][DU]She is an expert in the area of computer science.|她是计算机科学领域的专家。[/DU][DU]The area of this room is about 20 square meters.|这个房间的面积大约是20平方米。[/DU][/DEF]",
+    "[TITLE] 常见用法 [/TITLE][COLL][H]summer area|夏季区域[POS]n.[/POS][/H][EX]Many birds fly to their summer area to breed when the weather gets warm.|天气变暖时，许多鸟类飞到它们的夏季栖息地繁殖。[/EX][C]winter area|冬季区域[/C][C]year-round area|全年区域[/C][/COLL][COLL][H]rural area|农村地区[POS]n.[/POS][/H][EX]There are fewer shops in rural areas than in cities.|农村地区的商店比城市里少。[/EX][C]urban area|城市地区[/C][C]coastal area|沿海地区[/C][/COLL][COLL][H]area of study|研究领域[POS]n.[/POS][/H][EX]His area of study is environmental protection, and he has published many papers.|他的研究领域是环境保护，发表了很多论文。[/EX][C]area of interest|兴趣领域[/C][C]area of work|工作范围[/C][/COLL]",
+    "[TITLE] 额外例句 [/TITLE][EX]The park has a special area for children to play, with many toys and slides.|这个公园有一个专门供孩子们玩耍的区域，有很多玩具和滑梯。[/EX][EX]She is looking for a job in the area of education because she likes working with kids.|她正在教育领域找工作，因为她喜欢和孩子们一起工作。[/EX][EX]The math problem asks us to calculate the area of a circle with a radius of 5 centimeters.|这道数学题要求我们计算半径为5厘米的圆的面积。[/EX]",
+    "[TITLE] 常见错误 [/TITLE][ERR]area是可数名词，复数形式为areas，直接加s，不要写成areaes。[/ERR][ERR]表示“在某个地区”时，常用介词in，错误：at this area，正确：in this area。[/ERR][ERR]不要混淆area和region，area泛指“区域、面积”，region侧重“行政区域、地理区域”，错误：a region of a city，正确：an area of a city（指城市的一部分）。[/ERR]"
+  ]
+},
+"w243": {
+  "word": "year-round",
+  "images": {
+    "scene": ["infopic01/year-round.webp"],
+    "card": ["wordpic01/year-round.webp"]
+  },
+  "richDetail": [
+    "[TITLE] 解释 [/TITLE][DEF][EN]Happening or existing all year long (used in Some Birds Go Level F, referring to areas where birds live all year)[/EN][CN]全年的；终年的（全年发生或存在，出自《Some Birds Go》Level F，指鸟类全年栖息的区域）[/CN][POS]adj./adv.[/POS][PH]/ˌjɪə raʊnd/（英式）/ˌjɪr raʊnd/（美式）[/PH][DU]Eastern bluebirds have a year-round area where they live all year.|(原文衍生例句) 东部蓝鸟有一个全年栖息地，它们全年都住在那里。[/DU][DU]This town has year-round sunshine, so it's a popular tourist destination.|这个小镇全年阳光充足，是热门的旅游目的地。[/DU][/DEF][IMG]infopic01/year-round.webp[/IMG]",
+    "[TITLE] 常见用法 [/TITLE][COLL][H]year-round area|全年区域[POS]adj.[/POS][/H][EX]Some birds don't migrate because they have a safe year-round area with enough food.|有些鸟类不迁徙，因为它们有安全的全年栖息地，食物充足。[/EX][C]year-round weather|全年稳定的天气[/C][C]year-round work|全年性工作[/C][/COLL][COLL][H]all year-round|全年；终年[POS]adv.[/POS][/H][EX]The lake is frozen all year-round, so people can skate on it in winter.|这个湖全年结冰，所以人们冬天可以在上面滑冰。[/EX][C]operate year-round|全年运营[/C][C]stay year-round|全年停留[/C][/COLL][COLL][H]year-round activities|全年活动[POS]adj.[/POS][/H][EX]The community center offers year-round activities for both children and adults.|社区中心为儿童和成人提供全年性的活动。[/EX][C]year-round access|全年可使用[/C][C]year-round supply|全年供应[/C][/COLL]",
+    "[TITLE] 额外例句 [/TITLE][EX]This plant is a year-round bloomer, so you can see flowers on it every month.|这种植物是全年开花的，所以每个月都能看到它开花。[/EX][EX]The hotel is open year-round, welcoming tourists from all over the world.|这家酒店全年营业，接待来自世界各地的游客。[/EX][EX]We need a year-round plan to protect the environment, not just for one season.|我们需要一个全年的环保计划，而不仅仅是一个季节。[/EX]",
+    "[TITLE] 常见错误 [/TITLE][ERR]year-round是合成词，中间需加连字符，不可分开写（错误：year round）或写成一个单词（错误：yearround），规范写法为year-round。[/ERR][ERR]year-round作形容词时，通常放在名词前作定语，不可作表语，错误：The area is year-round.，正确：The area is a year-round habitat.。[/ERR][ERR]发音时注意重音在第一个音节，不要读成/jɪə ˈraʊnd/，正确发音为/ˌjɪə raʊnd/（英式）/ˌjɪr raʊnd/（美式）。[/ERR]"
+  ]
+},
+"w244": {
+  "word": "eastern",
+  "images": {
+    "scene": ["infopic01/eastern.webp"],
+    "card": ["wordpic01/eastern.webp"]
+  },
+  "richDetail": [
+    "[TITLE] 解释 [/TITLE][DEF][EN]Relating to the east part of something (used in Some Birds Go Level F, referring to a type of bluebird)[/EN][CN]东部的；东方的（与某物的东部有关，出自《Some Birds Go》Level F，指一种蓝鸟）[/CN][POS]adj.[/POS][PH]/ˈiːstən/（英美）[/PH][DU]The eastern bluebird has summer, winter, and year-round areas.|(原文衍生例句) 东部蓝鸟有夏季、冬季和全年栖息地。[/DU][DU]We visited an eastern city of China and learned about its history.|我们参观了中国的一个东部城市，了解了它的历史。[/DU][/DEF][IMG]infopic01/eastern.webp[/IMG][DEF][EN]Relating to the East or its people, especially Eastern Europe, Asia, or the Middle East[/EN][CN]东方的；东部国家的（与东方或其人民有关，尤指东欧、亚洲或中东）[/CN][POS]adj.[/POS][DU]Eastern culture has a long history and rich traditions.|东方文化有着悠久的历史和丰富的传统。[/DU][DU]She is interested in eastern cuisine and often cooks Chinese and Japanese food.|她对东方美食感兴趣，经常做中餐和日餐。[/DU][/DEF]",
+    "[TITLE] 常见用法 [/TITLE][COLL][H]eastern bluebird|东部蓝鸟[POS]adj.[/POS][/H][EX]The eastern bluebird is a small, colorful bird that lives in North America.|东部蓝鸟是一种小型彩色鸟类，生活在北美。[/EX][C]eastern part|东部地区[/C][C]eastern coast|东海岸[/C][/COLL][COLL][H]eastern country|东方国家[POS]adj.[/POS][/H][EX]Many eastern countries celebrate Spring Festival with family gatherings.|许多东方国家通过家庭聚会来庆祝春节。[/EX][C]eastern culture|东方文化[/C][C]eastern time|东部时间[/C][/COLL][COLL][H]in the eastern part of|在……的东部[POS]adj.[/POS][/H][EX]There is a large forest in the eastern part of the country, where many animals live.|这个国家的东部有一片大森林，许多动物生活在那里。[/EX][C]eastern region|东部地区[/C][C]eastern hemisphere|东半球[/C][/COLL]",
+    "[TITLE] 额外例句 [/TITLE][EX]The eastern sky turns pink at sunrise, which is a beautiful sight.|日出时东方的天空变成粉红色，景色很美。[/EX][EX]Eastern languages, such as Chinese and Korean, use different writing systems from English.|中文和韩语等东方语言使用与英语不同的书写系统。[/EX][EX]The company has offices in both eastern and western parts of the United States.|这家公司在美国的东部和西部都有办事处。[/EX]",
+    "[TITLE] 常见错误 [/TITLE][ERR]eastern的比较级是more eastern，最高级是most eastern，不可加er/est（错误：easterner）。[/ERR][ERR]表示“在东部”时，常用介词in，错误：on the eastern of the city，正确：in the eastern part of the city。[/ERR][ERR]不要混淆eastern和east，eastern是形容词，修饰名词，east可作名词、形容词或副词，错误：east country，正确：eastern country。[/ERR]"
+  ]
+},
+"w245": {
+  "word": "in order to",
+  "images": {
+    "scene": ["infopic01/in order to.webp"],
+    "card": ["wordpic01/in order to.webp"]
+  },
+  "richDetail": [
+    "[TITLE] 解释 [/TITLE][DEF][EN]Used to say why someone does something or why something happens (used in Some Birds Go Level F, referring to birds migrating to survive)[/EN][CN]为了；以便（用于说明某人做某事或某事发生的原因，出自《Some Birds Go》Level F，指鸟类为了生存而迁徙）[/CN][POS]phrase[/POS][DU]Many birds migrate before winter in order to survive.|(原文例句) 许多鸟类在冬天来临前迁徙以生存。[/DU][DU]She studies hard in order to get good grades in the exam.|她努力学习是为了在考试中取得好成绩。[/DU][/DEF][IMG]infopic01/in order to.webp[/IMG]",
+    "[TITLE] 常见用法 [/TITLE][COLL][H]in order to do sth|为了做某事[POS]phrase[/POS][/H][EX]Birds fly thousands of miles in order to find warm places and enough food.|鸟类飞行数千英里，为了找到温暖的地方和足够的食物。[/EX][C]in order to achieve sth|为了实现某事[/C][C]in order to protect sth|为了保护某物[/C][/COLL][COLL][H]in order to avoid sth|为了避免某事[POS]phrase[/POS][/H][EX]He left early in order to avoid the rush hour traffic.|他早点出发是为了避开高峰时段的交通。[/EX][C]in order to save time|为了节省时间[/C][C]in order to help others|为了帮助他人[/C][/COLL][COLL][H]used at the beginning of a sentence|用于句首[POS]phrase[/POS][/H][EX]In order to finish the project on time, the team works overtime every day.|为了按时完成项目，团队每天都加班。[/EX][C]In order to learn English well|为了学好英语[/C][C]In order to stay healthy|为了保持健康[/C][/COLL]",
+    "[TITLE] 额外例句 [/TITLE][EX]We need to plant more trees in order to improve the environment.|我们需要种更多的树，以改善环境。[/EX][EX]He practices playing the piano every day in order to win the competition.|他每天练习弹钢琴，为了赢得比赛。[/EX][EX]In order to understand the story better, she read the book twice.|为了更好地理解这个故事，她把书读了两遍。[/EX]",
+    "[TITLE] 常见错误 [/TITLE][ERR]in order to后接动词原形，不可接动名词，错误：in order to studying，正确：in order to study。[/ERR][ERR]in order to引导目的状语时，不可省略to，错误：in order do sth，正确：in order to do sth。[/ERR][ERR]不要与so that混淆，in order to后接动词原形，so that后接从句，错误：in order to he can pass the exam，正确：in order to pass the exam/so that he can pass the exam。[/ERR]"
+  ]
+},
+"w246": {
+  "word": "survive",
+  "images": {
+    "scene": ["infopic01/survive.webp"],
+    "card": ["wordpic01/survive.webp"]
+  },
+  "richDetail": [
+    "[TITLE] 解释 [/TITLE][DEF][EN]To continue to live or exist, especially after a difficult or dangerous situation (used in Some Birds Go Level F, referring to birds living through winter)[/EN][CN]生存；存活；继续存在（尤指在困难或危险的情况下继续生存，出自《Some Birds Go》Level F，指鸟类度过冬天）[/CN][POS]v.[/POS][PH]/səˈvaɪv/（英美）[/PH][DU]Many birds migrate before winter in order to survive.|(原文例句) 许多鸟类在冬天来临前迁徙以生存。[/DU][DU]The small animal can survive in the cold winter by storing food in autumn.|这种小动物通过在秋天储存食物，能在寒冷的冬天存活下来。[/DU][/DEF][IMG]infopic01/survive.webp[/IMG][DEF][EN]To continue to live after an accident, illness, or war; to manage to live with a difficult situation[/EN][CN]幸存；幸免于难；勉强维持生活（在事故、疾病或战争后继续生存；勉强应对困难局面）[/CN][POS]v.[/POS][DU]He was lucky to survive the car accident without serious injuries.|他很幸运在车祸中幸存下来，没有受重伤。[/DU][DU]The family survives on a small income, but they are very happy.|这个家庭靠微薄的收入勉强维持生活，但他们很幸福。[/DU][/DEF]",
+    "[TITLE] 常见用法 [/TITLE][COLL][H]survive the winter|过冬；度过冬天[POS]v.[/POS][/H][EX]Birds either migrate or find warm places to survive the winter.|鸟类要么迁徙，要么找到温暖的地方过冬。[/EX][C]survive a storm|在暴风雨中幸存[/C][C]survive an illness|战胜疾病[/C][/COLL][COLL][H]survive on sth|靠某物生存[POS]v.[/POS][/H][EX]Plants survive on sunlight, water, and soil.|植物靠阳光、水和土壤生存。[/EX][C]survive on little money|靠很少的钱维持生活[/C][C]survive on food and water|靠食物和水生存[/C][/COLL][COLL][H]struggle to survive|努力生存[POS]v.[/POS][/H][EX]Animals in the desert struggle to survive because of the lack of water.|沙漠里的动物因为缺水而努力生存。[/EX][C]fight to survive|为生存而奋斗[/C][C]manage to survive|设法存活[/C][/COLL]",
+    "[TITLE] 额外例句 [/TITLE][EX]The old tree has survived for hundreds of years, witnessing many changes.|这棵古树已经存活了几百年，见证了许多变化。[/EX][EX]She survived the fire by hiding in a small room.|她躲在一个小房间里，从火灾中幸存下来。[/EX][EX]Many endangered animals need our help to survive.|许多濒危动物需要我们的帮助才能存活。[/EX]",
+    "[TITLE] 常见错误 [/TITLE][ERR]survive是及物动词，后接宾语时无需加介词，错误：survive from the accident，正确：survive the accident。[/ERR][ERR]survive的名词形式是survival（生存）和survivor（幸存者），不要混淆，错误：a survive，正确：a survivor。[/ERR][ERR]survive的过去式和过去分词为survived，直接加ed，不要写成survivedd。[/ERR]"
+  ]
+},
+"w247": {
+  "word": "flock",
+  "images": {
+    "scene": ["infopic01/flock.webp"],
+    "card": ["wordpic01/flock.webp"]
+  },
+  "richDetail": [
+    "[TITLE] 解释 [/TITLE][DEF][EN]A group of birds of the same type flying or living together (used in Some Birds Go Level F, referring to birds migrating in groups)[/EN][CN]鸟群（一群同类的鸟一起飞行或生活，出自《Some Birds Go》Level F，指成群迁徙的鸟类）[/CN][POS]n./v.[/POS][PH]/flɒk/（英式）/flɑːk/（美式）[/PH][DU]Snow geese migrate in a V-shaped flock.|(原文例句) 雪雁以V字形鸟群迁徙。[/DU][DU]A flock of sparrows flew into the garden and ate the seeds.|一群麻雀飞到花园里吃种子。[/DU][/DEF][IMG]infopic01/flock.webp[/IMG][DEF][EN]A large group of animals of the same type; a large number of people gathered together[/EN][CN]兽群；人群（一大群同类的动物；聚集在一起的一大群人）[/CN][POS]n./v.[/POS][DU]We saw a flock of sheep eating grass on the hillside.|我们看到一群羊在山坡上吃草。[/DU][DU]A flock of fans waited outside the theater to see the movie star.|一大群粉丝在剧院外等着看这位电影明星。[/DU][/DEF][DEF][EN]To gather or move together in a group[/EN][CN]聚集；成群而行[/CN][POS]v.[/POS][DU]People flocked to the park to enjoy the beautiful flowers.|人们成群结队地来到公园欣赏美丽的花朵。[/DU][DU]Birds flocked to the lake to drink water in the morning.|早上，鸟类成群飞到湖边喝水。[/DU][/DEF]",
+    "[TITLE] 常见用法 [/TITLE][COLL][H]a flock of birds|一群鸟[POS]n.[/POS][/H][EX]A flock of geese flew across the sky, making a loud sound.|一群大雁飞过天空，发出响亮的声音。[/EX][C]a flock of ducks|一群鸭子[/C][C]a flock of pigeons|一群鸽子[/C][/COLL][COLL][H]in a flock|成群地[POS]adv.[/POS][/H][EX]Birds migrate in a flock to protect themselves from predators.|鸟类成群迁徙，以保护自己免受捕食者的伤害。[/EX][C]fly in a flock|成群飞行[/C][C]move in a flock|成群移动[/C][/COLL][COLL][H]flock to sth|涌向某物[POS]v.[/POS][/H][EX]Tourists flocked to the beach during the summer vacation.|暑假期间，游客们涌向海滩。[/EX][C]flock to the city|涌向城市[/C][C]flock to the concert|涌向音乐会[/C][/COLL]",
+    "[TITLE] 额外例句 [/TITLE][EX]The farmer watched over his flock of sheep to make sure they didn't get lost.|农夫看管着他的羊群，确保它们不会迷路。[/EX][EX]A flock of butterflies danced in the garden, looking very beautiful.|一群蝴蝶在花园里飞舞，看起来非常美丽。[/EX][EX]People flocked to the new shopping mall on its opening day.|这家新购物中心开业当天，人们纷纷涌向那里。[/EX]",
+    "[TITLE] 常见错误 [/TITLE][ERR]flock作“鸟群、兽群”讲时，是可数名词，复数形式为flocks，直接加s，不要写成flockes。[/ERR][ERR]表示“一群”时，不同动物搭配不同量词，flock用于鸟类和绵羊，错误：a flock of cows，正确：a herd of cows。[/ERR][ERR]flock作动词时，是不及物动词，后接宾语需加介词to，错误：flock the park，正确：flock to the park。[/ERR]"
+  ]
+},
+"w248": {
+  "word": "hummingbird",
+  "images": {
+    "scene": ["infopic01/hummingbird.webp"],
+    "card": ["wordpic01/hummingbird.webp"]
+  },
+  "richDetail": [
+    "[TITLE] 解释 [/TITLE][DEF][EN]A small bird with bright feathers that can hover in the air and make a humming sound (used in Some Birds Go Level F, referring to a migrating bird)[/EN][CN]蜂鸟（一种羽毛鲜艳的小鸟，能在空中悬停并发出嗡嗡声，出自《Some Birds Go》Level F，指一种迁徙鸟类）[/CN][POS]n.[/POS][PH]/ˈhʌmɪŋbɜːd/（英美）[/PH][DU]Hummingbirds migrate when the air grows too cold.|(原文例句) 当空气变得太冷时，蜂鸟会迁徙。[/DU][DU]We saw a colorful hummingbird drinking nectar from the flowers in the garden.|我们看到一只色彩鲜艳的蜂鸟在花园里的花上吸食花蜜。[/DU][/DEF][IMG]infopic01/hummingbird.webp[/IMG]",
+    "[TITLE] 常见用法 [/TITLE][COLL][H]colorful hummingbird|色彩鲜艳的蜂鸟[POS]n.[/POS][/H][EX]The colorful hummingbird is one of the most beautiful birds in the world.|色彩鲜艳的蜂鸟是世界上最美丽的鸟类之一。[/EX][C]small hummingbird|小型蜂鸟[/C][C]tiny hummingbird|微型蜂鸟[/C][/COLL][COLL][H]drink nectar|吸食花蜜[POS]n.[/POS][/H][EX]Hummingbirds have long beaks to drink nectar from deep flowers.|蜂鸟有长长的喙，可以从深层花朵中吸食花蜜。[/EX][C]feed on nectar|以花蜜为食[/C][C]hover to drink nectar|悬停吸食花蜜[/C][/COLL][COLL][H]migrate south|南迁[POS]n.[/POS][/H][EX]Hummingbirds migrate south every winter to find warm places and enough food.|蜂鸟每年冬天南迁，寻找温暖的地方和足够的食物。[/EX][C]migrate to warmer areas|迁徙到温暖的地区[/C][C]begin to migrate|开始迁徙[/C][/COLL]",
+    "[TITLE] 额外例句 [/TITLE][EX]The hummingbird can fly backward, which is a unique ability among birds.|蜂鸟能向后飞，这是鸟类中独特的能力。[/EX][EX]We put a hummingbird feeder in the yard, and many hummingbirds come to eat every day.|我们在院子里放了一个蜂鸟喂食器，每天都有很多蜂鸟来吃东西。[/EX][EX]Hummingbirds are very small, some of them are only a few centimeters long.|蜂鸟非常小，有些只有几厘米长。[/EX]",
+    "[TITLE] 常见错误 [/TITLE][ERR]hummingbird是可数名词，复数形式为hummingbirds，直接加s，不要写成hummingbirdes。[/ERR][ERR]注意发音，不要把hummingbird读成/ˈhʌmɪŋ bɜːd/（分开读），正确发音为/ˈhʌmɪŋbɜːd/（连读）。[/ERR][ERR]不要混淆hummingbird和humming，hummingbird是名词“蜂鸟”，humming是动词“嗡嗡叫”或名词“嗡嗡声”，错误：a humming，正确：a hummingbird。[/ERR]"
+  ]
+},
+"w249": {
+  "word": "swallow",
+  "images": {
+    "scene": ["infopic01/swallow.webp"],
+    "card": ["wordpic01/swallow.webp"]
+  },
+  "richDetail": [
+    "[TITLE] 解释 [/TITLE][DEF][EN]A small bird with long wings and a forked tail that flies quickly (used in Some Birds Go Level F, referring to a migrating bird)[/EN][CN]燕子（一种翅膀长、尾巴分叉、飞行迅速的小鸟，出自《Some Birds Go》Level F，指一种迁徙鸟类）[/CN][POS]n./v.[/POS][PH]/ˈswɒləʊ/（英式，n.）/ˈswɑːloʊ/（美式，n.）[/PH][DU]Tree swallows migrate in a flock of thousands.|(原文例句) 树燕以数千只的鸟群迁徙。[/DU][DU]We often see swallows building nests under the eaves of houses in spring.|春天我们经常看到燕子在屋檐下筑巢。[/DU][/DEF][IMG]infopic01/swallow.webp[/IMG][DEF][EN]To make food or drink go down your throat into your stomach; to accept something without question[/EN][CN]吞咽；咽下；轻信；接受（不加质疑地接受某物）[/CN][POS]v.[/POS][PH]/ˈswɒləʊ/（英式）/ˈswɑːloʊ/（美式）[/PH][DU]She swallowed the medicine with a glass of water.|她用一杯水把药咽了下去。[/DU][DU]He swallowed her excuse without asking any questions.|他不加质疑地相信了她的借口。[/DU][/DEF]",
+    "[TITLE] 常见用法 [/TITLE][COLL][H]tree swallow|树燕[POS]n.[/POS][/H][EX]Tree swallows are good at flying and catch insects while flying.|树燕擅长飞行，在飞行中捕捉昆虫。[/EX][C]barn swallow|家燕[/C][C]a flock of swallows|一群燕子[/C][/COLL][COLL][H]swallow food|吞咽食物[POS]v.[/POS][/H][EX]Chew your food well before you swallow it to help digestion.|吞咽前要把食物嚼碎，以帮助消化。[/EX][C]swallow water|喝水；咽下水分[/C][C]swallow a pill|吞服药片[/C][/COLL][COLL][H]swallow an excuse|轻信借口[POS]v.[/POS][/H][EX]Don't swallow his words easily; you should check the facts first.|不要轻易相信他的话，你应该先核实事实。[/EX][C]swallow a lie|轻信谎言[/C][C]swallow pride|放下自尊[/C][/COLL]",
+    "[TITLE] 额外例句 [/TITLE][EX]Swallows fly back to the north every spring to breed.|燕子每年春天飞回北方繁殖。[/EX][EX]He accidentally swallowed a small piece of bone, but it didn't hurt him.|他不小心吞下了一小块骨头，但没有受伤。[/EX][EX]The little girl couldn't swallow the bitter medicine, so her mom mixed it with honey.|小女孩咽不下苦药，所以妈妈把它和蜂蜜混合在一起。[/EX]",
+    "[TITLE] 常见错误 [/TITLE][ERR]swallow作“燕子”讲时，复数形式为swallows，直接加s，不要写成swallowes。[/ERR][ERR]swallow作动词表示“吞咽”时，是及物动词，直接接宾语，无需加介词，错误：swallow down the food，正确：swallow the food（down可省略）。[/ERR][ERR]不要混淆swallow和swallow up，swallow up表示“吞没；耗尽”，错误：swallow the money，正确：swallow up the money（指耗尽金钱）。[/ERR]"
+  ]
+},
+"w250": {
+  "word": "turnip",
+  "images": {
+    "scene": ["infopic01/turnip.webp"],
+    "card": ["wordpic01/turnip.webp"]
+  },
+  "richDetail": [
+    "[TITLE] 解释 [/TITLE][DEF][EN]A round vegetable with white flesh and a purple or white skin (used in The Giant Turnip Level F, referring to the main vegetable in the story)[/EN][CN]芜菁；大头菜（一种圆形蔬菜，果肉白色，果皮紫色或白色，出自《The Giant Turnip》Level F，指故事中的主要蔬菜）[/CN][POS]n.[/POS][PH]/ˈtɜːnɪp/（英美）[/PH][DU]Grandpa planted a turnip seed, and it grew into a giant turnip.|(原文衍生例句) 爷爷种了一颗芜菁种子，它长成了一颗巨大的芜菁。[/DU][DU]We cooked turnip soup for dinner, and it tasted very delicious.|我们晚餐做了芜菁汤，味道非常美味。[/DU][/DEF][IMG]infopic01/turnip.webp[/IMG]",
+    "[TITLE] 常见用法 [/TITLE][COLL][H]giant turnip|巨大的芜菁[POS]n.[/POS][/H][EX]It took Grandpa, Grandma, and their friends to pull out the giant turnip.|爷爷、奶奶和他们的朋友们一起才把那颗巨大的芜菁拔了出来。[/EX][C]fresh turnip|新鲜的芜菁[/C][C]raw turnip|生芜菁[/C][/COLL][COLL][H]turnip soup|芜菁汤[POS]n.[/POS][/H][EX]My mom makes turnip soup with carrots and potatoes, which is very nutritious.|我妈妈用芜菁、胡萝卜和土豆做汤，非常有营养。[/EX][C]mashed turnip| mashed turnip[/C][C]roasted turnip|烤芜菁[/C][/COLL][COLL][H]plant turnip seeds|种芜菁种子[POS]n.[/POS][/H][EX]Farmers plant turnip seeds in spring and harvest them in autumn.|农民们春天种芜菁种子，秋天收获。[/EX][C]grow turnips|种芜菁[/C][C]harvest turnips|收芜菁[/C][/COLL]",
+    "[TITLE] 额外例句 [/TITLE][EX]The turnip is a healthy vegetable that is rich in vitamins and fiber.|芜菁是一种健康的蔬菜，富含维生素和纤维。[/EX][EX]She chopped the turnip into small pieces and fried it with meat.|她把芜菁切成小块，和肉一起炒。[/EX][EX]The giant turnip in the story is so big that no one can pull it out alone.|故事里的巨大芜菁太大了，没有人能独自把它拔出来。[/EX]",
+    "[TITLE] 常见错误 [/TITLE][ERR]turnip是可数名词，复数形式为turnips，直接加s，不要写成turnipies。[/ERR][ERR]不要混淆turnip和radish，turnip是“芜菁、大头菜”，体型较大，radish是“小萝卜”，体型较小，二者是不同的蔬菜。[/ERR][ERR]发音时注意重音在第一个音节，不要读成/tɜːˈnɪp/，正确发音为/ˈtɜːnɪp/。[/ERR]"
+  ]
+},
+"w251": {
+  "word": "sprout",
+  "images": {
+    "scene": ["infopic01/sprout.webp"],
+    "card": ["wordpic01/sprout.webp"]
+  },
+  "richDetail": [
+    "[TITLE] 解释 [/TITLE][DEF][EN]To start to grow; to produce new growth (used in The Giant Turnip Level F, referring to turnip leaves growing)[/EN][CN]发芽；长出；抽芽（开始生长；长出新的枝叶，出自《The Giant Turnip》Level F，指芜菁长出叶子）[/CN][POS]v./n.[/POS][PH]/spraʊt/（英美）[/PH][DU]In summer, turnip leaves sprouted, and the turnip grew and grew.|(原文例句) 夏天，芜菁长出了叶子，然后越长越大。[/DU][DU]The seeds sprouted after being watered for a few days.|这些种子浇水几天后就发芽了。[/DU][/DEF][IMG]infopic01/sprout.webp[/IMG][DEF][EN]A new growth on a plant, such as a new leaf or stem; young vegetables that have just sprouted[/EN][CN]幼苗；新芽；嫩苗（植物上的新生长部分，如新叶或新茎；刚发芽的嫩蔬菜）[/CN][POS]n.[/POS][DU]We picked the bean sprouts and cooked them with eggs.|我们摘了豆芽，和鸡蛋一起炒了。[/DU][DU]The plant's sprouts are green and tender, and they grow very fast.|这株植物的嫩芽是绿色的，很嫩，长得非常快。[/DU][/DEF]",
+    "[TITLE] 常见用法 [/TITLE][COLL][H]sprout leaves|长叶子[POS]v.[/POS][/H][EX]The turnip sprouted green leaves in summer, and it looked very lively.|这颗芜菁夏天长出了绿色的叶子，看起来很有生机。[/EX][C]sprout buds|发芽[/C][C]sprout roots|长根[/C][/COLL][COLL][H]bean sprouts|豆芽[POS]n.[/POS][/H][EX]Bean sprouts are a common ingredient in Chinese cooking, often used in stir-fries and soups.|豆芽是中国烹饪中常见的食材，常用于炒菜和煮汤。[/EX][C]alfalfa sprouts|紫花苜蓿芽[/C][C]vegetable sprouts|蔬菜嫩苗[/C][/COLL][COLL][H]start to sprout|开始发芽[POS]v.[/POS][/H][EX]The seeds started to sprout after being kept in a warm and wet place.|这些种子放在温暖潮湿的地方后开始发芽。[/EX][C]begin to sprout|开始抽芽[/C][C]soon sprout|很快发芽[/C][/COLL]",
+    "[TITLE] 额外例句 [/TITLE][EX]The tree sprouted new branches after being pruned last year.|这棵树去年修剪后长出了新的树枝。[/EX][EX]We planted some tomato seeds, and they sprouted in a week.|我们种了一些西红柿种子，一周后它们就发芽了。[/EX][EX]The sprouts of this plant are edible and taste very fresh.|这种植物的嫩苗可以食用，味道很新鲜。[/EX]",
+    "[TITLE] 常见错误 [/TITLE][ERR]sprout的过去式和过去分词为sprouted，直接加ed，不要写成sproutted。[/ERR][ERR]sprout作动词表示“发芽”时，是不及物动词，后接宾语需加介词with，错误：sprout leaves，正确：sprout with leaves（或直接说sprout leaves，口语中可省略with，规范用法需加）。[/ERR][ERR]不要混淆sprout和grow，sprout侧重“发芽、抽芽”，grow侧重“生长、成长”，错误：the plant sprouted quickly，正确：the plant grew quickly（指植物整体生长快）/the seeds sprouted quickly（指种子发芽快）。[/ERR]"
+  ]
+},
+"w252": {
+  "word": "budge",
+  "images": {
+    "scene": ["infopic01/budge.webp"],
+    "card": ["wordpic01/budge.webp"]
+  },
+  "richDetail": [
+    "[TITLE] 解释 [/TITLE][DEF][EN]To move slightly; to make something move slightly (used in The Giant Turnip Level F, referring to the turnip not moving)[/EN][CN]移动；挪动；稍微移动（轻微移动；使某物轻微移动，出自《The Giant Turnip》Level F，指芜菁一动不动）[/CN][POS]v.[/POS][PH]/bʌdʒ/（英美）[/PH][DU]The giant turnip didn't budge, even when Grandpa pulled it with all his strength.|(原文衍生例句) 即使爷爷用尽全力拉，那颗巨大的芜菁也一动不动。[/DU][DU]I tried to push the heavy box, but it wouldn't budge.|我试着推那个重箱子，但它一点也不动。[/DU][/DEF][IMG]infopic01/budge.webp[/IMG][DEF][EN]To change your opinion or position, especially after being unwilling to do so[/EN][CN]改变立场；让步（尤指不愿意后改变观点或立场）[/CN][POS]v.[/POS][DU]He refused to budge on his decision, no matter how hard we tried to persuade him.|无论我们怎么努力说服他，他都拒绝在决定上让步。[/DU][DU]The company finally budged and agreed to raise the workers' salaries.|公司最终让步，同意给工人加薪。[/DU][/DEF]",
+    "[TITLE] 常见用法 [/TITLE][COLL][H]not budge|一动不动；不让步[POS]v.[/POS][/H][EX]The giant turnip didn't budge an inch, so Grandpa asked Grandma for help.|那颗巨大的芜菁一动不动，所以爷爷向奶奶求助。[/EX][C]not budge at all|完全不动[/C][C]refuse to budge|拒绝让步[/C][/COLL][COLL][H]budge slightly|稍微移动[POS]v.[/POS][/H][EX]The rock budged slightly when we pushed it together.|我们一起推那块石头时，它稍微动了一下。[/EX][C]budge a little|挪动一点[/C][C]hardly budge|几乎不动[/C][/COLL][COLL][H]budge on sth|在某事上让步[POS]v.[/POS][/H][EX]She wouldn't budge on her principles, even if it meant losing the job.|她在原则问题上不会让步，即使这意味着失去工作。[/EX][C]budge on the price|在价格上让步[/C][C]budge on a decision|在决定上改变立场[/C][/COLL]",
+    "[TITLE] 额外例句 [/TITLE][EX]The old man sat on the chair and didn't budge for hours, watching the children play.|那位老人坐在椅子上几个小时一动不动，看着孩子们玩耍。[/EX][EX]After a long discussion, the two sides finally budged and reached an agreement.|经过长时间的讨论，双方终于让步，达成了协议。[/EX][EX]I pulled the door as hard as I could, but it still wouldn't budge.|我用尽全力拉门，但它还是打不开（一动不动）。[/EX]",
+    "[TITLE] 常见错误 [/TITLE][ERR]budge是不及物动词，后接宾语时需加介词from，错误：budge the position，正确：budge from the position。[/ERR][ERR]budge常用于否定句和疑问句中，肯定句中较少使用，错误：the box budged，正确：the box budged slightly（肯定句中需加修饰词）。[/ERR][ERR]不要混淆budge和move，budge侧重“轻微移动、勉强移动”，move泛指“移动”，错误：the car wouldn't move，正确：the car wouldn't budge（强调难以移动）。[/ERR]"
+  ]
+},
+"w253": {
+  "word": "trailer",
+  "images": {
+    "scene": ["infopic01/trailer.webp"],
+    "card": ["wordpic01/trailer.webp"]
+  },
+  "richDetail": [
+    "[TITLE] 解释 [/TITLE][DEF][EN]A wheeled vehicle that is pulled by a car or truck, used for carrying goods or people (未在Level F书籍中明确出现，以下为日常高频义)[/EN][CN]拖车；挂车（由汽车或卡车牵引的轮式车辆，用于运送货物或人员）[/CN][POS]n.[/POS][PH]/ˈtreɪlə(r)/（英美）[/PH][DU]We used a trailer to carry our camping gear to the lake.|我们用拖车把露营装备运到了湖边。[/DU][DU]The truck pulled a trailer full of vegetables to the market.|卡车拖着装满蔬菜的挂车去了市场。[/DU][/DEF][IMG]infopic01/trailer.webp[/IMG][DEF][EN]A short film showing parts of a longer movie, used to advertise it[/EN][CN]（电影）预告片（展示长片片段的短片，用于宣传）[/CN][POS]n.[/POS][DU]We watched the trailer for the new cartoon and decided to see it.|我们看了新卡通片的预告片，决定去看正片。[/DU][DU]The trailer of the adventure movie made the kids very excited.|这部冒险电影的预告片让孩子们非常兴奋。[/DU][/DEF]",
+    "[TITLE] 常见用法 [/TITLE][COLL][H]camping trailer|露营拖车[POS]n.[/POS][/H][EX]Our family rented a camping trailer for the summer trip.|我们家租了一辆露营拖车用于夏季旅行。[/EX][C]goods trailer|货物挂车[/C][C]travel trailer|旅行拖车[/C][/COLL][COLL][H]movie trailer|电影预告片[POS]n.[/POS][/H][EX]The trailer of the animal movie will be shown before the main film.|这部动物电影的预告片将在正片前播放。[/EX][C]trailer for a book|书籍预告[/C][C]watch a trailer|看预告片[/C][/COLL][COLL][H]pull a trailer|拖挂车[POS]v.[/POS][/H][EX]Dad’s truck can pull a heavy trailer with all our belongings.|爸爸的卡车能拖着装满我们所有物品的重型挂车。[/EX][C]attach a trailer|连接挂车[/C][C]load a trailer|给挂车装货[/C][/COLL]",
+    "[TITLE] 额外例句 [/TITLE][EX]The farmer used a trailer to transport the hay from the field to the barn.|农夫用拖车把干草从田里运到谷仓。[/EX][EX]She was so interested in the trailer that she bought tickets for the movie immediately.|她对预告片太感兴趣了，立刻买了电影票。[/EX][EX]The trailer is attached to the back of the car and can carry two extra suitcases.|挂车连接在汽车后面，能额外装两个行李箱。[/EX]",
+    "[TITLE] 常见错误 [/TITLE][ERR]trailer是可数名词，复数形式为trailers，直接加s，不要写成traileres。[/ERR][ERR]不要混淆trailer和truck，trailer是“拖车、挂车”，需要被牵引，truck是“卡车”，可自行行驶，错误：drive a trailer，正确：pull a trailer。[/ERR][ERR]trailer作“预告片”讲时，常与介词for搭配，错误：trailer of the film，正确：trailer for the film。[/ERR]"
+  ]
+},
+"w254": {
+  "word": "delivery",
+  "images": {
+    "scene": ["infopic01/delivery.webp"],
+    "card": ["wordpic01/delivery.webp"]
+  },
+  "richDetail": [
+    "[TITLE] 解释 [/TITLE][DEF][EN]The act of bringing goods, letters, or packages to a person or place (未在Level F书籍中明确出现，以下为日常高频义)[/EN][CN]递送；交付（将货物、信件或包裹送到某人或某地的行为）[/CN][POS]n.[/POS][PH]/dɪˈlɪvəri/（英美）[/PH][DU]The delivery of the birthday present arrived just in time.|生日礼物的递送刚好及时到达。[/DU][DU]We waited for the delivery of the new books from the library.|我们等待图书馆新书籍的送达。[/DU][/DEF][IMG]infopic01/delivery.webp[/IMG][DEF][EN]The process of giving birth to a baby[/EN][CN]分娩；生产[/CN][POS]n.[/POS][DU]The doctor helped the mother with the safe delivery of her baby.|医生帮助这位妈妈安全分娩。[/DU][DU]The delivery of the twins was a happy event for the family.|这对双胞胎的出生对这个家庭来说是一件喜事。[/DU][/DEF]",
+    "[TITLE] 常见用法 [/TITLE][COLL][H]mail delivery|邮件递送[POS]n.[/POS][/H][EX]Mail delivery comes to our neighborhood every morning except Sunday.|除了周日，邮件递送每天早上都会到我们小区。[/EX][C]package delivery|包裹递送[/C][C]food delivery|外卖递送[/C][/COLL][COLL][H]delivery service|递送服务[POS]n.[/POS][/H][EX]The store offers free delivery service for orders over $50.|这家店对50美元以上的订单提供免费递送服务。[/EX][C]home delivery|送货上门[/C][C]express delivery|快递服务[/C][/COLL][COLL][H]safe delivery|安全分娩[POS]n.[/POS][/H][EX]The nurse stayed with the mother to ensure a safe delivery.|护士一直陪伴在妈妈身边，确保安全分娩。[/EX][C]easy delivery|顺利生产[/C][C]difficult delivery|难产[/C][/COLL]",
+    "[TITLE] 额外例句 [/TITLE][EX]I tracked the delivery of my online order and saw it will arrive tomorrow.|我查询了网上订单的物流，发现它明天会到。[/EX][EX]The restaurant’s food delivery is very fast—we got our meal in 20 minutes.|这家餐厅的外卖递送很快，我们20分钟就收到了餐品。[/EX][EX]The vet helped the cat with the delivery of three kittens.|兽医帮助这只猫生下了三只小猫。[/EX]",
+    "[TITLE] 常见错误 [/TITLE][ERR]delivery的复数形式为deliveries，变y为i加es，不要写成deliveryes。[/ERR][ERR]delivery是名词，动词形式为deliver，不要混淆，错误：I will delivery the package，正确：I will deliver the package。[/ERR][ERR]表示“某物的递送”时，常用介词of，错误：delivery for the package，正确：delivery of the package。[/ERR]"
+  ]
+},
+"w255": {
+  "word": "flatbed",
+  "images": {
+    "scene": ["infopic01/flatbed.webp"],
+    "card": ["wordpic01/flatbed.webp"]
+  },
+  "richDetail": [
+    "[TITLE] 解释 [/TITLE][DEF][EN]A truck or trailer with a flat, open platform for carrying large or heavy objects (未在Level F书籍中明确出现，以下为日常高频义)[/EN][CN]平板卡车；平板挂车（带有平坦开放式平台的卡车或挂车，用于运送大型或重型物品）[/CN][POS]n.[/POS][PH]/ˈflætbed/（英美）[/PH][DU]The construction company used a flatbed to transport the big steel beams.|建筑公司用平板卡车运送大型钢梁。[/DU][DU]We loaded the old piano onto a flatbed and moved it to our new house.|我们把旧钢琴装上平板挂车，搬到了新家。[/DU][/DEF][IMG]infopic01/flatbed.webp[/IMG]",
+    "[TITLE] 常见用法 [/TITLE][COLL][H]flatbed truck|平板卡车[POS]n.[/POS][/H][EX]The flatbed truck carried the broken car to the repair shop.|平板卡车把坏掉的汽车运到了修理厂。[/EX][C]flatbed trailer|平板挂车[/C][C]flatbed lorry|平板货车（英式）[/C][/COLL][COLL][H]load onto a flatbed|装上平板车[POS]v.[/POS][/H][EX]Workers used a crane to load the heavy machine onto the flatbed.|工人们用起重机把重型机器装上平板车。[/EX][C]transport by flatbed|用平板车运输[/C][C]unload from a flatbed|从平板车卸下[/C][/COLL][COLL][H]flatbed for large items|运送大型物品的平板车[POS]n.[/POS][/H][EX]We rented a flatbed for the large furniture because it’s too big for a regular truck.|我们为大型家具租了平板车，因为它太大了，普通卡车装不下。[/EX][C]flatbed for construction materials|运送建筑材料的平板车[/C][/COLL]",
+    "[TITLE] 额外例句 [/TITLE][EX]The flatbed was covered with a tarp to protect the wooden boards from rain.|平板车上盖了防水布，保护木板不被雨淋。[/EX][EX]A flatbed is better for carrying long pipes than a closed truck.|平板车比封闭卡车更适合运送长管道。[/EX][EX]The farmer hired a flatbed to move his old tractor to the farm.|农夫雇了一辆平板车把他的旧拖拉机搬到农场。[/EX]",
+    "[TITLE] 常见错误 [/TITLE][ERR]flatbed是合成词，中间不加连字符，不要写成flat-bed或flat bed，规范写法为flatbed。[/ERR][ERR]flatbed是可数名词，复数形式为flatbeds，直接加s，不要写成flatbedes。[/ERR][ERR]不要混淆flatbed和truck，flatbed特指“平板式”的卡车/挂车，错误：a flatbed car，正确：a flatbed truck。[/ERR]"
+  ]
+},
+"w256": {
+  "word": "Ramadan",
+  "images": {
+    "scene": ["infopic01/ramadan.webp"],
+    "card": ["wordpic01/ramadan.webp"]
+  },
+  "richDetail": [
+    "[TITLE] 解释 [/TITLE][DEF][EN]A month-long Islamic holiday when many people do not eat during the day and share meals after sunset (used in Ramadan Is Here Level F, referring to the religious celebration)[/EN][CN]斋月（伊斯兰教的一个月长假，许多人白天不进食，日落后共享晚餐，出自《Ramadan Is Here》Level F，指该宗教节日）[/CN][POS]n.（专有名词，首字母大写）[/POS][PH]/ˌræməˈdɑːn/（英美）[/PH][DU]Ramadan is here! The holiday is a month long.|(原文例句) 斋月到了！这个节日长达一个月。[/DU][DU]Muslims around the world celebrate Ramadan with prayers and family meals.|世界各地的穆斯林通过祈祷和家庭聚餐来庆祝斋月。[/DU][/DEF][IMG]infopic01/ramadan.webp[/IMG]",
+    "[TITLE] 常见用法 [/TITLE][COLL][H]during Ramadan|在斋月期间[POS]n.[/POS][/H][EX]We read poems and make crafts during Ramadan.|我们在斋月期间读诗、做手工。[/EX][C]celebrate Ramadan|庆祝斋月[/C][C]fast during Ramadan|斋月斋戒[/C][/COLL][COLL][H]break fast after sunset|日落后开斋[POS]n.[/POS][/H][EX]My family shares a big meal to break fast after sunset during Ramadan.|我们家在斋月期间，日落后共享一顿丰盛的晚餐开斋。[/EX][C]pray during Ramadan|斋月祈祷[/C][C]give to people during Ramadan|斋月行善[/C][/COLL][COLL][H]end of Ramadan|斋月结束[POS]n.[/POS][/H][EX]When Ramadan is over, we celebrate for three more days with gifts.|斋月结束后，我们会再庆祝三天，互赠礼物。[/EX][C]start of Ramadan|斋月开始[/C][C]Ramadan celebration|斋月庆典[/C][/COLL]",
+    "[TITLE] 额外例句 [/TITLE][EX]My friend does not eat or drink from sunrise to sunset during Ramadan.|我的朋友在斋月期间，从日出到日落不进食、不喝水。[/EX][EX]Many families gather to cook special food during Ramadan.|许多家庭在斋月期间聚在一起做特色美食。[/EX][EX]Ramadan is an important time for Muslims to show kindness to others.|斋月是穆斯林向他人表达善意的重要时刻。[/EX]",
+    "[TITLE] 常见错误 [/TITLE][ERR]Ramadan是专有名词，首字母必须大写，不可小写（错误：ramadan）。[/ERR][ERR]Ramadan前不加冠词，错误：a Ramadan/an Ramadan，正确：during Ramadan/celebrate Ramadan。[/ERR][ERR]发音时注意重音在第三个音节，不要读成/ˈræmədən/，正确发音为/ˌræməˈdɑːn/。[/ERR]"
+  ]
+},
+"w257": {
+  "word": "sunset",
+  "images": {
+    "scene": ["infopic01/sunset.webp"],
+    "card": ["wordpic01/sunset.webp"]
+  },
+  "richDetail": [
+    "[TITLE] 解释 [/TITLE][DEF][EN]The time when the sun goes down below the horizon (used in Ramadan Is Here Level F, referring to the time after which people eat during Ramadan)[/EN][CN]日落；黄昏（太阳落到地平线以下的时刻，出自《Ramadan Is Here》Level F，指斋月期间人们开始进食的时间）[/CN][POS]n.[/POS][PH]/ˈsʌnset/（英美）[/PH][DU]My family shares a meal together after sunset during Ramadan.|(原文例句) 我们家在斋月期间，日落后共享晚餐。[/DU][DU]We watched the beautiful sunset by the lake and took many photos.|我们在湖边看了美丽的日落，拍了很多照片。[/DU][/DEF][IMG]infopic01/sunset.webp[/IMG]",
+    "[TITLE] 常见用法 [/TITLE][COLL][H]after sunset|日落后[POS]n.[/POS][/H][EX]People in some places like to take a walk after sunset when it’s cool.|有些地方的人喜欢日落后天凉快时散步。[/EX][C]before sunset|日落前[/C][C]at sunset|在日落时分[/C][/COLL][COLL][H]beautiful sunset|美丽的日落[POS]n.[/POS][/H][EX]The sunset over the ocean is so beautiful that everyone stops to watch.|海上的日落太美了，所有人都停下来观看。[/EX][C]colorful sunset|色彩斑斓的日落[/C][C]peaceful sunset|宁静的日落[/C][/COLL][COLL][H]watch the sunset|看日落[POS]n.[/POS][/H][EX]My grandparents often sit on the porch to watch the sunset in the evening.|我的爷爷奶奶经常晚上坐在门廊上看日落。[/EX][C]photograph the sunset|拍日落[/C][C]enjoy the sunset|欣赏日落[/C][/COLL]",
+    "[TITLE] 额外例句 [/TITLE][EX]The sky turns pink and orange at sunset, like a painting.|日落时分，天空变成粉色和橙色，像一幅画。[/EX][EX]We need to get home before sunset because it gets dark quickly.|我们需要在日落前回家，因为天很快就黑了。[/EX][EX]Birds fly back to their nests at sunset after a day of looking for food.|鸟儿找了一天食物后，日落时飞回巢穴。[/EX]",
+    "[TITLE] 常见错误 [/TITLE][ERR]sunset是可数名词，复数形式为sunsets，直接加s，不要写成sunsetes。[/ERR][ERR]表示“在日落时”，常用介词at，错误：in sunset，正确：at sunset。[/ERR][ERR]不要混淆sunset和sunrise，sunset是“日落”，sunrise是“日出”，二者含义相反，不可通用。[/ERR]"
+  ]
+},
+"w258": {
+  "word": "sunrise",
+  "images": {
+    "scene": ["infopic01/sunrise.webp"],
+    "card": ["wordpic01/sunrise.webp"]
+  },
+  "richDetail": [
+    "[TITLE] 解释 [/TITLE][DEF][EN]The time when the sun appears above the horizon (used in Ramadan Is Here Level F, referring to the time before which people stop eating during Ramadan)[/EN][CN]日出；黎明（太阳出现在地平线以上的时刻，出自《Ramadan Is Here》Level F，指斋月期间人们停止进食的时间）[/CN][POS]n.[/POS][PH]/ˈsʌnraɪz/（英美）[/PH][DU]My family shares a meal together before sunrise during Ramadan.|(原文衍生例句) 我们家在斋月期间，日出前共享一餐。[/DU][DU]We woke up early to watch the sunrise on the mountain top.|我们早起去山顶看日出。[/DU][/DEF][IMG]infopic01/sunrise.webp[/IMG]",
+    "[TITLE] 常见用法 [/TITLE][COLL][H]before sunrise|日出前[POS]n.[/POS][/H][EX]Hikers start their journey before sunrise to avoid the hot sun later.|徒步旅行者日出前出发，以避开后来的烈日。[/EX][C]after sunrise|日出后[/C][C]at sunrise|在日出时分[/C][/COLL][COLL][H]early sunrise|早日出[POS]n.[/POS][/H][EX]In summer, the sunrise is early, so the days are long.|夏天日出早，所以白天很长。[/EX][C]beautiful sunrise|美丽的日出[/C][C]bright sunrise|明亮的日出[/C][/COLL][COLL][H]catch the sunrise|看日出；赶日出[POS]n.[/POS][/H][EX]We drove to the beach to catch the sunrise and it was worth it.|我们开车去海滩看日出，非常值得。[/EX][C]witness the sunrise|见证日出[/C][C]admire the sunrise|欣赏日出[/C][/COLL]",
+    "[TITLE] 额外例句 [/TITLE][EX]The sunrise over the mountains is a amazing sight that I will never forget.|山间的日出是我永远不会忘记的惊人景色。[/EX][EX]Farmers get up at sunrise to work in the fields.|农民日出而作，去田里干活。[/EX][EX]The sky turns golden at sunrise, making the world look warm.|日出时分，天空变成金色，让世界看起来暖洋洋的。[/EX]",
+    "[TITLE] 常见错误 [/TITLE][ERR]sunrise是可数名词，复数形式为sunrises，直接加s，不要写成sunrisees。[/ERR][ERR]表示“在日出时”，常用介词at，错误：in sunrise，正确：at sunrise。[/ERR][ERR]sunrise是合成词，中间不加连字符，不要写成sun-rise或sun rise，规范写法为sunrise。[/ERR]"
+  ]
+},
+"w259": {
+  "word": "poem",
+  "images": {
+    "scene": ["infopic01/poem.webp"],
+    "card": ["wordpic01/poem.webp"]
+  },
+  "richDetail": [
+    "[TITLE] 解释 [/TITLE][DEF][EN]A piece of writing that uses beautiful or special language to express ideas or feelings (used in Ramadan Is Here Level F, referring to what people read during Ramadan)[/EN][CN]诗；诗歌（用优美或特殊的语言表达思想或情感的文学作品，出自《Ramadan Is Here》Level F，指人们在斋月期间阅读的内容）[/CN][POS]n.[/POS][PH]/ˈpəʊɪm/（英式）/ˈpoʊəm/（美式）[/PH][DU]Ramadan is here! We read poems during Ramadan.|(原文例句) 斋月到了！我们在斋月期间读诗。[/DU][DU]The teacher read a short poem about spring to the class.|老师给全班读了一首关于春天的短诗。[/DU][/DEF][IMG]infopic01/poem.webp[/IMG]",
+    "[TITLE] 常见用法 [/TITLE][COLL][H]read a poem|读诗[POS]n.[/POS][/H][EX]We read poems about friendship and kindness during the class meeting.|班会期间，我们读了关于友谊和善意的诗。[/EX][C]write a poem|写诗[/C][C]recite a poem|背诵诗歌[/C][/COLL][COLL][H]short poem|短诗[POS]n.[/POS][/H][EX]The little girl wrote a short poem for her mom’s birthday.|小女孩为妈妈的生日写了一首短诗。[/EX][C]long poem|长诗[/C][C]funny poem|有趣的诗[/C][/COLL][COLL][H]poem about sth|关于某物的诗[POS]n.[/POS][/H][EX]There is a beautiful poem about nature in our English textbook.|我们的英语课本里有一首关于自然的优美诗歌。[/EX][C]poem for sb|给某人的诗[/C][C]poem with rhyme|押韵的诗[/C][/COLL]",
+    "[TITLE] 额外例句 [/TITLE][EX]He won a prize for the poem he wrote about his hometown.|他写的关于家乡的诗赢得了奖项。[/EX][EX]The poet uses simple words to make the poem easy to understand.|诗人用简单的词语让这首诗容易理解。[/EX][EX]We listened to the poet read her new poem and clapped loudly.|我们听诗人读了她的新诗，然后大声鼓掌。[/EX]",
+    "[TITLE] 常见错误 [/TITLE][ERR]poem是可数名词，复数形式为poems，直接加s，不要写成poemes。[/ERR][ERR]不要混淆poem和poetry，poem是“一首诗”（可数），poetry是“诗歌”（不可数，总称），错误：a poetry，正确：a poem。[/ERR][ERR]poem的发音需注意，英式/ˈpəʊɪm/与美式/ˈpoʊəm/的区别，不要读成/ˈpəʊm/。[/ERR]"
+  ]
+},
+"w260": {
+  "word": "award",
+  "images": {
+    "scene": ["infopic01/award.webp"],
+    "card": ["wordpic01/award.webp"]
+  },
+  "richDetail": [
+    "[TITLE] 解释 [/TITLE][DEF][EN]A prize given to someone for their good work, skill, or achievement (used in Ramadan Is Here Level F, referring to what people win during Ramadan)[/EN][CN]奖；奖品；奖项（因工作出色、技能突出或取得成就而授予的奖品，出自《Ramadan Is Here》Level F，指人们在斋月期间赢得的荣誉）[/CN][POS]n./v.[/POS][PH]/əˈwɔːd/（英美）[/PH][DU]Ramadan is here! We win awards during Ramadan.|(原文例句) 斋月到了！我们在斋月期间赢得奖项。[/DU][DU]She received an award for being the best student in the grade.|她因成为年级最佳学生而获得了奖项。[/DU][/DEF][IMG]infopic01/award.webp[/IMG][DEF][EN]To give someone a prize for their good work, skill, or achievement[/EN][CN]授予；颁发；奖励[/CN][POS]v.[/POS][DU]The school awarded him a medal for his bravery.|学校因他的勇敢授予他一枚奖牌。[/DU][DU]The judge awarded the first prize to the little painter.|评委把一等奖颁发给了这位小画家。[/DU][/DEF]",
+    "[TITLE] 常见用法 [/TITLE][COLL][H]win an award|获奖[POS]n.[/POS][/H][EX]Many children win awards for their crafts and poems during Ramadan.|许多孩子在斋月期间因他们的手工和诗歌获奖。[/EX][C]get an award|获得奖项[/C][C]receive an award|领取奖项[/C][/COLL][COLL][H]award a prize|颁发奖品[POS]v.[/POS][/H][EX]The teacher awarded a book as a prize to the student who read the most poems.|老师把一本书作为奖品颁发给了读诗最多的学生。[/EX][C]award a medal|授予奖牌[/C][C]award a scholarship|颁发奖学金[/C][/COLL][COLL][H]music award|音乐奖项[POS]n.[/POS][/H][EX]He dreamed of winning a music award when he grew up.|他梦想长大后赢得音乐奖项。[/EX][C]art award|艺术奖项[/C][C]academic award|学术奖项[/C][/COLL]",
+    "[TITLE] 额外例句 [/TITLE][EX]The film won three awards at the movie festival.|这部电影在电影节上赢得了三项大奖。[/EX][EX]The city awarded her a certificate for her volunteer work.|这座城市因她的志愿工作授予她一份证书。[/EX][EX]His hard work helped him win the science award.|他的努力工作帮助他赢得了科学奖项。[/EX]",
+    "[TITLE] 常见错误 [/TITLE][ERR]award作动词时，常用搭配为award sb sth或award sth to sb，不可说award sb with sth（错误），正确：award him a prize/award a prize to him。[/ERR][ERR]award是可数名词，复数形式为awards，直接加s，不要写成awardes。[/ERR][ERR]不要混淆award和reward，award侧重“因成就而授予的奖项”，reward侧重“因付出而获得的报酬或回报”，错误：a reward for his good grades，正确：an award for his good grades。[/ERR]"
+  ]
+},
+"w261": {
+  "word": "reward",
+  "images": {
+    "scene": ["infopic01/reward.webp"],
+    "card": ["wordpic01/reward.webp"]
+  },
+  "richDetail": [
+    "[TITLE] 解释 [/TITLE][DEF][EN]Something given or received in return for good behavior, hard work, or helping others (未在Level F书籍中明确出现，以下为日常高频义)[/EN][CN]报酬；回报；奖励（因良好行为、努力工作或帮助他人而获得的东西）[/CN][POS]n./v.[/POS][PH]/rɪˈwɔːd/（英美）[/PH][DU]She got a small reward for helping the old man cross the street.|她因帮助老人过马路而得到了一份小奖励。[/DU][DU]Hard work always brings good rewards in the end.|努力工作最终总会带来好的回报。[/DU][/DEF][IMG]infopic01/reward.webp[/IMG][DEF][EN]To give someone something in return for their good behavior, hard work, or help[/EN][CN]奖励；奖赏；给以报酬[/CN][POS]v.[/POS][DU]Mom rewarded me with a trip to the zoo for finishing my homework on time.|妈妈因我按时完成作业，奖励我去动物园玩。[/DU][DU]The company rewarded its best employees with a bonus.|公司给业绩最好的员工发放了奖金作为奖励。[/DU][/DEF]",
+    "[TITLE] 常见用法 [/TITLE][COLL][H]get a reward|得到奖励[POS]n.[/POS][/H][EX]The boy got a reward for finding the lost dog.|这个男孩因找到丢失的狗而得到了奖励。[/EX][C]offer a reward|提供报酬[/C][C]deserve a reward|值得奖励[/C][/COLL][COLL][H]reward sb for sth|因某事奖励某人[POS]v.[/POS][/H][EX]Dad rewarded me for cleaning my room by letting me play games.|爸爸因我打扫了房间，允许我玩游戏作为奖励。[/EX][C]reward sb with sth|用某物奖励某人[/C][C]reward hard work|奖励努力工作[/C][/COLL][COLL][H]financial reward|金钱奖励[POS]n.[/POS][/H][EX]The store offers a financial reward for reporting shoplifters.|这家商店为举报入店行窃者提供金钱奖励。[/EX][C]small reward|小奖励[/C][C]great reward|丰厚的回报[/C][/COLL]",
+    "[TITLE] 额外例句 [/TITLE][EX]The greatest reward of volunteering is the happiness you bring to others.|志愿工作最大的回报是你带给他人的快乐。[/EX][EX]She rewarded her cat with a snack for catching the mouse.|她用零食奖励了抓老鼠的猫。[/EX][EX]There is no reward for being lazy—you have to work hard to get what you want.|懒惰没有回报，你必须努力才能得到想要的东西。[/EX]",
+    "[TITLE] 常见错误 [/TITLE][ERR]reward作动词时，常用搭配为reward sb for sth，不可说reward sb sth（错误），正确：reward her for her kindness。[/ERR][ERR]reward是可数名词，复数形式为rewards，直接加s，不要写成rewardes。[/ERR][ERR]不要混淆reward和award，reward侧重“因付出（帮助、努力）而得的回报”，award侧重“因成就（成绩、技能）而授的奖项”，错误：an award for helping others，正确：a reward for helping others。[/ERR]"
+  ]
+},
+"w262": {
+  "word": "receive",
+  "images": {
+    "scene": ["infopic01/receive.webp"],
+    "card": ["wordpic01/receive.webp"]
+  },
+  "richDetail": [
+    "[TITLE] 解释 [/TITLE][DEF][EN]To get or be given something (used in Ramadan Is Here Level F, referring to getting gifts after Ramadan)[/EN][CN]收到；接到；得到（获得或被给予某物，出自《Ramadan Is Here》Level F，指斋月结束后收到礼物）[/CN][POS]v.[/POS][PH]/rɪˈsiːv/（英美）[/PH][DU]When Ramadan is over, we give and receive gifts.|(原文例句) 斋月结束后，我们互赠礼物。[/DU][DU]I received a birthday card from my best friend yesterday.|我昨天收到了最好的朋友寄来的生日贺卡。[/DU][/DEF][IMG]infopic01/receive.webp[/IMG][DEF][EN]To welcome or accept someone or something[/EN][CN]接待；接纳；接受[/CN][POS]v.[/POS][DU]The hotel receives hundreds of guests every weekend.|这家酒店每个周末接待数百名客人。[/DU][DU]She received the invitation to the party and decided to go.|她接受了派对邀请，决定参加。[/DU][/DEF]",
+    "[TITLE] 常见用法 [/TITLE][COLL][H]receive a gift|收到礼物[POS]v.[/POS][/H][EX]Children receive gifts from their family and friends during Ramadan.|孩子们在斋月期间收到家人和朋友送的礼物。[/EX][C]receive a letter|收到信件[/C][C]receive an email|收到邮件[/C][/COLL][COLL][H]receive guests|接待客人[POS]v.[/POS][/H][EX]My mom receives guests in the living room when they come to visit.|客人来访时，我妈妈在客厅接待他们。[/EX][C]receive visitors|接待访客[/C][C]receive a warm welcome|受到热烈欢迎[/C][/COLL][COLL][H]receive sth from sb|从某人那里收到某物[POS]v.[/POS][/H][EX]He received a lot of support from his classmates when he was ill.|他生病时收到了同学们的很多支持。[/EX][C]receive help from others|得到他人的帮助[/C][C]receive advice from a teacher|得到老师的建议[/C][/COLL]",
+    "[TITLE] 额外例句 [/TITLE][EX]Did you receive the package I sent you last week?|你收到我上周寄给你的包裹了吗？[/EX][EX]The team received a trophy for winning the competition.|这支队伍因赢得比赛而获得了奖杯。[/EX][EX]She was happy to receive a compliment on her new dress.|她收到对她新裙子的赞美，非常开心。[/EX]",
+    "[TITLE] 常见错误 [/TITLE][ERR]receive的拼写容易出错，注意中间是“ei”，不是“ie”，错误：recieve，正确：receive（口诀：i before e except after c，但receive是例外）。[/ERR][ERR]receive是及物动词，直接接宾语，无需加介词for，错误：receive for the gift，正确：receive the gift。[/ERR][ERR]receive的过去式和过去分词为received，直接加ed，不要写成receeved。[/ERR]"
+  ]
+},
+"w263": {
+  "word": "lobster",
+  "images": {
+    "scene": ["infopic01/lobster.webp"],
+    "card": ["wordpic01/lobster.webp"]
+  },
+  "richDetail": [
+    "[TITLE] 解释 [/TITLE][DEF][EN]A sea animal with a hard shell, claws, and a long body, living in the ocean near Brazil (used in Are You From Brazil? Level F, listed as a Brazilian animal)[/EN][CN]龙虾（一种有硬壳、爪子和长身体的海洋动物，生活在巴西附近海域，出自《Are You From Brazil?》Level F，被列为巴西的动物之一）[/CN][POS]n.[/POS][PH]/ˈlɒbstə(r)/（英式）/ˈlɑːbstər/（美式）[/PH][DU]Lobster is a sea animal that lives in the ocean near Brazil.|龙虾是一种生活在巴西附近海域的海洋动物。[/DU][DU]We ate grilled lobster for dinner at the seaside restaurant.|我们在海滨餐厅吃了烤龙虾当晚餐。[/DU][/DEF][IMG]infopic01/lobster.webp[/IMG]",
+    "[TITLE] 常见用法 [/TITLE][COLL][H]grilled lobster|烤龙虾[POS]n.[/POS][/H][EX]People in coastal areas often cook grilled lobster for special meals.|沿海地区的人们经常在特殊场合做烤龙虾。[/EX][C]boiled lobster|水煮龙虾[/C][C]lobster claws|龙虾钳[/C][/COLL][COLL][H]catch lobsters|捕龙虾[POS]n.[/POS][/H][EX]Fishermen use special traps to catch lobsters in the ocean.|渔民使用特殊的捕虾笼在海里捕龙虾。[/EX][C]fresh lobster|新鲜龙虾[/C][C]frozen lobster|冷冻龙虾[/C][/COLL]",
+    "[TITLE] 额外例句 [/TITLE][EX]The lobster has strong claws to catch food and protect itself.|龙虾有强壮的钳子来捕捉食物和保护自己。[/EX][EX]My dad bought a big lobster from the market and cooked it with garlic.|爸爸从市场买了一只大龙虾，用大蒜做了。[/EX][EX]Lobsters are usually red when cooked, but they are blue or green when alive.|龙虾煮熟后通常是红色的，但活着的时候是蓝色或绿色的。[/EX]",
+    "[TITLE] 常见错误 [/TITLE][ERR]lobster是可数名词，复数形式为lobsters，直接加s，不要写成lobsteres。[/ERR][ERR]不要混淆lobster和crab，lobster是“龙虾”，体型较长，有大钳子；crab是“螃蟹”，体型较扁，有八只脚，错误：a crab with long claws，正确：a lobster with long claws。[/ERR][ERR]发音时注意英式/ˈlɒbstə(r)/与美式/ˈlɑːbstər/的区别，不要读成/ˈləʊbstə(r)/。[/ERR]"
+  ]
+},
+"w264": {
+  "word": "cowrie",
+  "images": {
+    "scene": ["infopic01/cowrie.webp"],
+    "card": ["wordpic01/cowrie.webp"]
+  },
+  "richDetail": [
+    "[TITLE] 解释 [/TITLE][DEF][EN]A type of mollusk with a small, smooth, spotted shell (used in Seashells Level F, referring to a shell-bearing mollusk)[/EN][CN]宝贝螺；子安贝（一种有小巧、光滑且带斑点贝壳的软体动物，出自《Seashells》Level F，指带壳的软体动物之一）[/CN][POS]n.[/POS][PH]/ˈkaʊri/（英美）[/PH][DU]The cowrie is a mollusk with a spotted shell.|宝贝螺是一种带有斑点贝壳的软体动物。[/DU][DU]People used to use cowrie shells as money in some ancient cultures.|在一些古代文化中，人们曾用宝贝螺的贝壳当钱。[/DU][/DEF][IMG]infopic01/cowrie.webp[/IMG]",
+    "[TITLE] 常见用法 [/TITLE][COLL][H]spotted cowrie|带斑点的宝贝螺[POS]n.[/POS][/H][EX]We found a beautiful spotted cowrie shell on the beach during our trip.|旅行时我们在海滩上发现了一个漂亮的带斑点宝贝螺壳。[/EX][C]cowrie shell|宝贝螺壳[/C][C]ancient cowrie money|古代宝贝螺货币[/C][/COLL][COLL][H]collect cowries|收集宝贝螺[POS]n.[/POS][/H][EX]She likes to collect cowries and display them in a glass box.|她喜欢收集宝贝螺，把它们放在玻璃盒里展示。[/EX][C]smooth cowrie|光滑的宝贝螺[/C][C]colorful cowrie|色彩鲜艳的宝贝螺[/C][/COLL]",
+    "[TITLE] 额外例句 [/TITLE][EX]The cowrie's shell is so pretty that some people make jewelry with it.|宝贝螺的壳非常漂亮，有些人用它做首饰。[/EX][EX]We learned about the cowrie in science class—its shell protects its soft body.|我们在科学课上学到了宝贝螺，它的壳能保护它柔软的身体。[/EX][EX]This cowrie shell is bigger than the others I have collected.|这个宝贝螺壳比我收集的其他贝壳都大。[/EX]",
+    "[TITLE] 常见错误 [/TITLE][ERR]cowrie的复数形式为cowries，变y为i加es，不要写成cowrys或cowriees。[/ERR][ERR]不要把cowrie发音为/ˈkaʊəri/，正确发音为/ˈkaʊri/，注意中间没有额外的元音。[/ERR][ERR]cowrie是“宝贝螺”，属于软体动物，不要误认为是“贝壳”本身，错误：a pretty cowrie，正确：a pretty cowrie shell（指贝壳）/a small cowrie（指动物）。[/ERR]"
+  ]
+},
+"w265": {
+  "word": "scallop",
+  "images": {
+    "scene": ["infopic01/scallop.webp"],
+    "card": ["wordpic01/scallop.webp"]
+  },
+  "richDetail": [
+    "[TITLE] 解释 [/TITLE][DEF][EN]A type of mollusk with two fan-shaped shells (used in Seashells Level F, one of the shell-bearing mollusks)[/EN][CN]扇贝（一种有两个扇形贝壳的软体动物，出自《Seashells》Level F，是带壳软体动物之一）[/CN][POS]n./v.[/POS][PH]/ˈskɒləp/（英式）/ˈskæləp/（美式）[/PH][DU]Scallops are mollusks that live in the ocean with fan-shaped shells.|扇贝是生活在海洋里、长有扇形贝壳的软体动物。[/DU][DU]The chef cooked scallops with butter and garlic, and they tasted delicious.|厨师用黄油和大蒜做了扇贝，味道非常美味。[/DU][/DEF][IMG]infopic01/scallop.webp[/IMG][DEF][EN]To decorate the edge of something with curved cuts[/EN][CN]（用弧形切口）装饰……的边缘[/CN][POS]v.[/POS][DU]She scalloped the edge of the tablecloth to make it look nicer.|她把桌布的边缘剪成扇形，让它看起来更漂亮。[/DU][DU]The tailor scalloped the hem of the dress for a lovely design.|裁缝把裙子的下摆做成扇形，设计很可爱。[/DU][/DEF]",
+    "[TITLE] 常见用法 [/TITLE][COLL][H]fan-shaped scallop|扇形扇贝[POS]n.[/POS][/H][EX]The fan-shaped scallop shells are often used to make crafts.|扇形的扇贝壳常被用来做手工。[/EX][C]sea scallop|海扇贝[/C][C]bay scallop|海湾扇贝[/C][/COLL][COLL][H]scallop the edge|剪成扇形边缘[POS]v.[/POS][/H][EX]Mom scalloped the edge of the pie crust before putting it in the oven.|妈妈把馅饼皮的边缘剪成扇形后放进烤箱。[/EX][C]scallop a napkin|把餐巾边缘剪成扇形[/C][C]scallop a curtain|给窗帘边缘做扇形装饰[/C][/COLL]",
+    "[TITLE] 额外例句 [/TITLE][EX]We found many empty scallop shells on the beach after the tide went out.|退潮后我们在海滩上发现了很多空扇贝壳。[/EX][EX]Scallops can swim by opening and closing their shells quickly.|扇贝可以通过快速开合贝壳来游动。[/EX][EX]The dress has a scalloped collar that makes it look very elegant.|这条裙子有扇形衣领，看起来很优雅。[/EX]",
+    "[TITLE] 常见错误 [/TITLE][ERR]scallop作名词“扇贝”时，复数形式为scallops，直接加s，不要写成scallopes。[/ERR][ERR]scallop作动词时，过去式和过去分词为scalloped，双写p加ed，不要写成scallopied。[/ERR][ERR]不要混淆scallop和shell，scallop是“扇贝（动物）”，shell是“贝壳”，错误：I found a scallop on the beach，正确：I found a scallop shell on the beach（指贝壳）。[/ERR]"
+  ]
+},
+"w266": {
+  "word": "conch",
+  "images": {
+    "scene": ["infopic01/conch.webp"],
+    "card": ["wordpic01/conch.webp"]
+  },
+  "richDetail": [
+    "[TITLE] 解释 [/TITLE][DEF][EN]A large sea snail with a spiral shell (used in Seashells Level F, a mollusk with a spiral shell)[/EN][CN]海螺；凤螺（一种有螺旋形贝壳的大型海蜗牛，出自《Seashells》Level F，是带螺旋形贝壳的软体动物）[/CN][POS]n.[/POS][PH]/kɒntʃ/（英式）/kɑːntʃ/（美式）[/PH][DU]The conch is a large mollusk with a beautiful spiral shell.|海螺是一种带有漂亮螺旋形贝壳的大型软体动物。[/DU][DU]He blew the conch shell to call his friends to gather.|他吹海螺壳呼唤朋友们集合。[/DU][/DEF][IMG]infopic01/conch.webp[/IMG]",
+    "[TITLE] 常见用法 [/TITLE][COLL][H]conch shell|海螺壳[POS]n.[/POS][/H][EX]We used a conch shell as a horn to play music on the beach.|我们用海螺壳当号角，在海滩上演奏音乐。[/EX][C]spiral conch|螺旋海螺[/C][C]large conch|大海螺[/C][/COLL][COLL][H]blow a conch|吹海螺[POS]n.[/POS][/H][EX]In some coastal villages, people blow a conch to announce important news.|在一些沿海村庄，人们吹海螺来宣布重要消息。[/EX][C]collect conch shells|收集海螺壳[/C][C]carve patterns on conch|在海螺上雕刻图案[/C][/COLL]",
+    "[TITLE] 额外例句 [/TITLE][EX]The conch's spiral shell is very hard, which can protect its soft body.|海螺的螺旋壳非常坚硬，能保护它柔软的身体。[/EX][EX]We saw a fisherman selling fresh conch at the seafood market.|我们在海鲜市场看到一个渔民在卖新鲜的海螺。[/EX][EX]She made a necklace with small conch shells and wore it to the party.|她用小海螺壳做了一条项链，戴着去参加派对。[/EX]",
+    "[TITLE] 常见错误 [/TITLE][ERR]conch的复数形式为conchs，直接加s，不要写成conches（英式口语中可使用，规范写法为conchs）。[/ERR][ERR]不要把conch发音为/kɒntʃɪ/，正确发音为/kɒntʃ/（英式）/kɑːntʃ/（美式），结尾没有i音。[/ERR][ERR]conch是“海螺（动物）”，conch shell是“海螺壳”，不可混淆，错误：I found a conch on the beach，正确：I found a conch shell on the beach（指贝壳）。[/ERR]"
+  ]
+},
+"w267": {
+  "word": "oyster",
+  "images": {
+    "scene": ["infopic01/oyster.webp"],
+    "card": ["wordpic01/oyster.webp"]
+  },
+  "richDetail": [
+    "[TITLE] 解释 [/TITLE][DEF][EN]A type of mollusk with a rough, bumpy shell that can produce pearls (used in Seashells Level F and What’s in That Shell? Level F, referring to a shell-bearing mollusk that makes pearls)[/EN][CN]牡蛎；蚝（一种有粗糙、凹凸不平贝壳的软体动物，能产珍珠，出自《Seashells》Level F和《What’s in That Shell?》Level F，指能产珍珠的带壳软体动物）[/CN][POS]n.[/POS][PH]/ˈɔɪstə(r)/（英美）[/PH][DU]An oyster is inside the sandy rock-like shell, and so is a pearl.|(原文例句) 沙岩般的贝壳里藏着一只牡蛎，还有一颗珍珠。[/DU][DU]The oyster is a mollusk with a bumpy shell, and it can make pearls.|(原文衍生例句) 牡蛎是一种有凹凸贝壳的软体动物，它能产出珍珠。[/DU][/DEF][IMG]infopic01/oyster.webp[/IMG][DEF][EN]A small, flat, edible shellfish that lives in the sea or in rivers[/EN][CN]牡蛎；蚝（可食用的小型扁平贝类，生活在海洋或河流中）[/CN][POS]n.[/POS][DU]We ate fresh oysters with lemon and bread for lunch.|我们午餐吃了新鲜的牡蛎，搭配柠檬和面包。[/DU][DU]Oysters are often served raw or grilled in seafood restaurants.|海鲜餐厅里的牡蛎通常生吃或烤制食用。[/DU][/DEF]",
+    "[TITLE] 常见用法 [/TITLE][COLL][H]oyster pearl|牡蛎珍珠[POS]n.[/POS][/H][EX]It takes several years for an oyster to form a shiny oyster pearl.|牡蛎需要好几年才能形成一颗闪亮的珍珠。[/EX][C]fresh oyster|新鲜牡蛎[/C][C]bumpy oyster shell|凹凸的牡蛎壳[/C][/COLL][COLL][H]produce pearls|产珍珠[POS]v.[/POS][/H][EX]Only some types of oysters can produce pearls naturally.|只有部分种类的牡蛎能自然产珍珠。[/EX][C]farm oysters|养殖牡蛎[/C][C]eat oysters|吃牡蛎[/C][/COLL][COLL][H]oyster sauce|蚝油[POS]n.[/POS][/H][EX]My mom uses oyster sauce to cook stir-fried vegetables.|妈妈用蚝油炒蔬菜。[/EX][C]oyster soup|牡蛎汤[/C][C]grilled oysters|烤牡蛎[/C][/COLL]",
+    "[TITLE] 额外例句 [/TITLE][EX]The oyster hides in its hard shell to protect itself from predators.|牡蛎躲在坚硬的贝壳里，抵御捕食者。[/EX][EX]We bought a jar of oyster sauce from the supermarket for cooking.|我们从超市买了一罐蚝油做饭用。[/EX][EX]Scientists study how oysters filter water and keep the ocean clean.|科学家研究牡蛎如何过滤水，保持海洋清洁。[/EX]",
+    "[TITLE] 常见错误 [/TITLE][ERR]oyster是可数名词，复数形式为oysters，直接加s，不要写成oysteres。[/ERR][ERR]不要混淆oyster和shell，oyster是“牡蛎（动物）”，shell是“贝壳”，错误：I found an oyster on the beach，正确：I found an oyster shell on the beach（指贝壳）。[/ERR][ERR]表示“蚝油”时，固定搭配为oyster sauce，不可写成oyster’s sauce或oysters sauce。[/ERR]"
+  ]
+},
+"w268": {
+  "word": "mollusk",
+  "images": {
+    "scene": ["infopic01/mollusk.webp"],
+    "card": ["wordpic01/mollusk.webp"]
+  },
+  "richDetail": [
+    "[TITLE] 解释 [/TITLE][DEF][EN]A soft-bodied animal that often has a hard shell to protect itself (used in Seashells Level F, referring to shell-bearing sea animals like oysters and conchs)[/EN][CN]软体动物（身体柔软，通常有坚硬的贝壳保护自己，出自《Seashells》Level F，指牡蛎、海螺等带壳海洋动物）[/CN][POS]n.[/POS][PH]/ˈmɒləsk/（英式）/ˈmɑːləsk/（美式）[/PH][DU]Mollusks like cowries and scallops have hard shells to keep them safe.|(原文衍生例句) 宝贝螺和扇贝这类软体动物有坚硬的贝壳保护自己。[/DU][DU]Seashells are the hard outer shells of mollusks that live in the ocean.|(原文衍生例句) 贝壳是生活在海洋中的软体动物的坚硬外壳。[/DU][/DEF][IMG]infopic01/mollusk.webp[/IMG][DEF][EN]A large group of invertebrate animals including snails, slugs, clams, and octopuses[/EN][CN]软体动物（一大类无脊椎动物，包括蜗牛、蛞蝓、蛤蜊和章鱼等）[/CN][POS]n.[/POS][DU]Snails and octopuses are both mollusks, but snails have shells while octopuses don’t.|蜗牛和章鱼都是软体动物，但蜗牛有壳，章鱼没有。[/DU][DU]Mollusks can live in the ocean, in rivers, or on land.|软体动物可以生活在海洋、河流或陆地上。[/DU][/DEF]",
+    "[TITLE] 常见用法 [/TITLE][COLL][H]shell-bearing mollusks|带壳软体动物[POS]n.[/POS][/H][EX]Seashells are left behind by shell-bearing mollusks when they die.|贝壳是带壳软体动物死后留下的外壳。[/EX][C]sea mollusks|海洋软体动物[/C][C]land mollusks|陆地软体动物[/C][/COLL][COLL][H]mollusk shells|软体动物壳[POS]n.[/POS][/H][EX]Children like to collect beautiful mollusk shells on the beach.|孩子们喜欢在海滩上收集漂亮的软体动物壳。[/EX][C]soft-bodied mollusks|软体身体的软体动物[/C][C]mollusk species|软体动物种类[/C][/COLL][COLL][H]protect mollusks|保护软体动物[POS]v.[/POS][/H][EX]We should protect mollusks and their living environments in the ocean.|我们应该保护海洋中的软体动物及其生存环境。[/EX][C]study mollusks|研究软体动物[/C][C]classify mollusks|给软体动物分类[/C][/COLL]",
+    "[TITLE] 额外例句 [/TITLE][EX]The museum has a collection of mollusk shells from all over the world.|这个博物馆收藏了来自世界各地的软体动物壳。[/EX][EX]Mollusks play an important role in the ocean food chain.|软体动物在海洋食物链中扮演着重要角色。[/EX][EX]Some mollusks can change their shell colors to hide from enemies.|有些软体动物能改变壳的颜色来躲避敌人。[/EX]",
+    "[TITLE] 常见错误 [/TITLE][ERR]mollusk的复数形式为mollusks（美式）或molluscs（英式），规范写法优先mollusks，不要写成molluskes。[/ERR][ERR]不要混淆mollusk和shellfish，mollusk是“软体动物”（生物分类），shellfish是“贝类”（可食用的带壳水生动物），错误：All shellfish are mollusks，正确：Many shellfish are mollusks（部分贝类属于软体动物）。[/ERR][ERR]发音时注意英式/ˈmɒləsk/与美式/ˈmɑːləsk/的区别，不要读成/ˈməʊləsk/。[/ERR]"
+  ]
+},
+"w269": {
+  "word": "nautilus",
+  "images": {
+    "scene": ["infopic01/nautilus.webp"],
+    "card": ["wordpic01/nautilus.webp"]
+  },
+  "richDetail": [
+    "[TITLE] 解释 [/TITLE][DEF][EN]A type of mollusk with a spiral, striped shell (used in Seashells Level F, referring to a shell-bearing mollusk with a striped shell)[/EN][CN]鹦鹉螺（一种有螺旋形、条纹贝壳的软体动物，出自《Seashells》Level F，指带条纹贝壳的软体动物）[/CN][POS]n.[/POS][PH]/ˈnɔːtɪləs/（英美）[/PH][DU]The nautilus is a mollusk with a beautiful striped shell.|(原文衍生例句) 鹦鹉螺是一种带有漂亮条纹贝壳的软体动物。[/DU][DU]The nautilus's shell is spiral-shaped, like a snail's shell but bigger.|鹦鹉螺的壳是螺旋形的，像蜗牛壳但更大。[/DU][/DEF][IMG]infopic01/nautilus.webp[/IMG][DEF][EN]A rare deep-sea mollusk that is often called a 'living fossil'[/EN][CN]鹦鹉螺（一种罕见的深海软体动物，常被称为“活化石”）[/CN][POS]n.[/POS][DU]Nautiluses have existed on Earth for millions of years, so they are called living fossils.|鹦鹉螺已经在地球上存在了数百万年，所以被称为活化石。[/DU][DU]Scientists study nautiluses to learn about ancient ocean life.|科学家研究鹦鹉螺来了解古代海洋生物。[/DU][/DEF]",
+    "[TITLE] 常见用法 [/TITLE][COLL][H]striped nautilus|条纹鹦鹉螺[POS]n.[/POS][/H][EX]We saw a picture of a striped nautilus in the science book.|我们在科学书上看到了条纹鹦鹉螺的图片。[/EX][C]spiral nautilus|螺旋鹦鹉螺[/C][C]living fossil nautilus|活化石鹦鹉螺[/C][/COLL][COLL][H]nautilus shell|鹦鹉螺壳[POS]n.[/POS][/H][EX]The nautilus shell is often used to make crafts because of its beautiful shape.|鹦鹉螺壳因其漂亮的形状常被用来做手工。[/EX][C]collect nautilus shells|收集鹦鹉螺壳[/C][C]study nautilus shells|研究鹦鹉螺壳[/C][/COLL][COLL][H]deep-sea nautilus|深海鹦鹉螺[POS]n.[/POS][/H][EX]Deep-sea nautiluses live in dark ocean waters and rarely come to the surface.|深海鹦鹉螺生活在黑暗的海洋水域，很少浮出水面。[/EX][C]ancient nautilus|古代鹦鹉螺[/C][C]rare nautilus|罕见鹦鹉螺[/C][/COLL]",
+    "[TITLE] 额外例句 [/TITLE][EX]The nautilus can control its buoyancy by changing the gas in its shell.|鹦鹉螺可以通过改变壳内的气体来控制浮力。[/EX][EX]We visited an aquarium and saw a real nautilus swimming slowly.|我们参观了水族馆，看到一只真正的鹦鹉螺在缓慢游动。[/EX][EX]The nautilus's shell grows as the animal gets bigger, adding new spiral layers.|鹦鹉螺的壳会随着动物长大而生长，增加新的螺旋层。[/EX]",
+    "[TITLE] 常见错误 [/TITLE][ERR]nautilus的复数形式为nautiluses或nautili（复数特殊形式），不要写成nautiluscs或nautilusies。[/ERR][ERR]不要混淆nautilus和snail，nautilus是“鹦鹉螺”（海洋软体动物，壳大且厚），snail是“蜗牛”（多为陆生，壳小），错误：a land nautilus，正确：a land snail。[/ERR][ERR]发音时注意重音在第一个音节，不要读成/nɔːˈtɪləs/，正确发音为/ˈnɔːtɪləs/。[/ERR]"
+  ]
+},
+"w270": {
+  "word": "African",
+  "images": {
+    "scene": ["infopic01/african.webp"],
+    "card": ["wordpic01/african.webp"]
+  },
+  "richDetail": [
+    "[TITLE] 解释 [/TITLE][DEF][EN]Relating to the continent of Africa or its people, animals, or places (used in At the Watering Hole Level F, referring to the savanna and animals from Africa)[/EN][CN]非洲的；非洲人的；非洲的（与非洲大陆及其人民、动物或地方相关，出自《At the Watering Hole》Level F，指非洲的稀树草原和非洲动物）[/CN][POS]adj./n.[/POS][PH]/ˈæfrɪkən/（英美）[/PH][DU]It is the dry season on the African savanna, where many animals gather to drink.|(原文衍生例句) 非洲稀树草原正值旱季，许多动物聚集到水坑喝水。[/DU][DU]African animals like rhinos and leopards can be seen at the watering hole.|在水坑边能看到犀牛和豹子等非洲动物。[/DU][/DEF][IMG]infopic01/african.webp[/IMG][DEF][EN]A person from Africa[/EN][CN]非洲人[/CN][POS]n.[/POS][DU]The African guide told us interesting stories about the savanna animals.|这位非洲向导给我们讲了关于稀树草原动物的有趣故事。[/DU][DU]Many Africans celebrate traditional festivals with music and dance.|许多非洲人通过音乐和舞蹈庆祝传统节日。[/DU][/DEF]",
+    "[TITLE] 常见用法 [/TITLE][COLL][H]African savanna|非洲稀树草原[POS]adj.[/POS][/H][EX]The African savanna is home to many large animals like elephants and zebras.|非洲稀树草原是大象和斑马等许多大型动物的家园。[/EX][C]African continent|非洲大陆[/C][C]African countries|非洲国家[/C][/COLL][COLL][H]African animals|非洲动物[POS]adj.[/POS][/H][EX]We learned about African animals like rhinos, leopards, and hyenas in class.|我们在课堂上学到了犀牛、豹子和鬣狗等非洲动物。[/EX][C]African wildlife|非洲野生动物[/C][C]African birds|非洲鸟类[/C][/COLL][COLL][H]African culture|非洲文化[POS]adj.[/POS][/H][EX]African culture is rich in music, dance, and storytelling.|非洲文化富含音乐、舞蹈和讲故事的传统。[/EX][C]African traditions|非洲传统[/C][C]African food|非洲食物[/C][/COLL]",
+    "[TITLE] 额外例句 [/TITLE][EX]The African continent is the second largest in the world.|非洲大陆是世界第二大洲。[/EX][EX]She is studying African history and wants to visit Africa someday.|她正在学习非洲历史，希望有一天能去非洲旅行。[/EX][EX]African elephants are bigger than Asian elephants and have larger ears.|非洲象比亚洲象大，耳朵也更大。[/EX]",
+    "[TITLE] 常见错误 [/TITLE][ERR]African作形容词时，首字母必须大写，不可小写（错误：african）；作“非洲人”讲时，复数形式为Africans，直接加s，不要写成Africanese。[/ERR][ERR]表示“在非洲”时，常用介词in，错误：on African，正确：in Africa（名词形式）/in African countries（形容词形式）。[/ERR][ERR]不要混淆African和Africa，African是形容词或名词，Africa是名词“非洲”，错误：Africa animals，正确：African animals。[/ERR]"
+  ]
+},
+"w271": {
+  "word": "savanna",
+  "images": {
+    "scene": ["infopic01/savanna.webp"],
+    "card": ["wordpic01/savanna.webp"]
+  },
+  "richDetail": [
+    "[TITLE] 解释 [/TITLE][DEF][EN]A large grassy area in Africa with few trees, where many animals live (used in At the Watering Hole Level F, referring to the dry-season habitat of African animals)[/EN][CN]稀树草原；热带草原（非洲大片长满草、树木稀少的区域，是许多动物的栖息地，出自《At the Watering Hole》Level F，指非洲动物旱季的栖息地）[/CN][POS]n.[/POS][PH]/səˈvænə/（英美）[/PH][DU]It is the dry season on the African savanna, so animals come to the watering hole to drink.|(原文例句) 非洲稀树草原正值旱季，所以动物们来到水坑喝水。[/DU][DU]The African savanna has tall grass and scattered trees, perfect for grazing animals.|非洲稀树草原长着高高的草和零星的树木，非常适合食草动物。[/DU][/DEF][IMG]infopic01/savanna.webp[/IMG][DEF][EN]A grassy plain with scattered trees in tropical and subtropical regions worldwide[/EN][CN]稀树草原；热带草原（全球热带和亚热带地区长满草、树木零星分布的平原）[/CN][POS]n.[/POS][DU]Some parts of South America and Australia also have savannas.|南美洲和澳大利亚的部分地区也有稀树草原。[/DU][DU]Savannas have a dry season and a rainy season, which affects animal behavior.|稀树草原有旱季和雨季，这会影响动物的行为。[/DU][/DEF]",
+    "[TITLE] 常见用法 [/TITLE][COLL][H]African savanna|非洲稀树草原[POS]n.[/POS][/H][EX]Many people dream of visiting the African savanna to see wild animals.|许多人梦想去非洲稀树草原看野生动物。[/EX][C]dry savanna|干旱稀树草原[/C][C]rainy savanna|雨季稀树草原[/C][/COLL][COLL][H]savanna animals|稀树草原动物[POS]n.[/POS][/H][EX]Zebras, giraffes, and rhinos are all savanna animals that need water daily.|斑马、长颈鹿和犀牛都是每天需要水的稀树草原动物。[/EX][C]savanna habitat|稀树草原栖息地[/C][C]savanna plants|稀树草原植物[/C][/COLL][COLL][H]on the savanna|在稀树草原上[POS]n.[/POS][/H][EX]Lions hunt for food on the savanna, often at night.|狮子在稀树草原上捕食，通常在夜间。[/EX][C]live on the savanna|生活在稀树草原上[/C][C]graze on the savanna|在稀树草原上吃草[/C][/COLL]",
+    "[TITLE] 额外例句 [/TITLE][EX]The savanna grass turns yellow during the dry season and green after rain.|稀树草原的草在旱季变黄，雨后变绿。[/EX][C]Birds build nests in the scattered trees on the savanna.|鸟类在稀树草原零星的树上筑巢。[/C][EX]Farmers sometimes use savanna land for grazing cattle.|农民有时会用稀树草原的土地放牛。[/EX]",
+    "[TITLE] 常见错误 [/TITLE][ERR]savanna的复数形式为savannas或savannas（两种形式均可），不要写成savannaes。[/ERR][ERR]不要混淆savanna和prairie，savanna是“稀树草原”（热带/亚热带，有零星树木），prairie是“大草原”（温带，无树木），错误：American savanna，正确：American prairie（美国大草原）。[/ERR][ERR]发音时注意重音在第二个音节，不要读成/ˈsævənə/，正确发音为/səˈvænə/。[/ERR]"
+  ]
+},
+"w272": {
+  "word": "rhino",
+  "images": {
+    "scene": ["infopic01/rhino.webp"],
+    "card": ["wordpic01/rhino.webp"]
+  },
+  "richDetail": [
+    "[TITLE] 解释 [/TITLE][DEF][EN]A large, heavy African animal with thick skin and one or two horns on its nose (used in At the Watering Hole Level F, referring to an animal that drinks at the watering hole)[/EN][CN]犀牛（一种体型庞大、笨重的非洲动物，皮肤厚实，鼻子上有一个或两个角，出自《At the Watering Hole》Level F，指去水坑喝水的动物）[/CN][POS]n.[/POS][PH]/ˈraɪnəʊ/（英式）/ˈraɪnoʊ/（美式）[/PH][DU]A heavy rhino stops to take a drink at the watering hole.|(原文例句) 一头笨重的犀牛停下来在水坑喝水。[/DU][DU]The rhino’s thick skin protects it from thorns and small predators.|犀牛厚实的皮肤能保护它免受荆棘和小型捕食者的伤害。[/DU][/DEF][IMG]infopic01/rhino.webp[/IMG][DEF][EN]Short for rhinoceros; any of several large thick-skinned mammals with horns[/EN][CN]犀牛（rhinoceros的缩写，指几种皮肤厚实、长有角的大型哺乳动物）[/CN][POS]n.[/POS][DU]There are five different species of rhino in the world, most of which are endangered.|世界上有五种不同的犀牛，其中大多数处于濒危状态。[/DU][DU]Rhinos eat grass and leaves, and they need to drink water every day.|犀牛吃草和树叶，每天都需要喝水。[/DU][/DEF]",
+    "[TITLE] 常见用法 [/TITLE][COLL][H]African rhino|非洲犀牛[POS]n.[/POS][/H][EX]The African rhino is bigger than the Asian rhino and often has two horns.|非洲犀牛比亚洲犀牛大，通常有两个角。[/EX][C]heavy rhino|笨重的犀牛[/C][C]endangered rhino|濒危犀牛[/C][/COLL][H]rhino horns|犀牛角[POS]n.[/POS][/H][EX]Rhino horns are made of keratin, the same material as human nails.|犀牛角由角蛋白构成，和人类指甲的材质相同。[/EX][C]rhino skin|犀牛皮肤[/C][C]rhino habitat|犀牛栖息地[/C][/COLL][COLL][H]drink at the watering hole|在水坑喝水[POS]n.[/POS][/H][EX]Rhinos and elephants often drink at the same watering hole on the savanna.|犀牛和大象经常在稀树草原的同一个水坑喝水。[/EX][C]protect rhinos|保护犀牛[/C][C]see rhinos in the wild|在野外看到犀牛[/C][/COLL]",
+    "[TITLE] 额外例句 [/TITLE][EX]We saw a mother rhino and her baby at the wildlife reserve.|我们在野生动物保护区看到了一头犀牛妈妈和她的宝宝。[/EX][EX]Rhinos are usually calm, but they can be dangerous if they feel threatened.|犀牛通常很温顺，但如果感到威胁，它们可能会很危险。[/EX][EX]Conservationists are working hard to save endangered rhinos from extinction.|环保人士正在努力拯救濒危犀牛，避免它们灭绝。[/EX]",
+    "[TITLE] 常见错误 [/TITLE][ERR]rhino是rhinoceros的缩写，复数形式为rhinos，直接加s，不要写成rhinoes或rhinoceroses（正式写法，口语中常用rhinos）。[/ERR][ERR]不要混淆rhino和hippo，rhino是“犀牛”（有角，皮肤厚实），hippo是“河马”（无角，体型更矮胖，擅长游泳），错误：a swimming rhino，正确：a swimming hippo。[/ERR][ERR]发音时注意英式/ˈraɪnəʊ/与美式/ˈraɪnoʊ/的区别，不要读成/ˈrɪnəʊ/。[/ERR]"
+  ]
+},
+"w273": {
+  "word": "flock",
+  "images": {
+    "scene": ["infopic01/flock2.webp"],
+    "card": ["wordpic01/flock2.webp"]
+  },
+  "richDetail": [
+    "[TITLE] 解释 [/TITLE][DEF][EN]A group of birds of the same type flying or living together (used in At the Watering Hole Level F and Some Birds Go Level F, referring to birds gathering to drink or migrate)[/EN][CN]鸟群（一群同类的鸟一起飞行或生活，出自《At the Watering Hole》Level F和《Some Birds Go》Level F，指聚集喝水或迁徙的鸟类）[/CN][POS]n./v.[/POS][PH]/flɒk/（英式）/flɑːk/（美式）[/PH][DU]A flock of storks comes to the watering hole to take a drink.|(原文例句) 一群鹳来到水坑喝水。[/DU][DU]Snow geese migrate in a V-shaped flock.|(原文例句) 雪雁以V字形鸟群迁徙。[/DU][/DEF][IMG]infopic01/flock2.webp[/IMG][DEF][EN]A large group of animals of the same type; a large number of people gathered together[/EN][CN]兽群；人群（一大群同类的动物；聚集在一起的一大群人）[/CN][POS]n./v.[/POS][DU]We saw a flock of sheep eating grass on the hillside of the savanna.|我们在稀树草原的山坡上看到一群羊在吃草。[/DU][DU]A flock of tourists gathered to watch the rhino at the reserve.|一大群游客聚集在保护区观看犀牛。[/DU][/DEF][DEF][EN]To gather or move together in a group[/EN][CN]聚集；成群而行[/CN][POS]v.[/POS][DU]Birds flock to the watering hole at dawn to drink before the day gets hot.|黎明时分，鸟类成群飞到水坑喝水，以免白天变热。[/DU][DU]People flocked to the zoo to see the new baby rhino.|人们成群结队地来到动物园看新生的犀牛宝宝。[/DU][/DEF]",
+    "[TITLE] 常见用法 [/TITLE][COLL][H]a flock of storks|一群鹳[POS]n.[/POS][/H][EX]A flock of storks flew over the savanna and landed near the watering hole.|一群鹳飞过稀树草原，落在水坑附近。[/EX][C]a flock of geese|一群大雁[/C][C]a flock of pigeons|一群鸽子[/C][/COLL][COLL][H]flock to the watering hole|成群涌向水坑[POS]v.[/POS][/H][EX]Animals flock to the watering hole during the dry season because water is scarce.|旱季时水很稀缺，动物们成群涌向水坑。[/EX][C]flock together|成群聚集[/C][C]flock to see|成群去看[/C][/COLL][COLL][H]in a flock|成群地[POS]adv.[/POS][/H][EX]Birds migrate in a flock to protect each other from danger.|鸟类成群迁徙，互相保护免受危险。[/EX][C]fly in a flock|成群飞行[/C][C]move in a flock|成群移动[/C][/COLL]",
+    "[TITLE] 额外例句 [/TITLE][EX]The farmer watched over his flock of sheep to make sure they didn’t wander away.|农夫看管着他的羊群，确保它们不会走失。[/EX][EX]A flock of butterflies danced around the flowers near the watering hole.|一群蝴蝶在水坑附近的花丛中飞舞。[/EX][EX]On weekends, families flock to the park to enjoy the sunshine.|周末，家家户户成群结队地去公园享受阳光。[/EX]",
+    "[TITLE] 常见错误 [/TITLE][ERR]flock作“鸟群、兽群”讲时，是可数名词，复数形式为flocks，直接加s，不要写成flockes。[/ERR][ERR]表示“一群”时，不同动物搭配不同量词，flock用于鸟类和绵羊，错误：a flock of cows，正确：a herd of cows（一群牛）。[/ERR][ERR]flock作动词时，是不及物动词，后接宾语需加介词to，错误：flock the park，正确：flock to the park。[/ERR]"
+  ]
+},
+"w274": {
+  "word": "stork",
+  "images": {
+    "scene": ["infopic01/stork.webp"],
+    "card": ["wordpic01/stork.webp"]
+  },
+  "richDetail": [
+    "[TITLE] 解释 [/TITLE][DEF][EN]A large wading bird with long legs, a long neck, and a long beak (used in At the Watering Hole Level F, referring to a bird that drinks at the watering hole in flocks)[/EN][CN]鹳（一种大型涉水鸟类，有长腿、长脖子和长喙，出自《At the Watering Hole》Level F，指成群去水坑喝水的鸟类）[/CN][POS]n.[/POS][PH]/stɔːk/（英美）[/PH][DU]A flock of storks comes to the watering hole to take a drink.|(原文例句) 一群鹳来到水坑喝水。[/DU][DU]The stork has long legs that help it walk in shallow water to catch food.|鹳有长长的腿，帮助它在浅水中行走捕食。[/DU][/DEF][IMG]infopic01/stork.webp[/IMG][DEF][EN]A large bird often associated with delivering babies in folklore[/EN][CN]鹳（民间传说中常与送子相关的大型鸟类）[/CN][POS]n.[/POS][DU]In some stories, storks bring babies to families who want children.|在一些故事里，鹳会给想要孩子的家庭送去宝宝。[/DU][DU]The white stork is a symbol of good luck in many cultures.|白鹳在许多文化中是好运的象征。[/DU][/DEF]",
+    "[TITLE] 常见用法 [/TITLE][COLL][H]a flock of storks|一群鹳[POS]n.[/POS][/H][EX]We saw a flock of storks resting on the trees near the watering hole.|我们看到一群鹳在水坑附近的树上休息。[/EX][C]white stork|白鹳[/C][C]black stork|黑鹳[/C][/COLL][COLL][H]stork pose|鹳式（瑜伽动作）[POS]n.[/POS][/H][EX]I can do the stork pose in yoga, balancing on one leg like a stork.|我会做瑜伽里的鹳式，像鹳一样单腿平衡。[/EX][C]stork's nest|鹳巢[/C][C]stork's beak|鹳喙[/C][/COLL][COLL][H]drink at the watering hole|在水坑喝水[POS]n.[/POS][/H][EX]Storks drink at the watering hole and catch small fish in the water.|鹳在水坑喝水，还会在水里捕捉小鱼。[/EX][C]fly to the watering hole|飞向水坑[/C][C]rest near the watering hole|在水坑附近休息[/C][/COLL]",
+    "[TITLE] 额外例句 [/TITLE][EX]The stork builds a large nest on top of tall trees or buildings.|鹳在高大的树木或建筑物顶部筑大型巢穴。[/EX][EX]Storks migrate to warm places in winter, just like many other birds.|鹳和许多其他鸟类一样，冬天迁徙到温暖的地方。[/EX][EX]We spotted a stork with its long beak picking up insects from the grass.|我们看到一只鹳用它的长喙从草地上啄食昆虫。[/EX]",
+    "[TITLE] 常见错误 [/TITLE][ERR]stork是可数名词，复数形式为storks，直接加s，不要写成storkes。[/ERR][ERR]不要混淆stork和crane，stork是“鹳”（喙直且粗），crane是“鹤”（喙细长），错误：a crane with a short beak，正确：a stork with a short beak。[/ERR][ERR]发音时注意英式/stɔːk/与美式/stɔːrk/的区别（美式多一个/r/音），不要读成/stɒrk/。[/ERR]"
+  ]
+},
+"w275": {
+  "word": "leopard",
+  "images": {
+    "scene": ["infopic01/leopard.webp"],
+    "card": ["wordpic01/leopard.webp"]
+  },
+  "richDetail": [
+    "[TITLE] 解释 [/TITLE][DEF][EN]A large African wild cat with yellow fur and black spots (used in At the Watering Hole Level F and Night Animals Level F, referring to a predator that hunts near the watering hole)[/EN][CN]豹子；豹（一种大型非洲野猫，皮毛呈黄色，带有黑色斑点，出自《At the Watering Hole》Level F和《Night Animals》Level F，指在水坑附近捕猎的捕食者）[/CN][POS]n.[/POS][PH]/ˈlepəd/（英美）[/PH][DU]Lions, leopards, and hyenas look for a meal near the watering hole.|(原文例句) 狮子、豹子和鬣狗在水坑附近寻找猎物。[/DU][DU]The leopard is active at night, hunting small animals on the savanna.|豹子在夜间活动，在稀树草原上捕猎小型动物。[/DU][/DEF][IMG]infopic01/leopard.webp[/IMG][DEF][EN]Any of several large spotted cats, including the snow leopard and clouded leopard[/EN][CN]豹；豹子（几种大型斑点猫科动物的统称，包括雪豹和云豹）[/CN][POS]n.[/POS][DU]The snow leopard lives in the mountains and has thick fur to keep warm.|雪豹生活在山区，有厚实的皮毛保暖。[/DU][DU]Leopards are very fast and can climb trees with their prey.|豹子速度很快，能带着猎物爬树。[/DU][/DEF]",
+    "[TITLE] 常见用法 [/TITLE][COLL][H]African leopard|非洲豹[POS]n.[/POS][/H][EX]The African leopard has beautiful black spots on its yellow fur.|非洲豹黄色的皮毛上有漂亮的黑色斑点。[/EX][C]snow leopard|雪豹[/C][C]clouded leopard|云豹[/C][/COLL][COLL][H]leopard spots|豹纹斑点[POS]n.[/POS][/H][EX]The leopard's spots help it hide in the grass when hunting.|豹子的斑点能帮助它捕猎时隐藏在草丛中。[/EX][C]leopard's fur|豹皮毛[/C][C]leopard's claws|豹爪[/C][/COLL][COLL][H]hunt near the watering hole|在水坑附近捕猎[POS]v.[/POS][/H][EX]Leopards hunt near the watering hole because many animals come there to drink.|豹子在水坑附近捕猎，因为许多动物会来这里喝水。[/EX][C]hunt at night|夜间捕猎[/C][C]climb trees|爬树[/C][/COLL]",
+    "[TITLE] 额外例句 [/TITLE][EX]We saw a leopard hiding behind a bush, waiting for its prey.|我们看到一只豹子藏在灌木丛后，等待猎物。[/EX][EX]Leopards are solitary hunters, meaning they hunt alone instead of in groups.|豹子是独居捕食者，意味着它们独自捕猎，而不是成群捕猎。[/EX][EX]The leopard's long tail helps it balance when running and climbing.|豹子的长尾巴能帮助它奔跑和爬树时保持平衡。[/EX]",
+    "[TITLE] 常见错误 [/TITLE][ERR]leopard是可数名词，复数形式为leopards，直接加s，不要写成leopardes。[/ERR][ERR]不要混淆leopard和cheetah，leopard是“豹子”（斑点为玫瑰花形，能爬树），cheetah是“猎豹”（斑点为实心圆点，速度更快），错误：a cheetah with rose-shaped spots，正确：a leopard with rose-shaped spots。[/ERR][ERR]发音时注意重音在第一个音节，不要读成/lɪˈpɑːd/，正确发音为/ˈlepəd/。[/ERR]"
+  ]
+},
+"w276": {
+  "word": "hyena",
+  "images": {
+    "scene": ["infopic01/hyena.webp"],
+    "card": ["wordpic01/hyena.webp"]
+  },
+  "richDetail": [
+    "[TITLE] 解释 [/TITLE][DEF][EN]A wild African mammal with a scavenging habit, known for its laughing call (used in At the Watering Hole Level F, referring to a predator that hunts near the watering hole)[/EN][CN]鬣狗（一种非洲野生动物，有食腐习性，以其类似笑声的叫声而闻名，出自《At the Watering Hole》Level F，指在水坑附近捕猎的捕食者）[/CN][POS]n.[/POS][PH]/haɪˈiːnə/（英美）[/PH][DU]Lions, leopards, and hyenas look for a meal near the watering hole.|(原文例句) 狮子、豹子和鬣狗在水坑附近寻找猎物。[/DU][DU]The hyena has a strong jaw that can crush bones.|鬣狗的颚部很有力，能咬碎骨头。[/DU][/DEF][IMG]infopic01/hyena.webp[/IMG][DEF][EN]Any of several dog-like mammals of Africa and Asia, known for scavenging and hunting[/EN][CN]鬣狗（非洲和亚洲的几种类似狗的哺乳动物，以食腐和捕猎为生）[/CN][POS]n.[/POS][DU]Hyenas often live in groups called clans, working together to find food.|鬣狗通常以“族群”为单位生活，一起寻找食物。[/DU][DU]The spotted hyena is the most common type of hyena in Africa.|斑鬣狗是非洲最常见的鬣狗种类。[/DU][/DEF]",
+    "[TITLE] 常见用法 [/TITLE][COLL][H]spotted hyena|斑鬣狗[POS]n.[/POS][/H][EX]The spotted hyena has a spotted coat and a distinctive laughing call.|斑鬣狗有带斑点的皮毛和独特的笑声。[/EX][C]hyena clan|鬣狗族群[/C][C]laughing hyena|笑鬣狗（斑鬣狗的俗称）[/C][/COLL][COLL][H]hunt near the watering hole|在水坑附近捕猎[POS]v.[/POS][/H][EX]Hyenas hunt near the watering hole and also eat the remains of other animals' prey.|鬣狗在水坑附近捕猎，也会吃其他动物猎物的残骸。[/EX][C]scavenge for food|食腐寻食[/C][C]live in clans|以族群生活[/C][/COLL][COLL][H]hyena's call|鬣狗的叫声[POS]n.[/POS][/H][EX]We heard the hyena's laughing call at night on the savanna.|我们在稀树草原的夜晚听到了鬣狗的笑声。[/EX][C]hyena's jaw|鬣狗的颚[/C][C]hyena's coat|鬣狗的皮毛[/C][/COLL]",
+    "[TITLE] 额外例句 [/TITLE][EX]Hyenas are very intelligent animals that can solve simple problems.|鬣狗是非常聪明的动物，能解决简单的问题。[/EX][EX]A hyena clan can have up to 80 members, led by females.|一个鬣狗族群最多可达80只，由雌性领导。[/EX][EX]Hyenas are often misunderstood—they hunt more food than they scavenge.|鬣狗经常被误解——它们捕猎的食物比食腐的多。[/EX]",
+    "[TITLE] 常见错误 [/TITLE][ERR]hyena的复数形式为hyenas，直接加s，不要写成hyenaes或hyenae。[/ERR][ERR]不要混淆hyena和wolf，hyena是“鬣狗”（外形类似狗，食腐+捕猎），wolf是“狼”（纯捕猎，群居），错误：a pack of hyenas（正确，鬣狗也可称pack），但注意习性区别，错误：hyenas hunt only in packs，正确：hyenas can hunt alone or in clans。[/ERR][ERR]发音时注意重音在第二个音节，不要读成/ˈhaɪinə/，正确发音为/haɪˈiːnə/。[/ERR]"
+  ]
+},
+"w277": {
+  "word": "layer",
+  "images": {
+    "scene": ["infopic01/layer.webp"],
+    "card": ["wordpic01/layer.webp"]
+  },
+  "richDetail": [
+    "[TITLE] 解释 [/TITLE][DEF][EN]A thin sheet or coating of something [/EN][CN]层；层次；薄层（某物的薄片或涂层）[/CN][POS]n./v.[/POS][PH]/ˈleɪə(r)/（英美）[/PH][DU]The cake has three layers of cream between the sponge.|这个蛋糕的海绵层之间有三层奶油。[/DU][DU]The ground was covered with a thin layer of snow in the morning.|早上地面覆盖着一层薄薄的雪。[/DU][/DEF][IMG]infopic01/layer.webp[/IMG][DEF][EN]To cover or coat something with a thin sheet of a substance[/EN][CN]把…分层堆放；给…涂层[/CN][POS]v.[/POS][DU]She layered the salad with lettuce, tomatoes, and cheese.|她把生菜、西红柿和奶酪分层做成沙拉。[/DU][DU]The artist layered paint on the canvas to create depth.|艺术家在画布上分层涂漆以营造层次感。[/DU][/DEF]",
+    "[TITLE] 常见用法 [/TITLE][COLL][H]layer of sth|某物的一层[POS]n.[/POS][/H][EX]There is a layer of dust on the old bookshelf.|旧书架上有一层灰尘。[/EX][C]thin layer|薄层[/C][C]thick layer|厚层[/C][/COLL][COLL][H]layer up|分层穿着（保暖）[POS]v.[/POS][/H][EX]We need to layer up with sweaters and coats in winter.|冬天我们需要分层穿毛衣和外套保暖。[/EX][C]layer with|用…涂层[/C][C]layer together|分层组合[/C][/COLL][COLL][H]different layers|不同层次[POS]n.[/POS][/H][EX]The earth has different layers, including the crust and mantle.|地球有不同的层次，包括地壳和地幔。[/EX][C]outer layer|外层[/C][C]inner layer|内层[/C][/COLL]",
+    "[TITLE] 额外例句 [/TITLE][EX]The fog formed a thick layer over the lake, making it hard to see.|雾在湖面上形成了一层厚层，让人难以看清。[/EX][EX]She layered the lasagna with pasta, sauce, and meat.|她把千层面用意大利面、酱汁和肉分层叠加。[/EX][EX]The scientist studied the layers of rock to learn about ancient times.|科学家研究岩层以了解古代的情况。[/EX]",
+    "[TITLE] 常见错误 [/TITLE][ERR]layer是可数名词，复数形式为layers，直接加s，不要写成layeres。[/ERR][ERR]layer作动词时，是及物动词，可直接接宾语，错误：layer on the paint，正确：layer the paint on the wall（需明确宾语位置）。[/ERR][ERR]不要混淆layer和level，layer指“物理层面”，level指“等级、水平”，错误：a level of paint，正确：a layer of paint。[/ERR]"
+  ]
+},
+"w278": {
+  "word": "uncover",
+  "images": {
+    "scene": ["infopic01/uncover1.webp"],
+    "card": ["wordpic01/uncover1.webp"]
+  },
+  "richDetail": [
+    "[TITLE] 解释 [/TITLE][DEF][EN]To find or discover something that was hidden or not known before (used in A Look at Fossils Level F, referring to finding fossilized bones)[/EN][CN]发掘；发现（隐藏或未知的事物，出自《A Look at Fossils》Level F，指发现化石骨骼）[/CN][POS]v.[/POS][PH]/ʌnˈkʌvə(r)/（英美）[/PH][DU]Bone fossils are uncovered after layers of rock are removed.|(原文衍生例句) 移除岩层后，骨骼化石被发掘出来。[/DU][DU]Scientists uncover new fossils to learn about ancient living things.|科学家发掘新的化石，以了解古代生物。[/DU][/DEF][IMG]infopic01/uncover1.webp[/IMG][DEF][EN]To remove a cover from something; to make something visible[/EN][CN]揭开；揭露；使显露[/CN][POS]v.[/POS][DU]She uncovered the bowl and found a plate of fresh fruit.|她揭开碗盖，发现一盘新鲜水果。[/DU][DU]The journalist uncovered the truth about the secret project.|记者揭露了这个秘密项目的真相。[/DU][/DEF]",
+    "[TITLE] 常见用法 [/TITLE][COLL][H]uncover fossils|发掘化石[POS]v.[/POS][/H][EX]Archaeologists travel to deserts to uncover fossils of dinosaurs.|考古学家前往沙漠发掘恐龙化石。[/EX][C]uncover secrets|揭露秘密[/C][C]uncover evidence|发现证据[/C][/COLL][COLL][H]uncover the truth|揭露真相[POS]v.[/POS][/H][EX]The detective worked hard to uncover the truth behind the mystery.|侦探努力揭开谜团背后的真相。[/EX][C]uncover a lie|揭穿谎言[/C][C]uncover a plot|发现阴谋[/C][/COLL][COLL][H]uncover sth from|从…中发掘/揭露某物[POS]v.[/POS][/H][EX]They uncovered a old coin from the soil in the garden.|他们从花园的泥土中发掘出一枚古币。[/EX][C]uncover sth by|通过…揭露某物[/C][C]uncover sth accidentally|偶然发现某物[/C][/COLL]",
+    "[TITLE] 额外例句 [/TITLE][EX]The students uncovered the box to see what was inside their science project.|学生们揭开盒子，看看他们的科学项目里有什么。[/EX][EX]After years of research, the team uncovered the cause of the disease.|经过多年研究，该团队发现了这种疾病的病因。[/EX][EX]He uncovered the painting and was surprised by its beauty.|他揭开画作，被它的美丽惊呆了。[/EX]",
+    "[TITLE] 常见错误 [/TITLE][ERR]uncover是及物动词，直接接宾语，无需加介词，错误：uncover about the secret，正确：uncover the secret。[/ERR][ERR]不要混淆uncover和discover，uncover侧重“揭开覆盖物或揭露隐藏的事物”，discover侧重“发现原本存在但未被人知晓的事物”，错误：discover the covered box，正确：uncover the covered box。[/ERR][ERR]uncover的过去式和过去分词为uncovered，双写c加ed，不要写成uncoverred。[/ERR]"
+  ]
+},
+"w279": {
+  "word": "detail",
+  "images": {
+    "scene": ["infopic01/detail1.webp"],
+    "card": ["wordpic01/detail1.webp"]
+  },
+  "richDetail": [
+    "[TITLE] 解释 [/TITLE][DEF][EN]A small or specific part of something (used in A Look at Fossils Level F, referring to small features shown by fossils)[/EN][CN]细节；详情；细微特征（某物的细小或特定部分，出自《A Look at Fossils》Level F，指化石所显示的细微特征）[/CN][POS]n./v.[/POS][PH]/ˈdiːteɪl/（英美，名词）/dɪˈteɪl/（英美，动词）[/PH][DU]This fossil shows details of ancient plant leaves.|(原文衍生例句) 这块化石显示了古代植物叶子的细微特征。[/DU][DU]We need to look at every detail of the footprint fossil to learn about the animal.|我们需要观察足迹化石的每个细节，以了解这种动物。[/DU][/DEF][IMG]infopic01/detail1.webp[/IMG][DEF][EN]To describe something completely, including all the small parts[/EN][CN]详细描述；详述[/CN][POS]v.[/POS][DU]She detailed her trip to the museum, telling us about every fossil she saw.|她详细描述了去博物馆的行程，告诉我们她看到的每一块化石。[/DU][DU]The teacher detailed the steps to complete the science project.|老师详细说明了完成科学项目的步骤。[/DU][/DEF]",
+    "[TITLE] 常见用法 [/TITLE][COLL][H]small details|小细节[POS]n.[/POS][/H][EX]Don’t forget the small details when drawing the fossil.|画化石时不要忘记小细节。[/EX][C]important details|重要详情[/C][C]specific details|具体细节[/C][/COLL][COLL][H]in detail|详细地[POS]adv.[/POS][/H][EX]The scientist explained how fossils form in detail.|科学家详细解释了化石是如何形成的。[/EX][C]go into detail|深入详述[/C][C]provide details|提供详情[/C][/COLL][COLL][H]detail sth to sb|向某人详细描述某物[POS]v.[/POS][/H][EX]He detailed the features of the shell fossil to his classmates.|他向同学们详细描述了贝壳化石的特征。[/EX][C]detail the process|详述过程[/C][C]detail the plan|详细说明计划[/C][/COLL]",
+    "[TITLE] 额外例句 [/TITLE][EX]The book includes many details about different types of fossils.|这本书包含了许多关于不同类型化石的细节。[/EX][EX]Can you detail how you found the interesting rock in the park?|你能详细说说你是如何在公园里发现这块有趣的石头的吗？[/EX][EX]Paying attention to details helps you do better in your homework.|关注细节能帮助你在作业中表现得更好。[/EX]",
+    "[TITLE] 常见错误 [/TITLE][ERR]detail作名词时，复数形式为details，直接加s，不要写成detailes。[/ERR][ERR]detail的名词发音/ˈdiːteɪl/与动词发音/dɪˈteɪl/重音位置不同，注意区分，不要混淆发音。[/ERR][ERR]表示“详细地”时，固定短语为in detail，错误：in details，正确：in detail。[/ERR]"
+  ]
+},
+"w280": {
+  "word": "poop",
+  "images": {
+    "scene": ["infopic01/poop.webp"],
+    "card": ["wordpic01/poop.webp"]
+  },
+  "richDetail": [
+    "[TITLE] 解释 [/TITLE][DEF][EN]Solid waste from animals or humans (used in A Look at Fossils Level F, referring to fossilized animal waste)[/EN][CN]粪便；排泄物（动物或人类的固体废弃物，出自《A Look at Fossils》Level F，指动物的化石粪便）[/CN][POS]n./v.[/POS][PH]/puːp/（英美）[/PH][DU]This fossil shows poop from an ancient animal.|(原文例句) 这块化石显示的是一种古代动物的粪便。[/DU][DU]Scientists study fossil poop to learn what ancient animals ate.|科学家研究化石粪便，以了解古代动物的食物。[/DU][/DEF][IMG]infopic01/poop.webp[/IMG][DEF][EN]To pass solid waste from the body[/EN][CN]排便；拉屎[/CN][POS]v.[/POS][DU]The dog pooped on the grass in the park.|小狗在公园的草地上拉了屎。[/DU][DU]Cats usually poop in a litter box to keep clean.|猫通常在猫砂盆里排便，以保持干净。[/DU][/DEF]",
+    "[TITLE] 常见用法 [/TITLE][COLL][H]animal poop|动物粪便[POS]n.[/POS][/H][EX]Farmers use animal poop as fertilizer for plants.|农民用动物粪便作为植物的肥料。[/EX][C]fossil poop|化石粪便[/C][C]dog poop|狗屎[/C][/COLL][COLL][H]poop on|在…上排便[POS]v.[/POS][/H][EX]The bird pooped on the car window while we were eating.|我们吃饭的时候，一只鸟在车窗上拉了屎。[/EX][C]poop in|在…里排便[/C][C]poop outside|在外面排便[/C][/COLL][COLL][H]clean up poop|清理粪便[POS]v.[/POS][/H][EX]Mom asked me to clean up the dog’s poop in the yard.|妈妈让我清理院子里小狗的粪便。[/EX][C]scoop poop|铲粪便[/C][C]avoid stepping on poop|避免踩到粪便[/C][/COLL]",
+    "[TITLE] 额外例句 [/TITLE][EX]The zookeeper cleans the animal cages and removes poop every morning.|动物园管理员每天早上清理动物笼子，清除粪便。[/EX][EX]Baby elephants poop a lot because they eat a lot of plants.|小象拉很多屎，因为它们吃很多植物。[/EX][EX]Fossil poop is called coprolite by scientists.|科学家把化石粪便称为粪化石。[/EX]",
+    "[TITLE] 常见错误 [/TITLE][ERR]poop是口语化词汇，正式场合常用feces（复数）或dung，避免在正式写作中过度使用poop。[/ERR][ERR]poop作名词时，复数形式为poops，直接加s，不要写成poopes。[/ERR][ERR]poop作动词时，过去式和过去分词为pooped，双写p加ed，不要写成pooped（正确），注意不要漏写p。[/ERR]"
+  ]
+},
+"w281": {
+  "word": "traveler",
+  "images": {
+    "scene": ["infopic01/traveler.webp"],
+    "card": ["wordpic01/traveler.webp"]
+  },
+  "richDetail": [
+    "[TITLE] 解释 [/TITLE][DEF][EN]A person who travels, especially to different places (used in At the Airport Level F, referring to people who take planes)[/EN][CN]旅行者；旅客（旅行的人，尤指去不同地方的人，出自《At the Airport》Level F，指乘坐飞机的人）[/CN][POS]n.[/POS][PH]/ˈtrævələr/（美式）/ˈtrævələ(r)/（英式）[/PH][DU]Travelers park their cars in big parking lots at the airport.|(原文例句) 旅行者把车停在机场的大型停车场。[/DU][DU]Travelers wait to get on their planes at the airport gate.|旅行者在机场登机口等待登机。[/DU][/DEF][IMG]infopic01/traveler.webp[/IMG][DEF][EN]A person who goes on a trip for pleasure or business[/EN][CN]旅行者；出行者（为休闲或公务出行的人）[/CN][POS]n.[/POS][DU]International travelers need to show their passports at the border.|国际旅行者需要在边境出示护照。[/DU][DU]Business travelers often stay in hotels near airports for convenience.|商务旅行者为了方便，经常住在机场附近的酒店。[/DU][/DEF]",
+    "[TITLE] 常见用法 [/TITLE][COLL][H]airport traveler|机场旅客[POS]n.[/POS][/H][EX]Airport travelers should arrive early to go through security checks.|机场旅客应该早点到，以便通过安检。[/EX][C]international traveler|国际旅行者[/C][C]business traveler|商务旅行者[/C][/COLL][COLL][H]traveler's bag|旅行者的行李[POS]n.[/POS][/H][EX]The traveler's bag was checked by the airline staff.|旅行者的行李被航空公司工作人员检查了。[/EX][C]traveler's passport|旅行者的护照[/C][C]traveler's guide|旅行指南[/C][/COLL][COLL][H]a group of travelers|一群旅行者[POS]n.[/POS][/H][EX]A group of travelers took photos together at the airport.|一群旅行者在机场一起拍照。[/EX][C]solo traveler|独自旅行者[/C][C]family travelers|家庭旅行者[/C][/COLL]",
+    "[TITLE] 额外例句 [/TITLE][EX]The traveler asked the airport staff for directions to the boarding gate.|这位旅行者向机场工作人员询问登机口的方向。[/EX][EX]Travelers from different countries can learn about each other's cultures.|来自不同国家的旅行者可以了解彼此的文化。[/EX][EX]She is a frequent traveler who visits five countries every year.|她是一位频繁出行的旅行者，每年访问五个国家。[/EX]",
+    "[TITLE] 常见错误 [/TITLE][ERR]traveler的拼写：美式为traveler（单l），英式为traveller（双l），两种形式均可，不要写成traveler（美式正确）或travler（漏写l）。[/ERR][ERR]traveler是可数名词，复数形式为travelers（美式）/travellers（英式），不要写成traveleres。[/ERR][ERR]不要混淆traveler和tourist，traveler泛指“旅行者”，tourist特指“游客”（以观光为目的），错误：a tourist on a business trip，正确：a traveler on a business trip。[/ERR]"
+  ]
+},
+"w282": {
+  "word": "airline",
+  "images": {
+    "scene": ["infopic01/airline.webp"],
+    "card": ["wordpic01/airline.webp"]
+  },
+  "richDetail": [
+    "[TITLE] 解释 [/TITLE][DEF][EN]A company that provides regular flights to carry passengers or goods (used in At the Airport Level F, referring to companies that operate planes)[/EN][CN]航空公司（提供定期航班运送旅客或货物的公司，出自《At the Airport》Level F，指运营飞机的公司）[/CN][POS]n.[/POS][PH]/ˈeəlaɪn/（英式）/ˈerlaɪn/（美式）[/PH][DU]Travelers stand in line to check in with their airline at the airport.|(原文例句) 旅行者在机场排队向他们的航空公司办理登机手续。[/DU][DU]The airline announced that the flight was delayed due to bad weather.|航空公司宣布航班因天气恶劣而延误。[/DU][/DEF][IMG]infopic01/airline.webp[/IMG][DEF][EN]The planes and services provided by such a company[/EN][CN]（某航空公司的）飞机；航班服务[/CN][POS]n.[/POS][DU]We enjoyed the comfortable seats and good food on the airline.|我们喜欢这家航空公司舒适的座位和美味的食物。[/DU][DU]The airline offers free snacks and drinks during the flight.|这家航空公司在飞行期间提供免费的零食和饮料。[/DU][/DEF]",
+    "[TITLE] 常见用法 [/TITLE][COLL][H]airline ticket|机票[POS]n.[/POS][/H][EX]I bought an airline ticket to visit my grandma during the holiday.|我买了一张机票，打算假期去看望奶奶。[/EX][C]airline staff|航空公司工作人员[/C][C]airline company|航空公司[/C][/COLL][COLL][H]international airline|国际航空公司[POS]n.[/POS][/H][EX]This international airline flies to over 50 countries around the world.|这家国际航空公司飞往全球50多个国家。[/EX][C]domestic airline|国内航空公司[/C][C]low-cost airline|廉价航空公司[/C][/COLL][COLL][H]check in with the airline|向航空公司办理登机手续[POS]v.[/POS][/H][EX]You need to show your ID when checking in with the airline.|向航空公司办理登机手续时，你需要出示身份证。[/EX][C]book with an airline|向航空公司预订[/C][C]complain to the airline|向航空公司投诉[/C][/COLL]",
+    "[TITLE] 额外例句 [/TITLE][EX]The airline changed our flight to an earlier time, so we had to hurry to the airport.|航空公司把我们的航班改成了更早的时间，所以我们不得不匆忙赶往机场。[/EX][EX]My dad works for a big airline as a pilot.|我爸爸在一家大型航空公司当飞行员。[/EX][EX]The airline provides special services for children traveling alone.|这家航空公司为独自旅行的儿童提供特殊服务。[/EX]",
+    "[TITLE] 常见错误 [/TITLE][ERR]airline是可数名词，复数形式为airlines，直接加s，不要写成airlinees。[/ERR][ERR]表示“乘坐某航空公司的航班”，常用介词on，错误：by the airline，正确：on the airline 或 take the airline's flight。[/ERR][ERR]发音时注意英式/ˈeəlaɪn/与美式/ˈerlaɪn/的区别，不要读成/ˈeɪlaɪn/。[/ERR]"
+  ]
+},
+"w283": {
+  "word": "hand over",
+  "images": {
+    "scene": ["infopic01/handover.webp"],
+    "card": ["wordpic01/handover.webp"]
+  },
+  "richDetail": [
+    "[TITLE] 解释 [/TITLE][DEF][EN]To give something to someone else, especially because they have the right to it or need it (used in At the Airport Level F, referring to travelers giving bags to airline staff)[/EN][CN]交出；移交；交给（把某物给别人，尤指因为对方有权拥有或需要它，出自《At the Airport》Level F，指旅行者把行李交给航空公司工作人员）[/CN][POS]v. 短语[/POS][PH]/hænd ˈəʊvə(r)/（英式）/hænd ˈoʊvər/（美式）[/PH][DU]Travelers hand over their large bags at the airport check-in counter.|(原文衍生例句) 旅行者在机场值机柜台交出他们的大件行李。[/DU][DU]You need to hand over your passport to the customs officer for inspection.|你需要把护照交给海关官员检查。[/DU][/DEF][IMG]infopic01/handover.webp[/IMG][DEF][EN]To give control or responsibility of something to someone else[/EN][CN]移交（控制权或责任）[/CN][POS]v. 短语[/POS][DU]The manager handed over the project to her team before going on vacation.|经理度假前把项目移交给了她的团队。[/DU][DU]He handed over the keys to the new owner of the house.|他把钥匙交给了房子的新主人。[/DU][/DEF]",
+    "[TITLE] 常见用法 [/TITLE][COLL][H]hand over sth to sb|把某物交给某人[POS]v. 短语[/POS][/H][EX]She handed over the lost wallet to the police officer.|她把捡到的钱包交给了警察。[/EX][C]hand over the bags|交出行李[/C][C]hand over the documents|交出文件[/C][/COLL][COLL][H]hand over control|移交控制权[POS]v. 短语[/POS][/H][EX]The company decided to hand over control of the branch to a local manager.|公司决定把分公司的控制权移交给当地经理。[/EX][C]hand over responsibility|移交责任[/C][C]hand over power|移交权力[/C][/COLL][COLL][H]refuse to hand over|拒绝交出[POS]v. 短语[/POS][/H][EX]The thief refused to hand over the stolen phone to the security guard.|小偷拒绝把偷来的手机交给保安。[/EX][C]agree to hand over|同意交出[/C][C]order to hand over|命令交出[/C][/COLL]",
+    "[TITLE] 额外例句 [/TITLE][EX]Before leaving the classroom, students should hand over their homework to the teacher.|离开教室前，学生应该把作业交给老师。[/EX][EX]The old man handed over his savings to his son to help him buy a house.|老人把积蓄交给儿子，帮他买房。[/EX][EX]The witness was asked to hand over the video evidence to the court.|证人被要求把视频证据交给法庭。[/EX]",
+    "[TITLE] 常见错误 [/TITLE][ERR]hand over是动词短语，宾语位置：代词宾语放中间（hand it over），名词宾语可放中间或后面（hand the bag over / hand over the bag），错误：hand over it，正确：hand it over。[/ERR][ERR]不要遗漏over，错误：hand the document to sb（仅“递给”，无“移交”含义），正确：hand over the document to sb（强调“正式移交”）。[/ERR][ERR]hand over的过去式和过去分词为handed over，双写d加ed，不要写成hand overed。[/ERR]"
+  ]
+},
+"w284": {
+  "word": "moving sidewalk",
+  "images": {
+    "scene": ["infopic01/movingsidewalk.webp"],
+    "card": ["wordpic01/movingsidewalk.webp"]
+  },
+  "richDetail": [
+    "[TITLE] 解释 [/TITLE][DEF][EN]A flat, moving surface in airports or train stations that carries people from one place to another (used in At the Airport Level F, referring to a tool for travelers to move faster)[/EN][CN]自动人行道；移动步道（机场或火车站里的平坦移动表面，载运人们从一个地方到另一个地方，出自《At the Airport》Level F，指旅行者快速移动的工具）[/CN][POS]n. 短语（可数）[/POS][PH]/ˈmuːvɪŋ ˈsaɪdwɔːk/（英式）/ˈmuːvɪŋ ˈsaɪdwɔːrk/（美式）[/PH][DU]Travelers ride on moving sidewalks to get around faster at the airport.|(原文例句) 旅行者在机场乘坐自动人行道以更快地移动。[/DU][DU]The moving sidewalk helps elderly travelers walk from the parking lot to the terminal.|自动人行道帮助老年旅行者从停车场走到航站楼。[/DU][/DEF][IMG]infopic01/movingsidewalk.webp[/IMG][DEF][EN]A motorized conveyor belt designed for transporting pedestrians, also called a travelator[/EN][CN]自动人行道；电动步道（专为运送行人设计的机动传送带，也称为travelator）[/CN][POS]n. 短语（可数）[/POS][DU]Many large shopping malls also have moving sidewalks to make shopping easier.|许多大型购物中心也有自动人行道，让购物更方便。[/DU][DU]You should stand on the right side of the moving sidewalk to let others walk past.|你应该站在自动人行道的右侧，让别人从旁边走过。[/DU][/DEF]",
+    "[TITLE] 常见用法 [/TITLE][COLL][H]ride on a moving sidewalk|乘坐自动人行道[POS]v. 短语[/POS][/H][EX]My little sister likes to ride on the moving sidewalk back and forth at the airport.|我妹妹喜欢在机场的自动人行道上往返乘坐。[/EX][C]get on a moving sidewalk|上自动人行道[/C][C]get off a moving sidewalk|下自动人行道[/C][/COLL][COLL][H]airport moving sidewalk|机场自动人行道[POS]n. 短语[/POS][/H][EX]The airport moving sidewalk connects the arrival area to the baggage claim.|机场自动人行道连接到达区和行李提取处。[/EX][C]mall moving sidewalk|商场自动人行道[/C][C]long moving sidewalk|长自动人行道[/C][/COLL][COLL][H]move faster on a moving sidewalk|在自动人行道上更快移动[POS]v. 短语[/POS][/H][EX]We can move faster on the moving sidewalk and save time for boarding.|我们可以在自动人行道上更快移动，节省登机时间。[/EX][C]walk on a moving sidewalk|在自动人行道上行走[/C][C]stand still on a moving sidewalk|在自动人行道上站着不动[/C][/COLL]",
+    "[TITLE] 额外例句 [/TITLE][EX]The moving sidewalk in the train station is broken, so we have to walk to the platform.|火车站的自动人行道坏了，所以我们不得不走到站台。[/EX][EX]Parents should hold their children's hands when on the moving sidewalk to keep them safe.|家长在自动人行道上应该拉住孩子的手，确保他们的安全。[/EX][EX]The sign says “Do not run on the moving sidewalk” for safety reasons.|出于安全考虑，指示牌上写着“请勿在自动人行道上奔跑”。[/EX]",
+    "[TITLE] 常见错误 [/TITLE][ERR]moving sidewalk是复合名词，复数形式为moving sidewalks，仅sidewalk变复数，不要写成movings sidewalks或moving sidewalkes。[/ERR][ERR]不要混淆moving sidewalk和elevator/escalator，moving sidewalk是“水平移动的自动步道”，elevator是“电梯（垂直移动）”，escalator是“自动扶梯（倾斜移动）”，错误：take the elevator to the other terminal，正确：take the moving sidewalk to the other terminal。[/ERR][ERR]美式英语中sidewalk为“人行道”，英式英语中为pavement，但moving sidewalk为通用表达，不要写成moving pavement。[/ERR]"
+  ]
+},
+"w285": {
+  "word": "flight",
+  "images": {
+    "scene": ["infopic01/flight.webp"],
+    "card": ["wordpic01/flight.webp"]
+  },
+  "richDetail": [
+    "[TITLE] 解释 [/TITLE][DEF][EN]A journey made by plane (used in At the Airport Level F, referring to a trip on an airplane)[/EN][CN]航班；飞行旅程（乘飞机进行的旅行，出自《At the Airport》Level F，指乘飞机的行程）[/CN][POS]n.[/POS][PH]/flaɪt/（英美）[/PH][DU]Travelers buy food and magazines before their flights at the airport.|(原文例句) 旅行者在机场航班起飞前购买食物和杂志。[/DU][DU]Our flight to New York will leave at 3 o'clock in the afternoon.|我们飞往纽约的航班将于下午3点起飞。[/DU][/DEF][IMG]infopic01/flight.webp[/IMG][DEF][EN]The act of flying, or a way of flying[/EN][CN]飞行；飞行方式[/CN][POS]n.[/POS][DU]The bird's flight over the ocean was long and tiring.|这只鸟飞越海洋的飞行漫长而疲惫。[/DU][DU]The pilot has many years of flight experience.|这位飞行员有多年的飞行经验。[/DU][/DEF][DEF][EN]A sudden and hurried escape from a place[/EN][CN]逃跑；逃走[/CN][POS]n.[/POS][DU]The rabbit made a quick flight into its hole when it saw the dog.|兔子看到狗时，迅速逃进了洞里。[/DU][DU]The thief took flight when he heard the police siren.|小偷听到警笛声就逃跑了。[/DU][/DEF]",
+    "[TITLE] 常见用法 [/TITLE][COLL][H]take a flight|乘坐航班[POS]n.[/POS][/H][EX]We need to take an early flight to arrive at the meeting on time.|我们需要乘坐早班机，以便准时参加会议。[/EX][C]catch a flight|赶航班[/C][C]miss a flight|错过航班[/C][/COLL][COLL][H]flight number|航班号[POS]n.[/POS][/H][EX]Can you tell me the flight number so I can check if it's on time?|你能告诉我航班号吗？我可以查一下是否准点。[/EX][C]flight attendant|空乘人员[/C][C]flight delay|航班延误[/C][/COLL][COLL][H]in flight|在飞行中[POS]adv.[/POS][/H][EX]Passengers should fasten their seatbelts during the flight.|乘客在飞行过程中应系好安全带。[/EX][C]during the flight|飞行期间[/C][C]after the flight|飞行后[/C][/COLL]",
+    "[TITLE] 额外例句 [/TITLE][EX]The flight was cancelled because of heavy fog, so we had to stay in a hotel overnight.|由于大雾，航班取消了，我们不得不留在酒店过夜。[/EX][EX]She felt a little nervous during her first flight alone.|她第一次独自乘坐航班时感到有点紧张。[/EX][EX]The eagle's flight is graceful and powerful.|鹰的飞行优雅而有力。[/EX]",
+    "[TITLE] 常见错误 [/TITLE][ERR]flight是可数名词，复数形式为flights，直接加s，不要写成flightes。[/ERR][ERR]不要混淆flight和fly，flight是名词，fly是动词，错误：I will take a fly to Beijing，正确：I will take a flight to Beijing 或 I will fly to Beijing。[/ERR][ERR]表示“航班延误”，固定搭配为flight delay，错误：flight late，正确：flight delay。[/ERR]"
+  ]
+},
+"w286": {
+  "word": "peacock",
+  "images": {
+    "scene": ["infopic01/peacock.webp"],
+    "card": ["wordpic01/peacock.webp"]
+  },
+  "richDetail": [
+    "[TITLE] 解释 [/TITLE][DEF][EN]A large, colorful bird from India with a long, beautiful tail that it can spread out like a fan (used in Are You From India? Level F, referring to an Indian animal with a fancy tail)[/EN][CN]孔雀（一种来自印度的大型彩色鸟类，有长长的美丽尾巴，能像扇子一样展开，出自《Are You From India?》Level F，指有华丽尾巴的印度动物）[/CN][POS]n.[/POS][PH]/ˈpiːkɒk/（英式）/ˈpiːkɑːk/（美式）[/PH][DU]The peacock is from India and waves its beautiful green tail.|(原文衍生例句) 孔雀来自印度，会挥舞它美丽的绿色尾巴。[/DU][DU]We saw a peacock spreading its tail to show off at the zoo.|我们在动物园看到一只孔雀展开尾巴炫耀自己。[/DU][/DEF][IMG]infopic01/peacock.webp[/IMG][DEF][EN]A male peafowl (the female is called a peahen)[/EN][CN]雄孔雀（雌性称为雌孔雀）[/CN][POS]n.[/POS][DU]The peacock has brighter feathers than the peahen.|雄孔雀的羽毛比雌孔雀更鲜艳。[/DU][DU]Only the peacock can spread its tail into a beautiful fan.|只有雄孔雀能把尾巴展开成美丽的扇子。[/DU][/DEF]",
+    "[TITLE] 常见用法 [/TITLE][COLL][H]peacock's tail|孔雀尾巴[POS]n.[/POS][/H][EX]The peacock's tail is covered with shiny spots that look like eyes.|孔雀的尾巴上布满了闪亮的眼状斑点。[/EX][C]spread a peacock's tail|展开孔雀尾巴[/C][C]green peacock|绿孔雀[/C][/COLL][COLL][H]male peacock|雄孔雀[POS]n.[/POS][/H][EX]The male peacock dances by spreading its tail to attract females.|雄孔雀通过展开尾巴跳舞来吸引雌性。[/EX][C]peacock display|孔雀开屏[/C][C]peacock feathers|孔雀羽毛[/C][/COLL][COLL][H]peacock from India|印度孔雀[POS]n.[/POS][/H][EX]Peacocks from India are famous for their colorful appearance.|来自印度的孔雀以其多彩的外表而闻名。[/EX][C]see a peacock|看孔雀[/C][C]raise a peacock|饲养孔雀[/C][/COLL]",
+    "[TITLE] 额外例句 [/TITLE][EX]The peacock walked slowly across the lawn, showing off its beautiful tail.|孔雀慢慢地走过草坪，炫耀着它美丽的尾巴。[/EX][EX]We took many photos of the peacock when it spread its tail.|孔雀开屏时，我们拍了很多照片。[/EX][EX]Peacocks live in forests and fields in India, feeding on seeds and insects.|孔雀生活在印度的森林和田野里，以种子和昆虫为食。[/EX]",
+    "[TITLE] 常见错误 [/TITLE][ERR]peacock是可数名词，复数形式为peacocks，直接加s，不要写成peacockes。[/ERR][ERR]不要混淆peacock和peafowl，peacock特指“雄孔雀”，peafowl是“孔雀”的总称（包括雌雄），错误：a female peacock，正确：a peahen（雌孔雀）/a female peafowl。[/ERR][ERR]发音时注意英式/ˈpiːkɒk/与美式/ˈpiːkɑːk/的区别，不要读成/ˈpiːkək/。[/ERR]"
+  ]
+},
+"w287": {
+  "word": "langur monkey",
+  "images": {
+    "scene": ["infopic01/langurmonkey.webp"],
+    "card": ["wordpic01/langurmonkey.webp"]
+  },
+  "richDetail": [
+    "[TITLE] 解释 [/TITLE][DEF][EN]A type of monkey from India with a dark face that leaps from tree to tree (used in Are You From India? Level F, referring to an Indian monkey that moves quickly between trees)[/EN][CN]叶猴（一种来自印度的猴子，脸部深色，会在树间跳跃，出自《Are You From India?》Level F，指在树间快速移动的印度猴子）[/CN][POS]n. 短语（可数）[/POS][PH]/læŋˈɡʊə(r) ˈmʌŋki/（英式）/læŋˈɡʊr ˈmʌŋki/（美式）[/PH][DU]The langur monkey is from India, and you may spot its dark face as it leaps from tree to tree.|(原文例句) 叶猴来自印度，当它在树间跳跃时，你可能会看到它深色的脸。[/DU][DU]Langur monkeys live in groups and feed on leaves and fruits.|叶猴成群生活，以树叶和水果为食。[/DU][/DEF][IMG]infopic01/langurmonkey.webp[/IMG][DEF][EN]Any of several long-tailed Asian monkeys that eat leaves[/EN][CN]叶猴（几种长尾亚洲猴子的统称，以树叶为食）[/CN][POS]n. 短语（可数）[/POS][DU]Some langur monkeys have bright orange fur, while others are black or gray.|有些叶猴有鲜艳的橙色皮毛，而另一些则是黑色或灰色的。[/DU][DU]Langur monkeys are good at climbing and rarely come down to the ground.|叶猴擅长攀爬，很少下到地面。[/DU][/DEF]",
+    "[TITLE] 常见用法 [/TITLE][COLL][H]Indian langur monkey|印度叶猴[POS]n. 短语[/POS][/H][EX]Indian langur monkeys are often seen in forests and near villages.|印度叶猴经常在森林和村庄附近被看到。[/EX][C]dark-faced langur monkey|深色脸叶猴[/C][C]long-tailed langur monkey|长尾叶猴[/C][/COLL][COLL][H]leap from tree to tree|树间跳跃[POS]v. 短语[/POS][/H][EX]Langur monkeys leap from tree to tree quickly to avoid predators.|叶猴快速在树间跳跃以躲避捕食者。[/EX][C]live in groups|成群生活[/C][C]feed on leaves|以树叶为食[/C][/COLL][COLL][H]spot a langur monkey|发现叶猴[POS]v. 短语[/POS][/H][EX]We spotted a family of langur monkeys during our trip to India.|我们在印度旅行时发现了一群叶猴。[/EX][C]watch langur monkeys|观察叶猴[/C][C]protect langur monkeys|保护叶猴[/C][/COLL]",
+    "[TITLE] 额外例句 [/TITLE][EX]The langur monkey's long tail helps it balance when leaping between trees.|叶猴的长尾帮助它在树间跳跃时保持平衡。[/EX][EX]Baby langur monkeys stay close to their mothers for the first few months.|幼叶猴在出生后的前几个月里一直紧紧跟着妈妈。[/EX][EX]Langur monkeys have special teeth that help them chew tough leaves.|叶猴有特殊的牙齿，帮助它们咀嚼坚硬的树叶。[/EX]",
+    "[TITLE] 常见错误 [/TITLE][ERR]langur monkey是复合名词，复数形式为langur monkeys，仅monkey变复数，不要写成langurs monkeys或langur monkeyes。[/ERR][ERR]不要混淆langur monkey和spider monkey，langur monkey是“叶猴”（以树叶为食，脸部深色），spider monkey是“蜘蛛猴”（以果实为食，尾巴可抓握），错误：a spider monkey with a dark face，正确：a langur monkey with a dark face。[/ERR][ERR]发音时注意langur的重音在第二个音节，不要读成/ˈlæŋɡə(r)/，正确发音为/læŋˈɡʊə(r)/（英式）/læŋˈɡʊr/（美式）。[/ERR]"
+  ]
+},
+"w288": {
+  "word": "cobra",
+  "images": {
+    "scene": ["infopic01/cobra.webp"],
+    "card": ["wordpic01/cobra.webp"]
+  },
+  "richDetail": [
+    "[TITLE] 解释 [/TITLE][DEF][EN]A type of poisonous snake from India with a wide head that looks like a hood (used in Are You From India? Level F, referring to the king cobra, an Indian poisonous snake)[/EN][CN]眼镜蛇（一种来自印度的毒蛇，头部宽阔，看起来像头巾，出自《Are You From India?》Level F，指眼镜王蛇，一种印度毒蛇）[/CN][POS]n.[/POS][PH]/ˈkəʊbrə/（英式）/ˈkoʊbrə/（美式）[/PH][DU]The king cobra is a type of cobra from India, with a wide head that looks like a hood.|(原文衍生例句) 眼镜王蛇是眼镜蛇的一种，来自印度，头部宽阔，看起来像头巾。[/DU][DU]Cobras can raise the front part of their bodies when they feel threatened.|眼镜蛇感到威胁时，会抬起身体的前部。[/DU][/DEF][IMG]infopic01/cobra.webp[/IMG][DEF][EN]Any of several poisonous snakes that can expand the skin around their necks to form a hood[/EN][CN]眼镜蛇（几种毒蛇的统称，能扩张颈部皮肤形成头巾状）[/CN][POS]n.[/POS][DU]Cobras are found in Asia and Africa, and some can spit venom.|眼镜蛇分布在亚洲和非洲，有些能喷射毒液。[/DU][DU]The cobra's venom is dangerous, but it only attacks when provoked.|眼镜蛇的毒液很危险，但它只在被激怒时才会攻击。[/DU][/DEF]",
+    "[TITLE] 常见用法 [/TITLE][COLL][H]king cobra|眼镜王蛇[POS]n.[/POS][/H][EX]The king cobra is the longest poisonous snake in the world.|眼镜王蛇是世界上最长的毒蛇。[/EX][C]poisonous cobra|有毒眼镜蛇[/C][C]spitting cobra|喷毒眼镜蛇[/C][/COLL][COLL][H]cobra's hood|眼镜蛇的头巾状颈部[POS]n.[/POS][/H][EX]The cobra spreads its hood to look bigger and scare enemies.|眼镜蛇展开头巾状颈部，让自己看起来更大，以吓唬敌人。[/EX][C]cobra's venom|眼镜蛇毒液[/C][C]cobra attack|眼镜蛇攻击[/C][/COLL][COLL][H]avoid cobras|躲避眼镜蛇[POS]v.[/POS][/H][EX]When walking in forests where cobras live, we should stay on paths.|在有眼镜蛇生活的森林里行走时，我们应该走在小路上。[/EX][C]fear cobras|害怕眼镜蛇[/C][C]study cobras|研究眼镜蛇[/C][/COLL]",
+    "[TITLE] 额外例句 [/TITLE][EX]The zookeeper told us that cobras are usually not aggressive unless bothered.|动物园管理员告诉我们，眼镜蛇通常不具攻击性，除非被打扰。[/EX][EX]We saw a cobra in the grass, but it quickly slithered away into a hole.|我们在草地上看到了一条眼镜蛇，但它很快滑进洞里逃走了。[/EX][EX]Some people in India respect cobras and consider them sacred.|印度有些人尊敬眼镜蛇，认为它们是神圣的。[/EX]",
+    "[TITLE] 常见错误 [/TITLE][ERR]cobra是可数名词，复数形式为cobras，直接加s，不要写成cobraes。[/ERR][ERR]不要混淆cobra和snake，cobra是“眼镜蛇”（特指有毒、能扩颈的蛇），snake是“蛇”（总称），错误：a snake with a hood，正确：a cobra with a hood。[/ERR][ERR]表示“眼镜王蛇”时，固定搭配为king cobra，不可写成cobra king或king snake（王蛇，无毒）。[/ERR]"
+  ]
+},
+"w289": {
+  "word": "bengal tiger",
+  "images": {
+    "scene": ["infopic01/bengaltiger.webp"],
+    "card": ["wordpic01/bengaltiger.webp"]
+  },
+  "richDetail": [
+    "[TITLE] 解释 [/TITLE][DEF][EN]A large wild cat from India with orange fur and black stripes that moves silently through forests (used in Are You From India? Level F, referring to an Indian predator with distinctive stripes)[/EN][CN]孟加拉虎（一种来自印度的大型野猫，皮毛呈橙色，带有黑色条纹，能在森林中无声移动，出自《Are You From India?》Level F，指有独特条纹的印度捕食者）[/CN][POS]n. 短语（可数）[/POS][PH]/ˌbeŋˈɡɔːl ˈtaɪɡə(r)/（英美）[/PH][DU]The Bengal tiger is from India, with orange and black stripes, and it moves silently through the forest.|(原文例句) 孟加拉虎来自印度，有橙色和黑色的条纹，能在森林中无声移动。[/DU][DU]Bengal tigers hunt deer and other animals at night.|孟加拉虎在夜间捕猎鹿和其他动物。[/DU][/DEF][IMG]infopic01/bengaltiger.webp[/IMG][DEF][EN]A subspecies of tiger native to the Indian subcontinent, known for its striking stripes[/EN][CN]孟加拉虎（虎的一个亚种，原产于印度次大陆，以其醒目的条纹而闻名）[/CN][POS]n. 短语（可数）[/POS][DU]Bengal tigers are endangered, with only a few thousand left in the wild.|孟加拉虎处于濒危状态，野生数量仅剩几千只。[/DU][DU]No two Bengal tigers have the same pattern of stripes.|没有两只孟加拉虎的条纹图案是完全相同的。[/DU][/DEF]",
+    "[TITLE] 常见用法 [/TITLE][COLL][H]Bengal tiger stripes|孟加拉虎条纹[POS]n. 短语[/POS][/H][EX]The Bengal tiger's stripes help it hide in tall grass when hunting.|孟加拉虎的条纹能帮助它捕猎时隐藏在高草中。[/EX][C]wild Bengal tiger|野生孟加拉虎[/C][C]endangered Bengal tiger|濒危孟加拉虎[/C][/COLL][H]hunt at night|夜间捕猎[POS]v. 短语[/POS][/H][EX]Bengal tigers hunt at night because their eyes can see well in the dark.|孟加拉虎夜间捕猎，因为它们的眼睛在黑暗中看得很清楚。[/EX][C]move silently|无声移动[/C][C]live in forests|生活在森林中[/C][/COLL][COLL][H]protect Bengal tigers|保护孟加拉虎[POS]v. 短语[/POS][/H][EX]Governments and conservation groups are working to protect Bengal tigers and their habitats.|各国政府和环保组织正在努力保护孟加拉虎及其栖息地。[/EX][C]see a Bengal tiger|看到孟加拉虎[/C][C]study Bengal tigers|研究孟加拉虎[/C][/COLL]",
+    "[TITLE] 额外例句 [/TITLE][EX]The Bengal tiger is the national animal of India.|孟加拉虎是印度的国兽。[/EX][EX]A mother Bengal tiger takes care of her cubs for about two years.|孟加拉虎妈妈会照顾幼崽大约两年时间。[/EX][EX]Bengal tigers can swim well and often cool off in rivers during hot weather.|孟加拉虎游泳技术很好，炎热天气时经常在河里降温。[/EX]",
+    "[TITLE] 常见错误 [/TITLE][ERR]bengal tiger是专有名词，Bengal首字母必须大写，复数形式为Bengal tigers，仅tiger变复数，不要写成Bengals tigers或Bengal tigeres。[/ERR][ERR]不要混淆Bengal tiger和Siberian tiger，Bengal tiger是“孟加拉虎”（橙色皮毛，生活在印度），Siberian tiger是“东北虎”（毛色较浅，生活在西伯利亚），错误：a Siberian tiger with orange fur，正确：a Bengal tiger with orange fur。[/ERR][ERR]发音时注意Bengal的重音在第二个音节，不要读成/ˈbeŋɡɔːl/，正确发音为/ˌbeŋˈɡɔːl/。[/ERR]"
+  ]
+},
+"w290": {
+  "word": "gharial",
+  "images": {
+    "scene": ["infopic01/gharial.webp"],
+    "card": ["wordpic01/gharial.webp"]
+  },
+  "richDetail": [
+    "[TITLE] 解释 [/TITLE][DEF][EN]A type of reptile from India with a long, thin snout that has a bump on the end (used in Are You From India? Level F, referring to an Indian animal with a unique snout)[/EN][CN]恒河鳄（一种来自印度的爬行动物，长着细长的口鼻部，末端有一个凸起，出自《Are You From India?》Level F，指有独特口鼻部的印度动物）[/CN][POS]n.[/POS][PH]/ɡəˈriːəl/（英美）[/PH][DU]The gharial is from India, with a long, thin snout that has a bump on the end.|(原文例句) 恒河鳄来自印度，长着细长的口鼻部，末端有一个凸起。[/DU][DU]Gharials live in rivers and feed on fish.|恒河鳄生活在河流中，以鱼为食。[/DU][/DEF][IMG]infopic01/gharial.webp[/IMG][DEF][EN]A large crocodilian native to the Indian subcontinent, with a narrow snout adapted for catching fish[/EN][CN]恒河鳄（原产于印度次大陆的大型鳄类，口鼻部狭窄，适合捕鱼）[/CN][POS]n.[/POS][DU]Gharials are one of the longest crocodilians, growing up to six meters long.|恒河鳄是最长的鳄类之一，可长到六米长。[/DU][DU]The bump on the gharial's snout is more noticeable in male gharials.|恒河鳄口鼻部的凸起在雄性身上更明显。[/DU][/DEF]",
+    "[TITLE] 常见用法 [/TITLE][COLL][H]gharial's snout|恒河鳄的口鼻部[POS]n.[/POS][/H][EX]The gharial's long, thin snout helps it catch fish quickly in the water.|恒河鳄细长的口鼻部帮助它在水中快速捕鱼。[/EX][C]long-snouted gharial|长口鼻恒河鳄[/C][C]bump on gharial's snout|恒河鳄口鼻部的凸起[/C][/COLL][COLL][H]live in rivers|生活在河流中[POS]v. 短语[/POS][/H][EX]Gharials live in clean rivers with slow-moving water.|恒河鳄生活在水流缓慢的清洁河流中。[/EX][C]feed on fish|以鱼为食[/C][C]swim in rivers|在河流中游泳[/C][/COLL][COLL][H]endangered gharial|濒危恒河鳄[POS]n.[/POS][/H][EX]Conservationists are working to save the endangered gharial from extinction.|环保人士正在努力拯救濒危的恒河鳄，避免它们灭绝。[/EX][C]wild gharial|野生恒河鳄[/C][C]study gharials|研究恒河鳄[/C][/COLL]",
+    "[TITLE] 额外例句 [/TITLE][EX]We saw a gharial in the Ganges River during our trip to India.|我们在印度旅行时，在恒河里看到了一只恒河鳄。[/EX][EX]Gharials lay their eggs in nests dug in sand along riverbanks.|恒河鳄在河岸的沙地上挖巢产卵。[/EX][EX]Unlike other crocodiles, gharials have sharp, pointed teeth that are good for holding fish.|与其他鳄鱼不同，恒河鳄有锋利的尖牙，适合咬住鱼。[/EX]",
+    "[TITLE] 常见错误 [/TITLE][ERR]gharial是可数名词，复数形式为gharials，直接加s，不要写成ghariales或ghariae。[/ERR][ERR]不要混淆gharial和crocodile，gharial是“恒河鳄”（口鼻部细长，仅以鱼为食），crocodile是“鳄鱼”（口鼻部宽阔，食性更广），错误：a crocodile with a long thin snout，正确：a gharial with a long thin snout。[/ERR][ERR]发音时注意重音在第二个音节，不要读成/ˈɡæriəl/，正确发音为/ɡəˈriːəl/。[/ERR]"
+  ]
+},
+"w291": {
+  "word": "mongoose",
+  "images": {
+    "scene": ["infopic01/mongoose.webp"],
+    "card": ["wordpic01/mongoose.webp"]
+  },
+  "richDetail": [
+    "[TITLE] 解释 [/TITLE][DEF][EN]A small, brave mammal from India that is famous for hunting snakes (used in Are You From India? Level F, referring to a small Indian animal that hunts snakes)[/EN][CN]獴（一种来自印度的小型勇敢哺乳动物，以捕猎蛇而闻名，出自《Are You From India?》Level F，指捕猎蛇的印度小型动物）[/CN][POS]n.[/POS][PH]/ˈmɒŋɡuːs/（英式）/ˈmɑːŋɡuːs/（美式）[/PH][DU]The mongoose is from India, small but brave and famous for hunting snakes.|(原文例句) 獴来自印度，体型小但很勇敢，以捕猎蛇而闻名。[/DU][DU]A mongoose can fight with a cobra and win because it is fast and agile.|獴能与眼镜蛇搏斗并获胜，因为它速度快、动作敏捷。[/DU][/DEF][IMG]infopic01/mongoose.webp[/IMG][DEF][EN]Any of several small, carnivorous mammals native to Africa and Asia, known for their ability to kill snakes[/EN][CN]獴（几种小型食肉哺乳动物的统称，原产于非洲和亚洲，以杀蛇能力而闻名）[/CN][POS]n.[/POS][DU]Mongooses have thick fur that protects them from snake bites.|獴有厚实的皮毛，能保护它们免受蛇咬伤。[/DU][DU]Mongooses live in burrows and hunt small animals like mice, insects, and snakes.|獴住在洞穴里，捕猎老鼠、昆虫和蛇等小型动物。[/DU][/DEF]",
+    "[TITLE] 常见用法 [/TITLE][COLL][H]hunt snakes|捕猎蛇[POS]v. 短语[/POS][/H][EX]Mongooses are famous for hunting snakes, even poisonous ones like cobras.|獴以捕猎蛇而闻名，甚至包括眼镜蛇这样的毒蛇。[/EX][C]fight cobras|与眼镜蛇搏斗[/C][C]catch mice|捕捉老鼠[/C][/COLL][COLL][H]small mongoose|小型獴[POS]n.[/POS][/H][EX]The small mongoose can move quickly to avoid snake attacks.|小型獴能快速移动以躲避蛇的攻击。[/EX][C]brave mongoose|勇敢的獴[/C][C]wild mongoose|野生獴[/C][/COLL][COLL][H]live in burrows|住在洞穴里[POS]v. 短语[/POS][/H][EX]Mongooses live in burrows dug under rocks or bushes.|獴住在岩石或灌木丛下挖的洞穴里。[/EX][C]feed on insects|以昆虫为食[/C][C]protect young mongooses|保护幼獴[/C][/COLL]",
+    "[TITLE] 额外例句 [/TITLE][EX]We watched a mongoose chase a snake into the grass.|我们看到一只獴追赶一条蛇进了草丛。[/EX][C]Mongooses are social animals and often live in family groups.|獴是群居动物，经常以家庭为单位生活。[/C][EX]Farmers like mongooses because they eat pests that damage crops.|农民喜欢獴，因为它们吃破坏庄稼的害虫。[/EX]",
+    "[TITLE] 常见错误 [/TITLE][ERR]mongoose的复数形式为mongooses（美式）或mongeese（英式，特殊复数），不要写成mongoosees或mongoses。[/ERR][ERR]不要混淆mongoose和weasel，mongoose是“獴”（擅长杀蛇，生活在亚非），weasel是“黄鼠狼”（食性更广，分布更广泛），错误：a weasel that hunts cobras，正确：a mongoose that hunts cobras。[/ERR][ERR]发音时注意英式/ˈmɒŋɡuːs/与美式/ˈmɑːŋɡuːs/的区别，不要读成/ˈmʌŋɡuːs/。[/ERR]"
+  ]
+},
+"w292": {
+  "word": "brave",
+  "images": {
+    "scene": ["infopic01/brave1.webp"],
+    "card": ["wordpic01/brave1.webp"]
+  },
+  "richDetail": [
+    "[TITLE] 解释 [/TITLE][DEF][EN]Willing to face danger or difficulty without fear (used in Are You From India? Level F, describing the mongoose as small but unafraid of snakes)[/EN][CN]勇敢的；无畏的（愿意毫无畏惧地面对危险或困难，出自《Are You From India?》Level F，形容獴体型小但不怕蛇）[/CN][POS]adj./v.[/POS][PH]/breɪv/（英美）[/PH][DU]The mongoose is small but brave, famous for hunting snakes without fear.|(原文衍生例句) 獴体型小但很勇敢，以无畏地捕猎蛇而闻名。[/DU][DU]She is brave enough to climb the tall tree to save the cat.|她足够勇敢，爬上那棵高树去救小猫。[/DU][/DEF][IMG]infopic01/brave1.webp[/IMG][DEF][EN]To face or endure danger, pain, or difficulty with courage[/EN][CN]勇敢面对；冒（险）[/CN][POS]v.[/POS][DU]He braved the storm to help his neighbors fix their roof.|他冒着暴风雨帮助邻居修理屋顶。[/DU][DU]They braved the cold to go hiking in the mountains.|他们冒着严寒去山里徒步旅行。[/DU][/DEF]",
+    "[TITLE] 常见用法 [/TITLE][COLL][H]brave mongoose|勇敢的獴[POS]adj.[/POS][/H][EX]The brave mongoose fought off a cobra to protect its babies.|这只勇敢的獴击退了眼镜蛇，保护了它的幼崽。[/EX][C]brave soldier|勇敢的士兵[/C][C]brave child|勇敢的孩子[/C][/COLL][COLL][H]brave enough to|足够勇敢去…[POS]adj.[/POS][/H][EX]Are you brave enough to try the new roller coaster?|你足够勇敢去尝试那座新的过山车吗？[/EX][C]brave to do sth|勇敢做某事[/C][C]very brave|非常勇敢[/C][/COLL][COLL][H]brave the danger|冒着危险[POS]v.[/POS][/H][EX]Firefighters brave the danger to save people from burning buildings.|消防员冒着危险从燃烧的建筑物中救人。[/EX][C]brave the rain|冒雨[/C][C]brave the dark|不怕黑暗[/C][/COLL]",
+    "[TITLE] 额外例句 [/TITLE][EX]It was brave of her to speak in front of a large crowd.|她在一大群人面前讲话，真勇敢。[/EX][EX]The brave little boy helped his lost friend find her way home.|这个勇敢的小男孩帮助迷路的朋友找到了回家的路。[/EX][EX]They braved the snowstorm to deliver food to the homeless.|他们冒着暴风雪为无家可归的人送去食物。[/EX]",
+    "[TITLE] 常见错误 [/TITLE][ERR]brave的比较级和最高级为braver、bravest，双写v加er/est，不要写成more brave、most brave（错误）。[/ERR][ERR]brave作动词时是及物动词，直接接宾语，无需加介词，错误：brave against the storm，正确：brave the storm。[/ERR][ERR]不要混淆brave和courageous，brave侧重“面对危险时的勇敢”，courageous侧重“有勇气坚持信念”，错误：a courageous child who saved a cat，正确：a brave child who saved a cat。[/ERR]"
+  ]
+},
+"w293": {
+  "word": "yak",
+  "images": {
+    "scene": ["infopic01/yak.webp"],
+    "card": ["wordpic01/yak.webp"]
+  },
+  "richDetail": [
+    "[TITLE] 解释 [/TITLE][DEF][EN]A large mammal from India with thick, shaggy fur that protects it in cold mountains (used in Are You From India? Level F, referring to an Indian animal adapted to cold mountain environments)[/EN][CN]牦牛（一种来自印度的大型哺乳动物，有厚实蓬松的皮毛，能在寒冷的山区保护自己，出自《Are You From India?》Level F，指适应寒冷山区环境的印度动物）[/CN][POS]n.[/POS][PH]/jæk/（英美）[/PH][DU]The yak is from India, with thick, shaggy fur that protects it in the cold mountains.|(原文例句) 牦牛来自印度，有厚实蓬松的皮毛，能在寒冷的山区保护自己。[/DU][DU]Yaks are used by people in mountains to carry heavy loads.|山区的人们用牦牛来搬运重物。[/DU][/DEF][IMG]infopic01/yak.webp[/IMG][DEF][EN]A long-haired bovine animal native to the Himalayan region, often domesticated for its milk, meat, and fur[/EN][CN]牦牛（原产于喜马拉雅地区的长毛牛科动物，常被驯化，用于获取奶、肉和皮毛）[/CN][POS]n.[/POS][DU]Wild yaks are larger than domestic yaks and have darker fur.|野生牦牛比家养牦牛大，皮毛颜色更深。[/DU][DU]Yaks can live at high altitudes where there is little oxygen.|牦牛能生活在氧气稀薄的高海拔地区。[/DU][/DEF]",
+    "[TITLE] 常见用法 [/TITLE][COLL][H]shaggy yak|毛发蓬松的牦牛[POS]n.[/POS][/H][EX]The shaggy yak walked slowly up the mountain path.|这只毛发蓬松的牦牛沿着山路慢慢往上走。[/EX][C]wild yak|野生牦牛[/C][C]domestic yak|家养牦牛[/C][/COLL][COLL][H]yak's fur|牦牛皮毛[POS]n.[/POS][/H][EX]The yak's thick fur keeps it warm even in freezing temperatures.|牦牛厚实的皮毛即使在冰点温度下也能让它保持温暖。[/EX][C]yak's milk|牦牛奶[/C][C]yak's meat|牦牛肉[/C][/COLL][COLL][H]carry loads|搬运重物[POS]v. 短语[/POS][/H][EX]People in mountain villages use yaks to carry loads of grain and supplies.|山村的人们用牦牛搬运谷物和物资。[/EX][C]live in mountains|生活在山区[/C][C]graze on grass|以草为食[/C][/COLL]",
+    "[TITLE] 额外例句 [/TITLE][EX]We saw a herd of yaks grazing on the mountain slopes.|我们看到一群牦牛在山坡上吃草。[/EX][EX]Yaks have strong legs that help them climb steep mountain paths.|牦牛有强壮的腿，帮助它们攀爬陡峭的山路。[/EX][EX]The yak's fur is often used to make warm clothes and blankets.|牦牛的皮毛常被用来制作保暖的衣服和毯子。[/EX]",
+    "[TITLE] 常见错误 [/TITLE][ERR]yak是可数名词，复数形式为yaks，直接加s，不要写成yakks或yakes。[/ERR][ERR]不要混淆yak和cow，yak是“牦牛”（长毛，适应高海拔），cow是“奶牛”（短毛，生活在平原），错误：a cow with long shaggy fur，正确：a yak with long shaggy fur。[/ERR][ERR]发音时注意不要读成/jæk/（正确）或/jɑːk/（错误），英美发音一致为/jæk/。[/ERR]"
+  ]
+},
+"w294": {
+  "word": "shaggy",
+  "images": {
+    "scene": ["infopic01/shaggy.webp"],
+    "card": ["wordpic01/shaggy.webp"]
+  },
+  "richDetail": [
+    "[TITLE] 解释 [/TITLE][DEF][EN]Having long, thick, and messy fur or hair (used in Are You From India? Level F, describing the yak's thick, messy coat)[/EN][CN]毛发蓬松的；毛茸茸的（有长而厚且杂乱的皮毛或头发，出自《Are You From India?》Level F，形容牦牛厚实杂乱的皮毛）[/CN][POS]adj.[/POS][PH]/ˈʃæɡi/（英美）[/PH][DU]The yak has a thick, shaggy coat that protects it from the cold in mountains.|(原文衍生例句) 牦牛有厚实蓬松的皮毛，能保护它免受山区的寒冷。[/DU][DU]The little dog has shaggy fur that covers its eyes.|这只小狗有蓬松的毛发，遮住了它的眼睛。[/DU][/DEF][IMG]infopic01/shaggy.webp[/IMG][DEF][EN]Looking unkempt or messy, especially in appearance[/EN][CN]外表杂乱的；不修边幅的[/CN][POS]adj.[/POS][DU]He had shaggy hair and a beard after traveling for a month.|旅行了一个月后，他头发蓬乱，胡子拉碴。[/DU][DU]The old teddy bear has shaggy fur that is worn in some places.|这只旧泰迪熊的毛发蓬松，有些地方已经磨损了。[/DU][/DEF]",
+    "[TITLE] 常见用法 [/TITLE][COLL][H]shaggy fur|蓬松的皮毛[POS]adj.[/POS][/H][EX]The bear's shaggy fur keeps it warm during winter.|熊蓬松的皮毛让它在冬天保持温暖。[/EX][C]shaggy hair|蓬乱的头发[/C][C]shaggy coat|蓬松的外套（动物皮毛）[/C][/COLL][COLL][H]shaggy dog|毛发蓬松的狗[POS]adj.[/POS][/H][EX]We adopted a shaggy dog from the animal shelter.|我们从动物收容所收养了一只毛发蓬松的狗。[/EX][C]shaggy yak|毛发蓬松的牦牛[/C][C]shaggy rabbit|毛发蓬松的兔子[/C][/COLL][COLL][H]look shaggy|看起来蓬乱[POS]adj.[/POS][/H][EX]He didn't comb his hair, so he looked shaggy when he arrived.|他没梳头，所以到达时看起来头发蓬乱。[/EX][C]feel shaggy|摸起来毛茸茸的[/C][C]long and shaggy|又长又蓬松[/C][/COLL]",
+    "[TITLE] 额外例句 [/TITLE][EX]The shaggy sheep wandered around the farm, eating grass.|这只毛茸茸的绵羊在农场里闲逛，吃着草。[/EX][EX]Her shaggy eyebrows made her look very friendly.|她蓬松的眉毛让她看起来非常友善。[/EX][EX]The caterpillar has shaggy hairs that protect it from predators.|这只毛毛虫有毛茸茸的毛发，能保护它免受捕食者的伤害。[/EX]",
+    "[TITLE] 常见错误 [/TITLE][ERR]shaggy的比较级和最高级为shaggier、shaggiest，双写g加er/est，不要写成more shaggy、most shaggy（错误）。[/ERR][ERR]不要混淆shaggy和fluffy，shaggy侧重“毛发长而杂乱”，fluffy侧重“毛发柔软蓬松”，错误：a fluffy dog with long messy hair，正确：a shaggy dog with long messy hair。[/ERR][ERR]shaggy仅用于形容毛发或毛发状的东西，不能形容无生命物体，错误：a shaggy blanket，正确：a fluffy blanket（毛茸茸的毯子）。[/ERR]"
+  ]
+},
+"w295": {
+  "word": "protect",
+  "images": {
+    "scene": ["infopic01/protect1.webp"],
+    "card": ["wordpic01/protect1.webp"]
+  },
+  "richDetail": [
+    "[TITLE] 解释 [/TITLE][DEF][EN]To keep someone or something safe from harm, damage, or danger (used in Are You From India? Level F, describing how the yak's fur keeps it safe in cold mountains)[/EN][CN]保护；防护（使某人或某物免受伤害、损坏或危险，出自《Are You From India?》Level F，形容牦牛的皮毛如何在寒冷的山区保护它）[/CN][POS]v.[/POS][PH]/prəˈtekt/（英美）[/PH][DU]The yak's thick, shaggy coat protects it from the cold in the mountains.|(原文衍生例句) 牦牛厚实蓬松的皮毛保护它免受山区的寒冷。[/DU][DU]We need to protect wild animals from being hunted.|我们需要保护野生动物不被猎杀。[/DU][/DEF][IMG]infopic01/protect1.webp[/IMG][DEF][EN]To defend or guard someone or something against attack or injury[/EN][CN]保卫；守护（抵御攻击或伤害）[/CN][POS]v.[/POS][DU]Parents work hard to protect their children from danger.|父母努力保护孩子免受危险。[/DU][DU]The fence protects the garden from animals that might eat the plants.|围栏保护花园免受可能吃植物的动物的破坏。[/DU][/DEF]",
+    "[TITLE] 常见用法 [/TITLE][COLL][H]protect from|保护…免受…[POS]v.[/POS][/H][EX]Sunglasses protect your eyes from the sun's harmful rays.|太阳镜保护你的眼睛免受太阳有害光线的伤害。[/EX][C]protect against|防御…[/C][C]protect from danger|保护免受危险[/C][/COLL][COLL][H]protect wild animals|保护野生动物[POS]v.[/POS][/H][EX]Governments have made laws to protect wild animals like Bengal tigers and yaks.|各国政府制定了法律来保护孟加拉虎和牦牛等野生动物。[/EX][C]protect the environment|保护环境[/C][C]protect children|保护孩子[/C][/COLL][COLL][H]protect oneself|保护自己[POS]v.[/POS][/H][EX]You should wear a helmet to protect yourself when riding a bike.|骑自行车时，你应该戴头盔保护自己。[/EX][C]protect property|保护财产[/C][C]protect privacy|保护隐私[/C][/COLL]",
+    "[TITLE] 额外例句 [/TITLE][EX]The tree's thick bark protects it from insects and disease.|树的厚实树皮保护它免受昆虫和疾病的侵害。[/EX][EX]She used an umbrella to protect her new dress from the rain.|她用雨伞保护她的新裙子不被雨淋。[/EX][EX]The vaccine helps protect people from getting sick with the virus.|疫苗有助于保护人们不感染这种病毒。[/EX]",
+    "[TITLE] 常见错误 [/TITLE][ERR]protect是及物动词，常用搭配为protect sb/sth from/against sth，不可直接接介词without宾语，错误：protect from cold，正确：protect oneself from cold。[/ERR][ERR]protect的名词形式为protection，不要混淆，错误：We need to give more protect to animals，正确：We need to give more protection to animals。[/ERR][ERR]protect的过去式和过去分词为protected，直接加ed，不要写成protectted（错误，多写一个t）。[/ERR]"
+  ]
+},
+"w296": {
+  "word": "incubator",
+  "images": {
+    "scene": ["infopic01/incubator.webp"],
+    "card": ["wordpic01/incubator.webp"]
+  },
+  "richDetail": [
+    "[TITLE] 解释 [/TITLE][DEF][EN]A device that keeps eggs warm so they can hatch (used in Hatching Eggs Level F, referring to a tool for hatching chicks at school)[/EN][CN]孵化器（保持鸡蛋温暖以使其孵化的设备，出自《Hatching Eggs》Level F，指学校里孵化小鸡的工具）[/CN][POS]n.[/POS][PH]/ˈɪŋkjubeɪtə(r)/（英美）[/PH][DU]Put the marked eggs inside an incubator to keep them warm.|(原文衍生例句) 把做了标记的鸡蛋放进孵化器里保温。[/DU][DU]The incubator helps the growing chicks stay warm and moist.|孵化器帮助发育中的小鸡保持温暖和湿润。[/DU][/DEF][IMG]infopic01/incubator.webp[/IMG][DEF][EN]A machine used in hospitals to keep premature babies warm and safe[/EN][CN]保温箱（医院中用于保护早产儿温暖安全的设备）[/CN][POS]n.[/POS][DU]The tiny premature baby was cared for in an incubator for two weeks.|这个早产的小宝宝在保温箱里被照顾了两周。[/DU][DU]Hospitals use special incubators to help weak newborns survive.|医院使用特殊保温箱帮助体弱的新生儿存活。[/DU][/DEF]",
+    "[TITLE] 常见用法 [/TITLE][COLL][H]egg incubator|鸡蛋孵化器[POS]n.[/POS][/H][EX]We borrowed an egg incubator from the farm to hatch chicks at school.|我们从农场借了一台鸡蛋孵化器，在学校孵化小鸡。[/EX][C]baby incubator|婴儿保温箱[/C][C]incubator temperature|孵化器温度[/C][/COLL][COLL][H]put eggs in an incubator|把鸡蛋放进孵化器[POS]v. 短语[/POS][/H][EX]After marking the eggs, we put them in the incubator and added water.|给鸡蛋做标记后，我们把它们放进孵化器并加水。[/EX][C]check the incubator|检查孵化器[/C][C]turn eggs in the incubator|在孵化器中翻蛋[/C][/COLL][COLL][H]use an incubator|使用孵化器[POS]v. 短语[/POS][/H][EX]The science teacher showed us how to use the incubator safely.|科学老师向我们展示了如何安全使用孵化器。[/EX][C]adjust the incubator|调节孵化器[/C][C]clean the incubator|清洁孵化器[/C][/COLL]",
+    "[TITLE] 额外例句 [/TITLE][EX]The incubator’s light provides heat for the eggs to develop.|孵化器的灯为鸡蛋发育提供热量。[/EX][EX]Doctors carefully monitored the baby’s condition in the incubator.|医生仔细监测保温箱里宝宝的状况。[/EX][EX]Without the incubator, the fragile eggs wouldn’t hatch successfully.|没有孵化器，这些脆弱的鸡蛋无法成功孵化。[/EX]",
+    "[TITLE] 常见错误 [/TITLE][ERR]incubator是可数名词，复数形式为incubators，直接加s，不要写成incubatore或incubatorrs。[/ERR][ERR]不要混淆incubator和hatcher，incubator特指“恒温孵化设备”，hatcher是“孵化器的孵化室”，错误：put the eggs in the hatcher，正确：put the eggs in the incubator。[/ERR][ERR]发音时注意重音在第二个音节，不要读成/ˈɪnkjubeɪtə(r)/（正确）或/ɪnˈkjuːbeɪtə(r)/（错误），英美发音一致。[/ERR]"
+  ]
+},
+"w297": {
+  "word": "liberty",
+  "images": {
+    "scene": ["infopic01/liberty.webp"],
+    "card": ["wordpic01/liberty.webp"]
+  },
+  "richDetail": [
+    "[TITLE] 解释 [/TITLE][DEF][EN]Freedom to do what you want without being controlled (used in The Bald Eagle Level F, referring to the Statue of Liberty as a symbol of the United States)[/EN][CN]自由；自主（不受控制地做想做的事的权利，出自《The Bald Eagle》Level F，指作为美国象征的自由女神像）[/CN][POS]n.[/POS][PH]/ˈlɪbəti/（英美）[/PH][DU]The Statue of Liberty is a famous symbol of liberty in the United States.|(原文衍生例句) 自由女神像是美国著名的自由象征。[/DU][DU]The bald eagle stands for liberty and freedom of the American people.|白头海雕代表着美国人民的自由与自主。[/DU][/DEF][IMG]infopic01/liberty.webp[/IMG][DEF][EN]The state of being free from imprisonment or oppression[/EN][CN]自由；解放（摆脱监禁或压迫的状态）[/CN][POS]n.[/POS][DU]People fought hard for liberty and equal rights for all citizens.|人们为全体公民的自由和平等权利而奋力抗争。[/DU][DU]The story tells of a hero who fought to win liberty for his people.|这个故事讲述了一位英雄为人民争取自由的经历。[/DU][/DEF]",
+    "[TITLE] 常见用法 [/TITLE][COLL][H]Statue of Liberty|自由女神像[POS]n.[/POS][/H][EX]Many tourists visit the Statue of Liberty when they go to New York.|很多游客去纽约时都会参观自由女神像。[/EX][C]personal liberty|人身自由[/C][C]liberty of speech|言论自由[/C][/COLL][COLL][H]fight for liberty|为自由而战[POS]v. 短语[/POS][/H][EX]Soldiers in the past fought for liberty and justice for their country.|过去的士兵为国家的自由和正义而战。[/EX][C]defend liberty|捍卫自由[/C][C]cherish liberty|珍惜自由[/C][/COLL][COLL][H]liberty to do sth|做某事的自由[POS]n.[/POS][/H][EX]We have the liberty to choose our own hobbies and interests.|我们有选择自己爱好和兴趣的自由。[/EX][C]liberty of thought|思想自由[/C][C]liberty of choice|选择自由[/C][/COLL]",
+    "[TITLE] 额外例句 [/TITLE][EX]The poem celebrates the beauty of liberty and the courage of those who defend it.|这首诗赞颂了自由的美好和捍卫自由者的勇气。[/EX][EX]Children should be given the liberty to express their own ideas freely.|应该给予孩子们自由表达自己想法的权利。[/EX][EX]Liberty is not absolute—we must respect the rights of others while enjoying our own.|自由不是绝对的，我们在享受自由的同时必须尊重他人的权利。[/EX]",
+    "[TITLE] 常见错误 [/TITLE][ERR]liberty是不可数名词，通常不用于复数形式（特殊固定搭配除外），错误：liberties（表示“特权；自由权”时可复数，但日常“自由”义不可数），正确：enjoy liberty。[/ERR][ERR]不要混淆liberty和freedom，liberty侧重“不受权威干涉的自由”，freedom侧重“广义的自由”，错误：freedom of the Statue，正确：liberty represented by the Statue of Liberty。[/ERR][ERR]固定搭配“Statue of Liberty”中，Liberty首字母必须大写，不可小写（错误：Statue of liberty）。[/ERR]"
+  ]
+},
+"w298": {
+  "word": "memorial",
+  "images": {
+    "scene": ["infopic01/memorial.webp"],
+    "card": ["wordpic01/memorial.webp"]
+  },
+  "richDetail": [
+    "[TITLE] 解释 [/TITLE][DEF][EN]A building, statue, or place built to remember a person or event (used in The Bald Eagle Level F, referring to the Lincoln Memorial as a U.S. symbol)[/EN][CN]纪念碑；纪念堂；纪念馆（为纪念某人或某事而建造的建筑、雕像或场所，出自《The Bald Eagle》Level F，指作为美国象征的林肯纪念堂）[/CN][POS]n.[/POS][PH]/məˈmɔːriəl/（英美）[/PH][DU]The Lincoln Memorial is a famous memorial to President Abraham Lincoln.|(原文衍生例句) 林肯纪念堂是纪念亚伯拉罕·林肯总统的著名建筑。[/DU][DU]The bald eagle’s image can be seen on memorials and public buildings in the United States.|在美国的纪念馆和公共建筑上可以看到白头海雕的形象。[/DU][/DEF][IMG]infopic01/memorial.webp[/IMG][DEF][EN]A service or ceremony held to remember someone who has died[/EN][CN]追悼会；纪念仪式（为缅怀逝者而举行的仪式）[/CN][POS]n.[/POS][DU]We attended a memorial for the brave firefighter who saved many lives.|我们参加了那位拯救了许多生命的勇敢消防员的追悼会。[/DU][DU]The school held a special memorial to honor the teacher who retired after 30 years.|学校举行了一场特别的纪念仪式，向任教30年退休的老师致敬。[/DU][/DEF]",
+    "[TITLE] 常见用法 [/TITLE][COLL][H]Lincoln Memorial|林肯纪念堂[POS]n.[/POS][/H][EX]My family visited the Lincoln Memorial during our trip to Washington D.C.|我们一家去华盛顿特区旅行时参观了林肯纪念堂。[/EX][C]war memorial|战争纪念碑[/C][C]memorial statue|纪念雕像[/C][/COLL][COLL][H]memorial to sb|纪念某人的建筑/仪式[POS]n.[/POS][/H][EX]There is a small memorial to the soldiers who died in the village.|村里有一座纪念阵亡士兵的小纪念碑。[/EX][C]memorial for sb|为某人举行的纪念仪式[/C][C]memorial service|追悼会[/C][/COLL][COLL][H]build a memorial|建造纪念碑[POS]v. 短语[/POS][/H][EX]The town decided to build a memorial to remember the flood victims.|这个城镇决定建造一座纪念碑，缅怀洪灾遇难者。[/EX][C]visit a memorial|参观纪念馆[/C][C]hold a memorial|举行纪念仪式[/C][/COLL]",
+    "[TITLE] 额外例句 [/TITLE][EX]The memorial has an inscription that tells the story of the hero’s deeds.|这座纪念碑上有铭文，讲述了这位英雄的事迹。[/EX][EX]People lay flowers at the war memorial every year on Memorial Day.|每年阵亡将士纪念日，人们都会在战争纪念碑前献花。[/EX][EX]The museum has a special memorial exhibition about the history of the city.|这个博物馆有一个关于城市历史的特别纪念展览。[/EX]",
+    "[TITLE] 常见错误 [/TITLE][ERR]memorial是可数名词，复数形式为memorials，直接加s，不要写成memoriales。[/ERR][ERR]表示“为纪念某人”时，常用介词to，错误：memorial of sb，正确：memorial to sb。[/ERR][ERR]发音时注意重音在第二个音节，不要读成/ˈmeməriəl/，正确发音为/məˈmɔːriəl/。[/ERR]"
+  ]
+},
+"w299": {
+  "word": "stand for",
+  "images": {
+    "scene": ["infopic01/standfor.webp"],
+    "card": ["wordpic01/standfor.webp"]
+  },
+  "richDetail": [
+    "[TITLE] 解释 [/TITLE][DEF][EN]To represent or symbolize something (used in The Bald Eagle Level F, referring to what the bald eagle symbolizes)[/EN][CN]代表；象征（表示某物的意义或象征，出自《The Bald Eagle》Level F，指白头海雕所象征的意义）[/CN][POS]v. 短语[/POS][PH]/stænd fɔː(r)/（英美）[/PH][DU]The bald eagle stands for the strength and freedom of the United States.|(原文衍生例句) 白头海雕代表着美国的力量和自由。[/DU][DU]The color red in the flag stands for courage and loyalty.|旗帜中的红色代表勇气和忠诚。[/DU][/DEF][IMG]infopic01/standfor.webp[/IMG][DEF][EN]To support or agree with a belief or idea[/EN][CN]支持；拥护（赞同某种信仰或观点）[/CN][POS]v. 短语[/POS][DU]My parents stand for honesty and kindness in daily life.|我的父母在日常生活中崇尚诚实和善良。[/DU][DU]We stand for equal rights for all people, regardless of their background.|我们支持所有人享有平等权利，无论其背景如何。[/DU][/DEF][DEF][EN]To tolerate or endure something (informal)[/EN][CN]容忍；忍受（非正式用法）[/CN][POS]v. 短语[/POS][DU]I can’t stand for people who are rude to others.|我无法容忍对别人粗鲁的人。[/DU][DU]She won’t stand for laziness in her class.|她不允许班上出现懒惰的情况。[/DU][/DEF]",
+    "[TITLE] 常见用法 [/TITLE][COLL][H]stand for strength|代表力量[POS]v. 短语[/POS][/H][EX]The lion stands for strength and courage in many cultures.|在许多文化中，狮子代表力量和勇气。[/EX][C]stand for freedom|象征自由[/C][C]stand for justice|代表正义[/C][/COLL][COLL][H]stand for an idea|拥护一种理念[POS]v. 短语[/POS][/H][EX]Many people stand for the idea of protecting the environment.|许多人拥护保护环境的理念。[/EX][C]stand for equal rights|支持平等权利[/C][C]stand for honesty|崇尚诚实[/C][/COLL][COLL][H]can’t stand for|无法容忍[POS]v. 短语[/POS][/H][EX]Teachers can’t stand for cheating in exams.|老师无法容忍考试作弊的行为。[/EX][C]won’t stand for|不允许[/C][C]refuse to stand for|拒绝忍受[/C][/COLL]",
+    "[TITLE] 额外例句 [/TITLE][EX]What does the star on the logo stand for? Is it hope or success?|标志上的星星代表什么？是希望还是成功？[/EX][EX]Our school motto stands for hard work and mutual respect.|我们的校训代表着勤奋和相互尊重。[/EX][EX]He said he would stand for his friends no matter what happened.|他说无论发生什么，他都会支持他的朋友。[/EX]",
+    "[TITLE] 常见错误 [/TITLE][ERR]stand for是动词短语，不可拆分使用，宾语需放在for后面，错误：stand it for（正确：stand for it）。[/ERR][ERR]表示“代表”时，不要与represent混淆，stand for更侧重“象征意义”，represent更侧重“代表某人/团体”，错误：He stands for our class in the meeting，正确：He represents our class in the meeting。[/ERR][ERR]stand for的过去式和过去分词为stood for，不要写成standed for（错误）。[/ERR]"
+  ]
+},
+"w300": {
+  "word": "bald",
+  "images": {
+    "scene": ["infopic01/bald.webp"],
+    "card": ["wordpic01/bald.webp"]
+  },
+  "richDetail": [
+    "[TITLE] 解释 [/TITLE][DEF][EN]Having no feathers on the head (used in The Bald Eagle Level F, referring to the national bird of the United States with a white-feathered head)[/EN][CN]白头的；无羽的（头部没有羽毛的，出自《The Bald Eagle》Level F，指美国国鸟白头海雕，头部有白色羽毛）[/CN][POS]adj.[/POS][PH]/bɔːld/（英美）[/PH][DU]The bald eagle is called “bald” because of its white head feathers.|(原文衍生例句) 白头海雕被称为“白头”，是因为它头部的白色羽毛。[/DU][DU]The bald eagle is a large bird with a bald head and sharp claws.|白头海雕是一种大型鸟类，头部无深色羽毛，爪子锋利。[/DU][/DEF][IMG]infopic01/bald.webp[/IMG][DEF][EN]Having little or no hair on the head[/EN][CN]秃顶的；光头的[/CN][POS]adj.[/POS][DU]My grandpa became bald when he was 50 years old.|我爷爷50岁时开始秃顶。[/DU][DU]Some men choose to keep their heads bald instead of growing hair.|有些男人选择留光头，而不是留头发。[/DU][/DEF][DEF][EN]Having no covering or decoration[/EN][CN]光秃秃的；无装饰的[/CN][POS]adj.[/POS][DU]The bald mountain top was covered with snow in winter.|光秃秃的山顶在冬天被雪覆盖。[/DU][DU]The wall looks bald without any pictures or posters.|这面墙没有任何图片或海报，看起来光秃秃的。[/DU][/DEF]",
+    "[TITLE] 常见用法 [/TITLE][COLL][H]bald eagle|白头海雕[POS]adj.[/POS][/H][EX]The bald eagle is one of the most famous birds in North America.|白头海雕是北美最著名的鸟类之一。[/EX][C]bald head|光头；白头[/C][C]bald man|秃顶的男人[/C][/COLL][COLL][H]bald mountain|光秃秃的山[POS]adj.[/POS][/H][EX]We climbed the bald mountain and enjoyed the beautiful view from the top.|我们爬上了那座光秃秃的山，欣赏了山顶的美景。[/EX][C]bald tree|无叶的树[/C][C]bald wall|无装饰的墙[/C][/COLL][COLL][H]go bald|变秃顶[POS]adj.[/POS][/H][EX]Many people worry about going bald as they get older.|很多人担心随着年龄增长会变秃顶。[/EX][C]keep bald|留光头[/C][C]look bald|看起来光秃秃的[/C][/COLL]",
+    "[TITLE] 额外例句 [/TITLE][EX]The old tree has become bald after losing all its leaves in autumn.|这棵老树在秋天掉光了叶子，变得光秃秃的。[/EX][EX]The bald eagle builds its nest on tall trees near rivers.|白头海雕在河边的高大树木上筑巢。[/EX][EX]He laughed and said he didn’t mind being bald—It made him look cool.|他笑着说自己不介意秃顶，这让他看起来很酷。[/EX]",
+    "[TITLE] 常见错误 [/TITLE][ERR]bald的比较级和最高级为baldest（单音节词，直接加est），不要写成more bald、most bald（错误）。[/ERR][ERR]不要混淆bald和bare，bald侧重“头部无发或物体无覆盖物”，bare侧重“表面无遮挡物”，错误：a bare eagle，正确：a bald eagle。[/ERR][ERR]固定搭配“bald eagle”中，bald首字母小写（专有名词中修饰词小写），不要写成Bald Eagle（错误，除非句首）。[/ERR]"
+  ]
+},
+"w301": {
+  "word": "freedom",
+  "images": {
+    "scene": ["infopic01/freedom.webp"],
+    "card": ["wordpic01/freedom.webp"]
+  },
+  "richDetail": [
+    "[TITLE] 解释 [/TITLE][DEF][EN]The state of being free to act or live as you want (used in The Bald Eagle Level F, referring to what the bald eagle stands for)[/EN][CN]自由；自主（能够按照自己的意愿行动或生活的状态，出自《The Bald Eagle》Level F，指白头海雕所象征的意义）[/CN][POS]n.[/POS][PH]/ˈfriːdəm/（英美）[/PH][DU]The bald eagle stands for the freedom of the United States and its people.|(原文衍生例句) 白头海雕象征着美国及其人民的自由。[/DU][DU]People all over the world love freedom and peace.|全世界的人们都热爱自由与和平。[/DU][/DEF][IMG]infopic01/freedom.webp[/IMG][DEF][EN]The right to do what you want without being restricted by authority[/EN][CN]自由权（不受权威限制做某事的权利）[/CN][POS]n.[/POS][DU]Citizens have the freedom to speak their minds in a democratic country.|在民主国家，公民有言论自由的权利。[/DU][DU]The Constitution protects the basic freedoms of all Americans.|宪法保护所有美国人的基本自由权。[/DU][/DEF]",
+    "[TITLE] 常见用法 [/TITLE][COLL][H]personal freedom|人身自由[POS]n.[/POS][/H][EX]We should respect the personal freedom of every individual.|我们应该尊重每个人的人身自由。[/EX][C]freedom of speech|言论自由[/C][C]freedom of choice|选择自由[/C][/COLL][COLL][H]fight for freedom|为自由而战[POS]v. 短语[/POS][/H][EX]Many heroes fought bravely for the freedom of their country.|许多英雄为了国家的自由而英勇战斗。[/EX][C]enjoy freedom|享受自由[/C][C]defend freedom|捍卫自由[/C][/COLL][COLL][H]freedom to do sth|做某事的自由[POS]n.[/POS][/H][EX]Children have the freedom to play and explore the world around them.|孩子们有玩耍和探索周围世界的自由。[/EX][C]freedom of movement|行动自由[/C][C]freedom of thought|思想自由[/C][/COLL]",
+    "[TITLE] 额外例句 [/TITLE][EX]The poem expresses the poet’s longing for freedom and a better life.|这首诗表达了诗人对自由和美好生活的向往。[/EX][EX]After years of hard work, they finally gained the freedom to live in peace.|经过多年的努力，他们终于获得了和平生活的自由。[/EX][EX]Freedom comes with responsibility—we must not hurt others while exercising our freedom.|自由伴随着责任，我们在行使自由时不能伤害他人。[/EX]",
+    "[TITLE] 常见错误 [/TITLE][ERR]freedom是不可数名词，通常不用于复数形式，错误：freedoms（表示“多种自由权”时可复数，但日常“自由”义不可数），正确：value freedom。[/ERR][ERR]不要混淆freedom和liberty，freedom侧重“广义的自由”，liberty侧重“不受权威干涉的自由”，错误：liberty of speech（正确：freedom of speech）。[/ERR][ERR]表示“做某事的自由”时，常用介词to，错误：freedom of doing sth，正确：freedom to do sth。[/ERR]"
+  ]
+},
+"w302": {
+  "word": "unite",
+  "images": {
+    "scene": ["infopic01/unite.webp"],
+    "card": ["wordpic01/unite.webp"]
+  },
+  "richDetail": [
+    "[TITLE] 解释 [/TITLE][DEF][EN]To bring people or things together to form a single group or unit (未在Level F书籍中明确出现，以下为日常高频义)[/EN][CN]联合；团结；统一（使人们或事物聚集在一起形成一个整体）[/CN][POS]v.[/POS][PH]/juˈnaɪt/（英美）[/PH][DU]People from different countries unite to protect the environment.|来自不同国家的人们联合起来保护环境。[/DU][DU]The two small teams decided to unite and work on the project together.|这两个小团队决定团结起来，一起完成这个项目。[/DU][/DEF][IMG]infopic01/unite.webp[/IMG][DEF][EN]To join together to achieve a common goal[/EN][CN]联手；联合（为实现共同目标而合作）[/CN][POS]v.[/POS][DU]Schools and families must unite to help children grow up healthily.|学校和家庭必须联手，帮助孩子健康成长。[/DU][DU]The three companies united to develop new technology for renewable energy.|这三家公司联合起来，研发可再生能源新技术。[/DU][/DEF]",
+    "[TITLE] 常见用法 [/TITLE][COLL][H]unite people|团结人们[POS]v.[/POS][/H][EX]A common dream can unite people from all walks of life.|共同的梦想能团结各行各业的人们。[/EX][C]unite countries|联合国家[/C][C]unite teams|团结团队[/C][/COLL][COLL][H]unite for a goal|为目标而联合[POS]v.[/POS][/H][EX]All members of the community united for the goal of building a park.|社区所有成员为了建造公园的目标而联合起来。[/EX][C]unite against|联合反对[/C][C]unite to do sth|联合做某事[/C][/COLL][COLL][H]unite as one|团结一致[POS]v.[/POS][/H][EX]When facing difficulties, we should unite as one and support each other.|遇到困难时，我们应该团结一致，互相支持。[/EX][C]unite together|联合起来[/C][C]successfully unite|成功联合[/C][/COLL]",
+    "[TITLE] 额外例句 [/TITLE][EX]The festival is a time for families to unite and celebrate together.|这个节日是家人团聚庆祝的时刻。[/EX][EX]Music has the power to unite people regardless of language and culture.|音乐有跨越语言和文化、团结人们的力量。[/EX][EX]The organization aims to unite young people to volunteer for public welfare.|这个组织旨在团结年轻人参与公益志愿活动。[/EX]",
+    "[TITLE] 常见错误 [/TITLE][ERR]unite是及物动词，直接接宾语，无需加介词，错误：unite with people（可加with，但日常直接接宾语更自然），正确：unite people。[/ERR][ERR]unite的过去式和过去分词为united，直接加ed，不要写成united（正确）或uniteed（错误）。[/ERR][ERR]不要混淆unite和join，unite侧重“多个个体形成整体”，join侧重“加入已有团体”，错误：unite the club，正确：join the club。[/ERR]"
+  ]
+},
+"w303": {
+  "word": "state",
+  "images": {
+    "scene": ["infopic01/state.webp"],
+    "card": ["wordpic01/state.webp"]
+  },
+  "richDetail": [
+    "[TITLE] 解释 [/TITLE][DEF][EN]A region of a country with its own government (used in The Bald Eagle Level F, referring to state flags in the United States)[/EN][CN]州（国家的一个区域，有自己的政府，出自《The Bald Eagle》Level F，指美国的州旗）[/CN][POS]n.[/POS][PH]/steɪt/（英美）[/PH][DU]The bald eagle’s image can be seen on many state flags in the United States.|(原文衍生例句) 在美国许多州的州旗上都能看到白头海雕的形象。[/DU][DU]California is a famous state on the west coast of the United States.|加利福尼亚州是美国西海岸的一个著名州。[/DU][/DEF][IMG]infopic01/state.webp[/IMG][DEF][EN]A country or nation[/EN][CN]国家；邦[/CN][POS]n.[/POS][DU]The two states signed a peace agreement to promote trade and cooperation.|这两个国家签署了和平协议，促进贸易与合作。[/DU][DU]Each state has the right to make its own laws within certain limits.|每个国家都有权在一定范围内制定自己的法律。[/DU][/DEF][DEF][EN]The condition or situation of someone or something[/EN][CN]状态；状况[/CN][POS]n.[/POS][DU]The doctor checked the patient’s state of health carefully.|医生仔细检查了病人的健康状况。[/DU][DU]The old building is in a poor state and needs to be repaired soon.|这座老建筑状况不佳，需要尽快修缮。[/DU][/DEF]",
+    "[TITLE] 常见用法 [/TITLE][COLL][H]state flag|州旗[POS]n.[/POS][/H][EX]We learned about different state flags during our social studies class.|我们在社会课上学习了不同的州旗。[/EX][C]state government|州政府[/C][C]state capital|州首府[/C][/COLL][COLL][H]member state|成员国[POS]n.[/POS][/H][EX]China is an important member state of the United Nations.|中国是联合国的重要成员国。[/EX][C]independent state|独立国家[/C][C]city-state|城邦[/C][/COLL][COLL][H]in a good state|状态良好[POS]n.[/POS][/H][EX]The car is still in a good state after being used for five years.|这辆车使用了五年后仍然状态良好。[/EX][C]in a bad state|状况糟糕[/C][C]state of mind|心态[/C][/COLL]",
+    "[TITLE] 额外例句 [/TITLE][EX]The state of New York is known for its big cities like New York City.|纽约州以其纽约市等大城市而闻名。[/EX][EX]She was in a calm state of mind before the important exam.|重要考试前，她心态平静。[/EX][EX]The government is working to improve the state of the environment in rural areas.|政府正在努力改善农村地区的环境状况。[/EX]",
+    "[TITLE] 常见错误 [/TITLE][ERR]state作“州、国家”讲时是可数名词，复数形式为states，直接加s，不要写成statees。[/ERR][ERR]表示“处于某种状态”时，常用介词in，错误：on a bad state，正确：in a bad state。[/ERR][ERR]不要混淆state和country，state在美式英语中常指“州”，country指“国家”，错误：the United States country，正确：the United States（美国，由多个州组成）。[/ERR]"
+  ]
+},
+"w304": {
+  "word": "city hall",
+  "images": {
+    "scene": ["infopic01/cityhall.webp"],
+    "card": ["wordpic01/cityhall.webp"]
+  },
+  "richDetail": [
+    "[TITLE] 解释 [/TITLE][DEF][EN]A building where a city’s government works (used in The Bald Eagle Level F, referring to public buildings with the bald eagle’s image)[/EN][CN]市政厅（城市政府办公的建筑，出自《The Bald Eagle》Level F，指印有白头海雕形象的公共建筑）[/CN][POS]n. 短语（可数）[/POS][PH]/ˈsɪti hɔːl/（英式）/ˈsɪti hɔːl/（美式）[/PH][DU]The bald eagle’s symbol can be seen on city halls and other public buildings.|(原文衍生例句) 在市政厅和其他公共建筑上可以看到白头海雕的标志。[/DU][DU]We visited the city hall to learn about how the city is managed.|我们参观了市政厅，了解城市是如何管理的。[/DU][/DEF][IMG]infopic01/cityhall.webp[/IMG][DEF][EN]The government of a city, or the officials who work there[/EN][CN]市政当局；市政府官员[/CN][POS]n. 短语（不可数）[/POS][DU]The city hall decided to build a new park in the neighborhood.|市政当局决定在这个社区建造一个新公园。[/DU][DU]We can go to the city hall to ask for help with community problems.|我们可以去市政厅咨询社区问题的解决方案。[/DU][/DEF]",
+    "[TITLE] 常见用法 [/TITLE][COLL][H]visit the city hall|参观市政厅[POS]v. 短语[/POS][/H][EX]Our class took a field trip to visit the city hall and meet the mayor.|我们班组织了实地考察，参观了市政厅并见到了市长。[/EX][C]work at the city hall|在市政厅工作[/C][C]near the city hall|在市政厅附近[/C][/COLL][COLL][H]city hall building|市政厅建筑[POS]n. 短语[/POS][/H][EX]The city hall building is a beautiful historic structure with a big clock tower.|市政厅建筑是一座美丽的历史建筑，带有一个大钟塔。[/EX][C]city hall square|市政厅广场[/C][C]city hall meeting|市政厅会议[/C][/COLL][COLL][H]ask the city hall|向市政当局咨询[POS]v. 短语[/POS][/H][EX]Residents asked the city hall to fix the broken roads in the area.|居民们要求市政当局修复该地区破损的道路。[/EX][C]contact the city hall|联系市政厅[/C][C]city hall officials|市政厅官员[/C][/COLL]",
+    "[TITLE] 额外例句 [/TITLE][EX]The city hall holds a public meeting every month to listen to citizens’ opinions.|市政厅每月举行一次公开会议，听取市民的意见。[/EX][EX]There is a big celebration in front of the city hall on National Day.|国庆节那天，市政厅前会举行盛大的庆祝活动。[/EX][EX]My dad went to the city hall to apply for a building permit.|我爸爸去市政厅申请建筑许可证。[/EX]",
+    "[TITLE] 常见错误 [/TITLE][ERR]city hall是复合名词，复数形式为city halls（指多座市政厅建筑），仅hall变复数，不要写成cities halls或city halles。[/ERR][ERR]表示“在市政厅”时，常用介词at或in，错误：on the city hall，正确：at the city hall（强调地点）/in the city hall（强调在建筑内部）。[/ERR][ERR]city hall作“市政当局”讲时为不可数名词，不可加s，错误：the city halls decided，正确：the city hall decided。[/ERR]"
+  ]
+},
+"w305": {
+  "word": "national",
+  "images": {
+    "scene": ["infopic01/national.webp"],
+    "card": ["wordpic01/national.webp"]
+  },
+  "richDetail": [
+    "[TITLE] 解释 [/TITLE][DEF][EN]Relating to a whole country or nation (used in The Bald Eagle Level F, referring to the national bird of the United States)[/EN][CN]国家的；全国性的；民族的（与整个国家或民族相关的，出自《The Bald Eagle》Level F，指美国的国鸟）[/CN][POS]adj.[/POS][PH]/ˈnæʃnəl/（英美）[/PH][DU]The bald eagle is the national bird of the United States.|(原文例句) 白头海雕是美国的国鸟。[/DU][DU]We sang the national anthem at the beginning of the school assembly.|我们在学校集会开始时唱了国歌。[/DU][/DEF][IMG]infopic01/national.webp[/IMG][DEF][EN]Belonging to or typical of a particular nation’s people[/EN][CN]民族的；国民的[/CN][POS]adj.[/POS][DU]The museum displays national art and cultural relics from all over the country.|这个博物馆展示来自全国各地的民族艺术和文物。[/DU][DU]National pride is strong among the people of this country.|这个国家的人民有着强烈的民族自豪感。[/DU][/DEF]",
+    "[TITLE] 常见用法 [/TITLE][COLL][H]national bird|国鸟[POS]adj.[/POS][/H][EX]Many countries have a national bird that represents their culture.|许多国家都有象征本国文化的国鸟。[/EX][C]national anthem|国歌[/C][C]national flag|国旗[/C][/COLL][COLL][H]national day|国庆节[POS]adj.[/POS][/H][EX]People celebrate national day with parades and fireworks.|人们通过游行和烟花庆祝国庆节。[/EX][C]national park|国家公园[/C][C]national team|国家队[/C][/COLL][COLL][H]national culture|民族文化[POS]adj.[/POS][/H][EX]We should learn and protect our national culture and traditions.|我们应该学习和保护我们的民族文化和传统。[/EX][C]national economy|国民经济[/C][C]national security|国家安全[/C][/COLL]",
+    "[TITLE] 额外例句 [/TITLE][EX]The national park is home to many rare animals and plants.|这个国家公园是许多珍稀动植物的家园。[/EX][EX]She won a gold medal as part of the national swimming team.|她作为国家游泳队的一员赢得了金牌。[/EX][EX]The national newspaper reports news from all parts of the country.|这份全国性报纸报道来自全国各地的新闻。[/EX]",
+    "[TITLE] 常见错误 [/TITLE][ERR]national是形容词，不可用作名词表示“国民”（错误：a national），正确：a citizen（公民）/a national citizen（国民）。[/ERR][ERR]固定搭配中首字母大写：National Day（国庆节）、National Anthem（国歌），错误：national day（小写）。[/ERR][ERR]不要混淆national和international，national指“国家的、全国的”，international指“国际的”，错误：an international bird，正确：a national bird。[/ERR]"
+  ]
 }
-
 
 }
 
