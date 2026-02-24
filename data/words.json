@@ -3981,7 +3981,649 @@
     "[TITLE] 额外例句 [/TITLE][EX]The national park is home to many rare animals and plants.|这个国家公园是许多珍稀动植物的家园。[/EX][EX]She won a gold medal as part of the national swimming team.|她作为国家游泳队的一员赢得了金牌。[/EX][EX]The national newspaper reports news from all parts of the country.|这份全国性报纸报道来自全国各地的新闻。[/EX]",
     "[TITLE] 常见错误 [/TITLE][ERR]national是形容词，不可用作名词表示“国民”（错误：a national），正确：a citizen（公民）/a national citizen（国民）。[/ERR][ERR]固定搭配中首字母大写：National Day（国庆节）、National Anthem（国歌），错误：national day（小写）。[/ERR][ERR]不要混淆national和international，national指“国家的、全国的”，international指“国际的”，错误：an international bird，正确：a national bird。[/ERR]"
   ]
-}
+},
+"w306": {
+  "word": "hold",
+  "images": {
+    "scene": ["infopic01/hold.webp"],
+    "card": ["wordpic01/hold.webp"]
+  },
+  "richDetail": [
+    "[TITLE] 解释 [/TITLE][DEF][EN]To stop yourself from doing something; to keep back (used in Dragon Masters 04 Power of the Fire Dragon Level F, Rori told Vulcan to stop shooting fire)[/EN][CN]克制；忍住；控制（抑制自己做某事，出自《Dragon Masters 04 Power of the Fire Dragon》Level F，指罗莉让伏尔坎停止喷火）[/CN][POS]v./n.[/POS][PH]/həʊld/（英式）/hoʊld/（美式）[/PH][DU]Rori shouted to Vulcan, 'I said to hold your fire!'|罗莉对伏尔坎大喊：“我说了忍住别喷火！”[/DU][DU]You need to hold your anger and talk to him calmly.|你要克制住怒气，冷静地和他说话。[/DU][/DEF][IMG]infopic01/hold.webp[/IMG][DEF][EN]To take and keep something in your hand or arms[/EN][CN]拿；握住；抱住[/CN][POS]v.[/POS][DU]Drake held his Dragon Stone tightly when he called Worm for help.|德雷克召唤沃姆帮忙时，紧紧握住了他的龙石。[/DU][DU]She held the baby gently in her arms.|她温柔地把宝宝抱在怀里。[/DU][/DEF][DEF][EN]A position of owning or controlling something[/EN][CN]持有；控制；掌握[/CN][POS]n.[/POS][DU]Maldred wanted to get a hold of Worm to carry out his evil plan.|马尔德雷德想控制沃姆，实现他的邪恶计划。[/DU][DU]The king has a firm hold on his kingdom.|国王牢牢掌控着自己的王国。[/DU][/DEF]",
+    "[TITLE] 常见用法 [/TITLE][COLL][H]hold your fire|忍住别开火/喷火[POS]v. 短语[/POS][/H][EX]The soldier was told to hold his fire until the enemy came closer.|士兵被告知等敌人靠近了再开火。[/EX][C]hold back|克制；隐瞒[/C][C]hold on|坚持；等一下[/C][/COLL][COLL][H]hold sth tightly|紧紧握住某物[POS]v. 短语[/POS][/H][EX]He held the rope tightly while climbing the tower.|他爬塔时紧紧抓住绳子。[/EX][C]hold sb in arms|抱住某人[/C][C]hold a book|拿着一本书[/C][/COLL][COLL][H]get a hold of|控制；抓住；联系上[POS]v. 短语[/POS][/H][EX]It's hard to get a hold of the dark wizard Maldred.|想要抓住黑巫师马尔德雷德并不容易。[/EX][C]have a hold on|掌控；对…有影响[/C][C]in hold|在掌控中[/C][/COLL]",
+    "[TITLE] 额外例句 [/TITLE][EX]Hold on a minute! I need to take my dragon stone with me.|等一下！我要带上我的龙石。[/EX][EX]The dragon can hold a big rock with its claws easily.|这条龙能用爪子轻松抓起一块大石头。[/EX][EX]She tried to hold back her tears when she heard the bad news.|听到坏消息时，她努力忍住了眼泪。[/EX]",
+    "[TITLE] 常见错误 [/TITLE][ERR]hold的过去式和过去分词为held，属于不规则变化，不要写成holded（错误）。[/ERR][ERR]hold作“克制”讲时，后接名词或动名词，错误：hold to be angry，正确：hold your anger。[/ERR][ERR]固定短语hold on后接宾语时需加to，错误：hold on the handrail，正确：hold on to the handrail。[/ERR]"
+  ]
+},
+"w307": {
+  "word": "event",
+  "images": {
+    "scene": ["infopic01/event.webp"],
+    "card": ["wordpic01/event.webp"]
+  },
+  "richDetail": [
+    "[TITLE] 解释 [/TITLE][DEF][EN]A special planned activity or occasion (used in Dragon Masters 04 Power of the Fire Dragon Level F, the Dragon Masters prepared for a dragon show activity)[/EN][CN]活动；大事；赛事（有计划的特殊活动，出自《Dragon Masters 04 Power of the Fire Dragon》Level F，指驯龙大师们为龙的表演活动做准备）[/CN][POS]n.[/POS][PH]/ɪˈvent/（英美）[/PH][DU]The four Dragon Masters and their dragons were getting ready for a special event in the Valley of Clouds.|四位驯龙大师和他们的龙正在云之谷为一场特殊活动做准备。[/DU][DU]Queen Rose's summer festival is the most important event in the Kingdom of Arkwood.|罗斯女王的夏日庆典是阿克伍德王国最重要的活动。[/DU][/DEF][IMG]infopic01/event.webp[/IMG][DEF][EN]Something that happens, especially something important or unusual[/EN][CN]（尤指重要或不寻常的）事情；事件[/CN][POS]n.[/POS][DU]The attack of Maldred and the hydra was a terrible event for the castle.|马尔德雷德和九头蛇的袭击对城堡来说是一场可怕的事件。[/DU][DU]The dragon show was an exciting event for all the people in the kingdom.|龙的表演对王国里的所有人来说都是一场激动人心的事。[/DU][/DEF]",
+    "[TITLE] 常见用法 [/TITLE][COLL][H]special event|特殊活动[POS]n.[/POS][/H][EX]The castle will hold a special event to celebrate the victory over Maldred.|城堡将举办一场特殊活动，庆祝战胜马尔德雷德。[/EX][C]important event|重要事件[/C][C]dragon show event|龙展活动[/C][/COLL][COLL][H]prepare for an event|为活动做准备[POS]v. 短语[/POS][/H][EX]The Dragon Masters practiced for days to prepare for the dragon show event.|驯龙大师们苦练数日，为龙展活动做准备。[/EX][C]take part in an event|参加活动[/C][C]hold an event|举办活动[/C][/COLL][H]in the event of|万一；倘若[POS]prep. 短语[/POS][/H][EX]In the event of a dragon attack, we need to hide in the castle at once.|万一遭遇龙的袭击，我们需要立刻躲进城堡。[/EX][C]in that event|如果那样的话[/C][C]event planning|活动策划[/C][/COLL]",
+    "[TITLE] 额外例句 [/TITLE][EX]We all dressed up for the big event at the queen's castle.|我们都盛装出席了女王城堡的大型活动。[/EX][EX]The arrival of the new dragon was a happy event for the Dragon Masters.|新龙的到来对驯龙大师们来说是一件开心的事。[/EX][EX]You need to arrive early if you want to watch the event from the front row.|如果你想在前排看这场活动，就得早点到。[/EX]",
+    "[TITLE] 常见错误 [/TITLE][ERR]event是可数名词，复数形式为events，直接加s，不要写成eventes。[/ERR][ERR]不要混淆event和accident，event泛指“事件、活动”，accident特指“意外事故”，错误：a car event，正确：a car accident。[/ERR][ERR]表示“在活动中”用at the event，错误：in the event，正确：at the event（具体活动）/in the event（固定短语）。[/ERR]"
+  ]
+},
+"w308": {
+  "word": "bug",
+  "images": {
+    "scene": ["infopic01/bug.webp"],
+    "card": ["wordpic01/bug.webp"]
+  },
+  "richDetail": [
+    "[TITLE] 解释 [/TITLE][DEF][EN]To annoy or bother someone (used in Dragon Masters 04 Power of the Fire Dragon Level F, it made Rori annoyed to be the last to connect with her dragon)[/EN][CN]使烦恼；使恼怒；打扰（惹恼某人，出自《Dragon Masters 04 Power of the Fire Dragon》Level F，指罗莉是最后一个和自己的龙建立联结的人，这让她很烦恼）[/CN][POS]v./n.[/POS][PH]/bʌɡ/（英美）[/PH][DU]Drake knew it bugged Rori to be the last one to connect with her dragon.|德雷克知道，成为最后一个和自己的龙建立联结的人，这让罗莉很烦恼。[/DU][DU]It really bugs me when Vulcan doesn't listen to Rori's orders.|伏尔坎不听罗莉的命令时，真的让我很恼火。[/DU][/DEF][IMG]infopic01/bug.webp[/IMG][DEF][EN]A small insect such as a fly, ant, or bee[/EN][CN]小虫；昆虫[/CN][POS]n.[/POS][DU]The dragons don't care about small bugs flying around them in the Valley of Clouds.|云之谷里绕着龙飞的小虫，根本不会被龙放在眼里。[/DU][DU]There are many colorful bugs in the forest behind the castle.|城堡后的森林里有许多色彩斑斓的小虫。[/DU][/DEF]",
+    "[TITLE] 常见用法 [/TITLE][COLL][H]bug sb|惹恼某人[POS]v.[/POS][/H][EX]It bugs me when someone interrupts me while I'm talking.|有人在我说话时插嘴，会让我很生气。[/EX][C]bug sb a lot|让某人心烦不已[/C][C]really bug sb|真的惹恼某人[/C][/COLL][COLL][H]small bug|小虫；小昆虫[POS]n.[/POS][/H][EX]The Sun Dragon Kepri doesn't like small bugs flying near her eyes.|太阳龙凯普里不喜欢小虫飞到她的眼睛旁。[/EX][C]insect bug|昆虫[/C][C]tiny bug|极小的虫子[/C][/COLL][COLL][H]bug out|仓皇逃跑；大惊小怪[POS]v. 短语[/POS][/H][EX]The guards almost bugged out when they saw the four-headed hydra.|守卫们看到四头九头蛇时，差点吓得仓皇逃跑。[/EX][C]bug off|走开（口语）[/C][C]a bug in the system|系统漏洞[/C][/COLL]",
+    "[TITLE] 额外例句 [/TITLE][EX]It bugs Rori that the king doesn't believe Worm saved him.|国王不相信是沃姆救了他，这让罗莉很生气。[/EX][EX]Drake found a strange bug with colorful wings on the grass in the valley.|德雷克在山谷的草地上发现了一只长着彩色翅膀的奇怪小虫。[/EX][EX]Don't bug me while I'm training my dragon.|我训练我的龙时，别来打扰我。[/EX]",
+    "[TITLE] 常见错误 [/TITLE][ERR]bug作动词“使烦恼”时，过去式和过去分词为bugged，直接加ed，不要写成bugged（正确）或buggedd（错误）。[/ERR][ERR]bug作“昆虫”讲时是可数名词，复数为bugs，不要写成buges。[/ERR][ERR]bug是口语化动词，正式场合可用annoy或bother，避免在正式写作中使用，错误：The problem bugs me（正式），正确：The problem annoys me。[/ERR]"
+  ]
+},
+"w309": {
+  "word": "booming",
+  "images": {
+    "scene": ["infopic01/booming.webp"],
+    "card": ["wordpic01/booming.webp"]
+  },
+  "richDetail": [
+    "[TITLE] 解释 [/TITLE][DEF][EN](of a voice) very loud and deep (used in Dragon Masters 04 Power of the Fire Dragon Level F, describing King Roland's loud voice)[/EN][CN]（声音）洪亮的；低沉有力的（出自《Dragon Masters 04 Power of the Fire Dragon》Level F，用来形容罗兰国王的大嗓门）[/CN][POS]adj./v.[/POS][PH]/ˈbuːmɪŋ/（英美）[/PH][DU]King Roland said in his booming voice, 'The dragons are looking fine, wizard!'|罗兰国王用他洪亮的声音说：“巫师，这些龙看起来状态不错！”[/DU][DU]The dragon let out a booming roar that shook the valley.|龙发出一声低沉有力的咆哮，震得山谷都在抖。[/DU][/DEF][IMG]infopic01/booming.webp[/IMG][DEF][EN]Increasing or developing very quickly; successful[/EN][CN]迅猛发展的；繁荣的[/CN][POS]adj.[/POS][DU]The booming kingdom of Arkwood is famous for its summer festival.|繁荣的阿克伍德王国以其夏日庆典闻名。[/DU][DU]The trade between the two kingdoms is booming now.|两个王国之间的贸易如今正蓬勃发展。[/DU][/DEF][DEF][EN]To make a loud, deep sound; to grow or develop quickly[/EN][CN]发出隆隆声；迅猛发展[/CN][POS]v.[/POS][DU]Thunder boomed in the sky when the hydra attacked the castle.|九头蛇袭击城堡时，天空中雷声隆隆。[/DU][DU]The dragon population in the kingdom is booming with the Dragon Masters' care.|在驯龙大师们的照料下，王国里的龙的数量正在迅猛增加。[/DU][/DEF]",
+    "[TITLE] 常见用法 [/TITLE][COLL][H]booming voice|洪亮的声音[POS]adj.[/POS][/H][EX]Everyone can hear the king's booming voice even in the far corner of the courtyard.|就算在院子的最角落，所有人都能听到国王洪亮的声音。[/EX][C]booming roar|低沉的咆哮[/C][C]booming sound|隆隆声[/C][/COLL][COLL][H]booming kingdom|繁荣的王国[POS]adj.[/POS][/H][EX]Queen Rose rules a booming kingdom with kindness and wisdom.|罗斯女王用仁慈和智慧统治着一个繁荣的王国。[/EX][C]booming trade|繁荣的贸易[/C][C]booming economy|蓬勃发展的经济[/C][/COLL][COLL][H]thunder boom|雷声隆隆[POS]v.[/POS][/H][EX]Thunder boomed loudly when the dark magic was used.|黑魔法被使用时，雷声大作。[/EX][C]boom out|发出洪亮的声音[/C][C]boom with|因…而繁荣[/C][/COLL]",
+    "[TITLE] 额外例句 [/TITLE][EX]The wizard's booming shout could be heard all over the castle.|巫师洪亮的呼喊声传遍了整个城堡。[/EX][EX]The small village is booming into a big town with the development of tourism.|随着旅游业的发展，这个小村庄正蓬勃发展成一个大城镇。[/EX][EX]The cannon boomed and the festival in the kingdom began.|礼炮隆隆作响，王国的庆典开始了。[/EX]",
+    "[TITLE] 常见错误 [/TITLE][ERR]booming是形容词和现在分词，不要和动词boom混淆，错误：His voice boom（正确：His voice is booming）。[/ERR][ERR]booming修饰声音时，仅形容“低沉、洪亮、有力的声音”，不能形容尖锐的声音，错误：a booming scream，正确：a sharp scream。[/ERR][ERR]boom的过去式和过去分词为boomed，直接加ed，不要写成boomedd（错误）。[/ERR]"
+  ]
+},
+"w310": {
+  "word": "army",
+  "images": {
+    "scene": ["infopic01/army.webp"],
+    "card": ["wordpic01/army.webp"]
+  },
+  "richDetail": [
+    "[TITLE] 解释 [/TITLE][DEF][EN]A large group of soldiers trained to fight wars; a large group of living things (used in Dragon Masters 04 Power of the Fire Dragon Level F, King Roland called the dragons his dragon army)[/EN][CN]军队；大军；一大群（受过作战训练的大批士兵；一大群生物，出自《Dragon Masters 04 Power of the Fire Dragon》Level F，指罗兰国王把这些龙称作他的龙军）[/CN][POS]n.[/POS][PH]/ˈɑːmi/（英式）/ˈɑːrmi/（美式）[/PH][DU]King Roland said, 'This is the first time that I will show my dragon army to the world!'|罗兰国王说：“这是我第一次向全世界展示我的龙军！”[/DU][DU]Maldred wanted to use Worm to control an army and rule all kingdoms.|马尔德雷德想利用沃姆控制一支大军，统治所有王国。[/DU][/DEF][IMG]infopic01/army.webp[/IMG][DEF][EN]The military forces of a country[/EN][CN]（一个国家的）陆军；军队[/CN][POS]n.[/POS][DU]The king's army guards the castle day and night to keep it safe.|国王的军队日夜守卫着城堡，确保它的安全。[/DU][DU]Many soldiers in the army respect the Dragon Masters for their bravery.|军队里的许多士兵都敬佩驯龙大师们的勇敢。[/DU][/DEF]",
+    "[TITLE] 常见用法 [/TITLE][COLL][H]dragon army|龙军[POS]n.[/POS][/H][EX]King Roland dreamed of his dragon army scaring all the enemies away.|罗兰国王梦想着他的龙军能吓跑所有敌人。[/EX][C]the king's army|国王的军队[/C][C]an army of soldiers|一支士兵大军[/C][/COLL][COLL][H]show the army to the world|向全世界展示军队[POS]v. 短语[/POS][/H][EX]The king planned to show the dragon army to the world at Queen Rose's festival.|国王计划在罗斯女王的庆典上，向全世界展示他的龙军。[/EX][C]build an army|组建军队[/C][C]control an army|控制军队[/C][/COLL][COLL][H]an army of|一大群…[POS]n. 短语[/POS][/H][EX]An army of birds flew over the castle when the dragons performed.|龙表演时，一大群鸟从城堡上空飞过。[/EX][C]an army of ants|一大群蚂蚁[/C][C]an army of fans|一大群粉丝[/C][/COLL]",
+    "[TITLE] 额外例句 [/TITLE][EX]The dragon army is made up of Shu, Kepri, Vulcan and Worm.|这支龙军由舒、凯普里、伏尔坎和沃姆组成。[/EX][EX]The king sent his army to help the Kingdom of Arkwood fight against dark magic.|国王派他的军队去帮助阿克伍德王国对抗黑魔法。[/EX][EX]An army of fireflies lit up the Valley of Clouds at night.|夜晚，一大群萤火虫点亮了云之谷。[/EX]",
+    "[TITLE] 常见错误 [/TITLE][ERR]army是可数名词，复数形式为armies，变y为i加es，不要写成armys（错误）。[/ERR][ERR]表示“一支军队”用an army，不用a army，因army以元音音素开头。[/ERR][ERR]不要混淆army和military，army特指“陆军”，military泛指“军队、军方”，错误：the military of dragons，正确：the dragon army。[/ERR]"
+  ]
+},
+"w311": {
+  "word": "dare",
+  "images": {
+    "scene": ["infopic01/dare.webp"],
+    "card": ["wordpic01/dare.webp"]
+  },
+  "richDetail": [
+    "[TITLE] 解释 [/TITLE][DEF][EN]To have the courage to do something; to be brave enough to do something (used in Dragon Masters 04 Power of the Fire Dragon Level F, King Roland thought no one would be brave enough to attack his kingdom)[/EN][CN]敢；胆敢；有勇气做（有勇气做某事，出自《Dragon Masters 04 Power of the Fire Dragon》Level F，指罗兰国王认为没人敢袭击他的王国）[/CN][POS]v./aux.v.[/POS][PH]/deə(r)/（英式）/der/（美式）[/PH][DU]King Roland said, 'When word gets out that my kingdom is protected by dragons, nobody will dare attack us!'|罗兰国王说：“一旦大家知道我的王国由龙守护，没人敢来袭击我们！”[/DU][DU]Nobody dared to stand up to the dark wizard Maldred before the Dragon Masters.|在驯龙大师出现之前，没人敢反抗黑巫师马尔德雷德。[/DU][/DEF][IMG]infopic01/dare.webp[/IMG][DEF][EN]To challenge someone to do something difficult or dangerous[/EN][CN]激将；挑战（某人做难事或危险的事）[/CN][POS]v.[/POS][DU]Rori dared Drake to ride Vulcan with her to fight the hydra.|罗莉激德雷克和她一起骑伏尔坎去对抗九头蛇。[/DU][DU]He dared his friend to climb the tallest tower in the castle.|他激他的朋友去爬城堡里最高的塔。[/DU][/DEF]",
+    "[TITLE] 常见用法 [/TITLE][COLL][H]dare attack|胆敢袭击[POS]v.[/POS][/H][EX]No enemy would dare attack the kingdom with the powerful dragons protecting it.|有强大的龙守护，没有敌人敢袭击这个王国。[/EX][C]dare to do sth|敢于做某事[/C][C]dare stand up to|敢反抗[/C][/COLL][COLL][H]nobody dares|没人敢[/H][EX]Nobody dares to touch the red Dragon Stone made by dark magic.|没人敢碰用黑魔法制作的红龙石。[/EX][C]someone dares|有人敢[/C][C]hardly dare|几乎不敢[/C][/COLL][COLL][H]dare sb to do sth|激某人做某事[POS]v. 短语[/POS][/H][EX]The guard dared the boy to walk into the dragon cave alone.|守卫激那个男孩独自走进龙洞。[/EX][C]dare sb to try|激某人去尝试[/C][C]dare sb to fight|激某人去战斗[/C][/COLL]",
+    "[TITLE] 额外例句 [/TITLE][EX]Drake didn't dare to tell the king that Worm saved him by himself.|德雷克不敢独自告诉国王，是沃姆救了他。[/EX][EX]Vulcan is so brave that he dares to fight the four-headed hydra alone.|伏尔坎非常勇敢，敢独自和四头九头蛇战斗。[/EX][EX]She dared me to fly on the Sun Dragon with Ana, and I did it!|她激我和安娜一起骑太阳龙，我做到了！[/EX]",
+    "[TITLE] 常见错误 [/TITLE][ERR]dare作情态动词时，后接动词原形，无人称变化，错误：he dares to go（情态），正确：he dare go；作实义动词时，后接to do，有人称变化，正确：he dares to go。[/ERR][ERR]否定形式：情态动词dare not do，实义动词don't dare to do，不要混淆，错误：he don't dare go，正确：he doesn't dare to go。[/ERR][ERR]dare的过去式为dared，直接加ed，不要写成dareded（错误）。[/ERR]"
+  ]
+},
+"w312": {
+  "word": "present",
+  "images": {
+    "scene": ["infopic01/present.webp"],
+    "card": ["wordpic01/present.webp"]
+  },
+  "richDetail": [
+    "[TITLE] 解释 [/TITLE][DEF][EN]To introduce someone or something to an audience (used in Dragon Masters 04 Power of the Fire Dragon Level F, Griffith introduced Bo and his dragon Shu to King Roland)[/EN][CN]介绍；展示；呈现（向观众介绍某人或某物，出自《Dragon Masters 04 Power of the Fire Dragon》Level F，指格里菲斯向罗兰国王介绍波和他的龙舒）[/CN][POS]v./adj./n.[/POS][PH]/prɪˈzent/（英美，动词）/ˈpreznt/（英美，形容词/名词）[/PH][DU]Griffith said to the king, 'First, I would like to present Bo and Shu, his Water Dragon.'|格里菲斯对国王说：“首先，我想为您介绍波和他的水龙舒。”[/DU][DU]Griffith went on to present Ana and her Sun Dragon Kepri to the king.|格里菲斯接着向国王介绍了安娜和她的太阳龙凯普里。[/DU][/DEF][IMG]infopic01/present.webp[/IMG][DEF][EN]Being in a particular place at a particular time[/EN][CN]在场的；出席的[/CN][POS]adj.[/POS][DU]All the Dragon Masters were present at the dragon show for King Roland.|所有驯龙大师都出席了为罗兰国王举办的龙展。[/DU][DU]The king was present when the dragons performed their magic powers.|龙展示它们的魔力时，国王就在场。[/DU][/DEF][DEF][EN]A gift given to someone on a special occasion[/EN][CN]礼物；礼品[/CN][POS]n.[/POS][DU]Queen Rose gave the Dragon Masters a special present for defending the kingdom.|罗斯女王为驯龙大师们保卫王国的行为，送上了一份特别的礼物。[/DU][DU]Drake got a new dragon stone as a present from Griffith.|德雷克从格里菲斯那里得到了一块新的龙石作为礼物。[/DU][/DEF]",
+    "[TITLE] 常见用法 [/TITLE][COLL][H]present sb/sth to sb|向某人介绍/展示某人/某物[POS]v.[/POS][/H][EX]Griffith presented Worm to the queen at the festival in Arkwood.|格里菲斯在阿克伍德的庆典上，向女王介绍了沃姆。[/EX][C]present the dragon|展示龙[/C][C]present a show|呈现一场表演[/C][/COLL][COLL][H]be present at|出席；在场[POS]adj.[/POS][/H][EX]All the soldiers were present at the victory celebration of the castle.|所有士兵都出席了城堡的胜利庆典。[/EX][C]be present in|存在于[/C][C]everyone present|所有在场的人[/C][/COLL][COLL][H]special present|特别的礼物[POS]n.[/POS][/H][EX]The hydra's arrival was a wonderful present for all the Dragon Masters.|九头蛇的到来对所有驯龙大师来说，都是一份美妙的礼物。[/EX][C]give a present|送礼物[/C][C]receive a present|收礼物[/C][/COLL]",
+    "[TITLE] 额外例句 [/TITLE][EX]Rori was nervous to present Vulcan to Queen Rose at the festival.|罗莉在庆典上向罗斯女王展示伏尔坎时，感到很紧张。[/EX][C]Only the wizards and Dragon Masters were present at the secret meeting.|只有巫师和驯龙大师出席了这场秘密会议。[/C][EX]I made a small wooden dragon as a present for my best friend.|我做了一只木制小龙，作为礼物送给我最好的朋友。[/EX]",
+    "[TITLE] 常见错误 [/TITLE][ERR]present的动词发音/prɪˈzent/和名词/形容词发音/ˈpreznt/重音不同，注意区分，不要读混。[/ERR][ERR]present作“介绍”讲时，是及物动词，后接宾语+to sb，错误：present to the king Bo，正确：present Bo to the king。[/ERR][ERR]present作“礼物”讲时，是可数名词，复数为presents，直接加s，不要写成presentes。[/ERR]"
+  ]
+},
+"w313": {
+  "word": "protest",
+  "images": {
+    "scene": ["infopic01/protest.webp"],
+    "card": ["wordpic01/protest.webp"]
+  },
+  "richDetail": [
+    "[TITLE] 解释 [/TITLE][DEF][EN]To say something to show you disagree with or object to something (used in Dragon Masters 04 Power of the Fire Dragon Level F, Rori said she disagreed that Vulcan was to blame for the fire)[/EN][CN]抗议；反对；申辩（提出异议表示不同意，出自《Dragon Masters 04 Power of the Fire Dragon》Level F，指罗莉为伏尔坎喷火的事申辩，认为不该怪它）[/CN][POS]v./n.[/POS][PH]/prəˈtest/（英美，动词）/ˈprəʊtest/（英式，名词）/ˈproʊtest/（美式，名词）[/PH][DU]'But it was the wind!' Rori protested when the king blamed Vulcan for the fire.|国王责怪伏尔坎喷火时，罗莉申辩道：“可那是风的缘故！”[/DU][DU]Drake protested when the king said Worm didn't save him.|国王说沃姆没有救他时，德雷克提出了反对。[/DU][/DEF][IMG]infopic01/protest.webp[/IMG][DEF][EN]An action or statement that shows disagreement with something[/EN][CN]抗议；反对（表示异议的行为或言论）[/CN][POS]n.[/POS][DU]The Dragon Masters made a protest to the king about his unfair judgment on Worm.|驯龙大师们对国王对沃姆的不公评判提出了抗议。[/DU][DU]There was a small protest when the king decided to take only two dragons to Arkwood.|国王决定只带两条龙去阿克伍德时，出现了小小的反对声。[/DU][/DEF]",
+    "[TITLE] 常见用法 [/TITLE][COLL][H]protest (about/against sth)|抗议/反对某事[POS]v.[/POS][/H][EX]Rori protested against the king's blame on Vulcan for the fire accident.|罗莉反对国王将火灾事故归咎于伏尔坎。[/EX][C]protest that...|申辩说…[/C][C]angrily protest|愤怒地抗议[/C][/COLL][COLL][H]make a protest|提出抗议[POS]n.[/POS][/H][EX]The wizards made a protest to the king about his careless decision.|巫师们对国王轻率的决定向他提出了抗议。[/EX][C]a protest against|对…的抗议[/C][C]in protest|以示抗议[/C][/COLL][COLL][H]protest strongly|强烈抗议[POS]v.[/POS][/H][EX]Drake protested strongly when the king said a guard saved him instead of Worm.|国王说是守卫救了他而非沃姆时，德雷克提出了强烈抗议。[/EX][C]quietly protest|轻声申辩[/C][C]protest loudly|大声抗议[/C][/COLL]",
+    "[TITLE] 额外例句 [/TITLE][EX]The people in the kingdom made a protest against the dark wizard's attack.|王国里的人们对黑巫师的袭击提出了抗议。[/EX][EX]She protested that she didn't do anything wrong and Vulcan just followed the wind.|她申辩说自己没做错什么，伏尔坎只是受了风的影响。[/EX][EX]All the Dragon Masters stood together in protest against the king's unfair choice.|所有驯龙大师站在一起，以示对国王不公选择的反对。[/EX]",
+    "[TITLE] 常见错误 [/TITLE][ERR]protest的动词发音/prəˈtest/和名词发音/ˈprəʊtest/（英）/ˈproʊtest/（美）重音不同，注意区分。[/ERR][ERR]protest作动词时，后接against/at/about+名词，或that从句，错误：protest the king，正确：protest against the king's decision。[/ERR][ERR]protest作名词时是可数名词，复数为protests，直接加s，不要写成protestes。[/ERR]"
+  ]
+},
+"w314": {
+  "word": "insist",
+  "images": {
+    "scene": ["infopic01/insist.webp"],
+    "card": ["wordpic01/insist.webp"]
+  },
+  "richDetail": [
+    "[TITLE] 解释 [/TITLE][DEF][EN]To say firmly that something is true, especially when others do not believe you (used in Dragon Masters 04 Power of the Fire Dragon Level F, Drake said firmly that Worm saved the king)[/EN][CN]坚持；坚决认为；执意（坚定地说某事是真的，尤指他人不信时，出自《Dragon Masters 04 Power of the Fire Dragon》Level F，指德雷克坚定地认为是沃姆救了国王）[/CN][POS]v.[/POS][PH]/ɪnˈsɪst/（英美）[/PH][DU]'It wasn't a guard,' Drake insisted when the king refused to believe Worm saved him.|国王拒绝相信是沃姆救了自己时，德雷克坚持说：“根本不是守卫。”[/DU][DU]Griffith insisted that Worm moved the king with the power of his mind.|格里菲斯坚持认为，沃姆是用意念力移开了国王。[/DU][/DEF][IMG]infopic01/insist.webp[/IMG][DEF][EN]To demand something firmly and refuse to change your mind[/EN][CN]坚决要求；执意要[/CN][POS]v.[/POS][DU]Rori insisted that she and Vulcan could fight Maldred and protect the castle.|罗莉执意认为，她和伏尔坎能对抗马尔德雷德，守护城堡。[/DU][DU]Drake insisted on going with Rori to fight the four-headed hydra.|德雷克坚决要和罗莉一起去对抗四头九头蛇。[/DU][/DEF]",
+    "[TITLE] 常见用法 [/TITLE][COLL][H]insist that...|坚持认为…[POS]v.[/POS][/H][EX]Drake insisted that Worm was the one who saved the king from the fire.|德雷克坚持认为，是沃姆从火中救了国王。[/EX][C]insist on sth|坚持某事[/C][C]insist on doing sth|坚持做某事[/C][/COLL][COLL][H]firmly insist|坚定地坚持[POS]v.[/POS][/H][EX]The wizard firmly insisted that Maldred would attack the castle one day.|巫师坚定地认为，马尔德雷德总有一天会袭击城堡。[/EX][C]still insist|仍然坚持[/C][C]insist strongly|强烈坚持[/C][/COLL][COLL][H]insist on going|坚决要去[POS]v. 短语[/POS][/H][EX]Rori insisted on going to fight Maldred even though everyone told her not to.|尽管所有人都劝阻，罗莉还是坚决要去和马尔德雷德战斗。[/EX][C]insist on trying|执意要尝试[/C][C]insist on staying|坚决要留下[/C][/COLL]",
+    "[TITLE] 额外例句 [/TITLE][EX]He insisted that he saw the four-headed hydra flying toward the castle.|他坚持说自己看到四头九头蛇朝城堡飞过来了。[/EX][EX]Ana insisted on helping Rori and Vulcan when they were hurt by dark magic.|安娜在罗莉和伏尔坎被黑魔法所伤时，执意要帮忙。[/EX][EX]The king finally believed Drake after he insisted many times that Worm saved him.|德雷克多次坚持说沃姆救了国王后，国王终于相信了他。[/EX]",
+    "[TITLE] 常见错误 [/TITLE][ERR]insist后接“坚持做某事”时，用insist on doing sth，不要用insist to do sth，错误：insist to go，正确：insist on going。[/ERR][ERR]insist that从句中，若表示“坚决要求某人做某事”，从句用(should) do虚拟语气，错误：insist that he goes，正确：insist that he (should) go。[/ERR][ERR]insist是不及物动词，后接宾语需加介词on/upon，错误：insist the truth，正确：insist on the truth。[/ERR]"
+  ]
+},
+"w315": {
+  "word": "bicker",
+  "images": {
+    "scene": ["infopic01/bicker.webp"],
+    "card": ["wordpic01/bicker.webp"]
+  },
+  "richDetail": [
+    "[TITLE] 解释 [/TITLE][DEF][EN]To argue about small, unimportant things (used in Dragon Masters 04 Power of the Fire Dragon Level F, Griffith told Drake and Rori to stop arguing over trivial things)[/EN][CN]（为小事）争吵；拌嘴（出自《Dragon Masters 04 Power of the Fire Dragon》Level F，指格里菲斯让德雷克和罗莉停止为小事争执）[/CN][POS]v./n.[/POS][PH]/ˈbɪkə(r)/（英式）/ˈbɪkər/（美式）[/PH][DU]Griffith shouted, 'Stop bickering, you two!' when Drake and Rori fought over small things.|当德雷克和罗莉为小事吵架时，格里菲斯大喊：“你们两个别拌嘴了！”[/DU][DU]The two Dragon Masters always bicker about who has the stronger dragon.|这两位驯龙大师总为谁的龙更强而拌嘴。[/DU][/DEF][IMG]infopic01/bicker.webp[/IMG][DEF][EN]A short, angry argument about something unimportant[/EN][CN]（为小事的）短暂争吵，拌嘴[/CN][POS]n.[/POS][DU]The silly bicker between Drake and Rori ended when Diego appeared.|迭戈出现后，德雷克和罗莉这场无聊的拌嘴就结束了。[/DU][DU]We had a little bicker about where to go for the dragon practice.|我们为去哪里进行驯龙练习吵了一小架。[/DU][/DEF]",
+    "[TITLE] 常见用法 [/TITLE][COLL][H]stop bickering|停止拌嘴[POS]v. 短语[/POS][/H][EX]The wizard told the kids to stop bickering and focus on guarding the castle.|巫师让孩子们别拌嘴，专心守护城堡。[/EX][C]bicker with sb|和某人拌嘴[/C][C]bicker about sth|为某事拌嘴[/C][/COLL][COLL][H]a silly bicker|无聊的拌嘴[POS]n.[/POS][/H][EX]It's just a silly bicker, don't take it too seriously.|这只是一场无聊的拌嘴，别太当真。[/EX][C]a little bicker|小吵一架[/C][C]end a bicker|结束争吵[/C][/COLL]",
+    "[TITLE] 额外例句 [/TITLE][EX]My sister and I often bicker about who gets to feed the dragon.|我和妹妹总为谁来喂龙而拌嘴。[/EX][EX]They bickered for a minute and then went to train their dragons together.|他们吵了一会儿，然后就一起去训练龙了。[/EX][EX]There was a small bicker between the two guards about who should watch the tower.|两个守卫为谁该守塔楼吵了一架。[/EX]",
+    "[TITLE] 常见错误 [/TITLE][ERR]bicker作动词时，过去式和过去分词为bickered，直接加ed，不要写成bickerred（错误，多写r）。[/ERR][ERR]bicker后接“和某人吵架”用with，接“为某事吵架”用about/over，错误：bicker sth with sb，正确：bicker with sb about sth。[/ERR][ERR]bicker作名词时为可数名词，复数为bickers，直接加s，不要写成bickeres。[/ERR]"
+  ]
+},
+"w316": {
+  "word": "babysitter",
+  "images": {
+    "scene": ["infopic01/babysitter.webp"],
+    "card": ["wordpic01/babysitter.webp"]
+  },
+  "richDetail": [
+    "[TITLE] 解释 [/TITLE][DEF][EN]A person who takes care of children while their parents or guardians are away (used in Dragon Masters 04 Power of the Fire Dragon Level F, Rori thought Diego was sent to take care of her and Drake)[/EN][CN]临时看护者；保姆（代人照看孩子的人，出自《Dragon Masters 04 Power of the Fire Dragon》Level F，指罗莉认为迭戈是被派来照看她和德雷克的人）[/CN][POS]n.[/POS][PH]/ˈbeɪbisɪtə(r)/（英式）/ˈbeɪbisɪtər/（美式）[/PH][DU]Rori complained, 'Why does Diego have to come watch us? We don't need a babysitter!'|罗莉抱怨道：“为什么迭戈要来看着我们？我们才不需要保姆！”[/DU][DU]Diego was the babysitter who watched over Drake and Rori when Griffith left the castle.|格里菲斯离开城堡后，迭戈就是照看德雷克和罗莉的临时看护者。[/DU][/DEF][IMG]infopic01/babysitter.webp[/IMG][DEF][EN]A person who takes care of a place or something while the owner is away (informal)[/EN][CN]（非正式）临时看管者（照看场所/事物的人）[/CN][POS]n.[/POS][DU]Diego was not only a babysitter for the kids but also for the castle when the king left.|国王离开后，迭戈不仅是孩子们的看护者，也是城堡的临时看管人。[/DU][DU]The wizard acted as a babysitter for the dragon cave while the Dragon Masters were away.|驯龙大师们离开后，这位巫师成了龙洞的临时看管人。[/DU][/DEF]",
+    "[TITLE] 常见用法 [/TITLE][COLL][H]need a babysitter|需要看护者[POS]n.[/POS][/H][EX]The kids thought they were old enough and didn't need a babysitter to watch them.|孩子们觉得自己长大了，不需要看护者看着他们。[/EX][C]a good babysitter|好的看护者[/C][C]act as a babysitter|担任看护者[/C][/COLL][COLL][H]babysitter for sb|照看某人的看护者[POS]n.[/POS][/H][EX]Diego is a great babysitter for the young Dragon Masters.|迭戈是照看小驯龙大师们的好看护者。[/EX][C]babysitter for a place|看管某处的人[/C][C]find a babysitter|找一位看护者[/C][/COLL]",
+    "[TITLE] 额外例句 [/TITLE][EX]My mom found a babysitter to look after me when she goes to the dragon festival.|妈妈去参加龙节时，找了一位保姆来照看我。[/EX][EX]The young wizard worked as a babysitter for the castle's dragon cave.|这位年轻的巫师担任了城堡龙洞的临时看管人。[/EX][EX]We don't need a babysitter—we can guard the tower by ourselves!|我们不需要看护者，我们能自己守塔楼！[/EX]",
+    "[TITLE] 常见错误 [/TITLE][ERR]babysitter的拼写注意：baby+sitter，不要写成babysiter（少写t）或baby sitter（分开写，正式用法合写）。[/ERR][ERR]babysitter是可数名词，复数为babysitters，直接加s，不要写成babysitteres。[/ERR][ERR]不要混淆babysitter和nanny，babysitter指“临时看护者”，nanny指“全职保姆”，错误：a nanny for a day，正确：a babysitter for a day。[/ERR]"
+  ]
+},
+"w317": {
+  "word": "flare",
+  "images": {
+    "scene": ["infopic01/flare.webp"],
+    "card": ["wordpic01/flare.webp"]
+  },
+  "richDetail": [
+    "[TITLE] 解释 [/TITLE][DEF][EN]To suddenly show a strong emotion in your eyes or face (used in Dragon Masters 04 Power of the Fire Dragon Level F, Rori's eyes showed anger when Drake talked about Vulcan)[/EN][CN]（眼睛、面部）突然显露（强烈情绪）；怒视（出自《Dragon Masters 04 Power of the Fire Dragon》Level F，指德雷克提到伏尔坎时，罗莉的眼睛露出了怒气）[/CN][POS]v./n.[/POS][PH]/fleə(r)/（英式）/fler/（美式）[/PH][DU]Rori's green eyes flared when Drake said Vulcan couldn't be controlled.|当德雷克说伏尔坎不受控制时，罗莉的绿眼睛怒视着他。[/DU][DU]His eyes flared with anger when he heard someone bad-mouth his dragon.|听到有人诋毁他的龙，他的眼睛瞬间露出怒火。[/DU][/DEF][IMG]infopic01/flare.webp[/IMG][DEF][EN]To burn brightly and suddenly, or to burst into flame[/EN][CN]突然烧旺；闪耀；迸发火焰[/CN][POS]v.[/POS][DU]Vulcan's fire flared when the wind blew, and it almost hit the king.|风一吹，伏尔坎的火焰突然烧旺，差点撞到国王。[/DU][DU]The fire flared up in the bush after the dragon shot a small flame.|龙喷出一小团火焰后，灌木丛里的火突然烧了起来。[/DU][/DEF][DEF][EN]A bright flame or light that burns for a short time[/EN][CN]短暂的火焰；闪光[/CN][POS]n.[/POS][DU]A flare of fire shot from Vulcan's mouth and lit up the dark valley.|伏尔坎嘴里喷出一道火焰，照亮了黑暗的山谷。[/DU][DU]We saw a flare of light from the dragon cave and ran to check what happened.|我们看到龙洞闪过一道光，就跑过去看发生了什么。[/DU][/DEF]",
+    "[TITLE] 常见用法 [/TITLE][COLL][H]eyes flare|眼睛露出怒火[POS]v.[/POS][/H][EX]Her eyes flare every time someone says her dragon is not strong enough.|每次有人说她的龙不够强，她的眼睛就会露出生气的神情。[/EX][C]flare with anger|怒目圆睁[/C][C]flare up|突然爆发；烧旺[/C][/COLL][COLL][H]a flare of fire|一团火焰[POS]n.[/POS][/H][EX]A flare of fire from the Fire Dragon lit up the castle tower.|火龙喷出的一团火焰照亮了城堡塔楼。[/EX][C]a flare of light|一道闪光[/C][C]a flare of anger|一阵怒火[/C][/COLL]",
+    "[TITLE] 额外例句 [/TITLE][EX]The campfire flared up when we added some dry wood to it.|我们加了些干木头，篝火就突然烧旺了。[/EX][EX]His eyes flared with surprise when he saw the four-headed dragon.|看到四头九头蛇时，他的眼睛露出了惊讶的神情。[/EX][EX]A flare of light from the Dragon Stone guided us back to the castle.|龙石的一道闪光指引我们回到了城堡。[/EX]",
+    "[TITLE] 常见错误 [/TITLE][ERR]flare作动词时，过去式和过去分词为flared，直接加ed，不要写成flaredd（错误）。[/ERR][ERR]flare up表示“突然爆发”，是固定短语，up不可省略，错误：the fire flared，正确：the fire flared up（强调突然性）。[/ERR][ERR]不要混淆flare和flame，flare侧重“短暂的火焰/闪光”，flame侧重“持续的火焰”，错误：a flame of light，正确：a flare of light。[/ERR]"
+  ]
+},
+"w318": {
+  "word": "argument",
+  "images": {
+    "scene": ["infopic01/argument.webp"],
+    "card": ["wordpic01/argument.webp"]
+  },
+  "richDetail": [
+    "[TITLE] 解释 [/TITLE][DEF][EN]An angry discussion or disagreement between people (used in Dragon Masters 04 Power of the Fire Dragon Level F, Drake and Rori's fight ended when Diego appeared)[/EN][CN]争吵；争论；辩论（人与人之间愤怒的争执，出自《Dragon Masters 04 Power of the Fire Dragon》Level F，指迭戈出现后，德雷克和罗莉的争吵就结束了）[/CN][POS]n.[/POS][PH]/ˈɑːɡjumənt/（英式）/ˈɑːrɡjumənt/（美式）[/PH][DU]The argument between Drake and Rori ended when a short, round wizard appeared in front of them.|一位矮矮胖胖的巫师出现在他们面前，德雷克和罗莉的争吵就此结束。[/DU][DU]The two had an argument about whether Vulcan could fight Maldred alone.|两人为伏尔坎能否独自对抗马尔德雷德吵了一架。[/DU][/DEF][IMG]infopic01/argument.webp[/IMG][DEF][EN]A reason or set of reasons given to support or oppose an idea[/EN][CN]论据；论点；理由[/CN][POS]n.[/POS][DU]Drake had a strong argument that Worm saved the king with his mind powers.|德雷克有充分的论据证明沃姆是用意念力救了国王。[/DU][DU]The wizard gave a good argument for why the dragons should not go to Arkwood.|这位巫师为龙不该去阿克伍德提出了充分的理由。[/DU][/DEF]",
+    "[TITLE] 常见用法 [/TITLE][COLL][H]have an argument|吵架；争论[POS]n.[/POS][/H][EX]Drake and Rori had an argument and didn't talk to each other for ten minutes.|德雷克和罗莉吵了一架，十分钟都没和对方说话。[/EX][C]end an argument|结束争吵[/C][C]a silly argument|无聊的争吵[/C][/COLL][COLL][H]a strong argument|充分的论据[POS]n.[/POS][/H][EX]Griffith had a strong argument that Maldred would attack the castle.|格里菲斯有充分的理由认为马尔德雷德会袭击城堡。[/EX][C]a good argument|合理的论点[/C][C]make an argument|提出论点[/C][/COLL][COLL][H]argument about sth|关于某事的争吵/论点[POS]n.[/POS][/H][EX]They had an argument about who should guard the dragon cave.|他们为谁该守龙洞吵了一架。[/EX][C]argument for/against sth|支持/反对某事的论据[/C][/COLL]",
+    "[TITLE] 额外例句 [/TITLE][EX]We had a small argument and then made up to fight the dark wizard together.|我们吵了一小架，然后和好一起对抗黑巫师。[/EX][EX]The king didn't listen to any argument about the danger of the dragon show.|国王根本不听关于龙展有危险的任何论据。[/EX][EX]Her argument that the hydra was not evil made the king think carefully.|她关于九头蛇并非邪恶的论点，让国王进行了深思。[/EX]",
+    "[TITLE] 常见错误 [/TITLE][ERR]argument的拼写注意：argue去e加ment，不要写成arguement（少写e）。[/ERR][ERR]argument是可数名词，复数为arguments，直接加s，不要写成argumentes。[/ERR][ERR]表示“为某事争吵”用argument about sth，不要用argument of sth，错误：an argument of the dragon，正确：an argument about the dragon。[/ERR]"
+  ]
+},
+"w319": {
+  "word": "interrupt",
+  "images": {
+    "scene": ["infopic01/interrupt.webp"],
+    "card": ["wordpic01/interrupt.webp"]
+  },
+  "richDetail": [
+    "[TITLE] 解释 [/TITLE][DEF][EN]To stop someone from speaking or doing something by speaking or acting yourself (used in Dragon Masters 04 Power of the Fire Dragon Level F, Rori stopped Diego from talking when he was answering Drake's question)[/EN][CN]打断（某人的话）；插嘴；中断（出自《Dragon Masters 04 Power of the Fire Dragon》Level F，指迭戈回答德雷克问题时，罗莉打断了他的话）[/CN][POS]v.[/POS][PH]/ˌɪntəˈrʌpt/（英美）[/PH][DU]'But we don't even know what Maldred looks like,' Rori interrupted him when Diego was talking.|迭戈说话时，罗莉插嘴道：“可我们根本不知道马尔德雷德长什么样！”[/DU][DU]Don't interrupt the wizard when he is explaining the magic spell.|巫师讲解魔咒时，不要打断他的话。[/DU][/DEF][IMG]infopic01/interrupt.webp[/IMG][DEF][EN]To stop something from continuing in its usual way[/EN][CN]中断；打断（某事的进程）[/CN][POS]v.[/POS][DU]The attack of the hydra interrupted the dragon flying practice in the Valley of Clouds.|九头蛇的袭击中断了云之谷的驯龙飞行业习。[/DU][DU]A sudden thunderstorm interrupted the dragon show for the king.|一场突如其来的雷雨中断了为国王举办的龙展。[/DU][/DEF]",
+    "[TITLE] 常见用法 [/TITLE][COLL][H]interrupt sb|打断某人的话[POS]v.[/POS][/H][EX]It's rude to interrupt someone when they are talking about an important thing.|别人谈论重要的事情时，插嘴是不礼貌的。[/EX][C]interrupt a conversation|打断谈话[/C][C]not interrupt|不要插嘴[/C][/COLL][COLL][H]interrupt sth|中断某事[POS]v.[/POS][/H][EX]The dark wizard's magic interrupted the peaceful life of the castle.|黑巫师的魔法中断了城堡平静的生活。[/EX][C]interrupt practice|中断练习[/C][C]interrupt a show|中断演出[/C][/COLL][COLL][H]interrupt sb from doing sth|打断某人做某事[POS]v. 短语[/POS][/H][EX]Don't interrupt the Dragon Master from training his dragon.|不要打断驯龙大师训练他的龙。[/EX][C]interrupt sb with a question|用问题打断某人[/C][/COLL]",
+    "[TITLE] 额外例句 [/TITLE][EX]He interrupted me with a shout when I was telling the story about the dragon.|我讲关于龙的故事时，他大喊一声打断了我。[/EX][EX]The bell rang and interrupted our dragon lesson.|铃声响了，中断了我们的驯龙课。[/EX][EX]She never interrupts others and always listens carefully.|她从不插嘴，总是认真倾听。[/EX]",
+    "[TITLE] 常见错误 [/TITLE][ERR]interrupt的拼写注意：inter+rupt，不要写成interupt（少写r）。[/ERR][ERR]interrupt是及物动词，后可直接接宾语，错误：interrupt to sb，正确：interrupt sb。[/ERR][ERR]interrupt的过去式和过去分词为interrupted，双写t加ed，不要写成interupted（少写t）或interruptted（多写t）。[/ERR]"
+  ]
+},
+"w320": {
+  "word": "crowd around",
+  "images": {
+    "scene": ["infopic01/crowdaround.webp"],
+    "card": ["wordpic01/crowdaround.webp"]
+  },
+  "richDetail": [
+    "[TITLE] 解释 [/TITLE][DEF][EN]To gather closely together around someone or something (used in Dragon Masters 04 Power of the Fire Dragon Level F, Drake and Rori gathered around Diego to look at the gazing ball)[/EN][CN]围拢过来；聚集在…周围（出自《Dragon Masters 04 Power of the Fire Dragon》Level F，指德雷克和罗莉凑到迭戈身边，一起看水晶球）[/CN][POS]v. 短语[/POS][PH]/kraʊd əˈraʊnd/（英美）[/PH][DU]Rori and Drake crowded around to look in the gazing ball with Diego.|罗莉和德雷克围拢过来，和迭戈一起看水晶球。[/DU][DU]The guards crowded around the king to protect him when the fire shot toward him.|火焰朝国王扑去时，守卫们立刻围到他身边保护他。[/DU][/DEF][IMG]infopic01/crowdaround.webp[/IMG][DEF][EN]To move close to someone or something in a group, usually because you are interested[/EN][CN]（因感兴趣而）簇拥在…周围，围上来看[/CN][POS]v. 短语[/POS][DU]The people in the kingdom crowded around to see the beautiful dragons from the castle.|王国里的人们围拢过来，想看城堡里美丽的龙。[/DU][DU]The kids crowded around the wizard to see his magic crystal ball.|孩子们簇拥在巫师身边，看他的魔法水晶球。[/DU][/DEF]",
+    "[TITLE] 常见用法 [/TITLE][COLL][H]crowd around sb|围到某人身边[POS]v. 短语[/POS][/H][EX]All the Dragon Masters crowded around Diego to listen to his words about Maldred.|所有驯龙大师都围到迭戈身边，听他讲关于马尔德雷德的事。[/EX][C]crowd around sth|围到某物旁边[/C][C]crowd around to do sth|围拢过来做某事[/C][/COLL][H]crowd around the castle|围在城堡周围[POS]v. 短语[/POS][/H][EX]A big crowd crowded around the castle to watch the dragon parade.|一大群人围在城堡周围，看龙的游行。[/EX][C]crowd around the dragon cave|围在龙洞旁[/C][C]crowd around the tower|围在塔楼边[/C][/COLL]",
+    "[TITLE] 额外例句 [/TITLE][EX]We all crowded around to see the new dragon stone the wizard found.|我们都围拢过来，看巫师找到的新龙石。[/EX][EX]The villagers crowded around the dragons and cheered for them loudly.|村民们簇拥在龙的周围，大声为它们欢呼。[/EX][EX]They crowded around the gazing ball to look for the sign of dark magic.|他们围到水晶球旁，寻找黑魔法的踪迹。[/EX]",
+    "[TITLE] 常见错误 [/TITLE][ERR]crowd around是固定动词短语，around为介词，后接宾语，不要写成crowd round（英式口语可通用，正式用around）。[/ERR][ERR]crowd的过去式和过去分词为crowded，直接加ed，短语的变形为crowded around，不要写成crowd arounded。[/ERR][ERR]表示“围拢过来做某事”，后接to do，错误：crowd around doing sth，正确：crowd around to do sth。[/ERR]"
+  ]
+},
+"w321": {
+  "word": "tunic",
+  "images": {
+    "scene": ["infopic01/tunic.webp"],
+    "card": ["wordpic01/tunic.webp"]
+  },
+  "richDetail": [
+    "[TITLE] 解释 [/TITLE][DEF][EN]A simple piece of clothing that covers the upper part of the body, like a long shirt with no collar (used in Dragon Masters 04 Power of the Fire Dragon Level F, Bo wore a blue silky one for the dragon show)[/EN][CN]束腰外衣；短袍（简易的上装，类似无领长衬衫，出自《Dragon Masters 04 Power of the Fire Dragon》Level F，指波为龙展穿了一件丝质的蓝色束腰外衣）[/CN][POS]n.[/POS][PH]/ˈtjuːnɪk/（英式）/ˈtuːnɪk/（美式）[/PH][DU]Bo had on a silky blue tunic with a wave design stitched into it for the dragon show.|波为龙展穿了一件丝质的蓝色束腰外衣，上面绣着波浪图案。[/DU][DU]The wizard wore a black tunic with a magic dragon pattern on it.|这位巫师穿了一件黑色短袍，上面有魔法龙的图案。[/DU][/DEF][IMG]infopic01/tunic.webp[/IMG][DEF][EN]A piece of clothing worn by soldiers, guards or members of the army[/EN][CN]（士兵、守卫的）制式上衣，制服短衫[/CN][POS]n.[/POS][DU]The king's guards all wore red tunics and stood straight to protect the castle.|国王的守卫们都穿着红色的制式短衫，笔直地站着守护城堡。[/DU][DU]The soldiers in the dragon army wore green tunics with dragon signs on their chests.|龙军的士兵们穿着绿色制式上衣，胸口有龙的标志。[/DU][/DEF]",
+    "[TITLE] 常见用法 [/TITLE][COLL][H]a silky tunic|丝质的束腰外衣[POS]n.[/POS][/H][EX]Bo looked very nice in his silky blue tunic for the trip to Arkwood.|波穿著丝质蓝色束腰外衣去阿克伍德，看起来特别精神。[/EX][C]a blue tunic|蓝色短袍[/C][C]a magic tunic|魔法短袍[/C][/COLL][COLL][H]a guard's tunic|守卫的制式短衫[POS]n.[/POS][/H][EX]The guard's red tunic was bright and easy to see in the crowd.|守卫的红色制式短衫很鲜艳，在人群中一眼就能看到。[/EX][C]a soldier's tunic|士兵的制式上衣[/C][C]a tunic with a pattern|带图案的短袍[/C][/COLL][COLL][H]have on a tunic|穿着束腰外衣[POS]v. 短语[/POS][/H][EX]Ana had on a yellow tunic that matched her Sun Dragon's color.|安娜穿了一件黄色短袍，和她的太阳龙颜色相配。[/EX][C]wear a tunic|穿着短袍[/C][/COLL]",
+    "[TITLE] 额外例句 [/TITLE][EX]The young Dragon Master wore a red tunic for the dragon festival.|这位小驯龙大师为龙节穿了一件红色束腰外衣。[/EX][EX]The wizard's white tunic had many magic symbols stitched on it.|巫师的白色短袍上绣着许多魔法符号。[/EX][EX]All the guards in the castle wear the same black tunic.|城堡里所有的守卫都穿着同款的黑色制式短衫。[/EX]",
+    "[TITLE] 常见错误 [/TITLE][ERR]tunic是可数名词，复数为tunics，直接加s，不要写成tunices或tuniques。[/ERR][ERR]英式发音/ˈtjuːnɪk/，美式发音/ˈtuːnɪk/，注意区分，不要读混。[/ERR][ERR]表示“穿着束腰外衣”用wear/have on a tunic，不要用put on a tunic（put on表“穿上”的动作，非状态）。[/ERR]"
+  ]
+},
+"w322": {
+  "word": "stitch",
+  "images": {
+    "scene": ["infopic01/stitch.webp"],
+    "card": ["wordpic01/stitch.webp"]
+  },
+  "richDetail": [
+    "[TITLE] 解释 [/TITLE][DEF][EN]To sew a design or pattern onto cloth with a needle and thread (used in Dragon Masters 04 Power of the Fire Dragon Level F, a wave design was sewn on Bo's blue tunic)[/EN][CN]绣；缝（用针线把图案缝在布上，出自《Dragon Masters 04 Power of the Fire Dragon》Level F，指波的蓝色外衣上缝着波浪图案）[/CN][POS]v./n.[/POS][PH]/stɪtʃ/（英美）[/PH][DU]Bo had a silky blue tunic with a wave design stitched into it.|波有一件丝质的蓝色束腰外衣，上面绣着波浪图案。[/DU][DU]She stitched a small dragon on the collar of her tunic for the dragon show.|为了龙展，她在自己的外衣领口绣了一只小龙。[/DU][/DEF][IMG]infopic01/stitch.webp[/IMG][DEF][EN]To join pieces of cloth together with a needle and thread[/EN][CN]缝补；缝合（用针线把布片缝在一起）[/CN][POS]v.[/POS][DU]The wizard stitched the torn part of his tunic after the fight with Maldred.|和马尔德雷德打斗后，巫师缝补了自己撕破的短袍。[/DU][DU]She stitched the dragon's broken wing cover with soft cloth.|她用软布缝补了龙破损的翅膀护罩。[/DU][/DEF][DEF][EN]A single piece of thread that is sewn into cloth, or a small part of a pattern made by sewing[/EN][CN]（缝纫的）一针；针脚；（图案的）一小部分[/CN][POS]n.[/POS][DU]Every stitch on Bo's tunic was neat and the wave design looked beautiful.|波的外衣上每一针都很整齐，波浪图案看起来特别好看。[/DU][DU]I made a mistake with one stitch and had to redo the dragon pattern on the cloth.|我绣错了一针，只好重新绣布上的龙图案。[/DU][/DEF]",
+    "[TITLE] 常见用法 [/TITLE][COLL][H]stitch a design|绣图案[POS]v.[/POS][/H][EX]She stitched a wave design on the blue tunic for Bo.|她为波在蓝色外衣上绣了波浪图案。[/EX][C]stitch a pattern|缝图案[/C][C]stitch a dragon|绣一条龙[/C][/COLL][COLL][H]stitch sth into sth|把…绣进/缝进…里[POS]v. 短语[/POS][/H][EX]The magic symbol was stitched into the collar of the wizard's tunic.|魔法符号被绣进了巫师外衣的领子里。[/EX][C]stitch up|缝补好；缝合[/C][C]stitch together|缝在一起[/C][/COLL][COLL][H]a neat stitch|整齐的针脚[POS]n.[/POS][/H][EX]The tailor made every stitch neat when he made the tunic for the Dragon Master.|裁缝为驯龙大师做外衣时，每一针都缝得很整齐。[/EX][C]a wrong stitch|错针[/C][C]one stitch|一针[/C][/COLL]",
+    "[TITLE] 额外例句 [/TITLE][EX]My mom stitched a small fire dragon on my bag for the dragon lesson.|妈妈为我的驯龙课书包绣了一只小火龙。[/EX][EX]He stitched up the torn dragon flag and hung it back on the castle tower.|他缝补好撕破的龙旗，把它重新挂回城堡塔楼。[/EX][EX]It takes many stitches to make a beautiful dragon pattern on the cloth.|在布上绣出漂亮的龙图案需要很多针。[/EX]",
+    "[TITLE] 常见错误 [/TITLE][ERR]stitch作动词时，过去式和过去分词为stitched，直接加ed，不要写成stitchted（多写t）。[/ERR][ERR]stitch sth into sth是固定搭配，表“把…绣/缝进某物”，不要写成stitch sth on sth（on表“在表面”，into更贴合“缝进布料”）。[/ERR][ERR]stitch作名词时为可数名词，复数为stitches，直接加es，不要写成stitchs。[/ERR]"
+  ]
+},
+"w323": {
+  "word": "behold",
+  "images": {
+    "scene": ["infopic01/behold.webp"],
+    "card": ["wordpic01/behold.webp"]
+  },
+  "richDetail": [
+    "[TITLE] 解释 [/TITLE][DEF][EN]Used to tell someone to look at or notice something amazing or important (interj.)；to look at something with attention (v.) (used in Dragon Masters 04 Power of the Fire Dragon Level F, the guard shouted to let people see the dragons)[/EN][CN]（叹词）看啊，瞧（用于让别人看奇妙/重要的事物）；（动词）注视，凝视（出自《Dragon Masters 04 Power of the Fire Dragon》Level F，指守卫大喊让大家看龙的游行）[/CN][POS]v./interj.[/POS][PH]/bɪˈhəʊld/（英式）/bɪˈhoʊld/（美式）[/PH][DU]A guard announced loudly, 'Behold, the dragons!' when Bo and Ana rode the dragons out of the castle.|波和安娜骑着龙走出城堡时，一位守卫大声宣布：“看啊，龙来了！”[/DU][DU]We stood on the tower and beheld the beautiful dragon parade in the courtyard.|我们站在塔楼上，凝视着院子里壮观的龙游行。[/DU][/DEF][IMG]infopic01/behold.webp[/IMG][DEF][EN]To see or discover something, especially something surprising[/EN][CN]看见；发现（尤指令人惊讶的事物）[/CN][POS]v.[/POS][DU]They beheld a four-headed dragon flying toward the castle and were very scared.|他们看到一头四头九头蛇朝城堡飞来，吓坏了。[/DU][DU]We beheld the Dragon Stone glow green and knew the dragons were safe.|我们看到龙石发出绿光，就知道龙们安全了。[/DU][/DEF]",
+    "[TITLE] 常见用法 [/TITLE][COLL][H]Behold!|看啊！瞧！（用于句首，引起注意）[POS]interj.[/POS][/H][EX]Behold! The Fire Dragon shoots fire into the sky and makes a beautiful light.|看啊！火龙向天空喷火，造出了美丽的光芒。[/EX][C]Behold the...|看那…[/C][/COLL][COLL][H]behold sth|注视某物；看见某物[POS]v.[/POS][/H][EX]They stood on the castle wall and beheld the dragons flying in the blue sky.|他们站在城堡城墙上，看着龙在蓝天上飞翔。[/EX][C]behold a wonder|见证奇迹[/C][C]behold a surprise|发现惊喜[/C][/COLL][COLL][H]behold with wonder|惊奇地注视[POS]v. 短语[/POS][/H][EX]The people beheld the dragons with wonder and cheered loudly.|人们惊奇地看着龙，大声欢呼。[/EX][C]behold in surprise|惊讶地发现[/C][/COLL]",
+    "[TITLE] 额外例句 [/TITLE][EX]Behold! The Dragon Stone is shining and the dragons are coming home.|看啊！龙石在发光，龙们要回家了。[/EX][EX]We beheld the wizard use magic to make a saddle for Rori in an instant.|我们看到巫师用魔法瞬间为罗莉变出来一个马鞍。[/EX][EX]The king beheld the power of Worm and finally believed he was a great dragon.|国王见识到了沃姆的力量，终于相信它是一条强大的龙。[/EX]",
+    "[TITLE] 常见错误 [/TITLE][ERR]behold是不规则动词，过去式为beheld，过去分词为beheld，不要写成beholded（错误）。[/ERR][ERR]behold作叹词时，多用于正式/书面语或故事中，句首大写，后接感叹号/逗号，错误：behold the dragon，正确：Behold, the dragon!。[/ERR][ERR]behold作动词时为及物动词，后可直接接宾语，无需加介词，错误：behold at the dragon，正确：behold the dragon。[/ERR]"
+  ]
+},
+"w324": {
+  "word": "balcony",
+  "images": {
+    "scene": ["infopic01/balcony.webp"],
+    "card": ["wordpic01/balcony.webp"]
+  },
+  "richDetail": [
+    "[TITLE] 解释 [/TITLE][DEF][EN]A platform with a wall or rail around it, attached to the outside of a building (used in Dragon Masters 04 Power of the Fire Dragon Chapter 8, the tower platform where Rori and Vulcan fought Maldred)[/EN][CN]阳台；露台（附在建筑外侧的平台，有围栏，出自《Dragon Masters 04 Power of the Fire Dragon》第八章，指罗莉和伏尔坎对抗马尔德雷德的塔楼阳台）[/CN][POS]n.[/POS][PH]/ˈbælkəni/（英美）[/PH][DU]Vulcan flew off the tower balcony to fight Maldred and his four-headed hydra.|伏尔坎从塔楼阳台飞出去，对抗马尔德雷德和他的四头九头蛇。[/DU][DU]Diego rushed to the edge of the balcony and challenged Maldred to fight face to face.|迭戈冲到阳台边，向马尔德雷德发起正面决斗的挑战。[/DU][/DEF][IMG]infopic01/balcony.webp[/IMG]",
+    "[TITLE] 常见用法 [/TITLE][COLL][H]tower balcony|塔楼阳台[POS]n.[/POS][/H][EX]Drake and Rori stood on the tower balcony and watched the hydra fly closer.|德雷克和罗莉站在塔楼阳台，看着九头蛇越飞越近。[/EX][C]castle balcony|城堡阳台[/C][C]on the balcony|在阳台上[/C][/COLL][COLL][H]fly off the balcony|从阳台飞出去[POS]v. 短语[/POS][/H][EX]The fire dragon flew off the balcony and charged at the dark wizard.|火龙从阳台飞出去，冲向黑巫师。[/EX][C]rush to the balcony|冲到阳台边[/C][C]stand on the balcony|站在阳台上[/C][/COLL]",
+    "[TITLE] 额外例句 [/TITLE][EX]We can see the whole valley from the castle's balcony.|从城堡的阳台，我们能看到整个山谷。[/EX][EX]The dragon landed on the balcony and let Rori climb on its back.|龙落在阳台上，让罗莉爬上它的背。[/EX][EX]Drake hid behind the balcony rail when the hydra shot poison mist.|九头蛇喷出毒雾时，德雷克躲到了阳台围栏后。[/EX]",
+    "[TITLE] 常见错误 [/TITLE][ERR]balcony是可数名词，复数形式为balconies，变y为i加es，不要写成balconys（错误）。[/ERR][ERR]表示“在阳台上”用介词on，错误：in the balcony，正确：on the balcony。[/ERR][ERR]拼写注意：不要少写字母，错误：balconey/balconyy，正确：balcony。[/ERR]"
+  ]
+},
+"w325": {
+  "word": "squint",
+  "images": {
+    "scene": ["infopic01/squint.webp"],
+    "card": ["wordpic01/squint.webp"]
+  },
+  "richDetail": [
+    "[TITLE] 解释 [/TITLE][DEF][EN]To look at something with your eyes almost closed, especially because it is far away or bright (used in Dragon Masters 04 Power of the Fire Dragon Chapter 8, Rori looked closely at the man on the hydra)|[/EN][CN]眯着眼睛看；瞇视（尤因物体遥远/光线刺眼而眯眼，出自《Dragon Masters 04 Power of the Fire Dragon》第八章，指罗莉眯着眼睛看九头蛇背上的人）[/CN][POS]v./n.[/POS][PH]/skwɪnt/（英美）[/PH][DU]Rori squinted at the four-headed dragon and shouted, 'There is a man on that dragon's back!'|罗莉眯着眼睛看那只四头龙，大喊道：“那龙背上有个人！”[/DU][DU]We all squinted to see the dark figure flying in the far sky.|我们都眯着眼睛，想看清楚远处天空中飞着的黑影。[/DU][/DEF][IMG]infopic01/squint.webp[/IMG][DEF][EN]A condition in which someone's eyes do not look in the same direction at the same time[/EN][CN]斜视；斜眼（生理状况）[/CN][POS]n.[/POS][DU]The little boy has a slight squint but can see things clearly.|这个小男孩有点斜眼，但看东西很清楚。[/DU][/DEF]",
+    "[TITLE] 常见用法 [/TITLE][COLL][H]squint at sth|眯着眼睛看某物[POS]v.[/POS][/H][EX]Drake squinted at the hydra's eight eyes and found they were all glazed over red.|德雷克眯着眼睛看九头蛇的八只眼睛，发现它们都蒙上了一层红色。[/EX][C]squint to see sth|眯着眼睛想看某物[/C][C]squint into the sky|眯着眼睛望向天空[/C][/COLL][COLL][H]a slight squint|轻微的斜视[POS]n.[/POS][/H][EX]The doctor said the dragon's slight squint was not a big problem.|医生说这条龙的轻微斜视不是大问题。[/EX][C]have a squint|有斜视的毛病[/C][/COLL]",
+    "[TITLE] 额外例句 [/TITLE][EX]She squinted at the magic stone in the sun, for it was too bright.|她眯着眼睛看阳光下的龙石，因为它太亮了。[/EX][EX]We squinted to see the dragon parade in the far distance.|我们眯着眼睛，想看远处的龙游行。[/EX][EX]The wizard squinted at the gazing ball and tried to find the sign of dark magic.|巫师眯着眼睛看水晶球，试图找到黑魔法的踪迹。[/EX]",
+    "[TITLE] 常见错误 [/TITLE][ERR]squint作动词时，过去式和过去分词为squinted，直接加ed，不要写成squintted（多写t）。[/ERR][ERR]squint后接“看某物”用介词at，接“想看某物”用to do，错误：squint seeing sth，正确：squint to see sth。[/ERR][ERR]作“斜视”讲时为可数名词，复数squints，直接加s，不要写成squintes。[/ERR]"
+  ]
+},
+"w326": {
+  "word": "rein",
+  "images": {
+    "scene": ["infopic01/rein.webp"],
+    "card": ["wordpic01/rein.webp"]
+  },
+  "richDetail": [
+    "[TITLE] 解释 [/TITLE][DEF][EN]A long narrow strip of leather used to control a horse or a dragon (usually pl. reins) (used in Dragon Masters 04 Power of the Fire Dragon Chapter 8, Maldred used leather strips to control the hydra)|[/EN][CN]缰绳（控制马/龙的皮条，通常用复数reins，出自《Dragon Masters 04 Power of the Fire Dragon》第八章，指马尔德雷德用来控制九头蛇的皮缰绳）[/CN][POS]n./v.[/POS][PH]/reɪn/（英美）[/PH][DU]Maldred pulled on the hydra's reins to make it dart toward the tower balcony.|马尔德雷德拉紧九头蛇的缰绳，让它冲向塔楼阳台。[/DU][DU]Rori grabbed onto the reins tightly when Vulcan flew up to fight the hydra.|伏尔坎飞上去对抗九头蛇时，罗莉紧紧抓住了缰绳。[/DU][/DEF][IMG]infopic01/rein.webp[/IMG][DEF][EN]To control or guide a horse/dragon with reins; to control something/someone[/EN][CN]用缰绳驾驭（马/龙）；控制，驾驭[/CN][POS]v.[/POS][DU]Rori tried to rein Vulcan in when he wanted to charge at the hydra too fast.|伏尔坎想太快冲向九头蛇时，罗莉试图驾驭住它。[/DU][/DEF]",
+    "[TITLE] 常见用法 [/TITLE][COLL][H]pull on the reins|拉紧缰绳[POS]v. 短语[/POS][/H][EX]The dark wizard pulled on the hydra's reins and made it fly higher.|黑巫师拉紧九头蛇的缰绳，让它飞得更高。[/EX][C]grab the reins|抓住缰绳[/C][C]hold the reins|握住缰绳[/C][/COLL][COLL][H]rein in|驾驭；控制（情绪/行为）[POS]v. 短语[/POS][/H][EX]Rori had to rein in her anger and focus on fighting Maldred.|罗莉不得不克制住怒气，专心对抗马尔德雷德。[/EX][C]rein a dragon|驾驭一条龙[/C][/COLL][COLL][H]the reins of control|掌控权[POS]n. 短语[/POS][/H][EX]Maldred wanted to take the reins of control over all the dragons in the kingdom.|马尔德雷德想掌控王国里所有的龙。[/EX]",
+    "[TITLE] 额外例句 [/TITLE][EX]Bo can rein his water dragon well and make her do all kinds of tricks.|波能很好地驾驭他的水龙，让她做各种特技。[/EX][EX]The king held the reins of his horse and watched the dragon show quietly.|国王握住马的缰绳，安静地看着龙展。[/EX][EX]You need to rein in your excitement when you see a real dragon for the first time.|第一次见到真龙时，你要克制住自己的兴奋。[/EX]",
+    "[TITLE] 常见错误 [/TITLE][ERR]表示“缰绳”时，**常用复数形式reins**，不要单独用rein，错误：a rein，正确：a pair of reins/the reins。[/ERR][ERR]不要和rain（雨）混淆，二者发音相同但拼写/词义不同，错误：pull on the rain，正确：pull on the reins。[/ERR][ERR]rein作动词时，过去式reined，直接加ed，不要写成reinnd（多写n）。[/ERR]"
+  ]
+},
+"w327": {
+  "word": "challenge",
+  "images": {
+    "scene": ["infopic01/challenge.webp"],
+    "card": ["wordpic01/challenge.webp"]
+  },
+  "richDetail": [
+    "[TITLE] 解释 [/TITLE][DEF][EN]To invite someone to fight or compete with you (v.); a difficult task that tests your ability (n.) (used in Dragon Masters 04 Power of the Fire Dragon Chapter 8, Diego invited Maldred to fight like a wizard)|[/EN][CN]（动词）向…发起挑战；邀战；（名词）挑战；艰巨任务（出自《Dragon Masters 04 Power of the Fire Dragon》第八章，指迭戈向马尔德雷德发起巫师间的决斗挑战）[/CN][POS]v./n.[/POS][PH]/ˈtʃælɪndʒ/（英美）[/PH][DU]Diego challenged Maldred and shouted, 'Maldred! Come over here and fight like a wizard!'|迭戈向马尔德雷德发起挑战，大喊道：“马尔德雷德！过来像个真正的巫师一样决斗！”[/DU][DU]Fighting the hydra and Maldred was a big challenge for the young Dragon Masters.|对抗九头蛇和马尔德雷德，对年轻的驯龙大师们来说是个巨大的挑战。[/DU][/DEF][IMG]infopic01/challenge.webp[/IMG]",
+    "[TITLE] 常见用法 [/TITLE][COLL][H]challenge sb to fight|向某人发起决斗挑战[POS]v. 短语[/POS][/H][EX]The brave wizard challenged the dark wizard to fight for the kingdom's safety.|这位勇敢的巫师为了王国的安全，向黑巫师发起了决斗挑战。[/EX][C]challenge sb to do sth|挑战某人做某事[/C][C]accept a challenge|接受挑战[/C][/COLL][COLL][H]a big challenge|巨大的挑战[POS]n.[/POS][/H][EX]Guarding the castle alone is a big challenge for Drake and Rori.|独自守护城堡对德雷克和罗莉来说是个巨大的挑战。[/EX][C]a difficult challenge|艰难的挑战[/C][C]face a challenge|面对挑战[/C][/COLL]",
+    "[TITLE] 额外例句 [/TITLE][EX]He challenged me to a dragon flying race, and I said yes!|他向我发起了驯龙飞行业比赛的挑战，我答应了！[/EX][EX]We need to work together to face this difficult challenge.|我们需要齐心协力，面对这个艰难的挑战。[/EX][EX]The dragon master challenged the wizard to a magic competition.|这位驯龙大师向巫师发起了魔法比赛的挑战。[/EX]",
+    "[TITLE] 常见错误 [/TITLE][ERR]challenge作动词时，过去式和过去分词为challenged，直接加ed，不要写成challengeed（多写e）。[/ERR][ERR]challenge后接“挑战某人做某事”用challenge sb to do sth，错误：challenge sb doing sth，正确：challenge sb to do sth。[/ERR][ERR]challenge是可数名词，复数challenges，直接加s，不要写成challengees。[/ERR]"
+  ]
+},
+"w328": {
+  "word": "reveal",
+  "images": {
+    "scene": ["infopic01/reveal.webp"],
+    "card": ["wordpic01/reveal.webp"]
+  },
+  "richDetail": [
+    "[TITLE] 解释 [/TITLE][DEF][EN]To make something known or show something that was hidden (used in Dragon Masters 04 Power of the Fire Dragon Chapter 8, Worm's trick let Maldred know his powerful powers)|[/EN][CN]揭露；透露；显示；暴露（使隐藏的事物显露，出自《Dragon Masters 04 Power of the Fire Dragon》第八章，指沃姆的小把戏让马尔德雷德发现了它的强大力量）[/CN][POS]v.[/POS][PH]/rɪˈviːl/（英美）[/PH][DU]Maldred said, 'It was your dragon that destroyed my red orb, but your dragon's little trick revealed his powers to me!'|马尔德雷德说：“是你的龙毁了我的红球，但你龙的小把戏，却向我暴露了它的力量！”[/DU][DU]The glowing green Dragon Stone revealed that Worm was connecting with Drake.|发出绿光的龙石，显示出沃姆正在和德雷克建立联结。[/DU][/DEF][IMG]infopic01/reveal.webp[/IMG]",
+    "[TITLE] 常见用法 [/TITLE][COLL][H]reveal sth to sb|向某人暴露/透露某事[POS]v. 短语[/POS][/H][EX]Worm's mind power trick revealed his great strength to the evil wizard Maldred.|沃姆的意念力小把戏，向黑巫师马尔德雷德暴露了它的强大实力。[/EX][C]reveal a secret|透露一个秘密[/C][C]reveal the truth|揭露真相[/C][/COLL][COLL][H]reveal one's powers|暴露某人/某物的力量[POS]v. 短语[/POS][/H][EX]The fire dragon's attack revealed his great powers to everyone in the kingdom.|火龙的攻击，向王国里的所有人暴露了它的强大力量。[/EX][C]reveal a sign|显示一个迹象[/C][/COLL]",
+    "[TITLE] 额外例句 [/TITLE][EX]The gazing ball didn't reveal any sign of Maldred's dark magic.|水晶球没有显示出任何马尔德雷德黑魔法的迹象。[/EX][EX]She refused to reveal the secret of the Dragon Stone to anyone.|她拒绝向任何人透露龙石的秘密。[/EX][EX]The magic spell revealed the hidden dragon cave behind the mountain.|这个魔咒，揭露了藏在山后的龙洞。[/EX]",
+    "[TITLE] 常见错误 [/TITLE][ERR]reveal是及物动词，后可直接接宾语，**无需加介词of**，错误：reveal of his powers，正确：reveal his powers。[/ERR][ERR]过去式和过去分词为revealed，直接加ed，不要写成revealld（多写l）。[/ERR][ERR]不要和real（真实的）混淆，错误：real his powers，正确：reveal his powers。[/ERR]"
+  ]
+},
+"w329": {
+  "word": "urge",
+  "images": {
+    "scene": ["infopic01/urge.webp"],
+    "card": ["wordpic01/urge.webp"]
+  },
+  "richDetail": [
+    "[TITLE] 解释 [/TITLE][DEF][EN]To tell someone very firmly that they should do something; to push someone to act quickly (used in Dragon Masters 04 Power of the Fire Dragon Chapter 8, Drake told Rori to fly down to Worm quickly)|[/EN][CN]催促；力劝；迫切要求（坚定地让某人做某事，催促某人快行动，出自《Dragon Masters 04 Power of the Fire Dragon》第八章，指德雷克催促罗莉飞向沃姆寻求安全）[/CN][POS]v./n.[/POS][PH]/ɜːdʒ/（英式）/ɜːrdʒ/（美式）[/PH][DU]Drake urged Rori and shouted, 'Come on, Rori! Fly down and touch Worm! We need to get out of here!'|德雷克催促罗莉，大喊道：“快点，罗莉！飞下来碰到沃姆！我们得离开这里！”[/DU][DU]The wizard urged the Dragon Masters to stay calm when the hydra attacked.|九头蛇袭击时，巫师力劝驯龙大师们保持冷静。[/DU][/DEF][IMG]infopic01/urge.webp[/IMG][DEF][EN]A strong wish or need to do something[/EN][CN]（名词）强烈的欲望；迫切的要求[/CN][POS]n.[/POS][DU]Rori had a strong urge to fight Maldred and prove Vulcan's strength.|罗莉有一股强烈的欲望，想要对抗马尔德雷德，证明伏尔坎的实力。[/DU][/DEF]",
+    "[TITLE] 常见用法 [/TITLE][COLL][H]urge sb to do sth|催促/力劝某人做某事[POS]v. 短语[/POS][/H][EX]Drake urged Worm to float up quickly and touch Vulcan to get them to safety.|德雷克催促沃姆快点飞起来，碰到伏尔坎，带他们到安全的地方。[/EX][C]urge sb on|激励某人；催促某人前进[/C][C]urgently urge|急切地催促[/C][/COLL][COLL][H]a strong urge|强烈的欲望[POS]n.[/POS][/H][EX]The fire dragon had a strong urge to protect Rori from the hydra's poison.|火龙有一股强烈的欲望，要保护罗莉不被九头蛇的毒液伤害。[/EX][C]an urge to fight|战斗的冲动[/C][/COLL]",
+    "[TITLE] 额外例句 [/TITLE][EX]My mom urged me to finish my dragon lesson homework before dinner.|妈妈催促我在晚饭前做完驯龙课的作业。[/EX][EX]The captain urged his soldiers on to fight against the dark magic army.|队长激励士兵们继续对抗黑魔法军队。[/EX][EX]I have an urge to ride the water dragon and fly over the valley.|我有一股强烈的冲动，想骑上水龙，飞越整个山谷。[/EX]",
+    "[TITLE] 常见错误 [/TITLE][ERR]urge后接“催促某人做某事”**必须用to do**，错误：urge sb do sth/urge sb doing sth，正确：urge sb to do sth。[/ERR][ERR]过去式和过去分词为urged，直接加ed，不要写成urgeed（多写e）。[/ERR][ERR]作名词时为可数名词，复数urges，直接加s，不要写成urgees。[/ERR]"
+  ]
+},
+"w330": {
+  "word": "brute",
+  "images": {
+    "scene": ["infopic01/brute.webp"],
+    "card": ["wordpic01/brute.webp"]
+  },
+  "richDetail": [
+    "[TITLE] 解释 [/TITLE][DEF][EN]A big, strong, fierce animal (n.); cruel and violent (adj.) (used in Dragon Masters 04 Power of the Fire Dragon Chapter 8/9, Maldred called Vulcan a big fierce animal)|[/EN][CN]（名词）野兽；粗蛮的大家伙；（形容词）野蛮的；蛮力的（出自《Dragon Masters 04 Power of the Fire Dragon》第八/九章，指马尔德雷德称伏尔坎为“大野兽”）[/CN][POS]n./adj.[/POS][PH]/bruːt/（英美）[/PH][DU]Maldred watched Vulcan fly off and said, 'Let that big brute fly away. Worm is the dragon I want!'|马尔德雷德看着伏尔坎飞走，说道：“让那只大野兽飞走吧，沃姆才是我想要的龙！”[/DU][DU]The hydra is a huge brute with four heads and can shoot deadly poison mist.|九头蛇是一只长着四个头的巨型野兽，还能喷出致命的毒雾。[/DU][/DEF][IMG]infopic01/brute.webp[/IMG][DEF][EN]A cruel, unpleasant person who is not kind or intelligent[/EN][CN]（名词）粗人；野蛮人；残暴的人[/CN][POS]n.[/POS][DU]Everyone in the kingdom knew Maldred was a brute who used dark magic to hurt others.|王国里的所有人都知道，马尔德雷德是个用黑魔法伤害别人的野蛮人。[/DU][/DEF]",
+    "[TITLE] 常见用法 [/TITLE][COLL][H]a big brute|一只大野兽；一个粗蛮的大家伙[POS]n.[/POS][/H][EX]Maldred always called the fire dragon a big brute because he hated all powerful dragons.|马尔德雷德总称火龙为大野兽，因为他憎恨所有强大的龙。[/EX][C]a fierce brute|一只凶猛的野兽[/C][C]a huge brute|一只巨型野兽[/C][/COLL][COLL][H]brute force|蛮力；暴力[POS]n. 短语[/POS][/H][EX]Maldred tried to use brute force to control Worm, but magic was more useful.|马尔德雷德试图用蛮力控制沃姆，但魔法反而更管用。[/EX][C]a brute attack|野蛮的攻击[/C][/COLL]",
+    "[TITLE] 额外例句 [/TITLE][EX]The giant dragon looks like a fierce brute, but it is very kind to the Dragon Masters.|这条巨龙看起来像一只凶猛的野兽，但它对驯龙大师们非常友好。[/EX][EX]We should not use brute force to train dragons; we need to connect with them.|我们不该用蛮力训练龙，我们需要和它们建立联结。[/EX][EX]The people in the kingdom hated the brute who destroyed the dragon cave.|王国里的人们憎恨那个毁掉龙洞的野蛮人。[/EX]",
+    "[TITLE] 常见错误 [/TITLE][ERR]brute作“野兽/粗人”讲时是可数名词，复数brutes，直接加s，不要写成brutees/ bruttes。[/ERR][ERR]作形容词时**只用于名词前**，作定语，错误：the dragon is brute，正确：the brute dragon/the dragon is a brute（名词）。[/ERR][ERR]不要和fruit（水果）混淆，二者拼写相近，错误：a big fruit，正确：a big brute。[/ERR]"
+  ]
+},
+"w331": {
+    "word": "slap",
+    "images": {
+      "scene": ["infopic01/slap.webp"],
+      "card": ["wordpic01/slap.webp"]
+    },
+    "richDetail": [
+      "[TITLE] 解释 [/TITLE][DEF][EN]To hit something/someone with the flat part of your hand (v.); a quick hit with the flat hand (n.) (used in Dragon Masters 04 Power of the Fire Dragon, Maldred hit the hydra's back with the reins)[/EN][CN]（动词）用手掌拍；抽打；（名词）掌击，拍打（出自《Dragon Masters 04 Power of the Fire Dragon》，指马尔德雷德用缰绳抽打九头蛇的背催促它飞更快）[/CN][POS]v./n.[/POS][PH]/slæp/（英美）[/PH][DU]Maldred slapped the reins against the hydra's back to spur her to fly faster and escape.|马尔德雷德用缰绳抽打九头蛇的背，催促它飞得更快以逃脱。[/DU][DU]He slapped the table angrily when he heard the Dragon Masters stopped his plan.|听到驯龙大师们破坏了他的计划，他生气地拍了桌子。[/DU][/DEF]",
+      "[TITLE] 常见用法 [/TITLE][COLL][H]slap sth against sth|用某物抽打某物[POS]v. 短语[/POS][/H][EX]The dark wizard slapped the whip against the dragon's body to make it obey.|黑巫师用鞭子抽打龙的身体，让它听话。[/EX][C]slap on the back|拍后背；鼓励[/C][C]slap the table|拍桌子[/C][/COLL][COLL][H]a hard slap|重重的一掌[POS]n.[/POS][/H][EX]The dragon gave the guard a hard slap with its tail and knocked him down.|龙用尾巴重重一拍，把守卫撞倒了。[/EX][C]a light slap|轻轻的拍打[/C][/COLL]",
+      "[TITLE] 额外例句 [/TITLE][EX]She slapped her dragon's neck gently to let it know it did a good job.|她轻轻拍打龙的脖子，告诉它做得很好。[/EX][EX]The wizard slapped the reins against the hydra's head and made it turn around.|巫师用缰绳抽打九头蛇的头，让它转过身来。[/EX]",
+      "[TITLE] 常见错误 [/TITLE][ERR]slap的过去式和过去分词为**slapped**，双写p加ed，不要写成slaped（错误）。[/ERR][ERR]slap作动词是及物动词，后直接接宾语，错误：slap at the table，正确：slap the table。[/ERR][ERR]作名词是可数名词，复数slaps，直接加s，不要写成slapes。[/ERR]"
+    ]
+  },
+  "w332": {
+    "word": "tornado",
+    "images": {
+      "scene": ["infopic01/tornado.webp"],
+      "card": ["wordpic01/tornado.webp"]
+    },
+    "richDetail": [
+      "[TITLE] 解释 [/TITLE][DEF][EN]A violent spinning column of air; a small, powerful spinning wind (used in Dragon Masters 04 Power of the Fire Dragon, the hydra had green spinning poison winds in its mouths)[/EN][CN]龙卷风；旋风（出自《Dragon Masters 04 Power of the Fire Dragon》，指九头蛇嘴里盘旋的绿色毒旋风）[/CN][POS]n.[/POS][PH]/tɔːˈneɪdəʊ/（英式）/tɔːrˈneɪdoʊ/（美式）[/PH][DU]Drake saw a green tornado swirling inside each of the hydra's four mouths and felt scared.|德雷克看到九头蛇的四张嘴里各有一股绿色毒旋风在盘旋，心里害怕极了。[/DU][DU]The powerful tornado made the dragons unable to fly straight in the sky.|强劲的旋风让龙们无法在天空中直线飞行。[/DU][/DEF]",
+      "[TITLE] 常见用法 [/TITLE][COLL][H]a green tornado|绿色的旋风[POS]n.[/POS][/H][EX]The hydra shot out a green tornado of poison and hit the castle tower.|九头蛇喷出一股绿色的毒旋风，击中了城堡塔楼。[/EX][C]a spinning tornado|旋转的旋风[/C][C]a powerful tornado|强劲的龙卷风[/C][/COLL][COLL][H]swirl into a tornado|旋成一股旋风[POS]v. 短语[/POS][/H][EX]The poison mist swirled into a tornado and rushed toward the Dragon Masters.|毒雾旋成一股旋风，冲向驯龙大师们。[/EX][C]a tornado of fire|火焰旋风[/C][/COLL]",
+      "[TITLE] 额外例句 [/TITLE][EX]The Fire Dragon can make a tornado of fire to fight against the enemies.|火龙能制造出火焰旋风来对抗敌人。[/EX][EX]We had to hide in the castle when the tornado came to the Valley of Clouds.|旋风刮到云之谷时，我们不得不躲进城堡里。[/EX]",
+      "[TITLE] 常见错误 [/TITLE][ERR]tornado的复数形式为**tornadoes**（推荐）/tornados，不要写成tornadoes s（多写s）。[/ERR][ERR]表示“一股龙卷风/旋风”用a tornado of sth，错误：a tornado poison，正确：a tornado of poison。[/ERR][ERR]拼写注意：不要少写字母，错误：tornadoe/tornadoz，正确：tornado。[/ERR]"
+    ]
+  },
+  "w333": {
+    "word": "plead",
+    "images": {
+      "scene": ["infopic01/plead.webp"],
+      "card": ["wordpic01/plead.webp"]
+    },
+    "richDetail": [
+      "[TITLE] 解释 [/TITLE][DEF][EN]To ask someone very earnestly and anxiously to do something (v.) (used in Dragon Masters 04 Power of the Fire Dragon, Rori asked Vulcan anxiously to fly)[/EN][CN]恳求；哀求；恳请（出自《Dragon Masters 04 Power of the Fire Dragon》，指罗莉焦急地恳求伏尔坎飞起来）[/CN][POS]v.[/POS][PH]/pliːd/（英美）[/PH][DU]Vulcan froze in midair by dark magic, and Rori pleaded, 'Vulcan, fly! Please!'|伏尔坎被黑魔法定在半空中，罗莉哀求道：“伏尔坎，飞起来！求求你！”[/DU][DU]The little boy pleaded with the wizard to let him touch the baby dragon.|小男孩恳求巫师让他摸一摸小龙宝宝。[/DU][/DEF]",
+      "[TITLE] 常见用法 [/TITLE][COLL][H]plead (with sb) to do sth|（向某人）恳求做某事[POS]v. 短语[/POS][/H][EX]Rori pleaded with Vulcan to fly away from the hydra's poison attack.|罗莉恳求伏尔坎躲开九头蛇的毒液攻击。[/EX][C]plead for sth|恳求得到某物[/C][C]plead for mercy|恳求饶命[/C][/COLL][COLL][H]earnestly plead|恳切地恳求[POS]v.[/POS][/H][EX]Drake earnestly pleaded with Worm to wake up when he was controlled by the red stone.|当沃姆被红龙石控制时，德雷克恳切地恳求它醒过来。[/EX][C]anxiously plead|焦急地哀求[/C][/COLL]",
+      "[TITLE] 额外例句 [/TITLE][EX]The Dragon Masters pleaded with the king to believe Worm saved him.|驯龙大师们恳求国王相信是沃姆救了他。[/EX][EX]She pleaded for a chance to train the new dragon with her friends.|她恳求得到一个和朋友们一起训练新龙的机会。[/EX]",
+      "[TITLE] 常见错误 [/TITLE][ERR]plead的过去式/过去分词有两种：**pleaded**（通用）/pled（美式口语），不要写成pleadeded（错误）。[/ERR][ERR]“恳求某人做某事”用plead with sb to do sth，不可省略with，错误：plead sb to do sth，正确：plead with sb to do sth。[/ERR][ERR]plead后接名词时加for，错误：plead a chance，正确：plead for a chance。[/ERR]"
+    ]
+  },
+  "w334": {
+    "word": "squeal",
+    "images": {
+      "scene": ["infopic01/squeal.webp"],
+      "card": ["wordpic01/squeal.webp"]
+    },
+    "richDetail": [
+      "[TITLE] 解释 [/TITLE][DEF][EN]To make a high, loud, sharp sound (v.); a high loud sound (n.) (used in Dragon Masters 04 Power of the Fire Dragon, the hydra made a sharp sound under Kepri's sunbeam)[/EN][CN]（动词）发出尖叫；吱吱叫；（名词）尖叫声，吱吱声（出自《Dragon Masters 04 Power of the Fire Dragon》，指九头蛇在凯普里的阳光束下发出尖锐的叫声）[/CN][POS]v./n.[/POS][PH]/skwiːl/（英美）[/PH][DU]Kepri shone a bright sunbeam on the hydra, and Drake could hear the hydra squeal painfully.|凯普里向九头蛇射出一道耀眼的阳光束，德雷克能听到九头蛇痛苦地尖叫。[/DU][DU]The baby dragon gave a little squeal when it saw the big fire dragon.|小龙宝宝看到大火龙时，发出了一声小小的吱吱声。[/DU][/DEF]",
+      "[TITLE] 常见用法 [/TITLE][COLL][H]squeal painfully|痛苦地尖叫[POS]v.[/POS][/H][EX]The hydra squealed painfully when the sunbeam hit its eyes.|阳光束击中九头蛇的眼睛时，它痛苦地尖叫起来。[/EX][C]squeal in fear|害怕地尖叫[/C][C]squeal with joy|高兴地尖叫[/C][/COLL][COLL][H]a loud squeal|响亮的尖叫声[POS]n.[/POS][/H][EX]A loud squeal from the hydra echoed in the valley.|九头蛇的一声响亮尖叫在山谷里回荡。[/EX][C]a little squeal|小小的吱吱声[/C][/COLL]",
+      "[TITLE] 额外例句 [/TITLE][EX]The kids squealed with joy when they saw the dragons fly over the castle.|孩子们看到龙飞过城堡时，高兴地尖叫起来。[/EX][EX]The mouse squealed in fear when the dragon's paw came close to it.|龙爪靠近老鼠时，老鼠害怕地吱吱叫。[/EX]",
+      "[TITLE] 常见错误 [/TITLE][ERR]squeal作动词时，过去式和过去分词为**squealed**，直接加ed，不要写成squealld（多写l）。[/ERR][ERR]squeal后接情绪用介词with，接原因用at/for，错误：squeal joy，正确：squeal with joy。[/ERR][ERR]作名词是可数名词，复数squeals，直接加s，不要写成squeales。[/ERR]"
+    ]
+  },
+  "w335": {
+    "word": "thrash",
+    "images": {
+      "scene": ["infopic01/thrash.webp"],
+      "card": ["wordpic01/thrash.webp"]
+    },
+    "richDetail": [
+      "[TITLE] 解释 [/TITLE][DEF][EN]To move around wildly and violently (v.) (used in Dragon Masters 04 Power of the Fire Dragon, the hydra moved wildly under the sunbeam)[/EN][CN]（因痛苦/困惑）剧烈扭动；拼命挣扎；抽打（出自《Dragon Masters 04 Power of the Fire Dragon》，指九头蛇在阳光束下因困惑而疯狂扭动身体）[/CN][POS]v.[/POS][PH]/θræʃ/（英美）[/PH][DU]The four-headed hydra thrashed around in confusion when the bright sunbeam hit it.|耀眼的阳光束击中九头蛇时，它困惑地拼命扭动身体。[/DU][DU]The fish thrashed in the dragon's claw and tried to get away.|鱼在龙的爪子里拼命挣扎，想要逃走。[/DU][/DEF]",
+      "[TITLE] 常见用法 [/TITLE][COLL][H]thrash around|疯狂扭动；四处挣扎[POS]v. 短语[/POS][/H][EX]The hydra thrashed around and hit the castle wall with its heads.|九头蛇疯狂扭动，用头撞到了城堡的墙上。[/EX][C]thrash about|挣扎；翻腾[/C][C]thrash at sth|拍打某物[/C][/COLL][COLL][H]thrash wildly|剧烈地挣扎[POS]v.[/POS][/H][EX]The dragon thrashed wildly when it was caught by the dark magic net.|龙被黑魔法网困住时，剧烈地挣扎着。[/EX][C]thrash helplessly|无助地扭动[/C][/COLL]",
+      "[TITLE] 额外例句 [/TITLE][EX]The storm made the sea thrash about and the dragons couldn't fly low.|暴风雨让大海波涛汹涌，龙们无法低飞。[/EX][EX]The snake thrashed at the stick with its body when the boy tried to touch it.|男孩试图摸蛇时，蛇用身体拍打棍子。[/EX]",
+      "[TITLE] 常见错误 [/TITLE][ERR]thrash的过去式和过去分词为**thrashed**，直接加ed，不要写成thrashd（少写e）。[/ERR][ERR]thrash around/about是固定短语，表“挣扎”，不可省略around/about，错误：the hydra thrashed，正确：the hydra thrashed around。[/ERR][ERR]注意发音/θræʃ/，咬舌音，不要读成/ʃræʃ/。[/ERR]"
+    ]
+  },
+  "w336": {
+    "word": "settle",
+    "images": {
+      "scene": ["infopic01/settle.webp"],
+      "card": ["wordpic01/settle.webp"]
+    },
+    "richDetail": [
+      "[TITLE] 解释 [/TITLE][DEF][EN]To fall down and become still; to land on a surface (v.) (used in Dragon Masters 04 Power of the Fire Dragon, the blue mist landed on Vulcan's head and became still)[/EN][CN]（烟雾、灰尘等）落下；消散；定居（出自《Dragon Masters 04 Power of the Fire Dragon》，指舒喷出的蓝色治愈水雾落在伏尔坎头上并慢慢消散）[/CN][POS]v.[/POS][PH]/ˈsetl/（英美）[/PH][DU]A light blue mist rained down on Vulcan's head, and when the mist settled, he could flap his wings again.|一层浅蓝色的水雾落在伏尔坎的头上，水雾消散后，它又能拍打翅膀了。[/DU][DU]The dust settled on the dragon's scales after the fight with the hydra.|和九头蛇打斗后，灰尘落在了龙的鳞片上。[/DU][/DEF]",
+      "[TITLE] 常见用法 [/TITLE][COLL][H]the mist settles|水雾消散[POS]v.[/POS][/H][EX]When the magic mist settles, the dark magic on the dragon will disappear.|当魔法水雾消散时，龙身上的黑魔法就会消失。[/EX][C]the dust settles|灰尘落定[/C][C]settle on sth|落在某物上[/C][/COLL][COLL][H]settle down|定居；平静下来[POS]v. 短语[/POS][/H][EX]The hydra wanted to settle down in the castle's dragon cave with other dragons.|九头蛇想和其他龙一起在城堡的龙洞定居。[/EX][C]settle in a place|在一个地方定居[/C][/COLL]",
+      "[TITLE] 额外例句 [/TITLE][EX]The snow settled on the dragon's wings and made it fly slowly.|雪花落在龙的翅膀上，让它飞得很慢。[/EX][EX]The dragon finally settled down in the Valley of Clouds and lived with the Dragon Masters.|这条龙最终在云之谷定居，和驯龙大师们生活在一起。[/EX]",
+      "[TITLE] 常见错误 [/TITLE][ERR]settle的过去式和过去分词为**settled**，直接加ed，不要写成settelld（拼写错误）。[/ERR][ERR]“落在某物上”用settle on sth，不要用settle in sth，错误：the mist settled in his head，正确：the mist settled on his head。[/ERR][ERR]settle down表“平静下来”时，后接to do sth，错误：settle down doing sth，正确：settle down to do sth。[/ERR]"
+    ]
+  },
+  "w337": {
+    "word": "lurch",
+    "images": {
+      "scene": ["infopic01/lurch.webp"],
+      "card": ["wordpic01/lurch.webp"]
+    },
+    "richDetail": [
+      "[TITLE] 解释 [/TITLE][DEF][EN]To make a sudden, sharp movement in one direction; to feel a sudden uncomfortable feeling in the stomach (v./n.) (used in Dragon Masters 04 Power of the Fire Dragon, Drake's stomach felt uncomfortable when Vulcan flew up suddenly)[/EN][CN]（动词）突然猛冲；（胃）一阵翻腾；（名词）突然的晃动（出自《Dragon Masters 04 Power of the Fire Dragon》，指伏尔坎突然向上飞时，德雷克的胃一阵难受地翻腾）[/CN][POS]v./n.[/POS][PH]/lɜːtʃ/（英式）/lɜːrtʃ/（美式）[/PH][DU]Rori pulled hard on the reins and Vulcan flew straight up, making Drake's stomach lurch badly.|罗莉猛拉缰绳，伏尔坎直冲上天，让德雷克的胃剧烈地翻腾。[/DU][DU]The dragon made a sudden lurch to the left and dodged the hydra's poison.|龙突然向左猛冲，躲开了九头蛇的毒液。[/DU][/DEF]",
+      "[TITLE] 常见用法 [/TITLE][COLL][H]stomach lurch|胃里一阵翻腾[POS]v.[/POS][/H][EX]My stomach lurched when I rode the dragon and it flew down quickly.|我骑在龙身上，它突然向下飞时，我的胃一阵翻腾。[/EX][C]heart lurch|心头一紧[/C][/COLL][COLL][H]a sudden lurch|突然的猛冲/晃动[POS]n.[/POS][/H][EX]The hydra made a sudden lurch and hit the tower with its four heads.|九头蛇突然猛冲，用四个头撞到了塔楼。[/EX][C]a sharp lurch|剧烈的晃动[/C][/COLL][COLL][H]lurch to the left/right|向左/右猛冲[POS]v. 短语[/POS][/H][EX]Vulcan lurched to the right and avoided the red beam from the dragon stone.|伏尔坎向右猛冲，躲开了红龙石射出的红光。[/EX]",
+      "[TITLE] 额外例句 [/TITLE][EX]The castle made a sharp lurch when the dragon hit its wall.|龙撞到城堡墙上时，城堡剧烈地晃动了一下。[/EX][EX]His heart lurched when he saw the hydra flying toward the dragon cave.|看到九头蛇飞向龙洞时，他心头一紧。[/EX]",
+      "[TITLE] 常见错误 [/TITLE][ERR]lurch作动词时，过去式和过去分词为**lurched**，直接加ed，不要写成lurchd（少写e）。[/ERR][ERR]表示“向某个方向猛冲”用lurch to sp，不要用lurch in sp，错误：lurch in the left，正确：lurch to the left。[/ERR][ERR]作名词是可数名词，复数lurches，直接加es，不要写成lurchs。[/ERR]"
+    ]
+  },
+  "w338": {
+    "word": "smack",
+    "images": {
+      "scene": ["infopic01/smack.webp"],
+      "card": ["wordpic01/smack.webp"]
+    },
+    "richDetail": [
+      "[TITLE] 解释 [/TITLE][DEF][EN]To hit something/someone hard and quickly with the hand or a flat object (v.); a loud hit sound (n.) (used in Dragon Masters 04 Power of the Fire Dragon, Drake hit the red stone out of Maldred's hand)[/EN][CN]（动词）一掌拍飞；猛击；（名词）啪的一声（出自《Dragon Masters 04 Power of the Fire Dragon》，指德雷克一掌把红龙石从马尔德雷德手里拍飞）[/CN][POS]v./n.[/POS][PH]/smæk/（英美）[/PH][DU]As they sped past Maldred, Drake reached out and smacked the red Dragon Stone out of his hand.|当他们从马尔德雷德身边飞驰而过时，德雷克伸手一掌把红龙石从他手里拍飞了。[/DU][DU]He heard a loud smack when the dragon's tail hit the hard stone.|他听到龙尾巴撞到硬石头上发出啪的一声巨响。[/DU][/DEF]",
+      "[TITLE] 常见用法 [/TITLE][COLL][H]smack sth out of sb's hand|把某物从某人手里拍飞[POS]v. 短语[/POS][/H][EX]Drake smacked the magic wand out of the wizard's hand and saved his dragon.|德雷克把魔杖从巫师手里拍飞，救了他的龙。[/EX][C]smack sb on the face|一掌打在某人脸上[/C][/COLL][COLL][H]a loud smack|啪的一声巨响[POS]n.[/POS][/H][EX]A loud smack echoed when the fire hit the water and made a big mist.|火焰撞到水上形成大水雾时，传来啪的一声巨响。[/EX][C]a soft smack|轻轻的拍打声[/C][/COLL][COLL][H]smack into sth|猛撞到某物上[POS]v. 短语[/POS][/H][EX]The little dragon smacked into the tree and fell down to the ground.|小龙猛撞到树上，摔到了地上。[/EX]",
+      "[TITLE] 额外例句 [/TITLE][EX]She smacked the bug off the dragon's scale with her finger.|她用手指把虫子从龙的鳞片上拍掉。[/EX][EX]We heard a smack of thunder when the dark magic was used.|黑魔法被使用时，我们听到了一声惊雷。[/EX]",
+      "[TITLE] 常见错误 [/TITLE][ERR]smack的过去式和过去分词为**smacked**，直接加ed，不要写成smakd（少写e）。[/ERR][ERR]“把某物从某人手里拍飞”是固定搭配smack sth out of sb's hand，不要漏写of，错误：smack sth out sb's hand，正确：smack sth out of sb's hand。[/ERR][ERR]作名词是可数名词，复数smacks，直接加s，不要写成smackes。[/ERR]"
+    ]
+  },
+  "w339": {
+    "word": "dangle",
+    "images": {
+      "scene": ["infopic01/dangle.webp"],
+      "card": ["wordpic01/dangle.webp"]
+    },
+    "richDetail": [
+      "[TITLE] 解释 [/TITLE][DEF][EN]To hang or swing loosely in the air (v.) (used in Dragon Masters 04 Power of the Fire Dragon, Maldred hung in the air by Worm's mind power)[/EN][CN]悬垂；晃荡；吊在半空中（出自《Dragon Masters 04 Power of the Fire Dragon》，指马尔德雷德被沃姆的意念力定在半空中晃荡）[/CN][POS]v.[/POS][PH]/ˈdæŋɡl/（英美）[/PH][DU]Worm used the power of his mind to make Maldred dangle in the air and he couldn't move at all.|沃姆用意念力让马尔德雷德吊在半空中晃荡，他根本动弹不得。[/DU][DU]The dragon's tail dangled in the water and scared the fish away.|龙的尾巴垂在水里，把鱼都吓跑了。[/DU][/DEF]",
+      "[TITLE] 常见用法 [/TITLE][COLL][H]dangle in the air|悬在半空中晃荡[POS]v. 短语[/POS][/H][EX]The dark wizard dangled in the air and screamed for help, but no one came.|黑巫师悬在半空中大喊救命，却没人来。[/EX][C]dangle from sth|从某物上垂下来[/C][C]dangle over sth|悬在某物上方[/C][/COLL][COLL][H]dangle loosely|松松地垂着[POS]v.[/POS][/H][EX]The dragon's wings dangled loosely when it was tired from flying.|龙飞累了，翅膀松松地垂着。[/EX][C]dangle helplessly|无助地悬着[/C][/COLL]",
+      "[TITLE] 额外例句 [/TITLE][EX]The key dangled from the wizard's belt and shone in the sun.|钥匙从巫师的腰带上垂下来，在阳光下闪闪发光。[/EX][EX]A rope dangled over the castle wall and we used it to climb up.|一根绳子悬在城堡墙上，我们用它爬了上去。[/EX]",
+      "[TITLE] 常见错误 [/TITLE][ERR]dangle的过去式和过去分词为**dangled**，直接加ed，不要写成dangleed（多写e）。[/ERR][ERR]“悬在某物上方”用dangle over sth，“从某物上垂下来”用dangle from sth，不要混淆，错误：dangle from the air，正确：dangle in the air。[/ERR][ERR]dangle是不及物动词，后接宾语需加介词，错误：dangle the air，正确：dangle in the air。[/ERR]"
+    ]
+  },
+  "w340": {
+    "word": "nostril",
+    "images": {
+      "scene": ["infopic01/nostril.webp"],
+      "card": ["wordpic01/nostril.webp"]
+    },
+    "richDetail": [
+      "[TITLE] 解释 [/TITLE][DEF][EN]Either of the two holes at the end of the nose (usually pl. nostrils) (used in Dragon Masters 04 Power of the Fire Dragon, flame came out of Vulcan's nose holes)[/EN][CN]鼻孔（通常用复数nostrils，出自《Dragon Masters 04 Power of the Fire Dragon》，指火焰从伏尔坎的鼻孔里冒出来）[/CN][POS]n.[/POS][PH]/ˈnɒstrəl/（英式）/ˈnɑːstrəl/（美式）[/PH][DU]Vulcan slowly stepped into the courtyard and a thin flame streamed from his nostrils one by one.|伏尔坎慢慢走进院子，一缕缕火焰从它的鼻孔里冒出来。[/DU][DU]The hydra's nostrils shot out small clouds of poison mist and scared the people away.|九头蛇的鼻孔里喷出一股股小毒雾，把人们都吓跑了。[/DU][/DEF]",
+      "[TITLE] 常见用法 [/TITLE][COLL][H]from the nostrils|从鼻孔里[POS]prep. 短语[/POS][/H][EX]Smoke streamed from the fire dragon's nostrils when it was angry.|火龙生气时，烟雾从它的鼻孔里冒出来。[/EX][C]flare the nostrils|张大鼻孔[/C][C]snort from the nostrils|从鼻孔里哼气[/C][/COLL][COLL][H]a thin flame from the nostrils|鼻孔里的一缕火焰[POS]n. 短语[/POS][/H][EX]A thin flame from the nostrils is the fire dragon's sign of being calm.|鼻孔里的一缕火焰是火龙平静的标志。[/EX][C]poison mist from the nostrils|鼻孔里的毒雾[/C][/COLL]",
+      "[TITLE] 额外例句 [/TITLE][EX]The dragon flared its nostrils and smelled the dark magic from far away.|龙张大鼻孔，闻到了远处传来的黑魔法气息。[/EX][EX]The baby dragon snorted a little from the nostrils and nuzzled Drake's hand.|小龙宝宝从鼻孔里轻轻哼了一声，蹭了蹭德雷克的手。[/EX]",
+      "[TITLE] 常见错误 [/TITLE][ERR]表示“鼻孔”时，**常用复数形式nostrils**，单独用nostril指“一个鼻孔”，不要直接用a nostrils（错误），正确：a nostril/ the nostrils。[/ERR][ERR]nostril的复数是**nostrils**，直接加s，不要写成nostriles/nostrils s。[/ERR][ERR]拼写注意：不要少写字母，错误：nostril/nostral，正确：nostril。[/ERR]"
+    ]
+  },
+  "w341": {
+    "word": "gruff",
+    "images": {
+      "scene": ["infopic01/gruff.webp"],
+      "card": ["wordpic01/gruff.webp"]
+    },
+    "richDetail": [
+      "[TITLE] 解释 [/TITLE][DEF][EN](of a voice) deep and rough; (of a person) sounding unfriendly because of a rough voice (adj.) (纠正拼写：gruf→gruff，used in Dragon Masters 04 Power of the Fire Dragon, described King Roland's deep and rough voice)[/EN][CN]（声音）粗哑的；低沉沙哑的；（人）说话生硬的（纠正拼写错误gruf→gruff，出自《Dragon Masters 04 Power of the Fire Dragon》，用来形容罗兰国王低沉又粗哑的声音）[/CN][POS]adj.[/POS][PH]/ɡrʌf/（英美）[/PH][DU]King Roland marched in with his guards and said in his gruff voice, 'I must have a word with you all.'|罗兰国王带着守卫走进来，用他粗哑的声音说：“我有话要跟你们大家说。”[/DU][DU]The old wizard has a gruff voice, but he is very kind to the Dragon Masters.|老巫师的声音很粗哑，但他对驯龙大师们非常友好。[/DU][/DEF]",
+      "[TITLE] 常见用法 [/TITLE][COLL][H]a gruff voice|粗哑的声音[POS]adj.[/POS][/H][EX]Everyone knew the king was coming when they heard his gruff voice from far away.|人们听到远处传来国王粗哑的声音，就知道他来了。[/EX][C]a gruff tone|生硬的语气[/C][C]gruff words|生硬的话语[/C][/COLL][COLL][H]sound gruff|听起来声音粗哑[POS]v. 短语[/POS][/H][EX]The dragon's roar sounds gruff, but it never hurts the innocent.|龙的吼声听起来粗哑，但它从不伤害无辜的人。[/EX][C]speak in a gruff voice|用粗哑的声音说话[/C][/COLL]",
+      "[TITLE] 额外例句 [/TITLE][EX]The guard spoke in a gruff tone to the kids, but he helped them find their way later.|守卫用生硬的语气对孩子们说话，但后来还是帮他们找路了。[/EX][C]His gruff words made Rori angry, but he just didn't know how to express himself.|他生硬的话语让罗莉生气了，但他只是不知道怎么表达自己。[/C][/EX]",
+      "[TITLE] 常见错误 [/TITLE][ERR]**核心拼写纠正**：不要写成gruf（少写f），正确拼写为gruff（双写f）。[/ERR][ERR]gruff是形容词，只能修饰名词（如voice/tone/person），不能作副词，错误：he spoke gruff，正确：he spoke in a gruff voice。[/ERR][ERR]比较级gruffer，最高级gruffest，直接加er/est，不要写成more gruff/most gruff。[/ERR]"
+    ]
+  },
+  
+  "w342": {
+    "word": "bob",
+    "images": {
+      "scene": ["infopic01/bob.webp"],
+      "card": ["wordpic01/bob.webp"]
+    },
+    "richDetail": [
+      "[TITLE] 解释 [/TITLE][DEF][EN]To move up and down quickly and lightly (v.); a short, quick movement (n.) (used in Chapter 1, the dragon's head moved up and down gently)|[/EN][CN]（动词）上下快速摆动；（名词）上下摆动（出自Chapter 1，描述龙的头轻轻上下点动）[/CN][POS]v./n.[/POS][PH]/bɒb/（英式）/bɑːb/（美式）[/PH][DU]The baby dragon bobbed its head up and down when it saw Drake.|小龙宝宝看到德雷克时，上下点着头。[/DU][DU]The horse gave a little bob as its rider patted its neck.|骑手拍着马脖子，马轻轻上下点了点头。[/DU][/DEF][IMG]infopic01/bob.webp[/IMG]",
+      "[TITLE] 常见用法 [/TITLE][COLL][H]bob up and down|上下摆动；点头[POS]v. 短语[/POS][/H][EX]The water dragon bobbed up and down in the shallow water.|水龙在浅水里上下摆动着。[/EX][C]a quick bob|快速的一点头[/C][C]bob one's head|点头[/C][/COLL]",
+      "[TITLE] 常见错误 [/TITLE][ERR]过去式/过去分词为**bobbed**，双写b加ed，勿写成bobed。[/ERR][ERR]作名词时为可数名词，复数bobs，直接加s。[/ERR]"
+    ]
+  },
+  "w343": {
+    "word": "polish",
+    "images": {
+      "scene": ["infopic01/polish.webp"],
+      "card": ["wordpic01/polish.webp"]
+    },
+    "richDetail": [
+      "[TITLE] 解释 [/TITLE][DEF][EN]To make something smooth and shiny by rubbing it (v.) (used in Chapter 1, Drake cleaned the dragon's scales to make them shine)|[/EN][CN]擦亮；打磨；抛光（出自Chapter 1，德雷克清理龙鳞使其光亮）[/CN][POS]v.[/POS][PH]/ˈpɒlɪʃ/（英式）/ˈpɑːlɪʃ/（美式）[/PH][DU]Drake spent ten minutes polishing the scaly armor of his dragon to make it glow.|德雷克花了十分钟打磨龙的鳞甲，让它发光。[/DU][DU]The wizard polished the magic stone until it reflected the sunlight.|巫师把魔法石擦得能反射阳光。[/DU][/DEF][IMG]infopic01/polish.webp[/IMG]",
+      "[TITLE] 常见用法 [/TITLE][COLL][H]polish sth|擦亮某物[POS]v.[/POS][/H][EX]Polish the dragon's horns before the festival.|庆典前要把龙角擦亮。[/EX][C]polish up|擦亮；改善[/C][/COLL]",
+      "[TITLE] 常见错误 [/TITLE][ERR]过去式/过去分词为**polished**，直接加ed。[/ERR][ERR]polish是及物动词，后直接接宾语，勿加介词。[/ERR]"
+    ]
+  },
+  "w344": {
+    "word": "identity",
+    "images": {
+      "scene": ["infopic01/identity.webp"],
+      "card": ["wordpic01/identity.webp"]
+    },
+    "richDetail": [
+      "[TITLE] 解释 [/TITLE][DEF][EN]The fact of who a person or thing is (n.) (used in Chapter 3, the dragon tried to find out who the stranger was)|[/EN][CN]身份；特征；本身（出自Chapter 3，龙试图弄清楚陌生人是谁）[/CN][POS]n.[/POS][PH]/aɪˈdentəti/（英美）[/PH][DU]The dragon protected its identity by hiding in the cave to avoid being found by Maldred.|龙藏在洞里保护自己的身份，以免被马尔德雷德发现。[/DU][DU]The new dragon's identity was a mystery to the Dragon Masters.|新龙的身份对驯龙大师们来说是个谜。[/DU][/DEF][IMG]infopic01/identity.webp[/IMG]",
+      "[TITLE] 常见用法 [/TITLE][COLL][H]hide one's identity|隐藏身份[POS]n.[/POS][/H][EX]The wizard used a spell to hide his identity from the enemies.|巫师用咒语隐藏了自己的身份，不让敌人发现。[/EX][C]reveal one's identity|揭露身份[/C][C]a secret identity|秘密身份[/C][/COLL]",
+      "[TITLE] 常见错误 [/TITLE][ERR]复数形式为**identities**，变y为i加es，勿写成identitys。[/ERR][ERR]前通常加冠词the/an，勿漏。[/ERR]"
+    ]
+  },
+  "w345": {
+    "word": "steed",
+    "images": {
+      "scene": ["infopic01/steed.webp"],
+      "card": ["wordpic01/steed.webp"]
+    },
+    "richDetail": [
+      "[TITLE] 解释 [/TITLE][DEF][EN]A horse, especially a strong horse for riding (n.) (used in Chapter 3, the knight rode a strong horse to the castle)|[/EN][CN]战马；骏马（出自Chapter 3，骑士骑乘的强壮马匹）[/CN][POS]n.[/POS][PH]/stiːd/（英美）[/PH][DU]The knight rode his powerful steed through the valley to reach the dragon cave.|骑士骑着他的骏马穿过山谷，到达龙洞。[/DU][DU]A young dragon followed the steed, hoping to learn how to ride like a knight.|一条小龙跟着战马，希望能学会像骑士一样骑马。[/DU][/DEF][IMG]infopic01/steed.webp[/IMG]",
+      "[TITLE] 常见用法 [/TITLE][COLL][H]a powerful steed|强壮的战马[POS]n.[/POS][/H][EX]The king's steed was decorated with gold and beautiful flowers.|国王的战马装饰着金子和美丽的花。[/EX][C]ride a steed|骑乘战马[/C][/COLL]",
+      "[TITLE] 常见错误 [/TITLE][ERR]复数形式为**steeds**，直接加s。[/ERR][ERR]为正式用语，多用于文学或奇幻故事中，日常口语多用horse。[/ERR]"
+    ]
+  },
+  "w346": {
+    "word": "graze",
+    "images": {
+      "scene": ["infopic01/graze.webp"],
+      "card": ["wordpic01/graze.webp"]
+    },
+    "richDetail": [
+      "[TITLE] 解释 [/TITLE][DEF][EN]To eat grass that is growing in a field (v.) (used in Chapter 4, the herd of dragons ate grass in the meadow)|[/EN][CN]吃草；放牧（出自Chapter 4，龙群在草地上吃草）[/CN][POS]v.[/POS][PH]/ɡreɪz/（英美）[/PH][DU]The herd of dragons grazed peacefully in the green meadow, enjoying the fresh grass.|龙群在绿色的草地上安静地吃草，享受着新鲜的草。[/DU][DU]The sheep grazed near the castle wall, not knowing a dragon was watching them.|羊在城堡墙附近吃草，不知道有一条龙在看着它们。[/DU][/DEF][IMG]infopic01/graze.webp[/IMG]",
+      "[TITLE] 常见用法 [/TITLE][COLL][H]graze in a field|在田里吃草[POS]v.[/POS][/H][EX]The cattle grazed all day in the open field.|牛在开阔的田野里吃了一整天的草。[/EX][C]graze on grass|吃草[/C][/COLL]",
+      "[TITLE] 常见错误 [/TITLE][ERR]过去式/过去分词为**grazed**，直接加ed。[/ERR][ERR]graze作“擦伤”讲时为另一个意思，注意区分语境。[/ERR]"
+    ]
+  },
+  "w347": {
+    "word": "particularly",
+    "images": {
+      "scene": ["infopic01/particularly.webp"],
+      "card": ["wordpic01/particularly.webp"]
+    },
+    "richDetail": [
+      "[TITLE] 解释 [/TITLE][DEF][EN]More than usual; especially (adv.) (used in Chapter 5, Rori liked the red dragon especially)|[/EN][CN】特别；尤其（出自Chapter 5，罗莉特别喜欢红龙）[/CN][POS]adv.[/POS][PH]/pəˈtɪkjələli/（英美）[/PH][DU]Rori was particularly excited when she saw the red dragon with beautiful wings.|罗莉看到那条有美丽翅膀的红龙时，特别兴奋。[/DU][DU]The dragon was particularly fond of Drake because he took good care of it.|这条龙特别喜欢德雷克，因为他把它照顾得很好。[/DU][/DEF][IMG]infopic01/particularly.webp[/IMG]",
+      "[TITLE] 常见用法 [/TITLE][COLL][H]particularly like|特别喜欢[POS]adv.[/POS][/H][EX]I particularly like the fire dragon's ability to shoot fire.|我特别喜欢火龙喷火的能力。[/EX][C]particularly good|特别好[/C][/COLL]",
+      "[TITLE] 常见错误 [/TITLE][ERR]为副词，不可修饰名词，勿写成particular（形容词）。[/ERR][ERR]不可单独使用，通常修饰形容词、副词或动词。[/ERR]"
+    ]
+  },
+  "w348": {
+    "word": "blend",
+    "images": {
+      "scene": ["infopic01/blend.webp"],
+      "card": ["wordpic01/blend.webp"]
+    },
+    "richDetail": [
+      "[TITLE] 解释 [/TITLE][DEF][EN]To mix two or more things together so that they become one (v.) (used in Chapter 6, the wizard mixed different colors of magic to make a new spell)|[/EN][CN]混合；调配（出自Chapter 6，巫师混合不同颜色的魔法制作新咒语）[/CN][POS]v.[/POS][PH]/blend/（英美）[/PH][DU]The wizard blended red and blue magic to create a purple light that could heal the dragon.|巫师混合红色和蓝色的魔法，创造出一道能治愈龙的紫光。[/DU][DU]The dragon's scales blended green and brown, making it hard to see in the forest.|龙的鳞混合了绿色和棕色，让它在森林里很难被发现。[/DU][/DEF][IMG]infopic01/blend.webp[/IMG]",
+      "[TITLE] 常见用法 [/TITLE][COLL][H]blend A and B|混合A和B[POS]v.[/POS][/H][EX]Blend the juice of different fruits to make a healthy drink.|混合不同水果的汁，做一杯健康的饮料。[/EX][C]blend in|融入[/C][/COLL]",
+      "[TITLE] 常见错误 [/TITLE][ERR]过去式/过去分词为**blended**，直接加ed。[/ERR][ERR]blend together是固定搭配，表“混合在一起”。[/ERR]"
+    ]
+  },
+  "w349": {
+    "word": "drape",
+    "images": {
+      "scene": ["infopic01/drape.webp"],
+      "card": ["wordpic01/drape.webp"]
+    },
+    "richDetail": [
+      "[TITLE] 解释 [/TITLE][DEF][EN]To hang or arrange something loosely over something else (v.) (used in Chapter 6, the colorful cloth hung loosely over the dragon's back)|[/EN][CN]悬挂；披；覆盖（出自Chapter 6，彩色布料松松地披在龙的背上）[/CN][POS]v.[/POS][PH]/dreɪp/（英美）[/PH][DU]The colorful cloth was draped over the dragon's back to keep it warm at night.|彩色的布料披在龙的背上，让它在晚上保暖。[/DU][DU]The wizard draped a magic cloak over Drake to protect him from the cold.|巫师给德雷克披了一件魔法斗篷，保护他不受寒冷。[/DU][/DEF][IMG]infopic01/drape.webp[/IMG]",
+      "[TITLE] 常见用法 [/TITLE][COLL][H]drape over|披在…上[POS]v.[/POS][/H][EX]The blanket was draped over the chair, waiting for someone to use it.|毯子披在椅子上，等着有人用。[/EX][C]drape sth on|把某物披在…上[/C][/COLL]",
+      "[TITLE] 常见错误 [/TITLE][ERR]过去式/过去分词为**draped**，直接加ed。[/ERR][ERR]强调“松松地挂/披”，不可与cover（覆盖）混用。[/ERR]"
+    ]
+  },
+  "w350": {
+    "word": "company",
+    "images": {
+      "scene": ["infopic01/company.webp"],
+      "card": ["wordpic01/company.webp"]
+    },
+    "richDetail": [
+      "[TITLE] 解释 [/TITLE][DEF][EN]The fact of being with other people; a group of people (n.) (used in Chapter 6, the dragons felt happy to be with their friends)|[/EN][CN]陪伴；同伴；伙伴（出自Chapter 6，龙群和朋友在一起时很开心）[/CN][POS]n.[/POS][PH]/ˈkʌmpəni/（英美）[/PH][DU]The dragons enjoyed the company of each other and played games in the meadow.|龙们享受彼此的陪伴，在草地上玩游戏。[/DU][DU]Drake was glad to have the company of his dragon when he was alone in the forest.|德雷克独自在森林里时，很高兴有他的龙陪伴。[/DU][/DEF][IMG]infopic01/company.webp[/IMG]",
+      "[TITLE] 常见用法 [/TITLE][COLL][H]enjoy the company|享受陪伴[POS]n.[/POS][/H][EX]We enjoyed the company of our friends during the dragon festival.|龙节期间，我们享受着朋友的陪伴。[/EX][C]keep someone company|陪伴某人[/C][/COLL]",
+      "[TITLE] 常见错误 [/TITLE][ERR]复数形式为**companies**，去y加ies。[/ERR][ERR]作“公司”讲时为另一个意思，注意区分语境。[/ERR]"
+    ]
+  },
+  "w351": {
+    "word": "scaly",
+    "images": {
+      "scene": ["infopic01/scaly.webp"],
+      "card": ["wordpic01/scaly.webp"]
+    },
+    "richDetail": [
+      "[TITLE] 解释 [/TITLE][DEF][EN]Covered with small, hard plates called scales (adj.) (used in Chapter 7, the dragon had hard, shiny plates on its body)|[/EN][CN]有鳞的；鳞状的（出自Chapter 7，龙的身体覆盖着坚硬闪亮的鳞片）[/CN][POS]adj.[/POS][PH]/ˈskeɪli/（英美）[/PH][DU]The scaly skin of the dragon protected it from the sharp thorns in the forest.|龙有鳞的皮肤保护它不受森林里尖锐荆棘的伤害。[/DU][DU]The baby dragon's scaly body was still soft and colorful when it was born.|小龙宝宝出生时，有鳞的身体还是柔软且彩色的。[/DU][/DEF][IMG]infopic01/scaly.webp[/IMG]",
+      "[TITLE] 常见用法 [/TITLE][COLL][H]scaly skin|有鳞的皮肤[POS]adj.[/POS][/H][EX]The snake's scaly body slid silently through the grass.|蛇有鳞的身体安静地滑过草丛。[/EX][C]scaly tail|有鳞的尾巴[/C][/COLL]",
+      "[TITLE] 常见错误 [/TITLE][ERR]比较级为scalier，最高级scaliest，变y为i加er/est。[/ERR][ERR]只能修饰名词，如skin, body, tail。[/ERR]"
+    ]
+  },
+  "w352": {
+    "word": "exasperating",
+    "images": {
+      "scene": ["infopic01/exasperating.webp"],
+      "card": ["wordpic01/exasperating.webp"]
+    },
+    "richDetail": [
+      "[TITLE] 解释 [/TITLE][DEF][EN]Making you feel extremely annoyed and frustrated (adj.) (used in Chapter 7, described the situation that made Rori feel very angry and impatient)|[/EN][CN]令人恼怒的；使人恼火的；让人忍无可忍的（出自Chapter 7，用来形容让罗莉感到极度生气和不耐烦的状况）[/CN][POS]adj.[/POS][PH]/ɪɡˈzæspəreɪtɪŋ/（英美）[/PH][DU]It was exasperating for Rori that Vulcan refused to listen to her and kept flying toward the danger.|伏尔坎不听罗莉的话，执意朝危险飞去，这让她感到忍无可忍。[/DU][DU]The hydra's repeated attacks were exasperating, but the Dragon Masters didn't give up.|九头蛇反复的攻击令人恼火，但驯龙大师们没有放弃。[/DU][/DEF][IMG]infopic01/exasperating.webp[/IMG]",
+      "[TITLE] 常见用法 [/TITLE][COLL][H]exasperating behavior|令人恼火的行为[POS]adj.[/POS][/H][EX]The dragon's exasperating behavior made Rori want to scream.|这条龙令人恼火的行为让罗莉想尖叫。[/EX][C]an exasperating situation|令人抓狂的局面[/C][C]exasperating delays|令人不耐烦的拖延[/C][/COLL]",
+      "[TITLE] 额外例句 [/TITLE][EX]It is exasperating when your dragon hides your magic wand just for fun.|你的龙为了好玩藏起你的魔杖，这真让人恼火。[/EX][EX]Waiting for the slow wizard was exasperating for the excited kids.|兴奋的孩子们等慢吞吞的巫师，觉得格外不耐烦。[/EX]",
+      "[TITLE] 常见错误 [/TITLE][ERR]**词性区分**：exasperating（令人恼怒的）修饰事物；exasperated（感到恼怒的）修饰人，错误：Rori was exasperating，正确：Rori was exasperated./The situation was exasperating。[/ERR][ERR]拼写注意：中间包含asper，不要漏写字母，错误：exsasperating/ exasperating。[/ERR]"
+    ]
+  },
+  "w353": {
+    "word": "squint",
+    "images": {
+      "scene": ["infopic01/squint_ch8.webp"],
+      "card": ["wordpic01/squint_ch8.webp"]
+    },
+    "richDetail": [
+      "[TITLE] 解释 [/TITLE][DEF][EN]To look at something with your eyes almost closed, especially because it is far away or bright (v.) (used in Chapter 8, Rori looked closely at Maldred on the hydra's back)|[/EN][CN]眯着眼睛看；瞇视（尤因距离远或光线强，出自Chapter 8，指罗莉眯起眼睛，努力看清九头蛇背上的马尔德雷德）[/CN][POS]v./n.[/POS][PH]/skwɪnt/（英美）[/PH][DU]Rori squinted into the bright sunlight to see the dark figure on the hydra's back clearly.|罗莉迎着耀眼的阳光眯起眼睛，想看清九头蛇背上的黑影。[/DU][DU]Drake squinted at the distant tower to check if the guard was still there.|德雷克眯着眼睛看远处的塔楼，确认守卫是否还在。[/DU][/DEF][IMG]infopic01/squint_ch8.webp[/IMG]",
+      "[TITLE] 常见用法 [/TITLE][COLL][H]squint into the sun|迎着阳光眯眼看[POS]v. 短语[/POS][/H][EX]We squinted into the sun to watch the fire dragon fly high in the sky.|我们迎着阳光眯起眼睛，观看火龙在高空飞翔。[/EX][C]squint to see clearly|眯着眼看清[/C][C]squint at the distance|眯着眼看远处[/C][/COLL]",
+      "[TITLE] 额外例句 [/TITLE][EX]The wizard squinted at the magic map to read the tiny words.|巫师眯着眼睛看魔法地图，辨认上面的小字。[/EX][EX]She squinted when the dragon shot a bright flame from its mouth.|龙喷出耀眼的火焰时，她立刻眯起了眼睛。[/EX]",
+      "[TITLE] 常见错误 [/TITLE][ERR]过去式/过去分词为**squinted**，直接加ed，勿写成squintted。[/ERR][ERR]搭配介词：“眯眼看某物”用squint at sth，“迎着某物眯眼看”用squint into sth，勿混淆。[/ERR]"
+    ]
+  },
+  "w354": {
+    "word": "orchid",
+    "images": {
+      "scene": ["infopic01/orchid.webp"],
+      "card": ["wordpic01/orchid.webp"]
+    },
+    "richDetail": [
+      "[TITLE] 解释 [/TITLE][DEF][EN]A type of beautiful flower with unusual shapes and colors (n.) (used in Chapter 9, described the special flowers in the queen's garden)|[/EN][CN]兰花（一种形态奇特、色彩艳丽的美丽花卉，出自Chapter 9，用来描述女王花园里的特殊花朵）[/CN][POS]n.[/POS][PH]/ˈɔːkɪd/（英式）/ˈɔːrkɪd/（美式）[/PH][DU]The queen's garden was full of colorful orchids that matched the scales of the water dragon.|女王的花园里种满了五颜六色的兰花，颜色和水龙的鳞片相得益彰。[/DU][DU]Drake picked a pink orchid and gave it to Ana to decorate her dragon's saddle.|德雷克摘了一朵粉色的兰花，送给安娜装饰她的龙鞍。[/DU][/DEF][IMG]infopic01/orchid.webp[/IMG]",
+      "[TITLE] 常见用法 [/TITLE][COLL][H]colorful orchids|五颜六色的兰花[POS]n.[/POS][/H][EX]The wizard used magic water to make the orchids bloom all year round.|巫师用魔法水让兰花一年四季都开花。[/EX][C]a pink orchid|粉色兰花[/C][C]grow orchids|种植兰花[/C][/COLL]",
+      "[TITLE] 额外例句 [/TITLE][EX]A rare blue orchid grew near the dragon spring in the valley.|山谷里的龙泉旁，长着一朵稀有的蓝色兰花。[/EX][EX]Rori put a white orchid behind her ear before the dragon festival.|龙节开始前，罗莉在耳朵后面别了一朵白色的兰花。[/EX]",
+      "[TITLE] 常见错误 [/TITLE][ERR]复数形式为**orchids**，直接加s，勿写成orchides。[/ERR][ERR]拼写注意：不要和orange（橙子）混淆，核心部分为orch，错误：orcid，正确：orchid。[/ERR]"
+    ]
+  },
+  "w355": {
+    "word": "mount",
+    "images": {
+      "scene": ["infopic01/mount.webp"],
+      "card": ["wordpic01/mount.webp"]
+    },
+    "richDetail": [
+      "[TITLE] 解释 [/TITLE][DEF][EN]To climb onto a horse or dragon to ride it (v.); a horse or animal that you ride (n.) (used in Chapter 9, the Dragon Masters climbed onto their dragons to leave)|[/EN][CN]（动词）骑上；登上（马背/龙背）；（名词）坐骑（出自Chapter 9，指驯龙大师们爬上龙背，准备出发）[/CN][POS]v./n.[/POS][PH]/maʊnt/（英美）[/PH][DU]Drake held onto the reins tightly and mounted Worm to fly back to the castle.|德雷克紧紧抓住缰绳，骑上沃姆，飞回城堡。[/DU][DU]The fire dragon was Rori's loyal mount and carried her through many battles.|火龙是罗莉忠实的坐骑，载着她经历了许多场战斗。[/DU][/DEF][IMG]infopic01/mount.webp[/IMG]",
+      "[TITLE] 常见用法 [/TITLE][COLL][H]mount a dragon|骑上龙背[POS]v. 短语[/POS][/H][EX]The knight mounted his steed and followed the Dragon Masters.|骑士骑上战马，跟随着驯龙大师们。[/EX][C]mount a horse|骑上马[/C][/COLL][COLL][H]a loyal mount|忠实的坐骑[POS]n.[/POS][/H][EX]Every Dragon Master hopes to have a strong and loyal mount.|每位驯龙大师都希望拥有一匹强壮又忠实的坐骑。[/EX][C]a magic mount|魔法坐骑[/C][/COLL]",
+      "[TITLE] 额外例句 [/TITLE][EX]It is not easy to mount a big dragon when you are small.|你个子小时，想要骑上一条大龙并不容易。[/EX][EX]The wizard's mount was a wise old owl that could talk.|巫师的坐骑是一只会说话的智慧老猫头鹰。[/EX]",
+      "[TITLE] 常见错误 [/TITLE][ERR]过去式/过去分词为**mounted**，直接加ed，勿写成mounted。[/ERR][ERR]作动词时为及物动词，后直接接宾语（mount the dragon），勿加介词on，错误：mount on the dragon。[/ERR]"
+    ]
+  }
+
 
 }
 

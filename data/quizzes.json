@@ -2133,6 +2133,356 @@
 "question": "______ means relating to a whole country.",
 "options": ["Local", "Brave", "National", "Shaggy"],
 "answer": 2
+},
+"q_w306": {
+"type": "choice_text",
+"wordIds": ["w306"],
+"question": "To ______ means to hold back or stop yourself from doing something.",
+"options": ["present", "hold", "protest", "insist"],
+"answer": 1
+},
+"q_w307": {
+"type": "choice_text",
+"wordIds": ["w307"],
+"question": "A special planned activity or important happening is an ______.",
+"options": ["army", "event", "bug", "dare"],
+"answer": 1
+},
+"q_w308": {
+"type": "choice_text",
+"wordIds": ["w308"],
+"question": "To ______ someone means to annoy or bother them.",
+"options": ["present", "bug", "hold", "protest"],
+"answer": 1
+},
+"q_w309": {
+"type": "choice_text",
+"wordIds": ["w309"],
+"question": "A ______ voice is very loud, deep and powerful.",
+"options": ["booming", "brave", "small", "quiet"],
+"answer": 0
+},
+"q_w310": {
+"type": "choice_text",
+"wordIds": ["w310"],
+"question": "A large group of soldiers or a big group of living things is an ______.",
+"options": ["event", "present", "protest", "army"],
+"answer": 3
+},
+"q_w311": {
+"type": "choice_text",
+"wordIds": ["w311"],
+"question": "To ______ means to have the courage to do something difficult.",
+"options": ["insist", "dare", "hold", "present"],
+"answer": 1
+},
+"q_w312": {
+"type": "choice_text",
+"wordIds": ["w312"],
+"question": "To ______ someone is to introduce them to other people.",
+"options": ["protest", "hold", "present", "insist"],
+"answer": 2
+},
+"q_w313": {
+"type": "choice_text",
+"wordIds": ["w313"],
+"question": "To ______ means to say you disagree with something unfair.",
+"options": ["insist", "present", "hold", "protest"],
+"answer": 3
+},
+"q_w314": {
+"type": "choice_text",
+"wordIds": ["w314"],
+"question": "To ______ means to say something firmly even if others don't believe you.",
+"options": ["protest", "insist", "bug", "event"],
+"answer": 1
+},
+"q_w315": {
+"type": "choice_text",
+"wordIds": ["w315"],
+"question": "To ______ means to argue about small, unimportant things.",
+"options": ["stitch", "behold", "bicker", "interrupt"],
+"answer": 2
+},
+"q_w316": {
+"type": "choice_text",
+"wordIds": ["w316"],
+"question": "A ______ looks after children when their parents are away.",
+"options": ["flare", "argument", "tunic", "babysitter"],
+"answer": 3
+},
+"q_w317": {
+"type": "choice_text",
+"wordIds": ["w317"],
+"question": "To ______ means to suddenly show anger or burn brightly.",
+"options": ["babysitter", "flare", "bicker", "stitch"],
+"answer": 1
+},
+"q_w318": {
+"type": "choice_text",
+"wordIds": ["w318"],
+"question": "An ______ is an angry disagreement or a reason for an idea.",
+"options": ["argument", "interrupt", "behold", "flare"],
+"answer": 0
+},
+"q_w319": {
+"type": "choice_text",
+"wordIds": ["w319"],
+"question": "To ______ is to cut in when someone is speaking.",
+"options": ["bicker", "stitch", "interrupt", "babysitter"],
+"answer": 2
+},
+"q_w320": {
+"type": "choice_text",
+"wordIds": ["w320"],
+"question": "To ______ means to gather closely around someone or something.",
+"options": ["flare", "crowd around", "behold", "tunic"],
+"answer": 1
+},
+"q_w321": {
+"type": "choice_text",
+"wordIds": ["w321"],
+"question": "A ______ is a long, simple shirt or a guard’s uniform top.",
+"options": ["stitch", "argument", "bicker", "tunic"],
+"answer": 3
+},
+"q_w322": {
+"type": "choice_text",
+"wordIds": ["w322"],
+"question": "To ______ is to sew or embroider a pattern onto cloth.",
+"options": ["stitch", "interrupt", "flare", "behold"],
+"answer": 0
+},
+"q_w323": {
+"type": "choice_text",
+"wordIds": ["w323"],
+"question": "______ means look at something amazing, or to look closely at something.",
+"options": ["tunic", "stitch", "behold", "argument"],
+"answer": 2
+},
+"q_w324": {
+"type": "choice_text",
+"wordIds": ["w324"],
+"question": "A ______ is a platform with a rail on the outside of a building.",
+"options": ["rein", "brute", "squint", "balcony"],
+"answer": 3
+},
+"q_w325": {
+"type": "choice_text",
+"wordIds": ["w325"],
+"question": "To ______ is to look at something with your eyes almost closed.",
+"options": ["squint", "urge", "challenge", "reveal"],
+"answer": 0
+},
+"q_w326": {
+"type": "choice_text",
+"wordIds": ["w326"],
+"question": "______ are long leather strips to control a horse or dragon.",
+"options": ["balconies", "brutes", "reins", "urges"],
+"answer": 2
+},
+"q_w327": {
+"type": "choice_text",
+"wordIds": ["w327"],
+"question": "To ______ someone is to invite them to fight or compete.",
+"options": ["reveal", "challenge", "balcony", "squint"],
+"answer": 1
+},
+"q_w328": {
+"type": "choice_text",
+"wordIds": ["w328"],
+"question": "To ______ means to show something that was hidden before.",
+"options": ["urge", "challenge", "rein", "reveal"],
+"answer": 3
+},
+"q_w329": {
+"type": "choice_text",
+"wordIds": ["w329"],
+"question": "To ______ someone is to push them to act quickly or do something fast.",
+"options": ["urge", "brute", "reveal", "balcony"],
+"answer": 0
+},
+"q_w330": {
+"type": "choice_text",
+"wordIds": ["w330"],
+"question": "A ______ is a big, strong, fierce animal or a cruel person.",
+"options": ["squint", "rein", "brute", "challenge"],
+"answer": 2
+},
+"q_w331": {
+"type": "choice_text",
+"wordIds": ["w331"],
+"question": "To ______ means to hit with the flat part of your hand.",
+"options": ["plead", "smack", "slap", "tornado"],
+"answer": 2
+},
+"q_w332": {
+"type": "choice_text",
+"wordIds": ["w332"],
+"question": "A ______ is a violent spinning column of wind or air.",
+"options": ["squeal", "tornado", "dangle", "nostril"],
+"answer": 1
+},
+"q_w333": {
+"type": "choice_text",
+"wordIds": ["w333"],
+"question": "To ______ is to ask someone very anxiously and earnestly.",
+"options": ["thrash", "slap", "settle", "plead"],
+"answer": 3
+},
+"q_w334": {
+"type": "choice_text",
+"wordIds": ["w334"],
+"question": "To ______ means to make a high, sharp, loud sound.",
+"options": ["squeal", "lurch", "smack", "gruff"],
+"answer": 0
+},
+"q_w335": {
+"type": "choice_text",
+"wordIds": ["w335"],
+"question": "To ______ is to move around wildly and violently.",
+"options": ["settle", "plead", "thrash", "tornado"],
+"answer": 2
+},
+"q_w336": {
+"type": "choice_text",
+"wordIds": ["w336"],
+"question": "To ______ means to fall down and become still or calm.",
+"options": ["slap", "settle", "dangle", "squeal"],
+"answer": 1
+},
+"q_w337": {
+"type": "choice_text",
+"wordIds": ["w337"],
+"question": "To ______ is to make a sudden sharp movement or have a sick stomach feeling.",
+"options": ["smack", "gruff", "lurch", "thrash"],
+"answer": 2
+},
+"q_w338": {
+"type": "choice_text",
+"wordIds": ["w338"],
+"question": "To ______ means to hit something hard and quickly out of someone’s hand.",
+"options": ["smack", "lurch", "nostril", "settle"],
+"answer": 0
+},
+"q_w339": {
+"type": "choice_text",
+"wordIds": ["w339"],
+"question": "To ______ is to hang or swing loosely in the air.",
+"options": ["plead", "slap", "dangle", "tornado"],
+"answer": 2
+},
+"q_w340": {
+"type": "choice_text",
+"wordIds": ["w340"],
+"question": "______ are the two holes at the end of the nose of a person or animal.",
+"options": ["thrash", "nostrils", "squeal", "smack"],
+"answer": 1
+},
+"q_w341": {
+"type": "choice_text",
+"wordIds": ["w341"],
+"question": "______ means deep and rough, usually describing a voice.",
+"options": ["settle", "lurch", "gruff", "slap"],
+"answer": 2
+},
+"q_w342": {
+"type": "choice_text",
+"wordIds": ["w342"],
+"question": "To ______ means to move up and down quickly and lightly.",
+"options": ["polish", "bob", "graze", "blend"],
+"answer": 1
+},
+"q_w343": {
+"type": "choice_text",
+"wordIds": ["w343"],
+"question": "To ______ is to make something smooth and shiny by rubbing it.",
+"options": ["identity", "drape", "polish", "scaly"],
+"answer": 2
+},
+"q_w344": {
+"type": "choice_text",
+"wordIds": ["w344"],
+"question": "______ means who or what a person or thing really is.",
+"options": ["steed", "identity", "company", "orchid"],
+"answer": 1
+},
+"q_w345": {
+"type": "choice_text",
+"wordIds": ["w345"],
+"question": "A ______ is a strong horse for a knight to ride.",
+"options": ["graze", "mount", "steed", "bob"],
+"answer": 2
+},
+"q_w346": {
+"type": "choice_text",
+"wordIds": ["w346"],
+"question": "To ______ means to eat grass that is growing in a field.",
+"options": ["blend", "polish", "drape", "graze"],
+"answer": 3
+},
+"q_w347": {
+"type": "choice_text",
+"wordIds": ["w347"],
+"question": "______ means more than usual; especially.",
+"options": ["exasperating", "particularly", "scaly", "squint"],
+"answer": 1
+},
+"q_w348": {
+"type": "choice_text",
+"wordIds": ["w348"],
+"question": "To ______ is to mix two or more things together into one.",
+"options": ["company", "graze", "bob", "blend"],
+"answer": 3
+},
+"q_w349": {
+"type": "choice_text",
+"wordIds": ["w349"],
+"question": "To ______ means to hang cloth loosely over something else.",
+"options": ["polish", "drape", "mount", "identity"],
+"answer": 1
+},
+"q_w350": {
+"type": "choice_text",
+"wordIds": ["w350"],
+"question": "______ means being with other people; the state of having friends together.",
+"options": ["steed", "orchid", "company", "scaly"],
+"answer": 2
+},
+"q_w351": {
+"type": "choice_text",
+"wordIds": ["w351"],
+"question": "______ means covered with small, hard plates on the skin.",
+"options": ["scaly", "blend", "drape", "particularly"],
+"answer": 0
+},
+"q_w352": {
+"type": "choice_text",
+"wordIds": ["w352"],
+"question": "______ means making you feel extremely annoyed and frustrated.",
+"options": ["mount", "exasperating", "bob", "graze"],
+"answer": 1
+},
+"q_w353": {
+"type": "choice_text",
+"wordIds": ["w353"],
+"question": "To ______ is to look with your eyes almost closed because of light or distance.",
+"options": ["squint", "identity", "polish", "steed"],
+"answer": 0
+},
+"q_w354": {
+"type": "choice_text",
+"wordIds": ["w354"],
+"question": "An ______ is a beautiful flower with unusual shapes and colors.",
+"options": ["company", "orchid", "scaly", "blend"],
+"answer": 1
+},
+"q_w355": {
+"type": "choice_text",
+"wordIds": ["w355"],
+"question": "To ______ a dragon means to climb onto its back to ride it.",
+"options": ["drape", "graze", "mount", "particularly"],
+"answer": 2
 }
 
 

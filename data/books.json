@@ -105,5 +105,53 @@
     { "id": "pb1-c15", "name": "Chapter 15", "wordIds": ["w222", "w223", "w224"], "quizIds": ["q_w222", "q_w223", "q_w224"] }
     
     ]
+  },
+ {
+    "id": "dm-4",
+    "type": "初章书",
+    "series": "Dragon Masters",
+    "title": "Power of The Fire Dragon",
+    "cover": "infopic01/dm4.png",
+    "chapters": [
+      { "id": "dm4-c1", "name": "Chapter 1", "wordIds": ["w306", "w307", "w308"], "quizIds": ["q_w306", "q_w307", "q_w308"] },
+      { "id": "dm4-c2", "name": "Chapter 2", "wordIds": ["w309", "w310", "w311", "w312"], "quizIds": ["q_w309", "q_w310", "q_w311", "q_w312"] },
+      { "id": "dm4-c3", "name": "Chapter 3", "wordIds": ["w313", "w314"], "quizIds": ["q_w313", "q_w314"] },
+      { "id": "dm4-c4", "name": "Chapter 4", "wordIds": ["w315", "w316", "w317", "w318", "w319", "w320"], "quizIds": ["q_w315", "q_w316", "q_w317", "q_w318", "q_w319", "q_w320"] },
+      { "id": "dm4-c5", "name": "Chapter 5", "wordIds": ["w321", "w322", "w323"], "quizIds": ["q_w321", "q_w322", "q_w323"] },
+      { "id": "dm4-c6", "name": "Chapter 6", "wordIds": ["w324"], "quizIds": ["q_w324"] },
+      { "id": "dm4-c7", "name": "Chapter 7", "wordIds": ["w325", "w326", "w327", "w328", "w329"], "quizIds": ["q_w325", "q_w326", "q_w327", "q_w328", "q_w329"] },
+      { "id": "dm4-c9", "name": "Chapter 9", "wordIds": ["w330"], "quizIds": ["q_w330"] },
+      { "id": "dm4-c10", "name": "Chapter 10", "wordIds": ["w331","w332", "w333"], "quizIds": ["q_w331","q_w332", "q_w333"] },
+      { "id": "dm4-c11", "name": "Chapter 11", "wordIds": ["w334","w335", "w336"], "quizIds": ["q_w334","q_w335", "q_w336"] },
+      { "id": "dm4-c12", "name": "Chapter 12", "wordIds": ["w337","w338", "w339"], "quizIds": ["q_w337","q_w338", "q_w339"] },
+      { "id": "dm4-c13", "name": "Chapter 13", "wordIds": ["w340"], "quizIds": ["q_w340"] },
+      { "id": "dm4-c14", "name": "Chapter 14", "wordIds": ["w341"], "quizIds": ["q_w341"] }
+    ]
   }
+  ,
+ {
+    "id": "pb2",
+    "type": "初章书",
+    "series": "The Pincess in Black",
+    "title": "The Pincess in Black 2",
+    "cover": "infopic01/pb2.png",
+    "chapters": [
+      { "id": "pb2-c1", "name": "Chapter 1", "wordIds": ["w342", "w343"], "quizIds": ["q_w342", "q_w343"] },
+      { "id": "pb2-c3", "name": "Chapter 3", "wordIds": ["w344", "w345"], "quizIds": ["q_w344", "q_w345"] },
+      { "id": "pb2-c4", "name": "Chapter 4", "wordIds": ["w346"], "quizIds": ["q_w346"] },
+      { "id": "pb2-c5", "name": "Chapter 5", "wordIds": ["w347"], "quizIds": ["q_w347"] },
+      { "id": "pb2-c6", "name": "Chapter 6", "wordIds": ["w348", "w349", "w350"], "quizIds": ["q_w348", "q_w349", "q_w350"] },
+      { "id": "pb2-c7", "name": "Chapter 7", "wordIds": ["w351", "w352"], "quizIds": ["q_w351", "q_w352"] },
+      { "id": "pb2-c8", "name": "Chapter 8", "wordIds": ["w353"], "quizIds": ["q_w353"] },
+      { "id": "pb2-c9", "name": "Chapter 9", "wordIds": ["w354", "w355"], "quizIds": ["q_w354", "q_w355"] }
+
+    ]
+  }
+
+
+
+
+
+
+  
 ]
