@@ -2483,7 +2483,282 @@
 "question": "To ______ a dragon means to climb onto its back to ride it.",
 "options": ["drape", "graze", "mount", "particularly"],
 "answer": 2
-}
+},
+
+  "q_w356": {
+    "type": "choice_text",
+    "wordIds": ["w356"],
+    "question": "I have read three books ______ this week, and I plan to read two more.",
+    "options": ["so far", "instead", "ever", "too much"],
+    "answer": 0
+  },
+  "q_w357": {
+    "type": "choice_text",
+    "wordIds": ["w357"],
+    "question": "The school ______ met to talk about the rules for the new playground.",
+    "options": ["soldier", "castle", "council", "prison"],
+    "answer": 2
+  },
+  "q_w358": {
+    "type": "choice_text",
+    "wordIds": ["w358"],
+    "question": "The eagle flew down and ______ up a small fish from the river.",
+    "options": ["polished", "scooped", "blended", "grazed"],
+    "answer": 1
+  },
+  "q_w359": {
+    "type": "choice_text",
+    "wordIds": ["w359"],
+    "question": "It took the little dragon a few days to ______ living in the dark cave.",
+    "options": ["take care of", "look forward to", "run out of", "get used to"],
+    "answer": 3
+  },
+  "q_w360": {
+    "type": "choice_text",
+    "wordIds": ["w360"],
+    "question": "The old, empty house felt ______ and cold, making the children feel a bit scared.",
+    "options": ["sunny", "gloomy", "cheerful", "bright"],
+    "answer": 1
+  },
+  "q_w361": {
+    "type": "choice_text",
+    "wordIds": ["w361"],
+    "question": "The roof of the ancient temple was held up by massive stone ______.",
+    "options": ["shadows", "columns", "tunnels", "mirrors"],
+    "answer": 1
+  },
+  "q_w362": {
+    "type": "choice_text",
+    "wordIds": ["w362"],
+    "question": "The candle started to ______ when the wind blew through the window.",
+    "options": ["flicker", "chant", "scoop", "tame"],
+    "answer": 0
+  },
+  "q_w363": {
+    "type": "choice_text",
+    "wordIds": ["w363"],
+    "question": "After hearing about the new baby dragon, all the children were ______ see it.",
+    "options": ["expecting to", "failing to", "dying to", "fitting in to"],
+    "answer": 2
+  },
+  "q_w364": {
+    "type": "choice_text",
+    "wordIds": ["w364"],
+    "question": "The king was surprised to see that the giant Hydra was actually quite ______ and followed Petra's rules.",
+    "options": ["wild", "gloomy", "fuzzy", "tame"],
+    "answer": 3
+  },
+  "q_w365": {
+    "type": "choice_text",
+    "wordIds": ["w365"],
+    "question": "The guests were asked to ______ so the royal feast could begin.",
+    "options": ["take their seats", "make a move", "keep order", "fit in"],
+    "answer": 0
+  },
+  "q_w366": {
+    "type": "choice_text",
+    "wordIds": ["w366"],
+    "question": "We put some salty ______ and cheese on top of the pizza.",
+    "options": ["figs", "olives", "chickpeas", "columns"],
+    "answer": 1
+  },
+  "q_w367": {
+    "type": "choice_text",
+    "wordIds": ["w367"],
+    "question": "My mom made a healthy salad with ______, cucumbers, and tomatoes.",
+    "options": ["chimes", "mobs", "chickpeas", "fevers"],
+    "answer": 2
+  },
+  "q_w368": {
+    "type": "choice_text",
+    "wordIds": ["w368"],
+    "question": "We ate sweet, purple ______ for dessert after the dinner.",
+    "options": ["figs", "snorts", "tones", "stakes"],
+    "answer": 0
+  },
+  "q_w369": {
+    "type": "choice_text",
+    "wordIds": ["w369"],
+    "question": "My father and grandfather are both great painters; artistic talent seems to ______.",
+    "options": ["fit in with us", "run in my family", "be at stake", "be dying to"],
+    "answer": 1
+  },
+  "q_w370": {
+    "type": "choice_text",
+    "wordIds": ["w370"],
+    "question": "The kind old wizard ______ us some warm soup and a place to stay.",
+    "options": ["admitted", "rushed", "offered", "terrified"],
+    "answer": 2
+  },
+  "q_w371": {
+    "type": "choice_text",
+    "wordIds": ["w371"],
+    "question": "At first, the new student felt lonely, but soon he began to ______ with his classmates.",
+    "options": ["fit in", "run in", "keep order", "rear up"],
+    "answer": 0
+  },
+  "q_w372": {
+    "type": "choice_text",
+    "wordIds": ["w372"],
+    "question": "We had to ______ to the castle because the dragon was about to wake up.",
+    "options": ["snort", "rush", "attach", "chant"],
+    "answer": 1
+  },
+  "q_w373": {
+    "type": "choice_text",
+    "wordIds": ["w373"],
+    "question": "Please ______ the name tag to your luggage so it doesn't get lost.",
+    "options": ["urge", "flicker", "admit", "attach"],
+    "answer": 3
+  },
+  "q_w374": {
+    "type": "choice_text",
+    "wordIds": ["w374"],
+    "question": "The angry bull gave a loud ______ and started to run toward us.",
+    "options": ["chime", "snort", "tone", "offer"],
+    "answer": 1
+  },
+  "q_w375": {
+    "type": "choice_text",
+    "wordIds": ["w375"],
+    "question": "The Dragon Masters ______ Griffith to let them help with the rescue mission.",
+    "options": ["urged", "terrified", "offered", "expected"],
+    "answer": 0
+  },
+  "q_w376": {
+    "type": "choice_text",
+    "wordIds": ["w376"],
+    "question": "It was hard for him to ______, but he finally said he was the one who broke the vase.",
+    "options": ["admit", "force", "rush", "befriend"],
+    "answer": 0
+  },
+  "q_w377": {
+    "type": "choice_text",
+    "wordIds": ["w377"],
+    "question": "The sick dragon felt very hot because it had a high ______.",
+    "options": ["tone", "fever", "column", "globe"],
+    "answer": 1
+  },
+  "q_w378": {
+    "type": "choice_text",
+    "wordIds": ["w378"],
+    "question": "It takes time and patience to ______ a wild animal and gain its trust.",
+    "options": ["tame", "force", "befriend", "expect"],
+    "answer": 2
+  },
+  "q_w379": {
+    "type": "choice_text",
+    "wordIds": ["w379"],
+    "question": "I love the soft ______ of the wind bells on the porch.",
+    "options": ["chime", "mob", "snort", "fever"],
+    "answer": 0
+  },
+  "q_w380": {
+    "type": "choice_text",
+    "wordIds": ["w380"],
+    "question": "You cannot ______ someone to be your friend; it has to happen naturally.",
+    "options": ["urge", "offer", "force", "admit"],
+    "answer": 2
+  },
+  "q_w381": {
+    "type": "choice_text",
+    "wordIds": ["w381"],
+    "question": "The giant shadow on the wall began to ______ the little children.",
+    "options": ["terrify", "befriend", "fit in", "chant"],
+    "answer": 0
+  },
+  "q_w382": {
+    "type": "choice_text",
+    "wordIds": ["w382"],
+    "question": "I ______ to see you at the library at 4 o'clock; don't be late!",
+    "options": ["admit", "expect", "urge", "rush"],
+    "answer": 1
+  },
+  "q_w383": {
+    "type": "choice_text",
+    "wordIds": ["w383"],
+    "question": "We arrived at the theater just ______ to see the beginning of the movie.",
+    "options": ["so far", "at stake", "on order", "in time"],
+    "answer": 3
+  },
+  "q_w384": {
+    "type": "choice_text",
+    "wordIds": ["w384"],
+    "question": "The fans waited ______ outside the hotel to see the famous singer.",
+    "options": ["eagerly", "gloomily", "fuzzily", "tamely"],
+    "answer": 0
+  },
+  "q_w385": {
+    "type": "choice_text",
+    "wordIds": ["w385"],
+    "question": "If we don't stop the fire now, the whole forest will be ______.",
+    "options": ["in time", "so far", "at stake", "on offer"],
+    "answer": 2
+  },
+  "q_w386": {
+    "type": "choice_text",
+    "wordIds": ["w386"],
+    "question": "The monks began to ______ a peaceful song in the temple.",
+    "options": ["snort", "chant", "attach", "rush"],
+    "answer": 1
+  },
+  "q_w387": {
+    "type": "choice_text",
+    "wordIds": ["w387"],
+    "question": "A large ______ of people gathered in the street to protest the new law.",
+    "options": ["column", "globe", "prime", "mob"],
+    "answer": 3
+  },
+  "q_w388": {
+    "type": "choice_text",
+    "wordIds": ["w388"],
+    "question": "The new puppy has ______ white fur that is very soft to touch.",
+    "options": ["gloomy", "prime", "fuzzy", "tame"],
+    "answer": 2
+  },
+  "q_w389": {
+    "type": "choice_text",
+    "wordIds": ["w389"],
+    "question": "The horse ______ up on its back legs when it heard the loud noise.",
+    "options": ["rushed", "reared", "admitted", "offered"],
+    "answer": 1
+  },
+  "q_w390": {
+    "type": "choice_text",
+    "wordIds": ["w390"],
+    "question": "She spoke in a very serious ______ to let us know the news was important.",
+    "options": ["chime", "snort", "fever", "tone"],
+    "answer": 3
+  },
+  "q_w391": {
+    "type": "choice_text",
+    "wordIds": ["w391"],
+    "question": "The guards were hired to ______ during the crowded festival.",
+    "options": ["take seats", "keep order", "fit in", "run in the family"],
+    "answer": 1
+  },
+  "q_w392": {
+    "type": "choice_text",
+    "wordIds": ["w392"],
+    "question": "The audience started to ______ when the magician's trick failed.",
+    "options": ["chant", "offer", "snort", "boo"],
+    "answer": 3
+  },
+  "q_w393": {
+    "type": "choice_text",
+    "wordIds": ["w393"],
+    "question": "The wizard held a crystal ______ that showed him what was happening far away.",
+    "options": ["globe", "column", "chickpea", "fig"],
+    "answer": 0
+  },
+  "q_w394": {
+    "type": "choice_text",
+    "wordIds": ["w394"],
+    "question": "The center of the city is the ______ location for a new shopping mall.",
+    "options": ["fuzzy", "prime", "gloomy", "tame"],
+    "answer": 1
+  }
+
 
 
 

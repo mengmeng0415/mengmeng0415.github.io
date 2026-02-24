@@ -3,7 +3,7 @@
     "id": "dm-3",
     "type": "初章书",
     "series": "Dragon Masters",
-    "title": "Secret of The Water Dragon",
+    "title": "Secret of The Water Dragon（B3）",
     "cover": "infopic01/dm3.png",
     "chapters": [
     { "id": "dm3-c1", "name": "Chapter 1", "wordIds": ["w001", "w002", "w003", "w004", "w005", "w006"], "quizIds": ["q_w001", "q_w002", "q_w003", "q_w004", "q_w005", "q_w006"] },
@@ -110,7 +110,7 @@
     "id": "dm-4",
     "type": "初章书",
     "series": "Dragon Masters",
-    "title": "Power of The Fire Dragon",
+    "title": "Power of The Fire Dragon（B4）",
     "cover": "infopic01/dm4.png",
     "chapters": [
       { "id": "dm4-c1", "name": "Chapter 1", "wordIds": ["w306", "w307", "w308"], "quizIds": ["q_w306", "q_w307", "q_w308"] },
@@ -145,6 +145,30 @@
       { "id": "pb2-c8", "name": "Chapter 8", "wordIds": ["w353"], "quizIds": ["q_w353"] },
       { "id": "pb2-c9", "name": "Chapter 9", "wordIds": ["w354", "w355"], "quizIds": ["q_w354", "q_w355"] }
 
+    ]
+  },
+   {
+    "id": "dm-5",
+    "type": "初章书",
+    "series": "Dragon Masters",
+    "title": "Song of the Poison Dragon（B5）",
+    "cover": "infopic01/dm5.png",
+    "chapters": [
+    { "id": "dm5-c1", "name": "Chapter 1", "wordIds": ["w356", "w357", "w358"], "quizIds": ["q_w356", "q_w357", "q_w358"] },
+    { "id": "dm5-c2", "name": "Chapter 2", "wordIds": ["w359", "w360", "w361", "w362", "w363"], "quizIds": ["q_w359", "q_w360", "q_w361", "q_w362", "q_w363"] },
+    { "id": "dm5-c3", "name": "Chapter 3", "wordIds": ["w364"], "quizIds": ["q_w364"] },
+    { "id": "dm5-c4", "name": "Chapter 4", "wordIds": ["w365", "w366", "w367", "w368", "w369", "w370", "w371"], "quizIds": ["q_w365", "q_w366", "q_w367", "q_w368", "q_w369", "q_w370", "q_w371"] },
+    { "id": "dm5-c5", "name": "Chapter 5", "wordIds": ["w372", "w373", "w374", "w375"], "quizIds": ["q_w372", "q_w373", "q_w374", "q_w375"] },
+    { "id": "dm5-c6", "name": "Chapter 6", "wordIds": ["w376", "w377"], "quizIds": ["q_w376", "q_w377"] },
+    { "id": "dm5-c7", "name": "Chapter 7", "wordIds": ["w378", "w379", "w380"], "quizIds": ["q_w378", "q_w379", "q_w380"] },
+    { "id": "dm5-c8", "name": "Chapter 8", "wordIds": ["w381", "w382", "w383"], "quizIds": ["q_w381", "q_w382", "q_w383"] },
+    { "id": "dm5-c9", "name": "Chapter 9", "wordIds": ["w384", "w385", "w386"], "quizIds": ["q_w384", "q_w385", "q_w386"] },
+    { "id": "dm5-c10", "name": "Chapter 10", "wordIds": ["w387"], "quizIds": ["q_w387"] },
+    { "id": "dm5-c11", "name": "Chapter 11", "wordIds": ["w388", "w389"], "quizIds": ["q_w388", "q_w389"] },
+    { "id": "dm5-c12", "name": "Chapter 12", "wordIds": ["w390"], "quizIds": ["q_w390"] },
+    { "id": "dm5-c13", "name": "Chapter 13", "wordIds": ["w391"], "quizIds": ["q_w391"] },
+    { "id": "dm5-c14", "name": "Chapter 14", "wordIds": ["w392", "w393"], "quizIds": ["q_w392", "q_w393"] },
+    { "id": "dm5-c15", "name": "Chapter 15", "wordIds": ["w394"], "quizIds": ["q_w394"] }
     ]
   }
 

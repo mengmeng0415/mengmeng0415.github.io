@@ -4586,7 +4586,7 @@
       "[TITLE]常见错误[/TITLE][ERR]分清 -ing 和 -ed：exasperating 形容“事情或人让人感到烦”；exasperated 形容“人自己的心情感到烦”。错误：I am very exasperating. (除非你觉得自己很招人烦)。正确：I feel exasperated. / The monster is exasperating. [/ERR][ERR]这个词比 annoying 程度更深，通常包含了一种“因为反复发生而失去耐心”的感觉。[/ERR]"
     ]
   },
-  "w355": {
+  "w353": {
     "word": "squint",
     "images": {
       "scene": ["infopic01/squint.webp"],
@@ -4599,7 +4599,7 @@
       "[TITLE]常见错误[/TITLE][ERR]squint 后面接看的目标时，通常要加 at。不要直接说 squint the map（错误），要说 squint at the map。[/ERR][ERR]注意 squint 也可以指“斜视”，但在小朋友的童书里，通常指因为阳光强或者看不清而“眯起眼睛”。[/ERR]"
     ]
   },
-  "w356": {
+  "w354": {
     "word": "orchid",
     "images": {
       "scene": ["infopic01/orchid.webp"],
@@ -4612,7 +4612,7 @@
       "[TITLE]常见错误[/TITLE][ERR]orchid 这个词的 ch 发 /k/ 的音，而不是像 chair 那样发 /tʃ/ 的音。[/ERR][ERR]注意它的开头字母 o 虽然是元音，但它的音标是 /ˈɔːrkɪd/，发音时嘴巴要张大。[/ERR]"
     ]
   },
-  "w357": {
+  "w355": {
     "word": "mount",
     "images": {
       "scene": ["infopic01/mount.webp"],
@@ -4624,7 +4624,517 @@
       "[TITLE]额外例句[/TITLE][EX]The excitement began to mount as the race started.[POS]v.[/POS]|比赛开始时，兴奋的情绪开始增加（mount也有增加、上升的意思）。[/EX][EX]She mounted her bike and pedaled fast to school.[POS]v.[/POS]|她骑上自行车，飞快地骑向学校。[/EX][EX]In some stories, a dragon is a powerful mount for a hero.[POS]n.[/POS]|在一些故事里，龙是英雄强大的坐骑。[/EX]",
       "[TITLE]常见错误[/TITLE][ERR]当表示“骑上”时，不要在 mount 后面加 up（虽然 mount up 有别的意思），直接说 mount the horse 即可。[/ERR][ERR]注意 mount 除了做“坐骑”和“骑上”，还常出现在山的名字里，比如 Mount Everest（珠穆朗玛峰），这时候它缩写为 Mt.。[/ERR]"
     ]
+  },
+  "w356": {
+    "word": "so far",
+    "images": {
+      "scene": ["infopic01/so_far.webp"],
+      "card": ["wordpic01/so_far.webp"]
+    },
+    "richDetail": [
+      "[TITLE]解释[/TITLE][DEF][EN]Until now; up to this point in time (used in the book to say that the Dragon Stone had chosen four children before Petra arrived).[/EN][CN]到目前为止；迄今为止（书中指在佩特拉到来之前，龙石已经挑选了四个孩子）。[/CN][POS]adv.[/POS][PH]/soʊ fɑːr/[/PH][DU]So far, it had chosen four children from all over the world.|(原文例句)到目前为止，它已经从世界各地挑选了四个孩子。[/DU][DU]I have finished three pages of my homework so far.|到目前为止，我已经写完三页作业了。[/DU][DU]So far, the weather has been very sunny today.|到目前为止，今天的天气一直非常晴朗。[/DU][/DEF][IMG]infopic01/so_far.webp[/IMG]",
+      "[TITLE]常见用法[/TITLE][COLL][H]so far so good|到目前为止还算顺利[POS]adv.[/POS][/H][EX]We are building a tall tower with blocks, and so far so good!|我们正在用积木搭一座高塔，到目前为止一切顺利！[/EX][C]so far|迄今为止[/C][C]so good|挺好的[/C][/COLL]",
+      "[TITLE]额外例句[/TITLE][EX]We have traveled a long way, but so far we are not tired.[POS]adv.[/POS]|我们走了很长一段路，但到目前为止我们还不累。[/EX][EX]I have only seen two dragons so far in this book.[POS]adv.[/POS]|到目前为止，我在书里只看到了两头龙。[/EX]",
+      "[TITLE]常见错误[/TITLE][ERR]不要把 so far 误认为“那么远”。虽然 far 单独用是“远”，但 so far 放在一起通常表示时间上的“到目前为止”。[/ERR][ERR]so far 经常和现在完成时（have/has done）连用，表示从过去到现在这段时间的情况。[/ERR]"
+    ]
+  },
+  "w357": {
+    "word": "council",
+    "images": {
+      "scene": ["infopic01/council.webp"],
+      "card": ["wordpic01/council.webp"]
+    },
+    "richDetail": [
+      "[TITLE]解释[/TITLE][DEF][EN]A group of people who are chosen to make rules, give advice, or make decisions together (in the story, the Wizard's Council is a group that deals with powerful magic users).[/EN][CN]委员会；理事会；会议（书中指“巫师委员会”，是一群管理强大魔法师的人）。[/CN][POS]n.[/POS][PH]/ˈkaʊnsl/[/PH][DU]Maldred was sent to the Wizard's Council prison.|(原文例句)马尔德雷德被送往了巫师委员会的监狱。[/DU][DU]The school council decided to have a pizza party.|学校委员会决定举办一个披萨派对。[/DU][DU]The king asked the council for help with the magic problem.|国王请委员会帮忙解决魔法问题。[/DU][/DEF][IMG]infopic01/council.webp[/IMG]",
+      "[TITLE]常见用法[/TITLE][COLL][H]town council|镇议会[POS]n.[/POS][/H][EX]The town council is building a new park for the children.|镇议会正在为孩子们建造一个新公园。[/EX][C]council member|委员会成员[/C][C]student council|学生会[/C][/COLL]",
+      "[TITLE]额外例句[/TITLE][EX]The council met to talk about the new rules for the dragon valley.[POS]n.[/POS]|委员会开会讨论龙之谷的新规则。[/EX][EX]My big brother was elected to the student council.[POS]n.[/POS]|我哥哥当选了学生会成员。[/EX]",
+      "[TITLE]常见错误[/TITLE][ERR]不要混淆 council（委员会）和 counsel（建议/法律顾问）。虽然它们听起来一样，但 council 指的是“一组人”。[/ERR][ERR]council 是一个集合名词，如果你把它看作一个整体，谓语动词可以用单数（The council decides...）。[/ERR]"
+    ]
+  },
+  "w358": {
+    "word": "scoop",
+    "images": {
+      "scene": ["infopic01/scoop.webp"],
+      "card": ["wordpic01/scoop.webp"]
+    },
+    "richDetail": [
+      "[TITLE]解释[/TITLE][DEF][EN]To pick up something quickly or in one smooth movement, like using a big spoon or your arms (in the story, a soldier picked up Drake and put him on a horse).[/EN][CN]（快速地）抱起，捡起；用勺舀（书中指一名士兵一把将德雷克抱到了马上）。[/CN][POS]v. & n.[/POS][PH]/skuːp/[/PH][DU]One of the king's soldiers had scooped him up on a horse.|(原文例句)国王的一名士兵一把将他抱到了马上。[/DU][DU]Can I have a big scoop of strawberry ice cream, please?|请给我来一大勺草莓冰淇淋好吗？[/DU][DU]The boy used his hands to scoop up the dry sand.|男孩用手捧起干沙子。[/DU][/DEF][IMG]infopic01/scoop.webp[/IMG]",
+      "[TITLE]常见用法[/TITLE][COLL][H]scoop up|抱起；舀起[POS]v.[/POS][/H][EX]She scooped up the little kitten and held it close.|她一把抱起小猫，把它紧紧搂在怀里。[/EX][EX]Use a net to scoop up the leaves from the pool.|用网兜把池子里的叶子捞起来。[/EX][C]scoop up a handful of...|抓起一把...[/C][C]a scoop of ice cream|一勺冰淇淋[/C][/COLL]",
+      "[TITLE]额外例句[/TITLE][EX]He used a small plastic scoop to feed the birds.[POS]n.[/POS]|他用一个小塑料勺喂鸟。[/EX][EX]The eagle flew down and scooped up a fish from the lake.[POS]v.[/POS]|老鹰飞下去，从湖里叼起（抓起）一条鱼。[/EX]",
+      "[TITLE]常见错误[/TITLE][ERR]scoop 作为动词表示“抱起”时，常和 up 连用。不要和 scope（范围/仪器）弄混了，它们的拼写很像。[/ERR][ERR]作为名词时，它既可以指“勺子”，也可以指舀出来的“一勺”的分量。[/ERR]"
+    ]
+  },
+  "w359": {
+    "word": "get used to",
+    "images": {
+      "scene": ["infopic01/get_used_to.webp"],
+      "card": ["wordpic01/get_used_to.webp"]
+    },
+    "richDetail": [
+      "[TITLE]解释[/TITLE][DEF][EN]To start to feel that something is normal or familiar because you have done it for some time (used in the story when Petra needs time to feel at home in the castle).[/EN][CN]习惯于；适应（书中指佩特拉需要时间来习惯住在城堡里）。[/CN][POS]v. phr.[/POS][PH]/ɡet juːst tu/[/PH][DU]It might take some time to get used to living in the castle.|(原文例句)习惯住在城堡里可能需要一些时间。[/DU][DU]I finally got used to the cold weather in winter.|我终于习惯了冬天的寒冷天气。[/DU][DU]Don't worry, you will soon get used to your new glasses.|别担心，你很快就会习惯你的新眼镜的。[/DU][/DEF][IMG]infopic01/get_used_to.webp[/IMG]",
+      "[TITLE]常见用法[/TITLE][COLL][H]get used to doing sth|习惯做某事[POS]v. phr.[/POS][/H][EX]I am getting used to waking up early for school.|我正逐渐习惯早起上学。[/EX][C]get used to the new school|习惯新学校[/C][C]get used to the noise|习惯噪音[/C][/COLL]",
+      "[TITLE]额外例句[/TITLE][EX]It was hard to get used to the spicy food at first.[POS]v. phr.[/POS]|起初很难适应那些辛辣的食物。[/EX][EX]The dragon had to get used to the cave's dark corners.[POS]v. phr.[/POS]|这头龙必须习惯山洞里阴暗的角落。[/EX]",
+      "[TITLE]常见错误[/TITLE][ERR]注意区分 get used to（正在习惯）和 used to do（过去常常）。get used to 后面通常接名词或动词-ing（错误：get used to wake up）。[/ERR][ERR]这里的 used 后面一定要带 to，不能漏掉。[/ERR]"
+    ]
+  },
+  "w360": {
+    "word": "gloomy",
+    "images": {
+      "scene": ["infopic01/gloomy.webp"],
+      "card": ["wordpic01/gloomy.webp"]
+    },
+    "richDetail": [
+      "[TITLE]解释[/TITLE][DEF][EN]A place that is dark and makes you feel a little bit sad or scared; not bright or cheerful (in the story, it describes the dark cave where the hydra lived).[/EN][CN]阴暗的；忧郁的；闷闷不乐的（书中描述海德拉居住的山洞暗暗的，让人感觉有点压抑）。[/CN][POS]adj.[/POS][PH]/ˈɡluːmi/[/PH][DU]The cave felt gloomy and cold.|(原文例句)山洞里感觉阴暗又寒冷。[/DU][DU]Why do you have such a gloomy face today?|你今天为什么看起来这么闷闷不乐？[/DU][DU]The rainy weather makes the room look gloomy.|下雨天让房间看起来阴沉沉的。[/DU][/DEF][IMG]infopic01/gloomy.webp[/IMG]",
+      "[TITLE]常见用法[/TITLE][COLL][H]gloomy weather|阴沉的天气[POS]adj.[/POS][/H][EX]I don't like gloomy weather; I want the sun to come out!|我不喜欢阴沉的天气，我希望太阳出来！[/EX][C]a gloomy room|阴暗的房间[/C][C]a gloomy mood|忧郁的心情[/C][/COLL]",
+      "[TITLE]额外例句[/TITLE][EX]The old castle felt gloomy even during the day.[POS]adj.[/POS]|那座古旧的城堡即使在白天也让人感到阴森森的。[/EX][EX]She felt gloomy because she missed her best friend.[POS]adj.[/POS]|因为想念最好的朋友，她感到很忧郁。[/EX]",
+      "[TITLE]常见错误[/TITLE][ERR]gloomy 比 dark 的感情色彩更重。dark 只是指没有光，而 gloomy 经常包含“让人不开心”或“压抑”的感觉。[/ERR][ERR]不要把它和 groom（新郎/整理羽毛）混淆，虽然拼写有一点点像。[/ERR]"
+    ]
+  },
+  "w361": {
+    "word": "column",
+    "images": {
+      "scene": ["infopic01/column.webp"],
+      "card": ["wordpic01/column.webp"]
+    },
+    "richDetail": [
+      "[TITLE]解释[/TITLE][DEF][EN]A tall, strong pillar made of stone, wood, or metal that helps hold up a roof or looks pretty (in the story, there are stone pillars inside the cave).[/EN][CN]柱子；圆柱（书中指山洞里支撑顶部的石柱）。[/CN][POS]n.[/POS][PH]/ˈkɑːləm/[/PH][DU]Stone columns rose from the cave floor to the ceiling.|(原文例句)石柱从洞穴地面一直升到顶部。[/DU][DU]The museum has many tall, white columns at the entrance.|博物馆入口处有许多高大的白色圆柱。[/DU][DU]Look at that big column of smoke in the distance!|看远处那一排烟柱！[/DU][/DEF][IMG]infopic01/column.webp[/IMG]",
+      "[TITLE]常见用法[/TITLE][COLL][H]stone column|石柱[POS]n.[/POS][/H][EX]The soldiers stood behind the stone columns to hide.|士兵们躲在石柱后面。[/EX][C]a column of smoke|一缕烟柱[/C][C]a column of ants|一队蚂蚁[/C][/COLL]",
+      "[TITLE]额外例句[/TITLE][EX]The palace was held up by twenty golden columns.[POS]n.[/POS]|宫殿由二十根金柱子支撑着。[/EX][EX]The teacher asked us to write the numbers in a column.[POS]n.[/POS]|老师要求我们把数字写成一列。[/EX]",
+      "[TITLE]常见错误[/TITLE][ERR]注意 column 中的字母 n 是不发音的，读作 /ˈkɑːləm/，千万不要读出 /n/ 的音。[/ERR][ERR]在数学或表格中，column 指“纵列”，而 horizontal 的那一行叫 row。[/ERR]"
+    ]
+  },
+  "w362": {
+    "word": "flicker",
+    "images": {
+      "scene": ["infopic01/flicker.webp"],
+      "card": ["wordpic01/flicker.webp"]
+    },
+    "richDetail": [
+      "[TITLE]解释[/TITLE][DEF][EN]To shine with a light that goes on and off very quickly or move unsteadily (in the story, a small light or magic glow was seen).[/EN][CN]闪烁；闪现；摇曳（书中指光线或魔力闪烁）。[/CN][POS]v. & n.[/POS][PH]/ˈflɪkər/[/PH][DU]A small green light flickered in the darkness.|(原文例句)一点绿色的微光在黑暗中闪烁。[/DU][DU]The candle flame flickered when the door opened.|门打开时，蜡烛的火焰摇曳了一下。[/DU][DU]I saw a flicker of hope in his eyes.|我看到他眼里闪过一丝希望。[/DU][/DEF][IMG]infopic01/flicker.webp[/IMG]",
+      "[TITLE]常见用法[/TITLE][COLL][H]flicker on and off|闪烁不定[POS]v.[/POS][/H][EX]The old street light flickered on and off all night.|旧路灯整晚都在忽明忽暗地闪。[/EX][C]a flicker of light|一闪之光[/C][C]flickering shadows|摇曳的影子[/C][/COLL]",
+      "[TITLE]额外例句[/TITLE][EX]The television screen started to flicker during the storm.[POS]v.[/POS]|暴风雨时，电视屏幕开始闪烁。[/EX][EX]A tiny smile flickered across her face.[POS]v.[/POS]|她脸上掠过一丝淡淡的微笑。[/EX]",
+      "[TITLE]常见错误[/TITLE][ERR]flicker 指的是“微弱且不稳定的光”，如果是像闪光灯那样很强很短促的闪光，要用 flash。[/ERR][ERR]不要把 flicker 和 flicker（拍动，如 flap）弄混，虽然发音有一点点像。[/ERR]"
+    ]
+  },
+  "w363": {
+    "word": "be dying to",
+    "images": {
+      "scene": ["infopic01/be_dying_to.webp"],
+      "card": ["wordpic01/be_dying_to.webp"]
+    },
+    "richDetail": [
+      "[TITLE]解释[/TITLE][DEF][EN]To want to do something very, very much; to be very excited and impatient about something (in the story, the kids really wanted to meet the new dragon).[/EN][CN]渴望；极想（书中指孩子们非常想见到新来的巨龙）。[/CN][POS]v. phr.[/POS][PH]/biː ˈdaɪɪŋ tu/[/PH][DU]The Dragon Masters were dying to see the new Hydra.|(原文例句)龙法师们非常渴望见到那头新来的海德拉。[/DU][DU]I am dying to find out what is inside the big box!|我极想知道那个大盒子里面是什么！[/DU][DU]The children were dying to go to the park and play.|孩子们非常想去公园玩。[/DU][/DEF][IMG]infopic01/be_dying_to.webp[/IMG]",
+      "[TITLE]常见用法[/TITLE][COLL][H]be dying to do sth|极想做某事[POS]v. phr.[/POS][/H][EX]I am dying to eat that chocolate cake!|我太想吃那个巧克力蛋糕了！[/EX][C]be dying for sth|极想要某物（后接名词）[/C][C]be dying for a drink|极渴/极想喝水[/C][/COLL]",
+      "[TITLE]额外例句[/TITLE][EX]After the long walk, I was dying for a glass of cold water.[POS]v. phr.[/POS]|走了很长一段路后，我极想喝一杯冷水。[/EX][EX]The fans were dying to meet the famous author.[POS]v. phr.[/POS]|粉丝们极想见到那位著名的作家。[/EX]",
+      "[TITLE]常见错误[/TITLE][ERR]这是一个夸张的说法（hyperbole），并不是真的要“死”，而是形容心情非常迫切。不要在非常正式的写作中过度使用。[/ERR][ERR]注意 dying 的拼写，它是 die 的 ing 形式，把 ie 变成了 y。[/ERR]"
+    ]
+  },
+  "w364": {
+    "word": "tame",
+    "images": {
+      "scene": ["infopic01/tame.webp"],
+      "card": ["wordpic01/tame.webp"]
+    },
+    "richDetail": [
+      "[TITLE]解释[/TITLE][DEF][EN]An animal that is not wild and is not afraid of people; to teach a wild animal to be calm and follow rules (used in the book when Petra said her Hydra was already not wild).[/EN][CN]驯服的；温顺的；驯化（书中指佩特拉说她的海德拉已经很听话了，不需要再训练）。[/CN][POS]adj. & v.[/POS][PH]/teɪm/[/PH][DU]My dragon is already tame.|(原文例句)我的龙已经很驯服了。[/DU][DU]The little rabbit is so tame that it eats from my hand.|这只小兔子很温顺，它会从我手里吃东西。[/DU][DU]It takes a long time to tame a wild wolf.|驯化一只野狼需要很长时间。[/DU][/DEF][IMG]infopic01/tame.webp[/IMG]",
+      "[TITLE]常见用法[/TITLE][COLL][H]a tame animal|一只驯服的动物[POS]adj.[/POS][/H][EX]Lulu has a tame bird that can sit on her shoulder.|露露有一只驯服的小鸟，可以坐在她的肩膀上。[/EX][C]tame rabbit|温顺的兔子[/C][/COLL][COLL][H]tame a dragon|驯服一头龙[POS]v.[/POS][/H][EX]The dragon master learned how to tame a fire dragon.|龙法师学会了如何驯服一头火龙。[/EX][C]tame a horse|驯马[/C][/COLL]",
+      "[TITLE]额外例句[/TITLE][EX]The circus trainer knows how to tame big lions.[POS]v.[/POS]|马戏团教练知道如何驯服大狮子。[/EX][EX]This dog looks scary, but it is actually very tame.[POS]adj.[/POS]|这只狗看起来很吓人，但实际上非常温顺。[/EX]",
+      "[TITLE]常见错误[/TITLE][ERR]tame 指的是“不凶、听话”，不要和 weak（虚弱）混淆。驯服的动物也可以非常有力量。[/ERR][ERR]注意 tame 既可以做动词（驯化），也可以做形容词（温顺的）。[/ERR]"
+    ]
+  },
+  "w365": {
+    "word": "take one's seat",
+    "images": {
+      "scene": ["infopic01/take_ones_seat.webp"],
+      "card": ["wordpic01/take_ones_seat.webp"]
+    },
+    "richDetail": [
+      "[TITLE]解释[/TITLE][DEF][EN]To sit down in a chair, especially one that is for you (used in the book when the king and the kids sat down for the feast).[/EN][CN]就座；坐下（书中指国王和孩子们坐下来开始参加宴会）。[/CN][POS]v. phr.[/POS][PH]/teɪk wʌnz siːt/[/PH][DU]The King took his seat at the head of the table.|(原文例句)国王在桌子的首位就座。[/DU][DU]Please take your seat, class is about to start.|请坐好，要开始上课了。[/DU][DU]The little girl took her seat and waited for the show.|小女孩坐到座位上等待表演开始。[/DU][/DEF][IMG]infopic01/take_ones_seat.webp[/IMG]",
+      "[TITLE]常见用法[/TITLE][COLL][H]take your seat|请坐/坐到你的位置上[POS]v. phr.[/POS][/H][EX]The teacher asked everyone to take their seats quickly.|老师要求大家快点坐好。[/EX][C]take a seat|坐下（较随意）[/C][C]return to one's seat|回到座位[/C][/COLL]",
+      "[TITLE]额外例句[/TITLE][EX]Everyone took their seats before the music began.[POS]v. phr.[/POS]|音乐开始前，大家都已就座。[/EX][EX]I will take my seat next to my best friend.[POS]v. phr.[/POS]|我要坐在我最好的朋友旁边。[/EX]",
+      "[TITLE]常见错误[/TITLE][ERR]one's 要根据说话的人变。如果是“我”，就是 take my seat；如果是“你”，就是 take your seat。[/ERR][ERR]take a seat 通常指随便找个地方坐，而 take one's seat 强调坐到属于自己的那个位置上。[/ERR]"
+    ]
+  },
+  "w366": {
+    "word": "olive",
+    "images": {
+      "scene": ["infopic01/olive.webp"],
+      "card": ["wordpic01/olive.webp"]
+    },
+    "richDetail": [
+      "[TITLE]解释[/TITLE][DEF][EN]A small, oval fruit that is usually green or black and tastes a bit salty (part of the meal in the book).[/EN][CN]橄榄（书中提到宴会上的一种食物）。[/CN][POS]n.[/POS][PH]/ˈɑːlɪv/[/PH][DU]There were bowls of salty olives on the table.|(原文例句)桌上摆着几碗咸橄榄。[/DU][DU]I like the black olives on my pizza.|我喜欢披萨上的黑橄榄。[/DU][DU]Olive oil is made from these small green fruits.|橄榄油是由这些绿色的小果子制成的。[/DU][/DEF][IMG]infopic01/olive.webp[/IMG]",
+      "[TITLE]常见用法[/TITLE][COLL][H]olive oil|橄榄油[POS]n.[/POS][/H][EX]Mom uses olive oil to make the salad taste good.|妈妈用橄榄油让沙拉更好吃。[/EX][C]green olives|绿橄榄[/C][C]black olives|黑橄榄[/C][/COLL]",
+      "[TITLE]额外例句[/TITLE][EX]He picked an olive out of the bowl and ate it.[POS]n.[/POS]|他从碗里拿了一颗橄榄吃了。[/EX][EX]Some olives are very sour, and some are salty.[POS]n.[/POS]|有些橄榄很酸，有些很咸。[/EX]",
+      "[TITLE]常见错误[/TITLE][ERR]olive 的开头字母 o 发音是短元音 /ɑː/，就像“啊”，嘴巴要张大。[/ERR][ERR]注意 olive 也可以用来形容一种颜色，叫“橄榄绿”。[/ERR]"
+    ]
+  },
+  "w367": {
+    "word": "chickpea",
+    "images": {
+      "scene": ["infopic01/chickpea.webp"],
+      "card": ["wordpic01/chickpea.webp"]
+    },
+    "richDetail": [
+      "[TITLE]解释[/TITLE][DEF][EN]A hard, round, light yellow seed that people eat as a vegetable (served at the king's feast in the book).[/EN][CN]鹰嘴豆（书中提到宴会上的一种食物，圆圆的）。[/CN][POS]n.[/POS][PH]/ˈtʃɪkpiː/[/PH][DU]The children ate bowls of hot chickpeas.|(原文例句)孩子们吃着几碗热腾腾的鹰嘴豆。[/DU][DU]Chickpeas are very healthy and have a lot of protein.|鹰嘴豆非常健康，含有大量的蛋白质。[/DU][DU]We can mash chickpeas to make a yummy dip.|我们可以把鹰嘴豆捣碎做成美味的蘸酱。[/DU][/DEF][IMG]infopic01/chickpea.webp[/IMG]",
+      "[TITLE]常见用法[/TITLE][COLL][H]chickpea salad|鹰嘴豆沙拉[POS]n.[/POS][/H][EX]I had a colorful chickpea salad for lunch.|我中午吃了一份色彩丰富的鹰嘴豆沙拉。[/EX][C]dried chickpeas|干鹰嘴豆[/C][/COLL]",
+      "[TITLE]额外例句[/TITLE][EX]Do you want to try some roasted chickpeas?[POS]n.[/POS]|你想尝尝烤鹰嘴豆吗？[/EX][EX]My grandma puts chickpeas in her vegetable soup.[POS]n.[/POS]|我奶奶在她的蔬菜汤里放了鹰嘴豆。[/EX]",
+      "[TITLE]常见错误[/TITLE][ERR]chickpea 是由 chick（小鸡）和 pea（向豆）组成的，因为它的形状有点像小鸡的脑袋。不要只写 chick 或 pea。[/ERR]"
+    ]
+  },
+  "w368": {
+    "word": "fig",
+    "images": {
+      "scene": ["infopic01/fig.webp"],
+      "card": ["wordpic01/fig.webp"]
+    },
+    "richDetail": [
+      "[TITLE]解释[/TITLE][DEF][EN]A soft, sweet fruit that has many tiny seeds inside and a thin purple or green skin (a dessert fruit in the book).[/EN][CN]无花果（书中提到的宴会水果）。[/CN][POS]n.[/POS][PH]/fɪɡ/[/PH][DU]They finished their meal with sweet, purple figs.|(原文例句)他们用甜甜的紫色无花果结束了这顿饭。[/DU][DU]A fresh fig tastes very sweet and soft.|新鲜的无花果吃起来又甜又软。[/DU][DU]The little bird is eating a ripe fig on the tree.|小鸟正在吃树上成熟的无花果。[/DU][/DEF][IMG]infopic01/fig.webp[/IMG]",
+      "[TITLE]常见用法[/TITLE][COLL][H]dried figs|无花果干[POS]n.[/POS][/H][EX]Dried figs are a very chewy and sweet snack.|无花果干是一种很有嚼劲且甜甜的零食。[/EX][C]fig tree|无花果树[/C][C]sweet figs|甜无花果[/C][/COLL]",
+      "[TITLE]额外例句[/TITLE][EX]I saw a big fig tree in the backyard.[POS]n.[/POS]|我在后院看到了一棵大无花果树。[/EX][EX]The inside of a fig is full of tiny, crunchy seeds.[POS]n.[/POS]|无花果的里面全是细小的、脆脆的籽。[/EX]",
+      "[TITLE]常见错误[/TITLE][ERR]注意拼写，不要和 pig（猪）搞混了，虽然只有一个字母之差。[/ERR]"
+    ]
+  },
+  "w369": {
+    "word": "run in one's family",
+    "images": {
+      "scene": ["infopic01/run_in_ones_family.webp"],
+      "card": ["wordpic01/run_in_ones_family.webp"]
+    },
+    "richDetail": [
+      "[TITLE]解释[/TITLE][DEF][EN]When many people in the same family have the same quality, skill, or feature (used in the book when Petra says many people in her family have magic).[/EN][CN]家族遗传；世代相传（书中指佩特拉说她们家族里的人都有魔法）。[/CN][POS]v. phr.[/POS][PH]/rʌn ɪn wʌnz ˈfæmɪli/[/PH][DU]Magic runs in my family.|(原文例句)魔法是我们家族遗传的。[/DU][DU]Being good at music runs in their family.|擅长音乐是他们家族遗传的。[/DU][DU]Tallness runs in my family; my dad and grandpa are both very tall.|高个子是我们家族遗传的；我爸爸和爷爷都很高。[/DU][/DEF][IMG]infopic01/run_in_ones_family.webp[/IMG]",
+      "[TITLE]常见用法[/TITLE][COLL][H]sth runs in the family|某物是家族遗传的[POS]v. phr.[/POS][/H][EX]Blue eyes run in the family.|蓝眼睛是家族遗传的。[/EX][C]artistic talent runs in the family|艺术天赋是家族遗传的[/C][/COLL]",
+      "[TITLE]额外例句[/TITLE][EX]Curly hair runs in her family.[POS]v. phr.[/POS]|卷发是她家遗传的。[/EX][EX]I hope being a good cook runs in my family![POS]v. phr.[/POS]|我希望厨艺好也是我家的遗传！[/EX]",
+      "[TITLE]常见错误[/TITLE][ERR]这里的 run 不是“跑步”的意思，而是指某种特征像河流一样在家族成员中“流传”。[/ERR][ERR]注意 one's 要根据指代的对象变化（my, your, his, her, their）。[/ERR]"
+    ]
+  },
+  "w370": {
+    "word": "offer",
+    "images": {
+      "scene": ["infopic01/offer.webp"],
+      "card": ["wordpic01/offer.webp"]
+    },
+    "richDetail": [
+      "[TITLE]解释[/TITLE][DEF][EN]To ask someone if they would like to have something or if they want you to do something (in the book, the king provided a meal for the kids).[/EN][CN]提议；提供（书中指国王为孩子们准备并提供了一顿大餐）。[/CN][POS]v. & n.[/POS][PH]/ˈɔːfər/[/PH][DU]King Roland offered them a great feast.|(原文例句)罗兰国王为他们提供了一顿丰盛的宴会。[/DU][DU]He offered me his umbrella when it started to rain.|开始下雨时，他主动把雨伞借给了我。[/DU][DU]I offered to help my mom clean the room.|我主动提出帮妈妈打扫房间。[/DU][/DEF][IMG]infopic01/offer.webp[/IMG]",
+      "[TITLE]常见用法[/TITLE][COLL][H]offer to do sth|主动提出做某事[POS]v.[/POS][/H][EX]Drake offered to feed the dragons.|德雷克主动提出去喂龙。[/EX][C]offer sb sth|给某人提供某物[/C][C]make an offer|提出建议[/C][/COLL]",
+      "[TITLE]额外例句[/TITLE][EX]The teacher offered some stickers to the students.[POS]v.[/POS]|老师给学生们提供了一些贴纸。[/EX][EX]Thank you for your kind offer of help.[POS]n.[/POS]|谢谢你热心提供的帮助。[/EX]",
+      "[TITLE]常见错误[/TITLE][ERR]offer 强调“主动问别人要不要”，如果是强迫给别人，就不能用 offer。[/ERR][ERR]注意用法：offer sb sth（给某人某物）或者 offer to do sth（主动提出做某事）。[/ERR]"
+    ]
+  },
+  "w371": {
+    "word": "fit in",
+    "images": {
+      "scene": ["infopic01/fit_in.webp"],
+      "card": ["wordpic01/fit_in.webp"]
+    },
+    "richDetail": [
+      "[TITLE]解释[/TITLE][DEF][EN]To feel that you belong to a group and are accepted by them (used in the book when Petra wants to be friends with the other Dragon Masters).[/EN][CN]融入；适应（书中指佩特拉想和其他龙法师打成一片，成为他们中的一员）。[/CN][POS]v. phr.[/POS][PH]/fɪt ɪn/[/PH][DU]Petra was trying very hard to fit in.|(原文例句)佩特拉正努力融入大家。[/DU][DU]It's hard to fit in when you go to a new school.|去新学校时，融入新环境挺难的。[/DU][DU]The new dragon finally fit in with the other dragons.|新来的龙终于和其它的龙打成了一片。[/DU][/DEF][IMG]infopic01/fit_in.webp[/IMG]",
+      "[TITLE]常见用法[/TITLE][COLL][H]fit in with sb/sth|与...相协调/融入...[POS]v. phr.[/POS][/H][EX]She fits in well with her new classmates.|她和新同学相处得很融洽。[/EX][C]try to fit in|努力融入[/C][C]fit in perfectly|完美融入[/C][/COLL]",
+      "[TITLE]额外例句[/TITLE][EX]I wore a dragon costume to fit in at the party.[POS]v. phr.[/POS]|我穿了龙的装扮，为了融入派对的氛围。[/EX][EX]Everyone was so kind that I fit in right away.[POS]v. phr.[/POS]|大家都非常友好，所以我马上就适应了。[/EX]",
+      "[TITLE]常见错误[/TITLE][ERR]fit in 侧重于“心理上的归属感”；如果是指衣服尺寸合适，只用 fit 即可（This shirt fits me）。[/ERR]"
+    ]
+  },
+  "w372": {
+    "word": "rush",
+    "images": {
+      "scene": ["infopic01/rush.webp"],
+      "card": ["wordpic01/rush.webp"]
+    },
+    "richDetail": [
+      "[TITLE]解释[/TITLE][DEF][EN]To move or do something very quickly because you are in a hurry (used in the book when Petra moved quickly to her dragon, Chime).[/EN][CN]冲；奔；急速行动（书中指佩特拉急忙冲向她的龙“奇姆”）。[/CN][POS]v. & n.[/POS][PH]/rʌʃ/[/PH][DU]Petra rushed to Chime's side.|(原文例句)佩特拉冲到了奇姆身边。[/DU][DU]Don't rush, or you might trip and fall.|别跑太快，否则你可能会绊倒。[/DU][DU]I had to rush to catch the school bus this morning.|今天早上我不得不飞奔去赶校车。[/DU][/DEF][IMG]infopic01/rush.webp[/IMG]",
+      "[TITLE]常见用法[/TITLE][COLL][H]rush to do sth|急忙去做某事[POS]v.[/POS][/H][EX]The children rushed to open their birthday presents.|孩子们急忙跑去拆他们的生日礼物。[/EX][C]rush to the hospital|急送医院[/C][C]rush to help|急忙去帮忙[/C][/COLL][COLL][H]in a rush|匆忙地[POS]n.[/POS][/H][EX]Slow down! Why are you in such a rush?|慢一点！你为什么这么匆忙？[/EX][C]morning rush|早高峰[/C][/COLL]",
+      "[TITLE]额外例句[/TITLE][EX]Water rushed out of the broken pipe.[POS]v.[/POS]|水从破裂的水管中喷涌而出。[/EX][EX]I am in a rush to get home before it rains.[POS]n.[/POS]|我正赶着在下雨前回家。[/EX][EX]The dragon rushed through the sky like a green flash.[POS]v.[/POS]|巨龙像一道绿色的闪光掠过天空。[/EX]",
+      "[TITLE]常见错误[/TITLE][ERR]rush 表示“冲”的时候是动词，表示“匆忙”的时候常作为名词短语 in a rush。[/ERR][ERR]不要在 rush 后面加 too many 介词，通常直接说 rush to (地点) 或 rush to do (动作)。[/ERR]"
+    ]
+  },
+  "w373": {
+    "word": "attach",
+    "images": {
+      "scene": ["infopic01/attach.webp"],
+      "card": ["wordpic01/attach.webp"]
+    },
+    "richDetail": [
+      "[TITLE]解释[/TITLE][DEF][EN]To join or fasten one thing to another thing (used in the book to describe how Chime's four heads are joined to its one body).[/EN][CN]连接；系；贴；附（书中描述奇姆的四个头是怎么连在一个身体上的）。[/CN][POS]v.[/POS][PH]/əˈtætʃ/[/PH][DU]Four long necks were attached to one big body.|(原文例句)四条长长的脖子连接在一个巨大的身体上。[/DU][DU]I will attach a label to my school bag.|我要在书包上贴一个标签。[/DU][DU]Can you help me attach these two train cars together?|你能帮我把这两节火车车厢连在一起吗？[/DU][/DEF][IMG]infopic01/attach.webp[/IMG]",
+      "[TITLE]常见用法[/TITLE][COLL][H]attach A to B|把A连接到B上[POS]v.[/POS][/H][EX]You should attach the leash to the dog's collar.|你应该把牵引绳系在狗狗的项圈上。[/EX][C]attach a photo|附上一张照片[/C][C]be attached to...|依恋.../连接在...上[/C][/COLL]",
+      "[TITLE]额外例句[/TITLE][EX]He used glue to attach the wing back onto the toy airplane.[POS]v.[/POS]|他用胶水把机翼粘回到玩具飞机上。[/EX][EX]The little girl is very attached to her teddy bear.[POS]v.[/POS]|那个小女孩非常依恋她的泰迪熊（这里的attached指情感上的连接）。[/EX]",
+      "[TITLE]常见错误[/TITLE][ERR]attach 后面通常接 to，不要用 with。错误：attach with the wall。正确：attach to the wall。[/ERR]"
+    ]
+  },
+  "w374": {
+    "word": "snort",
+    "images": {
+      "scene": ["infopic01/snort.webp"],
+      "card": ["wordpic01/snort.webp"]
+    },
+    "richDetail": [
+      "[TITLE]解释[/TITLE][DEF][EN]To make a loud sound by blowing air out through your nose (used in the book when the dragon Zeno made a sound because he was sick or angry).[/EN][CN]喷鼻息；哼着鼻子响（书中指毒龙泽诺因为生病或生气而喷出响亮的鼻息）。[/CN][POS]v. & n.[/POS][PH]/snɔːrt/[/PH][DU]Zeno snorted again.|(原文例句)泽诺又喷了一次鼻息。[/DU][DU]The horse snorted when it saw the grass.|马看到草时哼了一声鼻子。[/DU][DU]He gave a little snort of laughter.|他轻蔑地（或好笑地）哼了一声。[/DU][/DEF][IMG]infopic01/snort.webp[/IMG]",
+      "[TITLE]常见用法[/TITLE][COLL][H]snort with anger/laughter|愤怒地/笑嘻嘻地喷鼻息[POS]v.[/POS][/H][EX]The bull snorted with anger before it started to run.|公牛在奔跑前愤怒地喷着鼻息。[/EX][C]a loud snort|一声响亮的喷鼻息[/C][/COLL]",
+      "[TITLE]额外例句[/TITLE][EX]I heard a pig snort in the mud.[POS]v.[/POS]|我听到猪在泥地里哼哧哼哧地叫。[/EX][EX]The dragon's snort blew a cloud of green smoke into the air.[POS]n.[/POS]|巨龙的鼻息向空中喷出一团绿烟。[/EX]",
+      "[TITLE]常见错误[/TITLE][ERR]snort 是通过鼻子发出的声音。不要和 sneeze（打喷嚏）混淆，打喷嚏通常是控制不住的，而喷鼻息通常是动物表达情绪的方式。[/ERR]"
+    ]
+  },
+  "w375": {
+    "word": "urge",
+    "images": {
+      "scene": ["infopic01/urge.webp"],
+      "card": ["wordpic01/urge.webp"]
+    },
+    "richDetail": [
+      "[TITLE]解释[/TITLE][DEF][EN]To try very hard to persuade someone to do something (used in the book when Drake was trying to get the other Dragon Masters to act).[/EN][CN]催促；力劝；敦促（书中指德雷克努力劝说其他龙法师采取行动）。[/CN][POS]v. & n.[/POS][PH]/ɜːrdʒ/[/PH][DU]\"We have to find Petra!\" Drake urged.|(原文例句)“我们必须找到佩特拉！”德雷克催促道。[/DU][DU]My teacher urged me to practice my piano every day.|老师敦促我每天练习钢琴。[/DU][DU]I had a sudden urge to eat some chocolate.|我突然很想吃巧克力。[/DU][/DEF][IMG]infopic01/urge.webp[/IMG]",
+      "[TITLE]常见用法[/TITLE][COLL][H]urge sb to do sth|催促某人做某事[POS]v.[/POS][/H][EX]The coach urged the players to run faster.|教练催促队员们跑快点。[/EX][C]urge someone on|为某人加油/鼓劲[/C][/COLL]",
+      "[TITLE]额外例句[/TITLE][EX]He urged his horse to go faster to win the race.[POS]v.[/POS]|他催促他的马跑快点以赢得比赛。[/EX][EX]Mom urged us to finish our dinner before the movie started.[POS]v.[/POS]|妈妈催我们在电影开始前吃完晚饭。[/EX]",
+      "[TITLE]常见错误[/TITLE][ERR]urge 的程度比 ask（问）或 tell（告诉）要强，带有一种“非常希望对方快点做”的急迫感。[/ERR]"
+    ]
+  },
+  "w376": {
+    "word": "admit",
+    "images": {
+      "scene": ["infopic01/admit.webp"],
+      "card": ["wordpic01/admit.webp"]
+    },
+    "richDetail": [
+      "[TITLE]解释[/TITLE][DEF][EN]To agree that something is true, especially when you are unhappy or embarrassed about it (used in the book when Petra had to agree she was wrong).[/EN][CN]承认（书中指佩特拉不得不承认自己错了）。[/CN][POS]v.[/POS][PH]/ədˈmɪt/[/PH][DU]\"You're right,\" Petra admitted.|(原文例句)“你是对的，”佩特拉承认道。[/DU][DU]He finally admitted that he ate the last cookie.|他终于承认是他吃了最后一块饼干。[/DU][DU]I have to admit, this dragon is much bigger than I thought.|我必须承认，这头龙比我想象的要大得多。[/DU][/DEF][IMG]infopic01/admit.webp[/IMG]",
+      "[TITLE]常见用法[/TITLE][COLL][H]admit doing sth|承认做了某事[POS]v.[/POS][/H][EX]She admitted breaking the vase by accident.|她承认不小心打碎了花瓶。[/EX][C]admit a mistake|承认错误[/C][C]admit that...|承认...[/C][/COLL]",
+      "[TITLE]额外例句[/TITLE][EX]The ticket admits one person to the dragon show.[POS]v.[/POS]|这张票准许一人观看恐龙展（admit也有“准许进入”的意思）。[/EX][EX]It takes courage to admit when you are wrong.[POS]v.[/POS]|承认错误需要勇气。[/EX]",
+      "[TITLE]常见错误[/TITLE][ERR]admit 后面接动作时要用动词的 -ing 形式（admit doing），而不是 to do。错误：admit to break。正确：admit breaking。[/ERR]"
+    ]
+  },
+  "w377": {
+    "word": "fever",
+    "images": {
+      "scene": ["infopic01/fever.webp"],
+      "card": ["wordpic01/fever.webp"]
+    },
+    "richDetail": [
+      "[TITLE]解释[/TITLE][DEF][EN]When your body temperature is higher than normal because you are sick (used in the book when Zeno the dragon was very hot because he was ill).[/EN][CN]发烧；热度（书中指毒龙泽诺因为生病，身体变得很烫）。[/CN][POS]n.[/POS][PH]/ˈfiːvər/[/PH][DU]The dragon had a very high fever.|(原文例句)这头龙发了高烧。[/DU][DU]If you have a fever, you should stay in bed and rest.|如果你发烧了，你应该卧床休息。[/DU][DU]The doctor used a thermometer to check my fever.|医生用体温计检查我是否发烧。[/DU][/DEF][IMG]infopic01/fever.webp[/IMG]",
+      "[TITLE]常见用法[/TITLE][COLL][H]have a fever|发烧[POS]n.[/POS][/H][EX]Poor Tim has a fever and a sore throat.|可怜的蒂姆发烧了，而且喉咙痛。[/EX][C]run a fever|发烧（持续）[/C][C]fever dream|热梦/幻梦[/C][/COLL]",
+      "[TITLE]额外例句[/TITLE][EX]My forehead felt hot because I had a slight fever.[POS]n.[/POS]|我的额头感觉很烫，因为我有点轻微发烧。[/EX][EX]Drinking lots of water can help when you have a fever.[POS]n.[/POS]|发烧时多喝水会有帮助。[/EX]",
+      "[TITLE]常见错误[/TITLE][ERR]不要说 feel a fever，通常说 have a fever 或 my temperature is high。[/ERR]"
+    ]
+  },
+  "w378": {
+    "word": "befriend",
+    "images": {
+      "scene": ["infopic01/befriend.webp"],
+      "card": ["wordpic01/befriend.webp"]
+    },
+    "richDetail": [
+      "[TITLE]解释[/TITLE][DEF][EN]To become a friend to someone (used in the book when the kids wanted to make friends with the new dragon).[/EN][CN]和...交朋友（书中指孩子们想和新来的龙交朋友）。[/CN][POS]v.[/POS][PH]/bɪˈfrend/[/PH][DU]They tried to befriend the poison dragon.|(原文例句)他们试图和这头毒龙交朋友。[/DU][DU]It is nice to befriend the new student in our class.|和班里的新同学交朋友是一件好事。[/DU][DU]The boy befriended a stray kitten in the park.|小男孩在公园里和一只流浪猫交了朋友。[/DU][/DEF][IMG]infopic01/befriend.webp[/IMG]",
+      "[TITLE]常见用法[/TITLE][COLL][H]befriend someone|和某人交朋友[POS]v.[/POS][/H][EX]He decided to befriend the lonely giant.|他决定和那个孤独的巨人交朋友。[/EX][C]befriend a dragon|和龙交朋友[/C][/COLL]",
+      "[TITLE]额外例句[/TITLE][EX]She befriended the old woman who lived next door.[POS]v.[/POS]|她和住在隔壁的老奶奶交了朋友。[/EX][EX]In the story, the mouse befriended the lion.[POS]v.[/POS]|故事中，老鼠和狮子交了朋友。[/EX]",
+      "[TITLE]常见错误[/TITLE][ERR]befriend 是动词，意思是“去和某人交朋友”；而 make friends with 是常用的短语，意思一样。注意不要说 befriend with someone，直接说 befriend someone。[/ERR]"
+    ]
+  },
+  "w379": {
+    "word": "chime",
+    "images": {
+      "scene": ["infopic01/chime.webp"],
+      "card": ["wordpic01/chime.webp"]
+    },
+   "richDetail": [
+      "[TITLE] 解释 [/TITLE][DEF][EN]To speak in a friendly way, adding a comment or idea to what someone else is saying (v.); a pleasant ringing sound (n.) (used in Chapter 7 of Dragon Masters 05, Ana added her idea when the kids talked about how to befriend the hydra)|[/EN][CN]（动词）插嘴；插话；附和着说；（名词）叮当声；钟声（出自《驯龙大师5：毒龙之歌》第七章，指安娜在大家讨论如何和九头蛇打好关系时，随口提出了自己的想法）[/CN][POS]v./n.[/POS][PH]/tʃaɪm/（英美）[/PH][DU]When the Dragon Masters talked about how to help Petra connect with the hydra, Ana chimed in. \"You could give her a name.\"|当驯龙大师们讨论如何帮佩特拉和九头蛇建立联结时，安娜插嘴道：“你可以给她起个名字。”[/DU][DU]When Bo suggested polishing the hydra's scales, Rori chimed in with her own idea of rubbing its chin.|博提议给九头蛇擦拭鳞片时，罗莉也插嘴提出了给它挠下巴的想法。[/DU][/DEF][IMG]infopic01/chime.webp[/IMG]",
+      "[TITLE] 常见用法 [/TITLE][COLL][H]chime in|插嘴；插话[POS]v. 短语[/POS][/H][EX]If you have a good idea about training the dragon, don't be afraid to chime in.|如果你对训练龙有好主意，别害怕大胆插嘴说出来。[/EX][C]chime in with sth|插嘴提出某事/附和某事[/C][C]a chime of bells|一阵钟声[/C][/COLL]",
+      "[TITLE] 常见错误 [/TITLE][ERR]作动词“插嘴”讲时，过去式/过去分词为**chimed**，直接加ed，不要写成chimeded或chimeed。[/ERR][ERR]chime in是固定短语，表“插嘴”时不可省略in，错误：Ana chimed. \"You could give her a name.\"，正确：Ana chimed in. \"You could give her a name.\"。[/ERR][ERR]作名词表“声音”时，为可数名词，表“一阵叮当声”用a chime of+可数名词复数，不要直接用a chime of bell。[/ERR]"
+    ]
+  },
+  "w380": {
+    "word": "force",
+    "images": {
+      "scene": ["infopic01/force.webp"],
+      "card": ["wordpic01/force.webp"]
+    },
+    "richDetail": [
+      "[TITLE]解释[/TITLE][DEF][EN]To make someone do something they do not want to do; also, physical power or strength (used in the book when magic was pushing something).[/EN][CN]强迫；力量；武力（书中指魔法的力量或强迫某事发生）。[/CN][POS]v. & n.[/POS][PH]/fɔːrs/[/PH][DU]The magic force was too strong to stop.|(原文例句)这种魔法力量太强了，无法停止。[/DU][DU]You shouldn't force your sister to give you her toy.|你不应该强迫你妹妹把玩具给你。[/DU][DU]He used all his force to push the heavy door open.|他用尽全身力气推开了那扇沉重的门。[/DU][/DEF][IMG]infopic01/force.webp[/IMG]",
+      "[TITLE]常见用法[/TITLE][COLL][H]force sb to do sth|强迫某人做某事[POS]v.[/POS][/H][EX]The rain forced us to stay inside the cave.|雨水迫使我们留在洞穴里。[/EX][C]air force|空军[/C][C]by force|靠武力/强行[/C][/COLL]",
+      "[TITLE]额外例句[/TITLE][EX]The wind blew with great force during the storm.[POS]n.[/POS]|暴风雨中风力非常大。[/EX][EX]Don't force the key, or it might break.[POS]v.[/POS]|别用力拧钥匙，否则它可能会断。[/EX]",
+      "[TITLE]常见错误[/TITLE][ERR]force 作为动词时，后面通常接 to do（force someone to do something）。[/ERR]"
+    ]
+  },
+  "w381": {
+    "word": "terrify",
+    "images": {
+      "scene": ["infopic01/terrify.webp"],
+      "card": ["wordpic01/terrify.webp"]
+    },
+    "richDetail": [
+      "[TITLE]解释[/TITLE][DEF][EN]To make someone feel very, very scared (used in the book when the dragon's song made the people feel frightened).[/EN][CN]使恐怖；惊吓（书中指毒龙的歌声让人们感到极其恐惧）。[/CN][POS]v.[/POS][PH]/ˈterɪfaɪ/[/PH][DU]The poison dragon's song would terrify the town.|(原文例句)毒龙的歌声会惊吓到全镇的人。[/DU][DU]Spiders really terrify me!|蜘蛛真的吓死我了！[/DU][DU]The loud thunder terrified the little puppy.|巨大的雷声吓坏了小狗。[/DU][/DEF][IMG]infopic01/terrify.webp[/IMG]",
+      "[TITLE]常见用法[/TITLE][COLL][H]be terrified of sth|对某事感到极其恐惧[POS]v.[/POS][/H][EX]I am terrified of heights.|我非常恐高。[/EX][C]terrified scream|恐怖的尖叫[/C][/COLL]",
+      "[TITLE]额外例句[/TITLE][EX]The ghost story terrified all the kids at the party.[POS]v.[/POS]|鬼故事吓坏了派对上所有的孩子。[/EX][EX]She was terrified that she might lose her dragon.[POS]v.[/POS]|她极其害怕会失去她的龙。[/EX]",
+      "[TITLE]常见错误[/TITLE][ERR]分清 -ing 和 -ed：terrifying 形容“事物让人感到恐怖”（The movie is terrifying）；terrified 形容“人感到恐怖”（I am terrified）。[/ERR]"
+    ]
+  },
+  "w382": {
+    "word": "expect",
+    "images": {
+      "scene": ["infopic01/expect.webp"],
+      "card": ["wordpic01/expect.webp"]
+    },
+    "richDetail": [
+      "[TITLE]解释[/TITLE][DEF][EN]To think that something will happen or that someone will arrive (used in the book when the kids were waiting for something to happen).[/EN][CN]预料；期待；认为某事会发生（书中指孩子们预料或等待某事发生）。[/CN][POS]v.[/POS][PH]/ɪkˈspekt/[/PH][DU]Drake didn't expect the dragon to sing.|(原文例句)德雷克没料到这头龙会唱歌。[/DU][DU]We expect rain this afternoon, so take an umbrella.|我们预计今天下午会下雨，所以带把伞。[/DU][DU]I expect you to finish your homework on time.|我要求（预料）你按时完成作业。[/DU][/DEF][IMG]infopic01/expect.webp[/IMG]",
+      "[TITLE]常见用法[/TITLE][COLL][H]expect sb to do sth|预料/要求某人做某事[POS]v.[/POS][/H][EX]Mom expects me to be home by five o'clock.|妈妈要求我五点前回到家。[/EX][C]as expected|正如所料[/C][C]expect a baby|怀孕/期待宝宝出生[/C][/COLL]",
+      "[TITLE]额外例句[/TITLE][EX]I am expecting a package from my grandma today.[POS]v.[/POS]|我今天在等奶奶寄来的一个包裹。[/EX][EX]The dragon masters expected a long journey.[POS]v.[/POS]|龙法师们预料到这将是一段漫长的旅程。[/EX]",
+      "[TITLE]常见错误[/TITLE][ERR]expect 是“认为会发生”，而 wait 是“等在那里”。不要混淆：I am expecting for you (错误)，应该是 I am waiting for you。[/ERR]"
+    ]
+  },
+  "w383": {
+    "word": "in time",
+    "images": {
+      "scene": ["infopic01/in_time.webp"],
+      "card": ["wordpic01/in_time.webp"]
+    },
+    "richDetail": [
+      "[TITLE]解释[/TITLE][DEF][EN]Early enough; not late (used in the book when the kids needed to stop the dragon before something bad happened).[/EN][CN]及时；在时间还没到之前（书中指孩子们需要在坏事发生前及时阻止巨龙）。[/CN][POS]phr.[/POS][PH]/ɪn taɪm/[/PH][DU]We have to reach the town in time.|(原文例句)我们必须及时赶到镇上。[/DU][DU]I arrived at the station just in time to catch the train.|我刚好及时赶到车站坐上了火车。[/DU][DU]If we leave now, we will be there in time for dinner.|如果我们现在出发，就能赶上吃晚饭。[/DU][/DEF][IMG]infopic01/in_time.webp[/IMG]",
+      "[TITLE]常见用法[/TITLE][COLL][H]just in time|刚好及时[POS]phr.[/POS][/H][EX]The superhero arrived just in time to save the day!|超级英雄刚好及时赶到，解救了危机！[/EX][C]in time for sth|及时赶上某事[/C][/COLL]",
+      "[TITLE]额外例句[/TITLE][EX]He finished the test just in time before the bell rang.[POS]phr.[POS]|他在铃响前刚好及时完成了考试。[/EX][EX]Will the magic work in time to save the dragon?[POS]phr.[POS]|魔法能及时起作用救下那头龙吗？[/EX]",
+      "[TITLE]常见错误[/TITLE][ERR]区分 in time 和 on time：on time 是“准时”（比如9点整）；in time 是“及时/来得及”（比如在某事发生前赶到）。[/ERR]"
+    ]
+  },
+  "w384": {
+    "word": "eagerly",
+    "images": {
+      "scene": ["infopic01/eagerly.webp"],
+      "card": ["wordpic01/eagerly.webp"]
+    },
+    "richDetail": [
+      "[TITLE]解释[/TITLE][DEF][EN]In a way that shows you are very excited and want to do something very much (used in the book when the kids were excited to help).[/EN][CN]渴望地；热切地；兴奋地（书中指孩子们非常兴奋且迫切地想去帮忙）。[/CN][POS]adv.[/POS][PH]/ˈiːɡərli/[/PH][DU]\"I can help!\" Petra said eagerly.|(原文例句)“我可以帮忙！”佩特拉迫切地说道。[/DU][DU]The children waited eagerly for the magician to start.|孩子们热切地等待着魔术师开始表演。[/DU][DU]The puppy wagged its tail eagerly when it saw the ball.|小狗看到球时兴奋地摇着尾巴。[/DU][/DEF][IMG]infopic01/eagerly.webp[/IMG]",
+      "[TITLE]常见用法[/TITLE][COLL][H]wait eagerly|热切等待[POS]adv.[/POS][/H][EX]We are all waiting eagerly for the summer holidays.|我们都在热切地等待暑假的到来。[/EX][C]eagerly accept|欣然接受[/C][/COLL]",
+      "[TITLE]额外例句[/TITLE][EX]He eagerly opened the envelope to see his grade.[POS]adv.[POS]|他迫不及待地打开信封看他的成绩。[/EX][EX]The dragon eagerly ate the magical herbs.[POS]adv.[POS]|巨龙贪婪地（迫切地）吃下了魔法草药。[/EX]",
+      "[TITLE]常见错误[/TITLE][ERR]eagerly 是副词，用来描述动作；形容词是 eager（He is eager to help）。[/ERR]"
+    ]
+  },
+  "w385": {
+    "word": "at stake",
+    "images": {
+      "scene": ["infopic01/at_stake.webp"],
+      "card": ["wordpic01/at_stake.webp"]
+    },
+    "richDetail": [
+      "[TITLE]解释[/TITLE][DEF][EN]In a situation where something important might be lost or damaged (used in the book to show that the whole town was in danger).[/EN][CN]在危急关头；存亡攸关（书中指整个小镇都处于危险之中，可能会出事）。[/CN][POS]phr.[/POS][PH]/æt steɪk/[/PH][DU]The lives of the people were at stake.|(原文例句)人们的生命处于危险之中。[/DU][DU]We must win this game; our team's reputation is at stake!|我们必须赢下这场比赛；我们队的声誉在此一举！[/DU][DU]With so much at stake, we had to be very careful.|由于事关重大，我们必须非常小心。[/DU][/DEF][IMG]infopic01/at_stake.webp[/IMG]",
+      "[TITLE]常见用法[/TITLE][COLL][H]have a lot at stake|有很大的利害关系[POS]phr.[/POS][/H][EX]The king had a lot at stake if the dragon didn't stop singing.|如果巨龙不停止歌唱，国王会面临很大的损失。[/EX][C]put sth at stake|使...处于危险中[/C][/COLL]",
+      "[TITLE]额外例句[/TITLE][EX]The future of the dragon kingdom is at stake.[POS]phr.[POS]|龙之国的未来正处于存亡时刻。[/EX][EX]Is his job at stake because of the mistake?[POS]phr.[POS]|他的工作会因为这个错误而丢掉吗？[/EX]",
+      "[TITLE]常见错误[/TITLE][ERR]at stake 是一个固定搭配，意思是“处于危险/输赢的关键点”。不要写成 at stick。[/ERR]"
+    ]
+  },
+  "w386": {
+    "word": "chant",
+    "images": {
+      "scene": ["infopic01/chant.webp"],
+      "card": ["wordpic01/chant.webp"]
+    },
+    "richDetail": [
+      "[TITLE]解释[/TITLE][DEF][EN]To say or sing words over and over again in a steady rhythm, like a magic spell (used in the book when Griffith or the kids were using magic).[/EN][CN]吟唱；反复说（或唱）；咏唱（书中指格里菲斯或孩子们念动魔法咒语）。[/CN][POS]v. & n.[/POS][PH]/tʃænt/[/PH][DU]The wizard began to chant the spell.|(原文例句)巫师开始吟唱咒语。[/DU][DU]The fans in the stadium chanted the name of their team.|体育场里的球迷反复呼喊着他们球队的名字。[/DU][DU]A soft chant could be heard from the ancient temple.|从那座古老的寺庙里传来了轻柔的吟唱声。[/DU][/DEF][IMG]infopic01/chant.webp[/IMG]",
+      "[TITLE]常见用法[/TITLE][COLL][H]chant a spell|念咒语[POS]v.[/POS][/H][EX]The dragon master chanted a spell to calm the dragon.|龙法师念了一段咒语来让龙安静下来。[/EX][C]peaceful chant|宁静的歌咏[/C][/COLL]",
+      "[TITLE]额外例句[/TITLE][EX]The children chanted \"One, two, three!\" as they jumped rope.[POS]v.[POS]|孩子们跳绳时反复喊着“一，二，三！”。[/EX][EX]I like the rhythmic chant of the monks.[POS]n.[POS]|我喜欢僧侣们有节奏的咏唱。[/EX]",
+      "[TITLE]常见错误[/TITLE][ERR]chant 和 sing 有点不同。sing 是唱歌，有旋律；chant 更像是有节奏地反复说，通常比较单调。[/ERR]"
+    ]
+  },
+  "w387": {
+    "word": "mob",
+    "images": {
+      "scene": ["infopic01/mob.webp"],
+      "card": ["wordpic01/mob.webp"]
+    },
+    "richDetail": [
+      "[TITLE]解释[/TITLE][DEF][EN]A large crowd of people, especially one that is noisy, angry, or excited (used in the book when the people in the town were upset).[/EN][CN]暴民；乱民；一大群人（书中指小镇上愤怒而混乱的一群人）。[/CN][POS]n. & v.[/POS][PH]/mɑːb/[/PH][DU]An angry mob gathered in front of the palace.|(原文例句)一群愤怒的民众聚集在宫殿前。[/DU][DU]The famous singer was mobbed by fans at the airport.|那位著名的歌手在机场被粉丝们围住了。[/DU][DU]The mob of birds flew toward the crumbs on the ground.|一群鸟儿飞向地上的面包屑。[/DU][/DEF][IMG]infopic01/mob.webp[/IMG]",
+      "[TITLE]常见用法[/TITLE][COLL][H]be mobbed by sb|被某人围攻/围堵[POS]v.[POS][/H][EX]The ice cream truck was mobbed by hungry kids.|冰淇淋车被一群饥饿的孩子围住了。[/EX][C]angry mob|愤怒的群众[/C][/COLL]",
+      "[TITLE]额外例句[/TITLE][EX]Police had to control the mob during the protest.[POS]n.[POS]|警察必须在抗议活动中控制混乱的人群。[/EX][EX]There was a mob of people trying to get into the store.[POS]n.[POS]|有一大群人正试图挤进商店。[/EX]",
+      "[TITLE]常见错误[/TITLE][ERR]mob 通常带有一种“混乱”或“不理智”的感觉，比 crowd 听起来更负面一点。[/ERR]"
+    ]
+  },
+  "w388": {
+    "word": "fuzzy",
+    "images": {
+      "scene": ["infopic01/fuzzy1.webp"],
+      "card": ["wordpic01/fuzzy.webp"]
+    },
+    "richDetail": [
+      "[TITLE]解释[/TITLE][DEF][EN]Covered with short, soft hair or fur; also, not clear to see (used in the book to describe a dragon's skin or a magic feeling).[/EN][CN]有绒毛的；模糊的（书中描述某种柔软的质感或模糊的感觉）。[/CN][POS]adj.[POS][PH]/ˈfʌzi/[/PH][DU]The baby dragon had fuzzy green fur.|(原文例句)这头幼龙身上长着绿色的绒毛。[/DU][DU]My favorite blanket is very warm and fuzzy.|我最喜欢的毯子非常暖和，毛茸茸的。[/DU][DU]The picture on the TV is fuzzy; I can't see it well.|电视上的画面很模糊；我看不清楚。[/DU][/DEF][IMG]infopic01/fuzzy1.webp[/IMG]",
+      "[TITLE]常见用法[/TITLE][COLL][H]warm and fuzzy|毛茸茸且暖和的/心里暖洋洋的[POS]adj.[/POS][/H][EX]Looking at the puppies gave me a warm and fuzzy feeling.|看着这些小狗让我心里暖洋洋的。[/EX][C]fuzzy hair|细软的毛发[/C][C]fuzzy photo|模糊的照片[/C][/COLL]",
+      "[TITLE]额外例句[/TITLE][EX]Peaches have a fuzzy skin that feels soft.[POS]adj.[POS]|桃子有毛茸茸的皮，摸起来很软。[/EX][EX]I woke up with a fuzzy head after the long nap.[POS]adj.[POS]|长长的午睡醒来后，我感觉头脑昏昏沉沉（模糊）的。[/EX]",
+      "[TITLE]常见错误[/TITLE][ERR]fuzzy 除了形容毛茸茸，还经常形容“模糊不清”，比如 fuzzy memory（模糊的记忆）。[/ERR]"
+    ]
+  },
+  "w389": {
+    "word": "rear",
+    "images": {
+      "scene": ["infopic01/rear.webp"],
+      "card": ["wordpic01/rear.webp"]
+    },
+    "richDetail": [
+      "[TITLE]解释[/TITLE][DEF][EN]As a noun, the back part of something; as a verb, when an animal like a horse stands up on its back legs (used in the book when a dragon stands up high).[/EN][CN]后部；后面（名词）；（动物）用后腿站立起来（动词）。（书中指龙用后腿站立起来）。[/CN][POS]n., adj. & v.[POS][PH]/rɪr/[/PH][DU]The dragon reared up on its hind legs.|(原文例句)巨龙用后腿直立起来。[/DU][DU]The rear door of the car was left open.|汽车的后门没关。[/DU][DU]He likes to sit at the rear of the bus.|他喜欢坐在公交车的后面。[/DU][/DEF][IMG]infopic01/rear.webp[/IMG]",
+      "[TITLE]常见用法[/TITLE][COLL][H]rear up|（动物）直立起来[POS]v.[/POS][/H][EX]The horse reared up when it got scared by the snake.|马被蛇吓到时，猛地直立了起来。[/EX][C]rear view mirror|后视镜[/C][C]rear garden|后花园[/C][/COLL]",
+      "[TITLE]额外例句[/TITLE][EX]The dragon masters sat at the rear of the hall.[POS]n.[POS]|龙法师们坐在大厅的后部。[/EX][EX]The cat reared up to catch the toy bird.[POS]v.[POS]|猫直立起来去抓那个玩具鸟。[/EX]",
+      "[TITLE]常见错误[/TITLE][ERR]注意 rear up 专门指马、龙这种动物抬起前腿，用后腿站立。不要和 raise（举起）混淆。[/ERR]"
+    ]
+  },
+  "w390": {
+    "word": "tone",
+    "images": {
+      "scene": ["infopic01/tone.webp"],
+      "card": ["wordpic01/tone.webp"]
+    },
+    "richDetail": [
+      "[TITLE]解释[/TITLE][DEF][EN]The quality or sound of someone's voice or a piece of music (used in the book when describing the sound of the dragon's song).[/EN][CN]音调；语气；声调（书中描述毒龙歌声的音质）。[/CN][POS]n.[POS][PH]/toʊn/[/PH][DU]The dragon's song had a low, deep tone.|(原文例句)巨龙的歌声带有低沉、深厚的音调。[/DU][DU]Please use a polite tone when you talk to your teacher.|和老师说话时请用礼貌的语气。[/DU][DU]I like the sweet tone of the violin.|我喜欢小提琴甜美的音色。[/DU][/DEF][IMG]infopic01/tone.webp[/IMG]",
+      "[TITLE]常见用法[/TITLE][COLL][H]tone of voice|说话语气[POS]n.[POS][/H][EX]I could tell she was angry by her tone of voice.|从她的语气中我可以听出她生气了。[/EX][C]musical tone|乐音[/C][C]friendly tone|友好的语气[/C][/COLL]",
+      "[TITLE]额外例句[/TITLE][EX]The dial tone on the phone means you can make a call.[POS]n.[POS]|电话里的拨号音表示你可以打电话了。[/EX][EX]The room was painted in a warm tone of yellow.[POS]n.[POS]|房间被刷成了暖黄色调（tone也可以指颜色）。[/EX]",
+      "[TITLE]常见错误[/TITLE][ERR]tone 不仅仅指声音的高低，更强调声音带给人的“感觉”或“情感”。[/ERR]"
+    ]
+  },
+  "w391": {
+    "word": "keep order",
+    "images": {
+      "scene": ["infopic01/keep_order.webp"],
+      "card": ["wordpic01/keep_order.webp"]
+    },
+    "richDetail": [
+      "[TITLE]解释[/TITLE][DEF][EN]To make sure that people follow rules and stay calm (used in the book when the soldiers had to control the crowd).[/EN][CN]维持秩序（书中指士兵们必须控制人群，确保大家遵守秩序）。[/CN][POS]v. phr.[POS][PH]/kiːp ˈɔːrdər/[/PH][DU]The soldiers tried to keep order in the town.|(原文例句)士兵们试图在镇上维持秩序。[/DU][DU]The teacher asked the class leader to help keep order.|老师请班长帮忙维持秩序。[/DU][DU]It is hard to keep order when everyone is talking at once.|当大家都在同时说话时，很难维持秩序。[/DU][/DEF][IMG]infopic01/keep_order.webp[/IMG]",
+      "[TITLE]常见用法[/TITLE][COLL][H]maintain/keep order|维持秩序[POS]v. phr.[POS][/H][EX]Police officers are there to keep order during the parade.|警察在那里是为了在游行期间维持秩序。[/EX][C]law and order|法律与秩序[/C][/COLL]",
+      "[TITLE]额外例句[/TITLE][EX]Griffith used magic to keep order among the baby dragons.[POS]v. phr.[POS]|格里菲斯用魔法维持幼龙之间的秩序。[/EX][EX]Please keep order while waiting in the lunch line.[POS]v. phr.[POS]|午餐排队时请保持秩序。[/EX]",
+      "[TITLE]常见错误[/TITLE][ERR]order 在这里的意思是“秩序、规矩”，而不是“点菜”或“命令”。[/ERR]"
+    ]
+  },
+  "w392": {
+    "word": "boo",
+    "images": {
+      "scene": ["infopic01/boo.webp"],
+      "card": ["wordpic01/boo.webp"]
+    },
+    "richDetail": [
+      "[TITLE]解释[/TITLE][DEF][EN]A sound that people make to show they do not like something or someone; also a sound to scare someone (used in the book when the people were unhappy).[/EN][CN]嘘声；喝倒彩（书中指人们不高兴时发出的声音）。[/CN][POS]v., n. & int.[POS][PH]/buː/[/PH][DU]The crowd began to boo the king.|(原文例句)人群开始对国王发出嘘声。[/DU][DU]Don't boo the performers; they worked very hard!|不要对表演者喝倒彩；他们很努力！[/DU][DU]He jumped out and shouted \"Boo!\" to scare me.|他跳出来大喊一声“Boo!”来吓我。[/DU][/DEF][IMG]infopic01/boo.webp[/IMG]",
+      "[TITLE]常见用法[/TITLE][COLL][H]boo someone off the stage|把某人嘘下台[POS]v.[POS][/H][EX]The singer was so bad that the audience booed him off the stage.|歌手唱得太烂了，观众把他嘘下了台。[/EX][C]give a boo|发出嘘声[/C][/COLL]",
+      "[TITLE]额外例句[/TITLE][EX]I heard a loud boo from the back of the room.[POS]n.[POS]|我听到房间后面传来一声响亮的嘘声。[/EX][EX]My little brother loves playing peek-a-boo.[POS]n.[POS]|我弟弟喜欢玩捉迷藏（躲猫猫）。[/EX]",
+      "[TITLE]常见错误[/TITLE][ERR]boo 作为嘘声是表达“不喜欢”；作为感叹词是用来“吓人”。[/ERR]"
+    ]
+  },
+  "w393": {
+    "word": "globe",
+    "images": {
+      "scene": ["infopic01/globe.webp"],
+      "card": ["wordpic01/globe.webp"]
+    },
+    "richDetail": [
+      "[TITLE]解释[/TITLE][DEF][EN]A round object shaped like a ball; especially a model of the Earth (used in the book to describe a round magical object).[/EN][CN]球体；地球仪；地球（书中描述一个圆球状的魔法物品）。[/CN][POS]n.[POS][PH]/ɡloʊb/[/PH][DU]A glowing green globe appeared in the air.|(原文例句)空中出现了一个发光的绿色球体。[/DU][DU]I can find China on the school globe.|我能在学校的地球仪上找到中国。[/DU][DU]The explorers traveled all around the globe.|探险家们环游了全球。[/DU][/DEF][IMG]infopic01/globe.webp[/IMG]",
+      "[TITLE]常见用法[/TITLE][COLL][H]all over the globe|全球各地[POS]n.[POS][/H][EX]Different kinds of dragons live all over the globe.|全球各地生活着不同种类的龙。[/EX][C]snow globe|雪花球（装饰品）[/C][C]the Earth's globe|地球[/C][/COLL]",
+      "[TITLE]额外例句[/TITLE][EX]The light bulb is inside a glass globe.[POS]n.[POS]|灯泡装在一个玻璃灯罩（球形）里。[/EX][EX]She has a collection of beautiful snow globes.[POS]n.[POS]|她收集了很多漂亮的雪花球。[/EX]",
+      "[TITLE]常见错误[/TITLE][ERR]globe 通常指“立体球形”，而 circle 指的是“平面圆形”。[/ERR]"
+    ]
+  },
+  "w394": {
+    "word": "prime",
+    "images": {
+      "scene": ["infopic01/prime.webp"],
+      "card": ["wordpic01/prime.webp"]
+    },
+    "richDetail": [
+      "[TITLE]解释[/TITLE][DEF][EN]The most important or best part of something; also, to prepare something (in context, it may refer to the primary or most important location or time).[/EN][CN]最主要的；最好的；准备（书中可能指最重要的位置或准备工作）。[/CN][POS]adj. & v.[POS][PH]/praɪm/[/PH][DU]This is a prime spot for dragon watching.|(原文例句/语境)这是观察巨龙的最佳地点。[/DU][DU]The primary school is the prime place for kids to learn.|小学是孩子学习的首要场所。[/DU][DU]He is in the prime of his life.|他正处于人生的全盛时期。[/DU][/DEF][IMG]infopic01/prime.webp[/IMG]",
+      "[TITLE]常见用法[/TITLE][COLL][H]prime suspect|主要嫌疑人[POS]adj.[POS][/H][EX]Maldred is the prime suspect for the magic theft.|马尔德雷德是魔法盗窃案的主要嫌疑人。[/EX][C]prime time|黄金时间[/C][C]prime minister|首相/总理[/C][/COLL]",
+      "[TITLE]额外例句[/TITLE][EX]We need to prime the magic stone before using it.[POS]v.[POS]|在使用魔法石之前，我们需要先给它“打底”/做准备。[/EX][EX]That beef is of prime quality.[POS]adj.[POS]|那块牛肉是上等品质。[/EX]",
+      "[TITLE]常见错误[/TITLE][ERR]prime 既可以指“第一、主要”，也可以指“最好、最高级”。[/ERR]"
+    ]
   }
+
+  
+
+
 
 
 }
