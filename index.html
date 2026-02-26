@@ -4,14 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <title>My Word Library</title>
-    <link rel="stylesheet" href="style.css?v=17">
+    <link rel="stylesheet" href="style.css?v=18">
 </head>
 <body>
-<div id="game-assets" style="display:none;">
+    <div id="game-assets" style="display:none;">
         <video id="intro-video" playsinline muted>
             <source src="https://cdn.jsdelivr.net/gh/mengmeng0415/wordpic01/spooky.mp4" type="video/mp4">
         </video>
-        
         <audio id="bgm-spooky" src="https://cdn.jsdelivr.net/gh/mengmeng0415/wordpic01/spooky.MP3" loop></audio>
         <audio id="sfx-open" src="https://cdn.jsdelivr.net/gh/mengmeng0415/wordpic01/openmusic.mp3"></audio> 
         <audio id="sfx-shuffle" src="https://cdn.jsdelivr.net/gh/mengmeng0415/wordpic01/shuffle.MP3"></audio>
@@ -19,14 +18,12 @@
         <audio id="sfx-notmatch" src="https://cdn.jsdelivr.net/gh/mengmeng0415/wordpic01/notmatch.mp3"></audio>
         <audio id="sfx-flip" src="https://cdn.jsdelivr.net/gh/mengmeng0415/wordpic01/flip.mp3"></audio>
         <audio id="sfx-win" src="https://cdn.jsdelivr.net/gh/mengmeng0415/wordpic01/youwin.mp3"></audio>
-</div>
-    
+    </div>
 
     <div id="game-config-modal" class="modal-overlay hidden">
         <div class="config-box">
             <h3>配置翻牌游戏</h3>
             <p>已选中 <span id="selected-count" style="color:var(--primary);font-weight:bold;">0</span> 个单词</p>
-            
             <div class="config-row">
                 <label>每组单词数：</label>
                 <select id="group-size-select">
@@ -36,13 +33,10 @@
                     <option value="5" selected>5 个 (10张牌)</option>
                 </select>
             </div>
-
             <div class="config-row" style="display:block; text-align:left;">
                 <label style="margin-bottom:10px; display:block;">选择主题：</label>
-                <div id="modal-theme-list" class="theme-selector">
-                    </div>
+                <div id="modal-theme-list" class="theme-selector"></div>
             </div>
-
             <div class="config-actions">
                 <button onclick="closeConfigModal()" class="btn-cancel">取消</button>
                 <button onclick="confirmGameGeneration()" class="btn-confirm">生成游戏</button>
@@ -50,11 +44,65 @@
         </div>
     </div>
 
+    <div id="quiz-config-modal" class="modal-overlay hidden" style="z-index: 3000;">
+        <div class="config-box" style="max-width: 400px;">
+            <h3>🧠 配置 AI 词义练习</h3>
+            <p>已选中 <span id="quiz-selected-count" style="color:var(--primary);font-weight:bold;">0</span> 个单词</p>
+            <div class="config-row">
+                <label>配图设置：</label>
+                <select id="quiz-img-setting">
+                    <option value="show">默认显示图片 (看图猜词)</option>
+                    <option value="hide">默认隐藏图片 (看字猜义)</option>
+                </select>
+            </div>
+            <div class="config-actions">
+                <button onclick="closeQuizConfigModal()" class="btn-cancel">取消</button>
+                <button onclick="generateVocabQuiz()" class="btn-confirm">开始练习</button>
+            </div>
+        </div>
+    </div>
+
+<div id="apikey-modal" class="modal-overlay hidden" style="z-index: 3000;">
+        <div class="config-box" style="max-width: 550px; width: 90%;">
+            <h3 style="margin-top: 0;">⚙️ 设置 Gemini AI 引擎</h3>
+            
+            <div style="text-align: left; margin-bottom: 15px;">
+                <label style="font-weight: bold; font-size: 14px; color: #333;">1. API Key:</label>
+                <input type="password" id="api-key-input" placeholder="输入您的 Gemini API Key..." style="width: 100%; padding: 10px; margin-top: 5px; border-radius: 8px; border: 1px solid #ccc; font-size: 14px; box-sizing: border-box;">
+            </div>
+
+            <div style="text-align: left; margin-bottom: 10px;">
+                <label style="font-weight: bold; font-size: 14px; color: #333;">2. 单词详解提示词 (Prompt):</label>
+                <p style="font-size: 12px; color: #888; margin: 5px 0;">
+                    系统会在生成时自动将 <b>{{word}}</b> 替换为实际单词。<br>
+                    <span style="color:var(--red);">* 注意：请务必保留底部的 [DEF], [COLL] 等格式标签要求，否则界面将无法正确渲染。</span>
+                </p>
+                <textarea id="ai-prompt-input" rows="10" style="width: 100%; padding: 10px; border-radius: 8px; border: 1px solid #ccc; font-size: 13px; box-sizing: border-box; resize: vertical; font-family: monospace;"></textarea>
+            </div>
+
+            <div class="config-actions" style="margin-top: 20px;">
+                <button onclick="closeApiKeyModal()" class="btn-cancel">取消</button>
+                <button onclick="saveApiKey()" class="btn-confirm">保存设置</button>
+            </div>
+        </div>
+    </div>
+
+    <div id="ai-loading-overlay" class="modal-overlay hidden" style="z-index: 99999; flex-direction: column; color: white;">
+        <div class="ai-spinner" style="border: 5px solid rgba(255, 255, 255, 0.2); border-top: 5px solid #fff; border-radius: 50%; width: 60px; height: 60px; animation: ai-spin 1s linear infinite;"></div>
+        <p id="ai-loading-text" style="margin-top: 25px; font-weight: bold; font-size: 20px; letter-spacing: 1px; text-shadow: 0 2px 4px rgba(0,0,0,0.5);">
+            🧠 AI 引擎正在思考中...
+        </p>
+        <style>@keyframes ai-spin { 0% { transform: rotate(0deg); } 100% { transform: rotate(360deg); } }</style>
+    </div>
+
     <div id="view-home" class="page-view">
         <aside id="home-sidebar" class="sidebar home-sidebar">
             <div class="sidebar-header">
                 <h2><i class="icon">📑</i> Word List <span id="home-list-count" class="list-count">(0)</span></h2>
-                <button class="save-btn" onclick="exportData()">💾 导出</button>
+                <div style="display:flex; gap:8px;">
+                    <button class="save-btn" onclick="openApiKeyModal()" style="background:#5b67f1;" title="配置 AI 引擎">⚙️ AI</button>
+                    <button class="save-btn" onclick="exportData()">💾 导出</button>
+                </div>
             </div>
             <div class="search-box">
                 <input type="text" id="global-search" placeholder="Search words..." autocomplete="off">
@@ -163,6 +211,6 @@
         <img class="modal-content" id="modal-img">
     </div>
 
-    <script src="app.js?v=17"></script>
+    <script src="app.js?v=18"></script>
 </body>
 </html>

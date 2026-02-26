@@ -5123,13 +5123,7 @@
     "images": {
       "scene": ["infopic01/prime.webp"],
       "card": ["wordpic01/prime.webp"]
-    },
-    "richDetail": [
-      "[TITLE]解释[/TITLE][DEF][EN]The most important or best part of something; also, to prepare something (in context, it may refer to the primary or most important location or time).[/EN][CN]最主要的；最好的；准备（书中可能指最重要的位置或准备工作）。[/CN][POS]adj. & v.[POS][PH]/praɪm/[/PH][DU]This is a prime spot for dragon watching.|(原文例句/语境)这是观察巨龙的最佳地点。[/DU][DU]The primary school is the prime place for kids to learn.|小学是孩子学习的首要场所。[/DU][DU]He is in the prime of his life.|他正处于人生的全盛时期。[/DU][/DEF][IMG]infopic01/prime.webp[/IMG]",
-      "[TITLE]常见用法[/TITLE][COLL][H]prime suspect|主要嫌疑人[POS]adj.[POS][/H][EX]Maldred is the prime suspect for the magic theft.|马尔德雷德是魔法盗窃案的主要嫌疑人。[/EX][C]prime time|黄金时间[/C][C]prime minister|首相/总理[/C][/COLL]",
-      "[TITLE]额外例句[/TITLE][EX]We need to prime the magic stone before using it.[POS]v.[POS]|在使用魔法石之前，我们需要先给它“打底”/做准备。[/EX][EX]That beef is of prime quality.[POS]adj.[POS]|那块牛肉是上等品质。[/EX]",
-      "[TITLE]常见错误[/TITLE][ERR]prime 既可以指“第一、主要”，也可以指“最好、最高级”。[/ERR]"
-    ]
+    }
   }
 
   
