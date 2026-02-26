@@ -124,7 +124,7 @@
                     <div class="header-right">
                         <span>按键音</span>
                         <label class="switch">
-                            <input type="checkbox" id="home-sound-toggle" checked onchange="toggleClickSound(this)">
+                            <input type="checkbox" id="home-sound-toggle" onchange="toggleClickSound(this)">
                             <span class="slider round"></span>
                         </label>
                     </div>
@@ -180,6 +180,13 @@
                         <div id="practice-menu-content" class="dropdown-content"></div>
                     </div>
 
+                    <div class="practice-dropdown" id="book-pdf-container" style="display:none;">
+                        <button class="practice-btn" onclick="togglePdfMenu()" style="color: #E91E63; border-color: #f8bbd0;">
+                            <span>阅读原书</span>
+                            <span class="dropdown-arrow">▼</span>
+                        </button>
+                        <div id="pdf-menu-content" class="dropdown-content"></div>
+                    </div>
                     <button id="btn-toggle-word" class="toggle-word-btn active" onclick="toggleWordVisibility()">
                         显示单词
                     </button>

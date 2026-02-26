@@ -257,7 +257,7 @@ let chatHistories = {}; // 用于存储每个单词的聊天记录: { "uid": [..
 const audioClick = new Audio('backinfo/click.mp3');
 const audioWrong = new Audio('backinfo/wrong.mp3'); 
 const audioCorrect = new Audio('backinfo/right.mp3');
-let isClickSoundEnabled = true;
+let isClickSoundEnabled = false;
 let preferredVoice = null;
 
 document.addEventListener('DOMContentLoaded', async () => {
@@ -382,6 +382,7 @@ window.enterBookMode = function(bookId) {
     if (!book) return;
 
     renderPracticeMenu(book);
+    renderPdfMenu(book);
     const hasPractices = book.bookPractices && book.bookPractices.length > 0;
     
     if (countBookWords(book) === 0 && hasPractices) {
@@ -869,11 +870,22 @@ window.exportData = () => alert(JSON.stringify(DataManager.db.ratings));
 
 window.toggleWordVisibility = () => { const btn = document.getElementById('btn-toggle-word'); const isActive = btn.classList.toggle('active'); document.getElementById('word-main').style.opacity = isActive ? '1' : '0'; btn.innerText = isActive ? '显示单词' : '隐藏单词'; if(isActive) state.lastActiveTabTitle = null; };
 window.togglePracticeMenu = () => document.getElementById('practice-menu-content').classList.toggle('show');
-window.onclick = (e) => { if (!e.target.closest('.practice-dropdown')) document.querySelectorAll('.dropdown-content').forEach(d => d.classList.remove('show')); }
-
+window.onclick = (e) => { 
+    if (!e.target.closest('.practice-dropdown')) {
+        document.querySelectorAll('.dropdown-content').forEach(d => d.classList.remove('show')); 
+    } 
+};
 function renderPracticeMenu(book) {
-    const menu = document.getElementById('practice-menu-content'); document.getElementById('book-practice-container').style.display = 'inline-block'; 
-    const createBtnHtml = `<button onclick="toggleCreationMode('game')" class="practice-btn special-create-btn" style="color:#E91E63; font-weight:800; border-bottom:1px dashed #eee;">🃏 创建翻牌游戏</button><button onclick="toggleCreationMode('quiz')" class="practice-btn special-create-btn" style="color:var(--primary); font-weight:800; border-bottom:1px dashed #eee;">🧠 AI 词义单选题</button>`;
+    const menu = document.getElementById('practice-menu-content'); 
+    document.getElementById('book-practice-container').style.display = 'inline-block'; 
+    
+    // 👇 第三个按钮改为了 window.open，点击后直接在新标签页打开您的 GitHub 网站
+    const createBtnHtml = `
+        <button onclick="toggleCreationMode('game')"  special-create-btn" style="color:#E91E63; font-weight:800; border-bottom:1px dashed #eee;">创建翻牌游戏</button>
+        <button onclick="toggleCreationMode('quiz')"  special-create-btn" style="color:var(--primary); font-weight:800; border-bottom:1px dashed #eee;">AI单选题</button>
+        <button onclick="window.open('https://gemini.google.com/share/3e6cc57726ed', '_blank')"  special-create-btn" style="color:#008080; font-weight:800; border-bottom:1px dashed #eee;">Canvas</button>
+    `;
+    
     menu.innerHTML = createBtnHtml + (book.bookPractices && book.bookPractices.length > 0 ? book.bookPractices.map((p, i) => `<button onclick="loadPracticeUnit('${book.id}', ${i})">${p.name}</button>`).join('') : `<div style="padding:10px; color:#999; font-size:12px;">本书暂无预设练习</div>`);
 }
 
@@ -1210,4 +1222,54 @@ window.generateWordDetailAI = async function(uid) {
             console.error("生成失败:", e);
         }
     }
+};
+// ============ 📖 渲染 PDF 菜单 ============
+function renderPdfMenu(book) {
+    const container = document.getElementById('book-pdf-container');
+    const menu = document.getElementById('pdf-menu-content');
+    
+    if (book.pdfs && book.pdfs.length > 0) {
+        container.style.display = 'inline-block'; // 有 PDF，显示按钮
+        // 遍历生成 PDF 选项
+        menu.innerHTML = book.pdfs.map(pdf => 
+            `<button onclick="openPdfViewer('${pdf.url}')" style="font-weight: 600; color: #444;">📄 ${pdf.name}</button>`
+        ).join('');
+    } else {
+        container.style.display = 'none'; // 没 PDF，隐藏按钮
+        menu.innerHTML = '';
+    }
+}
+
+// 控制 PDF 菜单的展开/收起，并实现互斥（点开一个关掉另一个）
+window.togglePdfMenu = () => {
+    document.getElementById('pdf-menu-content').classList.toggle('show');
+    document.getElementById('practice-menu-content').classList.remove('show'); 
+};
+// ============ 📄 内置 PDF 阅读器 ============
+window.openPdfViewer = (url) => {
+    // 隐藏下拉菜单
+    document.getElementById('pdf-menu-content').classList.remove('show');
+    
+    let overlay = document.getElementById('pdf-viewer-overlay');
+    if (!overlay) {
+        overlay = document.createElement('div');
+        overlay.id = 'pdf-viewer-overlay';
+        overlay.style.cssText = 'position:fixed; top:0; left:0; width:100vw; height:100vh; z-index:999999; background:#f5f5f7;';
+        document.body.appendChild(overlay);
+    }
+    
+    // 动态注入 iframe 和操作按钮
+    overlay.innerHTML = `
+        <div style="position: absolute; top: 15px; left: 15px; z-index: 1000000; display: flex; gap: 10px;">
+            <button onclick="document.getElementById('pdf-viewer-overlay').style.display='none'" style="background: rgba(0,0,0,0.6); color: white; padding: 8px 16px; border-radius: 20px; font-weight: bold; font-size: 14px; border: none; cursor: pointer; display: flex; align-items: center; gap: 6px; box-shadow: 0 4px 10px rgba(0,0,0,0.2);">
+                ◀ 返回单词页
+            </button>
+            <button onclick="window.open('${url}', '_blank')" style="background: #E91E63; color: white; padding: 8px 16px; border-radius: 20px; font-weight: bold; font-size: 14px; border: none; cursor: pointer; box-shadow: 0 4px 10px rgba(233, 30, 99, 0.3);">
+                在新标签页放大阅读
+            </button>
+        </div>
+        <iframe src="${url}" style="width:100%; height:100%; border:none; display:block;"></iframe>
+    `;
+    
+    overlay.style.display = 'block';
 };

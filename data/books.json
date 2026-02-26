@@ -5,6 +5,12 @@
     "series": "Dragon Masters",
     "title": "Secret of The Water Dragon（B3）",
     "cover": "infopic01/dm3.png",
+    "pdfs": [
+      {
+        "name": "Secret of The Water Dragon（B3）",
+        "url": "https://mengmeng0415.github.io/pdfinfo01/dm-3.pdf"
+      }
+    ],
     "chapters": [
     { "id": "dm3-c1", "name": "Chapter 1", "wordIds": ["w001", "w002", "w003", "w004", "w005", "w006"], "quizIds": ["q_w001", "q_w002", "q_w003", "q_w004", "q_w005", "q_w006"] },
     { "id": "dm3-c2", "name": "Chapter 2", "wordIds": ["w007", "w008", "w009"], "quizIds": ["q_w007", "q_w007", "q_w009"] },
@@ -28,6 +34,40 @@
     "series": "RAZ分级阅读",
     "title": "RAZ-F ",
     "cover": "infopic01/razf.png",
+    "pdfs": [
+      {
+        "name": "part1",
+        "url": "https://mengmeng0415.github.io/pdfinfo01/RAZ-F1.pdf"
+      },
+      {
+        "name": "part2",
+        "url": "https://mengmeng0415.github.io/pdfinfo01/RAZ-F2.pdf"
+      },
+      {
+        "name": "part3",
+        "url": "https://mengmeng0415.github.io/pdfinfo01/RAZ-F3.pdf"
+      },
+      {
+        "name": "part4",
+        "url": "https://mengmeng0415.github.io/pdfinfo01/RAZ-F5.pdf"
+      },
+      {
+        "name": "part5",
+        "url": "https://mengmeng0415.github.io/pdfinfo01/RAZ-F5.pdf"
+      },
+      {
+        "name": "part6",
+        "url": "https://mengmeng0415.github.io/pdfinfo01/RAZ-F6.pdf"
+      },
+      {
+        "name": "part7",
+        "url": "https://mengmeng0415.github.io/pdfinfo01/RAZ-F7.pdf"
+      },
+      {
+        "name": "part8",
+        "url": "https://mengmeng0415.github.io/pdfinfo01/RAZ-F8.pdf"
+      }
+    ],
     "chapters": [
     { "id": "RAZ(F)-B1", "name": "Mother’s Day", "wordIds": ["w064", "w065", "w066", "w067"], "quizIds": ["q_w064", "q_w065", "q_w066", "q_w067"] },
     { "id": "RAZ(F)-B2", "name": "Super Thrift", "wordIds": ["w068", "w069", "w070", "w071"], "quizIds": ["q_w068", "q_w069", "q_w070", "q_w071"] },
@@ -89,6 +129,12 @@
     "series": "The Pincess in Black",
     "title": "The Pincess in Black 1",
     "cover": "infopic01/pb1.png",
+    "pdfs": [
+      {
+        "name": "The Pincess in Black 1",
+        "url": "https://mengmeng0415.github.io/pdfinfo01/pb1.pdf"
+      }
+    ],
     "chapters": [
     { "id": "pb1-c1", "name": "Chapter 1", "wordIds": ["w164", "w165", "w166", "w167", "w168", "w169", "w170", "w171"], "quizIds": ["q_w164", "q_w165", "q_w166", "q_w167", "q_w168", "q_w169", "q_w170", "q_w171"] },
     { "id": "pb1-c2", "name": "Chapter 2", "wordIds": ["w172", "w173", "w174", "w175"], "quizIds": ["q_w172", "q_w173", "q_w174", "q_w175"] },
@@ -112,6 +158,12 @@
     "series": "Dragon Masters",
     "title": "Power of The Fire Dragon（B4）",
     "cover": "infopic01/dm4.png",
+     "pdfs": [
+      {
+        "name": "Power of The Fire Dragon（B4）",
+        "url": "https://mengmeng0415.github.io/pdfinfo01/dm-4.pdf"
+      }
+    ],
     "chapters": [
       { "id": "dm4-c1", "name": "Chapter 1", "wordIds": ["w306", "w307", "w308"], "quizIds": ["q_w306", "q_w307", "q_w308"] },
       { "id": "dm4-c2", "name": "Chapter 2", "wordIds": ["w309", "w310", "w311", "w312"], "quizIds": ["q_w309", "q_w310", "q_w311", "q_w312"] },
@@ -135,6 +187,12 @@
     "series": "The Pincess in Black",
     "title": "The Pincess in Black 2",
     "cover": "infopic01/pb2.png",
+     "pdfs": [
+      {
+        "name": "The Pincess in Black 2",
+        "url": "https://mengmeng0415.github.io/pdfinfo01/pb2.pdf"
+      }
+    ],
     "chapters": [
       { "id": "pb2-c1", "name": "Chapter 1", "wordIds": ["w342", "w343"], "quizIds": ["q_w342", "q_w343"] },
       { "id": "pb2-c3", "name": "Chapter 3", "wordIds": ["w344", "w345"], "quizIds": ["q_w344", "q_w345"] },
@@ -153,6 +211,12 @@
     "series": "Dragon Masters",
     "title": "Song of the Poison Dragon（B5）",
     "cover": "infopic01/dm5.png",
+     "pdfs": [
+      {
+        "name": "Song of the Poison Dragon（B5）",
+        "url": "https://mengmeng0415.github.io/pdfinfo01/dm-5.pdf"
+      }
+    ],
     "chapters": [
     { "id": "dm5-c1", "name": "Chapter 1", "wordIds": ["w356", "w357", "w358"], "quizIds": ["q_w356", "q_w357", "q_w358"] },
     { "id": "dm5-c2", "name": "Chapter 2", "wordIds": ["w359", "w360", "w361", "w362", "w363"], "quizIds": ["q_w359", "q_w360", "q_w361", "q_w362", "q_w363"] },
