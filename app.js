@@ -883,7 +883,7 @@ function renderPracticeMenu(book) {
     const createBtnHtml = `
         <button onclick="toggleCreationMode('game')"  special-create-btn" style="color:#E91E63; font-weight:800; border-bottom:1px dashed #eee;">创建翻牌游戏</button>
         <button onclick="toggleCreationMode('quiz')"  special-create-btn" style="color:var(--primary); font-weight:800; border-bottom:1px dashed #eee;">AI单选题</button>
-        <button onclick="window.open('https://gemini.google.com/share/3e6cc57726ed', '_blank')"  special-create-btn" style="color:#008080; font-weight:800; border-bottom:1px dashed #eee;">Canvas</button>
+        <button onclick="window.open('https://gemini.google.com/share/bf03bf841b88', '_blank')"  special-create-btn" style="color:#008080; font-weight:800; border-bottom:1px dashed #eee;">Canvas</button>
     `;
     
     menu.innerHTML = createBtnHtml + (book.bookPractices && book.bookPractices.length > 0 ? book.bookPractices.map((p, i) => `<button onclick="loadPracticeUnit('${book.id}', ${i})">${p.name}</button>`).join('') : `<div style="padding:10px; color:#999; font-size:12px;">本书暂无预设练习</div>`);
