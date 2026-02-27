@@ -2961,13 +2961,7 @@
     "options": ["wander off", "apologize", "relish", "resume"],
     "answer": 0
   },
-  "q_w424": {
-    "type": "choice_text",
-    "wordIds": ["w424"],
-    "question": "Princess Magnolia really ______ her time playing with her friends.",
-    "options": ["smacks", "relishes", "sputters", "whimpers"],
-    "answer": 1
-  },
+  
   "q_w425": {
     "type": "choice_text",
     "wordIds": ["w425"],
