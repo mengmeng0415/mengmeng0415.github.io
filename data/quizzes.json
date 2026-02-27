@@ -2757,6 +2757,230 @@
     "question": "The center of the city is the ______ location for a new shopping mall.",
     "options": ["fuzzy", "prime", "gloomy", "tame"],
     "answer": 1
+  },
+  "q_w395": {
+    "type": "choice_text",
+    "wordIds": ["w395"],
+    "question": "The children were jumping up and down in ______ of the magic show.",
+    "options": ["invasion", "anticipation", "relish", "friendship"],
+    "answer": 1
+  },
+  "q_w396": {
+    "type": "choice_text",
+    "wordIds": ["w396"],
+    "question": "The princess loved to eat ______ doughnuts for her Sunday brunch.",
+    "options": ["fearsome", "frisky", "dainty", "sugar-dusted"],
+    "answer": 3
+  },
+  "q_w397": {
+    "type": "choice_text",
+    "wordIds": ["w397"],
+    "question": "The little puppy began to ______ when it felt cold and lonely in the rain.",
+    "options": ["whimper", "resume", "dine", "extend"],
+    "answer": 0
+  },
+  "q_w398": {
+    "type": "choice_text",
+    "wordIds": ["w398"],
+    "question": "He felt a ______ in his stomach because he was so nervous about the big test.",
+    "options": ["horde", "mass", "pit", "foe"],
+    "answer": 2
+  },
+  "q_w399": {
+    "type": "choice_text",
+    "wordIds": ["w399"],
+    "question": "In the story, the brave knight must fight his greatest ______ to save the goats.",
+    "options": ["velvet", "foe", "friendship", "clang"],
+    "answer": 1
+  },
+  "q_w400": {
+    "type": "choice_text",
+    "wordIds": ["w400"],
+    "question": "It was the worst monster ______ the goat pasture had ever seen!",
+    "options": ["anticipation", "pit", "horde", "invasion"],
+    "answer": 3
+  },
+  "q_w401": {
+    "type": "choice_text",
+    "wordIds": ["w401"],
+    "question": "The big monster roared loudly to ______ the little goats.",
+    "options": ["threaten", "apologize", "relish", "resume"],
+    "answer": 0
+  },
+  "q_w402": {
+    "type": "choice_text",
+    "wordIds": ["w402"],
+    "question": "The King and Queen like to ______ on fine food in the grand hall.",
+    "options": ["gnaw", "whimper", "dine", "shuffle"],
+    "answer": 2
+  },
+  "q_w403": {
+    "type": "choice_text",
+    "wordIds": ["w403"],
+    "question": "An interesting smell began to ______ down from the monster hole.",
+    "options": ["sputter", "trickle", "devour", "clamp"],
+    "answer": 1
+  },
+  "q_w404": {
+    "type": "choice_text",
+    "wordIds": ["w404"],
+    "question": "A ______ of hungry bunnies suddenly hopped into the garden.",
+    "options": ["pit", "clang", "mass", "horde"],
+    "answer": 3
+  },
+  "q_w405": {
+    "type": "choice_text",
+    "wordIds": ["w405"],
+    "question": "Those bunnies sure seemed to ______ the taste of the fresh green grass.",
+    "options": ["relish", "smack", "threaten", "apologize"],
+    "answer": 0
+  },
+  "q_w406": {
+    "type": "choice_text",
+    "wordIds": ["w406"],
+    "question": "The old car's engine started to ______ and cough on the way up the hill.",
+    "options": ["twitch", "extend", "sputter", "dine"],
+    "answer": 2
+  },
+  "q_w407": {
+    "type": "choice_text",
+    "wordIds": ["w407"],
+    "question": "The hungry dragon ______ the entire pile of meat in just one minute!",
+    "options": ["devoured", "whimpered", "befriended", "shuffled"],
+    "answer": 0
+  },
+  "q_w408": {
+    "type": "choice_text",
+    "wordIds": ["w408"],
+    "question": "After the short break, the children ______ their game of soccer.",
+    "options": ["apologized", "resumed", "threated", "gnawed"],
+    "answer": 1
+  },
+  "q_w409": {
+    "type": "choice_text",
+    "wordIds": ["w409"],
+    "question": "The little boy ______ his lips when he saw the yummy chocolate cake.",
+    "options": ["trickled", "sputtered", "clamped", "smacked"],
+    "answer": 3
+  },
+  "q_w410": {
+    "type": "choice_text",
+    "wordIds": ["w410"],
+    "question": "The bunny ______ down on the goat's horn and wouldn't let go.",
+    "options": ["resumed", "devoured", "clamped", "relish"],
+    "answer": 2
+  },
+  "q_w411": {
+    "type": "choice_text",
+    "wordIds": ["w411"],
+    "question": "The mouse began to ______ a small hole in the cardboard box.",
+    "options": ["gnaw", "smack", "extend", "twitch"],
+    "answer": 0
+  },
+  "q_w412": {
+    "type": "choice_text",
+    "wordIds": ["w412"],
+    "question": "The rabbit's fur was as soft as ______, so I loved petting it.",
+    "options": ["invasion", "velvet", "pit", "horde"],
+    "answer": 1
+  },
+  "q_w413": {
+    "type": "choice_text",
+    "wordIds": ["w413"],
+    "question": "Stop ______ your feet and walk properly like a brave knight!",
+    "options": ["bleating", "clanging", "devouring", "shuffling"],
+    "answer": 3
+  },
+  "q_w414": {
+    "type": "choice_text",
+    "wordIds": ["w414"],
+    "question": "The big monster looked very ______ with its sharp claws and giant teeth.",
+    "options": ["sugar-dusted", "frisky", "fearsome", "dainty"],
+    "answer": 2
+  },
+  "q_w415": {
+    "type": "choice_text",
+    "wordIds": ["w415"],
+    "question": "A loud ______ echoed across the field when the metal pot fell.",
+    "options": ["clang", "anticipation", "mass", "friendship"],
+    "answer": 0
+  },
+  "q_w416": {
+    "type": "choice_text",
+    "wordIds": ["w416"],
+    "question": "The princess ______ her hand to reach for her golden scepter.",
+    "options": ["sputtered", "extended", "gnawed", "resumed"],
+    "answer": 1
+  },
+  "q_w417": {
+    "type": "choice_text",
+    "wordIds": ["w417"],
+    "question": "The cat's tail began to ______ slightly as it watched the bird.",
+    "options": ["whimper", "dine", "smack", "twitch"],
+    "answer": 3
+  },
+  "q_w418": {
+    "type": "choice_text",
+    "wordIds": ["w418"],
+    "question": "The goats ______ nervously when they saw the strange purple bunnies.",
+    "options": ["resumed", "shuffled", "bleated", "clamped"],
+    "answer": 2
+  },
+  "q_w419": {
+    "type": "choice_text",
+    "wordIds": ["w419"],
+    "question": "The fairy took ______ little bites of the sweet, tiny cupcake.",
+    "options": ["dainty", "fearsome", "frisky", "sugar-dusted"],
+    "answer": 0
+  },
+  "q_w420": {
+    "type": "choice_text",
+    "wordIds": ["w420"],
+    "question": "The bunnies huddle together to form one big purple ______.",
+    "options": ["anticipation", "foe", "friendship", "mass"],
+    "answer": 3
+  },
+  "q_w421": {
+    "type": "choice_text",
+    "wordIds": ["w421"],
+    "question": "The ______ kitten loves to jump around and chase its tail.",
+    "options": ["sugar-dusted", "frisky", "fearsome", "velvet"],
+    "answer": 1
+  },
+  "q_w422": {
+    "type": "choice_text",
+    "wordIds": ["w422"],
+    "question": "The loud noise caused a ______ of animals running toward the exit.",
+    "options": ["horde", "invasion", "stampede", "pit"],
+    "answer": 2
+  },
+  "q_w423": {
+    "type": "choice_text",
+    "wordIds": ["w423"],
+    "question": "Stay close to the group and don't ______ in the crowded mall.",
+    "options": ["wander off", "apologize", "relish", "resume"],
+    "answer": 0
+  },
+  "q_w424": {
+    "type": "choice_text",
+    "wordIds": ["w424"],
+    "question": "Princess Magnolia really ______ her time playing with her friends.",
+    "options": ["smacks", "relishes", "sputters", "whimpers"],
+    "answer": 1
+  },
+  "q_w425": {
+    "type": "choice_text",
+    "wordIds": ["w425"],
+    "question": "True ______ is a very precious gift between two people.",
+    "options": ["invasion", "anticipation", "pit", "friendship"],
+    "answer": 3
+  },
+  "q_w426": {
+    "type": "choice_text",
+    "wordIds": ["w426"],
+    "question": "You should ______ to your sister after breaking her favorite toy.",
+    "options": ["threaten", "dine", "apologize", "gnaw"],
+    "answer": 2
   }
 
 

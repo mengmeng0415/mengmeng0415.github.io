@@ -5124,7 +5124,425 @@
       "scene": ["infopic01/prime.webp"],
       "card": ["wordpic01/prime.webp"]
     }
+  },
+  
+  "w395": {
+    "word": "anticipation",
+    "images": {
+      "scene": ["infopic01/anticipation.webp"],
+      "card": ["wordpic01/anticipation.webp"]
+    },
+    "richDetail": [
+      "[TITLE]解释[/TITLE][DEF][EN]Waiting for something fun to happen and being very excited about it.[/EN][CN]期待；预料；预感[/CN][POS]n.[/POS][PH]/ænˌtɪsɪˈpeɪʃn/[/PH][DU]In anticipation, Frimplepants had skipped breakfast.|(原文例句)为了留着肚子吃大餐（处于期待中），小马“裤裤”没吃早饭。[/DU][DU]The children were jumping up and down in anticipation of the magic show.|孩子们期待着魔术表演，兴奋地跳来跳去。[/DU][DU]She opened the gift with great anticipation.|她满怀期待地拆开了礼物。[/DU][/DEF][IMG]infopic01/anticipation.webp[/IMG]",
+      "[TITLE]常见用法[/TITLE][COLL][H]in anticipation of sth|期待着某事[POS]n.[/POS][/H][EX]We cleaned the house in anticipation of grandma's visit.|为了迎接奶奶的到来，我们打扫了房间。[/EX][EX]He bought extra snacks in anticipation of the party.|他为了派对预先多买了一些零食。[/EX][C]in anticipation of the holiday|期待着假期[/C][C]look forward with anticipation|满怀期待地盼望[/C][/COLL]",
+      "[TITLE]额外例句[/TITLE][EX]There is a feeling of anticipation in the air before the race starts.[POS]n.[/POS]|比赛开始前，空气中弥漫着一种期待感。[/EX][EX]The dog wagged its tail in anticipation of a treat.[POS]n.[/POS]|狗狗摇着尾巴等着吃零食。[/EX][EX]I can't sleep because of the anticipation of our trip tomorrow.[POS]n.[/POS]|想到明天的旅行我就兴奋得睡不着。[/EX]",
+      "[TITLE]常见错误[/TITLE][ERR]anticipation 是名词，表示“期待的状态”。如果你想说“期待做某事”，动词通常用 anticipate (anticipate doing sth) 或者更常用的 look forward to。[/ERR][ERR]拼写时注意中间是 -ci- 而不是 -ti-。[/ERR]"
+    ]
+  },
+  "w396": {
+    "word": "sugar-dusted",
+    "images": {
+      "scene": ["infopic01/sugar-dusted.webp"],
+      "card": ["wordpic01/sugar-dusted.webp"]
+    },
+    "richDetail": [
+      "[TITLE]解释[/TITLE][DEF][EN]Something that has a light layer of tiny white sugar pieces all over it, looking like a little bit of snow.[/EN][CN]撒了糖粉的[/CN][POS]adj.[/POS][PH]/ˈʃʊɡər dʌstɪd/[/PH][DU]Brunch with Princess Sneezewort meant heaping platters of sugar-dusted doughnuts.|(原文例句)和斯尼兹沃特公主吃早午餐，意味着有一大盘一大盘撒满糖粉的甜甜圈。[/DU][DU]I love eating sugar-dusted pancakes on Sunday mornings.|我喜欢在周日早晨吃撒了糖粉的薄烤饼。[/DU][DU]The cake was sugar-dusted and looked very pretty.|蛋糕上面撒了糖粉，看起来非常漂亮。[/DU][/DEF][IMG]infopic01/sugar-dusted.webp[/IMG]",
+      "[TITLE]常见用法[/TITLE][COLL][H]sugar-dusted treats|撒了糖粉的点心[POS]adj.[/POS][/H][EX]The baker sold many sugar-dusted cookies today.|面包师今天卖了很多撒了糖粉的饼干。[/EX][C]sugar-dusted berries|撒了糖粉的莓果[/C][C]sugar-dusted pastry|撒了糖粉的酥皮点心[/C][/COLL]",
+      "[TITLE]额外例句[/TITLE][EX]The strawberries were sugar-dusted and very sweet.[POS]adj.[POS]|草莓上撒了白糖粉，吃起来特别甜。[/EX][EX]Would you like a sugar-dusted waffle for breakfast?[POS]adj.[POS]|你早餐想来一份撒了糖粉的华夫饼吗？[/EX]",
+      "[TITLE]常见错误[/TITLE][ERR]dusted 在这里指“像落了灰尘（dust）一样薄薄地撒上一层”，并不是真的有灰尘，而是形容糖粉很细。[/ERR]"
+    ]
+  },
+  "w397": {
+    "word": "whimper",
+    "images": {
+      "scene": ["infopic01/whimper.webp"],
+      "card": ["wordpic01/whimper.webp"]
+    },
+    "richDetail": [
+      "[TITLE]解释[/TITLE][DEF][EN]To make a low, weak, and sad sound like a baby or a puppy does when they are a little bit hurt, scared, or unhappy.[/EN][CN]（动物）低声哀叫；（人）抽泣，呜咽[/CN][POS]v. & n.[/POS][PH]/ˈwɪmpər/[/PH][DU]Frimplepants whimpered.|(原文例句)小马“裤裤”委屈地低声叫了起来。[/DU][DU]The lost puppy began to whimper in the rain.|走失的小狗在雨中开始哀鸣。[/DU][DU]The little boy let out a small whimper when he scraped his knee.|小男孩擦伤膝盖时发出了一声轻微的呜咽。[/DU][/DEF][IMG]infopic01/whimper.webp[/IMG]",
+      "[TITLE]常见用法[/TITLE][COLL][H]whimper with fear/pain|因害怕/疼痛而哀鸣[POS]v.[POS][/H][EX]The cat whimpered with fear when it saw the big dog.|小猫看到大狗时害怕地叫了起来。[/EX][C]a soft whimper|一声轻柔的呜咽[/C][C]start to whimper|开始哀鸣[/C][/COLL]",
+      "[TITLE]额外例句[/TITLE][EX]I heard a whimper coming from under the bed.[POS]n.[POS]|我听到床底下传来一声低声叫唤。[/EX][EX]Don't whimper! Be a brave dragon master.[POS]v.[POS]|别哭哭啼啼的！要做个勇敢的训龙大师。[/EX]",
+      "[TITLE]常见错误[/TITLE][ERR]whimper 的声音是很小的，表达的是一种软弱或委屈的感觉。如果你在大声哭，要用 cry 或 sob。[/ERR]"
+    ]
+  },
+  "w398": {
+    "word": "pit",
+    "images": {
+      "scene": ["infopic01/pit.webp"],
+      "card": ["wordpic01/pit.webp"]
+    },
+    "richDetail": [
+      "[TITLE]解释[/TITLE][DEF][EN]A feeling in your tummy when you are very nervous or worried; it can also be a big, deep hole in the ground.[/EN][CN]坑；地洞；（因紧张等在胃部产生的）下沉感，空落落的感觉[/CN][POS]n.[/POS][PH]/pɪt/[/PH][DU]The Princess in Black felt a pit in her stomach.|(原文例句)黑衣公主感到心里（胃里）沉甸甸的（很紧张）。[/DU][DU]Be careful not to fall into the deep pit in the garden!|小心别掉进花园里的那个深坑！[/DU][DU]Before my big speech, I had a pit in my stomach.|在大演讲之前，我感到胃里空落落的（非常紧张）。[/DU][/DEF][IMG]infopic01/pit.webp[/IMG]",
+      "[TITLE]常见用法[/TITLE][COLL][H]a pit in one's stomach|胃里的沉重感（形容紧张）[POS]n.[POS][/H][EX]The dark clouds gave him a pit in his stomach.|乌云密布让他感到心里有些不安。[/EX][C]a deep pit|深坑[/C][C]the pit of the arm|腋窝（armpit）[/C][/COLL]",
+      "[TITLE]额外例句[/TITLE][EX]They dug a large pit to plant the new tree.[POS]n.[POS]|他们挖了一个大坑来种新树。[/EX][EX]I felt a cold pit in my stomach when I lost my favorite toy.[POS]n.[POS]|当我丢了我最喜欢的玩具时，我感到心里一阵失落。[/EX]",
+      "[TITLE]常见错误[/TITLE][ERR]pit 还可以指水果（如桃子、樱桃）中间的硬核。不要和 hole 弄混，pit 通常指大而深的坑。[/ERR]"
+    ]
+  },
+  "w399": {
+    "word": "foe",
+    "images": {
+      "scene": ["infopic01/foe.webp"],
+      "card": ["wordpic01/foe.webp"]
+    },
+    "richDetail": [
+      "[TITLE]解释[/TITLE][DEF][EN]Someone who is an enemy or someone you are fighting against in a game or battle.[/EN][CN]敌人；对手[/CN][POS]n.[/POS][PH]/foʊ/[/PH][DU]Perhaps she was about to meet her greatest foe yet.|(原文例句)也许她就要遇到迄今为止最强大的对手了。[/DU][DU]Is that dragon a friend or a foe?|那头龙是朋友还是敌人？[/DU][DU]In the story, the brave knight defeated his foe.|故事中，勇敢的骑士击败了他的对手。[/DU][/DEF][IMG]infopic01/foe.webp[/IMG]",
+      "[TITLE]常见用法[/TITLE][COLL][H]friend or foe|朋友还是敌人[POS]n.[POS][/H][EX]We must find out if the new giant is friend or foe.|我们必须查清楚那个新来的巨人是朋友还是敌人。[/EX][C]a powerful foe|一个强大的对手[/C][C]defeat a foe|打败敌人[/C][/COLL]",
+      "[TITLE]额外例句[/TITLE][EX]The two kingdoms were foes for many years.[POS]n.[POS]|这两个王国多年来一直是宿敌。[/EX][EX]He has many friends but not a single foe.[POS]n.[POS]|他有很多朋友，一个敌人也没有。[/EX]",
+      "[TITLE]常见错误[/TITLE][ERR]foe 是一个比较正式或文学化的词，在童话故事里常用。在平时的生活中，我们更多用 enemy 或者 opponent（对手）。[/ERR]"
+    ]
+  },
+  "w400": {
+    "word": "invasion",
+    "images": {
+      "scene": ["infopic01/invasion.webp"],
+      "card": ["wordpic01/invasion.webp"]
+    },
+    "richDetail": [
+      "[TITLE]解释[/TITLE][DEF][EN]When a lot of people or things go into a place where they are not supposed to be, often to take over or cause trouble.[/EN][CN]侵入；侵略；涌入[/CN][POS]n.[/POS][PH]/ɪnˈveɪʒn/[/PH][DU]It's the worst monster invasion ever!|(原文例句)这是有史以来最糟糕的一次怪物入侵！[/DU][DU]An invasion of ants happened in our kitchen after we left the cookies out.|我们把饼干落在外面后，厨房里遭到了蚂蚁的大举入侵。[/DU][DU]The army protected the land from the invasion.|军队保卫领土免受侵略。[/DU][/DEF][IMG]infopic01/invasion.webp[/IMG]",
+      "[TITLE]常见用法[/TITLE][COLL][H]invasion of...|...的涌入/侵入[POS]n.[POS][/H][EX]The beach was crowded after an invasion of tourists.|游客大举涌入后，海滩变得非常拥挤。[/EX][C]alien invasion|外星人入侵[/C][C]invasion of privacy|侵犯隐私[/C][/COLL]",
+      "[TITLE]额外例句[/TITLE][EX]The farmer was worried about the invasion of hungry birds in his field.[POS]n.[POS]|农民担心饥饿的鸟群会涌入他的农田。[/EX][EX]History books tell us about many great invasions.[POS]n.[POS]|历史书告诉了我们许多重大的侵略事件。[/EX]",
+      "[TITLE]常见错误[/TITLE][ERR]invasion 是名词。如果你想表达动作“进入/入侵”，要用动词 invade (They invaded the castle)。[/ERR]"
+    ]
+  },
+  "w401": {
+    "word": "threaten",
+    "images": {
+      "scene": ["infopic01/threaten.webp"],
+      "card": ["wordpic01/threaten.webp"]
+    },
+    "richDetail": [
+      "[TITLE]解释[/TITLE][DEF][EN]To say or show that you are going to hurt someone or do something bad to them.[/EN][CN]威胁；恐吓；预示[/CN][POS]v.[/POS][PH]/ˈθretn/[/PH][DU]The Princess in Black fought the monsters that threatened his goats.|(原文例句)黑衣公主和那些威胁到小羊安全的怪物搏斗。[/DU][DU]Don't threaten to take away my toys!|别威胁说要拿走我的玩具！[/DU][DU]The dark clouds threaten rain.|乌云预示着要下雨了。[/DU][/DEF][IMG]infopic01/threaten.webp[/IMG]",
+      "[TITLE]常见用法[/TITLE][COLL][H]threaten to do sth|威胁要做某事[POS]v.[POS][/H][EX]The bully threatened to hit the little boy.|那个小霸王威胁要打那个小男孩。[/EX][C]threaten someone with...|用...威胁某人[/C][C]be threatened by...|受到...的威胁[/C][/COLL]",
+      "[TITLE]额外例句[/TITLE][EX]The big dragon roared to threaten the knight.[POS]v.[POS]|大龙怒吼着以此威胁骑士。[/EX][EX]Pollution is threatening the lives of fish in the lake.[POS]v.[POS]|污染正在威胁着湖里鱼类的生存。[/EX]",
+      "[TITLE]常见错误[/TITLE][ERR]threaten 是动词，名词形式是 threat。错误：He made a threaten (错误)，正确：He made a threat 或者 He threatened me。[/ERR]"
+    ]
+  },
+  "w402": {
+    "word": "dine",
+    "images": {
+      "scene": ["infopic01/dine.webp"],
+      "card": ["wordpic01/dine.webp"]
+    },
+    "richDetail": [
+      "[TITLE]解释[/TITLE][DEF][EN]To eat a very nice, big meal, usually for dinner.[/EN][CN]进餐；用正餐；吃晚饭[/CN][POS]v.[/POS][PH]/daɪn/[/PH][DU]They had dined on toe-nail clippings and lizard scales.|(原文例句)它们（在怪物之地）曾以指甲屑和蜥蜴鳞片为食（这里用‘进餐’带有一点幽默感）。[/DU][DU]The king and queen like to dine in the grand hall.|国王和王后喜欢在大厅里用餐。[/DU][DU]We are going to dine at a special restaurant for my birthday.|为了庆祝我的生日，我们要去一家特别的餐厅吃饭。[/DU][/DEF][IMG]infopic01/dine.webp[/IMG]",
+      "[TITLE]常见用法[/TITLE][COLL][H]dine on sth|以某物为食/吃某物[POS]v.[POS][/H][EX]In the fairy tale, the giants dine on stone soup.|在童话故事里，巨人们以石头汤为食。[/EX][C]dine out|去外面吃饭[/C][C]dining room|餐厅[/C][/COLL]",
+      "[TITLE]额外例句[/TITLE][EX]They dined by candlelight and had a lovely time.[POS]v.[POS]|他们在烛光下用餐，过得很愉快。[/EX][EX]I am happy to dine with my best friend today.[POS]v.[POS]|今天能和好朋友一起吃饭我很开心。[/EX]",
+      "[TITLE]常见错误[/TITLE][ERR]dine 比 eat 要正式很多。在日常对话中，我们说 eat dinner 更多；dine 通常用于正式场合或者书面语。[/ERR][ERR]注意 dining room 拼写只有一个 n。[/ERR]"
+    ]
+  },
+  "w403": {
+    "word": "trickle",
+    "images": {
+      "scene": ["infopic01/trickle.webp"],
+      "card": ["wordpic01/trickle.webp"]
+    },
+    "richDetail": [
+      "[TITLE]解释[/TITLE][DEF][EN]To move very slowly in a thin line, like a little bit of water or a smell coming through a small space.[/EN][CN]滴；流；（气味、声音、人等）缓缓移动，缓慢通过[/CN][POS]v. & n.[/POS][PH]/ˈtrɪkl/[/PH][DU]An interesting smell trickled down.|(原文例句)一股有趣的香味（从地洞里）缓缓飘了下来。[/DU][DU]I saw water trickle down the window during the rain.|下雨时，我看到水珠顺着窗户滴下来。[/DU][DU]The children began to trickle into the classroom one by one.|孩子们开始一个接一个地走进教室。[/DU][/DEF][IMG]infopic01/trickle.webp[/IMG]",
+      "[TITLE]常见用法[/TITLE][COLL][H]trickle down/out|缓缓流下/流出[POS]v.[POS][/H][EX]Tears started to trickle down her cheeks.|泪水开始顺着她的脸颊流下。[/EX][C]a slow trickle|细流[/C][C]trickle through|缓缓穿过[/C][/COLL]",
+      "[TITLE]额外例句[/TITLE][EX]The juice trickled out of the squeezed orange.[POS]v.[POS]|果汁从被挤压的橙子里滴了出来。[/EX][EX]We could hear the trickle of the small stream in the woods.[POS]n.[POS]|我们能听到林间小溪缓缓流淌的声音。[/EX]",
+      "[TITLE]常见错误[/TITLE][ERR]trickle 强调的是“极少量的流”或者“极缓慢的移动”。如果是大量的水，要用 flow 或者 pour。[/ERR]"
+    ]
+  },
+  "w404": {
+    "word": "horde",
+    "images": {
+      "scene": ["infopic01/horde.webp"],
+      "card": ["wordpic01/horde.webp"]
+    },
+    "richDetail": [
+      "[TITLE]解释[/TITLE][DEF][EN]A very large group of people or animals that move together, often in a noisy or messy way.[/EN][CN]一大群；（常常带有贬义）游牧部落[/CN][POS]n.[/POS][PH]/hɔːrd/[/PH][DU]And soon, a horde of hungry bunnies had hopped up to the goat pasture.|(原文例句)很快，一大群饥饿的小兔子蹦蹦跳跳地来到了山羊牧场。[/DU][DU]A horde of fans waited outside the concert hall.|一大群粉丝等在音乐厅外面。[/DU][DU]Watch out! A horde of insects is flying toward us.|当心！一大群昆虫正朝我们飞来。[/DU][/DEF][IMG]infopic01/horde.webp[/IMG]",
+      "[TITLE]常见用法[/TITLE][COLL][H]hordes of...|成群结队的...[POS]n.[POS][/H][EX]Hordes of people went to the mall for the big sale.|成群结队的人去商场参加大减价。[/EX][C]a hungry horde|一群饥饿的群体[/C][C]hordes of tourists|成群的游客[/C][/COLL]",
+      "[TITLE]额外例句[/TITLE][EX]The dragon was chased by a horde of angry monsters.[POS]n.[POS]|巨龙被一大群愤怒的怪物追赶。[/EX][EX]I saw a horde of kids running toward the ice cream truck.[POS]n.[POS]|我看到一大群小孩朝着冰淇淋车跑去。[/EX]",
+      "[TITLE]常见错误[/TITLE][ERR]注意拼写，不要和 hoard（囤积/藏宝）混淆，虽然发音一样。horde 指的是“一群人或物”，hoard 指的是“存起来的东西”。[/ERR]"
+    ]
+  },
+  "w405": {
+    "word": "relish",
+    "images": {
+      "scene": ["infopic01/relish.webp"],
+      "card": ["wordpic01/relish.webp"]
+    },
+    "richDetail": [
+      "[TITLE]解释[/TITLE][DEF][EN]To really enjoy something very much, especially the taste of yummy food or a fun activity.[/EN][CN]享受；很喜欢；品味[/CN][POS]v.[/POS][PH]/ˈrelɪʃ/[/PH][DU]Those bunnies sure seemed to relish the grass.|(原文例句)那些小兔子看起来真的很享受那些草。[/DU][DU]I relish eating chocolate ice cream on a hot day.|我非常喜欢在热天吃巧克力冰淇淋。[/DU][DU]The cat relished the warm sunshine on the floor.|小猫很享受地板上温暖的阳光。[/DU][/DEF][IMG]infopic01/relish.webp[/IMG]",
+      "[TITLE]常见用法[/TITLE][COLL][H]relish the thought of sth|一想到某事就很开心[POS]v.[/POS][/H][EX]I relish the thought of going to the zoo tomorrow.|一想到明天要去动物园我就很开心。[/EX][C]relish the moment|享受当下[/C][C]relish the challenge|乐于迎接挑战[/C][/COLL]",
+      "[TITLE]额外例句[/TITLE][EX]She relished every bite of the delicious cake.[POS]v.[/POS]|她享受着美味蛋糕的每一口。[/EX][EX]The dragon masters relish their time with the dragons.[POS]v.[/POS]|训龙大师们很珍惜并享受和龙在一起的时间。[/EX]",
+      "[TITLE]常见错误[/TITLE][ERR]注意不要把 relish 误拼成 release（释放）。relish 是关于“喜爱和享受”的。[/ERR][ERR]在日常口语中，如果你只是普通喜欢，用 like 就可以；relish 表示“非常非常享受，甚至在心里回味”的那种喜欢。[/ERR]"
+    ]
+  },
+  "w406": {
+    "word": "sputter",
+    "images": {
+      "scene": ["infopic01/sputter.webp"],
+      "card": ["wordpic01/sputter.webp"]
+    },
+    "richDetail": [
+      "[TITLE]解释[/TITLE][DEF][EN]To make quick, short popping sounds; or to spit out small bits of something from your mouth while trying to speak or breathe (like when you eat dirt by mistake!).[/EN][CN]（发出）啪嗒声；（说话）急促而含糊；唾沫飞溅地说话[/CN][POS]v. & n.[/POS][PH]/ˈspʌtər/[/PH][DU]He sputtered and coughed.|(原文例句)他（因为吃到泥土）又是喷气又是咳嗽。[/DU][DU]The old car engine started to sputter on the hill.|旧汽车的引擎在山坡上开始发出噼里啪啦的杂音。[/DU][DU]“But... but...” he sputtered with surprise.|“但是……但是……”他惊讶得语无伦次。[/DU][/DEF][IMG]infopic01/sputter.webp[/IMG]",
+      "[TITLE]常见用法[/TITLE][COLL][H]sputter with anger/surprise|气得/急得语无伦次[POS]v.[/POS][/H][EX]The angry monster sputtered but couldn't say a word.|愤怒的怪物急得大叫，却一句话也说不出来。[/EX][C]a sputtering candle|闪烁不定的蜡烛[/C][/COLL]",
+      "[TITLE]额外例句[/TITLE][EX]Water sputtered out of the broken pipe.[POS]v.[/POS]|水从破裂的水管里喷溅出来。[/EX][EX]The fire sputtered when the rain hit it.[POS]v.[/POS]|雨点落在火上时，火堆发出了噼里啪啦的声音。[/EX]",
+      "[TITLE]常见错误[/TITLE][ERR]sputter 往往带有一种“断断续续”的感觉，无论是声音还是动作。不要和 stutter（结巴）混淆，stutter 专门指说话重复第一个音。[/ERR]"
+    ]
+  },
+  "w407": {
+    "word": "devour",
+    "images": {
+      "scene": ["infopic01/devour.webp"],
+      "card": ["wordpic01/devour.webp"]
+    },
+    "richDetail": [
+      "[TITLE]解释[/TITLE][DEF][EN]To eat something very quickly and hungrily until it is all gone (used in the book when the bunnies ate all the grass and even a tree!).[/EN][CN]狼吞虎咽；吞食；（心中）充满[/CN][POS]v.[/POS][PH]/dɪˈvaʊər/[/PH][DU]The bunnies had devoured the entire patch of grass.|(原文例句)小兔子们把那一整片草地都吃得精光。[/DU][DU]The hungry dragon devoured the big pile of meat.|饥饿的龙把那一堆肉狼吞虎咽地吃掉了。[/DU][DU]He was so hungry that he devoured his dinner in two minutes.|他太饿了，两分钟就把晚饭吃光了。[/DU][/DEF][IMG]infopic01/devour.webp[/IMG]",
+      "[TITLE]常见用法[/TITLE][COLL][H]devour a book|废寝忘食地读书[POS]v.[/POS][/H][EX]I devoured the new storybook in just one afternoon!|我一个下午就把那本新故事书读完了！[/EX][C]be devoured by flames|被烈火吞噬[/C][/COLL]",
+      "[TITLE]额外例句[/TITLE][EX]The little monster wanted to devour all the cookies.[POS]v.[/POS]|小怪物想吞掉所有的曲奇饼干。[/EX][EX]She devoured every word of the letter from her friend.[POS]v.[/POS]|她急切地读着朋友来信的每一个字。[/EX]",
+      "[TITLE]常见错误[/TITLE][ERR]devour 的程度比 eat 强得多。如果你只是慢慢吃饭，不能用 devour。它通常用来形容“极度饥饿”或者“极大的兴趣”。[/ERR]"
+    ]
+  },
+  "w408": {
+    "word": "resume",
+    "images": {
+      "scene": ["infopic01/resume.webp"],
+      "card": ["wordpic01/resume.webp"]
+    },
+    "richDetail": [
+      "[TITLE]解释[/TITLE][DEF][EN]To start doing something again after you have stopped for a little while.[/EN][CN]重新开始；继续[/CN][POS]v.[/POS][PH]/rɪˈzuːm/[/PH][DU]The bunnies resumed eating.|(原文例句)小兔子们（在怪物逃走后）又继续吃了起来。[/DU][DU]After the rain stopped, we resumed our game of soccer.|雨停之后，我们重新开始了足球比赛。[/DU][DU]Please resume your seats, the show is starting again.|请回到座位上，表演要继续了。[/DU][/DEF][IMG]infopic01/resume.webp[/IMG]",
+      "[TITLE]常见用法[/TITLE][COLL][H]resume doing sth|继续做某事[POS]v.[/POS][/H][EX]She resumed reading her book after lunch.|午饭后她继续读书。[/EX][C]resume normal service|恢复正常服务[/C][/COLL]",
+      "[TITLE]额外例句[/TITLE][EX]The meeting will resume at two o'clock.[POS]v.[/POS]|会议将于两点继续进行。[/EX][EX]The peace was soon resumed in the dragon valley.[POS]v.[/POS]|龙之谷很快恢复了平静。[/EX]",
+      "[TITLE]常见错误[/TITLE][ERR]注意这个词的词性。作为动词“继续”时读 /rɪˈzuːm/；但如果拼写一样作为名词表示“简历”时，读音完全不同（/ˈrezəmeɪ/），千万别弄混哦！[/ERR]"
+    ]
+  },
+  "w409": {
+    "word": "smack",
+    "images": {
+      "scene": ["infopic01/smack.webp"],
+      "card": ["wordpic01/smack.webp"]
+    },
+    "richDetail": [
+      "[TITLE]解释[/TITLE][DEF][EN]To make a loud noise with your lips when you think something tastes good; or to hit something with your open hand.[/EN][CN]（表示赞赏地）吧唧嘴；拍；（啪的一声）打[/CN][POS]v. & n.[/POS][PH]/smæk/[/PH][DU]The bunnies smacked their lips.|(原文例句)小兔子们（觉得树很好吃）吧唧吧唧地舔着嘴唇。[/DU][DU]Don't smack your lips while you are eating soup!|喝汤的时候不要吧唧嘴！[/DU][DU]The wave smacked against the side of the boat.|浪花啪的一声拍在船舷上。[/DU][/DEF][IMG]infopic01/smack.webp[/IMG]",
+      "[TITLE]常见用法[/TITLE][COLL][H]smack one's lips|吧唧嘴（表示想吃或好吃）[POS]v.[/POS][/H][EX]The dog smacked its lips when it saw the bone.|狗狗看到骨头时吧唧了一下嘴。[/EX][C]a smack on the hand|拍一下手[/C][/COLL]",
+      "[TITLE]额外例句[/TITLE][EX]I heard a loud smack when the book fell on the floor.[POS]n.[POS]|书掉在地上时，我听到啪的一声巨响。[/EX][EX]She smacked her forehead when she remembered the key.[POS]v.[POS]|她想起钥匙时拍了一下额头。[/EX]",
+      "[TITLE]常见错误[/TITLE][ERR]在餐桌礼仪中，smack one's lips（吧唧嘴）通常被认为是不礼貌的。但在童话书里，它常用来形容小动物觉得食物非常美味。[/ERR]"
+    ]
+  },
+  "w410": {
+    "word": "clamp",
+    "images": {
+      "scene": ["infopic01/clamp.webp"],
+      "card": ["wordpic01/clamp.webp"]
+    },
+    "richDetail": [
+      "[TITLE]解释[/TITLE][DEF][EN]To hold or press something very tightly so it cannot move (in the story, a bunny held onto the goat's horn with its mouth).[/EN][CN]夹紧；咬紧；钳住[/CN][POS]v. & n.[/POS][PH]/klæmp/[/PH][DU]It clamped down on a goat horn.|(原文例句)它（小兔子）死死地咬住了一只羊角。[/DU][DU]He clamped his hands over his ears because the noise was too loud.|因为噪音太大，他用手死死捂住耳朵。[/DU][DU]The worker used a metal clamp to hold the wood pieces together.|工人用金属夹子把几块木头夹在一起。[/DU][/DEF][IMG]infopic01/clamp.webp[/IMG]",
+      "[TITLE]常见用法[/TITLE][COLL][H]clamp down on...|强力压制/取缔[POS]v.[POS][/H][EX]The teacher had to clamp down on the noise in class.|老师不得不强力压制教室里的噪音。[/EX][C]clamp one's jaws|咬紧牙关[/C][/COLL]",
+      "[TITLE]额外例句[/TITLE][EX]The baby dragon clamped its teeth onto the toy.[POS]v.[POS]|小龙的牙齿死死咬住了玩具。[/EX][EX]She used a hair clamp to keep her hair back.[POS]n.[POS]|她用发夹把头发夹在后面。[/EX]",
+      "[TITLE]常见错误[/TITLE][ERR]clamp 强调的是像钳子一样的力量。如果你只是轻轻拿着，不能用 clamp。[/ERR]"
+    ]
+  },
+  "w411": {
+    "word": "gnaw",
+    "images": {
+      "scene": ["infopic01/gnaw.webp"],
+      "card": ["wordpic01/gnaw.webp"]
+    },
+    "richDetail": [
+      "[TITLE]解释[/TITLE][DEF][EN]To bite or chew on something hard for a long time, often using your front teeth (like a bunny or a little mouse).[/EN][CN]啃；咬；折磨[/CN][POS]v.[/POS][PH]/nɔː/[/PH][DU]A bunny was gnawing on her scepter.|(原文例句)一只小兔子正在啃她的权杖。[/DU][DU]The puppy loves to gnaw on its rubber bone.|小狗喜欢啃它的橡胶骨头。[/DU][DU]Mice had gnawed a hole in the box.|老鼠在盒子上啃出了一个洞。[/DU][/DEF][IMG]infopic01/gnaw.webp[/IMG]",
+      "[TITLE]常见用法[/TITLE][COLL][H]gnaw at sth|不停地啃某物[POS]v.[/POS][/H][EX]The squirrel was gnawing at a large nut.|松鼠正在不停地啃一个大坚果。[/EX][C]gnaw on a bone|啃骨头[/C][/COLL]",
+      "[TITLE]额外例句[/TITLE][EX]The rabbit gnawed the bark off the tree.[POS]v.[POS]|兔子把树皮都啃光了。[/EX][EX]A feeling of worry began to gnaw at her mind.[POS]v.[POS]|一种焦虑感开始折磨（啃噬）她的内心。[/EX]",
+      "[TITLE]常见错误[/TITLE][ERR]拼写注意：开头的字母 g 是不发音的！读音直接从 n 开始，读作 /nɔː/。[/ERR][ERR]gnaw 通常指为了吃掉或者磨牙而进行的长时期的“啃”。[/ERR]"
+    ]
+  },
+  "w412": {
+    "word": "velvet",
+    "images": {
+      "scene": ["infopic01/velvet.webp"],
+      "card": ["wordpic01/velvet.webp"]
+    },
+    "richDetail": [
+      "[TITLE]解释[/TITLE][DEF][EN]A very soft and smooth kind of cloth; used here to describe something that feels as soft as that cloth (like a bunny's nose).[/EN][CN]丝绒；天鹅绒；丝绒般的[/CN][POS]n. & adj.[/POS][PH]/ˈvelvɪt/[/PH][DU]The bunnies wriggled their velvet noses.|(原文例句)小兔子们扭动着它们丝绒般柔软的鼻子。[/DU][DU]The princess wore a beautiful red velvet dress.|公主穿了一件漂亮的红色天鹅绒裙子。[/DU][DU]The grass felt like velvet under my bare feet.|草地踩在光脚丫下感觉像丝绒一样柔软。[/DU][/DEF][IMG]infopic01/velvet.webp[/IMG]",
+      "[TITLE]常见用法[/TITLE][COLL][H]as soft as velvet|像丝绒一样柔软[POS]adj.[POS][/H][EX]The kitten's fur is as soft as velvet.|小猫的毛像丝绒一样软。[/EX][C]velvet cake|红丝绒蛋糕[/C][C]blue velvet|蓝丝绒[/C][/COLL]",
+      "[TITLE]额外例句[/TITLE][EX]She touched the velvet curtains in the palace.[POS]adj.[POS]|她摸了摸宫殿里的丝绒窗帘。[/EX][EX]The night sky looked like dark velvet.[POS]n.[POS]|夜空看起来就像黑色的丝绒。[/EX]",
+      "[TITLE]常见错误[/TITLE][ERR]虽然它是名词，但在描述质感时可以直接当形容词用。注意不要和 wallet（钱包）搞混了，虽然发音末尾有一点像。[/ERR]"
+    ]
+  },
+  "w413": {
+    "word": "shuffle",
+    "images": {
+      "scene": ["infopic01/shuffle.webp"],
+      "card": ["wordpic01/shuffle.webp"]
+    },
+    "richDetail": [
+      "[TITLE]解释[/TITLE][DEF][EN]To walk slowly without lifting your feet high off the ground, often because you are tired or trying to be sneaky.[/EN][CN]拖着脚走；（洗牌时的）洗；挪动[/CN][POS]v. & n.[/POS][PH]/ˈʃʌfl/[/PH][DU]The bunnies shuffled closer.|(原文例句)小兔子们拖着步子挪得更近了。[/DU][DU]Stop shuffling your feet! Walk properly.|别拖着脚走路！好好走。[/DU][DU]It's your turn to shuffle the cards.|轮到你洗牌了。[/DU][/DEF][IMG]infopic01/shuffle.webp[/IMG]",
+      "[TITLE]常见用法[/TITLE][COLL][H]shuffle the cards|洗牌[POS]v.[POS][/H][EX]Please shuffle the cards well before you deal them.|发牌前请把牌洗好。[/EX][C]a slow shuffle|缓慢的拖步[/C][/COLL]",
+      "[TITLE]额外例句[/TITLE][EX]He shuffled into the kitchen in his slippers.[POS]v.[POS]|他穿着拖鞋拖着脚走进了厨房。[/EX][EX]The nervous boy shuffled his feet while he talked.[POS]v.[POS]|那个紧张的男孩说话时不安地挪动着双脚。[/EX]",
+      "[TITLE]常见错误[/TITLE][ERR]shuffle 这种走法是不离地的，会发出“刷刷”的声音。不要和 normal walk（正常走路）或 march（齐步走）弄混。[/ERR]"
+    ]
+  },
+  "w414": {
+    "word": "fearsome",
+    "images": {
+      "scene": ["infopic01/fearsome.webp"],
+      "card": ["wordpic01/fearsome.webp"]
+    },
+    "richDetail": [
+      "[TITLE]解释[/TITLE][DEF][EN]Something that looks or sounds very scary or very strong (used here as part of a funny name for the princess's move).[/EN][CN]可怕的；令人格格不入的；生畏的[/CN][POS]adj.[/POS][PH]/ˈfɪrsəm/[/PH][DU]Try the Fearsome Flutter Clang.|(原文例句)试试那个“可怕的扇影叮当功”。[/DU][DU]The dragon has fearsome teeth and claws.|那头龙长着可怕的牙齿和爪子。[/DU][DU]A fearsome storm hit the island last night.|昨晚一场可怕的风暴袭击了小岛。[/DU][/DEF][IMG]infopic01/fearsome.webp[/IMG]",
+      "[TITLE]常见用法[/TITLE][COLL][H]a fearsome sight|可怕的景象[POS]adj.[POS][/H][EX]The fire breathing dragon was a fearsome sight.|那头喷火龙是一副可怕的景象。[/EX][C]fearsome reputation|令人生畏的名声[/C][/COLL]",
+      "[TITLE]额外例句[/TITLE][EX]She tried to look fearsome to scare away the monster.[POS]adj.[POS]|她努力让自己看起来很凶，想把怪物吓跑。[/EX][EX]He is a fearsome warrior on the battlefield.[POS]adj.[POS]|他是战场上一位令人生畏的战士。[/EX]",
+      "[TITLE]常见错误[/TITLE][ERR]fearsome 和 scary 意思相近，但 fearsome 往往还带有一种“很有威力、让人不得不敬畏”的感觉。[/ERR]"
+    ]
+  },
+  "w415": {
+    "word": "clang",
+    "images": {
+      "scene": ["infopic01/clang.webp"],
+      "card": ["wordpic01/clang.webp"]
+    },
+    "richDetail": [
+      "[TITLE]解释[/TITLE][DEF][EN]A loud, sharp ringing sound made when two pieces of metal hit each other.[/EN][CN]叮当声；铿锵声[/CN][POS]n. & v.[/POS][PH]/klæŋ/[/PH][DU]A loud CLANG! echoed across the pasture.|(原文例句)一声巨大的金属撞击声在牧场上回荡。[/DU][DU]The metal pot fell on the floor with a loud clang.|那个金属锅掉在地上，发出了响亮的叮当声。[/DU][DU]I heard the church bells clang in the morning.|早晨我听到教堂的钟声在当当地响。[/DU][/DEF][IMG]infopic01/clang.webp[/IMG]",
+      "[TITLE]常见用法[/TITLE][COLL][H]clang of metal|金属的撞击声[POS]n.[POS][/H][EX]The clang of the hammer on the iron was very noisy.|锤子砸在铁上的叮当声非常吵。[/EX][C]the clang of bells|钟声[/C][/COLL]",
+      "[TITLE]额外例句[/TITLE][EX]The gates shut with a heavy clang.[POS]n.[POS]|大门咣的一声关上了。[/EX][EX]The armor clanged as the knight walked.[POS]v.[POS]|骑士走路时盔甲发出叮当叮当的响声。[/EX]",
+      "[TITLE]常见错误[/TITLE][ERR]clang 是一个拟声词。注意它和 click 的区别：click 是很轻微的咔哒声，clang 是很大声的金属撞击声。[/ERR]"
+    ]
+  },
+  "w416": {
+    "word": "extend",
+    "images": {
+      "scene": ["infopic01/extend.webp"],
+      "card": ["wordpic01/extend.webp"]
+    },
+    "richDetail": [
+      "[TITLE]解释[/TITLE][DEF][EN]To make something longer or to reach it out (used in the book when the princess opened her fan-shield to its full size).[/EN][CN]伸出；延伸；展开（书中指公主打开并伸出了她的扇形盾牌）。[/CN][POS]v.[/POS][PH]/ɪkˈstend/[/PH][DU]The Princess in Black extended her fan-shield.|(原文例句)黑衣公主展开了她的扇子盾牌。[/DU][DU]The cat extended its claws to catch the toy.|小猫伸出爪子去抓玩具。[/DU][DU]Please extend your arms like a bird's wings.|请像鸟的翅膀一样伸展你的双臂。[/DU][/DEF][IMG]infopic01/extend.webp[/IMG]",
+      "[TITLE]常见用法[/TITLE][COLL][H]extend one's hand|伸出手[POS]v.[/POS][/H][EX]He extended his hand to help me up.|他伸出手拉我起来。[/EX][C]extend a leg|伸出一条腿[/C][C]extend a deadline|延长截止日期[/C][/COLL]",
+      "[TITLE]额外例句[/TITLE][EX]The lizard extended its long tongue to catch a fly.[POS]v.[POS]|蜥蜴伸出长舌头去抓苍蝇。[/EX][EX]We decided to extend our holiday by two days.[POS]v.[POS]|我们决定把假期延长两天。[/EX]",
+      "[TITLE]常见错误[/TITLE][ERR]注意 extend 和 expand 的区别：extend 侧重于长度或空间的伸展（如伸手、延长时间）；expand 侧重于体积或范围的变大（如气球膨胀）。[/ERR]"
+    ]
+  },
+  "w417": {
+    "word": "twitch",
+    "images": {
+      "scene": ["infopic01/twitch.webp"],
+      "card": ["wordpic01/twitch.webp"]
+    },
+    "richDetail": [
+      "[TITLE]解释[/TITLE][DEF][EN]To make a very quick, small movement that you sometimes cannot control (used in the book to describe how the bunnies moved their ears).[/EN][CN]抽动；（使）微动（书中形容小兔子们快速地扇动耳朵）。[/CN][POS]v. & n.[/POS][PH]/twɪtʃ/[/PH][DU]The bunnies twitched their ears.|(原文例句)小兔子们抖了抖耳朵。[/DU][DU]The rabbit's nose began to twitch when it smelled the carrot.|兔子闻到胡萝卜味时，鼻子开始不停地抽动。[/DU][DU]I felt a little twitch in my eye because I was tired.|因为太累了，我感到眼睛轻微地跳动了一下。[/DU][/DEF][IMG]infopic01/twitch.webp[/IMG]",
+      "[TITLE]常见用法[/TITLE][COLL][H]twitch with excitement|因兴奋而抽动[POS]v.[POS][/H][EX]The puppy's tail started to twitch with excitement.|小狗的尾巴因兴奋而开始微微摆动。[/EX][C]a nervous twitch|紧张的抽动[/C][C]twitch one's nose|动动鼻子[/C][/COLL]",
+      "[TITLE]额外例句[/TITLE][EX]The cat watched the bird, its tail twitching slightly.[POS]v.[POS]|猫盯着小鸟，尾巴尖轻微地摆动着。[/EX][EX]He gave a nervous twitch when the door slammed.[POS]n.[POS]|门砰地关上时，他紧张地抽动了一下。[/EX]",
+      "[TITLE]常见错误[/TITLE][ERR]twitch 是非常快速、幅度很小的动作。如果动作很大，要用 move 或 shake。[/ERR]"
+    ]
+  },
+  "w418": {
+    "word": "bleat",
+    "images": {
+      "scene": ["infopic01/bleat.webp"],
+      "card": ["wordpic01/bleat.webp"]
+    },
+    "richDetail": [
+      "[TITLE]解释[/TITLE][DEF][EN]The sound that a sheep or a goat makes (used in the book when the goats were scared of the bunnies).[/EN][CN]（羊或小牛）咩咩叫；虚弱地抱怨（书中指小羊们紧张地咩咩叫）。[/CN][POS]v. & n.[/POS][PH]/bliːt/[/PH][DU]The goats bleated nervously.|(原文例句)小羊们紧张地咩咩直叫。[/DU][DU]The little lamb began to bleat for its mother.|小羊羔开始咩咩地叫着找妈妈。[/DU][DU]We could hear the bleat of the goats from the field.|我们能听到田野里传来的山羊叫声。[/DU][/DEF][IMG]infopic01/bleat.webp[/IMG]",
+      "[TITLE]常见用法[/TITLE][COLL][H]bleat like a sheep|像羊一样咩咩叫[POS]v.[POS][/H][EX]The children had fun trying to bleat like a sheep.|孩子们开心地模仿羊咩咩叫。[/EX][C]a loud bleat|一声响亮的羊叫[/C][/COLL]",
+      "[TITLE]额外例句[/TITLE][EX]“I don't want to go,” he bleated in a weak voice.[POS]v.[POS]|“我不想去，”他有气无力地抱怨道（比喻像羊叫一样软弱的声音）。[/EX][EX]The hungry goats started to bleat when they saw the farmer.[POS]v.[POS]|看到农民时，饥饿的山羊开始咩咩大叫。[/EX]",
+      "[TITLE]常见错误[/TITLE][ERR]bleat 专门指羊或山羊的叫声。牛的叫声是 moo，马的叫声是 neigh。[/ERR]"
+    ]
+  },
+  "w419": {
+    "word": "dainty",
+    "images": {
+      "scene": ["infopic01/dainty.webp"],
+      "card": ["wordpic01/dainty.webp"]
+    },
+    "richDetail": [
+      "[TITLE]解释[/TITLE][DEF][EN]Small, pretty, and done in a very careful or gentle way (used in the book to describe how a bunny was nibbling the princess's shoe).[/EN][CN]娇小的；优雅的；讲究的（书中指一只小兔子正文雅地小口咬着公主的鞋）。[/CN][POS]adj.[POS][PH]/ˈdeɪnti/[/PH][DU]...the one taking dainty bites of her shoe.|(原文例句)……那只正小口文雅地咬着她鞋子的小兔子。[/DU][DU]She took dainty steps so she wouldn't wake the baby.|她轻手轻脚地走着，以免吵醒婴儿。[/DU][DU]The fairy had dainty wings made of gold.|仙子有一双金色的精致小翅膀。[/DU][/DEF][IMG]infopic01/dainty.webp[/IMG]",
+      "[TITLE]常见用法[/TITLE][COLL][H]dainty food|精致的食物[POS]adj.[POS][/H][EX]The queen served dainty little cakes at the party.|王后在派对上提供了精致的小蛋糕。[/EX][C]dainty features|清秀的五官[/C][C]dainty jewelry|精巧的首饰[/C][/COLL]",
+      "[TITLE]额外例句[/TITLE][EX]The princess wore a pair of dainty glass slippers.[POS]adj.[POS]|公主穿了一双精致的玻璃鞋。[/EX][EX]The flower has dainty pink petals.[POS]adj.[POS]|这朵花有娇小的粉色花瓣。[/EX]",
+      "[TITLE]常见错误[/TITLE][ERR]dainty 强调的是“小而美”或者“优雅”，通常用来形容女性、小孩或精致的小东西。[/ERR]"
+    ]
+  },
+  "w420": {
+    "word": "mass",
+    "images": {
+      "scene": ["infopic01/mass.webp"],
+      "card": ["wordpic01/mass.webp"]
+    },
+    "richDetail": [
+      "[TITLE]解释[/TITLE][DEF][EN]A large amount of something that has no clear shape; a big group of things gathered together (used in the book to describe the bunnies huddling together).[/EN][CN]团；块；堆；大量（书中形容小兔子们聚在一起变成了紫色的一大团）。[/CN][POS]n.[POS][PH]/mæs/[/PH][DU]The bunnies formed into one purple mass.|(原文例句)小兔子们聚成了紫色的一大团。[/DU][DU]I saw a mass of dark clouds in the sky.|我看到天空有一大片乌云。[/DU][DU]The kids left a mass of toys on the floor.|孩子们在地上留了一大堆玩具。[/DU][/DEF][IMG]infopic01/mass.webp[/IMG]",
+      "[TITLE]常见用法[/TITLE][COLL][H]a mass of sth|一大堆/一大团某物[POS]n.[POS][/H][EX]There was a mass of colorful flowers in the garden.|花园里有一大片五彩缤纷的花。[/EX][C]mass media|大众媒体[/C][C]mass production|批量生产[/C][/COLL]",
+      "[TITLE]额外例句[/TITLE][EX]The snow fell in a heavy mass from the roof.[POS]n.[POS]|雪从屋顶上大块大块地掉下来。[/EX][EX]A mass of people waited for the train to arrive.[POS]n.[POS]|一大群人等候火车进站。[/EX]",
+      "[TITLE]常见错误[/TITLE][ERR]作为“一团/堆”时，mass 通常是不规则形状的。注意不要和 mess（混乱）混淆，虽然有时候一大堆东西看起来也很乱。[/ERR]"
+    ]
+  },
+  "w421": {
+    "word": "frisky",
+    "images": {
+      "scene": ["infopic01/frisky.webp"],
+      "card": ["wordpic01/frisky.webp"]
+    },
+    "richDetail": [
+      "[TITLE]解释[/TITLE][DEF][EN]Full of energy and wanting to play and jump around (used in the book to describe the pony's playful movement).[/EN][CN]活泼的；爱打闹的；欢快的（书中形容小马欢快淘气的步子）。[/CN][POS]adj.[POS][PH]/ˈfrɪski/[/PH][DU]Blacky said with a frisky step.|(原文例句)小马“小黑”迈着欢快的步子说道。[/DU][DU]The frisky kitten chased the ball all over the room.|活泼的小猫满屋子追着球跑。[/DU][DU]I feel very frisky today! Let's go for a run.|我今天精力充沛！我们去跑步吧。[/DU][/DEF][IMG]infopic01/frisky.webp[/IMG]",
+      "[TITLE]常见用法[/TITLE][COLL][H]feel frisky|感到精力充沛[POS]adj.[POS][/H][EX]The horses felt frisky in the cool morning air.|马儿在清凉的晨风中显得很活泼。[/EX][C]a frisky puppy|活泼的小狗[/C][/COLL]",
+      "[TITLE]额外例句[/TITLE][EX]The baby goats are very frisky and love to jump on rocks.[POS]adj.[POS]|小山羊们非常调皮，喜欢在石头上跳来跳去。[/EX][EX]A frisky breeze blew the leaves across the grass.[POS]adj.[POS]|一阵轻快的微风吹着叶子掠过草地。[/EX]",
+      "[TITLE]常见错误[/TITLE][ERR]frisky 强调的是“好动、爱玩”，通常形容动物或小孩。不要和 risky（冒险的）弄混了。[/ERR]"
+    ]
+  },
+  "w422": {
+    "word": "stampede",
+    "images": {
+      "scene": ["infopic01/stampede.webp"],
+      "card": ["wordpic01/stampede.webp"]
+    },
+    "richDetail": [
+      "[TITLE]解释[/TITLE][DEF][EN]When a large group of animals or people suddenly start running all together in the same direction, often because they are excited or scared.[/EN][CN]狂奔；（动物）惊群；仓皇而逃（书中形容成百上千的小兔子一起冲回地洞）。[/CN][POS]v. & n.[/POS][PH]/stæmˈpiːd/[/PH][DU]They stampeded into the hole.|(原文例句)它们（小兔子们）成群结队地冲进了地洞。[/DU][DU]The loud noise caused a stampede of cattle.|巨大的响声引起了牛群的惊跑。[/DU][DU]The football fans stampeded toward the exit.|足球迷们蜂拥向出口处。[/DU][/DEF][IMG]infopic01/stampede.webp[/IMG]",
+      "[TITLE]常见用法[/TITLE][COLL][H]stampede toward...|向...狂奔[POS]v.[POS][/H][EX]The elephants stampeded toward the river to drink.|大象成群地奔向河流去喝水。[/EX][C]a wild stampede|疯狂的狂奔[/C][/COLL]",
+      "[TITLE]额外例句[/TITLE][EX]Don't run! You might start a stampede on the playground.[POS]n.[POS]|别乱跑！你可能会在操场上引起一阵乱冲乱撞。[/EX][EX]A stampede of shoppers rushed into the store for the sale.[POS]n.[POS]|一大群购物者涌入商店参加打折活动。[/EX]",
+      "[TITLE]常见错误[/TITLE][ERR]stampede 是指“一大群人或动物”一起跑，如果只是一个人跑，不能用这个词。[/ERR]"
+    ]
+  },
+  "w423": {
+    "word": "wander off",
+    "images": {
+      "scene": ["infopic01/wander_off.webp"],
+      "card": ["wordpic01/wander_off.webp"]
+    },
+    "richDetail": [
+      "[TITLE]解释[/TITLE][DEF][EN]To walk away slowly from a place or a group without a clear reason, and sometimes getting lost.[/EN][CN]漫无目的地走开；离群；走散（书中指斯尼兹沃特公主的小猪跑不见了）。[/CN][POS]v. phr.[POS][PH]/ˈwɑːndər ɔːf/[/PH][DU]...Sir Hogswell, had wandered off.|(原文例句)……霍格斯威尔爵士（小猪）跑丢了。[/DU][DU]Stay close to me and don't wander off in the mall.|跟着我，别在商场里走散了。[/DU][DU]The little puppy wandered off to explore the woods.|小狗溜走去探索森林了。[/DU][/DEF][IMG]infopic01/wander_off.webp[/IMG]",
+      "[TITLE]常见用法[/TITLE][COLL][H]wander off the path|偏离小路[POS]v. phr.[POS][/H][EX]Be careful not to wander off the path in the dark.|小心别在黑暗中偏离了小路。[/EX][C]wander off alone|独自走开[/C][/COLL]",
+      "[TITLE]额外例句[/TITLE][EX]His mind began to wander off during the long lesson.[POS]v. phr.[POS]|长长的课上，他的心思开始走神了（比喻用法）。[/EX][EX]One of the sheep wandered off from the rest of the flock.[POS]v. phr.[POS]|其中一只羊从羊群中走散了。[/EX]",
+      "[TITLE]常见错误[/TITLE][ERR]wander (/ˈwɑːndər/ 漫游) 不要和 wonder (/ˈwʌndər/ 想知道) 弄混。它们发音和意思都不同。[/ERR]"
+    ]
+  },
+  "w424": {
+    "word": "relish",
+    "images": {
+      "scene": ["infopic01/relish.webp"],
+      "card": ["wordpic01/relish.webp"]
+    },
+    "richDetail": [
+      "[TITLE]解释[/TITLE][DEF][EN]To get great pleasure from something; to look forward to something very much (used in the book to say how much the princess loved her friend).[/EN][CN]享受；非常喜欢；（在此指）非常珍惜[/CN][POS]v.[/POS][PH]/ˈrelɪʃ/[/PH][DU]She relished Princess Magnolia's friendship.|(原文例句)她非常珍惜木兰公主的友谊。[/DU][DU]The boy relished the challenge of the new game.|小男孩很享受新游戏的挑战。[/DU][DU]I relish the chance to play with my dragons every day.|我非常珍惜每天和我的龙一起玩的机会。[/DU][/DEF][IMG]infopic01/relish.webp[/IMG]",
+      "[TITLE]常见用法[/TITLE][COLL][H]relish the opportunity|珍惜机会[POS]v.[POS][/H][EX]You should relish the opportunity to learn magic.|你应该珍惜学习魔法的机会。[/EX][C]relish every moment|享受每一刻[/C][/COLL]",
+      "[TITLE]额外例句[/TITLE][EX]The cat relished the warm spot on the rug.[POS]v.[POS]|猫很享受地毯上温暖的地方。[/EX][EX]He relishes the peace and quiet of the forest.[POS]v.[POS]|他很享受森林里的宁静。[/EX]",
+      "[TITLE]常见错误[/TITLE][ERR]relish 这种“喜欢”程度比 enjoy 还要深，带有一种“津津有味”的感觉。[/ERR]"
+    ]
+  },
+  "w425": {
+    "word": "friendship",
+    "images": {
+      "scene": ["infopic01/friendship.webp"],
+      "card": ["wordpic01/friendship.webp"]
+    },
+    "richDetail": [
+      "[TITLE]解释[/TITLE][DEF][EN]The special feeling and bond between people who are friends.[/EN][CN]友谊；友情[/CN][POS]n.[POS][PH]/ˈfrendʃɪp/[/PH][DU]She relished Princess Magnolia's friendship.|(原文例句)她非常珍惜木兰公主的友谊。[/DU][DU]Our friendship started when we were three years old.|我们的友谊从三岁就开始了。[/DU][DU]Winning isn't as important as our friendship.|赢球没有我们的友谊重要。[/DU][/DEF][IMG]infopic01/friendship.webp[/IMG]",
+      "[TITLE]常见用法[/TITLE][COLL][H]a lasting friendship|持久的友谊[POS]n.[POS][/H][EX]They have had a lasting friendship for many years.|他们多年来一直保持着深厚的友谊。[/EX][C]build a friendship|建立友谊[/C][C]close friendship|亲密的友情[/C][/COLL]",
+      "[TITLE]额外例句[/TITLE][EX]I am so happy to have your friendship![POS]n.[POS]|能拥有你的友谊我太开心了！[/EX][EX]True friendship is a very precious gift.[POS]n.[POS]|真正的友谊是一份非常珍贵的礼物。[/EX]",
+      "[TITLE]常见错误[/TITLE][ERR]friendship 是抽象名词。如果你指一个具体的朋友，要用 friend。[/ERR]"
+    ]
+  },
+  "w426": {
+    "word": "apologize",
+    "images": {
+      "scene": ["infopic01/apologize.webp"],
+      "card": ["wordpic01/apologize.webp"]
+    },
+    "richDetail": [
+      "[TITLE]解释[/TITLE][DEF][EN]To say you are sorry for something bad you did or for a mistake you made.[/EN][CN]道歉；认错[/CN][POS]v.[POS][PH]/əˈpɑːlədʒaɪz/[/PH][DU]Princess Magnolia sent me to apologize.|(原文例句)木兰公主派我来向你道歉。[/DU][DU]I should apologize to my sister for breaking her toy.|我不小心弄坏了姐姐的玩具，应该向她道歉。[/DU][DU]You don't need to apologize, it was just an accident.|你不需要道歉，那只是个意外。[/DU][/DEF][IMG]infopic01/apologize.webp[/IMG]",
+      "[TITLE]常见用法[/TITLE][COLL][H]apologize to sb for sth|因某事向某人道歉[POS]v.[POS][/H][EX]Please apologize to your teacher for being late.|迟到了请向老师道歉。[/EX][C]make an apology|道歉（名词用法）[/C][/COLL]",
+      "[TITLE]额外例句[/TITLE][EX]He apologized for his rude behavior at the party.[POS]v.[POS]|他为他在派对上的粗鲁行为道歉了。[/EX][EX]The dragon apologized for knocking over the stone wall.[POS]v.[POS]|巨龙为撞倒石墙而道歉。[/EX]",
+      "[TITLE]常见错误[/TITLE][ERR]注意介词搭配：向某人道歉用 to (apologize to you)，为了某事道歉用 for (apologize for it)。[/ERR]"
+    ]
   }
+
 
   
 
