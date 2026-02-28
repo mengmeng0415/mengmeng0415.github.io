@@ -2961,7 +2961,7 @@
     "options": ["wander off", "apologize", "relish", "resume"],
     "answer": 0
   },
-  
+
   "q_w425": {
     "type": "choice_text",
     "wordIds": ["w425"],
@@ -2975,7 +2975,372 @@
     "question": "You should ______ to your sister after breaking her favorite toy.",
     "options": ["threaten", "dine", "apologize", "gnaw"],
     "answer": 2
-  }
+  },
+  "q_w427": {
+    "type": "choice_text",
+    "wordIds": ["w427"],
+    "question": "The sun was just starting to rise at ______ when the Princess finally finished fighting monsters. ",
+    "options": ["dawn", "shutter", "height", "vacation"],
+    "answer": 0
+  },
+  "q_w428": {
+    "type": "choice_text",
+    "wordIds": ["w428"],
+    "question": "The tired girl began to ______ into the closet because she was too sleepy to walk straight. ",
+    "options": ["skim", "plunge", "stumble", "whip"],
+    "answer": 2
+  },
+  "q_w429": {
+    "type": "choice_text",
+    "wordIds": ["w429"],
+    "question": "The big monster gave a ______ roar, showing off its many sharp teeth. ",
+    "options": ["springy", "toothy", "slick", "doubtful"],
+    "answer": 1
+  },
+  "q_w430": {
+    "type": "choice_text",
+    "wordIds": ["w430"],
+    "question": "I could hear a loud ______ coming from the bedroom where Dad was taking a nap.",
+    "options": ["shrug", "height", "burp", "snore"],
+    "answer": 3
+  },
+  "q_w431": {
+    "type": "choice_text",
+    "wordIds": ["w431"],
+    "question": "The nurse measured the boy's ______ to see how tall he had grown this year." ,
+    "options": ["height", "vacation", "dawn", "mass"],
+    "answer": 0
+  },
+  "q_w432": {
+    "type": "choice_text",
+    "wordIds": ["w432"],
+    "question": "The Goat Avenger told the Princess she worked too hard and needed a ______ to rest. ",
+    "options": ["shutter", "vacation", "checker", "horde"],
+    "answer": 1
+  },
+  "q_w433": {
+    "type": "choice_text",
+    "wordIds": ["w433"],
+    "question": "When I asked who ate the cake, my brother just ______ his shoulders and said nothing. ",
+    "options": ["slapped", "plunged", "shrugged", "sniffled"],
+    "answer": 2
+  },
+  "q_w434": {
+    "type": "choice_text",
+    "wordIds": ["w434"],
+    "question": "You were very kind to help your friends today, so you ______ a big gold star.",
+    "options": ["lurk", "set off", "flail", "deserve"],
+    "answer": 3
+  },
+  "q_w435": {
+    "type": "choice_text",
+    "wordIds": ["w435"],
+    "question": "It's so relaxing to lie in a ______ tied between two big trees. ",
+    "options": ["hammock", "checker", "height", "pit"],
+    "answer": 0
+  },
+  "q_w436": {
+    "type": "choice_text",
+    "wordIds": ["w436"],
+    "question": "Princess Sneezewort wanted to play a game of ______ on the beach.",
+    "options": ["shutter", "sunburn", "checkers", "catchphrase"],
+    "answer": 2
+  },
+  "q_w437": {
+    "type": "choice_text",
+    "wordIds": ["w437"],
+    "question": "She squeezed her eyes ______ so tightly that it felt like closing a window. ",
+    "options": ["toothy", "shutter", "frisky", "dainty"],
+    "answer": 1
+  },
+  "q_w438": {
+    "type": "choice_text",
+    "wordIds": ["w438"],
+    "question": "The sea monster had a tiny neck but a ______ and heavy body. ",
+    "options": ["slick", "springy", "doubtful", "massive"],
+    "answer": 3
+  },
+  "q_w439": {
+    "type": "choice_text",
+    "wordIds": ["w439"],
+    "question": "If you play in the bright sun all day without a hat, you might get a painful ______. ",
+    "options": ["sunburn", "vacation", "dawn", "height"],
+    "answer": 0
+  },
+  "q_w440": {
+    "type": "choice_text",
+    "wordIds": ["w440"],
+    "question": "Looking down from the high window made the little girl feel ______ and dizzy. ",
+    "options": ["frisky", "woozy", "dainty", "fearsome"],
+    "answer": 1
+  },
+  "q_w441": {
+    "type": "choice_text",
+    "wordIds": ["w441"],
+    "question": "The lumberjack used a sharp axe to ______ the old wood into small pieces. ",
+    "options": ["slap", "whip", "chop", "plunge"],
+    "answer": 2
+  },
+  "q_w442": {
+    "type": "choice_text",
+    "wordIds": ["w442"],
+    "question": "The superhero always shouts his famous ______ right before he saves the day.",
+    "options": ["hammock", "checker", "shutter", "catchphrase"],
+    "answer": 3
+  },
+  "q_w443": {
+    "type": "choice_text",
+    "wordIds": ["w443"],
+    "question": "The goat let out a loud ______ after eating too much green grass.",
+    "options": ["burp", "snore", "dawn", "pit"],
+    "answer": 0
+  },
+  "q_w444": {
+    "type": "choice_text",
+    "wordIds": ["w444"],
+    "question": "The dust tickled my nose and made it ______.",
+    "options": ["chafe", "sniffle", "itch", "sag"],
+    "answer": 2
+  },
+  "q_w445": {
+    "type": "choice_text",
+    "wordIds": ["w445"],
+    "question": "The rough straps of the heavy bag began to ______ the boy's shoulders.",
+    "options": ["shrug", "chafe", "lurk", "skim"],
+    "answer": 1
+  },
+  "q_w446": {
+    "type": "choice_text",
+    "wordIds": ["w446"],
+    "question": "Duff had to ______ his mask because he was in a big hurry to reach the beach.",
+    "options": ["set off", "skim", "plunge", "shove on"],
+    "answer": 3
+  },
+  "q_w447": {
+    "type": "choice_text",
+    "wordIds": ["w447"],
+    "question": "The monster's large flat tail ______ the water with a loud sound.",
+    "options": ["slapped", "sputtered", "threated", "gnawed"],
+    "answer": 0
+  },
+  "q_w448": {
+    "type": "choice_text",
+    "wordIds": ["w448"],
+    "question": "A giant wave ______ against the shore with a loud boom. ",
+    "options": ["sniffled", "crashed", "trickled", "shuffled"],
+    "answer": 1
+  },
+  "q_w449": {
+    "type": "choice_text",
+    "wordIds": ["w449"],
+    "question": "The sea monster's tail ______ back and forth as fast as a snapping string.",
+    "options": ["sagged", "lurked", "whipped", "bleated"],
+    "answer": 2
+  },
+  "q_w450": {
+    "type": "choice_text",
+    "wordIds": ["w450"],
+    "question": "The Princess wondered what was ______ the loud monster alarm.",
+    "options": ["resuming", "devouring", "clamping", "set off"],
+    "answer": 3
+  },
+  "q_w451": {
+    "type": "choice_text",
+    "wordIds": ["w451"],
+    "question": "The scared squirrel began to ______ its arms and legs in the air.",
+    "options": ["flail", "shrug", "smack", "snort"],
+    "answer": 0
+  },
+  "q_w452": {
+    "type": "choice_text",
+    "wordIds": ["w452"],
+    "question": "The goat gave a ______ bleat because it didn't believe the squirrel was a monster.",
+    "options": ["springy", "doubtful", "massive", "slick"],
+    "answer": 1
+  },
+  "q_w4253": {
+    "type": "choice_text",
+    "wordIds": ["w453"],
+    "question": "Be careful when you walk on the wet floor, it is very ______! ",
+    "options": ["fuzzy", "toothy", "slick", "dainty"],
+    "answer": 2
+  },
+  "q_w454": {
+    "type": "choice_text",
+    "wordIds": ["w454"],
+    "question": "The monster's back felt soft and ______ like a big mattress.",
+    "options": ["fearsome", "woozy", "frisky", "springy"],
+    "answer": 3
+  },
+  "q_w455": {
+    "type": "choice_text",
+    "wordIds": ["w455"],
+    "question": "The bird would ______ lightly over the top of the lake to catch a fish.",
+    "options": ["skim", "plunge", "whip", "stumble"],
+    "answer": 0
+  },
+  "q_w456": {
+    "type": "choice_text",
+    "wordIds": ["w456"],
+    "question": "The sea monster felt very sad and ______ because it missed its home.",
+    "options": ["chopped", "sniffled", "resumed", "threated"],
+    "answer": 1
+  },
+  "q_w457": {
+    "type": "choice_text",
+    "wordIds": ["w457"],
+    "question": "When the monster was unhappy, its big tail began to ______ down toward the sand.",
+    "options": ["flail", "twitch", "sag", "slap"],
+    "answer": 2
+  },
+  "q_w458": {
+    "type": "choice_text",
+    "wordIds": ["w458"],
+    "question": "A small monster started to ______ in the dark shadows beside the hole.",
+    "options": ["shrug", "snore", "stumble", "lurk"],
+    "answer": 3
+  },
+  "q_w459": {
+    "type": "choice_text",
+    "wordIds": ["w459"],
+    "question": "The sea monster took a deep breath and ______ into the blue water. ",
+    "options": ["plunged", "skimmed", "chafed", "shoved on"],
+    "answer": 0
+  },
+  "q_w460": {
+  "type": "choice_text",
+  "wordIds": ["w460"],
+  "question": "______ means pleasantly cool and fresh, or firm and easy to break.",
+  "options": ["victory", "crisp", "squat", "buggy"],
+  "answer": 1
+  },
+  "q_w461": {
+  "type": "choice_text",
+  "wordIds": ["w461"],
+  "question": "A ______ is the act of defeating an enemy or winning a competition.",
+  "options": ["victory", "shaggy", "trolley", "playdate"],
+  "answer": 0
+  },
+  "q_w462": {
+  "type": "choice_text",
+  "wordIds": ["w462"],
+  "question": "To ______ means to lower your body close to the ground with bent legs.",
+  "options": ["interrupt", "uncertain", "squat", "linen"],
+  "answer": 2
+  },
+  "q_w463": {
+  "type": "choice_text",
+  "wordIds": ["w463"],
+  "question": "A ______ is a light wheeled carriage often pulled by an animal.",
+  "options": ["comfort", "stroll", "twine", "buggy"],
+  "answer": 3
+  },
+  "q_w464": {
+  "type": "choice_text",
+  "wordIds": ["w464"],
+  "question": "______ means having long, thick and untidy hair or fur.",
+  "options": ["shaggy", "practical", "bandage", "quiver"],
+  "answer": 0
+  },
+  "q_w465": {
+  "type": "choice_text",
+  "wordIds": ["w465"],
+  "question": "A ______ is a track vehicle or a small cart for carrying things.",
+  "options": ["nestle", "snoozy", "amble", "trolley"],
+  "answer": 3
+  },
+  "q_w466": {
+  "type": "choice_text",
+  "wordIds": ["w466"],
+  "question": "A ______ is a planned time for children to play together.",
+  "options": ["playdate", "crisp", "victory", "squat"],
+  "answer": 0
+  },
+  "q_w467": {
+  "type": "choice_text",
+  "wordIds": ["w467"],
+  "question": "______ means useful and good for real life use.",
+  "options": ["buggy", "shaggy", "practical", "trolley"],
+  "answer": 2
+  },
+  "q_w468": {
+  "type": "choice_text",
+  "wordIds": ["w468"],
+  "question": "To ______ is to stop a talk or activity suddenly.",
+  "options": ["interrupt", "playdate", "practical", "nestle"],
+  "answer": 0
+  },
+  "q_w469": {
+  "type": "choice_text",
+  "wordIds": ["w469"],
+  "question": "______ means not sure or definite about something.",
+  "options": ["comfort", "uncertain", "stroll", "twine"],
+  "answer": 1
+  },
+  "q_w470": {
+  "type": "choice_text",
+  "wordIds": ["w470"],
+  "question": "______ is cloth made from flax or soft home cloth goods.",
+  "options": ["bandage", "quiver", "linen", "amble"],
+  "answer": 2
+  },
+  "q_w471": {
+  "type": "choice_text",
+  "wordIds": ["w471"],
+  "question": "To ______ someone means to make them feel better and less sad.",
+  "options": ["crisp", "comfort", "victory", "squat"],
+  "answer": 1
+  },
+  "q_w472": {
+  "type": "choice_text",
+  "wordIds": ["w472"],
+  "question": "To ______ is to walk slowly in a relaxed way.",
+  "options": ["buggy", "shaggy", "stroll", "trolley"],
+  "answer": 2
+  },
+  "q_w473": {
+  "type": "choice_text",
+  "wordIds": ["w473"],
+  "question": "______ is a strong thin string made of twisted threads.",
+  "options": ["twine", "playdate", "interrupt", "uncertain"],
+  "answer": 0
+  },
+  "q_w474": {
+  "type": "choice_text",
+  "wordIds": ["w474"],
+  "question": "A ______ is a cloth strip used to cover a wound.",
+  "options": ["linen", "bandage", "comfort", "nestle"],
+  "answer": 1
+  },
+  "q_w475": {
+  "type": "choice_text",
+  "wordIds": ["w475"],
+  "question": "To ______ means to shake slightly from fear or strong feeling.",
+  "options": ["snoozy", "amble", "quiver", "crisp"],
+  "answer": 2
+  },
+  "q_w476": {
+  "type": "choice_text",
+  "wordIds": ["w476"],
+  "question": "To ______ is to sit or lie in a warm, comfortable place.",
+  "options": ["victory", "squat", "nestle", "buggy"],
+  "answer": 2
+  },
+  "q_w477": {
+  "type": "choice_text",
+  "wordIds": ["w477"],
+  "question": "______ means sleepy and wanting to sleep.",
+  "options": ["shaggy", "trolley", "snoozy", "practical"],
+  "answer": 2
+  },
+  "q_w478": {
+  "type": "choice_text",
+  "wordIds": ["w478"],
+  "question": "To ______ is to walk slowly and in a relaxed, unhurried way.",
+  "options": ["interrupt", "amble", "uncertain", "linen"],
+  "answer": 1
+}
+
 
 
 
