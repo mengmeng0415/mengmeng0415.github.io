@@ -288,8 +288,31 @@
   { "id": "pb4-c13", "name": "Chapter 13", "wordIds": ["w459"], "quizIds": ["q_w459"] }
 ]
   }
+,
+   {
+    "id": "pb5",
+    "type": "初章书",
+    "series": "The Pincess in Black",
+    "title": "The Pincess in Black 5",
+    "cover": "infopic01/pb5.png",
+     "pdfs": [
+      {
+        "name": "The Pincess in Black 4",
+        "url": "https://mengmeng0415.github.io/pdfinfo01/pb5.pdf"
+      }
+    ],
+    "chapters": [
+      { "id": "pb5-c1", "name": "Chapter 1", "wordIds": ["w460", "w461", "w462"], "quizIds": ["q_w460", "q_w461", "q_w462"] },
+      { "id": "pb5-c2", "name": "Chapter 2", "wordIds": ["w463", "w464"], "quizIds": ["q_w463", "q_w464"] },
+      { "id": "pb5-c4", "name": "Chapter 4", "wordIds": ["w465", "w466", "w467", "w468", "w469", "w470"], "quizIds": ["q_w465", "q_w466", "q_w467", "q_w468", "q_w469", "q_w470"] },
+      { "id": "pb5-c5", "name": "Chapter 5", "wordIds": ["w471"], "quizIds": ["q_w471"] },
+      { "id": "pb5-c6", "name": "Chapter 6", "wordIds": ["w472", "w473"], "quizIds": ["q_w472", "q_w473"] },
+      { "id": "pb5-c7", "name": "Chapter 7", "wordIds": ["w474", "w475", "w476"], "quizIds": ["q_w474", "q_w475", "q_w476"] },
+      { "id": "pb5-c8", "name": "Chapter 8", "wordIds": ["w477"], "quizIds": ["q_w477"] },
+      { "id": "pb5-c10", "name": "Chapter 10", "wordIds": ["w478"], "quizIds": ["q_w478"] }
+  ]
 
-
+   }
 
 
 
