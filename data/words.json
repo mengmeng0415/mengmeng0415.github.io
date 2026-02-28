@@ -5867,6 +5867,97 @@
       "[TITLE]额外例句[/TITLE][EX]She was doubtful that her team could win.[POS]adj.[/POS]|她怀疑自己的队伍能不能赢。[/EX][EX]The doubtful goat watched the squirrel.[POS]adj.[/POS]|那只满心怀疑的山羊看着松鼠。[/EX][EX]It is doubtful we can go out in this rain.[POS]adj.[/POS]|下这么大雨，我们恐怕出不去了。[/EX]",
       "[TITLE]常见错误[/TITLE][ERR]doubtful 中的字母 b 是不发音的！直接读 /ˈdaʊtfʊl/。[/ERR]"
     ]
+  },
+  "w453": {
+    "word": "slick",
+    "images": {
+      "scene": ["infopic01/slick.webp"],
+      "card": ["wordpic01/slick.webp"]
+    },
+    "richDetail": [
+      "[TITLE]解释[/TITLE][DEF][EN]Smooth and slippery, like a wet floor or ice.[/EN][CN]光滑的；滑溜的（书中指海怪的尾巴又长又滑）。[/CN][POS]adj.[/POS][PH]/slɪk/[/PH][DU]The sea monster’s tail was long, narrow, and slick.|(原文例句)海怪的尾巴又长、又窄、又滑。[/DU][DU]Be careful! The floor is wet and slick.|小心！地板又湿又滑。[/DU][DU]The ice is very slick in winter.|冬天的冰面非常滑。[/DU][/DEF][IMG]infopic01/slick.webp[/IMG]",
+      "[TITLE]常见用法[/TITLE][COLL][H]slick road|湿滑的路面[POS]adj.[/POS][/H][EX]Drive slowly on the slick road.|在湿滑的路上开车要慢一点。[/EX][C]slick with oil|沾了油很滑[/C][/COLL]",
+      "[TITLE]额外例句[/TITLE][EX]The seal has slick skin.[POS]adj.[/POS]|海豹有光滑的皮肤。[/EX][EX]The rain made the grass slick.[POS]adj.[/POS]|雨水让草地变得滑溜溜的。[/EX]",
+      "[TITLE]常见错误[/TITLE][ERR]slick 通常形容那种“湿滑”或“油滑”。如果只是普通的平滑，用 smooth 更好。[/ERR]"
+    ]
+  },
+  "w454": {
+    "word": "springy",
+    "images": {
+      "scene": ["infopic01/springy.webp"],
+      "card": ["wordpic01/springy.webp"]
+    },
+    "richDetail": [
+      "[TITLE]解释[/TITLE][DEF][EN]Soft and bouncy, like a mattress or a trampoline.[/EN][CN]有弹性的；松软的（书中形容海怪的背像床垫一样软绵绵、有弹性）。[/CN][POS]adj.[/POS][PH]/ˈsprɪŋi/[/PH][DU]The sea monster’s back was soft and springy.|(原文例句)海怪的背部又软又有弹性。[/DU][DU]The new grass felt springy under my feet.|新长的草地踩上去很有弹性。[/DU][DU]This bed is very springy.|这张床弹性很好。[/DU][/DEF][IMG]infopic01/springy.webp[/IMG]",
+      "[TITLE]常见用法[/TITLE][COLL][H]springy steps|轻快的步子[POS]adj.[/POS][/H][EX]She walked with springy steps.|她走路步子很轻快。[/EX][C]springy hair|蓬松有弹性的头发[/C][/COLL]",
+      "[TITLE]额外例句[/TITLE][EX]The moss was soft and springy.[POS]adj.[/POS]|苔藓又软又有弹性。[/EX][EX]I love this springy sofa.[POS]adj.[/POS]|我喜欢这张软软弹弹的沙发。[/EX]",
+      "[TITLE]常见错误[/TITLE][ERR]注意拼写，它是从 spring（弹簧）变来的。不要写成 springey。[/ERR]"
+    ]
+  },
+  "w455": {
+    "word": "skim",
+    "images": {
+      "scene": ["infopic01/skim.webp"],
+      "card": ["wordpic01/skim.webp"]
+    },
+    "richDetail": [
+      "[TITLE]解释[/TITLE][DEF][EN]To move quickly and lightly over a surface.[/EN][CN]掠过；滑过（书中指公主顺着海怪的鼻子滑了下去）。[/CN][POS]v.[/POS][PH]/skɪm/[/PH][DU]She skimmed down to the tip of its nose.|(原文例句)她滑到了它鼻子的尖端。[/DU][DU]The birds skim over the lake.|鸟儿掠过湖面。[/DU][DU]I like to skim flat stones across the water.|我喜欢玩打水漂（让石头在水面滑过）。[/DU][/DEF][IMG]infopic01/skim.webp[/IMG]",
+      "[TITLE]常见用法[/TITLE][COLL][H]skim through|略读[POS]v.[/POS][/H][EX]I skimmed through the book to find pictures.|我翻了翻书找图片。[/EX][C]skim off|撇去[/C][/COLL]",
+      "[TITLE]额外例句[/TITLE][EX]The dragon skimmed the tree tops.[POS]v.[/POS]|巨龙掠过树梢。[/EX][EX]The ball skimmed across the grass.[POS]v.[/POS]|球从草地上滑过。[/EX]",
+      "[TITLE]常见错误[/TITLE][ERR]skim 强调的是“轻触表面”或“不深入”。如果读得很认真，就不能用 skim。[/ERR]"
+    ]
+  },
+  "w456": {
+    "word": "sniffle",
+    "images": {
+      "scene": ["infopic01/sniffle.webp"],
+      "card": ["wordpic01/sniffle.webp"]
+    },
+    "richDetail": [
+      "[TITLE]解释[/TITLE][DEF][EN]To make a sound through your nose because you are crying or have a cold.[/EN][CN]抽鼻涕；吸鼻子（书中指海怪难过地吸了吸鼻子）。[/CN][POS]v.[/POS][PH]/ˈsnɪfl/[/PH][DU]The sea monster sniffled.|(原文例句)海怪委屈地吸了吸鼻子。[/DU][DU]Stop sniffling and use a tissue.|别抽鼻涕了，用张纸巾。[/DU][DU]The little girl sniffled after she fell down.|小女孩摔倒后委屈地吸着鼻子。[/DU][/DEF][IMG]infopic01/sniffle.webp[/IMG]",
+      "[TITLE]常见用法[/TITLE][COLL][H]sniffle and cry|抽泣着哭[POS]v.[/POS][/H][EX]He sat in the corner, sniffling.|他坐在角落里吸着鼻子。[/EX][C]a little sniffle|一声轻微的抽鼻涕声[/C][/COLL]",
+      "[TITLE]额外例句[/TITLE][EX]I heard a sniffle behind me.[POS]n.[POS]|我听到身后传来一声吸鼻子的声音。[/EX][EX]She was sniffling because of her cold.[POS]v.[POS]|她因为感冒一直在抽鼻涕。[/EX]",
+      "[TITLE]常见错误[/TITLE][ERR]sniffle 通常指伤心或感冒时的“小声抽鼻涕”。如果是大声哭，用 cry；如果是闻东西，用 sniff。[/ERR]"
+    ]
+  },
+  "w457": {
+    "word": "sag",
+    "images": {
+      "scene": ["infopic01/sag.webp"],
+      "card": ["wordpic01/sag.webp"]
+    },
+    "richDetail": [
+      "[TITLE]解释[/TITLE][DEF][EN]To sink or hang down, usually because of weight or being sad.[/EN][CN]下垂；松弛；（由于沮丧）垂下（书中指海怪难过得垂下了尾巴）。[/CN][POS]v.[/POS][PH]/sæɡ/[/PH][DU]Its tail sagged.|(原文例句)它的尾巴垂了下来。[/DU][DU]The shelf began to sag under the heavy books.|架子在沉重的书本下开始下弯了。[/DU][DU]The old gate sags a bit.|旧大门有点下垂。[/DU][/DEF][IMG]infopic01/sag.webp[/IMG]",
+      "[TITLE]常见用法[/TITLE][COLL][H]sagging skin|松弛的皮肤[POS]adj.[POS][/H][EX]The old dog has sagging skin.|那只老狗的皮肤很松。[/EX][C]sag in the middle|中间凹陷[/C][/COLL]",
+      "[TITLE]额外例句[/TITLE][EX]Her shoulders sagged when she heard the news.[POS]v.[POS]|听到消息时，她的肩膀垮了下来。[/EX][EX]The rope sags in the middle.[POS]v.[POS]|绳子中间垂了下来。[/EX]",
+      "[TITLE]常见错误[/TITLE][ERR]sag 是因为重力或没力气而自然垂下。不要把它和 drop（扔掉/掉落）弄混。[/ERR]"
+    ]
+  },
+  "w458": {
+    "word": "lurk",
+    "images": {
+      "scene": ["infopic01/lurk.webp"],
+      "card": ["wordpic01/lurk.webp"]
+    },
+    "richDetail": [
+      "[TITLE]解释[/TITLE][DEF][EN]To wait or hide somewhere, especially to do something bad or sneaky.[/EN][CN]潜伏；埋伏（书中指一个橡果状的怪物躲在洞口旁边）。[/CN][POS]v.[/POS][PH]/lɜːrk/[/PH][DU]An acorn-shaped monster lurked beside the hole.|(原文例句)一个橡果形状的怪物潜伏在洞口旁。[/DU][DU]A big cat was lurking in the tall grass.|一只大猫潜伏在长草丛里。[/DU][DU]The shark was lurking under the water.|鲨鱼在水下潜伏着。[/DU][/DEF][IMG]infopic01/lurk.webp[/IMG]",
+      "[TITLE]常见用法[/TITLE][COLL][H]lurk in the shadows|潜伏在阴影中[POS]v.[/POS][/H][EX]Something was lurking in the dark shadows.|阴影里藏着什么东西。[/EX][C]lurk around|在附近徘徊/潜伏[/C][/COLL]",
+      "[TITLE]额外例句[/TITLE][EX]Danger might be lurking nearby.[POS]v.[POS]|危险可能就在附近潜伏着。[/EX][EX]I saw a shadow lurking behind the tree.[POS]v.[POS]|我看到一个影子躲在树后。[/EX]",
+      "[TITLE]常见错误[/TITLE][ERR]lurk 带有一种“不怀好意”或“偷偷摸摸”的感觉。如果是正大光明地站着，不能用 lurk。[/ERR]"
+    ]
+  },
+  "w459": {
+    "word": "plunge",
+    "images": {
+      "scene": ["infopic01/plunge.webp"],
+      "card": ["wordpic01/plunge.webp"]
+    },
+    "richDetail": [
+      "[TITLE]解释[/TITLE][DEF][EN]To jump or dive quickly into water or into a place.[/EN][CN]纵身跳入；猛冲（书中指海怪猛地钻进了水里）。[/CN][POS]v.[/POS][PH]/plʌndʒ/[/PH][DU]The sea monster plunged into the water.|(原文例句)海怪纵身跳进了水里。[/DU][DU]He plunged into the pool on a hot day.|热天里，他猛地跳进了池子里。[/DU][DU]The room was plunged into darkness.|房间突然陷入了黑暗（比喻用法）。[/DU][/DEF][IMG]infopic01/plunge.webp[/IMG]",
+      "[TITLE]常见用法[/TITLE][COLL][H]plunge in|跳进去/投入[POS]v.[POS][/H][EX]Let's just plunge in and start the work!|咱们直接开始干活吧！[/EX][C]plunge headfirst|头朝下跳入[/C][/COLL]",
+      "[TITLE]额外例句[/TITLE][EX]The whale plunged back into the sea.[POS]v.[POS]|鲸鱼跳回了大自然。[/EX][EX]Temperatures plunged during the night.[POS]v.[POS]|气温在夜里骤降（plunge也可以形容下降很快）。[/EX]",
+      "[TITLE]常见错误[/TITLE][ERR]plunge 强调的是“用力”和“速度”。如果是慢慢走下水，不能用 plunge。[/ERR]"
+    ]
   }
 
 
