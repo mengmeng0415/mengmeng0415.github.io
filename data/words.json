@@ -5959,237 +5959,255 @@
       "[TITLE]常见错误[/TITLE][ERR]plunge 强调的是“用力”和“速度”。如果是慢慢走下水，不能用 plunge。[/ERR]"
     ]
   },
-  "q_w427": {
-    "type": "choice_text",
-    "wordIds": ["w427"],
-    "question": "The sun was just starting to rise at ______ when the Princess finally finished fighting monsters. ",
-    "options": ["dawn", "shutter", "height", "vacation"],
-    "answer": 0
+  
+  "w460": {
+    "word": "crisp",
+    "images": {
+      "scene": ["infopic01/crisp.webp"],
+      "card": ["wordpic01/crisp.webp"]
+    },
+    "richDetail": [
+      "[TITLE] 解释 [/TITLE][DEF][EN]Pleasantly cool and fresh (adj.); firm and dry and easy to break (adj.), used in the book to describe the pleasant and cool weather of the afternoon[/EN][CN]（形容词）（天气）清爽的，微凉的；酥脆的，松脆的，书中用来形容午后凉爽宜人的天气[/CN][POS]adj.[/POS][PH]/krɪsp/（英美）[/PH][DU]It was a clear, crisp, comfortable afternoon.|(原文例句)那是一个晴朗、清爽又惬意的午后。[/DU][DU]We went for a walk in the park on a crisp autumn morning, and the air smelt like fallen leaves.|清爽的秋日清晨，我们去公园散步，空气里飘着落叶的味道。[/DU][/DEF][IMG]infopic01/crisp.webp[/IMG]",
+      "[TITLE] 常见用法 [/TITLE][COLL][H]a crisp afternoon|清爽的午后[POS]adj.+n. 搭配[/POS][/H][EX]The little boy loves to eat crisp apple slices as his afternoon snack.|小男孩喜欢把酥脆的苹果片当下午茶点心。[/EX][C]crisp autumn air|清爽的秋日空气[C]crisp cookies|酥脆的饼干[/C][/COLL]",
+      "[TITLE] 额外例句 [/TITLE][EX]The crisp wind blew the kites high up in the sky, and the kids laughed happily in the square.|清爽的风把风筝吹得高高的，小朋友们在广场上笑得特别开心。[/EX][EX]Mom baked a plate of crisp crackers, and they taste great with milk.|妈妈烤了一盘酥脆的薄饼，配牛奶吃特别美味。[/EX]",
+      "[TITLE] 常见错误 [/TITLE][ERR]比较级为**crisper**，最高级为**crispest**，直接加er/est，不要写成more crisp/most crisp。[/ERR][ERR]不要和creep（爬行）混淆拼写，错误：cresp，正确：crisp。[/ERR]"
+    ]
   },
-  "q_w428": {
-    "type": "choice_text",
-    "wordIds": ["w428"],
-    "question": "The tired girl began to ______ into the closet because she was too sleepy to walk straight. ",
-    "options": ["skim", "plunge", "stumble", "whip"],
-    "answer": 2
+  "w461": {
+    "word": "victory",
+    "images": {
+      "scene": ["infopic01/victory.webp"],
+      "card": ["wordpic01/victory.webp"]
+    },
+    "richDetail": [
+      "[TITLE] 解释 [/TITLE][DEF][EN]An act of defeating an enemy or opponent in a battle, game, or competition (n.), used in the book to describe the celebration dance after the heroes defeat the monster[/EN][CN]（名词）胜利，战胜，书中用来指主角们打败怪兽后跳的庆祝舞蹈[/CN][POS]n.[/POS][PH]/ˈvɪktəri/（英美）[/PH][DU]It was time for the victory dance.|(原文例句)是时候跳胜利之舞了。[/DU][DU]The little team cheered loudly when they won the victory in the football match at school.|小学校园足球赛上，小队伍赢得胜利后大声欢呼。[/DU][/DEF][IMG]infopic01/victory.webp[/IMG]",
+      "[TITLE] 常见用法 [/TITLE][COLL][H]victory dance|胜利之舞[POS]n.+n. 搭配[/POS][/H][EX]We raised our hands and shouted in joy to celebrate the victory of our class in the race.|我们高举双手欢呼，庆祝班级在比赛中取得胜利。[/EX][C]win a victory|取得胜利[C]a great victory|伟大的胜利[/C][/COLL]",
+      "[TITLE] 额外例句 [/TITLE][EX]The little girl threw her hands up in victory when she finished the puzzle all by herself.|小女孩独自拼完拼图后，高举双手庆祝胜利。[/EX][EX]Our basketball team worked hard every day, and finally we got the victory in the final game.|我们的篮球队每天刻苦训练，终于在决赛中取得了胜利。[/EX]",
+      "[TITLE] 常见错误 [/TITLE][ERR]为可数名词，复数形式为**victories**，把y变i加es，不要写成victorys。[/ERR][ERR]其形容词形式为**victorious**（胜利的），不要自创形式victoryful，错误：a victoryful moment，正确：a victorious moment。[/ERR]"
+    ]
   },
-  "q_w429": {
-    "type": "choice_text",
-    "wordIds": ["w429"],
-    "question": "The big monster gave a ______ roar, showing off its many sharp teeth. ",
-    "options": ["springy", "toothy", "slick", "doubtful"],
-    "answer": 1
+  "w462": {
+    "word": "squat",
+    "images": {
+      "scene": ["infopic01/squat.webp"],
+      "card": ["wordpic01/squat.webp"]
+    },
+    "richDetail": [
+      "[TITLE] 解释 [/TITLE][DEF][EN]To lower your body close to the ground with your legs bent under you (v.), used in the book to describe the monster bending its body to take the shape of a bush[/EN][CN]（动词）蹲伏，蹲下，书中用来形容怪兽弯下身体，变成灌木丛的样子[/CN][POS]v.[/POS][PH]/skwɒt/（英式）/skwɑːt/（美式）[/PH][DU]The sneaky monster quickly squatted into the shape of a bush.|(原文例句)那只狡猾的怪兽迅速蹲伏下来，变成了灌木丛的样子。[/DU][DU]The little boy squatted down to watch the little ants moving food on the ground.|小男孩蹲下来，看地上的小蚂蚁搬食物。[/DU][/DEF][IMG]infopic01/squat.webp[/IMG]",
+      "[TITLE] 常见用法 [/TITLE][COLL][H]squat into the shape of|蹲伏成……的样子[POS]v.+prep. 短语[/POS][/H][EX]The cat squatted beside the mouse hole, waiting for the little mouse to come out.|小猫蹲在老鼠洞旁，等着小老鼠出来。[/EX][C]squat down|蹲下[C]squat on the ground|蹲在地上[/C][/COLL]",
+      "[TITLE] 额外例句 [/TITLE][EX]My sister squatted down to pick up the colorful fallen leaves and put them into her small basket.|姐姐蹲下来捡起五彩的落叶，放进她的小篮子里。[/EX][EX]The little rabbit squatted in the grass, and we almost couldn't see it.|小兔子蹲在草丛里，我们几乎都看不到它了。[/EX]",
+      "[TITLE] 常见错误 [/TITLE][ERR]过去式/过去分词为**squatted**，直接加ed，也可写作squat，不要写成squattted。[/ERR][ERR]squat down为固定搭配，表“蹲下”，down不可省略，错误：squat to pick up，正确：squat down to pick up。[/ERR]"
+    ]
   },
-  "q_w430": {
-    "type": "choice_text",
-    "wordIds": ["w430"],
-    "question": "I could hear a loud ______ coming from the bedroom where Dad was taking a nap.",
-    "options": ["shrug", "height", "burp", "snore"],
-    "answer": 3
+  "w463": {
+    "word": "buggy",
+    "images": {
+      "scene": ["infopic01/buggy.webp"],
+      "card": ["wordpic01/buggy.webp"]
+    },
+    "richDetail": [
+      "[TITLE] 解释 [/TITLE][DEF][EN]A light carriage with wheels, usually pulled by a horse or animal (n.), used in the book to describe the light cart pulled by the unicorn[/EN][CN]（名词）轻便马车，手推车，书中用来指独角兽拉着的轻便小车[/CN][POS]n.[/POS][PH]/ˈbʌɡi/（英美）[/PH][DU]It was pulling a buggy.|(原文例句)它正拉着一辆轻便马车。[/DU][DU]The little pony pulled a small buggy with colorful flowers, and the little girl sat in it happily.|小马拉着装饰着五彩小花的轻便小马车，小女孩开心地坐在里面。[/DU][/DEF][IMG]infopic01/buggy.webp[/IMG]",
+      "[TITLE] 常见用法 [/TITLE][COLL][H]pull a buggy|拉轻便马车[POS]v.+n. 搭配[/POS][/H][EX]Grandpa pushed a small buggy to buy vegetables in the market, and it's very convenient to put the vegetables in it.|爷爷推着小手推车去菜市场买菜，把菜放里面特别方便。[/EX][C]a unicorn-drawn buggy|独角兽拉的轻便马车[C]a wooden buggy|木制手推车[/C][/COLL]",
+      "[TITLE] 额外例句 [/TITLE][EX]The kids played a game of pulling the buggy in the yard, and each of them took a turn to be the puller.|小朋友们在院子里玩拉马车的游戏，每个人都轮流当拉车的人。[/EX][EX]We put the picnic food in the buggy and pulled it to the lake for a picnic.|我们把野餐的食物放进手推车，拉着它去湖边野餐。[/EX]",
+      "[TITLE] 常见错误 [/TITLE][ERR]为可数名词，复数形式为**buggies**，直接加s，不要写成buggyes。[/ERR][ERR]不要和bug（虫子）混淆，二者含义不同，错误：a bug with flowers，正确：a buggy with flowers。[/ERR]"
+    ]
   },
-  "q_w431": {
-    "type": "choice_text",
-    "wordIds": ["w431"],
-    "question": "The nurse measured the boy's ______ to see how tall he had grown this year." ,
-    "options": ["height", "vacation", "dawn", "mass"],
-    "answer": 0
+  "w464": {
+    "word": "shaggy",
+    "images": {
+      "scene": ["infopic01/shaggy1.webp"],
+      "card": ["wordpic01/shaggy1.webp"]
+    },
+    "richDetail": [
+      "[TITLE] 解释 [/TITLE][DEF][EN]Having long, thick, and untidy hair or fur (adj.), used in the book to describe creatures with long and messy fur[/EN][CN]（形容词）（毛发、皮毛）蓬乱的，毛茸茸的，粗长的，书中用来形容有着蓬乱皮毛的生物[/CN][POS]adj.[/POS][PH]/ˈʃæɡi/（英美）[/PH][DU]Though any smelly, shaggy creatures would do.|(原文例句)不管是哪种臭烘烘、毛茸茸的生物都行。[/DU][DU]The little dog has shaggy brown fur, and it looks like a small cotton ball when it curls up.|小狗有着蓬乱的棕色皮毛，蜷起来的时候像个小棉球。[/DU][/DEF][IMG]infopic01/shaggy1.webp[/IMG]",
+      "[TITLE] 常见用法 [/TITLE][COLL][H]shaggy creatures|毛茸茸的生物[POS]adj.+n. 搭配[/POS][/H][EX]The little boy hugged his shaggy teddy bear and fell asleep quickly at night.|小男孩抱着他那只毛茸茸的泰迪熊，晚上很快就睡着了。[/EX][C]shaggy hair|蓬乱的头发[C]shaggy fur|蓬乱的皮毛[/C][/COLL]",
+      "[TITLE] 额外例句 [/TITLE][EX]The sheep on the grassland have shaggy white wool, and they look very cute when they walk around.|草原上的绵羊有着蓬乱的白毛，走来走去的样子特别可爱。[/EX][EX]My uncle has a shaggy beard, and he always trims it on the weekend.|叔叔留着蓬乱的胡子，他总会在周末修剪它。[/EX]",
+      "[TITLE] 常见错误 [/TITLE][ERR]比较级为**shaggier**，最高级为**shaggiest**，双写g加er/est，不要写成more shaggy/most shaggy。[/ERR][ERR]拼写注意：不要少写字母g，错误：shagy，正确：shaggy。[/ERR]"
+    ]
   },
-  "q_w432": {
-    "type": "choice_text",
-    "wordIds": ["w432"],
-    "question": "The Goat Avenger told the Princess she worked too hard and needed a ______ to rest. ",
-    "options": ["shutter", "vacation", "checker", "horde"],
-    "answer": 1
+  "w465": {
+    "word": "trolley",
+    "images": {
+      "scene": ["infopic01/trolley.webp"],
+      "card": ["wordpic01/trolley.webp"]
+    },
+    "richDetail": [
+      "[TITLE] 解释 [/TITLE][DEF][EN]A vehicle that runs on metal tracks, especially a streetcar (n.); a small cart for carrying things (n.), used in the book to describe the streetcar that makes clacking sounds[/EN][CN]（名词）有轨电车，手推车，购物车，书中用来指发出咔嗒声响的有轨电车[/CN][POS]n.[/POS][PH]/ˈtrɒli/（英式）/ˈtrɑːli/（美式）[/PH][DU]The trolley cars were clacking.|(原文例句)有轨电车正发出咔嗒咔嗒的声响。[/DU][DU]We took the colorful trolley to travel around the small town, and we saw many beautiful houses along the way.|我们坐五彩的有轨电车环游小镇，沿途看到了很多漂亮的房子。[/DU][/DEF][IMG]infopic01/trolley.webp[/IMG]",
+      "[TITLE] 常见用法 [/TITLE][COLL][H]trolley car|有轨电车[POS]n.+n. 搭配[/POS][/H][EX]Mom pushed a shopping trolley in the supermarket and put all our favorite food in it.|妈妈在超市里推着手推车，把我们爱吃的食物都放了进去。[/EX][C]a toy trolley|玩具电车[C]a hospital trolley|医院手推车[/C][/COLL]",
+      "[TITLE] 额外例句 [/TITLE][EX]The little boy played with his toy trolley on the floor, and he made the sound of the train by himself.|小男孩在地板上玩他的玩具电车，还自己模仿火车的声音。[/EX][EX]The trolley runs slowly through the park, and people can enjoy the scenery while sitting in it.|有轨电车慢悠悠地穿过公园，人们坐在里面就能欣赏风景。[/EX]",
+      "[TITLE] 常见错误 [/TITLE][ERR]复数形式为**trolleys**，直接加s，不要写成trolleyes。[/ERR][ERR]英式英语中trolley也可表“购物车”，美式英语常用shopping cart，不要混淆表达，错误：a shopping cart in British English，正确：a trolley in British English。[/ERR]"
+    ]
   },
-  "q_w433": {
-    "type": "choice_text",
-    "wordIds": ["w433"],
-    "question": "When I asked who ate the cake, my brother just ______ his shoulders and said nothing. ",
-    "options": ["slapped", "plunged", "shrugged", "sniffled"],
-    "answer": 2
+  "w466": {
+    "word": "playdate",
+    "images": {
+      "scene": ["infopic01/playdate1.webp"],
+      "card": ["wordpic01/playdate1.webp"]
+    },
+    "richDetail": [
+      "[TITLE] 解释 [/TITLE][DEF][EN]An arranged meeting for children to play together (n.), used in the book to describe the planned play meeting between two princesses[/EN][CN]（名词）玩伴约会，小朋友间的聚会，书中用来指两位公主约定好的玩耍聚会[/CN][POS]n.[/POS][PH]/ˈpleɪdeɪt/（英美）[/PH][DU]Plans like a princess playdate!|(原文例句)比如一场公主玩伴约会这样的计划！[/DU][DU]The little girl was very happy because she had a playdate with her best friend at the park this weekend.|小女孩特别开心，因为她这周末和最好的朋友在公园有一场玩伴约会。[/DU][/DEF][IMG]infopic01/playdate1.webp[/IMG]",
+      "[TITLE] 常见用法 [/TITLE][COLL][H]a princess playdate|公主玩伴约会[POS]n.+n. 搭配[/POS][/H][EX]Mom made some delicious cookies for my playdate with my classmates this afternoon.|妈妈为我今天下午和同学的玩伴聚会做了美味的饼干。[/EX][C]have a playdate|有一场玩伴约会[C]plan a playdate|计划一场玩伴聚会[/C][/COLL]",
+      "[TITLE] 额外例句 [/TITLE][EX]We drew pictures and played games together during the playdate, and we all had a great time.|玩伴聚会上，我们一起画画、做游戏，玩得都特别开心。[/TITLE][EX]My little brother asked mom to plan a playdate with his friend from the kindergarten.|小弟弟让妈妈给他和幼儿园的朋友计划一场玩伴约会。[/EX]",
+      "[TITLE] 常见错误 [/TITLE][ERR]为可数名词，复数形式为**playdates**，直接加s，不要写成playdatees。[/ERR][ERR]为合成词，不可拆分书写，错误：play date，正确：playdate。[/ERR]"
+    ]
   },
-  "q_w434": {
-    "type": "choice_text",
-    "wordIds": ["w434"],
-    "question": "You were very kind to help your friends today, so you ______ a big gold star.",
-    "options": ["lurk", "set off", "flail", "deserve"],
-    "answer": 3
+  "w467": {
+    "word": "practical",
+    "images": {
+      "scene": ["infopic01/practical.webp"],
+      "card": ["wordpic01/practical.webp"]
+    },
+    "richDetail": [
+      "[TITLE] 解释 [/TITLE][DEF][EN]Useful and suitable for a particular purpose (adj.); concerned with actual use or practice (adj.), used in the book to describe the princess's praise for the reasonable arrangement of the ballroom[/EN][CN]（形容词）实用的，切合实际的，讲求实际的，书中用来形容公主对舞厅合理布置的称赞[/CN][POS]adj.[/POS][PH]/ˈpræktɪkl/（英美）[/PH][DU]“Very practical,” said Princess Magnolia.|(原文例句)“太实用了。”玛格诺莉亚公主说。[/DU][DU]Mom bought a practical schoolbag for me, which has many pockets to put my stationery in.|妈妈给我买了一个实用的书包，有很多口袋可以放文具。[/DU][/DEF][IMG]infopic01/practical.webp[/IMG]",
+      "[TITLE] 常见用法 [/TITLE][COLL][H]very practical|非常实用[POS]adv.+adj. 搭配[/POS][/H][EX]This small chair is very practical, and it can be folded and put into the bag when not in use.|这把小椅子特别实用，不用的时候可以折起来放进包里。[/EX][C]practical gifts|实用的礼物[C]practical ideas|切合实际的想法[/C][/COLL]",
+      "[TITLE] 额外例句 [/TITLE][EX]The little boy made a practical small box with cardboard to put his toy cars in.|小男孩用硬纸板做了一个实用的小盒子，用来放他的玩具车。[/EX][EX]It's practical to take a water bottle when going out to play, so we won't be thirsty on the way.|出去玩带水杯很切合实际，这样路上就不会口渴了。[/EX]",
+      "[TITLE] 常见错误 [/TITLE][ERR]注意拼写，不要少写字母c，错误：practical（无错误，易混practise/practice：英式practise为动词，practice为名词；美式均为practice）[/ERR][ERR]其副词形式为**practically**，不要写成practicaly，少写l。[/ERR]"
+    ]
   },
-  "q_w435": {
-    "type": "choice_text",
-    "wordIds": ["w435"],
-    "question": "It's so relaxing to lie in a ______ tied between two big trees. ",
-    "options": ["hammock", "checker", "height", "pit"],
-    "answer": 0
+  "w468": {
+    "word": "interrupt",
+    "images": {
+      "scene": ["infopic01/interrupt1.webp"],
+      "card": ["wordpic01/interrupt1.webp"]
+    },
+    "richDetail": [
+      "[TITLE] 解释 [/TITLE][DEF][EN]To stop something that is happening or being said for a short time (v.); to break in on a conversation or activity (v.), used in the book to describe a shout stopping the princesses' fun play[/EN][CN]（动词）打断，中断，打搅，书中用来形容一声呼喊打断了公主们愉快的玩耍[/CN][POS]v.[/POS][PH]/ˌɪntəˈrʌpt/（英式）/ˌɪntɚˈrʌpt/（美式）[/PH][DU]A shout from outside interrupted the fun.|(原文例句)外面的一声呼喊打断了这场欢乐。[/DU][DU]Don't interrupt your teacher when he is speaking, and you can ask questions after class.|老师讲话时不要打断他，你可以在课后提问。[/DU][/DEF][IMG]infopic01/interrupt1.webp[/IMG]",
+      "[TITLE] 常见用法 [/TITLE][COLL][H]interrupt the fun|打断欢乐的时光[POS]v.+n. 搭配[/POS][/H][EX]The sudden rain interrupted our picnic in the park, so we had to go home early.|突如其来的雨中断了我们在公园的野餐，我们只好早点回家。[/EX][C]interrupt a conversation|打断谈话[C]interrupt an activity|中断活动[/C][/COLL]",
+      "[TITLE] 额外例句 [/TITLE][EX]The little bird flew into the room and interrupted the little girl's painting, and she laughed and chased the bird.|小鸟飞进房间打断了小女孩的画画，她笑着去追小鸟。[/EX][EX]Please don't interrupt me when I am doing my homework, I need to finish it quickly.|我写作业的时候请不要打搅我，我要快点完成。[/EX]",
+      "[TITLE] 常见错误 [/TITLE][ERR]过去式/过去分词为**interrupted**，直接加ed，不要写成interruptted。[/ERR][ERR]interrupt为及物动词，后可直接接宾语，无需加介词，错误：interrupt to the talk，正确：interrupt the talk。[/ERR]"
+    ]
   },
-  "q_w436": {
-    "type": "choice_text",
-    "wordIds": ["w436"],
-    "question": "Princess Sneezewort wanted to play a game of ______ on the beach.",
-    "options": ["shutter", "sunburn", "checkers", "catchphrase"],
-    "answer": 2
+  "w469": {
+    "word": "uncertain",
+    "images": {
+      "scene": ["infopic01/uncertain.webp"],
+      "card": ["wordpic01/uncertain.webp"]
+    },
+    "richDetail": [
+      "[TITLE] 解释 [/TITLE][DEF][EN]Not sure or definite about something (adj.); not known or fixed (adj.), used in the book to describe the princess's feeling of not being sure about fighting the monster[/EN][CN]（形容词）不确定的，没有把握的，未知的，书中用来形容公主对打败怪兽这件事感到没有把握[/CN][POS]adj.[/POS][PH]/ʌnˈsɜːtn/（英式）/ʌnˈsɜːrtn/（美式）[/PH][DU]Princess Sneezewort felt uncertain.|(原文例句)斯尼佐沃公主感到心里没底。[/DU][DU]The little boy felt uncertain about riding a bicycle without training wheels for the first time.|小男孩第一次骑没有辅助轮的自行车，心里感到很没把握。[/DU][/DEF][IMG]infopic01/uncertain.webp[/IMG]",
+      "[TITLE] 常见用法 [/TITLE][COLL][H]feel uncertain|感到不确定，心里没底[POS]v.+adj. 搭配[/POS][/H][EX]We are still uncertain about the time of the picnic, because we need to check the weather forecast first.|我们对野餐的时间还不确定，因为需要先看天气预报。[/EX][C]uncertain about sth|对某事没把握[C]an uncertain result|未知的结果[/C][/COLL]",
+      "[TITLE] 额外例句 [/TITLE][EX]The little girl felt uncertain when she stood on the stage for the first time, and her mom cheered her on from the audience.|小女孩第一次站在舞台上感到很紧张没底，妈妈在台下为她加油。[/EX][EX]It's still uncertain whether we can go to the zoo tomorrow, it depends on my dad's work.|我们明天能不能去动物园还不确定，要看爸爸的工作情况。[/EX]",
+      "[TITLE] 常见错误 [/TITLE][ERR]后接介词about表示“对……不确定”，不要用介词of，错误：uncertain of the answer，正确：uncertain about the answer。[/ERR][ERR]其名词形式为**uncertainty**，不要写成uncertainness。[/ERR]"
+    ]
   },
-  "q_w437": {
-    "type": "choice_text",
-    "wordIds": ["w437"],
-    "question": "She squeezed her eyes ______ so tightly that it felt like closing a window. ",
-    "options": ["toothy", "shutter", "frisky", "dainty"],
-    "answer": 1
+  "w470": {
+    "word": "linen",
+    "images": {
+      "scene": ["infopic01/linen.webp"],
+      "card": ["wordpic01/linen.webp"]
+    },
+    "richDetail": [
+      "[TITLE] 解释 [/TITLE][DEF][EN]Cloth made from flax (n.); bed sheets, tablecloths, and other soft goods made of cloth (n.), used in the book to describe the closet where linen things are stored[/EN][CN]（名词）亚麻布，亚麻织品；日用织品（如床单、桌布等），书中用来指存放亚麻织品的储藏室[/CN][POS]n.[/POS][PH]/ˈlɪnɪn/（英美）[/PH][DU]She ducked into the linen closet.|(原文例句)她躲进了亚麻织品储藏室。[/DU][DU]Mom bought a soft linen towel for me, and it feels very comfortable to wipe my hands with.|妈妈给我买了一条柔软的亚麻毛巾，用它擦手特别舒服。[/DU][/DEF][IMG]infopic01/linen.webp[/IMG]",
+      "[TITLE] 常见用法 [/TITLE][COLL][H]linen closet|亚麻织品储藏室[POS]n.+n. 搭配[/POS][/H][EX]The table is covered with a white linen tablecloth, and it looks very clean and beautiful.|桌子上铺着白色的亚麻桌布，看起来干净又漂亮。[/EX][C]linen clothes|亚麻衣服[C]linen sheets|亚麻床单[/C][/COLL]",
+      "[TITLE] 额外例句 [/TITLE][EX]Grandma likes to use linen cloth to make small handkerchiefs, and they are breathable and durable.|奶奶喜欢用亚麻布做小手帕，又透气又耐用。[/EX][EX]We put all the linen sheets and quilt covers in the big cabinet in the bedroom.|我们把所有的亚麻床单和被套都放在卧室的大柜子里。[/EX]",
+      "[TITLE] 常见错误 [/TITLE][ERR]为不可数名词，表“亚麻布/织品”时不能直接加a/an，错误：a linen，正确：a piece of linen。[/ERR][ERR]不要和line（线条）混淆拼写，错误：line closet，正确：linen closet。[/ERR]"
+    ]
   },
-  "q_w438": {
-    "type": "choice_text",
-    "wordIds": ["w438"],
-    "question": "The sea monster had a tiny neck but a ______ and heavy body. ",
-    "options": ["slick", "springy", "doubtful", "massive"],
-    "answer": 3
+  "w471": {
+    "word": "comfort",
+    "images": {
+      "scene": ["infopic01/comfort.webp"],
+      "card": ["wordpic01/comfort.webp"]
+    },
+    "richDetail": [
+      "[TITLE] 解释 [/TITLE][DEF][EN]To make someone feel less sad, worried, or upset (v.); a feeling of physical ease and relaxation (n.), used in the book to describe the heroes making the little girl feel better[/EN][CN]（动词）安慰，抚慰；（名词）舒适，慰藉，书中用来形容主角们安慰难过的小女孩，让她心情变好[/CN][POS]v./n.[/POS][PH]/ˈkʌmfət/（英美）[/PH][DU]They comforted the little girl.|(原文例句)她们安慰了那个小女孩。[/DU][DU]Mom hugged me to comfort me when I cried because I lost my favorite toy.|我因为丢了最喜欢的玩具哭了，妈妈抱着我安慰我。[/DU][/DEF][IMG]infopic01/comfort.webp[/IMG]",
+      "[TITLE] 常见用法 [/TITLE][COLL][H]comfort the little girl|安慰小女孩[POS]v.+n. 搭配[/POS][/H][EX]The soft sofa brings us a lot of comfort when we sit on it and watch TV.|坐在柔软的沙发上看电视，给我们带来了很多舒适感。[/EX][C]comfort sb with kind words|用暖心的话安慰某人[C]a life of comfort|舒适的生活[/C][/COLL]",
+      "[TITLE] 额外例句 [/TITLE][EX]The little boy gave his favorite toy bear to his sad friend to comfort him.|小男孩把他最喜欢的玩具熊送给难过的朋友，去安慰他。[/EX][EX]The warm quilt gives me great comfort on cold winter nights.|寒冷的冬夜，温暖的被子给了我莫大的慰藉。[/EX]",
+      "[TITLE] 常见错误 [/TITLE][ERR]作动词时，过去式/过去分词为**comforted**，直接加ed，不要写成comfortted。[/ERR][ERR]其形容词形式为**comfortable**（舒适的），不要写成comfortful，错误：a comfortful bed，正确：a comfortable bed。[/ERR]"
+    ]
   },
-  "q_w439": {
-    "type": "choice_text",
-    "wordIds": ["w439"],
-    "question": "If you play in the bright sun all day without a hat, you might get a painful ______. ",
-    "options": ["sunburn", "vacation", "dawn", "height"],
-    "answer": 0
+  "w472": {
+    "word": "stroll",
+    "images": {
+      "scene": ["infopic01/stroll.webp"],
+      "card": ["wordpic01/stroll.webp"]
+    },
+    "richDetail": [
+      "[TITLE] 解释 [/TITLE][DEF][EN]To walk in a slow, relaxed way (v.); a slow, relaxed walk (n.), used in the book to describe the princess walking slowly and calmly into the playroom[/EN][CN]（动词）漫步，闲逛，慢悠悠地走；（名词）散步，闲逛，书中用来形容公主从容地慢悠悠走进游戏室[/CN][POS]v./n.[/POS][PH]/strəʊl/（英式）/stroʊl/（美式）[/PH][DU]Then she strolled into the playroom.|(原文例句)然后她慢悠悠地走进了游戏室。[/DU][DU]We strolled along the lake after dinner, and the breeze blew on our faces very comfortably.|晚饭后我们沿着湖边漫步，微风吹在脸上特别舒服。[/DU][/DEF][IMG]infopic01/stroll.webp[/IMG]",
+      "[TITLE] 常见用法 [/TITLE][COLL][H]stroll into the playroom|慢悠悠走进游戏室[POS]v.+prep. 短语[/POS][/H][EX]The old couple takes a slow stroll in the park every morning, enjoying the beautiful scenery.|老夫妇每天早上在公园慢慢散步，欣赏美丽的风景。[/EX][C]stroll along the street|沿街漫步[C]a casual stroll|随意的闲逛[/C][/COLL]",
+      "[TITLE] 额外例句 [/TITLE][EX]The little girl strolled in the garden, stopping to look at the beautiful flowers from time to time.|小女孩在花园里闲逛，时不时停下来看漂亮的小花。[/EX][EX]We had a nice stroll by the sea, and we picked up many beautiful shells on the beach.|我们在海边愉快地散步，还在沙滩上捡了很多漂亮的贝壳。[/EX]",
+      "[TITLE] 常见错误 [/TITLE][ERR]作动词时，过去式/过去分词为**strolled**，直接加ed，不要写成strollled。[/ERR][ERR]stroll为不及物动词，后接地点需加介词，错误：stroll the park，正确：stroll in the park。[/ERR]"
+    ]
   },
-  "q_w440": {
-    "type": "choice_text",
-    "wordIds": ["w440"],
-    "question": "Looking down from the high window made the little girl feel ______ and dizzy. ",
-    "options": ["frisky", "woozy", "dainty", "fearsome"],
-    "answer": 1
+  "w473": {
+    "word": "twine",
+    "images": {
+      "scene": ["infopic01/twine.webp"],
+      "card": ["wordpic01/twine.webp"]
+    },
+    "richDetail": [
+      "[TITLE] 解释 [/TITLE][DEF][EN]A strong thin string made of two or more threads twisted together (n.), used in the book to describe the string used to make the unicorn's disguise[/EN][CN]（名词）麻线，细绳，捻线，书中用来指制作独角兽伪装用的细绳[/CN][POS]n.[/POS][PH]/twaɪn/（英美）[/PH][DU]It took some blankets, twine, and a carrot.|(原文例句)这需要一些毯子、细绳和一根胡萝卜。[/DU][DU]Mom used a soft twine to tie the small gift box, and tied a beautiful bow on it.|妈妈用一根柔软的细绳系住小礼盒，还在上面打了一个漂亮的蝴蝶结。[/DU][/DEF][IMG]infopic01/twine.webp[/IMG]",
+      "[TITLE] 常见用法 [/TITLE][COLL][H]use twine|使用细绳[POS]v.+n. 搭配[/POS][/H][EX]The little boy used twine to tie the sticks together and made a small house for the little birds.|小男孩用细绳把树枝绑在一起，给小鸟做了一个小房子。[/EX][C]a ball of twine|一团细绳[C]cotton twine|棉线绳[/C][/COLL]",
+      "[TITLE] 额外例句 [/TITLE][EX]We cut a piece of twine to hang the colorful wind chimes under the eaves of the house.|我们剪了一段细绳，把五彩的风铃挂在屋檐下。[/EX][EX]Grandpa has a big ball of twine in the garage, and he uses it to tie all kinds of things.|爷爷的车库里有一大团细绳，他用它绑各种各样的东西。[/EX]",
+      "[TITLE] 常见错误 [/TITLE][ERR]为不可数名词，表“一根细绳”用a piece of twine，不要直接加a，错误：a twine，正确：a piece of twine。[/ERR][ERR]不要和twin（双胞胎）混淆拼写，错误：twin to tie the box，正确：twine to tie the box。[/ERR]"
+    ]
   },
-  "q_w441": {
-    "type": "choice_text",
-    "wordIds": ["w441"],
-    "question": "The lumberjack used a sharp axe to ______ the old wood into small pieces. ",
-    "options": ["slap", "whip", "chop", "plunge"],
-    "answer": 2
+  "w474": {
+    "word": "bandage",
+    "images": {
+      "scene": ["infopic01/bandage.webp"],
+      "card": ["wordpic01/bandage.webp"]
+    },
+    "richDetail": [
+      "[TITLE] 解释 [/TITLE][DEF][EN]A strip of cloth or other material used to cover and protect a wound (n.); to put a bandage on a wound (v.), used in the book to describe the princess putting a cloth strip on her scratched hand[/EN][CN]（名词）绷带，绑带；（动词）用绷带包扎，书中用来形容公主在被划伤的手上贴上绷带[/CN][POS]n./v.[/POS][PH]/ˈbændɪdʒ/（英美）[/PH][DU]She put on a bandage.|(原文例句)她贴上了绷带。[/DU][DU]Mom put a soft bandage on my little finger when I scratched it with a branch.|我的小手指被树枝划伤了，妈妈给我贴了柔软的绷带。[/DU][/DEF][IMG]infopic01/bandage.webp[/IMG]",
+      "[TITLE] 常见用法 [/TITLE][COLL][H]put on a bandage|贴上绷带[POS]v.+n. 搭配[/POS][/H][EX]The nurse bandaged the little boy's knee carefully, because he fell down and scraped it.|护士小心地给小男孩的膝盖包扎绷带，因为他摔倒擦伤了膝盖。[/EX][C]a medical bandage|医用绷带[C]bandage a wound|包扎伤口[/C][/COLL]",
+      "[TITLE] 额外例句 [/TITLE][EX]I keep a few bandages in my schoolbag, in case I get a small cut at school.|我的书包里放了几片绷带，以防在学校不小心弄出小伤口。[/EX][EX]Dad bandaged the dog's paw with a clean bandage, because it was hurt by a small stone.|小狗的爪子被小石子弄伤了，爸爸用干净的绷带给它包扎了。[/EX]",
+      "[TITLE] 常见错误 [/TITLE][ERR]作名词时为可数名词，复数形式为**bandages**，直接加s，不要写成bandagees。[/ERR][ERR]作动词时，过去式/过去分词为**bandaged**，直接加ed，不要写成bandageed。[/ERR]"
+    ]
   },
-  "q_w442": {
-    "type": "choice_text",
-    "wordIds": ["w442"],
-    "question": "The superhero always shouts his famous ______ right before he saves the day.",
-    "options": ["hammock", "checker", "shutter", "catchphrase"],
-    "answer": 3
+  "w475": {
+    "word": "quiver",
+    "images": {
+      "scene": ["infopic01/quiver.webp"],
+      "card": ["wordpic01/quiver.webp"]
+    },
+    "richDetail": [
+      "[TITLE] 解释 [/TITLE][DEF][EN]To shake slightly because of fear, cold, or emotion (v.), used in the book to describe the princess's chin shaking because she was sad and wanted to cry[/EN][CN]（动词）（因害怕、寒冷、情绪）颤抖，发抖，书中用来形容公主因为难过想哭，下巴不停发抖[/CN][POS]v.[/POS][PH]/ˈkwɪvə(r)/（英式）/ˈkwɪvər/（美式）[/PH][DU]She chin-quivered.|(原文例句)她的下巴开始发抖。[/DU][DU]The little girl's lips quivered when she saw the big dog, because she was a little afraid.|小女孩看到大狗时嘴唇发抖，因为她有点害怕。[/DU][/DEF][IMG]infopic01/quiver.webp[/IMG]",
+      "[TITLE] 常见用法 [/TITLE][COLL][H]chin-quiver|下巴发抖[POS]n.+v. 合成搭配[/POS][/H][EX]The little bird's wings quivered in the cold wind, and we put it into a warm box.|小鸟的翅膀在寒风中发抖，我们把它放进了温暖的盒子里。[/EX][C]quiver with fear|因害怕而发抖[C]quiver with cold|因寒冷而颤抖[/C][/COLL]",
+      "[TITLE] 额外例句 [/TITLE][EX]The little boy's hands quivered when he tried to light the candle for the first time.|小男孩第一次尝试点蜡烛时，双手不停发抖。[/EX][EX]The leaves quivered in the gentle breeze, making a soft rustling sound.|树叶在微风中轻轻颤动，发出沙沙的轻响。[/EX]",
+      "[TITLE] 常见错误 [/TITLE][ERR]过去式/过去分词为**quivered**，直接加ed，不要写成quiverred。[/ERR][ERR]后接介词with表示“因……而发抖”，不要用介词for，错误：quiver for cold，正确：quiver with cold。[/ERR]"
+    ]
   },
-  "q_w443": {
-    "type": "choice_text",
-    "wordIds": ["w443"],
-    "question": "The goat let out a loud ______ after eating too much green grass.",
-    "options": ["burp", "snore", "dawn", "pit"],
-    "answer": 0
+  "w476": {
+    "word": "nestle",
+    "images": {
+      "scene": ["infopic01/nestle.webp"],
+      "card": ["wordpic01/nestle.webp"]
+    },
+    "richDetail": [
+      "[TITLE] 解释 [/TITLE][DEF][EN]To lie or sit in a warm, comfortable position, especially curled up close to something or someone (v.), used in the book to describe the princess sitting in a comfortable position between two trees[/EN][CN]（动词）依偎，安卧，舒适地栖身，书中用来形容公主舒适地躲在两棵树之间[/CN][POS]v.[/POS][PH]/ˈnesl/（英美）[/PH][DU]The Princess in Blankets nestled between some trees.|(原文例句)披毯公主舒适地栖身在几棵树之间。[/DU][DU]The little cat nestled in my arms and closed its eyes, looking very comfortable.|小猫依偎在我的怀里闭上眼睛，看起来特别舒服。[/DU][/DEF][IMG]infopic01/nestle.webp[/IMG]",
+      "[TITLE] 常见用法 [/TITLE][COLL][H]nestle between some trees|栖身在几棵树之间[POS]v.+prep. 短语[/POS][/H][EX]The little girl nestled beside her mom on the sofa and watched a cartoon together.|小女孩在沙发上依偎着妈妈，一起看动画片。[/EX][C]nestle in one's arms|依偎在某人怀里[C]nestle against the wall|靠着墙舒适地坐着[/C][/COLL]",
+      "[TITLE] 额外例句 [/TITLE][EX]The little bird nestled in the warm nest, and its mom fed it small worms.|小鸟舒适地卧在温暖的鸟巢里，鸟妈妈喂它小虫子吃。[/EX][EX]I nestled my favorite doll beside my pillow when I sleep, so I feel very safe.|我睡觉的时候把最喜欢的娃娃依偎在枕头边，这样我会觉得很安心。[/EX]",
+      "[TITLE] 常见错误 [/TITLE][ERR]过去式/过去分词为**nestled**，直接加ed，不要写成nestleed。[/ERR][ERR]为不及物动词，后接地点需加合适的介词，错误：nestle the sofa，正确：nestle on the sofa。[/ERR]"
+    ]
   },
-  "q_w444": {
-    "type": "choice_text",
-    "wordIds": ["w444"],
-    "question": "The dust tickled my nose and made it ______.",
-    "options": ["chafe", "sniffle", "itch", "sag"],
-    "answer": 2
+  "w477": {
+    "word": "snoozy",
+    "images": {
+      "scene": ["infopic01/snoozy.webp"],
+      "card": ["wordpic01/snoozy.webp"]
+    },
+    "richDetail": [
+      "[TITLE] 解释 [/TITLE][DEF][EN]Sleepy or tired; wanting to sleep (adj.), used in the book to describe the pet that is sleepy and sleeping in the park[/EN][CN]（形容词）昏昏欲睡的，困倦的，打着瞌睡的，书中用来形容在公园里犯困睡觉的小动物[/CN][POS]adj.[/POS][PH]/ˈsnuːzi/（英美）[/PH][DU]It crept toward the snoozy, non-goat pet.|(原文例句)它悄悄走向那只昏昏欲睡的非山羊小动物。[/DU][DU]The little boy felt snoozy after lunch, so he lay down on the bed for a short nap.|小男孩午饭后感到昏昏欲睡，就躺在床上小睡了一会儿。[/DU][/DEF][IMG]infopic01/snoozy.webp[/IMG]",
+      "[TITLE] 常见用法 [/TITLE][COLL][H]a snoozy pet|昏昏欲睡的小动物[POS]adj.+n. 搭配[/POS][/H][EX]The little puppy looked snoozy in the warm sun, and it lay on the ground and closed its eyes.|小狗在暖阳下看起来昏昏欲睡，趴在地上闭上了眼睛。[/EX][C]feel snoozy|感到困倦[C]a snoozy afternoon|昏昏欲睡的午后[/C][/COLL]",
+      "[TITLE] 额外例句 [/TITLE][EX]We all felt a little snoozy during the boring class, so we tried our best to listen carefully.|无聊的课堂上，我们都觉得有点困倦，只好努力认真听讲。[/EX][EX]The little rabbit became snoozy after eating a lot of carrots, and it curled up in the grass to sleep.|小兔子吃了很多胡萝卜后变得昏昏欲睡，蜷在草丛里睡觉了。[/EX]",
+      "[TITLE] 常见错误 [/TITLE][ERR]比较级为**snoozier**，最高级为**snooziest**，变y为i加er/est，不要写成more snoozy/most snoozy。[/ERR][ERR]拼写注意：不要少写字母o，错误：snzy，正确：snoozy。[/ERR]"
+    ]
   },
-  "q_w445": {
-    "type": "choice_text",
-    "wordIds": ["w445"],
-    "question": "The rough straps of the heavy bag began to ______ the boy's shoulders.",
-    "options": ["shrug", "chafe", "lurk", "skim"],
-    "answer": 1
-  },
-  "q_w446": {
-    "type": "choice_text",
-    "wordIds": ["w446"],
-    "question": "Duff had to ______ his mask because he was in a big hurry to reach the beach.",
-    "options": ["set off", "skim", "plunge", "shove on"],
-    "answer": 3
-  },
-  "q_w447": {
-    "type": "choice_text",
-    "wordIds": ["w447"],
-    "question": "The monster's large flat tail ______ the water with a loud sound.",
-    "options": ["slapped", "sputtered", "threated", "gnawed"],
-    "answer": 0
-  },
-  "q_w448": {
-    "type": "choice_text",
-    "wordIds": ["w448"],
-    "question": "A giant wave ______ against the shore with a loud boom. ",
-    "options": ["sniffled", "crashed", "trickled", "shuffled"],
-    "answer": 1
-  },
-  "q_w449": {
-    "type": "choice_text",
-    "wordIds": ["w449"],
-    "question": "The sea monster's tail ______ back and forth as fast as a snapping string.",
-    "options": ["sagged", "lurked", "whipped", "bleated"],
-    "answer": 2
-  },
-  "q_w450": {
-    "type": "choice_text",
-    "wordIds": ["w450"],
-    "question": "The Princess wondered what was ______ the loud monster alarm.",
-    "options": ["resuming", "devouring", "clamping", "set off"],
-    "answer": 3
-  },
-  "q_w451": {
-    "type": "choice_text",
-    "wordIds": ["w451"],
-    "question": "The scared squirrel began to ______ its arms and legs in the air.",
-    "options": ["flail", "shrug", "smack", "snort"],
-    "answer": 0
-  },
-  "q_w452": {
-    "type": "choice_text",
-    "wordIds": ["w452"],
-    "question": "The goat gave a ______ bleat because it didn't believe the squirrel was a monster.",
-    "options": ["springy", "doubtful", "massive", "slick"],
-    "answer": 1
-  },
-  "q_w4253": {
-    "type": "choice_text",
-    "wordIds": ["w453"],
-    "question": "Be careful when you walk on the wet floor, it is very ______! ",
-    "options": ["fuzzy", "toothy", "slick", "dainty"],
-    "answer": 2
-  },
-  "q_w454": {
-    "type": "choice_text",
-    "wordIds": ["w454"],
-    "question": "The monster's back felt soft and ______ like a big mattress.",
-    "options": ["fearsome", "woozy", "frisky", "springy"],
-    "answer": 3
-  },
-  "q_w455": {
-    "type": "choice_text",
-    "wordIds": ["w455"],
-    "question": "The bird would ______ lightly over the top of the lake to catch a fish.",
-    "options": ["skim", "plunge", "whip", "stumble"],
-    "answer": 0
-  },
-  "q_w456": {
-    "type": "choice_text",
-    "wordIds": ["w456"],
-    "question": "The sea monster felt very sad and ______ because it missed its home.",
-    "options": ["chopped", "sniffled", "resumed", "threated"],
-    "answer": 1
-  },
-  "q_w457": {
-    "type": "choice_text",
-    "wordIds": ["w457"],
-    "question": "When the monster was unhappy, its big tail began to ______ down toward the sand.",
-    "options": ["flail", "twitch", "sag", "slap"],
-    "answer": 2
-  },
-  "q_w458": {
-    "type": "choice_text",
-    "wordIds": ["w458"],
-    "question": "A small monster started to ______ in the dark shadows beside the hole.",
-    "options": ["shrug", "snore", "stumble", "lurk"],
-    "answer": 3
-  },
-  "q_w459": {
-    "type": "choice_text",
-    "wordIds": ["w459"],
-    "question": "The sea monster took a deep breath and ______ into the blue water. ",
-    "options": ["plunged", "skimmed", "chafed", "shoved on"],
-    "answer": 0
+  "w478": {
+    "word": "amble",
+    "images": {
+      "scene": ["infopic01/amble.webp"],
+      "card": ["wordpic01/amble.webp"]
+    },
+    "richDetail": [
+      "[TITLE] 解释 [/TITLE][DEF][EN]To walk slowly and in a relaxed way, without hurry (v.), used in the book to describe the princess walking slowly on the unicorn's back into the pasture[/EN][CN]（动词）漫步，缓行，悠闲地走，书中用来形容公主骑在独角兽背上，慢悠悠走进牧场[/CN][POS]v.[/POS][PH]/ˈæmbl/（英美）[/PH][DU]She ambled into the pasture on the back of a roundish unicorn.|(原文例句)她骑在圆滚滚的独角兽背上，慢悠悠地走进了牧场。[/DU][DU]The old man ambled along the country road, enjoying the fresh air and the beautiful countryside scenery.|老爷爷沿着乡间小路悠闲地走着，享受着新鲜的空气和美丽的乡村风景。[/DU][/DEF][IMG]infopic01/amble.webp[/IMG]",
+      "[TITLE] 常见用法 [/TITLE][COLL][H]amble into the pasture|慢悠悠走进牧场[POS]v.+prep. 短语[/POS][/H][EX]The little sheep ambled around the grassland, eating the fresh green grass as they walked.|小羊羔在草原上慢悠悠地走着，一边走一边吃新鲜的青草。[/EX][C]amble along the road|沿路悠闲漫步[C]amble in the garden|在花园里缓行[/C][/COLL]",
+      "[TITLE] 额外例句 [/TITLE][EX]We ambled in the botanical garden on Sunday, stopping to watch the different kinds of flowers from time to time.|周日我们在植物园里悠闲漫步，时不时停下来看各种各样的花。[/EX][EX]The ducklings ambled behind their mom to the river, and they jumped into the water one by one.|小鸭子跟在妈妈身后慢悠悠走向河边，然后一个个跳进了水里。[/EX]",
+      "[TITLE] 常见错误 [/TITLE][ERR]过去式/过去分词为**ambled**，直接加ed，不要写成ambleed。[/ERR][ERR]为不及物动词，后接地点需加介词，错误：amble the street，正确：amble down the street。[/ERR]"
+    ]
   }
+
 
 
 
