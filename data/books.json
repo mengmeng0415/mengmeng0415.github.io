@@ -249,17 +249,44 @@
       }
     ],
     "chapters": [
-   { "id": "dm6-c1", "name": "Chapter 1", "wordIds": ["w395", "w396", "w397"], "quizIds": ["q_w395", "q_w396", "q_w397"] },
-{ "id": "dm6-c2", "name": "Chapter 2", "wordIds": ["w398", "w399", "w400"], "quizIds": ["q_w398", "q_w399", "q_w400"] },
-{ "id": "dm6-c3", "name": "Chapter 3", "wordIds": ["w401"], "quizIds": ["q_w401"] },
-{ "id": "dm6-c4", "name": "Chapter 4", "wordIds": ["w402", "w403", "w404"], "quizIds": ["q_w402", "q_w403", "q_w404"] },
-{ "id": "dm6-c5", "name": "Chapter 5", "wordIds": ["w405", "w406", "w407"], "quizIds": ["q_w405", "q_w406", "q_w407"] },
-{ "id": "dm6-c6", "name": "Chapter 6", "wordIds": ["w408"], "quizIds": ["q_w408"] },
-{ "id": "dm6-c7", "name": "Chapter 7", "wordIds": ["w409", "w410", "w411"], "quizIds": ["q_w409", "q_w410", "q_w411"] },
-{ "id": "dm6-c8", "name": "Chapter 8", "wordIds": ["w412", "w413", "w414", "w415", "w416", "w417", "w418", "w419"], "quizIds": ["q_w412", "q_w413", "q_w414", "q_w415", "q_w416", "q_w417", "q_w418", "q_w419"] },
-{ "id": "dm6-c11", "name": "Chapter 11", "wordIds": ["w420", "w421", "w422"], "quizIds": ["q_w420", "q_w421", "q_w422"] },
-{ "id": "dm6-c12", "name": "Chapter 12", "wordIds": ["w423","w425", "w426"], "quizIds": ["q_w423","q_w425", "q_w426"] }
+  { "id": "pb3-c1", "name": "Chapter 1", "wordIds": ["w395", "w396", "w397"], "quizIds": ["q_w395", "q_w396", "q_w397"] },
+  { "id": "pb3-c2", "name": "Chapter 2", "wordIds": ["w398", "w399", "w400"], "quizIds": ["q_w398", "q_w399", "q_w400"] },
+  { "id": "pb3-c3", "name": "Chapter 3", "wordIds": ["w401"], "quizIds": ["q_w401"] },
+  { "id": "pb3-c4", "name": "Chapter 4", "wordIds": ["w402", "w403", "w404"], "quizIds": ["q_w402", "q_w403", "q_w404"] },
+  { "id": "pb3-c5", "name": "Chapter 5", "wordIds": ["w405", "w406", "w407"], "quizIds": ["q_w405", "q_w406", "q_w407"] },
+  { "id": "pb3-c6", "name": "Chapter 6", "wordIds": ["w408"], "quizIds": ["q_w408"] },
+  { "id": "pb3-c7", "name": "Chapter 7", "wordIds": ["w409", "w410", "w411"], "quizIds": ["q_w409", "q_w410", "q_w411"] },
+  { "id": "pb3-c8", "name": "Chapter 8", "wordIds": ["w412", "w413", "w414", "w415", "w416", "w417", "w418", "w419"], "quizIds": ["q_w412", "q_w413", "q_w414", "q_w415", "q_w416", "q_w417", "q_w418", "q_w419"] },
+  { "id": "pb3-c11", "name": "Chapter 11", "wordIds": ["w420", "w421", "w422"], "quizIds": ["q_w420", "q_w421", "q_w422"] },
+  { "id": "pb3-c12", "name": "Chapter 12", "wordIds": ["w423","w425", "w426"], "quizIds": ["q_w423","q_w425", "q_w426"] }
     ]
+  }
+  ,
+   {
+    "id": "pb4",
+    "type": "初章书",
+    "series": "The Pincess in Black",
+    "title": "The Pincess in Black 4",
+    "cover": "infopic01/pb4.png",
+     "pdfs": [
+      {
+        "name": "The Pincess in Black 4",
+        "url": "https://mengmeng0415.github.io/pdfinfo01/pb4.pdf"
+      }
+    ],
+    "chapters": [
+  { "id": "pb4-c1", "name": "Chapter 1", "wordIds": ["w427", "w428", "w429", "w430"], "quizIds": ["q_w427", "q_w428", "q_w429", "q_w430"] },
+  { "id": "pb4-c2", "name": "Chapter 2", "wordIds": ["w431", "w432"], "quizIds": ["q_w431", "q_w432"] },
+  { "id": "pb4-c4", "name": "Chapter 4", "wordIds": ["w433"], "quizIds": ["q_w433"] },
+  { "id": "pb4-c5", "name": "Chapter 5", "wordIds": ["w434", "w435", "w436", "w437", "w438", "w439", "w440"], "quizIds": ["q_w434", "q_w435", "q_w436", "q_w437", "q_w438", "q_w439", "q_w440"] },
+  { "id": "pb4-c6", "name": "Chapter 6", "wordIds": ["w441", "w442", "w443"], "quizIds": ["q_w441", "q_w442", "q_w443"] },
+  { "id": "pb4-c8", "name": "Chapter 8", "wordIds": ["w444", "w445", "w446"], "quizIds": ["q_w444", "q_w445", "q_w446"] },
+  { "id": "pb4-c9", "name": "Chapter 9", "wordIds": ["w447", "w448", "w449"], "quizIds": ["q_w447", "q_w448", "q_w449"] },
+  { "id": "pb4-c10", "name": "Chapter 10", "wordIds": ["w450", "w451", "w452"], "quizIds": ["q_w450", "q_w451", "q_w452"] },
+  { "id": "pb4-c11", "name": "Chapter 11", "wordIds": ["w453", "w454", "w455", "w456", "w457"], "quizIds": ["q_w453", "q_w454", "q_w455", "q_w456", "q_w457"] },
+  { "id": "pb4-c12", "name": "Chapter 12", "wordIds": ["w458"], "quizIds": ["q_w458"] },
+  { "id": "pb4-c13", "name": "Chapter 13", "wordIds": ["w459"], "quizIds": ["q_w459"] }
+]
   }
 
 

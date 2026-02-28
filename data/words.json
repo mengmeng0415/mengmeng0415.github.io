@@ -5311,11 +5311,11 @@
   "w409": {
     "word": "smack",
     "images": {
-      "scene": ["infopic01/smack.webp"],
-      "card": ["wordpic01/smack.webp"]
+      "scene": ["infopic01/smack2.webp"],
+      "card": ["wordpic01/smack2.webp"]
     },
     "richDetail": [
-      "[TITLE]解释[/TITLE][DEF][EN]To make a loud noise with your lips when you think something tastes good; or to hit something with your open hand.[/EN][CN]（表示赞赏地）吧唧嘴；拍；（啪的一声）打[/CN][POS]v. & n.[/POS][PH]/smæk/[/PH][DU]The bunnies smacked their lips.|(原文例句)小兔子们（觉得树很好吃）吧唧吧唧地舔着嘴唇。[/DU][DU]Don't smack your lips while you are eating soup!|喝汤的时候不要吧唧嘴！[/DU][DU]The wave smacked against the side of the boat.|浪花啪的一声拍在船舷上。[/DU][/DEF][IMG]infopic01/smack.webp[/IMG]",
+      "[TITLE]解释[/TITLE][DEF][EN]To make a loud noise with your lips when you think something tastes good; or to hit something with your open hand.[/EN][CN]（表示赞赏地）吧唧嘴；拍；（啪的一声）打[/CN][POS]v. & n.[/POS][PH]/smæk/[/PH][DU]The bunnies smacked their lips.|(原文例句)小兔子们（觉得树很好吃）吧唧吧唧地舔着嘴唇。[/DU][DU]Don't smack your lips while you are eating soup!|喝汤的时候不要吧唧嘴！[/DU][DU]The wave smacked against the side of the boat.|浪花啪的一声拍在船舷上。[/DU][/DEF][IMG]infopic01/smack2.webp[/IMG]",
       "[TITLE]常见用法[/TITLE][COLL][H]smack one's lips|吧唧嘴（表示想吃或好吃）[POS]v.[/POS][/H][EX]The dog smacked its lips when it saw the bone.|狗狗看到骨头时吧唧了一下嘴。[/EX][C]a smack on the hand|拍一下手[/C][/COLL]",
       "[TITLE]额外例句[/TITLE][EX]I heard a loud smack when the book fell on the floor.[POS]n.[POS]|书掉在地上时，我听到啪的一声巨响。[/EX][EX]She smacked her forehead when she remembered the key.[POS]v.[POS]|她想起钥匙时拍了一下额头。[/EX]",
       "[TITLE]常见错误[/TITLE][ERR]在餐桌礼仪中，smack one's lips（吧唧嘴）通常被认为是不礼貌的。但在童话书里，它常用来形容小动物觉得食物非常美味。[/ERR]"
@@ -5503,19 +5503,7 @@
       "[TITLE]常见错误[/TITLE][ERR]wander (/ˈwɑːndər/ 漫游) 不要和 wonder (/ˈwʌndər/ 想知道) 弄混。它们发音和意思都不同。[/ERR]"
     ]
   },
-  "w424": {
-    "word": "relish",
-    "images": {
-      "scene": ["infopic01/relish.webp"],
-      "card": ["wordpic01/relish.webp"]
-    },
-    "richDetail": [
-      "[TITLE]解释[/TITLE][DEF][EN]To get great pleasure from something; to look forward to something very much (used in the book to say how much the princess loved her friend).[/EN][CN]享受；非常喜欢；（在此指）非常珍惜[/CN][POS]v.[/POS][PH]/ˈrelɪʃ/[/PH][DU]She relished Princess Magnolia's friendship.|(原文例句)她非常珍惜木兰公主的友谊。[/DU][DU]The boy relished the challenge of the new game.|小男孩很享受新游戏的挑战。[/DU][DU]I relish the chance to play with my dragons every day.|我非常珍惜每天和我的龙一起玩的机会。[/DU][/DEF][IMG]infopic01/relish.webp[/IMG]",
-      "[TITLE]常见用法[/TITLE][COLL][H]relish the opportunity|珍惜机会[POS]v.[POS][/H][EX]You should relish the opportunity to learn magic.|你应该珍惜学习魔法的机会。[/EX][C]relish every moment|享受每一刻[/C][/COLL]",
-      "[TITLE]额外例句[/TITLE][EX]The cat relished the warm spot on the rug.[POS]v.[POS]|猫很享受地毯上温暖的地方。[/EX][EX]He relishes the peace and quiet of the forest.[POS]v.[POS]|他很享受森林里的宁静。[/EX]",
-      "[TITLE]常见错误[/TITLE][ERR]relish 这种“喜欢”程度比 enjoy 还要深，带有一种“津津有味”的感觉。[/ERR]"
-    ]
-  },
+  
   "w425": {
     "word": "friendship",
     "images": {
@@ -5541,11 +5529,345 @@
       "[TITLE]额外例句[/TITLE][EX]He apologized for his rude behavior at the party.[POS]v.[POS]|他为他在派对上的粗鲁行为道歉了。[/EX][EX]The dragon apologized for knocking over the stone wall.[POS]v.[POS]|巨龙为撞倒石墙而道歉。[/EX]",
       "[TITLE]常见错误[/TITLE][ERR]注意介词搭配：向某人道歉用 to (apologize to you)，为了某事道歉用 for (apologize for it)。[/ERR]"
     ]
+  },
+  "w427": {
+    "word": "dawn",
+    "images": {
+      "scene": ["infopic01/dawn.webp"],
+      "card": ["wordpic01/dawn.webp"]
+    },
+    "richDetail": [
+      "[TITLE] 解释 [/TITLE][DEF][EN]The time of day when the sun first rises; daybreak (n.); to become light as the sun rises (v.) (used in Chapter 1 of The Princess in Black 04, described the time when the sun just rose in the morning)|[/EN][CN]（名词）黎明；拂晓；破晓；（动词）破晓；放亮（出自《黑衣公主4：黑衣公主去度假》第一章，描述清晨太阳刚刚升起的时刻）[/CN][POS]n./v.[/POS][PH]/dɔːn/（英式）/dɔːn/（美式）[/PH][DU]It was dawn. The Princess in Black had battled monsters all night.|(原文例句)天刚亮。黑衣公主打了一整晚的怪兽。[/DU][DU]The dawn painted the sky pink over the castle, but the Princess in Black was too tired to notice.|城堡上方的天际被黎明染成了粉色，可黑衣公主累得根本没注意到。[/DU][/DEF][IMG]infopic01/dawn.webp[/IMG]",
+      "[TITLE] 常见用法 [/TITLE][COLL][H]at dawn|在黎明时分[POS]prep. 短语[/POS][/H][EX]The Princess in Black always patrolled the goat pasture at dawn to watch for monsters.|黑衣公主总会在黎明时分巡逻牧羊场，提防怪兽出现。[/EX][C]the break of dawn|破晓；黎明[C]dawn comes|天放亮[/C][/COLL]",
+      "[TITLE] 额外例句 [/TITLE][EX]We set off for the seaside at dawn to start our vacation early.|我们黎明时分就出发去海边，想早点开始假期。[/EX][EX]The sky began to dawn when the Princess in Black finally finished fighting the monster.|黑衣公主终于打完怪兽时，天开始放亮了。[/EX]",
+      "[TITLE] 常见错误 [/TITLE][ERR]作名词“黎明”时为不可数名词，不能加不定冠词，错误：a dawn，正确：at dawn/the dawn。[/ERR][ERR]作动词时为不及物动词，后不接宾语，错误：The sun dawned the sky，正确：The sky dawned./The sun rose at dawn。[/ERR]"
+    ]
+  },
+  "w428": {
+    "word": "stumble",
+    "images": {
+      "scene": ["infopic01/stumble.webp"],
+      "card": ["wordpic01/stumble.webp"]
+    },
+    "richDetail": [
+      "[TITLE] 解释 [/TITLE][DEF][EN]To walk unsteadily and almost fall over (v.); a clumsy unsteady step (n.) (used in Chapter 1 of The Princess in Black 04, described the princess walking unsteadily because she was extremely tired)|[/EN][CN]（动词）踉跄；蹒跚；绊倒；（名词）踉跄的脚步（出自《黑衣公主4：黑衣公主去度假》第一章，形容公主因为极度疲惫，走路摇摇晃晃险些摔倒的样子）[/CN][POS]v./n.[/POS][PH]/ˈstʌmbl/（英美）[/PH][DU]She stumbled into the broom closet.|(原文例句)她踉跄地走进了扫帚间。[/DU][DU]The little girl stumbled over a small stone when she ran after the colorful butterfly in the garden.|小女孩在花园里追彩色蝴蝶时，被一块小石头绊倒，脚步踉跄了一下。[/DU][/DEF][IMG]infopic01/stumble.webp[/IMG]",
+      "[TITLE] 常见用法 [/TITLE][COLL][H]stumble into|踉跄地走进；不小心闯入[POS]v. 短语[/POS][/H][EX]My grandma stumbled on the wet floor after rain, so we quickly held her arm to support her.|奶奶在雨后的湿地上走路踉跄，我们赶紧扶住了她的胳膊。[/EX][C]stumble over sth|被某物绊倒[C]a stumble of the foot|脚步的踉跄[/C][/COLL]",
+      "[TITLE] 额外例句 [/TITLE][EX]The little boy stumbled when he tried to wear his dad's big leather shoes and walk around the house.|小男孩试着穿上爸爸的大皮鞋在屋里走，走一步就踉跄一下。[/EX][EX]If you don't look at the road while walking, you may stumble on the uneven path in the park.|走路时不看路，很可能会在公园凹凸不平的小路上踉跄摔倒。[/EX]",
+      "[TITLE] 常见错误 [/TITLE][ERR]作动词时，过去式/过去分词为**stumbled**，直接加ed，不要写成stumbleed。[/ERR][ERR]stumble into后接具体地点，表“踉跄走进某地”时不可省略into，错误：she stumbled the room，正确：she stumbled into the room。[/ERR][ERR]stumble over后接绊倒人的事物，不可用介词on替换，错误：stumble on a stick，正确：stumble over a stick。[/ERR]"
+    ]
+  },
+  "w429": {
+    "word": "toothy",
+    "images": {
+      "scene": ["infopic01/toothy.webp"],
+      "card": ["wordpic01/toothy.webp"]
+    },
+    "richDetail": [
+      "[TITLE] 解释 [/TITLE][DEF][EN]Having many or prominent teeth (adj.) (used in Chapter 1 of The Princess in Black 04, described the monster with many obvious teeth)|[/EN][CN]（形容词）牙齿外露的；多牙的；龇牙的（出自《黑衣公主4：黑衣公主去度假》第一章，用来形容长着许多显眼牙齿的怪兽）[/CN][POS]adj.[/POS][PH]/ˈtuːθi/（英美）[/PH][DU]“ROAR!” said a toothy monster.|(原文例句)“吼！”一只牙齿外露的怪兽大叫道。[/DU][DU]The toothy crocodile opened its mouth wide when it sunbathed on the stone by the river.|那只龇牙的鳄鱼在河边的石头上晒太阳时，张大了嘴巴。[/DU][/DEF][IMG]infopic01/toothy.webp[/IMG]",
+      "[TITLE] 常见用法 [/TITLE][COLL][H]a toothy monster|牙齿外露的怪兽[POS]adj.+n. 搭配[/POS][/H][EX]The little boy made a toothy grin when he got his favorite lollipop.|小男孩拿到最喜欢的棒棒糖时，咧开嘴露出了一口牙齿。[/EX][C]a toothy smile|龇牙的笑容[C]toothy jaws|长满牙齿的下巴[/C][/COLL]",
+      "[TITLE] 额外例句 [/TITLE][EX]We saw a toothy wolf standing in the distance when we walked through the forest in the morning.|早上穿过森林时，我们看到远处站着一只龇牙的野狼。[/EX][EX]The kid made a toothy mask with paper and glue for the Halloween party.|小朋友用彩纸和胶水做了一个龇牙的面具，准备参加万圣节派对。[/EX]",
+      "[TITLE] 常见错误 [/TITLE][ERR]比较级为**toothier**，最高级为**toothiest**，变y为i加er/est，不要写成more toothy/most toothy。[/ERR][ERR]拼写注意：由tooth+y构成，不要少写字母o，错误：tothy，正确：toothy。[/ERR]"
+    ]
+  },
+  "w430": {
+    "word": "snore",
+    "images": {
+      "scene": ["infopic01/snore.webp"],
+      "card": ["wordpic01/snore.webp"]
+    },
+    "richDetail": [
+      "[TITLE] 解释 [/TITLE][DEF][EN]To breathe in a very noisy way while you are sleeping (used in the story when Princess Magnolia finally fell asleep on the peaceful island).[/EN][CN]打鼾；打呼噜（书中指木兰公主终于在宁静的小岛上睡着了，并打起呼声）。[/CN][POS]v. / n.[/POS][PH]/snɔːr/[/PH][DU]She closed her eyes. She said “Snore.” [cite_start]And then she did just that.|(原文例句)她闭上眼睛，说了句“打呼噜”，接着她就真的打起呼噜来了 [cite: 1]。[/DU][DU]My daddy snores so loudly that I can hear him from my room.|我爸爸打呼噜声音很大，我在房间里都能听到。[/DU][DU]The little puppy let out a tiny snore while it was dreaming.|小狗在做梦的时候发出了一声小小的呼噜声。[/DU][/DEF][IMG]infopic01/snore.webp[/IMG]",
+      "[TITLE] 常见用法 [/TITLE][COLL][H]snore loudly|大声打呼噜[POS]v.[/POS][/H][EX]He always snores loudly when he is very tired.|他很累的时候总是会大声打呼噜。[/EX][C]loud snore|响亮的呼噜声[/C][C]start to snore|开始打呼噜[/C][/COLL]",
+      "[TITLE] 额外例句 [/TITLE][EX]I couldn't sleep because my roommate was snoring all night.[POS]v.[/POS]|我睡不着，因为我的室友整晚都在打呼噜。[/EX][EX]Grandpa's snore sounds like a little tractor.[POS]n.[/POS]|爷爷的呼噜声听起来像一台小拖拉机。[/EX][EX]Try not to snore during the movie![POS]v.[/POS]|看电影的时候尽量别打呼噜！[/EX]",
+      "[TITLE] 常见错误 [/TITLE][ERR]注意 snore 的过去式是 **snored**，直接加 d 即可，不要写成 snoreed。[/ERR][ERR]snore 既可以做动词（打呼噜），也可以做名词（呼噜声）。比如：His snore is loud. (这里的 snore 是名词)。[/ERR]"
+    ]
+  },
+  "w431": {
+    "word": "height",
+    "images": {
+      "scene": ["infopic01/height.webp"],
+      "card": ["wordpic01/height.webp"]
+    },
+    "richDetail": [
+      "[TITLE] 解释 [/TITLE][DEF][EN]The measurement of how tall a person or thing is (n.); the highest point or level (n.) (used in Chapter 2 of The Princess in Black 04, described how tall the Goat Avenger was)|[/EN][CN]（名词）身高；高度；顶点；最高处（出自《黑衣公主4：黑衣公主去度假》第二章，用来形容山羊复仇者的身高和达夫一样）[/CN][POS]n.[/POS][PH]/haɪt/（英美）[/PH][DU]The Goat Avenger was the same height as her friend Duff.|(原文例句)山羊复仇者和她的朋友达夫一样高。[/DU][DU]The height of the tall giraffe in the zoo is even higher than the big apple tree next to it.|动物园里那只长颈鹿的高度，甚至比旁边的大苹果树还要高。[/DU][/DEF][IMG]infopic01/height.webp[/IMG]",
+      "[TITLE] 常见用法 [/TITLE][COLL][H]the same height as|和……一样高[POS]n. 短语[/POS][/H][EX]My little sister is almost the same height as the small table in our living room now.|我的小妹妹现在几乎和客厅里的小桌子一样高了。[/EX][C]the height of a tower|塔楼的高度[C]at the height of|在……的顶峰；在……的最高处[/C][/COLL]",
+      "[TITLE] 额外例句 [/TITLE][EX]We measured the height of the new teaching building in our school and found it has ten floors.|我们测量了学校新教学楼的高度，发现它有十层楼。[/EX][EX]The basketball player has an amazing height, so he can catch the ball easily when playing games.|这位篮球运动员有着出众的身高，打球时能轻松接到球。[/EX]",
+      "[TITLE] 常见错误 [/TITLE][ERR]注意拼写，不要和weight（重量）混淆，错误：weith/heit，正确：height。[/ERR][ERR]表“身高/高度”时为不可数名词，表“不同高度”时可作可数，错误：a height of 1 meter，正确：a height of 1 meter（具体数值时可加a）/the height of the tree。[/ERR][ERR]固定搭配the same height as，不可省略as，错误：the same height Duff，正确：the same height as Duff。[/ERR]"
+    ]
+  },
+  "w432": {
+    "word": "vacation",
+    "images": {
+      "scene": ["infopic01/vacation.webp"],
+      "card": ["wordpic01/vacation.webp"]
+    },
+    "richDetail": [
+      "[TITLE] 解释 [/TITLE][DEF][EN]A period of time when you stop working or studying to rest or travel (n.); to take a break from work to rest or travel (v.) (used in Chapter 2 of The Princess in Black 04, the Goat Avenger told the princess to take a break from fighting monsters)|[/EN][CN]（名词）假期；休假；（动词）度假；休长假（出自《黑衣公主4：黑衣公主去度假》第二章，指山羊复仇者让公主放下打怪兽的工作，休息一段时间）[/CN][POS]n./v.[/POS][PH]/veɪˈkeɪʃn/（英美）[/PH][DU]“You need a vacation,” said the Goat Avenger.|(原文例句)“你需要休个假。”山羊复仇者说道。[/DU][DU]Our family plans to take a vacation to the mountain village this summer, because the air there is very fresh.|我们全家计划今年夏天去山村度假，因为那里的空气特别清新。[/DU][/DEF][IMG]infopic01/vacation.webp[/IMG]",
+      "[TITLE] 常见用法 [/TITLE][COLL][H]take a vacation|休个假；去度假[POS]v. 短语[/POS][/H][EX]Teachers can take a long vacation during the summer and winter holidays every year.|老师们每年寒暑假都能休长假。[/EX][C]go on a vacation|去度假[C]a seaside vacation|海边假期[C]vacation at the beach|在海边度假[/C][/COLL]",
+      "[TITLE] 额外例句 [/TITLE][EX]We will pack some light clothes and snacks when we go on a vacation to the south next month.|下个月去南方度假时，我们会收拾些轻便的衣服和零食。[/EX][EX]My uncle likes to vacation on a small island by the sea, where he can fish and swim every day.|叔叔喜欢去海边的小岛度假，在那里他每天都能钓鱼、游泳。[/EX]",
+      "[TITLE] 常见错误 [/TITLE][ERR]作名词时，美式英语中更常用vacation，英式英语常用holiday，不要混淆搭配，错误：have a vacation（英式少用），正确：take a vacation（美式）/have a holiday（英式）。[/ERR][ERR]作动词时，为不及物动词，后接地点需加介词in/at，错误：vacation the seaside，正确：vacation at the seaside。[/ERR][ERR]复数形式为**vacations**，直接加s，不要写成vacationes。[/ERR]"
+    ]
+  },
+  "w433": {
+    "word": "shrug",
+    "images": {
+      "scene": ["infopic01/shrug.webp"],
+      "card": ["wordpic01/shrug.webp"]
+    },
+    "richDetail": [
+      "[TITLE] 解释 [/TITLE][DEF][EN]To raise and lower your shoulders to show you don't care or know something (v.); to put on clothes carelessly by lifting your shoulders (v.); a movement of raising and lowering the shoulders (n.) (used in Chapter 4 of The Princess in Black 04, described the princess putting on her dress carelessly)|[/EN][CN]（动词）耸肩；（随意地）套上（衣服）；（名词）耸肩的动作（出自《黑衣公主4：黑衣公主去度假》第四章，形容公主随意地把荷叶边连衣裙套在身上的样子）[/CN][POS]v./n.[/POS][PH]/ʃrʌɡ/（英美）[/PH][DU]She shrugged into her frilly dress.|(原文例句)她随手套上了荷叶边连衣裙。[/DU][DU]My brother shrugged his shoulders when he couldn't answer the teacher's question in class.|弟弟在课堂上答不出老师的问题时，无奈地耸了耸肩。[/DU][/DEF][IMG]infopic01/shrug.webp[/IMG]",
+      "[TITLE] 常见用法 [/TITLE][COLL][H]shrug into|随手套上（衣服）[POS]v. 短语[/POS][/H][EX]He shrugged into his coat and ran out of the house to catch the school bus.|他随手套上外套，跑出家门去赶校车。[/EX][C]shrug one's shoulders|耸肩[C]shrug off|对……满不在乎[/C][/COLL]",
+      "[TITLE] 额外例句 [/TITLE][EX]My sister just shrugged when I asked her who broke the glass cup on the table.|我问姐姐是谁打碎了桌上的玻璃杯，她只是耸了耸肩不说话。[/EX][EX]The little boy shrugged into his rain boots and jumped in the puddles happily.|小男孩套上雨靴，开心地在水洼里跳来跳去。[/EX]",
+      "[TITLE] 常见错误 [/TITLE][ERR]作动词时，过去式/过去分词为**shrugged**，双写g加ed，不要写成shruged。[/ERR][ERR]shrug into后接衣物表“随手套上”，不可省略into，错误：she shrugged her jacket，正确：she shrugged into her jacket。[/ERR]"
+    ]
+  },
+  "w434": {
+    "word": "deserve",
+    "images": {
+      "scene": ["infopic01/deserve.webp"],
+      "card": ["wordpic01/deserve.webp"]
+    },
+    "richDetail": [
+      "[TITLE]解释[/TITLE][DEF][EN]If you deserve something, it means you should get it because you did something good or right.[/EN][CN]值得；应得（因为做了好事或有好的表现而应该得到）[/CN][POS]v.[/POS][PH]/dɪˈzɜːv/（英式）/dɪˈzɝːv/（美式）[/PH][DU]You deserve a vacation.|（原文例句）你值得一个假期。[/DU][DU]You worked very hard. You deserve a rest.|你工作很努力。你值得休息一下。[/DU][DU]She was kind to everyone, so she deserves a prize.|她对每个人都很友善，所以她值得一个奖励。[/DU][/DEF][IMG]infopic01/deserve.webp[/IMG][DEF][EN]If someone deserves something bad, it means they should get it because they did something wrong.[/EN][CN]（因做错事）应受，应得（不好的结果）[/CN][POS]v.[/POS][PH]/dɪˈzɜːv/（英式）/dɪˈzɝːv/（美式）[/PH][DU]If you break the rules, you deserve the punishment.|如果你违反规则，就应当受到惩罚。[/DU][DU]He was mean to others, so he deserves to say sorry.|他对别人不好，所以他应该道歉。[/DU][/DEF]",
+      "[TITLE]常见用法[/TITLE][COLL][H]deserve sth|值得某物[POS]v.[/POS][/H][EX]You deserve a gift for your kindness.|因为你的善良，你值得一个礼物。[/EX][EX]She deserves a gold star.|她值得一颗金星。[/EX][C]deserve a rest|值得休息[/C][C]deserve a reward|值得奖励[/C][C]deserve a vacation|值得一个假期[/C][/COLL][COLL][H]deserve to do sth|值得做某事[POS]v.[/POS][/H][EX]You deserve to win.|你值得赢。[/EX][EX]They deserve to be happy.|他们值得快乐。[/EX][C]deserve to win|值得赢[/C][C]deserve to be happy|值得快乐[/C][/COLL][COLL][H]deserve + 名词/动名词|应受……[POS]v.[/POS][/H][EX]He deserves praise.|他值得表扬。[/EX][EX]This idea deserves thinking about.|这个想法值得思考。[/EX][C]deserve praise|值得表扬[/C][C]deserve punishment|应受惩罚[/C][/COLL]",
+      "[TITLE]额外例句[/TITLE][EX]You helped your friend, so you deserve a thank you.|你帮助了朋友，所以你值得一句谢谢。[/EX][EX]The brave princess deserves everyone's respect.|勇敢的公主值得大家的尊敬。[/EX][EX]After cleaning the whole room, he deserves some ice cream.|打扫完整个房间后，他值得吃点冰淇淋。[/EX]",
+      "[TITLE]常见错误[/TITLE][ERR]deserve后面不能直接加动词原形（错误：You deserve win.），正确说法是You deserve to win. 或 You deserve a win。[/ERR][ERR]deserve本身是动词，不要和形容词worthy混淆（错误：You are deserve it.），正确是You deserve it. 或 You are worthy of it。[/ERR][ERR]当主语是第三人称单数时要加-s（错误：She deserve a prize.），正确是She deserves a prize。[/ERR]"
+    ]
+  },
+ "w435": {
+    "word": "hammock",
+    "images": {
+      "scene": ["infopic01/hammock.webp"],
+      "card": ["wordpic01/hammock.webp"]
+    },
+    "richDetail": [
+      "[TITLE]解释[/TITLE][DEF][EN]A bed made of strong cloth or net that hangs between two trees or tall posts, perfect for resting outside (used in the story when Princess Magnolia wanted to sleep on the beach).[/EN][CN]吊床（书中指木兰公主想在海滩上睡觉时躺的悬挂式网床或布床）。[/CN][POS]n.[/POS][PH]/ˈhæmək/[/PH][DU]Princess Magnolia lay down in a hammock.|(原文例句)木兰公主躺在一个吊床上。[/DU][DU]My dad likes to read his book in the hammock under the big oak tree.|我爸爸喜欢在大橡树下的吊床里看书。[/DU][DU]The baby monkey gently swung in a hammock made of leaves.|小猴子在树叶做成的吊床里轻轻地摇荡着。[/DU][/DEF][IMG]infopic01/hammock.webp[/IMG]",
+      "[TITLE]常见用法[/TITLE][COLL][H]swing in a hammock|在吊床上荡秋千[POS]n.[/POS][/H][EX]We spent the whole sunny afternoon swinging gently in a hammock by the sea.|我们整个阳光明媚的下午都在海边的吊床上轻轻摇荡。[/EX][EX]The children giggled as they tried to swing in the large net hammock.|孩子们试着在那张大网眼吊床上荡来荡去，咯咯地笑着。[/EX][C]swing gently|轻轻摇荡[/C][C]rock the hammock|摇晃吊床[/C][/COLL][COLL][H]set up/tie a hammock|搭/系吊床[POS]n.[/POS][/H][EX]My big brother helped me tie the hammock securely between two sturdy trees.|我哥哥帮我把吊床牢牢地系在两棵结实的树之间。[/EX][EX]It took us ten minutes to set up the hammock in the backyard for our picnic.|我们在后院花了十分钟才把野餐用的吊床搭好。[/EX][C]sleep in a hammock|在吊床上睡觉[/C][C]relax in a hammock|在吊床上放松[/C][/COLL]",
+      "[TITLE]额外例句[/TITLE][EX]The pirate captain took a long nap in a colorful hammock on the ship's deck.[POS]n.[/POS]|海盗船长在甲板上一张五颜六色的吊床里睡了个长长的午觉。[/EX][EX]I almost fell out of the hammock when the silly dog jumped onto it.[POS]n.[/POS]|那只傻乎乎的狗狗跳上吊床时，我差点从里面掉出来。[/EX][EX]A warm summer night in a hammock is the perfect place to watch the shooting stars.[POS]n.[/POS]|在温暖的夏夜，躺在吊床里是观看流星的绝佳地点。[/EX][EX]She bought a brand-new canvas hammock for her summer camping trip in the forest.[POS]n.[/POS]|她为夏天在森林里的露营旅行买了一张全新的帆布吊床。[/EX]",
+      "[TITLE]常见错误[/TITLE][ERR]注意介词的搭配：在英语中，我们通常说 lie IN a hammock（躺在吊床里），而不是 lie ON a hammock，因为它像一个包裹着你的网。[/ERR][ERR]注意拼写，结尾是 -ock，不要和有相似读音的 stomach（胃）的结尾混淆。[/ERR]"
+    ]
+  },
+  "w436": {
+    "word": "checker",
+    "images": {
+      "scene": ["infopic01/checker.webp"],
+      "card": ["wordpic01/checker.webp"]
+    },
+    "richDetail": [
+      "[TITLE]解释[/TITLE][DEF][EN]A small round game piece; or a game for two people played on a board with light and dark squares (used in the story when Princess Sneezewort wanted to play a board game).[/EN][CN]（国际跳棋的）棋子；国际跳棋（通常用复数checkers）（书中指斯尼兹沃特公主想和木兰公主玩的游戏）。[/CN][POS]n.[/POS][PH]/ˈtʃekər/[/PH][DU]\"Later,\" Princess Sneezewort whispered, \"we can play checkers.\"|(原文例句)“晚一点，”斯尼兹沃特公主小声说，“我们可以玩国际跳棋。”[/DU][DU]My grandpa taught me how to move the checkers on the board.|我爷爷教我如何在棋盘上移动跳棋棋子。[/DU][DU]If you jump over my checker, you can take it away!|如果你跳过我的棋子，你就可以把它吃掉（拿走）！[/DU][/DEF][IMG]infopic01/checker.webp[/IMG]",
+      "[TITLE]常见用法[/TITLE][COLL][H]play checkers|玩国际跳棋[POS]n.[/POS][/H][EX]Every rainy afternoon, Tim and his little sister stay inside and play checkers by the fireplace.|每个下雨的下午，蒂姆和他的小妹妹都会待在屋里，在壁炉旁玩跳棋。[/EX][EX]The two old friends sat in the quiet park playing a friendly game of checkers.|两位老朋友坐在安静的公园里，友好地玩着一盘跳棋。[/EX][C]a game of checkers|一局跳棋[/C][C]win at checkers|在跳棋比赛中获胜[/C][/COLL][COLL][H]checkerboard / checker board|跳棋棋盘（也指黑白相间的格子图案）[POS]n.[/POS][/H][EX]The castle's kitchen floor was beautifully decorated with a black and white checkerboard pattern.|城堡厨房的地板上装饰着漂亮的黑白相间的棋盘格图案。[/EX][EX]Please put all the round pieces back into the box and fold the checkerboard carefully.|请把所有圆形的棋子放回盒子里，并把棋盘小心地折好。[/EX][C]checkerboard pattern|棋盘方格图案[/C][C]move across the board|在棋盘上移动[/C][/COLL]",
+      "[TITLE]额外例句[/TITLE][EX]I lost one red checker under the sofa, so we can't play the game properly today.[POS]n.[/POS]|我把一枚红色的棋子掉到沙发下面弄丢了，所以我们今天没法好好玩这个游戏了。[/EX][EX]To win the game, you must cleverly capture all of your opponent's checkers.[POS]n.[/POS]|要赢得比赛，你必须巧妙地吃掉（俘获）对手所有的棋子。[/EX][EX]The princess brought out a beautiful wooden box full of shiny glass checkers.[POS]n.[/POS]|公主拿出一个漂亮的木盒，里面装满了闪闪发光的玻璃棋子。[/EX][EX]My dad is so good at playing checkers that I have never beaten him in my life.[POS]n.[/POS]|我爸爸非常擅长下跳棋，我这辈子还从来没有赢过他。[/EX]",
+      "[TITLE]常见错误[/TITLE][ERR]当指代这种棋类游戏本身时，无论在英国还是美国，都习惯使用复数形式 checkers。如果单指一颗棋子，才用 a checker。[/ERR][ERR]不要把它和 chess（国际象棋）弄混了！虽然它们都在有方格的棋盘上玩，但 checkers 都是圆形的扁棋子，而 chess 有国王、王后和骑士等不同形状的立体棋子。[/ERR]"
+    ]
+  },
+  "w437": {
+    "word": "shutter",
+    "images": {
+      "scene": ["infopic01/shutter.webp"],
+      "card": ["wordpic01/shutter.webp"]
+    },
+    "richDetail": [
+      "[TITLE]解释[/TITLE][DEF][EN]A wooden or metal cover on the outside of a window; to close something very tightly like a window cover (in the story, Princess Magnolia squeezed her eyes shut so tightly it was like closing a window blind).[/EN][CN]百叶窗；快门；紧紧闭上（书中指木兰公主像关百叶窗一样，紧紧地闭上眼睛）。[/CN][POS]v. & n.[/POS][PH]/ˈʃʌtər/[/PH][DU]Princess Magnolia squeezed her eyes shutter.|(原文例句)木兰公主紧紧地闭上了双眼。[/DU][DU]We closed the blue shutters to keep the hot sun out of the room.|我们关上蓝色的百叶窗，把炎热的阳光挡在房间外面。[/DU][DU]I smiled when I heard the click of the camera shutter.|当我听到相机快门咔嚓一声时，我微笑了。[/DU][/DEF][IMG]infopic01/shutter.webp[/IMG]",
+      "[TITLE]常见用法[/TITLE][COLL][H]shutter the windows|关上百叶窗[POS]v.[/POS][/H][EX]They had to shutter the windows before the big storm arrived.|在大风暴到来之前，他们不得不关紧百叶窗。[/EX][EX]The old shop was shuttered for the winter holiday.|那家老店在寒假期间关门停业了。[/EX][C]window shutter|窗户的百叶窗[/C][C]camera shutter|相机的快门[/C][/COLL]",
+      "[TITLE]额外例句[/TITLE][EX]The strong wind blew the wooden shutters open with a loud bang.[POS]n.[/POS]|强风伴随着砰的一声巨响吹开了木制百叶窗。[/EX][EX]She painted the shutters of her little house bright yellow.[POS]n.[/POS]|她把她小房子的百叶窗涂成了明亮的黄色。[/EX][EX]The photographer pressed the shutter to take a beautiful picture of the flying bird.[POS]n.[/POS]|摄影师按下快门，拍下了一张飞鸟的美丽照片。[/EX]",
+      "[TITLE]常见错误[/TITLE][ERR]书中说 \"squeezed her eyes shutter\" 是一种生动好玩的文学表达，把眼睛比作百叶窗一样“啪”地关上。在平时的英语对话中，我们通常说 shut her eyes tight 来表示“紧闭双眼”。[/ERR]"
+    ]
+  },
+  "w438": {
+    "word": "massive",
+    "images": {
+      "scene": ["infopic01/massive.webp"],
+      "card": ["wordpic01/massive.webp"]
+    },
+    "richDetail": [
+      "[TITLE]解释[/TITLE][DEF][EN]Very, very big, heavy, and solid, like a giant mountain or a huge monster (used in the story to describe the sea monster's huge body).[/EN][CN]巨大的；庞大而沉重的（书中形容海怪的身体非常庞大且厚重）。[/CN][POS]adj.[/POS][PH]/ˈmæsɪv/[/PH][DU]The neck was attached to a massive body.|(原文例句)那条脖子连在一个巨大的身体上。[/DU][DU]The giant lifted a massive stone block with just one hand.|巨人只用一只手就举起了一块巨大的石头。[/DU][DU]We stood next to a massive dinosaur skeleton in the museum.|我们站在博物馆里一具巨大的恐龙骨架旁边。[/DU][/DEF][IMG]infopic01/massive.webp[/IMG]",
+      "[TITLE]常见用法[/TITLE][COLL][H]a massive rock|一块巨石[POS]adj.[/POS][/H][EX]A massive rock blocked the entrance to the dragon's cave.|一块巨石挡住了通往龙穴的入口。[/EX][EX]The workers used a big truck to move the massive tree trunk.|工人们用一辆大卡车来移动那根巨大的树干。[/EX][C]massive elephant|庞大的大象[/C][C]massive wall|厚重巨大的墙[/C][/COLL]",
+      "[TITLE]额外例句[/TITLE][EX]The knight looked up at the massive iron gates of the dark castle.[POS]adj.[/POS]|骑士抬头看着黑暗城堡那巨大的铁门。[/EX][EX]A massive whale jumped out of the ocean and made a huge splash.[POS]adj.[/POS]|一头巨大的鲸鱼跃出海面，激起了巨大的水花。[/EX][EX]The storm caused massive waves that crashed onto the beach.[POS]adj.[/POS]|暴风雨掀起了拍打在海滩上的巨浪。[/EX]",
+      "[TITLE]常见错误[/TITLE][ERR]massive 不仅仅是指面积上的“大（big/large）”，它还给人一种“非常沉重、非常结实、像一大块实心物体”的感觉。如果只是形容一个大气球，用 big 更好，因为气球不重。[/ERR]"
+    ]
+  },
+  "w439": {
+    "word": "sunburn",
+    "images": {
+      "scene": ["infopic01/sunburn.webp"],
+      "card": ["wordpic01/sunburn.webp"]
+    },
+    "richDetail": [
+      "[TITLE]解释[/TITLE][DEF][EN]When your skin gets red, hot, and painful because you stayed out in the bright sun for too long without protection.[/EN][CN]晒伤（书中指木兰公主的皮肤很容易被太阳晒红晒伤）。[/CN][POS]v. & n.[/POS][PH]/ˈsʌnbɜːrn/[/PH][DU]Princess Magnolia sunburned easily.|(原文例句)木兰公主很容易晒伤。[/DU][DU]Watch out so you do not get a painful sunburn at the beach!|在海滩上一定要注意，以免遭受痛苦的晒伤！[/DU][DU]His nose was red and peeling from a bad sunburn.|他的鼻子因为严重的晒伤而变得又红又脱皮。[/DU][/DEF][IMG]infopic01/sunburn.webp[/IMG]",
+      "[TITLE]常见用法[/TITLE][COLL][H]get a sunburn|被晒伤[POS]n.[/POS][/H][EX]If you forget to wear your hat, you might get a sunburn on your face.|如果你忘记戴帽子，你的脸可能会被晒伤。[/EX][EX]Protect your skin with lotion so you don't get a sunburn.|用防晒乳液保护你的皮肤，这样你就不会晒伤了。[/EX][C]bad sunburn|严重的晒伤[/C][C]sunburn lotion|晒伤修护霜[/C][/COLL]",
+      "[TITLE]额外例句[/TITLE][EX]She sat under the umbrella to avoid getting a sunburn.[POS]n.[/POS]|她坐在遮阳伞下以避免被晒伤。[/EX][EX]Aloe vera gel feels very cool and nice on a sunburn.[POS]n.[/POS]|芦荟胶涂在晒伤的地方感觉非常清凉舒服。[/EX][EX]My shoulders sunburned because I played in the pool all afternoon.[POS]v.[/POS]|我的肩膀晒伤了，因为我整个下午都在游泳池里玩（在此作动词）。[/EX]",
+      "[TITLE]常见错误[/TITLE][ERR]sunburn 既可以做名词（晒伤这个病症），也可以做动词（晒伤这个动作）。在原书中 \"sunburned easily\" 是动词的过去式用法。[/ERR][ERR]注意 sunburn 专门指被“太阳光”晒伤。如果是被火苗或开水烫伤，要用 burn 或 scald。[/ERR]"
+    ]
+  },
+  "w440": {
+    "word": "woozy",
+    "images": {
+      "scene": ["infopic01/woozy.webp"],
+      "card": ["wordpic01/woozy.webp"]
+    },
+    "richDetail": [
+      "[TITLE]解释[/TITLE][DEF][EN]Feeling a little bit dizzy or confused, like your head is spinning and you might fall over (used in the story when looking down from a high window made the princess feel dizzy).[/EN][CN]头晕眼花的；晕乎乎的（书中指木兰公主从二楼窗户往下看会觉得头晕）。[/CN][POS]adj.[/POS][PH]/ˈwuːzi/[/PH][DU]Second-story windows made Princess Magnolia feel woozy.|(原文例句)二楼的窗户让木兰公主感到头晕眼花。[/DU][DU]Spinning around in circles too fast always makes me feel woozy.|在原地转圈转得太快总是让我感到晕乎乎的。[/DU][DU]The sick little bear felt hot and woozy all morning.|生病的小熊整个早上都觉得浑身发热、头昏脑涨。[/DU][/DEF][IMG]infopic01/woozy.webp[/IMG]",
+      "[TITLE]常见用法[/TITLE][COLL][H]feel woozy|感到头晕/晕乎乎的[POS]adj.[/POS][/H][EX]The strong smell of the paint made the workers feel woozy.|刺鼻的油漆味让工人们感到头晕目眩。[/EX][EX]After riding the fast roller coaster, I felt a little woozy and had to sit down.|坐完快速的过山车后，我感觉有点头晕，不得不坐下来休息。[/EX][C]get woozy|变晕[/C][C]a little woozy|有一点晕[/C][/COLL]",
+      "[TITLE]额外例句[/TITLE][EX]Looking down from the tall tower made the brave knight feel slightly woozy.[POS]adj.[/POS]|从高塔上往下看让这位勇敢的骑士感到微微有些眩晕。[/EX][EX]The bright flashing lights made the audience feel woozy.[POS]adj.[/POS]|闪烁的强光让观众们感到眼花缭乱。[/EX][EX]Drink some water and rest if your head starts to feel woozy.[POS]adj.[/POS]|如果你的头开始觉得晕乎乎的，喝点水休息一下。[/EX]",
+      "[TITLE]常见错误[/TITLE][ERR]woozy 是一种相对口语化、听起来甚至有点可爱的词汇，非常适合小朋友在日常生活中表达“晕乎乎”的感觉。如果是在医院里，医生通常会使用更正式的词 dizzy 来表示头晕。[/ERR]"
+    ]
+  },
+  "w441": {
+    "word": "chop",
+    "images": {
+      "scene": ["infopic01/chop.webp"],
+      "card": ["wordpic01/chop.webp"]
+    },
+    "richDetail": [
+      "[TITLE]解释[/TITLE][DEF][EN]To cut something into pieces with a quick, strong hit using a tool like an axe, or to hit the air quickly with the side of your hand like a ninja.[/EN][CN]劈；砍；（武术中的）手刀劈掌（书中指山羊复仇者对着空气使出手刀劈）。[/CN][POS]v. & n.[/POS][PH]/tʃɑːp/[/PH][DU]The Goat Avenger chopped at the air.|(原文例句)“山羊复仇者”对着空气使出了掌劈。[/DU][DU]My grandfather uses a heavy axe to chop wood for the fireplace.|我爷爷用一把沉重的斧头为壁炉劈柴。[/DU][DU]The ninja gave a quick chop to the wooden board and broke it in half.|忍者对着木板快速地劈了一掌，把它劈成了两半。[/DU][/DEF][IMG]infopic01/chop.webp[/IMG]",
+      "[TITLE]常见用法[/TITLE][COLL][H]chop wood / vegetables|劈柴 / 切蔬菜[POS]v.[/POS][/H][EX]Please help me chop these fresh carrots for the soup.|请帮我把这些新鲜的胡萝卜切成块放进汤里。[/EX][EX]It took him hours to chop all the logs into small pieces.|他花了几个小时才把所有的原木劈成小块。[/EX][C]karate chop|空手道手刀（名词）[/C][C]chop down a tree|砍倒一棵树[/C][/COLL]",
+      "[TITLE]额外例句[/TITLE][EX]The chef used a very sharp knife to chop the onions quickly.[POS]v.[/POS]|厨师用一把非常锋利的刀快速地切洋葱。[/EX][EX]He learned how to do a powerful karate chop in his martial arts class.[POS]n.[/POS]|他在武术课上学会了如何使出有力的一掌劈。[/EX][EX]The lumberjack will chop down the old dead tree safely.[POS]v.[/POS]|伐木工人会安全地砍倒那棵枯死的老树。[/EX]",
+      "[TITLE]常见错误[/TITLE][ERR]注意 chop 和 cut 的区别。cut 是最普通的“切开、割开”，动作可以很轻柔；而 chop 强调动作必须是“快速、用力、从上往下”地“剁”或“劈”。[/ERR]"
+    ]
+  },
+  "w442": {
+    "word": "catchphrase",
+    "images": {
+      "scene": ["infopic01/catchphrase.webp"],
+      "card": ["wordpic01/catchphrase.webp"]
+    },
+    "richDetail": [
+      "[TITLE]解释[/TITLE][DEF][EN]A special, short sentence or group of words that a person or a cartoon character says all the time, and people remember them for it.[/EN][CN]口头禅；名言；标志性口号（书中指山羊复仇者试着喊了几句标志性的口号，想让自己显得更酷）。[/CN][POS]n.[/POS][PH]/ˈkætʃfreɪz/[/PH][DU]The Goat Avenger tried out some catchphrases.|(原文例句)“山羊复仇者”试喊了几句名言口号。[/DU][DU]\"To infinity and beyond!\" is a very famous superhero catchphrase.|“飞向宇宙，浩瀚无垠！”是一句非常有名的超级英雄口头禅。[/DU][DU]Every time the villain appears, he shouts his loud catchphrase.|每次那个坏蛋出现时，他都会大喊他那句响亮的口头禅。[/DU][/DEF][IMG]infopic01/catchphrase.webp[/IMG]",
+      "[TITLE]常见用法[/TITLE][COLL][H]a popular catchphrase|一句流行的口头禅[POS]n.[/POS][/H][EX]That funny cartoon show has a really popular catchphrase that all the kids love to say.|那部有趣的动画片里有一句非常流行的口头禅，所有孩子都喜欢说。[/EX][EX]The pirate's catchphrase is \"Ahoy, matey!\" whenever he greets someone.|海盗跟人打招呼时的招牌口号总是“喂，伙计！”。[/EX][C]trademark catchphrase|招牌式口号[/C][C]famous catchphrase|著名的口头禅[/C][/COLL]",
+      "[TITLE]额外例句[/TITLE][EX]I am trying to think of a cool catchphrase for our treehouse club.[POS]n.[/POS]|我正努力为我们的树屋俱乐部想出一句酷酷的口号。[/EX][EX]Whenever he does a magic trick, he says his magic catchphrase.[POS]n.[/POS]|每当他变魔术时，他都会念出他的魔法口头禅。[/EX][EX]The actor became famous partly because of his hilarious catchphrase on television.[POS]n.[/POS]|这位演员出名，部分原因是因为他在电视上那句极其搞笑的口头禅。[/EX]",
+      "[TITLE]常见错误[/TITLE][ERR]catchphrase 是由 catch (捕捉) 和 phrase (短语) 组合而成的一个词。意思是“能够一下子抓住别人注意力的句子”，大家一听到这句话就能想到那个人物。[/ERR]"
+    ]
+  },
+  "w443": {
+    "word": "burp",
+    "images": {
+      "scene": ["infopic01/burp.webp"],
+      "card": ["wordpic01/burp.webp"]
+    },
+    "richDetail": [
+      "[TITLE]解释[/TITLE][DEF][EN]To let air out from your stomach through your mouth with a funny sound, usually happening after you eat or drink too fast.[/EN][CN]打饱嗝（书中指其中一只山羊吃草吃饱后打了个嗝）。[/CN][POS]v. & n.[/POS][PH]/bɜːrp/[/PH][DU]One of the goats burped.|(原文例句)其中一只山羊打了个饱嗝。[/DU][DU]The little baby gave a cute burp after finishing his bottle of milk.|小宝宝喝完奶瓶里的奶后，打了一个可爱的小嗝。[/DU][DU]It is polite to cover your mouth and say \"Excuse me\" if you burp at the table.|如果在餐桌上打嗝，捂住嘴巴并说“对不起”是礼貌的表现。[/DU][/DEF][IMG]infopic01/burp.webp[/IMG]",
+      "[TITLE]常见用法[/TITLE][COLL][H]let out a burp|打出一个嗝[POS]n.[/POS][/H][EX]The giant let out a massive burp after eating ten pizzas.|巨人吃了十个披萨后，打了一个巨大的响嗝。[/EX][EX]Drinking fizzy soda too fast can make you let out a loud burp.|汽水喝得太快会让你大声打嗝。[/EX][C]burp loudly|大声打嗝（动词用法）[/C][C]burp the baby|给宝宝拍嗝（动词用法）[/C][/COLL]",
+      "[TITLE]额外例句[/TITLE][EX]He tried to hold in his burp during the quiet classroom reading time.[POS]n.[/POS]|在安静的课堂阅读时间，他努力憋住不打嗝。[/EX][EX]The cartoon character drank a whole barrel of juice and burped a bubble.[POS]v.[/POS]|卡通人物喝了一整桶果汁，打嗝吐出了一个泡泡。[/EX][EX]Sometimes babies need you to pat their backs to help them burp.[POS]v.[/POS]|有时候婴儿需要你拍拍他们的后背，帮助他们打出气嗝。[/EX]",
+      "[TITLE]常见错误[/TITLE][ERR]一定要区分 burp 和 hiccup：burp 是吃饱喝足后从胃里往上冒气的“饱嗝”；而 hiccup 是因为隔膜肌痉挛引起的、控制不住的一下一下“呃、呃”的声音（打嗝/呃逆）。[/ERR]"
+    ]
+  },
+  "w444": {
+    "word": "itch",
+    "images": {
+      "scene": ["infopic01/itch.webp"],
+      "card": ["wordpic01/itch.webp"]
+    },
+    "richDetail": [
+      "[TITLE]解释[/TITLE][DEF][EN]An uncomfortable, ticklish feeling on your skin that makes you really want to rub or scratch it with your fingernails; to have this feeling (used in the story when Duff's mask made his face feel ticklish and uncomfortable).[/EN][CN]痒；发痒（书中指达夫的面具让他的脸感觉很不舒服、一直发痒）。[/CN][POS]v. & n.[/POS][PH]/ɪtʃ/[/PH][DU]His mask had itched.|(原文例句)他的面具戴着很痒。[/DU][DU]I have a big mosquito bite on my arm, and it itches so much that I can't sleep!|我胳膊上被蚊子咬了一个大包，痒得我都没法睡觉了！[/DU][DU]If your back has an itch, I can help you scratch it gently.|如果你后背痒，我可以帮你轻轻地挠一挠。[/DU][/DEF][IMG]infopic01/itch.webp[/IMG]",
+      "[TITLE]常见用法[/TITLE][COLL][H]scratch an itch|挠痒痒[POS]n.[/POS][/H][EX]The little brown dog used its back leg to scratch an itch behind its ear.|那只棕色的小狗用后腿挠了挠耳朵后面的痒痒。[/EX][EX]I can't reach my back to scratch this annoying itch, can you help me?|我够不到后背去挠这个烦人的痒痒，你能帮我一下吗？[/EX][C]feel a sudden itch|突然感到一阵发痒[/C][C]an itchy sweater|一件穿上扎人的毛衣（形容词用法）[/C][/COLL][COLL][H]be itching to do sth|渴望/急不可耐地想做某事[POS]v.[/POS][/H][EX]The kids are itching to go outside and build a giant snowman in the yard.|孩子们急不可耐地想去外面在院子里堆一个巨大的雪人。[/EX][EX]Princess Magnolia is itching to fight the sea monster and protect the beach.|木兰公主渴望去和海怪战斗，保护这片海滩。[/EX][C]itching for a fight|渴望战斗/跃跃欲试[/C][/COLL]",
+      "[TITLE]额外例句[/TITLE][EX]This wool sweater looks very pretty, but it makes my neck itch all day long.[POS]v.[/POS]|这件羊毛衫看起来很漂亮，但它让我的脖子整天发痒。[/EX][EX]My nose is itching; I think I am going to sneeze very loudly.[POS]v.[/POS]|我鼻子发痒；我想我要大声打喷嚏了。[/EX][EX]He rubbed his eye quickly because of a sudden itch from the dust.[POS]n.[/POS]|因为灰尘引起的突然发痒，他迅速揉了揉眼睛。[/EX]",
+      "[TITLE]常见错误[/TITLE][ERR]很多小朋友会把 itch（发痒）和 scratch（抓挠）弄混。记住：itch 是皮肤自己的感觉（It itches! 好痒！），而 scratch 是你为了止痒去做的动作（Scratch my back 帮我挠后背）。[/ERR][ERR]注意 itch 的形容词是 itchy（发痒的）。不要说 My arm is very itch (错误)，要说 My arm is very itchy。[/ERR]"
+    ]
+  },
+  "w445": {
+    "word": "chafe",
+    "images": {
+      "scene": ["infopic01/chafe.webp"],
+      "card": ["wordpic01/chafe.webp"]
+    },
+    "richDetail": [
+      "[TITLE]解释[/TITLE][DEF][EN]To make your skin red, sore, and painful because something tight or rough keeps rubbing against it over and over (used in the story when Duff's cape rubbed his skin too much).[/EN][CN]擦破；擦痛；（因摩擦）使发红发痛（书中指达夫的披风把他的皮肤磨得又红又痛）。[/CN][POS]v.[/POS][PH]/tʃeɪf/[/PH][DU]His cape had chafed.|(原文例句)他的披风磨痛了皮肤。[/DU][DU]These new shiny shoes are too tight, and they chafe my heels when I walk.|这双闪亮的新鞋太紧了，我走路时它们把我的脚后跟磨破了。[/DU][DU]The heavy backpack straps began to chafe her shoulders after a long hike.|长途徒步之后，沉重的书包带开始磨痛她的肩膀了。[/DU][/DEF][IMG]infopic01/chafe.webp[/IMG]",
+      "[TITLE]常见用法[/TITLE][COLL][H]chafe against sth|摩擦某物（导致受损或疼痛）[POS]v.[/POS][/H][EX]The poor dog's collar was too tight and it chafed against its neck all day.|可怜的狗狗项圈太紧了，整天都在磨它的脖子，把它磨红了。[/EX][EX]The small wooden boat chafed against the dock in the strong wind.|在强风中，那艘木制小船不断摩擦着码头。[/EX][C]skin chafes|皮肤磨痛[/C][C]chafe one's hands|搓手（取暖）[/C][/COLL]",
+      "[TITLE]额外例句[/TITLE][EX]If the climbing rope is too rough, it will chafe your hands during the adventure.[POS]v.[/POS]|如果登山绳太粗糙，它会在探险时磨破你的手。[/EX][EX]He took off the tight watch because it was chafing his wrist and making it red.[POS]v.[/POS]|他摘下了那块紧紧的手表，因为它磨痛了他的手腕，把手腕都磨红了。[/EX][EX]Babies need soft, cotton clothes so their delicate skin won't chafe.[POS]v.[/POS]|婴儿需要柔软的纯棉衣服，这样他们娇嫩的皮肤才不会被擦伤。[/EX]",
+      "[TITLE]常见错误[/TITLE][ERR]chafe 强调的是“反复摩擦导致疼痛或红肿”。如果是一下子撞伤，用 bruise（瘀伤）；如果是被锋利的东西划伤，用 cut（割破）。[/ERR][ERR]注意拼写，chafe 和 chase（追赶）只有一个字母的区别，读音也不同（chafe 读 /tʃeɪf/，chase 读 /tʃeɪs/），不要弄混啦。[/ERR]"
+    ]
+  },
+  "w446": {
+    "word": "shove on",
+    "images": {
+      "scene": ["infopic01/shove_on.webp"],
+      "card": ["wordpic01/shove_on.webp"]
+    },
+    "richDetail": [
+      "[TITLE]解释[/TITLE][DEF][EN]To put a piece of clothing or a hat on very quickly, and sometimes a little roughly, because you are in a big hurry to go somewhere.[/EN][CN]（胡乱、匆忙地）套上；穿上；戴上（书中指达夫听到怪物警报后，急急忙忙地把面具套在头上）。[/CN][POS]v. phr.[/POS][PH]/ʃʌv ɑːn/[/PH][DU]Duff shoved on his mask.|(原文例句)达夫急忙戴上了他的面具。[/DU][DU]I shoved on my heavy winter boots and ran outside to see the fire engine.|我胡乱套上厚重的冬靴，跑出去看消防车。[/DU][DU]Just shove on a warm sweater and let's go out to play!|随便套件保暖的毛衣咱们就出去玩吧！[/DU][/DEF][IMG]infopic01/shove_on.webp[/IMG]",
+      "[TITLE]常见用法[/TITLE][COLL][H]shove sth on|匆忙穿戴上某物[POS]v. phr.[/POS][/H][EX]He shoved his hat on his head quickly to hide his messy morning hair.|他赶忙把帽子扣在头上，以遮住早上乱糟糟的头发。[/EX][EX]She shoved on her backpack and rushed out the door to catch the school bus.|她急忙背上书包冲出门去赶校车。[/EX][C]shove on some clothes|随便套上几件衣服[/C][/COLL]",
+      "[TITLE]额外例句[/TITLE][EX]When the loud alarm rang, the brave firefighter shoved on his heavy jacket.[POS]v. phr.[/POS]|响亮的警报响起时，勇敢的消防员飞快地穿上了他厚重的外套。[/EX][EX]Don't just shove your shoes on without untying the laces first![POS]v. phr.[/POS]|不要不先解开鞋带就硬把脚往鞋里塞！[/EX][EX]I was so late for the party that I just shoved on the first clean shirt I found.[POS]v. phr.[/POS]|我参加派对快迟到了，于是胡乱套上我找到的第一件干净衬衫。[/EX]",
+      "[TITLE]常见错误[/TITLE][ERR]普通的“穿衣服”用 put on 就可以。shove on 强调动作的“粗鲁、快速和急促”。shove 这个词本身的意思是“用力推、猛挤”。[/ERR]"
+    ]
+  },
+  "w447": {
+    "word": "slap",
+    "images": {
+      "scene": ["infopic01/slap.webp"],
+      "card": ["wordpic01/slap.webp"]
+    },
+    "richDetail": [
+      "[TITLE]解释[/TITLE][DEF][EN]To hit something hard with the flat part of your hand or a flat object (like a tail), making a loud, sharp sound (used in the story when the sea monster hit the water with its big flat tail).[/EN][CN]拍；打；（用平展的东西）猛击；拍打声（书中指海怪用巨大的尾巴用力拍打水面）。[/CN][POS]v. & n.[/POS][PH]/slæp/[/PH][DU]Its tail slapped the water.|(原文例句)它的尾巴拍打着水面。[/DU][DU]The excited friends slapped their hands together in a high five after winning the game.|赢得比赛后，兴奋的朋友们互相击掌（High five）庆祝。[/DU][DU]I accidentally dropped my heavy book, and it hit the wooden floor with a loud slap.|我不小心掉下了我那本厚重的书，书掉在木地板上发出了啪的一声响。[/DU][/DEF][IMG]infopic01/slap.webp[/IMG]",
+      "[TITLE]常见用法[/TITLE][COLL][H]slap sth against/on sth|把某物重重地拍在...上[POS]v.[/POS][/H][EX]The angry king slapped his hand on the dinner table, making everyone jump.|愤怒的国王一巴掌重重地拍在餐桌上，吓得大家都跳了起来。[/EX][EX]Big ocean waves slapped against the side of the wooden boat during the storm.|暴风雨中，巨大的海浪拍打着木船的船舷。[/EX][C]slap a mosquito|拍死一只蚊子[/C][C]slap one's forehead|一拍额头（表示恍然大悟或懊恼）[/C][/COLL]",
+      "[TITLE]额外例句[/TITLE][EX]She slapped her forehead when she suddenly realized she forgot her house keys.[POS]v.[/POS]|当她突然意识到忘了带家门钥匙时，她猛地拍了一下自己的额头。[/EX][EX]A cold, icy gust of wind slapped my face when I opened the door.[POS]v.[/POS]|我打开门时，一阵冰冷的寒风扑面刮来（像打了脸一样）。[/EX][EX]The clever seal slapped the fish against the ice before eating it.[POS]v.[/POS]|那只聪明的海豹把鱼用力拍在冰面上然后再吃掉。[/EX]",
+      "[TITLE]常见错误[/TITLE][ERR]slap 强调的是用“平平的面”（比如张开的手掌、宽大的尾巴、书本）去拍打，且通常会发出清脆的响声。如果是用握紧的拳头打，叫做 punch；如果是用脚踢，叫做 kick。[/ERR]"
+    ]
+  },
+  "w448": {
+    "word": "crash",
+    "images": {
+      "scene": ["infopic01/crash.webp"],
+      "card": ["wordpic01/crash.webp"]
+    },
+    "richDetail": [
+      "[TITLE]解释[/TITLE][DEF][EN]To hit something very hard, making a loud noise.[/EN][CN]碰撞；猛撞；碎裂声（书中指海怪翻起的巨浪伴着轰鸣声扑到岸上）。[/CN][POS]v. & n.[/POS][PH]/kræʃ/[/PH][DU]A wave crashed to shore.|(原文例句)一个巨浪猛地扑上了海岸。[/DU][DU]Don't crash your toy car into the wall!|别让玩具车撞到墙上！[/DU][DU]The cup fell with a loud crash.|杯子掉在地上，发出一声巨响。[/DU][/DEF][IMG]infopic01/crash.webp[/IMG]",
+      "[TITLE]常见用法[/TITLE][COLL][H]crash into sth|猛烈撞上某物[POS]v.[/POS][/H][EX]The bird crashed into the window.|小鸟一头撞在了窗户上。[/EX][EX]The bike crashed into a tree.|自行车撞到了树上。[/EX][C]car crash|车祸[/C][/COLL]",
+      "[TITLE]额外例句[/TITLE][EX]Thunder crashed in the dark sky.[POS]v.[/POS]|黑漆漆的天空中响起了炸雷。[/EX][EX]The block tower crashed to the ground.[POS]v.[/POS]|积木塔轰然倒塌。[/EX][EX]I dropped the vase, and it broke with a crash.[POS]n.[/POS]|我摔落了花瓶，它伴随着一声巨响碎了。[/EX]",
+      "[TITLE]常见错误[/TITLE][ERR]crash 表示撞得很厉害，通常有巨大响声或弄坏东西。轻轻碰一下用 bump。[/ERR]"
+    ]
+  },
+  "w449": {
+    "word": "whip",
+    "images": {
+      "scene": ["infopic01/whip.webp"],
+      "card": ["wordpic01/whip.webp"]
+    },
+    "richDetail": [
+      "[TITLE]解释[/TITLE][DEF][EN]To move very fast and hard, like a snapping string.[/EN][CN]猛然挥动；抽打；鞭子（书中指海怪极快极猛地挥动尾巴抽打沙滩）。[/CN][POS]v. & n.[/POS][PH]/wɪp/[/PH][DU]Its tail whipped the beach.|(原文例句)它的尾巴猛烈地抽打着沙滩。[/DU][DU]The wind whipped the leaves in the air.|狂风把树叶卷到半空中。[/DU][DU]Mom used a tool to whip the cream.|妈妈用工具把奶油打发。[/DU][/DEF][IMG]infopic01/whip.webp[/IMG]",
+      "[TITLE]常见用法[/TITLE][COLL][H]whip sth out|飞快地掏出某物[POS]v.[/POS][/H][EX]The ninja whipped out his sword.|忍者飞快地拔出剑。[/EX][EX]She whipped out a pen to write.|她猛地掏出一支笔写字。[/EX][C]whip around|猛然转过身[/C][/COLL]",
+      "[TITLE]额外例句[/TITLE][EX]The dragon whipped its long neck.[POS]v.[/POS]|巨龙猛地转过长脖子。[/EX][EX]The cowboy holds a leather whip.[POS]n.[/POS]|牛仔拿着一根皮鞭。[/EX][EX]Rain whipped against the window.[POS]v.[/POS]|大雨猛烈地敲打着窗户。[/EX]",
+      "[TITLE]常见错误[/TITLE][ERR]whip 强调动作“极快且猛烈”（像鞭子抽过去）。在厨房里，“打发”奶油也用 whip。[/ERR]"
+    ]
+  },
+  "w450": {
+    "word": "set off",
+    "images": {
+      "scene": ["infopic01/set_off.webp"],
+      "card": ["wordpic01/set_off.webp"]
+    },
+    "richDetail": [
+      "[TITLE]解释[/TITLE][DEF][EN]To make an alarm start ringing; to start a trip.[/EN][CN]触动（警报等）；出发（书中指不知道是什么东西“触动”了怪物警报）。[/CN][POS]v. phr.[/POS][PH]/set ɒf/[/PH][DU]What was setting off the monster alarm?|(原文例句)是什么东西触动了怪物警报呢？[/DU][DU]The smoke set off the fire alarm.|烟雾触动了火灾警报。[/DU][DU]We set off for the park early.|我们早早地出发去公园了。[/DU][/DEF][IMG]infopic01/set_off.webp[/IMG]",
+      "[TITLE]常见用法[/TITLE][COLL][H]set off an alarm|触动警报[POS]v. phr.[/POS][/H][EX]Don't set off the car alarm!|别触动汽车警报！[/EX][EX]The cat set off the laser alarm.|小猫触动了激光警报。[/EX][C]set off on a trip|踏上旅途[/C][/COLL]",
+      "[TITLE]额外例句[/TITLE][EX]Who set off the fireworks?[POS]v. phr.[/POS]|是谁放的烟花？（set off 也指放烟花）[/EX][EX]The loud noise set off a panic.[POS]v. phr.[/POS]|巨大的声音引发了恐慌。[/EX][EX]We packed our bags and set off.[POS]v. phr.[/POS]|我们收拾好行李就出发了。[/EX]",
+      "[TITLE]常见错误[/TITLE][ERR]set off 有两个常见意思，一个是“出发”（go on a trip），另一个是“触动/引发”。书中是“触动警报”。[/ERR]"
+    ]
+  },
+  "w451": {
+    "word": "flail",
+    "images": {
+      "scene": ["infopic01/flail.webp"],
+      "card": ["wordpic01/flail.webp"]
+    },
+    "richDetail": [
+      "[TITLE]解释[/TITLE][DEF][EN]To wave your arms or legs around wildly because you are falling or scared.[/EN][CN]（手臂或腿）胡乱挥动（书中指一只被绳子缠住的松鼠在半空中乱踢乱抓）。[/CN][POS]v.[/POS][PH]/fleɪl/[/PH][DU]It was flailing!|(原文例句)它（小松鼠）在半空中拼命乱挥爪子！[/DU][DU]He fell in the pool and flailed his arms.|他掉进池子里，胡乱挥动着胳膊。[/DU][DU]The happy baby flailed its tiny legs.|开心的小宝宝手舞足蹈地踢着小腿。[/DU][/DEF][IMG]infopic01/flail.webp[/IMG]",
+      "[TITLE]常见用法[/TITLE][COLL][H]flail about / around|四处乱挥 / 扑腾[POS]v.[/POS][/H][EX]The bird flailed about in the net.|鸟儿在网里乱扑腾。[/EX][EX]She started flailing around in the water.|她开始在水里胡乱扑腾。[/EX][C]flail your arms|乱挥双臂[/C][/COLL]",
+      "[TITLE]额外例句[/TITLE][EX]The monster flailed its tentacles.[POS]v.[/POS]|怪物胡乱挥舞着触手。[/EX][EX]I woke up flailing and shouting.[POS]v.[/POS]|我醒来时大叫着手舞足蹈。[/EX][EX]Stay calm and don't flail your arms.[POS]v.[/POS]|保持冷静，别乱挥胳膊。[/EX]",
+      "[TITLE]常见错误[/TITLE][ERR]flail 指“惊慌失措地乱挥”。如果是有礼貌地挥手打招呼，用 wave。[/ERR]"
+    ]
+  },
+  "w452": {
+    "word": "doubtful",
+    "images": {
+      "scene": ["infopic01/doubtful.webp"],
+      "card": ["wordpic01/doubtful.webp"]
+    },
+    "richDetail": [
+      "[TITLE]解释[/TITLE][DEF][EN]Feeling like you don't believe something is true.[/EN][CN]怀疑的；不信的（书中指一只山羊对“松鼠是怪物”表示怀疑）。[/CN][POS]adj.[/POS][PH]/ˈdaʊtfʊl/[/PH][DU]A nearby goat bleated doubtfully.|(原文例句)附近的一只山羊怀疑地咩咩叫了一声。（原句为副词）[/DU][DU]He gave me a doubtful look.|他给了我一个怀疑的眼神。[/DU][DU]It is doubtful that it will snow today.|今天不太可能会下雪。[/DU][/DEF][IMG]infopic01/doubtful.webp[/IMG]",
+      "[TITLE]常见用法[/TITLE][COLL][H]look doubtful|看起来一脸怀疑[POS]adj.[/POS][/H][EX]The teacher looked doubtful.|老师看起来完全不信。[/EX][EX]He made a doubtful face.|他做了一个不相信的表情。[/EX][C]feel doubtful|感到怀疑[/C][/COLL]",
+      "[TITLE]额外例句[/TITLE][EX]She was doubtful that her team could win.[POS]adj.[/POS]|她怀疑自己的队伍能不能赢。[/EX][EX]The doubtful goat watched the squirrel.[POS]adj.[/POS]|那只满心怀疑的山羊看着松鼠。[/EX][EX]It is doubtful we can go out in this rain.[POS]adj.[/POS]|下这么大雨，我们恐怕出不去了。[/EX]",
+      "[TITLE]常见错误[/TITLE][ERR]doubtful 中的字母 b 是不发音的！直接读 /ˈdaʊtfʊl/。[/ERR]"
+    ]
   }
-
-
-  
-
 
 
 
