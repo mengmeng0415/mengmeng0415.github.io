@@ -6466,7 +6466,438 @@
       "[TITLE] 额外例句 [/TITLE][EX]The little girl helped her mom prepare the cake for dad's birthday, and she put many strawberries on it.|小女孩帮妈妈为爸爸的生日准备蛋糕，还在上面放了很多草莓。[/EX][EX]We prepared a small show for the new teacher, to make him feel welcome in our class.|我们为新老师准备了一个小节目，让他在班里感到受欢迎。[/EX]",
       "[TITLE] 常见错误 [/TITLE][ERR]过去式/过去分词为**prepared**，直接加ed，不要写成prepareed。[/ERR][ERR]表“为……做准备”时，后接介词for，错误：prepare the exam，正确：prepare for the exam；表“准备做某事”用prepare to do sth，不要写成prepare doing sth。[/ERR]"
     ]
+  },
+  
+  "w499": {
+    "word": "support",
+    "images": {
+      "scene": ["infopic01/support.webp"],
+      "card": ["wordpic01/support.webp"]
+    },
+    "richDetail": [
+      "[TITLE]解释[/TITLE][DEF][EN]Support is something that holds up or helps something stay up.[/EN][CN]支撑物；支撑（使某物保持不倒）[/CN][POS]n.[/POS][PH]/səˈpɔːrt/[/PH][DU]She placed cups upside down for supports.|（原文例句）她把杯子倒扣着当支撑物。[/DU][DU]The table needs strong supports.|这张桌子需要结实的支撑物。[/DU][/DEF][IMG]infopic01/support.webp[/IMG][DEF][EN]To support means to hold something up or help it stay strong.[/EN][CN]支撑；支持[/CN][POS]v.[/POS][PH]/səˈpɔːrt/[/PH][DU]These sticks support the bridge.|这些棍子支撑着桥。[/DU][DU]Parents support their children.|父母支持他们的孩子。[/DU][/DEF]",
+      "[TITLE]常见用法[/TITLE][COLL][H]for support|作为支撑[POS]prep. phr.[/POS][/H][EX]He used a box for support.|他用一个箱子作支撑。[/EX][C]need support|需要支撑[/C][/COLL][COLL][H]support sb/sth|支撑/支持某人或某物[POS]v.[/POS][/H][EX]She supports the heavy books with her arms.|她用手臂托着沉重的书。[/EX][C]support a bridge|支撑桥[/C][C]support a team|支持一个队伍[/C][/COLL]",
+      "[TITLE]额外例句[/TITLE][EX]Too many forks and not enough supports.|支撑物太少，叉子太多。[/EX][EX]The wall supports the roof.|墙支撑着屋顶。[/EX]",
+      "[TITLE]常见错误[/TITLE][ERR]support既可以是名词也可以是动词，要根据句子结构判断。[/ERR][ERR]support作名词表示“支撑物”时是可数名词（supports）。[/ERR]"
+    ]
+  },
+
+  "w500": {
+    "word": "odor",
+    "images": {
+      "scene": ["infopic01/odor.webp"],
+      "card": ["wordpic01/odor.webp"]
+    },
+    "richDetail": [
+      "[TITLE]解释[/TITLE][DEF][EN]An odor is a smell. It can be good or bad.[/EN][CN]气味；味道（可以是好闻或难闻）[/CN][POS]n.[/POS][PH]/ˈoʊdər/[/PH][DU]They followed the odor all the way to the goat pasture.|（原文例句）他们一路跟着气味来到山羊牧场。[/DU][DU]The flower has a sweet odor.|花有一股甜甜的香味。[/DU][/DEF][IMG]infopic01/odor.webp[/IMG]",
+      "[TITLE]常见用法[/TITLE][COLL][H]follow the odor|跟着气味[POS]v. phr.[/POS][/H][EX]The dog followed the odor to the kitchen.|小狗顺着气味来到厨房。[/EX][C]strong odor|浓烈气味[/C][/COLL]",
+      "[TITLE]额外例句[/TITLE][EX]This odor is very strange.|这个气味很奇怪。[/EX][EX]There is an odor in the room.|房间里有一股气味。[/EX]",
+      "[TITLE]常见错误[/TITLE][ERR]odor是美式拼写，英式拼写是odour。[/ERR][ERR]odor是可数名词，通常说an odor。[/ERR]"
+    ]
+  },
+
+  "w501": {
+    "word": "stench",
+    "images": {
+      "scene": ["infopic01/stench.webp"],
+      "card": ["wordpic01/stench.webp"]
+    },
+    "richDetail": [
+      "[TITLE]解释[/TITLE][DEF][EN]A stench is a very bad, strong smell.[/EN][CN]恶臭；臭味（很难闻的强烈气味）[/CN][POS]n.[/POS][PH]/stentʃ/[/PH][DU]The Goat Avenger kicked the cloud of stench.|（原文例句）山羊复仇者踢了一脚那团臭气。[/DU][DU]There was a terrible stench in the room.|房间里有一股难闻的臭味。[/DU][/DEF][IMG]infopic01/stench.webp[/IMG]",
+      "[TITLE]常见用法[/TITLE][COLL][H]cloud of stench|一团臭气[POS]n. phr.[/POS][/H][EX]A cloud of stench floated over the pasture.|一团臭气飘过牧场。[/EX][C]terrible stench|可怕的恶臭[/C][/COLL]",
+      "[TITLE]额外例句[/TITLE][EX]The stench made everyone cover their noses.|恶臭让大家都捂住鼻子。[/EX][EX]The garbage gave off a stench.|垃圾散发出臭味。[/EX]",
+      "[TITLE]常见错误[/TITLE][ERR]stench一定是“难闻的气味”，不能用于表示好闻的味道。[/ERR][ERR]不要和odor混淆，odor可以是好味道或坏味道，stench一定是坏味道。[/ERR]"
+    ]
+  },
+    "w502": {
+    "word": "snapdragon",
+    "images": {
+      "scene": ["infopic01/snapdragon.webp","infopic01/snapdragon1.webp"],
+      "card": ["wordpic01/snapdragon.webp"]
+    },
+    "richDetail": [
+      "[TITLE]解释[/TITLE][DEF][EN]A snapdragon is a colorful flower that looks like a dragon's mouth.[/EN][CN]金鱼草（一种像小龙嘴巴一样的花）[/CN][POS]n.[/POS][PH]/ˈsnæpˌdræɡən/[/PH][DU]Princess Snapdragon was trimming the bushes in her garden.|（原文例句）金鱼草公主正在花园里修剪灌木。[/DU][DU]The snapdragon flowers are bright and pretty.|金鱼草开得又鲜艳又漂亮。[/DU][/DEF][IMG]infopic01/snapdragon.webp[/IMG]",
+      "[TITLE]常见用法[/TITLE][COLL][H]plant snapdragons|种金鱼草[POS]v. phr.[/POS][/H][EX]They plant snapdragons in spring.|他们在春天种金鱼草。[/EX][C]grow snapdragons|种植金鱼草[/C][/COLL]",
+      "[TITLE]额外例句[/TITLE][EX]The snapdragon swayed in the wind.|金鱼草在风中摇摆。[/EX][EX]She picked a snapdragon for her bouquet.|她为花束摘了一朵金鱼草。[/EX]",
+      "[TITLE]常见错误[/TITLE][ERR]Snapdragon在书中是名字（专有名词），首字母要大写。[/ERR][ERR]不要把snapdragon拆开理解成snap + dragon，它是一个完整的花名。[/ERR]"
+    ]
+  },
+
+  "w503": {
+    "word": "trim",
+    "images": {
+      "scene": ["infopic01/trim1.webp"],
+      "card": ["wordpic01/trim1.webp"]
+    },
+    "richDetail": [
+      "[TITLE]解释[/TITLE][DEF][EN]To trim means to cut something to make it neat or shorter.[/EN][CN]修剪；修整[/CN][POS]v.[/POS][PH]/trɪm/[/PH][DU]Princess Snapdragon was trimming the bushes in her garden.|（原文例句）金鱼草公主正在花园里修剪灌木。[/DU][DU]She trims the flowers carefully.|她小心地修剪花朵。[/DU][/DEF][IMG]infopic01/trim1.webp[/IMG]",
+      "[TITLE]常见用法[/TITLE][COLL][H]trim the bushes|修剪灌木[POS]v. phr.[/POS][/H][EX]He trims the bushes every week.|他每周修剪灌木。[/EX][C]trim hair|剪头发[/C][/COLL]",
+      "[TITLE]额外例句[/TITLE][EX]Please trim the paper neatly.|请把纸修剪整齐。[/EX][EX]Dad trimmed the tree branches.|爸爸修剪了树枝。[/EX]",
+      "[TITLE]常见错误[/TITLE][ERR]trim后面直接加宾语，不需要加to（错误：trim to the bushes）。[/ERR][ERR]注意双写m的拼写：trim → trimming。[/ERR]"
+    ]
+  },
+    "w505": {
+    "word": "scene",
+    "images": {
+      "scene": ["infopic01/scene.webp"],
+      "card": ["wordpic01/scene.webp"]
+    },
+    "richDetail": [
+      "[TITLE]解释[/TITLE][DEF][EN]A scene is what you see in a place. It is a view or picture in real life.[/EN][CN]景象；场景[/CN][POS]n.[/POS][PH]/siːn/[/PH][DU]She relished a blooming scene.|（原文例句）她欣赏着盛开的景象。[/DU][DU]The beach was a beautiful scene.|海滩是一幅美丽的景象。[/DU][/DEF][IMG]infopic01/scene.webp[/IMG]",
+      "[TITLE]常见用法[/TITLE][COLL][H]a beautiful scene|美丽的景象[POS]n. phr.[/POS][/H][EX]It was a beautiful scene in the garden.|花园里是一幅美丽的景象。[/EX][C]mountain scene|山景[/C][/COLL]",
+      "[TITLE]额外例句[/TITLE][EX]The snowy scene looked magical.|雪景看起来像魔法一样。[/EX][EX]We stopped to enjoy the scene.|我们停下来欣赏风景。[/EX]",
+      "[TITLE]常见错误[/TITLE][ERR]不要和seen（see的过去分词）混淆，拼写不同。[/ERR][ERR]scene是名词，不能当动词使用。[/ERR]"
+    ]
+  },
+
+  "w506": {
+    "word": "savor",
+    "images": {
+      "scene": ["infopic01/savor.webp"],
+      "card": ["wordpic01/savor.webp"]
+    },
+    "richDetail": [
+      "[TITLE]解释[/TITLE][DEF][EN]To savor means to enjoy something slowly and carefully.[/EN][CN]细细品味；享受[/CN][POS]v.[/POS][PH]/ˈseɪvər/[/PH][DU]She savored the scent of flowers.|（原文例句）她细细品味花香。[/DU][DU]He savored every bite of cake.|他细细品尝每一口蛋糕。[/DU][/DEF][IMG]infopic01/savor.webp[/IMG]",
+      "[TITLE]常见用法[/TITLE][COLL][H]savor the moment|享受当下[POS]v. phr.[/POS][/H][EX]She tried to savor the moment.|她努力享受当下。[/EX][C]savor the taste|品味味道[/C][/COLL]",
+      "[TITLE]额外例句[/TITLE][EX]She closed her eyes to savor the sunshine.|她闭上眼睛享受阳光。[/EX][EX]He savored the quiet morning.|他享受安静的早晨。[/EX]",
+      "[TITLE]常见错误[/TITLE][ERR]savor是动词，不是名词（名词是savor在美式中较少用）。[/ERR][ERR]英式拼写为savour。[/ERR]"
+    ]
+  },
+
+  "w507": {
+    "word": "petal",
+    "images": {
+      "scene": ["infopic01/petal.webp"],
+      "card": ["wordpic01/petal.webp"]
+    },
+    "richDetail": [
+      "[TITLE]解释[/TITLE][DEF][EN]A petal is one of the soft colorful parts of a flower.[/EN][CN]花瓣[/CN][POS]n.[/POS][PH]/ˈpetl/[/PH][DU]The petals fell softly to the ground.|（原文例句）花瓣轻轻落到地上。[/DU][DU]Each flower has many petals.|每朵花都有很多花瓣。[/DU][/DEF][IMG]infopic01/petal.webp[/IMG]",
+      "[TITLE]常见用法[/TITLE][COLL][H]flower petals|花瓣[POS]n. phr.[/POS][/H][EX]The wind blew the flower petals away.|风把花瓣吹走了。[/EX][C]pink petals|粉色花瓣[/C][/COLL]",
+      "[TITLE]额外例句[/TITLE][EX]She touched a soft petal.|她摸了摸柔软的花瓣。[/EX][EX]Petals covered the path.|小路上铺满了花瓣。[/EX]",
+      "[TITLE]常见错误[/TITLE][ERR]不要和pedal（踏板）混淆，拼写不同。[/ERR][ERR]petal是可数名词，复数是petals。[/ERR]"
+    ]
+  },
+    "w508": {
+    "word": "companion",
+    "images": {
+      "scene": ["infopic01/companion.webp"],
+      "card": ["wordpic01/companion.webp"]
+    },
+    "richDetail": [
+      "[TITLE]解释[/TITLE][DEF][EN]A companion is someone who stays with you or spends time with you.[/EN][CN]伙伴；同伴[/CN][POS]n.[/POS][PH]/kəmˈpænjən/[/PH][DU]She brought a companion to the garden party.|（原文例句）她带了一位同伴来参加花园派对。[/DU][DU]A dog can be a good companion.|狗可以是很好的伙伴。[/DU][/DEF][IMG]infopic01/companion.webp[/IMG]",
+      "[TITLE]常见用法[/TITLE][COLL][H]travel companion|旅行同伴[POS]n. phr.[/POS][/H][EX]He was my travel companion on the trip.|他是我旅行时的同伴。[/EX][C]constant companion|形影不离的伙伴[/C][/COLL]",
+      "[TITLE]额外例句[/TITLE][EX]She found a new companion at school.|她在学校交到了新朋友。[/EX][EX]Books can be wonderful companions.|书可以是很好的陪伴。[/EX]",
+      "[TITLE]常见错误[/TITLE][ERR]companion是可数名词，通常要加a或用复数companions。[/ERR][ERR]不要和company混淆，company表示“公司”或“陪伴”。[/ERR]"
+    ]
+  },
+
+  "w509": {
+    "word": "wrinkle",
+    "images": {
+      "scene": ["infopic01/wrinkle.webp"],
+      "card": ["wordpic01/wrinkle.webp"]
+    },
+    "richDetail": [
+      "[TITLE]解释[/TITLE][DEF][EN]A wrinkle is a small line or fold in skin or cloth.[/EN][CN]皱纹；褶皱[/CN][POS]n.[/POS][PH]/ˈrɪŋkəl/[/PH][DU]She noticed a wrinkle in her dress.|（原文例句）她发现裙子上有一道褶皱。[/DU][DU]Grandpa has wrinkles on his face.|爷爷脸上有皱纹。[/DU][/DEF][IMG]infopic01/wrinkle.webp[/IMG]",
+      "[TITLE]常见用法[/TITLE][COLL][H]a wrinkle in|……上的褶皱[POS]n. phr.[/POS][/H][EX]There is a wrinkle in the paper.|纸上有一道褶皱。[/EX][C]face wrinkles|脸上的皱纹[/C][/COLL]",
+      "[TITLE]额外例句[/TITLE][EX]She ironed the shirt to remove wrinkles.|她熨平了衬衫的褶皱。[/EX][EX]He smiled, and his wrinkles deepened.|他一笑，皱纹更深了。[/EX]",
+      "[TITLE]常见错误[/TITLE][ERR]wrinkle是可数名词，单数要用a wrinkle。[/ERR][ERR]不要漏掉中间的k，拼写为w-r-i-n-k-l-e。[/ERR]"
+    ]
+  },
+
+  "w510": {
+    "word": "bouquet",
+    "images": {
+      "scene": ["infopic01/bouquet.webp"],
+      "card": ["wordpic01/bouquet.webp"]
+    },
+    "richDetail": [
+      "[TITLE]解释[/TITLE][DEF][EN]A bouquet is a bunch of flowers put together.[/EN][CN]花束[/CN][POS]n.[/POS][PH]/buːˈkeɪ/[/PH][DU]She held a bouquet of flowers.|（原文例句）她手里拿着一束花。[/DU][DU]He gave her a bouquet for her birthday.|他生日时送她一束花。[/DU][/DEF][IMG]infopic01/bouquet.webp[/IMG]",
+      "[TITLE]常见用法[/TITLE][COLL][H]a bouquet of flowers|一束花[POS]n. phr.[/POS][/H][EX]She bought a bouquet of flowers.|她买了一束花。[/EX][C]wedding bouquet|婚礼花束[/C][/COLL]",
+      "[TITLE]额外例句[/TITLE][EX]The bride carried a white bouquet.|新娘拿着一束白色花束。[/EX][EX]The bouquet smelled sweet.|这束花闻起来很香。[/EX]",
+      "[TITLE]常见错误[/TITLE][ERR]bouquet发音不按拼写读，结尾不发t音。[/ERR][ERR]不要按字面拼读为/buːkweɪt/，正确是/buːˈkeɪ/。[/ERR]"
+    ]
+  },
+    "w511": {
+    "word": "crouch",
+    "images": {
+      "scene": ["infopic01/crouch.webp"],
+      "card": ["wordpic01/crouch.webp"]
+    },
+    "richDetail": [
+      "[TITLE]解释[/TITLE][DEF][EN]To crouch means to bend down low with your knees bent.[/EN][CN]蹲下；蜷伏[/CN][POS]v.[/POS][PH]/kraʊtʃ/[/PH][DU]She crouched behind the bushes.|（原文例句）她蹲在灌木丛后面。[/DU][DU]The cat crouched before it jumped.|猫在跳之前蹲低了身体。[/DU][/DEF][IMG]infopic01/crouch.webp[/IMG]",
+      "[TITLE]常见用法[/TITLE][COLL][H]crouch down|蹲下[POS]v. phr.[/POS][/H][EX]He crouched down to look under the table.|他蹲下来查看桌子下面。[/EX][C]crouch behind sth|蹲在某物后面[/C][/COLL]",
+      "[TITLE]额外例句[/TITLE][EX]She crouched quietly in the corner.|她安静地蹲在角落里。[/EX][EX]The boy crouched to tie his shoes.|男孩蹲下来系鞋带。[/EX]",
+      "[TITLE]常见错误[/TITLE][ERR]crouch是动词，不是名词。[/ERR][ERR]过去式是crouched，不要漏写-ed。[/ERR]"
+    ]
+  },
+
+  "w512": {
+    "word": "savor",
+    "images": {
+      "scene": ["infopic01/savor.webp"],
+      "card": ["wordpic01/savor.webp"]
+    },
+    "richDetail": [
+      "[TITLE]解释[/TITLE][DEF][EN]To savor means to enjoy something slowly and carefully.[/EN][CN]细细品味；享受[/CN][POS]v.[/POS][PH]/ˈseɪvər/[/PH][DU]She tried to savor the peaceful moment.|（原文例句）她努力享受这宁静的时刻。[/DU][DU]He savored every bite of cake.|他细细品尝每一口蛋糕。[/DU][/DEF][IMG]infopic01/savor.webp[/IMG]",
+      "[TITLE]常见用法[/TITLE][COLL][H]savor the moment|享受当下[POS]v. phr.[/POS][/H][EX]She wanted to savor the moment.|她想好好享受这一刻。[/EX][C]savor the taste|品味味道[/C][/COLL]",
+      "[TITLE]额外例句[/TITLE][EX]He savored the warm sunshine.|他享受温暖的阳光。[/EX][EX]She closed her eyes to savor the quiet.|她闭上眼睛享受安静。[/EX]",
+      "[TITLE]常见错误[/TITLE][ERR]英式拼写为savour。[/ERR][ERR]savor是动词，不要误当名词使用。[/ERR]"
+    ]
+  },
+
+  "w513": {
+    "word": "whine",
+    "images": {
+      "scene": ["infopic01/whine.webp"],
+      "card": ["wordpic01/whine.webp"]
+    },
+    "richDetail": [
+      "[TITLE]解释[/TITLE][DEF][EN]To whine means to complain in a weak or annoying voice.[/EN][CN]抱怨；哀声抱怨[/CN][POS]v.[/POS][PH]/waɪn/[/PH][DU]“But I don’t want to go,” she whined.|（原文例句）“可是我不想去。”她抱怨道。[/DU][DU]The puppy whined for food.|小狗哀声要吃的。[/DU][/DEF][IMG]infopic01/whine.webp[/IMG]",
+      "[TITLE]常见用法[/TITLE][COLL][H]whine about sth|抱怨某事[POS]v. phr.[/POS][/H][EX]He whined about the homework.|他抱怨作业太多。[/EX][C]stop whining|别抱怨了[/C][/COLL]",
+      "[TITLE]额外例句[/TITLE][EX]She whined when she was tired.|她累的时候就会抱怨。[/EX][EX]The child whined in the car.|孩子在车里哀声抱怨。[/EX]",
+      "[TITLE]常见错误[/TITLE][ERR]whine表示“抱怨”，不要和wine（葡萄酒）混淆。[/ERR][ERR]过去式是whined。[/ERR]"
+    ]
+  },
+
+  "w514": {
+    "word": "gazebo",
+    "images": {
+      "scene": ["infopic01/gazebo.webp"],
+      "card": ["wordpic01/gazebo.webp"]
+    },
+    "richDetail": [
+      "[TITLE]解释[/TITLE][DEF][EN]A gazebo is a small open building in a garden or park with a roof.[/EN][CN]凉亭；亭子[/CN][POS]n.[/POS][PH]/ɡəˈziːboʊ/[/PH][DU]They waited in the gazebo.|（原文例句）他们在凉亭里等着。[/DU][DU]The gazebo stood in the middle of the garden.|凉亭在花园中央。[/DU][/DEF][IMG]infopic01/gazebo.webp[/IMG]",
+      "[TITLE]常见用法[/TITLE][COLL][H]in the gazebo|在凉亭里[POS]prep. phr.[/POS][/H][EX]She sat in the gazebo.|她坐在凉亭里。[/EX][C]garden gazebo|花园凉亭[/C][/COLL]",
+      "[TITLE]额外例句[/TITLE][EX]The family had tea in the gazebo.|一家人在凉亭里喝茶。[/EX][EX]The gazebo gave them shade.|凉亭给他们遮阴。[/EX]",
+      "[TITLE]常见错误[/TITLE][ERR]gazebo是可数名词，要说a gazebo。[/ERR][ERR]重音在第二个音节：gə-ZEE-bo。[/ERR]"
+    ]
+  },
+
+  "w515": {
+    "word": "sheepishly",
+    "images": {
+      "scene": ["infopic01/sheepishly.webp"],
+      "card": ["wordpic01/sheepishly.webp"]
+    },
+    "richDetail": [
+      "[TITLE]解释[/TITLE][DEF][EN]Sheepishly means in a shy or embarrassed way.[/EN][CN]羞怯地；不好意思地[/CN][POS]adv.[/POS][PH]/ˈʃiːpɪʃli/[/PH][DU]He smiled sheepishly.|（原文例句）他不好意思地笑了。[/DU][DU]She looked at them sheepishly.|她羞怯地看着他们。[/DU][/DEF][IMG]infopic01/sheepishly.webp[/IMG]",
+      "[TITLE]常见用法[/TITLE][COLL][H]smile sheepishly|不好意思地笑[POS]v. phr.[/POS][/H][EX]He smiled sheepishly at his mistake.|他对自己的错误不好意思地笑了。[/EX][C]look sheepishly|羞怯地看[/C][/COLL]",
+      "[TITLE]额外例句[/TITLE][EX]She laughed sheepishly after tripping.|她绊倒后不好意思地笑了。[/EX][EX]He answered sheepishly.|他羞怯地回答。[/EX]",
+      "[TITLE]常见错误[/TITLE][ERR]sheepishly是副词，不能当形容词用（形容词是sheepish）。[/ERR][ERR]注意拼写：sheep + ish + ly。[/ERR]"
+    ]
+  },
+    "w516": {
+    "word": "whoosh",
+    "images": {
+      "scene": ["infopic01/whoosh.webp"],
+      "card": ["wordpic01/whoosh.webp"]
+    },
+    "richDetail": [
+      "[TITLE]解释[/TITLE][DEF][EN]Whoosh is a sound made when something moves very fast through the air.[/EN][CN]嗖的一声；呼的一声（快速移动时发出的声音）[/CN][POS]n./v.[/POS][PH]/wuːʃ/[/PH][DU]Whoosh! She flew down the hill.|（原文例句）嗖的一声！她从山上滑下来。[/DU][DU]The rocket went whoosh into the sky.|火箭嗖地飞上天空。[/DU][/DEF][IMG]infopic01/whoosh.webp[/IMG]",
+      "[TITLE]常见用法[/TITLE][COLL][H]go whoosh|嗖地一下[POS]v. phr.[/POS][/H][EX]The ball went whoosh past my head.|球嗖地从我头边飞过。[/EX][C]whoosh sound|嗖的一声[/C][/COLL]",
+      "[TITLE]额外例句[/TITLE][EX]Whoosh! The door closed quickly.|嗖的一声！门关上了。[/EX][EX]The wind went whoosh through the trees.|风嗖地穿过树林。[/EX]",
+      "[TITLE]常见错误[/TITLE][ERR]whoosh是拟声词，不要拼写成wush或woosh。[/ERR][ERR]可作动词或名词，根据句子判断词性。[/ERR]"
+    ]
+  },
+
+  "w517": {
+    "word": "thrilling",
+    "images": {
+      "scene": ["infopic01/thrilling.webp"],
+      "card": ["wordpic01/thrilling.webp"]
+    },
+    "richDetail": [
+      "[TITLE]解释[/TITLE][DEF][EN]Thrilling means very exciting and fun.[/EN][CN]激动人心的；令人兴奋的[/CN][POS]adj.[/POS][PH]/ˈθrɪlɪŋ/[/PH][DU]It was a thrilling ride.|（原文例句）那是一段刺激的旅程。[/DU][DU]The roller coaster was thrilling.|过山车很刺激。[/DU][/DEF][IMG]infopic01/thrilling.webp[/IMG]",
+      "[TITLE]常见用法[/TITLE][COLL][H]a thrilling ride|刺激的旅程[POS]n. phr.[/POS][/H][EX]That was a thrilling adventure.|那是一场刺激的冒险。[/EX][C]thrilling story|扣人心弦的故事[/C][/COLL]",
+      "[TITLE]额外例句[/TITLE][EX]The game was thrilling to watch.|比赛看起来很激动人心。[/EX][EX]She had a thrilling experience.|她有一次刺激的经历。[/EX]",
+      "[TITLE]常见错误[/TITLE][ERR]thrilling修饰事物；thrilled修饰人（I am thrilled）。[/ERR][ERR]注意th发/θ/音，不读成s。[/ERR]"
+    ]
+  },
+
+  "w518": {
+    "word": "zip line",
+    "images": {
+      "scene": ["infopic01/zipline.webp"],
+      "card": ["wordpic01/zipline.webp"]
+    },
+    "richDetail": [
+      "[TITLE]解释[/TITLE][DEF][EN]A zip line is a rope or cable that you slide down from high to low.[/EN][CN]高空滑索[/CN][POS]n.[/POS][PH]/ˈzɪp laɪn/[/PH][DU]She rode the zip line across the trees.|（原文例句）她从树间滑过滑索。[/DU][DU]The zip line went over the river.|滑索穿过河面。[/DU][/DEF][IMG]infopic01/zipline.webp[/IMG]",
+      "[TITLE]常见用法[/TITLE][COLL][H]ride a zip line|玩滑索[POS]v. phr.[/POS][/H][EX]They rode the zip line at camp.|他们在营地玩滑索。[/EX][C]long zip line|长滑索[/C][/COLL]",
+      "[TITLE]额外例句[/TITLE][EX]The zip line was very fast.|滑索速度很快。[/EX][EX]He held tight on the zip line.|他紧紧抓住滑索。[/EX]",
+      "[TITLE]常见错误[/TITLE][ERR]zip line是两个单词，不要写成zipline（除非作品牌名）。[/ERR][ERR]注意line发/laɪn/音。[/ERR]"
+    ]
+  },
+
+  "w519": {
+    "word": "turquoise",
+    "images": {
+      "scene": ["infopic01/turquoise.webp"],
+      "card": ["wordpic01/turquoise.webp"]
+    },
+    "richDetail": [
+      "[TITLE]解释[/TITLE][DEF][EN]Turquoise is a blue-green color like the sea.[/EN][CN]绿松石色；蓝绿色[/CN][POS]adj./n.[/POS][PH]/ˈtɜːrkwɔɪz/[/PH][DU]She wore a turquoise dress.|（原文例句）她穿着一条蓝绿色的裙子。[/DU][DU]The water looked turquoise.|水看起来是蓝绿色的。[/DU][/DEF][IMG]infopic01/turquoise.webp[/IMG]",
+      "[TITLE]常见用法[/TITLE][COLL][H]turquoise dress|蓝绿色裙子[POS]n. phr.[/POS][/H][EX]She bought a turquoise necklace.|她买了一条绿松石项链。[/EX][C]turquoise water|蓝绿色的水[/C][/COLL]",
+      "[TITLE]额外例句[/TITLE][EX]The sea was bright turquoise.|大海呈现明亮的蓝绿色。[/EX][EX]Turquoise is her favorite color.|蓝绿色是她最喜欢的颜色。[/EX]",
+      "[TITLE]常见错误[/TITLE][ERR]发音不按拼写读，结尾不发-que音。[/ERR][ERR]不要读成/tur-kwoy-see/。[/ERR]"
+    ]
+  },
+
+  "w520": {
+    "word": "moldy",
+    "images": {
+      "scene": ["infopic01/moldy.webp"],
+      "card": ["wordpic01/moldy.webp"]
+    },
+    "richDetail": [
+      "[TITLE]解释[/TITLE][DEF][EN]Moldy means covered with mold and not fresh.[/EN][CN]发霉的[/CN][POS]adj.[/POS][PH]/ˈmoʊldi/[/PH][DU]The bread was moldy.|（原文例句）面包发霉了。[/DU][DU]They found a moldy sandwich.|他们发现一个发霉的三明治。[/DU][/DEF][IMG]infopic01/moldy.webp[/IMG]",
+      "[TITLE]常见用法[/TITLE][COLL][H]moldy bread|发霉的面包[POS]n. phr.[/POS][/H][EX]Don’t eat moldy food.|不要吃发霉的食物。[/EX][C]moldy cheese|发霉的奶酪[/C][/COLL]",
+      "[TITLE]额外例句[/TITLE][EX]The fruit turned moldy.|水果发霉了。[/EX][EX]It smelled moldy.|闻起来有霉味。[/EX]",
+      "[TITLE]常见错误[/TITLE][ERR]英式拼写为mouldy。[/ERR][ERR]不要漏掉字母l。[/ERR]"
+    ]
+  },
+    "w521": {
+    "word": "adore",
+    "images": {
+      "scene": ["infopic01/adore.webp"],
+      "card": ["wordpic01/adore.webp"]
+    },
+    "richDetail": [
+      "[TITLE]解释[/TITLE][DEF][EN]To adore means to love something very much.[/EN][CN]非常喜爱；热爱[/CN][POS]v.[/POS][PH]/əˈdɔːr/[/PH][DU]She adored the peaceful garden.|（原文例句）她非常喜欢这个宁静的花园。[/DU][DU]I adore chocolate cake.|我非常喜欢巧克力蛋糕。[/DU][/DEF][IMG]infopic01/adore.webp[/IMG]",
+      "[TITLE]常见用法[/TITLE][COLL][H]adore sth|非常喜欢某物[POS]v.[/POS][/H][EX]She adores her new puppy.|她非常喜欢她的小狗。[/EX][C]adore music|热爱音乐[/C][C]adore animals|喜爱动物[/C][/COLL]",
+      "[TITLE]额外例句[/TITLE][EX]He adores his grandmother.|他非常爱他的奶奶。[/EX][EX]They adore going to the beach.|他们非常喜欢去海滩。[/EX]",
+      "[TITLE]常见错误[/TITLE][ERR]adore是动词，不要和形容词adorable混淆。[/ERR][ERR]第三人称单数要加-s（She adores）。[/ERR]"
+    ]
+  },
+
+  "w522": {
+    "word": "smoosh",
+    "images": {
+      "scene": ["infopic01/smoosh.webp"],
+      "card": ["wordpic01/smoosh.webp"]
+    },
+    "richDetail": [
+      "[TITLE]解释[/TITLE][DEF][EN]To smoosh means to press or squash something softly so it becomes flat.[/EN][CN]压扁；挤扁[/CN][POS]v.[/POS][PH]/smuːʃ/[/PH][DU]The cake got smooshed in the bag.|（原文例句）蛋糕在袋子里被压扁了。[/DU][DU]He smooshed the clay with his hands.|他用手把黏土压扁。[/DU][/DEF][IMG]infopic01/smoosh.webp[/IMG]",
+      "[TITLE]常见用法[/TITLE][COLL][H]smoosh sth|压扁某物[POS]v.[/POS][/H][EX]Don’t smoosh the flowers!|不要把花压扁！[/EX][C]smoosh a sandwich|压扁三明治[/C][/COLL]",
+      "[TITLE]额外例句[/TITLE][EX]She accidentally smooshed her hat.|她不小心把帽子压扁了。[/EX][EX]The pillow was smooshed flat.|枕头被压扁了。[/EX]",
+      "[TITLE]常见错误[/TITLE][ERR]smoosh是非正式用语，多用于口语。[/ERR][ERR]过去式是smooshed，不要拼成smoshed。[/ERR]"
+    ]
+  },
+    "w523": {
+    "word": "armpit",
+    "images": {
+      "scene": ["infopic01/armpit.webp"],
+      "card": ["wordpic01/armpit.webp"]
+    },
+    "richDetail": [
+      "[TITLE]解释[/TITLE][DEF][EN]An armpit is the place under your arm where it joins your body.[/EN][CN]腋下[/CN][POS]n.[/POS][PH]/ˈɑːrmpɪt/[/PH][DU]The monster lifted its arms and showed its armpits.|（原文例句）怪兽举起手臂，露出了腋下。[/DU][DU]He put deodorant on his armpits.|他在腋下喷了除臭剂。[/DU][/DEF][IMG]infopic01/armpit.webp[/IMG]",
+      "[TITLE]常见用法[/TITLE][COLL][H]hairy armpit|长毛的腋下[POS]n. phr.[/POS][/H][EX]The troll had a hairy armpit.|巨怪有毛茸茸的腋下。[/EX][C]under the armpit|在腋下[/C][/COLL]",
+      "[TITLE]额外例句[/TITLE][EX]He scratched his armpit.|他挠了挠腋下。[/EX][EX]Sweat came from his armpits.|汗水从他的腋下流出。[/EX]",
+      "[TITLE]常见错误[/TITLE][ERR]armpit是可数名词，复数是armpits。[/ERR][ERR]不要漏写中间的m。[/ERR]"
+    ]
+  },
+
+  "w524": {
+    "word": "trot",
+    "images": {
+      "scene": ["infopic01/trot.webp"],
+      "card": ["wordpic01/trot.webp"]
+    },
+    "richDetail": [
+      "[TITLE]解释[/TITLE][DEF][EN]To trot means to run with short, quick steps.[/EN][CN]小跑；快步走[/CN][POS]v.[/POS][PH]/trɑːt/[/PH][DU]The goat trotted across the field.|（原文例句）山羊小跑穿过田野。[/DU][DU]She trotted to catch up.|她小跑着追上去。[/DU][/DEF][IMG]infopic01/trot.webp[/IMG]",
+      "[TITLE]常见用法[/TITLE][COLL][H]trot away|小跑离开[POS]v. phr.[/POS][/H][EX]The pony trotted away happily.|小马开心地小跑离开。[/EX][C]trot across|小跑穿过[/C][/COLL]",
+      "[TITLE]额外例句[/TITLE][EX]The dog trotted beside him.|狗在他身边小跑。[/EX][EX]She trotted down the path.|她沿着小路小跑。[/EX]",
+      "[TITLE]常见错误[/TITLE][ERR]过去式是trotted（双写t）。[/ERR][ERR]不要和troll混淆。[/ERR]"
+    ]
+  },
+
+  "w525": {
+    "word": "clog",
+    "images": {
+      "scene": ["infopic01/clog.webp"],
+      "card": ["wordpic01/clog.webp"]
+    },
+    "richDetail": [
+      "[TITLE]解释[/TITLE][DEF][EN]To clog means to block something so it cannot work properly.[/EN][CN]堵塞；阻塞[/CN][POS]v.[/POS][PH]/klɑːɡ/[/PH][DU]The mud clogged the drain.|（原文例句）泥巴堵住了排水口。[/DU][DU]Hair can clog the sink.|头发会堵住水槽。[/DU][/DEF][IMG]infopic01/clog.webp[/IMG]",
+      "[TITLE]常见用法[/TITLE][COLL][H]clog the drain|堵住排水口[POS]v. phr.[/POS][/H][EX]Leaves clogged the pipe.|树叶堵住了管道。[/EX][C]clog up|堵住[/C][/COLL]",
+      "[TITLE]额外例句[/TITLE][EX]Too much paper can clog the toilet.|太多纸会堵住马桶。[/EX][EX]The street was clogged with cars.|街道被车堵住了。[/EX]",
+      "[TITLE]常见错误[/TITLE][ERR]过去式是clogged（双写g）。[/ERR][ERR]clog可作动词或名词，根据句子判断。[/ERR]"
+    ]
+  },
+
+  "w526": {
+    "word": "diaper",
+    "images": {
+      "scene": ["infopic01/diaper.webp"],
+      "card": ["wordpic01/diaper.webp"]
+    },
+    "richDetail": [
+      "[TITLE]解释[/TITLE][DEF][EN]A diaper is something babies wear to catch pee and poop.[/EN][CN]尿布[/CN][POS]n.[/POS][PH]/ˈdaɪpər/[/PH][DU]The baby needed a clean diaper.|（原文例句）宝宝需要一条干净的尿布。[/DU][DU]She changed the diaper.|她换了尿布。[/DU][/DEF][IMG]infopic01/diaper.webp[/IMG]",
+      "[TITLE]常见用法[/TITLE][COLL][H]change a diaper|换尿布[POS]v. phr.[/POS][/H][EX]Dad changed the diaper quickly.|爸爸很快换了尿布。[/EX][C]dirty diaper|脏尿布[/C][/COLL]",
+      "[TITLE]额外例句[/TITLE][EX]The diaper was very smelly.|尿布很臭。[/EX][EX]She bought baby diapers.|她买了婴儿尿布。[/EX]",
+      "[TITLE]常见错误[/TITLE][ERR]英式英语常用nappy。[/ERR][ERR]diaper是可数名词。[/ERR]"
+    ]
+  },
+    "w527": {
+    "word": "faint",
+    "images": {
+      "scene": ["infopic01/faint.webp"],
+      "card": ["wordpic01/faint.webp"]
+    },
+    "richDetail": [
+      "[TITLE]解释[/TITLE][DEF][EN]To faint means to suddenly lose consciousness for a short time.[/EN][CN]昏倒；晕过去[/CN][POS]v.[/POS][PH]/feɪnt/[/PH][DU]She thought she might faint from the smell.|（原文例句）她觉得自己可能会被那气味熏晕过去。[/DU][DU]He fainted in the hot sun.|他在炎热的太阳下晕倒了。[/DU][/DEF][IMG]infopic01/faint.webp[/IMG]",
+      "[TITLE]常见用法[/TITLE][COLL][H]faint from|因……而晕倒[POS]v. phr.[/POS][/H][EX]She fainted from fear.|她因为害怕而晕倒。[/EX][C]faint smell|微弱的气味[/C][/COLL]",
+      "[TITLE]额外例句[/TITLE][EX]He felt dizzy and almost fainted.|他感到头晕，差点晕倒。[/EX][EX]There was a faint light in the room.|房间里有一丝微弱的光。[/EX]",
+      "[TITLE]常见错误[/TITLE][ERR]faint既可作动词也可作形容词，根据句子判断。[/ERR][ERR]过去式是fainted。[/ERR]"
+    ]
+  },
+
+  "w528": {
+    "word": "relief",
+    "images": {
+      "scene": ["infopic01/relief.webp"],
+      "card": ["wordpic01/relief.webp"]
+    },
+    "richDetail": [
+      "[TITLE]解释[/TITLE][DEF][EN]Relief is a happy feeling when something bad or scary is over.[/EN][CN]宽慰；松了一口气[/CN][POS]n.[/POS][PH]/rɪˈliːf/[/PH][DU]She sighed with relief.|（原文例句）她松了一口气。[/DU][DU]He felt relief when the noise stopped.|噪音停止时，他感到宽慰。[/DU][/DEF][IMG]infopic01/relief.webp[/IMG]",
+      "[TITLE]常见用法[/TITLE][COLL][H]with relief|如释重负地[POS]prep. phr.[/POS][/H][EX]They laughed with relief.|他们如释重负地笑了。[/EX][C]feel relief|感到宽慰[/C][/COLL]",
+      "[TITLE]额外例句[/TITLE][EX]She cried in relief.|她如释重负地哭了。[/EX][EX]It was a big relief.|这真让人松了一口气。[/EX]",
+      "[TITLE]常见错误[/TITLE][ERR]relief是名词，不是动词（动词是relieve）。[/ERR][ERR]重音在第二个音节。[/ERR]"
+    ]
+  },
+
+  "w529": {
+    "word": "funky",
+    "images": {
+      "scene": ["infopic01/funky.webp"],
+      "card": ["wordpic01/funky.webp"]
+    },
+    "richDetail": [
+      "[TITLE]解释[/TITLE][DEF][EN]Funky can mean having a strong, unusual smell or being cool and different.[/EN][CN]有怪味的；时髦又特别的[/CN][POS]adj.[/POS][PH]/ˈfʌŋki/[/PH][DU]That was one funky smell!|（原文例句）那味道可真怪！[/DU][DU]She wore a funky hat.|她戴着一顶特别的帽子。[/DU][/DEF][IMG]infopic01/funky.webp[/IMG]",
+      "[TITLE]常见用法[/TITLE][COLL][H]funky smell|怪味[POS]n. phr.[/POS][/H][EX]There was a funky smell in the room.|房间里有一股怪味。[/EX][C]funky music|时髦的音乐[/C][/COLL]",
+      "[TITLE]额外例句[/TITLE][EX]He likes funky clothes.|他喜欢特别的衣服。[/EX][EX]The cheese tasted funky.|奶酪味道怪怪的。[/EX]",
+      "[TITLE]常见错误[/TITLE][ERR]funky是口语表达，不适合正式写作。[/ERR][ERR]注意拼写是f-u-n-k-y。[/ERR]"
+    ]
+  },
+
+  "w530": {
+    "word": "situation",
+    "images": {
+      "scene": ["infopic01/situation.webp"],
+      "card": ["wordpic01/situation.webp"]
+    },
+    "richDetail": [
+      "[TITLE]解释[/TITLE][DEF][EN]A situation is what is happening at a certain time and place.[/EN][CN]情况；状况；局面[/CN][POS]n.[/POS][PH]/ˌsɪtʃuˈeɪʃən/[/PH][DU]That was a situation too stinky for a single hero.|（原文例句）那是一个臭得连一个英雄都难以应付的局面。[/DU][DU]It was a difficult situation.|那是一个困难的情况。[/DU][/DEF][IMG]infopic01/situation.webp[/IMG]",
+      "[TITLE]常见用法[/TITLE][COLL][H]a difficult situation|困难的局面[POS]n. phr.[/POS][/H][EX]We need to fix this situation.|我们需要解决这个情况。[/EX][C]present situation|目前的情况[/C][/COLL]",
+      "[TITLE]额外例句[/TITLE][EX]She handled the situation well.|她很好地处理了这个情况。[/EX][EX]It was an unusual situation.|那是一个不寻常的情况。[/EX]",
+      "[TITLE]常见错误[/TITLE][ERR]situation是可数名词，单数要用a situation。[/ERR][ERR]不要漏掉中间的u（sit-u-ation）。[/ERR]"
+    ]
   }
+
+
+
+
+
 
 
 
