@@ -1,7 +1,7 @@
 [
   {
     "id": "dm-3",
-    "type": "初章书",
+    "type": "桥梁章节书",
     "series": "Dragon Masters",
     "title": "Secret of The Water Dragon（B3）",
     "cover": "infopic01/dm3.png",
@@ -125,7 +125,7 @@
   },
    {
     "id": "pb1",
-    "type": "初章书",
+    "type": "桥梁章节书",
     "series": "The Pincess in Black",
     "title": "The Pincess in Black 1",
     "cover": "infopic01/pb1.png",
@@ -154,7 +154,7 @@
   },
  {
     "id": "dm-4",
-    "type": "初章书",
+    "type": "桥梁章节书",
     "series": "Dragon Masters",
     "title": "Power of The Fire Dragon（B4）",
     "cover": "infopic01/dm4.png",
@@ -183,7 +183,7 @@
   ,
  {
     "id": "pb2",
-    "type": "初章书",
+    "type": "桥梁章节书",
     "series": "The Pincess in Black",
     "title": "The Pincess in Black 2",
     "cover": "infopic01/pb2.png",
@@ -207,7 +207,7 @@
   },
    {
     "id": "dm-5",
-    "type": "初章书",
+    "type": "桥梁章节书",
     "series": "Dragon Masters",
     "title": "Song of the Poison Dragon（B5）",
     "cover": "infopic01/dm5.png",
@@ -238,7 +238,7 @@
   ,
    {
     "id": "pb3",
-    "type": "初章书",
+    "type": "桥梁章节书",
     "series": "The Pincess in Black",
     "title": "The Pincess in Black 3",
     "cover": "infopic01/pb3.png",
@@ -264,7 +264,7 @@
   ,
    {
     "id": "pb4",
-    "type": "初章书",
+    "type": "桥梁章节书",
     "series": "The Pincess in Black",
     "title": "The Pincess in Black 4",
     "cover": "infopic01/pb4.png",
@@ -291,7 +291,7 @@
 ,
    {
     "id": "pb5",
-    "type": "初章书",
+    "type": "桥梁章节书",
     "series": "The Pincess in Black",
     "title": "The Pincess in Black 5",
     "cover": "infopic01/pb5.png",
@@ -316,7 +316,7 @@
    
    {
     "id": "pb6",
-    "type": "初章书",
+    "type": "桥梁章节书",
     "series": "The Pincess in Black",
     "title": "The Pincess in Black 6",
     "cover": "infopic01/pb6.png",
@@ -334,6 +334,50 @@
       { "id": "pb6-c6", "name": "Chapter 6", "wordIds": ["w496"], "quizIds": ["q_w496"] },
       { "id": "pb6-c8", "name": "Chapter 8", "wordIds": ["w497", "w498"], "quizIds": ["q_w497", "q_w498"] }
       ]
+
+   },
+   
+   {
+    "id": "pb7",
+    "type": "桥梁章节书",
+    "series": "The Pincess in Black",
+    "title": "The Pincess in Black 7",
+    "cover": "infopic01/pb7.png",
+     "pdfs": [
+      {
+        "name": "The Pincess in Black 7",
+        "url": "https://mengmeng0415.github.io/pdfinfo01/pb7.pdf"
+      }
+    ],
+      "chapters": [
+        { "id": "pb7-c1", "name": "Chapter 1", "wordIds": ["w499", "w500", "w501"], "quizIds": ["q_w499", "q_w500", "q_w501"] },
+        { "id": "pb7-c2", "name": "Chapter 2", "wordIds": ["w502", "w503", "w504", "w505", "w506", "w507", "w508", "w509", "w510"], "quizIds": ["q_w502", "q_w503", "q_w504", "q_w505", "q_w506", "q_w507", "q_w508", "q_w509", "q_w510"] },
+        { "id": "pb7-c3", "name": "Chapter 3", "wordIds": ["w511", "w512", "w513", "w514", "w515"], "quizIds": ["q_w511", "q_w512", "q_w513", "q_w514", "q_w515"] },
+        { "id": "pb7-c4", "name": "Chapter 4", "wordIds": ["w516", "w517", "w518"], "quizIds": ["q_w516", "q_w517", "q_w518"] },
+        { "id": "pb7-c5", "name": "Chapter 5", "wordIds": ["w519", "w520", "w521", "w522"], "quizIds": ["q_w519", "q_w520", "q_w521", "q_w522"] },
+        { "id": "pb7-c6", "name": "Chapter 6", "wordIds": ["w523"], "quizIds": ["q_w523"] },
+        { "id": "pb7-c7", "name": "Chapter 7", "wordIds": ["w524"], "quizIds": ["q_w524"] },
+        { "id": "pb7-c8", "name": "Chapter 8", "wordIds": ["w525", "w526"], "quizIds": ["q_w525", "q_w526"] },
+        { "id": "pb7-c9", "name": "Chapter 9", "wordIds": ["w527"], "quizIds": ["q_w527"] },
+        { "id": "pb7-c10", "name": "Chapter 10", "wordIds": ["w528", "w529", "w530"], "quizIds": ["q_w528", "q_w529", "q_w530"] }
+     ]
+
+   },
+   
+   {
+    "id": "gszzs",
+    "type": "桥梁章节书",
+    "series": "盖世脏脏书",
+    "title": "盖世脏脏书",
+    "cover": "infopic01/zangzangshu.png",
+    
+      "chapters": [
+        { "id": "gszz-b1", "name": "Hi and Bye.Skin Cells", "wordIds": ["w531", "w532", "w552"], "quizIds": ["q_w531", "q_w532", "q_w552"] },
+{ "id": "gszz-b2", "name": "The Germ Family Finds New Home", "wordIds": ["w533", "w534"], "quizIds": ["q_w533", "q_w534"] },
+{ "id": "gszz-b3", "name": "keep away,tooth decay", "wordIds": ["w535", "w536", "w537", "w538", "w539", "w540", "w541"], "quizIds": ["q_w535", "q_w536", "q_w537", "q_w538", "q_w539", "q_w540", "q_w541"] },
+{ "id": "gszz-b4", "name": "who spit on me", "wordIds": ["w542", "w543", "w544", "w545", "w546", "w547", "w548"], "quizIds": ["q_w542", "q_w543", "q_w544", "q_w545", "q_w546", "q_w547", "q_w548"] },
+{ "id": "gszz-b5", "name": "the fart contest", "wordIds": ["w549", "w550", "w551"], "quizIds": ["q_w549", "q_w550", "q_w551"] }
+     ]
 
    }
 

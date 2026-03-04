@@ -3339,7 +3339,522 @@
   "question": "To ______ is to walk slowly and in a relaxed, unhurried way.",
   "options": ["interrupt", "amble", "uncertain", "linen"],
   "answer": 1
-}
+},
+"q_w479": {
+"type": "choice_text",
+"wordIds": ["w479"],
+"question": "To ______ means to press or squeeze someone or something tightly.",
+"options": ["squish", "habitat", "pressure", "distribute"],
+"answer": 0
+},
+"q_w480": {
+"type": "choice_text",
+"wordIds": ["w480"],
+"question": "To ______ is to crush or press something hard so it loses shape.",
+"options": ["weight", "squash", "evenly", "boost"],
+"answer": 1
+},
+"q_w481": {
+"type": "choice_text",
+"wordIds": ["w481"],
+"question": "To ______ means to squeeze through a small space or crumple something.",
+"options": ["lifter", "erupt", "scrunch", "vinegar"],
+"answer": 2
+},
+"q_w482": {
+"type": "choice_text",
+"wordIds": ["w482"],
+"question": "A ______ is the natural home of a plant or animal.",
+"options": ["fit in", "jammed", "habitat", "crammed"],
+"answer": 2
+},
+"q_w483": {
+"type": "choice_text",
+"wordIds": ["w483"],
+"question": "______ is the force pushing on something, or stress.",
+"options": ["pressure", "yelp", "shudder", "infernal"],
+"answer": 0
+},
+"q_w484": {
+"type": "choice_text",
+"wordIds": ["w484"],
+"question": "To ______ is to give out or spread things equally.",
+"options": ["prepare", "distribute", "squish", "squash"],
+"answer": 1
+},
+"q_w485": {
+"type": "choice_text",
+"wordIds": ["w485"],
+"question": "______ is how heavy something is.",
+"options": ["scrunch", "weight", "habitat", "pressure"],
+"answer": 1
+},
+"q_w486": {
+"type": "choice_text",
+"wordIds": ["w486"],
+"question": "______ means in an equal or level way.",
+"options": ["evenly", "distribute", "boost", "lifter"],
+"answer": 0
+},
+"q_w487": {
+"type": "choice_text",
+"wordIds": ["w487"],
+"question": "A ______ is a children's plaything that goes up and down.",
+"options": ["erupt", "vinegar", "teeter-totter", "fit in"],
+"answer": 2
+},
+"q_w488": {
+"type": "choice_text",
+"wordIds": ["w488"],
+"question": "To ______ means to lift up or make something stronger or higher.",
+"options": ["jammed", "crammed", "yelp", "boost"],
+"answer": 3
+},
+"q_w489": {
+"type": "choice_text",
+"wordIds": ["w489"],
+"question": "A ______ is a tool or machine that lifts things up.",
+"options": ["lifter", "shudder", "infernal", "prepare"],
+"answer": 0
+},
+"q_w490": {
+"type": "choice_text",
+"wordIds": ["w490"],
+"question": "To ______ means to burst out suddenly, like a volcano.",
+"options": ["squish", "erupt", "habitat", "weight"],
+"answer": 1
+},
+"q_w491": {
+"type": "choice_text",
+"wordIds": ["w491"],
+"question": "______ is a sour liquid used in cooking and experiments.",
+"options": ["vinegar", "evenly", "teeter-totter", "fit in"],
+"answer": 0
+},
+"q_w492": {
+"type": "choice_text",
+"wordIds": ["w492"],
+"question": "To ______ means to go into a space or belong in a group.",
+"options": ["boost", "fit in", "lifter", "yelp"],
+"answer": 1
+},
+"q_w493": {
+"type": "choice_text",
+"wordIds": ["w493"],
+"question": "______ means stuck or packed so tight you can't move.",
+"options": ["jammed", "erupt", "prepare", "squash"],
+"answer": 0
+},
+"q_w494": {
+"type": "choice_text",
+"wordIds": ["w494"],
+"question": "______ means filled completely full or packed tightly.",
+"options": ["crammed", "pressure", "vinegar", "shudder"],
+"answer": 0
+},
+"q_w495": {
+"type": "choice_text",
+"wordIds": ["w495"],
+"question": "To ______ is to make a short, sharp cry from pain or fear.",
+"options": ["distribute", "yelp", "scrunch", "infernal"],
+"answer": 1
+},
+"q_w496": {
+"type": "choice_text",
+"wordIds": ["w496"],
+"question": "To ______ means to shake a little from cold, fear, or movement.",
+"options": ["shudder", "weight", "boost", "fit in"],
+"answer": 0
+},
+"q_w497": {
+"type": "choice_text",
+"wordIds": ["w497"],
+"question": "______ means very annoying or terrible.",
+"options": ["infernal", "lifter", "jammed", "squish"],
+"answer": 0
+},
+"q_w498": {
+"type": "choice_text",
+"wordIds": ["w498"],
+"question": "To ______ means to get ready for something.",
+"options": ["prepare", "habitat", "evenly", "crammed"],
+"answer": 0
+},
+  "q_w499": {
+    "type": "choice_text",
+    "wordIds": ["w499"],
+    "question": "The shelf was heavy, so we added a metal bar to ______ it.",
+    "options": ["trim", "odor", "support", "trot"],
+    "answer": 2
+  },
+  "q_w500": {
+    "type": "choice_text",
+    "wordIds": ["w500"],
+    "question": "A sweet flower ______ drifted through the room.",
+    "options": ["odor", "scene", "stench", "wrinkle"],
+    "answer": 0
+  },
+  "q_w501": {
+    "type": "choice_text",
+    "wordIds": ["w501"],
+    "question": "When we opened the trash can, a horrible ______ filled the kitchen.",
+    "options": ["odor", "relief", "bouquet", "stench"],
+    "answer": 3
+  },
+  "q_w502": {
+    "type": "choice_text",
+    "wordIds": ["w502"],
+    "question": "She planted a ______ in her garden; it looked like a tiny dragon's mouth.",
+    "options": ["petal", "snapdragon", "gazebo", "scene"],
+    "answer": 1
+  },
+  "q_w503": {
+    "type": "choice_text",
+    "wordIds": ["w503"],
+    "question": "Please ______ the bushes so they look neat for the party.",
+    "options": ["trim", "trot", "clog", "savor"],
+    "answer": 0
+  },
+  "q_w505": {
+    "type": "choice_text",
+    "wordIds": ["w505"],
+    "question": "We stopped on the hill to enjoy the sunset ______.",
+    "options": ["situation", "odor", "scene", "companion"],
+    "answer": 2
+  },
+  "q_w506": {
+    "type": "choice_text",
+    "wordIds": ["w506"],
+    "question": "Take a bite, then ______ the taste slowly.",
+    "options": ["smoosh", "savor", "whine", "clog"],
+    "answer": 1
+  },
+  "q_w507": {
+    "type": "choice_text",
+    "wordIds": ["w507"],
+    "question": "A pink ______ fell from the rose onto the path.",
+    "options": ["bouquet", "diaper", "wrinkle", "petal"],
+    "answer": 3
+  },
+  "q_w508": {
+    "type": "choice_text",
+    "wordIds": ["w508"],
+    "question": "“Are you going alone?” “No, I have a travel ______.”",
+    "options": ["companion", "stench", "support", "zip line"],
+    "answer": 0
+  },
+  "q_w509": {
+    "type": "choice_text",
+    "wordIds": ["w509"],
+    "question": "After sitting on it, there was a big ______ in the paper.",
+    "options": ["petal", "odor", "wrinkle", "turquoise"],
+    "answer": 2
+  },
+  "q_w510": {
+    "type": "choice_text",
+    "wordIds": ["w510"],
+    "question": "He gave her a ______ of flowers for her birthday.",
+    "options": ["gazebo", "bouquet", "armpit", "scene"],
+    "answer": 1
+  },
+  "q_w511": {
+    "type": "choice_text",
+    "wordIds": ["w511"],
+    "question": "The cat will ______ before it jumps.",
+    "options": ["crouch", "trot", "trim", "whine"],
+    "answer": 0
+  },
+  "q_w512": {
+    "type": "choice_text",
+    "wordIds": ["w512"],
+    "question": "She wanted to ______ the peaceful moment and not rush.",
+    "options": ["support", "faint", "clog", "savor"],
+    "answer": 3
+  },
+  "q_w513": {
+    "type": "choice_text",
+    "wordIds": ["w513"],
+    "question": "Stop ______ about the homework and start working.",
+    "options": ["trot", "adore", "whine", "crouch"],
+    "answer": 2
+  },
+  "q_w514": {
+    "type": "choice_text",
+    "wordIds": ["w514"],
+    "question": "We sat in the ______ to get shade in the garden.",
+    "options": ["gazebo", "bouquet", "zip line", "armpit"],
+    "answer": 0
+  },
+  "q_w515": {
+    "type": "choice_text",
+    "wordIds": ["w515"],
+    "question": "After making a mistake, he answered ______.",
+    "options": ["thrilling", "sheepishly", "turquoise", "moldy"],
+    "answer": 1
+  },
+  "q_w516": {
+    "type": "choice_text",
+    "wordIds": ["w516"],
+    "question": "______! The ball shot past my ear.",
+    "options": ["relief", "bouquet", "whoosh", "wrinkle"],
+    "answer": 2
+  },
+  "q_w517": {
+    "type": "choice_text",
+    "wordIds": ["w517"],
+    "question": "The roller coaster ride was ______!",
+    "options": ["moldy", "sheepishly", "funky", "thrilling"],
+    "answer": 3
+  },
+  "q_w518": {
+    "type": "choice_text",
+    "wordIds": ["w518"],
+    "question": "At camp, we rode a ______ across the trees.",
+    "options": ["gazebo", "zip line", "support", "diaper"],
+    "answer": 1
+  },
+  "q_w519": {
+    "type": "choice_text",
+    "wordIds": ["w519"],
+    "question": "Her dress was ______, a blue-green color like the sea.",
+    "options": ["turquoise", "moldy", "funky", "faint"],
+    "answer": 0
+  },
+  "q_w520": {
+    "type": "choice_text",
+    "wordIds": ["w520"],
+    "question": "The bread was ______, so we threw it away.",
+    "options": ["turquoise", "thrilling", "moldy", "sheepishly"],
+    "answer": 2
+  },
+  "q_w521": {
+    "type": "choice_text",
+    "wordIds": ["w521"],
+    "question": "I ______ this book so much—I read it again and again.",
+    "options": ["clog", "adore", "crouch", "trim"],
+    "answer": 1
+  },
+  "q_w522": {
+    "type": "choice_text",
+    "wordIds": ["w522"],
+    "question": "Don’t ______ the sandwich in your backpack.",
+    "options": ["savor", "trot", "support", "smoosh"],
+    "answer": 3
+  },
+  "q_w523": {
+    "type": "choice_text",
+    "wordIds": ["w523"],
+    "question": "He put deodorant under his ______.",
+    "options": ["armpit", "petal", "gazebo", "scene"],
+    "answer": 0
+  },
+  "q_w524": {
+    "type": "choice_text",
+    "wordIds": ["w524"],
+    "question": "The pony began to ______ across the field with quick steps.",
+    "options": ["whine", "trot", "trim", "faint"],
+    "answer": 1
+  },
+  "q_w525": {
+    "type": "choice_text",
+    "wordIds": ["w525"],
+    "question": "Hair can ______ the sink, so the water won’t go down.",
+    "options": ["support", "savor", "clog", "adore"],
+    "answer": 2
+  },
+  "q_w526": {
+    "type": "choice_text",
+    "wordIds": ["w526"],
+    "question": "The baby needed a clean ______.",
+    "options": ["diaper", "bouquet", "wrinkle", "zip line"],
+    "answer": 0
+  },
+  "q_w527": {
+    "type": "choice_text",
+    "wordIds": ["w527"],
+    "question": "She felt dizzy in the hot sun and might ______.",
+    "options": ["trot", "trim", "savor", "faint"],
+    "answer": 3
+  },
+  "q_w528": {
+    "type": "choice_text",
+    "wordIds": ["w528"],
+    "question": "When the loud noise finally stopped, everyone felt ______.",
+    "options": ["stench", "odor", "relief", "wrinkle"],
+    "answer": 2
+  },
+  "q_w529": {
+    "type": "choice_text",
+    "wordIds": ["w529"],
+    "question": "This cheese tastes ______—kind of strange.",
+    "options": ["turquoise", "funky", "thrilling", "sheepishly"],
+    "answer": 1
+  },
+  "q_w530": {
+    "type": "choice_text",
+    "wordIds": ["w530"],
+    "question": "There was a problem during the game, but we solved the ______ calmly.",
+    "options": ["scene", "support", "companion", "situation"],
+    "answer": 3
+  },
+  
+  "q_w531": {
+    "type": "choice_text",
+    "wordIds": ["w531"],
+    "question": "The shell was so ______ that it was hard to break.",
+    "options": ["sugary", "moldy", "tough", "thrilling"],
+    "answer": 2
+  },
+  "q_w532": {
+    "type": "choice_text",
+    "wordIds": ["w532"],
+    "question": "We ______ flour and water to make dough.",
+    "options": ["combine", "prevent", "deny", "digest"],
+    "answer": 0
+  },
+  "q_w533": {
+    "type": "choice_text",
+    "wordIds": ["w533"],
+    "question": "This pan has a special nonstick ______.",
+    "options": ["moss", "plaque", "molar", "coating"],
+    "answer": 3
+  },
+  "q_w534": {
+    "type": "choice_text",
+    "wordIds": ["w534"],
+    "question": "Green ______ grows on wet rocks in the shade.",
+    "options": ["coating", "moss", "cavity", "saliva"],
+    "answer": 1
+  },
+  "q_w535": {
+    "type": "choice_text",
+    "wordIds": ["w535"],
+    "question": "If you leave the apple out too long, it will ______.",
+    "options": ["decay", "trot", "trim", "combine"],
+    "answer": 0
+  },
+  "q_w536": {
+    "type": "choice_text",
+    "wordIds": ["w536"],
+    "question": "This drink is too ______, so I only want a little.",
+    "options": ["tough", "moldy", "sugary", "funky"],
+    "answer": 2
+  },
+  "q_w537": {
+    "type": "choice_text",
+    "wordIds": ["w537"],
+    "question": "Caterpillars ______ leaves.",
+    "options": ["depend on", "feed on", "wear away", "keep one's word"],
+    "answer": 1
+  },
+  "q_w538": {
+    "type": "choice_text",
+    "wordIds": ["w538"],
+    "question": "Brush your teeth to remove ______.",
+    "options": ["cavity", "moss", "coating", "plaque"],
+    "answer": 3
+  },
+  "q_w539": {
+    "type": "choice_text",
+    "wordIds": ["w539"],
+    "question": "The dentist found a ______ in my tooth.",
+    "options": ["cavity", "plaque", "molar", "gland"],
+    "answer": 0
+  },
+  "q_w540": {
+    "type": "choice_text",
+    "wordIds": ["w540"],
+    "question": "Soda can slowly ______ tooth enamel over time.",
+    "options": ["digest", "prevent", "wear away", "combine"],
+    "answer": 2
+  },
+  "q_w541": {
+    "type": "choice_text",
+    "wordIds": ["w541"],
+    "question": "You chew crunchy food with a back ______.",
+    "options": ["cavity", "molar", "petal", "odor"],
+    "answer": 1
+  },
+  "q_w542": {
+    "type": "choice_text",
+    "wordIds": ["w542"],
+    "question": "Your mouth makes ______ when you smell yummy food.",
+    "options": ["moss", "gland", "plaque", "saliva"],
+    "answer": 3
+  },
+  "q_w543": {
+    "type": "choice_text",
+    "wordIds": ["w543"],
+    "question": "A saliva ______ in your mouth makes saliva.",
+    "options": ["molar", "saliva", "gland", "cavity"],
+    "answer": 2
+  },
+  "q_w544": {
+    "type": "choice_text",
+    "wordIds": ["w544"],
+    "question": "He broke the toy but tried to ______ it.",
+    "options": ["deny", "prevent", "support", "adore"],
+    "answer": 0
+  },
+  "q_w545": {
+    "type": "choice_text",
+    "wordIds": ["w545"],
+    "question": "Warm soup can ______ dry bread.",
+    "options": ["digest", "soften", "trot", "trim"],
+    "answer": 1
+  },
+  "q_w546": {
+    "type": "choice_text",
+    "wordIds": ["w546"],
+    "question": "It can take time to ______ a big meal.",
+    "options": ["combine", "deny", "prevent", "digest"],
+    "answer": 3
+  },
+  "q_w547": {
+    "type": "choice_text",
+    "wordIds": ["w547"],
+    "question": "Washing your hands can ______ germs from spreading.",
+    "options": ["prevent", "digest", "soften", "feed on"],
+    "answer": 0
+  },
+  "q_w548": {
+    "type": "choice_text",
+    "wordIds": ["w548"],
+    "question": "She promised to help, and she ______.",
+    "options": ["denied it", "depended on me", "kept her word", "wore it away"],
+    "answer": 2
+  },
+  "q_w549": {
+    "type": "choice_text",
+    "wordIds": ["w549"],
+    "question": "Our picnic plans ______ the weather.",
+    "options": ["wear away", "depend on", "feed on", "keep your word"],
+    "answer": 1
+  },
+  "q_w550": {
+    "type": "choice_text",
+    "wordIds": ["w550"],
+    "question": "Waste leaves the body through the ______.",
+    "options": ["stomachache", "gland", "molar", "anus"],
+    "answer": 3
+  },
+  "q_w551": {
+    "type": "choice_text",
+    "wordIds": ["w551"],
+    "question": "I ate too much candy and got a ______.",
+    "options": ["stomachache", "odor", "cavity", "relief"],
+    "answer": 0
+  },
+   "q_w552": {
+    "type": "choice_text",
+    "wordIds": ["w552"],
+    "question": "After weeks without cleaning, there was a ______ of dust on the window.",
+    "options": ["bouquet", "odor", "build-up", "cavity"],
+    "answer": 2
+  }
+
+
+
 
 
 
