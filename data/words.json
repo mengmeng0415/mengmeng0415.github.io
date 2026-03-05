@@ -7182,6 +7182,19 @@
 "[TITLE]额外例句[/TITLE][EX]She stayed home because of a stomachache.|她因为肚子疼待在家里。[/EX][EX]Too much junk food can cause stomachaches.|太多垃圾食品会导致胃痛。[/EX]",
 "[TITLE]常见错误[/TITLE][ERR]stomachache有时写作stomach ache，两种都可以。[/ERR]"
 ]
+},
+"w552": {
+"word": "build-up",
+"images": {
+"scene": ["infopic01/build_up.webp"],
+"card": ["wordpic01/build_up.webp"]
+},
+"richDetail": [
+"[TITLE]解释[/TITLE][DEF][EN]A build-up is something that slowly collects or gathers over time.[/EN][CN]积累；堆积；逐渐形成的一层[/CN][POS]n.[/POS][PH]/ˈbɪld ʌp/[/PH][DU]Eye boogers are a build-up of dirt, dust, and tears in your eyes.|（原文例句）眼屎是灰尘、脏东西和眼泪在眼睛里慢慢堆积形成的。[/DU][DU]There was a build-up of snow on the road.|路上堆积了很多雪。[/DU][/DEF][IMG]infopic01/build_up.webp[/IMG]",
+"[TITLE]常见用法[/TITLE][COLL][H]a build-up of sth|……的堆积[POS]n. phr.[/POS][/H][EX]There is a build-up of plaque on the teeth.|牙齿上有牙菌斑的堆积。[/EX][C]a build-up of dust|灰尘的堆积[/C][C]a build-up of snow|积雪堆积[/C][/COLL]",
+"[TITLE]额外例句[/TITLE][EX]The pipes had a build-up of dirt.|管道里积累了很多污垢。[/EX][EX]Exercise prevents a build-up of fat.|运动可以防止脂肪堆积。[/EX]",
+"[TITLE]常见错误[/TITLE][ERR]名词形式通常写作build-up（带连字符），不要写成build up。[/ERR][ERR]build up作动词短语时没有连字符，例如build up strength（增强力量）。[/ERR]"
+]
 }
 
 
