@@ -1488,14 +1488,14 @@
 "wordIds": ["w213"],
 "question": "The big monster ______ down into the soft ground suddenly.",
 "options": ["whistled", "plopped", "fashioned", "avenged"],
-"answer": 0
+"answer": 1
 },
 "q_w214": {
 "type": "choice_text",
 "wordIds": ["w214"],
 "question": "It is important to keep your fingers and ______ clean and tidy.",
 "options": ["toenail", "clipping", "ballroom", "peek"],
-"answer": 3
+"answer": 0
 },
 "q_w215": {
 "type": "choice_text",
