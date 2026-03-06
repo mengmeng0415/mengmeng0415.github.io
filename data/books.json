@@ -373,10 +373,10 @@
     
       "chapters": [
         { "id": "gszz-b1", "name": "Hi and Bye.Skin Cells", "wordIds": ["w531", "w532", "w552"], "quizIds": ["q_w531", "q_w532", "q_w552"] },
-{ "id": "gszz-b2", "name": "The Germ Family Finds New Home", "wordIds": ["w533", "w534"], "quizIds": ["q_w533", "q_w534"] },
-{ "id": "gszz-b3", "name": "keep away,tooth decay", "wordIds": ["w535", "w536", "w537", "w538", "w539", "w540", "w541"], "quizIds": ["q_w535", "q_w536", "q_w537", "q_w538", "q_w539", "q_w540", "q_w541"] },
-{ "id": "gszz-b4", "name": "who spit on me", "wordIds": ["w542", "w543", "w544", "w545", "w546", "w547", "w548"], "quizIds": ["q_w542", "q_w543", "q_w544", "q_w545", "q_w546", "q_w547", "q_w548"] },
-{ "id": "gszz-b5", "name": "the fart contest", "wordIds": ["w549", "w550", "w551"], "quizIds": ["q_w549", "q_w550", "q_w551"] }
+        { "id": "gszz-b2", "name": "The Germ Family Finds New Home", "wordIds": ["w533", "w534"], "quizIds": ["q_w533", "q_w534"] },
+        { "id": "gszz-b3", "name": "keep away,tooth decay", "wordIds": ["w535", "w536", "w537", "w538", "w539", "w540", "w541"], "quizIds": ["q_w535", "q_w536", "q_w537", "q_w538", "q_w539", "q_w540", "q_w541"] },
+        { "id": "gszz-b4", "name": "who spit on me", "wordIds": ["w542", "w543", "w544", "w545", "w546", "w547", "w548"], "quizIds": ["q_w542", "q_w543", "q_w544", "q_w545", "q_w546", "q_w547", "q_w548"] },
+        { "id": "gszz-b5", "name": "the fart contest", "wordIds": ["w549", "w550", "w551"], "quizIds": ["q_w549", "q_w550", "q_w551"] }
      ]
 
    }

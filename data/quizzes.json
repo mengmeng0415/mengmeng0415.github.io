@@ -1453,14 +1453,14 @@
 "wordIds": ["w208"],
 "question": "The duchess wanted to ______ under the table to find the princess’s secret.",
 "options": ["peek", "wad", "ballroom", "inspect"],
-"answer": 2
+"answer": 0
 },
 "q_w209": {
 "type": "choice_text",
 "wordIds": ["w209"],
 "question": "She crumpled the paper into a ______ and threw it away.",
 "options": ["ballroom", "wad", "coal-black", "plop"],
-"answer": 3
+"answer": 1
 },
 "q_w210": {
 "type": "choice_text",
