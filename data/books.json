@@ -405,6 +405,28 @@
   
      ]
 
+   },
+   {
+    "id": "pb9",
+    "type": "桥梁章节书",
+    "series": "The Pincess in Black",
+    "title": "The Pincess in Black 9",
+    "cover": "infopic01/pb9.png",
+     "pdfs": [
+      {
+        "name": "The Pincess in Black 9",
+        "url": "https://mengmeng0415.github.io/pdfinfo01/pb9.pdf"
+      }
+    ],
+      "chapters": [
+        { "id": "book-c1", "name": "Chapter 1", "wordIds": ["w579", "w580", "w581", "w582", "w583", "w584", "w585", "w586", "w587", "w588"], "quizIds": ["q_w579", "q_w580", "q_w581", "q_w582", "q_w583", "q_w584", "q_w585", "q_w586", "q_w587", "q_w588"] },
+        { "id": "book-c2", "name": "Chapter 2", "wordIds": ["w589", "w590", "w591"], "quizIds": ["q_w589", "q_w590", "q_w591"] },
+        { "id": "book-c3", "name": "Chapter 3", "wordIds": ["w592", "w593", "w594", "w595", "w596"], "quizIds": ["q_w592", "q_w593", "q_w594", "q_w595", "q_w596"] },
+        { "id": "book-c5", "name": "Chapter 5", "wordIds": ["w597", "w598", "w599", "w600"], "quizIds": ["q_w597", "q_w598", "q_w599", "q_w600"] },
+        { "id": "book-c7", "name": "Chapter 7", "wordIds": ["w601"], "quizIds": ["q_w601"] }
+
+     ]
+
    }
 
 
