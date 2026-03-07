@@ -379,6 +379,32 @@
         { "id": "gszz-b5", "name": "the fart contest", "wordIds": ["w549", "w550", "w551"], "quizIds": ["q_w549", "q_w550", "q_w551"] }
      ]
 
+   },
+   {
+    "id": "pb8",
+    "type": "桥梁章节书",
+    "series": "The Pincess in Black",
+    "title": "The Pincess in Black 8",
+    "cover": "infopic01/pb8.png",
+     "pdfs": [
+      {
+        "name": "The Pincess in Black 8",
+        "url": "https://mengmeng0415.github.io/pdfinfo01/pb8.pdf"
+      }
+    ],
+      "chapters": [
+        { "id": "book-c1", "name": "Chapter 1", "wordIds": ["w553", "w554", "w555", "w556", "w557"], "quizIds": ["q_w553", "q_w554", "q_w555", "q_w556", "q_w557"] },
+        { "id": "book-c2", "name": "Chapter 2", "wordIds": ["w558", "w559", "w560", "w561", "w562", "w563"], "quizIds": ["q_w558", "q_w559", "q_w560", "q_w561", "q_w562", "q_w563"] },
+        { "id": "book-c3", "name": "Chapter 3", "wordIds": ["w564", "w565", "w566"], "quizIds": ["q_w564", "q_w565", "q_w566"] },
+        { "id": "book-c4", "name": "Chapter 4", "wordIds": ["w567", "w568"], "quizIds": ["q_w567", "q_w568"] },
+        { "id": "book-c5", "name": "Chapter 5", "wordIds": ["w569"], "quizIds": ["q_w569"] },
+        { "id": "book-c6", "name": "Chapter 6", "wordIds": ["w570", "w571", "w572", "w573"], "quizIds": ["q_w570", "q_w571", "q_w572", "q_w573"] },
+        { "id": "book-c7", "name": "Chapter 7", "wordIds": ["w574", "w575"], "quizIds": ["q_w574", "q_w575"] },
+        { "id": "book-c8", "name": "Chapter 8", "wordIds": ["w576"], "quizIds": ["q_w576"] },
+        { "id": "book-c9", "name": "Chapter 9", "wordIds": ["w577", "w578"], "quizIds": ["q_w577", "q_w578"] }
+  
+     ]
+
    }
 
 

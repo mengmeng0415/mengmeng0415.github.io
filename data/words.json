@@ -7195,6 +7195,366 @@
 "[TITLE]额外例句[/TITLE][EX]The pipes had a build-up of dirt.|管道里积累了很多污垢。[/EX][EX]Exercise prevents a build-up of fat.|运动可以防止脂肪堆积。[/EX]",
 "[TITLE]常见错误[/TITLE][ERR]名词形式通常写作build-up（带连字符），不要写成build up。[/ERR][ERR]build up作动词短语时没有连字符，例如build up strength（增强力量）。[/ERR]"
 ]
+},
+"w553": {
+"word": "curl up",
+"images": {
+"scene": ["infopic01/curl_up.webp"],
+"card": ["wordpic01/curl_up.webp"]
+},
+"richDetail": [
+"[TITLE]解释[/TITLE][DEF][EN]To curl up means to bend your body into a small round shape, usually to rest or sleep.[/EN][CN]蜷缩起来；蜷成一团（通常为了休息或睡觉）[/CN][POS]v. phr.[/POS][PH]/kɜːrl ʌp/[/PH][DU]Frimplepants the unicorn curled up by the fire.|（原文例句）独角兽弗林普尔裤在火炉旁蜷成一团。[/DU][DU]The cat curled up on the sofa to sleep.|小猫蜷在沙发上睡觉。[/DU][/DEF][IMG]infopic01/curl_up.webp[/IMG]",
+"[TITLE]常见用法[/TITLE][COLL][H]curl up by/near sth|在某处蜷缩起来[POS]v. phr.[/POS][/H][EX]The dog curled up by the fireplace.|狗蜷在壁炉旁。[/EX][C]curl up by the fire|在火炉旁蜷着[/C][C]curl up on the bed|蜷在床上[/C][/COLL][COLL][H]curl up into a ball|蜷成一团[POS]v. phr.[/POS][/H][EX]The hedgehog curled up into a ball.|刺猬蜷成了一团。[/EX][C]curl up into a ball|蜷成球状[/C][/COLL]",
+"[TITLE]额外例句[/TITLE][EX]The puppy curled up in the blanket.|小狗蜷在毯子里。[/EX][EX]She curled up with a book on the sofa.|她蜷在沙发上看书。[/EX]",
+"[TITLE]常见错误[/TITLE][ERR]curl up 是固定短语，表示“蜷缩起来”，不要只说 curl 表达同样意思。[/ERR][ERR]curl up通常表示身体姿势变化，不要误用于表示“卷起东西”（那通常用roll up）。[/ERR]"
+]
+},
+
+"w554": {
+"word": "drowsy",
+"images": {
+"scene": ["infopic01/drowsy.webp"],
+"card": ["wordpic01/drowsy.webp"]
+},
+"richDetail": [
+"[TITLE]解释[/TITLE][DEF][EN]Drowsy means feeling sleepy and wanting to sleep.[/EN][CN]昏昏欲睡的；困倦的[/CN][POS]adj.[/POS][PH]/ˈdraʊzi/[/PH][DU]Drowsy, he watched the flames dance.|（原文例句）他昏昏欲睡地看着火焰跳动。[/DU][DU]After lunch, I feel drowsy.|午饭后我感觉很困。[/DU][/DEF][IMG]infopic01/drowsy.webp[/IMG]",
+"[TITLE]常见用法[/TITLE][COLL][H]feel drowsy|感到困倦[POS]adj.[/POS][/H][EX]I feel drowsy after a long day.|忙碌一天后我很困。[/EX][C]feel drowsy|感到困倦[/C][/COLL][COLL][H]look drowsy|看起来昏昏欲睡[POS]adj.[/POS][/H][EX]The baby looks drowsy.|宝宝看起来很困。[/EX][C]look drowsy|看起来很困[/C][/COLL]",
+"[TITLE]额外例句[/TITLE][EX]The warm room made everyone drowsy.|温暖的房间让大家都昏昏欲睡。[/EX][EX]He felt drowsy on the long bus ride.|长途公交车上他很困。[/EX]",
+"[TITLE]常见错误[/TITLE][ERR]drowsy是形容词，不要当动词使用（错误：I drowsy）。[/ERR][ERR]不要和sleepy完全混用，drowsy更强调“困得快睡着”。[/ERR]"
+]
+},
+
+"w555": {
+"word": "scrapbook",
+"images": {
+"scene": ["infopic01/scrapbook.webp"],
+"card": ["wordpic01/scrapbook.webp"]
+},
+"richDetail": [
+"[TITLE]解释[/TITLE][DEF][EN]A scrapbook is a book where people keep photos, pictures, and memories.[/EN][CN]剪贴簿；纪念相册[/CN][POS]n.[/POS][PH]/ˈskræpbʊk/[/PH][DU]Princess Magnolia was making a scrapbook.|（原文例句）木兰公主正在做一本剪贴簿。[/DU][DU]She keeps photos in her scrapbook.|她把照片放在剪贴簿里。[/DU][/DEF][IMG]infopic01/scrapbook.webp[/IMG]",
+"[TITLE]常见用法[/TITLE][COLL][H]make a scrapbook|制作剪贴簿[POS]n.[/POS][/H][EX]She made a scrapbook about her trip.|她做了一本旅行剪贴簿。[/EX][C]make a scrapbook|制作剪贴簿[/C][/COLL][COLL][H]a page in a scrapbook|剪贴簿中的一页[POS]n.[/POS][/H][EX]She finished a page in her scrapbook.|她完成了剪贴簿的一页。[/EX][C]scrapbook page|剪贴簿页[/C][/COLL]",
+"[TITLE]额外例句[/TITLE][EX]My mother keeps a scrapbook of family memories.|妈妈保存着一本家庭纪念剪贴簿。[/EX][EX]We glued pictures into the scrapbook.|我们把照片贴进剪贴簿里。[/EX]",
+"[TITLE]常见错误[/TITLE][ERR]scrapbook是名词，不要误当动词使用（错误：I scrapbook photos）。[/ERR][ERR]注意不要和notebook混淆，scrapbook主要用于保存照片或纪念品。[/ERR]"
+]
+},
+
+"w556": {
+"word": "a whisker away from",
+"images": {
+"scene": ["infopic01/whisker_away.webp"],
+"card": ["wordpic01/whisker_away.webp"]
+},
+"richDetail": [
+"[TITLE]解释[/TITLE][DEF][EN]A whisker away from means very close to something happening.[/EN][CN]差一点就……；几乎就要……[/CN][POS]phr.[/POS][PH]/ˈwɪskər əˈweɪ frəm/[/PH][DU]Frimplepants had been just a whisker away from a nap.|（原文例句）弗林普尔裤差一点就要睡着了。[/DU][DU]The ball was a whisker away from the goal.|球差一点就进球了。[/DU][/DEF][IMG]infopic01/whisker_away.webp[/IMG]",
+"[TITLE]常见用法[/TITLE][COLL][H]a whisker away from doing sth|差点做某事[POS]phr.[/POS][/H][EX]She was a whisker away from winning.|她差点赢了。[/EX][C]a whisker away from success|差点成功[/C][/COLL]",
+"[TITLE]额外例句[/TITLE][EX]He was a whisker away from falling.|他差点摔倒。[/EX][EX]The team was a whisker away from victory.|这支队伍差点赢得胜利。[/EX]",
+"[TITLE]常见错误[/TITLE][ERR]不要把whisker理解成“胡子”，在这个短语里表示“极小的距离”。[/ERR][ERR]该短语通常与from连用，不要说a whisker away to。[/ERR]"
+]
+},
+
+"w557": {
+"word": "resist",
+"images": {
+"scene": ["infopic01/resist.webp"],
+"card": ["wordpic01/resist.webp"]
+},
+"richDetail": [
+"[TITLE]解释[/TITLE][DEF][EN]To resist means to stop yourself from doing something or not give in to something.[/EN][CN]抵抗；忍住；抗拒[/CN][POS]v.[/POS][PH]/rɪˈzɪst/[/PH][DU]But he couldn’t resist a snowy playdate.|（原文例句）但他忍不住想去参加雪地玩耍的约会。[/DU][DU]I cannot resist eating chocolate.|我忍不住想吃巧克力。[/DU][/DEF][IMG]infopic01/resist.webp[/IMG]",
+"[TITLE]常见用法[/TITLE][COLL][H]resist doing sth|忍住不做某事[POS]v.[/POS][/H][EX]He couldn’t resist laughing.|他忍不住笑了。[/EX][C]resist laughing|忍住不笑[/C][/COLL][COLL][H]resist temptation|抵抗诱惑[POS]v.[/POS][/H][EX]She tried to resist temptation.|她努力抵抗诱惑。[/EX][C]resist temptation|抵抗诱惑[/C][/COLL]",
+"[TITLE]额外例句[/TITLE][EX]It is hard to resist tasty cake.|很难抵抗美味蛋糕的诱惑。[/EX][EX]He tried to resist the cold wind.|他努力抵抗寒风。[/EX]",
+"[TITLE]常见错误[/TITLE][ERR]resist后面通常接名词或动名词（doing），不要接to do（错误：resist to eat）。[/ERR][ERR]不要把resist和refuse混淆，resist是“忍住或抵抗”，refuse是“拒绝”。[/ERR]"
+]
+},
+"w558": {
+"word": "cuddle",
+"images": {
+"scene": ["infopic01/cuddle.webp"],
+"card": ["wordpic01/cuddle.webp"]
+},
+"richDetail": [
+"[TITLE]解释[/TITLE][DEF][EN]To cuddle means to hold someone or something close in a loving or comfortable way.[/EN][CN]依偎；抱在怀里取暖或表示亲密[/CN][POS]v.[/POS][PH]/ˈkʌdl/[/PH][DU]The goat shed had blankets for cuddling.|（原文例句）山羊棚里有毯子可以用来依偎取暖。[/DU][DU]The child cuddled her teddy bear.|小女孩抱着她的泰迪熊。[/DU][/DEF][IMG]infopic01/cuddle.webp[/IMG]",
+"[TITLE]常见用法[/TITLE][COLL][H]cuddle with sb|和某人依偎[POS]v. phr.[/POS][/H][EX]The puppy cuddled with its owner.|小狗依偎在主人怀里。[/EX][C]cuddle with a pet|和宠物依偎[/C][/COLL][COLL][H]cuddle up|依偎在一起[POS]v. phr.[/POS][/H][EX]The children cuddled up under the blanket.|孩子们在毯子下依偎在一起。[/EX][C]cuddle up together|依偎在一起[/C][/COLL]",
+"[TITLE]额外例句[/TITLE][EX]The kitten cuddled next to its mother.|小猫依偎在妈妈身边。[/EX][EX]They cuddled on the sofa to watch a movie.|他们依偎在沙发上看电影。[/EX]",
+"[TITLE]常见错误[/TITLE][ERR]cuddle表示亲密依偎，不要和hug完全等同使用。[/ERR][ERR]cuddle通常强调温暖或舒适的感觉，而hug只是简单拥抱。[/ERR]"
+]
+},
+
+"w559": {
+"word": "snuggle",
+"images": {
+"scene": ["infopic01/snuggle.webp"],
+"card": ["wordpic01/snuggle.webp"]
+},
+"richDetail": [
+"[TITLE]解释[/TITLE][DEF][EN]To snuggle means to settle yourself comfortably and closely against someone or something.[/EN][CN]舒服地依偎；蜷缩依靠[/CN][POS]v.[/POS][PH]/ˈsnʌɡl/[/PH][DU]And straw for snuggling.|（原文例句）还有干草可以让大家舒服地依偎。[/DU][DU]The baby snuggled into the blanket.|宝宝舒服地钻进毯子里。[/DU][/DEF][IMG]infopic01/snuggle.webp[/IMG]",
+"[TITLE]常见用法[/TITLE][COLL][H]snuggle into sth|钻进某物取暖[POS]v. phr.[/POS][/H][EX]She snuggled into her warm coat.|她钻进温暖的外套里。[/EX][C]snuggle into a blanket|钻进毯子里[/C][/COLL][COLL][H]snuggle up to sb|依偎在某人身边[POS]v. phr.[/POS][/H][EX]The child snuggled up to her mother.|孩子依偎在妈妈身边。[/EX][C]snuggle up together|依偎在一起[/C][/COLL]",
+"[TITLE]额外例句[/TITLE][EX]The puppy snuggled beside the fire.|小狗依偎在火炉旁。[/EX][EX]The cat snuggled into a soft pillow.|猫咪钻进柔软的枕头里。[/EX]",
+"[TITLE]常见错误[/TITLE][ERR]snuggle通常带有“舒服地靠近”的意思，不要用来表示普通的坐或躺。[/ERR][ERR]不要和struggle（挣扎）混淆。[/ERR]"
+]
+},
+
+"w560": {
+"word": "not to mention",
+"images": {
+"scene": ["infopic01/not_to_mention.webp"],
+"card": ["wordpic01/not_to_mention.webp"]
+},
+"richDetail": [
+"[TITLE]解释[/TITLE][DEF][EN]Not to mention is used to add extra information that makes something even more true or surprising.[/EN][CN]更不用说；更何况[/CN][POS]phr.[/POS][PH]/nɒt tə ˈmenʃən/[/PH][DU]Not to mention hot cocoa.|（原文例句）更不用说还有热可可。[/DU][DU]He is smart, not to mention hardworking.|他很聪明，更不用说还很勤奋。[/DU][/DEF][IMG]infopic01/not_to_mention.webp[/IMG]",
+"[TITLE]常见用法[/TITLE][COLL][H]not to mention sth|更不用说某事[POS]phr.[/POS][/H][EX]The house is big, not to mention beautiful.|房子很大，更不用说很漂亮。[/EX][C]not to mention the cost|更不用说费用[/C][/COLL]",
+"[TITLE]额外例句[/TITLE][EX]The trip was fun, not to mention exciting.|这次旅行很有趣，更不用说还很刺激。[/EX][EX]The cake is tasty, not to mention colorful.|蛋糕很好吃，更不用说颜色漂亮。[/EX]",
+"[TITLE]常见错误[/TITLE][ERR]not to mention通常用于补充强调，不用于句首独立表达。[/ERR][ERR]后面一般接名词或短语，不直接接完整句子。[/ERR]"
+]
+},
+
+"w561": {
+"word": "cocoa",
+"images": {
+"scene": ["infopic01/cocoa.webp"],
+"card": ["wordpic01/cocoa.webp"]
+},
+"richDetail": [
+"[TITLE]解释[/TITLE][DEF][EN]Cocoa is a warm drink made from chocolate powder and milk or water.[/EN][CN]热可可；可可饮料[/CN][POS]n.[/POS][PH]/ˈkəʊkəʊ/[/PH][DU]Not to mention hot cocoa.|（原文例句）更不用说还有热可可。[/DU][DU]She drank a cup of cocoa on a cold day.|寒冷的日子里她喝了一杯热可可。[/DU][/DEF][IMG]infopic01/cocoa.webp[/IMG]",
+"[TITLE]常见用法[/TITLE][COLL][H]hot cocoa|热可可[POS]n. phr.[/POS][/H][EX]We drank hot cocoa after playing in the snow.|我们在雪地玩后喝了热可可。[/EX][C]a cup of cocoa|一杯可可[/C][/COLL]",
+"[TITLE]额外例句[/TITLE][EX]The children enjoyed warm cocoa.|孩子们喜欢温热的可可。[/EX][EX]Cocoa tastes sweet and chocolatey.|可可尝起来甜甜的像巧克力。[/EX]",
+"[TITLE]常见错误[/TITLE][ERR]cocoa通常指饮料或可可粉，不等同于chocolate。[/ERR][ERR]不要把拼写写成coco。[/ERR]"
+]
+},
+
+"w562": {
+"word": "smash",
+"images": {
+"scene": ["infopic01/smash.webp"],
+"card": ["wordpic01/smash.webp"]
+},
+"richDetail": [
+"[TITLE]解释[/TITLE][DEF][EN]To smash means to break something violently into pieces.[/EN][CN]猛砸；打碎；撞碎[/CN][POS]v.[/POS][PH]/smæʃ/[/PH][DU]When a huge foot smashed the snow monster flat.|（原文例句）一只巨大的脚把雪怪踩得扁扁的。[/DU][DU]He smashed the glass by accident.|他不小心把玻璃打碎了。[/DU][/DEF][IMG]infopic01/smash.webp[/IMG]",
+"[TITLE]常见用法[/TITLE][COLL][H]smash sth|打碎某物[POS]v.[/POS][/H][EX]The boy smashed the toy.|男孩把玩具弄坏了。[/EX][C]smash a window|打碎窗户[/C][/COLL]",
+"[TITLE]额外例句[/TITLE][EX]The wave smashed against the rocks.|海浪拍打在岩石上。[/EX][EX]He smashed the snowball on the ground.|他把雪球砸在地上。[/EX]",
+"[TITLE]常见错误[/TITLE][ERR]smash强调猛烈破坏，不要用于轻微碰撞。[/ERR][ERR]不要和crash完全混用，crash更多表示撞击。[/ERR]"
+]
+},
+
+"w563": {
+"word": "squashy",
+"images": {
+"scene": ["infopic01/squashy.webp"],
+"card": ["wordpic01/squashy.webp"]
+},
+"richDetail": [
+"[TITLE]解释[/TITLE][DEF][EN]Squashy means soft and easy to squash or press flat.[/EN][CN]软软的；容易被压扁的[/CN][POS]adj.[/POS][PH]/ˈskwɒʃi/[/PH][DU]“SQUASHY!” boomed a voice from high above them.|（原文例句）“软软的！”一个声音从高处轰隆响起。[/DU][DU]The pillow is soft and squashy.|枕头又软又蓬松。[/DU][/DEF][IMG]infopic01/squashy.webp[/IMG]",
+"[TITLE]常见用法[/TITLE][COLL][H]soft and squashy|柔软易压扁[POS]adj.[/POS][/H][EX]The toy is soft and squashy.|这个玩具又软又好捏。[/EX][C]a squashy pillow|软枕头[/C][/COLL]",
+"[TITLE]额外例句[/TITLE][EX]The mud was squashy after the rain.|雨后泥巴软软的。[/EX][EX]The cake feels squashy when you press it.|按一下蛋糕会感觉软软的。[/EX]",
+"[TITLE]常见错误[/TITLE][ERR]squashy通常用于描述柔软物体，不用于描述坚硬物体。[/ERR][ERR]不要和squash（动词：压扁）混淆。[/ERR]"
+]
+},
+"w564": {
+"word": "wobbly",
+"images": {
+"scene": ["infopic01/wobbly.webp"],
+"card": ["wordpic01/wobbly.webp"]
+},
+"richDetail": [
+"[TITLE]解释[/TITLE][DEF][EN]Wobbly means shaking or moving from side to side because something is not steady.[/EN][CN]摇摇晃晃的；不稳的[/CN][POS]adj.[/POS][PH]/ˈwɒbli/[/PH][DU]The giant took a wobbly step.|（原文例句）巨人迈出了一步摇摇晃晃的步子。[/DU][DU]The table is wobbly.|桌子摇摇晃晃的。[/DU][/DEF][IMG]infopic01/wobbly.webp[/IMG]",
+"[TITLE]常见用法[/TITLE][COLL][H]a wobbly step|摇晃的一步[POS]n. phr.[/POS][/H][EX]The baby took a wobbly step.|宝宝迈出了摇摇晃晃的一步。[/EX][C]wobbly legs|发软的腿[/C][/COLL][COLL][H]feel wobbly|感到站不稳[POS]v. phr.[/POS][/H][EX]After spinning, I felt wobbly.|转圈后我感觉站不稳。[/EX][C]a wobbly chair|摇晃的椅子[/C][/COLL]",
+"[TITLE]额外例句[/TITLE][EX]The tower of blocks became wobbly.|积木塔开始摇晃。[/EX][EX]He walked with wobbly legs.|他走路时腿有些发抖。[/EX]",
+"[TITLE]常见错误[/TITLE][ERR]wobbly是形容词，不要当动词使用。[/ERR][ERR]不要和wiggly混淆，wiggly表示“扭来扭去”。[/ERR]"
+]
+},
+
+"w565": {
+"word": "sideways",
+"images": {
+"scene": ["infopic01/sideways.webp"],
+"card": ["wordpic01/sideways.webp"]
+},
+"richDetail": [
+"[TITLE]解释[/TITLE][DEF][EN]Sideways means toward or from the side instead of forward or backward.[/EN][CN]向侧面地；横向地[/CN][POS]adv.[/POS][PH]/ˈsaɪdweɪz/[/PH][DU]The giant took a step sideways.|（原文例句）巨人向侧面迈了一步。[/DU][DU]The crab walked sideways.|螃蟹横着走。[/DU][/DEF][IMG]infopic01/sideways.webp[/IMG]",
+"[TITLE]常见用法[/TITLE][COLL][H]move sideways|向侧面移动[POS]v. phr.[/POS][/H][EX]The boy moved sideways to pass.|男孩侧身通过。[/EX][C]step sideways|向侧面一步[/C][/COLL]",
+"[TITLE]额外例句[/TITLE][EX]The car slid sideways on the ice.|车在冰上横向滑动。[/EX][EX]He looked sideways at his friend.|他侧眼看了朋友一眼。[/EX]",
+"[TITLE]常见错误[/TITLE][ERR]sideways是副词，通常修饰动词，不作名词。[/ERR][ERR]不要和sideway混淆，常用形式是sideways。[/ERR]"
+]
+},
+
+"w566": {
+"word": "lumpy",
+"images": {
+"scene": ["infopic01/lumpy.webp"],
+"card": ["wordpic01/lumpy.webp"]
+},
+"richDetail": [
+"[TITLE]解释[/TITLE][DEF][EN]Lumpy means having many lumps or uneven bumps.[/EN][CN]有块状的；凹凸不平的[/CN][POS]adj.[/POS][PH]/ˈlʌmpi/[/PH][DU]It froze into a lumpy icicle.|（原文例句）它冻成了一根凹凸不平的冰柱。[/DU][DU]The mashed potatoes are lumpy.|土豆泥有些结块。[/DU][/DEF][IMG]infopic01/lumpy.webp[/IMG]",
+"[TITLE]常见用法[/TITLE][COLL][H]lumpy ice|凹凸不平的冰[POS]n. phr.[/POS][/H][EX]The road was covered with lumpy ice.|路上布满了不平的冰块。[/EX][C]lumpy soup|结块的汤[/C][/COLL]",
+"[TITLE]额外例句[/TITLE][EX]The pillow felt lumpy.|枕头摸起来一块一块的。[/EX][EX]The dough became lumpy.|面团变得有很多块。[/EX]",
+"[TITLE]常见错误[/TITLE][ERR]lumpy通常描述物体表面不平，不用于描述情绪。[/ERR][ERR]不要和bumpy完全等同，bumpy更常形容道路颠簸。[/ERR]"
+]
+},
+
+"w567": {
+"word": "lasso",
+"images": {
+"scene": ["infopic01/lasso.webp"],
+"card": ["wordpic01/lasso.webp"]
+},
+"richDetail": [
+"[TITLE]解释[/TITLE][DEF][EN]A lasso is a rope with a loop used to catch animals.[/EN][CN]套索；用套索套住[/CN][POS]n./v.[/POS][PH]/læˈsuː/[/PH][DU]She lassoed the giant’s ear and climbed the rope to his shoulder.|（原文例句）她用套索套住巨人的耳朵，然后顺着绳子爬到他的肩膀。[/DU][DU]The cowboy used a lasso to catch the cow.|牛仔用套索套住了牛。[/DU][/DEF][IMG]infopic01/lasso.webp[/IMG]",
+"[TITLE]常见用法[/TITLE][COLL][H]throw a lasso|抛出套索[POS]v. phr.[/POS][/H][EX]The cowboy threw a lasso.|牛仔抛出套索。[/EX][C]lasso a horse|套住马[/C][/COLL]",
+"[TITLE]额外例句[/TITLE][EX]He lassoed the runaway horse.|他用套索抓住了逃跑的马。[/EX][EX]The hero used a rope like a lasso.|英雄用绳子像套索一样。[/EX]",
+"[TITLE]常见错误[/TITLE][ERR]lasso既可以是名词也可以是动词。[/ERR][ERR]不要拼写成laso或lassoo。[/ERR]"
+]
+},
+
+"w568": {
+"word": "distract",
+"images": {
+"scene": ["infopic01/distract.webp"],
+"card": ["wordpic01/distract.webp"]
+},
+"richDetail": [
+"[TITLE]解释[/TITLE][DEF][EN]To distract means to take someone's attention away from something.[/EN][CN]分散注意力；使分心[/CN][POS]v.[/POS][PH]/dɪˈstrækt/[/PH][DU]She was distracted by the giant.|（原文例句）她被巨人分散了注意力。[/DU][DU]The noise distracted the students.|噪音让学生分心。[/DU][/DEF][IMG]infopic01/distract.webp[/IMG]",
+"[TITLE]常见用法[/TITLE][COLL][H]distract sb from sth|使某人从某事分心[POS]v. phr.[/POS][/H][EX]The game distracted him from his homework.|游戏让他从作业上分心。[/EX][C]distract attention|分散注意力[/C][/COLL]",
+"[TITLE]额外例句[/TITLE][EX]Music distracted her while studying.|音乐让她学习时分心。[/EX][EX]He tried to distract the dog.|他试图转移狗的注意力。[/EX]",
+"[TITLE]常见错误[/TITLE][ERR]distract后面通常接人作宾语，如distract someone。[/ERR][ERR]不要和attract（吸引）混淆。[/ERR]"
+]
+},
+"w569": {
+"word": "gooey",
+"images": {
+"scene": ["infopic01/gooey.webp"],
+"card": ["wordpic01/gooey.webp"]
+},
+"richDetail": [
+"[TITLE]解释[/TITLE][DEF][EN]Gooey means soft, sticky, and a little messy.[/EN][CN]黏糊糊的；软黏的[/CN][POS]adj.[/POS][PH]/ˈɡuːi/[/PH][DU]The shed was now broken in two. And also gooey with drool.|（原文例句）棚子现在断成了两半，而且被口水弄得黏糊糊的。[/DU][DU]The chocolate cake is warm and gooey.|这个巧克力蛋糕又热又黏软。[/DU][/DEF][IMG]infopic01/gooey.webp[/IMG]",
+"[TITLE]常见用法[/TITLE][COLL][H]gooey chocolate|黏软的巧克力[POS]n. phr.[/POS][/H][EX]The brownie has gooey chocolate inside.|布朗尼里面是黏软的巧克力。[/EX][C]gooey cake|黏软蛋糕[/C][/COLL]",
+"[TITLE]额外例句[/TITLE][EX]The candy became gooey in the sun.|糖果在太阳下变得黏糊糊的。[/EX][EX]His hands were gooey with syrup.|他的手沾满了糖浆。[/EX]",
+"[TITLE]常见错误[/TITLE][ERR]gooey通常描述食物或黏液，不用于描述坚硬物体。[/ERR][ERR]不要和sticky完全等同，gooey更强调软和黏。[/ERR]"
+]
+},
+
+"w570": {
+"word": "cozy",
+"images": {
+"scene": ["infopic01/cozy.webp"],
+"card": ["wordpic01/cozy.webp"]
+},
+"richDetail": [
+"[TITLE]解释[/TITLE][DEF][EN]Cozy means warm, comfortable, and pleasant.[/EN][CN]温暖舒适的；惬意的[/CN][POS]adj.[/POS][PH]/ˈkəʊzi/[/PH][DU]It was a cozy day in Princess Honeysuckle’s kingdom.|（原文例句）在金银花公主的王国里，这是一个温暖舒适的日子。[/DU][DU]The room feels cozy with the fire burning.|壁炉燃烧时房间很温暖舒适。[/DU][/DEF][IMG]infopic01/cozy.webp[/IMG]",
+"[TITLE]常见用法[/TITLE][COLL][H]a cozy room|舒适的房间[POS]n. phr.[/POS][/H][EX]They sat in a cozy room by the fire.|他们坐在壁炉旁的舒适房间里。[/EX][C]cozy home|温馨的家[/C][/COLL]",
+"[TITLE]额外例句[/TITLE][EX]The blanket made the bed cozy.|毯子让床变得很舒适。[/EX][EX]We had a cozy evening indoors.|我们在室内度过了一个温馨的夜晚。[/EX]",
+"[TITLE]常见错误[/TITLE][ERR]cozy多用于环境或感觉，不用于描述严肃场合。[/ERR][ERR]英式拼写常为cosy。[/ERR]"
+]
+},
+
+"w571": {
+"word": "sprawl",
+"images": {
+"scene": ["infopic01/sprawl.webp"],
+"card": ["wordpic01/sprawl.webp"]
+},
+"richDetail": [
+"[TITLE]解释[/TITLE][DEF][EN]To sprawl means to sit or lie with arms and legs spread out in a relaxed way.[/EN][CN]四肢摊开地躺着或坐着[/CN][POS]v.[/POS][PH]/sprɔːl/[/PH][DU]Fur Suit the wolf sprawled beside the fire.|（原文例句）狼弗尔套四肢摊开地躺在火炉旁。[/DU][DU]He sprawled on the sofa after school.|他放学后摊在沙发上。[/DU][/DEF][IMG]infopic01/sprawl.webp[/IMG]",
+"[TITLE]常见用法[/TITLE][COLL][H]sprawl on/over sth|摊在某处[POS]v. phr.[/POS][/H][EX]The dog sprawled on the rug.|狗摊在地毯上。[/EX][C]sprawl on the couch|摊在沙发上[/C][/COLL]",
+"[TITLE]额外例句[/TITLE][EX]The kids sprawled on the grass.|孩子们躺在草地上。[/EX][EX]He sprawled across the bed.|他摊在床上。[/EX]",
+"[TITLE]常见错误[/TITLE][ERR]sprawl强调“懒散地摊开”，不要与sit或lie简单等同。[/ERR][ERR]不要和crawl混淆。[/ERR]"
+]
+},
+
+"w572": {
+"word": "cartwheel",
+"images": {
+"scene": ["infopic01/cartwheel.webp"],
+"card": ["wordpic01/cartwheel.webp"]
+},
+"richDetail": [
+"[TITLE]解释[/TITLE][DEF][EN]A cartwheel is a gymnastic move where someone turns their body sideways with hands and feet touching the ground.[/EN][CN]侧手翻；侧空翻[/CN][POS]n./v.[/POS][PH]/ˈkɑːrtwiːl/[/PH][DU]She did a cartwheel in the snow.|（原文例句）她在雪地里做了一个侧手翻。[/DU][DU]The girl can cartwheel across the yard.|女孩能在院子里做侧手翻。[/DU][/DEF][IMG]infopic01/cartwheel.webp[/IMG]",
+"[TITLE]常见用法[/TITLE][COLL][H]do a cartwheel|做侧手翻[POS]v. phr.[/POS][/H][EX]The gymnast did a perfect cartwheel.|体操运动员做了一个完美侧手翻。[/EX][C]practice cartwheels|练习侧手翻[/C][/COLL]",
+"[TITLE]额外例句[/TITLE][EX]The children tried cartwheels on the grass.|孩子们在草地上练侧手翻。[/EX][EX]She laughed after doing a cartwheel.|做完侧手翻她笑了。[/EX]",
+"[TITLE]常见错误[/TITLE][ERR]cartwheel既可作名词也可作动词。[/ERR][ERR]不要写成cartweel。[/ERR]"
+]
+},
+
+"w573": {
+"word": "shortcut",
+"images": {
+"scene": ["infopic01/shortcut.webp"],
+"card": ["wordpic01/shortcut.webp"]
+},
+"richDetail": [
+"[TITLE]解释[/TITLE][DEF][EN]A shortcut is a quicker way to get somewhere or do something.[/EN][CN]捷径；近路[/CN][POS]n.[/POS][PH]/ˈʃɔːrtkʌt/[/PH][DU]Let’s take a shortcut through Princess Euphoria’s kingdom!|（原文例句）我们从欢欣公主的王国走一条近路吧！[/DU][DU]This path is a shortcut to the park.|这条路是去公园的捷径。[/DU][/DEF][IMG]infopic01/shortcut.webp[/IMG]",
+"[TITLE]常见用法[/TITLE][COLL][H]take a shortcut|走捷径[POS]v. phr.[/POS][/H][EX]We took a shortcut through the woods.|我们穿过树林走近路。[/EX][C]find a shortcut|找到捷径[/C][/COLL]",
+"[TITLE]额外例句[/TITLE][EX]He found a shortcut to school.|他找到了一条去学校的近路。[/EX][EX]This road is a shortcut across town.|这条路是穿过城镇的近路。[/EX]",
+"[TITLE]常见错误[/TITLE][ERR]shortcut通常指“更快的路线”，不要与simple way完全等同。[/ERR][ERR]不要写成short cut（多数情况下写作shortcut）。[/ERR]"
+]
+},
+
+"w574": {
+"word": "headfirst",
+"images": {
+"scene": ["infopic01/headfirst.webp"],
+"card": ["wordpic01/headfirst.webp"]
+},
+"richDetail": [
+"[TITLE]解释[/TITLE][DEF][EN]Headfirst means with the head going first before the rest of the body.[/EN][CN]头朝前地；头先着地地[/CN][POS]adv.[/POS][PH]/ˈhedfɜːrst/[/PH][DU]Landing headfirst in a pile of snow was not a party.|（原文例句）头朝下摔进一堆雪里可不好玩。[/DU][DU]He dived headfirst into the pool.|他头朝前跳进泳池。[/DU][/DEF][IMG]infopic01/headfirst.webp[/IMG]",
+"[TITLE]常见用法[/TITLE][COLL][H]fall headfirst|头朝下摔倒[POS]v. phr.[/POS][/H][EX]The boy fell headfirst into the sand.|男孩头朝下摔进沙子里。[/EX][C]dive headfirst|头朝前跳水[/C][/COLL]",
+"[TITLE]额外例句[/TITLE][EX]She jumped headfirst into the water.|她头朝前跳进水里。[/EX][EX]The puppy rolled headfirst down the hill.|小狗头朝下滚下山坡。[/EX]",
+"[TITLE]常见错误[/TITLE][ERR]headfirst是副词，不作为形容词直接修饰名词。[/ERR][ERR]不要写成head first（在多数情况下写作一个词）。[/ERR]"
+]
+},
+
+"w575": {
+"word": "coatrack",
+"images": {
+"scene": ["infopic01/coatrack.webp"],
+"card": ["wordpic01/coatrack.webp"]
+},
+"richDetail": [
+"[TITLE]解释[/TITLE][DEF][EN]A coatrack is a stand or hooks used to hang coats and hats.[/EN][CN]衣帽架[/CN][POS]n.[/POS][PH]/ˈkəʊtræk/[/PH][DU]The giant knocked over the coatrack.|（原文例句）巨人撞倒了衣帽架。[/DU][DU]She hung her coat on the coatrack.|她把外套挂在衣帽架上。[/DU][/DEF][IMG]infopic01/coatrack.webp[/IMG]",
+"[TITLE]常见用法[/TITLE][COLL][H]hang sth on a coatrack|把衣服挂在衣帽架上[POS]v. phr.[/POS][/H][EX]He hung his hat on the coatrack.|他把帽子挂在衣帽架上。[/EX][C]wooden coatrack|木制衣帽架[/C][/COLL]",
+"[TITLE]额外例句[/TITLE][EX]The coatrack stood by the door.|衣帽架放在门边。[/EX][EX]There are many coats on the coatrack.|衣帽架上挂着很多外套。[/EX]",
+"[TITLE]常见错误[/TITLE][ERR]coatrack有时写作coat rack，两种都可。[/ERR][ERR]不要和closet混淆，closet是衣柜。[/ERR]"
+]
+},
+
+"w576": {
+"word": "playpen",
+"images": {
+"scene": ["infopic01/playpen.webp"],
+"card": ["wordpic01/playpen.webp"]
+},
+"richDetail": [
+"[TITLE]解释[/TITLE][DEF][EN]A playpen is a small safe area where babies can play.[/EN][CN]婴儿围栏；婴儿游戏围栏[/CN][POS]n.[/POS][PH]/ˈpleɪpen/[/PH][DU]The baby sat safely inside the playpen.|（示例句）宝宝安全地坐在游戏围栏里。[/DU][DU]She put toys in the playpen.|她把玩具放进围栏里。[/DU][/DEF][IMG]infopic01/playpen.webp[/IMG]",
+"[TITLE]常见用法[/TITLE][COLL][H]baby playpen|婴儿围栏[POS]n. phr.[/POS][/H][EX]The baby crawled around the playpen.|宝宝在围栏里爬来爬去。[/EX][C]portable playpen|便携围栏[/C][/COLL]",
+"[TITLE]额外例句[/TITLE][EX]The toddler laughed inside the playpen.|小宝宝在围栏里笑。[/EX][EX]Parents keep toys in the playpen.|父母把玩具放在围栏里。[/EX]",
+"[TITLE]常见错误[/TITLE][ERR]playpen通常指婴儿围栏，不用于普通游乐场。[/ERR][ERR]不要和playground混淆。[/ERR]"
+]
+},
+
+"w577": {
+"word": "slush",
+"images": {
+"scene": ["infopic01/slush.webp"],
+"card": ["wordpic01/slush.webp"]
+},
+"richDetail": [
+"[TITLE]解释[/TITLE][DEF][EN]Slush is partly melted snow that is soft and wet.[/EN][CN]泥雪；融化的湿雪[/CN][POS]n.[/POS][PH]/slʌʃ/[/PH][DU]The street was full of slush after the snow melted.|（示例句）雪融化后街上满是泥雪。[/DU][DU]The boots splashed through the slush.|靴子踩在泥雪里溅起水花。[/DU][/DEF][IMG]infopic01/slush.webp[/IMG]",
+"[TITLE]常见用法[/TITLE][COLL][H]snowy slush|泥雪[POS]n. phr.[/POS][/H][EX]Cars splashed through the slush.|汽车溅起泥雪。[/EX][C]walk through slush|踩着泥雪走[/C][/COLL]",
+"[TITLE]额外例句[/TITLE][EX]The road turned into slush in the afternoon.|下午路上的雪变成泥雪。[/EX][EX]Children jumped in the slush.|孩子们在泥雪里跳。[/EX]",
+"[TITLE]常见错误[/TITLE][ERR]slush通常指半融化的雪，不等同于mud。[/ERR][ERR]不要写成slosh。[/ERR]"
+]
+},
+
+"w578": {
+"word": "thunderous",
+"images": {
+"scene": ["infopic01/thunderous.webp"],
+"card": ["wordpic01/thunderous.webp"]
+},
+"richDetail": [
+"[TITLE]解释[/TITLE][DEF][EN]Thunderous means extremely loud like thunder.[/EN][CN]雷鸣般的；非常响的[/CN][POS]adj.[/POS][PH]/ˈθʌndərəs/[/PH][DU]The crowd gave a thunderous cheer.|（示例句）人群发出了雷鸣般的欢呼。[/DU][DU]There was a thunderous boom in the sky.|天空中传来雷鸣般的巨响。[/DU][/DEF][IMG]infopic01/thunderous.webp[/IMG]",
+"[TITLE]常见用法[/TITLE][COLL][H]thunderous applause|雷鸣般的掌声[POS]n. phr.[/POS][/H][EX]The actor received thunderous applause.|演员得到了雷鸣般的掌声。[/EX][C]thunderous roar|雷鸣般的吼声[/C][/COLL]",
+"[TITLE]额外例句[/TITLE][EX]The giant made a thunderous step.|巨人迈出雷鸣般的一步。[/EX][EX]Thunderous laughter filled the hall.|大厅里充满了雷鸣般的笑声。[/EX]",
+"[TITLE]常见错误[/TITLE][ERR]thunderous强调声音巨大，不表示愤怒。[/ERR][ERR]不要与thundering混淆。[/ERR]"
+]
 }
 
 
