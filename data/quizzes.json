@@ -3851,7 +3851,190 @@
     "question": "After weeks without cleaning, there was a ______ of dust on the window.",
     "options": ["bouquet", "odor", "build-up", "cavity"],
     "answer": 2
+  },
+  "q_w553": {
+    "type": "choice_text",
+    "wordIds": ["w553"],
+    "question": "When it got cold, the puppy wanted to ______ by the fire.",
+    "options": ["sprawl", "trot", "distract", "curl up"],
+    "answer": 3
+  },
+  "q_w554": {
+    "type": "choice_text",
+    "wordIds": ["w554"],
+    "question": "After a big lunch, I felt ______ and almost fell asleep.",
+    "options": ["drowsy", "thunderous", "tough", "sideways"],
+    "answer": 0
+  },
+  "q_w555": {
+    "type": "choice_text",
+    "wordIds": ["w555"],
+    "question": "She glued photos and little tickets into her ______.",
+    "options": ["playpen", "coatrack", "scrapbook", "moss"],
+    "answer": 2
+  },
+  "q_w556": {
+    "type": "choice_text",
+    "wordIds": ["w556"],
+    "question": "The ball was ______ the goal, but it missed!",
+    "options": ["not to mention", "a whisker away from", "depend on", "keep one's word"],
+    "answer": 1
+  },
+  "q_w557": {
+    "type": "choice_text",
+    "wordIds": ["w557"],
+    "question": "I tried to stay serious, but I couldn’t ______ laughing.",
+    "options": ["digest", "deny", "distract", "resist"],
+    "answer": 3
+  },
+  "q_w558": {
+    "type": "choice_text",
+    "wordIds": ["w558"],
+    "question": "The little child wanted to ______ with her teddy bear.",
+    "options": ["smash", "cuddle", "lasso", "wear away"],
+    "answer": 1
+  },
+  "q_w559": {
+    "type": "choice_text",
+    "wordIds": ["w559"],
+    "question": "The baby likes to ______ into a warm blanket.",
+    "options": ["snuggle", "combine", "prevent", "trim"],
+    "answer": 0
+  },
+  "q_w560": {
+    "type": "choice_text",
+    "wordIds": ["w560"],
+    "question": "The party was fun, ______ the hot cocoa!",
+    "options": ["a whisker away from", "sideways", "not to mention", "headfirst"],
+    "answer": 2
+  },
+  "q_w561": {
+    "type": "choice_text",
+    "wordIds": ["w561"],
+    "question": "We drank hot ______ after playing in the snow.",
+    "options": ["slush", "cocoa", "saliva", "coating"],
+    "answer": 1
+  },
+  "q_w562": {
+    "type": "choice_text",
+    "wordIds": ["w562"],
+    "question": "Be careful! Don’t ______ the glass.",
+    "options": ["smash", "savor", "cuddle", "soften"],
+    "answer": 0
+  },
+  "q_w563": {
+    "type": "choice_text",
+    "wordIds": ["w563"],
+    "question": "This toy feels soft and ______ when you press it.",
+    "options": ["tough", "thunderous", "wobbly", "squashy"],
+    "answer": 3
+  },
+  "q_w564": {
+    "type": "choice_text",
+    "wordIds": ["w564"],
+    "question": "That chair is ______, so don’t lean back too far.",
+    "options": ["cozy", "lumpy", "wobbly", "gooey"],
+    "answer": 2
+  },
+  "q_w565": {
+    "type": "choice_text",
+    "wordIds": ["w565"],
+    "question": "A crab usually walks ______, not straight forward.",
+    "options": ["headfirst", "sideways", "drowsy", "tough"],
+    "answer": 1
+  },
+  "q_w566": {
+    "type": "choice_text",
+    "wordIds": ["w566"],
+    "question": "My mashed potatoes turned out ______, with lots of little lumps.",
+    "options": ["lumpy", "cozy", "thunderous", "sugary"],
+    "answer": 0
+  },
+  "q_w567": {
+    "type": "choice_text",
+    "wordIds": ["w567"],
+    "question": "The cowboy threw a ______ to catch the horse.",
+    "options": ["coatrack", "scrapbook", "lasso", "shortcut"],
+    "answer": 2
+  },
+  "q_w568": {
+    "type": "choice_text",
+    "wordIds": ["w568"],
+    "question": "The noise can ______ me from my homework.",
+    "options": ["prevent", "resist", "combine", "distract"],
+    "answer": 3
+  },
+  "q_w569": {
+    "type": "choice_text",
+    "wordIds": ["w569"],
+    "question": "The warm chocolate inside the cookie was ______ and sticky.",
+    "options": ["gooey", "tough", "wobbly", "moldy"],
+    "answer": 0
+  },
+  "q_w570": {
+    "type": "choice_text",
+    "wordIds": ["w570"],
+    "question": "With a blanket and a fire, the room felt ______.",
+    "options": ["drowsy", "sideways", "cozy", "lumpy"],
+    "answer": 2
+  },
+  "q_w571": {
+    "type": "choice_text",
+    "wordIds": ["w571"],
+    "question": "After the long hike, he decided to ______ on the sofa.",
+    "options": ["cartwheel", "sprawl", "deny", "digest"],
+    "answer": 1
+  },
+  "q_w572": {
+    "type": "choice_text",
+    "wordIds": ["w572"],
+    "question": "She did a ______ across the grass like a gymnast.",
+    "options": ["shortcut", "coatrack", "scrapbook", "cartwheel"],
+    "answer": 3
+  },
+  "q_w573": {
+    "type": "choice_text",
+    "wordIds": ["w573"],
+    "question": "This path is a ______ to the park—it saves time.",
+    "options": ["shortcut", "cartwheel", "drowsy", "coating"],
+    "answer": 0
+  },
+  "q_w574": {
+    "type": "choice_text",
+    "wordIds": ["w574"],
+    "question": "He jumped ______ into the pool.",
+    "options": ["sheepishly", "sideways", "headfirst", "cozy"],
+    "answer": 2
+  },
+  "q_w575": {
+    "type": "choice_text",
+    "wordIds": ["w575"],
+    "question": "Hang your jacket on the ______ by the door.",
+    "options": ["playpen", "coatrack", "lasso", "slush"],
+    "answer": 1
+  },
+  "q_w576": {
+    "type": "choice_text",
+    "wordIds": ["w576"],
+    "question": "The baby played safely inside the ______.",
+    "options": ["coatrack", "scrapbook", "gazebo", "playpen"],
+    "answer": 3
+  },
+  "q_w577": {
+    "type": "choice_text",
+    "wordIds": ["w577"],
+    "question": "The snow melted into wet ______ on the street.",
+    "options": ["slush", "moss", "plaque", "cocoa"],
+    "answer": 0
+  },
+  "q_w578": {
+    "type": "choice_text",
+    "wordIds": ["w578"],
+    "question": "The audience gave ______ applause after the show.",
+    "options": ["gooey", "wobbly", "thunderous", "drowsy"],
+    "answer": 2
   }
+
 
 
 
