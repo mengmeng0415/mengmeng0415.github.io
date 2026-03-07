@@ -7555,6 +7555,326 @@
 "[TITLE]额外例句[/TITLE][EX]The giant made a thunderous step.|巨人迈出雷鸣般的一步。[/EX][EX]Thunderous laughter filled the hall.|大厅里充满了雷鸣般的笑声。[/EX]",
 "[TITLE]常见错误[/TITLE][ERR]thunderous强调声音巨大，不表示愤怒。[/ERR][ERR]不要与thundering混淆。[/ERR]"
 ]
+},
+"w579": {
+"word": "salty",
+"images": {
+"scene": ["infopic01/salty.webp"],
+"card": ["wordpic01/salty.webp"]
+},
+"richDetail": [
+"[TITLE]解释[/TITLE][DEF][EN]Salty means tasting like salt or containing salt.[/EN][CN]咸的；含盐的[/CN][POS]adj.[/POS][PH]/ˈsɔːlti/[/PH][DU]The breeze was salty and cool.|（原文例句）海风咸咸的，又凉爽。[/DU][DU]These fries are too salty.|这些薯条太咸了。[/DU][/DEF][IMG]infopic01/salty.webp[/IMG]",
+"[TITLE]常见用法[/TITLE][COLL][H]salty water|咸水[POS]adj. phr.[/POS][/H][EX]Fish live in salty water.|鱼生活在咸水中。[/EX][C]salty snacks|咸味零食[/C][/COLL]",
+"[TITLE]额外例句[/TITLE][EX]The ocean tastes salty.|海水尝起来很咸。[/EX][EX]He likes salty popcorn.|他喜欢咸味爆米花。[/EX]",
+"[TITLE]常见错误[/TITLE][ERR]salty表示“咸的”，不要误用为salt。[/ERR][ERR]不要说very salt，应说very salty。[/ERR]"
+]
+},
+
+"w580": {
+"word": "pal",
+"images": {
+"scene": ["infopic01/pal.webp"],
+"card": ["wordpic01/pal.webp"]
+},
+"richDetail": [
+"[TITLE]解释[/TITLE][DEF][EN]A pal is a close friend.[/EN][CN]朋友；伙伴[/CN][POS]n.[/POS][PH]/pæl/[/PH][DU]She was having a princess hero playdate with her two best pals.|（原文例句）她正和两个最好的伙伴进行公主英雄的玩耍约会。[/DU][DU]Tom is my best pal.|汤姆是我最好的伙伴。[/DU][/DEF][IMG]infopic01/pal.webp[/IMG]",
+"[TITLE]常见用法[/TITLE][COLL][H]best pal|最好的朋友[POS]n. phr.[/POS][/H][EX]Lucy is my best pal.|露西是我最好的朋友。[/EX][C]old pal|老朋友[/C][/COLL]",
+"[TITLE]额外例句[/TITLE][EX]He went to the park with his pals.|他和朋友们去公园了。[/EX][EX]My pal helped me with my homework.|我的伙伴帮我做作业。[/EX]",
+"[TITLE]常见错误[/TITLE][ERR]pal较口语化，不适合正式写作。[/ERR][ERR]不要把pal误写为pale。[/ERR]"
+]
+},
+
+"w581": {
+"word": "lend",
+"images": {
+"scene": ["infopic01/lend.webp"],
+"card": ["wordpic01/lend.webp"]
+},
+"richDetail": [
+"[TITLE]解释[/TITLE][DEF][EN]To lend means to give something to someone for a short time and expect it back later.[/EN][CN]借出；把……借给[/CN][POS]v.[/POS][PH]/lend/[/PH][DU]So kind of Princess Sneezewort to lend us her royal boat.|（原文例句）斯尼兹沃特公主把她的皇家船借给我们，真是太好了。[/DU][DU]Can you lend me a pencil?|你能借我一支铅笔吗？[/DU][/DEF][IMG]infopic01/lend.webp[/IMG]",
+"[TITLE]常见用法[/TITLE][COLL][H]lend sb sth|借给某人某物[POS]v. phr.[/POS][/H][EX]She lent me her book.|她把书借给了我。[/EX][C]lend a hand|帮忙[/C][/COLL]",
+"[TITLE]额外例句[/TITLE][EX]He lent his bike to a friend.|他把自行车借给了朋友。[/EX][EX]Please lend me your ruler.|请把你的尺子借我。[/EX]",
+"[TITLE]常见错误[/TITLE][ERR]lend表示“借出”，borrow表示“借入”，不要混淆。[/ERR][ERR]过去式是lent，不是lended。[/ERR]"
+]
+},
+
+"w582": {
+"word": "royal",
+"images": {
+"scene": ["infopic01/royal.webp"],
+"card": ["wordpic01/royal.webp"]
+},
+"richDetail": [
+"[TITLE]解释[/TITLE][DEF][EN]Royal means related to a king, queen, or royal family.[/EN][CN]皇家的；王室的[/CN][POS]adj.[/POS][PH]/ˈrɔɪəl/[/PH][DU]So kind of Princess Sneezewort to lend us her royal boat.|（原文例句）斯尼兹沃特公主把她的皇家船借给我们，真是太好了。[/DU][DU]The royal palace is very beautiful.|皇家宫殿非常美丽。[/DU][/DEF][IMG]infopic01/royal.webp[/IMG]",
+"[TITLE]常见用法[/TITLE][COLL][H]royal family|王室[POS]n. phr.[/POS][/H][EX]The royal family lives in the palace.|王室住在宫殿里。[/EX][C]royal palace|皇宫[/C][/COLL]",
+"[TITLE]额外例句[/TITLE][EX]The king wore royal clothes.|国王穿着皇家服饰。[/EX][EX]They visited a royal castle.|他们参观了一座皇家城堡。[/EX]",
+"[TITLE]常见错误[/TITLE][ERR]royal是形容词，不能直接当名词使用。[/ERR]"
+]
+},
+
+"w583": {
+"word": "colossal",
+"images": {
+"scene": ["infopic01/colossal.webp"],
+"card": ["wordpic01/colossal.webp"]
+},
+"richDetail": [
+"[TITLE]解释[/TITLE][DEF][EN]Colossal means extremely large or huge.[/EN][CN]巨大的；庞大的[/CN][POS]adj.[/POS][PH]/kəˈlɒsəl/[/PH][DU]A huge sea monster. A colossal sea monster!|（原文例句）一个巨大的海怪，一个庞然大物般的海怪！[/DU][DU]They built a colossal statue.|他们建造了一座巨大的雕像。[/DU][/DEF][IMG]infopic01/colossal.webp[/IMG]",
+"[TITLE]常见用法[/TITLE][COLL][H]colossal mistake|巨大的错误[POS]n. phr.[/POS][/H][EX]That was a colossal mistake.|那是一个巨大的错误。[/EX][C]colossal size|巨大的尺寸[/C][/COLL]",
+"[TITLE]额外例句[/TITLE][EX]The whale was colossal.|那只鲸鱼非常巨大。[/EX][EX]They saw a colossal building.|他们看到了一座庞大的建筑。[/EX]",
+"[TITLE]常见错误[/TITLE][ERR]不要拼写成colosal，应为colossal。[/ERR]"
+]
+},
+
+"w584": {
+"word": "gurgle",
+"images": {
+"scene": ["infopic01/gurgle.webp"],
+"card": ["wordpic01/gurgle.webp"]
+},
+"richDetail": [
+"[TITLE]解释[/TITLE][DEF][EN]To gurgle means to make a bubbling sound like water flowing.[/EN][CN]汩汩地流；发出汩汩声[/CN][POS]v.[/POS][PH]/ˈɡɜːrɡl/[/PH][DU]The water gurgled near the boat.|（原文例句）水在船边汩汩作响。[/DU][DU]The baby gurgled happily.|宝宝开心地咯咯笑。[/DU][/DEF][IMG]infopic01/gurgle.webp[/IMG]",
+"[TITLE]常见用法[/TITLE][COLL][H]water gurgle|水汩汩流[POS]v. phr.[/POS][/H][EX]The stream gurgled over the rocks.|小溪在石头间汩汩流动。[/EX][C]gurgle with laughter|咯咯笑[/C][/COLL]",
+"[TITLE]额外例句[/TITLE][EX]The pipe gurgled loudly.|管道发出汩汩声。[/EX][EX]He gurgled with delight.|他开心地咯咯笑。[/EX]",
+"[TITLE]常见错误[/TITLE][ERR]不要拼写为gargle，gargle意思是“漱口”。[/ERR]"
+]
+},
+
+"w585": {
+"word": "slosh",
+"images": {
+"scene": ["infopic01/slosh.webp"],
+"card": ["wordpic01/slosh.webp"]
+},
+"richDetail": [
+"[TITLE]解释[/TITLE][DEF][EN]To slosh means to move with a splashing sound like liquid in a container.[/EN][CN]溅泼；哗啦哗啦地流[/CN][POS]v.[/POS][PH]/slɒʃ/[/PH][DU]The sea sloshed against its side.|（原文例句）海水哗啦哗啦地拍打着船的侧面。[/DU][DU]Water sloshed out of the bucket.|水从桶里溅了出来。[/DU][/DEF][IMG]infopic01/slosh.webp[/IMG]",
+"[TITLE]常见用法[/TITLE][COLL][H]sloshing water|晃动的水[POS]v. phr.[/POS][/H][EX]The water sloshed in the bottle.|瓶子里的水晃来晃去。[/EX][C]slosh around|四处晃动溅水[/C][/COLL]",
+"[TITLE]额外例句[/TITLE][EX]The soup sloshed in the bowl.|汤在碗里晃动。[/EX][EX]Rainwater sloshed on the street.|雨水在街上哗啦流动。[/EX]",
+"[TITLE]常见错误[/TITLE][ERR]不要写成slush，slush表示“泥雪”。[/ERR]"
+]
+},
+
+"w586": {
+"word": "pursue",
+"images": {
+"scene": ["infopic01/pursue.webp"],
+"card": ["wordpic01/pursue.webp"]
+},
+"richDetail": [
+"[TITLE]解释[/TITLE][DEF][EN]To pursue means to chase or follow something in order to catch it.[/EN][CN]追赶；追求[/CN][POS]v.[/POS][PH]/pərˈsuː/[/PH][DU]“PURSUE THE CREATURE!” the Princess in Blankets shouted.|（原文例句）“追那个生物！”毯子公主喊道。[/DU][DU]The dog pursued the cat.|狗追赶猫。[/DU][/DEF][IMG]infopic01/pursue.webp[/IMG]",
+"[TITLE]常见用法[/TITLE][COLL][H]pursue a dream|追求梦想[POS]v. phr.[/POS][/H][EX]She wants to pursue her dream.|她想追求自己的梦想。[/EX][C]pursue sb|追赶某人[/C][/COLL]",
+"[TITLE]额外例句[/TITLE][EX]The police pursued the thief.|警察追赶小偷。[/EX][EX]He pursued a career in music.|他追求音乐事业。[/EX]",
+"[TITLE]常见错误[/TITLE][ERR]不要拼写成persue。[/ERR]"
+]
+},
+
+"w587": {
+"word": "steer",
+"images": {
+"scene": ["infopic01/steer1.webp"],
+"card": ["wordpic01/steer1.webp"]
+},
+"richDetail": [
+"[TITLE]解释[/TITLE][DEF][EN]To steer means to control the direction of a vehicle or boat.[/EN][CN]驾驶；掌舵；引导[/CN][POS]v.[/POS][PH]/stɪr/[/PH][DU]The Goat Avenger steered the boat.|（原文例句）山羊复仇者驾驶着船。[/DU][DU]He steered the car carefully.|他小心地驾驶汽车。[/DU][/DEF][IMG]infopic01/steer1.webp[/IMG]",
+"[TITLE]常见用法[/TITLE][COLL][H]steer a boat|驾驶船只[POS]v. phr.[/POS][/H][EX]She steered the boat through the waves.|她驾驶船穿过海浪。[/EX][C]steer clear of|避开[/C][/COLL]",
+"[TITLE]额外例句[/TITLE][EX]The captain steered the ship.|船长掌舵。[/EX][EX]He steered the bike around the corner.|他把自行车拐过弯。[/EX]",
+"[TITLE]常见错误[/TITLE][ERR]steer不要和stare混淆。[/ERR]"
+]
+},
+
+"w588": {
+"word": "island",
+"images": {
+"scene": ["infopic01/island.webp"],
+"card": ["wordpic01/island.webp"]
+},
+"richDetail": [
+"[TITLE]解释[/TITLE][DEF][EN]An island is a piece of land completely surrounded by water.[/EN][CN]岛；岛屿[/CN][POS]n.[/POS][PH]/ˈaɪlənd/[/PH][DU]They finally found it resting on a little island.|（原文例句）他们终于发现它停在一个小岛上。[/DU][DU]We visited a tropical island.|我们参观了一座热带岛屿。[/DU][/DEF][IMG]infopic01/island.webp[/IMG]",
+"[TITLE]常见用法[/TITLE][COLL][H]desert island|荒岛[POS]n. phr.[/POS][/H][EX]He lived alone on a desert island.|他独自住在荒岛上。[/EX][C]tropical island|热带岛屿[/C][/COLL]",
+"[TITLE]额外例句[/TITLE][EX]The island is covered with palm trees.|岛上长满了棕榈树。[/EX][EX]They sailed to a small island.|他们航行到一个小岛。[/EX]",
+"[TITLE]常见错误[/TITLE][ERR]island中的s不发音。[/ERR]"
+]
+},
+"w589": {
+"word": "real live",
+"images": {
+"scene": ["infopic01/real_live.webp"],
+"card": ["wordpic01/real_live.webp"]
+},
+"richDetail": [
+"[TITLE]解释[/TITLE][DEF][EN]Real live means actually real and not imagined or fake.[/EN][CN]活生生的；真实存在的[/CN][POS]adj. phr.[/POS][PH]/ˈriːl laɪv/[/PH][DU]A mermaid. A real live mermaid!|（原文例句）一条美人鱼！一条真正的美人鱼！[/DU][DU]We saw a real live tiger at the zoo.|我们在动物园看到了一只真正的老虎。[/DU][/DEF][IMG]infopic01/real_live.webp[/IMG]",
+"[TITLE]常见用法[/TITLE][COLL][H]a real live animal|真正的动物[POS]n. phr.[/POS][/H][EX]The children saw a real live dinosaur skeleton.|孩子们看到了一具真正的恐龙骨架。[/EX][C]a real live person|真人[/C][/COLL]",
+"[TITLE]额外例句[/TITLE][EX]She met a real live astronaut.|她见到了一位真正的宇航员。[/EX][EX]That is a real live dragonfly.|那是一只真正的蜻蜓。[/EX]",
+"[TITLE]常见错误[/TITLE][ERR]不要写成reallive，应分开写real live。[/ERR]"
+]
+},
+
+"w590": {
+"word": "afraid",
+"images": {
+"scene": ["infopic01/afraid.webp"],
+"card": ["wordpic01/afraid.webp"]
+},
+"richDetail": [
+"[TITLE]解释[/TITLE][DEF][EN]Afraid means feeling fear or worry about something.[/EN][CN]害怕的；担心的[/CN][POS]adj.[/POS][PH]/əˈfreɪd/[/PH][DU]I’m afraid I’m going to fail at the most important job of a princess.|（原文例句）我担心自己会在公主最重要的职责上失败。[/DU][DU]The child was afraid of the dark.|孩子害怕黑暗。[/DU][/DEF][IMG]infopic01/afraid.webp[/IMG]",
+"[TITLE]常见用法[/TITLE][COLL][H]be afraid of|害怕……[POS]adj. phr.[/POS][/H][EX]She is afraid of spiders.|她害怕蜘蛛。[/EX][C]be afraid to do sth|不敢做某事[/C][/COLL]",
+"[TITLE]额外例句[/TITLE][EX]I’m afraid of making mistakes.|我害怕犯错。[/EX][EX]He was afraid to speak in class.|他不敢在课堂上发言。[/EX]",
+"[TITLE]常见错误[/TITLE][ERR]afraid后面通常接of或to，不直接接名词动词原形。[/ERR]"
+]
+},
+
+"w591": {
+"word": "trench",
+"images": {
+"scene": ["infopic01/trench.webp"],
+"card": ["wordpic01/trench.webp"]
+},
+"richDetail": [
+"[TITLE]解释[/TITLE][DEF][EN]A trench is a long deep ditch in the ground or sea.[/EN][CN]海沟；沟渠；战壕[/CN][POS]n.[/POS][PH]/trentʃ/[/PH][DU]A trench leading to Kraken Land cracked open in the capricorn pasture.|（原文例句）一条通往海怪之地的海沟在海山羊牧场裂开了。[/DU][DU]Soldiers hid in a trench.|士兵躲在战壕里。[/DU][/DEF][IMG]infopic01/trench.webp[/IMG]",
+"[TITLE]常见用法[/TITLE][COLL][H]deep trench|深沟[POS]n. phr.[/POS][/H][EX]The workers dug a deep trench.|工人们挖了一条深沟。[/EX][C]ocean trench|海沟[/C][/COLL]",
+"[TITLE]额外例句[/TITLE][EX]The trench filled with rainwater.|沟渠被雨水填满。[/EX][EX]The submarine explored a deep trench.|潜艇探索了一条深海沟。[/EX]",
+"[TITLE]常见错误[/TITLE][ERR]不要拼写为tranch。[/ERR]"
+]
+},
+
+"w592": {
+"word": "gear",
+"images": {
+"scene": ["infopic01/gear.webp"],
+"card": ["wordpic01/gear.webp"]
+},
+"richDetail": [
+"[TITLE]解释[/TITLE][DEF][EN]Gear means equipment or tools used for a particular activity.[/EN][CN]装备[/CN][POS]n.[/POS][PH]/ɡɪr/[/PH][DU]The boat had diving gear, including helmets for non-mermaid heads.|（原文例句）船上有潜水装备，包括给不是美人鱼的人戴的头盔。[/DU][DU]They packed their camping gear.|他们打包了露营装备。[/DU][/DEF][IMG]infopic01/gear.webp[/IMG]",
+"[TITLE]常见用法[/TITLE][COLL][H]diving gear|潜水装备[POS]n. phr.[/POS][/H][EX]He bought new diving gear.|他买了新的潜水装备。[/EX][C]camping gear|露营装备[/C][/COLL]",
+"[TITLE]额外例句[/TITLE][EX]The hikers carried heavy gear.|徒步者背着沉重的装备。[/EX][EX]Safety gear is important.|安全装备很重要。[/EX]",
+"[TITLE]常见错误[/TITLE][ERR]gear通常是不可数名词，不说gears表示装备。[/ERR]"
+]
+},
+
+"w593": {
+"word": "kelp",
+"images": {
+"scene": ["infopic01/kelp.webp"],
+"card": ["wordpic01/kelp.webp"]
+},
+"richDetail": [
+"[TITLE]解释[/TITLE][DEF][EN]Kelp is a large type of seaweed that grows in the ocean.[/EN][CN]海带；海带林[/CN][POS]n.[/POS][PH]/kelp/[/PH][DU]She swam through forests of kelp.|（原文例句）她游过一片片海带林。[/DU][DU]Fish hide among the kelp.|鱼躲在海带之间。[/DU][/DEF][IMG]infopic01/kelp.webp[/IMG]",
+"[TITLE]常见用法[/TITLE][COLL][H]kelp forest|海带森林[POS]n. phr.[/POS][/H][EX]Sea otters live in kelp forests.|海獭生活在海带森林中。[/EX][C]eat kelp|吃海带[/C][/COLL]",
+"[TITLE]额外例句[/TITLE][EX]The diver swam through kelp.|潜水员游过海带林。[/EX][EX]Kelp grows in cold oceans.|海带生长在寒冷海洋中。[/EX]",
+"[TITLE]常见错误[/TITLE][ERR]kelp是不可数名词，不说kelps。[/ERR]"
+]
+},
+
+"w594": {
+"word": "frazzled",
+"images": {
+"scene": ["infopic01/frazzled.webp"],
+"card": ["wordpic01/frazzled.webp"]
+},
+"richDetail": [
+"[TITLE]解释[/TITLE][DEF][EN]Frazzled means very tired, stressed, or nervous.[/EN][CN]疲惫不堪的；焦躁的[/CN][POS]adj.[/POS][PH]/ˈfræzəld/[/PH][DU]A frazzled merman interrupted.|（原文例句）一个疲惫的美人鱼男人打断了他们。[/DU][DU]She looked frazzled after a long day.|忙了一整天后她看起来疲惫不堪。[/DU][/DEF][IMG]infopic01/frazzled.webp[/IMG]",
+"[TITLE]常见用法[/TITLE][COLL][H]feel frazzled|感到精疲力尽[POS]adj. phr.[/POS][/H][EX]I feel frazzled after work.|工作后我感到很疲惫。[/EX][C]look frazzled|看起来疲惫[/C][/COLL]",
+"[TITLE]额外例句[/TITLE][EX]The teacher looked frazzled.|老师看起来很疲惫。[/EX][EX]He sounded frazzled on the phone.|他在电话里听起来很焦躁。[/EX]",
+"[TITLE]常见错误[/TITLE][ERR]不要拼写为frazled。[/ERR]"
+]
+},
+
+"w595": {
+"word": "management",
+"images": {
+"scene": ["infopic01/management.webp"],
+"card": ["wordpic01/management.webp"]
+},
+"richDetail": [
+"[TITLE]解释[/TITLE][DEF][EN]Management means the act of organizing and controlling things or people.[/EN][CN]管理[/CN][POS]n.[/POS][PH]/ˈmænɪdʒmənt/[/PH][DU]Kingdom management takes all my time.|（原文例句）王国的管理占据了我所有时间。[/DU][DU]Good management is important.|良好的管理很重要。[/DU][/DEF][IMG]infopic01/management.webp[/IMG]",
+"[TITLE]常见用法[/TITLE][COLL][H]time management|时间管理[POS]n. phr.[/POS][/H][EX]Students should learn time management.|学生应该学习时间管理。[/EX][C]business management|商业管理[/C][/COLL]",
+"[TITLE]额外例句[/TITLE][EX]She studies management.|她学习管理学。[/EX][EX]The management solved the problem.|管理层解决了问题。[/EX]",
+"[TITLE]常见错误[/TITLE][ERR]management是不可数名词，不加s。[/ERR]"
+]
+},
+
+"w596": {
+"word": "reminder card",
+"images": {
+"scene": ["infopic01/reminder_card.webp"],
+"card": ["wordpic01/reminder_card.webp"]
+},
+"richDetail": [
+"[TITLE]解释[/TITLE][DEF][EN]A reminder card is a card used to help someone remember something important.[/EN][CN]提示卡；备忘卡[/CN][POS]n. phr.[/POS][/PH]/rɪˈmaɪndər kɑːrd/[/PH][DU]Princess Posy showed them the reminder card she kept with her.|（原文例句）波西公主给他们看了她随身带的提示卡。[/DU][DU]She wrote a reminder card for her tasks.|她写了一张备忘卡提醒自己的任务。[/DU][/DEF][IMG]infopic01/reminder_card.webp[/IMG]",
+"[TITLE]常见用法[/TITLE][COLL][H]write a reminder card|写备忘卡[POS]v. phr.[/POS][/H][EX]He wrote a reminder card for tomorrow.|他写了一张提醒卡。[/EX][C]keep a reminder card|保留提示卡[/C][/COLL]",
+"[TITLE]额外例句[/TITLE][EX]The reminder card helped her remember.|提示卡帮助她记住事情。[/EX][EX]I keep a reminder card in my bag.|我在包里放了一张备忘卡。[/EX]",
+"[TITLE]常见错误[/TITLE][ERR]reminder不要拼写成remindar。[/ERR]"
+]
+},
+
+"w597": {
+"word": "go on a trek",
+"images": {
+"scene": ["infopic01/go_on_a_trek.webp"],
+"card": ["wordpic01/go_on_a_trek.webp"]
+},
+"richDetail": [
+"[TITLE]解释[/TITLE][DEF][EN]To go on a trek means to go on a long and difficult journey.[/EN][CN]进行一次长途跋涉[/CN][POS]v. phr.[/POS][/PH]/trek/[/PH][DU]It decided to go on a Taking Trek.|（原文例句）它决定开始一次“拿走之旅”。[/DU][DU]They went on a trek through the mountains.|他们进行了一次穿越群山的长途跋涉。[/DU][/DEF][IMG]infopic01/go_on_a_trek.webp[/IMG]",
+"[TITLE]常见用法[/TITLE][COLL][H]go on a long trek|进行长途跋涉[POS]v. phr.[/POS][/H][EX]Explorers went on a long trek.|探险家进行了长途跋涉。[/EX][C]trek across|穿越跋涉[/C][/COLL]",
+"[TITLE]额外例句[/TITLE][EX]They went on a trek in the desert.|他们在沙漠中跋涉。[/EX][EX]The hikers went on a trek.|徒步者开始长途跋涉。[/EX]",
+"[TITLE]常见错误[/TITLE][ERR]trek不要拼写为track。[/ERR]"
+]
+},
+
+"w598": {
+"word": "trek",
+"images": {
+"scene": ["infopic01/trek.webp"],
+"card": ["wordpic01/trek.webp"]
+},
+"richDetail": [
+"[TITLE]解释[/TITLE][DEF][EN]A trek is a long and difficult journey.[/EN][CN]长途跋涉；艰难行走[/CN][POS]n./v.[/POS][PH]/trek/[/PH][DU]A Taking Trek is when the big blue kraken would trek around and take whatever it wanted.|（原文例句）“拿走之旅”就是蓝色海怪到处走并拿走它想要的东西。[/DU][DU]They went on a long trek.|他们进行了一次长途跋涉。[/DU][/DEF][IMG]infopic01/trek.webp[/IMG]",
+"[TITLE]常见用法[/TITLE][COLL][H]long trek|长途跋涉[POS]n. phr.[/POS][/H][EX]It was a long trek through the forest.|那是一次穿越森林的长途跋涉。[/EX][C]trek across the desert|穿越沙漠[/C][/COLL]",
+"[TITLE]额外例句[/TITLE][EX]They trekked across the mountains.|他们翻山越岭。[/EX][EX]The trek was very hard.|这次跋涉非常艰难。[/EX]",
+"[TITLE]常见错误[/TITLE][ERR]不要拼写为track。[/ERR]"
+]
+},
+
+"w599": {
+"word": "screech",
+"images": {
+"scene": ["infopic01/screech.webp"],
+"card": ["wordpic01/screech.webp"]
+},
+"richDetail": [
+"[TITLE]解释[/TITLE][DEF][EN]To screech means to shout or make a loud high sound.[/EN][CN]尖叫；尖声说[/CN][POS]v.[/POS][PH]/skriːtʃ/[/PH][DU]“MINE,” the big blue kraken screeched.|（原文例句）“我的！”蓝色海怪尖叫道。[/DU][DU]The owl screeched in the night.|猫头鹰在夜里尖叫。[/DU][/DEF][IMG]infopic01/screech.webp[/IMG]",
+"[TITLE]常见用法[/TITLE][COLL][H]screech loudly|大声尖叫[POS]v. phr.[/POS][/H][EX]She screeched loudly.|她大声尖叫。[/EX][C]screech to a stop|嘎吱停下[/C][/COLL]",
+"[TITLE]额外例句[/TITLE][EX]The brakes screeched.|刹车发出尖锐声。[/EX][EX]He screeched in surprise.|他惊叫起来。[/EX]",
+"[TITLE]常见错误[/TITLE][ERR]不要拼写为screach。[/ERR]"
+]
+},
+
+"w600": {
+"word": "plump",
+"images": {
+"scene": ["infopic01/plump.webp"],
+"card": ["wordpic01/plump.webp"]
+},
+"richDetail": [
+"[TITLE]解释[/TITLE][DEF][EN]Plump means pleasantly fat, round, or full.[/EN][CN]丰满的；胖乎乎的；饱满的[/CN][POS]adj.[/POS][PH]/plʌmp/[/PH][DU]A smell of sea goats. Plump sea goats.|（原文例句）一股海山羊的气味。胖乎乎的海山羊。[/DU][DU]The baby had plump cheeks.|婴儿有胖乎乎的脸颊。[/DU][/DEF][IMG]infopic01/plump.webp[/IMG]",
+"[TITLE]常见用法[/TITLE][COLL][H]plump cheeks|胖乎乎的脸颊[POS]n. phr.[/POS][/H][EX]The child had plump cheeks.|孩子有胖乎乎的脸。[/EX][C]plump fruit|饱满的水果[/C][/COLL]",
+"[TITLE]额外例句[/TITLE][EX]The grapes were plump and sweet.|葡萄又大又甜。[/EX][EX]The bird looked plump.|那只鸟看起来很圆胖。[/EX]",
+"[TITLE]常见错误[/TITLE][ERR]plump不一定表示“胖”，也可以表示“饱满”。[/ERR]"
+]
+},
+
+"w601": {
+"word": "consult",
+"images": {
+"scene": ["infopic01/consult.webp"],
+"card": ["wordpic01/consult.webp"]
+},
+"richDetail": [
+"[TITLE]解释[/TITLE][DEF][EN]To consult means to ask someone for advice or to look for information.[/EN][CN]查阅；咨询；请教[/CN][POS]v.[/POS][PH]/kənˈsʌlt/[/PH][DU]Princess Posy consulted her Nice card.|（原文例句）波西公主查看了她的“友好提示卡”。[/DU][DU]She consulted the teacher for help.|她向老师咨询帮助。[/DU][/DEF][IMG]infopic01/consult.webp[/IMG]",
+"[TITLE]常见用法[/TITLE][COLL][H]consult a doctor|咨询医生[POS]v. phr.[/POS][/H][EX]You should consult a doctor.|你应该咨询医生。[/EX][C]consult a book|查阅书籍[/C][/COLL]",
+"[TITLE]额外例句[/TITLE][EX]He consulted a map.|他查阅地图。[/EX][EX]They consulted experts.|他们咨询专家。[/EX]",
+"[TITLE]常见错误[/TITLE][ERR]consult后直接接人，不需要介词with。[/ERR]"
+]
 }
 
 
