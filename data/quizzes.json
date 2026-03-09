@@ -4033,7 +4033,170 @@
     "question": "The audience gave ______ applause after the show.",
     "options": ["gooey", "wobbly", "thunderous", "drowsy"],
     "answer": 2
+  },
+  
+  "q_w579": {
+    "type": "choice_text",
+    "wordIds": ["w579"],
+    "question": "After swimming in the ocean, my lips tasted ______.",
+    "options": ["plump", "salty", "royal", "gooey"],
+    "answer": 1
+  },
+  "q_w580": {
+    "type": "choice_text",
+    "wordIds": ["w580"],
+    "question": "I went to the park with my best ______.",
+    "options": ["gear", "trench", "island", "pal"],
+    "answer": 3
+  },
+  "q_w581": {
+    "type": "choice_text",
+    "wordIds": ["w581"],
+    "question": "Can you ______ me your pencil for a minute?",
+    "options": ["lend", "steer", "consult", "deny"],
+    "answer": 0
+  },
+  "q_w582": {
+    "type": "choice_text",
+    "wordIds": ["w582"],
+    "question": "The king and queen lived in a ______ palace.",
+    "options": ["salty", "plump", "royal", "frazzled"],
+    "answer": 2
+  },
+  "q_w583": {
+    "type": "choice_text",
+    "wordIds": ["w583"],
+    "question": "A ______ statue towered over the town.",
+    "options": ["colossal", "royal", "drowsy", "salty"],
+    "answer": 0
+  },
+  "q_w584": {
+    "type": "choice_text",
+    "wordIds": ["w584"],
+    "question": "The stream began to ______ over the rocks.",
+    "options": ["screech", "slosh", "gurgle", "pursue"],
+    "answer": 2
+  },
+  "q_w585": {
+    "type": "choice_text",
+    "wordIds": ["w585"],
+    "question": "Water started to ______ in the bucket as I walked.",
+    "options": ["gurgle", "slosh", "screech", "steer"],
+    "answer": 1
+  },
+  "q_w586": {
+    "type": "choice_text",
+    "wordIds": ["w586"],
+    "question": "The dog began to ______ the cat around the yard.",
+    "options": ["steer", "lend", "consult", "pursue"],
+    "answer": 3
+  },
+  "q_w587": {
+    "type": "choice_text",
+    "wordIds": ["w587"],
+    "question": "Hold the wheel and ______ the boat away from the rocks.",
+    "options": ["steer", "pursue", "slosh", "screech"],
+    "answer": 0
+  },
+  "q_w588": {
+    "type": "choice_text",
+    "wordIds": ["w588"],
+    "question": "We sailed to a small ______ with palm trees.",
+    "options": ["trench", "gear", "island", "kelp"],
+    "answer": 2
+  },
+  "q_w589": {
+    "type": "choice_text",
+    "wordIds": ["w589"],
+    "question": "At the zoo, we saw a ______ tiger (not a toy!).",
+    "options": ["pretend", "real live", "royal", "colossal"],
+    "answer": 1
+  },
+  "q_w590": {
+    "type": "choice_text",
+    "wordIds": ["w590"],
+    "question": "She was ______ of the dark.",
+    "options": ["frazzled", "salty", "royal", "afraid"],
+    "answer": 3
+  },
+  "q_w591": {
+    "type": "choice_text",
+    "wordIds": ["w591"],
+    "question": "The workers dug a deep ______ for the pipes.",
+    "options": ["trench", "kelp", "island", "gear"],
+    "answer": 0
+  },
+  "q_w592": {
+    "type": "choice_text",
+    "wordIds": ["w592"],
+    "question": "Don’t forget your safety ______ before you go diving.",
+    "options": ["scrapbook", "reminder card", "gear", "plaque"],
+    "answer": 2
+  },
+  "q_w593": {
+    "type": "choice_text",
+    "wordIds": ["w593"],
+    "question": "Fish can hide in a ______ forest in the ocean.",
+    "options": ["moss", "plaque", "salty", "kelp"],
+    "answer": 3
+  },
+  "q_w594": {
+    "type": "choice_text",
+    "wordIds": ["w594"],
+    "question": "After the busy day, she looked tired and ______.",
+    "options": ["drowsy", "frazzled", "cozy", "plump"],
+    "answer": 1
+  },
+  "q_w595": {
+    "type": "choice_text",
+    "wordIds": ["w595"],
+    "question": "Good time ______ helps you finish homework on time.",
+    "options": ["management", "cocoa", "shortcut", "molar"],
+    "answer": 0
+  },
+  "q_w596": {
+    "type": "choice_text",
+    "wordIds": ["w596"],
+    "question": "I wrote a ______ so I wouldn’t forget my chores.",
+    "options": ["scrapbook", "pal", "reminder card", "coatrack"],
+    "answer": 2
+  },
+  "q_w597": {
+    "type": "choice_text",
+    "wordIds": ["w597"],
+    "question": "During summer break, we might ______ through the mountains.",
+    "options": ["curl up", "go on a trek", "steer", "gurgle"],
+    "answer": 1
+  },
+  "q_w598": {
+    "type": "choice_text",
+    "wordIds": ["w598"],
+    "question": "The hike turned into a long, difficult ______.",
+    "options": ["island", "coating", "trench", "trek"],
+    "answer": 3
+  },
+  "q_w599": {
+    "type": "choice_text",
+    "wordIds": ["w599"],
+    "question": "The brakes began to ______ when the car stopped suddenly.",
+    "options": ["screech", "gurgle", "slosh", "whine"],
+    "answer": 0
+  },
+  "q_w600": {
+    "type": "choice_text",
+    "wordIds": ["w600"],
+    "question": "The grapes were ______ and sweet.",
+    "options": ["lumpy", "salty", "plump", "colossal"],
+    "answer": 2
+  },
+  "q_w601": {
+    "type": "choice_text",
+    "wordIds": ["w601"],
+    "question": "If you’re not sure where to go, ______ a map.",
+    "options": ["pursue", "lend", "deny", "consult"],
+    "answer": 3
   }
+
 
 
 

@@ -7875,7 +7875,829 @@
 "[TITLE]额外例句[/TITLE][EX]He consulted a map.|他查阅地图。[/EX][EX]They consulted experts.|他们咨询专家。[/EX]",
 "[TITLE]常见错误[/TITLE][ERR]consult后直接接人，不需要介词with。[/ERR]"
 ]
-}
+},
+"w602": {
+    "word": "responsibility",
+    "images": {
+      "scene": ["infopic01/responsibility.webp"],
+      "card": ["wordpic01/responsibility.webp"]
+    },
+    "richDetail": [
+      "[TITLE]解释[/TITLE][DEF][EN]A duty or a job that you must do and take care of.[/EN][CN]责任；职责（书中指木兰公主被委托负责舞会，这是一个重大的责任）。[/CN][POS]n.[/POS][PH]/rɪˌspɑːnsəˈbɪləti/[/PH][DU]It was a big responsibility.|(原文例句)这是一份重大的责任。[/DU][DU]It is your responsibility to feed the fish.|喂鱼是你的责任。[/DU][DU]Cleaning your room is a big responsibility.|打扫房间是一项重要的职责。[/DU][/DEF][IMG]infopic01/responsibility.webp[/IMG]",
+      "[TITLE]常见用法[/TITLE][COLL][H]take responsibility|承担责任[POS]n.[/POS][/H][EX]You should take responsibility for your mistakes.|你应该为自己的错误承担责任。[/EX][C]take full responsibility|承担全部责任[/C][/COLL][COLL][H]have a responsibility to do sth|有责任做某事[POS]n.[/POS][/H][EX]We have a responsibility to keep the park clean.|我们有责任保持公园整洁。[/EX][C]have a sense of responsibility|有责任感[/C][/COLL]",
+      "[TITLE]额外例句[/TITLE][EX]Being a dragon master is a big responsibility.[POS]n.[/POS]|成为训龙大师是一份重大的责任。[/EX][EX]The teacher gave me the responsibility of holding the flag.[POS]n.[/POS]|老师把拿旗子的任务交给了我。[/EX]",
+      "[TITLE]常见错误[/TITLE][ERR]responsibility 这个词比较长，注意拼写，中间是 -si- 而不是 -se-。[/ERR][ERR]它是名词。如果你想说“有责任心的”，要用形容词 responsible。[/ERR]"
+    ]
+  },
+  "w603": {
+    "word": "in full swing",
+    "images": {
+      "scene": ["infopic01/in_full_swing.webp"],
+      "card": ["wordpic01/in_full_swing.webp"]
+    },
+    "richDetail": [
+      "[TITLE]解释[/TITLE][DEF][EN]When an activity or event is very busy and everyone is having a lot of fun.[/EN][CN]活跃；正在全力进行中；处于高潮（书中指鲜花节集市已经非常热闹了）。[/CN][POS]phr.[/POS][PH]/ɪn fʊl swɪŋ/[/PH][DU]The Flower Festival Fair was already in full swing.|(原文例句)鲜花节集市已经非常热闹了。[/DU][DU]The birthday party was in full swing when I arrived.|我到达时，生日派对正进行得如火如荼。[/DU][DU]The game was in full swing and everyone was shouting.|比赛正处于高潮，大家都在欢呼。[/DU][/DEF][IMG]infopic01/in_full_swing.webp[/IMG]",
+      "[TITLE]常见用法[/TITLE][COLL][H]be in full swing|正在热烈进行中[POS]phr.[/POS][/H][EX]The dance was in full swing.|舞会正在热烈地进行。[/EX][C]get into full swing|进入高潮/开始活跃[/C][/COLL]",
+      "[TITLE]额外例句[/TITLE][EX]The class was in full swing when the principal walked in.[POS]phr.[/POS]|校长进来时，课堂正进行得热火朝天。[/EX][EX]By ten o'clock, the market was in full swing.[POS]phr.[/POS]|到十点钟，集市已经非常忙碌热闹了。[/EX]",
+      "[TITLE]常见错误[/TITLE][ERR]注意不要写成 in full swimming，这里的 swing 意思是“摆动、活跃”，形容像秋千荡到最高处一样热闹。[/ERR]"
+    ]
+  },
+  "w604": {
+    "word": "go-round",
+    "images": {
+      "scene": ["infopic01/go-round.webp"],
+      "card": ["wordpic01/go-round.webp"]
+    },
+    "richDetail": [
+      "[TITLE]解释[/TITLE][DEF][EN]A ride that moves around in a big circle (often called a merry-go-round).[/EN][CN]旋转木马；旋转设施（书中指“迷迭香旋转木马”）。[/CN][POS]n.[/POS][PH]/ˈɡoʊ raʊnd/[/PH][DU]Princess Orchid waved to her from the Rosemary-Go-Round.|(原文例句)兰花公主在“迷迭香旋转木马”上向她招手。[/DU][DU]I love riding the horses on the merry-go-round.|我喜欢骑旋转木马上的小马。[/DU][DU]We went on the go-round three times at the fair.|我们在集市上坐了三次旋转设施。[/DU][/DEF][IMG]infopic01/go-round.webp[/IMG]",
+      "[TITLE]常见用法[/TITLE][COLL][H]merry-go-round|旋转木马[POS]n.[/POS][/H][EX]The merry-go-round has bright lights and music.|旋转木马有亮闪闪的灯光和音乐。[/EX][C]ride a go-round|坐旋转木马[/C][/COLL]",
+      "[TITLE]额外例句[/TITLE][EX]The kids are laughing on the go-round.[POS]n.[/POS]|孩子们在旋转木马上哈哈大笑。[/EX][EX]Look at the colorful seats on that go-round![POS]n.[/POS]|看那个旋转设施上五颜六色的座位！[/EX]",
+      "[TITLE]常见错误[/TITLE][ERR]go-round 通常和 merry 连用。注意中间有连字符 - 连接。[/ERR]"
+    ]
+  },
+  "w605": {
+    "word": "bumper",
+    "images": {
+      "scene": ["infopic01/bumper.webp"],
+      "card": ["wordpic01/bumper.webp"]
+    },
+    "richDetail": [
+      "[TITLE]解释[/TITLE][DEF][EN]A part on a car or a ride that protects it when it hits something.[/EN][CN]保险杠；（游乐设施中）用于碰撞的保护垫（书中指“碰碰小蜜蜂”）。[/CN][POS]n.[/POS][PH]/ˈbʌmpər/[/PH][DU]Princesses Apple Blossom and Honeysuckle were helping kids in the Bumper Bees.|(原文例句)苹果花公主和金银花公主正在“碰碰小蜜蜂”那里帮孩子们的忙。[/DU][DU]Bumper cars are so much fun at the park!|游乐园里的碰碰车太好玩了！[/DU][DU]The car's bumper was scratched.|汽车的保险杠被刮花了。[/DU][/DEF][IMG]infopic01/bumper.webp[/IMG]",
+      "[TITLE]常见用法[/TITLE][COLL][H]bumper cars|碰碰车[POS]n.[/POS][/H][EX]Let's go and drive the bumper cars!|我们去开碰碰车吧！[/EX][C]bumper to bumper|（车流）首尾相接/拥堵[/C][/COLL]",
+      "[TITLE]额外例句[/TITLE][EX]The bumper protected the car during the hit.[POS]n.[/POS]|保险杠在碰撞中保护了汽车。[/EX][EX]We sat in the bumper boat and splashed water.[POS]n.[/POS]|我们坐在碰碰船里玩水。[/EX]",
+      "[TITLE]常见错误[/TITLE][ERR]注意 bumper 是从 bump（碰撞）变来的，意思是“防止撞坏的东西”。[/ERR]"
+    ]
+  },
+  "w606": {
+    "word": "fennel",
+    "images": {
+      "scene": ["infopic01/fennel.webp"],
+      "card": ["wordpic01/fennel.webp"]
+    },
+    "richDetail": [
+      "[TITLE]解释[/TITLE][DEF][EN]A plant that smells a bit like candy (licorice) and can be eaten; also a person's name in this story.[/EN][CN]茴香；芬内尔（人名）（书中指粉衣王子芬内尔）。[/CN][POS]n.[/POS][PH]/ˈfenl/[/PH][DU]Princess Snapdragon introduced Prince Fennel.|(原文例句)金鱼草公主介绍了芬内尔王子。[/DU][DU]My mom puts fennel in the salad.|我妈妈在沙拉里放了茴香。[/DU][DU]Fennel has green leaves and tastes sweet.|茴香有绿色的叶子，味道甜甜的。[/DU][/DEF][IMG]infopic01/fennel.webp[/IMG]",
+      "[TITLE]常见用法[/TITLE][COLL][H]fennel seeds|茴香籽[POS]n.[/POS][/H][EX]Fennel seeds are small and brown.|茴香籽又小又是棕色的。[/EX][C]fresh fennel|新鲜茴香[/C][/COLL]",
+      "[TITLE]额外例句[/TITLE][EX]Prince Fennel is very kind and helpful.[POS]n.[/POS]|芬内尔王子非常善良且乐于助人。[/EX][EX]I don't like the smell of fennel.[POS]n.[/POS]|我不喜欢茴香的味道。[/EX]",
+      "[TITLE]常见错误[/TITLE][ERR]注意拼写是两个 n 和一个 l。[/ERR]"
+    ]
+  },
+  "w607": {
+    "word": "yearn to",
+    "images": {
+      "scene": ["infopic01/yearn_to.webp"],
+      "card": ["wordpic01/yearn_to.webp"]
+    },
+    "richDetail": [
+      "[TITLE]解释[/TITLE][DEF][EN]To want something very, very much.[/EN][CN]渴望；向往（书中指芬内尔王子渴望去打怪）。[/CN][POS]v. phr.[/POS][PH]/jɜːrn tu/[/PH][DU]He yearned to fight monsters.|(原文例句)他渴望去对抗怪物。[/DU][DU]The little girl yearned to fly like a bird.|小女孩渴望像鸟儿一样飞翔。[/DU][DU]The dragon yearned to go back to the sky.|巨龙渴望回到天空。[/DU][/DEF][IMG]infopic01/yearn_to.webp[/IMG]",
+      "[TITLE]常见用法[/TITLE][COLL][H]yearn for sth|渴望得到某物[POS]v.[/POS][/H][EX]The tired cat yearned for a soft bed.|疲倦的小猫渴望一张柔软的床。[/EX][C]yearn for home|思念家乡[/C][C]yearn for peace|渴望和平[/C][/COLL]",
+      "[TITLE]额外例句[/TITLE][EX]I yearn to see my grandmother again.[POS]v. phr.[/POS]|我非常渴望再次见到我的奶奶。[/EX][EX]He yearned to go on a big adventure.[POS]v. phr.[/POS]|他渴望去进行一场大冒险。[/EX]",
+      "[TITLE]常见错误[/TITLE][ERR]yearn 是一个很强烈的词，比 want（想要）的程度要深得多。[/ERR]"
+    ]
+  },
+  "w608": {
+    "word": "prepared",
+    "images": {
+      "scene": ["infopic01/prepared.webp"],
+      "card": ["wordpic01/prepared.webp"]
+    },
+    "richDetail": [
+      "[TITLE]解释[/TITLE][DEF][EN]Ready to do something or ready for something to happen.[/EN][CN]准备好的（书中指芬内尔王子觉得自己已经准备好打怪了）。[/CN][POS]adj.[/POS][PH]/prɪˈperd/[/PH][DU]He was prepared.|(原文例句)他已经准备好了。[/DU][DU]I am prepared for the magic test.|我为魔法测试准备好了。[/DU][DU]Are you prepared to go to school?|你准备好去上学了吗？[/DU][/DEF][IMG]infopic01/prepared.webp[/IMG]",
+      "[TITLE]常见用法[/TITLE][COLL][H]be prepared for sth|为某事做好准备[POS]adj.[/POS][/H][EX]We are prepared for the rain.|我们为下雨做好了准备。[/EX][C]well prepared|准备充分的[/C][C]be prepared to do sth|准备好去做某事[/C][/COLL]",
+      "[TITLE]额外例句[/TITLE][EX]The knight was prepared to face the dragon.[POS]adj.[/POS]|骑士准备好面对巨龙了。[/EX][EX]I have my umbrella, so I am prepared.[POS]adj.[/POS]|我有伞，所以我准备好了。[/EX]",
+      "[TITLE]常见错误[/TITLE][ERR]它是形容词形式，不要漏掉结尾的 d。[/ERR]"
+    ]
+  },
+  "w609": {
+    "word": "emu",
+    "images": {
+      "scene": ["infopic01/emu.webp"],
+      "card": ["wordpic01/emu.webp"]
+    },
+    "richDetail": [
+      "[TITLE]解释[/TITLE][DEF][EN]A very large bird with a long neck that can run fast but cannot fly.[/EN][CN]鸸鹋（书中指一个像鸸鹋一样的怪物）。[/CN][POS]n.[/POS][PH]/ˈiːmjuː/[/PH][DU]An emu monster appeared.|(原文例句)一只鸸鹋怪出现了。[/DU][DU]An emu is a big bird from Australia.|鸸鹋是一种来自澳大利亚的大鸟。[/DU][DU]Emus have long legs and can run very fast.|鸸鹋有长腿，跑得很快。[/DU][/DEF][IMG]infopic01/emu.webp[/IMG]",
+      "[TITLE]常见用法[/TITLE][COLL][H]a tall emu|一只高大的鸸鹋[POS]n.[/POS][/H][EX]The emu is taller than me!|鸸鹋比我还高！[/EX][C]emu egg|鸸鹋蛋（绿色的）[/C][/COLL]",
+      "[TITLE]额外例句[/TITLE][EX]I saw an emu at the zoo yesterday.[POS]n.[/POS]|我昨天在动物园看到了一只鸸鹋。[/EX][EX]Emus cannot fly, but they are great runners.[POS]n.[/POS]|鸸鹋不会飞，但它们是出色的跑步者。[/EX]",
+      "[TITLE]常见错误[/TITLE][ERR]emu 的发音开头是 /i:/，像汉字“一”。[/ERR]"
+    ]
+  },
+  "w610": {
+    "word": "shriek",
+    "images": {
+      "scene": ["infopic01/shriek.webp"],
+      "card": ["wordpic01/shriek.webp"]
+    },
+    "richDetail": [
+      "[TITLE]解释[/TITLE][DEF][EN]To give a short, very loud, high-pitched scream.[/EN][CN]尖叫；尖声喊叫（书中指人们吓得尖叫）。[/CN][POS]v. & n.[/POS][PH]/ʃriːk/[/PH][DU]The people shrieked.|(原文例句)人们尖叫了起来。[/DU][DU]The baby gave a happy shriek.|宝宝发出了一声开心的尖叫。[/DU][DU]\"A monster!\" she shrieked.|“有怪物！”她尖叫道。[/DU][/DEF][IMG]infopic01/shriek.webp[/IMG]",
+      "[TITLE]常见用法[/TITLE][COLL][H]shriek with laughter/pain|大笑得尖叫/疼得尖叫[POS]v.[/POS][/H][EX]The children shrieked with laughter in the pool.|孩子们在泳池里开心地大笑尖叫。[/EX][C]a loud shriek|一声响亮的尖叫[/C][C]shriek for help|尖声求救[/C][/COLL]",
+      "[TITLE]额外例句[/TITLE][EX]The owl let out a shriek in the night.[POS]n.[/POS]|猫头鹰在夜晚发出一声尖叫。[/EX][EX]I shrieked when the cold water hit me.[POS]v.[/POS]|冷水喷到我身上时，我尖叫了一声。[/EX]",
+      "[TITLE]常见错误[/TITLE][ERR]shriek 强调声音非常高且尖锐。注意拼写是 -ie- 而不是 -ei-。[/ERR]"
+    ]
+  },
+  "w611": {
+    "word": "menacing",
+    "images": {
+      "scene": ["infopic01/menacing.webp"],
+      "card": ["wordpic01/menacing.webp"]
+    },
+    "richDetail": [
+      "[TITLE]解释[/TITLE][DEF][EN]Looking like you want to hurt someone or do something bad.[/EN][CN]威胁的；凶恶的（书中指那团看起来很凶的粉色烟雾）。[/CN][POS]adj.[/POS][PH]/ˈmenəsɪŋ/[/PH][DU]A menacing pink puff.|(原文例句)一团威胁人的粉色烟雾。[/DU][DU]The big wolf gave a menacing growl.|那只大狼发出了威胁的低吼。[/DU][DU]The sky looked menacing with dark clouds.|黑云密布的天空看起来很阴森恐怖。[/DU][/DEF][IMG]infopic01/menacing.webp[/IMG]",
+      "[TITLE]常见用法[/TITLE][COLL][H]menacing look|凶狠的眼神[POS]adj.[/POS][/H][EX]The monster had a menacing look on its face.|怪物脸上带着凶狠的神情。[/EX][C]menacing sound|恐怖的声音[/C][/COLL]",
+      "[TITLE]额外例句[/TITLE][EX]The dragon made a menacing move toward the knight.[POS]adj.[/POS]|巨龙向骑士做出了威胁性的动作。[/EX][EX]His voice was low and menacing.[POS]adj.[/POS]|他的声音低沉且带有威胁。[/EX]",
+      "[TITLE]常见错误[/TITLE][ERR]这个词来自 menace（威胁）。注意发音第一个音节是 /men/。[/ERR]"
+    ]
+  },
+  "w612": {
+    "word": "alarming",
+    "images": {
+      "scene": ["infopic01/alarming.webp"],
+      "card": ["wordpic01/alarming.webp"]
+    },
+    "richDetail": [
+      "[TITLE]解释[/TITLE][DEF][EN]Making you feel worried or frightened.[/EN][CN]令人担忧的；惊人的（书中指那团烟雾亮得吓人）。[/CN][POS]adj.[/POS][PH]/əˈlɑːrmɪŋ/[/PH][DU]It was alarmingly sparkly.|(原文例句)它亮得有些惊人。[/DU][DU]The loud noise was very alarming.|巨大的响声非常吓人。[/DU][DU]There is an alarming amount of trash on the beach.|海滩上的垃圾多得令人担忧。[/DU][/DEF][IMG]infopic01/alarming.webp[/IMG]",
+      "[TITLE]常见用法[/TITLE][COLL][H]alarming news|惊人的消息[POS]adj.[/POS][/H][EX]We heard some alarming news about the monster.|我们听到了一些关于怪物的惊人消息。[/EX][C]at an alarming rate|以惊人的速度[/C][/COLL]",
+      "[TITLE]额外例句[/TITLE][EX]The car was moving at an alarming speed.[POS]adj.[/POS]|车子正以惊人的速度移动。[/EX][EX]I found an alarming hole in my shoe.[POS]adj.[/POS]|我发现我的鞋上有一个吓人的大洞。[/EX]",
+      "[TITLE]常见错误[/TITLE][ERR]注意不要漏掉中间的 r。它描述的是让别人感到惊慌的事物。[/ERR]"
+    ]
+  },
+  "w613": {
+    "word": "crumple",
+    "images": {
+      "scene": ["infopic01/crumple.webp"],
+      "card": ["wordpic01/crumple.webp"]
+    },
+    "richDetail": [
+      "[TITLE]解释[/TITLE][DEF][EN]To crush something so that it gets lots of folds and lines, or to fall down suddenly.[/EN][CN]弄皱；（压力下）垮掉（书中指怪物的力量让地面塌陷）。[/CN][POS]v.[/POS][PH]/ˈkrʌmpl/[/PH][DU]The emu monster crumpled the ground.|(原文例句)鸸鹋怪把地面都踩塌（压皱）了。[/DU][DU]Don't crumple your paper!|别把你的纸揉皱了！[/DU][DU]She crumpled the empty juice box.|她把喝空的果汁盒捏扁了。[/DU][/DEF][IMG]infopic01/crumple.webp[/IMG]",
+      "[TITLE]常见用法[/TITLE][COLL][H]crumple up|揉成一团[POS]v.[/POS][/H][EX]He crumpled up the letter and threw it away.|他把信揉成一团扔掉了。[/EX][C]crumple the dress|弄皱裙子[/C][/COLL]",
+      "[TITLE]额外例句[/TITLE][EX]His face crumpled as he started to cry.[POS]v.[/POS]|他要哭的时候脸皱成了一团。[/EX][EX]The leaves crumpled when I stepped on them.[POS]v.[/POS]|我踩上去时，叶子都碎皱了。[/EX]",
+      "[TITLE]常见错误[/TITLE][ERR]注意不要和 crumble（崩碎成渣）混淆。crumple 侧重于产生皱褶或捏扁。[/ERR]"
+    ]
+  },
+  "w614": {
+    "word": "dent",
+    "images": {
+      "scene": ["infopic01/dent.webp"],
+      "card": ["wordpic01/dent.webp"]
+    },
+    "richDetail": [
+      "[TITLE]解释[/TITLE][DEF][EN]A small hollow place in the surface of something made by hitting it.[/EN][CN]凹痕；凹坑（书中指怪物撞坏了芬内尔王子的盔甲）。[/CN][POS]n. & v.[/POS][PH]/dent/[/PH][DU]The monster dented his armor.|(原文例句)怪物撞坏了他的盔甲。[/DU][DU]There is a small dent in the car door.|车门上有一个小凹痕。[/DU][DU]He dropped the metal pot and made a dent.|他把金属锅掉了，摔出一个凹坑。[/DU][/DEF][IMG]infopic01/dent.webp[/IMG]",
+      "[TITLE]常见用法[/TITLE][COLL][H]a big dent|一个大凹痕[POS]n.[/POS][/H][EX]The ball made a big dent in the wall.|球在墙上砸出一个大坑。[/EX][C]dent the confidence|打击信心（比喻）[/C][/COLL]",
+      "[TITLE]额外例句[/TITLE][EX]I made a dent in the fridge with my bike.[POS]n.[/POS]|我用自行车在冰箱上撞出一个凹痕。[/EX][EX]The armor was full of dents after the battle.[POS]n.[/POS]|战斗结束后，盔甲上满是凹痕。[/EX]",
+      "[TITLE]常见错误[/TITLE][ERR]作为名词是“凹痕”，作为动词是“使...产生凹痕”。[/ERR]"
+    ]
+  },
+  "w615": {
+    "word": "lance",
+    "images": {
+      "scene": ["infopic01/lance.webp"],
+      "card": ["wordpic01/lance.webp"]
+    },
+    "richDetail": [
+      "[TITLE]解释[/TITLE][DEF][EN]A long, thin, sharp spear used by knights on horses.[/EN][CN]长矛；长枪（骑士用的）。[/CN][POS]n.[/POS][PH]/læns/[/PH][DU]The Prince in Pink used a long lance.|(原文例句)粉衣王子使用一柄长枪。[/DU][DU]The knight held his lance high.|骑士高举长矛。[/DU][DU]A lance is much longer than a sword.|长矛比剑长得多。[/DU][/DEF][IMG]infopic01/lance.webp[/IMG]",
+      "[TITLE]常见用法[/TITLE][COLL][H]knight's lance|骑士长矛[POS]n.[/POS][/H][EX]The knight's lance was made of strong wood.|骑士的长矛是用坚固的木头做的。[/EX][C]a sharp lance|锋利的长矛[/C][/COLL]",
+      "[TITLE]额外例句[/TITLE][EX]He learned how to use a lance in training.[POS]n.[/POS]|他在训练中学会了如何使用长矛。[/EX][EX]The lance hit the monster's shield.[POS]n.[/POS]|长矛击中了怪物的盾牌。[/EX]",
+      "[TITLE]常见错误[/TITLE][ERR]注意发音是 /læns/。不要和 lens（镜片）混淆。[/ERR]"
+    ]
+  },
+  "w616": {
+    "word": "snowplough",
+    "images": {
+      "scene": ["infopic01/snowplough.webp"],
+      "card": ["wordpic01/snowplough.webp"]
+    },
+    "richDetail": [
+      "[TITLE]解释[/TITLE][DEF][EN]A vehicle or a big tool used to push snow off a road or a path.[/EN][CN]铲雪车；除雪机（书中指“除雪滑梯”）。[/CN][POS]n.[/POS][PH]/ˈsnoʊplaʊ/[/PH][DU]The Snowplough Slide.|(原文例句)除雪滑梯。[/DU][DU]A big snowplough cleared the road this morning.|今天早上大铲雪车清理了道路。[/DU][DU]We followed the snowplough through the snow.|我们跟着铲雪车穿过大雪。[/DU][/DEF][IMG]infopic01/snowplough.webp[/IMG]",
+      "[TITLE]常见用法[/TITLE][COLL][H]clear snow with a snowplough|用除雪机除雪[POS]n.[/POS][/H][EX]The city uses a snowplough to clear the path.|城市使用除雪机来清理小路。[/EX][C]snowplough truck|除雪卡车[/C][/COLL]",
+      "[TITLE]额外例句[/TITLE][EX]The snowplough makes a loud noise when it works.[POS]n.[/POS]|除雪机工作时会发出巨大的响声。[/EX][EX]I saw the orange snowplough on the highway.[POS]n.[/POS]|我在公路上看到了橙色的除雪车。[/EX]",
+      "[TITLE]常见错误[/TITLE][ERR]拼写注意：结尾是 -ough，但读音是 /aʊ/，像汉字“奥”。[/ERR]"
+    ]
+  },
+  "w617": {
+    "word": "fertilizer",
+    "images": {
+      "scene": ["infopic01/fertilizer.webp"],
+      "card": ["wordpic01/fertilizer.webp"]
+    },
+    "richDetail": [
+      "[TITLE]解释[/TITLE][DEF][EN]Special food that you put in the soil to help plants and flowers grow big, strong, and healthy.[/EN][CN]肥料（书中指粉衣王子用来让植物快速生长的魔法肥料）。[/CN][POS]n.[/POS][PH]/ˈfɜːrtəlaɪzər/[/PH][DU]He used his super-growth fertilizer.|(原文例句)他使用了他的超级生长肥料。[/DU][DU]If you want the sunflowers to grow tall, you need to add some fertilizer.|如果你想让向日葵长高，你需要加点肥料。[/DU][DU]Farmers use fertilizer to help the corn grow better.|农民使用肥料来帮助玉米长得更好。[/DU][/DEF][IMG]infopic01/fertilizer.webp[/IMG]",
+      "[TITLE]常见用法[/TITLE][COLL][H]organic fertilizer|有机肥[POS]n.[/POS][/H][EX]Organic fertilizer is good for the small garden.|有机肥对小花园很有好处。[/EX][C]chemical fertilizer|化肥[/C][C]add fertilizer|施肥[/C][/COLL]",
+      "[TITLE]额外例句[/TITLE][EX]The plant looks weak, it might need some fertilizer.[POS]n.[/POS]|这株植物看起来很虚弱，可能需要一些肥料。[/EX][EX]Be careful not to put too much fertilizer on the flowers.[POS]n.[/POS]|小心不要给花施太多的肥。[/EX]",
+      "[TITLE]常见错误[/TITLE][ERR]注意拼写，中间是 -ti- 后面跟着 -lizer。在美式英语中常用 -izer，英式英语中也可能看到 -iser。[/ERR]"
+    ]
+  },
+  "w618": {
+    "word": "yearn for",
+    "images": {
+      "scene": ["infopic01/yearn_for.webp"],
+      "card": ["wordpic01/yearn_for.webp"]
+    },
+    "richDetail": [
+      "[TITLE]解释[/TITLE][DEF][EN]To want something very, very much, especially something that is hard to get.[/EN][CN]渴望；向往（书中指粉衣王子非常渴望成为一名英雄）。[/CN][POS]v. phr.[/POS][PH]/jɜːrn fɔːr/[/PH][DU]He had yearned for a chance to show his bravery.|(原文例句)他一直渴望能有一个展示他勇气的机会。[/DU][DU]The little boy yearned for a pet dragon of his own.|小男孩渴望拥有一头属于自己的宠物龙。[/DU][DU]During the hot summer, everyone yearns for a cool breeze.|在炎热的夏天，每个人都渴望一阵凉爽的微风。[/DU][/DEF][IMG]infopic01/yearn_for.webp[/IMG]",
+      "[TITLE]常见用法[/TITLE][COLL][H]yearn for home|想家[POS]v. phr.[/POS][/H][EX]After a long trip, the sailor yearned for home.|经过长途旅行，水手非常想家。[/EX][C]yearn for adventure|渴望冒险[/C][C]yearn for peace|渴望和平[/C][/COLL]",
+      "[TITLE]额外例句[/TITLE][EX]She yearns for the day she can fly a real airplane.[POS]v. phr.[POS]|她渴望着有一天能驾驶真正的飞机。[/EX][EX]The hungry puppy yearned for a big bowl of food.[POS]v. phr.[POS]|饥饿的小狗渴望着一大碗食物。[/EX]",
+      "[TITLE]常见错误[/TITLE][ERR]yearn 后面接名词时用 for，接动词时用 to（如 yearn to help）。[/ERR]"
+    ]
+  },
+  "w619": {
+    "word": "well-considered",
+    "images": {
+      "scene": ["infopic01/well-considered.webp"],
+      "card": ["wordpic01/well-considered.webp"]
+    },
+    "richDetail": [
+      "[TITLE]解释[/TITLE][DEF][EN]Something that has been thought about very carefully before being done or said.[/EN][CN]经过深思熟虑的；考虑周到的（书中形容王子的动作或决定是经过思考的）。[/CN][POS]adj.[/POS][PH]/ˌwel kənˈsɪdərd/[/PH][DU]He gave a well-considered nod.|(原文例句)他若有所思地点了点头（经过考虑的点头）。[/DU][DU]Her answer was well-considered and very smart.|她的回答是经过深思熟虑的，非常聪明。[/DU][DU]We made a well-considered plan for the festival party.|我们为节日派对制定了一个周密的计划。[/DU][/DEF][IMG]infopic01/well-considered.webp[/IMG]",
+      "[TITLE]常见用法[/TITLE][COLL][H]a well-considered decision|一个慎重的决定[POS]adj.[POS][/H][EX]Moving to a new castle was a well-considered decision.|搬到新城堡是一个经过慎重考虑的决定。[/EX][C]well-considered opinion|成熟的见解[/C][/COLL]",
+      "[TITLE]额外例句[/TITLE][EX]The teacher gave us a well-considered suggestion.[POS]adj.[POS]|老师给了我们一个考虑周全的建议。[/EX][EX]Is your choice well-considered?|你的选择是深思熟虑过的吗？[/EX]",
+      "[TITLE]常见错误[/TITLE][ERR]这是一个合成形容词，中间必须有连字符 -。[/ERR]"
+    ]
+  },
+  "w620": {
+    "word": "tasselled",
+    "images": {
+      "scene": ["infopic01/tasselled.webp"],
+      "card": ["wordpic01/tasselled.webp"]
+    },
+    "richDetail": [
+      "[TITLE]解释[/TITLE][DEF][EN]Decorated with tassels, which are bunches of threads tied together at one end that hang down.[/EN][CN]挂有流苏的；带穗的（书中形容王子的披风或腰带上挂着粉色的流苏）。[/CN][POS]adj.[POS][PH]/ˈtæsld/[/PH][DU]He wore a tasselled belt.|(原文例句)他系着一条带流苏的腰带。[/DU][DU]The princess has a beautiful tasselled bookmark in her book.|公主的书里有一个漂亮的流苏书签。[/DU][DU]The curtains in the palace are tasselled with gold thread.|宫殿里的窗帘挂着金线流苏。[/DU][/DEF][IMG]infopic01/tasselled.webp[/IMG]",
+      "[TITLE]常见用法[/TITLE][COLL][H]tasselled loafers|流苏皮鞋[POS]adj.[POS][/H][EX]My grandpa wears fancy tasselled loafers to the ball.|我爷爷穿着考究的流苏皮鞋去参加舞会。[/EX][C]tasselled cushion|带流苏的靠垫[/C][/COLL]",
+      "[TITLE]额外例句[/TITLE][EX]The red hat has a long tasselled top.[POS]adj.[POS]|红帽子顶部有一个长长的流苏。[/EX][EX]She held a small tasselled bag.|她拿了一个带流苏的小包。[/EX]",
+      "[TITLE]常见错误[/TITLE][ERR]注意拼写有两个 s 和两个 l（英式拼写 tasselled，美式拼写 tasseled）。[/ERR]"
+    ]
+  },
+  "w621": {
+    "word": "confidence",
+    "images": {
+      "scene": ["infopic01/confidence.webp"],
+      "card": ["wordpic01/confidence.webp"]
+    },
+    "richDetail": [
+      "[TITLE]解释[/TITLE][DEF][EN]A feeling that you can do something well or that you are sure about yourself.[/EN][CN]信心；自信（书中指粉衣王子充满了信心）。[/CN][POS]n.[POS][PH]/ˈkɑːnfɪdəns/[/PH][DU]He spoke with great confidence.|(原文例句)他充满自信地说话。[/DU][DU]The little girl gained confidence after she learned to ride a bike.|小女孩学会骑自行车后获得了自信。[/DU][DU]The coach gave the team more confidence to win the game.|教练给了团队更多赢得比赛的信心。[/DU][/DEF][IMG]infopic01/confidence.webp[/IMG]",
+      "[TITLE]常见用法[/TITLE][COLL][H]have confidence in sb/sth|对某人/某事有信心[POS]n.[POS][/H][EX]I have confidence in your magic skills!|我对你的魔法技巧有信心！[/EX][C]self-confidence|自信心[/C][C]lose confidence|失去信心[/C][/COLL]",
+      "[TITLE]额外例句[/TITLE][EX]It takes confidence to stand up and speak in front of everyone.[POS]n.[POS]|站在大家面前讲话需要自信。[/EX][EX]Winning the race gave him the confidence he needed.[POS]n.[POS]|赢得比赛给了他所需要的信心。[/EX]",
+      "[TITLE]常见错误[/TITLE][ERR]注意它的重音在第一个音节。不要把名词 confidence 和形容词 confident（自信的）混淆。[/ERR]"
+    ]
+  },
+  "w622": {
+    "word": "flourish",
+    "images": {
+      "scene": ["infopic01/flourish.webp"],
+      "card": ["wordpic01/flourish.webp"]
+    },
+    "richDetail": [
+      "[TITLE]解释[/TITLE][DEF][EN]To wave something around in a big, fancy way to make people notice it.[/EN][CN]挥舞；（为引起注意的）炫耀动作（书中指王子华丽地挥动他的长矛或披风）。[/CN][POS]v. & n.[/POS][PH]/ˈflɜːrɪʃ/[/PH][DU]He waved his lance with a flourish.|(原文例句)他华丽地挥动了一下长矛。[/DU][DU]The magician opened his cape with a big flourish.|魔术师大模大样地抖开了他的披风。[/DU][DU]Plants flourish when they have enough water and sun.|植物在有足够水和阳光时会茂盛生长（flourish也有繁荣的意思）。[/DU][/DEF][IMG]infopic01/flourish.webp[/IMG]",
+      "[TITLE]常见用法[/TITLE][COLL][H]with a flourish|华丽地；招摇地[POS]n.[POS][/H][EX]The actor bowed with a flourish at the end of the play.|演员在剧终时华丽地鞠了一躬。[/EX][C]flourish a sword|挥舞宝剑[/C][/COLL]",
+      "[TITLE]额外例句[/TITLE][EX]She signed her name with a flourish.[POS]n.[POS]|她龙飞凤舞地签下了自己的名字。[/EX][EX]The knight flourished his shield to show his bravery.[POS]v.[POS]|骑士挥舞盾牌展示他的勇敢。[/EX]",
+      "[TITLE]常见错误[/TITLE][ERR]在描述动作时，flourish 往往意味着“为了好看而做的夸张动作”。[/ERR]"
+    ]
+  },
+  "w623": {
+    "word": "declare",
+    "images": {
+      "scene": ["infopic01/declare.webp"],
+      "card": ["wordpic01/declare.webp"]
+    },
+    "richDetail": [
+      "[TITLE]解释[/TITLE][DEF][EN]To say something out loud in a very firm and official way so everyone can hear.[/EN][CN]宣布；声明（书中指王子正式宣布他的身份或计划）。[/CN][POS]v.[POS][PH]/dɪˈkler/[/PH][DU]\"I am the Prince in Pink!\" he declared.|(原文例句)“我是粉衣王子！”他宣布道。[/DU][DU]The king declared a holiday for the whole kingdom.|国王宣布全国放假一天。[/DU][DU]I declare that this is the best cake ever!|我宣布这是有史以来最好的蛋糕！[/DU][/DEF][IMG]infopic01/declare.webp[/IMG]",
+      "[TITLE]常见用法[/TITLE][COLL][H]declare war|宣战[POS]v.[POS][/H][EX]The dragon declared war on the mean monsters.|巨龙向那些卑鄙的怪物宣战了。[/EX][C]declare the winner|宣布获胜者[/C][/COLL]",
+      "[TITLE]额外例句[/TITLE][EX]The teacher declared that the test was over.[POS]v.[POS]|老师宣布考试结束了。[/EX][EX]“I'm the winner!” the little boy declared happily.[POS]v.[POS]|“我是赢家！”小男孩开心地宣布。[/EX]",
+      "[TITLE]常见错误[/TITLE][ERR]declare 比 say 要正式得多，通常用于宣布重要的事情。[/ERR]"
+    ]
+  },
+  "w624": {
+    "word": "go through",
+    "images": {
+      "scene": ["infopic01/go_through.webp"],
+      "card": ["wordpic01/go_through.webp"]
+    },
+    "richDetail": [
+      "[TITLE]解释[/TITLE][DEF][EN]To experience a difficult time or to move from one side of something to the other.[/EN][CN]经历；穿过；经受（书中指经历困难或者通过某种考验）。[/CN][POS]v. phr.[POS][PH]/ɡoʊ θruː/[/PH][DU]He had to go through many trials.|(原文例句)他必须经历许多考验。[/DU][DU]The train went through a long, dark tunnel.|火车穿过了一个长长、黑暗的隧道。[/DU][DU]We are going through a very busy week at school.|我们在学校正经历非常忙碌的一周。[/DU][/DEF][IMG]infopic01/go_through.webp[/IMG]",
+      "[TITLE]常见用法[/TITLE][COLL][H]go through a hard time|度过难关[POS]v. phr.[POS][/H][EX]The princess went through a hard time when the monsters came.|当怪物来袭时，公主度过了一段艰难的时光。[/EX][C]go through the door|穿过门[/C][C]go through the book|翻阅书本[/C][/COLL]",
+      "[TITLE]额外例句[/TITLE][EX]I need to go through my toys and find the missing ball.[POS]v. phr.[POS]|我需要翻查一下我的玩具，找到丢了的球。[/EX][EX]The explorer went through the jungle to find the lost city.[POS]v. phr.[POS]|探险家穿过丛林寻找失落的城市。[/EX]",
+      "[TITLE]常见错误[/TITLE][ERR]注意 through 的拼写，中间有 ough。不要和 though（虽然）混淆。[/ERR]"
+    ]
+  },
+  "w625": {
+    "word": "delighted",
+    "images": {
+      "scene": ["infopic01/delighted.webp"],
+      "card": ["wordpic01/delighted.webp"]
+    },
+    "richDetail": [
+      "[TITLE]解释[/TITLE][DEF][EN]Feeling very, very happy and pleased about something.[/EN][CN]高兴的；欣喜的（书中描述木兰公主或人们看到王子帮忙时非常开心）。[/CN][POS]adj.[POS][PH]/dɪˈlaɪtɪd/[/PH][DU]Princess Magnolia was delighted.|(原文例句)木兰公主感到非常欣喜。[/DU][DU]I was delighted to receive a birthday card from you!|收到你的生日卡片我太开心了！[/DU][DU]The children were delighted with their new puppy.|孩子们对他们的小狗感到非常满意和开心。[/DU][/DEF][IMG]infopic01/delighted.webp[/IMG]",
+      "[TITLE]常见用法[/TITLE][COLL][H]be delighted to do sth|很高兴做某事[POS]adj.[POS][/H][EX]I would be delighted to help you with your homework.|我很乐意帮你写作业。[/EX][C]be delighted with...|对...感到高兴[/C][C]delighted smile|开心的微笑[/C][/COLL]",
+      "[TITLE]额外例句[/TITLE][EX]The queen was delighted by the beautiful flowers.[POS]adj.[POS]|王后被美丽的鲜花逗得很开心。[/EX][EX]He gave a delighted shout when he saw the ice cream.[POS]adj.[POS]|他看到冰淇淋时发出了开心的尖叫。[/EX]",
+      "[TITLE]常见错误[/TITLE][ERR]delighted 比 happy 的程度更深。它常和 to 或 with 连用。[/ERR]"
+    ]
+  },
+  "w626": {
+    "word": "champion",
+    "images": {
+      "scene": ["infopic01/champion.webp"],
+      "card": ["wordpic01/champion.webp"]
+    },
+    "richDetail": [
+      "[TITLE]解释[/TITLE][DEF][EN]A person who has won a contest; or someone who fights to protect or support others.[/EN][CN]冠军；捍卫者；斗士（书中指粉衣王子是这个节日的守护者/英雄）。[/CN][POS]n.[POS][PH]/ˈtʃæmpiən/[/PH][DU]A champion of the Flower Festival!|(原文例句)鲜花节的英雄！[/DU][DU]The winner of the race is the new champion.|比赛的获胜者是新的冠军。[/DU][DU]The brave knight was a champion for the poor people.|这位勇敢的骑士是穷人的捍卫者。[/DU][/DEF][IMG]infopic01/champion.webp[/IMG]",
+      "[TITLE]常见用法[/TITLE][COLL][H]world champion|世界冠军[POS]n.[POS][/H][EX]He wants to be a world champion in swimming.|他想成为世界游泳冠军。[/EX][C]champion of peace|和平卫士[/C][/COLL]",
+      "[TITLE]额外例句[/TITLE][EX]She is the spelling bee champion of our school.[POS]n.[POS]|她是咱们学校的拼写比赛冠军。[/EX][EX]A true champion never gives up.[POS]n.[POS]|真正的英雄永不言弃。[/EX]",
+      "[TITLE]常见错误[/TITLE][ERR]注意它的第一个音节发 /tʃæm/ 的音，像“产”。[/ERR]"
+    ]
+  },
+  "w627": {
+    "word": "celebration",
+    "images": {
+      "scene": ["infopic01/celebration.webp"],
+      "card": ["wordpic01/celebration.webp"]
+    },
+    "richDetail": [
+      "[TITLE]解释[/TITLE][DEF][EN]A special party or event that people have to show they are happy about something.[/EN][CN]庆祝；庆祝活动（书中指鲜花节的庆祝活动）。[/CN][POS]n.[POS][PH]/ˌselɪˈbreɪʃn/[/PH][DU]The celebration continued all night.|(原文例句)庆祝活动持续了整晚。[/DU][DU]We had a big celebration for my 10th birthday.|我们为我十岁生日举办了一场盛大的庆祝活动。[/DU][DU]There was a parade in the street as part of the celebration.|作为庆祝活动的一部分，街道上举行了游行。[/DU][/DEF][IMG]infopic01/celebration.webp[/IMG]",
+      "[TITLE]常见用法[/TITLE][COLL][H]in celebration of sth|为了庆祝某事[POS]n.[POS][/H][EX]We are having a party in celebration of the new year.|我们正举办派对庆祝新年。[/EX][C]birthday celebration|生日庆祝[/C][C]victory celebration|胜利庆典[/C][/COLL]",
+      "[TITLE]额外例句[/TITLE][EX]The castle was filled with music and dancing during the celebration.[POS]n.[POS]|庆典期间，城堡里充满了音乐和舞蹈。[/EX][EX]I love the colorful fireworks at the celebration.[POS]n.[POS]|我喜欢庆典上五彩缤纷的烟花。[/EX]",
+      "[TITLE]常见错误[/TITLE][ERR]celebration 是名词。动词形式是 celebrate（庆祝）。[/ERR]"
+    ]
+  },
+  "w628": {
+    "word": "paladin",
+    "images": {
+      "scene": ["infopic01/paladin.webp"],
+      "card": ["wordpic01/paladin.webp"]
+    },
+    "richDetail": [
+      "[TITLE]解释[/TITLE][DEF][EN]A very brave and noble hero or knight who protects people and fights for what is good.[/EN][CN]圣骑士；游侠；英雄（书中指“粉衣游侠/骑士”）。[/CN][POS]n.[POS][PH]/ˈpælədɪn/[/PH][DU]A paladin of pink!|(原文例句)粉衣游侠！[/DU][DU]The legend tells of a paladin who saved the kingdom from a dragon.|传说讲的是一位圣骑士从巨龙手中拯救了王国。[/DU][DU]He wanted to grow up to be a paladin and help others.|他想长大后成为一名圣骑士并帮助他人。[/DU][/DEF][IMG]infopic01/paladin.webp[/IMG]",
+      "[TITLE]常见用法[/TITLE][COLL][H]brave paladin|勇敢的圣骑士[POS]n.[POS][/H][EX]The brave paladin rode a white horse.|勇敢的圣骑士骑着一匹白马。[/EX][C]holy paladin|神圣骑士[/C][/COLL]",
+      "[TITLE]额外例句[/TITLE][EX]The paladin carried a shield with a gold star on it.[POS]n.[POS]|这位圣骑士拿着一个印有金星的盾牌。[/EX][EX]Only a true paladin can pull the sword from the stone.[POS]n.[POS]|只有真正的圣骑士才能把剑从石头里拔出来。[/EX]",
+      "[TITLE]常见错误[/TITLE][ERR]这是一个比较古老的词，常出现在童话或奇幻故事里。[/ERR]"
+    ]
+  },
+  "w629": {
+    "word": "distress",
+    "images": {
+      "scene": ["infopic01/distress.webp"],
+      "card": ["wordpic01/distress.webp"]
+    },
+    "richDetail": [
+      "[TITLE]解释[/TITLE][DEF][EN]A feeling of great sadness, worry, or pain; or being in a dangerous situation and needing help.[/EN][CN]痛苦；忧虑；遇难（书中常提到“在困境中的公主”）。[/CN][POS]n.[POS][PH]/dɪˈstres/[/PH][DU]A princess in distress.|(原文例句)一个身处困境/危险中的公主。[/DU][DU]The little lost kitten was in great distress.|那只走丢的小猫非常痛苦（也很惊慌）。[/DU][DU]The ship sent a signal because it was in distress.|船只发出了信号，因为它遇难了。[/DU][/DEF][IMG]infopic01/distress.webp[/IMG]",
+      "[TITLE]常见用法[/TITLE][COLL][H]in distress|遇难中；在困境中[POS]n.[POS][/H][EX]He rushed to help the person in distress.|他冲过去帮助那个遇难的人。[/EX][C]signs of distress|痛苦的迹象[/C][/COLL]",
+      "[TITLE]额外例句[/TITLE][EX]Seeing the broken toy caused the child much distress.[POS]n.[POS]|看到弄坏的玩具让孩子感到非常难过。[/EX][EX]The hero heard a cry for distress from the forest.[POS]n.[POS]|英雄听到了森林里传来的求救声。[/EX]",
+      "[TITLE]常见错误[/TITLE][ERR]注意在故事中，in distress 经常指需要被营救的紧急情况。[/ERR]"
+    ]
+  },
+  "w630": {
+    "word": "holster",
+    "images": {
+      "scene": ["infopic01/holster.webp"],
+      "card": ["wordpic01/holster.webp"]
+    },
+    "richDetail": [
+      "[TITLE]解释[/TITLE][DEF][EN]A special pocket or holder, usually worn on a belt, to carry a tool or a weapon.[/EN][CN]（皮）套；刀套；工具套（书中指粉衣王子的丝带套）。[/CN][POS]n.[POS][PH]/ˈhoʊlstər/[/PH][DU]He pulled a ribbon from his holster.|(原文例句)他从套子里抽出一条丝带。[/DU][DU]The cowboy has a leather holster for his toy gun.|牛仔有一个装玩具枪的皮套。[/DU][DU]The policeman keeps his radio in a holster on his belt.|警察把对讲机装在腰带上的套子里。[/DU][/DEF][IMG]infopic01/holster.webp[/IMG]",
+      "[TITLE]常见用法[/TITLE][COLL][H]leather holster|皮套[POS]n.[POS][/H][EX]A leather holster is very strong.[POS]n.[POS]|皮套非常坚固。[/EX][C]shoulder holster|肩挎式套子[/C][/COLL]",
+      "[TITLE]额外例句[/TITLE][EX]The hero put his magic wand back into its holster.[POS]n.[POS]|英雄把魔法棒放回了它的套子里。[/EX][EX]I can see the shiny tool in his holster.[POS]n.[POS]|我能看到他套子里那个闪亮的工具。[/EX]",
+      "[TITLE]常见错误[/TITLE][ERR]注意第一个音节发 /hoʊl/，像“厚”。[/ERR]"
+    ]
+  },
+  "w631": {
+    "word": "attach",
+    "images": {
+      "scene": ["infopic01/attach.webp"],
+      "card": ["wordpic01/attach.webp"]
+    },
+    "richDetail": [
+      "[TITLE]解释[/TITLE][DEF][EN]To join or fasten one thing to another thing.[/EN][CN]系；贴；连接（书中指连接某种装备或工具）。[/CN][POS]v.[POS][PH]/əˈtætʃ/[/PH][DU]He attached a pink ribbon to his belt.|(原文例句)他在腰带上系了一条粉色丝带。[/DU][DU]I used glue to attach the wing back onto the toy airplane.|我用胶水把机翼粘回了玩具飞机上。[/DU][DU]Please attach a photo to your library card.|请在借书证上贴一张照片。[/DU][/DEF][IMG]infopic01/attach.webp[/IMG]",
+      "[TITLE]常见用法[/TITLE][COLL][H]attach A to B|把A连接到B上[POS]v.[POS][/H][EX]You should attach the leash to the dog's collar.|你应该把牵引绳系在狗狗的项圈上。[/EX][C]attach a label|贴标签[/C][C]be attached to sb/sth|依恋某人/某物[/C][/COLL]",
+      "[TITLE]额外例句[/TITLE][EX]The little girl is very attached to her favorite doll.[POS]v.[POS]|那个小女孩非常依恋她最喜欢的娃娃。[/EX][EX]Can you help me attach these two train cars together?[POS]v.[POS]|你能帮我把这两节火车车厢连在一起吗？[/EX]",
+      "[TITLE]常见错误[/TITLE][ERR]attach 后面接连接的对象时通常用 to，不要用 with。[/ERR]"
+    ]
+  },
+  "w632": {
+    "word": "creation",
+    "images": {
+      "scene": ["infopic01/creation.webp"],
+      "card": ["wordpic01/creation.webp"]
+    },
+    "richDetail": [
+      "[TITLE]解释[/TITLE][DEF][EN]Something that you have made using your own ideas and hands, like a drawing or a toy.[/EN][CN]作品；创造物（书中指粉衣王子用魔法肥料和创意做出的奇特植物或艺术品）。[/CN][POS]n.[/POS][PH]/kriˈeɪʃn/[/PH][DU]It was his latest creation.|(原文例句)这是他最新的作品。[/DU][DU]Look at my Lego creation! It is a big castle.|看我的乐高作品！它是一个大城堡。[/DU][DU]The artist showed her beautiful creation to everyone.|艺术家向大家展示了她精美的作品。[/DU][/DEF][IMG]infopic01/creation.webp[/IMG]",
+      "[TITLE]常见用法[/TITLE][COLL][H]artistic creation|艺术创作[POS]n.[/POS][/H][EX]The museum is full of wonderful artistic creations.|博物馆里到处都是奇妙的艺术作品。[/EX][C]new creation|新作品[/C][C]own creation|自己创作的东西[/C][/COLL]",
+      "[TITLE]额外例句[/TITLE][EX]The chef made a delicious new creation for the party.[POS]n.[/POS]|厨师为派对制作了一款美味的新作品。[/EX][EX]Every child's drawing is a unique creation.[POS]n.[/POS]|每个孩子的画作都是独一无二的创作。[/EX]",
+      "[TITLE]常见错误[/TITLE][ERR]creation 是名词，表示“做出来的东西”。如果你想说“去创造”这个动作，要用动词 create。[/ERR]"
+    ]
+  },
+  "w633": {
+    "word": "stalk",
+    "images": {
+      "scene": ["infopic01/stalk.webp"],
+      "card": ["wordpic01/stalk.webp"]
+    },
+    "richDetail": [
+      "[TITLE]解释[/TITLE][DEF][EN]To follow someone or something quietly and slowly, trying not to be seen.[/EN][CN]悄悄追踪；潜近（书中指怪物悄悄靠近集市）。[/CN][POS]v.[/POS][PH]/stɔːk/[/PH][DU]The monster began to stalk the fair.|(原文例句)怪物开始悄悄潜近集市。[/DU][DU]The cat stalks the bird in the garden.|猫在花园里悄悄靠近小鸟。[/DU][DU]The tiger is stalking through the tall grass.|老虎正穿过长长的草丛进行追踪。[/DU][/DEF][IMG]infopic01/stalk.webp[/IMG]",
+      "[TITLE]常见用法[/TITLE][COLL][H]stalk through sth|穿过某地悄悄追踪[POS]v.[/POS][/H][EX]The wolf stalked through the dark forest.|狼穿过黑暗的森林进行追踪。[/EX][C]stalk its prey|追踪猎物[/C][/COLL]",
+      "[TITLE]额外例句[/TITLE][EX]He tried to stalk his friend to surprise him.[POS]v.[/POS]|他试着悄悄跟着朋友想吓他一跳。[/EX][EX]The shadow stalked behind the trees.[POS]v.[/POS]|黑影在树后悄悄移动。[/EX]",
+      "[TITLE]常见错误[/TITLE][ERR]注意 stalk 中的字母 l 是不发音的，读作 /stɔːk/。[/ERR]"
+    ]
+  },
+  "w634": {
+    "word": "twerp",
+    "images": {
+      "scene": ["infopic01/twerp.webp"],
+      "card": ["wordpic01/twerp.webp"]
+    },
+    "richDetail": [
+      "[TITLE]解释[/TITLE][DEF][EN]A silly or annoying person (often used as a funny or mean name).[/EN][CN]笨蛋；讨厌鬼；小傻瓜（书中指怪物觉得王子很烦人时喊他的称呼）。[/CN][POS]n.[/POS][PH]/twɜːrp/[/PH][DU]\"Go away, you pink twerp!\" the monster said.|(原文例句)“走开，你这个粉色的小讨厌鬼！”怪物说道。[/DU][DU]Stop being such a twerp and give me my toy!|别那么讨厌，把玩具还给我！[/DU][DU]He is a funny little twerp sometimes.|他有时候是个滑稽的小傻瓜。[/DU][/DEF][IMG]infopic01/twerp.webp[/IMG]",
+      "[TITLE]常见用法[/TITLE][COLL][H]annoying twerp|讨厌的家伙[POS]n.[/POS][/H][EX]My little brother can be an annoying twerp sometimes.|我弟弟有时候真是个讨厌的家伙。[/EX][C]silly twerp|小笨蛋[/C][/COLL]",
+      "[TITLE]额外例句[/TITLE][EX]The big dragon thought the knight was a tiny twerp.[POS]n.[/POS]|大龙觉得那个骑士是个微不足道的小傻瓜。[/EX][EX]Don't call your friends a twerp; it's not very kind.[POS]n.[/POS]|别叫你的朋友“讨厌鬼”，这不太礼貌。[/EX]",
+      "[TITLE]常见错误[/TITLE][ERR]这是一个非常非正式（informal）且带点开玩笑性质的贬义词，通常只在好朋友之间或书中怪物说话时出现。[/ERR]"
+    ]
+  },
+  "w635": {
+    "word": "funky",
+    "images": {
+      "scene": ["infopic01/funky.webp"],
+      "card": ["wordpic01/funky.webp"]
+    },
+    "richDetail": [
+      "[TITLE]解释[/TITLE][DEF][EN]Having a strong, strange smell; or something that is unusual in a cool and stylish way.[/EN][CN]有奇特气味的；时髦古怪的（书中形容粉色怪物的味道很特别，或者指一种酷酷的风格）。[/CN][POS]adj.[/POS][PH]/ˈfʌŋki/[/PH][DU]It had a funky pink smell.|(原文例句)它有一种奇特的粉色气味。[/DU][DU]This cheese has a very funky smell.|这块奶酪的味道很奇怪。[/DU][DU]I like your funky new shoes!|我喜欢你这双时髦又古怪的新鞋！[/DU][/DEF][IMG]infopic01/funky.webp[/IMG]",
+      "[TITLE]常见用法[/TITLE][COLL][H]funky music|节奏强劲且奇特的音乐[POS]adj.[/POS][/H][EX]We danced to the funky music at the party.|我们在派对上随着动感奇特的音乐起舞。[/EX][C]funky smell|奇怪的味道[/C][C]funky style|古怪时髦的风格[/C][/COLL]",
+      "[TITLE]额外例句[/TITLE][EX]The old gym bag had a funky smell after the game.[POS]adj.[POS]|比赛后，旧运动包里有一股难闻的怪味。[/EX][EX]She wears funky glasses with star shapes.[POS]adj.[POS]|她戴着星星形状的古怪眼镜。[/EX]",
+      "[TITLE]常见错误[/TITLE][ERR]funky 是个“多面手”：形容味道时通常指不太好闻的怪味；形容风格或音乐时通常指“很酷、很有个性”。[/ERR]"
+    ]
+  },
+  "w636": {
+    "word": "ripple",
+    "images": {
+      "scene": ["infopic01/ripple.webp"],
+      "card": ["wordpic01/ripple.webp"]
+    },
+    "richDetail": [
+      "[TITLE]解释[/TITLE][DEF][EN]A small wave or movement on the surface of water or in the air.[/EN][CN]波纹；涟漪（书中描述粉色烟雾或地面的轻微波动）。[/CN][POS]n. & v.[/POS][PH]/ˈrɪpl/[/PH][DU]A ripple moved through the pink puff.|(原文例句)粉色烟雾团里闪过一丝波动。[/DU][DU]I threw a stone into the pond and saw many ripples.|我往池塘里扔了一块石头，看到了很多波纹。[/DU][DU]The wind made the grass ripple like water.|风吹过草地，使它像水面一样泛起波纹。[/DU][/DEF][IMG]infopic01/ripple.webp[/IMG]",
+      "[TITLE]常见用法[/TITLE][COLL][H]ripple effect|连锁反应（波纹效应）[POS]n.[POS][/H][EX]The news caused a ripple effect across the town.|这个消息在全镇引起了连锁反应。[/EX][C]water ripples|水波纹[/C][/COLL]",
+      "[TITLE]额外例句[/TITLE][EX]The cat's fur rippled as it ran fast.[POS]v.[POS]|猫飞快奔跑时，它的皮毛像波浪一样起伏。[/EX][EX]Look at the ripples in the lake.|看湖里的波纹。[/EX]",
+      "[TITLE]常见错误[/TITLE][ERR]ripple 是指很小的波浪，如果是大海里的巨浪，要用 wave。[/ERR]"
+    ]
+  },
+  "w637": {
+    "word": "tremble",
+    "images": {
+      "scene": ["infopic01/tremble.webp"],
+      "card": ["wordpic01/tremble.webp"]
+    },
+    "richDetail": [
+      "[TITLE]解释[/TITLE][DEF][EN]To shake a little bit because you are scared, cold, or very excited.[/EN][CN]颤抖；发抖（书中形容人们或动物见到怪物时吓得发抖）。[/CN][POS]v.[/POS][PH]/ˈtrembl/[/PH][DU]The ground began to tremble.|(原文例句)地面开始颤抖起来。[/DU][DU]The little puppy trembled in the cold rain.|小狗在冷雨中发抖。[/DU][DU]Her voice trembled when she spoke to the giant dragon.|她和巨龙说话时，声音在发抖。[/DU][/DEF][IMG]infopic01/tremble.webp[/IMG]",
+      "[TITLE]常见用法[/TITLE][COLL][H]tremble with fear|吓得发抖[POS]v.[POS][/H][EX]The mouse trembled with fear when it saw the cat.|老鼠看到猫时吓得全身发抖。[/EX][C]tremble with cold|冷得发抖[/C][C]tremble with excitement|激动得发抖[/C][/COLL]",
+      "[TITLE]额外例句[/TITLE][EX]I could feel the leaves tremble in the wind.[POS]v.[POS]|我能感觉到叶子在风中颤动。[/EX][EX]He trembled as he opened the scary door.[POS]v.[POS]|他打开那扇恐怖的门时，身体在发抖。[/EX]",
+      "[TITLE]常见错误[/TITLE][ERR]tremble 指的是“细微且连续的抖动”。如果是大幅度的摇晃，通常用 shake。[/ERR]"
+    ]
+  },
+  "w638": {
+    "word": "makeover",
+    "images": {
+      "scene": ["infopic01/makeover.webp"],
+      "card": ["wordpic01/makeover.webp"]
+    },
+    "richDetail": [
+      "[TITLE]解释[/TITLE][DEF][EN]A complete change to make someone or something look better and more beautiful.[/EN][CN]大变身；美容；翻新（书中指粉衣王子给怪物做了一次华丽的粉色大变身）。[/CN][POS]n.[POS][PH]/ˈmeɪkoʊvər/[/PH][DU]A Pink Paladin makeover!|(原文例句)一次粉衣游侠大变身！[/DU][DU]The old house needs a complete makeover.|这栋旧房子需要彻底翻新。[/DU][DU]My sister gave her doll a makeover with a new dress and hair ribbon.|我姐姐给她的娃娃换了新裙子和发带，做了一次大变身。[/DU][/DEF][IMG]infopic01/makeover.webp[/IMG]",
+      "[TITLE]常见用法[/TITLE][COLL][H]give sb/sth a makeover|给某人/某物做大变身[POS]n.[POS][/H][EX]They are going to give the park a makeover.|他们打算把公园重新整修一下。[/EX][C]beauty makeover|美容大变身[/C][C]room makeover|房间翻新[/C][/COLL]",
+      "[TITLE]额外例句[/TITLE][EX]The dragon looked much friendlier after its makeover.[POS]n.[POS]|经过“大变身”后，巨龙看起来友好多了。[/EX][EX]I want a bedroom makeover with blue stars on the ceiling.[POS]n.[POS]|我想要一个天花板上有蓝星星的卧室大变身。[/EX]",
+      "[TITLE]常见错误[/TITLE][ERR]makeover 是名词。注意它是两个词 make 和 over 连在一起变成的一个词。[/ERR]"
+    ]
+  },
+  "w639": {
+    "word": "preen",
+    "images": {
+      "scene": ["infopic01/preen.webp"],
+      "card": ["wordpic01/preen.webp"]
+    },
+    "richDetail": [
+      "[TITLE]解释[/TITLE][DEF][EN]When a bird cleans its feathers; or when a person spends a lot of time making themselves look neat and pretty.[/EN][CN]（鸟）用嘴整理羽毛；（人）打扮，精心打理（书中指怪物在大变身后开始臭美地整理自己）。[/CN][POS]v.[POS][PH]/priːn/[/PH][DU]The monster began to preen.|(原文例句)怪物开始精心打理起自己来。[/DU][DU]The swan used its beak to preen its white feathers.|天鹅用它的嘴整理洁白的羽毛。[/DU][DU]He spent a long time preening in front of the mirror before the party.|派对前他在镜子前花了很长时间打扮自己。[/DU][/DEF][IMG]infopic01/preen.webp[/IMG]",
+      "[TITLE]常见用法[/TITLE][COLL][H]preen oneself|打扮自己/整理羽毛[POS]v.[POS][/H][EX]The cat preened itself after the meal.|猫吃完饭后整理自己的皮毛。[/EX][C]preen and primp|打扮得整整齐齐[/C][/COLL]",
+      "[TITLE]额外例句[/TITLE][EX]The birds were preening on the tree branch.[POS]v.[POS]|鸟儿们在树枝上整理羽毛。[/EX][EX]She was preening her new pink hair ribbon.[POS]v.[POS]|她正在整理她那条新的粉色发带。[/EX]",
+      "[TITLE]常见错误[/TITLE][ERR]这个词最初是形容鸟整理羽毛的。用在人身上时，通常带有一点点“臭美”或“过度注重外表”的意思。[/ERR]"
+    ]
+  },
+  "w640": {
+    "word": "frowny",
+    "images": {
+      "scene": ["infopic01/frowny.webp"],
+      "card": ["wordpic01/frowny.webp"]
+    },
+    "richDetail": [
+      "[TITLE]解释[/TITLE][DEF][EN]Having a face that shows you are sad or angry, usually with the corners of your mouth turned down.[/EN][CN]皱眉的；苦着脸的（书中形容怪物原本那张不高兴的脸）。[/CN][POS]adj.[POS][PH]/ˈfraʊni/[/PH][DU]It had a frowny face.|(原文例句)它有一张苦瓜脸（皱着眉的脸）。[/DU][DU]Why do you have such a frowny face today? Are you sad?|你今天为什么苦着张脸？你难过吗？[/DU][DU]He gave me a frowny look when I took his toy.|当我拿走他的玩具时，他给了我一个皱眉的表情。[/DU][/DEF][IMG]infopic01/frowny.webp[/IMG]",
+      "[TITLE]常见用法[/TITLE][COLL][H]frowny face|苦瓜脸/不高兴的脸[POS]adj.[POS][/H][EX]She drew a frowny face on the unhappy balloon.|她在那个漏气的气球上画了一张不高兴的脸。[/EX][C]frowny look|皱眉的表情[/C][/COLL]",
+      "[TITLE]额外例句[/TITLE][EX]Don't be frowny! Let's go and get some ice cream.[POS]adj.[POS]|别愁眉苦脸的！咱们去吃冰淇淋吧。[/EX][EX]The baby was frowny because he wanted his milk.[POS]adj.[POS]|宝宝苦着脸，因为他想喝奶。[/EX]",
+      "[TITLE]常见错误[/TITLE][ERR]frowny 比较口语化。动词是 frown（皱眉）。注意拼写最后是 -y。[/ERR]"
+    ]
+  },
+  "w641": {
+    "word": "eager",
+    "images": {
+      "scene": ["infopic01/eager.webp"],
+      "card": ["wordpic01/eager.webp"]
+    },
+    "richDetail": [
+      "[TITLE]解释[/TITLE][DEF][EN]Wanting to do something very much and feeling very excited about it.[/EN][CN]渴望的；热切的（书中指木兰公主急于去感谢粉衣王子）。[/CN][POS]adj.[POS][PH]/ˈiːɡər/[/PH][DU]She was eager to thank him.|(原文例句)她急于（渴望）去感谢他。[/DU][DU]The children were eager to open their birthday presents.|孩子们急着要拆开他们的生日礼物。[/DU][DU]The puppy was eager for its walk in the park.|小狗渴望去公园散步。[/DU][/DEF][IMG]infopic01/eager.webp[/IMG]",
+      "[TITLE]常见用法[/TITLE][COLL][H]be eager to do sth|渴望做某事[POS]adj.[POS][/H][EX]He is eager to learn how to ride a horse.|他渴望学习如何骑马。[/EX][C]eager for news|急于得到消息[/C][C]eager help|热心的帮助[/C][/COLL]",
+      "[TITLE]额外例句[/TITLE][EX]The young dragon was eager to fly for the first time.[POS]adj.[POS]|幼龙渴望进行第一次飞行。[/EX][EX]She gave an eager nod when I asked if she wanted cake.[POS]adj.[POS]|当我问她想不想吃蛋糕时，她热切地了点头。[/EX]",
+      "[TITLE]常见错误[/TITLE][ERR]eager 是形容词；它的副词形式是 eagerly（渴望地）。[/ERR]"
+    ]
+  },
+  "w642": {
+    "word": "unravel",
+    "images": {
+      "scene": ["infopic01/unravel.webp"],
+      "card": ["wordpic01/unravel.webp"]
+    },
+    "richDetail": [
+      "[TITLE]解释[/TITLE][DEF][EN]To untie or undo something that is knotted or woven, like a string or a secret.[/EN][CN]解开；拆开（书中指粉衣王子解开他腰带上的丝带）。[/CN][POS]v.[POS][PH]/ʌnˈrævl/[/PH][DU]The Prince in Pink unravelled a ribbon from his belt.|(原文例句)粉衣王子从腰带上解开了一条丝带。[/DU][DU]My sweater started to unravel when a thread got caught.|我的毛衣被勾住了一根线，开始脱线拆开了。[/DU][DU]It took time to unravel the mystery of the missing key.|解开钥匙失踪之谜花了一些时间。[/DU][/DEF][IMG]infopic01/unravel.webp[/IMG]",
+      "[TITLE]常见用法[/TITLE][COLL][H]unravel a knot|解开一个结[POS]v.[POS][/H][EX]Can you help me unravel this messy knot in the string?|你能帮我解开绳子上这个乱糟糟的结吗？[/EX][C]unravel a secret|揭开秘密[/C][/COLL]",
+      "[TITLE]额外例句[/TITLE][EX]The ball of yarn began to unravel and roll across the floor.[POS]v.[POS]|线团开始散开，滚过地板。[/EX][EX]The plot of the story began to unravel toward the end.[POS]v.[POS]|故事的情节在接近尾声时开始逐渐明朗（解开了谜团）。[/EX]",
+      "[TITLE]常见错误[/TITLE][ERR]注意拼写，中间有两个 l（英式拼写 unravelled，美式拼写 unraveled 也可以）。[/ERR]"
+    ]
+  },
+  "q_w602": {
+    "type": "choice_text",
+    "wordIds": ["w602"],
+    "question": "Feeding the class fish is your ______.",
+    "options": ["confidence", "responsibility", "celebration", "distress"],
+    "answer": 1
+  },
+  "q_w603": {
+    "type": "choice_text",
+    "wordIds": ["w603"],
+    "question": "When we arrived, the festival was already ______.",
+    "options": ["in full swing", "in distress", "well-considered", "cozy"],
+    "answer": 0
+  },
+  "q_w604": {
+    "type": "choice_text",
+    "wordIds": ["w604"],
+    "question": "At the fair, we rode the ______ that spins in a big circle.",
+    "options": ["scrapbook", "shortcut", "go-round", "coatrack"],
+    "answer": 2
+  },
+  "q_w605": {
+    "type": "choice_text",
+    "wordIds": ["w605"],
+    "question": "The car’s front ______ got a scratch.",
+    "options": ["holster", "tasselled", "trench", "bumper"],
+    "answer": 3
+  },
+  "q_w606": {
+    "type": "choice_text",
+    "wordIds": ["w606"],
+    "question": "My mom adds ______ to salad because it smells a bit like candy.",
+    "options": ["kelp", "fennel", "moss", "cocoa"],
+    "answer": 1
+  },
+  "q_w607": {
+    "type": "choice_text",
+    "wordIds": ["w607"],
+    "question": "I ______ visit my grandma again.",
+    "options": ["yearn to", "go through", "in full swing", "stalk"],
+    "answer": 0
+  },
+  "q_w608": {
+    "type": "choice_text",
+    "wordIds": ["w608"],
+    "question": "I packed snacks and water, so I was ______ for the hike.",
+    "options": ["drowsy", "eager", "frazzled", "prepared"],
+    "answer": 3
+  },
+  "q_w609": {
+    "type": "choice_text",
+    "wordIds": ["w609"],
+    "question": "An ______ is a big bird that can run fast but cannot fly.",
+    "options": ["molar", "twerp", "emu", "kelp"],
+    "answer": 2
+  },
+  "q_w610": {
+    "type": "choice_text",
+    "wordIds": ["w610"],
+    "question": "She let out a loud ______ when the surprise popped out.",
+    "options": ["screech", "shriek", "ripple", "dent"],
+    "answer": 1
+  },
+  "q_w611": {
+    "type": "choice_text",
+    "wordIds": ["w611"],
+    "question": "The monster gave a ______ look that made everyone step back.",
+    "options": ["menacing", "delighted", "cozy", "tasselled"],
+    "answer": 0
+  },
+  "q_w612": {
+    "type": "choice_text",
+    "wordIds": ["w612"],
+    "question": "The loud siren was ______ and made people worry.",
+    "options": ["funky", "plump", "alarming", "royal"],
+    "answer": 2
+  },
+  "q_w613": {
+    "type": "choice_text",
+    "wordIds": ["w613"],
+    "question": "Don’t ______ your drawing—keep it flat.",
+    "options": ["unravel", "attach", "dent", "crumple"],
+    "answer": 3
+  },
+  "q_w614": {
+    "type": "choice_text",
+    "wordIds": ["w614"],
+    "question": "The ball hit the door and left a small ______.",
+    "options": ["wrinkle", "dent", "cavity", "ripple"],
+    "answer": 1
+  },
+  "q_w615": {
+    "type": "choice_text",
+    "wordIds": ["w615"],
+    "question": "The knight carried a long ______.",
+    "options": ["lance", "holster", "bumper", "go-round"],
+    "answer": 0
+  },
+  "q_w616": {
+    "type": "choice_text",
+    "wordIds": ["w616"],
+    "question": "A ______ cleared the snow from the road after the storm.",
+    "options": ["fertilizer", "slush", "snowplough", "coatrack"],
+    "answer": 2
+  },
+  "q_w617": {
+    "type": "choice_text",
+    "wordIds": ["w617"],
+    "question": "Farmers add ______ to help plants grow strong.",
+    "options": ["saliva", "moss", "gear", "fertilizer"],
+    "answer": 3
+  },
+  "q_w618": {
+    "type": "choice_text",
+    "wordIds": ["w618"],
+    "question": "After the long trip, I ______ home.",
+    "options": ["yearn to", "yearn for", "go through", "depend on"],
+    "answer": 1
+  },
+  "q_w619": {
+    "type": "choice_text",
+    "wordIds": ["w619"],
+    "question": "She made a ______ decision before speaking.",
+    "options": ["well-considered", "wobbly", "thunderous", "gooey"],
+    "answer": 0
+  },
+  "q_w620": {
+    "type": "choice_text",
+    "wordIds": ["w620"],
+    "question": "His belt was ______ with little threads hanging down.",
+    "options": ["royal", "plump", "tasselled", "lumpy"],
+    "answer": 2
+  },
+  "q_w621": {
+    "type": "choice_text",
+    "wordIds": ["w621"],
+    "question": "Winning the game gave her more ______.",
+    "options": ["responsibility", "distress", "celebration", "confidence"],
+    "answer": 3
+  },
+  "q_w622": {
+    "type": "choice_text",
+    "wordIds": ["w622"],
+    "question": "The magician bowed with a big ______.",
+    "options": ["flourish", "dent", "trench", "ripple"],
+    "answer": 0
+  },
+  "q_w623": {
+    "type": "choice_text",
+    "wordIds": ["w623"],
+    "question": "The judge will ______ the winner.",
+    "options": ["deny", "declare", "pursue", "consult"],
+    "answer": 1
+  },
+  "q_w624": {
+    "type": "choice_text",
+    "wordIds": ["w624"],
+    "question": "The train will ______ a long, dark tunnel.",
+    "options": ["curl up", "in full swing", "go through", "slosh"],
+    "answer": 2
+  },
+  "q_w625": {
+    "type": "choice_text",
+    "wordIds": ["w625"],
+    "question": "I was ______ to get your invitation!",
+    "options": ["frazzled", "menacing", "drowsy", "delighted"],
+    "answer": 3
+  },
+  "q_w626": {
+    "type": "choice_text",
+    "wordIds": ["w626"],
+    "question": "The fastest runner became the new ______.",
+    "options": ["paladin", "champion", "responsibility", "creation"],
+    "answer": 1
+  },
+  "q_w627": {
+    "type": "choice_text",
+    "wordIds": ["w627"],
+    "question": "We had a big ______ for the new year.",
+    "options": ["distress", "management", "celebration", "responsibility"],
+    "answer": 2
+  },
+  "q_w628": {
+    "type": "choice_text",
+    "wordIds": ["w628"],
+    "question": "In fantasy stories, a ______ is a brave hero or knight who protects people.",
+    "options": ["paladin", "twerp", "champion", "lance"],
+    "answer": 0
+  },
+  "q_w629": {
+    "type": "choice_text",
+    "wordIds": ["w629"],
+    "question": "The lost puppy was in ______ and needed help.",
+    "options": ["confidence", "celebration", "relief", "distress"],
+    "answer": 3
+  },
+  "q_w630": {
+    "type": "choice_text",
+    "wordIds": ["w630"],
+    "question": "He kept his walkie-talkie in a ______ on his belt.",
+    "options": ["coatrack", "scrapbook", "holster", "playpen"],
+    "answer": 2
+  },
+  "q_w631": {
+    "type": "choice_text",
+    "wordIds": ["w631"],
+    "question": "Please ______ the label to the bag.",
+    "options": ["unravel", "attach", "preen", "steer"],
+    "answer": 1
+  },
+  "q_w632": {
+    "type": "choice_text",
+    "wordIds": ["w632"],
+    "question": "Look at my Lego ______—I built a castle!",
+    "options": ["creation", "celebration", "trench", "cocoa"],
+    "answer": 0
+  },
+  "q_w633": {
+    "type": "choice_text",
+    "wordIds": ["w633"],
+    "question": "The cat will ______ the bird quietly in the garden.",
+    "options": ["trot", "pursue", "distract", "stalk"],
+    "answer": 3
+  },
+  "q_w634": {
+    "type": "choice_text",
+    "wordIds": ["w634"],
+    "question": "Don’t call people a ______. It’s not kind.",
+    "options": ["pal", "twerp", "champion", "companion"],
+    "answer": 1
+  },
+  "q_w635": {
+    "type": "choice_text",
+    "wordIds": ["w635"],
+    "question": "My gym bag smells ______ after practice.",
+    "options": ["salty", "cozy", "funky", "tasselled"],
+    "answer": 2
+  },
+  "q_w636": {
+    "type": "choice_text",
+    "wordIds": ["w636"],
+    "question": "A stone made a ______ on the pond.",
+    "options": ["ripple", "dent", "wrinkle", "trench"],
+    "answer": 0
+  },
+  "q_w637": {
+    "type": "choice_text",
+    "wordIds": ["w637"],
+    "question": "My hands began to ______ in the cold.",
+    "options": ["gurgle", "sprawl", "preen", "tremble"],
+    "answer": 3
+  },
+  "q_w638": {
+    "type": "choice_text",
+    "wordIds": ["w638"],
+    "question": "They gave the old room a ______ with new paint and new pillows.",
+    "options": ["creation", "celebration", "makeover", "coating"],
+    "answer": 2
+  },
+  "q_w639": {
+    "type": "choice_text",
+    "wordIds": ["w639"],
+    "question": "The bird used its beak to ______ its feathers.",
+    "options": ["snuggle", "preen", "unravel", "attach"],
+    "answer": 1
+  },
+  "q_w640": {
+    "type": "choice_text",
+    "wordIds": ["w640"],
+    "question": "He had a ______ face because he lost the game.",
+    "options": ["frowny", "delighted", "eager", "cozy"],
+    "answer": 0
+  },
+  "q_w641": {
+    "type": "choice_text",
+    "wordIds": ["w641"],
+    "question": "The kids were ______ to open the presents.",
+    "options": ["frazzled", "drowsy", "menacing", "eager"],
+    "answer": 3
+  },
+  "q_w642": {
+    "type": "choice_text",
+    "wordIds": ["w642"],
+    "question": "Can you ______ this knot in the string?",
+    "options": ["attach", "crumple", "unravel", "dent"],
+    "answer": 2
+  }
+
+
 
 
 
