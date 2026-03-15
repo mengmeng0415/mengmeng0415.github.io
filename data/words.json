@@ -973,11 +973,11 @@
 "w075": {
 "word": "conclusion",
 "images": {
-"scene": ["infopic01/conclusion.webp"],
+"scene": ["infopic01/conclusion(1).webp"],
 "card": ["wordpic01/conclusion.webp"]
 },
 "richDetail": [
-"[TITLE] 解释 [/TITLE][DEF][EN] The end part of a book, speech, or piece of writing that summarizes the main points; a decision or judgment made after considering all the facts (used in the book as the final section about community workers)[/EN][CN] 结论；结尾；总结（书籍、演讲或文章的最后部分，总结主要观点；考虑所有事实后做出的决定或判断，书中作为关于社区工作者的最后部分）[/CN][POS] n.[/POS][PH]/kənˈkluːʒn/[/PH][DU] Conclusion: Community workers help people everywhere.|(原文例句) 结论：社区工作者在各个地方帮助人们。[/DU][DU] The conclusion of the report summarizes the importance of protecting the environment.| 报告的结论总结了保护环境的重要性。[/DU][/DEF][IMG] infopic01/conclusion.webp [/IMG]",
+"[TITLE] 解释 [/TITLE][DEF][EN] The end part of a book, speech, or piece of writing that summarizes the main points; a decision or judgment made after considering all the facts (used in the book as the final section about community workers)[/EN][CN] 结论；结尾；总结（书籍、演讲或文章的最后部分，总结主要观点；考虑所有事实后做出的决定或判断，书中作为关于社区工作者的最后部分）[/CN][POS] n.[/POS][PH]/kənˈkluːʒn/[/PH][DU] Conclusion: Community workers help people everywhere.|(原文例句) 结论：社区工作者在各个地方帮助人们。[/DU][DU] The conclusion of the report summarizes the importance of protecting the environment.| 报告的结论总结了保护环境的重要性。[/DU][/DEF][IMG] infopic01/conclusion(1).webp [/IMG]",
 "[TITLE] 常见用法 [/TITLE][COLL][H] in conclusion | 总之；最后（用于文章或演讲结尾）[POS] n.[/POS][/H][EX] In conclusion, community workers play an important role in our daily lives.| 总之，社区工作者在我们的日常生活中扮演着重要角色。[/EX][EX] In conclusion, we should try our best to help those in need.| 最后，我们应该尽力帮助那些有需要的人。[/EX][/COLL][COLL][H] draw a conclusion | 得出结论 [POS] n.[/POS][/H][EX] After discussing for a long time, we drew a conclusion about the activity plan.| 经过长时间的讨论，我们就活动计划得出了结论。[/EX][EX] Scientists draw conclusions based on careful research.| 科学家们基于仔细的研究得出结论。[/EX][/COLL][COLL][H] the conclusion of sth | 某物的结尾 / 结论 [POS] n.[/POS][/H][EX] We read the conclusion of the story to know how it ended.| 我们读了故事的结尾，想知道它是如何结束的。[/EX][EX] The conclusion of the meeting was that we would start the project next month.| 会议的结论是我们下个月开始这个项目。[/EX][/COLL]",
 "[TITLE] 额外例句 [/TITLE][EX] The teacher asked us to write a conclusion for our science experiment report.| 老师让我们为科学实验报告写一个结论。[/EX][EX] The conclusion of the film surprised everyone because it was so unexpected.| 电影的结尾让所有人都很惊讶，因为它太出人意料了。[/EX][EX] She came to the conclusion that she should study harder to improve her grades.| 她得出结论，为了提高成绩，她应该更加努力学习。[/EX]",
 "[TITLE] 常见错误 [/TITLE][ERR] conclusion 是可数名词，“一个结论” 用 a conclusion，“多个结论” 用 conclusions，不要说 draw conclusion（错误），正确是 draw a conclusion。[/ERR][ERR] in conclusion 是固定短语，不要写成 on conclusion（错误），且后面通常接逗号，引出总结内容。[/ERR][ERR] 不要混淆 conclusion 和 summary！conclusion 侧重 “基于事实的结论或文章的结尾总结”；summary 侧重 “对内容的简要概括，不一定在结尾”，如 the conclusion of the essay /a summary of the book。[/ERR]"
@@ -8409,296 +8409,2760 @@
       "[TITLE]常见错误[/TITLE][ERR]注意拼写，中间有两个 l（英式拼写 unravelled，美式拼写 unraveled 也可以）。[/ERR]"
     ]
   },
-  "q_w602": {
-    "type": "choice_text",
-    "wordIds": ["w602"],
-    "question": "Feeding the class fish is your ______.",
-    "options": ["confidence", "responsibility", "celebration", "distress"],
-    "answer": 1
-  },
-  "q_w603": {
-    "type": "choice_text",
-    "wordIds": ["w603"],
-    "question": "When we arrived, the festival was already ______.",
-    "options": ["in full swing", "in distress", "well-considered", "cozy"],
-    "answer": 0
-  },
-  "q_w604": {
-    "type": "choice_text",
-    "wordIds": ["w604"],
-    "question": "At the fair, we rode the ______ that spins in a big circle.",
-    "options": ["scrapbook", "shortcut", "go-round", "coatrack"],
-    "answer": 2
-  },
-  "q_w605": {
-    "type": "choice_text",
-    "wordIds": ["w605"],
-    "question": "The car’s front ______ got a scratch.",
-    "options": ["holster", "tasselled", "trench", "bumper"],
-    "answer": 3
-  },
-  "q_w606": {
-    "type": "choice_text",
-    "wordIds": ["w606"],
-    "question": "My mom adds ______ to salad because it smells a bit like candy.",
-    "options": ["kelp", "fennel", "moss", "cocoa"],
-    "answer": 1
-  },
-  "q_w607": {
-    "type": "choice_text",
-    "wordIds": ["w607"],
-    "question": "I ______ visit my grandma again.",
-    "options": ["yearn to", "go through", "in full swing", "stalk"],
-    "answer": 0
-  },
-  "q_w608": {
-    "type": "choice_text",
-    "wordIds": ["w608"],
-    "question": "I packed snacks and water, so I was ______ for the hike.",
-    "options": ["drowsy", "eager", "frazzled", "prepared"],
-    "answer": 3
-  },
-  "q_w609": {
-    "type": "choice_text",
-    "wordIds": ["w609"],
-    "question": "An ______ is a big bird that can run fast but cannot fly.",
-    "options": ["molar", "twerp", "emu", "kelp"],
-    "answer": 2
-  },
-  "q_w610": {
-    "type": "choice_text",
-    "wordIds": ["w610"],
-    "question": "She let out a loud ______ when the surprise popped out.",
-    "options": ["screech", "shriek", "ripple", "dent"],
-    "answer": 1
-  },
-  "q_w611": {
-    "type": "choice_text",
-    "wordIds": ["w611"],
-    "question": "The monster gave a ______ look that made everyone step back.",
-    "options": ["menacing", "delighted", "cozy", "tasselled"],
-    "answer": 0
-  },
-  "q_w612": {
-    "type": "choice_text",
-    "wordIds": ["w612"],
-    "question": "The loud siren was ______ and made people worry.",
-    "options": ["funky", "plump", "alarming", "royal"],
-    "answer": 2
-  },
-  "q_w613": {
-    "type": "choice_text",
-    "wordIds": ["w613"],
-    "question": "Don’t ______ your drawing—keep it flat.",
-    "options": ["unravel", "attach", "dent", "crumple"],
-    "answer": 3
-  },
-  "q_w614": {
-    "type": "choice_text",
-    "wordIds": ["w614"],
-    "question": "The ball hit the door and left a small ______.",
-    "options": ["wrinkle", "dent", "cavity", "ripple"],
-    "answer": 1
-  },
-  "q_w615": {
-    "type": "choice_text",
-    "wordIds": ["w615"],
-    "question": "The knight carried a long ______.",
-    "options": ["lance", "holster", "bumper", "go-round"],
-    "answer": 0
-  },
-  "q_w616": {
-    "type": "choice_text",
-    "wordIds": ["w616"],
-    "question": "A ______ cleared the snow from the road after the storm.",
-    "options": ["fertilizer", "slush", "snowplough", "coatrack"],
-    "answer": 2
-  },
-  "q_w617": {
-    "type": "choice_text",
-    "wordIds": ["w617"],
-    "question": "Farmers add ______ to help plants grow strong.",
-    "options": ["saliva", "moss", "gear", "fertilizer"],
-    "answer": 3
-  },
-  "q_w618": {
-    "type": "choice_text",
-    "wordIds": ["w618"],
-    "question": "After the long trip, I ______ home.",
-    "options": ["yearn to", "yearn for", "go through", "depend on"],
-    "answer": 1
-  },
-  "q_w619": {
-    "type": "choice_text",
-    "wordIds": ["w619"],
-    "question": "She made a ______ decision before speaking.",
-    "options": ["well-considered", "wobbly", "thunderous", "gooey"],
-    "answer": 0
-  },
-  "q_w620": {
-    "type": "choice_text",
-    "wordIds": ["w620"],
-    "question": "His belt was ______ with little threads hanging down.",
-    "options": ["royal", "plump", "tasselled", "lumpy"],
-    "answer": 2
-  },
-  "q_w621": {
-    "type": "choice_text",
-    "wordIds": ["w621"],
-    "question": "Winning the game gave her more ______.",
-    "options": ["responsibility", "distress", "celebration", "confidence"],
-    "answer": 3
-  },
-  "q_w622": {
-    "type": "choice_text",
-    "wordIds": ["w622"],
-    "question": "The magician bowed with a big ______.",
-    "options": ["flourish", "dent", "trench", "ripple"],
-    "answer": 0
-  },
-  "q_w623": {
-    "type": "choice_text",
-    "wordIds": ["w623"],
-    "question": "The judge will ______ the winner.",
-    "options": ["deny", "declare", "pursue", "consult"],
-    "answer": 1
-  },
-  "q_w624": {
-    "type": "choice_text",
-    "wordIds": ["w624"],
-    "question": "The train will ______ a long, dark tunnel.",
-    "options": ["curl up", "in full swing", "go through", "slosh"],
-    "answer": 2
-  },
-  "q_w625": {
-    "type": "choice_text",
-    "wordIds": ["w625"],
-    "question": "I was ______ to get your invitation!",
-    "options": ["frazzled", "menacing", "drowsy", "delighted"],
-    "answer": 3
-  },
-  "q_w626": {
-    "type": "choice_text",
-    "wordIds": ["w626"],
-    "question": "The fastest runner became the new ______.",
-    "options": ["paladin", "champion", "responsibility", "creation"],
-    "answer": 1
-  },
-  "q_w627": {
-    "type": "choice_text",
-    "wordIds": ["w627"],
-    "question": "We had a big ______ for the new year.",
-    "options": ["distress", "management", "celebration", "responsibility"],
-    "answer": 2
-  },
-  "q_w628": {
-    "type": "choice_text",
-    "wordIds": ["w628"],
-    "question": "In fantasy stories, a ______ is a brave hero or knight who protects people.",
-    "options": ["paladin", "twerp", "champion", "lance"],
-    "answer": 0
-  },
-  "q_w629": {
-    "type": "choice_text",
-    "wordIds": ["w629"],
-    "question": "The lost puppy was in ______ and needed help.",
-    "options": ["confidence", "celebration", "relief", "distress"],
-    "answer": 3
-  },
-  "q_w630": {
-    "type": "choice_text",
-    "wordIds": ["w630"],
-    "question": "He kept his walkie-talkie in a ______ on his belt.",
-    "options": ["coatrack", "scrapbook", "holster", "playpen"],
-    "answer": 2
-  },
-  "q_w631": {
-    "type": "choice_text",
-    "wordIds": ["w631"],
-    "question": "Please ______ the label to the bag.",
-    "options": ["unravel", "attach", "preen", "steer"],
-    "answer": 1
-  },
-  "q_w632": {
-    "type": "choice_text",
-    "wordIds": ["w632"],
-    "question": "Look at my Lego ______—I built a castle!",
-    "options": ["creation", "celebration", "trench", "cocoa"],
-    "answer": 0
-  },
-  "q_w633": {
-    "type": "choice_text",
-    "wordIds": ["w633"],
-    "question": "The cat will ______ the bird quietly in the garden.",
-    "options": ["trot", "pursue", "distract", "stalk"],
-    "answer": 3
-  },
-  "q_w634": {
-    "type": "choice_text",
-    "wordIds": ["w634"],
-    "question": "Don’t call people a ______. It’s not kind.",
-    "options": ["pal", "twerp", "champion", "companion"],
-    "answer": 1
-  },
-  "q_w635": {
-    "type": "choice_text",
-    "wordIds": ["w635"],
-    "question": "My gym bag smells ______ after practice.",
-    "options": ["salty", "cozy", "funky", "tasselled"],
-    "answer": 2
-  },
-  "q_w636": {
-    "type": "choice_text",
-    "wordIds": ["w636"],
-    "question": "A stone made a ______ on the pond.",
-    "options": ["ripple", "dent", "wrinkle", "trench"],
-    "answer": 0
-  },
-  "q_w637": {
-    "type": "choice_text",
-    "wordIds": ["w637"],
-    "question": "My hands began to ______ in the cold.",
-    "options": ["gurgle", "sprawl", "preen", "tremble"],
-    "answer": 3
-  },
-  "q_w638": {
-    "type": "choice_text",
-    "wordIds": ["w638"],
-    "question": "They gave the old room a ______ with new paint and new pillows.",
-    "options": ["creation", "celebration", "makeover", "coating"],
-    "answer": 2
-  },
-  "q_w639": {
-    "type": "choice_text",
-    "wordIds": ["w639"],
-    "question": "The bird used its beak to ______ its feathers.",
-    "options": ["snuggle", "preen", "unravel", "attach"],
-    "answer": 1
-  },
-  "q_w640": {
-    "type": "choice_text",
-    "wordIds": ["w640"],
-    "question": "He had a ______ face because he lost the game.",
-    "options": ["frowny", "delighted", "eager", "cozy"],
-    "answer": 0
-  },
-  "q_w641": {
-    "type": "choice_text",
-    "wordIds": ["w641"],
-    "question": "The kids were ______ to open the presents.",
-    "options": ["frazzled", "drowsy", "menacing", "eager"],
-    "answer": 3
-  },
-  "q_w642": {
-    "type": "choice_text",
-    "wordIds": ["w642"],
-    "question": "Can you ______ this knot in the string?",
-    "options": ["attach", "crumple", "unravel", "dent"],
-    "answer": 2
-  }
 
+"w643": {
+"word": "motor home",
+"images": {
+"scene": ["infopic01/motor_home.webp"],
+"card": ["wordpic01/motor_home.webp"]
+},
+"richDetail": [
+"[TITLE]解释[/TITLE][DEF][EN]A motor home is a large vehicle that people can live in while traveling.[/EN][CN]房车；移动住宅[/CN][POS]n.[/POS][PH]/ˈmoʊtər hoʊm/[/PH][DU]Some people live and travel in motor homes.|（原文例句）有些人住在房车里并四处旅行。[/DU][DU]They drove across the country in a motor home.|他们开着房车穿越全国。[/DU][/DEF][IMG]infopic01/motor_home.webp[/IMG]",
+"[TITLE]常见用法[/TITLE][COLL][H]travel in a motor home|开房车旅行[POS]v. phr.[/POS][/H][EX]They travel in a motor home every summer.|他们每年夏天都开房车旅行。[/EX][C]live in a motor home|住在房车里[/C][/COLL]",
+"[TITLE]额外例句[/TITLE][EX]The family bought a motor home.|这家人买了一辆房车。[/EX][EX]Motor homes can be very comfortable.|房车可以非常舒适。[/EX]",
+"[TITLE]常见错误[/TITLE][ERR]motor home有时写作motorhome，但教材中常分开写。[/ERR]"
+]
+},
 
+"w644": {
+"word": "unique",
+"images": {
+"scene": ["infopic01/unique.webp"],
+"card": ["wordpic01/unique.webp"]
+},
+"richDetail": [
+"[TITLE]解释[/TITLE][DEF][EN]Unique means special or different from everything else.[/EN][CN]独特的；独一无二的[/CN][POS]adj.[/POS][PH]/juˈniːk/[/PH][DU]Each home can be unique.|（原文例句）每个家都可能是独特的。[/DU][DU]Her house is very unique.|她的房子非常独特。[/DU][/DEF][IMG]infopic01/unique.webp[/IMG]",
+"[TITLE]常见用法[/TITLE][COLL][H]unique design|独特设计[POS]n. phr.[/POS][/H][EX]The building has a unique design.|这栋建筑有独特的设计。[/EX][C]unique style|独特风格[/C][/COLL]",
+"[TITLE]额外例句[/TITLE][EX]Every snowflake is unique.|每片雪花都是独特的。[/EX][EX]The artist has a unique style.|这位艺术家有独特风格。[/EX]",
+"[TITLE]常见错误[/TITLE][ERR]unique本身含“唯一”，通常不与very连用。[/ERR]"
+]
+},
 
+"w645": {
+"word": "conclusion",
+"images": {
+"scene": ["infopic01/conclusion.webp"],
+"card": ["wordpic01/conclusion.webp"]
+},
+"richDetail": [
+"[TITLE]解释[/TITLE][DEF][EN]A conclusion is the ending part of something.[/EN][CN]结论；结尾[/CN][POS]n.[/POS][PH]/kənˈkluːʒn/[/PH][DU]In the conclusion, we learn that people live in many kinds of homes.|（原文例句）在结论部分，我们了解到人们住在各种各样的房子里。[/DU][DU]The story has a happy conclusion.|这个故事有一个快乐的结尾。[/DU][/DEF][IMG]infopic01/conclusion.webp[/IMG]",
+"[TITLE]常见用法[/TITLE][COLL][H]draw a conclusion|得出结论[POS]v. phr.[/POS][/H][EX]The scientist drew a conclusion.|科学家得出了结论。[/EX][C]reach a conclusion|得出结论[/C][/COLL]",
+"[TITLE]额外例句[/TITLE][EX]The book ends with a conclusion.|这本书以结论结束。[/EX][EX]We came to the same conclusion.|我们得出了相同的结论。[/EX]",
+"[TITLE]常见错误[/TITLE][ERR]不要把conclusion拼写为conclution。[/ERR]"
+]
+},
+
+"w646": {
+"word": "preserve",
+"images": {
+"scene": ["infopic01/preserve.webp"],
+"card": ["wordpic01/preserve.webp"]
+},
+"richDetail": [
+"[TITLE]解释[/TITLE][DEF][EN]To preserve means to keep something safe or protect it from damage.[/EN][CN]保存；保护；保存下来[/CN][POS]v.[/POS][PH]/prɪˈzɜːrv/[/PH][DU]People preserve the mummy so it lasts a long time.|（原文例句）人们保存木乃伊，让它能保存很久。[/DU][DU]We preserve old photos carefully.|我们小心保存老照片。[/DU][/DEF][IMG]infopic01/preserve.webp[/IMG]",
+"[TITLE]常见用法[/TITLE][COLL][H]preserve history|保护历史[POS]v. phr.[/POS][/H][EX]Museums preserve history.|博物馆保存历史。[/EX][C]preserve food|保存食物[/C][/COLL]",
+"[TITLE]额外例句[/TITLE][EX]They preserved the old building.|他们保护了那座古老建筑。[/EX][EX]Salt can preserve food.|盐可以保存食物。[/EX]",
+"[TITLE]常见错误[/TITLE][ERR]preserve不要和reserve混淆。[/ERR]"
+]
+},
+
+"w647": {
+"word": "bog",
+"images": {
+"scene": ["infopic01/bog.webp"],
+"card": ["wordpic01/bog.webp"]
+},
+"richDetail": [
+"[TITLE]解释[/TITLE][DEF][EN]A bog is very wet, muddy land.[/EN][CN]沼泽地；泥炭沼泽[/CN][POS]n.[/POS][PH]/bɒɡ/[/PH][DU]Some mummies were found in a bog.|（原文例句）有些木乃伊是在沼泽中发现的。[/DU][DU]The ground was soft like a bog.|地面像沼泽一样湿软。[/DU][/DEF][IMG]infopic01/bog.webp[/IMG]",
+"[TITLE]常见用法[/TITLE][COLL][H]bog land|沼泽地[POS]n. phr.[/POS][/H][EX]Animals live in bog land.|动物生活在沼泽地。[/EX][C]peat bog|泥炭沼泽[/C][/COLL]",
+"[TITLE]额外例句[/TITLE][EX]The hikers crossed a bog.|徒步者穿过沼泽。[/EX][EX]The bog was full of water.|沼泽里充满了水。[/EX]",
+"[TITLE]常见错误[/TITLE][ERR]bog不要与bug（虫子）混淆。[/ERR]"
+]
+},
+
+"w648": {
+"word": "memorial",
+"images": {
+"scene": ["infopic01/memorial(1).webp"],
+"card": ["wordpic01/memorial.webp"]
+},
+"richDetail": [
+"[TITLE]解释[/TITLE][DEF][EN]A memorial is something built to remember a person or event.[/EN][CN]纪念碑；纪念物[/CN][POS]n.[/POS][PH]/məˈmɔːriəl/[/PH][DU]The Lincoln Memorial honors a great leader.|（原文例句）林肯纪念堂纪念一位伟大的领袖。[/DU][DU]People visit the memorial every year.|人们每年都会参观这座纪念碑。[/DU][/DEF][IMG]infopic01/memorial(1).webp[/IMG]",
+"[TITLE]常见用法[/TITLE][COLL][H]war memorial|战争纪念碑[POS]n. phr.[/POS][/H][EX]The city built a war memorial.|城市建了一座战争纪念碑。[/EX][C]memorial statue|纪念雕像[/C][/COLL]",
+"[TITLE]额外例句[/TITLE][EX]They placed flowers at the memorial.|他们在纪念碑前献花。[/EX][EX]The memorial tells a story of history.|纪念碑讲述着历史故事。[/EX]",
+"[TITLE]常见错误[/TITLE][ERR]memorial不要拼写为memeriel。[/ERR]"
+]
+},
+
+"w649": {
+"word": "monument",
+"images": {
+"scene": ["infopic01/monument.webp"],
+"card": ["wordpic01/monument.webp"]
+},
+"richDetail": [
+"[TITLE]解释[/TITLE][DEF][EN]A monument is a large structure built to remember an important person or event.[/EN][CN]纪念碑；纪念建筑[/CN][POS]n.[/POS][PH]/ˈmɒnjʊmənt/[/PH][DU]The Washington Monument is very tall.|（原文例句）华盛顿纪念碑非常高。[/DU][DU]The monument honors brave people.|这座纪念碑纪念勇敢的人们。[/DU][/DEF][IMG]infopic01/monument.webp[/IMG]",
+"[TITLE]常见用法[/TITLE][COLL][H]national monument|国家纪念碑[POS]n. phr.[/POS][/H][EX]Tourists visited the national monument.|游客参观国家纪念碑。[/EX][C]stone monument|石碑[/C][/COLL]",
+"[TITLE]额外例句[/TITLE][EX]They built a monument in the park.|他们在公园建了一座纪念碑。[/EX][EX]The monument tells a story.|纪念碑讲述历史。[/EX]",
+"[TITLE]常见错误[/TITLE][ERR]monument不要拼写为monment。[/ERR]"
+]
+},
+
+"w650": {
+"word": "stand for",
+"images": {
+"scene": ["infopic01/stand_for.webp"],
+"card": ["wordpic01/stand_for.webp"]
+},
+"richDetail": [
+"[TITLE]解释[/TITLE][DEF][EN]To stand for means to represent or mean something.[/EN][CN]代表；象征[/CN][POS]v. phr.[/POS][PH]/stænd fɔːr/[/PH][DU]The flag stands for freedom.|（原文例句）这面旗帜象征自由。[/DU][DU]The letters UN stand for United Nations.|字母UN代表联合国。[/DU][/DEF][IMG]infopic01/stand_for.webp[/IMG]",
+"[TITLE]常见用法[/TITLE][COLL][H]stand for freedom|象征自由[POS]v. phr.[/POS][/H][EX]The statue stands for liberty.|雕像象征自由。[/EX][C]stand for peace|代表和平[/C][/COLL]",
+"[TITLE]额外例句[/TITLE][EX]Red can stand for love.|红色可以代表爱。[/EX][EX]The symbol stands for hope.|这个符号代表希望。[/EX]",
+"[TITLE]常见错误[/TITLE][ERR]不要把stand for误认为“站着为了”。[/ERR]"
+]
+},
+
+"w651": {
+"word": "liberty",
+"images": {
+"scene": ["infopic01/liberty(1).webp"],
+"card": ["wordpic01/liberty.webp"]
+},
+"richDetail": [
+"[TITLE]解释[/TITLE][DEF][EN]Liberty means the freedom to live and act as you want.[/EN][CN]自由[/CN][POS]n.[/POS][PH]/ˈlɪbərti/[/PH][DU]The Statue of Liberty stands for liberty.|（原文例句）自由女神像象征自由。[/DU][DU]People want liberty and peace.|人们希望自由与和平。[/DU][/DEF][IMG]infopic01/liberty(1).webp[/IMG]",
+"[TITLE]常见用法[/TITLE][COLL][H]statue of liberty|自由女神像[POS]n. phr.[/POS][/H][EX]Tourists visit the Statue of Liberty.|游客参观自由女神像。[/EX][C]fight for liberty|为自由而战[/C][/COLL]",
+"[TITLE]额外例句[/TITLE][EX]Liberty is important to people.|自由对人们很重要。[/EX][EX]They value liberty.|他们珍视自由。[/EX]",
+"[TITLE]常见错误[/TITLE][ERR]不要拼写为libery。[/ERR]"
+]
+},
+
+"w652": {
+"word": "freedom",
+"images": {
+"scene": ["infopic01/freedom(1).webp"],
+"card": ["wordpic01/freedom.webp"]
+},
+"richDetail": [
+"[TITLE]解释[/TITLE][DEF][EN]Freedom means the power to act or live without being controlled.[/EN][CN]自由[/CN][POS]n.[/POS][PH]/ˈfriːdəm/[/PH][DU]The symbol stands for freedom.|（原文例句）这个象征代表自由。[/DU][DU]Birds fly in freedom.|鸟儿在自由中飞翔。[/DU][/DEF][IMG]infopic01/freedom(1).webp[/IMG]",
+"[TITLE]常见用法[/TITLE][COLL][H]freedom of speech|言论自由[POS]n. phr.[/POS][/H][EX]People want freedom of speech.|人们希望言论自由。[/EX][C]freedom of choice|选择自由[/C][/COLL]",
+"[TITLE]额外例句[/TITLE][EX]Freedom is very important.|自由非常重要。[/EX][EX]The bird enjoyed freedom.|鸟儿享受自由。[/EX]",
+"[TITLE]常见错误[/TITLE][ERR]freedom是不可数名词。[/ERR]"
+]
+},
+
+"w653": {
+"word": "friendship",
+"images": {
+"scene": ["infopic01/friendship(1).webp"],
+"card": ["wordpic01/friendship.webp"]
+},
+"richDetail": [
+"[TITLE]解释[/TITLE][DEF][EN]Friendship means the relationship between friends.[/EN][CN]友谊[/CN][POS]n.[/POS][PH]/ˈfrendʃɪp/[/PH][DU]The statue is a symbol of friendship.|（原文例句）这座雕像是友谊的象征。[/DU][DU]Their friendship is strong.|他们的友谊很牢固。[/DU][/DEF][IMG]infopic01/friendship(1).webp[/IMG]",
+"[TITLE]常见用法[/TITLE][COLL][H]true friendship|真正的友谊[POS]n. phr.[/POS][/H][EX]True friendship lasts long.|真正的友谊长久。[/EX][C]friendship between countries|国家之间的友谊[/C][/COLL]",
+"[TITLE]额外例句[/TITLE][EX]Friendship makes people happy.|友谊让人快乐。[/EX][EX]They share a deep friendship.|他们有深厚友谊。[/EX]",
+"[TITLE]常见错误[/TITLE][ERR]friendship不要拼写为friendshiph。[/ERR]"
+]
+},
+
+"w654": {
+"word": "be made up of",
+"images": {
+"scene": ["infopic01/be_made_up_of.webp"],
+"card": ["wordpic01/be_made_up_of.webp"]
+},
+"richDetail": [
+"[TITLE]解释[/TITLE][DEF][EN]Be made up of means something is formed or built from many parts.[/EN][CN]由……组成[/CN][POS]v. phr.[/POS][PH]/meɪd ʌp əv/[/PH][DU]Animal eyes are made up of many parts.|（原文例句）动物的眼睛由许多部分组成。[/DU][DU]The team is made up of ten players.|这个团队由十名队员组成。[/DU][/DEF][IMG]infopic01/be_made_up_of.webp[/IMG]",
+"[TITLE]常见用法[/TITLE][COLL][H]be made up of parts|由部分组成[POS]v. phr.[/POS][/H][EX]The machine is made up of many parts.|机器由许多部件组成。[/EX][C]be made up of people|由人组成[/C][/COLL]",
+"[TITLE]额外例句[/TITLE][EX]Water is made up of hydrogen and oxygen.|水由氢和氧组成。[/EX][EX]The class is made up of twenty students.|这个班由20名学生组成。[/EX]",
+"[TITLE]常见错误[/TITLE][ERR]不要把made up of误写为made of（意思不同）。[/ERR]"
+]
+},
+"w655": {
+"word": "swarm",
+"images": {
+"scene": ["infopic01/swarm(1).webp"],
+"card": ["wordpic01/swarm.webp"]
+},
+"richDetail": [
+"[TITLE]解释[/TITLE][DEF][EN]A swarm is a large group of insects moving together.[/EN][CN]蜂拥的一大群；虫群[/CN][POS]n./v.[/POS][PH]/swɔːrm/[/PH][DU]A swarm of ants marched across the ground.|（原文例句）一大群蚂蚁在地上行进。[/DU][DU]Bees can swarm around flowers.|蜜蜂会成群飞在花周围。[/DU][/DEF][IMG]infopic01/swarm(1).webp[/IMG]",
+"[TITLE]常见用法[/TITLE][COLL][H]a swarm of ants|一群蚂蚁[POS]n. phr.[/POS][/H][EX]A swarm of ants covered the ground.|一群蚂蚁爬满地面。[/EX][C]a swarm of bees|一群蜜蜂[/C][/COLL]",
+"[TITLE]额外例句[/TITLE][EX]Flies swarmed around the fruit.|苍蝇围着水果飞。[/EX][EX]A swarm of insects filled the air.|空中充满虫群。[/EX]",
+"[TITLE]常见错误[/TITLE][ERR]swarm通常用于很多昆虫，不用于少量动物。[/ERR]"
+]
+},
+
+"w656": {
+"word": "thorax",
+"images": {
+"scene": ["infopic01/thorax.webp"],
+"card": ["wordpic01/thorax.webp"]
+},
+"richDetail": [
+"[TITLE]解释[/TITLE][DEF][EN]The thorax is the middle part of an insect’s body.[/EN][CN]（昆虫的）胸部[/CN][POS]n.[/POS][PH]/ˈθɔːræks/[/PH][DU]An ant’s legs grow from its thorax.|（原文例句）蚂蚁的腿长在胸部。[/DU][DU]The thorax connects the head and abdomen.|胸部连接头部和腹部。[/DU][/DEF][IMG]infopic01/thorax.webp[/IMG]",
+"[TITLE]常见用法[/TITLE][COLL][H]insect thorax|昆虫胸部[POS]n. phr.[/POS][/H][EX]The insect’s thorax holds its legs.|昆虫的胸部长着腿。[/EX][C]thorax segment|胸部部分[/C][/COLL]",
+"[TITLE]额外例句[/TITLE][EX]The thorax is very strong.|胸部非常强壮。[/EX][EX]Scientists study the thorax of insects.|科学家研究昆虫胸部。[/EX]",
+"[TITLE]常见错误[/TITLE][ERR]不要拼写为thoraxh。[/ERR]"
+]
+},
+
+"w657": {
+"word": "abdomen",
+"images": {
+"scene": ["infopic01/abdomen.webp"],
+"card": ["wordpic01/abdomen.webp"]
+},
+"richDetail": [
+"[TITLE]解释[/TITLE][DEF][EN]The abdomen is the back part of an insect’s body.[/EN][CN]腹部[/CN][POS]n.[/POS][PH]/ˈæbdəmən/[/PH][DU]An ant stores food in its abdomen.|（原文例句）蚂蚁在腹部储存食物。[/DU][DU]The abdomen is the largest part of the ant’s body.|腹部是蚂蚁身体最大的部分。[/DU][/DEF][IMG]infopic01/abdomen.webp[/IMG]",
+"[TITLE]常见用法[/TITLE][COLL][H]insect abdomen|昆虫腹部[POS]n. phr.[/POS][/H][EX]The insect’s abdomen moves when it breathes.|昆虫呼吸时腹部会动。[/EX][C]large abdomen|大的腹部[/C][/COLL]",
+"[TITLE]额外例句[/TITLE][EX]The abdomen stores energy.|腹部储存能量。[/EX][EX]Bees have striped abdomens.|蜜蜂有条纹腹部。[/EX]",
+"[TITLE]常见错误[/TITLE][ERR]abdomen复数是abdomens，不要写成abdomenes。[/ERR]"
+]
+},
+
+"w658": {
+"word": "platypus",
+"images": {
+"scene": ["infopic01/platypus.webp"],
+"card": ["wordpic01/platypus.webp"]
+},
+"richDetail": [
+"[TITLE]解释[/TITLE][DEF][EN]A platypus is a strange animal from Australia with a duck-like bill.[/EN][CN]鸭嘴兽[/CN][POS]n.[/POS][PH]/ˈplætɪpəs/[/PH][DU]The platypus lives in Australia.|（原文例句）鸭嘴兽生活在澳大利亚。[/DU][DU]A platypus can swim very well.|鸭嘴兽游泳很好。[/DU][/DEF][IMG]infopic01/platypus.webp[/IMG]",
+"[TITLE]常见用法[/TITLE][COLL][H]duck-billed platypus|鸭嘴兽[POS]n. phr.[/POS][/H][EX]The duck-billed platypus lays eggs.|鸭嘴兽会下蛋。[/EX][C]baby platypus|小鸭嘴兽[/C][/COLL]",
+"[TITLE]额外例句[/TITLE][EX]The platypus hunts in water.|鸭嘴兽在水中捕食。[/EX][EX]Platypuses are unusual animals.|鸭嘴兽是奇特的动物。[/EX]",
+"[TITLE]常见错误[/TITLE][ERR]不要拼写为platapus。[/ERR]"
+]
+},
+
+"w659": {
+"word": "spiny",
+"images": {
+"scene": ["infopic01/spiny.webp"],
+"card": ["wordpic01/spiny.webp"]
+},
+"richDetail": [
+"[TITLE]解释[/TITLE][DEF][EN]Spiny means covered with sharp points or spikes.[/EN][CN]多刺的；有刺的[/CN][POS]adj.[/POS][PH]/ˈspaɪni/[/PH][DU]The animal has a spiny back.|（原文例句）这种动物背上有刺。[/DU][DU]The cactus has spiny leaves.|仙人掌有刺。[/DU][/DEF][IMG]infopic01/spiny.webp[/IMG]",
+"[TITLE]常见用法[/TITLE][COLL][H]spiny plant|多刺植物[POS]n. phr.[/POS][/H][EX]The desert has many spiny plants.|沙漠有许多带刺植物。[/EX][C]spiny shell|带刺的壳[/C][/COLL]",
+"[TITLE]额外例句[/TITLE][EX]The fish has a spiny fin.|这种鱼有刺鳍。[/EX][EX]Be careful of spiny plants.|小心带刺植物。[/EX]",
+"[TITLE]常见错误[/TITLE][ERR]不要拼写为spiney。[/ERR]"
+]
+},
+
+"w660": {
+"word": "spiral",
+"images": {
+"scene": ["infopic01/spiral.webp"],
+"card": ["wordpic01/spiral.webp"]
+},
+"richDetail": [
+"[TITLE]解释[/TITLE][DEF][EN]A spiral is a shape that curves around in circles.[/EN][CN]螺旋形；螺旋状[/CN][POS]n./adj.[/POS][PH]/ˈspaɪrəl/[/PH][DU]The notebook has a spiral at the top.|（原文例句）这个笔记本顶部有螺旋装订。[/DU][DU]The shell grows in a spiral shape.|贝壳长成螺旋形。[/DU][/DEF][IMG]infopic01/spiral.webp[/IMG]",
+"[TITLE]常见用法[/TITLE][COLL][H]spiral notebook|螺旋装订笔记本[POS]n. phr.[/POS][/H][EX]She writes in a spiral notebook.|她在螺旋本上写字。[/EX][C]spiral shape|螺旋形[/C][/COLL]",
+"[TITLE]额外例句[/TITLE][EX]Smoke rose in a spiral.|烟呈螺旋上升。[/EX][EX]The staircase is spiral.|楼梯是螺旋形。[/EX]",
+"[TITLE]常见错误[/TITLE][ERR]不要拼写为spirial。[/ERR]"
+]
+},
+"w661": {
+"word": "reach",
+"images": {
+"scene": ["infopic01/reach.webp"],
+"card": ["wordpic01/reach.webp"]
+},
+"richDetail": [
+"[TITLE]解释[/TITLE][DEF][EN]To reach means to stretch out to get or touch something.[/EN][CN]伸手够到；到达[/CN][POS]v.[/POS][PH]/riːtʃ/[/PH][DU]Bonk tried to reach the toy.|（原文例句）邦克试着去够那个玩具。[/DU][DU]I can reach the book on the shelf.|我能够到架子上的书。[/DU][/DEF][IMG]infopic01/reach.webp[/IMG]",
+"[TITLE]常见用法[/TITLE][COLL][H]reach for sth|伸手去拿某物[POS]v. phr.[/POS][/H][EX]She reached for the cookie.|她伸手去拿饼干。[/EX][C]reach the top|到达顶端[/C][/COLL]",
+"[TITLE]额外例句[/TITLE][EX]He reached for his hat.|他伸手去拿帽子。[/EX][EX]We reached the park at noon.|我们中午到达公园。[/EX]",
+"[TITLE]常见错误[/TITLE][ERR]reach本身就有“到达”的意思，后面通常不再加to（错误：reach to the school）。[/ERR]"
+]
+},
+
+"w662": {
+"word": "stuffed",
+"images": {
+"scene": ["infopic01/stuffed.webp"],
+"card": ["wordpic01/stuffed.webp"]
+},
+"richDetail": [
+"[TITLE]解释[/TITLE][DEF][EN]Stuffed means filled full with something soft inside.[/EN][CN]填满的；塞满的；填充的[/CN][POS]adj.[/POS][PH]/stʌft/[/PH][DU]Bonk hugged his stuffed toy.|（原文例句）邦克抱着他的填充玩具。[/DU][DU]The bear is a stuffed animal.|那只熊是一个毛绒玩具。[/DU][/DEF][IMG]infopic01/stuffed.webp[/IMG]",
+"[TITLE]常见用法[/TITLE][COLL][H]stuffed animal|毛绒玩具[POS]n. phr.[/POS][/H][EX]The child sleeps with a stuffed animal.|孩子抱着毛绒玩具睡觉。[/EX][C]stuffed toy|填充玩具[/C][/COLL]",
+"[TITLE]额外例句[/TITLE][EX]Her bed is full of stuffed bears.|她的床上都是毛绒熊。[/EX][EX]The pillow is stuffed with cotton.|这个枕头里塞满了棉花。[/EX]",
+"[TITLE]常见错误[/TITLE][ERR]stuffed作形容词时常表示“填充的”，不要和stuffy混淆。[/ERR]"
+]
+},
+
+"w663": {
+"word": "basic",
+"images": {
+"scene": ["infopic01/basic.webp"],
+"card": ["wordpic01/basic.webp"]
+},
+"richDetail": [
+"[TITLE]解释[/TITLE][DEF][EN]Basic means simple and most important.[/EN][CN]基本的；基础的[/CN][POS]adj.[/POS][PH]/ˈbeɪsɪk/[/PH][DU]A house needs some basic parts.|（原文例句）一座房子需要一些基本部分。[/DU][DU]We learned the basic rules first.|我们先学了基本规则。[/DU][/DEF][IMG]infopic01/basic.webp[/IMG]",
+"[TITLE]常见用法[/TITLE][COLL][H]basic idea|基本想法[POS]n. phr.[/POS][/H][EX]I understand the basic idea.|我明白基本想法。[/EX][C]basic needs|基本需求[/C][/COLL]",
+"[TITLE]额外例句[/TITLE][EX]These are basic math facts.|这些是基础数学知识。[/EX][EX]She learned basic cooking skills.|她学了基础烹饪技巧。[/EX]",
+"[TITLE]常见错误[/TITLE][ERR]basic通常表示“基础的”，不要随便用来表示“简单到无聊”。[/ERR]"
+]
+},
+
+"w664": {
+"word": "foundation",
+"images": {
+"scene": ["infopic01/foundation.webp"],
+"card": ["wordpic01/foundation.webp"]
+},
+"richDetail": [
+"[TITLE]解释[/TITLE][DEF][EN]A foundation is the strong bottom part that supports a building.[/EN][CN]地基；基础[/CN][POS]n.[/POS][PH]/faʊnˈdeɪʃn/[/PH][DU]Workers build the foundation first.|（原文例句）工人先建地基。[/DU][DU]A strong house needs a strong foundation.|坚固的房子需要坚固的地基。[/DU][/DEF][IMG]infopic01/foundation.webp[/IMG]",
+"[TITLE]常见用法[/TITLE][COLL][H]strong foundation|坚固的基础[POS]n. phr.[/POS][/H][EX]The building has a strong foundation.|这栋建筑有坚固的地基。[/EX][C]lay a foundation|打地基[/C][/COLL]",
+"[TITLE]额外例句[/TITLE][EX]The school teaches a good foundation in reading.|学校打下了良好的阅读基础。[/EX][EX]They poured concrete for the foundation.|他们为地基浇筑混凝土。[/EX]",
+"[TITLE]常见错误[/TITLE][ERR]foundation既可指建筑地基，也可指抽象的“基础”，不要只理解成建筑词。[/ERR]"
+]
+},
+
+"w665": {
+"word": "rip",
+"images": {
+"scene": ["infopic01/rip.webp"],
+"card": ["wordpic01/rip.webp"]
+},
+"richDetail": [
+"[TITLE]解释[/TITLE][DEF][EN]To rip means to tear something quickly or forcefully.[/EN][CN]撕开；扯破[/CN][POS]v./n.[/POS][PH]/rɪp/[/PH][DU]Be careful not to rip the paper.|（原文例句）小心别把纸撕破。[/DU][DU]He ripped the box open.|他一下把盒子撕开了。[/DU][/DEF][IMG]infopic01/rip.webp[/IMG]",
+"[TITLE]常见用法[/TITLE][COLL][H]rip open|撕开[POS]v. phr.[/POS][/H][EX]She ripped open the package.|她撕开了包裹。[/EX][C]rip the paper|撕纸[/C][/COLL]",
+"[TITLE]额外例句[/TITLE][EX]My shirt ripped on the fence.|我的衬衫被篱笆刮破了。[/EX][EX]There is a rip in my bag.|我的包上有个裂口。[/EX]",
+"[TITLE]常见错误[/TITLE][ERR]rip的过去式是ripped，双写p。[/ERR]"
+]
+},
+
+"w666": {
+"word": "hump",
+"images": {
+"scene": ["infopic01/hump.webp"],
+"card": ["wordpic01/hump.webp"]
+},
+"richDetail": [
+"[TITLE]解释[/TITLE][DEF][EN]A hump is a round raised part on an animal’s back, like on a camel.[/EN][CN]（骆驼等背上的）驼峰；隆起[/CN][POS]n.[/POS][PH]/hʌmp/[/PH][DU]The camel has a hump on its back.|（原文例句）骆驼背上有一个驼峰。[/DU][DU]The road goes over a small hump.|这条路经过一个小隆起。[/DU][/DEF][IMG]infopic01/hump.webp[/IMG]",
+"[TITLE]常见用法[/TITLE][COLL][H]camel hump|驼峰[POS]n. phr.[/POS][/H][EX]A camel stores fat in its hump.|骆驼把脂肪储存在驼峰里。[/EX][C]small hump|小隆起[/C][/COLL]",
+"[TITLE]额外例句[/TITLE][EX]The camel’s hump is large.|那只骆驼的驼峰很大。[/EX][EX]There was a hump in the blanket.|毯子上鼓起了一块。[/EX]",
+"[TITLE]常见错误[/TITLE][ERR]hump通常指鼓起的部分，不要和jump混淆。[/ERR]"
+]
+},
+
+"w667": {
+"word": "active time",
+"images": {
+"scene": ["infopic01/active_time.webp"],
+"card": ["wordpic01/active_time.webp"]
+},
+"richDetail": [
+"[TITLE]解释[/TITLE][DEF][EN]Active time means time spent moving around and doing energetic things.[/EN][CN]活动时间；活跃运动的时间[/CN][POS]n. phr.[/POS][PH]/ˈæktɪv taɪm/[/PH][DU]Does your family spend lots of active time outdoors?|（原文例句）你们家会花很多活动时间在户外吗？[/DU][DU]Dogs need active time every day.|狗每天都需要活动时间。[/DU][/DEF][IMG]infopic01/active_time.webp[/IMG]",
+"[TITLE]常见用法[/TITLE][COLL][H]spend active time|度过活动时间[POS]v. phr.[/POS][/H][EX]Children should spend active time outside.|孩子们应该在户外活动。[/EX][C]active time outdoors|户外活动时间[/C][/COLL]",
+"[TITLE]额外例句[/TITLE][EX]Our family has active time after dinner.|我们家晚饭后会运动一会儿。[/EX][EX]Pets need active time to stay healthy.|宠物需要活动时间来保持健康。[/EX]",
+"[TITLE]常见错误[/TITLE][ERR]active time是短语，不要把active单独理解成“积极时间”。[/ERR]"
+]
+},
+
+"w668": {
+"word": "treat",
+"images": {
+"scene": ["infopic01/treat(1).webp"],
+"card": ["wordpic01/treat.webp"]
+},
+"richDetail": [
+"[TITLE]解释[/TITLE][DEF][EN]A treat is a special snack or reward.[/EN][CN]零食；奖励[/CN][POS]n.[/POS][PH]/triːt/[/PH][DU]You can give your dog treats if he or she is good.|（原文例句）如果你的狗表现好，你可以给它零食奖励。[/DU][DU]She got a treat after dinner.|她晚饭后得到了一份小零食。[/DU][/DEF][IMG]infopic01/treat(1).webp[/IMG]",
+"[TITLE]常见用法[/TITLE][COLL][H]give a treat|给零食奖励[POS]v. phr.[/POS][/H][EX]He gave the puppy a treat.|他给了小狗一块零食。[/EX][C]dog treat|狗零食[/C][/COLL]",
+"[TITLE]额外例句[/TITLE][EX]Ice cream is a fun treat.|冰淇淋是一种有趣的奖励零食。[/EX][EX]The teacher gave us a special treat.|老师给了我们一个特别奖励。[/EX]",
+"[TITLE]常见错误[/TITLE][ERR]treat作名词时可表示“款待/零食”，不要只理解成动词“对待”。[/ERR]"
+]
+},
+"w669": {
+"word": "coach",
+"images": {
+"scene": ["infopic01/coach.webp"],
+"card": ["wordpic01/coach.webp"]
+},
+"richDetail": [
+"[TITLE]解释[/TITLE][DEF][EN]A coach is a person who trains and guides a team in sports.[/EN][CN]教练[/CN][POS]n.[/POS][PH]/koʊtʃ/[/PH][DU]The coach helped the team practice.|（原文例句）教练帮助队伍练习。[/DU][DU]Our coach teaches us how to play better.|我们的教练教我们如何打得更好。[/DU][/DEF][IMG]infopic01/coach.webp[/IMG]",
+"[TITLE]常见用法[/TITLE][COLL][H]team coach|球队教练[POS]n. phr.[/POS][/H][EX]The team coach planned the game.|球队教练制定了比赛计划。[/EX][C]soccer coach|足球教练[/C][/COLL]",
+"[TITLE]额外例句[/TITLE][EX]The coach shouted instructions.|教练大声给出指示。[/EX][EX]She wants to be a coach someday.|她将来想成为教练。[/EX]",
+"[TITLE]常见错误[/TITLE][ERR]coach通常指体育教练，不要和teacher混淆。[/ERR]"
+]
+},
+
+"w670": {
+"word": "spat",
+"images": {
+"scene": ["infopic01/spat.webp"],
+"card": ["wordpic01/spat.webp"]
+},
+"richDetail": [
+"[TITLE]解释[/TITLE][DEF][EN]A spat is a small or short argument.[/EN][CN]小争吵；口角[/CN][POS]n.[/POS][PH]/spæt/[/PH][DU]The two friends had a spat.|（原文例句）两个朋友发生了一点小争吵。[/DU][DU]They had a spat but soon made up.|他们吵了一下，很快就和好了。[/DU][/DEF][IMG]infopic01/spat.webp[/IMG]",
+"[TITLE]常见用法[/TITLE][COLL][H]have a spat|发生小争吵[POS]v. phr.[/POS][/H][EX]The siblings had a spat over a toy.|兄妹因为玩具吵了一下。[/EX][C]family spat|家庭小争吵[/C][/COLL]",
+"[TITLE]额外例句[/TITLE][EX]They laughed after their spat.|他们吵完又笑了。[/EX][EX]It was just a small spat.|那只是一次小争执。[/EX]",
+"[TITLE]常见错误[/TITLE][ERR]spat通常指短暂的小争吵，不是严重冲突。[/ERR]"
+]
+},
+
+"w671": {
+"word": "crud",
+"images": {
+"scene": ["infopic01/crud.webp"],
+"card": ["wordpic01/crud.webp"]
+},
+"richDetail": [
+"[TITLE]解释[/TITLE][DEF][EN]Crud means dirt or something unpleasant and messy.[/EN][CN]脏东西；污垢（口语）[/CN][POS]n.[/POS][PH]/krʌd/[/PH][DU]The boots were covered in crud.|（原文例句）靴子上全是脏东西。[/DU][DU]There was crud on the floor.|地上有脏污。[/DU][/DEF][IMG]infopic01/crud.webp[/IMG]",
+"[TITLE]常见用法[/TITLE][COLL][H]covered in crud|满是污垢[POS]adj. phr.[/POS][/H][EX]The car was covered in crud.|车上满是泥污。[/EX][C]dirty crud|脏污[/C][/COLL]",
+"[TITLE]额外例句[/TITLE][EX]He cleaned the crud off the table.|他把桌子上的污垢清掉了。[/EX][EX]Mud and crud covered the shoes.|鞋子上满是泥和污垢。[/EX]",
+"[TITLE]常见错误[/TITLE][ERR]crud是口语词，不适合正式写作。[/ERR]"
+]
+},
+
+"w672": {
+"word": "fellow",
+"images": {
+"scene": ["infopic01/fellow.webp"],
+"card": ["wordpic01/fellow.webp"]
+},
+"richDetail": [
+"[TITLE]解释[/TITLE][DEF][EN]A fellow is a person, often used in a friendly way.[/EN][CN]家伙；人（友好的说法）[/CN][POS]n.[/POS][PH]/ˈfeloʊ/[/PH][DU]That fellow ran across the field.|（原文例句）那个家伙跑过了田野。[/DU][DU]He is a nice fellow.|他是个不错的人。[/DU][/DEF][IMG]infopic01/fellow.webp[/IMG]",
+"[TITLE]常见用法[/TITLE][COLL][H]nice fellow|好人[POS]n. phr.[/POS][/H][EX]He is a friendly fellow.|他是个友好的人。[/EX][C]young fellow|年轻人[/C][/COLL]",
+"[TITLE]额外例句[/TITLE][EX]That fellow helped me.|那个人帮助了我。[/EX][EX]The fellow waved hello.|那个人挥手打招呼。[/EX]",
+"[TITLE]常见错误[/TITLE][ERR]fellow通常是非正式表达，不是正式称呼。[/ERR]"
+]
+},
+
+"w673": {
+"word": "meadow",
+"images": {
+"scene": ["infopic01/meadow.webp"],
+"card": ["wordpic01/meadow.webp"]
+},
+"richDetail": [
+"[TITLE]解释[/TITLE][DEF][EN]A meadow is a field with grass and wild flowers.[/EN][CN]草地；牧场[/CN][POS]n.[/POS][PH]/ˈmedoʊ/[/PH][DU]They ran across the meadow.|（原文例句）他们跑过草地。[/DU][DU]The meadow was full of flowers.|草地上开满了花。[/DU][/DEF][IMG]infopic01/meadow.webp[/IMG]",
+"[TITLE]常见用法[/TITLE][COLL][H]green meadow|绿色草地[POS]n. phr.[/POS][/H][EX]Cows grazed in the green meadow.|牛在草地上吃草。[/EX][C]flower meadow|花草地[/C][/COLL]",
+"[TITLE]额外例句[/TITLE][EX]Children played in the meadow.|孩子们在草地上玩。[/EX][EX]The meadow stretched far away.|草地一直延伸到远方。[/EX]",
+"[TITLE]常见错误[/TITLE][ERR]不要拼写为medow。[/ERR]"
+]
+},
+
+"w674": {
+"word": "ditch",
+"images": {
+"scene": ["infopic01/ditch.webp"],
+"card": ["wordpic01/ditch.webp"]
+},
+"richDetail": [
+"[TITLE]解释[/TITLE][DEF][EN]A ditch is a long narrow hole in the ground, often beside a road.[/EN][CN]沟渠；壕沟[/CN][POS]n.[/POS][PH]/dɪtʃ/[/PH][DU]The ball rolled into the ditch.|（原文例句）球滚进沟里了。[/DU][DU]Water filled the ditch.|水流进沟渠。[/DU][/DEF][IMG]infopic01/ditch.webp[/IMG]",
+"[TITLE]常见用法[/TITLE][COLL][H]roadside ditch|路边沟[POS]n. phr.[/POS][/H][EX]The car stopped near the ditch.|车停在沟边。[/EX][C]deep ditch|深沟[/C][/COLL]",
+"[TITLE]额外例句[/TITLE][EX]The rainwater ran into the ditch.|雨水流进沟里。[/EX][EX]The farmer dug a ditch.|农民挖了一条沟。[/EX]",
+"[TITLE]常见错误[/TITLE][ERR]ditch不要拼写为dich。[/ERR]"
+]
+},
+
+"w675": {
+"word": "chess",
+"images": {
+"scene": ["infopic01/chess.webp"],
+"card": ["wordpic01/chess.webp"]
+},
+"richDetail": [
+"[TITLE]解释[/TITLE][DEF][EN]Chess is a board game played with black and white pieces.[/EN][CN]国际象棋[/CN][POS]n.[/POS][PH]/tʃes/[/PH][DU]They played chess after school.|（原文例句）他们放学后下国际象棋。[/DU][DU]Chess is a game of strategy.|国际象棋是一种策略游戏。[/DU][/DEF][IMG]infopic01/chess.webp[/IMG]",
+"[TITLE]常见用法[/TITLE][COLL][H]play chess|下棋[POS]v. phr.[/POS][/H][EX]He likes to play chess.|他喜欢下国际象棋。[/EX][C]chess board|棋盘[/C][/COLL]",
+"[TITLE]额外例句[/TITLE][EX]Chess helps people think.|国际象棋帮助人思考。[/EX][EX]They set up the chess board.|他们摆好棋盘。[/EX]",
+"[TITLE]常见错误[/TITLE][ERR]play chess不加a或the。[/ERR]"
+]
+},
+
+"w676": {
+"word": "battle",
+"images": {
+"scene": ["infopic01/battle.webp"],
+"card": ["wordpic01/battle.webp"]
+},
+"richDetail": [
+"[TITLE]解释[/TITLE][DEF][EN]A battle is a fight between groups or armies.[/EN][CN]战斗；战役[/CN][POS]n./v.[/POS][PH]/ˈbætl/[/PH][DU]The chess pieces fought a battle.|（原文例句）棋子之间展开了战斗。[/DU][DU]The armies prepared for battle.|军队准备战斗。[/DU][/DEF][IMG]infopic01/battle.webp[/IMG]",
+"[TITLE]常见用法[/TITLE][COLL][H]fight a battle|打仗[POS]v. phr.[/POS][/H][EX]The soldiers fought a battle.|士兵们打了一场战斗。[/EX][C]big battle|大战[/C][/COLL]",
+"[TITLE]额外例句[/TITLE][EX]The battle lasted all day.|战斗持续了一整天。[/EX][EX]They planned the battle carefully.|他们仔细计划战斗。[/EX]",
+"[TITLE]常见错误[/TITLE][ERR]battle既可作名词也可作动词。[/ERR]"
+]
+},
+"w677": {
+"word": "pawn",
+"images": {
+"scene": ["infopic01/pawn.webp"],
+"card": ["wordpic01/pawn.webp"]
+},
+"richDetail": [
+"[TITLE]解释[/TITLE][DEF][EN]A pawn is the smallest piece in a chess game.[/EN][CN]兵（国际象棋棋子）[/CN][POS]n.[/POS][PH]/pɔːn/[/PH][DU]The pawn moved forward one square.|（原文例句）兵向前走了一格。[/DU][DU]Pawns start in the front row in chess.|兵在棋盘前排开始。[/DU][/DEF][IMG]infopic01/pawn.webp[/IMG]",
+"[TITLE]常见用法[/TITLE][COLL][H]move a pawn|移动兵[POS]v. phr.[/POS][/H][EX]He moved a pawn to start the game.|他移动兵开始游戏。[/EX][C]white pawn|白兵[/C][C]black pawn|黑兵[/C][/COLL]",
+"[TITLE]额外例句[/TITLE][EX]The pawn protects the king.|兵保护国王。[/EX][EX]She captured the pawn.|她吃掉了那个兵。[/EX]",
+"[TITLE]常见错误[/TITLE][ERR]pawn在国际象棋中指棋子，不要误解为“典当”。[/ERR]"
+]
+},
+
+"w678": {
+"word": "rook",
+"images": {
+"scene": ["infopic01/rook.webp"],
+"card": ["wordpic01/rook.webp"]
+},
+"richDetail": [
+"[TITLE]解释[/TITLE][DEF][EN]A rook is a chess piece that moves in straight lines across the board.[/EN][CN]车（国际象棋棋子）[/CN][POS]n.[/POS][PH]/rʊk/[/PH][DU]The rook moved across the board.|（原文例句）车在棋盘上直线移动。[/DU][DU]A rook can move many squares.|车可以走很多格。[/DU][/DEF][IMG]infopic01/rook.webp[/IMG]",
+"[TITLE]常见用法[/TITLE][COLL][H]move a rook|移动车[POS]v. phr.[/POS][/H][EX]He moved his rook to the corner.|他把车移动到角落。[/EX][C]white rook|白车[/C][C]black rook|黑车[/C][/COLL]",
+"[TITLE]额外例句[/TITLE][EX]The rook protects the king.|车保护国王。[/EX][EX]She used the rook to attack.|她用车进攻。[/EX]",
+"[TITLE]常见错误[/TITLE][ERR]rook不要拼写为rock。[/ERR]"
+]
+},
+
+"w679": {
+"word": "bishop",
+"images": {
+"scene": ["infopic01/bishop.webp"],
+"card": ["wordpic01/bishop.webp"]
+},
+"richDetail": [
+"[TITLE]解释[/TITLE][DEF][EN]A bishop is a chess piece that moves diagonally on the board.[/EN][CN]象（国际象棋棋子）[/CN][POS]n.[/POS][PH]/ˈbɪʃəp/[/PH][DU]The bishop moved across the board diagonally.|（原文例句）象沿对角线移动。[/DU][DU]The bishop attacked the rook.|象攻击了车。[/DU][/DEF][IMG]infopic01/bishop.webp[/IMG]",
+"[TITLE]常见用法[/TITLE][COLL][H]move a bishop|移动象[POS]v. phr.[/POS][/H][EX]He moved the bishop across the board.|他把象沿对角线移动。[/EX][C]white bishop|白象[/C][C]black bishop|黑象[/C][/COLL]",
+"[TITLE]额外例句[/TITLE][EX]The bishop guards the king.|象保护国王。[/EX][EX]She used the bishop to check the king.|她用象将军。[/EX]",
+"[TITLE]常见错误[/TITLE][ERR]bishop不要拼写为bishup。[/ERR]"
+]
+},
+
+"w680": {
+"word": "beware",
+"images": {
+"scene": ["infopic01/beware.webp"],
+"card": ["wordpic01/beware.webp"]
+},
+"richDetail": [
+"[TITLE]解释[/TITLE][DEF][EN]Beware means to be careful because something is dangerous.[/EN][CN]小心；当心[/CN][POS]v.[/POS][PH]/bɪˈwer/[/PH][DU]Beware of the rook!|（原文例句）小心那辆车（棋子）！[/DU][DU]Beware of the dog.|小心那只狗。[/DU][/DEF][IMG]infopic01/beware.webp[/IMG]",
+"[TITLE]常见用法[/TITLE][COLL][H]beware of|小心……[POS]v. phr.[/POS][/H][EX]Beware of falling rocks.|小心落石。[/EX][C]beware of dogs|小心狗[/C][/COLL]",
+"[TITLE]额外例句[/TITLE][EX]Beware of slippery floors.|小心地板湿滑。[/EX][EX]The sign says beware.|标志上写着小心。[/EX]",
+"[TITLE]常见错误[/TITLE][ERR]beware后面通常接of，不直接接名词。[/ERR]"
+]
+},
+
+"w681": {
+"word": "cockroach",
+"images": {
+"scene": ["infopic01/cockroach.webp"],
+"card": ["wordpic01/cockroach.webp"]
+},
+"richDetail": [
+"[TITLE]解释[/TITLE][DEF][EN]A cockroach is a small insect that lives in dark places.[/EN][CN]蟑螂[/CN][POS]n.[/POS][PH]/ˈkɒkroʊtʃ/[/PH][DU]The cockroach ran across the floor.|（原文例句）蟑螂跑过地板。[/DU][DU]Cockroaches hide in dark places.|蟑螂躲在黑暗的地方。[/DU][/DEF][IMG]infopic01/cockroach.webp[/IMG]",
+"[TITLE]常见用法[/TITLE][COLL][H]giant cockroach|大蟑螂[POS]n. phr.[/POS][/H][EX]The giant cockroach scared everyone.|那只大蟑螂吓坏了大家。[/EX][C]baby cockroach|小蟑螂[/C][/COLL]",
+"[TITLE]额外例句[/TITLE][EX]A cockroach crawled on the wall.|一只蟑螂在墙上爬。[/EX][EX]Cockroaches come out at night.|蟑螂在夜里出来。[/EX]",
+"[TITLE]常见错误[/TITLE][ERR]cockroach不要拼写为cockroch。[/ERR]"
+]
+},
+
+"w682": {
+"word": "include",
+"images": {
+"scene": ["infopic01/include.webp"],
+"card": ["wordpic01/include.webp"]
+},
+"richDetail": [
+"[TITLE]解释[/TITLE][DEF][EN]To include means to have something as part of a group.[/EN][CN]包括；包含[/CN][POS]v.[/POS][PH]/ɪnˈkluːd/[/PH][DU]Some insects include cockroaches.|（原文例句）一些昆虫包括蟑螂。[/DU][DU]The list includes many animals.|这个清单包括许多动物。[/DU][/DEF][IMG]infopic01/include.webp[/IMG]",
+"[TITLE]常见用法[/TITLE][COLL][H]include sth|包括某物[POS]v. phr.[/POS][/H][EX]The meal includes soup and bread.|这顿饭包括汤和面包。[/EX][C]include everyone|包括所有人[/C][/COLL]",
+"[TITLE]额外例句[/TITLE][EX]The book includes pictures.|这本书包括图片。[/EX][EX]The price includes tax.|价格包含税。[/EX]",
+"[TITLE]常见错误[/TITLE][ERR]include表示“包含”，不要和contain完全混淆。[/ERR]"
+]
+},
+
+"w683": {
+"word": "decide",
+"images": {
+"scene": ["infopic01/decide.webp"],
+"card": ["wordpic01/decide.webp"]
+},
+"richDetail": [
+"[TITLE]解释[/TITLE][DEF][EN]To decide means to choose something after thinking.[/EN][CN]决定；下决心[/CN][POS]v.[/POS][PH]/dɪˈsaɪd/[/PH][DU]She decided to do the right thing.|（原文例句）她决定做正确的事情。[/DU][DU]I decided to go home.|我决定回家。[/DU][/DEF][IMG]infopic01/decide.webp[/IMG]",
+"[TITLE]常见用法[/TITLE][COLL][H]decide to do|决定做某事[POS]v. phr.[/POS][/H][EX]He decided to help.|他决定帮忙。[/EX][C]decide later|稍后决定[/C][/COLL]",
+"[TITLE]额外例句[/TITLE][EX]They decided to travel.|他们决定去旅行。[/EX][EX]She decided quickly.|她很快做了决定。[/EX]",
+"[TITLE]常见错误[/TITLE][ERR]decide后通常接to do，不直接接doing。[/ERR]"
+]
+},
+
+"w684": {
+"word": "explain",
+"images": {
+"scene": ["infopic01/explain.webp"],
+"card": ["wordpic01/explain.webp"]
+},
+"richDetail": [
+"[TITLE]解释[/TITLE][DEF][EN]To explain means to make something clear by giving details.[/EN][CN]解释；说明[/CN][POS]v.[/POS][PH]/ɪkˈspleɪn/[/PH][DU]She explained why it was wrong.|（原文例句）她解释了为什么这是错的。[/DU][DU]The teacher explained the lesson.|老师解释了课程。[/DU][/DEF][IMG]infopic01/explain.webp[/IMG]",
+"[TITLE]常见用法[/TITLE][COLL][H]explain something|解释某事[POS]v. phr.[/POS][/H][EX]He explained the rule.|他解释了规则。[/EX][C]explain clearly|清楚解释[/C][/COLL]",
+"[TITLE]额外例句[/TITLE][EX]Can you explain this problem?|你能解释这个问题吗？[/EX][EX]She explained the answer.|她解释了答案。[/EX]",
+"[TITLE]常见错误[/TITLE][ERR]explain后面直接接事情，不用to（错误：explain me）。[/ERR]"
+]
+},
+"w685": {
+"word": "knob",
+"images": {
+"scene": ["infopic01/knob.webp"],
+"card": ["wordpic01/knob.webp"]
+},
+"richDetail": [
+"[TITLE]解释[/TITLE][DEF][EN]A knob is a round handle used to open or turn something, like a door.[/EN][CN]把手；旋钮[/CN][POS]n.[/POS][PH]/nɑːb/[/PH][DU]Turn the knob to open the door.|（原文例句）转动把手打开门。[/DU][DU]The stove knob controls the heat.|炉子的旋钮控制火力。[/DU][/DEF][IMG]infopic01/knob.webp[/IMG]",
+"[TITLE]常见用法[/TITLE][COLL][H]door knob|门把手[POS]n. phr.[/POS][/H][EX]He turned the door knob slowly.|他慢慢转动门把手。[/EX][C]volume knob|音量旋钮[/C][/COLL]",
+"[TITLE]额外例句[/TITLE][EX]The knob was hard to turn.|这个旋钮很难拧动。[/EX][EX]She grabbed the knob.|她抓住了门把手。[/EX]",
+"[TITLE]常见错误[/TITLE][ERR]knob不要拼写为knobbe。[/ERR]"
+]
+},
+
+"w686": {
+"word": "panic",
+"images": {
+"scene": ["infopic01/panic.webp"],
+"card": ["wordpic01/panic.webp"]
+},
+"richDetail": [
+"[TITLE]解释[/TITLE][DEF][EN]Panic means a sudden feeling of fear that makes people act quickly or without thinking.[/EN][CN]恐慌；惊慌[/CN][POS]n./v.[/POS][PH]/ˈpænɪk/[/PH][DU]Do not panic in a fire.|（原文例句）发生火灾时不要惊慌。[/DU][DU]People began to panic.|人们开始恐慌。[/DU][/DEF][IMG]infopic01/panic.webp[/IMG]",
+"[TITLE]常见用法[/TITLE][COLL][H]panic attack|恐慌发作[POS]n. phr.[/POS][/H][EX]He had a panic attack.|他经历了一次恐慌发作。[/EX][C]panic button|紧急按钮[/C][/COLL]",
+"[TITLE]额外例句[/TITLE][EX]The crowd began to panic.|人群开始恐慌。[/EX][EX]She tried not to panic.|她努力不让自己惊慌。[/EX]",
+"[TITLE]常见错误[/TITLE][ERR]panic的过去式是panicked，需要双写k。[/ERR]"
+]
+},
+
+"w687": {
+"word": "department",
+"images": {
+"scene": ["infopic01/department.webp"],
+"card": ["wordpic01/department.webp"]
+},
+"richDetail": [
+"[TITLE]解释[/TITLE][DEF][EN]A department is a part of a large organization with a special job.[/EN][CN]部门；局[/CN][POS]n.[/POS][PH]/dɪˈpɑːrtmənt/[/PH][DU]Call the fire department.|（原文例句）打电话给消防部门。[/DU][DU]The police department helps people.|警察部门帮助人们。[/DU][/DEF][IMG]infopic01/department.webp[/IMG]",
+"[TITLE]常见用法[/TITLE][COLL][H]fire department|消防部门[POS]n. phr.[/POS][/H][EX]The fire department arrived quickly.|消防队很快赶到。[/EX][C]police department|警察局[/C][/COLL]",
+"[TITLE]额外例句[/TITLE][EX]The health department checks food safety.|卫生部门检查食品安全。[/EX][EX]Each department has a manager.|每个部门都有经理。[/EX]",
+"[TITLE]常见错误[/TITLE][ERR]department不要拼写为departmant。[/ERR]"
+]
+},
+
+"w688": {
+"word": "bagel",
+"images": {
+"scene": ["infopic01/bagel.webp"],
+"card": ["wordpic01/bagel.webp"]
+},
+"richDetail": [
+"[TITLE]解释[/TITLE][DEF][EN]A bagel is a round bread with a hole in the middle.[/EN][CN]贝果；圆形面包[/CN][POS]n.[/POS][PH]/ˈbeɪɡl/[/PH][DU]Bagels come from wheat.|（原文例句）贝果是由小麦制成的。[/DU][DU]She ate a bagel for breakfast.|她早餐吃了一个贝果。[/DU][/DEF][IMG]infopic01/bagel.webp[/IMG]",
+"[TITLE]常见用法[/TITLE][COLL][H]bagel sandwich|贝果三明治[POS]n. phr.[/POS][/H][EX]He ordered a bagel sandwich.|他点了一个贝果三明治。[/EX][C]cream cheese bagel|奶油芝士贝果[/C][/COLL]",
+"[TITLE]额外例句[/TITLE][EX]The bagel smells good.|这个贝果闻起来很香。[/EX][EX]She toasted the bagel.|她烤了贝果。[/EX]",
+"[TITLE]常见错误[/TITLE][ERR]bagel不要拼写为bagle。[/ERR]"
+]
+},
+
+"w689": {
+"word": "wheat",
+"images": {
+"scene": ["infopic01/wheat.webp"],
+"card": ["wordpic01/wheat.webp"]
+},
+"richDetail": [
+"[TITLE]解释[/TITLE][DEF][EN]Wheat is a plant used to make flour and bread.[/EN][CN]小麦[/CN][POS]n.[/POS][PH]/wiːt/[/PH][DU]Bagels come from wheat.|（原文例句）贝果来自小麦。[/DU][DU]Bread is made from wheat.|面包由小麦制成。[/DU][/DEF][IMG]infopic01/wheat.webp[/IMG]",
+"[TITLE]常见用法[/TITLE][COLL][H]wheat bread|全麦面包[POS]n. phr.[/POS][/H][EX]He likes wheat bread.|他喜欢全麦面包。[/EX][C]wheat flour|小麦面粉[/C][/COLL]",
+"[TITLE]额外例句[/TITLE][EX]Farmers grow wheat.|农民种植小麦。[/EX][EX]The wheat field was golden.|小麦田是金色的。[/EX]",
+"[TITLE]常见错误[/TITLE][ERR]wheat是不可数名词。[/ERR]"
+]
+},
+
+"w690": {
+"word": "pepperoni",
+"images": {
+"scene": ["infopic01/pepperoni.webp"],
+"card": ["wordpic01/pepperoni.webp"]
+},
+"richDetail": [
+"[TITLE]解释[/TITLE][DEF][EN]Pepperoni is a spicy meat often used on pizza.[/EN][CN]意大利辣香肠（披萨配料）[/CN][POS]n.[/POS][PH]/ˌpepəˈroʊni/[/PH][DU]Pepperoni is a topping on pizza.|（原文例句）辣香肠是披萨上的配料。[/DU][DU]He likes pepperoni pizza.|他喜欢辣香肠披萨。[/DU][/DEF][IMG]infopic01/pepperoni.webp[/IMG]",
+"[TITLE]常见用法[/TITLE][COLL][H]pepperoni pizza|辣香肠披萨[POS]n. phr.[/POS][/H][EX]They ordered pepperoni pizza.|他们点了辣香肠披萨。[/EX][C]extra pepperoni|加倍辣香肠[/C][/COLL]",
+"[TITLE]额外例句[/TITLE][EX]Pepperoni tastes spicy.|辣香肠味道很辣。[/EX][EX]She put pepperoni on the pizza.|她在披萨上放了辣香肠。[/EX]",
+"[TITLE]常见错误[/TITLE][ERR]pepperoni是食品名称，通常不可数。[/ERR]"
+]
+},
+"w691": {
+"word": "crust",
+"images": {
+"scene": ["infopic01/crust.webp"],
+"card": ["wordpic01/crust.webp"]
+},
+"richDetail": [
+"[TITLE]解释[/TITLE][DEF][EN]Crust is the hard outer part of bread or pizza.[/EN][CN]外皮；面包皮；披萨边[/CN][POS]n.[/POS][PH]/krʌst/[/PH][DU]The crust of the pizza is crunchy.|（原文例句）披萨的边是脆的。[/DU][DU]He ate the bread crust.|他吃了面包皮。[/DU][/DEF][IMG]infopic01/crust.webp[/IMG]",
+"[TITLE]常见用法[/TITLE][COLL][H]pizza crust|披萨边[POS]n. phr.[/POS][/H][EX]The pizza crust is thick.|披萨边很厚。[/EX][C]bread crust|面包皮[/C][/COLL]",
+"[TITLE]额外例句[/TITLE][EX]She likes thin crust pizza.|她喜欢薄披萨边。[/EX][EX]The crust is golden brown.|外皮是金黄色的。[/EX]",
+"[TITLE]常见错误[/TITLE][ERR]crust不要拼写为crustt。[/ERR]"
+]
+},
+
+"w692": {
+"word": "filling",
+"images": {
+"scene": ["infopic01/filling.webp"],
+"card": ["wordpic01/filling.webp"]
+},
+"richDetail": [
+"[TITLE]解释[/TITLE][DEF][EN]A filling is material used to repair a hole in a tooth.[/EN][CN]补牙材料；牙齿填充物[/CN][POS]n.[/POS][PH]/ˈfɪlɪŋ/[/PH][DU]The dentist put a filling in the tooth.|（原文例句）牙医给牙齿补了填充物。[/DU][DU]The cavity needs a filling.|蛀牙需要填补。[/DU][/DEF][IMG]infopic01/filling.webp[/IMG]",
+"[TITLE]常见用法[/TITLE][COLL][H]tooth filling|补牙填充物[POS]n. phr.[/POS][/H][EX]The dentist checked the filling.|牙医检查了补牙材料。[/EX][C]silver filling|银色补牙材料[/C][/COLL]",
+"[TITLE]额外例句[/TITLE][EX]The filling fixed the cavity.|填充物修复了蛀牙。[/EX][EX]She got a filling yesterday.|她昨天补了牙。[/EX]",
+"[TITLE]常见错误[/TITLE][ERR]filling不要和feeling混淆。[/ERR]"
+]
+},
+
+"w693": {
+"word": "checkup",
+"images": {
+"scene": ["infopic01/checkup.webp"],
+"card": ["wordpic01/checkup.webp"]
+},
+"richDetail": [
+"[TITLE]解释[/TITLE][DEF][EN]A checkup is a medical exam to see if someone is healthy.[/EN][CN]体检；检查[/CN][POS]n.[/POS][PH]/ˈtʃekʌp/[/PH][DU]She went to the doctor for a checkup.|（原文例句）她去看医生做检查。[/DU][DU]The doctor gave him a checkup.|医生给他做了体检。[/DU][/DEF][IMG]infopic01/checkup.webp[/IMG]",
+"[TITLE]常见用法[/TITLE][COLL][H]medical checkup|体检[POS]n. phr.[/POS][/H][EX]He had a medical checkup.|他做了体检。[/EX][C]yearly checkup|年度体检[/C][/COLL]",
+"[TITLE]额外例句[/TITLE][EX]Children need regular checkups.|孩子需要定期体检。[/EX][EX]The checkup took twenty minutes.|检查花了二十分钟。[/EX]",
+"[TITLE]常见错误[/TITLE][ERR]checkup常写成一个词，也可以写check-up。[/ERR]"
+]
+},
+
+"w694": {
+"word": "pressure",
+"images": {
+"scene": ["infopic01/pressure(1).webp"],
+"card": ["wordpic01/pressure.webp"]
+},
+"richDetail": [
+"[TITLE]解释[/TITLE][DEF][EN]Pressure is the force pushing on something.[/EN][CN]压力[/CN][POS]n.[/POS][PH]/ˈpreʃər/[/PH][DU]The nurse checked his blood pressure.|（原文例句）护士检查了他的血压。[/DU][DU]Water pressure pushed the pipe.|水压推动了管子。[/DU][/DEF][IMG]infopic01/pressure(1).webp[/IMG]",
+"[TITLE]常见用法[/TITLE][COLL][H]blood pressure|血压[POS]n. phr.[/POS][/H][EX]The doctor measured blood pressure.|医生测量血压。[/EX][C]high pressure|高压力[/C][/COLL]",
+"[TITLE]额外例句[/TITLE][EX]The pressure increased.|压力增加了。[/EX][EX]He felt pressure at school.|他在学校感到压力。[/EX]",
+"[TITLE]常见错误[/TITLE][ERR]pressure是不可数名词。[/ERR]"
+]
+},
+
+"w695": {
+"word": "screen",
+"images": {
+"scene": ["infopic01/screen.webp"],
+"card": ["wordpic01/screen.webp"]
+},
+"richDetail": [
+"[TITLE]解释[/TITLE][DEF][EN]A screen is a flat surface where pictures appear, like on a phone or TV.[/EN][CN]屏幕[/CN][POS]n.[/POS][PH]/skriːn/[/PH][DU]The doctor looked at the screen.|（原文例句）医生看着屏幕。[/DU][DU]The movie played on the screen.|电影在屏幕上播放。[/DU][/DEF][IMG]infopic01/screen.webp[/IMG]",
+"[TITLE]常见用法[/TITLE][COLL][H]computer screen|电脑屏幕[POS]n. phr.[/POS][/H][EX]The computer screen is bright.|电脑屏幕很亮。[/EX][C]touch screen|触摸屏[/C][/COLL]",
+"[TITLE]额外例句[/TITLE][EX]She stared at the screen.|她盯着屏幕。[/EX][EX]The screen showed the results.|屏幕显示结果。[/EX]",
+"[TITLE]常见错误[/TITLE][ERR]screen不要拼写为scren。[/ERR]"
+]
+},
+
+"w696": {
+"word": "height",
+"images": {
+"scene": ["infopic01/height.webp"],
+"card": ["wordpic01/height.webp"]
+},
+"richDetail": [
+"[TITLE]解释[/TITLE][DEF][EN]Height is how tall someone or something is.[/EN][CN]高度；身高[/CN][POS]n.[/POS][PH]/haɪt/[/PH][DU]The doctor measured his height.|（原文例句）医生测量了他的身高。[/DU][DU]The tree has great height.|那棵树很高。[/DU][/DEF][IMG]infopic01/height.webp[/IMG]",
+"[TITLE]常见用法[/TITLE][COLL][H]measure height|测量身高[POS]v. phr.[/POS][/H][EX]The nurse measured her height.|护士测量了她的身高。[/EX][C]average height|平均身高[/C][/COLL]",
+"[TITLE]额外例句[/TITLE][EX]His height is 120 centimeters.|他的身高是120厘米。[/EX][EX]The height of the building is huge.|这栋楼很高。[/EX]",
+"[TITLE]常见错误[/TITLE][ERR]height不要拼写为hight。[/ERR]"
+]
+},
+
+"w697": {
+"word": "weight",
+"images": {
+"scene": ["infopic01/weight(1).webp"],
+"card": ["wordpic01/weight.webp"]
+},
+"richDetail": [
+"[TITLE]解释[/TITLE][DEF][EN]Weight is how heavy something is.[/EN][CN]重量；体重[/CN][POS]n.[/POS][PH]/weɪt/[/PH][DU]The nurse checked his weight.|（原文例句）护士测量了他的体重。[/DU][DU]The box has a heavy weight.|这个箱子很重。[/DU][/DEF][IMG]infopic01/weight(1).webp[/IMG]",
+"[TITLE]常见用法[/TITLE][COLL][H]lose weight|减肥[POS]v. phr.[/POS][/H][EX]He wants to lose weight.|他想减肥。[/EX][C]body weight|体重[/C][/COLL]",
+"[TITLE]额外例句[/TITLE][EX]Her weight is normal.|她的体重正常。[/EX][EX]The weight of the bag is five kilos.|包重五公斤。[/EX]",
+"[TITLE]常见错误[/TITLE][ERR]weight不要拼写为waight。[/ERR]"
+]
+},
+
+"w698": {
+"word": "honest",
+"images": {
+"scene": ["infopic01/honest.webp"],
+"card": ["wordpic01/honest.webp"]
+},
+"richDetail": [
+"[TITLE]解释[/TITLE][DEF][EN]Honest means telling the truth and not lying.[/EN][CN]诚实的[/CN][POS]adj.[/POS][PH]/ˈɑːnɪst/[/PH][DU]He tried to be honest.|（原文例句）他努力保持诚实。[/DU][DU]She gave an honest answer.|她给出了诚实的回答。[/DU][/DEF][IMG]infopic01/honest.webp[/IMG]",
+"[TITLE]常见用法[/TITLE][COLL][H]honest person|诚实的人[POS]n. phr.[/POS][/H][EX]He is an honest person.|他是个诚实的人。[/EX][C]honest answer|诚实回答[/C][/COLL]",
+"[TITLE]额外例句[/TITLE][EX]Children should be honest.|孩子们应该诚实。[/EX][EX]She told an honest story.|她讲了一个真实的故事。[/EX]",
+"[TITLE]常见错误[/TITLE][ERR]honest的h不发音。[/ERR]"
+]
+},
+
+"w699": {
+"word": "forgive",
+"images": {
+"scene": ["infopic01/forgive.webp"],
+"card": ["wordpic01/forgive.webp"]
+},
+"richDetail": [
+"[TITLE]解释[/TITLE][DEF][EN]To forgive means to stop being angry at someone for something wrong.[/EN][CN]原谅；宽恕[/CN][POS]v.[/POS][PH]/fərˈɡɪv/[/PH][DU]She chose to forgive him.|（原文例句）她选择原谅他。[/DU][DU]Please forgive my mistake.|请原谅我的错误。[/DU][/DEF][IMG]infopic01/forgive.webp[/IMG]",
+"[TITLE]常见用法[/TITLE][COLL][H]forgive someone|原谅某人[POS]v. phr.[/POS][/H][EX]She forgave her friend.|她原谅了朋友。[/EX][C]forgive mistakes|原谅错误[/C][/COLL]",
+"[TITLE]额外例句[/TITLE][EX]Parents forgive their children.|父母会原谅孩子。[/EX][EX]He asked her to forgive him.|他请求她原谅。[/EX]",
+"[TITLE]常见错误[/TITLE][ERR]过去式是forgave，过去分词forgiven。[/ERR]"
+]
+},
+
+"w700": {
+"word": "certain",
+"images": {
+"scene": ["infopic01/certain.webp"],
+"card": ["wordpic01/certain.webp"]
+},
+"richDetail": [
+"[TITLE]解释[/TITLE][DEF][EN]Certain means sure about something.[/EN][CN]确定的；肯定的[/CN][POS]adj.[/POS][PH]/ˈsɜːrtən/[/PH][DU]She felt certain about her choice.|（原文例句）她对自己的选择很确定。[/DU][DU]I am certain this is right.|我确定这是对的。[/DU][/DEF][IMG]infopic01/certain.webp[/IMG]",
+"[TITLE]常见用法[/TITLE][COLL][H]be certain|确定[POS]adj. phr.[/POS][/H][EX]He is certain about the answer.|他确定答案。[/EX][C]certain things|某些事情[/C][/COLL]",
+"[TITLE]额外例句[/TITLE][EX]I am certain of success.|我确定会成功。[/EX][EX]She felt certain about it.|她对此很确定。[/EX]",
+"[TITLE]常见错误[/TITLE][ERR]certain不要拼写为sertain。[/ERR]"
+]
+},
+"w701": {
+"word": "clover",
+"images": {
+"scene": ["infopic01/clover.webp"],
+"card": ["wordpic01/clover.webp"]
+},
+"richDetail": [
+"[TITLE]解释[/TITLE][DEF][EN]Clover is a small plant with three or four round leaves.[/EN][CN]三叶草；苜蓿[/CN][POS]n.[/POS][PH]/ˈkloʊvər/[/PH][DU]A four-leaf clover is said to bring good luck.|（原文例句）四叶草据说会带来好运。[/DU][DU]The field was covered with clover.|田地里长满了三叶草。[/DU][/DEF][IMG]infopic01/clover.webp[/IMG]",
+"[TITLE]常见用法[/TITLE][COLL][H]four-leaf clover|四叶草[POS]n. phr.[/POS][/H][EX]She found a four-leaf clover.|她找到了一片四叶草。[/EX][C]clover field|三叶草田[/C][/COLL]",
+"[TITLE]额外例句[/TITLE][EX]Clover grows in many fields.|三叶草长在很多田地里。[/EX][EX]The rabbit ate clover.|兔子吃三叶草。[/EX]",
+"[TITLE]常见错误[/TITLE][ERR]clover不要拼写为clovar。[/ERR]"
+]
+},
+
+"w702": {
+"word": "lantern",
+"images": {
+"scene": ["infopic01/lantern.webp"],
+"card": ["wordpic01/lantern.webp"]
+},
+"richDetail": [
+"[TITLE]解释[/TITLE][DEF][EN]A lantern is a light inside a protective case, often carried outside.[/EN][CN]灯笼；提灯[/CN][POS]n.[/POS][PH]/ˈlæntərn/[/PH][DU]The lantern glowed in the dark.|（原文例句）灯笼在黑暗中发光。[/DU][DU]He carried a lantern at night.|他夜里提着灯笼。[/DU][/DEF][IMG]infopic01/lantern.webp[/IMG]",
+"[TITLE]常见用法[/TITLE][COLL][H]paper lantern|纸灯笼[POS]n. phr.[/POS][/H][EX]Red paper lanterns hung in the street.|街上挂着红灯笼。[/EX][C]camp lantern|露营灯[/C][/COLL]",
+"[TITLE]额外例句[/TITLE][EX]The lantern lit the path.|灯笼照亮了小路。[/EX][EX]Children made lanterns for the festival.|孩子们为节日做灯笼。[/EX]",
+"[TITLE]常见错误[/TITLE][ERR]lantern不要拼写为lantren。[/ERR]"
+]
+},
+"w703": {
+"word": "halfway",
+"images": {
+"scene": ["infopic01/halfway.webp"],
+"card": ["wordpic01/halfway.webp"]
+},
+"richDetail": [
+"[TITLE]解释[/TITLE][DEF][EN]Halfway means in the middle between the beginning and the end.[/EN][CN]在中途；到一半[/CN][POS]adv./adj.[/POS][PH]/ˌhæfˈweɪ/[/PH][DU]The plant is halfway to the fence.|（例句）这株植物已经长到篱笆的一半位置了。[/DU][DU]We stopped halfway up the hill.|我们在上山的半路停了下来。[/DU][/DEF][IMG]infopic01/halfway.webp[/IMG]",
+"[TITLE]常见用法[/TITLE][COLL][H]halfway there|到一半了[POS]adv. phr.[/POS][/H][EX]We are halfway there.|我们已经到一半了。[/EX][C]halfway up|到……一半高度[/C][/COLL]",
+"[TITLE]额外例句[/TITLE][EX]She was halfway through the book.|她这本书看到一半了。[/EX][EX]The seedling is halfway to full size.|这棵幼苗已经长到一半大了。[/EX]",
+"[TITLE]常见错误[/TITLE][ERR]halfway是一个词，不要写成half way。[/ERR]"
+]
+},
+
+"w704": {
+"word": "seedling",
+"images": {
+"scene": ["infopic01/seedling.webp"],
+"card": ["wordpic01/seedling.webp"]
+},
+"richDetail": [
+"[TITLE]解释[/TITLE][DEF][EN]A seedling is a very young plant that has just started to grow from a seed.[/EN][CN]幼苗[/CN][POS]n.[/POS][PH]/ˈsiːdlɪŋ/[/PH][DU]Soon the seedling will be a few inches high.|（例句）很快这棵幼苗就会长到几英寸高。[/DU][DU]The seedling needs water and sun.|这棵幼苗需要阳光和水。[/DU][/DEF][IMG]infopic01/seedling.webp[/IMG]",
+"[TITLE]常见用法[/TITLE][COLL][H]young seedling|幼小的幼苗[POS]n. phr.[/POS][/H][EX]The young seedling is very green.|这棵幼苗很绿。[/EX][C]tomato seedling|番茄幼苗[/C][/COLL]",
+"[TITLE]额外例句[/TITLE][EX]The farmer planted the seedling outside.|农夫把幼苗种到了外面。[/EX][EX]A seedling can grow into a tall plant.|幼苗能长成高大的植物。[/EX]",
+"[TITLE]常见错误[/TITLE][ERR]seedling不要拼写成seeding。[/ERR]"
+]
+},
+
+"w705": {
+"word": "eye patch",
+"images": {
+"scene": ["infopic01/eye_patch.webp"],
+"card": ["wordpic01/eye_patch.webp"]
+},
+"richDetail": [
+"[TITLE]解释[/TITLE][DEF][EN]An eye patch is a piece of cloth or material worn over one eye.[/EN][CN]眼罩[/CN][POS]n.[/POS][PH]/ˈaɪ pætʃ/[/PH][DU]The costume had a black eye patch.|（例句）这套装扮有一个黑色眼罩。[/DU][DU]A pirate often wears an eye patch.|海盗常常戴眼罩。[/DU][/DEF][IMG]infopic01/eye_patch.webp[/IMG]",
+"[TITLE]常见用法[/TITLE][COLL][H]wear an eye patch|戴眼罩[POS]v. phr.[/POS][/H][EX]He wore an eye patch for Halloween.|他万圣节戴了眼罩。[/EX][C]black eye patch|黑色眼罩[/C][/COLL]",
+"[TITLE]额外例句[/TITLE][EX]The child made an eye patch from paper.|孩子用纸做了一个眼罩。[/EX][EX]Her pirate costume needed an eye patch.|她的海盗服需要一个眼罩。[/EX]",
+"[TITLE]常见错误[/TITLE][ERR]eye patch是两个词，不要写成eyepatch。[/ERR]"
+]
+},
+
+"w706": {
+"word": "attic",
+"images": {
+"scene": ["infopic01/attic.webp"],
+"card": ["wordpic01/attic.webp"]
+},
+"richDetail": [
+"[TITLE]解释[/TITLE][DEF][EN]An attic is the space or room at the top of a house, under the roof.[/EN][CN]阁楼[/CN][POS]n.[/POS][PH]/ˈætɪk/[/PH][DU]They found old things in the attic.|（例句）他们在阁楼里找到了一些旧东西。[/DU][DU]The attic is under the roof.|阁楼在屋顶下面。[/DU][/DEF][IMG]infopic01/attic.webp[/IMG]",
+"[TITLE]常见用法[/TITLE][COLL][H]in the attic|在阁楼里[POS]prep. phr.[/POS][/H][EX]The box was in the attic.|盒子在阁楼里。[/EX][C]old attic|旧阁楼[/C][/COLL]",
+"[TITLE]额外例句[/TITLE][EX]Grandma keeps decorations in the attic.|奶奶把装饰品放在阁楼里。[/EX][EX]The attic was dusty and dark.|阁楼又暗又满是灰尘。[/EX]",
+"[TITLE]常见错误[/TITLE][ERR]attic不要拼写成atic。[/ERR]"
+]
+},
+
+"w707": {
+"word": "wrap",
+"images": {
+"scene": ["infopic01/wrap.webp"],
+"card": ["wordpic01/wrap.webp"]
+},
+"richDetail": [
+"[TITLE]解释[/TITLE][DEF][EN]To wrap means to cover something by folding paper, cloth, or another material around it.[/EN][CN]包；裹[/CN][POS]v.[/POS][PH]/ræp/[/PH][DU]She used cloth to wrap the costume piece.|（例句）她用布把服装部件包了起来。[/DU][DU]We wrap gifts with paper.|我们用纸包礼物。[/DU][/DEF][IMG]infopic01/wrap.webp[/IMG]",
+"[TITLE]常见用法[/TITLE][COLL][H]wrap up|包起来[POS]v. phr.[/POS][/H][EX]Please wrap up the present.|请把礼物包起来。[/EX][C]wrap a gift|包礼物[/C][/COLL]",
+"[TITLE]额外例句[/TITLE][EX]Mom wrapped the sandwich in paper.|妈妈用纸把三明治包起来。[/EX][EX]He wrapped a scarf around his neck.|他把围巾围在脖子上。[/EX]",
+"[TITLE]常见错误[/TITLE][ERR]wrap中的w不发音。[/ERR]"
+]
+},
+
+"w708": {
+"word": "aster",
+"images": {
+"scene": ["infopic01/aster.webp"],
+"card": ["wordpic01/aster.webp"]
+},
+"richDetail": [
+"[TITLE]解释[/TITLE][DEF][EN]An aster is a flower with many thin petals around the middle.[/EN][CN]紫菀花[/CN][POS]n.[/POS][PH]/ˈæstər/[/PH][DU]The asters bloomed in the cold garden.|（例句）紫菀花在寒冷的花园里开放。[/DU][DU]An aster looks like a star-shaped flower.|紫菀花看起来像星星一样。[/DU][/DEF][IMG]infopic01/aster.webp[/IMG]",
+"[TITLE]常见用法[/TITLE][COLL][H]purple aster|紫色紫菀花[POS]n. phr.[/POS][/H][EX]A purple aster grew by the fence.|篱笆边长着一朵紫色紫菀花。[/EX][C]garden aster|花园里的紫菀花[/C][/COLL]",
+"[TITLE]额外例句[/TITLE][EX]The aster opened in the sun.|紫菀花在阳光下开放。[/EX][EX]Bees visited the aster.|蜜蜂飞到紫菀花上。[/EX]",
+"[TITLE]常见错误[/TITLE][ERR]aster不要拼写成asterr。[/ERR]"
+]
+},
+
+"w709": {
+"word": "slavery",
+"images": {
+"scene": ["infopic01/slavery.webp"],
+"card": ["wordpic01/slavery.webp"]
+},
+"richDetail": [
+"[TITLE]解释[/TITLE][DEF][EN]Slavery is a system in which people are owned and forced to work for others.[/EN][CN]奴隶制度[/CN][POS]n.[/POS][PH]/ˈsleɪvəri/[/PH][DU]Harriet Tubman escaped from slavery.|（例句）哈里特·塔布曼逃离了奴隶制度。[/DU][DU]Slavery was cruel and unfair.|奴隶制度是残酷而不公平的。[/DU][/DEF][IMG]infopic01/slavery.webp[/IMG]",
+"[TITLE]常见用法[/TITLE][COLL][H]escape from slavery|逃离奴隶制度[POS]v. phr.[/POS][/H][EX]Many people wanted to escape from slavery.|许多人想逃离奴隶制度。[/EX][C]end slavery|结束奴隶制度[/C][/COLL]",
+"[TITLE]额外例句[/TITLE][EX]People fought against slavery.|人们反对奴隶制度。[/EX][EX]History teaches us about slavery.|历史让我们了解奴隶制度。[/EX]",
+"[TITLE]常见错误[/TITLE][ERR]slavery是不可数名词。[/ERR]"
+]
+},
+
+"w710": {
+"word": "enslave",
+"images": {
+"scene": ["infopic01/enslave.webp"],
+"card": ["wordpic01/enslave.webp"]
+},
+"richDetail": [
+"[TITLE]解释[/TITLE][DEF][EN]To enslave means to force someone to live and work as a slave.[/EN][CN]奴役；使成为奴隶[/CN][POS]v.[/POS][PH]/ɪnˈsleɪv/[/PH][DU]Bad people tried to enslave others.|（例句）坏人试图奴役别人。[/DU][DU]It is wrong to enslave people.|奴役他人是错误的。[/DU][/DEF][IMG]infopic01/enslave.webp[/IMG]",
+"[TITLE]常见用法[/TITLE][COLL][H]enslave people|奴役人们[POS]v. phr.[/POS][/H][EX]No one should enslave another person.|没有人应该奴役别人。[/EX][C]enslave others|奴役别人[/C][/COLL]",
+"[TITLE]额外例句[/TITLE][EX]The law should protect people from being enslaved.|法律应该保护人们不被奴役。[/EX][EX]History shows how cruel it is to enslave others.|历史表明奴役别人是多么残酷。[/EX]",
+"[TITLE]常见错误[/TITLE][ERR]enslave是动词，名词形式是slavery。[/ERR]"
+]
+},
+
+"w711": {
+"word": "punish",
+"images": {
+"scene": ["infopic01/punish.webp"],
+"card": ["wordpic01/punish.webp"]
+},
+"richDetail": [
+"[TITLE]解释[/TITLE][DEF][EN]To punish means to make someone suffer because they did something wrong.[/EN][CN]惩罚[/CN][POS]v.[/POS][PH]/ˈpʌnɪʃ/[/PH][DU]The master would punish people who tried to escape.|（例句）主人会惩罚那些试图逃跑的人。[/DU][DU]Parents may punish bad behavior.|父母可能会惩罚不良行为。[/DU][/DEF][IMG]infopic01/punish.webp[/IMG]",
+"[TITLE]常见用法[/TITLE][COLL][H]punish someone|惩罚某人[POS]v. phr.[/POS][/H][EX]The teacher did not want to punish the child.|老师不想惩罚那个孩子。[/EX][C]punish bad behavior|惩罚不良行为[/C][/COLL]",
+"[TITLE]额外例句[/TITLE][EX]It is wrong to punish people unfairly.|不公平地惩罚别人是错误的。[/EX][EX]The law can punish crime.|法律可以惩罚犯罪。[/EX]",
+"[TITLE]常见错误[/TITLE][ERR]punish后面直接接人或行为，不要说punish to。[/ERR]"
+]
+},
+
+"w712": {
+"word": "stitch",
+"images": {
+"scene": ["infopic01/stitch(1).webp"],
+"card": ["wordpic01/stitch.webp"]
+},
+"richDetail": [
+"[TITLE]解释[/TITLE][DEF][EN]A stitch is a single loop of thread made when sewing. It can also mean to sew with thread.[/EN][CN]一针；缝；缝合[/CN][POS]n./v.[/POS][PH]/stɪtʃ/[/PH][DU]She made a careful stitch in the costume.|（例句）她在服装上细心地缝了一针。[/DU][DU]Mom stitched the cloth together.|妈妈把布缝在一起。[/DU][/DEF][IMG]infopic01/stitch(1).webp[/IMG]",
+"[TITLE]常见用法[/TITLE][COLL][H]sew a stitch|缝一针[POS]v. phr.[/POS][/H][EX]She sewed one stitch at a time.|她一针一针地缝。[/EX][C]small stitch|小小的一针[/C][/COLL]",
+"[TITLE]额外例句[/TITLE][EX]The doctor put in a stitch.|医生缝了一针。[/EX][EX]Grandma can stitch by hand.|奶奶会手工缝纫。[/EX]",
+"[TITLE]常见错误[/TITLE][ERR]stitch不要拼写成stich。[/ERR]"
+]
+},
+
+"w713": {
+"word": "homemade",
+"images": {
+"scene": ["infopic01/homemade.webp"],
+"card": ["wordpic01/homemade.webp"]
+},
+"richDetail": [
+"[TITLE]解释[/TITLE][DEF][EN]Homemade means made at home, not bought from a store.[/EN][CN]自制的；家里做的[/CN][POS]adj.[/POS][PH]/ˌhoʊmˈmeɪd/[/PH][DU]She wore a homemade costume.|（例句）她穿着一套自制服装。[/DU][DU]We ate homemade bread.|我们吃了自制面包。[/DU][/DEF][IMG]infopic01/homemade.webp[/IMG]",
+"[TITLE]常见用法[/TITLE][COLL][H]homemade food|自制食物[POS]n. phr.[/POS][/H][EX]Homemade food tastes great.|自制食物很好吃。[/EX][C]homemade gift|自制礼物[/C][/COLL]",
+"[TITLE]额外例句[/TITLE][EX]The children made homemade masks.|孩子们做了自制面具。[/EX][EX]She brought homemade cookies.|她带来了自制饼干。[/EX]",
+"[TITLE]常见错误[/TITLE][ERR]homemade是一个词，不要写成home made。[/ERR]"
+]
+},
+
+"w714": {
+"word": "lame",
+"images": {
+"scene": ["infopic01/lame.webp"],
+"card": ["wordpic01/lame.webp"]
+},
+"richDetail": [
+"[TITLE]解释[/TITLE][DEF][EN]Lame means unable to walk normally because of pain or injury. It can also mean weak or not good in informal use.[/EN][CN]跛的；瘸的；（口语）差劲的[/CN][POS]adj.[/POS][PH]/leɪm/[/PH][DU]That rhyme used the word lame.|（例句）那个押韵词里用了 lame 这个词。[/DU][DU]The horse was lame in one leg.|那匹马一条腿跛了。[/DU][/DEF][IMG]infopic01/lame.webp[/IMG]",
+"[TITLE]常见用法[/TITLE][COLL][H]go lame|变跛[POS]v. phr.[/POS][/H][EX]The animal went lame after the fall.|那只动物摔倒后变跛了。[/EX][C]lame excuse|站不住脚的借口[/C][/COLL]",
+"[TITLE]额外例句[/TITLE][EX]The old dog was lame.|那只老狗瘸了。[/EX][EX]That was a lame joke.|那是个很差劲的笑话。[/EX]",
+"[TITLE]常见错误[/TITLE][ERR]和lamp不要混淆。[/ERR]"
+]
+},
+
+"w715": {
+"word": "rhyme",
+"images": {
+"scene": ["infopic01/rhyme.webp"],
+"card": ["wordpic01/rhyme.webp"]
+},
+"richDetail": [
+"[TITLE]解释[/TITLE][DEF][EN]A rhyme is a word that has the same ending sound as another word.[/EN][CN]押韵词；押韵[/CN][POS]n./v.[/POS][PH]/raɪm/[/PH][DU]Cat and hat rhyme.|（例句）cat 和 hat 押韵。[/DU][DU]They made a fun rhyme.|他们编了一个有趣的押韵句。[/DU][/DEF][IMG]infopic01/rhyme.webp[/IMG]",
+"[TITLE]常见用法[/TITLE][COLL][H]words that rhyme|押韵的词[POS]n. phr.[/POS][/H][EX]Can you find words that rhyme with dog?|你能找到和 dog 押韵的词吗？[/EX][C]nursery rhyme|童谣[/C][/COLL]",
+"[TITLE]额外例句[/TITLE][EX]Blue and shoe rhyme.|blue 和 shoe 押韵。[/EX][EX]The poem uses rhyme.|这首诗用了押韵。[/EX]",
+"[TITLE]常见错误[/TITLE][ERR]rhyme中的h不发音。[/ERR]"
+]
+},
+
+"w716": {
+"word": "nag",
+"images": {
+"scene": ["infopic01/nag.webp"],
+"card": ["wordpic01/nag.webp"]
+},
+"richDetail": [
+"[TITLE]解释[/TITLE][DEF][EN]To nag means to complain or remind someone again and again in an annoying way.[/EN][CN]唠叨；反复催促[/CN][POS]v.[/POS][PH]/næɡ/[/PH][DU]She did not want to nag her brother.|（例句）她不想一直唠叨她弟弟。[/DU][DU]Mom nagged me to clean my room.|妈妈一直催我打扫房间。[/DU][/DEF][IMG]infopic01/nag.webp[/IMG]",
+"[TITLE]常见用法[/TITLE][COLL][H]nag someone to do sth|反复催某人做某事[POS]v. phr.[/POS][/H][EX]Dad nagged me to hurry up.|爸爸一直催我快一点。[/EX][C]nag about homework|唠叨作业[/C][/COLL]",
+"[TITLE]额外例句[/TITLE][EX]He nagged his friend to come along.|他一直催朋友一起去。[/EX][EX]She does not like to nag.|她不喜欢唠叨。[/EX]",
+"[TITLE]常见错误[/TITLE][ERR]nag通常带有“让人烦”的语气，不等于普通提醒。[/ERR]"
+]
+},
+"w717": {
+"word": "introduction",
+"images": {
+"scene": ["infopic01/introduction(1).webp"],
+"card": ["wordpic01/introduction.webp"]
+},
+"richDetail": [
+"[TITLE]解释[/TITLE][DEF][EN]An introduction is the beginning part that tells what something is about.[/EN][CN]介绍；引言；开头[/CN][POS]n.[/POS][PH]/ˌɪntrəˈdʌkʃən/[/PH][DU]The introduction explains how to build a guitar.|（例句）开头部分解释了如何制作吉他。[/DU][DU]I read the introduction first.|我先读了引言。[/DU][/DEF][IMG]infopic01/introduction(1).webp[/IMG]",
+"[TITLE]常见用法[/TITLE][COLL][H]short introduction|简短介绍[POS]n. phr.[/POS][/H][EX]She gave a short introduction.|她做了一个简短介绍。[/EX][C]read the introduction|阅读引言[/C][/COLL]",
+"[TITLE]额外例句[/TITLE][EX]The teacher wrote an introduction on the board.|老师在黑板上写了一个开头介绍。[/EX][EX]The book starts with an introduction.|这本书以引言开始。[/EX]",
+"[TITLE]常见错误[/TITLE][ERR]introduction不要拼写为introducation。[/ERR]"
+]
+},
+
+"w718": {
+"word": "trace",
+"images": {
+"scene": ["infopic01/trace.webp"],
+"card": ["wordpic01/trace.webp"]
+},
+"richDetail": [
+"[TITLE]解释[/TITLE][DEF][EN]To trace means to copy a line or shape by drawing over it.[/EN][CN]描摹；描出轮廓[/CN][POS]v.[/POS][PH]/treɪs/[/PH][DU]Trace the guitar shape on the wood.|（例句）把吉他的形状描在木板上。[/DU][DU]She traced the star shape.|她描了星形轮廓。[/DU][/DEF][IMG]infopic01/trace.webp[/IMG]",
+"[TITLE]常见用法[/TITLE][COLL][H]trace a shape|描形状[POS]v. phr.[/POS][/H][EX]He traced a circle on the paper.|他在纸上描了一个圆。[/EX][C]trace a line|描线[/C][/COLL]",
+"[TITLE]额外例句[/TITLE][EX]Please trace the letters carefully.|请仔细描字母。[/EX][EX]The child traced the picture.|孩子描了那幅图。[/EX]",
+"[TITLE]常见错误[/TITLE][ERR]trace不要和track混淆。[/ERR]"
+]
+},
+
+"w719": {
+"word": "preparing",
+"images": {
+"scene": ["infopic01/preparing.webp"],
+"card": ["wordpic01/preparing.webp"]
+},
+"richDetail": [
+"[TITLE]解释[/TITLE][DEF][EN]Preparing means getting things ready for something.[/EN][CN]准备；正在准备[/CN][POS]v.[/POS][PH]/prɪˈperɪŋ/[/PH][DU]Preparing the wood is an important step.|（例句）准备木头是重要的一步。[/DU][DU]She is preparing the tools.|她正在准备工具。[/DU][/DEF][IMG]infopic01/preparing.webp[/IMG]",
+"[TITLE]常见用法[/TITLE][COLL][H]prepare for|为……准备[POS]v. phr.[/POS][/H][EX]They are preparing for the show.|他们正在为演出做准备。[/EX][C]prepare tools|准备工具[/C][/COLL]",
+"[TITLE]额外例句[/TITLE][EX]Mom is preparing dinner.|妈妈正在准备晚饭。[/EX][EX]We are preparing the classroom.|我们正在准备教室。[/EX]",
+"[TITLE]常见错误[/TITLE][ERR]preparing来自prepare，不要漏掉字母a。[/ERR]"
+]
+},
+
+"w720": {
+"word": "clamp",
+"images": {
+"scene": ["infopic01/clamp(1).webp"],
+"card": ["wordpic01/clamp.webp"]
+},
+"richDetail": [
+"[TITLE]解释[/TITLE][DEF][EN]A clamp is a tool that holds things tightly together.[/EN][CN]夹具；夹子[/CN][POS]n./v.[/POS][PH]/klæmp/[/PH][DU]Use a clamp to hold the wood.|（例句）用夹具固定木板。[/DU][DU]The clamp kept the pieces still.|夹具让这些部件固定不动。[/DU][/DEF][IMG]infopic01/clamp(1).webp[/IMG]",
+"[TITLE]常见用法[/TITLE][COLL][H]use a clamp|使用夹具[POS]v. phr.[/POS][/H][EX]He used a clamp to fix the board.|他用夹具固定木板。[/EX][C]wood clamp|木工夹具[/C][/COLL]",
+"[TITLE]额外例句[/TITLE][EX]The clamp is very strong.|这个夹具很结实。[/EX][EX]Please clamp the paper.|请把纸夹住。[/EX]",
+"[TITLE]常见错误[/TITLE][ERR]clamp不要拼写为clamb。[/ERR]"
+]
+},
+
+"w721": {
+"word": "stain",
+"images": {
+"scene": ["infopic01/stain.webp"],
+"card": ["wordpic01/stain.webp"]
+},
+"richDetail": [
+"[TITLE]解释[/TITLE][DEF][EN]To stain means to color wood or leave a mark on something.[/EN][CN]染色；留下污渍[/CN][POS]v./n.[/POS][PH]/steɪn/[/PH][DU]They stained the wood dark brown.|（例句）他们把木头染成深棕色。[/DU][DU]The juice stained my shirt.|果汁把我的衣服弄脏了。[/DU][/DEF][IMG]infopic01/stain.webp[/IMG]",
+"[TITLE]常见用法[/TITLE][COLL][H]wood stain|木器染色剂[POS]n. phr.[/POS][/H][EX]Dad used wood stain on the guitar.|爸爸给吉他上了木器染色剂。[/EX][C]stain the wood|给木头上色[/C][/COLL]",
+"[TITLE]额外例句[/TITLE][EX]The coffee left a stain.|咖啡留下了污渍。[/EX][EX]She stained the table darker.|她把桌子染得更深。[/EX]",
+"[TITLE]常见错误[/TITLE][ERR]stain不要拼写为stane。[/ERR]"
+]
+},
+
+"w722": {
+"word": "buff",
+"images": {
+"scene": ["infopic01/buff.webp"],
+"card": ["wordpic01/buff.webp"]
+},
+"richDetail": [
+"[TITLE]解释[/TITLE][DEF][EN]To buff means to polish something to make it smooth and shiny.[/EN][CN]擦亮；抛光[/CN][POS]v.[/POS][PH]/bʌf/[/PH][DU]They buffed the guitar to make it shine.|（例句）他们把吉他擦亮了。[/DU][DU]He buffed the wood surface.|他把木头表面抛光了。[/DU][/DEF][IMG]infopic01/buff.webp[/IMG]",
+"[TITLE]常见用法[/TITLE][COLL][H]buff the surface|抛光表面[POS]v. phr.[/POS][/H][EX]She buffed the table.|她把桌子擦亮了。[/EX][C]buff the wood|抛光木头[/C][/COLL]",
+"[TITLE]额外例句[/TITLE][EX]The worker buffed the metal.|工人把金属擦亮了。[/EX][EX]Buff the guitar gently.|轻轻把吉他抛光。[/EX]",
+"[TITLE]常见错误[/TITLE][ERR]buff不要拼写为buf。[/ERR]"
+]
+},
+
+"w723": {
+"word": "leash",
+"images": {
+"scene": ["infopic01/leash.webp"],
+"card": ["wordpic01/leash.webp"]
+},
+"richDetail": [
+"[TITLE]解释[/TITLE][DEF][EN]A leash is a strap used to control a dog while walking it.[/EN][CN]狗绳；牵引绳[/CN][POS]n.[/POS][PH]/liːʃ/[/PH][DU]Dogs must stay on a leash.|（例句）狗必须拴着牵引绳。[/DU][DU]She held the dog's leash.|她抓着狗绳。[/DU][/DEF][IMG]infopic01/leash.webp[/IMG]",
+"[TITLE]常见用法[/TITLE][COLL][H]on a leash|拴着狗绳[POS]prep. phr.[/POS][/H][EX]Keep your dog on a leash.|让你的狗拴着绳子。[/EX][C]dog leash|狗绳[/C][/COLL]",
+"[TITLE]额外例句[/TITLE][EX]The leash was long.|那条狗绳很长。[/EX][EX]He bought a new leash.|他买了一条新狗绳。[/EX]",
+"[TITLE]常见错误[/TITLE][ERR]leash不要拼写为leech。[/ERR]"
+]
+},
+
+"w724": {
+"word": "address",
+"images": {
+"scene": ["infopic01/address.webp"],
+"card": ["wordpic01/address.webp"]
+},
+"richDetail": [
+"[TITLE]解释[/TITLE][DEF][EN]An address is the place where someone lives or receives mail.[/EN][CN]地址[/CN][POS]n.[/POS][PH]/ˈædres/[/PH][DU]Write your address clearly.|（例句）清楚写下你的地址。[/DU][DU]The letter has her address.|信上写着她的地址。[/DU][/DEF][IMG]infopic01/address.webp[/IMG]",
+"[TITLE]常见用法[/TITLE][COLL][H]home address|家庭地址[POS]n. phr.[/POS][/H][EX]Please write your home address.|请写下家庭地址。[/EX][C]email address|电子邮件地址[/C][/COLL]",
+"[TITLE]额外例句[/TITLE][EX]He changed his address.|他换了地址。[/EX][EX]The address is on the envelope.|地址在信封上。[/EX]",
+"[TITLE]常见错误[/TITLE][ERR]注意名词和动词发音不同。[/ERR]"
+]
+},
+
+"w725": {
+"word": "beast",
+"images": {
+"scene": ["infopic01/beast.webp"],
+"card": ["wordpic01/beast.webp"]
+},
+"richDetail": [
+"[TITLE]解释[/TITLE][DEF][EN]A beast is a large or scary animal.[/EN][CN]野兽；怪兽[/CN][POS]n.[/POS][PH]/biːst/[/PH][DU]The beast came out at night.|（例句）怪兽晚上出来。[/DU][DU]The villagers feared the beast.|村民害怕这只怪兽。[/DU][/DEF][IMG]infopic01/beast.webp[/IMG]",
+"[TITLE]常见用法[/TITLE][COLL][H]wild beast|野兽[POS]n. phr.[/POS][/H][EX]The forest had many wild beasts.|森林里有很多野兽。[/EX][C]scary beast|可怕的野兽[/C][/COLL]",
+"[TITLE]额外例句[/TITLE][EX]The beast roared loudly.|怪兽大声吼叫。[/EX][EX]Stories often talk about beasts.|故事常常讲到怪兽。[/EX]",
+"[TITLE]常见错误[/TITLE][ERR]beast不要拼写为beest。[/ERR]"
+]
+},
+
+"w726": {
+"word": "firecracker",
+"images": {
+"scene": ["infopic01/firecracker.webp"],
+"card": ["wordpic01/firecracker.webp"]
+},
+"richDetail": [
+"[TITLE]解释[/TITLE][DEF][EN]A firecracker is a small explosive used in celebrations.[/EN][CN]爆竹；鞭炮[/CN][POS]n.[/POS][PH]/ˈfaɪərˌkrækər/[/PH][DU]The firecrackers scared the beast away.|（例句）鞭炮把怪兽吓跑了。[/DU][DU]People light firecrackers during festivals.|人们在节日里放鞭炮。[/DU][/DEF][IMG]infopic01/firecracker.webp[/IMG]",
+"[TITLE]常见用法[/TITLE][COLL][H]light firecrackers|放鞭炮[POS]v. phr.[/POS][/H][EX]They lit firecrackers for the holiday.|他们为节日放鞭炮。[/EX][C]red firecracker|红色鞭炮[/C][/COLL]",
+"[TITLE]额外例句[/TITLE][EX]The firecracker made a loud bang.|鞭炮发出巨响。[/EX][EX]Children watched the firecrackers.|孩子们看着鞭炮。[/EX]",
+"[TITLE]常见错误[/TITLE][ERR]firecracker不要拼写为firecraker。[/ERR]"
+]
+},
+"w727": {
+"word": "fairy",
+"images": {
+"scene": ["infopic01/fairy.webp"],
+"card": ["wordpic01/fairy.webp"]
+},
+"richDetail": [
+"[TITLE]解释[/TITLE][DEF][EN]A fairy is a small magical creature in stories that often has wings.[/EN][CN]仙子；小精灵[/CN][POS]n.[/POS][PH]/ˈferi/[/PH][DU]The fairy helped build a tiny bridge.|（例句）小精灵帮助建了一座小桥。[/DU][DU]The fairy had shining wings.|小精灵有闪亮的翅膀。[/DU][/DEF][IMG]infopic01/fairy.webp[/IMG]",
+"[TITLE]常见用法[/TITLE][COLL][H]fairy tale|童话故事[POS]n. phr.[/POS][/H][EX]Cinderella is a famous fairy tale.|《灰姑娘》是著名的童话故事。[/EX][C]fairy wings|仙子翅膀[/C][/COLL]",
+"[TITLE]额外例句[/TITLE][EX]The fairy waved her wand.|小精灵挥动她的魔杖。[/EX][EX]Children love fairy stories.|孩子们喜欢精灵故事。[/EX]",
+"[TITLE]常见错误[/TITLE][ERR]fairy不要拼写成faery（文学旧拼法）。[/ERR]"
+]
+},
+
+"w728": {
+"word": "circus",
+"images": {
+"scene": ["infopic01/circus.webp"],
+"card": ["wordpic01/circus.webp"]
+},
+"richDetail": [
+"[TITLE]解释[/TITLE][DEF][EN]A circus is a show with clowns, animals, and amazing tricks.[/EN][CN]马戏团[/CN][POS]n.[/POS][PH]/ˈsɜːrkəs/[/PH][DU]We went to the circus today.|（例句）我们今天去了马戏团。[/DU][DU]The circus had clowns and acrobats.|马戏团有小丑和杂技演员。[/DU][/DEF][IMG]infopic01/circus.webp[/IMG]",
+"[TITLE]常见用法[/TITLE][COLL][H]circus show|马戏表演[POS]n. phr.[/POS][/H][EX]The circus show was exciting.|马戏表演很精彩。[/EX][C]circus tent|马戏团帐篷[/C][/COLL]",
+"[TITLE]额外例句[/TITLE][EX]The circus travels from city to city.|马戏团在各个城市巡演。[/EX][EX]Children laughed at the circus.|孩子们在马戏团里大笑。[/EX]",
+"[TITLE]常见错误[/TITLE][ERR]circus不要拼写为circis。[/ERR]"
+]
+},
+
+"w729": {
+"word": "ringmonster",
+"images": {
+"scene": ["infopic01/ringmonster.webp"],
+"card": ["wordpic01/ringmonster.webp"]
+},
+"richDetail": [
+"[TITLE]解释[/TITLE][DEF][EN]A ringmonster is a fun character in the circus show inside the ring.[/EN][CN]马戏表演场里的怪物角色（书中角色名）[/CN][POS]n.[/POS][PH]/ˈrɪŋ ˌmɒnstər/[/PH][DU]The ringmonster made the crowd laugh.|（例句）场地怪物让观众笑了。[/DU][DU]The ringmonster danced in the circus ring.|这个角色在马戏圈里跳舞。[/DU][/DEF][IMG]infopic01/ringmonster.webp[/IMG]",
+"[TITLE]常见用法[/TITLE][COLL][H]circus ringmonster|马戏团怪物角色[POS]n. phr.[/POS][/H][EX]The circus ringmonster wore bright clothes.|马戏怪物穿着鲜艳的衣服。[/EX][C]funny ringmonster|滑稽怪物[/C][/COLL]",
+"[TITLE]额外例句[/TITLE][EX]The ringmonster waved to the audience.|怪物向观众挥手。[/EX][EX]Kids liked the ringmonster.|孩子们喜欢这个怪物角色。[/EX]",
+"[TITLE]常见错误[/TITLE][ERR]ringmonster是书中复合词，不要拆写为ring monster（除非原书如此）。[/ERR]"
+]
+},
+
+"w730": {
+"word": "harvest",
+"images": {
+"scene": ["infopic01/harvest.webp"],
+"card": ["wordpic01/harvest.webp"]
+},
+"richDetail": [
+"[TITLE]解释[/TITLE][DEF][EN]Harvest means gathering crops when they are ready.[/EN][CN]收获；收割[/CN][POS]n./v.[/POS][PH]/ˈhɑːrvɪst/[/PH][DU]The little red hen worked hard to harvest the wheat.|（例句）小红母鸡努力收割小麦。[/DU][DU]Farmers harvest crops in the fall.|农民在秋天收获庄稼。[/DU][/DEF][IMG]infopic01/harvest.webp[/IMG]",
+"[TITLE]常见用法[/TITLE][COLL][H]harvest crops|收割庄稼[POS]v. phr.[/POS][/H][EX]They harvest corn in autumn.|他们在秋天收割玉米。[/EX][C]good harvest|丰收[/C][/COLL]",
+"[TITLE]额外例句[/TITLE][EX]The harvest was large this year.|今年收成很好。[/EX][EX]They worked together during harvest.|他们在收获季节一起工作。[/EX]",
+"[TITLE]常见错误[/TITLE][ERR]harvest不要拼写为harvist。[/ERR]"
+]
+},
+
+"w731": {
+"word": "grind",
+"images": {
+"scene": ["infopic01/grind.webp"],
+"card": ["wordpic01/grind.webp"]
+},
+"richDetail": [
+"[TITLE]解释[/TITLE][DEF][EN]To grind means to crush something into small pieces or powder.[/EN][CN]磨碎；碾碎[/CN][POS]v.[/POS][PH]/ɡraɪnd/[/PH][DU]The hen helped grind the wheat into flour.|（例句）母鸡帮忙把小麦磨成面粉。[/DU][DU]They grind coffee beans.|他们磨咖啡豆。[/DU][/DEF][IMG]infopic01/grind.webp[/IMG]",
+"[TITLE]常见用法[/TITLE][COLL][H]grind wheat|磨小麦[POS]v. phr.[/POS][/H][EX]The mill grinds wheat into flour.|磨坊把小麦磨成面粉。[/EX][C]grind coffee|磨咖啡[/C][/COLL]",
+"[TITLE]额外例句[/TITLE][EX]He used a stone to grind seeds.|他用石头磨种子。[/EX][EX]Machines grind grain quickly.|机器能很快磨谷物。[/EX]",
+"[TITLE]常见错误[/TITLE][ERR]过去式和过去分词是ground。[/ERR]"
+]
+},
+"w732": {
+"word": "cell",
+"images": {
+"scene": ["infopic01/cell.webp"],
+"card": ["wordpic01/cell.webp"]
+},
+"richDetail": [
+"[TITLE]解释[/TITLE][DEF][EN]A cell is the smallest part of a living thing.[/EN][CN]细胞[/CN][POS]n.[/POS][PH]/sel/[/PH][DU]All living things are made of cells.|（例句）所有生物都是由细胞组成的。[/DU][DU]A plant cell is very small.|植物细胞非常小。[/DU][/DEF][IMG]infopic01/cell.webp[/IMG]",
+"[TITLE]常见用法[/TITLE][COLL][H]plant cell|植物细胞[POS]n. phr.[/POS][/H][EX]A plant cell has a cell wall.|植物细胞有细胞壁。[/EX][C]animal cell|动物细胞[/C][/COLL]",
+"[TITLE]额外例句[/TITLE][EX]Cells make up our bodies.|细胞构成我们的身体。[/EX][EX]Scientists study cells.|科学家研究细胞。[/EX]",
+"[TITLE]常见错误[/TITLE][ERR]cell不要拼写为sell。[/ERR]"
+]
+},
+
+"w733": {
+"word": "tricky",
+"images": {
+"scene": ["infopic01/tricky.webp"],
+"card": ["wordpic01/tricky.webp"]
+},
+"richDetail": [
+"[TITLE]解释[/TITLE][DEF][EN]Tricky means something that is difficult or not easy to do.[/EN][CN]棘手的；难处理的[/CN][POS]adj.[/POS][PH]/ˈtrɪki/[/PH][DU]This question is tricky.|（例句）这个问题很棘手。[/DU][DU]It was a tricky puzzle.|这是一个难解的谜题。[/DU][/DEF][IMG]infopic01/tricky.webp[/IMG]",
+"[TITLE]常见用法[/TITLE][COLL][H]tricky problem|棘手问题[POS]n. phr.[/POS][/H][EX]The tricky problem took time to solve.|这个难题花了很久才解决。[/EX][C]tricky question|难题[/C][/COLL]",
+"[TITLE]额外例句[/TITLE][EX]The game is tricky but fun.|这个游戏很难但很好玩。[/EX][EX]The road was tricky to walk on.|这条路走起来很难。[/EX]",
+"[TITLE]常见错误[/TITLE][ERR]tricky不要拼写为triky。[/ERR]"
+]
+},
+
+"w734": {
+"word": "gear",
+"images": {
+"scene": ["infopic01/gear(1).webp"],
+"card": ["wordpic01/gear.webp"]
+},
+"richDetail": [
+"[TITLE]解释[/TITLE][DEF][EN]Gear means tools or equipment used for a special activity.[/EN][CN]装备；器材[/CN][POS]n.[/POS][PH]/ɡɪr/[/PH][DU]The hikers packed their gear.|（例句）徒步者收拾好了装备。[/DU][DU]Safety gear is important.|安全装备很重要。[/DU][/DEF][IMG]infopic01/gear(1).webp[/IMG]",
+"[TITLE]常见用法[/TITLE][COLL][H]safety gear|安全装备[POS]n. phr.[/POS][/H][EX]Workers wear safety gear.|工人穿戴安全装备。[/EX][C]camping gear|露营装备[/C][/COLL]",
+"[TITLE]额外例句[/TITLE][EX]He carried his sports gear.|他带着运动装备。[/EX][EX]The gear was heavy.|装备很重。[/EX]",
+"[TITLE]常见错误[/TITLE][ERR]gear通常是不可数名词。[/ERR]"
+]
+},
+
+"w735": {
+"word": "radio",
+"images": {
+"scene": ["infopic01/radio.webp"],
+"card": ["wordpic01/radio.webp"]
+},
+"richDetail": [
+"[TITLE]解释[/TITLE][DEF][EN]A radio is a device that plays music or news through sound signals.[/EN][CN]收音机[/CN][POS]n.[/POS][PH]/ˈreɪdioʊ/[/PH][DU]People listened to the radio long ago.|（例句）很久以前人们听收音机。[/DU][DU]The radio played music.|收音机播放音乐。[/DU][/DEF][IMG]infopic01/radio.webp[/IMG]",
+"[TITLE]常见用法[/TITLE][COLL][H]listen to the radio|听收音机[POS]v. phr.[/POS][/H][EX]Grandpa listens to the radio every day.|爷爷每天听收音机。[/EX][C]radio station|广播电台[/C][/COLL]",
+"[TITLE]额外例句[/TITLE][EX]The radio was loud.|收音机声音很大。[/EX][EX]She turned on the radio.|她打开了收音机。[/EX]",
+"[TITLE]常见错误[/TITLE][ERR]radio复数为radios。[/ERR]"
+]
+},
+
+"w736": {
+"word": "video game",
+"images": {
+"scene": ["infopic01/video_game.webp"],
+"card": ["wordpic01/video_game.webp"]
+},
+"richDetail": [
+"[TITLE]解释[/TITLE][DEF][EN]A video game is a game played on a screen using a computer or console.[/EN][CN]电子游戏[/CN][POS]n.[/POS][PH]/ˈvɪdioʊ ɡeɪm/[/PH][DU]Kids today enjoy video games.|（例句）现在的孩子喜欢电子游戏。[/DU][DU]He played a video game after school.|他放学后玩电子游戏。[/DU][/DEF][IMG]infopic01/video_game.webp[/IMG]",
+"[TITLE]常见用法[/TITLE][COLL][H]play video games|玩电子游戏[POS]v. phr.[/POS][/H][EX]They play video games together.|他们一起玩电子游戏。[/EX][C]video game console|游戏机[/C][/COLL]",
+"[TITLE]额外例句[/TITLE][EX]This video game is exciting.|这个电子游戏很刺激。[/EX][EX]He likes adventure video games.|他喜欢冒险类电子游戏。[/EX]",
+"[TITLE]常见错误[/TITLE][ERR]video game是两个词。[/ERR]"
+]
+},
+
+"w737": {
+"word": "doorway",
+"images": {
+"scene": ["infopic01/doorway.webp"],
+"card": ["wordpic01/doorway.webp"]
+},
+"richDetail": [
+"[TITLE]解释[/TITLE][DEF][EN]A doorway is the space where a door is placed.[/EN][CN]门口；门道[/CN][POS]n.[/POS][PH]/ˈdɔːrweɪ/[/PH][DU]She stood in the doorway.|（例句）她站在门口。[/DU][DU]Light came through the doorway.|光从门口照进来。[/DU][/DEF][IMG]infopic01/doorway.webp[/IMG]",
+"[TITLE]常见用法[/TITLE][COLL][H]stand in the doorway|站在门口[POS]v. phr.[/POS][/H][EX]He waited in the doorway.|他在门口等。[/EX][C]dark doorway|黑暗的门口[/C][/COLL]",
+"[TITLE]额外例句[/TITLE][EX]The cat sat in the doorway.|猫坐在门口。[/EX][EX]The doorway was narrow.|门口很窄。[/EX]",
+"[TITLE]常见错误[/TITLE][ERR]doorway不要拼写为door way。[/ERR]"
+]
+},
+
+"w738": {
+"word": "science fiction",
+"images": {
+"scene": ["infopic01/science_fiction.webp"],
+"card": ["wordpic01/science_fiction.webp"]
+},
+"richDetail": [
+"[TITLE]解释[/TITLE][DEF][EN]Science fiction is a type of story about science, space, or the future.[/EN][CN]科幻小说[/CN][POS]n.[/POS][PH]/ˌsaɪəns ˈfɪkʃən/[/PH][DU]He likes science fiction books.|（例句）他喜欢科幻书。[/DU][DU]Science fiction tells stories about space.|科幻故事讲太空。[/DU][/DEF][IMG]infopic01/science_fiction.webp[/IMG]",
+"[TITLE]常见用法[/TITLE][COLL][H]science fiction book|科幻书[POS]n. phr.[/POS][/H][EX]She read a science fiction book.|她读了一本科幻书。[/EX][C]science fiction movie|科幻电影[/C][/COLL]",
+"[TITLE]额外例句[/TITLE][EX]Science fiction imagines the future.|科幻作品想象未来。[/EX][EX]Many kids enjoy science fiction.|很多孩子喜欢科幻。[/EX]",
+"[TITLE]常见错误[/TITLE][ERR]science fiction常缩写为sci-fi。[/ERR]"
+]
+},
+
+"w739": {
+"word": "distant",
+"images": {
+"scene": ["infopic01/distant.webp"],
+"card": ["wordpic01/distant.webp"]
+},
+"richDetail": [
+"[TITLE]解释[/TITLE][DEF][EN]Distant means far away in space or time.[/EN][CN]遥远的[/CN][POS]adj.[/POS][PH]/ˈdɪstənt/[/PH][DU]The distant stars shone brightly.|（例句）遥远的星星闪闪发光。[/DU][DU]We saw distant mountains.|我们看到了远处的山。[/DU][/DEF][IMG]infopic01/distant.webp[/IMG]",
+"[TITLE]常见用法[/TITLE][COLL][H]distant star|遥远的星星[POS]n. phr.[/POS][/H][EX]A distant star twinkled.|一颗遥远的星星闪烁。[/EX][C]distant land|遥远的地方[/C][/COLL]",
+"[TITLE]额外例句[/TITLE][EX]The sound was distant.|声音很远。[/EX][EX]They traveled to distant places.|他们去了遥远的地方。[/EX]",
+"[TITLE]常见错误[/TITLE][ERR]distant不要拼写为distent。[/ERR]"
+]
+},
+
+"w740": {
+"word": "fantasy",
+"images": {
+"scene": ["infopic01/fantasy.webp"],
+"card": ["wordpic01/fantasy.webp"]
+},
+"richDetail": [
+"[TITLE]解释[/TITLE][DEF][EN]Fantasy is a type of story with magic or imaginary worlds.[/EN][CN]奇幻故事；幻想[/CN][POS]n.[/POS][PH]/ˈfæntəsi/[/PH][DU]Fantasy stories often have dragons.|（例句）奇幻故事常常有龙。[/DU][DU]She enjoys fantasy books.|她喜欢奇幻书。[/DU][/DEF][IMG]infopic01/fantasy.webp[/IMG]",
+"[TITLE]常见用法[/TITLE][COLL][H]fantasy story|奇幻故事[POS]n. phr.[/POS][/H][EX]He wrote a fantasy story.|他写了一个奇幻故事。[/EX][C]fantasy world|幻想世界[/C][/COLL]",
+"[TITLE]额外例句[/TITLE][EX]The book is full of fantasy.|这本书充满幻想。[/EX][EX]Fantasy often includes magic.|奇幻故事常包含魔法。[/EX]",
+"[TITLE]常见错误[/TITLE][ERR]fantasy复数为fantasies。[/ERR]"
+]
+},
+
+"w741": {
+"word": "history",
+"images": {
+"scene": ["infopic01/history.webp"],
+"card": ["wordpic01/history.webp"]
+},
+"richDetail": [
+"[TITLE]解释[/TITLE][DEF][EN]History is the study of things that happened in the past.[/EN][CN]历史[/CN][POS]n.[/POS][PH]/ˈhɪstəri/[/PH][DU]History tells us about the past.|（例句）历史告诉我们过去发生的事。[/DU][DU]She reads history books.|她读历史书。[/DU][/DEF][IMG]infopic01/history.webp[/IMG]",
+"[TITLE]常见用法[/TITLE][COLL][H]world history|世界历史[POS]n. phr.[/POS][/H][EX]He studies world history.|他学习世界历史。[/EX][C]history book|历史书[/C][/COLL]",
+"[TITLE]额外例句[/TITLE][EX]History helps us learn.|历史帮助我们学习。[/EX][EX]The museum shows history.|博物馆展示历史。[/EX]",
+"[TITLE]常见错误[/TITLE][ERR]history不要拼写为histry。[/ERR]"
+]
+},
+
+"w742": {
+"word": "informational",
+"images": {
+"scene": ["infopic01/informational.webp"],
+"card": ["wordpic01/informational.webp"]
+},
+"richDetail": [
+"[TITLE]解释[/TITLE][DEF][EN]Informational books give facts and real information.[/EN][CN]信息类的；说明性的[/CN][POS]adj.[/POS][PH]/ˌɪnfərˈmeɪʃənl/[/PH][DU]This is an informational book.|（例句）这是一本说明类书。[/DU][DU]Informational books teach facts.|信息类书籍讲事实。[/DU][/DEF][IMG]infopic01/informational.webp[/IMG]",
+"[TITLE]常见用法[/TITLE][COLL][H]informational book|信息类书[POS]n. phr.[/POS][/H][EX]She read an informational book about animals.|她读了一本关于动物的信息类书。[/EX][C]informational text|说明文[/C][/COLL]",
+"[TITLE]额外例句[/TITLE][EX]Informational books explain science.|说明类书解释科学。[/EX][EX]Teachers use informational texts.|老师使用说明文。[/EX]",
+"[TITLE]常见错误[/TITLE][ERR]informational不要拼写为informtional。[/ERR]"
+]
+},
+
+"w743": {
+"word": "biography",
+"images": {
+"scene": ["infopic01/biography.webp"],
+"card": ["wordpic01/biography.webp"]
+},
+"richDetail": [
+"[TITLE]解释[/TITLE][DEF][EN]A biography is a book about a real person's life.[/EN][CN]传记[/CN][POS]n.[/POS][PH]/baɪˈɑːɡrəfi/[/PH][DU]This biography tells the life of a hero.|（例句）这本传记讲述一位英雄的一生。[/DU][DU]She read a biography of a scientist.|她读了一本科学家的传记。[/DU][/DEF][IMG]infopic01/biography.webp[/IMG]",
+"[TITLE]常见用法[/TITLE][COLL][H]read a biography|读传记[POS]v. phr.[/POS][/H][EX]He read a biography about a leader.|他读了一本关于领袖的传记。[/EX][C]famous biography|著名传记[/C][/COLL]",
+"[TITLE]额外例句[/TITLE][EX]The biography tells a true story.|传记讲述真实故事。[/EX][EX]Students read biographies in class.|学生在课堂上读传记。[/EX]",
+"[TITLE]常见错误[/TITLE][ERR]biography复数为biographies。[/ERR]"
+]
+},
+
+"w744": {
+"word": "mystery",
+"images": {
+"scene": ["infopic01/mystery.webp"],
+"card": ["wordpic01/mystery.webp"]
+},
+"richDetail": [
+"[TITLE]解释[/TITLE][DEF][EN]A mystery is a story about solving a problem or crime.[/EN][CN]悬疑故事；谜[/CN][POS]n.[/POS][PH]/ˈmɪstəri/[/PH][DU]The detective solved the mystery.|（例句）侦探解开了谜团。[/DU][DU]She enjoys mystery books.|她喜欢悬疑书。[/DU][/DEF][IMG]infopic01/mystery.webp[/IMG]",
+"[TITLE]常见用法[/TITLE][COLL][H]mystery story|悬疑故事[POS]n. phr.[/POS][/H][EX]He read a mystery story.|他读了一本悬疑故事。[/EX][C]solve a mystery|解开谜团[/C][/COLL]",
+"[TITLE]额外例句[/TITLE][EX]The mystery was exciting.|这个谜团很刺激。[/EX][EX]They tried to solve the mystery.|他们试图解开谜题。[/EX]",
+"[TITLE]常见错误[/TITLE][ERR]mystery不要拼写为mistery。[/ERR]"
+]
+},
+
+"w745": {
+"word": "fiction",
+"images": {
+"scene": ["infopic01/fiction.webp"],
+"card": ["wordpic01/fiction.webp"]
+},
+"richDetail": [
+"[TITLE]解释[/TITLE][DEF][EN]Fiction is a story that is made up, not real.[/EN][CN]虚构小说[/CN][POS]n.[/POS][PH]/ˈfɪkʃən/[/PH][DU]This book is fiction.|（例句）这本书是小说。[/DU][DU]Fiction stories use imagination.|小说用想象力写成。[/DU][/DEF][IMG]infopic01/fiction.webp[/IMG]",
+"[TITLE]常见用法[/TITLE][COLL][H]fiction book|小说书籍[POS]n. phr.[/POS][/H][EX]She reads fiction books.|她读小说书。[/EX][C]science fiction|科幻小说[/C][/COLL]",
+"[TITLE]额外例句[/TITLE][EX]Fiction can be exciting.|小说可以很精彩。[/EX][EX]The library has fiction and nonfiction.|图书馆有小说和纪实书。[/EX]",
+"[TITLE]常见错误[/TITLE][ERR]fiction不要拼写为fictin。[/ERR]"
+]
+},
+
+"w746": {
+"word": "autobiography",
+"images": {
+"scene": ["infopic01/autobiography.webp"],
+"card": ["wordpic01/autobiography.webp"]
+},
+"richDetail": [
+"[TITLE]解释[/TITLE][DEF][EN]An autobiography is a book someone writes about their own life.[/EN][CN]自传[/CN][POS]n.[/POS][PH]/ˌɔːtəbaɪˈɑːɡrəfi/[/PH][DU]He wrote an autobiography about his life.|（例句）他写了一本关于自己人生的自传。[/DU][DU]The autobiography tells her story.|这本自传讲述她的故事。[/DU][/DEF][IMG]infopic01/autobiography.webp[/IMG]",
+"[TITLE]常见用法[/TITLE][COLL][H]write an autobiography|写自传[POS]v. phr.[/POS][/H][EX]She wrote an autobiography.|她写了一本自传。[/EX][C]famous autobiography|著名自传[/C][/COLL]",
+"[TITLE]额外例句[/TITLE][EX]An autobiography tells true stories.|自传讲真实故事。[/EX][EX]He read a long autobiography.|他读了一本长自传。[/EX]",
+"[TITLE]常见错误[/TITLE][ERR]autobiography复数为autobiographies。[/ERR]"
+]
+},
+
+"w747": {
+"word": "experience",
+"images": {
+"scene": ["infopic01/experience.webp"],
+"card": ["wordpic01/experience.webp"]
+},
+"richDetail": [
+"[TITLE]解释[/TITLE][DEF][EN]An experience is something that happens to you in life.[/EN][CN]经历；经验[/CN][POS]n.[/POS][PH]/ɪkˈspɪriəns/[/PH][DU]Travel was a great experience.|（例句）旅行是一段很棒的经历。[/DU][DU]She shared her experience.|她分享了自己的经历。[/DU][/DEF][IMG]infopic01/experience.webp[/IMG]",
+"[TITLE]常见用法[/TITLE][COLL][H]life experience|人生经历[POS]n. phr.[/POS][/H][EX]He learned from life experience.|他从人生经历中学习。[/EX][C]good experience|好的经历[/C][/COLL]",
+"[TITLE]额外例句[/TITLE][EX]This trip was a new experience.|这次旅行是新的经历。[/EX][EX]Teachers have a lot of experience.|老师有很多经验。[/EX]",
+"[TITLE]常见错误[/TITLE][ERR]experience既可数也不可数，要根据语境使用。[/ERR]"
+]
+},
+"w748": {
+"word": "cob",
+"images": {
+"scene": ["infopic01/cob.webp"],
+"card": ["wordpic01/cob.webp"]
+},
+"richDetail": [
+"[TITLE]解释[/TITLE][DEF][EN]A cob is the hard center of an ear of corn.[/EN][CN]玉米芯[/CN][POS]n.[/POS][PH]/kɒb/[/PH][DU]The corn cob was left after eating the corn.|（例句）吃完玉米后只剩下玉米芯。[/DU][DU]The squirrel chewed the corn cob.|松鼠啃玉米芯。[/DU][/DEF][IMG]infopic01/cob.webp[/IMG]",
+"[TITLE]常见用法[/TITLE][COLL][H]corn on the cob|玉米棒[POS]n. phr.[/POS][/H][EX]We ate corn on the cob for dinner.|我们晚餐吃了玉米棒。[/EX][C]corn cob|玉米芯[/C][/COLL]",
+"[TITLE]额外例句[/TITLE][EX]The cob was dry after the corn was eaten.|玉米吃完后芯是干的。[/EX][EX]Farmers threw away the cobs.|农民把玉米芯扔掉。[/EX]",
+"[TITLE]常见错误[/TITLE][ERR]cob不要拼写为cop。[/ERR]"
+]
+},
+
+"w749": {
+"word": "expect",
+"images": {
+"scene": ["infopic01/expect(1).webp"],
+"card": ["wordpic01/expect.webp"]
+},
+"richDetail": [
+"[TITLE]解释[/TITLE][DEF][EN]Expect means to think something will happen.[/EN][CN]期待；预料[/CN][POS]v.[/POS][PH]/ɪkˈspekt/[/PH][DU]She did not expect the tooth to fall out.|（例句）她没有想到牙齿会掉。[/DU][DU]We expect rain tomorrow.|我们预计明天会下雨。[/DU][/DEF][IMG]infopic01/expect(1).webp[/IMG]",
+"[TITLE]常见用法[/TITLE][COLL][H]expect something|期待某事[POS]v. phr.[/POS][/H][EX]I expect good news.|我期待好消息。[/EX][C]expect rain|预计下雨[/C][/COLL]",
+"[TITLE]额外例句[/TITLE][EX]They expect a big crowd.|他们预计会有很多人。[/EX][EX]I expect you to be on time.|我希望你准时。[/EX]",
+"[TITLE]常见错误[/TITLE][ERR]expect不要和except混淆。[/ERR]"
+]
+},
+
+"w750": {
+"word": "race",
+"images": {
+"scene": ["infopic01/race.webp"],
+"card": ["wordpic01/race.webp"]
+},
+"richDetail": [
+"[TITLE]解释[/TITLE][DEF][EN]A race is a competition to see who is the fastest.[/EN][CN]比赛；赛跑[/CN][POS]n./v.[/POS][PH]/reɪs/[/PH][DU]The kids ran a race.|（例句）孩子们进行了一场赛跑。[/DU][DU]They raced to the finish line.|他们冲向终点线。[/DU][/DEF][IMG]infopic01/race.webp[/IMG]",
+"[TITLE]常见用法[/TITLE][COLL][H]win a race|赢得比赛[POS]v. phr.[/POS][/H][EX]She won the race.|她赢得了比赛。[/EX][C]running race|跑步比赛[/C][/COLL]",
+"[TITLE]额外例句[/TITLE][EX]The race started at noon.|比赛在中午开始。[/EX][EX]They raced across the field.|他们跑过田野。[/EX]",
+"[TITLE]常见错误[/TITLE][ERR]race不要拼写为rase。[/ERR]"
+]
+},
+
+"w751": {
+"word": "mitt",
+"images": {
+"scene": ["infopic01/mitt.webp"],
+"card": ["wordpic01/mitt.webp"]
+},
+"richDetail": [
+"[TITLE]解释[/TITLE][DEF][EN]A mitt is a thick glove used in baseball to catch the ball.[/EN][CN]棒球手套[/CN][POS]n.[/POS][PH]/mɪt/[/PH][DU]The player caught the ball in his mitt.|（例句）球员用手套接住球。[/DU][DU]She wore a baseball mitt.|她戴着棒球手套。[/DU][/DEF][IMG]infopic01/mitt.webp[/IMG]",
+"[TITLE]常见用法[/TITLE][COLL][H]baseball mitt|棒球手套[POS]n. phr.[/POS][/H][EX]He bought a new baseball mitt.|他买了一个新的棒球手套。[/EX][C]catch with a mitt|用手套接球[/C][/COLL]",
+"[TITLE]额外例句[/TITLE][EX]The mitt was made of leather.|手套是皮做的。[/EX][EX]The ball landed in the mitt.|球落在手套里。[/EX]",
+"[TITLE]常见错误[/TITLE][ERR]mitt不要拼写为mit。[/ERR]"
+]
+},
+
+"w752": {
+"word": "skeleton",
+"images": {
+"scene": ["infopic01/skeleton.webp"],
+"card": ["wordpic01/skeleton.webp"]
+},
+"richDetail": [
+"[TITLE]解释[/TITLE][DEF][EN]A skeleton is the set of bones inside a body.[/EN][CN]骨骼；骨架[/CN][POS]n.[/POS][PH]/ˈskelɪtən/[/PH][DU]The beetle has a hard skeleton outside its body.|（例句）甲虫的骨骼在身体外面。[/DU][DU]The skeleton supports the body.|骨骼支撑身体。[/DU][/DEF][IMG]infopic01/skeleton.webp[/IMG]",
+"[TITLE]常见用法[/TITLE][COLL][H]human skeleton|人体骨骼[POS]n. phr.[/POS][/H][EX]The human skeleton has many bones.|人体骨骼有很多骨头。[/EX][C]animal skeleton|动物骨骼[/C][/COLL]",
+"[TITLE]额外例句[/TITLE][EX]The skeleton protects organs.|骨骼保护器官。[/EX][EX]The museum showed a dinosaur skeleton.|博物馆展示恐龙骨架。[/EX]",
+"[TITLE]常见错误[/TITLE][ERR]skeleton不要拼写为skelton。[/ERR]"
+]
+},
+
+"w753": {
+"word": "vegetarian",
+"images": {
+"scene": ["infopic01/vegetarian.webp"],
+"card": ["wordpic01/vegetarian.webp"]
+},
+"richDetail": [
+"[TITLE]解释[/TITLE][DEF][EN]A vegetarian is someone who does not eat meat.[/EN][CN]素食者[/CN][POS]n./adj.[/POS][PH]/ˌvedʒəˈteriən/[/PH][DU]He is a vegetarian and eats only plants.|（例句）他是素食者，只吃植物。[/DU][DU]Vegetarian meals have no meat.|素食餐没有肉。[/DU][/DEF][IMG]infopic01/vegetarian.webp[/IMG]",
+"[TITLE]常见用法[/TITLE][COLL][H]vegetarian food|素食[POS]n. phr.[/POS][/H][EX]This restaurant has vegetarian food.|这家餐馆有素食。[/EX][C]vegetarian diet|素食饮食[/C][/COLL]",
+"[TITLE]额外例句[/TITLE][EX]She became a vegetarian.|她成为素食者。[/EX][EX]Vegetarians eat vegetables and grains.|素食者吃蔬菜和谷物。[/EX]",
+"[TITLE]常见错误[/TITLE][ERR]vegetarian不要拼写为vegitarian。[/ERR]"
+]
+},
+
+"w754": {
+"word": "tease",
+"images": {
+"scene": ["infopic01/tease.webp"],
+"card": ["wordpic01/tease.webp"]
+},
+"richDetail": [
+"[TITLE]解释[/TITLE][DEF][EN]To tease means to make fun of someone in a playful or mean way.[/EN][CN]取笑；逗弄[/CN][POS]v.[/POS][PH]/tiːz/[/PH][DU]The boys teased him about the joke.|（例句）男孩们取笑他的笑话。[/DU][DU]She teased her friend playfully.|她开玩笑地逗朋友。[/DU][/DEF][IMG]infopic01/tease.webp[/IMG]",
+"[TITLE]常见用法[/TITLE][COLL][H]tease someone|取笑某人[POS]v. phr.[/POS][/H][EX]They teased their classmate.|他们取笑同学。[/EX][C]playfully tease|开玩笑地逗[/C][/COLL]",
+"[TITLE]额外例句[/TITLE][EX]Don't tease the dog.|不要逗狗。[/EX][EX]Kids sometimes tease each other.|孩子有时互相取笑。[/EX]",
+"[TITLE]常见错误[/TITLE][ERR]tease不要拼写为teese。[/ERR]"
+]
+},
+
+"w755": {
+"word": "bask",
+"images": {
+"scene": ["infopic01/bask.webp"],
+"card": ["wordpic01/bask.webp"]
+},
+"richDetail": [
+"[TITLE]解释[/TITLE][DEF][EN]To bask means to lie in warm sunlight.[/EN][CN]晒太阳[/CN][POS]v.[/POS][PH]/bæsk/[/PH][DU]The crocodile basked in the sun.|（例句）鳄鱼在阳光下晒太阳。[/DU][DU]The cat basked on the porch.|猫在门廊晒太阳。[/DU][/DEF][IMG]infopic01/bask.webp[/IMG]",
+"[TITLE]常见用法[/TITLE][COLL][H]bask in the sun|晒太阳[POS]v. phr.[/POS][/H][EX]The lizard basked in the sun.|蜥蜴晒太阳。[/EX][C]bask in sunlight|晒阳光[/C][/COLL]",
+"[TITLE]额外例句[/TITLE][EX]They basked on the beach.|他们在海滩晒太阳。[/EX][EX]The turtle basked on a rock.|乌龟在石头上晒太阳。[/EX]",
+"[TITLE]常见错误[/TITLE][ERR]bask不要拼写为basque。[/ERR]"
+]
+},
+
+"w756": {
+"word": "papyrus",
+"images": {
+"scene": ["infopic01/papyrus.webp"],
+"card": ["wordpic01/papyrus.webp"]
+},
+"richDetail": [
+"[TITLE]解释[/TITLE][DEF][EN]Papyrus is a tall plant that grows near water in Egypt.[/EN][CN]纸莎草[/CN][POS]n.[/POS][PH]/pəˈpaɪrəs/[/PH][DU]Papyrus grows along the Nile River.|（例句）纸莎草生长在尼罗河边。[/DU][DU]Ancient Egyptians made paper from papyrus.|古埃及人用纸莎草造纸。[/DU][/DEF][IMG]infopic01/papyrus.webp[/IMG]",
+"[TITLE]常见用法[/TITLE][COLL][H]papyrus plant|纸莎草植物[POS]n. phr.[/POS][/H][EX]Papyrus plants grow in wetlands.|纸莎草生长在湿地。[/EX][C]papyrus paper|纸莎草纸[/C][/COLL]",
+"[TITLE]额外例句[/TITLE][EX]Papyrus was used for writing.|纸莎草曾用于书写。[/EX][EX]The plant grows in the river.|这种植物生长在河里。[/EX]",
+"[TITLE]常见错误[/TITLE][ERR]papyrus不要拼写为papyrous。[/ERR]"
+]
+},
+
+"w757": {
+"word": "fearless",
+"images": {
+"scene": ["infopic01/fearless.webp"],
+"card": ["wordpic01/fearless.webp"]
+},
+"richDetail": [
+"[TITLE]解释[/TITLE][DEF][EN]Fearless means not afraid of danger.[/EN][CN]无畏的；勇敢的[/CN][POS]adj.[/POS][PH]/ˈfɪrləs/[/PH][DU]The fearless hero saved the day.|（例句）勇敢的英雄拯救了大家。[/DU][DU]She was fearless in the game.|她在比赛中毫不畏惧。[/DU][/DEF][IMG]infopic01/fearless.webp[/IMG]",
+"[TITLE]常见用法[/TITLE][COLL][H]fearless hero|无畏的英雄[POS]n. phr.[/POS][/H][EX]The fearless hero helped others.|无畏的英雄帮助他人。[/EX][C]fearless leader|勇敢的领导者[/C][/COLL]",
+"[TITLE]额外例句[/TITLE][EX]The fearless dog protected the house.|勇敢的狗保护房子。[/EX][EX]He was fearless in battle.|他在战斗中无所畏惧。[/EX]",
+"[TITLE]常见错误[/TITLE][ERR]fearless不要拼写为fearles。[/ERR]"
+]
+},
+
+"w758": {
+"word": "drawbridge",
+"images": {
+"scene": ["infopic01/drawbridge.webp"],
+"card": ["wordpic01/drawbridge.webp"]
+},
+"richDetail": [
+"[TITLE]解释[/TITLE][DEF][EN]A drawbridge is a bridge that can be raised or lowered.[/EN][CN]吊桥[/CN][POS]n.[/POS][PH]/ˈdrɔːbrɪdʒ/[/PH][DU]The castle had a drawbridge.|（例句）城堡有一座吊桥。[/DU][DU]The drawbridge lifted up.|吊桥升起来了。[/DU][/DEF][IMG]infopic01/drawbridge.webp[/IMG]",
+"[TITLE]常见用法[/TITLE][COLL][H]raise the drawbridge|升起吊桥[POS]v. phr.[/POS][/H][EX]They raised the drawbridge.|他们升起吊桥。[/EX][C]castle drawbridge|城堡吊桥[/C][/COLL]",
+"[TITLE]额外例句[/TITLE][EX]The drawbridge crossed the moat.|吊桥跨过护城河。[/EX][EX]Knights rode across the drawbridge.|骑士骑马过吊桥。[/EX]",
+"[TITLE]常见错误[/TITLE][ERR]drawbridge不要拼写为drawbridg。[/ERR]"
+]
+},
+
+"w759": {
+"word": "attacker",
+"images": {
+"scene": ["infopic01/attacker.webp"],
+"card": ["wordpic01/attacker.webp"]
+},
+"richDetail": [
+"[TITLE]解释[/TITLE][DEF][EN]An attacker is someone who tries to hurt or fight someone.[/EN][CN]攻击者[/CN][POS]n.[/POS][PH]/əˈtækər/[/PH][DU]The attacker tried to enter the castle.|（例句）攻击者试图进入城堡。[/DU][DU]The knights stopped the attacker.|骑士阻止了攻击者。[/DU][/DEF][IMG]infopic01/attacker.webp[/IMG]",
+"[TITLE]常见用法[/TITLE][COLL][H]stop an attacker|阻止攻击者[POS]v. phr.[/POS][/H][EX]Guards stopped the attacker.|守卫阻止了攻击者。[/EX][C]enemy attacker|敌方攻击者[/C][/COLL]",
+"[TITLE]额外例句[/TITLE][EX]The attacker ran away.|攻击者逃跑了。[/EX][EX]The hero fought the attacker.|英雄与攻击者战斗。[/EX]",
+"[TITLE]常见错误[/TITLE][ERR]attacker来自动词attack。[/ERR]"
+]
+},
+
+"w760": {
+"word": "defend",
+"images": {
+"scene": ["infopic01/defend(1).webp"],
+"card": ["wordpic01/defend.webp"]
+},
+"richDetail": [
+"[TITLE]解释[/TITLE][DEF][EN]To defend means to protect something from attack.[/EN][CN]防守；保护[/CN][POS]v.[/POS][PH]/dɪˈfend/[/PH][DU]The knights defended the castle.|（例句）骑士们守卫城堡。[/DU][DU]The dog defended its home.|狗保护它的家。[/DU][/DEF][IMG]infopic01/defend(1).webp[/IMG]",
+"[TITLE]常见用法[/TITLE][COLL][H]defend something|保护某物[POS]v. phr.[/POS][/H][EX]They defended their city.|他们保护城市。[/EX][C]defend the castle|守卫城堡[/C][/COLL]",
+"[TITLE]额外例句[/TITLE][EX]The army defended the land.|军队保卫土地。[/EX][EX]She defended her friend.|她保护朋友。[/EX]",
+"[TITLE]常见错误[/TITLE][ERR]defend不要拼写为defand。[/ERR]"
+]
+},
+
+"w761": {
+"word": "tilt",
+"images": {
+"scene": ["infopic01/tilt.webp"],
+"card": ["wordpic01/tilt.webp"]
+},
+"richDetail": [
+"[TITLE]解释[/TITLE][DEF][EN]To tilt means to lean or move to one side.[/EN][CN]倾斜[/CN][POS]v.[/POS][PH]/tɪlt/[/PH][DU]The tower began to tilt.|（例句）塔开始倾斜。[/DU][DU]He tilted the cup.|他把杯子倾斜。[/DU][/DEF][IMG]infopic01/tilt.webp[/IMG]",
+"[TITLE]常见用法[/TITLE][COLL][H]tilt something|倾斜某物[POS]v. phr.[/POS][/H][EX]She tilted her head.|她歪了歪头。[/EX][C]tilt the cup|倾斜杯子[/C][/COLL]",
+"[TITLE]额外例句[/TITLE][EX]The picture tilted on the wall.|画在墙上歪了。[/EX][EX]The boat tilted in the water.|船在水中倾斜。[/EX]",
+"[TITLE]常见错误[/TITLE][ERR]tilt不要拼写为tillt。[/ERR]"
+]
+},
+
+"w762": {
+"word": "accordion",
+"images": {
+"scene": ["infopic01/accordion.webp"],
+"card": ["wordpic01/accordion.webp"]
+},
+"richDetail": [
+"[TITLE]解释[/TITLE][DEF][EN]An accordion is a musical instrument played by pushing and pulling it.[/EN][CN]手风琴[/CN][POS]n.[/POS][PH]/əˈkɔːrdiən/[/PH][DU]He played the accordion.|（例句）他演奏手风琴。[/DU][DU]The accordion made lively music.|手风琴奏出欢快音乐。[/DU][/DEF][IMG]infopic01/accordion.webp[/IMG]",
+"[TITLE]常见用法[/TITLE][COLL][H]play the accordion|演奏手风琴[POS]v. phr.[/POS][/H][EX]She learned to play the accordion.|她学会演奏手风琴。[/EX][C]accordion music|手风琴音乐[/C][/COLL]",
+"[TITLE]额外例句[/TITLE][EX]The accordion sounded cheerful.|手风琴声音很欢快。[/EX][EX]The musician held a red accordion.|音乐家拿着红色手风琴。[/EX]",
+"[TITLE]常见错误[/TITLE][ERR]accordion不要拼写为acordion。[/ERR]"
+]
+},
+"w763": {
+"word": "rise",
+"images": {
+"scene": ["infopic01/rise(1).webp"],
+"card": ["wordpic01/rise.webp"]
+},
+"richDetail": [
+"[TITLE]解释[/TITLE][DEF][EN]To rise means to move upward or get up.[/EN][CN]上升；起床[/CN][POS]v.[/POS][PH]/raɪz/[/PH][DU]I rise early in the morning.|（例句）我早上很早起床。[/DU][DU]The sun rises in the east.|太阳从东方升起。[/DU][/DEF][IMG]infopic01/rise(1).webp[/IMG]",
+"[TITLE]常见用法[/TITLE][COLL][H]rise up|升起[POS]v. phr.[/POS][/H][EX]The smoke rose up from the fire.|烟从火中升起。[/EX][C]rise early|早起[/C][/COLL]",
+"[TITLE]额外例句[/TITLE][EX]Bread will rise when it bakes.|面包烤的时候会膨胀。[/EX][EX]Prices rise quickly.|物价上涨很快。[/EX]",
+"[TITLE]常见错误[/TITLE][ERR]rise是原形动词，过去式是rose，过去分词是risen，不要混淆。[/ERR]"
+]
+},
+
+"w764": {
+"word": "trade",
+"images": {
+"scene": ["infopic01/trade.webp"],
+"card": ["wordpic01/trade.webp"]
+},
+"richDetail": [
+"[TITLE]解释[/TITLE][DEF][EN]To trade means to give something and get something in return.[/EN][CN]交换；交易[/CN][POS]v./n.[/POS][PH]/treɪd/[/PH][DU]They trade toys with each other.|（例句）他们互相交换玩具。[/DU][DU]He works in trade.|他从事贸易。[/DU][/DEF][IMG]infopic01/trade.webp[/IMG]",
+"[TITLE]常见用法[/TITLE][COLL][H]trade something|交换某物[POS]v. phr.[/POS][/H][EX]She traded her sandwich for an apple.|她用三明治换了一个苹果。[/EX][C]foreign trade|对外贸易[/C][/COLL]",
+"[TITLE]额外例句[/TITLE][EX]People trade goods in the market.|人们在市场上交换商品。[/EX][EX]They trade cards at school.|他们在学校交换卡片。[/EX]",
+"[TITLE]常见错误[/TITLE][ERR]trade不要拼写成trad。[/ERR]"
+]
+},
+
+"w765": {
+"word": "deserve",
+"images": {
+"scene": ["infopic01/deserve.webp"],
+"card": ["wordpic01/deserve.webp"]
+},
+"richDetail": [
+"[TITLE]解释[/TITLE][DEF][EN]Deserve means to have earned something good or bad because of what you do.[/EN][CN]应得；值得[/CN][POS]v.[/POS][PH]/dɪˈzɜːrv/[/PH][DU]She deserves a reward for helping.|（例句）她帮助了别人，应得到奖励。[/DU][DU]He deserves praise for his work.|他的工作值得表扬。[/DU][/DEF][IMG]infopic01/deserve.webp[/IMG]",
+"[TITLE]常见用法[/TITLE][COLL][H]deserve praise|值得表扬[POS]v. phr.[/POS][/H][EX]The hero deserves praise.|英雄值得表扬。[/EX][C]deserve punishment|应受惩罚[/C][/COLL]",
+"[TITLE]额外例句[/TITLE][EX]They deserve a medal.|他们应得一枚奖章。[/EX][EX]Everyone deserves respect.|每个人都值得尊重。[/EX]",
+"[TITLE]常见错误[/TITLE][ERR]deserve后面直接接名词或动词原形，不要接to。[/ERR]"
+]
+},
+
+"w766": {
+"word": "starve",
+"images": {
+"scene": ["infopic01/starve.webp"],
+"card": ["wordpic01/starve.webp"]
+},
+"richDetail": [
+"[TITLE]解释[/TITLE][DEF][EN]To starve means to suffer or die from lack of food.[/EN][CN]饿死；极度饥饿[/CN][POS]v.[/POS][PH]/stɑːrv/[/PH][DU]The plant will starve without water.|（例句）没有水植物会干枯。[/DU][DU]The hungry dog nearly starved.|饥饿的狗差点饿死。[/DU][/DEF][IMG]infopic01/starve.webp[/IMG]",
+"[TITLE]常见用法[/TITLE][COLL][H]starve for food|饿食物[POS]v. phr.[/POS][/H][EX]People starve in the desert.|人们在沙漠里挨饿。[/EX][C]starve to death|饿死[/C][/COLL]",
+"[TITLE]额外例句[/TITLE][EX]The children were starving.|孩子们很饿。[/EX][EX]The flowers starved without sunlight.|花没有阳光会枯死。[/EX]",
+"[TITLE]常见错误[/TITLE][ERR]starve不要拼写为starv。[/ERR]"
+]
+},
+
+"w767": {
+"word": "laundry",
+"images": {
+"scene": ["infopic01/laundry.webp"],
+"card": ["wordpic01/laundry.webp"]
+},
+"richDetail": [
+"[TITLE]解释[/TITLE][DEF][EN]Laundry means clothes that need to be washed or that have been washed.[/EN][CN]洗衣物[/CN][POS]n.[/POS][PH]/ˈlɔːndri/[/PH][DU]We put the laundry in the washing machine.|（例句）我们把衣服放进洗衣机。[/DU][DU]The laundry is drying on the line.|衣服在晾衣绳上晒干。[/DU][/DEF][IMG]infopic01/laundry.webp[/IMG]",
+"[TITLE]常见用法[/TITLE][COLL][H]do the laundry|洗衣服[POS]v. phr.[/POS][/H][EX]She does the laundry every week.|她每周洗衣服。[/EX][C]dirty laundry|脏衣服[/C][/COLL]",
+"[TITLE]额外例句[/TITLE][EX]Fold the laundry after washing.|洗完衣服后叠好。[/EX][EX]Laundry smells fresh.|衣服闻起来很清新。[/EX]",
+"[TITLE]常见错误[/TITLE][ERR]laundry不要拼写为laundry。[/ERR]"
+]
+},
+
+"w768": {
+"word": "domino",
+"images": {
+"scene": ["infopic01/domino.webp"],
+"card": ["wordpic01/domino.webp"]
+},
+"richDetail": [
+"[TITLE]解释[/TITLE][DEF][EN]A domino is a small rectangular game piece with dots on it.[/EN][CN]多米诺骨牌[/CN][POS]n.[/POS][PH]/ˈdɒmɪnoʊ/[/PH][DU]He lined up the dominoes to fall.|（例句）他把多米诺骨牌排好让它们倒下。[/DU][DU]Dominoes are fun to play.|玩多米诺骨牌很有趣。[/DU][/DEF][IMG]infopic01/domino.webp[/IMG]",
+"[TITLE]常见用法[/TITLE][COLL][H]play dominoes|玩多米诺骨牌[POS]v. phr.[/POS][/H][EX]They played dominoes after school.|他们放学后玩多米诺骨牌。[/EX][C]domino tile|多米诺牌[/C][/COLL]",
+"[TITLE]额外例句[/TITLE][EX]The domino fell over.|多米诺倒下了。[/EX][EX]He stacked the dominoes.|他把多米诺堆起来。[/EX]",
+"[TITLE]常见错误[/TITLE][ERR]domino不要拼写为dominao。[/ERR]"
+]
+},
+
+"w769": {
+"word": "tile",
+"images": {
+"scene": ["infopic01/tile.webp"],
+"card": ["wordpic01/tile.webp"]
+},
+"richDetail": [
+"[TITLE]解释[/TITLE][DEF][EN]A tile is a flat piece used to cover a floor, wall, or roof.[/EN][CN]瓷砖；瓦片[/CN][POS]n.[/POS][PH]/taɪl/[/PH][DU]The roof had many red tiles.|（例句）屋顶上有很多红瓦。[/DU][DU]The bathroom floor has tiles.|浴室地板铺着瓷砖。[/DU][/DEF][IMG]infopic01/tile.webp[/IMG]",
+"[TITLE]常见用法[/TITLE][COLL][H]roof tile|屋顶瓦片[POS]n. phr.[/POS][/H][EX]The roof tiles are new.|屋顶瓦片是新的。[/EX][C]floor tile|地砖[/C][/COLL]",
+"[TITLE]额外例句[/TITLE][EX]The tile is slippery.|瓷砖很滑。[/EX][EX]We replaced the broken tile.|我们换了坏掉的瓷砖。[/EX]",
+"[TITLE]常见错误[/TITLE][ERR]tile不要拼写为tiel。[/ERR]"
+]
+},
+
+"w770": {
+"word": "shred",
+"images": {
+"scene": ["infopic01/shred.webp"],
+"card": ["wordpic01/shred.webp"]
+},
+"richDetail": [
+"[TITLE]解释[/TITLE][DEF][EN]To shred means to cut something into very small pieces.[/EN][CN]切碎；撕碎[/CN][POS]v.[/POS][PH]/ʃred/[/PH][DU]Shred the paper carefully.|（例句）小心地把纸切碎。[/DU][DU]He shredded the old documents.|他把旧文件撕碎了。[/DU][/DEF][IMG]infopic01/shred.webp[/IMG]",
+"[TITLE]常见用法[/TITLE][COLL][H]shred paper|撕碎纸[POS]v. phr.[/POS][/H][EX]They shred the confidential papers.|他们把机密文件撕碎。[/EX][C]shred into pieces|切成碎片[/C][/COLL]",
+"[TITLE]额外例句[/TITLE][EX]Shred the lettuce for the salad.|把生菜切碎做沙拉。[/EX][EX]The cat shredded the cardboard.|猫把纸板撕碎了。[/EX]",
+"[TITLE]常见错误[/TITLE][ERR]shred不要拼写为shread。[/ERR]"
+]
+},
+"w771": {
+"word": "burro",
+"images": {
+"scene": ["infopic01/burro.webp"],
+"card": ["wordpic01/burro.webp"]
+},
+"richDetail": [
+"[TITLE]解释[/TITLE][DEF][EN]A burro is a small donkey often used to carry things.[/EN][CN]小驴；驴子[/CN][POS]n.[/POS][PH]/ˈbʊroʊ/[/PH][DU]Pedro rode his burro through the town.|（例句）佩德罗骑着小驴穿过小镇。[/DU][DU]The burro carried bags on its back.|小驴背着袋子。[/DU][/DEF][IMG]infopic01/burro.webp[/IMG]",
+"[TITLE]常见用法[/TITLE][COLL][H]pack burro|驮货的小驴[POS]n. phr.[/POS][/H][EX]The pack burro carried supplies.|驮货的小驴搬运物资。[/EX][C]ride a burro|骑驴[/C][/COLL]",
+"[TITLE]额外例句[/TITLE][EX]The burro walked slowly.|小驴慢慢地走。[/EX][EX]Children fed the burro carrots.|孩子们喂小驴胡萝卜。[/EX]",
+"[TITLE]常见错误[/TITLE][ERR]burro不要拼写为burrow（burrow意思是“洞穴”）。[/ERR]"
+]
+},
+
+"w772": {
+"word": "whack",
+"images": {
+"scene": ["infopic01/whack.webp"],
+"card": ["wordpic01/whack.webp"]
+},
+"richDetail": [
+"[TITLE]解释[/TITLE][DEF][EN]To whack means to hit something hard.[/EN][CN]猛击；重打[/CN][POS]v.[/POS][PH]/wæk/[/PH][DU]The penguin whacked the ice with a stick.|（例句）企鹅用棍子猛敲冰块。[/DU][DU]He whacked the ball with a bat.|他用球棒猛击球。[/DU][/DEF][IMG]infopic01/whack.webp[/IMG]",
+"[TITLE]常见用法[/TITLE][COLL][H]whack something|猛击某物[POS]v. phr.[/POS][/H][EX]She whacked the door shut.|她猛地把门关上。[/EX][C]whack the ball|击球[/C][/COLL]",
+"[TITLE]额外例句[/TITLE][EX]The hammer whacked the nail.|锤子猛击钉子。[/EX][EX]He whacked the drum loudly.|他大声敲鼓。[/EX]",
+"[TITLE]常见错误[/TITLE][ERR]whack不要拼写为wak。[/ERR]"
+]
+},
+
+"w773": {
+"word": "information",
+"images": {
+"scene": ["infopic01/information.webp"],
+"card": ["wordpic01/information.webp"]
+},
+"richDetail": [
+"[TITLE]解释[/TITLE][DEF][EN]Information means facts or details that tell us about something.[/EN][CN]信息；资料[/CN][POS]n.[/POS][PH]/ˌɪnfərˈmeɪʃən/[/PH][DU]The reporter shared important information.|（例句）记者分享了重要信息。[/DU][DU]Books give us information.|书给我们提供信息。[/DU][/DEF][IMG]infopic01/information.webp[/IMG]",
+"[TITLE]常见用法[/TITLE][COLL][H]give information|提供信息[POS]v. phr.[/POS][/H][EX]The guide gave information about the museum.|导游介绍了博物馆的信息。[/EX][C]useful information|有用信息[/C][/COLL]",
+"[TITLE]额外例句[/TITLE][EX]The internet has lots of information.|互联网有很多信息。[/EX][EX]Teachers share information with students.|老师和学生分享信息。[/EX]",
+"[TITLE]常见错误[/TITLE][ERR]information是不可数名词，不加s。[/ERR]"
+]
+},
+
+"w774": {
+"word": "event",
+"images": {
+"scene": ["infopic01/event.webp"],
+"card": ["wordpic01/event.webp"]
+},
+"richDetail": [
+"[TITLE]解释[/TITLE][DEF][EN]An event is something important that happens.[/EN][CN]事件；活动[/CN][POS]n.[/POS][PH]/ɪˈvent/[/PH][DU]The parade was a big event.|（例句）游行是一件大事。[/DU][DU]The school held a special event.|学校举办了一个特别活动。[/DU][/DEF][IMG]infopic01/event.webp[/IMG]",
+"[TITLE]常见用法[/TITLE][COLL][H]special event|特别活动[POS]n. phr.[/POS][/H][EX]They planned a special event.|他们策划了一场特别活动。[/EX][C]sports event|体育赛事[/C][/COLL]",
+"[TITLE]额外例句[/TITLE][EX]The event started at noon.|活动中午开始。[/EX][EX]Everyone enjoyed the event.|每个人都很喜欢这个活动。[/EX]",
+"[TITLE]常见错误[/TITLE][ERR]event不要拼写为ivent。[/ERR]"
+]
+},
+
+"w775": {
+"word": "reporter",
+"images": {
+"scene": ["infopic01/reporter.webp"],
+"card": ["wordpic01/reporter.webp"]
+},
+"richDetail": [
+"[TITLE]解释[/TITLE][DEF][EN]A reporter is a person who gathers and tells news.[/EN][CN]记者[/CN][POS]n.[/POS][PH]/rɪˈpɔːrtər/[/PH][DU]The reporter asked many questions.|（例句）记者问了很多问题。[/DU][DU]A reporter writes news stories.|记者写新闻报道。[/DU][/DEF][IMG]infopic01/reporter.webp[/IMG]",
+"[TITLE]常见用法[/TITLE][COLL][H]news reporter|新闻记者[POS]n. phr.[/POS][/H][EX]The news reporter interviewed people.|新闻记者采访人们。[/EX][C]TV reporter|电视记者[/C][/COLL]",
+"[TITLE]额外例句[/TITLE][EX]The reporter took notes.|记者做笔记。[/EX][EX]She became a reporter.|她成为了一名记者。[/EX]",
+"[TITLE]常见错误[/TITLE][ERR]reporter不要拼写为reportor。[/ERR]"
+]
+},
+
+"w776": {
+"word": "brake",
+"images": {
+"scene": ["infopic01/brake.webp"],
+"card": ["wordpic01/brake.webp"]
+},
+"richDetail": [
+"[TITLE]解释[/TITLE][DEF][EN]A brake is a device that slows or stops a vehicle.[/EN][CN]刹车[/CN][POS]n./v.[/POS][PH]/breɪk/[/PH][DU]He used the brake on his bike.|（例句）他用自行车刹车。[/DU][DU]The driver hit the brake quickly.|司机迅速踩下刹车。[/DU][/DEF][IMG]infopic01/brake.webp[/IMG]",
+"[TITLE]常见用法[/TITLE][COLL][H]hit the brake|踩刹车[POS]v. phr.[/POS][/H][EX]She hit the brake suddenly.|她突然踩刹车。[/EX][C]bike brake|自行车刹车[/C][/COLL]",
+"[TITLE]额外例句[/TITLE][EX]The brake stopped the car.|刹车让车停下。[/EX][EX]Check the brake before riding.|骑车前检查刹车。[/EX]",
+"[TITLE]常见错误[/TITLE][ERR]brake不要和break混淆。[/ERR]"
+]
+},
+
+"w777": {
+"word": "reject",
+"images": {
+"scene": ["infopic01/reject.webp"],
+"card": ["wordpic01/reject.webp"]
+},
+"richDetail": [
+"[TITLE]解释[/TITLE][DEF][EN]To reject means to refuse or not accept something.[/EN][CN]拒绝；不接受[/CN][POS]v.[/POS][PH]/rɪˈdʒekt/[/PH][DU]The body may reject germs.|（例句）身体可能会排斥细菌。[/DU][DU]He rejected the offer.|他拒绝了提议。[/DU][/DEF][IMG]infopic01/reject.webp[/IMG]",
+"[TITLE]常见用法[/TITLE][COLL][H]reject something|拒绝某物[POS]v. phr.[/POS][/H][EX]She rejected the idea.|她拒绝了这个想法。[/EX][C]reject an offer|拒绝提议[/C][/COLL]",
+"[TITLE]额外例句[/TITLE][EX]The team rejected the plan.|团队否决了计划。[/EX][EX]The body rejected the transplant.|身体排斥移植器官。[/EX]",
+"[TITLE]常见错误[/TITLE][ERR]reject不要拼写为rejet。[/ERR]"
+]
+},
+
+"w778": {
+"word": "lung",
+"images": {
+"scene": ["infopic01/lung.webp"],
+"card": ["wordpic01/lung.webp"]
+},
+"richDetail": [
+"[TITLE]解释[/TITLE][DEF][EN]A lung is an organ that helps you breathe.[/EN][CN]肺[/CN][POS]n.[/POS][PH]/lʌŋ/[/PH][DU]Air goes into the lungs when we breathe.|（例句）我们呼吸时空气进入肺。[/DU][DU]Healthy lungs help us run.|健康的肺帮助我们跑步。[/DU][/DEF][IMG]infopic01/lung.webp[/IMG]",
+"[TITLE]常见用法[/TITLE][COLL][H]healthy lungs|健康的肺[POS]n. phr.[/POS][/H][EX]Exercise keeps lungs strong.|运动让肺更强壮。[/EX][C]lung disease|肺病[/C][/COLL]",
+"[TITLE]额外例句[/TITLE][EX]The lungs fill with air.|肺充满空气。[/EX][EX]Doctors listen to the lungs.|医生听肺部声音。[/EX]",
+"[TITLE]常见错误[/TITLE][ERR]lung复数为lungs。[/ERR]"
+]
+},
+
+"w779": {
+"word": "contract",
+"images": {
+"scene": ["infopic01/contract.webp"],
+"card": ["wordpic01/contract.webp"]
+},
+"richDetail": [
+"[TITLE]解释[/TITLE][DEF][EN]To contract means to become smaller or tighten.[/EN][CN]收缩[/CN][POS]v.[/POS][PH]/kənˈtrækt/[/PH][DU]Muscles contract when you move.|（例句）当你移动时肌肉会收缩。[/DU][DU]The diaphragm contracts during breathing.|呼吸时横膈膜收缩。[/DU][/DEF][IMG]infopic01/contract.webp[/IMG]",
+"[TITLE]常见用法[/TITLE][COLL][H]muscles contract|肌肉收缩[POS]v. phr.[/POS][/H][EX]The muscles contract quickly.|肌肉快速收缩。[/EX][C]contract and relax|收缩和放松[/C][/COLL]",
+"[TITLE]额外例句[/TITLE][EX]The heart contracts with each beat.|心脏每跳一次就收缩。[/EX][EX]Cold weather makes metal contract.|寒冷会让金属收缩。[/EX]",
+"[TITLE]常见错误[/TITLE][ERR]contract也可作名词表示“合同”，要根据语境理解。[/ERR]"
+]
+},
+
+"w780": {
+"word": "diaphragm",
+"images": {
+"scene": ["infopic01/diaphragm.webp"],
+"card": ["wordpic01/diaphragm.webp"]
+},
+"richDetail": [
+"[TITLE]解释[/TITLE][DEF][EN]The diaphragm is a muscle that helps you breathe.[/EN][CN]横膈膜[/CN][POS]n.[/POS][PH]/ˈdaɪəfræm/[/PH][DU]The diaphragm moves when we breathe.|（例句）呼吸时横膈膜会移动。[/DU][DU]The diaphragm helps air move in and out.|横膈膜帮助空气进出。[/DU][/DEF][IMG]infopic01/diaphragm.webp[/IMG]",
+"[TITLE]常见用法[/TITLE][COLL][H]diaphragm muscle|横膈膜肌肉[POS]n. phr.[/POS][/H][EX]The diaphragm muscle contracts.|横膈膜肌肉收缩。[/EX][C]move the diaphragm|移动横膈膜[/C][/COLL]",
+"[TITLE]额外例句[/TITLE][EX]The diaphragm helps breathing.|横膈膜帮助呼吸。[/EX][EX]Doctors study the diaphragm.|医生研究横膈膜。[/EX]",
+"[TITLE]常见错误[/TITLE][ERR]diaphragm拼写较难，注意ph组合。[/ERR]"
+]
+},
+
+"w781": {
+"word": "flu",
+"images": {
+"scene": ["infopic01/flu.webp"],
+"card": ["wordpic01/flu.webp"]
+},
+"richDetail": [
+"[TITLE]解释[/TITLE][DEF][EN]Flu is an illness that causes fever, cough, and tiredness.[/EN][CN]流感[/CN][POS]n.[/POS][PH]/fluː/[/PH][DU]He stayed home because he had the flu.|（例句）他得了流感在家休息。[/DU][DU]The flu spreads easily.|流感很容易传播。[/DU][/DEF][IMG]infopic01/flu.webp[/IMG]",
+"[TITLE]常见用法[/TITLE][COLL][H]catch the flu|得流感[POS]v. phr.[/POS][/H][EX]Many people catch the flu in winter.|很多人冬天得流感。[/EX][C]flu virus|流感病毒[/C][/COLL]",
+"[TITLE]额外例句[/TITLE][EX]The flu makes you tired.|流感会让人疲倦。[/EX][EX]Wash hands to prevent flu.|洗手可以预防流感。[/EX]",
+"[TITLE]常见错误[/TITLE][ERR]flu是influenza的缩写。[/ERR]"
+]
+},
+
+"w782": {
+"word": "natural",
+"images": {
+"scene": ["infopic01/natural.webp"],
+"card": ["wordpic01/natural.webp"]
+},
+"richDetail": [
+"[TITLE]解释[/TITLE][DEF][EN]Natural means something from nature, not made by people.[/EN][CN]自然的；天然的[/CN][POS]adj.[/POS][PH]/ˈnætʃərəl/[/PH][DU]Sneezing is a natural reaction.|（例句）打喷嚏是自然反应。[/DU][DU]The forest is natural.|森林是天然的。[/DU][/DEF][IMG]infopic01/natural.webp[/IMG]",
+"[TITLE]常见用法[/TITLE][COLL][H]natural reaction|自然反应[POS]n. phr.[/POS][/H][EX]Crying is a natural reaction.|哭是一种自然反应。[/EX][C]natural food|天然食物[/C][/COLL]",
+"[TITLE]额外例句[/TITLE][EX]Natural light filled the room.|自然光充满房间。[/EX][EX]The lake is natural.|这个湖是天然的。[/EX]",
+"[TITLE]常见错误[/TITLE][ERR]natural不要拼写为natral。[/ERR]"
+]
+},
+
+"w783": {
+"word": "defense",
+"images": {
+"scene": ["infopic01/defense.webp"],
+"card": ["wordpic01/defense.webp"]
+},
+"richDetail": [
+"[TITLE]解释[/TITLE][DEF][EN]Defense means protection from danger or attack.[/EN][CN]防御；保护[/CN][POS]n.[/POS][PH]/dɪˈfens/[/PH][DU]Sneezing is part of the body's defense.|（例句）打喷嚏是身体防御的一部分。[/DU][DU]The castle had strong defense.|城堡有很强的防御。[/DU][/DEF][IMG]infopic01/defense.webp[/IMG]",
+"[TITLE]常见用法[/TITLE][COLL][H]self defense|自我保护[POS]n. phr.[/POS][/H][EX]She learned self defense.|她学习自我防护。[/EX][C]body defense|身体防御[/C][/COLL]",
+"[TITLE]额外例句[/TITLE][EX]Plants have natural defense.|植物有天然防御。[/EX][EX]The army built strong defense.|军队建立强防御。[/EX]",
+"[TITLE]常见错误[/TITLE][ERR]英式拼写为defence。[/ERR]"
+]
+},
+
+"w784": {
+"word": "command",
+"images": {
+"scene": ["infopic01/command(1).webp"],
+"card": ["wordpic01/command.webp"]
+},
+"richDetail": [
+"[TITLE]解释[/TITLE][DEF][EN]To command means to give an order or instruction.[/EN][CN]命令；指挥[/CN][POS]v./n.[/POS][PH]/kəˈmænd/[/PH][DU]The captain commanded the soldiers.|（例句）队长指挥士兵。[/DU][DU]The teacher commanded silence.|老师命令大家安静。[/DU][/DEF][IMG]infopic01/command(1).webp[/IMG]",
+"[TITLE]常见用法[/TITLE][COLL][H]give a command|发出命令[POS]v. phr.[/POS][/H][EX]The officer gave a command.|军官下达命令。[/EX][C]command the army|指挥军队[/C][/COLL]",
+"[TITLE]额外例句[/TITLE][EX]He commanded the team.|他指挥团队。[/EX][EX]The dog followed the command.|狗听从命令。[/EX]",
+"[TITLE]常见错误[/TITLE][ERR]command不要拼写为comand。[/ERR]"
+]
+},
+"w785": {
+"word": "cling",
+"images": {
+"scene": ["infopic01/cling.webp"],
+"card": ["wordpic01/cling.webp"]
+},
+"richDetail": [
+"[TITLE]解释[/TITLE][DEF][EN]To cling means to hold on tightly to something.[/EN][CN]紧抓；紧贴[/CN][POS]v.[/POS][PH]/klɪŋ/[/PH][DU]The child clung to his mother.|（例句）孩子紧紧抓住妈妈。[/DU][DU]The wet shirt clings to the skin.|湿衣服贴在皮肤上。[/DU][/DEF][IMG]infopic01/cling.webp[/IMG]",
+"[TITLE]常见用法[/TITLE][COLL][H]cling to something|紧抓某物[POS]v. phr.[/POS][/H][EX]The kitten clung to the branch.|小猫紧抓树枝。[/EX][C]cling tightly|紧紧抓住[/C][/COLL]",
+"[TITLE]额外例句[/TITLE][EX]The child clung to the rope.|孩子抓住绳子。[/EX][EX]Leaves cling to the wet ground.|树叶贴在湿地上。[/EX]",
+"[TITLE]常见错误[/TITLE][ERR]cling过去式是clung，不是clinged。[/ERR]"
+]
+},
+
+"w786": {
+"word": "slate",
+"images": {
+"scene": ["infopic01/slate.webp"],
+"card": ["wordpic01/slate.webp"]
+},
+"richDetail": [
+"[TITLE]解释[/TITLE][DEF][EN]Slate is a type of rock that can be split into thin layers.[/EN][CN]板岩[/CN][POS]n.[/POS][PH]/sleɪt/[/PH][DU]The roof was made of slate.|（例句）屋顶是用板岩做的。[/DU][DU]Slate breaks into flat pieces.|板岩可以分成薄片。[/DU][/DEF][IMG]infopic01/slate.webp[/IMG]",
+"[TITLE]常见用法[/TITLE][COLL][H]slate roof|板岩屋顶[POS]n. phr.[/POS][/H][EX]The house had a slate roof.|房子有板岩屋顶。[/EX][C]slate rock|板岩石[/C][/COLL]",
+"[TITLE]额外例句[/TITLE][EX]Slate is dark gray.|板岩是深灰色的。[/EX][EX]Builders use slate for roofs.|建筑工人用板岩盖屋顶。[/EX]",
+"[TITLE]常见错误[/TITLE][ERR]slate不要拼写为slait。[/ERR]"
+]
+},
+
+"w787": {
+"word": "obsidian",
+"images": {
+"scene": ["infopic01/obsidian.webp"],
+"card": ["wordpic01/obsidian.webp"]
+},
+"richDetail": [
+"[TITLE]解释[/TITLE][DEF][EN]Obsidian is a shiny black volcanic glass rock.[/EN][CN]黑曜石[/CN][POS]n.[/POS][PH]/əbˈsɪdiən/[/PH][DU]The arrowhead was made of obsidian.|（例句）箭头是黑曜石做的。[/DU][DU]Obsidian forms from cooled lava.|黑曜石由冷却的岩浆形成。[/DU][/DEF][IMG]infopic01/obsidian.webp[/IMG]",
+"[TITLE]常见用法[/TITLE][COLL][H]obsidian rock|黑曜石岩石[POS]n. phr.[/POS][/H][EX]The obsidian rock was shiny.|黑曜石很有光泽。[/EX][C]volcanic obsidian|火山黑曜石[/C][/COLL]",
+"[TITLE]额外例句[/TITLE][EX]Obsidian can be very sharp.|黑曜石可以非常锋利。[/EX][EX]Ancient tools used obsidian.|古代工具用黑曜石制作。[/EX]",
+"[TITLE]常见错误[/TITLE][ERR]obsidian不要拼写为obsidan。[/ERR]"
+]
+},
+
+"w788": {
+"word": "limestone",
+"images": {
+"scene": ["infopic01/limestone.webp"],
+"card": ["wordpic01/limestone.webp"]
+},
+"richDetail": [
+"[TITLE]解释[/TITLE][DEF][EN]Limestone is a rock made mainly from calcium.[/EN][CN]石灰岩[/CN][POS]n.[/POS][PH]/ˈlaɪmstoʊn/[/PH][DU]The cave walls were limestone.|（例句）洞穴墙壁是石灰岩。[/DU][DU]Limestone forms in the sea.|石灰岩在海里形成。[/DU][/DEF][IMG]infopic01/limestone.webp[/IMG]",
+"[TITLE]常见用法[/TITLE][COLL][H]limestone rock|石灰岩[POS]n. phr.[/POS][/H][EX]The building used limestone rock.|建筑使用石灰岩。[/EX][C]limestone cave|石灰岩洞穴[/C][/COLL]",
+"[TITLE]额外例句[/TITLE][EX]Limestone is light colored.|石灰岩颜色较浅。[/EX][EX]Many caves form in limestone.|许多洞穴形成于石灰岩。[/EX]",
+"[TITLE]常见错误[/TITLE][ERR]limestone不要拼写为limeston。[/ERR]"
+]
+},
+
+"w789": {
+"word": "granite",
+"images": {
+"scene": ["infopic01/granite.webp"],
+"card": ["wordpic01/granite.webp"]
+},
+"richDetail": [
+"[TITLE]解释[/TITLE][DEF][EN]Granite is a very hard rock used in buildings.[/EN][CN]花岗岩[/CN][POS]n.[/POS][PH]/ˈɡrænɪt/[/PH][DU]The mountain was made of granite.|（例句）这座山由花岗岩组成。[/DU][DU]Granite is strong and heavy.|花岗岩坚硬又沉重。[/DU][/DEF][IMG]infopic01/granite.webp[/IMG]",
+"[TITLE]常见用法[/TITLE][COLL][H]granite rock|花岗岩石[POS]n. phr.[/POS][/H][EX]The statue was carved from granite.|雕像由花岗岩雕刻。[/EX][C]granite mountain|花岗岩山[/C][/COLL]",
+"[TITLE]额外例句[/TITLE][EX]Granite is used in buildings.|花岗岩用于建筑。[/EX][EX]Granite lasts a long time.|花岗岩非常耐久。[/EX]",
+"[TITLE]常见错误[/TITLE][ERR]granite不要拼写为granete。[/ERR]"
+]
+},
+
+"w790": {
+"word": "fair",
+"images": {
+"scene": ["infopic01/fair.webp"],
+"card": ["wordpic01/fair.webp"]
+},
+"richDetail": [
+"[TITLE]解释[/TITLE][DEF][EN]A fair is a public event with games, exhibits, and prizes.[/EN][CN]展览会；集市[/CN][POS]n.[/POS][PH]/fer/[/PH][DU]The students showed projects at the science fair.|（例句）学生在科学展览会上展示项目。[/DU][DU]The fair had many games.|集市上有很多游戏。[/DU][/DEF][IMG]infopic01/fair.webp[/IMG]",
+"[TITLE]常见用法[/TITLE][COLL][H]science fair|科学展览会[POS]n. phr.[/POS][/H][EX]She won a prize at the science fair.|她在科学展览会上得奖。[/EX][C]county fair|乡村集市[/C][/COLL]",
+"[TITLE]额外例句[/TITLE][EX]The fair lasted two days.|展览会持续两天。[/EX][EX]Many people visited the fair.|很多人参观了展览会。[/EX]",
+"[TITLE]常见错误[/TITLE][ERR]fair不要和fare（车费）混淆。[/ERR]"
+]
+},
+
+"w791": {
+"word": "prize",
+"images": {
+"scene": ["infopic01/prize(1).webp"],
+"card": ["wordpic01/prize.webp"]
+},
+"richDetail": [
+"[TITLE]解释[/TITLE][DEF][EN]A prize is something given to someone who wins a contest.[/EN][CN]奖品；奖项[/CN][POS]n.[/POS][PH]/praɪz/[/PH][DU]She won a prize at the fair.|（例句）她在展览会上赢得奖品。[/DU][DU]The prize was a big trophy.|奖品是一个大奖杯。[/DU][/DEF][IMG]infopic01/prize(1).webp[/IMG]",
+"[TITLE]常见用法[/TITLE][COLL][H]win a prize|赢得奖品[POS]v. phr.[/POS][/H][EX]He won a prize for his project.|他的项目得了奖。[/EX][C]first prize|一等奖[/C][/COLL]",
+"[TITLE]额外例句[/TITLE][EX]The prize was exciting.|这个奖品很棒。[/EX][EX]She received a prize.|她获得了奖品。[/EX]",
+"[TITLE]常见错误[/TITLE][ERR]prize不要拼写为prise。[/ERR]"
+]
+},
+
+"w792": {
+"word": "soda",
+"images": {
+"scene": ["infopic01/soda.webp"],
+"card": ["wordpic01/soda.webp"]
+},
+"richDetail": [
+"[TITLE]解释[/TITLE][DEF][EN]Soda is a sweet fizzy drink.[/EN][CN]汽水；苏打饮料[/CN][POS]n.[/POS][PH]/ˈsoʊdə/[/PH][DU]He opened a can of soda.|（例句）他打开一罐汽水。[/DU][DU]The soda had bubbles.|汽水里有气泡。[/DU][/DEF][IMG]infopic01/soda.webp[/IMG]",
+"[TITLE]常见用法[/TITLE][COLL][H]drink soda|喝汽水[POS]v. phr.[/POS][/H][EX]They drank soda at lunch.|他们午餐喝汽水。[/EX][C]soda bottle|汽水瓶[/C][/COLL]",
+"[TITLE]额外例句[/TITLE][EX]The soda was cold.|汽水很冰。[/EX][EX]She poured soda into a glass.|她把汽水倒进杯子。[/EX]",
+"[TITLE]常见错误[/TITLE][ERR]soda不要拼写为soder。[/ERR]"
+]
+},
+
+"w793": {
+"word": "leak",
+"images": {
+"scene": ["infopic01/leak.webp"],
+"card": ["wordpic01/leak.webp"]
+},
+"richDetail": [
+"[TITLE]解释[/TITLE][DEF][EN]A leak is when liquid or gas escapes from a container.[/EN][CN]泄漏[/CN][POS]n./v.[/POS][PH]/liːk/[/PH][DU]The bottle had a leak.|（例句）瓶子漏水。[/DU][DU]Water leaked from the pipe.|水从管子里漏出来。[/DU][/DEF][IMG]infopic01/leak.webp[/IMG]",
+"[TITLE]常见用法[/TITLE][COLL][H]water leak|漏水[POS]n. phr.[/POS][/H][EX]The plumber fixed the water leak.|水管工修好了漏水。[/EX][C]gas leak|燃气泄漏[/C][/COLL]",
+"[TITLE]额外例句[/TITLE][EX]The roof had a leak.|屋顶漏水。[/EX][EX]The pipe began to leak.|管子开始漏水。[/EX]",
+"[TITLE]常见错误[/TITLE][ERR]leak不要拼写为leake。[/ERR]"
+]
+},
+
+"w794": {
+"word": "scorpion",
+"images": {
+"scene": ["infopic01/scorpion.webp"],
+"card": ["wordpic01/scorpion.webp"]
+},
+"richDetail": [
+"[TITLE]解释[/TITLE][DEF][EN]A scorpion is a small animal with a stinger on its tail.[/EN][CN]蝎子[/CN][POS]n.[/POS][PH]/ˈskɔːrpiən/[/PH][DU]The scorpion lifted its tail.|（例句）蝎子抬起尾巴。[/DU][DU]A scorpion has a sharp stinger.|蝎子有尖刺。[/DU][/DEF][IMG]infopic01/scorpion.webp[/IMG]",
+"[TITLE]常见用法[/TITLE][COLL][H]desert scorpion|沙漠蝎子[POS]n. phr.[/POS][/H][EX]The desert scorpion hides under rocks.|沙漠蝎子躲在石头下。[/EX][C]scorpion sting|蝎子刺伤[/C][/COLL]",
+"[TITLE]额外例句[/TITLE][EX]The scorpion moved slowly.|蝎子慢慢移动。[/EX][EX]The scorpion used its stinger.|蝎子使用尾刺。[/EX]",
+"[TITLE]常见错误[/TITLE][ERR]scorpion不要拼写为scorpian。[/ERR]"
+]
+},
+
+"w795": {
+"word": "tick",
+"images": {
+"scene": ["infopic01/tick.webp"],
+"card": ["wordpic01/tick.webp"]
+},
+"richDetail": [
+"[TITLE]解释[/TITLE][DEF][EN]A tick is a small bug that drinks blood from animals.[/EN][CN]蜱虫[/CN][POS]n.[/POS][PH]/tɪk/[/PH][DU]The tick bit the dog.|（例句）蜱虫咬了狗。[/DU][DU]Ticks live in grass.|蜱虫生活在草丛里。[/DU][/DEF][IMG]infopic01/tick.webp[/IMG]",
+"[TITLE]常见用法[/TITLE][COLL][H]tick bite|蜱虫叮咬[POS]n. phr.[/POS][/H][EX]The tick bite was itchy.|蜱虫叮咬很痒。[/EX][C]remove a tick|移除蜱虫[/C][/COLL]",
+"[TITLE]额外例句[/TITLE][EX]Ticks hide in tall grass.|蜱虫藏在高草中。[/EX][EX]The vet checked for ticks.|兽医检查是否有蜱虫。[/EX]",
+"[TITLE]常见错误[/TITLE][ERR]tick不要拼写为tik。[/ERR]"
+]
+},
+
+"w796": {
+"word": "arachnid",
+"images": {
+"scene": ["infopic01/arachnid.webp"],
+"card": ["wordpic01/arachnid.webp"]
+},
+"richDetail": [
+"[TITLE]解释[/TITLE][DEF][EN]An arachnid is a type of animal like spiders and scorpions.[/EN][CN]蛛形纲动物（如蜘蛛、蝎子）[/CN][POS]n.[/POS][PH]/əˈræknɪd/[/PH][DU]A scorpion is an arachnid.|（例句）蝎子是一种蛛形纲动物。[/DU][DU]Spiders are arachnids.|蜘蛛是蛛形纲动物。[/DU][/DEF][IMG]infopic01/arachnid.webp[/IMG]",
+"[TITLE]常见用法[/TITLE][COLL][H]arachnid species|蛛形纲动物种类[POS]n. phr.[/POS][/H][EX]Many arachnid species live in forests.|很多蛛形纲动物生活在森林。[/EX][C]arachnid body|蛛形纲身体结构[/C][/COLL]",
+"[TITLE]额外例句[/TITLE][EX]Arachnids have eight legs.|蛛形纲动物有八条腿。[/EX][EX]Scientists study arachnids.|科学家研究蛛形纲动物。[/EX]",
+"[TITLE]常见错误[/TITLE][ERR]arachnid不要拼写为arachinid。[/ERR]"
+]
+},
+
+"w797": {
+"word": "stinger",
+"images": {
+"scene": ["infopic01/stinger.webp"],
+"card": ["wordpic01/stinger.webp"]
+},
+"richDetail": [
+"[TITLE]解释[/TITLE][DEF][EN]A stinger is a sharp part used by some animals to sting.[/EN][CN]毒刺；尾刺[/CN][POS]n.[/POS][PH]/ˈstɪŋər/[/PH][DU]The scorpion used its stinger.|（例句）蝎子用尾刺攻击。[/DU][DU]A bee has a stinger.|蜜蜂有毒刺。[/DU][/DEF][IMG]infopic01/stinger.webp[/IMG]",
+"[TITLE]常见用法[/TITLE][COLL][H]sharp stinger|锋利的毒刺[POS]n. phr.[/POS][/H][EX]The bee's stinger hurt.|蜜蜂的刺很疼。[/EX][C]scorpion stinger|蝎子毒刺[/C][/COLL]",
+"[TITLE]额外例句[/TITLE][EX]The insect used its stinger.|昆虫用毒刺。[/EX][EX]The stinger contains venom.|毒刺含有毒液。[/EX]",
+"[TITLE]常见错误[/TITLE][ERR]stinger不要拼写为stingar。[/ERR]"
+]
+},
+
+"w798": {
+"word": "venom",
+"images": {
+"scene": ["infopic01/venom.webp"],
+"card": ["wordpic01/venom.webp"]
+},
+"richDetail": [
+"[TITLE]解释[/TITLE][DEF][EN]Venom is poisonous liquid used by some animals when they sting or bite.[/EN][CN]毒液[/CN][POS]n.[/POS][PH]/ˈvenəm/[/PH][DU]The scorpion injected venom.|（例句）蝎子注入毒液。[/DU][DU]Snake venom can be dangerous.|蛇毒可能很危险。[/DU][/DEF][IMG]infopic01/venom.webp[/IMG]",
+"[TITLE]常见用法[/TITLE][COLL][H]snake venom|蛇毒[POS]n. phr.[/POS][/H][EX]Snake venom affects the body.|蛇毒影响身体。[/EX][C]venom gland|毒腺[/C][/COLL]",
+"[TITLE]额外例句[/TITLE][EX]Venom helps animals defend themselves.|毒液帮助动物保护自己。[/EX][EX]Doctors study venom.|医生研究毒液。[/EX]",
+"[TITLE]常见错误[/TITLE][ERR]venom不要拼写为venam。[/ERR]"
+]
+},
+"w799": {
+"word": "post",
+"images": {
+"scene": ["infopic01/post.webp"],
+"card": ["wordpic01/post.webp"]
+},
+"richDetail": [
+"[TITLE]解释[/TITLE][DEF][EN]A post is a strong upright piece of wood or metal that holds something up.[/EN][CN]柱子；杆子[/CN][POS]n.[/POS][PH]/poʊst/[/PH][DU]The sign was attached to a post.|（例句）标志固定在一根柱子上。[/DU][DU]The fence has wooden posts.|篱笆有木柱。[/DU][/DEF][IMG]infopic01/post.webp[/IMG]",
+"[TITLE]常见用法[/TITLE][COLL][H]sign post|路标柱[POS]n. phr.[/POS][/H][EX]The sign post showed the way.|路标柱指明了方向。[/EX][C]wooden post|木柱[/C][/COLL]",
+"[TITLE]额外例句[/TITLE][EX]The post stood by the road.|柱子立在路边。[/EX][EX]Birds sat on the post.|鸟停在柱子上。[/EX]",
+"[TITLE]常见错误[/TITLE][ERR]post也可以表示“邮寄”或“帖子”，要根据语境理解。[/ERR]"
+]
+},
+
+"w800": {
+"word": "warning",
+"images": {
+"scene": ["infopic01/warning.webp"],
+"card": ["wordpic01/warning.webp"]
+},
+"richDetail": [
+"[TITLE]解释[/TITLE][DEF][EN]A warning is something that tells you about danger.[/EN][CN]警告；提醒[/CN][POS]n.[/POS][PH]/ˈwɔːrnɪŋ/[/PH][DU]The sign gave a warning about danger.|（例句）这个标志提醒人们有危险。[/DU][DU]The teacher gave a warning.|老师发出了警告。[/DU][/DEF][IMG]infopic01/warning.webp[/IMG]",
+"[TITLE]常见用法[/TITLE][COLL][H]warning sign|警告标志[POS]n. phr.[/POS][/H][EX]The warning sign said “Stop.”|警告牌上写着“停”。[/EX][C]fire warning|火灾警告[/C][/COLL]",
+"[TITLE]额外例句[/TITLE][EX]We heard a warning siren.|我们听到了警报声。[/EX][EX]The warning came too late.|警告来得太晚了。[/EX]",
+"[TITLE]常见错误[/TITLE][ERR]warning不要拼写为warnning。[/ERR]"
+]
+},
+
+"w801": {
+"word": "winding",
+"images": {
+"scene": ["infopic01/winding.webp"],
+"card": ["wordpic01/winding.webp"]
+},
+"richDetail": [
+"[TITLE]解释[/TITLE][DEF][EN]Winding means having many turns and curves.[/EN][CN]蜿蜒的；弯弯曲曲的[/CN][POS]adj.[/POS][PH]/ˈwaɪndɪŋ/[/PH][DU]The road was long and winding.|（例句）这条路又长又弯。[/DU][DU]We walked on a winding path.|我们走在一条蜿蜒的小路上。[/DU][/DEF][IMG]infopic01/winding.webp[/IMG]",
+"[TITLE]常见用法[/TITLE][COLL][H]winding road|蜿蜒的道路[POS]n. phr.[/POS][/H][EX]Be careful on the winding road.|走蜿蜒道路时要小心。[/EX][C]winding path|弯曲小路[/C][/COLL]",
+"[TITLE]额外例句[/TITLE][EX]The river followed a winding route.|河流蜿蜒流动。[/EX][EX]The mountain trail was winding.|山路弯弯曲曲。[/EX]",
+"[TITLE]常见错误[/TITLE][ERR]winding在这里读/ˈwaɪndɪŋ/，不要误读成/ˈwɪndɪŋ/。[/ERR]"
+]
+},
+
+"w802": {
+"word": "advertise",
+"images": {
+"scene": ["infopic01/advertise.webp"],
+"card": ["wordpic01/advertise.webp"]
+},
+"richDetail": [
+"[TITLE]解释[/TITLE][DEF][EN]To advertise means to tell people about something so they know about it.[/EN][CN]做广告；宣传[/CN][POS]v.[/POS][PH]/ˈædvərtaɪz/[/PH][DU]The sign helps advertise the store.|（例句）这个标志帮助商店做广告。[/DU][DU]Companies advertise their products.|公司宣传他们的产品。[/DU][/DEF][IMG]infopic01/advertise.webp[/IMG]",
+"[TITLE]常见用法[/TITLE][COLL][H]advertise something|宣传某物[POS]v. phr.[/POS][/H][EX]They advertise new toys.|他们宣传新玩具。[/EX][C]advertise a sale|宣传促销[/C][/COLL]",
+"[TITLE]额外例句[/TITLE][EX]The company advertised on TV.|公司在电视上做广告。[/EX][EX]We use posters to advertise the event.|我们用海报宣传活动。[/EX]",
+"[TITLE]常见错误[/TITLE][ERR]advertise不要拼写为advertize。[/ERR]"
+]
+},
+
+"w803": {
+"word": "thread",
+"images": {
+"scene": ["infopic01/thread.webp"],
+"card": ["wordpic01/thread.webp"]
+},
+"richDetail": [
+"[TITLE]解释[/TITLE][DEF][EN]Thread is a very thin string used for sewing or making webs.[/EN][CN]线；丝[/CN][POS]n.[/POS][PH]/θred/[/PH][DU]The spider made thin thread for its web.|（例句）蜘蛛为它的网织出细丝。[/DU][DU]Mom used thread to sew the shirt.|妈妈用线缝衬衫。[/DU][/DEF][IMG]infopic01/thread.webp[/IMG]",
+"[TITLE]常见用法[/TITLE][COLL][H]spider thread|蜘蛛丝[POS]n. phr.[/POS][/H][EX]Spider thread is very strong.|蜘蛛丝很结实。[/EX][C]sewing thread|缝纫线[/C][/COLL]",
+"[TITLE]额外例句[/TITLE][EX]The thread was white and thin.|这根线又白又细。[/EX][EX]She pulled the thread through the needle.|她把线穿过针眼。[/EX]",
+"[TITLE]常见错误[/TITLE][ERR]thread不要拼写为thred。[/ERR]"
+]
+},
+
+"w804": {
+"word": "goo",
+"images": {
+"scene": ["infopic01/goo.webp"],
+"card": ["wordpic01/goo.webp"]
+},
+"richDetail": [
+"[TITLE]解释[/TITLE][DEF][EN]Goo is a sticky, messy substance.[/EN][CN]黏糊糊的东西；胶状物[/CN][POS]n.[/POS][PH]/ɡuː/[/PH][DU]The web was made of sticky goo.|（例句）蜘蛛网是由黏糊糊的物质做成的。[/DU][DU]The candy turned into goo in the sun.|糖果在太阳下变成了黏糊糊的东西。[/DU][/DEF][IMG]infopic01/goo.webp[/IMG]",
+"[TITLE]常见用法[/TITLE][COLL][H]sticky goo|黏糊糊的东西[POS]n. phr.[/POS][/H][EX]The jar had sticky goo inside.|罐子里有黏糊糊的东西。[/EX][C]green goo|绿色胶状物[/C][/COLL]",
+"[TITLE]额外例句[/TITLE][EX]The slime felt like goo.|史莱姆摸起来像胶状物。[/EX][EX]The table was covered in goo.|桌子上沾满了黏糊糊的东西。[/EX]",
+"[TITLE]常见错误[/TITLE][ERR]goo通常是口语词。[/ERR]"
+]
+},
+
+"w805": {
+"word": "acrobat",
+"images": {
+"scene": ["infopic01/acrobat.webp"],
+"card": ["wordpic01/acrobat.webp"]
+},
+"richDetail": [
+"[TITLE]解释[/TITLE][DEF][EN]An acrobat is a person or animal that can do amazing balancing and jumping tricks.[/EN][CN]杂技演员；善于腾跃翻跳者[/CN][POS]n.[/POS][PH]/ˈækrəbæt/[/PH][DU]The squirrel was like an acrobat in the trees.|（例句）松鼠像树上的杂技演员。[/DU][DU]The acrobat jumped through the air.|杂技演员跳到了空中。[/DU][/DEF][IMG]infopic01/acrobat.webp[/IMG]",
+"[TITLE]常见用法[/TITLE][COLL][H]circus acrobat|马戏团杂技演员[POS]n. phr.[/POS][/H][EX]The circus acrobat balanced on a rope.|马戏团杂技演员在绳子上保持平衡。[/EX][C]animal acrobat|动物杂技高手[/C][/COLL]",
+"[TITLE]额外例句[/TITLE][EX]The monkey moved like an acrobat.|猴子像杂技演员一样移动。[/EX][EX]Acrobats train very hard.|杂技演员训练很辛苦。[/EX]",
+"[TITLE]常见错误[/TITLE][ERR]acrobat不要拼写为acrobatt。[/ERR]"
+]
+},
+
+"w806": {
+"word": "alert",
+"images": {
+"scene": ["infopic01/alert.webp"],
+"card": ["wordpic01/alert.webp"]
+},
+"richDetail": [
+"[TITLE]解释[/TITLE][DEF][EN]Alert means watchful and ready to notice danger.[/EN][CN]警觉的；警惕的[/CN][POS]adj.[/POS][PH]/əˈlɜːrt/[/PH][DU]The squirrel stayed alert for danger.|（例句）松鼠保持警觉以防危险。[/DU][DU]The guard was alert all night.|守卫整晚都很警觉。[/DU][/DEF][IMG]infopic01/alert.webp[/IMG]",
+"[TITLE]常见用法[/TITLE][COLL][H]stay alert|保持警觉[POS]v. phr.[/POS][/H][EX]Drivers must stay alert.|司机必须保持警觉。[/EX][C]alert eyes|警觉的眼睛[/C][/COLL]",
+"[TITLE]额外例句[/TITLE][EX]The dog was alert to every sound.|狗对每个声音都很警觉。[/EX][EX]She looked alert and ready.|她看起来警觉又准备好了。[/EX]",
+"[TITLE]常见错误[/TITLE][ERR]alert既可作形容词，也可作名词或动词。[/ERR]"
+]
+},
+
+"w807": {
+"word": "whip",
+"images": {
+"scene": ["infopic01/whip.webp"],
+"card": ["wordpic01/whip.webp"]
+},
+"richDetail": [
+"[TITLE]解释[/TITLE][DEF][EN]To whip means to move very fast, like a tail or branch snapping through the air.[/EN][CN]猛甩；快速挥动[/CN][POS]v./n.[/POS][PH]/wɪp/[/PH][DU]The squirrel's tail whipped behind it.|（例句）松鼠的尾巴在身后快速甩动。[/DU][DU]The wind whipped the branches.|风猛烈地抽打着树枝。[/DU][/DEF][IMG]infopic01/whip.webp[/IMG]",
+"[TITLE]常见用法[/TITLE][COLL][H]whip through|快速穿过[POS]v. phr.[/POS][/H][EX]The bird whipped through the trees.|鸟快速穿过树林。[/EX][C]whip the air|抽打空气[/C][/COLL]",
+"[TITLE]额外例句[/TITLE][EX]The rope whipped back and forth.|绳子来回甩动。[/EX][EX]Her hair whipped in the wind.|她的头发在风中飞舞。[/EX]",
+"[TITLE]常见错误[/TITLE][ERR]whip不要拼写为wip。[/ERR]"
+]
+},
+
+"w808": {
+"word": "cling",
+"images": {
+"scene": ["infopic01/cling.webp"],
+"card": ["wordpic01/cling.webp"]
+},
+"richDetail": [
+"[TITLE]解释[/TITLE][DEF][EN]To cling means to hold on tightly to something.[/EN][CN]紧抓；紧贴[/CN][POS]v.[/POS][PH]/klɪŋ/[/PH][DU]The squirrel clung to the branch.|（例句）松鼠紧紧抓住树枝。[/DU][DU]The wet shirt clings to the skin.|湿衣服贴在皮肤上。[/DU][/DEF][IMG]infopic01/cling.webp[/IMG]",
+"[TITLE]常见用法[/TITLE][COLL][H]cling to|紧抓住[POS]v. phr.[/POS][/H][EX]The baby clung to his father.|宝宝紧紧抓住爸爸。[/EX][C]cling tightly|紧紧抓住[/C][/COLL]",
+"[TITLE]额外例句[/TITLE][EX]The leaves clung to the wall.|叶子贴在墙上。[/EX][EX]The koala clings to the tree.|考拉抱着树。[/EX]",
+"[TITLE]常见错误[/TITLE][ERR]cling过去式是clung。[/ERR]"
+]
+},
+
+"w809": {
+"word": "tightrope",
+"images": {
+"scene": ["infopic01/tightrope.webp"],
+"card": ["wordpic01/tightrope.webp"]
+},
+"richDetail": [
+"[TITLE]解释[/TITLE][DEF][EN]A tightrope is a rope stretched tightly for walking or balancing on.[/EN][CN]走钢丝的绳子；绷紧的绳索[/CN][POS]n.[/POS][PH]/ˈtaɪtroʊp/[/PH][DU]The squirrel ran across a branch like a tightrope.|（例句）松鼠像走钢丝一样跑过树枝。[/DU][DU]The acrobat balanced on the tightrope.|杂技演员在钢丝上保持平衡。[/DU][/DEF][IMG]infopic01/tightrope.webp[/IMG]",
+"[TITLE]常见用法[/TITLE][COLL][H]walk a tightrope|走钢丝[POS]v. phr.[/POS][/H][EX]She learned to walk a tightrope.|她学会了走钢丝。[/EX][C]tightrope walker|走钢丝演员[/C][/COLL]",
+"[TITLE]额外例句[/TITLE][EX]The circus had a tightrope act.|马戏团有走钢丝表演。[/EX][EX]The rope was used like a tightrope.|这根绳子像钢丝一样使用。[/EX]",
+"[TITLE]常见错误[/TITLE][ERR]tightrope是一个词，不要写成tight rope。[/ERR]"
+]
+},
+
+"w810": {
+"word": "stormingo",
+"images": {
+"scene": ["infopic01/stormingo.webp"],
+"card": ["wordpic01/stormingo.webp"]
+},
+"richDetail": [
+"[TITLE]解释[/TITLE][DEF][EN]Stormingo is the name of a flamingo character in the story.[/EN][CN]Stormingo（书中的火烈鸟角色名）[/CN][POS]n.[/POS][PH]/stɔːrˈmɪŋɡoʊ/[/PH][DU]Stormingo stood in the marsh.|（例句）Stormingo站在沼泽中。[/DU][DU]Stormingo looked at the stormy sky.|Stormingo看着暴风雨的天空。[/DU][/DEF][IMG]infopic01/stormingo.webp[/IMG]",
+"[TITLE]常见用法[/TITLE][COLL][H]Stormingo the flamingo|Stormingo这只火烈鸟[POS]n. phr.[/POS][/H][EX]Stormingo the flamingo stretched its wings.|Stormingo这只火烈鸟张开翅膀。[/EX][C]brave Stormingo|勇敢的Stormingo[/C][/COLL]",
+"[TITLE]额外例句[/TITLE][EX]Stormingo walked with the herd.|Stormingo和鸟群一起走。[/EX][EX]Stormingo waited for the rain to stop.|Stormingo等雨停。[/EX]",
+"[TITLE]常见错误[/TITLE][ERR]Stormingo是专有名词，首字母通常大写。[/ERR]"
+]
+},
+
+"w811": {
+"word": "marsh",
+"images": {
+"scene": ["infopic01/marsh.webp"],
+"card": ["wordpic01/marsh.webp"]
+},
+"richDetail": [
+"[TITLE]解释[/TITLE][DEF][EN]A marsh is a wet area of land with grass and shallow water.[/EN][CN]沼泽；湿地[/CN][POS]n.[/POS][PH]/mɑːrʃ/[/PH][DU]The birds stood in the marsh.|（例句）鸟儿站在沼泽里。[/DU][DU]A marsh is full of water and plants.|沼泽里有很多水和植物。[/DU][/DEF][IMG]infopic01/marsh.webp[/IMG]",
+"[TITLE]常见用法[/TITLE][COLL][H]salt marsh|盐沼[POS]n. phr.[/POS][/H][EX]Many birds live in the salt marsh.|很多鸟生活在盐沼。[/EX][C]wet marsh|湿沼泽[/C][/COLL]",
+"[TITLE]额外例句[/TITLE][EX]The marsh was muddy.|沼泽里满是泥。[/EX][EX]Frogs live in the marsh.|青蛙生活在沼泽。[/EX]",
+"[TITLE]常见错误[/TITLE][ERR]marsh不要拼写为marshh。[/ERR]"
+]
+},
+
+"w812": {
+"word": "crooked",
+"images": {
+"scene": ["infopic01/crooked.webp"],
+"card": ["wordpic01/crooked.webp"]
+},
+"richDetail": [
+"[TITLE]解释[/TITLE][DEF][EN]Crooked means bent or not straight.[/EN][CN]弯曲的；歪的[/CN][POS]adj.[/POS][PH]/ˈkrʊkɪd/[/PH][DU]The tree grew crooked in the wind.|（例句）这棵树在风中长歪了。[/DU][DU]His hat was crooked.|他的帽子戴歪了。[/DU][/DEF][IMG]infopic01/crooked.webp[/IMG]",
+"[TITLE]常见用法[/TITLE][COLL][H]crooked tree|弯树[POS]n. phr.[/POS][/H][EX]A crooked tree stood by the road.|路边有一棵歪树。[/EX][C]crooked line|弯线[/C][/COLL]",
+"[TITLE]额外例句[/TITLE][EX]The picture hung crooked on the wall.|画挂在墙上歪了。[/EX][EX]He smiled with a crooked grin.|他歪着嘴笑。[/EX]",
+"[TITLE]常见错误[/TITLE][ERR]crooked不要拼写为croocked。[/ERR]"
+]
+},
+
+"w813": {
+"word": "stork",
+"images": {
+"scene": ["infopic01/stork.webp"],
+"card": ["wordpic01/stork.webp"]
+},
+"richDetail": [
+"[TITLE]解释[/TITLE][DEF][EN]A stork is a large bird with long legs and a long beak.[/EN][CN]鹳[/CN][POS]n.[/POS][PH]/stɔːrk/[/PH][DU]The stork stood in shallow water.|（例句）鹳站在浅水里。[/DU][DU]A stork has long legs.|鹳有很长的腿。[/DU][/DEF][IMG]infopic01/stork.webp[/IMG]",
+"[TITLE]常见用法[/TITLE][COLL][H]white stork|白鹳[POS]n. phr.[/POS][/H][EX]The white stork flew overhead.|白鹳从头顶飞过。[/EX][C]large stork|大鹳[/C][/COLL]",
+"[TITLE]额外例句[/TITLE][EX]The stork built a nest.|鹳建了一个巢。[/EX][EX]A stork searched for food.|鹳寻找食物。[/EX]",
+"[TITLE]常见错误[/TITLE][ERR]stork不要和storm混淆。[/ERR]"
+]
+},
+
+"w814": {
+"word": "herd",
+"images": {
+"scene": ["infopic01/herd(1).webp"],
+"card": ["wordpic01/herd.webp"]
+},
+"richDetail": [
+"[TITLE]解释[/TITLE][DEF][EN]A herd is a group of animals that live or move together.[/EN][CN]兽群；一群动物[/CN][POS]n.[/POS][PH]/hɜːrd/[/PH][DU]A herd of animals crossed the land.|（例句）一群动物穿过了陆地。[/DU][DU]The herd stayed together.|这群动物待在一起。[/DU][/DEF][IMG]infopic01/herd(1).webp[/IMG]",
+"[TITLE]常见用法[/TITLE][COLL][H]herd of animals|一群动物[POS]n. phr.[/POS][/H][EX]A herd of deer ran by.|一群鹿跑过去。[/EX][C]elephant herd|象群[/C][/COLL]",
+"[TITLE]额外例句[/TITLE][EX]The herd moved slowly.|兽群慢慢移动。[/EX][EX]The lions watched the herd.|狮子观察兽群。[/EX]",
+"[TITLE]常见错误[/TITLE][ERR]herd不要拼写为heard。[/ERR]"
+]
+},
+
+"w815": {
+"word": "moment",
+"images": {
+"scene": ["infopic01/moment.webp"],
+"card": ["wordpic01/moment.webp"]
+},
+"richDetail": [
+"[TITLE]解释[/TITLE][DEF][EN]A moment is a very short time.[/EN][CN]片刻；瞬间[/CN][POS]n.[/POS][PH]/ˈmoʊmənt/[/PH][DU]They waited for a moment.|（例句）他们等了一会儿。[/DU][DU]In a moment, the rain stopped.|过了一会儿，雨停了。[/DU][/DEF][IMG]infopic01/moment.webp[/IMG]",
+"[TITLE]常见用法[/TITLE][COLL][H]wait a moment|等一会儿[POS]v. phr.[/POS][/H][EX]Please wait a moment.|请等一会儿。[/EX][C]at the moment|此刻[/C][/COLL]",
+"[TITLE]额外例句[/TITLE][EX]It happened in a moment.|事情在一瞬间发生了。[/EX][EX]She needed a quiet moment.|她需要安静的一刻。[/EX]",
+"[TITLE]常见错误[/TITLE][ERR]moment不要拼写为momment。[/ERR]"
+]
+},
+"w816": {
+"word": "female",
+"images": {
+"scene": ["infopic01/female.webp"],
+"card": ["wordpic01/female.webp"]
+},
+"richDetail": [
+"[TITLE]解释[/TITLE][DEF][EN]A female is a girl or woman, or a female animal that can have babies.[/EN][CN]雌性；女性[/CN][POS]n./adj.[/POS][PH]/ˈfiːmeɪl/[/PH][DU]The female mosquito drinks blood.|（例句）雌蚊子吸血。[/DU][DU]The female bird laid eggs.|雌鸟下蛋。[/DU][/DEF][IMG]infopic01/female.webp[/IMG]",
+"[TITLE]常见用法[/TITLE][COLL][H]female animal|雌性动物[POS]n. phr.[/POS][/H][EX]The female lion hunts with the group.|母狮和群体一起捕猎。[/EX][C]female bird|雌鸟[/C][/COLL]",
+"[TITLE]额外例句[/TITLE][EX]The female tiger protects her cubs.|母老虎保护幼崽。[/EX][EX]Female insects sometimes look different from males.|雌性昆虫有时与雄性不同。[/EX]",
+"[TITLE]常见错误[/TITLE][ERR]female不要拼写为femail。[/ERR]"
+]
+},
+
+"w817": {
+"word": "lamprey",
+"images": {
+"scene": ["infopic01/lamprey.webp"],
+"card": ["wordpic01/lamprey.webp"]
+},
+"richDetail": [
+"[TITLE]解释[/TITLE][DEF][EN]A lamprey is a long fish that sticks to other fish and drinks their blood.[/EN][CN]七鳃鳗（吸血鱼类）[/CN][POS]n.[/POS][PH]/ˈlæmpreɪ/[/PH][DU]The lamprey attached to a fish.|（例句）七鳃鳗吸附在鱼身上。[/DU][DU]Lampreys use their mouths to suck blood.|七鳃鳗用嘴吸血。[/DU][/DEF][IMG]infopic01/lamprey.webp[/IMG]",
+"[TITLE]常见用法[/TITLE][COLL][H]sea lamprey|海七鳃鳗[POS]n. phr.[/POS][/H][EX]The sea lamprey is a parasite.|海七鳃鳗是一种寄生动物。[/EX][C]lamprey fish|七鳃鳗鱼[/C][/COLL]",
+"[TITLE]额外例句[/TITLE][EX]Lampreys live in rivers and seas.|七鳃鳗生活在河流和海洋里。[/EX][EX]The lamprey has a round mouth.|七鳃鳗有圆形的嘴。[/EX]",
+"[TITLE]常见错误[/TITLE][ERR]lamprey不要拼写为lampory。[/ERR]"
+]
+},
+
+"w818": {
+"word": "leech",
+"images": {
+"scene": ["infopic01/leech.webp"],
+"card": ["wordpic01/leech.webp"]
+},
+"richDetail": [
+"[TITLE]解释[/TITLE][DEF][EN]A leech is a small worm that sticks to animals and drinks blood.[/EN][CN]水蛭[/CN][POS]n.[/POS][PH]/liːtʃ/[/PH][DU]The leech stuck to the skin.|（例句）水蛭吸在皮肤上。[/DU][DU]Leeches live in water.|水蛭生活在水里。[/DU][/DEF][IMG]infopic01/leech.webp[/IMG]",
+"[TITLE]常见用法[/TITLE][COLL][H]bloodsucking leech|吸血水蛭[POS]n. phr.[/POS][/H][EX]The bloodsucking leech feeds on animals.|吸血水蛭吸食动物的血。[/EX][C]leech bite|水蛭咬伤[/C][/COLL]",
+"[TITLE]额外例句[/TITLE][EX]A leech can stretch its body.|水蛭可以伸长身体。[/EX][EX]The leech moved slowly in the water.|水蛭在水中慢慢移动。[/EX]",
+"[TITLE]常见错误[/TITLE][ERR]leech不要拼写为leach（leach是“过滤、浸出”）。[/ERR]"
+]
+},
+
+"w819": {
+"word": "flea",
+"images": {
+"scene": ["infopic01/flea.webp"],
+"card": ["wordpic01/flea.webp"]
+},
+"richDetail": [
+"[TITLE]解释[/TITLE][DEF][EN]A flea is a tiny insect that jumps and drinks blood from animals.[/EN][CN]跳蚤[/CN][POS]n.[/POS][PH]/fliː/[/PH][DU]The flea jumped on the dog.|（例句）跳蚤跳到狗身上。[/DU][DU]Fleas drink blood.|跳蚤吸血。[/DU][/DEF][IMG]infopic01/flea.webp[/IMG]",
+"[TITLE]常见用法[/TITLE][COLL][H]flea bite|跳蚤叮咬[POS]n. phr.[/POS][/H][EX]The flea bite made the dog itch.|跳蚤叮咬让狗发痒。[/EX][C]flea market|跳蚤市场[/C][/COLL]",
+"[TITLE]额外例句[/TITLE][EX]The flea jumped very high.|跳蚤跳得很高。[/EX][EX]Cats sometimes get fleas.|猫有时会有跳蚤。[/EX]",
+"[TITLE]常见错误[/TITLE][ERR]flea不要拼写为flee（flee是“逃跑”）。[/ERR]"
+]
+},
+
+"w820": {
+"word": "emperor",
+"images": {
+"scene": ["infopic01/emperor(1).webp"],
+"card": ["wordpic01/emperor.webp"]
+},
+"richDetail": [
+"[TITLE]解释[/TITLE][DEF][EN]An emperor is a powerful ruler of a large empire.[/EN][CN]皇帝[/CN][POS]n.[/POS][PH]/ˈempərər/[/PH][DU]The emperor ruled the land.|（例句）皇帝统治这片土地。[/DU][DU]The emperor penguin lives in Antarctica.|帝企鹅生活在南极。[/DU][/DEF][IMG]infopic01/emperor(1).webp[/IMG]",
+"[TITLE]常见用法[/TITLE][COLL][H]emperor penguin|帝企鹅[POS]n. phr.[/POS][/H][EX]The emperor penguin is very tall.|帝企鹅非常高大。[/EX][C]Roman emperor|罗马皇帝[/C][/COLL]",
+"[TITLE]额外例句[/TITLE][EX]The emperor wore a crown.|皇帝戴着皇冠。[/EX][EX]Many stories talk about emperors.|很多故事讲到皇帝。[/EX]",
+"[TITLE]常见错误[/TITLE][ERR]emperor不要拼写为emperer。[/ERR]"
+]
+},
+
+"w821": {
+"word": "pelican",
+"images": {
+"scene": ["infopic01/pelican.webp"],
+"card": ["wordpic01/pelican.webp"]
+},
+"richDetail": [
+"[TITLE]解释[/TITLE][DEF][EN]A pelican is a large bird with a big pouch under its beak.[/EN][CN]鹈鹕[/CN][POS]n.[/POS][PH]/ˈpelɪkən/[/PH][DU]The pelican caught fish in its pouch.|（例句）鹈鹕用喉囊抓鱼。[/DU][DU]Pelicans live near water.|鹈鹕生活在水边。[/DU][/DEF][IMG]infopic01/pelican.webp[/IMG]",
+"[TITLE]常见用法[/TITLE][COLL][H]brown pelican|褐鹈鹕[POS]n. phr.[/POS][/H][EX]The brown pelican dives for fish.|褐鹈鹕潜水抓鱼。[/EX][C]pelican beak|鹈鹕喙[/C][/COLL]",
+"[TITLE]额外例句[/TITLE][EX]A pelican flew over the sea.|一只鹈鹕飞过海面。[/EX][EX]Pelicans work together to catch fish.|鹈鹕会合作捕鱼。[/EX]",
+"[TITLE]常见错误[/TITLE][ERR]pelican不要拼写为pellican。[/ERR]"
+]
+},
+
+"w822": {
+"word": "vulture",
+"images": {
+"scene": ["infopic01/vulture.webp"],
+"card": ["wordpic01/vulture.webp"]
+},
+"richDetail": [
+"[TITLE]解释[/TITLE][DEF][EN]A vulture is a large bird that eats dead animals.[/EN][CN]秃鹫[/CN][POS]n.[/POS][PH]/ˈvʌltʃər/[/PH][DU]The vulture circled in the sky.|（例句）秃鹫在天空盘旋。[/DU][DU]Vultures eat dead animals.|秃鹫吃动物尸体。[/DU][/DEF][IMG]infopic01/vulture.webp[/IMG]",
+"[TITLE]常见用法[/TITLE][COLL][H]turkey vulture|红头美洲鹫[POS]n. phr.[/POS][/H][EX]The turkey vulture has a red head.|红头美洲鹫有红色的头。[/EX][C]vulture wings|秃鹫翅膀[/C][/COLL]",
+"[TITLE]额外例句[/TITLE][EX]The vulture glided in the air.|秃鹫在空中滑翔。[/EX][EX]Vultures help clean nature.|秃鹫帮助清理自然界。[/EX]",
+"[TITLE]常见错误[/TITLE][ERR]vulture不要拼写为vultre。[/ERR]"
+]
+},
+
+"w823": {
+"word": "mallard",
+"images": {
+"scene": ["infopic01/mallard.webp"],
+"card": ["wordpic01/mallard.webp"]
+},
+"richDetail": [
+"[TITLE]解释[/TITLE][DEF][EN]A mallard is a common wild duck with a green head.[/EN][CN]绿头鸭[/CN][POS]n.[/POS][PH]/ˈmælərd/[/PH][DU]The mallard swam in the pond.|（例句）绿头鸭在池塘里游泳。[/DU][DU]A male mallard has a green head.|雄性绿头鸭有绿色的头。[/DU][/DEF][IMG]infopic01/mallard.webp[/IMG]",
+"[TITLE]常见用法[/TITLE][COLL][H]mallard duck|绿头鸭[POS]n. phr.[/POS][/H][EX]The mallard duck landed on the lake.|绿头鸭落在湖面上。[/EX][C]wild mallard|野生绿头鸭[/C][/COLL]",
+"[TITLE]额外例句[/TITLE][EX]Mallards quack loudly.|绿头鸭叫声很响。[/EX][EX]The mallard flew over the water.|绿头鸭飞过水面。[/EX]",
+"[TITLE]常见错误[/TITLE][ERR]mallard不要拼写为mallerd。[/ERR]"
+]
+},
+
+"w824": {
+"word": "curve",
+"images": {
+"scene": ["infopic01/curve.webp"],
+"card": ["wordpic01/curve.webp"]
+},
+"richDetail": [
+"[TITLE]解释[/TITLE][DEF][EN]A curve is a line that bends instead of going straight.[/EN][CN]曲线；弯曲[/CN][POS]n./v.[/POS][PH]/kɜːrv/[/PH][DU]The road has a sharp curve.|（例句）这条路有一个急弯。[/DU][DU]The river curves through the valley.|河流在山谷中弯曲流动。[/DU][/DEF][IMG]infopic01/curve.webp[/IMG]",
+"[TITLE]常见用法[/TITLE][COLL][H]sharp curve|急弯[POS]n. phr.[/POS][/H][EX]Slow down at the sharp curve.|在急弯处减速。[/EX][C]curve road|弯曲道路[/C][/COLL]",
+"[TITLE]额外例句[/TITLE][EX]The track had many curves.|跑道有很多弯道。[/EX][EX]The path curves around the hill.|小路绕着山弯曲。[/EX]",
+"[TITLE]常见错误[/TITLE][ERR]curve不要拼写为curv。[/ERR]"
+]
+},
+
+"w825": {
+"word": "thrasher",
+"images": {
+"scene": ["infopic01/thrasher.webp"],
+"card": ["wordpic01/thrasher.webp"]
+},
+"richDetail": [
+"[TITLE]解释[/TITLE][DEF][EN]A thrasher is a type of bird known for singing and scratching the ground.[/EN][CN]拟鸫（鸟类）[/CN][POS]n.[/POS][PH]/ˈθræʃər/[/PH][DU]The thrasher searched for insects.|（例句）拟鸫寻找昆虫。[/DU][DU]The thrasher sang loudly.|拟鸫大声歌唱。[/DU][/DEF][IMG]infopic01/thrasher.webp[/IMG]",
+"[TITLE]常见用法[/TITLE][COLL][H]brown thrasher|棕拟鸫[POS]n. phr.[/POS][/H][EX]The brown thrasher lives in bushes.|棕拟鸫生活在灌木中。[/EX][C]thrasher bird|拟鸫鸟[/C][/COLL]",
+"[TITLE]额外例句[/TITLE][EX]The thrasher hopped on the ground.|拟鸫在地面跳跃。[/EX][EX]Birdwatchers love seeing a thrasher.|观鸟者喜欢看到拟鸫。[/EX]",
+"[TITLE]常见错误[/TITLE][ERR]thrasher不要拼写为thrashor。[/ERR]"
+]
+},
+
+"w826": {
+"word": "cardinal",
+"images": {
+"scene": ["infopic01/cardinal.webp"],
+"card": ["wordpic01/cardinal.webp"]
+},
+"richDetail": [
+"[TITLE]解释[/TITLE][DEF][EN]A cardinal is a bright red bird found in North America.[/EN][CN]红雀[/CN][POS]n.[/POS][PH]/ˈkɑːrdɪnəl/[/PH][DU]The cardinal sat on a branch.|（例句）红雀停在树枝上。[/DU][DU]A cardinal has bright red feathers.|红雀有鲜红色羽毛。[/DU][/DEF][IMG]infopic01/cardinal.webp[/IMG]",
+"[TITLE]常见用法[/TITLE][COLL][H]red cardinal|红雀[POS]n. phr.[/POS][/H][EX]The red cardinal sang in the tree.|红雀在树上唱歌。[/EX][C]cardinal bird|红雀鸟[/C][/COLL]",
+"[TITLE]额外例句[/TITLE][EX]A cardinal visited the garden.|红雀飞到花园里。[/EX][EX]The cardinal flew away quickly.|红雀很快飞走了。[/EX]",
+"[TITLE]常见错误[/TITLE][ERR]cardinal不要拼写为cardnal。[/ERR]"
+]
+},
+
+"w827": {
+"word": "hummingbird",
+"images": {
+"scene": ["infopic01/hummingbird.webp"],
+"card": ["wordpic01/hummingbird.webp"]
+},
+"richDetail": [
+"[TITLE]解释[/TITLE][DEF][EN]A hummingbird is a tiny bird that can hover and drink nectar from flowers.[/EN][CN]蜂鸟[/CN][POS]n.[/POS][PH]/ˈhʌmɪŋbɜːrd/[/PH][DU]The hummingbird drank nectar from a flower.|（例句）蜂鸟从花里吸花蜜。[/DU][DU]The hummingbird flapped its wings very fast.|蜂鸟拍动翅膀非常快。[/DU][/DEF][IMG]infopic01/hummingbird.webp[/IMG]",
+"[TITLE]常见用法[/TITLE][COLL][H]hummingbird wings|蜂鸟翅膀[POS]n. phr.[/POS][/H][EX]The hummingbird wings moved quickly.|蜂鸟翅膀快速扇动。[/EX][C]tiny hummingbird|小蜂鸟[/C][/COLL]",
+"[TITLE]额外例句[/TITLE][EX]The hummingbird hovered in the air.|蜂鸟悬停在空中。[/EX][EX]A hummingbird visited the flower.|蜂鸟飞到花上。[/EX]",
+"[TITLE]常见错误[/TITLE][ERR]hummingbird是一个单词，不要写成humming bird。[/ERR]"
+]
+},
+
+"w828": {
+"word": "carve",
+"images": {
+"scene": ["infopic01/carve.webp"],
+"card": ["wordpic01/carve.webp"]
+},
+"richDetail": [
+"[TITLE]解释[/TITLE][DEF][EN]To carve means to cut shapes or pictures into something hard like wood or stone.[/EN][CN]雕刻；刻出[/CN][POS]v.[/POS][PH]/kɑːrv/[/PH][DU]People carved buildings into the rock.|（例句）人们在岩石中雕刻出建筑。[/DU][DU]He carved a design in wood.|他在木头上雕刻图案。[/DU][/DEF][IMG]infopic01/carve.webp[/IMG]",
+"[TITLE]常见用法[/TITLE][COLL][H]carve into rock|在岩石上雕刻[POS]v. phr.[/POS][/H][EX]The temple was carved into the cliff.|寺庙雕刻在悬崖上。[/EX][C]carve wood|雕刻木头[/C][/COLL]",
+"[TITLE]额外例句[/TITLE][EX]Artists carve statues from stone.|艺术家用石头雕刻雕像。[/EX][EX]He carved his name on the desk.|他在桌子上刻名字。[/EX]",
+"[TITLE]常见错误[/TITLE][ERR]carve不要拼写为carv。[/ERR]"
+]
+},
+
+"w829": {
+"word": "canyon",
+"images": {
+"scene": ["infopic01/canyon.webp"],
+"card": ["wordpic01/canyon.webp"]
+},
+"richDetail": [
+"[TITLE]解释[/TITLE][DEF][EN]A canyon is a deep valley with steep sides, often made by a river.[/EN][CN]峡谷[/CN][POS]n.[/POS][PH]/ˈkænjən/[/PH][DU]The river ran through the canyon.|（例句）河流穿过峡谷。[/DU][DU]The canyon walls were very high.|峡谷的墙壁非常高。[/DU][/DEF][IMG]infopic01/canyon.webp[/IMG]",
+"[TITLE]常见用法[/TITLE][COLL][H]deep canyon|深峡谷[POS]n. phr.[/POS][/H][EX]They explored the deep canyon.|他们探索深峡谷。[/EX][C]river canyon|河流峡谷[/C][/COLL]",
+"[TITLE]额外例句[/TITLE][EX]The canyon was formed by water.|峡谷由水形成。[/EX][EX]Birds flew above the canyon.|鸟在峡谷上方飞。[/EX]",
+"[TITLE]常见错误[/TITLE][ERR]canyon不要拼写为canyan。[/ERR]"
+]
+},
+
+"w830": {
+"word": "channel",
+"images": {
+"scene": ["infopic01/channel.webp"],
+"card": ["wordpic01/channel.webp"]
+},
+"richDetail": [
+"[TITLE]解释[/TITLE][DEF][EN]A channel is a narrow path of water between land areas.[/EN][CN]水道；海峡[/CN][POS]n.[/POS][PH]/ˈtʃænəl/[/PH][DU]The boat sailed through the channel.|（例句）船驶过水道。[/DU][DU]The river formed a small channel.|河流形成一条小水道。[/DU][/DEF][IMG]infopic01/channel.webp[/IMG]",
+"[TITLE]常见用法[/TITLE][COLL][H]water channel|水道[POS]n. phr.[/POS][/H][EX]Fish swam through the channel.|鱼在水道里游。[/EX][C]river channel|河道[/C][/COLL]",
+"[TITLE]额外例句[/TITLE][EX]The channel was narrow.|水道很窄。[/EX][EX]Ships travel through the channel.|船只穿过水道。[/EX]",
+"[TITLE]常见错误[/TITLE][ERR]channel不要拼写为chanel。[/ERR]"
+]
+},
+
+"w831": {
+"word": "clay",
+"images": {
+"scene": ["infopic01/clay.webp"],
+"card": ["wordpic01/clay.webp"]
+},
+"richDetail": [
+"[TITLE]解释[/TITLE][DEF][EN]Clay is soft earth that can be shaped when wet.[/EN][CN]黏土[/CN][POS]n.[/POS][PH]/kleɪ/[/PH][DU]The pot was made from clay.|（例句）这个壶是用黏土做的。[/DU][DU]Children shaped animals from clay.|孩子们用黏土做动物。[/DU][/DEF][IMG]infopic01/clay.webp[/IMG]",
+"[TITLE]常见用法[/TITLE][COLL][H]clay pot|陶罐[POS]n. phr.[/POS][/H][EX]The clay pot held water.|陶罐装着水。[/EX][C]wet clay|湿黏土[/C][/COLL]",
+"[TITLE]额外例句[/TITLE][EX]Clay becomes hard after baking.|黏土烧制后会变硬。[/EX][EX]Artists shape clay into bowls.|艺术家把黏土做成碗。[/EX]",
+"[TITLE]常见错误[/TITLE][ERR]clay不要拼写为clae。[/ERR]"
+]
+},
+
+"w832": {
+"word": "tomb",
+"images": {
+"scene": ["infopic01/tomb(1).webp"],
+"card": ["wordpic01/tomb.webp"]
+},
+"richDetail": [
+"[TITLE]解释[/TITLE][DEF][EN]A tomb is a place where a dead person is buried.[/EN][CN]坟墓；陵墓[/CN][POS]n.[/POS][PH]/tuːm/[/PH][DU]The king was buried in a tomb.|（例句）国王被埋在陵墓里。[/DU][DU]Ancient tombs are found in deserts.|沙漠里发现古代陵墓。[/DU][/DEF][IMG]infopic01/tomb(1).webp[/IMG]",
+"[TITLE]常见用法[/TITLE][COLL][H]ancient tomb|古墓[POS]n. phr.[/POS][/H][EX]They explored an ancient tomb.|他们探索了一座古墓。[/EX][C]stone tomb|石墓[/C][/COLL]",
+"[TITLE]额外例句[/TITLE][EX]The tomb was carved in rock.|陵墓刻在岩石中。[/EX][EX]The tomb held treasures.|陵墓里有宝藏。[/EX]",
+"[TITLE]常见错误[/TITLE][ERR]tomb中的b不发音。[/ERR]"
+]
+},
+
+"w833": {
+"word": "worn-down",
+"images": {
+"scene": ["infopic01/worn_down.webp"],
+"card": ["wordpic01/worn_down.webp"]
+},
+"richDetail": [
+"[TITLE]解释[/TITLE][DEF][EN]Worn-down means something that has become smooth or damaged from long use.[/EN][CN]磨损的；磨平的[/CN][POS]adj.[/POS][PH]/ˌwɔːrn ˈdaʊn/[/PH][DU]The steps were worn-down by many feet.|（例句）台阶被很多人踩得磨平了。[/DU][DU]The rock was worn-down by wind.|岩石被风磨损。[/DU][/DEF][IMG]infopic01/worn_down.webp[/IMG]",
+"[TITLE]常见用法[/TITLE][COLL][H]worn-down stone|磨损的石头[POS]n. phr.[/POS][/H][EX]The worn-down stone showed its age.|磨损的石头显示了年代。[/EX][C]worn-down steps|磨损的台阶[/C][/COLL]",
+"[TITLE]额外例句[/TITLE][EX]The road became worn-down over time.|道路随着时间磨损。[/EX][EX]Old shoes look worn-down.|旧鞋看起来很磨损。[/EX]",
+"[TITLE]常见错误[/TITLE][ERR]worn-down常作形容词，来自动词wear down。[/ERR]"
+]
+},
+"w834": {
+"word": "billy",
+"images": {
+"scene": ["infopic01/billy.webp"],
+"card": ["wordpic01/billy.webp"]
+},
+"richDetail": [
+"[TITLE]解释[/TITLE][DEF][EN]A billy is a male goat.[/EN][CN]公山羊[/CN][POS]n.[/POS][PH]/ˈbɪli/[/PH][DU]A billy goat walked onto the bridge.|（例句）一只公山羊走上了桥。[/DU][DU]The billy had horns.|这只公山羊有角。[/DU][/DEF][IMG]infopic01/billy.webp[/IMG]",
+"[TITLE]常见用法[/TITLE][COLL][H]billy goat|公山羊[POS]n. phr.[/POS][/H][EX]The billy goat climbed the hill.|公山羊爬上山丘。[/EX][C]young billy|年轻的公山羊[/C][/COLL]",
+"[TITLE]额外例句[/TITLE][EX]The billy goat ate grass.|公山羊吃草。[/EX][EX]A billy can be strong and stubborn.|公山羊可能很强壮也很倔。[/EX]",
+"[TITLE]常见错误[/TITLE][ERR]billy在这里指公山羊，不是人名 Billy。[/ERR]"
+]
+},
+
+"w835": {
+"word": "grumpy",
+"images": {
+"scene": ["infopic01/grumpy.webp"],
+"card": ["wordpic01/grumpy.webp"]
+},
+"richDetail": [
+"[TITLE]解释[/TITLE][DEF][EN]Grumpy means easily annoyed and not cheerful.[/EN][CN]脾气不好的；爱生气的[/CN][POS]adj.[/POS][PH]/ˈɡrʌmpi/[/PH][DU]The troll was grumpy under the bridge.|（例句）桥下的巨魔脾气很坏。[/DU][DU]He felt grumpy in the morning.|他早上脾气不好。[/DU][/DEF][IMG]infopic01/grumpy.webp[/IMG]",
+"[TITLE]常见用法[/TITLE][COLL][H]feel grumpy|感到烦躁[POS]adj. phr.[/POS][/H][EX]She feels grumpy when she is tired.|她累的时候会烦躁。[/EX][C]grumpy face|臭脸[/C][/COLL]",
+"[TITLE]额外例句[/TITLE][EX]The old cat looked grumpy.|那只老猫看起来很不高兴。[/EX][EX]Don't be grumpy with your friends.|不要对朋友发脾气。[/EX]",
+"[TITLE]常见错误[/TITLE][ERR]grumpy不要拼写为grumby。[/ERR]"
+]
+},
+
+"w836": {
+"word": "snort",
+"images": {
+"scene": ["infopic01/snort(1).webp"],
+"card": ["wordpic01/snort.webp"]
+},
+"richDetail": [
+"[TITLE]解释[/TITLE][DEF][EN]To snort means to make a loud sound by breathing air out through the nose.[/EN][CN]喷鼻息；哼鼻子[/CN][POS]v./n.[/POS][PH]/snɔːrt/[/PH][DU]The troll snorted loudly.|（例句）巨魔大声喷鼻息。[/DU][DU]The horse snorted in the field.|马在田野里喷鼻息。[/DU][/DEF][IMG]infopic01/snort(1).webp[/IMG]",
+"[TITLE]常见用法[/TITLE][COLL][H]snort loudly|大声喷鼻息[POS]v. phr.[/POS][/H][EX]The pig snorted loudly.|猪大声哼鼻子。[/EX][C]snort with laughter|嗤鼻发笑[/C][/COLL]",
+"[TITLE]额外例句[/TITLE][EX]He snorted when he was angry.|他生气时哼了一声。[/EX][EX]The bull gave a strong snort.|公牛发出重重的鼻息。[/EX]",
+"[TITLE]常见错误[/TITLE][ERR]snort不要拼写为snore；snore是“打呼噜”。[/ERR]"
+]
+},
+
+"w837": {
+"word": "gnaw",
+"images": {
+"scene": ["infopic01/gnaw(1).webp"],
+"card": ["wordpic01/gnaw.webp"]
+},
+"richDetail": [
+"[TITLE]解释[/TITLE][DEF][EN]To gnaw means to bite something again and again with the teeth.[/EN][CN]啃；咬[/CN][POS]v.[/POS][PH]/nɔː/[/PH][DU]The animal began to gnaw the wood.|（例句）这只动物开始啃木头。[/DU][DU]The dog gnawed a bone.|狗啃骨头。[/DU][/DEF][IMG]infopic01/gnaw(1).webp[/IMG]",
+"[TITLE]常见用法[/TITLE][COLL][H]gnaw on something|啃某物[POS]v. phr.[/POS][/H][EX]The puppy gnawed on the toy.|小狗啃玩具。[/EX][C]gnaw a bone|啃骨头[/C][/COLL]",
+"[TITLE]额外例句[/TITLE][EX]Mice gnaw through boxes.|老鼠能咬穿盒子。[/EX][EX]The rabbit gnawed the carrot.|兔子啃胡萝卜。[/EX]",
+"[TITLE]常见错误[/TITLE][ERR]gnaw中的g不发音。[/ERR]"
+]
+},
+
+"w838": {
+"word": "sleek",
+"images": {
+"scene": ["infopic01/sleek.webp"],
+"card": ["wordpic01/sleek.webp"]
+},
+"richDetail": [
+"[TITLE]解释[/TITLE][DEF][EN]Sleek means smooth, shiny, and looking neat.[/EN][CN]光滑发亮的；线条流畅的[/CN][POS]adj.[/POS][PH]/sliːk/[/PH][DU]The animal had a sleek body.|（例句）这种动物有光滑发亮的身体。[/DU][DU]The cat's fur looked sleek.|猫的毛看起来很顺滑。[/DU][/DEF][IMG]infopic01/sleek.webp[/IMG]",
+"[TITLE]常见用法[/TITLE][COLL][H]sleek body|流线型身体[POS]n. phr.[/POS][/H][EX]The fish has a sleek body for swimming.|鱼有适合游泳的流线型身体。[/EX][C]sleek fur|顺滑的毛[/C][/COLL]",
+"[TITLE]额外例句[/TITLE][EX]The sleek seal slid into the water.|光滑的海豹滑进水里。[/EX][EX]Her hair looked sleek and shiny.|她的头发看起来顺滑有光泽。[/EX]",
+"[TITLE]常见错误[/TITLE][ERR]sleek不要拼写为sleak。[/ERR]"
+]
+},
+
+"w839": {
+"word": "crayfish",
+"images": {
+"scene": ["infopic01/crayfish.webp"],
+"card": ["wordpic01/crayfish.webp"]
+},
+"richDetail": [
+"[TITLE]解释[/TITLE][DEF][EN]A crayfish is a small freshwater animal that looks like a tiny lobster.[/EN][CN]小龙虾；淡水螯虾[/CN][POS]n.[/POS][PH]/ˈkreɪfɪʃ/[/PH][DU]The crayfish hid under a rock.|（例句）小龙虾藏在石头下面。[/DU][DU]A crayfish has claws.|小龙虾有钳子。[/DU][/DEF][IMG]infopic01/crayfish.webp[/IMG]",
+"[TITLE]常见用法[/TITLE][COLL][H]freshwater crayfish|淡水小龙虾[POS]n. phr.[/POS][/H][EX]The freshwater crayfish lives in streams.|淡水小龙虾生活在溪流里。[/EX][C]crayfish claw|小龙虾钳子[/C][/COLL]",
+"[TITLE]额外例句[/TITLE][EX]The crayfish moved backward quickly.|小龙虾很快向后退。[/EX][EX]Children found a crayfish in the pond.|孩子们在池塘里发现了一只小龙虾。[/EX]",
+"[TITLE]常见错误[/TITLE][ERR]crayfish单复数常同形，不一定加-s。[/ERR]"
+]
+},
+
+"w840": {
+"word": "behavior",
+"images": {
+"scene": ["infopic01/behavior.webp"],
+"card": ["wordpic01/behavior.webp"]
+},
+"richDetail": [
+"[TITLE]解释[/TITLE][DEF][EN]Behavior means the way a person or animal acts.[/EN][CN]行为；举止[/CN][POS]n.[/POS][PH]/bɪˈheɪvjər/[/PH][DU]Scientists study worm behavior.|（例句）科学家研究蠕虫的行为。[/DU][DU]Good behavior is important in class.|在课堂上良好的行为很重要。[/DU][/DEF][IMG]infopic01/behavior.webp[/IMG]",
+"[TITLE]常见用法[/TITLE][COLL][H]animal behavior|动物行为[POS]n. phr.[/POS][/H][EX]The book is about animal behavior.|这本书讲动物行为。[/EX][C]good behavior|良好行为[/C][/COLL]",
+"[TITLE]额外例句[/TITLE][EX]His behavior was polite.|他的举止很有礼貌。[/EX][EX]Worm behavior can be interesting to watch.|观察蠕虫行为很有趣。[/EX]",
+"[TITLE]常见错误[/TITLE][ERR]美式拼写为behavior，英式拼写为behaviour。[/ERR]"
+]
+}
 
 
 
@@ -8707,5 +11171,3 @@
 
 
 }
-
-   

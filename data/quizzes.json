@@ -4195,6 +4195,293 @@
     "question": "If you’re not sure where to go, ______ a map.",
     "options": ["pursue", "lend", "deny", "consult"],
     "answer": 3
+  },
+  "q_w602": {
+    "type": "choice_text",
+    "wordIds": ["w602"],
+    "question": "Feeding the class fish is your ______.",
+    "options": ["confidence", "responsibility", "celebration", "distress"],
+    "answer": 1
+  },
+  "q_w603": {
+    "type": "choice_text",
+    "wordIds": ["w603"],
+    "question": "When we arrived, the festival was already ______.",
+    "options": ["in full swing", "in distress", "well-considered", "cozy"],
+    "answer": 0
+  },
+  "q_w604": {
+    "type": "choice_text",
+    "wordIds": ["w604"],
+    "question": "At the fair, we rode the ______ that spins in a big circle.",
+    "options": ["scrapbook", "shortcut", "go-round", "coatrack"],
+    "answer": 2
+  },
+  "q_w605": {
+    "type": "choice_text",
+    "wordIds": ["w605"],
+    "question": "The car’s front ______ got a scratch.",
+    "options": ["holster", "tasselled", "trench", "bumper"],
+    "answer": 3
+  },
+  "q_w606": {
+    "type": "choice_text",
+    "wordIds": ["w606"],
+    "question": "My mom adds ______ to salad because it smells a bit like candy.",
+    "options": ["kelp", "fennel", "moss", "cocoa"],
+    "answer": 1
+  },
+  "q_w607": {
+    "type": "choice_text",
+    "wordIds": ["w607"],
+    "question": "I ______ visit my grandma again.",
+    "options": ["yearn to", "go through", "in full swing", "stalk"],
+    "answer": 0
+  },
+  "q_w608": {
+    "type": "choice_text",
+    "wordIds": ["w608"],
+    "question": "I packed snacks and water, so I was ______ for the hike.",
+    "options": ["drowsy", "eager", "frazzled", "prepared"],
+    "answer": 3
+  },
+  "q_w609": {
+    "type": "choice_text",
+    "wordIds": ["w609"],
+    "question": "An ______ is a big bird that can run fast but cannot fly.",
+    "options": ["molar", "twerp", "emu", "kelp"],
+    "answer": 2
+  },
+  "q_w610": {
+    "type": "choice_text",
+    "wordIds": ["w610"],
+    "question": "She let out a loud ______ when the surprise popped out.",
+    "options": ["screech", "shriek", "ripple", "dent"],
+    "answer": 1
+  },
+  "q_w611": {
+    "type": "choice_text",
+    "wordIds": ["w611"],
+    "question": "The monster gave a ______ look that made everyone step back.",
+    "options": ["menacing", "delighted", "cozy", "tasselled"],
+    "answer": 0
+  },
+  "q_w612": {
+    "type": "choice_text",
+    "wordIds": ["w612"],
+    "question": "The loud siren was ______ and made people worry.",
+    "options": ["funky", "plump", "alarming", "royal"],
+    "answer": 2
+  },
+  "q_w613": {
+    "type": "choice_text",
+    "wordIds": ["w613"],
+    "question": "Don’t ______ your drawing—keep it flat.",
+    "options": ["unravel", "attach", "dent", "crumple"],
+    "answer": 3
+  },
+  "q_w614": {
+    "type": "choice_text",
+    "wordIds": ["w614"],
+    "question": "The ball hit the door and left a small ______.",
+    "options": ["wrinkle", "dent", "cavity", "ripple"],
+    "answer": 1
+  },
+  "q_w615": {
+    "type": "choice_text",
+    "wordIds": ["w615"],
+    "question": "The knight carried a long ______.",
+    "options": ["lance", "holster", "bumper", "go-round"],
+    "answer": 0
+  },
+  "q_w616": {
+    "type": "choice_text",
+    "wordIds": ["w616"],
+    "question": "A ______ cleared the snow from the road after the storm.",
+    "options": ["fertilizer", "slush", "snowplough", "coatrack"],
+    "answer": 2
+  },
+  "q_w617": {
+    "type": "choice_text",
+    "wordIds": ["w617"],
+    "question": "Farmers add ______ to help plants grow strong.",
+    "options": ["saliva", "moss", "gear", "fertilizer"],
+    "answer": 3
+  },
+  "q_w618": {
+    "type": "choice_text",
+    "wordIds": ["w618"],
+    "question": "After the long trip, I ______ home.",
+    "options": ["yearn to", "yearn for", "go through", "depend on"],
+    "answer": 1
+  },
+  "q_w619": {
+    "type": "choice_text",
+    "wordIds": ["w619"],
+    "question": "She made a ______ decision before speaking.",
+    "options": ["well-considered", "wobbly", "thunderous", "gooey"],
+    "answer": 0
+  },
+  "q_w620": {
+    "type": "choice_text",
+    "wordIds": ["w620"],
+    "question": "His belt was ______ with little threads hanging down.",
+    "options": ["royal", "plump", "tasselled", "lumpy"],
+    "answer": 2
+  },
+  "q_w621": {
+    "type": "choice_text",
+    "wordIds": ["w621"],
+    "question": "Winning the game gave her more ______.",
+    "options": ["responsibility", "distress", "celebration", "confidence"],
+    "answer": 3
+  },
+  "q_w622": {
+    "type": "choice_text",
+    "wordIds": ["w622"],
+    "question": "The magician bowed with a big ______.",
+    "options": ["flourish", "dent", "trench", "ripple"],
+    "answer": 0
+  },
+  "q_w623": {
+    "type": "choice_text",
+    "wordIds": ["w623"],
+    "question": "The judge will ______ the winner.",
+    "options": ["deny", "declare", "pursue", "consult"],
+    "answer": 1
+  },
+  "q_w624": {
+    "type": "choice_text",
+    "wordIds": ["w624"],
+    "question": "The train will ______ a long, dark tunnel.",
+    "options": ["curl up", "in full swing", "go through", "slosh"],
+    "answer": 2
+  },
+  "q_w625": {
+    "type": "choice_text",
+    "wordIds": ["w625"],
+    "question": "I was ______ to get your invitation!",
+    "options": ["frazzled", "menacing", "drowsy", "delighted"],
+    "answer": 3
+  },
+  "q_w626": {
+    "type": "choice_text",
+    "wordIds": ["w626"],
+    "question": "The fastest runner became the new ______.",
+    "options": ["paladin", "champion", "responsibility", "creation"],
+    "answer": 1
+  },
+  "q_w627": {
+    "type": "choice_text",
+    "wordIds": ["w627"],
+    "question": "We had a big ______ for the new year.",
+    "options": ["distress", "management", "celebration", "responsibility"],
+    "answer": 2
+  },
+  "q_w628": {
+    "type": "choice_text",
+    "wordIds": ["w628"],
+    "question": "In fantasy stories, a ______ is a brave hero or knight who protects people.",
+    "options": ["paladin", "twerp", "champion", "lance"],
+    "answer": 0
+  },
+  "q_w629": {
+    "type": "choice_text",
+    "wordIds": ["w629"],
+    "question": "The lost puppy was in ______ and needed help.",
+    "options": ["confidence", "celebration", "relief", "distress"],
+    "answer": 3
+  },
+  "q_w630": {
+    "type": "choice_text",
+    "wordIds": ["w630"],
+    "question": "He kept his walkie-talkie in a ______ on his belt.",
+    "options": ["coatrack", "scrapbook", "holster", "playpen"],
+    "answer": 2
+  },
+  "q_w631": {
+    "type": "choice_text",
+    "wordIds": ["w631"],
+    "question": "Please ______ the label to the bag.",
+    "options": ["unravel", "attach", "preen", "steer"],
+    "answer": 1
+  },
+  "q_w632": {
+    "type": "choice_text",
+    "wordIds": ["w632"],
+    "question": "Look at my Lego ______—I built a castle!",
+    "options": ["creation", "celebration", "trench", "cocoa"],
+    "answer": 0
+  },
+  "q_w633": {
+    "type": "choice_text",
+    "wordIds": ["w633"],
+    "question": "The cat will ______ the bird quietly in the garden.",
+    "options": ["trot", "pursue", "distract", "stalk"],
+    "answer": 3
+  },
+  "q_w634": {
+    "type": "choice_text",
+    "wordIds": ["w634"],
+    "question": "Don’t call people a ______. It’s not kind.",
+    "options": ["pal", "twerp", "champion", "companion"],
+    "answer": 1
+  },
+  "q_w635": {
+    "type": "choice_text",
+    "wordIds": ["w635"],
+    "question": "My gym bag smells ______ after practice.",
+    "options": ["salty", "cozy", "funky", "tasselled"],
+    "answer": 2
+  },
+  "q_w636": {
+    "type": "choice_text",
+    "wordIds": ["w636"],
+    "question": "A stone made a ______ on the pond.",
+    "options": ["ripple", "dent", "wrinkle", "trench"],
+    "answer": 0
+  },
+  "q_w637": {
+    "type": "choice_text",
+    "wordIds": ["w637"],
+    "question": "My hands began to ______ in the cold.",
+    "options": ["gurgle", "sprawl", "preen", "tremble"],
+    "answer": 3
+  },
+  "q_w638": {
+    "type": "choice_text",
+    "wordIds": ["w638"],
+    "question": "They gave the old room a ______ with new paint and new pillows.",
+    "options": ["creation", "celebration", "makeover", "coating"],
+    "answer": 2
+  },
+  "q_w639": {
+    "type": "choice_text",
+    "wordIds": ["w639"],
+    "question": "The bird used its beak to ______ its feathers.",
+    "options": ["snuggle", "preen", "unravel", "attach"],
+    "answer": 1
+  },
+  "q_w640": {
+    "type": "choice_text",
+    "wordIds": ["w640"],
+    "question": "He had a ______ face because he lost the game.",
+    "options": ["frowny", "delighted", "eager", "cozy"],
+    "answer": 0
+  },
+  "q_w641": {
+    "type": "choice_text",
+    "wordIds": ["w641"],
+    "question": "The kids were ______ to open the presents.",
+    "options": ["frazzled", "drowsy", "menacing", "eager"],
+    "answer": 3
+  },
+  "q_w642": {
+    "type": "choice_text",
+    "wordIds": ["w642"],
+    "question": "Can you ______ this knot in the string?",
+    "options": ["attach", "crumple", "unravel", "dent"],
+    "answer": 2
   }
 
 

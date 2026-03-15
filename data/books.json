@@ -452,7 +452,18 @@
       { "id": "book-c9", "name": "Chapter 9", "wordIds": ["w641","w642"], "quizIds": ["q_w641","q_w642"] }
      ]
 
-   }
+   },
+   {
+    "id": "RAZ-G",
+    "type": "RAZ分级",
+    "series": "RAZ分级阅读",
+    "title": "RAZ-G ",
+    "cover": "infopic01/razg.png",
+    
+    "chapters": [
+      
+    ]
+  }
 
 
 
