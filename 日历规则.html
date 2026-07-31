@@ -1,0 +1,564 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>Amazon ERP - 广告日历预算规则高保真原型</title>
+    <style>
+        :root {
+            --primary: #1890ff;
+            --primary-hover: #40a9ff;
+            --danger: #ff4d4f;
+            --border: #d9d9d9;
+            --bg-light: #fafafa;
+            --text-main: #262626;
+            --text-sub: #595959;
+            --text-light: #8c8c8c;
+            --weekend-bg: #e6f7ff;
+            --weekend-text: #1890ff;
+            --holiday-bg: #e6fffb;
+            --holiday-text: #13c2c2;
+            --custom-bg: #fff7e6;
+            --custom-text: #fa8c16;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+        }
+
+        body {
+            background-color: #f0f2f5;
+            padding: 24px;
+            color: var(--text-main);
+            font-size: 14px;
+        }
+
+        .container {
+            max-width: 1100px;
+            margin: 0 auto;
+            background: #fff;
+            padding: 24px;
+            border-radius: 6px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+        }
+
+        /* 基础信息样式 */
+        .section-title {
+            font-size: 15px;
+            font-weight: 600;
+            color: var(--text-main);
+            margin-bottom: 16px;
+            display: flex;
+            align-items: center;
+        }
+        .section-title::before {
+            content: "";
+            display: inline-block;
+            width: 4px;
+            height: 14px;
+            background: var(--primary);
+            margin-right: 8px;
+            border-radius: 2px;
+        }
+
+        .form-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 16px 24px;
+            margin-bottom: 24px;
+        }
+
+        .form-item {
+            display: flex;
+            align-items: center;
+        }
+
+        .form-label {
+            width: 90px;
+            text-align: right;
+            margin-right: 8px;
+            color: var(--text-sub);
+            white-space: nowrap;
+        }
+
+        .form-label.required::before {
+            content: "* ";
+            color: var(--danger);
+        }
+
+        .input, .select {
+            flex: 1;
+            height: 32px;
+            padding: 4px 11px;
+            border: 1px solid var(--border);
+            border-radius: 4px;
+            outline: none;
+            transition: all 0.3s;
+            background: #fff;
+        }
+
+        .input:focus, .select:focus {
+            border-color: var(--primary-hover);
+            box-shadow: 0 0 0 2px rgba(24, 144, 255, 0.2);
+        }
+
+        .radio-group, .checkbox-group {
+            display: flex;
+            gap: 16px;
+            align-items: center;
+        }
+
+        .radio-label, .checkbox-label {
+            display: flex;
+            align-items: center;
+            gap: 6px;
+            cursor: pointer;
+            color: var(--text-sub);
+        }
+
+        .switch {
+            position: relative;
+            width: 44px;
+            height: 22px;
+            background: var(--primary);
+            border-radius: 11px;
+            cursor: pointer;
+        }
+        .switch::after {
+            content: "";
+            position: absolute;
+            top: 2px;
+            left: 24px;
+            width: 18px;
+            height: 18px;
+            background: #fff;
+            border-radius: 50%;
+            transition: all 0.2s;
+        }
+
+        /* 核心逻辑区布局 */
+        .rule-workspace {
+            display: grid;
+            grid-template-columns: 1fr 320px;
+            gap: 24px;
+            padding-top: 16px;
+            border-top: 1px dashed var(--border);
+        }
+
+        /* 规则配置区 */
+        .rule-config-panel {
+            display: flex;
+            flex-direction: column;
+            gap: 16px;
+        }
+
+        .card {
+            background: var(--bg-light);
+            border: 1px solid #f0f0f0;
+            border-radius: 6px;
+            padding: 16px;
+        }
+
+        .card-header {
+            font-weight: 600;
+            margin-bottom: 12px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            color: var(--text-main);
+        }
+
+        .card-header .tag {
+            font-size: 12px;
+            font-weight: normal;
+            color: var(--text-light);
+        }
+
+        .rule-row {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            margin-bottom: 12px;
+        }
+        .rule-row:last-child {
+            margin-bottom: 0;
+        }
+
+        .rule-name {
+            width: 90px;
+            font-weight: 500;
+        }
+
+        .input-group {
+            display: flex;
+            align-items: center;
+        }
+
+        .input-group .select {
+            border-top-right-radius: 0;
+            border-bottom-right-radius: 0;
+            border-right: none;
+            width: 130px;
+        }
+
+        .input-group .input {
+            border-top-left-radius: 0;
+            border-bottom-left-radius: 0;
+            width: 80px;
+            text-align: right;
+        }
+
+        .unit {
+            padding: 0 8px;
+            background: #f5f5f5;
+            border: 1px solid var(--border);
+            border-left: none;
+            height: 32px;
+            line-height: 30px;
+            border-top-right-radius: 4px;
+            border-bottom-right-radius: 4px;
+            color: var(--text-light);
+        }
+
+        .date-picker-input {
+            width: 200px;
+            cursor: pointer;
+            background: #fff;
+        }
+
+        .btn-add {
+            display: inline-flex;
+            align-items: center;
+            gap: 4px;
+            color: var(--primary);
+            background: #fff;
+            border: 1px dashed var(--primary);
+            padding: 6px 16px;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 13px;
+            transition: all 0.2s;
+            justify-content: center;
+            margin-top: 4px;
+        }
+        .btn-add:hover {
+            background: var(--weekend-bg);
+        }
+
+        .btn-delete {
+            color: var(--danger);
+            cursor: pointer;
+            padding: 4px 8px;
+            border: none;
+            background: transparent;
+            font-size: 14px;
+            opacity: 0.7;
+        }
+        .btn-delete:hover {
+            opacity: 1;
+        }
+
+        .priority-tip {
+            background: #e6f7ff;
+            border: 1px solid #91d5ff;
+            border-radius: 4px;
+            padding: 10px 12px;
+            font-size: 12px;
+            color: #0050b3;
+            line-height: 1.6;
+        }
+
+        /* 日历控件区 */
+        .calendar-panel {
+            border: 1px solid var(--border);
+            border-radius: 6px;
+            padding: 12px;
+            background: #fff;
+        }
+
+        .calendar-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 12px;
+            font-weight: 600;
+        }
+
+        .calendar-grid {
+            display: grid;
+            grid-template-columns: repeat(7, 1fr);
+            gap: 2px;
+            text-align: center;
+        }
+
+        .cal-head {
+            font-size: 12px;
+            color: var(--text-light);
+            padding: 6px 0;
+        }
+
+        .cal-day {
+            height: 32px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 12px;
+            border-radius: 4px;
+            cursor: default;
+            position: relative;
+        }
+
+        .cal-day.weekend {
+            background: var(--weekend-bg);
+            color: var(--weekend-text);
+        }
+
+        .cal-day.holiday {
+            background: var(--holiday-bg);
+            color: var(--holiday-text);
+        }
+
+        .cal-day.custom-rule {
+            background: var(--custom-bg);
+            color: var(--custom-text);
+            font-weight: bold;
+            border: 1px solid #ffe58f;
+        }
+
+        .calendar-legend {
+            display: flex;
+            justify-content: space-around;
+            margin-top: 12px;
+            padding-top: 8px;
+            border-top: 1px solid #f0f0f0;
+            font-size: 11px;
+        }
+
+        .legend-item {
+            display: flex;
+            align-items: center;
+            gap: 4px;
+        }
+
+        .dot {
+            width: 8px;
+            height: 8px;
+            border-radius: 50%;
+        }
+
+        /* 底部按钮 */
+        .footer-actions {
+            margin-top: 24px;
+            display: flex;
+            justify-content: flex-end;
+            gap: 12px;
+            padding-top: 16px;
+            border-top: 1px solid var(--border);
+        }
+
+        .btn {
+            height: 32px;
+            padding: 0 20px;
+            border-radius: 4px;
+            border: 1px solid var(--border);
+            background: #fff;
+            cursor: pointer;
+            font-size: 14px;
+        }
+
+        .btn-primary {
+            background: var(--primary);
+            border-color: var(--primary);
+            color: #fff;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <!-- 基础信息区 -->
+    <div class="section-title">基础信息</div>
+    <div class="form-grid">
+        <div class="form-item">
+            <label class="form-label required">规则名称</label>
+            <input type="text" class="input" value="Prime Day 阶段预算调优规则">
+        </div>
+        <div class="form-item">
+            <label class="form-label required">渠道</label>
+            <select class="select"><option>AMAZON</option></select>
+        </div>
+        <div class="form-item">
+            <label class="form-label">状态</label>
+            <div class="switch"></div>
+        </div>
+        <div class="form-item">
+            <label class="form-label required">生效日期</label>
+            <div class="radio-group">
+                <label class="radio-label"><input type="radio" name="eff" checked> 任何日期范围</label>
+                <label class="radio-label"><input type="radio" name="eff"> 指定日期范围</label>
+            </div>
+        </div>
+        <div class="form-item">
+            <label class="form-label">国家</label>
+            <select class="select"><option>美国 (US)</option></select>
+        </div>
+        <div class="form-item">
+            <label class="form-label">店铺</label>
+            <select class="select"><option>旗舰店-US</option></select>
+        </div>
+        <div class="form-item">
+            <label class="form-label required">规则类型</label>
+            <select class="select"><option>日历预算规则</option></select>
+        </div>
+        <div class="form-item">
+            <label class="form-label required">应用对象</label>
+            <select class="select"><option>Portfolio</option></select>
+        </div>
+        <div class="form-item" style="grid-column: span 1;">
+            <div class="checkbox-group">
+                <label class="checkbox-label"><input type="checkbox" checked> 自动排除已暂停&已归档活动</label>
+            </div>
+        </div>
+    </div>
+
+    <!-- 规则逻辑区 -->
+    <div class="section-title">规则设置</div>
+    <div class="rule-workspace">
+        
+        <!-- 左侧：规则配置Panel -->
+        <div class="rule-config-panel">
+            
+            <!-- 模块 1：常规周期规则 -->
+            <div class="card">
+                <div class="card-header">
+                    <span>1. 常规周期规则</span>
+                    <span class="tag">基础预算逻辑</span>
+                </div>
+                <div class="rule-row">
+                    <label class="checkbox-label"><input type="checkbox" checked></label>
+                    <span class="rule-name">周末与节假日</span>
+                    <div class="input-group">
+                        <select class="select">
+                            <option>在原预算上减少</option>
+                            <option>在原预算上增加</option>
+                            <option>固定调整为</option>
+                        </select>
+                        <input type="text" class="input" value="10">
+                        <span class="unit">%</span>
+                    </div>
+                </div>
+                <div class="rule-row">
+                    <label class="checkbox-label"><input type="checkbox" checked></label>
+                    <span class="rule-name">工作日</span>
+                    <div class="input-group">
+                        <select class="select">
+                            <option>在原预算上增加</option>
+                            <option>在原预算上减少</option>
+                            <option>固定调整为</option>
+                        </select>
+                        <input type="text" class="input" value="20">
+                        <span class="unit">%</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 模块 2：特殊指定日期规则（多条） -->
+            <div class="card">
+                <div class="card-header">
+                    <span>2. 特殊指定日期规则</span>
+                    <span class="tag">大促/活动专属（支持多条）</span>
+                </div>
+                
+                <!-- 规则条目 1 -->
+                <div class="rule-row">
+                    <label class="checkbox-label"><input type="checkbox" checked></label>
+                    <input type="text" class="input date-picker-input" value="2026-07-15 ~ 2026-07-16" title="点击选择日期范围">
+                    <div class="input-group">
+                        <select class="select">
+                            <option>在原预算上增加</option>
+                            <option>在原预算上减少</option>
+                            <option>固定调整为</option>
+                        </select>
+                        <input type="text" class="input" value="150">
+                        <span class="unit">%</span>
+                    </div>
+                    <button class="btn-delete" title="删除此规则">🗑️</button>
+                </div>
+
+                <!-- 规则条目 2 -->
+                <div class="rule-row">
+                    <label class="checkbox-label"><input type="checkbox" checked></label>
+                    <input type="text" class="input date-picker-input" value="2026-11-27 ~ 2026-11-30" title="点击选择日期范围">
+                    <div class="input-group">
+                        <select class="select">
+                            <option>在原预算上增加</option>
+                            <option>在原预算上减少</option>
+                            <option>固定调整为</option>
+                        </select>
+                        <input type="text" class="input" value="200">
+                        <span class="unit">%</span>
+                    </div>
+                    <button class="btn-delete" title="删除此规则">🗑️</button>
+                </div>
+
+                <!-- 动态新增按钮 -->
+                <button class="btn-add">+ 添加指定日期规则</button>
+            </div>
+
+            <!-- 优先级提示说明 -->
+            <div class="priority-tip">
+                <strong>📌 执行优先级与冲突逻辑：</strong><br>
+                1. 优先层级：<strong>特殊指定日期规则</strong> &gt; <strong>周末与节假日</strong> &gt; <strong>工作日</strong>。<br>
+                2. 当多条“指定日期规则”发生区间重叠时，系统默认优先执行<strong>列表中靠下（后创建）</strong>的规则。
+            </div>
+
+        </div>
+
+        <!-- 右侧：日历预览Panel -->
+        <div class="calendar-panel">
+            <div class="calendar-header">
+                <span>&lt;</span>
+                <span>2026 - 07</span>
+                <span>&gt;</span>
+            </div>
+            <div class="calendar-grid">
+                <div class="cal-head">日</div>
+                <div class="cal-head">一</div>
+                <div class="cal-head">二</div>
+                <div class="cal-head">三</div>
+                <div class="cal-head">四</div>
+                <div class="cal-head">五</div>
+                <div class="cal-head">六</div>
+
+                <!-- 日历数据示例 -->
+                <div class="cal-day">28</div><div class="cal-day">29</div><div class="cal-day">30</div>
+                <div class="cal-day">1</div><div class="cal-day">2</div><div class="cal-day">3</div><div class="cal-day weekend">4</div>
+                <div class="cal-day weekend">5</div><div class="cal-day">6</div><div class="cal-day">7</div><div class="cal-day">8</div><div class="cal-day">9</div><div class="cal-day holiday">10</div><div class="cal-day weekend">11</div>
+                <div class="cal-day weekend">12</div><div class="cal-day">13</div><div class="cal-day">14</div>
+                <!-- 预设的指定日期高亮 -->
+                <div class="cal-day custom-rule" title="Prime Day: 原预算+150%">15</div>
+                <div class="cal-day custom-rule" title="Prime Day: 原预算+150%">16</div>
+                <div class="cal-day">17</div><div class="cal-day weekend">18</div>
+                <div class="cal-day weekend">19</div><div class="cal-day">20</div><div class="cal-day">21</div><div class="cal-day">22</div><div class="cal-day">23</div><div class="cal-day">24</div><div class="cal-day weekend">25</div>
+                <div class="cal-day weekend">26</div><div class="cal-day">27</div><div class="cal-day">28</div><div class="cal-day">29</div><div class="cal-day">30</div><div class="cal-day">31</div><div class="cal-day weekend">1</div>
+            </div>
+            <div class="calendar-legend">
+                <div class="legend-item"><div class="dot" style="background:var(--weekend-text)"></div>周末</div>
+                <div class="legend-item"><div class="dot" style="background:var(--holiday-text)"></div>节假日</div>
+                <div class="legend-item"><div class="dot" style="background:var(--custom-text)"></div>指定日期</div>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- 底部操作按钮 -->
+    <div class="footer-actions">
+        <button class="btn">取消</button>
+        <button class="btn btn-primary">确定并保存</button>
+    </div>
+</div>
+
+</body>
+</html>
