@@ -1,4 +1,4 @@
-<!-- ============ 通用批注层 v13 · 粘贴到任意 HTML 的 </body> 前即可 ============ -->
+<!-- ============ 通用批注层 v15 · 粘贴到任意 HTML 的 </body> 前即可 ============ -->
 <script id="anno-data" type="application/json">[]</script>
 <style id="anno-style">
   .anno-hover{outline:2px dashed #ff7a45 !important;outline-offset:1px;cursor:crosshair !important;transition:none !important;animation:none !important}
@@ -28,6 +28,9 @@
   .anno-pop .ph .tt{flex:1;min-width:0;color:#8a9099;font-size:12px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
   .anno-pop .ph .ic{border:0;background:transparent;font-size:15px;line-height:1;cursor:pointer;color:#8a9099;padding:2px 4px}
   .anno-pop .ph .ic:hover{color:#1f2329}
+  .anno-pop .ph .ic.on{color:#ff7a45}
+  .anno-pop .ph .ic.pn{transform:rotate(0deg)}
+  .anno-pop .ph .ic.pn.on{transform:rotate(-30deg)}
   .anno-dots{display:flex;gap:5px;align-items:center;padding:7px 10px 0}
   .anno-dots em{font-style:normal;color:#8a9099;font-size:12px;margin-right:2px}
   .anno-dots>i{width:16px;height:16px;border-radius:50%;cursor:pointer;box-shadow:inset 0 0 0 1px rgba(0,0,0,.12);outline:2px solid transparent;outline-offset:1px;transition:outline-color .12s}
@@ -188,6 +191,7 @@
   var W0=560,H0=460;
   var mode=false, showList=true, showBox=!RO, sel=null, pop=null, over=null, EDCARET=null;
   var seq=data.reduce(function(m,a){return Math.max(m,a.n||0)},0), pins=[], boxes=[];
+  var PINNED={on:false,l:0,t:0,w:560,h:460};        /* 固定弹窗位置与大小（两种模式通用） */
 
   var root=document.createElement('div'); root.id='anno-root'; document.body.appendChild(root);
   var bar=document.createElement('div'); bar.className='anno-bar pe';
@@ -389,6 +393,7 @@
     if(pop) pop.remove(); hideIH(); hideTBar();
     pop=document.createElement('div'); pop.className='anno-pop pe';
     var head='<div class="ph"><span class="no"></span><span class="tt"></span>'+
+             '<button class="ic pn" title="固定弹窗的位置和大小">📌</button>'+
              '<button class="ic mx" title="最大化 / 还原">⛶</button><button class="ic x" title="关闭">×</button></div>';
     pop.innerHTML = RO
       ? head+'<div class="anno-view"></div>'+
@@ -400,11 +405,16 @@
         '<div class="anno-rz"></div>';
     var no=pop.querySelector('.no'); no.textContent=a.n; paint(no,a.color||PINS[0]);
     pop.querySelector('.tt').textContent=a.label||'';
-    var w,h;
-    if(RO){ var sz=autoSize(a.html); w=sz.w; h=sz.h } else { w=a.w||W0; h=a.h||H0 }
+    var w,h,fixed=PINNED.on;
+    if(fixed){ w=PINNED.w; h=PINNED.h }
+    else if(RO){ var sz=autoSize(a.html); w=sz.w; h=sz.h }
+    else { w=a.w||W0; h=a.h||H0 }
     pop.style.width=w+'px'; pop.style.height=h+'px';
-    pop.style.left=Math.min(Math.max(8,x+18),Math.max(8,innerWidth-w-8))+'px';
-    pop.style.top=Math.min(Math.max(8,y-40),Math.max(8,innerHeight-h-8))+'px';
+    if(fixed){ pop.style.left=PINNED.l+'px'; pop.style.top=PINNED.t+'px' }
+    else{
+      pop.style.left=Math.min(Math.max(8,x+18),Math.max(8,innerWidth-w-8))+'px';
+      pop.style.top=Math.min(Math.max(8,y-40),Math.max(8,innerHeight-h-8))+'px';
+    }
     pop.onmousedown=function(e){ e.stopPropagation() };
     pop.onclick=function(e){ e.stopPropagation() };
     root.appendChild(pop); sel=a.id; draw();
@@ -414,10 +424,11 @@
       if(pop.classList.contains('max')) return;
       pop.style.left=Math.max(0,Math.min(innerWidth-80,s.l+dx))+'px';
       pop.style.top=Math.max(0,Math.min(innerHeight-40,s.t+dy))+'px';
+      syncPinned();
     },function(){ return {l:pop.offsetLeft,t:pop.offsetTop} });
     drag(pop.querySelector('.anno-rz'),function(dx,dy,s){
       pop.style.width=Math.max(320,s.w+dx)+'px'; pop.style.height=Math.max(220,s.h+dy)+'px';
-      pop.dataset.sized='1';
+      pop.dataset.sized='1'; syncPinned();
       if(!RO){ a.w=pop.offsetWidth; a.h=pop.offsetHeight; save2() }
     },function(){ return {w:pop.offsetWidth,h:pop.offsetHeight} });
     function toggleMax(){
@@ -431,6 +442,23 @@
         pop.style.width=(innerWidth-32)+'px'; pop.style.height=(innerHeight-32)+'px';
       }
       if(tCell) posTBar();
+      syncPinned();
+    }
+    function syncPinned(force){
+      if(!PINNED.on&&!force) return;
+      PINNED.l=pop.offsetLeft; PINNED.t=pop.offsetTop;
+      PINNED.w=pop.offsetWidth; PINNED.h=pop.offsetHeight;
+    }
+    {
+      var pnb=pop.querySelector('.pn');
+      pnb.classList.toggle('on',PINNED.on);
+      pnb.title=PINNED.on?'已固定，点击取消':'固定弹窗的位置和大小';
+      pnb.onclick=function(){
+        PINNED.on=!PINNED.on;
+        if(PINNED.on) syncPinned(true);
+        pnb.classList.toggle('on',PINNED.on);
+        pnb.title=PINNED.on?'已固定，点击取消':'固定弹窗的位置和大小';
+      };
     }
     pop.querySelector('.mx').onclick=toggleMax;
     ph.addEventListener('dblclick',toggleMax);
@@ -442,7 +470,7 @@
       v.addEventListener('click',function(e){ if(e.target.tagName==='IMG') lightbox(e.target.src) });
       Array.prototype.forEach.call(v.querySelectorAll('img'),function(im){
         im.addEventListener('load',function(){
-          if(pop.dataset.sized||pop.classList.contains('max')) return;
+          if(pop.dataset.sized||pop.classList.contains('max')||PINNED.on) return;
           var s2=autoSize(a.html);
           pop.style.width=s2.w+'px'; pop.style.height=s2.h+'px';
           pop.style.left=Math.min(pop.offsetLeft,Math.max(8,innerWidth-s2.w-8))+'px';
@@ -958,4 +986,4 @@
   render();
 })();
 </script>
-<!-- ============ 批注层 v13 结束 ============ -->
+<!-- ============ 批注层 v15 结束 ============ -->
