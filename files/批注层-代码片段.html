@@ -1,4 +1,4 @@
-<!-- ============ 通用批注层 v15 · 粘贴到任意 HTML 的 </body> 前即可 ============ -->
+<!-- ============ 通用批注层 v16 · 粘贴到任意 HTML 的 </body> 前即可 ============ -->
 <script id="anno-data" type="application/json">[]</script>
 <style id="anno-style">
   .anno-hover{outline:2px dashed #ff7a45 !important;outline-offset:1px;cursor:crosshair !important;transition:none !important;animation:none !important}
@@ -184,6 +184,7 @@
     a.rx=Math.max(-1.2,Math.min(2.2,+a.rx||0.5));
     a.ry=Math.max(-1.2,Math.min(2.2,+a.ry||0.5));
     a.w=Math.max(320,+a.w||560); a.h=Math.max(220,+a.h||460);
+    if(!Array.isArray(a.trail)) a.trail=[];
   });
   seq=data.length;
   function group(n){ for(var i=0;i<PALETTES.length;i++) if(PALETTES[i].n===n) return PALETTES[i]; return PALETTES[0] }
@@ -257,6 +258,35 @@
       p=p.parentElement;
     }
     return r;
+  }
+  /* 记录用户在原型上的点击足迹，供定位时重放，露出隐藏内容 */
+  var TRAIL=[];
+  document.addEventListener('click',function(e){
+    if(mode||RO||root.contains(e.target)||!e.isTrusted) return;
+    var n=e.target;
+    var t=(n.closest&&n.closest('button,a,[onclick],[role=button],[data-target],[data-tab],label,li,tr,th,.tab,.btn'))||n;
+    var sl=pathOf(t);
+    if(!TRAIL.length||TRAIL[TRAIL.length-1]!==sl) TRAIL.push(sl);
+    if(TRAIL.length>10) TRAIL.shift();
+  },true);
+  function shown(el){
+    if(!el||!el.getClientRects||!el.getClientRects().length) return false;
+    var st=getComputedStyle(el);
+    return st.visibility!=='hidden'&&parseFloat(st.opacity||1)>0.05;
+  }
+  function reveal(a,done){                       /* 目标被隐藏时，按足迹重放点击把它点出来 */
+    var el=resolve(a);
+    if(el&&shown(el)) return done(el);
+    var steps=(a.trail||[]).slice(), i=0;
+    (function step(){
+      var cur=resolve(a);
+      if(cur&&shown(cur)) return done(cur);
+      if(i>=steps.length) return done(cur||null);
+      var t=null; try{ t=document.querySelector(steps[i]) }catch(e){}
+      i++;
+      if(t&&shown(t)&&!root.contains(t)){ try{ t.click() }catch(e){} setTimeout(step,180) }
+      else step();
+    })();
   }
   function save(){ STORE.textContent=serialize(); render() }
   function save2(){ STORE.textContent=serialize() }
@@ -369,13 +399,16 @@
   }
   function focusOn(a){
     if(over) closeOver();
-    var el=resolve(a);
-    if(el){ try{ el.scrollIntoView({block:'center',behavior:'smooth'}) }catch(e){} }
-    sel=a.id; draw();
-    setTimeout(function(){
-      var r=rectOf(a); if(!r) return;
-      openPop(a, r.left+r.width*(a.rx||0), r.top+r.height*(a.ry||0));
-    },420);
+    reveal(a,function(el){
+      if(el){ try{ el.scrollIntoView({block:'center',behavior:'smooth'}) }catch(e){} }
+      sel=a.id; draw();
+      setTimeout(function(){
+        draw();
+        var r=rectOf(a);
+        if(r) openPop(a, r.left+r.width*(a.rx||0), r.top+r.height*(a.ry||0));
+        else openPop(a, innerWidth/2, innerHeight/2);
+      },420);
+    });
   }
   function closePop(){ if(pop){ pop.remove(); pop=null } hideIH(); hideTBar(); EDCARET=null; sel=null; draw() }
 
@@ -882,7 +915,7 @@
   function newId(){ return 'a'+Date.now().toString(36)+Math.random().toString(36).slice(2,6) }
   function pickElement(el,cx,cy){
     var r=el.getBoundingClientRect();
-    var a={ id:newId(), n:++seq, sel:pathOf(el), label:labelOf(el), html:'', color:PREF.c, w:W0, h:H0,
+    var a={ id:newId(), n:++seq, sel:pathOf(el), label:labelOf(el), html:'', color:PREF.c, w:W0, h:H0, trail:TRAIL.slice(),
             rx:r.width?(cx-r.left)/r.width:.5, ry:r.height?(cy-r.top)/r.height:.5 };
     data.push(a); save(); openPop(a,cx,cy);
   }
@@ -911,7 +944,7 @@
     });
     var a={ id:newId(), n:++seq, type:'area', sel:pathOf(host),
             label:'框选区域 · '+cnt+' 个元素'+(txt.trim()?' 「'+txt.trim().slice(0,18)+'」':''),
-            html:'', color:PREF.c, w:W0, h:H0,
+            html:'', color:PREF.c, w:W0, h:H0, trail:TRAIL.slice(),
             ax:(l-hr.left)/hw, ay:(t-hr.top)/hh, aw:w/hw, ah:h/hh, rx:1, ry:0 };
     data.push(a); save(); openPop(a,l+w,t);
   }
@@ -986,4 +1019,4 @@
   render();
 })();
 </script>
-<!-- ============ 批注层 v15 结束 ============ -->
+<!-- ============ 批注层 v16 结束 ============ -->
