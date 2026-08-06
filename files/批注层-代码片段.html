@@ -1,4 +1,4 @@
-<!-- ============ 通用批注层 v16 · 粘贴到任意 HTML 的 </body> 前即可 ============ -->
+<!-- ============ 通用批注层 v17 · 粘贴到任意 HTML 的 </body> 前即可 ============ -->
 <script id="anno-data" type="application/json">[]</script>
 <style id="anno-style">
   .anno-hover{outline:2px dashed #ff7a45 !important;outline-offset:1px;cursor:crosshair !important;transition:none !important;animation:none !important}
@@ -288,6 +288,19 @@
       else step();
     })();
   }
+  /* 被弹窗/抽屉/遮罩盖住时，底层批注不再浮在上面 */
+  function hitOK(el,x,y){
+    if(x<0||y<0||x>innerWidth||y>innerHeight) return false;
+    var st=document.elementsFromPoint?document.elementsFromPoint(x,y):[document.elementFromPoint(x,y)];
+    for(var i=0;i<st.length;i++){
+      var n=st[i];
+      if(!n||root.contains(n)) continue;
+      if(n===document.documentElement||n===document.body) return true;
+      return n===el||el.contains(n)||n.contains(el);
+    }
+    return true;
+  }
+  function covered(el,px,py,cx,cy){ return !hitOK(el,px,py)&&!hitOK(el,cx,cy) }
   function save(){ STORE.textContent=serialize(); render() }
   function save2(){ STORE.textContent=serialize() }
   function paint(el,color){ el.style.background=color; el.style.color=dark(color)?'#fff':'#1f2329' }
@@ -356,13 +369,18 @@
       var vl=Math.max(r.left,c.l), vt=Math.max(r.top,c.t), vr=Math.min(r.right,c.r), vb=Math.min(r.bottom,c.b);
       if(vr<=vl||vb<=vt) return;
       var cur=(sel===a.id);
+      var bx=null;
       if(showBox||cur){
-        var bx=document.createElement('div'); bx.className='anno-box'+(cur?' cur':'');
+        bx=document.createElement('div'); bx.className='anno-box'+(cur?' cur':'');
         bx.style.cssText+='left:'+vl+'px;top:'+vt+'px;width:'+(vr-vl)+'px;height:'+(vb-vt)+'px;border-color:'+col;
         root.appendChild(bx); boxes.push(bx);
       }
       var x=r.left+r.width*(a.rx||0), y=r.top+r.height*(a.ry||0);
       x=Math.min(Math.max(x,c.l+11),c.r-11); y=Math.min(Math.max(y,c.t+11),c.b-11);
+      if(covered(el,x,y,(vl+vr)/2,(vt+vb)/2)){
+        if(boxes.length&&boxes[boxes.length-1]===bx) { bx.remove(); boxes.pop() }
+        return;
+      }
       var p=document.createElement('div'); p.className='anno-pin pe'+(sel===a.id?' sel':'');
       p.textContent=a.n; paint(p,col); p.style.left=x+'px'; p.style.top=y+'px';
       p.title=(RO?'':'拖动可挪开，避免遮挡元素\n')+plain(a.html);
@@ -1019,4 +1037,4 @@
   render();
 })();
 </script>
-<!-- ============ 批注层 v16 结束 ============ -->
+<!-- ============ 批注层 v17 结束 ============ -->
