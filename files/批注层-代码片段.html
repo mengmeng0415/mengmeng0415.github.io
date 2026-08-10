@@ -1,4 +1,4 @@
-<!-- ============ 通用批注层 v17 · 粘贴到任意 HTML 的 </body> 前即可 ============ -->
+<!-- ============ 通用批注层 v18 · 粘贴到任意 HTML 的 </body> 前即可 ============ -->
 <script id="anno-data" type="application/json">[]</script>
 <style id="anno-style">
   .anno-hover{outline:2px dashed #ff7a45 !important;outline-offset:1px;cursor:crosshair !important;transition:none !important;animation:none !important}
@@ -8,6 +8,10 @@
   #anno-root .pe{pointer-events:auto}
   .anno-box{position:fixed;border:1.5px dashed;border-radius:3px;pointer-events:none;opacity:.85;z-index:1}
   .anno-box.cur{border-width:2.5px;opacity:1}
+  .anno-box.edit{pointer-events:auto;cursor:move;background:rgba(255,122,69,.08);border-style:solid;border-width:2px;z-index:11}
+  .anno-box.edit .h{position:absolute;right:-6px;bottom:-6px;width:12px;height:12px;background:#fff;border:2px solid #ff7a45;border-radius:2px;cursor:nwse-resize}
+  .anno-box.edit .t{position:absolute;left:0;top:-22px;background:#ff7a45;color:#fff;font-size:11px;padding:2px 7px;border-radius:4px;white-space:nowrap}
+  #anno-root.overview .anno-pin,#anno-root.overview .anno-box{display:none !important}
   .anno-mq{position:fixed;border:2px dashed #ff7a45;background:rgba(255,122,69,.12);pointer-events:none;z-index:5;border-radius:3px}
   .anno-pin{position:fixed;min-width:22px;height:22px;padding:0 5px;border-radius:11px;color:#fff;font-size:12px;font-weight:700;display:grid;place-items:center;box-shadow:0 2px 6px rgba(0,0,0,.32);cursor:pointer;transform:translate(-50%,-50%);border:2px solid #fff;z-index:2;text-shadow:0 1px 2px rgba(0,0,0,.35)}
   .anno-pin.sel{transform:translate(-50%,-50%) scale(1.18)}
@@ -112,6 +116,9 @@
   .anno-nav button{border:1px solid #e5e8ee;background:#fff;border-radius:6px;padding:5px 12px;font:inherit;cursor:pointer;color:#4b5563}
   .anno-nav button:hover{background:#f2f4f7;color:#1f2329}
   .anno-nav .idx{flex:1;text-align:center;color:#8a9099;font-size:12px}
+  .anno-nav .zm{display:flex;align-items:center;gap:2px}
+  .anno-nav .zm button{padding:4px 9px;font-size:14px;line-height:1}
+  .anno-nav .zm span{font-size:12px;color:#8a9099;min-width:38px;text-align:center;cursor:pointer}
   .anno-view img,.anno-card .bd img{max-width:100%;cursor:zoom-in;border-radius:3px}
   .anno-view h1,.anno-card .bd h1{font-size:24px;margin:8px 0}
   .anno-view h2,.anno-card .bd h2{font-size:20px;margin:8px 0}
@@ -192,12 +199,13 @@
   var W0=560,H0=460;
   var mode=false, showList=true, showBox=!RO, sel=null, pop=null, over=null, EDCARET=null;
   var seq=data.reduce(function(m,a){return Math.max(m,a.n||0)},0), pins=[], boxes=[];
-  var PINNED={on:false,l:0,t:0,w:560,h:460};        /* 固定弹窗位置与大小（两种模式通用） */
+  var PINNED={on:RO,set:false,l:0,t:0,w:560,h:460};  /* 固定弹窗位置与大小；只读默认开启 */
+  var showPins=true, ZOOM=1, boxEdit=null;
 
   var root=document.createElement('div'); root.id='anno-root'; document.body.appendChild(root);
   var bar=document.createElement('div'); bar.className='anno-bar pe';
   bar.innerHTML='<span class="grip" title="拖动移动工具条">⠿</span>'+ (RO
-    ? '<b>批注（只读）</b><span class="cnt" id="annoCnt">0</span><button id="annoList">清单</button><button id="annoBox">虚线框</button><button id="annoOver">🗂 全览</button>'
+    ? '<b>批注（只读）</b><span class="cnt" id="annoCnt">0</span><button id="annoList">清单</button><button id="annoPins" class="on">圆点</button><button id="annoBox">虚线框</button><button id="annoOver">🗂 全览</button>'
     : '<button id="annoMode">✚ 批注模式</button><button id="annoList">清单</button><button id="annoBox" class="on">虚线框</button><button id="annoOver">🗂 全览</button><span class="cnt" id="annoCnt">0</span>'+
       '<button id="annoExp">⬇ 可继续批注</button><button id="annoExpRO">⬇ 只读版</button>');
   root.appendChild(bar);
@@ -368,19 +376,21 @@
       var c=clipRect(el), col=a.color||PINS[0];
       var vl=Math.max(r.left,c.l), vt=Math.max(r.top,c.t), vr=Math.min(r.right,c.r), vb=Math.min(r.bottom,c.b);
       if(vr<=vl||vb<=vt) return;
-      var cur=(sel===a.id);
+      var cur=(sel===a.id), editing=(boxEdit===a.id);
       var bx=null;
-      if(showBox||cur){
-        bx=document.createElement('div'); bx.className='anno-box'+(cur?' cur':'');
+      if(showBox||cur||editing){
+        bx=document.createElement('div'); bx.className='anno-box'+(cur?' cur':'')+(editing?' edit':'');
         bx.style.cssText+='left:'+vl+'px;top:'+vt+'px;width:'+(vr-vl)+'px;height:'+(vb-vt)+'px;border-color:'+col;
         root.appendChild(bx); boxes.push(bx);
+        if(editing) wireBoxEdit(bx,a);
       }
       var x=r.left+r.width*(a.rx||0), y=r.top+r.height*(a.ry||0);
       x=Math.min(Math.max(x,c.l+11),c.r-11); y=Math.min(Math.max(y,c.t+11),c.b-11);
       if(covered(el,x,y,(vl+vr)/2,(vt+vb)/2)){
-        if(boxes.length&&boxes[boxes.length-1]===bx) { bx.remove(); boxes.pop() }
+        if(bx&&boxes[boxes.length-1]===bx&&!editing){ bx.remove(); boxes.pop() }
         return;
       }
+      if(!showPins&&!cur&&!editing) return;
       var p=document.createElement('div'); p.className='anno-pin pe'+(sel===a.id?' sel':'');
       p.textContent=a.n; paint(p,col); p.style.left=x+'px'; p.style.top=y+'px';
       p.title=(RO?'':'拖动可挪开，避免遮挡元素\n')+plain(a.html);
@@ -415,6 +425,39 @@
       root.appendChild(p); pins.push(p);
     });
   }
+  function toArea(a){
+    if(a.type==='area') return;
+    a.type='area'; a.ax=0; a.ay=0; a.aw=1; a.ah=1;
+    if(a.label&&a.label.indexOf('框选区域')<0) a.label='自定义框 · '+a.label;
+  }
+  function wireBoxEdit(bx,a){
+    var tag=document.createElement('div'); tag.className='t';
+    tag.textContent='拖动移动 · 右下角改大小 · 再点 ⬚ 结束';
+    var hd=document.createElement('div'); hd.className='h';
+    bx.appendChild(tag); bx.appendChild(hd);
+    function start(e,kind){
+      e.preventDefault(); e.stopPropagation();
+      toArea(a);
+      var el=resolve(a); if(!el) return;
+      var hr=el.getBoundingClientRect(), hw=hr.width||1, hh=hr.height||1;
+      var sx=e.clientX, sy=e.clientY, ax0=a.ax, ay0=a.ay, aw0=a.aw, ah0=a.ah;
+      function mv(ev){
+        var dx=(ev.clientX-sx)/hw, dy=(ev.clientY-sy)/hh;
+        if(kind==='move'){ a.ax=ax0+dx; a.ay=ay0+dy }
+        else{ a.aw=Math.max(10/hw,aw0+dx); a.ah=Math.max(10/hh,ah0+dy) }
+        draw();
+      }
+      function up(){
+        document.removeEventListener('mousemove',mv,true);
+        document.removeEventListener('mouseup',up,true);
+        save2(); render();
+      }
+      document.addEventListener('mousemove',mv,true);
+      document.addEventListener('mouseup',up,true);
+    }
+    bx.addEventListener('mousedown',function(e){ if(e.target!==hd) start(e,'move') });
+    hd.addEventListener('mousedown',function(e){ start(e,'size') });
+  }
   function focusOn(a){
     if(over) closeOver();
     reveal(a,function(el){
@@ -428,7 +471,7 @@
       },420);
     });
   }
-  function closePop(){ if(pop){ pop.remove(); pop=null } hideIH(); hideTBar(); EDCARET=null; sel=null; draw() }
+  function closePop(){ if(pop){ pop.remove(); pop=null } hideIH(); hideTBar(); EDCARET=null; sel=null; boxEdit=null; draw() }
 
   /* ---------- 弹窗 ---------- */
   function autoSize(html){                       /* 只读：按内容多少定弹窗大小 */
@@ -438,17 +481,21 @@
     m.style.cssText='position:fixed;left:-99999px;top:0;visibility:hidden;flex:none;overflow:visible;width:'+W+'px';
     m.innerHTML=html||''; root.appendChild(m);
     var H=m.scrollHeight; m.remove();
-    return {w:W, h:Math.max(200, Math.min(H+40+46, innerHeight-40))};
+    return {w:Math.min(innerWidth-40,Math.round(W*ZOOM)),
+            h:Math.max(200, Math.min(Math.round(H*ZOOM)+40+46, innerHeight-40))};
   }
   function openPop(a,x,y){
     if(pop) pop.remove(); hideIH(); hideTBar();
     pop=document.createElement('div'); pop.className='anno-pop pe';
     var head='<div class="ph"><span class="no"></span><span class="tt"></span>'+
+             (RO?'':'<button class="ic bx" title="调整虚线框（可移动、改大小）">⬚</button>')+
              '<button class="ic pn" title="固定弹窗的位置和大小">📌</button>'+
              '<button class="ic mx" title="最大化 / 还原">⛶</button><button class="ic x" title="关闭">×</button></div>';
     pop.innerHTML = RO
       ? head+'<div class="anno-view"></div>'+
-        '<div class="anno-nav"><button class="pv">‹ 上一条</button><span class="idx"></span><button class="nx">下一条 ›</button></div>'+
+        '<div class="anno-nav"><button class="pv">‹ 上一条</button><span class="idx"></span>'+
+        '<span class="zm"><button class="zo" title="缩小">−</button><span class="zl" title="点击恢复 100%">100%</span><button class="zi" title="放大">+</button></span>'+
+        '<button class="nx">下一条 ›</button></div>'+
         '<div class="anno-rz"></div>'
       : head+'<div class="anno-dots"><em>圆点</em></div>'+toolbarHTML()+
         '<div class="anno-ed" contenteditable="true" data-ph="写下批注…支持粘贴图片、插入表格与高亮块"></div>'+
@@ -456,7 +503,7 @@
         '<div class="anno-rz"></div>';
     var no=pop.querySelector('.no'); no.textContent=a.n; paint(no,a.color||PINS[0]);
     pop.querySelector('.tt').textContent=a.label||'';
-    var w,h,fixed=PINNED.on;
+    var w,h,fixed=(PINNED.on&&PINNED.set);
     if(fixed){ w=PINNED.w; h=PINNED.h }
     else if(RO){ var sz=autoSize(a.html); w=sz.w; h=sz.h }
     else { w=a.w||W0; h=a.h||H0 }
@@ -469,7 +516,10 @@
     pop.onmousedown=function(e){ e.stopPropagation() };
     pop.onclick=function(e){ e.stopPropagation() };
     root.appendChild(pop); sel=a.id; draw();
-
+    if(PINNED.on&&!PINNED.set){
+      PINNED.l=pop.offsetLeft; PINNED.t=pop.offsetTop;
+      PINNED.w=pop.offsetWidth; PINNED.h=pop.offsetHeight; PINNED.set=true;
+    }
     var ph=pop.querySelector('.ph'), prev=null;
     drag(ph,function(dx,dy,s){
       if(pop.classList.contains('max')) return;
@@ -497,6 +547,7 @@
     }
     function syncPinned(force){
       if(!PINNED.on&&!force) return;
+      PINNED.set=true;
       PINNED.l=pop.offsetLeft; PINNED.t=pop.offsetTop;
       PINNED.w=pop.offsetWidth; PINNED.h=pop.offsetHeight;
     }
@@ -509,6 +560,15 @@
         if(PINNED.on) syncPinned(true);
         pnb.classList.toggle('on',PINNED.on);
         pnb.title=PINNED.on?'已固定，点击取消':'固定弹窗的位置和大小';
+      };
+    }
+    if(!RO){
+      var bxb=pop.querySelector('.bx');
+      bxb.classList.toggle('on',boxEdit===a.id);
+      bxb.onclick=function(){
+        boxEdit=(boxEdit===a.id)?null:a.id;
+        bxb.classList.toggle('on',boxEdit===a.id);
+        draw();
       };
     }
     pop.querySelector('.mx').onclick=toggleMax;
@@ -532,6 +592,17 @@
       pop.querySelector('.idx').textContent=(i0+1)+' / '+data.length;
       pop.querySelector('.pv').onclick=function(){ go(a,-1) };
       pop.querySelector('.nx').onclick=function(){ go(a,1) };
+      var zl=pop.querySelector('.zl');
+      function applyZoom(){ v.style.zoom=ZOOM; zl.textContent=Math.round(ZOOM*100)+'%' }
+      function setZoom(z){ ZOOM=Math.max(.5,Math.min(3,Math.round(z*10)/10)); applyZoom() }
+      pop.querySelector('.zo').onclick=function(){ setZoom(ZOOM-0.1) };
+      pop.querySelector('.zi').onclick=function(){ setZoom(ZOOM+0.1) };
+      zl.onclick=function(){ setZoom(1) };
+      v.addEventListener('wheel',function(e){
+        if(!e.ctrlKey&&!e.metaKey) return;
+        e.preventDefault(); setZoom(ZOOM+(e.deltaY<0?0.1:-0.1));
+      },{passive:false});
+      applyZoom();
       return;
     }
     bindEditor(a,pop,finish);
@@ -910,14 +981,14 @@
       over.appendChild(card);
     });
     over.addEventListener('click',function(e){ if(e.target.tagName==='IMG'&&e.target.closest('.bd')) lightbox(e.target.src) });
-    root.appendChild(over); draw();
+    root.classList.add('overview'); root.appendChild(over); draw();
     hd.querySelector('#annoOverX').onclick=closeOver;
     hd.querySelector('#annoPdf').onclick=function(){
       document.body.classList.add('anno-print');
       setTimeout(function(){ print(); setTimeout(function(){ document.body.classList.remove('anno-print') },400) },60);
     };
   }
-  function closeOver(){ if(over){ over.remove(); over=null; draw() } }
+  function closeOver(){ if(over){ over.remove(); over=null; root.classList.remove('overview'); draw() } }
   function go(a,dir){                                /* 只读：切上一条 / 下一条 */
     var i=data.indexOf(a); if(i<0||data.length<2) return;
     focusOn(data[(i+dir+data.length)%data.length]);
@@ -1013,6 +1084,8 @@
   document.getElementById('annoList').onclick=function(){ showList=!showList; render() };
   var bb=document.getElementById('annoBox');
   bb.onclick=function(){ showBox=!showBox; bb.classList.toggle('on',showBox); draw() };
+  var bpn=document.getElementById('annoPins');
+  if(bpn) bpn.onclick=function(){ showPins=!showPins; bpn.classList.toggle('on',showPins); draw() };
   document.getElementById('annoOver').onclick=function(){ over?closeOver():openOver() };
 
   function download(readonly){
@@ -1037,4 +1110,4 @@
   render();
 })();
 </script>
-<!-- ============ 批注层 v17 结束 ============ -->
+<!-- ============ 批注层 v18 结束 ============ -->
