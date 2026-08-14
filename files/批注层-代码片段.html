@@ -1,4 +1,4 @@
-<!-- ============ 通用批注层 v30 · 粘贴到任意 HTML 的 </body> 前即可 ============ -->
+<!-- ============ 通用批注层 v38 · 粘贴到任意 HTML 的 </body> 前即可 ============ -->
 <script id="anno-data" type="application/json">[]</script>
 <style id="anno-style">
   .anno-hover{outline:2px dashed #ff7a45 !important;outline-offset:1px;cursor:crosshair !important;transition:none !important;animation:none !important}
@@ -40,17 +40,19 @@
   .anno-pop .ph .ic.pn.on{transform:rotate(-30deg)}
   .anno-dots{display:flex;gap:5px;align-items:center;padding:7px 10px 0}
   .anno-dots em{font-style:normal;color:#8a9099;font-size:12px;margin-right:2px}
-  .anno-dots>i{width:16px;height:16px;border-radius:50%;cursor:pointer;box-shadow:inset 0 0 0 1px rgba(0,0,0,.12);outline:2px solid transparent;outline-offset:1px;transition:outline-color .12s}
+  .anno-dots>i{width:16px;height:16px;border-radius:50%;cursor:pointer;flex:0 0 auto;
+    box-shadow:inset 0 0 0 1px rgba(0,0,0,.12);outline:2px solid transparent;outline-offset:1px;transition:outline-color .12s}
   .anno-dots>i:hover{outline-color:#c6ccd6}
   .anno-dots>i.on{outline-color:#1f2329}
+  .anno-dots{flex-wrap:wrap}
   .anno-dots button{border:1px solid #e5e8ee;background:#fff;border-radius:5px;height:21px;padding:0 7px;font:12px/1 inherit;cursor:pointer;color:#4b5563;margin-left:4px}
-  .anno-tb{display:flex;flex-wrap:wrap;gap:2px;align-items:center;padding:6px 8px;border-bottom:1px solid #eef0f4}
+  .anno-tb{display:flex;flex-wrap:wrap;gap:2px;align-items:center;padding:6px 8px;border-bottom:1px solid #eef0f4;position:relative;z-index:6}
   .anno-tb button{border:1px solid transparent;background:#fff;border-radius:5px;min-width:27px;height:27px;padding:0 6px;font:inherit;cursor:pointer;color:#4b5563}
   .anno-tb button:hover{background:#f2f4f7}
   .anno-tb select{height:27px;border:1px solid #e5e8ee;border-radius:5px;background:#fff;font:inherit;cursor:pointer;padding:0 4px}
   .anno-tb .sp{width:1px;height:18px;background:#eef0f4;margin:0 4px}
   .anno-wrap{position:relative}
-  .anno-menu{position:absolute;top:32px;left:0;background:#fff;border:1px solid #e5e8ee;border-radius:8px;box-shadow:0 8px 24px rgba(0,0,0,.16);padding:8px;z-index:5}
+  .anno-menu{position:absolute;top:32px;left:0;background:#fff;border:1px solid #e5e8ee;border-radius:8px;box-shadow:0 8px 24px rgba(0,0,0,.16);padding:8px;z-index:999}
   .anno-menu.r{left:auto;right:0}
   .anno-pal{width:236px;max-height:300px;overflow:auto}
   .anno-pal{width:252px;padding:6px 10px 10px}
@@ -74,11 +76,14 @@
   .anno-ed p{margin:5px 0}
   .anno-ed img{max-width:100%;cursor:pointer;border-radius:3px}
   .anno-ed img.sel{outline:2px solid #ff7a45}
-  .anno-ed table,.anno-view table,.anno-card .bd table{border-collapse:collapse;table-layout:fixed;width:100%;margin:6px 0}
+  .anno-ed table,.anno-view table,.anno-card .bd table{border-collapse:collapse;max-width:100%;margin:6px 0}
   .anno-ed td,.anno-ed th,.anno-view td,.anno-view th,.anno-card .bd td,.anno-card .bd th{border:1px solid #d6dae1;padding:4px 6px;min-width:28px;word-break:break-word}
   .anno-ed th,.anno-view th,.anno-card .bd th{background:#f4f6f9}
   .anno-ed tr.cur>*{background:#fff8f4}
   .anno-ed td.curc,.anno-ed th.curc{box-shadow:inset 0 0 0 2px #ff7a45}
+  .anno-ed table.tw-hot{box-shadow:2px 0 0 0 #ff7a45, -1px 0 0 0 transparent}
+  .anno-ed table.tw-drag{box-shadow:2px 0 0 0 #ff7a45}
+  .anno-ed table.tw-hot:after{content:''}
   .anno-ed blockquote,.anno-view blockquote,.anno-card .bd blockquote{margin:6px 0;padding:2px 10px;border-left:3px solid #ff7a45;color:#5b6069}
   .anno-cal{padding:9px 12px;border-radius:7px;border-left:4px solid;margin:8px 0}
   .anno-cal p{margin:3px 0}
@@ -112,8 +117,14 @@
   .anno-item .tx{min-width:0;flex:1}
   .anno-item .tx p{margin:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
   .anno-item .tx em{color:#8a9099;font-size:12px;font-style:normal;display:block;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+  .anno-item.lost{background:#fff7e6}
+  .anno-item.lost b{opacity:.45}
+  .anno-item .warn{color:#d48806;font-size:11px;font-weight:600;margin-left:4px}
+  .anno-panel .hd .lostn{color:#d48806;font-weight:600;margin-left:6px;cursor:pointer}
+  .anno-pop .ph .ic.re{color:#d48806}
+  .anno-relink{position:fixed;left:50%;bottom:14px;top:auto;transform:translateX(-50%);background:#d48806;color:#fff;padding:7px 16px;border-radius:20px;box-shadow:0 4px 14px rgba(0,0,0,.22);z-index:2147483005;font-size:13px}
   .anno-empty{padding:18px;color:#8a9099;text-align:center;line-height:1.8}
-  .anno-tip{position:fixed;left:50%;top:12px;transform:translateX(-50%);background:#ff7a45;color:#fff;padding:6px 14px;border-radius:20px;box-shadow:0 4px 14px rgba(0,0,0,.22);z-index:20}
+  .anno-tip{position:fixed;left:50%;bottom:14px;top:auto;transform:translateX(-50%);background:#ff7a45;color:#fff;padding:6px 14px;border-radius:20px;box-shadow:0 4px 14px rgba(0,0,0,.22);z-index:20}
   .anno-view{padding:12px 14px;overflow:auto;flex:1;min-height:0}
   .anno-nav{display:flex;align-items:center;gap:8px;padding:7px 10px;border-top:1px solid #eef0f4;background:#fafbfc}
   .anno-nav button{border:1px solid #e5e8ee;background:#fff;border-radius:6px;padding:5px 12px;font:inherit;cursor:pointer;color:#4b5563}
@@ -179,7 +190,7 @@
   .anno-split .rh em{flex:1;font-style:normal;color:#8a9099;font-size:12px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
   .anno-split .rv{flex:1;min-height:0;overflow:auto;padding:14px 16px}
   .anno-split .rv img{max-width:100%;cursor:zoom-in;border-radius:3px}
-  .anno-split .rv table{border-collapse:collapse;table-layout:fixed;width:100%;margin:6px 0}
+  .anno-split .rv table{border-collapse:collapse;max-width:100%;margin:6px 0}
   .anno-split .rv td,.anno-split .rv th{border:1px solid #d6dae1;padding:4px 6px}
   .anno-split .rv th{background:#f4f6f9}
   .anno-split .rv h1{font-size:24px;margin:8px 0}.anno-split .rv h2{font-size:20px;margin:8px 0}
@@ -188,6 +199,8 @@
   .anno-split .rv blockquote{margin:6px 0;padding:2px 10px;border-left:3px solid #ff7a45;color:#5b6069}
   .anno-split .rls{height:32%;overflow:auto;border-top:1px solid #eef0f4;padding:4px;flex:0 0 auto}
   .anno-split .rls .anno-item.sel{background:#fff6f2}
+  .anno-pop.embed{position:static;width:auto !important;height:auto !important;flex:1;min-height:0;
+    border:0;border-radius:0;box-shadow:none;min-width:0}
   .anno-split .redit .anno-ed{flex:1;min-height:0;overflow:auto;padding:12px 14px;outline:none}
   .anno-split .redit .anno-ed:empty:before{content:attr(data-ph);color:#b7bcc4}
   .anno-split .redit .anno-ed h1{font-size:24px;margin:8px 0}
@@ -198,7 +211,7 @@
   .anno-split .redit .anno-ed p{margin:5px 0}
   .anno-split .redit .anno-ed img{max-width:100%;cursor:pointer;border-radius:3px}
   .anno-split .redit .anno-ed img.sel{outline:2px solid #ff7a45}
-  .anno-split .redit .anno-ed table{border-collapse:collapse;table-layout:fixed;width:100%;margin:6px 0}
+  .anno-split .redit .anno-ed table{border-collapse:collapse;max-width:100%;margin:6px 0}
   .anno-split .redit .anno-ed td,.anno-split .redit .anno-ed th{border:1px solid #d6dae1;padding:4px 6px;min-width:28px;word-break:break-word}
   .anno-split .redit .anno-ed th{background:#f4f6f9}
   .anno-split .redit .anno-ed tr.cur>*{background:#fff8f4}
@@ -281,7 +294,8 @@
   bar.innerHTML='<span class="grip" title="拖动移动工具条">⠿</span>'+ (RO
     ? '<b>批注（只读）</b><span class="cnt" id="annoCnt">0</span><button id="annoList">清单</button><button id="annoPins">圆点</button><button id="annoBox">虚线框</button><button id="annoSplit">◫ 对照模式</button><button id="annoOver">🗂 全览</button>'
     : '<button id="annoMode">✚ 批注模式</button><button id="annoList">清单</button><button id="annoBox" class="on">虚线框</button><button id="annoSplit">◫ 对照模式</button><button id="annoOver">🗂 全览</button><span class="cnt" id="annoCnt">0</span>'+
-      '<button id="annoExp">⬇ 可继续批注</button><button id="annoExpRO">⬇ 只读版</button>');
+      '<button id="annoExp">⬇ 可继续批注</button><button id="annoExpRO">⬇ 只读版</button>'+
+      '<button id="annoExpJS" title="导出本页批注数据，可用注入器合并回整个原型包">⬇ 批注数据</button>');
   root.appendChild(bar);
   var panel=document.createElement('div'); panel.className='anno-panel pe';
   panel.innerHTML='<div class="hd">批注清单<span id="annoCnt2"></span></div><div class="ls" id="annoLs"></div>';
@@ -394,18 +408,30 @@
   var dragId=null;
   function render(){
     document.getElementById('annoCnt').textContent=data.length;
-    var c2=document.getElementById('annoCnt2'); if(c2) c2.textContent=data.length+' 条';
+    var c2=document.getElementById('annoCnt2');
     panel.style.display=showList?'flex':'none';
     var ls=document.getElementById('annoLs'); ls.innerHTML='';
     if(!data.length) ls.innerHTML='<div class="anno-empty">暂无批注'+(RO?'':'<br>点「批注模式」后点击页面元素')+'</div>';
+    var lost=0;
     data.forEach(function(a){
-      var d=document.createElement('div'); d.className='anno-item';
+      var alive=!!resolve(a); if(!alive) lost++;
+      var d=document.createElement('div'); d.className='anno-item'+(alive?'':' lost');
       d.innerHTML=(RO?'':'<span class="hn" title="拖动排序">⋮⋮</span>')+'<b></b><div class="tx"><p></p><em></em></div>';
       var b=d.querySelector('b'); b.textContent=a.n; paint(b,a.color||PINS[0]);
       var t=plain(a.html);
       d.querySelector('p').textContent=t||'（空）';
-      d.querySelector('em').textContent=a.label||''; d.title=t;
-      d.onclick=function(){ focusOn(a) };
+      var emEl=d.querySelector('em');
+      emEl.textContent=a.label||'';
+      if(!alive){
+        var w=document.createElement('span'); w.className='warn';
+        w.textContent=RO?'⚠ 元素已变动':'⚠ 点此重新锚定';
+        if(!RO){ w.style.cursor='pointer'; w.onclick=function(ev){ ev.stopPropagation(); startRelink(a) } }
+        emEl.appendChild(w);
+      }
+      d.title=t;
+      d.onclick=function(){ alive?focusOn(a):(RO?null:startRelink(a)) };
+      if(!RO){ b.style.cursor='pointer'; b.title='双击修改编号';
+        b.addEventListener('dblclick',function(ev){ ev.stopPropagation(); ev.preventDefault(); renumber(a) }) }
       if(!RO){
         d.draggable=true;
         d.addEventListener('dragstart',function(e){ dragId=a.id; d.classList.add('dragging'); e.dataTransfer.effectAllowed='move'; try{e.dataTransfer.setData('text/plain',a.id)}catch(x){} });
@@ -424,6 +450,7 @@
       }
       ls.appendChild(d);
     });
+    if(c2) c2.innerHTML=data.length+' 条'+(lost?'<span class="lostn">· '+lost+' 条待重锚</span>':'');
     if(!RO){
       ls.ondragover=function(e){ if(dragId) e.preventDefault() };
       ls.ondrop=function(e){ if(dragId&&e.target===ls){ e.preventDefault(); reorder(dragId,null,false); clearDrop() } };
@@ -431,6 +458,19 @@
     draw();
   }
   function clearDrop(){ Array.prototype.forEach.call(document.querySelectorAll('.anno-item'),function(n){ n.classList.remove('dropTop','dropBot') }) }
+  function renumber(a){
+    if(RO) return;
+    var cur=data.indexOf(a)+1;
+    var v=prompt('把 #'+cur+' 改为第几号？（1 - '+data.length+'）', String(cur));
+    if(v==null) return;
+    var n=parseInt(String(v).trim(),10);
+    if(!n||n<1||n>data.length||n===cur) return;
+    data.splice(data.indexOf(a),1);
+    data.splice(n-1,0,a);
+    data.forEach(function(x,i){ x.n=i+1 });
+    seq=data.length; save();
+    if(split){ refreshSplitList(); if(frameReady) drawFrame() }
+  }
   function reorder(fromId,toId,before){
     var f=data.filter(function(x){ return x.id===fromId })[0]; if(!f) return;
     data=data.filter(function(x){ return x!==f });
@@ -470,7 +510,8 @@
       if(!showPins&&!cur&&!editing) return;
       var p=document.createElement('div'); p.className='anno-pin pe'+(sel===a.id?' sel':'');
       p.textContent=a.n; paint(p,col); p.style.left=x+'px'; p.style.top=y+'px';
-      p.title=(RO?'':'拖动可挪开，避免遮挡元素\n')+plain(a.html);
+      p.title=(RO?'':'拖动可挪开 · 双击改编号\n')+plain(a.html);
+      if(!RO) p.addEventListener('dblclick',function(ev){ ev.stopPropagation(); ev.preventDefault(); renumber(a) });
       if(RO){ p.onclick=function(e){ e.stopPropagation(); openPop(a,x,y) } }
       else{
         p.style.cursor='grab';
@@ -535,6 +576,33 @@
     bx.addEventListener('mousedown',function(e){ if(e.target!==hd) start(e,'move') });
     hd.addEventListener('mousedown',function(e){ start(e,'size') });
   }
+  var relinkFor=null, relinkTip=null;
+  function startRelink(a){
+    relinkFor=a; closePop();
+    if(!relinkTip){
+      relinkTip=document.createElement('div'); relinkTip.className='anno-relink pe';
+      root.appendChild(relinkTip);
+    }
+    relinkTip.textContent='重新锚定 #'+a.n+'：点击页面上新的目标元素（Esc 取消）';
+    relinkTip.style.display='block';
+    setMode(true);
+  }
+  function endRelink(){
+    relinkFor=null;
+    if(relinkTip) relinkTip.style.display='none';
+    setMode(false);
+  }
+  function applyRelink(el,cx,cy){
+    var a=relinkFor; if(!a||!el) return;
+    var r=el.getBoundingClientRect();
+    a.sel=pathOf(el); a.label=labelOf(el);
+    if(a.type==='area'){ a.ax=0; a.ay=0; a.aw=1; a.ah=1 }
+    a.rx=r.width?(cx-r.left)/r.width:.5;
+    a.ry=r.height?(cy-r.top)/r.height:.5;
+    a.trail=TRAIL.slice();
+    endRelink(); save();
+    setTimeout(function(){ focusOn(a) },60);
+  }
   function focusOn(a){
     if(over) closeOver();
     reveal(a,function(el){
@@ -565,7 +633,8 @@
     if(pop) pop.remove(); hideIH(); hideTBar();
     pop=document.createElement('div'); pop.className='anno-pop pe';
     var head='<div class="ph"><span class="no"></span><span class="tt"></span>'+
-             (RO?'':'<button class="ic bx" title="调整虚线框（可移动、改大小）">⬚</button>')+
+             (RO?'':'<button class="ic re" title="重新锚定到别的元素">⟲</button>'+
+                    '<button class="ic bx" title="调整虚线框（可移动、改大小）">⬚</button>')+
              '<button class="ic pn" title="固定弹窗的位置和大小">📌</button>'+
              '<button class="ic mx" title="最大化 / 还原">⛶</button><button class="ic x" title="关闭">×</button></div>';
     pop.innerHTML = RO
@@ -642,6 +711,7 @@
       };
     }
     if(!RO){
+      pop.querySelector('.re').onclick=function(){ startRelink(a) };
       var bxb=pop.querySelector('.bx');
       bxb.classList.toggle('on',boxEdit===a.id);
       bxb.onclick=function(){
@@ -700,6 +770,7 @@
     function finish(store){
       var ed=pop.querySelector('.anno-ed');
       var html=ed.innerHTML.replace(/ class="sel"/g,'').replace(/ class="curc"/g,'').replace(/ class="cur"/g,'')
+                 .replace(/ class="tw-hot"/g,'').replace(/ class="tw-drag"/g,'')
                  .replace(/class="anno-cal curc"/g,'class="anno-cal"').trim();
       if(store) a.html=html;
       if(!(a.html||'').replace(/<[^>]+>|&nbsp;|\s/g,'')){ remove(a); return }
@@ -733,22 +804,30 @@
   function bindEditor(a,pop,finish){
     var ed=pop.querySelector('.anno-ed'); ed.innerHTML=a.html||'';
     var dots=pop.querySelector('.anno-dots'), no=pop.querySelector('.no');
+    if(!dots){ return }
     var moreWrap=document.createElement('span'); moreWrap.className='anno-wrap';
     moreWrap.innerHTML='<button id="annoMoreC">▾ 配色方案</button>';
     function setPin(c,g){
-      a.color=c; paint(no,c);
-      PREF={g:g||PREF.g,c:c};
-      renderDots(); save();
+      a.color=c;
+      if(no) paint(no,c);
+      PREF={g:g||PREF.g,c:c};      /* 选中的颜色所在配色方案 → 成为默认组 */
+      renderDots();
+      save();
+      if(split){ refreshSplitList(); if(frameReady) drawFrame();
+        var hb=split.querySelector('.rh b'); if(hb) paint(hb,c); }
     }
     function renderDots(){
       Array.prototype.forEach.call(dots.querySelectorAll('i,.gn'),function(n){ n.remove() });
       var g=group(PREF.g);
       var gn=document.createElement('span'); gn.className='gn'; gn.textContent=g.n;
       dots.insertBefore(gn,moreWrap);
+      var cur=(a.color||PREF.c||'').toLowerCase();
       g.c.forEach(function(c){
         var i=document.createElement('i'); i.style.background=c; i.dataset.c=c;
-        if((a.color||PREF.c)===c) i.className='on';
-        i.onclick=function(){ setPin(c,g.n) };
+        i.title=g.n+' '+c;
+        if(cur===c.toLowerCase()) i.className='on';
+        i.onmousedown=function(e){ e.preventDefault(); e.stopPropagation() };
+        i.onclick=function(e){ e.stopPropagation(); setPin(c,g.n) };
         dots.insertBefore(i,moreWrap);
       });
     }
@@ -792,19 +871,24 @@
     blk.onchange=function(){ cmd('formatBlock','<'+blk.value+'>') };
 
     function menu(btn,build,right){
-      btn.onmousedown=function(e){ e.preventDefault(); remember() };
+      btn.onmousedown=function(e){ e.preventDefault(); e.stopPropagation(); remember() };
       btn.onclick=function(e){
         e.stopPropagation();
         var open=btn.parentNode.querySelector('.anno-menu');
-        Array.prototype.forEach.call(pop.querySelectorAll('.anno-menu'),function(m){ m.remove() });
+        Array.prototype.forEach.call(document.querySelectorAll('.anno-menu'),function(m){ m.remove() });
         if(open) return;
         var m=document.createElement('div'); m.className='anno-menu'+(right?' r':''); build(m);
-        m.addEventListener('mousedown',function(ev){ ev.preventDefault() });
+        m.addEventListener('mousedown',function(ev){ ev.preventDefault(); ev.stopPropagation() },true);
         m.onclick=function(ev){ ev.stopPropagation() };
         btn.parentNode.appendChild(m);
       };
     }
-    document.addEventListener('mousedown',function(){ if(pop) Array.prototype.forEach.call(pop.querySelectorAll('.anno-menu'),function(m){ m.remove() }) });
+    if(!document._annoMenuHook){
+      document._annoMenuHook=true;
+      document.addEventListener('mousedown',function(){
+        Array.prototype.forEach.call(document.querySelectorAll('.anno-menu'),function(m){ m.remove() });
+      });
+    }
     function palette(m,onPick,cur){
       m.classList.add('anno-pal');
       PALETTES.forEach(function(p){
@@ -823,7 +907,9 @@
       inp.oninput=function(){ onPick(inp.value) };
       m.appendChild(inp);
     }
-    menu(moreWrap.querySelector('#annoMoreC'),function(m){ palette(m,function(c,g){ setPin(c,g) },a.color||PREF.c) });
+    menu(moreWrap.querySelector('#annoMoreC'),function(m){
+      palette(m,function(c,g){ setPin(c,g) }, a.color||PREF.c);
+    });
     menu(pop.querySelector('#annoFcBtn'),function(m){ palette(m,function(c){ cmd('foreColor',c) }) });
     menu(pop.querySelector('#annoHlBtn'),function(m){
       palette(m,function(c){ cmd('hiliteColor',c) });
@@ -861,7 +947,8 @@
           lbl.textContent=(rr+1)+' 行 × '+(cc+1)+' 列';
         };
         i.onclick=function(){
-          var rr=+this.dataset.r+1, cc=+this.dataset.c+1, h='<table><tr>';
+          var rr=+this.dataset.r+1, cc=+this.dataset.c+1;
+          var h='<table style="width:100%;table-layout:fixed" data-anno-tbl="1"><tr>';
           for(var j=0;j<cc;j++) h+='<th>标题'+(j+1)+'</th>';
           h+='</tr>';
           for(var k=1;k<rr;k++){ h+='<tr>'; for(var j2=0;j2<cc;j2++) h+='<td><br></td>'; h+='</tr>' }
@@ -906,7 +993,7 @@
       remember();
     },true);
     ed.addEventListener('keyup',syncBlk); ed.addEventListener('mouseup',syncBlk);
-    ed.addEventListener('scroll',function(){ var s=ed.querySelector('img.sel'); s?showIH(s):hideIH(); if(tCell) posTBar() });
+    ed.addEventListener('scroll',function(){ var s=ed.querySelector('img.sel'); s?showIH(s):hideIH(); if(tCell){ posTBar() } });
     function syncBlk(){ var b=document.queryCommandValue('formatBlock')||'p'; blk.value=/h[1-5]/i.test(b)?b.toLowerCase():'p' }
 
     ed.addEventListener('mouseover',function(e){
@@ -914,17 +1001,54 @@
       if(c&&ed.contains(c)) showTBar(c,ed);
     });
     ed.addEventListener('mouseleave',function(){ lazyHide() });
+    function edgeKind(e){                    /* 判断鼠标压在哪种边界上 */
+      var t=null, c=e.target.closest&&e.target.closest('td,th');
+      if(c) t=c.closest('table');
+      if(!t){                                /* 鼠标在表格右侧空白处也算：找同一行的表格 */
+        var tabs=ed.querySelectorAll('table');
+        for(var i=0;i<tabs.length;i++){
+          var q=tabs[i].getBoundingClientRect();
+          if(e.clientY>=q.top&&e.clientY<=q.bottom&&e.clientX>=q.right-10&&e.clientX<=q.right+14){ t=tabs[i]; break }
+        }
+        if(t) return {kind:'table',t:t};
+        return null;
+      }
+      var tr2=t.getBoundingClientRect(), rc=c.getBoundingClientRect();
+      if(Math.abs(tr2.right-e.clientX)<10) return {kind:'table',t:t};        /* 整表右边界（热区 10px） */
+      if(rc.right-e.clientX<6&&rc.right-e.clientX>-2) return {kind:'col',t:t,c:c};
+      return null;
+    }
+    var hotT=null;
+    function setHot(t){
+      if(hotT===t) return;
+      if(hotT) hotT.classList.remove('tw-hot');
+      hotT=t; if(hotT) hotT.classList.add('tw-hot');
+    }
     ed.addEventListener('mousemove',function(e){
-      var c=e.target.closest&&e.target.closest('td,th'); if(!c){ ed.style.cursor=''; return }
-      ed.style.cursor=(c.getBoundingClientRect().right-e.clientX<6)?'col-resize':'';
+      var k=edgeKind(e);
+      ed.style.cursor=k?(k.kind==='table'?'ew-resize':'col-resize'):'';
+      setHot(k&&k.kind==='table'?k.t:null);
     });
+    ed.addEventListener('mouseleave',function(){ setHot(null) });
     ed.addEventListener('mousedown',function(e){
-      var c=e.target.closest&&e.target.closest('td,th'); if(!c) return;
-      var rc=c.getBoundingClientRect(); if(rc.right-e.clientX>=6) return;
-      e.preventDefault();
-      var t=c.closest('table'), i=c.cellIndex, sx=e.clientX, sw=rc.width;
-      function mv(ev){ var w=Math.max(28,sw+ev.clientX-sx);
-        Array.prototype.forEach.call(t.rows,function(row){ if(row.cells[i]) row.cells[i].style.width=w+'px' }) }
+      var k=edgeKind(e); if(!k) return;
+      e.preventDefault(); e.stopPropagation();
+      if(k.kind==='table'){
+        var t=k.t, host=t.parentElement, max=host?host.clientWidth:900;
+        var sx=e.clientX, sw=t.getBoundingClientRect().width;
+        t.style.tableLayout='fixed'; t.classList.add('tw-drag');
+        function mvT(ev){
+          var w=Math.max(120, Math.min(max, sw+ev.clientX-sx));
+          t.style.width=Math.round(w)+'px';
+        }
+        function upT(){ t.classList.remove('tw-drag');
+          document.removeEventListener('mousemove',mvT,true); document.removeEventListener('mouseup',upT,true) }
+        document.addEventListener('mousemove',mvT,true); document.addEventListener('mouseup',upT,true);
+        return;
+      }
+      var t2=k.t, c2=k.c, i=c2.cellIndex, sx2=e.clientX, sw2=c2.getBoundingClientRect().width;
+      function mv(ev){ var w=Math.max(28,sw2+ev.clientX-sx2);
+        Array.prototype.forEach.call(t2.rows,function(row){ if(row.cells[i]) row.cells[i].style.width=w+'px' }) }
       function up(){ document.removeEventListener('mousemove',mv,true); document.removeEventListener('mouseup',up,true) }
       document.addEventListener('mousemove',mv,true); document.addEventListener('mouseup',up,true);
     });
@@ -961,6 +1085,8 @@
       tbar=document.createElement('div'); tbar.className='anno-tbar pe';
       tbar.innerHTML='<span class="lb"></span><button data-a="ru">＋↑行</button><button data-a="rd">＋↓行</button><button data-a="rx">✕行</button>'+
         '<span class="sp"></span><button data-a="cl">＋←列</button><button data-a="cr">＋列→</button><button data-a="cx">✕列</button>'+
+        '<span class="sp"></span><button data-a="w-" title="表格变窄">宽−</button><button data-a="w+" title="表格变宽">宽＋</button>'+
+        '<button data-a="wf" title="铺满宽度">铺满</button><button data-a="wa" title="按内容自适应">自适应</button>'+
         '<span class="sp"></span><button data-a="tx">✕表</button>';
       tbar.onmousedown=function(e){ e.preventDefault() };
       tbar.onclick=function(e){ var b=e.target.closest('button'); if(b) act(b.dataset.a) };
@@ -1006,6 +1132,17 @@
       else Array.prototype.forEach.call(t.rows,function(r2){ if(r2.cells[i]) r2.cells[i].remove() });
       EDCARET=null; hideTBar(); return;
     }
+    if(k==='w-'||k==='w+'){
+      var host=t.parentElement, max=host?host.clientWidth:600;
+      var now=t.getBoundingClientRect().width||max;
+      var nw=Math.max(120, Math.min(max, now+(k==='w+'?60:-60)));
+      t.style.width=Math.round(nw)+'px'; t.style.tableLayout='fixed';
+      posTBar(); return;
+    }
+    if(k==='wf'){ t.style.width='100%'; t.style.tableLayout='fixed'; posTBar(); return }
+    if(k==='wa'){ t.style.width='auto'; t.style.tableLayout='auto';
+      Array.prototype.forEach.call(t.querySelectorAll('td,th'),function(c2){ c2.style.width='' });
+      posTBar(); return }
     if(k==='tx'){ t.remove(); EDCARET=null; hideTBar() }
   }
 
@@ -1292,7 +1429,11 @@
     if(!mqS) return;
     var st=mqS; mqS=null;
     if(mq){ mq.remove(); mq=null }
-    if(!mqMoved){ pickElement(st.t,e.clientX,e.clientY); return }
+    if(!mqMoved){
+      if(relinkFor){ applyRelink(st.t,e.clientX,e.clientY); return }
+      pickElement(st.t,e.clientX,e.clientY); return;
+    }
+    if(relinkFor){ endRelink(); return }
     var l=Math.min(e.clientX,st.x), t=Math.min(e.clientY,st.y),
         w=Math.abs(e.clientX-st.x), h=Math.abs(e.clientY-st.y);
     if(w>=8&&h>=8) pickArea(l,t,w,h);
@@ -1310,6 +1451,7 @@
       if(cur){ e.preventDefault(); go(cur,e.key==='ArrowRight'?1:-1); return }
     }
     if(e.key!=='Escape') return;
+    if(relinkFor){ e.preventDefault(); endRelink(); return }
     var lb=root.querySelector('.anno-lb');
     var sw=root.querySelector('.anno-snapwin');
     if(lb) lb.remove(); else if(sw) sw.remove();
@@ -1363,6 +1505,7 @@
     });
     split.querySelector('.zl').style.cssText='font-size:12px;color:#8a9099;min-width:38px;text-align:center;cursor:pointer;display:inline-block';
     split.querySelector('.zm').style.cssText='display:flex;align-items:center;gap:2px;margin-left:auto';
+    frameReady=false;
     root.classList.add('splitmode'); root.appendChild(split);
     if(!RO){
       var hint=document.createElement('div');
@@ -1373,6 +1516,8 @@
     barToLeft();
     var fr=split.querySelector('#annoFrame');
     fr.addEventListener('load',function(){
+      frameReady=true;
+      refreshSplitList();                     /* 就绪后重新判活，消除误报 */
       drawFrame();
       try{
         var d=fr.contentDocument;
@@ -1460,10 +1605,15 @@
     'cursor:grab;transform:translate(-50%,-50%);border:2px solid #fff;z-index:2147483001;text-shadow:0 1px 2px rgba(0,0,0,.3)}'+
     '.afx-pin:active{cursor:grabbing}'+
     '.afx-pin.cur{transform:translate(-50%,-50%) scale(1.18)}';
+  var frameReady=false;
   function frameDoc(){
-    if(!split) return null;
+    if(!split||!frameReady) return null;
     var fr=split.querySelector('#annoFrame');
-    try{ return fr&&fr.contentDocument }catch(e){ return null }
+    try{
+      var d=fr&&fr.contentDocument;
+      if(!d||!d.body||!d.body.firstElementChild) return null;   /* 空白文档不算 */
+      return d;
+    }catch(e){ return null }
   }
   function frameRect(a,doc){                 /* iframe 文档坐标下的矩形 */
     var el=null; try{ el=doc.querySelector(a.sel) }catch(e){}
@@ -1517,6 +1667,7 @@
       p.textContent=a.n; p.title='拖动可挪开，避免遮挡\n'+plain(a.html);
       p.style.background=col; p.style.color=dark(col)?'#fff':'#1f2329';
       p.style.left=(q.l+q.w*(a.rx||0))+'px'; p.style.top=(q.t+q.h*(a.ry||0))+'px';
+      if(!RO) p.addEventListener('dblclick',function(ev){ ev.preventDefault(); ev.stopPropagation(); renumber(a) });
       p.addEventListener('mousedown',function(ev){
         ev.preventDefault(); ev.stopPropagation();
         var sx=ev.clientX, sy=ev.clientY, moved=false;
@@ -1542,7 +1693,7 @@
   }
   var FRAME_PICK_CSS='.afx-hover{outline:2px dashed #ff7a45 !important;outline-offset:1px;cursor:crosshair !important}'+
     '.afx-mq{position:absolute;border:2px dashed #ff7a45;background:rgba(255,122,69,.12);pointer-events:none;z-index:2147483002;border-radius:3px}'+
-    '.afx-tip{position:fixed;left:50%;top:10px;transform:translateX(-50%);background:#ff7a45;color:#fff;'+
+    '.afx-tip{position:fixed;left:50%;bottom:12px;transform:translateX(-50%);background:#ff7a45;color:#fff;'+
     'font:13px/1.5 -apple-system,"PingFang SC",Arial;padding:6px 14px;border-radius:20px;z-index:2147483003;pointer-events:none}';
   function framePathOf(el,doc){
     if(!el||el===doc.body) return 'body';
@@ -1679,7 +1830,11 @@
     if(!split) return;
     splitCur=a;
     var eb=split.querySelector('.redit');
-    if(eb&&eb.style.display!=='none'){ eb.style.display='none'; split.querySelector('.rv').style.display=''; hideIH(); hideTBar() }
+    if(eb&&eb.style.display!=='none'){
+      if(pop&&pop.classList.contains('embed')) pop=null;
+      eb.innerHTML=''; eb.style.display='none';
+      split.querySelector('.rv').style.display=''; hideIH(); hideTBar();
+    }
     if(boxEdit&&boxEdit!==a.id){ boxEdit=null; var bxe2=split.querySelector('.bxe'); if(bxe2) bxe2.classList.remove('on') }
     var b2=split.querySelector('.rh b'); b2.textContent=a.n; paint(b2,a.color||PINS[0]);
     split.querySelector('.rh em').textContent=a.label||'';
@@ -1712,31 +1867,48 @@
     if(!split) return;
     var ls=split.querySelector('.rls'); ls.innerHTML='';
     data.forEach(function(a){
-      var d=document.createElement('div'); d.className='anno-item'+(splitCur&&splitCur.id===a.id?' sel':'');
+      var alive2=true;
+      try{
+        var fd=frameDoc();
+        alive2 = fd ? !!fd.querySelector(a.sel) : !!resolve(a);   /* 未就绪 → 回退主文档 */
+      }catch(e){ alive2=!!resolve(a) }
+      var d=document.createElement('div');
+      d.className='anno-item'+(splitCur&&splitCur.id===a.id?' sel':'')+(alive2?'':' lost');
       d.innerHTML='<b></b><div class="tx"><p></p><em></em></div>';
       var b2=d.querySelector('b'); b2.textContent=a.n; paint(b2,a.color||PINS[0]);
+      if(!RO){ b2.style.cursor='pointer'; b2.title='双击修改编号';
+        b2.addEventListener('dblclick',function(ev){ ev.stopPropagation(); ev.preventDefault(); renumber(a) }) }
       d.querySelector('p').textContent=plain(a.html)||'（空）';
-      d.querySelector('em').textContent=a.label||'';
+      var em2=d.querySelector('em'); em2.textContent=a.label||'';
+      if(!alive2){ var w2=document.createElement('span'); w2.className='warn'; w2.textContent='⚠ 元素已变动'; em2.appendChild(w2) }
       d.dataset.id=a.id;
       d.onclick=function(){ splitShow(a) };
       ls.appendChild(d);
     });
   }
-  function splitEdit(a){                     /* 对照模式右侧就地编辑 */
+  function splitEdit(a){                     /* 对照模式右侧就地编辑（复用真实弹窗结构） */
     if(!split||!a||RO) return;
-    var box=split.querySelector('.redit'), rv=split.querySelector('.rv');
+    var host=split.querySelector('.redit'), rv=split.querySelector('.rv');
+    host.innerHTML='';
+    var box=document.createElement('div');
+    box.className='anno-pop embed';           /* 与浮窗同结构，仅去掉定位 */
     box.innerHTML='<div class="anno-dots"><em>圆点</em></div>'+toolbarHTML()+
       '<div class="anno-ed" contenteditable="true" data-ph="写下批注…支持粘贴图片、插入表格与高亮块"></div>'+
       '<div class="anno-pf"><button class="save">保存</button><button class="cancel">取消</button><button class="del">删除批注</button></div>';
-    box.style.display='flex'; rv.style.display='none';
-    var shim={ querySelector:function(q){ return box.querySelector(q) },
-               querySelectorAll:function(q){ return box.querySelectorAll(q) } };
-    bindEditor(a,shim,function(store){
+    box.onmousedown=function(e){ e.stopPropagation() };
+    box.onclick=function(e){ e.stopPropagation() };
+    host.appendChild(box);
+    host.style.display='flex'; rv.style.display='none';
+    if(pop){ pop.remove(); pop=null }
+    pop=box;                                  /* 让依赖 pop 的逻辑指向它 */
+    bindEditor(a,box,function(store){
       var ed=box.querySelector('.anno-ed');
       var html=ed.innerHTML.replace(/ class="sel"/g,'').replace(/ class="curc"/g,'')
-                 .replace(/ class="cur"/g,'').trim();
+                 .replace(/ class="cur"/g,'').replace(/ class="tw-hot"/g,'').replace(/ class="tw-drag"/g,'')
+                 .replace(/ class="tw-hot tw-drag"/g,'').trim();
       if(store) a.html=html;
-      box.style.display='none'; rv.style.display=''; hideIH(); hideTBar();
+      if(pop===box) pop=null;
+      host.innerHTML=''; host.style.display='none'; rv.style.display=''; hideIH(); hideTBar();
       if(!(a.html||'').replace(/<[^>]+>|&nbsp;|\s/g,'')){
         data=data.filter(function(x){ return x!==a });
         data.forEach(function(x,i){ x.n=i+1 }); seq=data.length;
@@ -1763,7 +1935,8 @@
     bar.style.maxWidth=Math.max(220,w-24)+'px';
   }
   function closeSplit(){
-    boxEdit=null;
+    boxEdit=null; frameReady=false;
+    if(pop&&pop.classList&&pop.classList.contains('embed')) pop=null;
     if(split){
       split.remove(); split=null; splitCur=null; root.classList.remove('splitmode');
       bar.style.cssText=''; bar.className='anno-bar pe';
@@ -1799,6 +1972,22 @@
     var u=URL.createObjectURL(b), a=document.createElement('a'); a.href=u; a.download=name; a.click();
     setTimeout(function(){ URL.revokeObjectURL(u) },3000);
   }
+  function pagePath(){                      /* 当前页在原型包内的相对路径 */
+    var p=location.pathname.replace(/\\/g,'/');
+    var m=/\/files\/(.+)$/i.exec(p);        /* Axure：files/ 之后的部分 */
+    if(m) return 'files/'+m[1];
+    return decodeURIComponent(p.split('/').pop()||'index.html');
+  }
+  var ej=document.getElementById('annoExpJS');
+  if(ej) ej.onclick=function(){
+    closePop(); closeOver(); closeSplit();
+    var pkg={ v:31, path:pagePath(), title:document.title||'', pref:PREF, list:data };
+    var name=pagePath().replace(/[\/\\]/g,'__').replace(/\.html?$/i,'')+'.anno.json';
+    var b=new Blob([JSON.stringify(pkg,null,2)],{type:'application/json;charset=utf-8'});
+    var u=URL.createObjectURL(b), a=document.createElement('a');
+    a.href=u; a.download=name; a.click();
+    setTimeout(function(){ URL.revokeObjectURL(u) },3000);
+  };
   var e1=document.getElementById('annoExp'); if(e1) e1.onclick=function(){ download(false) };
   var e2=document.getElementById('annoExpRO'); if(e2) e2.onclick=function(){ download(true) };
 
@@ -1815,4 +2004,4 @@
   render();
 })();
 </script>
-<!-- ============ 批注层 v30 结束 ============ -->
+<!-- ============ 批注层 v38 结束 ============ -->
