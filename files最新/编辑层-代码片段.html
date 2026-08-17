@@ -1,0 +1,1083 @@
+<!-- ============ 通用编辑层 v17 · 粘贴在「批注层」代码块之后(或单独粘贴到任意 HTML 的 </body> 前) ============ -->
+<style id="edit-style">
+  #anno-root .pe{pointer-events:auto}
+  .edit-hover{outline:2px dashed #3478f6 !important;outline-offset:1px;cursor:pointer !important;transition:none !important}
+  .edit-editing{outline:2px solid #3478f6 !important;cursor:text !important}
+
+  .edit-bar{position:fixed;top:10px;left:10px;display:flex;gap:6px;background:#1f2329;border-radius:8px;padding:6px 8px;box-shadow:0 6px 20px rgba(0,0,0,.28);font:13px/1.6 -apple-system,"PingFang SC","Microsoft YaHei",Arial,sans-serif}
+  .edit-bar button{border:0;background:rgba(255,255,255,.14);color:#fff;border-radius:6px;padding:6px 10px;font:inherit;cursor:pointer;white-space:nowrap}
+  .edit-bar button:hover{background:rgba(255,255,255,.28)}
+  .anno-bar button:disabled,.edit-bar button:disabled{opacity:.35;cursor:default;pointer-events:none}
+  .anno-bar #editMode.on,.edit-bar #editMode.on{background:#3478f6}
+
+  .edit-box{position:fixed;border:2px dashed #3478f6;border-radius:2px;pointer-events:none;z-index:99998}
+  .edit-box .edit-rz{position:absolute;right:-7px;bottom:-7px;width:12px;height:12px;background:#3478f6;border:2px solid #fff;border-radius:3px;cursor:nwse-resize;pointer-events:auto;box-shadow:0 1px 4px rgba(0,0,0,.3)}
+  .edit-box .edit-linkbadge{position:absolute;left:-4px;top:-4px;background:#3478f6;color:#fff;font-size:10px;line-height:1;border-radius:3px;padding:2px 3px;pointer-events:none}
+
+  .edit-tbar{position:fixed;display:flex;gap:2px;background:#1f2329;border-radius:6px;padding:3px;box-shadow:0 4px 14px rgba(0,0,0,.25);z-index:99999;font:13px/1 -apple-system,"PingFang SC",Arial,sans-serif}
+  .edit-tbar button{border:0;background:transparent;color:#fff;font-size:13px;padding:6px 8px;border-radius:4px;cursor:pointer}
+  .edit-tbar button:hover{background:rgba(255,255,255,.22)}
+
+  .edit-panel{position:fixed;width:250px;max-height:calc(100vh - 40px);overflow:auto;background:#fff;border:1px solid #e5e8ee;border-radius:10px;box-shadow:0 10px 30px rgba(0,0,0,.16);z-index:99999;font:13px/1.6 -apple-system,"PingFang SC","Microsoft YaHei",Arial,sans-serif;color:#1f2329}
+  .edit-panel .hd{display:flex;align-items:center;justify-content:space-between;padding:9px 12px;border-bottom:1px solid #eef0f4;font-weight:700}
+  .edit-panel .hd button{border:0;background:transparent;font-size:16px;cursor:pointer;color:#8a9099;line-height:1}
+  .edit-panel .bd{padding:10px 12px;display:flex;flex-direction:column;gap:8px}
+  .edit-panel .fld{display:flex;align-items:center;justify-content:space-between;gap:8px}
+  .edit-panel .fld span{color:#4b5563;flex:0 0 auto}
+  .edit-panel .fld input{flex:1;min-width:0;border:1px solid #e5e8ee;border-radius:6px;padding:4px 6px;font:inherit;box-sizing:border-box}
+  .edit-panel .fld.col .swatch{width:22px;height:22px;border-radius:6px;border:1px solid rgba(0,0,0,.15);cursor:pointer;padding:0}
+
+  .edit-cpop{position:fixed;background:#fff;border:1px solid #e5e8ee;border-radius:10px;box-shadow:0 10px 30px rgba(0,0,0,.18);padding:10px;z-index:100000;width:196px}
+  .edit-cpop .hexrow{display:flex;gap:6px;margin-bottom:8px}
+  .edit-cpop .hex{flex:1;min-width:0;border:1px solid #e5e8ee;border-radius:6px;padding:5px 8px;font:12px/1.2 ui-monospace,monospace;text-transform:uppercase;box-sizing:border-box}
+  .edit-cpop .eye{border:1px solid #e5e8ee;background:#fafbfc;border-radius:6px;width:28px;flex:0 0 auto;cursor:pointer;font-size:14px}
+  .edit-cpop .alpharow{display:flex;align-items:center;gap:6px;margin-bottom:8px;font-size:12px;color:#4b5563}
+  .edit-cpop .alpharow input[type=range]{flex:1;min-width:0}
+  .edit-cpop .alpharow .alphaval{flex:0 0 auto;width:34px;text-align:right}
+  .edit-cpop .row{display:flex;gap:4px;margin-bottom:4px}
+  .edit-cpop .row:last-child{margin-bottom:0}
+  .edit-cpop .row i{flex:1;aspect-ratio:1;border-radius:4px;cursor:pointer;box-shadow:inset 0 0 0 1px rgba(0,0,0,.12);outline:2px solid transparent;outline-offset:1px}
+  .edit-cpop .row i:hover{outline-color:#c6ccd6}
+
+  .edit-opts{position:fixed;width:230px;background:#fff;border:1px solid #e5e8ee;border-radius:10px;box-shadow:0 10px 30px rgba(0,0,0,.18);z-index:100000;font:13px/1.6 -apple-system,"PingFang SC","Microsoft YaHei",Arial,sans-serif}
+  .edit-opts .hd{display:flex;align-items:center;justify-content:space-between;padding:9px 12px;border-bottom:1px solid #eef0f4;font-weight:700}
+  .edit-opts .hd button{border:0;background:transparent;font-size:16px;cursor:pointer;color:#8a9099;line-height:1}
+  .edit-opts textarea{display:block;width:100%;box-sizing:border-box;border:0;padding:10px 12px;font:13px/1.6 inherit;resize:vertical;min-height:110px}
+  .edit-opts .ft{padding:8px 12px;border-top:1px solid #eef0f4;text-align:right}
+  .edit-opts .ft button{border:1px solid #3478f6;background:#3478f6;color:#fff;border-radius:6px;padding:6px 14px;font:inherit;cursor:pointer}
+
+
+  #anno-root.edit-shell-enabled .anno-bar{top:62px}
+  #anno-root.edit-shell-enabled .anno-panel{top:112px;max-height:calc(100vh - 124px)}
+  html.edit-pages-open{overflow-x:hidden}
+  html.edit-pages-open body{margin-left:232px!important;width:calc(100% - 232px)!important;box-sizing:border-box!important;transition:margin-left .18s ease,width .18s ease}
+  .edit-shellbar{position:fixed;top:0;left:0;right:0;height:52px;background:#fff;border-bottom:1px solid #e6eaf0;z-index:99994;display:flex;align-items:center;gap:10px;padding:0 14px 0 58px;color:#273142;font:13px/1.4 -apple-system,"PingFang SC","Microsoft YaHei",Arial,sans-serif;box-shadow:0 1px 2px rgba(31,35,41,.03);transition:left .18s ease}
+  .edit-shellbar.open{left:232px}
+  .edit-shellbar.readonly{padding-left:14px}
+  .edit-shellbar.split-width{overflow:hidden}
+  .edit-shellbar.split-width .esh-hint{display:none}
+  .esh-section{color:#3478f6;font-weight:600}
+  .esh-current{font-weight:700;max-width:36vw;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+  .esh-count{color:#7b8492;white-space:nowrap}
+  .esh-spacer{flex:1}
+  .esh-hint{color:#9aa2ae;font-size:12px}
+  .edit-pagesidebar{position:fixed;top:0;left:0;bottom:0;width:232px;background:#fff;border-right:1px solid #e3e8ef;box-shadow:4px 0 16px rgba(31,35,41,.05);z-index:99995;display:flex;flex-direction:column;font:13px/1.6 -apple-system,"PingFang SC","Microsoft YaHei",Arial,sans-serif;transform:translateX(-100%);transition:transform .18s ease}
+  .edit-pagesidebar.open{transform:translateX(0)}
+  .edit-pagesidebar.readonly .eps-hd{height:52px;box-sizing:border-box;padding-top:10px;padding-bottom:10px;border-bottom:1px solid #e7ebf0}
+  .edit-pagesidebar.readonly .eps-item{padding-right:10px}
+  .edit-pagehandle{position:fixed;left:12px;top:10px;width:32px;height:32px;padding:0;background:#fff;color:#4b5563;border:1px solid #dfe4eb;border-radius:6px;cursor:pointer;z-index:99996;font:12px/1 -apple-system,"PingFang SC","Microsoft YaHei",Arial,sans-serif;box-shadow:0 2px 8px rgba(31,35,41,.08);transition:left .18s ease,background .12s;display:flex;align-items:center;justify-content:center}
+  .edit-pagehandle::before{content:'☰';font-size:16px;line-height:1}
+  .edit-pagehandle:hover{background:#f6f8fb;color:#1f2329}
+  .edit-pagehandle.open{left:244px}
+  .edit-pagehandle.open::before{content:'‹';font-size:25px;transform:translateY(-1px)}
+  .eps-hd{display:flex;align-items:center;gap:8px;padding:14px 12px 10px;flex:0 0 auto}
+  .eps-title{font-weight:700;flex:1;min-width:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;color:#273142}
+  .eps-hd button{border:1px solid #dfe4eb;background:#fff;font:12px/1 inherit;cursor:pointer;color:#4b5563;padding:6px 9px;border-radius:6px;flex:0 0 auto}
+  .eps-hd button:hover{background:#f2f6ff;border-color:#b8cdf8;color:#3478f6}
+  .eps-search{padding:0 12px 10px;flex:0 0 auto}
+  .eps-search input{width:100%;box-sizing:border-box;border:1px solid #edf0f4;border-radius:6px;padding:7px 9px;font:inherit;background:#f7f8fa;outline:none}
+  .eps-search input:focus{background:#fff;border-color:#93b5f5;box-shadow:0 0 0 2px rgba(52,120,246,.1)}
+  .eps-list{overflow:auto;flex:1;padding:2px 6px 12px}
+  .eps-item{display:flex;align-items:center;gap:8px;min-height:34px;padding:5px 8px 5px 10px;border-radius:4px;cursor:pointer;color:#4b5563}
+  .eps-item:hover{background:#f5f7fa}
+  .eps-item.active{background:#e8f1ff;color:#2467d7;font-weight:600}
+  .eps-name{flex:1;min-width:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;outline:none}
+  .eps-name[contenteditable="true"]{background:#fff;box-shadow:inset 0 0 0 1px #3478f6;border-radius:4px;padding:2px 4px;white-space:normal;overflow:visible;color:#1f2329}
+  .eps-rename{display:none;border:0;background:transparent;color:#7b8492;padding:3px 5px;border-radius:4px;font:11px/1 inherit;cursor:pointer}
+  .eps-item:hover .eps-rename,.eps-item.active .eps-rename{display:block}
+  .eps-rename:hover{background:rgba(52,120,246,.1);color:#2467d7}
+  @media (max-width:720px){
+    .esh-hint{display:none}
+  }
+
+  .edit-fbar{position:fixed;display:none;align-items:center;gap:2px;background:#1f2329;border-radius:6px;padding:3px;box-shadow:0 4px 14px rgba(0,0,0,.25);z-index:99999;font:13px/1 -apple-system,"PingFang SC",Arial,sans-serif}
+  .edit-fbar button{border:0;background:transparent;color:#fff;font-size:13px;padding:5px 9px;border-radius:4px;cursor:pointer}
+  .edit-fbar button:hover{background:rgba(255,255,255,.22)}
+  .edit-fbar input.fsize{width:44px;border:0;background:rgba(255,255,255,.14);color:#fff;border-radius:4px;padding:5px 4px;font-size:12px;text-align:center}
+  .edit-fbar .fcolor{width:20px;height:20px;border-radius:4px;border:1px solid rgba(255,255,255,.4);cursor:pointer;padding:0;background:#ff0000;flex:0 0 auto}
+
+  .edit-textpanel{width:280px}
+  .edit-textpanel .tb{display:flex;align-items:center;gap:2px;background:#1f2329;padding:6px 8px}
+  .edit-textpanel .tb button{border:0;background:transparent;color:#fff;font-size:13px;padding:5px 9px;border-radius:4px;cursor:pointer}
+  .edit-textpanel .tb button:hover{background:rgba(255,255,255,.22)}
+  .edit-textpanel .tb input.fsize{width:44px;border:0;background:rgba(255,255,255,.14);color:#fff;border-radius:4px;padding:5px 4px;font-size:12px;text-align:center}
+  .edit-textpanel .tb .fcolor{width:20px;height:20px;border-radius:4px;border:1px solid rgba(255,255,255,.4);cursor:pointer;padding:0;background:#ff0000;flex:0 0 auto;margin-left:auto}
+  .edit-textpanel .bd{padding:0}
+  .edit-textpanel .ed{min-height:60px;max-height:50vh;overflow:auto;padding:10px 12px;outline:none;font-size:14px;line-height:1.6;color:#1f2329}
+
+  .edit-pal{position:fixed;width:230px;background:#fff;border:1px solid #e5e8ee;border-radius:10px;box-shadow:0 10px 30px rgba(0,0,0,.16);z-index:99999;font:13px/1.6 -apple-system,"PingFang SC","Microsoft YaHei",Arial,sans-serif}
+  .edit-pal .hd{display:flex;align-items:center;justify-content:space-between;padding:9px 12px;border-bottom:1px solid #eef0f4;font-weight:700;cursor:move;user-select:none}
+  .edit-pal .hd button{border:0;background:transparent;font-size:16px;cursor:pointer;color:#8a9099;line-height:1}
+  .edit-pal .bd{padding:6px 10px 10px;max-height:70vh;overflow:auto}
+  .edit-pal.collapsed{width:180px}
+  .edit-pal.collapsed .hd{border-bottom:0}
+  .edit-pal.collapsed .bd{display:none}
+  .edit-pal .pn{font-size:11px;color:#9aa0a8;margin:9px 1px 5px;display:flex;align-items:center;gap:7px}
+  .edit-pal .pn:first-child{margin-top:2px}
+  .edit-pal .pn:after{content:'';flex:1;height:1px;background:#f0f2f5}
+  .edit-pal .pr{display:grid;grid-template-columns:1fr 1fr;gap:6px}
+  .edit-pal .item{border:1px dashed #c6ccd6;border-radius:8px;padding:14px 6px;text-align:center;cursor:grab;color:#4b5563;background:#fafbfc;user-select:none}
+  .edit-pal .item:hover{background:#f2f4f7;border-color:#3478f6;color:#1f2329}
+
+  .edit-drop{position:fixed;border:2px dashed #3478f6;border-radius:4px;background:rgba(52,120,246,.08);pointer-events:none;z-index:99999}
+
+  .edit-cal-pop{box-shadow:0 10px 30px rgba(0,0,0,.18);border-radius:10px}
+  .edit-cal{display:flex;background:#fff;border:1px solid #e5e8ee;border-radius:10px;overflow:hidden;font-size:13px;color:#1f2329}
+  .edit-cal .side{width:100px;background:#fafbfc;border-right:1px solid #eef0f4;padding:10px 0;flex:0 0 auto}
+  .edit-cal .side div{padding:8px 14px;color:#4b5563;cursor:pointer;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+  .edit-cal .side div:hover{background:#f2f4f7}
+  .edit-cal .months{display:flex}
+  .edit-cal .month{flex:0 0 auto;padding:14px;width:220px}
+  .edit-cal .mh{display:flex;align-items:center;justify-content:center;gap:8px;margin-bottom:10px;font-weight:600;white-space:nowrap}
+  .edit-cal .mh .nav{color:#c6ccd6;cursor:pointer;font-size:12px}
+  .edit-cal .grid{display:grid;grid-template-columns:repeat(7,1fr);gap:2px;text-align:center}
+  .edit-cal .grid .wd{color:#9aa0a8;font-size:12px;padding:4px 0}
+  .edit-cal .grid .d{padding:6px 0;border-radius:4px;color:#1f2329}
+  .edit-cal .grid .d.other{color:#c6ccd6}
+  .edit-cal .grid .d.range{background:#eef4ff}
+  .edit-cal .grid .d.sel{background:#3478f6;color:#fff}
+  .edit-cal .grid .d.today{box-shadow:inset 0 0 0 1px #3478f6}
+</style>
+<script>
+(function(){
+  if(window.__editLayerInit) return;
+  window.__editLayerInit = true;
+
+  var STORE = document.getElementById('anno-data');
+  var RO = STORE ? STORE.getAttribute('data-mode') === 'readonly' : false;
+  if (RO) { return }
+
+  var root = document.getElementById('anno-root');
+  if (!root) {
+    root = document.createElement('div'); root.id = 'anno-root';
+    root.style.cssText = 'position:fixed;inset:0;pointer-events:none;z-index:99999;font:13px/1.6 -apple-system,"PingFang SC","Microsoft YaHei",Arial,sans-serif;color:#1f2329';
+    document.body.appendChild(root);
+  }
+
+  var bar = document.querySelector('.anno-bar');
+  var ownBar = false;
+  if (!bar) {
+    bar = document.createElement('div'); bar.className = 'edit-bar pe';
+    root.appendChild(bar); ownBar = true;
+  }
+
+  var editBtn = document.createElement('button'); editBtn.id = 'editMode'; editBtn.textContent = '✎ 编辑模式';
+  var undoBtn = document.createElement('button'); undoBtn.id = 'editUndo'; undoBtn.title = '撤销'; undoBtn.textContent = '↶ 撤销'; undoBtn.disabled = true;
+  var redoBtn = document.createElement('button'); redoBtn.id = 'editRedo'; redoBtn.title = '还原'; redoBtn.textContent = '↷ 还原'; redoBtn.disabled = true;
+  var bubbleAnchor = document.getElementById('annoMode');
+  var listAnchor = document.getElementById('annoList');
+  if (bubbleAnchor && bubbleAnchor.parentNode === bar) {
+    bar.insertBefore(editBtn, bubbleAnchor.nextSibling);
+    if (listAnchor && listAnchor.parentNode === bar) {
+      bar.insertBefore(undoBtn, listAnchor); bar.insertBefore(redoBtn, listAnchor);
+    } else { bar.appendChild(undoBtn); bar.appendChild(redoBtn) }
+  } else {
+    bar.appendChild(editBtn); bar.appendChild(undoBtn); bar.appendChild(redoBtn);
+  }
+
+  var emode = false, esel = null, box = null, tbar = null, panel = null, palPanel = null;
+  var dragKey = null, dropHint = null;
+
+  var imgFileInput = document.createElement('input');
+  imgFileInput.type = 'file'; imgFileInput.accept = 'image/*'; imgFileInput.className = 'pe';
+  imgFileInput.style.cssText = 'position:fixed;left:-9999px;width:1px;height:1px;opacity:0';
+  root.appendChild(imgFileInput);
+  imgFileInput.addEventListener('change', function(){
+    var f = imgFileInput.files[0];
+    if (!f || !esel) { imgFileInput.value = ''; return }
+    pushUndo();
+    var reader = new FileReader();
+    reader.onload = function(){
+      esel.style.backgroundImage = 'url(' + reader.result + ')';
+      esel.textContent = '';
+      imgFileInput.value = '';
+    };
+    reader.readAsDataURL(f);
+  });
+
+  function inRoot(el){ return !!el && root.contains(el) }
+  function isFreePos(el){ var p = getComputedStyle(el).position; return p === 'absolute' || p === 'fixed' }
+
+  function setMode(v){
+    if (v && window.__annoExitForEdit) window.__annoExitForEdit();
+    emode = v;
+    editBtn.classList.toggle('on', v);
+    editBtn.textContent = v ? '✕ 退出编辑' : '✎ 编辑模式';
+    if (v) openPalette();
+    else { deselect(); closePalette() }
+  }
+  editBtn.onclick = function(){ setMode(!emode) };
+  window.__editExitForAnno = function(){ if (emode) setMode(false) };
+
+  /* ---------- 悬停高亮 ---------- */
+  var hoverEl = null;
+  document.addEventListener('mouseover', function(e){
+    if (!emode || inRoot(e.target)) return;
+    if (esel && esel.getAttribute('contenteditable') === 'true') return;
+    if (hoverEl) hoverEl.classList.remove('edit-hover');
+    hoverEl = e.target; hoverEl.classList.add('edit-hover');
+  }, true);
+  document.addEventListener('mouseout', function(e){
+    if (hoverEl === e.target) { hoverEl.classList.remove('edit-hover'); hoverEl = null }
+  }, true);
+
+  /* ---------- 选中 / 拖动已定位元素 ---------- */
+  var downInfo = null;
+  function placeCaretAt(x, y){
+    var range = null;
+    if (document.caretRangeFromPoint) range = document.caretRangeFromPoint(x, y);
+    else if (document.caretPositionFromPoint) {
+      var pos = document.caretPositionFromPoint(x, y);
+      if (pos) { range = document.createRange(); range.setStart(pos.offsetNode, pos.offset) }
+    }
+    if (!range) return;
+    var sel = getSelection();
+    sel.removeAllRanges();
+    sel.addRange(range);
+  }
+  document.addEventListener('mousedown', function(e){
+    if (!emode || inRoot(e.target) || e.button !== 0) return;
+    if (esel && esel.getAttribute('contenteditable') === 'true') {
+      if (esel === e.target || esel.contains(e.target)) placeCaretAt(e.clientX, e.clientY);
+      return;                                          /* 正在编辑文字时放行原生行为 */
+    }
+    if (esel && e.target === esel) { startElementDrag(e); return }
+    downInfo = { x: e.clientX, y: e.clientY, t: e.target };
+    e.preventDefault(); e.stopPropagation();
+  }, true);
+  document.addEventListener('mouseup', function(e){
+    if (!downInfo) return;
+    var d = downInfo; downInfo = null;
+    if (Math.abs(e.clientX - d.x) < 4 && Math.abs(e.clientY - d.y) < 4) select(d.t);
+  }, true);
+  document.addEventListener('click', function(e){
+    if (emode && !inRoot(e.target) && !(esel && esel.getAttribute('contenteditable') === 'true')) {
+      e.preventDefault(); e.stopPropagation();
+    }
+  }, true);
+  document.addEventListener('dblclick', function(e){
+    if (!emode || inRoot(e.target)) return;
+    if (esel && esel.getAttribute('contenteditable') === 'true') return;
+    e.preventDefault(); e.stopPropagation();
+    if (esel !== e.target) select(e.target);
+    if (esel) { startTextEdit(); placeCaretAt(e.clientX, e.clientY) }
+  }, true);
+
+  function select(el){
+    if (!el || el === document.documentElement || el === document.body) { deselect(); return }
+    esel = el; drawBox(); showToolbar(); closePanel(); closeTextPanel();
+  }
+  function deselect(){
+    esel = null;
+    if (box) { box.remove(); box = null }
+    if (tbar) { tbar.remove(); tbar = null }
+    closePanel();
+    closeTextPanel();
+    hideFormatBar();
+  }
+
+  function drawBox(){
+    if (!esel) return;
+    if (!box) { box = document.createElement('div'); box.className = 'edit-box'; root.appendChild(box) }
+    var r = esel.getBoundingClientRect();
+    box.style.left = r.left + 'px'; box.style.top = r.top + 'px';
+    box.style.width = r.width + 'px'; box.style.height = r.height + 'px';
+    var rz = box.querySelector('.edit-rz');
+    if (!rz) { rz = document.createElement('div'); rz.className = 'edit-rz'; box.appendChild(rz); rz.addEventListener('mousedown', startResize) }
+    rz.style.display = 'block';
+  }
+
+  function showToolbar(){
+    if (!tbar) { tbar = document.createElement('div'); tbar.className = 'edit-tbar pe'; root.appendChild(tbar) }
+    var isImg = esel.classList.contains('edit-imgph');
+    var isSelect = esel.tagName === 'SELECT';
+    var isTable = esel.tagName === 'TABLE';
+    tbar.innerHTML =
+      '<button data-a="style" title="样式">🎨</button>' +
+      '<button data-a="text" title="编辑文字">✏️</button>' +
+      (isImg ? '<button data-a="img" title="上传图片">🖼</button>' : '') +
+      (isSelect ? '<button data-a="opts" title="编辑选项">📝</button>' : '') +
+      (isTable ? '<button data-a="colup" title="增加列">➕列</button><button data-a="coldown" title="减少列">➖列</button>' : '') +
+      '<button data-a="up" title="上移">↑</button>' +
+      '<button data-a="down" title="下移">↓</button>' +
+      '<button data-a="dup" title="复制">⧉</button>' +
+      '<button data-a="del" title="删除">🗑</button>';
+    tbar.onclick = function(e){ var b = e.target.closest('button'); if (b) { e.stopPropagation(); act(b.dataset.a) } };
+    tbar.onmousedown = function(e){ e.stopPropagation() };
+    posToolbar();
+  }
+  function posToolbar(){
+    if (!tbar || !esel) return;
+    var r = esel.getBoundingClientRect();
+    var top = r.top - 38; if (top < 4) top = r.bottom + 6;
+    tbar.style.left = Math.max(4, Math.min(r.left, innerWidth - tbar.offsetWidth - 4)) + 'px';
+    tbar.style.top = top + 'px';
+  }
+
+  function act(k){
+    if (!esel) return;
+    if (['colup', 'coldown', 'up', 'down', 'dup', 'del'].indexOf(k) >= 0) pushUndo();
+    if (k === 'style') { togglePanel(); return }
+    if (k === 'text') { openTextPanel(); return }
+    if (k === 'img') { imgFileInput.click(); return }
+    if (k === 'opts') { openOptsEditor(); return }
+    if (k === 'colup') {
+      Array.prototype.forEach.call(esel.rows, function(row){
+        var ref = row.cells[row.cells.length - 1];
+        var cell = document.createElement(ref ? ref.tagName : 'TD');
+        cell.setAttribute('style', ref ? (ref.getAttribute('style') || '') : 'border:1px solid #d0d5dd;padding:8px 12px');
+        cell.textContent = ref ? ref.textContent : '内容';
+        row.appendChild(cell);
+      });
+      drawBox(); return;
+    }
+    if (k === 'coldown') {
+      if (esel.rows[0] && esel.rows[0].cells.length > 1) {
+        Array.prototype.forEach.call(esel.rows, function(row){
+          if (row.lastElementChild) row.lastElementChild.remove();
+        });
+      }
+      drawBox(); return;
+    }
+    if (k === 'up') {
+      var p = esel.previousElementSibling;
+      if (p && !inRoot(p)) esel.parentNode.insertBefore(esel, p);
+      drawBox(); posToolbar(); return;
+    }
+    if (k === 'down') {
+      var n = esel.nextElementSibling;
+      if (n && !inRoot(n)) esel.parentNode.insertBefore(n, esel);
+      drawBox(); posToolbar(); return;
+    }
+    if (k === 'dup') { var c = esel.cloneNode(true); esel.parentNode.insertBefore(c, esel.nextSibling); select(c); return }
+    if (k === 'del') { if (confirm('删除该元素？')) { var t = esel; deselect(); t.remove() } return }
+  }
+
+  function startTextEdit(){
+    if (!esel) return;
+    pushUndo();
+    var editingEl = esel;
+    editingEl.setAttribute('contenteditable', 'true');
+    editingEl.classList.add('edit-editing');
+    editingEl.dataset.editPrevUserSelect = editingEl.style.userSelect || '';
+    editingEl.style.userSelect = 'text';
+    editingEl.style.webkitUserSelect = 'text';
+    editingEl.focus();
+    var range = document.createRange();
+    range.selectNodeContents(editingEl);
+    range.collapse(false);
+    var sel = getSelection();
+    sel.removeAllRanges();
+    sel.addRange(range);
+    function done(){
+      setTimeout(function(){
+        var active = document.activeElement;
+        if ((fbar && fbar.contains(active)) || (cpop && cpop.contains(active))) return;
+        editingEl.setAttribute('contenteditable', 'false');
+        editingEl.classList.remove('edit-editing');
+        editingEl.style.userSelect = editingEl.dataset.editPrevUserSelect;
+        delete editingEl.dataset.editPrevUserSelect;
+        editingEl.removeEventListener('blur', done);
+        editingEl.removeEventListener('keydown', onKey);
+        hideFormatBar();
+      }, 0);
+    }
+    function onKey(e){ if (e.key === 'Escape') { e.preventDefault(); done() } }
+    editingEl.addEventListener('blur', done);
+    editingEl.addEventListener('keydown', onKey);
+  }
+
+  /* ---------- 选中文字后的格式工具条(加粗/斜体/下划线/字号/文字色) ---------- */
+  var fbar = null, savedTextRange = null;
+  function restoreTextSelection(){
+    if (!savedTextRange || !esel) return;
+    esel.focus();
+    var sel = getSelection();
+    sel.removeAllRanges();
+    sel.addRange(savedTextRange);
+  }
+  function refreshSavedRange(){
+    var sel = getSelection();
+    if (esel && sel.rangeCount && !sel.isCollapsed && esel.contains(sel.getRangeAt(0).commonAncestorContainer)) {
+      savedTextRange = sel.getRangeAt(0).cloneRange();
+    }
+  }
+  function applyFontSize(px){
+    restoreTextSelection();
+    var s = getSelection(); if (!s || !s.rangeCount || !esel) return;
+    var r = s.getRangeAt(0);
+    if (r.collapsed || !esel.contains(r.commonAncestorContainer)) return;
+    var frag = r.extractContents();
+    Array.prototype.forEach.call(frag.querySelectorAll ? frag.querySelectorAll('*') : [], function(n){
+      if (n.style && n.style.fontSize) { n.style.fontSize = ''; if (!n.getAttribute('style')) n.removeAttribute('style'); }
+      if (n.tagName === 'FONT' && n.hasAttribute('size')) n.removeAttribute('size');
+    });
+    var span = document.createElement('span'); span.style.fontSize = px + 'px';
+    span.appendChild(frag); r.insertNode(span);
+    var r2 = document.createRange(); r2.selectNodeContents(span);
+    s.removeAllRanges(); s.addRange(r2);
+    refreshSavedRange();
+  }
+  function showFormatBar(range){
+    savedTextRange = range.cloneRange();
+    if (tbar) tbar.style.display = 'none';
+    if (!fbar) {
+      fbar = document.createElement('div'); fbar.className = 'edit-fbar pe';
+      fbar.innerHTML =
+        '<button data-c="bold" title="加粗"><b>B</b></button>' +
+        '<button data-c="italic" title="斜体"><i>I</i></button>' +
+        '<button data-c="underline" title="下划线"><u>U</u></button>' +
+        '<input class="fsize" type="number" min="8" max="96" title="字号(px)" placeholder="字号">' +
+        '<button type="button" class="fcolor" title="文字颜色"></button>';
+      root.appendChild(fbar);
+      fbar.addEventListener('mousedown', function(e){
+        if (e.target.tagName !== 'INPUT') e.preventDefault();
+        e.stopPropagation();
+      });
+      fbar.addEventListener('click', function(e){
+        var b = e.target.closest('button[data-c]');
+        if (!b) return;
+        e.stopPropagation();
+        restoreTextSelection(); document.execCommand(b.dataset.c, false, null); refreshSavedRange();
+      });
+      fbar.querySelector('.fsize').addEventListener('change', function(e){
+        var v = parseInt(e.target.value, 10);
+        if (v) applyFontSize(v);
+      });
+      fbar.querySelector('.fcolor').addEventListener('click', function(e){
+        e.stopPropagation();
+        openColorPopup(fbar.querySelector('.fcolor'), function(v){ restoreTextSelection(); document.execCommand('foreColor', false, v); refreshSavedRange() });
+      });
+    }
+    var r = range.getBoundingClientRect();
+    if (!r.width && !r.height) return;
+    fbar.style.display = 'flex';
+    fbar.style.left = Math.max(4, Math.min(r.left, innerWidth - 300)) + 'px';
+    fbar.style.top = Math.max(4, r.top - 40) + 'px';
+  }
+  function hideFormatBar(){
+    if (fbar) fbar.style.display = 'none';
+    if (tbar && esel) tbar.style.display = 'flex';
+  }
+  document.addEventListener('selectionchange', function(){
+    if (!esel || esel.getAttribute('contenteditable') !== 'true') { hideFormatBar(); return }
+    var sel = getSelection();
+    if (!sel || !sel.rangeCount || sel.isCollapsed) { hideFormatBar(); return }
+    var range = sel.getRangeAt(0);
+    if (!esel.contains(range.commonAncestorContainer)) { hideFormatBar(); return }
+    showFormatBar(range);
+  });
+
+  /* ---------- 自由拖动(任意元素;非定位元素首次拖动时自动转为 absolute,不影响单击) ---------- */
+  function startElementDrag(e){
+    e.preventDefault(); e.stopPropagation();
+    var el = esel;
+    var sx = e.clientX, sy = e.clientY, moved = false, startLeft = 0, startTop = 0;
+    function ensureFree(){
+      var cs = getComputedStyle(el);
+      var elR = el.getBoundingClientRect();
+      if (cs.position === 'absolute' || cs.position === 'fixed') {
+        startLeft = parseFloat(cs.left) || 0; startTop = parseFloat(cs.top) || 0;
+        if (cs.position === 'fixed') {
+          if (cs.left === 'auto') startLeft = elR.left;
+          if (cs.top === 'auto') startTop = elR.top;
+        } else {
+          var op = el.offsetParent || document.body, opR = op.getBoundingClientRect();
+          if (cs.left === 'auto') startLeft = elR.left - opR.left;
+          if (cs.top === 'auto') startTop = elR.top - opR.top;
+        }
+      } else {
+        var op2 = el.offsetParent || document.body, opR2 = op2.getBoundingClientRect();
+        startLeft = elR.left - opR2.left;
+        startTop = elR.top - opR2.top;
+        el.style.position = 'absolute';
+        el.style.margin = '0';
+        el.style.left = startLeft + 'px';
+        el.style.top = startTop + 'px';
+      }
+    }
+    function mv(ev){
+      var dx = ev.clientX - sx, dy = ev.clientY - sy;
+      if (!moved) {
+        if (Math.abs(dx) < 4 && Math.abs(dy) < 4) return;
+        moved = true;
+        pushUndo();
+        ensureFree();
+      }
+      el.style.left = (startLeft + dx) + 'px';
+      el.style.top = (startTop + dy) + 'px';
+      drawBox(); posToolbar();
+    }
+    function up(){ document.removeEventListener('mousemove', mv, true); document.removeEventListener('mouseup', up, true) }
+    document.addEventListener('mousemove', mv, true);
+    document.addEventListener('mouseup', up, true);
+  }
+  function startResize(e){
+    e.preventDefault(); e.stopPropagation();
+    pushUndo();
+    var el = esel, sw = el.offsetWidth, sh = el.offsetHeight, sx = e.clientX, sy = e.clientY;
+    function mv(ev){
+      el.style.width = Math.max(20, sw + ev.clientX - sx) + 'px';
+      el.style.height = Math.max(20, sh + ev.clientY - sy) + 'px';
+      drawBox(); posToolbar();
+    }
+    function up(){ document.removeEventListener('mousemove', mv, true); document.removeEventListener('mouseup', up, true) }
+    document.addEventListener('mousemove', mv, true);
+    document.addEventListener('mouseup', up, true);
+  }
+
+  /* ---------- 样式面板 ---------- */
+  function togglePanel(){ if (panel) closePanel(); else openPanel() }
+  function closePanel(){ if (panel) { panel.remove(); panel = null } closeColorPopup(); closeOptsEditor() }
+  function rgbToHex(rgb){
+    var m = /rgba?\((\d+),\s*(\d+),\s*(\d+)/.exec(rgb || ''); if (!m) return '#ffffff';
+    function h(n){ n = (+n).toString(16); return n.length < 2 ? '0' + n : n }
+    return '#' + h(m[1]) + h(m[2]) + h(m[3]);
+  }
+  function fieldRow(label, name, type, val){
+    return '<label class="fld"><span>' + label + '</span><input data-f="' + name + '" type="' + type + '" value="' +
+      (val == null ? '' : String(val).replace(/"/g, '&quot;')) + '"></label>';
+  }
+  var COLOR_GRID = [
+    ['#000000', '#333333', '#666666', '#999999', '#bbbbbb', '#dddddd', '#ffffff'],
+    ['#f5a3a3', '#f5c9a3', '#f5f0a3', '#c9f5a3', '#a3f5e0', '#a3d4f5', '#c9a3f5'],
+    ['#e03a3a', '#e0813a', '#e0d43a', '#7fe03a', '#3ae0c2', '#3a8fe0', '#8f3ae0'],
+    ['#8f1f1f', '#8f4f1f', '#8f841f', '#4f8f1f', '#1f8f77', '#1f588f', '#571f8f']
+  ];
+  function rgbaAlpha(rgb){
+    var m = /rgba?\([^,]+,[^,]+,[^,]+,\s*([\d.]+)\s*\)/.exec(rgb || '');
+    return m ? Math.round(parseFloat(m[1]) * 100) : 100;
+  }
+  function colorRow(label, name, val, alpha){
+    var v = (val || '#000000').toLowerCase();
+    return '<div class="fld col"><span>' + label + '</span><button type="button" class="swatch" data-f="' + name + '" data-hex="' + v + '" data-alpha="' + (alpha == null ? 100 : alpha) + '" style="background:' + v + '"></button></div>';
+  }
+  var cpop = null;
+  function closeColorPopup(){ if (cpop) { cpop.remove(); cpop = null } }
+  function openColorPopup(anchorBtn, setter){
+    closeColorPopup();
+    cpop = document.createElement('div'); cpop.className = 'edit-cpop pe';
+    var rows = COLOR_GRID.map(function(row){
+      return '<div class="row">' + row.map(function(c){ return '<i data-c="' + c + '" style="background:' + c + '"></i>' }).join('') + '</div>';
+    }).join('');
+    cpop.innerHTML = '<div class="hexrow"><input class="hex" type="text" maxlength="7" placeholder="#000000">' +
+      (window.EyeDropper ? '<button type="button" class="eye" title="取色器">💧</button>' : '') + '</div>' +
+      '<div class="alpharow"><span>透明度</span><input class="alpha" type="range" min="0" max="100"><span class="alphaval"></span></div>' +
+      '<div class="grid">' + rows + '</div>';
+    root.appendChild(cpop);
+    var r = anchorBtn.getBoundingClientRect();
+    cpop.style.left = Math.max(4, Math.min(r.left, innerWidth - 210)) + 'px';
+    cpop.style.top = Math.max(4, Math.min(r.bottom + 6, innerHeight - 260)) + 'px';
+    cpop.onmousedown = function(e){ if (e.target.tagName !== 'INPUT') e.preventDefault(); e.stopPropagation() };
+    var hex = cpop.querySelector('.hex');
+    var alphaInput = cpop.querySelector('.alpha');
+    var alphaVal = cpop.querySelector('.alphaval');
+    hex.value = anchorBtn.dataset.hex || '#000000';
+    var curAlpha = anchorBtn.dataset.alpha != null ? +anchorBtn.dataset.alpha : 100;
+    alphaInput.value = curAlpha;
+    alphaVal.textContent = curAlpha + '%';
+    function finalColor(){
+      var v = hex.value, a = +alphaInput.value;
+      if (a >= 100) return v;
+      var m = /^#([0-9a-f]{2})([0-9a-f]{2})([0-9a-f]{2})$/i.exec(v);
+      if (!m) return v;
+      return 'rgba(' + parseInt(m[1], 16) + ',' + parseInt(m[2], 16) + ',' + parseInt(m[3], 16) + ',' + (a / 100).toFixed(2) + ')';
+    }
+    function apply(){
+      var out = finalColor();
+      setter(out);
+      anchorBtn.style.background = out;
+      anchorBtn.dataset.hex = hex.value;
+      anchorBtn.dataset.alpha = alphaInput.value;
+      drawBox();
+    }
+    Array.prototype.forEach.call(cpop.querySelectorAll('.row i'), function(sw){
+      sw.onclick = function(){ hex.value = sw.dataset.c; apply() };
+    });
+    hex.addEventListener('change', function(){
+      var v = hex.value.trim();
+      if (/^[0-9a-fA-F]{6}$/.test(v)) v = '#' + v;
+      if (!/^#[0-9a-fA-F]{6}$/.test(v)) return;
+      hex.value = v;
+      apply();
+    });
+    hex.addEventListener('keydown', function(e){ if (e.key === 'Enter') hex.blur() });
+    alphaInput.addEventListener('input', function(){ alphaVal.textContent = alphaInput.value + '%'; apply() });
+    var eye = cpop.querySelector('.eye');
+    if (eye) eye.onclick = function(){
+      new window.EyeDropper().open().then(function(res){ hex.value = res.sRGBHex; apply() }).catch(function(){});
+    };
+  }
+  document.addEventListener('mousedown', function(e){
+    if (cpop && !cpop.contains(e.target)) closeColorPopup();
+  }, true);
+
+  /* ---------- 下拉菜单选项编辑(真正的多行文本框,不用 prompt) ---------- */
+  var optsPop = null;
+  function closeOptsEditor(){ if (optsPop) { optsPop.remove(); optsPop = null } }
+  function openOptsEditor(){
+    if (!esel) return;
+    closeOptsEditor();
+    var target = esel;
+    var current = Array.prototype.map.call(target.options, function(o){ return o.textContent }).join('\n');
+    optsPop = document.createElement('div'); optsPop.className = 'edit-opts pe';
+    optsPop.innerHTML = '<div class="hd">编辑选项 · 每行一个<button class="x">×</button></div>' +
+      '<textarea></textarea><div class="ft"><button type="button" class="ok">确定</button></div>';
+    root.appendChild(optsPop);
+    var r = target.getBoundingClientRect();
+    optsPop.style.left = Math.max(4, Math.min(r.left, innerWidth - 240)) + 'px';
+    optsPop.style.top = Math.max(4, Math.min(r.bottom + 6, innerHeight - 200)) + 'px';
+    optsPop.onmousedown = function(e){ e.stopPropagation() };
+    var ta = optsPop.querySelector('textarea');
+    ta.value = current;
+    optsPop.querySelector('.x').onclick = closeOptsEditor;
+    optsPop.querySelector('.ok').onclick = function(){
+      var lines = ta.value.split('\n').map(function(s){ return s.trim() }).filter(Boolean);
+      pushUndo();
+      target.innerHTML = '';
+      lines.forEach(function(t){ var o = document.createElement('option'); o.textContent = t; target.appendChild(o) });
+      closeOptsEditor();
+    };
+    ta.focus();
+  }
+  document.addEventListener('mousedown', function(e){
+    if (optsPop && !optsPop.contains(e.target)) closeOptsEditor();
+  }, true);
+
+  function openPanel(){
+    if (!esel) return;
+    pushUndo();
+    closePanel();
+    panel = document.createElement('div'); panel.className = 'edit-panel pe';
+    var cs = getComputedStyle(esel);
+    panel.innerHTML =
+      '<div class="hd">样式<button class="x">×</button></div><div class="bd">' +
+      colorRow('背景色', 'bg', rgbToHex(cs.backgroundColor), rgbaAlpha(cs.backgroundColor)) +
+      colorRow('边框色', 'bc', rgbToHex(cs.borderColor), rgbaAlpha(cs.borderColor)) +
+      fieldRow('边框宽度(px)', 'bw', 'number', parseFloat(cs.borderWidth) || 0) +
+      fieldRow('圆角(px)', 'br', 'number', parseFloat(cs.borderRadius) || 0) +
+      fieldRow('内边距', 'pad', 'text', esel.style.padding || '') +
+      fieldRow('外边距', 'mar', 'text', esel.style.margin || '') +
+      fieldRow('宽度', 'w', 'text', esel.style.width || '') +
+      fieldRow('高度', 'h', 'text', esel.style.height || '') +
+      '</div>';
+    root.appendChild(panel);
+    positionPanel();
+    panel.onmousedown = function(e){ e.stopPropagation() };
+    panel.querySelector('.x').onclick = closePanel;
+    var setters = {
+      bg: function(v){ esel.style.backgroundColor = v },
+      bc: function(v){ esel.style.borderColor = v; if (esel.style.borderStyle !== 'solid' && parseFloat(esel.style.borderWidth) > 0) esel.style.borderStyle = 'solid' },
+      bw: function(v){ esel.style.borderWidth = v + 'px'; esel.style.borderStyle = parseFloat(v) > 0 ? 'solid' : 'none' },
+      br: function(v){ esel.style.borderRadius = v + 'px' },
+      pad: function(v){ esel.style.padding = v },
+      mar: function(v){ esel.style.margin = v },
+      w: function(v){ esel.style.width = v },
+      h: function(v){ esel.style.height = v }
+    };
+    ['bw', 'br', 'pad', 'mar', 'w', 'h'].forEach(function(name){
+      var input = panel.querySelector('[data-f="' + name + '"]');
+      if (!input) return;
+      input.addEventListener('input', function(){ setters[name](input.value); drawBox() });
+    });
+    ['bg', 'bc'].forEach(function(name){
+      var btn = panel.querySelector('.swatch[data-f="' + name + '"]');
+      if (!btn) return;
+      btn.onclick = function(e){ e.stopPropagation(); openColorPopup(btn, setters[name]) };
+    });
+  }
+  function positionPanel(){
+    if (!panel || !esel) return;
+    var r = esel.getBoundingClientRect();
+    var left = r.right + 10; if (left + 260 > innerWidth) left = Math.max(4, r.left - 270);
+    panel.style.left = Math.max(4, Math.min(left, innerWidth - 260)) + 'px';
+    panel.style.top = Math.max(4, Math.min(r.top, innerHeight - 40)) + 'px';
+  }
+
+  /* ---------- 编辑文字(点击铅笔弹出的独立浮层,和样式面板一致的交互方式) ---------- */
+  var textPanel = null;
+  function closeTextPanel(){
+    if (!textPanel) return;
+    textPanel.remove(); textPanel = null;
+  }
+  function positionTextPanel(){
+    if (!textPanel || !esel) return;
+    var r = esel.getBoundingClientRect();
+    var left = r.right + 10; if (left + 280 > innerWidth) left = Math.max(4, r.left - 290);
+    textPanel.style.left = Math.max(4, Math.min(left, innerWidth - 280)) + 'px';
+    textPanel.style.top = Math.max(4, Math.min(r.top, innerHeight - 40)) + 'px';
+  }
+  function openTextPanel(){
+    if (!esel) return;
+    pushUndo();
+    closePanel(); closeTextPanel();
+    var target = esel;
+    textPanel = document.createElement('div'); textPanel.className = 'edit-panel edit-textpanel pe';
+    textPanel.innerHTML =
+      '<div class="hd">编辑文字<button class="x">×</button></div>' +
+      '<div class="tb"><button data-c="bold" title="加粗"><b>B</b></button>' +
+      '<button data-c="italic" title="斜体"><i>I</i></button>' +
+      '<button data-c="underline" title="下划线"><u>U</u></button>' +
+      '<input class="fsize" type="number" min="8" max="96" title="字号(px)" placeholder="字号">' +
+      '<button type="button" class="fcolor" title="文字颜色"></button></div>' +
+      '<div class="bd"><div class="ed" contenteditable="true"></div></div>';
+    root.appendChild(textPanel);
+    var ed = textPanel.querySelector('.ed');
+    ed.innerHTML = target.innerHTML;
+    positionTextPanel();
+    textPanel.onmousedown = function(e){ e.stopPropagation() };
+    textPanel.querySelector('.x').onclick = function(){ closeTextPanel() };
+    function sync(){ target.innerHTML = ed.innerHTML; drawBox() }
+    ed.addEventListener('input', sync);
+    var savedRange = null;
+    function remember(){
+      var s = getSelection(); if (!s || !s.rangeCount) return;
+      var r = s.getRangeAt(0);
+      if (ed.contains(r.commonAncestorContainer)) savedRange = r.cloneRange();
+    }
+    function restore(){
+      ed.focus();
+      if (savedRange) { var s = getSelection(); s.removeAllRanges(); s.addRange(savedRange) }
+    }
+    ['keyup', 'mouseup', 'input'].forEach(function(ev){ ed.addEventListener(ev, remember) });
+    Array.prototype.forEach.call(textPanel.querySelectorAll('.tb button[data-c]'), function(b){
+      b.onmousedown = function(e){ e.preventDefault() };
+      b.onclick = function(){
+        restore(); document.execCommand(b.dataset.c, false, null); remember(); sync();
+      };
+    });
+    textPanel.querySelector('.fsize').addEventListener('change', function(e){
+      var v = parseInt(e.target.value, 10); if (!v) return;
+      restore();
+      var s = getSelection(); if (!s || !s.rangeCount) return;
+      var r = s.getRangeAt(0);
+      if (r.collapsed || !ed.contains(r.commonAncestorContainer)) return;
+      var frag = r.extractContents();
+      Array.prototype.forEach.call(frag.querySelectorAll ? frag.querySelectorAll('*') : [], function(n){
+        if (n.style && n.style.fontSize) { n.style.fontSize = ''; if (!n.getAttribute('style')) n.removeAttribute('style'); }
+        if (n.tagName === 'FONT' && n.hasAttribute('size')) n.removeAttribute('size');
+      });
+      var span = document.createElement('span'); span.style.fontSize = v + 'px';
+      span.appendChild(frag); r.insertNode(span);
+      var r2 = document.createRange(); r2.selectNodeContents(span);
+      s.removeAllRanges(); s.addRange(r2);
+      remember(); sync();
+    });
+    textPanel.querySelector('.fcolor').addEventListener('click', function(e){
+      e.stopPropagation();
+      openColorPopup(textPanel.querySelector('.fcolor'), function(v){ restore(); document.execCommand('foreColor', false, v); remember(); sync() });
+    });
+    ed.focus();
+    var range = document.createRange(); range.selectNodeContents(ed);
+    var sel = getSelection(); sel.removeAllRanges(); sel.addRange(range);
+    remember();
+  }
+
+  /* ---------- 组件面板(拖入新组件) ---------- */
+  function calMonth(monthLabel, startOffset, selIdx, rangeFrom, rangeTo, todayIdx){
+    var wd = ['日', '一', '二', '三', '四', '五', '六'].map(function(w){ return '<div class="wd">' + w + '</div>' }).join('');
+    var cells = '';
+    for (var i = 0; i < 42; i++) {
+      var n = i - startOffset + 1;
+      var other = n < 1 || n > 31;
+      var disp = n < 1 ? (n + 31) : (n > 31 ? (n - 31) : n);
+      var cls = 'd' + (other ? ' other' : '') + (i >= rangeFrom && i <= rangeTo ? ' range' : '') + (i === selIdx ? ' sel' : '') + (i === todayIdx ? ' today' : '');
+      cells += '<div class="' + cls + '">' + disp + '</div>';
+    }
+    return '<div class="month"><div class="mh"><span class="nav">«</span><span class="nav">‹</span><span>' + monthLabel + '</span><span class="nav">›</span><span class="nav">»</span></div><div class="grid">' + wd + cells + '</div></div>';
+  }
+  var CAL_HTML = '<div class="edit-cal">' +
+    '<div class="side"><div>今日</div><div>昨天</div><div>最近7天</div><div>最近30天</div><div>上月</div><div>本月</div><div>最近三个月</div></div>' +
+    '<div class="months">' + calMonth('2026年7月', 3, -1, -1, -1, 32) + calMonth('2026年8月', 6, 19, 8, 20, -1) + '</div>' +
+    '</div>';
+  var DATEPICKER_HTML =
+    '<div class="edit-dtctl" style="display:inline-flex;align-items:center;border:1px solid #d0d5dd;border-radius:8px;overflow:hidden;font-size:14px;color:#1f2329;background:#fff;width:280px">' +
+    '<select style="padding:8px 12px;color:#4b5563;white-space:nowrap;border:0;border-right:1px solid #eef0f4;background:#fff;flex:0 0 auto;font:inherit;cursor:pointer"><option>创建时间</option></select>' +
+    '<div class="dt-trigger" style="flex:1;min-width:0;padding:8px 12px;color:#9aa0a8;cursor:pointer;display:flex;align-items:center;justify-content:space-between;gap:6px">请选择日期<span style="color:#9aa0a8">📅</span></div>' +
+    '</div>';
+
+  var CATEGORIES = [
+    { name: '基础', items: {
+      btn: { label: '按钮', html: '<button style="padding:8px 16px;border-radius:6px;border:1px solid #d0d5dd;background:#fff;cursor:pointer;font-size:14px">按钮</button>' },
+      text: { label: '文字', html: '<p style="margin:0;font-size:14px;color:#1f2329;line-height:1.6">文本内容</p>' },
+      img: { label: '图片', html: '<div class="edit-imgph" style="width:120px;height:80px;background:#e5e8ee;background-size:cover;background-position:center;border-radius:6px;display:flex;align-items:center;justify-content:center;color:#9aa0a8;font-size:12px">图片</div>' },
+      box: { label: '容器', html: '<div style="width:200px;padding:16px;border:1px dashed #c6ccd6;border-radius:8px;min-height:60px;background:#fff">容器</div>' },
+      hr: { label: '分隔线', html: '<hr style="width:160px;border:none;border-top:1px solid #c6ccd6;margin:0">' }
+    }},
+    { name: '图形', items: {
+      rect: { label: '矩形', html: '<div style="width:120px;height:80px;background:#8a9099;border-radius:4px"></div>' },
+      circle: { label: '圆形', html: '<div style="width:100px;height:100px;background:#8a9099;border-radius:50%"></div>' },
+      triangle: { label: '三角形', html: '<div style="width:100px;height:86px;background:#8a9099;clip-path:polygon(50% 0%,0% 100%,100% 100%)"></div>' },
+      line: { label: '直线', html: '<div style="width:120px;height:2px;background:#8a9099"></div>' }
+    }},
+    { name: '表单', items: {
+      select: { label: '下拉菜单', html: '<select class="edit-select" style="padding:6px 10px;border:1px solid #d0d5dd;border-radius:6px;font-size:14px;background:#fff"><option>选项一</option><option>选项二</option><option>选项三</option></select>' },
+      input: { label: '单行输入框', html: '<input type="text" placeholder="请输入" style="padding:6px 10px;border:1px solid #d0d5dd;border-radius:6px;font-size:14px;width:160px;box-sizing:border-box">' },
+      textarea: { label: '多行输入框', html: '<textarea placeholder="请输入" style="padding:6px 10px;border:1px solid #d0d5dd;border-radius:6px;font-size:14px;width:200px;height:80px;resize:none;box-sizing:border-box;font-family:inherit"></textarea>' },
+      datepicker: { label: '时间选择器', html: DATEPICKER_HTML },
+      radio: { label: '单选', html: '<label style="display:inline-flex;align-items:center;gap:6px;font-size:14px;cursor:pointer;white-space:nowrap"><input type="radio" name="edit-radio-demo">选项文字</label>' },
+      checkbox: { label: '复选', html: '<label style="display:inline-flex;align-items:center;gap:6px;font-size:14px;cursor:pointer;white-space:nowrap"><input type="checkbox">选项文字</label>' },
+      table: { label: '表格', html: '<table class="edit-table" style="border-collapse:collapse;width:300px;font-size:13px"><tbody>' +
+        '<tr><td style="border:1px solid #d0d5dd;padding:8px 12px;background:#fafbfc">标题1</td><td style="border:1px solid #d0d5dd;padding:8px 12px;background:#fafbfc">标题2</td><td style="border:1px solid #d0d5dd;padding:8px 12px;background:#fafbfc">标题3</td></tr>' +
+        '<tr><td style="border:1px solid #d0d5dd;padding:8px 12px">内容</td><td style="border:1px solid #d0d5dd;padding:8px 12px">内容</td><td style="border:1px solid #d0d5dd;padding:8px 12px">内容</td></tr>' +
+        '<tr><td style="border:1px solid #d0d5dd;padding:8px 12px">内容</td><td style="border:1px solid #d0d5dd;padding:8px 12px">内容</td><td style="border:1px solid #d0d5dd;padding:8px 12px">内容</td></tr>' +
+        '</tbody></table>' }
+    }}
+  ];
+  var TEMPLATES = {}, TLABELS = {};
+  CATEGORIES.forEach(function(cat){
+    Object.keys(cat.items).forEach(function(k){
+      TEMPLATES[k] = cat.items[k].html;
+      TLABELS[k] = cat.items[k].label;
+    });
+  });
+
+  var palCollapsed=false, palPos={l:document.documentElement.classList.contains('edit-pages-open')?248:16,t:60};
+  function closePalette(){ if (palPanel) { palPanel.remove(); palPanel = null } }
+  function openPalette(){
+    if (palPanel) return;
+    closePalette();
+    palPanel = document.createElement('div'); palPanel.className = 'edit-pal pe';
+    var body = CATEGORIES.map(function(cat){
+      var items = Object.keys(cat.items).map(function(k){
+        return '<div class="item" draggable="true" data-k="' + k + '">' + cat.items[k].label + '</div>';
+      }).join('');
+      return '<div class="pn">' + cat.name + '</div><div class="pr">' + items + '</div>';
+    }).join('');
+    palPanel.innerHTML = '<div class="hd"><span>组件 · 拖到页面里</span><button class="fold" title="收起组件面板">−</button></div><div class="bd">' + body + '</div>';
+    root.appendChild(palPanel);
+    palPanel.style.left = palPos.l + 'px'; palPanel.style.top = palPos.t + 'px';
+    palPanel.classList.toggle('collapsed',palCollapsed);
+    palPanel.onmousedown = function(e){ e.stopPropagation() };
+    var hd=palPanel.querySelector('.hd'), fold=palPanel.querySelector('.fold');
+    fold.textContent=palCollapsed?'＋':'−'; fold.title=palCollapsed?'展开组件面板':'收起组件面板';
+    fold.onclick=function(e){
+      e.stopPropagation(); palCollapsed=!palCollapsed;
+      palPanel.classList.toggle('collapsed',palCollapsed);
+      fold.textContent=palCollapsed?'＋':'−'; fold.title=palCollapsed?'展开组件面板':'收起组件面板';
+    };
+    hd.addEventListener('mousedown',function(e){
+      if(e.button!==0||e.target.closest('button')) return;
+      e.preventDefault(); e.stopPropagation();
+      var sx=e.clientX, sy=e.clientY, r=palPanel.getBoundingClientRect();
+      function mv(ev){
+        palPos.l=Math.max(0,Math.min(innerWidth-palPanel.offsetWidth,r.left+ev.clientX-sx));
+        palPos.t=Math.max(0,Math.min(innerHeight-36,r.top+ev.clientY-sy));
+        palPanel.style.left=palPos.l+'px'; palPanel.style.top=palPos.t+'px';
+      }
+      function up(){ document.removeEventListener('mousemove',mv,true); document.removeEventListener('mouseup',up,true) }
+      document.addEventListener('mousemove',mv,true); document.addEventListener('mouseup',up,true);
+    },true);
+    Array.prototype.forEach.call(palPanel.querySelectorAll('.item'), function(it){
+      it.addEventListener('dragstart', function(e){
+        e.dataTransfer.effectAllowed = 'copy';
+        try { e.dataTransfer.setData('text/plain', it.dataset.k) } catch (x) {}
+        dragKey = it.dataset.k;
+      });
+    });
+  }
+  var DROP_W = 80, DROP_H = 40;
+  document.addEventListener('dragover', function(e){
+    if (!emode || !dragKey) return;
+    e.preventDefault();
+    if (!dropHint) { dropHint = document.createElement('div'); dropHint.className = 'edit-drop'; root.appendChild(dropHint) }
+    dropHint.style.left = (e.clientX - DROP_W / 2) + 'px';
+    dropHint.style.top = (e.clientY - DROP_H / 2) + 'px';
+    dropHint.style.width = DROP_W + 'px';
+    dropHint.style.height = DROP_H + 'px';
+  });
+  document.addEventListener('drop', function(e){
+    if (!emode || !dragKey) return;
+    e.preventDefault();
+    var html = TEMPLATES[dragKey];
+    var cx = e.clientX, cy = e.clientY;
+    dragKey = null;
+    if (dropHint) { dropHint.remove(); dropHint = null }
+    var tmp = document.createElement('div'); tmp.innerHTML = html;
+    var node = tmp.firstElementChild; if (!node) return;
+    pushUndo();
+    node.style.position = 'absolute';
+    node.style.left = Math.max(0, window.scrollX + cx - DROP_W / 2) + 'px';
+    node.style.top = Math.max(0, window.scrollY + cy - DROP_H / 2) + 'px';
+    insertPageNode(node);
+    select(node);
+  });
+  document.addEventListener('dragend', function(){ dragKey = null; if (dropHint) { dropHint.remove(); dropHint = null } });
+
+  /* ---------- 时间选择器:非编辑模式下点击展开日历预览 ---------- */
+  var calPop = null;
+  function closeCalPopup(){ if (calPop) { calPop.remove(); calPop = null } }
+  function toggleCalPopup(ctrl){
+    if (calPop) { closeCalPopup(); return }
+    calPop = document.createElement('div'); calPop.className = 'edit-cal-pop pe';
+    calPop.innerHTML = CAL_HTML;
+    root.appendChild(calPop);
+    var r = ctrl.getBoundingClientRect();
+    calPop.style.position = 'fixed';
+    calPop.style.left = Math.max(4, r.left) + 'px';
+    calPop.style.top = (r.bottom + 6) + 'px';
+    calPop.style.zIndex = 100000;
+  }
+  document.addEventListener('click', function(e){
+    if (emode) return;
+    var trig = e.target.closest && e.target.closest('.dt-trigger');
+    if (!trig) return;
+    var ctrl = trig.closest('.edit-dtctl');
+    if (!ctrl) return;
+    e.preventDefault(); e.stopPropagation();
+    toggleCalPopup(ctrl);
+  }, true);
+  document.addEventListener('mousedown', function(e){
+    if (calPop && !calPop.contains(e.target) && !(e.target.closest && e.target.closest('.dt-trigger'))) closeCalPopup();
+  }, true);
+
+  /* ---------- 多页面:元素跳转 + 页面管理 ---------- */
+  var PAGES_STORE_ID = 'edit-pages-data';
+  var pagesStore = document.getElementById(PAGES_STORE_ID);
+  var PAGES = {};
+  if (pagesStore) {
+    try { PAGES = JSON.parse(pagesStore.textContent || '{}') } catch (e) { PAGES = {} }
+  } else {
+    pagesStore = document.createElement('script');
+    pagesStore.id = PAGES_STORE_ID; pagesStore.type = 'application/json';
+    pagesStore.textContent = '{}';
+    document.body.insertBefore(pagesStore, document.body.firstChild);
+  }
+  var currentPageId = document.body.dataset.editCurrentPage || '首页';
+  document.body.dataset.editCurrentPage = currentPageId;
+
+  function persistPages(){ pagesStore.textContent = JSON.stringify(PAGES) }
+  function layerStartInfo(){
+    var children = Array.prototype.slice.call(document.body.childNodes);
+    for (var i = 0; i < children.length; i++) {
+      var n = children[i];
+      if (n.nodeType === 8 && /通用批注层|通用编辑层/.test(n.textContent)) return { index: i, all: children };
+    }
+    return null;
+  }
+  var PAGE_START_TEXT = '编辑页面内容开始';
+  var PAGE_END_TEXT = '编辑页面内容结束';
+  var pageStart = null, pageEnd = null;
+  Array.prototype.forEach.call(document.body.childNodes, function(n){
+    if (n.nodeType !== 8) return;
+    if (n.textContent === PAGE_START_TEXT) pageStart = n;
+    if (n.textContent === PAGE_END_TEXT) pageEnd = n;
+  });
+  if (!pageStart || !pageEnd) {
+    pageStart = document.createComment(PAGE_START_TEXT);
+    pageEnd = document.createComment(PAGE_END_TEXT);
+    var initialLayer = layerStartInfo();
+    var initialAnchor = initialLayer ? initialLayer.all[initialLayer.index] : null;
+    document.body.insertBefore(pageStart, pagesStore.nextSibling);
+    document.body.insertBefore(pageEnd, initialAnchor);
+  }
+  function insertPageNode(node){
+    document.body.insertBefore(node, pageEnd);
+  }
+  function getPageContentHTML(){
+    var tmp = document.createElement('div');
+    var n = pageStart.nextSibling;
+    while (n && n !== pageEnd) {
+      tmp.appendChild(n.cloneNode(true));
+      n = n.nextSibling;
+    }
+    return tmp.innerHTML;
+  }
+  function setPageContent(html){
+    var n = pageStart.nextSibling;
+    while (n && n !== pageEnd) { var next = n.nextSibling; document.body.removeChild(n); n = next }
+    var tmp = document.createElement('div'); tmp.innerHTML = html;
+    while (tmp.firstChild) document.body.insertBefore(tmp.firstChild, pageEnd);
+  }
+  if (!PAGES.hasOwnProperty(currentPageId)) {
+    var initialPages = {};
+    var initialAnnoStore = document.getElementById('anno-data');
+    initialPages[currentPageId] = {
+      html: getPageContentHTML(),
+      anno: initialAnnoStore ? initialAnnoStore.textContent : '{"pref":{"g":"常用","c":"#ff7a45"},"list":[]}'
+    };
+    Object.keys(PAGES).forEach(function(id){ initialPages[id] = PAGES[id] });
+    PAGES = initialPages;
+    persistPages();
+  }
+  /* ---------- 撤销 / 还原(基于整页内容快照,最多各 5 步) ---------- */
+  var MAX_UNDO = 5;
+  var undoStack = [], redoStack = [];
+  function updateUndoRedoButtons(){
+    undoBtn.disabled = !undoStack.length;
+    redoBtn.disabled = !redoStack.length;
+  }
+  function pushUndo(){
+    undoStack.push(getPageContentHTML());
+    if (undoStack.length > MAX_UNDO) undoStack.shift();
+    redoStack = [];
+    updateUndoRedoButtons();
+  }
+  function doUndo(){
+    if (!undoStack.length) return;
+    var cur = getPageContentHTML();
+    var prev = undoStack.pop();
+    redoStack.push(cur);
+    if (redoStack.length > MAX_UNDO) redoStack.shift();
+    deselect();
+    setPageContent(prev);
+    updateUndoRedoButtons();
+  }
+  function doRedo(){
+    if (!redoStack.length) return;
+    var cur = getPageContentHTML();
+    var next = redoStack.pop();
+    undoStack.push(cur);
+    if (undoStack.length > MAX_UNDO) undoStack.shift();
+    deselect();
+    setPageContent(next);
+    updateUndoRedoButtons();
+  }
+  undoBtn.onclick = doUndo;
+  redoBtn.onclick = doRedo;
+
+  var BLANK_ANNO = '{"pref":{"g":"常用","c":"#ff7a45"},"list":[]}';
+  function escapeHTML(value){
+    return String(value == null ? '' : value).replace(/[&<>"']/g, function(ch){
+      return { '&':'&amp;', '<':'&lt;', '>':'&gt;', '"':'&quot;', "'":'&#39;' }[ch];
+    });
+  }
+  function currentAnnoDataText(){
+    if (window.__annoGetData) return window.__annoGetData();
+    var s = document.getElementById('anno-data');
+    return s ? s.textContent : BLANK_ANNO;
+  }
+  function migrateLegacyTrailingPageNodes(){
+    var move = [], n = pageEnd.nextSibling;
+    while (n) {
+      var next = n.nextSibling;
+      if (n.nodeType === 1 && n.id !== 'anno-root' && n.id !== PAGES_STORE_ID &&
+          !/^(STYLE|SCRIPT|LINK|META)$/i.test(n.tagName)) move.push(n);
+      n = next;
+    }
+    move.forEach(function(node){ insertPageNode(node) });
+    if (move.length) {
+      PAGES[currentPageId] = { html: getPageContentHTML(), anno: currentAnnoDataText() };
+      persistPages();
+    }
+  }
+  if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', migrateLegacyTrailingPageNodes, { once:true });
+  else setTimeout(migrateLegacyTrailingPageNodes, 0);
+
+
+  /* ---------- 持续跟随滚动 / 缩放 ---------- */
+  document.addEventListener('scroll', function(){ if (esel) { drawBox(); posToolbar(); positionPanel(); positionTextPanel() } }, true);
+  addEventListener('resize', function(){ if (esel) { drawBox(); posToolbar(); positionPanel(); positionTextPanel() } });
+  setInterval(function(){ if (esel) { drawBox(); posToolbar() } }, 500);
+
+  document.addEventListener('keydown', function(e){
+    if (e.key !== 'Escape' || !emode) return;
+    if (esel && esel.getAttribute('contenteditable') === 'true') return;
+    if (textPanel) { closeTextPanel(); return }
+    if (panel) { closePanel(); return }
+    if (esel) { deselect(); return }
+    setMode(false);
+  });
+})();
+</script>
+<!-- ============ 编辑层 v17 结束 ============ -->
