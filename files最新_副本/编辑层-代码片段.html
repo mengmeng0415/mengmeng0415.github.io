@@ -198,6 +198,34 @@
   function inRoot(el){ return !!el && root.contains(el) }
   function isFreePos(el){ var p = getComputedStyle(el).position; return p === 'absolute' || p === 'fixed' }
 
+  function pathOf(el){
+    if (!el || el === document.body) return 'body';
+    var p = [];
+    while (el && el !== document.body && el.nodeType === 1) {
+      var i = 1, s = el; while (s = s.previousElementSibling) { if (s.tagName === el.tagName) i++ }
+      p.unshift(el.tagName.toLowerCase() + ':nth-of-type(' + i + ')'); el = el.parentElement;
+    }
+    return 'body>' + p.join('>');
+  }
+
+  /* ---------- 编辑内容防丢失：React/Vue 等框架重渲染会覆盖手动改的DOM，这里记住每处编辑，
+     一旦发现被外部改回去就自动补写回来，不需要用户编辑完立刻下载 ---------- */
+  var stickyEdits = {}, stickyTimer = null;
+  function protectEdit(el){
+    if (!el) return;
+    try{ stickyEdits[pathOf(el)] = el.innerHTML }catch(e){}
+  }
+  function reapplySticky(){
+    Object.keys(stickyEdits).forEach(function(sel){
+      var el; try{ el = document.querySelector(sel) }catch(e){ el = null }
+      if (el && !inRoot(el) && el.innerHTML !== stickyEdits[sel]) el.innerHTML = stickyEdits[sel];
+    });
+  }
+  new MutationObserver(function(){
+    clearTimeout(stickyTimer);
+    stickyTimer = setTimeout(reapplySticky, 30);
+  }).observe(document.body, { childList: true, subtree: true, characterData: true });
+
   function setMode(v){
     if (v && window.__annoExitForEdit) window.__annoExitForEdit();
     emode = v;
@@ -369,10 +397,14 @@
     var sel = getSelection();
     sel.removeAllRanges();
     sel.addRange(range);
+    function onInput(){ protectEdit(editingEl) }
+    editingEl.addEventListener('input', onInput);
     function done(){
       setTimeout(function(){
         var active = document.activeElement;
         if ((fbar && fbar.contains(active)) || (cpop && cpop.contains(active))) return;
+        protectEdit(editingEl);
+        editingEl.removeEventListener('input', onInput);
         editingEl.setAttribute('contenteditable', 'false');
         editingEl.classList.remove('edit-editing');
         editingEl.style.userSelect = editingEl.dataset.editPrevUserSelect;
@@ -402,21 +434,28 @@
       savedTextRange = sel.getRangeAt(0).cloneRange();
     }
   }
-  function applyFontSize(px){
+  function toggleTextItalic(){                  /* 手动切换斜体，避免部分浏览器 execCommand('italic') 失效 */
     restoreTextSelection();
     var s = getSelection(); if (!s || !s.rangeCount || !esel) return;
     var r = s.getRangeAt(0);
     if (r.collapsed || !esel.contains(r.commonAncestorContainer)) return;
+    var probe = r.startContainer.nodeType === 1 ? r.startContainer : r.startContainer.parentNode;
+    var on = probe && esel.contains(probe) && getComputedStyle(probe).fontStyle === 'italic';
     var frag = r.extractContents();
-    Array.prototype.forEach.call(frag.querySelectorAll ? frag.querySelectorAll('*') : [], function(n){
-      if (n.style && n.style.fontSize) { n.style.fontSize = ''; if (!n.getAttribute('style')) n.removeAttribute('style'); }
-      if (n.tagName === 'FONT' && n.hasAttribute('size')) n.removeAttribute('size');
-    });
-    var span = document.createElement('span'); span.style.fontSize = px + 'px';
+    var span = document.createElement('span'); span.style.fontStyle = on ? 'normal' : 'italic';
     span.appendChild(frag); r.insertNode(span);
     var r2 = document.createRange(); r2.selectNodeContents(span);
     s.removeAllRanges(); s.addRange(r2);
     refreshSavedRange();
+    protectEdit(esel);
+  }
+  function applyFontSize(px){
+    restoreTextSelection();
+    document.execCommand('fontSize', false, '7');
+    var fonts = esel.querySelectorAll('font[size="7"]');
+    Array.prototype.forEach.call(fonts, function(f){ f.removeAttribute('size'); f.style.fontSize = px + 'px' });
+    refreshSavedRange();
+    protectEdit(esel);
   }
   function showFormatBar(range){
     savedTextRange = range.cloneRange();
@@ -438,7 +477,8 @@
         var b = e.target.closest('button[data-c]');
         if (!b) return;
         e.stopPropagation();
-        restoreTextSelection(); document.execCommand(b.dataset.c, false, null); refreshSavedRange();
+        if (b.dataset.c === 'italic') { toggleTextItalic(); return }
+        restoreTextSelection(); document.execCommand(b.dataset.c, false, null); refreshSavedRange(); protectEdit(esel);
       });
       fbar.querySelector('.fsize').addEventListener('change', function(e){
         var v = parseInt(e.target.value, 10);
@@ -446,7 +486,7 @@
       });
       fbar.querySelector('.fcolor').addEventListener('click', function(e){
         e.stopPropagation();
-        openColorPopup(fbar.querySelector('.fcolor'), function(v){ restoreTextSelection(); document.execCommand('foreColor', false, v); refreshSavedRange() });
+        openColorPopup(fbar.querySelector('.fcolor'), function(v){ restoreTextSelection(); document.execCommand('foreColor', false, v); refreshSavedRange(); protectEdit(esel) });
       });
     }
     var r = range.getBoundingClientRect();
@@ -727,7 +767,7 @@
     positionTextPanel();
     textPanel.onmousedown = function(e){ e.stopPropagation() };
     textPanel.querySelector('.x').onclick = function(){ closeTextPanel() };
-    function sync(){ target.innerHTML = ed.innerHTML; drawBox() }
+    function sync(){ target.innerHTML = ed.innerHTML; drawBox(); protectEdit(target) }
     ed.addEventListener('input', sync);
     var savedRange = null;
     function remember(){
@@ -740,27 +780,33 @@
       if (savedRange) { var s = getSelection(); s.removeAllRanges(); s.addRange(savedRange) }
     }
     ['keyup', 'mouseup', 'input'].forEach(function(ev){ ed.addEventListener(ev, remember) });
+    function toggleItalicHere(){
+      restore();
+      var s = getSelection(); if (!s || !s.rangeCount) return;
+      var r = s.getRangeAt(0);
+      if (r.collapsed || !ed.contains(r.commonAncestorContainer)) return;
+      var probe = r.startContainer.nodeType === 1 ? r.startContainer : r.startContainer.parentNode;
+      var on = probe && ed.contains(probe) && getComputedStyle(probe).fontStyle === 'italic';
+      var frag = r.extractContents();
+      var span = document.createElement('span'); span.style.fontStyle = on ? 'normal' : 'italic';
+      span.appendChild(frag); r.insertNode(span);
+      var r2 = document.createRange(); r2.selectNodeContents(span);
+      s.removeAllRanges(); s.addRange(r2);
+      remember(); sync();
+    }
     Array.prototype.forEach.call(textPanel.querySelectorAll('.tb button[data-c]'), function(b){
       b.onmousedown = function(e){ e.preventDefault() };
       b.onclick = function(){
+        if (b.dataset.c === 'italic') { toggleItalicHere(); return }
         restore(); document.execCommand(b.dataset.c, false, null); remember(); sync();
       };
     });
     textPanel.querySelector('.fsize').addEventListener('change', function(e){
       var v = parseInt(e.target.value, 10); if (!v) return;
       restore();
-      var s = getSelection(); if (!s || !s.rangeCount) return;
-      var r = s.getRangeAt(0);
-      if (r.collapsed || !ed.contains(r.commonAncestorContainer)) return;
-      var frag = r.extractContents();
-      Array.prototype.forEach.call(frag.querySelectorAll ? frag.querySelectorAll('*') : [], function(n){
-        if (n.style && n.style.fontSize) { n.style.fontSize = ''; if (!n.getAttribute('style')) n.removeAttribute('style'); }
-        if (n.tagName === 'FONT' && n.hasAttribute('size')) n.removeAttribute('size');
-      });
-      var span = document.createElement('span'); span.style.fontSize = v + 'px';
-      span.appendChild(frag); r.insertNode(span);
-      var r2 = document.createRange(); r2.selectNodeContents(span);
-      s.removeAllRanges(); s.addRange(r2);
+      document.execCommand('fontSize', false, '7');
+      var fonts = ed.querySelectorAll('font[size="7"]');
+      Array.prototype.forEach.call(fonts, function(f){ f.removeAttribute('size'); f.style.fontSize = v + 'px' });
       remember(); sync();
     });
     textPanel.querySelector('.fcolor').addEventListener('click', function(e){

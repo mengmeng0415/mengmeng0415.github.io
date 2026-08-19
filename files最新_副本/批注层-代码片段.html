@@ -472,6 +472,24 @@
     }
     draw();
   }
+  /* 单页应用的 tab 常常是"首次点开才挂载"，批注元素刚打开时可能确实还没渲染出来，
+     并非真的被删——这里监听页面变化，一旦之前找不到的元素重新出现（比如用户点开了对应tab），
+     自动刷新清单，把"元素已变动"的误报清掉，不用用户自己手动重新锚定 */
+  var lastAliveKey='', renderWatchTimer=null;
+  function aliveKey(){ return data.map(function(a){ return a.id+':'+(!!resolve(a)) }).join('|') }
+  var aliveObserverStarted=false;
+  function watchAliveChanges(){
+    lastAliveKey=aliveKey();
+    if(aliveObserverStarted) return;
+    aliveObserverStarted=true;
+    new MutationObserver(function(){
+      clearTimeout(renderWatchTimer);
+      renderWatchTimer=setTimeout(function(){
+        var k=aliveKey();
+        if(k!==lastAliveKey){ lastAliveKey=k; render() }
+      },200);
+    }).observe(document.body,{childList:true,subtree:true});
+  }
   function clearDrop(){ Array.prototype.forEach.call(document.querySelectorAll('.anno-item'),function(n){ n.classList.remove('dropTop','dropBot') }) }
   function renumber(a){
     if(RO) return;
@@ -869,7 +887,22 @@
       else { var r=document.createRange(); r.selectNodeContents(ed); r.collapse(false);
              var s2=getSelection(); s2.removeAllRanges(); s2.addRange(r) }
     }
+    function toggleItalic(){                    /* 手动切换斜体，避免部分浏览器 execCommand('italic') 失效 */
+      restore();
+      var s=getSelection(); if(!s||!s.rangeCount) return;
+      var r=s.getRangeAt(0);
+      if(r.collapsed||!ed.contains(r.commonAncestorContainer)) return;
+      var probe=r.startContainer.nodeType===1?r.startContainer:r.startContainer.parentNode;
+      var on=probe&&ed.contains(probe)&&getComputedStyle(probe).fontStyle==='italic';
+      var frag=r.extractContents();
+      var span=document.createElement('span'); span.style.fontStyle=on?'normal':'italic';
+      span.appendChild(frag); r.insertNode(span);
+      var r2=document.createRange(); r2.selectNodeContents(span);
+      s.removeAllRanges(); s.addRange(r2);
+      remember();
+    }
     function cmd(c,v){
+      if(c==='italic'){ toggleItalic(); return }
       restore(); document.execCommand(c,false,v||null); remember();
     }
     function ins(html){ restore(); document.execCommand('insertHTML',false,html); remember() }
@@ -1571,6 +1604,10 @@
   function pageHTML(){
     var c=document.documentElement.cloneNode(true);
     stripRuntimeShell(c);
+    /* 对照模式左侧是「当前画面」的静态快照：若保留原型自身脚本，React/Vue 等框架会在 iframe 里重新启动，
+       读取自己的路由/本地存储状态重新渲染，导致左侧跳到和你刚才看到的不一致的 tab/页面。故此处移除脚本，
+       只留 wirePick() 自己挂的点击监听用于选中元素，不影响标注功能。*/
+    Array.prototype.forEach.call(c.querySelectorAll('script'),function(n){ n.remove() });
     return '<!doctype html>\n'+c.outerHTML;
   }
   function openSplit(){
@@ -2136,6 +2173,7 @@
     seq=data.reduce(function(max,a){ return Math.max(max,a.n||0) },0);
     TRAIL=[]; sel=null; boxEdit=null;
     render();
+    watchAliveChanges();
     setTimeout(function(){
       if(keepToolMode==='compare'||keepToolMode==='bubble') activateAnnoTool(keepToolMode);
       else{ updateAnnoToolButtons(); placeBarDefault(true) }
@@ -2151,7 +2189,7 @@
   ['scroll','wheel'].forEach(function(ev){ document.addEventListener(ev,function(){ draw(); posIH(); posTBar() },true) });
   addEventListener('resize',function(){ draw(); posIH(); posTBar(); if(split){ syncSplitShell(); barToLeft() } });
   setInterval(function(){ draw(); posIH(); if(split&&(showPins||showBox||splitCur)) drawFrame() },600);
-  updateAnnoToolButtons(); render(); setTimeout(function(){ placeBarDefault(true) },0);
+  updateAnnoToolButtons(); render(); watchAliveChanges(); setTimeout(function(){ placeBarDefault(true) },0);
 })();
 </script>
 <!-- ============ 批注层 v41 结束 ============ -->
@@ -2354,6 +2392,24 @@
   function inRoot(el){ return !!el && root.contains(el) }
   function isFreePos(el){ var p = getComputedStyle(el).position; return p === 'absolute' || p === 'fixed' }
 
+  /* ---------- 编辑内容防丢失：React/Vue 等框架重渲染会覆盖手动改的DOM，这里记住每处编辑，
+     一旦发现被外部改回去就自动补写回来，不需要用户编辑完立刻下载 ---------- */
+  var stickyEdits = {}, stickyTimer = null;
+  function protectEdit(el){
+    if (!el) return;
+    try{ stickyEdits[pathOf(el)] = el.innerHTML }catch(e){}
+  }
+  function reapplySticky(){
+    Object.keys(stickyEdits).forEach(function(sel){
+      var el; try{ el = document.querySelector(sel) }catch(e){ el = null }
+      if (el && !inRoot(el) && el.innerHTML !== stickyEdits[sel]) el.innerHTML = stickyEdits[sel];
+    });
+  }
+  new MutationObserver(function(){
+    clearTimeout(stickyTimer);
+    stickyTimer = setTimeout(reapplySticky, 30);
+  }).observe(document.body, { childList: true, subtree: true, characterData: true });
+
   function setMode(v){
     if (v && window.__annoExitForEdit) window.__annoExitForEdit();
     emode = v;
@@ -2525,10 +2581,14 @@
     var sel = getSelection();
     sel.removeAllRanges();
     sel.addRange(range);
+    function onInput(){ protectEdit(editingEl) }
+    editingEl.addEventListener('input', onInput);
     function done(){
       setTimeout(function(){
         var active = document.activeElement;
         if ((fbar && fbar.contains(active)) || (cpop && cpop.contains(active))) return;
+        protectEdit(editingEl);
+        editingEl.removeEventListener('input', onInput);
         editingEl.setAttribute('contenteditable', 'false');
         editingEl.classList.remove('edit-editing');
         editingEl.style.userSelect = editingEl.dataset.editPrevUserSelect;
@@ -2558,21 +2618,28 @@
       savedTextRange = sel.getRangeAt(0).cloneRange();
     }
   }
-  function applyFontSize(px){
+  function toggleTextItalic(){                  /* 手动切换斜体，避免部分浏览器 execCommand('italic') 失效 */
     restoreTextSelection();
     var s = getSelection(); if (!s || !s.rangeCount || !esel) return;
     var r = s.getRangeAt(0);
     if (r.collapsed || !esel.contains(r.commonAncestorContainer)) return;
+    var probe = r.startContainer.nodeType === 1 ? r.startContainer : r.startContainer.parentNode;
+    var on = probe && esel.contains(probe) && getComputedStyle(probe).fontStyle === 'italic';
     var frag = r.extractContents();
-    Array.prototype.forEach.call(frag.querySelectorAll ? frag.querySelectorAll('*') : [], function(n){
-      if (n.style && n.style.fontSize) { n.style.fontSize = ''; if (!n.getAttribute('style')) n.removeAttribute('style'); }
-      if (n.tagName === 'FONT' && n.hasAttribute('size')) n.removeAttribute('size');
-    });
-    var span = document.createElement('span'); span.style.fontSize = px + 'px';
+    var span = document.createElement('span'); span.style.fontStyle = on ? 'normal' : 'italic';
     span.appendChild(frag); r.insertNode(span);
     var r2 = document.createRange(); r2.selectNodeContents(span);
     s.removeAllRanges(); s.addRange(r2);
     refreshSavedRange();
+    protectEdit(esel);
+  }
+  function applyFontSize(px){
+    restoreTextSelection();
+    document.execCommand('fontSize', false, '7');
+    var fonts = esel.querySelectorAll('font[size="7"]');
+    Array.prototype.forEach.call(fonts, function(f){ f.removeAttribute('size'); f.style.fontSize = px + 'px' });
+    refreshSavedRange();
+    protectEdit(esel);
   }
   function showFormatBar(range){
     savedTextRange = range.cloneRange();
@@ -2594,7 +2661,8 @@
         var b = e.target.closest('button[data-c]');
         if (!b) return;
         e.stopPropagation();
-        restoreTextSelection(); document.execCommand(b.dataset.c, false, null); refreshSavedRange();
+        if (b.dataset.c === 'italic') { toggleTextItalic(); return }
+        restoreTextSelection(); document.execCommand(b.dataset.c, false, null); refreshSavedRange(); protectEdit(esel);
       });
       fbar.querySelector('.fsize').addEventListener('change', function(e){
         var v = parseInt(e.target.value, 10);
@@ -2602,7 +2670,7 @@
       });
       fbar.querySelector('.fcolor').addEventListener('click', function(e){
         e.stopPropagation();
-        openColorPopup(fbar.querySelector('.fcolor'), function(v){ restoreTextSelection(); document.execCommand('foreColor', false, v); refreshSavedRange() });
+        openColorPopup(fbar.querySelector('.fcolor'), function(v){ restoreTextSelection(); document.execCommand('foreColor', false, v); refreshSavedRange(); protectEdit(esel) });
       });
     }
     var r = range.getBoundingClientRect();
@@ -2883,7 +2951,7 @@
     positionTextPanel();
     textPanel.onmousedown = function(e){ e.stopPropagation() };
     textPanel.querySelector('.x').onclick = function(){ closeTextPanel() };
-    function sync(){ target.innerHTML = ed.innerHTML; drawBox() }
+    function sync(){ target.innerHTML = ed.innerHTML; drawBox(); protectEdit(target) }
     ed.addEventListener('input', sync);
     var savedRange = null;
     function remember(){
@@ -2896,27 +2964,33 @@
       if (savedRange) { var s = getSelection(); s.removeAllRanges(); s.addRange(savedRange) }
     }
     ['keyup', 'mouseup', 'input'].forEach(function(ev){ ed.addEventListener(ev, remember) });
+    function toggleItalicHere(){
+      restore();
+      var s = getSelection(); if (!s || !s.rangeCount) return;
+      var r = s.getRangeAt(0);
+      if (r.collapsed || !ed.contains(r.commonAncestorContainer)) return;
+      var probe = r.startContainer.nodeType === 1 ? r.startContainer : r.startContainer.parentNode;
+      var on = probe && ed.contains(probe) && getComputedStyle(probe).fontStyle === 'italic';
+      var frag = r.extractContents();
+      var span = document.createElement('span'); span.style.fontStyle = on ? 'normal' : 'italic';
+      span.appendChild(frag); r.insertNode(span);
+      var r2 = document.createRange(); r2.selectNodeContents(span);
+      s.removeAllRanges(); s.addRange(r2);
+      remember(); sync();
+    }
     Array.prototype.forEach.call(textPanel.querySelectorAll('.tb button[data-c]'), function(b){
       b.onmousedown = function(e){ e.preventDefault() };
       b.onclick = function(){
+        if (b.dataset.c === 'italic') { toggleItalicHere(); return }
         restore(); document.execCommand(b.dataset.c, false, null); remember(); sync();
       };
     });
     textPanel.querySelector('.fsize').addEventListener('change', function(e){
       var v = parseInt(e.target.value, 10); if (!v) return;
       restore();
-      var s = getSelection(); if (!s || !s.rangeCount) return;
-      var r = s.getRangeAt(0);
-      if (r.collapsed || !ed.contains(r.commonAncestorContainer)) return;
-      var frag = r.extractContents();
-      Array.prototype.forEach.call(frag.querySelectorAll ? frag.querySelectorAll('*') : [], function(n){
-        if (n.style && n.style.fontSize) { n.style.fontSize = ''; if (!n.getAttribute('style')) n.removeAttribute('style'); }
-        if (n.tagName === 'FONT' && n.hasAttribute('size')) n.removeAttribute('size');
-      });
-      var span = document.createElement('span'); span.style.fontSize = v + 'px';
-      span.appendChild(frag); r.insertNode(span);
-      var r2 = document.createRange(); r2.selectNodeContents(span);
-      s.removeAllRanges(); s.addRange(r2);
+      document.execCommand('fontSize', false, '7');
+      var fonts = ed.querySelectorAll('font[size="7"]');
+      Array.prototype.forEach.call(fonts, function(f){ f.removeAttribute('size'); f.style.fontSize = v + 'px' });
       remember(); sync();
     });
     textPanel.querySelector('.fcolor').addEventListener('click', function(e){
