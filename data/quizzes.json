@@ -1,0 +1,4502 @@
+{
+  "q_w001": {
+"type": "choice_text",
+"wordIds": ["w001"],
+"question": "Griffith told everyone to keep ______ while putting the saddle on Shu.",
+"options": ["saddle", "steady", "buckle", "tighten"],
+"answer": 1
+},
+"q_w002": {
+"type": "choice_text",
+"wordIds": ["w002"],
+"question": "The Dragon Masters put a ______ on each dragon for riding.",
+"options": ["buckle", "tighten", "crafter", "saddle"],
+"answer": 3
+},
+"q_w003": {
+"type": "choice_text",
+"wordIds": ["w003"],
+"question": "Bo used the metal ______ to fasten the saddle strap under Shu's belly.",
+"options": ["buckle", "tighten", "saddle", "steady"],
+"answer": 0
+},
+"q_w004": {
+"type": "choice_text",
+"wordIds": ["w004"],
+"question": "Please ______ the buckle so the saddle won't move.",
+"options": ["buckle", "saddle", "tighten", "crafter"],
+"answer": 2
+},
+"q_w005": {
+"type": "choice_text",
+"wordIds": ["w005"],
+"question": "King Roland's ______ made strong saddles for the dragons.",
+"options": ["slim", "bother", "crafter", "sleepyhead"],
+"answer": 2
+},
+"q_w006": {
+"type": "choice_text",
+"wordIds": ["w006"],
+"question": "Kepri the Sun Dragon has a ______ body and white scales.",
+"options": ["sleepyhead", "bother", "hardly", "slim"],
+"answer": 3
+},
+"q_w007": {
+"type": "choice_text",
+"wordIds": ["w007"],
+"question": "Something was ______ Bo, but he didn't want to tell anyone.",
+"options": ["bother", "sleepyhead", "hardly", "charm"],
+"answer": 0
+},
+"q_w008": {
+"type": "choice_text",
+"wordIds": ["w008"],
+"question": "Rori called Drake and Bo ______ because they got up late.",
+"options": ["hardly", "sleepyhead", "charm", "upset"],
+"answer": 1
+},
+"q_w009": {
+"type": "choice_text",
+"wordIds": ["w009"],
+"question": "Bo was so worried that he ______ ate any breakfast.",
+"options": ["charm", "upset", "care", "hardly"],
+"answer": 3
+},
+"q_w010": {
+"type": "choice_text",
+"wordIds": ["w010"],
+"question": "Griffith used magic ______ to protect the Dragon Stone.",
+"options": ["care", "upset", "careless", "charm"],
+"answer": 3
+},
+"q_w011": {
+"type": "choice_text",
+"wordIds": ["w011"],
+"question": "The dark magic ______ the effect of the wizard's charms.",
+"options": ["upset", "care", "careless", "continue"],
+"answer": 0
+},
+"q_w012": {
+"type": "choice_text",
+"wordIds": ["w012"],
+"question": "Griffith promised to ______ for the Dragon Stone day and night.",
+"options": ["care", "careless", "continue", "hang out"],
+"answer": 0
+},
+"q_w013": {
+"type": "choice_text",
+"wordIds": ["w013"],
+"question": "Maldred is not ______—he always plans his evil acts carefully.",
+"options": ["continue", "hang out", "jerk", "careless"],
+"answer": 3
+},
+"q_w014": {
+"type": "choice_text",
+"wordIds": ["w014"],
+"question": "Griffith ______ to talk about finding a better hiding place for the Dragon Stone.",
+"options": ["jerk", "hang out", "obey", "continue"],
+"answer": 3
+},
+"q_w015": {
+"type": "choice_text",
+"wordIds": ["w015"],
+"question": "The Dragon Masters decided to ______ with the dragons in the caves.",
+"options": ["blurt", "jerk", "obey", "hang out"],
+"answer": 3
+},
+"q_w016": {
+"type": "choice_text",
+"wordIds": ["w016"],
+"question": "Suddenly, Worm's neck ______ up when he sensed danger.",
+"options": ["jerk", "obey", "blurt", "honor"],
+"answer": 0
+},
+"q_w017": {
+"type": "choice_text",
+"wordIds": ["w017"],
+"question": "The Dragon Masters must ______ Griffith's instructions for training.",
+"options": ["blurt", "honor", "choke", "obey"],
+"answer": 3
+},
+"q_w018": {
+"type": "choice_text",
+"wordIds": ["w018"],
+"question": "Drake ______ out that Bo would never steal the Dragon Stone.",
+"options": ["choke", "honor", "evil", "blurt"],
+"answer": 3
+},
+"q_w019": {
+"type": "choice_text",
+"wordIds": ["w019"],
+"question": "Bo's parents said serving the king was an ______ for their kingdom.",
+"options": ["honor", "choke", "evil", "come over"],
+"answer": 0
+},
+"q_w020": {
+"type": "choice_text",
+"wordIds": ["w020"],
+"question": "Bo's voice ______ when he talked about his family in prison.",
+"options": ["choke", "evil", "come over", "raven"],
+"answer": 0
+},
+"q_w021": {
+"type": "choice_text",
+"wordIds": ["w021"],
+"question": "The ______ wizard used dark magic to control Emperor Song.",
+"options": ["raven", "come over", "silent", "evil"],
+"answer": 3
+},
+"q_w022": {
+"type": "choice_text",
+"wordIds": ["w022"],
+"question": "A feeling of fear ______ Drake when he saw the Raven Guard.",
+"options": ["silent", "raven", "skilled", "come over"],
+"answer": 3
+},
+"q_w023": {
+"type": "choice_text",
+"wordIds": ["w023"],
+"question": "The black feather is the symbol of the ______ Guard.",
+"options": ["raven", "silent", "skilled", "grunt"],
+"answer": 0
+},
+"q_w024": {
+"type": "choice_text",
+"wordIds": ["w024"],
+"question": "The Raven Guard can move ______ without being noticed.",
+"options": ["silent", "skilled", "grunt", "truth"],
+"answer": 0
+},
+"q_w025": {
+"type": "choice_text",
+"wordIds": ["w025"],
+"question": "The ______ fighters of the Raven Guard serve the emperor.",
+"options": ["grunt", "truth", "conk", "skilled"],
+"answer": 3
+},
+"q_w026": {
+"type": "choice_text",
+"wordIds": ["w026"],
+"question": "Simon the guard ______ in reply when Griffith called him.",
+"options": ["conk", "truth", "steady", "grunt"],
+"answer": 3
+},
+"q_w027": {
+"type": "choice_text",
+"wordIds": ["w027"],
+"question": "The spy used dark magic to make Rori and Ana tell the ______.",
+"options": ["truth", "conk", "steady", "saddle"],
+"answer": 0
+},
+"q_w028": {
+"type": "choice_text",
+"wordIds": ["w028"],
+"question": "The Raven Guard's trick made Simon the guard ______ out on the floor.",
+"options": ["silent", "grunt", "skilled", "conk"],
+"answer": 3
+},
+"q_w029": {
+"type": "choice_text",
+"wordIds": ["w029"],
+"question": "'Feather, find the stone!' Griffith ______ firmly.",
+"options": ["beyond", "zip", "ahead", "command"],
+"answer": 3
+},
+"q_w030": {
+"type": "choice_text",
+"wordIds": ["w030"],
+"question": "The magic Finding Feather ______ toward the tunnels in a flash.",
+"options": ["zip", "beyond", "pluck", "ahead"],
+"answer": 0
+},
+"q_w031": {
+"type": "choice_text",
+"wordIds": ["w031"],
+"question": "The dragons flew over the hills to the deep forest ______.",
+"options": ["gleam", "ahead", "pluck", "beyond"],
+"answer": 3
+},
+"q_w032": {
+"type": "choice_text",
+"wordIds": ["w032"],
+"question": "Up ______, Drake saw the Raven Guard moving across the treetops.",
+"options": ["ahead", "pluck", "gleam", "pick up"],
+"answer": 0
+},
+"q_w033": {
+"type": "choice_text",
+"wordIds": ["w033"],
+"question": "Griffith ______ the Finding Feather from the air to change direction.",
+"options": ["pluck", "gleam", "pick up", "handful"],
+"answer": 0
+},
+"q_w034": {
+"type": "choice_text",
+"wordIds": ["w034"],
+"question": "Ana's dark eyes ______ with excitement when they chased the spy.",
+"options": ["conk", "pick up", "handful", "gleam"],
+"answer": 3
+},
+"q_w035": {
+"type": "choice_text",
+"wordIds": ["w035"],
+"question": "Kepri ______ speed to fly past the Raven Guard and block him.",
+"options": ["pick up", "handful", "conk", "command"],
+"answer": 0
+},
+"q_w036": {
+"type": "choice_text",
+"wordIds": ["w036"],
+"question": "The Raven Guard pulled out a ______ of glittering red dust from his pocket.",
+"options": ["handful", "conk", "command", "zip"],
+"answer": 0
+},
+"q_w037": {
+"type": "choice_text",
+"wordIds": ["w037"],
+"question": "The Raven Guard ______ through the forest to escape from the Dragon Masters.",
+"options": ["in person", "borrow", "trust", "streak"],
+"answer": 3
+},
+"q_w038": {
+"type": "choice_text",
+"wordIds": ["w038"],
+"question": "Can I ______ your Finding Feather to track the Raven Guard?",
+"options": ["in person", "trust", "borrow", "streak"],
+"answer": 2
+},
+"q_w039": {
+"type": "choice_text",
+"wordIds": ["w039"],
+"question": "Griffith decided to go to the dark forest ______ to stop the evil plan.",
+"options": ["trust", "streak", "borrow", "in person"],
+"answer": 3
+},
+"q_w040": {
+"type": "choice_text",
+"wordIds": ["w040"],
+"question": "We all ______ Bo because he would never betray the Dragon Masters.",
+"options": ["strengthen", "assist", "remove", "trust"],
+"answer": 3
+},
+"q_w041": {
+"type": "choice_text",
+"wordIds": ["w041"],
+"question": "The young Dragon Masters agreed to ______ Griffith in tracking the Raven Guard.",
+"options": ["strengthen", "trust", "remove", "assist"],
+"answer": 3
+},
+"q_w042": {
+"type": "choice_text",
+"wordIds": ["w042"],
+"question": "Griffith used magic to ______ the protection of the Dragon Stone.",
+"options": ["remove", "assist", "turn over", "strengthen"],
+"answer": 3
+},
+"q_w043": {
+"type": "choice_text",
+"wordIds": ["w043"],
+"question": "Shu can ______ the dark spell from Emperor Song with her power.",
+"options": ["remove", "strengthen", "rise", "turn over"],
+"answer": 0
+},
+"q_w044": {
+"type": "choice_text",
+"wordIds": ["w044"],
+"question": "Bo ______ the magic box to check for hidden red dust.",
+"options": ["rise", "remove", "pattern", "turn over"],
+"answer": 3
+},
+"q_w045": {
+"type": "choice_text",
+"wordIds": ["w045"],
+"question": "A thin cloud of red smoke ______ from the guard's palm.",
+"options": ["pattern", "turn over", "column", "rise"],
+"answer": 3
+},
+"q_w046": {
+"type": "choice_text",
+"wordIds": ["w046"],
+"question": "There is a strange star ______ on the bottom of the magic box.",
+"options": ["column", "rise", "deal with", "pattern"],
+"answer": 3
+},
+"q_w047": {
+"type": "choice_text",
+"wordIds": ["w047"],
+"question": "A ______ of Raven Guard marched toward the castle gate.",
+"options": ["deal with", "pattern", "fail", "column"],
+"answer": 3
+},
+"q_w048": {
+"type": "choice_text",
+"wordIds": ["w048"],
+"question": "We need to ______ the Raven Guard before they use dark magic.",
+"options": ["fail", "column", "dare", "deal with"],
+"answer": 3
+},
+"q_w049": {
+"type": "choice_text",
+"wordIds": ["w049"],
+"question": "The magic shield ______ to stop the red dust from spreading.",
+"options": ["fail", "deal with", "woozy", "dare"],
+"answer": 0
+},
+"q_w050": {
+"type": "choice_text",
+"wordIds": ["w050"],
+"question": "How ______ you hurt the baby dragon?",
+"options": ["woozy", "fail", "misty", "dare"],
+"answer": 3
+},
+"q_w051": {
+"type": "choice_text",
+"wordIds": ["w051"],
+"question": "Ana felt ______ after breathing in a little red dust.",
+"options": ["misty", "terrified", "dare", "woozy"],
+"answer": 3
+},
+"q_w052": {
+"type": "choice_text",
+"wordIds": ["w052"],
+"question": "The dark forest became ______ after the red dust spread.",
+"options": ["terrified", "force", "woozy", "misty"],
+"answer": 3
+},
+"q_w053": {
+"type": "choice_text",
+"wordIds": ["w053"],
+"question": "The baby dragon was ______ of the Raven Guard's dark magic.",
+"options": ["swarm", "misty", "force", "terrified"],
+"answer": 3
+},
+"q_w054": {
+"type": "choice_text",
+"wordIds": ["w054"],
+"question": "The Raven Guard tried to ______ Bo to tell the secret of the Dragon Stone.",
+"options": ["harm", "terrified", "swarm", "force"],
+"answer": 3
+},
+"q_w055": {
+"type": "choice_text",
+"wordIds": ["w055"],
+"question": "A ______ of glowing red orbs flew into the throne room.",
+"options": ["bravery", "force", "harm", "swarm"],
+"answer": 3
+},
+"q_w056": {
+"type": "choice_text",
+"wordIds": ["w056"],
+"question": "The red dust won't ______ you if you don't breathe it in.",
+"options": ["cot", "swarm", "bravery", "harm"],
+"answer": 3
+},
+"q_w057": {
+"type": "choice_text",
+"wordIds": ["w057"],
+"question": "Bo's ______ to face the Raven Guard alone impressed Griffith.",
+"options": ["undo", "harm", "cot", "bravery"],
+"answer": 3
+},
+"q_w058": {
+"type": "choice_text",
+"wordIds": ["w058"],
+"question": "Diego lay on a ______ in Griffith's workshop after the spell backfired.",
+"options": ["by nature", "bravery", "undo", "cot"],
+"answer": 3
+},
+"q_w059": {
+"type": "choice_text",
+"wordIds": ["w059"],
+"question": "Shu can ______ the dark spell that Maldred cast on Emperor Song.",
+"options": ["trail off", "cot", "by nature", "undo"],
+"answer": 3
+},
+"q_w060": {
+"type": "choice_text",
+"wordIds": ["w060"],
+"question": "Her eyes were ______ with tears when she saw her lost dragon.",
+"options": ["trail off", "undo", "by nature", "misty"],
+"answer": 3
+},
+"q_w061": {
+"type": "choice_text",
+"wordIds": ["w061"],
+"question": "Dragons are ______ protective of their masters.",
+"options": ["risk", "misty", "trail off", "by nature"],
+"answer": 3
+},
+"q_w062": {
+"type": "choice_text",
+"wordIds": ["w062"],
+"question": "Griffith's voice ______ when he talked about Maldred's evil dragon.",
+"options": ["misty", "by nature", "risk", "trail off"],
+"answer": 3
+},
+"q_w063": {
+"type": "choice_text",
+"wordIds": ["w063"],
+"question": "We can't ______ waiting for Maldred to attack again.",
+"options": ["trail off", "risk", "by nature", "undo"],
+"answer": 1
+},
+
+
+
+
+"q_w064": {
+"type": "choice_text",
+"wordIds": ["w064"],
+"question": "The boy tried to ______ into the kitchen to steal a cookie without being noticed.",
+"options": ["scramble", "sneak", "bacon", "decorate"],
+"answer": 1
+},
+"q_w065": {
+"type": "choice_text",
+"wordIds": ["w065"],
+"question": "Mom asked me to ______ the eggs in the bowl before frying them.",
+"options": ["sneak", "scramble", "bacon", "decorate"],
+"answer": 1
+},
+"q_w066": {
+"type": "choice_text",
+"wordIds": ["w066"],
+"question": "Dad fried the ______ until it was crispy and served it with toast for breakfast.",
+"options": ["sneak", "scramble", "bacon", "decorate"],
+"answer": 2
+},
+"q_w067": {
+"type": "choice_text",
+"wordIds": ["w067"],
+"question": "We used flowers and cards to ______ the tray for Mom's birthday breakfast.",
+"options": ["sneak", "scramble", "bacon", "decorate"],
+"answer": 3
+},
+"q_w068": {
+"type": "choice_text",
+"wordIds": ["w068"],
+"question": "Jen found a second-hand bike at the ______ store with a low price.",
+"options": ["outgrow", "thrift", "streamer", "fall in love with"],
+"answer": 1
+},
+"q_w069": {
+"type": "choice_text",
+"wordIds": ["w069"],
+"question": "Jen ______ her old bike and needed a new one because she grew too fast.",
+"options": ["thrift", "outgrow", "streamer", "fall in love with"],
+"answer": 1
+},
+"q_w070": {
+"type": "choice_text",
+"wordIds": ["w070"],
+"question": "The children hung colorful ______ on the bike to make it more attractive.",
+"options": ["thrift", "outgrow", "streamer", "fall in love with"],
+"answer": 2
+},
+"q_w071": {
+"type": "choice_text",
+"wordIds": ["w071"],
+"question": "After decorating the second-hand bike, Jen ______ it at once.",
+"options": ["thrift", "outgrow", "streamer", "fall in love with"],
+"answer": 3
+},
+"q_w072": {
+"type": "choice_text",
+"wordIds": ["w072"],
+"question": "The book has a short ______ that introduces community workers' jobs.",
+"options": ["introduction", "mail carrier", "keep in touch", "conclusion"],
+"answer": 0
+},
+"q_w073": {
+"type": "choice_text",
+"wordIds": ["w073"],
+"question": "The ______ delivers letters and packages to every house in the neighborhood daily.",
+"options": ["introduction", "mail carrier", "keep in touch", "conclusion"],
+"answer": 1
+},
+"q_w074": {
+"type": "choice_text",
+"wordIds": ["w074"],
+"question": "We ______ with our grandparents by calling them every weekend.",
+"options": ["introduction", "mail carrier", "keep in touch", "conclusion"],
+"answer": 2
+},
+"q_w075": {
+"type": "choice_text",
+"wordIds": ["w075"],
+"question": "In ______, community workers play an important role in our daily lives.",
+"options": ["introduction", "mail carrier", "keep in touch", "conclusion"],
+"answer": 3
+},
+"q_w076": {
+"type": "choice_text",
+"wordIds": ["w077"],
+"question": "Owls are ______ at night and sleep during the day.",
+"options": ["hibernation", "active", "nectar", "clam"],
+"answer": 1
+},
+"q_w077": {
+"type": "choice_text",
+"wordIds": ["w078"],
+"question": "Bees fly from flower to flower to collect ______ for making honey.",
+"options": ["hibernation", "active", "nectar", "clam"],
+"answer": 2
+},
+"q_w078": {
+"type": "choice_text",
+"wordIds": ["w079"],
+"question": "The nurse shark finds crabs and ______ in the dark sea at night.",
+"options": ["hibernation", "active", "nectar", "clam"],
+"answer": 3
+},
+"q_w080": {
+"type": "choice_text",
+"wordIds": ["w080"],
+"question": "Many people ______ every morning to stay relaxed and strong.",
+"options": ["yoga", "pose", "arch", "cobra"],
+"answer": 0
+},
+"q_w081": {
+"type": "choice_text",
+"wordIds": ["w081"],
+"question": "The dancer struck a beautiful ______ at the end of the performance.",
+"options": ["yoga", "pose", "arch", "cobra"],
+"answer": 1
+},
+"q_w082": {
+"type": "choice_text",
+"wordIds": ["w082"],
+"question": "The cat ______ its back when it sensed danger nearby.",
+"options": ["stork", "balance", "arch", "floppy"],
+"answer": 2
+},
+"q_w083": {
+"type": "choice_text",
+"wordIds": ["w083"],
+"question": "The ______ pose in yoga helps stretch the chest and back muscles.",
+"options": ["stork", "cobra", "balance", "polka-dot"],
+"answer": 1
+},
+"q_w084": {
+"type": "choice_text",
+"wordIds": ["w084"],
+"question": "The ______ is a large bird with long legs, and its namesake yoga pose requires balancing on one leg.",
+"options": ["stork", "cobra", "balance", "fuzzy"],
+"answer": 0
+},
+"q_w085": {
+"type": "choice_text",
+"wordIds": ["w085"],
+"question": "You need good ______ to walk on the narrow path without falling.",
+"options": ["stork", "balance", "put on", "floppy"],
+"answer": 1
+},
+"q_w086": {
+"type": "choice_text",
+"wordIds": ["w086"],
+"question": "Please ______ your coat before going out—it's cold outside.",
+"options": ["fuzzy", "put on", "polka-dot", "floppy"],
+"answer": 1
+},
+"q_w087": {
+"type": "choice_text",
+"wordIds": ["w087"],
+"question": "The little girl hugged her ______ teddy bear tightly when she slept.",
+"options": ["fuzzy", "polka-dot", "floppy", "direction"],
+"answer": 0
+},
+"q_w088": {
+"type": "choice_text",
+"wordIds": ["w088"],
+"question": "She wore a red ______ dress to the birthday party and looked lively.",
+"options": ["fuzzy", "polka-dot", "floppy", "direction"],
+"answer": 1
+},
+"q_w089": {
+"type": "choice_text",
+"wordIds": ["w089"],
+"question": "The clown's ______ shoes made a funny sound when he walked.",
+"options": ["polka-dot", "floppy", "direction", "passage"],
+"answer": 1
+},
+"q_w090": {
+"type": "choice_text",
+"wordIds": ["w090"],
+"question": "It's important to follow the ______ on the medicine bottle carefully.",
+"options": ["direction", "passage", "shut down", "prefix"],
+"answer": 0
+},
+"q_w091": {
+"type": "choice_text",
+"wordIds": ["w091"],
+"question": "We walked through an underground ______ to cross the busy street safely.",
+"options": ["passage", "shut down", "prefix", "load"],
+"answer": 0
+},
+"q_w092": {
+"type": "choice_text",
+"wordIds": ["w092"],
+"question": "The factory had to ______ for two weeks due to the heavy storm.",
+"options": ["shut down", "prefix", "load", "overload"],
+"answer": 0
+},
+"q_w093": {
+"type": "choice_text",
+"wordIds": ["w093"],
+"question": "Adding the ______ “un-” to “happy” makes the word “unhappy”.",
+"options": ["prefix", "load", "overload", "make sense"],
+"answer": 0
+},
+"q_w094": {
+"type": "choice_text",
+"wordIds": ["w094"],
+"question": "They need to ______ the boxes onto the truck before noon.",
+"options": ["load", "overload", "make sense", "nonsense"],
+"answer": 0
+},
+"q_w095": {
+"type": "choice_text",
+"wordIds": ["w095"],
+"question": "Don't ______ the shelf with too many books—it might break.",
+"options": ["overload", "make sense", "nonsense", "preschool"],
+"answer": 0
+},
+"q_w096": {
+"type": "choice_text",
+"wordIds": ["w096"],
+"question": "Your explanation doesn't ______—can you explain it again?",
+"options": ["make sense", "nonsense", "preschool", "direction"],
+"answer": 0
+},
+"q_w097": {
+"type": "choice_text",
+"wordIds": ["w097"],
+"question": "Stop talking ______ and tell me the truth about what happened.",
+"options": ["nonsense", "preschool", "passage", "shut down"],
+"answer": 0
+},
+"q_w098": {
+"type": "choice_text",
+"wordIds": ["w098"],
+"question": "My little sister goes to a ______ near our home and likes her teacher.",
+"options": ["preschool", "prefix", "load", "overload"],
+"answer": 0
+},
+"q_w099": {
+"type": "choice_text",
+"wordIds": ["w099"],
+"question": "The wise king ______ the peaceful kingdom with kindness for many years.",
+"options": ["gaggle", "rule over", "colony", "murder"],
+"answer": 1
+},
+"q_w100": {
+"type": "choice_text",
+"wordIds": ["w100"],
+"question": "We saw a large ______ of geese flying south for the winter.",
+"options": ["gaggle", "colony", "murder", "pod"],
+"answer": 0
+},
+"q_w101": {
+"type": "choice_text",
+"wordIds": ["w101"],
+"question": "A ______ of bats lives in the old cave near the village.",
+"options": ["gaggle", "colony", "murder", "pod"],
+"answer": 1
+},
+"q_w102": {
+"type": "choice_text",
+"wordIds": ["w102"],
+"question": "A ______ of crows sat on the roof and made loud calls at sunset.",
+"options": ["pod", "smack", "murder", "herd"],
+"answer": 2
+},
+"q_w103": {
+"type": "choice_text",
+"wordIds": ["w103"],
+"question": "We watched a ______ of dolphins jumping out of the water near the boat.",
+"options": ["smack", "pod", "herd", "pack"],
+"answer": 1
+},
+"q_w104": {
+"type": "choice_text",
+"wordIds": ["w104"],
+"question": "A ______ of jellyfish floated near the beach, so we didn't go swimming.",
+"options": ["herd", "pack", "smack", "gaggle"],
+"answer": 2
+},
+"q_w105": {
+"type": "choice_text",
+"wordIds": ["w105"],
+"question": "A ______ of zebras ran across the African savanna together in the rain.",
+"options": ["pack", "herd", "pod", "murder"],
+"answer": 1
+},
+"q_w106": {
+"type": "choice_text",
+"wordIds": ["w106"],
+"question": "A ______ of wolves howled at the moon in the quiet forest night.",
+"options": ["herd", "pack", "smack", "colony"],
+"answer": 1
+},
+"q_w107": {
+"type": "choice_text",
+"wordIds": ["w107"],
+"question": "We plan to go ______ in the mountains with friends next weekend.",
+"options": ["rock climbing", "toboggan", "inner tube", "bobsled"],
+"answer": 0
+},
+"q_w108": {
+"type": "choice_text",
+"wordIds": ["w108"],
+"question": "The little boy was ______ enough to try rock climbing for the first time.",
+"options": ["brave", "floppy", "fuzzy", "polka-dot"],
+"answer": 0
+},
+"q_w109": {
+"type": "choice_text",
+"wordIds": ["w109"],
+"question": "The children love to ride a ______ down the snow hill in winter.",
+"options": ["toboggan", "inner tube", "bobsled", "steer"],
+"answer": 0
+},
+"q_w110": {
+"type": "choice_text",
+"wordIds": ["w110"],
+"question": "We used an ______ to slide down the snow hill and had great fun.",
+"options": ["toboggan", "inner tube", "bobsled", "sharp bend"],
+"answer": 1
+},
+"q_w111": {
+"type": "choice_text",
+"wordIds": ["w111"],
+"question": "The team won the gold medal in the ______ race at the Winter Olympics.",
+"options": ["toboggan", "inner tube", "bobsled", "steer"],
+"answer": 2
+},
+"q_w112": {
+"type": "choice_text",
+"wordIds": ["w112"],
+"question": "The athlete needs to ______ the bobsled carefully around the sharp bends.",
+"options": ["steer", "brave", "sharp", "pack"],
+"answer": 0
+},
+"q_w113": {
+"type": "choice_text",
+"wordIds": ["w113"],
+"question": "Drivers must slow down when they see a ______ ahead on the mountain road.",
+"options": ["steer", "sharp bend", "brave", "herd"],
+"answer": 1
+},
+"q_w114": {
+"type": "choice_text",
+"wordIds": ["w114"],
+"question": "It rained for three days ______, so we couldn't go out to play.",
+"options": ["in a box", "in a row", "in a tree", "in a line"],
+"answer": 1
+},
+"q_w115": {
+"type": "choice_text",
+"wordIds": ["w115"],
+"question": "Farmers grow different ______ in the field to make a living for their families.",
+"options": ["chores", "details", "crops", "dams"],
+"answer": 2
+},
+"q_w116": {
+"type": "choice_text",
+"wordIds": ["w116"],
+"question": "The government built a big ______ on the river to store water and prevent floods.",
+"options": ["detail", "crop", "chore", "dam"],
+"answer": 3
+},
+"q_w117": {
+"type": "choice_text",
+"wordIds": ["w117"],
+"question": "Washing dishes and sweeping the floor are my daily household ______.",
+"options": ["chores", "dams", "crops", "supplies"],
+"answer": 0
+},
+"q_w118": {
+"type": "choice_text",
+"wordIds": ["w118"],
+"question": "Everyone should ______ well in public places like cinemas and libraries.",
+"options": ["supply", "behave", "base", "detail"],
+"answer": 1
+},
+"q_w119": {
+"type": "choice_text",
+"wordIds": ["w119"],
+"question": "Can you tell me all the ______ of the new plan, such as the time and the steps?",
+"options": ["bases", "materials", "details", "supplies"],
+"answer": 2
+},
+"q_w120": {
+"type": "choice_text",
+"wordIds": ["w120"],
+"question": "We need to buy some camping ______ like tents and sleeping bags for the trip.",
+"options": ["matches", "supplies", "bases", "materials"],
+"answer": 1
+},
+"q_w121": {
+"type": "choice_text",
+"wordIds": ["w121"],
+"question": "The ______ of the big lamp is made of solid wood and can support it well.",
+"options": ["base", "material", "match", "gobble"],
+"answer": 0
+},
+"q_w122": {
+"type": "choice_text",
+"wordIds": ["w122"],
+"question": "Tunnels can be made of different ______ like stone, concrete and steel.",
+"options": ["invites", "bases", "materials", "matches"],
+"answer": 2
+},
+"q_w123": {
+"type": "choice_text",
+"wordIds": ["w123"],
+"question": "Her blue scarf ______ her white coat very well and looks beautiful.",
+"options": ["invites", "stands", "gobbles", "matches"],
+"answer": 3
+},
+"q_w124": {
+"type": "choice_text",
+"wordIds": ["w124"],
+"question": "The hungry little boy ______ up the cake in just a few seconds.",
+"options": ["gobbles", "matches", "invites", "stands"],
+"answer": 0
+},
+"q_w125": {
+"type": "choice_text",
+"wordIds": ["w125"],
+"question": "We will ______ our best friends to our birthday party next Sunday.",
+"options": ["match", "invite", "gobble", "stand"],
+"answer": 1
+},
+"q_w126": {
+"type": "choice_text",
+"wordIds": ["w126"],
+"question": "A tall old tree ______ in front of our school gate for many years.",
+"options": ["invites", "matches", "stands", "gobbles"],
+"answer": 2
+},
+"q_w127": {
+"type": "choice_text",
+"wordIds": ["w127"],
+"question": "The basketball player ______ a basket at the last minute of the game.",
+"options": ["rode", "felt", "scored", "buddied"],
+"answer": 2
+},
+"q_w128": {
+"type": "choice_text",
+"wordIds": ["w128"],
+"question": "My best ______ helps me with my homework every weekend.",
+"options": ["sidecar", "buddy", "score", "motorcycle"],
+"answer": 1
+},
+"q_w129": {
+"type": "choice_text",
+"wordIds": ["w129"],
+"question": "You must wear a helmet when you ride a ______ on the road.",
+"options": ["motorcycle", "buddy", "period", "initial"],
+"answer": 0
+},
+"q_w130": {
+"type": "choice_text",
+"wordIds": ["w130"],
+"question": "This type of motorcycle is very ______ for long trips in the mountains.",
+"options": ["initial", "ape", "sidecar", "comfortable"],
+"answer": 3
+},
+"q_w131": {
+"type": "choice_text",
+"wordIds": ["w131"],
+"question": "The old motorcycle has a small ______ for carrying a child.",
+"options": ["sidecar", "period", "ape", "solve"],
+"answer": 0
+},
+"q_w132": {
+"type": "choice_text",
+"wordIds": ["w132"],
+"question": "We lived in Shanghai for a ______ of three years when I was young.",
+"options": ["fetch", "period", "initial", "ape"],
+"answer": 1
+},
+"q_w133": {
+"type": "choice_text",
+"wordIds": ["w133"],
+"question": "The ______ step to make a kite is to prepare bamboo and paper.",
+"options": ["fetch", "indoor", "initial", "ape"],
+"answer": 2
+},
+"q_w134": {
+"type": "choice_text",
+"wordIds": ["w134"],
+"question": "According to the book, crows are as smart as ______ in the forest.",
+"options": ["fetches", "indoors", "solves", "apes"],
+"answer": 3
+},
+"q_w135": {
+"type": "choice_text",
+"wordIds": ["w135"],
+"question": "We need to work together to ______ the difficult problem in our project.",
+"options": ["solve", "fetch", "indoor", "defend"],
+"answer": 0
+},
+"q_w136": {
+"type": "choice_text",
+"wordIds": ["w136"],
+"question": "When the light turns red, the crows hop out to ______ their broken nut snacks.",
+"options": ["defend", "fetch", "indoor", "passage"],
+"answer": 1
+},
+"q_w137": {
+"type": "choice_text",
+"wordIds": ["w137"],
+"question": "We play ______ games like chess when it rains heavily outside.",
+"options": ["avoid", "defend", "indoor", "passage"],
+"answer": 2
+},
+"q_w138": {
+"type": "choice_text",
+"wordIds": ["w138"],
+"question": "Crows will ______ their family from other animals in the wild.",
+"options": ["score", "avoid", "passage", "defend"],
+"answer": 3
+},
+"q_w139": {
+"type": "choice_text",
+"wordIds": ["w139"],
+"question": "Tunnels are long and narrow covered ______ under the ground.",
+"options": ["passages", "avoids", "scores", "buddies"],
+"answer": 0
+},
+"q_w140": {
+"type": "choice_text",
+"wordIds": ["w140"],
+"question": "Underground tunnels help people ______ the busy traffic on the street.",
+"options": ["motorcycle", "score", "avoid", "buddy"],
+"answer": 2
+},
+"q_w141": {
+"type": "choice_text",
+"wordIds": ["w141"],
+"question": "The gardener ______ the hedges to make them look neat and tidy.",
+"options": ["marmoset", "trimmed", "rhea", "jawfish"],
+"answer": 1
+},
+"q_w142": {
+"type": "choice_text",
+"wordIds": ["w142"],
+"question": "The ______ is a large flightless bird that lives in the grasslands of South America.",
+"options": ["emperor", "jackal", "mane", "rhea"],
+"answer": 3
+},
+"q_w143": {
+"type": "choice_text",
+"wordIds": ["w143"],
+"question": "The ______ is a tiny long-tailed monkey that is native to Brazil's rainforests.",
+"options": ["marmoset", "capybara", "anaconda", "piranha"],
+"answer": 0
+},
+"q_w144": {
+"type": "choice_text",
+"wordIds": ["w144"],
+"question": "The male ______ keeps its eggs in its mouth to keep them safe until they hatch.",
+"options": ["rhea", "trim", "marmoset", "jawfish"],
+"answer": 3
+},
+"q_w145": {
+"type": "choice_text",
+"wordIds": ["w145"],
+"question": "The male ______ spits up food to feed its young pups in Africa and Asia.",
+"options": ["jackal", "jawfish", "emperor", "mane"],
+"answer": 0
+},
+"q_w146": {
+"type": "choice_text",
+"wordIds": ["w146"],
+"question": "The male ______ penguin holds the egg on its feet to keep it warm in Antarctica.",
+"options": ["capybara", "jackal", "emperor", "anaconda"],
+"answer": 2
+},
+"q_w147": {
+"type": "choice_text",
+"wordIds": ["w147"],
+"question": "The male lion has a thick ______ around its neck that makes it look powerful.",
+"options": ["anaconda", "mane", "emperor", "capybara"],
+"answer": 1
+},
+"q_w148": {
+"type": "choice_text",
+"wordIds": ["w148"],
+"question": "The ______ is the biggest rodent in the world and likes to live near water in Brazil.",
+"options": ["piranha", "mane", "anaconda", "capybara"],
+"answer": 3
+},
+"q_w149": {
+"type": "choice_text",
+"wordIds": ["w149"],
+"question": "The ______ is the heaviest snake in the world and lives in the Amazon rainforest.",
+"options": ["capybara", "anaconda", "piranha", "trim"],
+"answer": 1
+},
+"q_w150": {
+"type": "choice_text",
+"wordIds": ["w150"],
+"question": "The ______ is a small fierce fish with sharp teeth in the rivers of South America.",
+"options": ["anaconda", "rhea", "marmoset", "piranha"],
+"answer": 3
+},
+"q_w151": {
+"type": "choice_text",
+"wordIds": ["w151"],
+"question": "A skilled ______ can make beautiful glass art with hot molten glass.",
+"options": ["glassblower", "runny", "pipe", "gooey"],
+"answer": 0
+},
+"q_w152": {
+"type": "choice_text",
+"wordIds": ["w152"],
+"question": "The molten glass is ______ when heated, flowing easily like warm honey.",
+"options": ["prize", "crater", "runny", "gravity"],
+"answer": 2
+},
+"q_w153": {
+"type": "choice_text",
+"wordIds": ["w153"],
+"question": "The glassblower holds a long ______ to shape and blow the hot gooey glass.",
+"options": ["inch", "Piñatas", "grownup", "pipe"],
+"answer": 3
+},
+"q_w154": {
+"type": "choice_text",
+"wordIds": ["w154"],
+"question": "We must be careful with the ______ molten glass because it sticks to every surface.",
+"options": ["steady", "brag", "gooey", "dishwasher"],
+"answer": 2
+},
+"q_w155": {
+"type": "choice_text",
+"wordIds": ["w155"],
+"question": "A huge ______ on the Moon was formed by a meteorite impact millions of years ago.",
+"options": ["crater", "glassblower", "runny", "pipe"],
+"answer": 0
+},
+"q_w156": {
+"type": "choice_text",
+"wordIds": ["w156"],
+"question": "The Moon has much less ______ than Earth, so people can jump much higher there.",
+"options": ["Piñatas", "gravity", "gooey", "crater"],
+"answer": 1
+},
+"q_w157": {
+"type": "choice_text",
+"wordIds": ["w157"],
+"question": "Colorful ______ filled with candy and toys are very popular at children's birthday parties.",
+"options": ["inch", "prize", "Piñatas", "grownup"],
+"answer": 2
+},
+"q_w158": {
+"type": "choice_text",
+"wordIds": ["w158"],
+"question": "Candy and small ______ fall out when kids break the Piñata at the party.",
+"options": ["dishwasher", "steady", "brag", "prize"],
+"answer": 3
+},
+"q_w159": {
+"type": "choice_text",
+"wordIds": ["w159"],
+"question": "You need to dig the soil about one ______ deep to plant the sunflower seeds properly.",
+"options": ["pipe", "inch", "glassblower", "runny"],
+"answer": 1
+},
+"q_w160": {
+"type": "choice_text",
+"wordIds": ["w160"],
+"question": "If you can't reach the high shelf, you should ask a ______ for help.",
+"options": ["grownup", "gooey", "crater", "Piñatas"],
+"answer": 0
+},
+"q_w161": {
+"type": "choice_text",
+"wordIds": ["w161"],
+"question": "The hare likes to ______ about how fast he can run in the race with the tortoise.",
+"options": ["inch", "grownup", "brag", "prize"],
+"answer": 2
+},
+"q_w162": {
+"type": "choice_text",
+"wordIds": ["w162"],
+"question": "'Slow and ______ wins the race' is a famous saying from The Tortoise and the Hare.",
+"options": ["dishwasher", "glassblower", "brag", "steady"],
+"answer": 3
+},
+"q_w163": {
+"type": "choice_text",
+"wordIds": ["w163"],
+"question": "Using a full ______ saves more water and energy than washing dishes by hand.",
+"options": ["dishwasher", "steady", "brag", "prize"],
+"answer": 0
+},
+
+
+
+"q_w164": {
+"type": "choice_text",
+"wordIds": ["w164"],
+"question": "Princess Magnolia enjoyed hot chocolate and sweet ______ for her snack.",
+"options": ["breeze", "scone", "uncover", "prim"],
+"answer": 1
+},
+"q_w165": {
+"type": "choice_text",
+"wordIds": ["w165"],
+"question": "A soft warm ______ came through the window and blew her curls gently.",
+"options": ["frilly", "glitter-stone", "breeze", "mince"],
+"answer": 2
+},
+"q_w166": {
+"type": "choice_text",
+"wordIds": ["w166"],
+"question": "Duchess Wigtower loved to visit and try to ______ other people’s secrets.",
+"options": ["glass slipper", "stuff", "broom closet", "uncover"],
+"answer": 3
+},
+"q_w167": {
+"type": "choice_text",
+"wordIds": ["w167"],
+"question": "The princess tried to look ______ and proper in front of the duchess.",
+"options": ["prim", "chute", "highjump", "scone"],
+"answer": 0
+},
+"q_w168": {
+"type": "choice_text",
+"wordIds": ["w168"],
+"question": "She brushed crumbs off her beautiful ______ pink dress carefully.",
+"options": ["breeze", "frilly", "uncover", "prim"],
+"answer": 1
+},
+"q_w169": {
+"type": "choice_text",
+"wordIds": ["w169"],
+"question": "Suddenly the ______ ring began to ring—it was the monster alarm!",
+"options": ["mince", "glass slipper", "glitter-stone", "stuff"],
+"answer": 2
+},
+"q_w170": {
+"type": "choice_text",
+"wordIds": ["w170"],
+"question": "To keep her princess look, she had to ______ quietly to the door in small steps.",
+"options": ["broom closet", "chute", "highjump", "mince"],
+"answer": 3
+},
+"q_w171": {
+"type": "choice_text",
+"wordIds": ["w171"],
+"question": "Her ______ made a tinkling sound as she walked across the room.",
+"options": ["glass slippers", "scone", "breeze", "uncover"],
+"answer": 0
+},
+"q_w172": {
+"type": "choice_text",
+"wordIds": ["w172"],
+"question": "She had to ______ her fancy dress into the closet quickly and change.",
+"options": ["frilly", "stuff", "glitter-stone", "mince"],
+"answer": 1
+},
+"q_w173": {
+"type": "choice_text",
+"wordIds": ["w173"],
+"question": "The secret passage started inside the small ______ in the castle.",
+"options": ["glass slipper", "chute", "broom closet", "highjump"],
+"answer": 2
+},
+"q_w174": {
+"type": "choice_text",
+"wordIds": ["w174"],
+"question": "She used the dark secret ______ to slide down fast to the courtyard.",
+"options": ["scone", "breeze", "uncover", "chute"],
+"answer": 3
+},
+"q_w175": {
+"type": "choice_text",
+"wordIds": ["w175"],
+"question": "The brave princess could ______ the high castle wall in one jump.",
+"options": ["highjump", "frilly", "glitter-stone", "mince"],
+"answer": 0
+},
+"q_w176": {
+"type": "choice_text",
+"wordIds": ["w176"],
+"question": "Frimplepants sat and ate an apple in the castle’s open ______ with green grass.",
+"options": ["passage", "courtyard", "mane", "pony"],
+"answer": 1
+},
+"q_w177": {
+"type": "choice_text",
+"wordIds": ["w177"],
+"question": "The unicorn would ______ at the sweet apple instead of taking a big bite.",
+"options": ["prance", "soar", "charge", "nibble"],
+"answer": 3
+},
+"q_w178": {
+"type": "choice_text",
+"wordIds": ["w178"],
+"question": "______ around the courtyard is the favorite thing the unicorn does in the castle.",
+"options": ["prance", "cheep", "drool", "squawk"],
+"answer": 0
+},
+"q_w179": {
+"type": "choice_text",
+"wordIds": ["w179"],
+"question": "The magical animal with a long horn on its forehead is called a .",
+"options": ["pony", "mane", "unicorn", "passage"],
+"answer": 2
+},
+"q_w180": {
+"type": "choice_text",
+"wordIds": ["w180"],
+"options": ["mane", "passage", "faithful", "soar"],
+"question": "Frimplepants hid in a secret ______ to change his look from a pony to a unicorn.",
+"answer": 1
+},
+"q_w181": {
+"type": "choice_text",
+"wordIds": ["w181"],
+"question": "The sparkly hair on the unicorn’s neck is its beautiful .",
+"options": ["charge", "courtyard", "cheep", "mane"],
+"answer": 3
+},
+"q_w182": {
+"type": "choice_text",
+"wordIds": ["w182"],
+"question": " to the princess, Blacky never leaves her side when fighting monsters.",
+"options": ["faithful", "squawk", "drool", "prance"],
+"answer": 0
+},
+"q_w183": {
+"type": "choice_text",
+"wordIds": ["w183"],
+"question": "The Princess in Black rides her black ______ when she charges through the forest.",
+"options": ["unicorn", "passage", "pony", "mane"],
+"answer": 2
+},
+"q_w184": {
+"type": "choice_text",
+"wordIds": ["w184"],
+"question": "With great skills, the princess can ______ over the high castle wall easily.",
+"options": ["nibble", "soar", "cheep", "charge"],
+"answer": 1
+},
+"q_w185": {
+"type": "choice_text",
+"wordIds": ["w185"],
+"question": "The princess and Blacky ______ through the thick forest to save the goats.",
+"options": ["soar", "mane", "cheep", "charge"],
+"answer": 3
+},
+"q_w186": {
+"type": "choice_text",
+"wordIds": ["w186"],
+"question": " loudly, the big birds flew away when they saw the monster.",
+"options": ["squawk", "drool", "prance", "nibble"],
+"answer": 0
+},
+"q_w187": {
+"type": "choice_text",
+"wordIds": ["w187"],
+"question": "The little baby birds ______ softly in the nest for their mother’s food.",
+"options": ["soar", "charge", "cheep", "drool"],
+"answer": 2
+},
+"q_w188": {
+"type": "choice_text",
+"wordIds": ["w188"],
+"question": "The hungry blue monster started to ______ when it smelled the plump goats.",
+"options": ["prance", "squawk", "mane", "drool"],
+"answer": 3
+},
+"q_w189": {
+"type": "choice_text",
+"wordIds": ["w189"],
+"question": "A big blue monster began to ______ from the dark hole in the ceiling.",
+"options": ["emerge", "crook", "croak", "gallop"],
+"answer": 0
+},
+"q_w190": {
+"type": "choice_text",
+"wordIds": ["w190"],
+"question": "Duff the goat boy held his wooden ______ to protect the goats from danger.",
+"options": ["backflip", "crook", "scepter", "staff"],
+"answer": 1
+},
+"q_w191": {
+"type": "choice_text",
+"wordIds": ["w191"],
+"question": "He was so scared that he could only ______, “H-help!” in a low rough voice.",
+"options": ["wage", "battle", "croak", "pounce"],
+"answer": 2
+},
+"q_w192": {
+"type": "choice_text",
+"wordIds": ["w192"],
+"question": "The Princess in Black watched Blacky ______ fast toward the goat pasture.",
+"options": ["buck", "hornswoggle", "spotless", "gallop"],
+"answer": 3
+},
+"q_w193": {
+"type": "choice_text",
+"wordIds": ["w193"],
+"question": "The brave princess did a cool ______ and landed softly on the grass.",
+"options": ["cushion", "backflip", "amiss", "headband"],
+"answer": 1
+},
+"q_w194": {
+"type": "choice_text",
+"wordIds": ["w194"],
+"question": "She pressed a switch on her golden ______ and it turned into a strong stick.",
+"options": ["bead", "bracelet", "scepter", "determine"],
+"answer": 2
+},
+"q_w195": {
+"type": "choice_text",
+"wordIds": ["w195"],
+"question": "The magic scepter changed into a long hard ______ for fighting monsters.",
+"options": ["staff", "emerge", "crook", "croak"],
+"answer": 0
+},
+"q_w196": {
+"type": "choice_text",
+"wordIds": ["w196"],
+"question": "The Princess in Black decided to ______ battle against the huge blue monster.",
+"options": ["gallop", "wage", "backflip", "scepter"],
+"answer": 1
+},
+"q_w197": {
+"type": "choice_text",
+"wordIds": ["w197"],
+"question": "The fierce ______ between the princess and the monster didn’t last long.",
+"options": ["staff", "pounce", "battle", "buck"],
+"answer": 2
+},
+"q_w198": {
+"type": "choice_text",
+"wordIds": ["w198"],
+"question": "PRINCESS POUNCE! She prepared to ______ on the monster and knock it down.",
+"options": ["hornswoggle", "spotless", "cushion", "pounce"],
+"answer": 3
+},
+"q_w199": {
+"type": "choice_text",
+"wordIds": ["w199"],
+"question": "BLACKY BUCK! The little pony began to ______ and kick backward suddenly.",
+"options": ["amiss", "headband", "bead", "buck"],
+"answer": 3
+},
+"q_w200": {
+"type": "choice_text",
+"wordIds": ["w200"],
+"question": "HORNSWOGGLE! She used a clever trick to ______ the monster and win the fight.",
+"options": ["bracelet", "determine", "hornswoggle", "emerge"],
+"answer": 2
+},
+"q_w201": {
+"type": "choice_text",
+"wordIds": ["w201"],
+"question": "Princess Magnolia’s tower was clean and ______, with no dirt at all.",
+"options": ["spotless", "crook", "croak", "gallop"],
+"answer": 0
+},
+"q_w202": {
+"type": "choice_text",
+"wordIds": ["w202"],
+"question": "The soft sofa had a pink ______ to make people feel comfortable sitting on it.",
+"options": ["backflip", "cushion", "scepter", "staff"],
+"answer": 1
+},
+"q_w203": {
+"type": "choice_text",
+"wordIds": ["w203"],
+"question": "Everything looked too perfect, so the duchess thought something was ______.",
+"options": ["wage", "battle", "amiss", "pounce"],
+"answer": 2
+},
+"q_w204": {
+"type": "choice_text",
+"wordIds": ["w204"],
+"question": "She found beautiful flowered ______ in the drawer to hold her hair back.",
+"options": ["buck", "headband", "hornswoggle", "spotless"],
+"answer": 1
+},
+"q_w205": {
+"type": "choice_text",
+"wordIds": ["w205"],
+"question": "The pretty handkerchief was decorated with a small glass ______ on the corner.",
+"options": ["cushion", "bead", "amiss", "determine"],
+"answer": 1
+},
+"q_w206": {
+"type": "choice_text",
+"wordIds": ["w206"],
+"question": "She wore a shiny crystal ______ on her wrist as a nice princess accessory.",
+"options": ["emerge", "crook", "bracelet", "croak"],
+"answer": 2
+},
+"q_w207": {
+"type": "choice_text",
+"wordIds": ["w207"],
+"question": "The duchess was ______ to find out the secret hidden in the princess’s castle.",
+"options": ["determined", "gallop", "backflip", "scepter"],
+"answer": 0
+},
+"q_w208": {
+"type": "choice_text",
+"wordIds": ["w208"],
+"question": "The duchess wanted to ______ under the table to find the princess’s secret.",
+"options": ["peek", "wad", "ballroom", "inspect"],
+"answer": 0
+},
+"q_w209": {
+"type": "choice_text",
+"wordIds": ["w209"],
+"question": "She crumpled the paper into a ______ and threw it away.",
+"options": ["ballroom", "wad", "coal-black", "plop"],
+"answer": 1
+},
+"q_w210": {
+"type": "choice_text",
+"wordIds": ["w210"],
+"question": "The king and queen held a big party in the huge ______.",
+"options": ["ballroom", "toenail", "clipping", "whistle"],
+"answer": 0
+},
+"q_w211": {
+"type": "choice_text",
+"wordIds": ["w211"],
+"question": "The duchess stopped to ______ the cookies one by one carefully.",
+"options": ["disguise", "suspect", "inspect", "fashion"],
+"answer": 2
+},
+"q_w212": {
+"type": "choice_text",
+"wordIds": ["w212"],
+"question": "She found a pair of ______ stockings under the door.",
+"options": ["coal-black", "filthy", "cheeky", "tweet"],
+"answer": 1
+},
+"q_w213": {
+"type": "choice_text",
+"wordIds": ["w213"],
+"question": "The big monster ______ down into the soft ground suddenly.",
+"options": ["whistled", "plopped", "fashioned", "avenged"],
+"answer": 1
+},
+"q_w214": {
+"type": "choice_text",
+"wordIds": ["w214"],
+"question": "It is important to keep your fingers and ______ clean and tidy.",
+"options": ["toenail", "clipping", "ballroom", "peek"],
+"answer": 0
+},
+"q_w215": {
+"type": "choice_text",
+"wordIds": ["w215"],
+"question": "The monster found a pile of ______ on the ground and ate them.",
+"options": ["ballrooms", "clippings", "whistles", "disguises"],
+"answer": 1
+},
+"q_w216": {
+"type": "choice_text",
+"wordIds": ["w216"],
+"question": "The boy was happy and began to ______ a happy tune.",
+"options": ["whistle", "suspect", "tour", "filthy"],
+"answer": 0
+},
+"q_w217": {
+"type": "choice_text",
+"wordIds": ["w217"],
+"question": "The hero wore a ______ so that no one could recognize him.",
+"options": ["disguise", "fashion", "avenge", "cheeky"],
+"answer": 0
+},
+"q_w218": {
+"type": "choice_text",
+"wordIds": ["w218"],
+"question": "No one would ______ that the nice princess is a brave hero.",
+"options": ["suspect", "fashion", "avenge", "tour"],
+"answer": 0
+},
+"q_w219": {
+"type": "choice_text",
+"wordIds": ["w219"],
+"question": "He can ______ a small house out of boxes and paper.",
+"options": ["fashion", "avenge", "cheeky", "tweet"],
+"answer": 0
+},
+"q_w220": {
+"type": "choice_text",
+"wordIds": ["w220"],
+"question": "The brave hero wanted to ______ his friends from the bad monster.",
+"options": ["avenge", "tweet", "tour", "filthy"],
+"answer": 0
+},
+"q_w221": {
+"type": "choice_text",
+"wordIds": ["w221"],
+"question": "That ______ little monkey took the food and ran away quickly.",
+"options": ["cheeky", "tweet", "tour", "filthy"],
+"answer": 0
+},
+"q_w222": {
+"type": "choice_text",
+"wordIds": ["w222"],
+"question": "Listen! The birds ______ loudly in the tree outside the window.",
+"options": ["tweet", "tour", "filthy", "peek"],
+"answer": 0
+},
+"q_w223": {
+"type": "choice_text",
+"wordIds": ["w223"],
+"question": "The duchess said: 'I ______ your castle while you were out.'",
+"options": ["toured", "filthied", "peeked", "wadded"],
+"answer": 0
+},
+"q_w224": {
+"type": "choice_text",
+"wordIds": ["w224"],
+"question": "His shoes were ______ with mud after playing outside.",
+"options": ["filthy", "coal-black", "cheeky", "tweet"],
+"answer": 0
+},
+"q_w225": {
+"type": "choice_text",
+"wordIds": ["w225"],
+"question": "Batteries can ______ electricity for later use to power toys.",
+"options": ["release", "store", "rod", "primary"],
+"answer": 1
+},
+"q_w226": {
+"type": "choice_text",
+"wordIds": ["w226"],
+"question": "When you turn on the light, batteries ______ energy slowly.",
+"options": ["secondary", "warm color", "release", "shade"],
+"answer": 2
+},
+"q_w227": {
+"type": "choice_text",
+"wordIds": ["w227"],
+"question": "A battery has a thin metal ______ inside as its important part.",
+"options": ["rod", "tint", "complementary", "playdate"],
+"answer": 0
+},
+"q_w228": {
+"type": "choice_text",
+"wordIds": ["w228"],
+"question": "Red, yellow and blue are the ______ colors that make other colors.",
+"options": ["trip", "upset", "primary", "treat"],
+"answer": 2
+},
+"q_w229": {
+"type": "choice_text",
+"wordIds": ["w229"],
+"question": "Orange, green and purple are ______ colors mixed by two primary colors.",
+"options": ["applesauce", "tart", "secondary", "store"],
+"answer": 2
+},
+"q_w230": {
+"type": "choice_text",
+"wordIds": ["w230"],
+"question": "Red and yellow are ______ that make people feel warm and cozy.",
+"options": ["cool color", "warm color", "shade", "tint"],
+"answer": 1
+},
+"q_w231": {
+"type": "choice_text",
+"wordIds": ["w231"],
+"question": "Blue and green are ______ that help people feel calm and relaxed.",
+"options": ["complementary", "playdate", "cool color", "trip"],
+"answer": 2
+},
+"q_w232": {
+"type": "choice_text",
+"wordIds": ["w232"],
+"question": "Adding black to a color can make a darker ______ of it.",
+"options": ["upset", "treat", "shade", "applesauce"],
+"answer": 2
+},
+"q_w233": {
+"type": "choice_text",
+"wordIds": ["w233"],
+"question": "Adding white to a color will create a light and soft ______.",
+"options": ["tart", "tint", "release", "rod"],
+"answer": 1
+},
+"q_w234": {
+"type": "choice_text",
+"wordIds": ["w234"],
+"question": "Red and green are ______ colors that look bright and nice together.",
+"options": ["primary", "warm color", "complementary", "playdate"],
+"answer": 2
+},
+"q_w235": {
+"type": "choice_text",
+"wordIds": ["w235"],
+"question": "The little girl has a ______ with her friend to play at the park.",
+"options": ["trip", "upset", "treat", "playdate"],
+"answer": 3
+},
+"q_w236": {
+"type": "choice_text",
+"wordIds": ["w236"],
+"question": "Be careful, or you will ______ over the stone and fall down.",
+"options": ["store", "trip", "release", "shade"],
+"answer": 1
+},
+"q_w237": {
+"type": "choice_text",
+"wordIds": ["w237"],
+"question": "He looks ______ because he lost his favorite toy this morning.",
+"options": ["tart", "applesauce", "upset", "secondary"],
+"answer": 2
+},
+"q_w238": {
+"type": "choice_text",
+"wordIds": ["w238"],
+"question": "Ice cream and cookies are yummy ______ for kids on special days.",
+"options": ["treat", "rod", "primary", "cool color"],
+"answer": 0
+},
+"q_w239": {
+"type": "choice_text",
+"wordIds": ["w239"],
+"question": "My mom made sweet ______ with fresh apples for breakfast.",
+"options": ["tint", "applesauce", "complementary", "trip"],
+"answer": 1
+},
+"q_w240": {
+"type": "choice_text",
+"wordIds": ["w240"],
+"question": "We bought some small apple ______ from the bakery at the sale.",
+"options": ["warm color", "shade", "tart", "release"],
+"answer": 2
+},
+"q_w241": {
+"type": "choice_text",
+"wordIds": ["w241"],
+"question": "James can ______ money by doing chores for his family.",
+"options": ["earn", "area", "year-round", "eastern"],
+"answer": 0
+},
+"q_w242": {
+"type": "choice_text",
+"wordIds": ["w242"],
+"question": "Many birds fly to a warm ______ to spend the winter.",
+"options": ["in order to", "survive", "area", "flock"],
+"answer": 2
+},
+"q_w243": {
+"type": "choice_text",
+"wordIds": ["w243"],
+"question": "Some birds live in a ______ area and do not migrate.",
+"options": ["hummingbird", "year-round", "swallow", "turnip"],
+"answer": 1
+},
+"q_w244": {
+"type": "choice_text",
+"wordIds": ["w244"],
+"question": "The ______ bluebird is a small beautiful bird in North America.",
+"options": ["sprout", "eastern", "budge", "earn"],
+"answer": 1
+},
+"q_w245": {
+"type": "choice_text",
+"wordIds": ["w245"],
+"question": "Birds fly long distances ______ find enough food and warm places.",
+"options": ["in order to", "survive", "flock", "hummingbird"],
+"answer": 0
+},
+"q_w246": {
+"type": "choice_text",
+"wordIds": ["w246"],
+"question": "Animals must find food and safe places to ______ in winter.",
+"options": ["turnip", "sprout", "survive", "area"],
+"answer": 2
+},
+"q_w247": {
+"type": "choice_text",
+"wordIds": ["w247"],
+"question": "A ______ of geese flies in a V shape when they migrate.",
+"options": ["flock", "swallow", "budge", "year-round"],
+"answer": 0
+},
+"q_w248": {
+"type": "choice_text",
+"wordIds": ["w248"],
+"question": "The ______ is a very small colorful bird that can hover in the air.",
+"options": ["eastern", "hummingbird", "turnip", "sprout"],
+"answer": 1
+},
+"q_w249": {
+"type": "choice_text",
+"wordIds": ["w249"],
+"question": "We can see a ______ flying fast and building nests under the roof in spring.",
+"options": ["swallow", "budge", "earn", "survive"],
+"answer": 0
+},
+"q_w250": {
+"type": "choice_text",
+"wordIds": ["w250"],
+"question": "Grandpa planted a seed and grew a giant ______ in his garden.",
+"options": ["turnip", "sprout", "flock", "area"],
+"answer": 0
+},
+"q_w251": {
+"type": "choice_text",
+"wordIds": ["w251"],
+"question": "The seeds will ______ and grow into small plants after a few days.",
+"options": ["budge", "sprout", "earn", "year-round"],
+"answer": 1
+},
+"q_w252": {
+"type": "choice_text",
+"wordIds": ["w252"],
+"question": "The giant turnip was so heavy that it did not ______ at all.",
+"options": ["survive", "flock", "budge", "hummingbird"],
+"answer": 2
+},
+"q_w253": {
+"type": "choice_text",
+"wordIds": ["w253"],
+"question": "A ______ is often pulled by a car to carry heavy or big things.",
+"options": ["delivery", "flatbed", "trailer", "Ramadan"],
+"answer": 2
+},
+"q_w254": {
+"type": "choice_text",
+"wordIds": ["w254"],
+"question": "The ______ of my online order came early this morning.",
+"options": ["sunset", "delivery", "sunrise", "poem"],
+"answer": 1
+},
+"q_w255": {
+"type": "choice_text",
+"wordIds": ["w255"],
+"question": "A ______ truck is good for carrying large furniture and machines.",
+"options": ["flatbed", "award", "reward", "receive"],
+"answer": 0
+},
+"q_w256": {
+"type": "choice_text",
+"wordIds": ["w256"],
+"question": "______ is a special and important month for Muslim people.",
+"options": ["Sunrise", "Ramadan", "Sunset", "Poem"],
+"answer": 1
+},
+"q_w257": {
+"type": "choice_text",
+"wordIds": ["w257"],
+"question": "During Ramadan, people can have meals together after ______.",
+"options": ["award", "sunrise", "sunset", "poem"],
+"answer": 2
+},
+"q_w258": {
+"type": "choice_text",
+"wordIds": ["w258"],
+"question": "We need to finish eating before ______ during the holy month.",
+"options": ["sunset", "receive", "sunrise", "reward"],
+"answer": 2
+},
+"q_w259": {
+"type": "choice_text",
+"wordIds": ["w259"],
+"question": "The writer used beautiful words to make a wonderful ______.",
+"options": ["trailer", "poem", "delivery", "flatbed"],
+"answer": 1
+},
+"q_w260": {
+"type": "choice_text",
+"wordIds": ["w260"],
+"question": "He did a great job and got an ______ for his wonderful work.",
+"options": ["reward", "receive", "award", "trailer"],
+"answer": 2
+},
+"q_w261": {
+"type": "choice_text",
+"wordIds": ["w261"],
+"question": "She got a small ______ as a thank-you for helping the old man.",
+"options": ["receive", "award", "trailer", "reward"],
+"answer": 3
+},
+"q_w262": {
+"type": "choice_text",
+"wordIds": ["w262"],
+"question": "I will ______ a nice present from my uncle during the holiday.",
+"options": ["reward", "receive", "award", "delivery"],
+"answer": 1
+},
+"q_w263": {
+"type": "choice_text",
+"wordIds": ["w263"],
+"question": "A ______ is a sea animal with a hard shell and big claws.",
+"options": ["lobster", "cowrie", "scallop", "conch"],
+"answer": 0
+},
+"q_w264": {
+"type": "choice_text",
+"wordIds": ["w264"],
+"question": "A ______ has a small, smooth, spotted shell.",
+"options": ["scallop", "cowrie", "oyster", "nautilus"],
+"answer": 1
+},
+"q_w265": {
+"type": "choice_text",
+"wordIds": ["w265"],
+"question": "A ______ is a mollusk with two fan-shaped shells.",
+"options": ["conch", "lobster", "scallop", "mollusk"],
+"answer": 2
+},
+"q_w266": {
+"type": "choice_text",
+"wordIds": ["w266"],
+"question": "A ______ is a large sea snail with a spiral shell.",
+"options": ["oyster", "nautilus", "cowrie", "conch"],
+"answer": 3
+},
+"q_w267": {
+"type": "choice_text",
+"wordIds": ["w267"],
+"question": "An ______ can make pearls inside its bumpy shell.",
+"options": ["conch", "oyster", "lobster", "scallop"],
+"answer": 1
+},
+"q_w268": {
+"type": "choice_text",
+"wordIds": ["w268"],
+"question": "A ______ is a soft-bodied animal that often has a hard shell.",
+"options": ["nautilus", "mollusk", "rhino", "stork"],
+"answer": 1
+},
+"q_w269": {
+"type": "choice_text",
+"wordIds": ["w269"],
+"question": "A ______ is a rare deep-sea mollusk with a striped spiral shell.",
+"options": ["cowrie", "scallop", "nautilus", "conch"],
+"answer": 2
+},
+"q_w270": {
+"type": "choice_text",
+"wordIds": ["w270"],
+"question": "The ______ savanna is home to many wild animals.",
+"options": ["savanna", "rhino", "African", "leopard"],
+"answer": 2
+},
+"q_w271": {
+"type": "choice_text",
+"wordIds": ["w271"],
+"question": "A ______ is a large grassy area with few trees in Africa.",
+"options": ["savanna", "rhino", "flock", "hyena"],
+"answer": 0
+},
+"q_w272": {
+"type": "choice_text",
+"wordIds": ["w272"],
+"question": "A ______ is a big heavy animal with thick skin and a horn on its nose.",
+"options": ["leopard", "rhino", "stork", "hyena"],
+"answer": 1
+},
+"q_w273": {
+"type": "choice_text",
+"wordIds": ["w273"],
+"question": "A ______ of birds flies together to the watering hole.",
+"options": ["stork", "leopard", "flock", "hyena"],
+"answer": 2
+},
+"q_w274": {
+"type": "choice_text",
+"wordIds": ["w274"],
+"question": "A ______ is a big bird with long legs and a long beak.",
+"options": ["rhino", "stork", "leopard", "hyena"],
+"answer": 1
+},
+"q_w275": {
+"type": "choice_text",
+"wordIds": ["w275"],
+"question": "A ______ is a wild cat with yellow fur and black spots.",
+"options": ["hyena", "rhino", "leopard", "stork"],
+"answer": 2
+},
+"q_w276": {
+"type": "choice_text",
+"wordIds": ["w276"],
+"question": "A ______ is an African animal that often makes a laughing sound.",
+"options": ["leopard", "hyena", "rhino", "stork"],
+"answer": 1
+},
+"q_w277": {
+"type": "choice_text",
+"wordIds": ["w277"],
+"question": "A ______ is a thin sheet or level of something.",
+"options": ["layer", "uncover", "detail", "poop"],
+"answer": 0
+},
+"q_w278": {
+"type": "choice_text",
+"wordIds": ["w278"],
+"question": "To ______ means to find or uncover something hidden.",
+"options": ["detail", "traveler", "flight", "uncover"],
+"answer": 3
+},
+"q_w279": {
+"type": "choice_text",
+"wordIds": ["w279"],
+"question": "A small part or fact is called a ______.",
+"options": ["poop", "layer", "detail", "airline"],
+"answer": 2
+},
+"q_w280": {
+"type": "choice_text",
+"wordIds": ["w280"],
+"question": "Animal waste is also called ______.",
+"options": ["detail", "flight", "layer", "poop"],
+"answer": 3
+},
+"q_w281": {
+"type": "choice_text",
+"wordIds": ["w281"],
+"question": "A person who travels is a ______.",
+"options": ["traveler", "airline", "hand over", "detail"],
+"answer": 0
+},
+"q_w282": {
+"type": "choice_text",
+"wordIds": ["w282"],
+"question": "A company that flies planes is an ______.",
+"options": ["flight", "airline", "traveler", "layer"],
+"answer": 1
+},
+"q_w283": {
+"type": "choice_text",
+"wordIds": ["w283"],
+"question": "To give something to someone is to ______ it.",
+"options": ["uncover", "flight", "hand over", "poop"],
+"answer": 2
+},
+"q_w284": {
+"type": "choice_text",
+"wordIds": ["w284"],
+"question": "A moving floor at the airport is a ______.",
+"options": ["hand over", "moving sidewalk", "airline", "detail"],
+"answer": 1
+},
+"q_w285": {
+"type": "choice_text",
+"wordIds": ["w285"],
+"question": "A trip by plane is called a ______.",
+"options": ["flight", "layer", "poop", "uncover"],
+"answer": 0
+},
+"q_w286": {
+"type": "choice_text",
+"wordIds": ["w286"],
+"question": "A ______ is a colorful bird with a long fan-like tail.",
+"options": ["peacock", "cobra", "yak", "gharial"],
+"answer": 0
+},
+"q_w287": {
+"type": "choice_text",
+"wordIds": ["w287"],
+"question": "A ______ is a dark-faced monkey that leaps in trees.",
+"options": ["cobra", "langur monkey", "mongoose", "tiger"],
+"answer": 1
+},
+"q_w288": {
+"type": "choice_text",
+"wordIds": ["w288"],
+"question": "A ______ is a poisonous snake with a hood-like head.",
+"options": ["gharial", "peacock", "cobra", "mongoose"],
+"answer": 2
+},
+"q_w289": {
+"type": "choice_text",
+"wordIds": ["w289"],
+"question": "The ______ is a large orange and black striped cat from India.",
+"options": ["cobra", "yak", "gharial","Bengal tiger"],
+"answer": 3
+},
+"q_w290": {
+"type": "choice_text",
+"wordIds": ["w290"],
+"question": "A ______ is a river reptile with a long thin snout.",
+"options": ["mongoose", "gharial", "peacock", "cobra"],
+"answer": 1
+},
+"q_w291": {
+"type": "choice_text",
+"wordIds": ["w291"],
+"question": "A ______ is a small brave animal that hunts snakes.",
+"options": ["yak", "mongoose", "gharial", "langur monkey"],
+"answer": 1
+},
+"q_w292": {
+"type": "choice_text",
+"wordIds": ["w292"],
+"question": "If you are not afraid of danger, you are .",
+"options": ["shaggy", "brave", "protected", "silent"],
+"answer": 1
+},
+"q_w293": {
+"type": "choice_text",
+"wordIds": ["w293"],
+"question": "A ______ is a big mountain animal with thick shaggy fur.",
+"options": ["peacock", "yak", "cobra", "mongoose"],
+"answer": 1
+},
+"q_w294": {
+"type": "choice_text",
+"wordIds": ["w294"],
+"question": " means having long, thick, messy fur or hair.",
+"options": ["Brave", "Protected", "Shaggy", "Colorful"],
+"answer": 2
+},
+"q_w295": {
+"type": "choice_text",
+"wordIds": ["w295"],
+"question": "To ______ means to keep someone or something safe from harm.",
+"options": ["protect", "hunt", "leap", "spread"],
+"answer": 0
+},
+"q_w296": {
+"type": "choice_text",
+"wordIds": ["w296"],
+"question": "An ______ keeps eggs warm so they can hatch.",
+"options": ["memorial", "city hall", "incubator", "state"],
+"answer": 2
+},
+"q_w297": {
+"type": "choice_text",
+"wordIds": ["w297"],
+"question": "______ means freedom and being able to do what you want.",
+"options": ["Memorial", "State", "Incubator", "Liberty"],
+"answer": 3
+},
+"q_w298": {
+"type": "choice_text",
+"wordIds": ["w298"],
+"question": "A ______ is a building to remember a person or event.",
+"options": ["liberty", "incubator", "city hall", "memorial"],
+"answer": 3
+},
+"q_w299": {
+"type": "choice_text",
+"wordIds": ["w299"],
+"question": "To ______ means to represent or symbolize something.",
+"options": ["unite", "stand for", "protect", "hatch"],
+"answer": 1
+},
+"q_w300": {
+"type": "choice_text",
+"wordIds": ["w300"],
+"question": "A ______ eagle has white feathers on its head.",
+"options": ["national", "free", "brave", "bald"],
+"answer": 3
+},
+"q_w301": {
+"type": "choice_text",
+"wordIds": ["w301"],
+"question": "______ is the right to live and act as you wish.",
+"options": ["Memorial", "Freedom", "State", "Incubator"],
+"answer": 1
+},
+"q_w302": {
+"type": "choice_text",
+"wordIds": ["w302"],
+"question": "To ______ means to join together as one group.",
+"options": ["memorial", "stand for", "protect", "unite"],
+"answer": 3
+},
+"q_w303": {
+"type": "choice_text",
+"wordIds": ["w303"],
+"question": "A ______ is a part of a country with its own government.",
+"options": ["liberty", "memorial", "city hall", "state"],
+"answer": 3
+},
+"q_w304": {
+"type": "choice_text",
+"wordIds": ["w304"],
+"question": "A ______ is where a city’s government works.",
+"options": ["state", "incubator", "memorial", "city hall"],
+"answer": 3
+},
+"q_w305": {
+"type": "choice_text",
+"wordIds": ["w305"],
+"question": "______ means relating to a whole country.",
+"options": ["Local", "Brave", "National", "Shaggy"],
+"answer": 2
+},
+"q_w306": {
+"type": "choice_text",
+"wordIds": ["w306"],
+"question": "To ______ means to hold back or stop yourself from doing something.",
+"options": ["present", "hold", "protest", "insist"],
+"answer": 1
+},
+"q_w307": {
+"type": "choice_text",
+"wordIds": ["w307"],
+"question": "A special planned activity or important happening is an ______.",
+"options": ["army", "event", "bug", "dare"],
+"answer": 1
+},
+"q_w308": {
+"type": "choice_text",
+"wordIds": ["w308"],
+"question": "To ______ someone means to annoy or bother them.",
+"options": ["present", "bug", "hold", "protest"],
+"answer": 1
+},
+"q_w309": {
+"type": "choice_text",
+"wordIds": ["w309"],
+"question": "A ______ voice is very loud, deep and powerful.",
+"options": ["booming", "brave", "small", "quiet"],
+"answer": 0
+},
+"q_w310": {
+"type": "choice_text",
+"wordIds": ["w310"],
+"question": "A large group of soldiers or a big group of living things is an ______.",
+"options": ["event", "present", "protest", "army"],
+"answer": 3
+},
+"q_w311": {
+"type": "choice_text",
+"wordIds": ["w311"],
+"question": "To ______ means to have the courage to do something difficult.",
+"options": ["insist", "dare", "hold", "present"],
+"answer": 1
+},
+"q_w312": {
+"type": "choice_text",
+"wordIds": ["w312"],
+"question": "To ______ someone is to introduce them to other people.",
+"options": ["protest", "hold", "present", "insist"],
+"answer": 2
+},
+"q_w313": {
+"type": "choice_text",
+"wordIds": ["w313"],
+"question": "To ______ means to say you disagree with something unfair.",
+"options": ["insist", "present", "hold", "protest"],
+"answer": 3
+},
+"q_w314": {
+"type": "choice_text",
+"wordIds": ["w314"],
+"question": "To ______ means to say something firmly even if others don't believe you.",
+"options": ["protest", "insist", "bug", "event"],
+"answer": 1
+},
+"q_w315": {
+"type": "choice_text",
+"wordIds": ["w315"],
+"question": "To ______ means to argue about small, unimportant things.",
+"options": ["stitch", "behold", "bicker", "interrupt"],
+"answer": 2
+},
+"q_w316": {
+"type": "choice_text",
+"wordIds": ["w316"],
+"question": "A ______ looks after children when their parents are away.",
+"options": ["flare", "argument", "tunic", "babysitter"],
+"answer": 3
+},
+"q_w317": {
+"type": "choice_text",
+"wordIds": ["w317"],
+"question": "To ______ means to suddenly show anger or burn brightly.",
+"options": ["babysitter", "flare", "bicker", "stitch"],
+"answer": 1
+},
+"q_w318": {
+"type": "choice_text",
+"wordIds": ["w318"],
+"question": "An ______ is an angry disagreement or a reason for an idea.",
+"options": ["argument", "interrupt", "behold", "flare"],
+"answer": 0
+},
+"q_w319": {
+"type": "choice_text",
+"wordIds": ["w319"],
+"question": "To ______ is to cut in when someone is speaking.",
+"options": ["bicker", "stitch", "interrupt", "babysitter"],
+"answer": 2
+},
+"q_w320": {
+"type": "choice_text",
+"wordIds": ["w320"],
+"question": "To ______ means to gather closely around someone or something.",
+"options": ["flare", "crowd around", "behold", "tunic"],
+"answer": 1
+},
+"q_w321": {
+"type": "choice_text",
+"wordIds": ["w321"],
+"question": "A ______ is a long, simple shirt or a guard’s uniform top.",
+"options": ["stitch", "argument", "bicker", "tunic"],
+"answer": 3
+},
+"q_w322": {
+"type": "choice_text",
+"wordIds": ["w322"],
+"question": "To ______ is to sew or embroider a pattern onto cloth.",
+"options": ["stitch", "interrupt", "flare", "behold"],
+"answer": 0
+},
+"q_w323": {
+"type": "choice_text",
+"wordIds": ["w323"],
+"question": "______ means look at something amazing, or to look closely at something.",
+"options": ["tunic", "stitch", "behold", "argument"],
+"answer": 2
+},
+"q_w324": {
+"type": "choice_text",
+"wordIds": ["w324"],
+"question": "A ______ is a platform with a rail on the outside of a building.",
+"options": ["rein", "brute", "squint", "balcony"],
+"answer": 3
+},
+"q_w325": {
+"type": "choice_text",
+"wordIds": ["w325"],
+"question": "To ______ is to look at something with your eyes almost closed.",
+"options": ["squint", "urge", "challenge", "reveal"],
+"answer": 0
+},
+"q_w326": {
+"type": "choice_text",
+"wordIds": ["w326"],
+"question": "______ are long leather strips to control a horse or dragon.",
+"options": ["balconies", "brutes", "reins", "urges"],
+"answer": 2
+},
+"q_w327": {
+"type": "choice_text",
+"wordIds": ["w327"],
+"question": "To ______ someone is to invite them to fight or compete.",
+"options": ["reveal", "challenge", "balcony", "squint"],
+"answer": 1
+},
+"q_w328": {
+"type": "choice_text",
+"wordIds": ["w328"],
+"question": "To ______ means to show something that was hidden before.",
+"options": ["urge", "challenge", "rein", "reveal"],
+"answer": 3
+},
+"q_w329": {
+"type": "choice_text",
+"wordIds": ["w329"],
+"question": "To ______ someone is to push them to act quickly or do something fast.",
+"options": ["urge", "brute", "reveal", "balcony"],
+"answer": 0
+},
+"q_w330": {
+"type": "choice_text",
+"wordIds": ["w330"],
+"question": "A ______ is a big, strong, fierce animal or a cruel person.",
+"options": ["squint", "rein", "brute", "challenge"],
+"answer": 2
+},
+"q_w331": {
+"type": "choice_text",
+"wordIds": ["w331"],
+"question": "To ______ means to hit with the flat part of your hand.",
+"options": ["plead", "smack", "slap", "tornado"],
+"answer": 2
+},
+"q_w332": {
+"type": "choice_text",
+"wordIds": ["w332"],
+"question": "A ______ is a violent spinning column of wind or air.",
+"options": ["squeal", "tornado", "dangle", "nostril"],
+"answer": 1
+},
+"q_w333": {
+"type": "choice_text",
+"wordIds": ["w333"],
+"question": "To ______ is to ask someone very anxiously and earnestly.",
+"options": ["thrash", "slap", "settle", "plead"],
+"answer": 3
+},
+"q_w334": {
+"type": "choice_text",
+"wordIds": ["w334"],
+"question": "To ______ means to make a high, sharp, loud sound.",
+"options": ["squeal", "lurch", "smack", "gruff"],
+"answer": 0
+},
+"q_w335": {
+"type": "choice_text",
+"wordIds": ["w335"],
+"question": "To ______ is to move around wildly and violently.",
+"options": ["settle", "plead", "thrash", "tornado"],
+"answer": 2
+},
+"q_w336": {
+"type": "choice_text",
+"wordIds": ["w336"],
+"question": "To ______ means to fall down and become still or calm.",
+"options": ["slap", "settle", "dangle", "squeal"],
+"answer": 1
+},
+"q_w337": {
+"type": "choice_text",
+"wordIds": ["w337"],
+"question": "To ______ is to make a sudden sharp movement or have a sick stomach feeling.",
+"options": ["smack", "gruff", "lurch", "thrash"],
+"answer": 2
+},
+"q_w338": {
+"type": "choice_text",
+"wordIds": ["w338"],
+"question": "To ______ means to hit something hard and quickly out of someone’s hand.",
+"options": ["smack", "lurch", "nostril", "settle"],
+"answer": 0
+},
+"q_w339": {
+"type": "choice_text",
+"wordIds": ["w339"],
+"question": "To ______ is to hang or swing loosely in the air.",
+"options": ["plead", "slap", "dangle", "tornado"],
+"answer": 2
+},
+"q_w340": {
+"type": "choice_text",
+"wordIds": ["w340"],
+"question": "______ are the two holes at the end of the nose of a person or animal.",
+"options": ["thrash", "nostrils", "squeal", "smack"],
+"answer": 1
+},
+"q_w341": {
+"type": "choice_text",
+"wordIds": ["w341"],
+"question": "______ means deep and rough, usually describing a voice.",
+"options": ["settle", "lurch", "gruff", "slap"],
+"answer": 2
+},
+"q_w342": {
+"type": "choice_text",
+"wordIds": ["w342"],
+"question": "To ______ means to move up and down quickly and lightly.",
+"options": ["polish", "bob", "graze", "blend"],
+"answer": 1
+},
+"q_w343": {
+"type": "choice_text",
+"wordIds": ["w343"],
+"question": "To ______ is to make something smooth and shiny by rubbing it.",
+"options": ["identity", "drape", "polish", "scaly"],
+"answer": 2
+},
+"q_w344": {
+"type": "choice_text",
+"wordIds": ["w344"],
+"question": "______ means who or what a person or thing really is.",
+"options": ["steed", "identity", "company", "orchid"],
+"answer": 1
+},
+"q_w345": {
+"type": "choice_text",
+"wordIds": ["w345"],
+"question": "A ______ is a strong horse for a knight to ride.",
+"options": ["graze", "mount", "steed", "bob"],
+"answer": 2
+},
+"q_w346": {
+"type": "choice_text",
+"wordIds": ["w346"],
+"question": "To ______ means to eat grass that is growing in a field.",
+"options": ["blend", "polish", "drape", "graze"],
+"answer": 3
+},
+"q_w347": {
+"type": "choice_text",
+"wordIds": ["w347"],
+"question": "______ means more than usual; especially.",
+"options": ["exasperating", "particularly", "scaly", "squint"],
+"answer": 1
+},
+"q_w348": {
+"type": "choice_text",
+"wordIds": ["w348"],
+"question": "To ______ is to mix two or more things together into one.",
+"options": ["company", "graze", "bob", "blend"],
+"answer": 3
+},
+"q_w349": {
+"type": "choice_text",
+"wordIds": ["w349"],
+"question": "To ______ means to hang cloth loosely over something else.",
+"options": ["polish", "drape", "mount", "identity"],
+"answer": 1
+},
+"q_w350": {
+"type": "choice_text",
+"wordIds": ["w350"],
+"question": "______ means being with other people; the state of having friends together.",
+"options": ["steed", "orchid", "company", "scaly"],
+"answer": 2
+},
+"q_w351": {
+"type": "choice_text",
+"wordIds": ["w351"],
+"question": "______ means covered with small, hard plates on the skin.",
+"options": ["scaly", "blend", "drape", "particularly"],
+"answer": 0
+},
+"q_w352": {
+"type": "choice_text",
+"wordIds": ["w352"],
+"question": "______ means making you feel extremely annoyed and frustrated.",
+"options": ["mount", "exasperating", "bob", "graze"],
+"answer": 1
+},
+"q_w353": {
+"type": "choice_text",
+"wordIds": ["w353"],
+"question": "To ______ is to look with your eyes almost closed because of light or distance.",
+"options": ["squint", "identity", "polish", "steed"],
+"answer": 0
+},
+"q_w354": {
+"type": "choice_text",
+"wordIds": ["w354"],
+"question": "An ______ is a beautiful flower with unusual shapes and colors.",
+"options": ["company", "orchid", "scaly", "blend"],
+"answer": 1
+},
+"q_w355": {
+"type": "choice_text",
+"wordIds": ["w355"],
+"question": "To ______ a dragon means to climb onto its back to ride it.",
+"options": ["drape", "graze", "mount", "particularly"],
+"answer": 2
+},
+
+  "q_w356": {
+    "type": "choice_text",
+    "wordIds": ["w356"],
+    "question": "I have read three books ______ this week, and I plan to read two more.",
+    "options": ["so far", "instead", "ever", "too much"],
+    "answer": 0
+  },
+  "q_w357": {
+    "type": "choice_text",
+    "wordIds": ["w357"],
+    "question": "The school ______ met to talk about the rules for the new playground.",
+    "options": ["soldier", "castle", "council", "prison"],
+    "answer": 2
+  },
+  "q_w358": {
+    "type": "choice_text",
+    "wordIds": ["w358"],
+    "question": "The eagle flew down and ______ up a small fish from the river.",
+    "options": ["polished", "scooped", "blended", "grazed"],
+    "answer": 1
+  },
+  "q_w359": {
+    "type": "choice_text",
+    "wordIds": ["w359"],
+    "question": "It took the little dragon a few days to ______ living in the dark cave.",
+    "options": ["take care of", "look forward to", "run out of", "get used to"],
+    "answer": 3
+  },
+  "q_w360": {
+    "type": "choice_text",
+    "wordIds": ["w360"],
+    "question": "The old, empty house felt ______ and cold, making the children feel a bit scared.",
+    "options": ["sunny", "gloomy", "cheerful", "bright"],
+    "answer": 1
+  },
+  "q_w361": {
+    "type": "choice_text",
+    "wordIds": ["w361"],
+    "question": "The roof of the ancient temple was held up by massive stone ______.",
+    "options": ["shadows", "columns", "tunnels", "mirrors"],
+    "answer": 1
+  },
+  "q_w362": {
+    "type": "choice_text",
+    "wordIds": ["w362"],
+    "question": "The candle started to ______ when the wind blew through the window.",
+    "options": ["flicker", "chant", "scoop", "tame"],
+    "answer": 0
+  },
+  "q_w363": {
+    "type": "choice_text",
+    "wordIds": ["w363"],
+    "question": "After hearing about the new baby dragon, all the children were ______ see it.",
+    "options": ["expecting to", "failing to", "dying to", "fitting in to"],
+    "answer": 2
+  },
+  "q_w364": {
+    "type": "choice_text",
+    "wordIds": ["w364"],
+    "question": "The king was surprised to see that the giant Hydra was actually quite ______ and followed Petra's rules.",
+    "options": ["wild", "gloomy", "fuzzy", "tame"],
+    "answer": 3
+  },
+  "q_w365": {
+    "type": "choice_text",
+    "wordIds": ["w365"],
+    "question": "The guests were asked to ______ so the royal feast could begin.",
+    "options": ["take their seats", "make a move", "keep order", "fit in"],
+    "answer": 0
+  },
+  "q_w366": {
+    "type": "choice_text",
+    "wordIds": ["w366"],
+    "question": "We put some salty ______ and cheese on top of the pizza.",
+    "options": ["figs", "olives", "chickpeas", "columns"],
+    "answer": 1
+  },
+  "q_w367": {
+    "type": "choice_text",
+    "wordIds": ["w367"],
+    "question": "My mom made a healthy salad with ______, cucumbers, and tomatoes.",
+    "options": ["chimes", "mobs", "chickpeas", "fevers"],
+    "answer": 2
+  },
+  "q_w368": {
+    "type": "choice_text",
+    "wordIds": ["w368"],
+    "question": "We ate sweet, purple ______ for dessert after the dinner.",
+    "options": ["figs", "snorts", "tones", "stakes"],
+    "answer": 0
+  },
+  "q_w369": {
+    "type": "choice_text",
+    "wordIds": ["w369"],
+    "question": "My father and grandfather are both great painters; artistic talent seems to ______.",
+    "options": ["fit in with us", "run in my family", "be at stake", "be dying to"],
+    "answer": 1
+  },
+  "q_w370": {
+    "type": "choice_text",
+    "wordIds": ["w370"],
+    "question": "The kind old wizard ______ us some warm soup and a place to stay.",
+    "options": ["admitted", "rushed", "offered", "terrified"],
+    "answer": 2
+  },
+  "q_w371": {
+    "type": "choice_text",
+    "wordIds": ["w371"],
+    "question": "At first, the new student felt lonely, but soon he began to ______ with his classmates.",
+    "options": ["fit in", "run in", "keep order", "rear up"],
+    "answer": 0
+  },
+  "q_w372": {
+    "type": "choice_text",
+    "wordIds": ["w372"],
+    "question": "We had to ______ to the castle because the dragon was about to wake up.",
+    "options": ["snort", "rush", "attach", "chant"],
+    "answer": 1
+  },
+  "q_w373": {
+    "type": "choice_text",
+    "wordIds": ["w373"],
+    "question": "Please ______ the name tag to your luggage so it doesn't get lost.",
+    "options": ["urge", "flicker", "admit", "attach"],
+    "answer": 3
+  },
+  "q_w374": {
+    "type": "choice_text",
+    "wordIds": ["w374"],
+    "question": "The angry bull gave a loud ______ and started to run toward us.",
+    "options": ["chime", "snort", "tone", "offer"],
+    "answer": 1
+  },
+  "q_w375": {
+    "type": "choice_text",
+    "wordIds": ["w375"],
+    "question": "The Dragon Masters ______ Griffith to let them help with the rescue mission.",
+    "options": ["urged", "terrified", "offered", "expected"],
+    "answer": 0
+  },
+  "q_w376": {
+    "type": "choice_text",
+    "wordIds": ["w376"],
+    "question": "It was hard for him to ______, but he finally said he was the one who broke the vase.",
+    "options": ["admit", "force", "rush", "befriend"],
+    "answer": 0
+  },
+  "q_w377": {
+    "type": "choice_text",
+    "wordIds": ["w377"],
+    "question": "The sick dragon felt very hot because it had a high ______.",
+    "options": ["tone", "fever", "column", "globe"],
+    "answer": 1
+  },
+  "q_w378": {
+    "type": "choice_text",
+    "wordIds": ["w378"],
+    "question": "It takes time and patience to ______ a wild animal and gain its trust.",
+    "options": ["tame", "force", "befriend", "expect"],
+    "answer": 2
+  },
+  "q_w379": {
+    "type": "choice_text",
+    "wordIds": ["w379"],
+    "question": "I love the soft ______ of the wind bells on the porch.",
+    "options": ["chime", "mob", "snort", "fever"],
+    "answer": 0
+  },
+  "q_w380": {
+    "type": "choice_text",
+    "wordIds": ["w380"],
+    "question": "You cannot ______ someone to be your friend; it has to happen naturally.",
+    "options": ["urge", "offer", "force", "admit"],
+    "answer": 2
+  },
+  "q_w381": {
+    "type": "choice_text",
+    "wordIds": ["w381"],
+    "question": "The giant shadow on the wall began to ______ the little children.",
+    "options": ["terrify", "befriend", "fit in", "chant"],
+    "answer": 0
+  },
+  "q_w382": {
+    "type": "choice_text",
+    "wordIds": ["w382"],
+    "question": "I ______ to see you at the library at 4 o'clock; don't be late!",
+    "options": ["admit", "expect", "urge", "rush"],
+    "answer": 1
+  },
+  "q_w383": {
+    "type": "choice_text",
+    "wordIds": ["w383"],
+    "question": "We arrived at the theater just ______ to see the beginning of the movie.",
+    "options": ["so far", "at stake", "on order", "in time"],
+    "answer": 3
+  },
+  "q_w384": {
+    "type": "choice_text",
+    "wordIds": ["w384"],
+    "question": "The fans waited ______ outside the hotel to see the famous singer.",
+    "options": ["eagerly", "gloomily", "fuzzily", "tamely"],
+    "answer": 0
+  },
+  "q_w385": {
+    "type": "choice_text",
+    "wordIds": ["w385"],
+    "question": "If we don't stop the fire now, the whole forest will be ______.",
+    "options": ["in time", "so far", "at stake", "on offer"],
+    "answer": 2
+  },
+  "q_w386": {
+    "type": "choice_text",
+    "wordIds": ["w386"],
+    "question": "The monks began to ______ a peaceful song in the temple.",
+    "options": ["snort", "chant", "attach", "rush"],
+    "answer": 1
+  },
+  "q_w387": {
+    "type": "choice_text",
+    "wordIds": ["w387"],
+    "question": "A large ______ of people gathered in the street to protest the new law.",
+    "options": ["column", "globe", "prime", "mob"],
+    "answer": 3
+  },
+  "q_w388": {
+    "type": "choice_text",
+    "wordIds": ["w388"],
+    "question": "The new puppy has ______ white fur that is very soft to touch.",
+    "options": ["gloomy", "prime", "fuzzy", "tame"],
+    "answer": 2
+  },
+  "q_w389": {
+    "type": "choice_text",
+    "wordIds": ["w389"],
+    "question": "The horse ______ up on its back legs when it heard the loud noise.",
+    "options": ["rushed", "reared", "admitted", "offered"],
+    "answer": 1
+  },
+  "q_w390": {
+    "type": "choice_text",
+    "wordIds": ["w390"],
+    "question": "She spoke in a very serious ______ to let us know the news was important.",
+    "options": ["chime", "snort", "fever", "tone"],
+    "answer": 3
+  },
+  "q_w391": {
+    "type": "choice_text",
+    "wordIds": ["w391"],
+    "question": "The guards were hired to ______ during the crowded festival.",
+    "options": ["take seats", "keep order", "fit in", "run in the family"],
+    "answer": 1
+  },
+  "q_w392": {
+    "type": "choice_text",
+    "wordIds": ["w392"],
+    "question": "The audience started to ______ when the magician's trick failed.",
+    "options": ["chant", "offer", "snort", "boo"],
+    "answer": 3
+  },
+  "q_w393": {
+    "type": "choice_text",
+    "wordIds": ["w393"],
+    "question": "The wizard held a crystal ______ that showed him what was happening far away.",
+    "options": ["globe", "column", "chickpea", "fig"],
+    "answer": 0
+  },
+  "q_w394": {
+    "type": "choice_text",
+    "wordIds": ["w394"],
+    "question": "The center of the city is the ______ location for a new shopping mall.",
+    "options": ["fuzzy", "prime", "gloomy", "tame"],
+    "answer": 1
+  },
+  "q_w395": {
+    "type": "choice_text",
+    "wordIds": ["w395"],
+    "question": "The children were jumping up and down in ______ of the magic show.",
+    "options": ["invasion", "anticipation", "relish", "friendship"],
+    "answer": 1
+  },
+  "q_w396": {
+    "type": "choice_text",
+    "wordIds": ["w396"],
+    "question": "The princess loved to eat ______ doughnuts for her Sunday brunch.",
+    "options": ["fearsome", "frisky", "dainty", "sugar-dusted"],
+    "answer": 3
+  },
+  "q_w397": {
+    "type": "choice_text",
+    "wordIds": ["w397"],
+    "question": "The little puppy began to ______ when it felt cold and lonely in the rain.",
+    "options": ["whimper", "resume", "dine", "extend"],
+    "answer": 0
+  },
+  "q_w398": {
+    "type": "choice_text",
+    "wordIds": ["w398"],
+    "question": "He felt a ______ in his stomach because he was so nervous about the big test.",
+    "options": ["horde", "mass", "pit", "foe"],
+    "answer": 2
+  },
+  "q_w399": {
+    "type": "choice_text",
+    "wordIds": ["w399"],
+    "question": "In the story, the brave knight must fight his greatest ______ to save the goats.",
+    "options": ["velvet", "foe", "friendship", "clang"],
+    "answer": 1
+  },
+  "q_w400": {
+    "type": "choice_text",
+    "wordIds": ["w400"],
+    "question": "It was the worst monster ______ the goat pasture had ever seen!",
+    "options": ["anticipation", "pit", "horde", "invasion"],
+    "answer": 3
+  },
+  "q_w401": {
+    "type": "choice_text",
+    "wordIds": ["w401"],
+    "question": "The big monster roared loudly to ______ the little goats.",
+    "options": ["threaten", "apologize", "relish", "resume"],
+    "answer": 0
+  },
+  "q_w402": {
+    "type": "choice_text",
+    "wordIds": ["w402"],
+    "question": "The King and Queen like to ______ on fine food in the grand hall.",
+    "options": ["gnaw", "whimper", "dine", "shuffle"],
+    "answer": 2
+  },
+  "q_w403": {
+    "type": "choice_text",
+    "wordIds": ["w403"],
+    "question": "An interesting smell began to ______ down from the monster hole.",
+    "options": ["sputter", "trickle", "devour", "clamp"],
+    "answer": 1
+  },
+  "q_w404": {
+    "type": "choice_text",
+    "wordIds": ["w404"],
+    "question": "A ______ of hungry bunnies suddenly hopped into the garden.",
+    "options": ["pit", "clang", "mass", "horde"],
+    "answer": 3
+  },
+  "q_w405": {
+    "type": "choice_text",
+    "wordIds": ["w405"],
+    "question": "Those bunnies sure seemed to ______ the taste of the fresh green grass.",
+    "options": ["relish", "smack", "threaten", "apologize"],
+    "answer": 0
+  },
+  "q_w406": {
+    "type": "choice_text",
+    "wordIds": ["w406"],
+    "question": "The old car's engine started to ______ and cough on the way up the hill.",
+    "options": ["twitch", "extend", "sputter", "dine"],
+    "answer": 2
+  },
+  "q_w407": {
+    "type": "choice_text",
+    "wordIds": ["w407"],
+    "question": "The hungry dragon ______ the entire pile of meat in just one minute!",
+    "options": ["devoured", "whimpered", "befriended", "shuffled"],
+    "answer": 0
+  },
+  "q_w408": {
+    "type": "choice_text",
+    "wordIds": ["w408"],
+    "question": "After the short break, the children ______ their game of soccer.",
+    "options": ["apologized", "resumed", "threated", "gnawed"],
+    "answer": 1
+  },
+  "q_w409": {
+    "type": "choice_text",
+    "wordIds": ["w409"],
+    "question": "The little boy ______ his lips when he saw the yummy chocolate cake.",
+    "options": ["trickled", "sputtered", "clamped", "smacked"],
+    "answer": 3
+  },
+  "q_w410": {
+    "type": "choice_text",
+    "wordIds": ["w410"],
+    "question": "The bunny ______ down on the goat's horn and wouldn't let go.",
+    "options": ["resumed", "devoured", "clamped", "relish"],
+    "answer": 2
+  },
+  "q_w411": {
+    "type": "choice_text",
+    "wordIds": ["w411"],
+    "question": "The mouse began to ______ a small hole in the cardboard box.",
+    "options": ["gnaw", "smack", "extend", "twitch"],
+    "answer": 0
+  },
+  "q_w412": {
+    "type": "choice_text",
+    "wordIds": ["w412"],
+    "question": "The rabbit's fur was as soft as ______, so I loved petting it.",
+    "options": ["invasion", "velvet", "pit", "horde"],
+    "answer": 1
+  },
+  "q_w413": {
+    "type": "choice_text",
+    "wordIds": ["w413"],
+    "question": "Stop ______ your feet and walk properly like a brave knight!",
+    "options": ["bleating", "clanging", "devouring", "shuffling"],
+    "answer": 3
+  },
+  "q_w414": {
+    "type": "choice_text",
+    "wordIds": ["w414"],
+    "question": "The big monster looked very ______ with its sharp claws and giant teeth.",
+    "options": ["sugar-dusted", "frisky", "fearsome", "dainty"],
+    "answer": 2
+  },
+  "q_w415": {
+    "type": "choice_text",
+    "wordIds": ["w415"],
+    "question": "A loud ______ echoed across the field when the metal pot fell.",
+    "options": ["clang", "anticipation", "mass", "friendship"],
+    "answer": 0
+  },
+  "q_w416": {
+    "type": "choice_text",
+    "wordIds": ["w416"],
+    "question": "The princess ______ her hand to reach for her golden scepter.",
+    "options": ["sputtered", "extended", "gnawed", "resumed"],
+    "answer": 1
+  },
+  "q_w417": {
+    "type": "choice_text",
+    "wordIds": ["w417"],
+    "question": "The cat's tail began to ______ slightly as it watched the bird.",
+    "options": ["whimper", "dine", "smack", "twitch"],
+    "answer": 3
+  },
+  "q_w418": {
+    "type": "choice_text",
+    "wordIds": ["w418"],
+    "question": "The goats ______ nervously when they saw the strange purple bunnies.",
+    "options": ["resumed", "shuffled", "bleated", "clamped"],
+    "answer": 2
+  },
+  "q_w419": {
+    "type": "choice_text",
+    "wordIds": ["w419"],
+    "question": "The fairy took ______ little bites of the sweet, tiny cupcake.",
+    "options": ["dainty", "fearsome", "frisky", "sugar-dusted"],
+    "answer": 0
+  },
+  "q_w420": {
+    "type": "choice_text",
+    "wordIds": ["w420"],
+    "question": "The bunnies huddle together to form one big purple ______.",
+    "options": ["anticipation", "foe", "friendship", "mass"],
+    "answer": 3
+  },
+  "q_w421": {
+    "type": "choice_text",
+    "wordIds": ["w421"],
+    "question": "The ______ kitten loves to jump around and chase its tail.",
+    "options": ["sugar-dusted", "frisky", "fearsome", "velvet"],
+    "answer": 1
+  },
+  "q_w422": {
+    "type": "choice_text",
+    "wordIds": ["w422"],
+    "question": "The loud noise caused a ______ of animals running toward the exit.",
+    "options": ["horde", "invasion", "stampede", "pit"],
+    "answer": 2
+  },
+  "q_w423": {
+    "type": "choice_text",
+    "wordIds": ["w423"],
+    "question": "Stay close to the group and don't ______ in the crowded mall.",
+    "options": ["wander off", "apologize", "relish", "resume"],
+    "answer": 0
+  },
+
+  "q_w425": {
+    "type": "choice_text",
+    "wordIds": ["w425"],
+    "question": "True ______ is a very precious gift between two people.",
+    "options": ["invasion", "anticipation", "pit", "friendship"],
+    "answer": 3
+  },
+  "q_w426": {
+    "type": "choice_text",
+    "wordIds": ["w426"],
+    "question": "You should ______ to your sister after breaking her favorite toy.",
+    "options": ["threaten", "dine", "apologize", "gnaw"],
+    "answer": 2
+  },
+  "q_w427": {
+    "type": "choice_text",
+    "wordIds": ["w427"],
+    "question": "The sun was just starting to rise at ______ when the Princess finally finished fighting monsters. ",
+    "options": ["dawn", "shutter", "height", "vacation"],
+    "answer": 0
+  },
+  "q_w428": {
+    "type": "choice_text",
+    "wordIds": ["w428"],
+    "question": "The tired girl began to ______ into the closet because she was too sleepy to walk straight. ",
+    "options": ["skim", "plunge", "stumble", "whip"],
+    "answer": 2
+  },
+  "q_w429": {
+    "type": "choice_text",
+    "wordIds": ["w429"],
+    "question": "The big monster gave a ______ roar, showing off its many sharp teeth. ",
+    "options": ["springy", "toothy", "slick", "doubtful"],
+    "answer": 1
+  },
+  "q_w430": {
+    "type": "choice_text",
+    "wordIds": ["w430"],
+    "question": "I could hear a loud ______ coming from the bedroom where Dad was taking a nap.",
+    "options": ["shrug", "height", "burp", "snore"],
+    "answer": 3
+  },
+  "q_w431": {
+    "type": "choice_text",
+    "wordIds": ["w431"],
+    "question": "The nurse measured the boy's ______ to see how tall he had grown this year." ,
+    "options": ["height", "vacation", "dawn", "mass"],
+    "answer": 0
+  },
+  "q_w432": {
+    "type": "choice_text",
+    "wordIds": ["w432"],
+    "question": "The Goat Avenger told the Princess she worked too hard and needed a ______ to rest. ",
+    "options": ["shutter", "vacation", "checker", "horde"],
+    "answer": 1
+  },
+  "q_w433": {
+    "type": "choice_text",
+    "wordIds": ["w433"],
+    "question": "When I asked who ate the cake, my brother just ______ his shoulders and said nothing. ",
+    "options": ["slapped", "plunged", "shrugged", "sniffled"],
+    "answer": 2
+  },
+  "q_w434": {
+    "type": "choice_text",
+    "wordIds": ["w434"],
+    "question": "You were very kind to help your friends today, so you ______ a big gold star.",
+    "options": ["lurk", "set off", "flail", "deserve"],
+    "answer": 3
+  },
+  "q_w435": {
+    "type": "choice_text",
+    "wordIds": ["w435"],
+    "question": "It's so relaxing to lie in a ______ tied between two big trees. ",
+    "options": ["hammock", "checker", "height", "pit"],
+    "answer": 0
+  },
+  "q_w436": {
+    "type": "choice_text",
+    "wordIds": ["w436"],
+    "question": "Princess Sneezewort wanted to play a game of ______ on the beach.",
+    "options": ["shutter", "sunburn", "checkers", "catchphrase"],
+    "answer": 2
+  },
+  "q_w437": {
+    "type": "choice_text",
+    "wordIds": ["w437"],
+    "question": "She squeezed her eyes ______ so tightly that it felt like closing a window. ",
+    "options": ["toothy", "shutter", "frisky", "dainty"],
+    "answer": 1
+  },
+  "q_w438": {
+    "type": "choice_text",
+    "wordIds": ["w438"],
+    "question": "The sea monster had a tiny neck but a ______ and heavy body. ",
+    "options": ["slick", "springy", "doubtful", "massive"],
+    "answer": 3
+  },
+  "q_w439": {
+    "type": "choice_text",
+    "wordIds": ["w439"],
+    "question": "If you play in the bright sun all day without a hat, you might get a painful ______. ",
+    "options": ["sunburn", "vacation", "dawn", "height"],
+    "answer": 0
+  },
+  "q_w440": {
+    "type": "choice_text",
+    "wordIds": ["w440"],
+    "question": "Looking down from the high window made the little girl feel ______ and dizzy. ",
+    "options": ["frisky", "woozy", "dainty", "fearsome"],
+    "answer": 1
+  },
+  "q_w441": {
+    "type": "choice_text",
+    "wordIds": ["w441"],
+    "question": "The lumberjack used a sharp axe to ______ the old wood into small pieces. ",
+    "options": ["slap", "whip", "chop", "plunge"],
+    "answer": 2
+  },
+  "q_w442": {
+    "type": "choice_text",
+    "wordIds": ["w442"],
+    "question": "The superhero always shouts his famous ______ right before he saves the day.",
+    "options": ["hammock", "checker", "shutter", "catchphrase"],
+    "answer": 3
+  },
+  "q_w443": {
+    "type": "choice_text",
+    "wordIds": ["w443"],
+    "question": "The goat let out a loud ______ after eating too much green grass.",
+    "options": ["burp", "snore", "dawn", "pit"],
+    "answer": 0
+  },
+  "q_w444": {
+    "type": "choice_text",
+    "wordIds": ["w444"],
+    "question": "The dust tickled my nose and made it ______.",
+    "options": ["chafe", "sniffle", "itch", "sag"],
+    "answer": 2
+  },
+  "q_w445": {
+    "type": "choice_text",
+    "wordIds": ["w445"],
+    "question": "The rough straps of the heavy bag began to ______ the boy's shoulders.",
+    "options": ["shrug", "chafe", "lurk", "skim"],
+    "answer": 1
+  },
+  "q_w446": {
+    "type": "choice_text",
+    "wordIds": ["w446"],
+    "question": "Duff had to ______ his mask because he was in a big hurry to reach the beach.",
+    "options": ["set off", "skim", "plunge", "shove on"],
+    "answer": 3
+  },
+  "q_w447": {
+    "type": "choice_text",
+    "wordIds": ["w447"],
+    "question": "The monster's large flat tail ______ the water with a loud sound.",
+    "options": ["slapped", "sputtered", "threated", "gnawed"],
+    "answer": 0
+  },
+  "q_w448": {
+    "type": "choice_text",
+    "wordIds": ["w448"],
+    "question": "A giant wave ______ against the shore with a loud boom. ",
+    "options": ["sniffled", "crashed", "trickled", "shuffled"],
+    "answer": 1
+  },
+  "q_w449": {
+    "type": "choice_text",
+    "wordIds": ["w449"],
+    "question": "The sea monster's tail ______ back and forth as fast as a snapping string.",
+    "options": ["sagged", "lurked", "whipped", "bleated"],
+    "answer": 2
+  },
+  "q_w450": {
+    "type": "choice_text",
+    "wordIds": ["w450"],
+    "question": "The Princess wondered what was ______ the loud monster alarm.",
+    "options": ["resuming", "devouring", "clamping", "set off"],
+    "answer": 3
+  },
+  "q_w451": {
+    "type": "choice_text",
+    "wordIds": ["w451"],
+    "question": "The scared squirrel began to ______ its arms and legs in the air.",
+    "options": ["flail", "shrug", "smack", "snort"],
+    "answer": 0
+  },
+  "q_w452": {
+    "type": "choice_text",
+    "wordIds": ["w452"],
+    "question": "The goat gave a ______ bleat because it didn't believe the squirrel was a monster.",
+    "options": ["springy", "doubtful", "massive", "slick"],
+    "answer": 1
+  },
+  "q_w4253": {
+    "type": "choice_text",
+    "wordIds": ["w453"],
+    "question": "Be careful when you walk on the wet floor, it is very ______! ",
+    "options": ["fuzzy", "toothy", "slick", "dainty"],
+    "answer": 2
+  },
+  "q_w454": {
+    "type": "choice_text",
+    "wordIds": ["w454"],
+    "question": "The monster's back felt soft and ______ like a big mattress.",
+    "options": ["fearsome", "woozy", "frisky", "springy"],
+    "answer": 3
+  },
+  "q_w455": {
+    "type": "choice_text",
+    "wordIds": ["w455"],
+    "question": "The bird would ______ lightly over the top of the lake to catch a fish.",
+    "options": ["skim", "plunge", "whip", "stumble"],
+    "answer": 0
+  },
+  "q_w456": {
+    "type": "choice_text",
+    "wordIds": ["w456"],
+    "question": "The sea monster felt very sad and ______ because it missed its home.",
+    "options": ["chopped", "sniffled", "resumed", "threated"],
+    "answer": 1
+  },
+  "q_w457": {
+    "type": "choice_text",
+    "wordIds": ["w457"],
+    "question": "When the monster was unhappy, its big tail began to ______ down toward the sand.",
+    "options": ["flail", "twitch", "sag", "slap"],
+    "answer": 2
+  },
+  "q_w458": {
+    "type": "choice_text",
+    "wordIds": ["w458"],
+    "question": "A small monster started to ______ in the dark shadows beside the hole.",
+    "options": ["shrug", "snore", "stumble", "lurk"],
+    "answer": 3
+  },
+  "q_w459": {
+    "type": "choice_text",
+    "wordIds": ["w459"],
+    "question": "The sea monster took a deep breath and ______ into the blue water. ",
+    "options": ["plunged", "skimmed", "chafed", "shoved on"],
+    "answer": 0
+  },
+  "q_w460": {
+  "type": "choice_text",
+  "wordIds": ["w460"],
+  "question": "______ means pleasantly cool and fresh, or firm and easy to break.",
+  "options": ["victory", "crisp", "squat", "buggy"],
+  "answer": 1
+  },
+  "q_w461": {
+  "type": "choice_text",
+  "wordIds": ["w461"],
+  "question": "A ______ is the act of defeating an enemy or winning a competition.",
+  "options": ["victory", "shaggy", "trolley", "playdate"],
+  "answer": 0
+  },
+  "q_w462": {
+  "type": "choice_text",
+  "wordIds": ["w462"],
+  "question": "To ______ means to lower your body close to the ground with bent legs.",
+  "options": ["interrupt", "uncertain", "squat", "linen"],
+  "answer": 2
+  },
+  "q_w463": {
+  "type": "choice_text",
+  "wordIds": ["w463"],
+  "question": "A ______ is a light wheeled carriage often pulled by an animal.",
+  "options": ["comfort", "stroll", "twine", "buggy"],
+  "answer": 3
+  },
+  "q_w464": {
+  "type": "choice_text",
+  "wordIds": ["w464"],
+  "question": "______ means having long, thick and untidy hair or fur.",
+  "options": ["shaggy", "practical", "bandage", "quiver"],
+  "answer": 0
+  },
+  "q_w465": {
+  "type": "choice_text",
+  "wordIds": ["w465"],
+  "question": "A ______ is a track vehicle or a small cart for carrying things.",
+  "options": ["nestle", "snoozy", "amble", "trolley"],
+  "answer": 3
+  },
+  "q_w466": {
+  "type": "choice_text",
+  "wordIds": ["w466"],
+  "question": "A ______ is a planned time for children to play together.",
+  "options": ["playdate", "crisp", "victory", "squat"],
+  "answer": 0
+  },
+  "q_w467": {
+  "type": "choice_text",
+  "wordIds": ["w467"],
+  "question": "______ means useful and good for real life use.",
+  "options": ["buggy", "shaggy", "practical", "trolley"],
+  "answer": 2
+  },
+  "q_w468": {
+  "type": "choice_text",
+  "wordIds": ["w468"],
+  "question": "To ______ is to stop a talk or activity suddenly.",
+  "options": ["interrupt", "playdate", "practical", "nestle"],
+  "answer": 0
+  },
+  "q_w469": {
+  "type": "choice_text",
+  "wordIds": ["w469"],
+  "question": "______ means not sure or definite about something.",
+  "options": ["comfort", "uncertain", "stroll", "twine"],
+  "answer": 1
+  },
+  "q_w470": {
+  "type": "choice_text",
+  "wordIds": ["w470"],
+  "question": "______ is cloth made from flax or soft home cloth goods.",
+  "options": ["bandage", "quiver", "linen", "amble"],
+  "answer": 2
+  },
+  "q_w471": {
+  "type": "choice_text",
+  "wordIds": ["w471"],
+  "question": "To ______ someone means to make them feel better and less sad.",
+  "options": ["crisp", "comfort", "victory", "squat"],
+  "answer": 1
+  },
+  "q_w472": {
+  "type": "choice_text",
+  "wordIds": ["w472"],
+  "question": "To ______ is to walk slowly in a relaxed way.",
+  "options": ["buggy", "shaggy", "stroll", "trolley"],
+  "answer": 2
+  },
+  "q_w473": {
+  "type": "choice_text",
+  "wordIds": ["w473"],
+  "question": "______ is a strong thin string made of twisted threads.",
+  "options": ["twine", "playdate", "interrupt", "uncertain"],
+  "answer": 0
+  },
+  "q_w474": {
+  "type": "choice_text",
+  "wordIds": ["w474"],
+  "question": "A ______ is a cloth strip used to cover a wound.",
+  "options": ["linen", "bandage", "comfort", "nestle"],
+  "answer": 1
+  },
+  "q_w475": {
+  "type": "choice_text",
+  "wordIds": ["w475"],
+  "question": "To ______ means to shake slightly from fear or strong feeling.",
+  "options": ["snoozy", "amble", "quiver", "crisp"],
+  "answer": 2
+  },
+  "q_w476": {
+  "type": "choice_text",
+  "wordIds": ["w476"],
+  "question": "To ______ is to sit or lie in a warm, comfortable place.",
+  "options": ["victory", "squat", "nestle", "buggy"],
+  "answer": 2
+  },
+  "q_w477": {
+  "type": "choice_text",
+  "wordIds": ["w477"],
+  "question": "______ means sleepy and wanting to sleep.",
+  "options": ["shaggy", "trolley", "snoozy", "practical"],
+  "answer": 2
+  },
+  "q_w478": {
+  "type": "choice_text",
+  "wordIds": ["w478"],
+  "question": "To ______ is to walk slowly and in a relaxed, unhurried way.",
+  "options": ["interrupt", "amble", "uncertain", "linen"],
+  "answer": 1
+},
+"q_w479": {
+"type": "choice_text",
+"wordIds": ["w479"],
+"question": "To ______ means to press or squeeze someone or something tightly.",
+"options": ["squish", "habitat", "pressure", "distribute"],
+"answer": 0
+},
+"q_w480": {
+"type": "choice_text",
+"wordIds": ["w480"],
+"question": "To ______ is to crush or press something hard so it loses shape.",
+"options": ["weight", "squash", "evenly", "boost"],
+"answer": 1
+},
+"q_w481": {
+"type": "choice_text",
+"wordIds": ["w481"],
+"question": "To ______ means to squeeze through a small space or crumple something.",
+"options": ["lifter", "erupt", "scrunch", "vinegar"],
+"answer": 2
+},
+"q_w482": {
+"type": "choice_text",
+"wordIds": ["w482"],
+"question": "A ______ is the natural home of a plant or animal.",
+"options": ["fit in", "jammed", "habitat", "crammed"],
+"answer": 2
+},
+"q_w483": {
+"type": "choice_text",
+"wordIds": ["w483"],
+"question": "______ is the force pushing on something, or stress.",
+"options": ["pressure", "yelp", "shudder", "infernal"],
+"answer": 0
+},
+"q_w484": {
+"type": "choice_text",
+"wordIds": ["w484"],
+"question": "To ______ is to give out or spread things equally.",
+"options": ["prepare", "distribute", "squish", "squash"],
+"answer": 1
+},
+"q_w485": {
+"type": "choice_text",
+"wordIds": ["w485"],
+"question": "______ is how heavy something is.",
+"options": ["scrunch", "weight", "habitat", "pressure"],
+"answer": 1
+},
+"q_w486": {
+"type": "choice_text",
+"wordIds": ["w486"],
+"question": "______ means in an equal or level way.",
+"options": ["evenly", "distribute", "boost", "lifter"],
+"answer": 0
+},
+"q_w487": {
+"type": "choice_text",
+"wordIds": ["w487"],
+"question": "A ______ is a children's plaything that goes up and down.",
+"options": ["erupt", "vinegar", "teeter-totter", "fit in"],
+"answer": 2
+},
+"q_w488": {
+"type": "choice_text",
+"wordIds": ["w488"],
+"question": "To ______ means to lift up or make something stronger or higher.",
+"options": ["jammed", "crammed", "yelp", "boost"],
+"answer": 3
+},
+"q_w489": {
+"type": "choice_text",
+"wordIds": ["w489"],
+"question": "A ______ is a tool or machine that lifts things up.",
+"options": ["lifter", "shudder", "infernal", "prepare"],
+"answer": 0
+},
+"q_w490": {
+"type": "choice_text",
+"wordIds": ["w490"],
+"question": "To ______ means to burst out suddenly, like a volcano.",
+"options": ["squish", "erupt", "habitat", "weight"],
+"answer": 1
+},
+"q_w491": {
+"type": "choice_text",
+"wordIds": ["w491"],
+"question": "______ is a sour liquid used in cooking and experiments.",
+"options": ["vinegar", "evenly", "teeter-totter", "fit in"],
+"answer": 0
+},
+"q_w492": {
+"type": "choice_text",
+"wordIds": ["w492"],
+"question": "To ______ means to go into a space or belong in a group.",
+"options": ["boost", "fit in", "lifter", "yelp"],
+"answer": 1
+},
+"q_w493": {
+"type": "choice_text",
+"wordIds": ["w493"],
+"question": "______ means stuck or packed so tight you can't move.",
+"options": ["jammed", "erupt", "prepare", "squash"],
+"answer": 0
+},
+"q_w494": {
+"type": "choice_text",
+"wordIds": ["w494"],
+"question": "______ means filled completely full or packed tightly.",
+"options": ["crammed", "pressure", "vinegar", "shudder"],
+"answer": 0
+},
+"q_w495": {
+"type": "choice_text",
+"wordIds": ["w495"],
+"question": "To ______ is to make a short, sharp cry from pain or fear.",
+"options": ["distribute", "yelp", "scrunch", "infernal"],
+"answer": 1
+},
+"q_w496": {
+"type": "choice_text",
+"wordIds": ["w496"],
+"question": "To ______ means to shake a little from cold, fear, or movement.",
+"options": ["shudder", "weight", "boost", "fit in"],
+"answer": 0
+},
+"q_w497": {
+"type": "choice_text",
+"wordIds": ["w497"],
+"question": "______ means very annoying or terrible.",
+"options": ["infernal", "lifter", "jammed", "squish"],
+"answer": 0
+},
+"q_w498": {
+"type": "choice_text",
+"wordIds": ["w498"],
+"question": "To ______ means to get ready for something.",
+"options": ["prepare", "habitat", "evenly", "crammed"],
+"answer": 0
+},
+  "q_w499": {
+    "type": "choice_text",
+    "wordIds": ["w499"],
+    "question": "The shelf was heavy, so we added a metal bar to ______ it.",
+    "options": ["trim", "odor", "support", "trot"],
+    "answer": 2
+  },
+  "q_w500": {
+    "type": "choice_text",
+    "wordIds": ["w500"],
+    "question": "A sweet flower ______ drifted through the room.",
+    "options": ["odor", "scene", "stench", "wrinkle"],
+    "answer": 0
+  },
+  "q_w501": {
+    "type": "choice_text",
+    "wordIds": ["w501"],
+    "question": "When we opened the trash can, a horrible ______ filled the kitchen.",
+    "options": ["odor", "relief", "bouquet", "stench"],
+    "answer": 3
+  },
+  "q_w502": {
+    "type": "choice_text",
+    "wordIds": ["w502"],
+    "question": "She planted a ______ in her garden; it looked like a tiny dragon's mouth.",
+    "options": ["petal", "snapdragon", "gazebo", "scene"],
+    "answer": 1
+  },
+  "q_w503": {
+    "type": "choice_text",
+    "wordIds": ["w503"],
+    "question": "Please ______ the bushes so they look neat for the party.",
+    "options": ["trim", "trot", "clog", "savor"],
+    "answer": 0
+  },
+  "q_w505": {
+    "type": "choice_text",
+    "wordIds": ["w505"],
+    "question": "We stopped on the hill to enjoy the sunset ______.",
+    "options": ["situation", "odor", "scene", "companion"],
+    "answer": 2
+  },
+  "q_w506": {
+    "type": "choice_text",
+    "wordIds": ["w506"],
+    "question": "Take a bite, then ______ the taste slowly.",
+    "options": ["smoosh", "savor", "whine", "clog"],
+    "answer": 1
+  },
+  "q_w507": {
+    "type": "choice_text",
+    "wordIds": ["w507"],
+    "question": "A pink ______ fell from the rose onto the path.",
+    "options": ["bouquet", "diaper", "wrinkle", "petal"],
+    "answer": 3
+  },
+  "q_w508": {
+    "type": "choice_text",
+    "wordIds": ["w508"],
+    "question": "“Are you going alone?” “No, I have a travel ______.”",
+    "options": ["companion", "stench", "support", "zip line"],
+    "answer": 0
+  },
+  "q_w509": {
+    "type": "choice_text",
+    "wordIds": ["w509"],
+    "question": "After sitting on it, there was a big ______ in the paper.",
+    "options": ["petal", "odor", "wrinkle", "turquoise"],
+    "answer": 2
+  },
+  "q_w510": {
+    "type": "choice_text",
+    "wordIds": ["w510"],
+    "question": "He gave her a ______ of flowers for her birthday.",
+    "options": ["gazebo", "bouquet", "armpit", "scene"],
+    "answer": 1
+  },
+  "q_w511": {
+    "type": "choice_text",
+    "wordIds": ["w511"],
+    "question": "The cat will ______ before it jumps.",
+    "options": ["crouch", "trot", "trim", "whine"],
+    "answer": 0
+  },
+  "q_w512": {
+    "type": "choice_text",
+    "wordIds": ["w512"],
+    "question": "She wanted to ______ the peaceful moment and not rush.",
+    "options": ["support", "faint", "clog", "savor"],
+    "answer": 3
+  },
+  "q_w513": {
+    "type": "choice_text",
+    "wordIds": ["w513"],
+    "question": "Stop ______ about the homework and start working.",
+    "options": ["trot", "adore", "whine", "crouch"],
+    "answer": 2
+  },
+  "q_w514": {
+    "type": "choice_text",
+    "wordIds": ["w514"],
+    "question": "We sat in the ______ to get shade in the garden.",
+    "options": ["gazebo", "bouquet", "zip line", "armpit"],
+    "answer": 0
+  },
+  "q_w515": {
+    "type": "choice_text",
+    "wordIds": ["w515"],
+    "question": "After making a mistake, he answered ______.",
+    "options": ["thrilling", "sheepishly", "turquoise", "moldy"],
+    "answer": 1
+  },
+  "q_w516": {
+    "type": "choice_text",
+    "wordIds": ["w516"],
+    "question": "______! The ball shot past my ear.",
+    "options": ["relief", "bouquet", "whoosh", "wrinkle"],
+    "answer": 2
+  },
+  "q_w517": {
+    "type": "choice_text",
+    "wordIds": ["w517"],
+    "question": "The roller coaster ride was ______!",
+    "options": ["moldy", "sheepishly", "funky", "thrilling"],
+    "answer": 3
+  },
+  "q_w518": {
+    "type": "choice_text",
+    "wordIds": ["w518"],
+    "question": "At camp, we rode a ______ across the trees.",
+    "options": ["gazebo", "zip line", "support", "diaper"],
+    "answer": 1
+  },
+  "q_w519": {
+    "type": "choice_text",
+    "wordIds": ["w519"],
+    "question": "Her dress was ______, a blue-green color like the sea.",
+    "options": ["turquoise", "moldy", "funky", "faint"],
+    "answer": 0
+  },
+  "q_w520": {
+    "type": "choice_text",
+    "wordIds": ["w520"],
+    "question": "The bread was ______, so we threw it away.",
+    "options": ["turquoise", "thrilling", "moldy", "sheepishly"],
+    "answer": 2
+  },
+  "q_w521": {
+    "type": "choice_text",
+    "wordIds": ["w521"],
+    "question": "I ______ this book so much—I read it again and again.",
+    "options": ["clog", "adore", "crouch", "trim"],
+    "answer": 1
+  },
+  "q_w522": {
+    "type": "choice_text",
+    "wordIds": ["w522"],
+    "question": "Don’t ______ the sandwich in your backpack.",
+    "options": ["savor", "trot", "support", "smoosh"],
+    "answer": 3
+  },
+  "q_w523": {
+    "type": "choice_text",
+    "wordIds": ["w523"],
+    "question": "He put deodorant under his ______.",
+    "options": ["armpit", "petal", "gazebo", "scene"],
+    "answer": 0
+  },
+  "q_w524": {
+    "type": "choice_text",
+    "wordIds": ["w524"],
+    "question": "The pony began to ______ across the field with quick steps.",
+    "options": ["whine", "trot", "trim", "faint"],
+    "answer": 1
+  },
+  "q_w525": {
+    "type": "choice_text",
+    "wordIds": ["w525"],
+    "question": "Hair can ______ the sink, so the water won’t go down.",
+    "options": ["support", "savor", "clog", "adore"],
+    "answer": 2
+  },
+  "q_w526": {
+    "type": "choice_text",
+    "wordIds": ["w526"],
+    "question": "The baby needed a clean ______.",
+    "options": ["diaper", "bouquet", "wrinkle", "zip line"],
+    "answer": 0
+  },
+  "q_w527": {
+    "type": "choice_text",
+    "wordIds": ["w527"],
+    "question": "She felt dizzy in the hot sun and might ______.",
+    "options": ["trot", "trim", "savor", "faint"],
+    "answer": 3
+  },
+  "q_w528": {
+    "type": "choice_text",
+    "wordIds": ["w528"],
+    "question": "When the loud noise finally stopped, everyone felt ______.",
+    "options": ["stench", "odor", "relief", "wrinkle"],
+    "answer": 2
+  },
+  "q_w529": {
+    "type": "choice_text",
+    "wordIds": ["w529"],
+    "question": "This cheese tastes ______—kind of strange.",
+    "options": ["turquoise", "funky", "thrilling", "sheepishly"],
+    "answer": 1
+  },
+  "q_w530": {
+    "type": "choice_text",
+    "wordIds": ["w530"],
+    "question": "There was a problem during the game, but we solved the ______ calmly.",
+    "options": ["scene", "support", "companion", "situation"],
+    "answer": 3
+  },
+  
+  "q_w531": {
+    "type": "choice_text",
+    "wordIds": ["w531"],
+    "question": "The shell was so ______ that it was hard to break.",
+    "options": ["sugary", "moldy", "tough", "thrilling"],
+    "answer": 2
+  },
+  "q_w532": {
+    "type": "choice_text",
+    "wordIds": ["w532"],
+    "question": "We ______ flour and water to make dough.",
+    "options": ["combine", "prevent", "deny", "digest"],
+    "answer": 0
+  },
+  "q_w533": {
+    "type": "choice_text",
+    "wordIds": ["w533"],
+    "question": "This pan has a special nonstick ______.",
+    "options": ["moss", "plaque", "molar", "coating"],
+    "answer": 3
+  },
+  "q_w534": {
+    "type": "choice_text",
+    "wordIds": ["w534"],
+    "question": "Green ______ grows on wet rocks in the shade.",
+    "options": ["coating", "moss", "cavity", "saliva"],
+    "answer": 1
+  },
+  "q_w535": {
+    "type": "choice_text",
+    "wordIds": ["w535"],
+    "question": "If you leave the apple out too long, it will ______.",
+    "options": ["decay", "trot", "trim", "combine"],
+    "answer": 0
+  },
+  "q_w536": {
+    "type": "choice_text",
+    "wordIds": ["w536"],
+    "question": "This drink is too ______, so I only want a little.",
+    "options": ["tough", "moldy", "sugary", "funky"],
+    "answer": 2
+  },
+  "q_w537": {
+    "type": "choice_text",
+    "wordIds": ["w537"],
+    "question": "Caterpillars ______ leaves.",
+    "options": ["depend on", "feed on", "wear away", "keep one's word"],
+    "answer": 1
+  },
+  "q_w538": {
+    "type": "choice_text",
+    "wordIds": ["w538"],
+    "question": "Brush your teeth to remove ______.",
+    "options": ["cavity", "moss", "coating", "plaque"],
+    "answer": 3
+  },
+  "q_w539": {
+    "type": "choice_text",
+    "wordIds": ["w539"],
+    "question": "The dentist found a ______ in my tooth.",
+    "options": ["cavity", "plaque", "molar", "gland"],
+    "answer": 0
+  },
+  "q_w540": {
+    "type": "choice_text",
+    "wordIds": ["w540"],
+    "question": "Soda can slowly ______ tooth enamel over time.",
+    "options": ["digest", "prevent", "wear away", "combine"],
+    "answer": 2
+  },
+  "q_w541": {
+    "type": "choice_text",
+    "wordIds": ["w541"],
+    "question": "You chew crunchy food with a back ______.",
+    "options": ["cavity", "molar", "petal", "odor"],
+    "answer": 1
+  },
+  "q_w542": {
+    "type": "choice_text",
+    "wordIds": ["w542"],
+    "question": "Your mouth makes ______ when you smell yummy food.",
+    "options": ["moss", "gland", "plaque", "saliva"],
+    "answer": 3
+  },
+  "q_w543": {
+    "type": "choice_text",
+    "wordIds": ["w543"],
+    "question": "A saliva ______ in your mouth makes saliva.",
+    "options": ["molar", "saliva", "gland", "cavity"],
+    "answer": 2
+  },
+  "q_w544": {
+    "type": "choice_text",
+    "wordIds": ["w544"],
+    "question": "He broke the toy but tried to ______ it.",
+    "options": ["deny", "prevent", "support", "adore"],
+    "answer": 0
+  },
+  "q_w545": {
+    "type": "choice_text",
+    "wordIds": ["w545"],
+    "question": "Warm soup can ______ dry bread.",
+    "options": ["digest", "soften", "trot", "trim"],
+    "answer": 1
+  },
+  "q_w546": {
+    "type": "choice_text",
+    "wordIds": ["w546"],
+    "question": "It can take time to ______ a big meal.",
+    "options": ["combine", "deny", "prevent", "digest"],
+    "answer": 3
+  },
+  "q_w547": {
+    "type": "choice_text",
+    "wordIds": ["w547"],
+    "question": "Washing your hands can ______ germs from spreading.",
+    "options": ["prevent", "digest", "soften", "feed on"],
+    "answer": 0
+  },
+  "q_w548": {
+    "type": "choice_text",
+    "wordIds": ["w548"],
+    "question": "She promised to help, and she ______.",
+    "options": ["denied it", "depended on me", "kept her word", "wore it away"],
+    "answer": 2
+  },
+  "q_w549": {
+    "type": "choice_text",
+    "wordIds": ["w549"],
+    "question": "Our picnic plans ______ the weather.",
+    "options": ["wear away", "depend on", "feed on", "keep your word"],
+    "answer": 1
+  },
+  "q_w550": {
+    "type": "choice_text",
+    "wordIds": ["w550"],
+    "question": "Waste leaves the body through the ______.",
+    "options": ["stomachache", "gland", "molar", "anus"],
+    "answer": 3
+  },
+  "q_w551": {
+    "type": "choice_text",
+    "wordIds": ["w551"],
+    "question": "I ate too much candy and got a ______.",
+    "options": ["stomachache", "odor", "cavity", "relief"],
+    "answer": 0
+  },
+   "q_w552": {
+    "type": "choice_text",
+    "wordIds": ["w552"],
+    "question": "After weeks without cleaning, there was a ______ of dust on the window.",
+    "options": ["bouquet", "odor", "build-up", "cavity"],
+    "answer": 2
+  },
+  "q_w553": {
+    "type": "choice_text",
+    "wordIds": ["w553"],
+    "question": "When it got cold, the puppy wanted to ______ by the fire.",
+    "options": ["sprawl", "trot", "distract", "curl up"],
+    "answer": 3
+  },
+  "q_w554": {
+    "type": "choice_text",
+    "wordIds": ["w554"],
+    "question": "After a big lunch, I felt ______ and almost fell asleep.",
+    "options": ["drowsy", "thunderous", "tough", "sideways"],
+    "answer": 0
+  },
+  "q_w555": {
+    "type": "choice_text",
+    "wordIds": ["w555"],
+    "question": "She glued photos and little tickets into her ______.",
+    "options": ["playpen", "coatrack", "scrapbook", "moss"],
+    "answer": 2
+  },
+  "q_w556": {
+    "type": "choice_text",
+    "wordIds": ["w556"],
+    "question": "The ball was ______ the goal, but it missed!",
+    "options": ["not to mention", "a whisker away from", "depend on", "keep one's word"],
+    "answer": 1
+  },
+  "q_w557": {
+    "type": "choice_text",
+    "wordIds": ["w557"],
+    "question": "I tried to stay serious, but I couldn’t ______ laughing.",
+    "options": ["digest", "deny", "distract", "resist"],
+    "answer": 3
+  },
+  "q_w558": {
+    "type": "choice_text",
+    "wordIds": ["w558"],
+    "question": "The little child wanted to ______ with her teddy bear.",
+    "options": ["smash", "cuddle", "lasso", "wear away"],
+    "answer": 1
+  },
+  "q_w559": {
+    "type": "choice_text",
+    "wordIds": ["w559"],
+    "question": "The baby likes to ______ into a warm blanket.",
+    "options": ["snuggle", "combine", "prevent", "trim"],
+    "answer": 0
+  },
+  "q_w560": {
+    "type": "choice_text",
+    "wordIds": ["w560"],
+    "question": "The party was fun, ______ the hot cocoa!",
+    "options": ["a whisker away from", "sideways", "not to mention", "headfirst"],
+    "answer": 2
+  },
+  "q_w561": {
+    "type": "choice_text",
+    "wordIds": ["w561"],
+    "question": "We drank hot ______ after playing in the snow.",
+    "options": ["slush", "cocoa", "saliva", "coating"],
+    "answer": 1
+  },
+  "q_w562": {
+    "type": "choice_text",
+    "wordIds": ["w562"],
+    "question": "Be careful! Don’t ______ the glass.",
+    "options": ["smash", "savor", "cuddle", "soften"],
+    "answer": 0
+  },
+  "q_w563": {
+    "type": "choice_text",
+    "wordIds": ["w563"],
+    "question": "This toy feels soft and ______ when you press it.",
+    "options": ["tough", "thunderous", "wobbly", "squashy"],
+    "answer": 3
+  },
+  "q_w564": {
+    "type": "choice_text",
+    "wordIds": ["w564"],
+    "question": "That chair is ______, so don’t lean back too far.",
+    "options": ["cozy", "lumpy", "wobbly", "gooey"],
+    "answer": 2
+  },
+  "q_w565": {
+    "type": "choice_text",
+    "wordIds": ["w565"],
+    "question": "A crab usually walks ______, not straight forward.",
+    "options": ["headfirst", "sideways", "drowsy", "tough"],
+    "answer": 1
+  },
+  "q_w566": {
+    "type": "choice_text",
+    "wordIds": ["w566"],
+    "question": "My mashed potatoes turned out ______, with lots of little lumps.",
+    "options": ["lumpy", "cozy", "thunderous", "sugary"],
+    "answer": 0
+  },
+  "q_w567": {
+    "type": "choice_text",
+    "wordIds": ["w567"],
+    "question": "The cowboy threw a ______ to catch the horse.",
+    "options": ["coatrack", "scrapbook", "lasso", "shortcut"],
+    "answer": 2
+  },
+  "q_w568": {
+    "type": "choice_text",
+    "wordIds": ["w568"],
+    "question": "The noise can ______ me from my homework.",
+    "options": ["prevent", "resist", "combine", "distract"],
+    "answer": 3
+  },
+  "q_w569": {
+    "type": "choice_text",
+    "wordIds": ["w569"],
+    "question": "The warm chocolate inside the cookie was ______ and sticky.",
+    "options": ["gooey", "tough", "wobbly", "moldy"],
+    "answer": 0
+  },
+  "q_w570": {
+    "type": "choice_text",
+    "wordIds": ["w570"],
+    "question": "With a blanket and a fire, the room felt ______.",
+    "options": ["drowsy", "sideways", "cozy", "lumpy"],
+    "answer": 2
+  },
+  "q_w571": {
+    "type": "choice_text",
+    "wordIds": ["w571"],
+    "question": "After the long hike, he decided to ______ on the sofa.",
+    "options": ["cartwheel", "sprawl", "deny", "digest"],
+    "answer": 1
+  },
+  "q_w572": {
+    "type": "choice_text",
+    "wordIds": ["w572"],
+    "question": "She did a ______ across the grass like a gymnast.",
+    "options": ["shortcut", "coatrack", "scrapbook", "cartwheel"],
+    "answer": 3
+  },
+  "q_w573": {
+    "type": "choice_text",
+    "wordIds": ["w573"],
+    "question": "This path is a ______ to the park—it saves time.",
+    "options": ["shortcut", "cartwheel", "drowsy", "coating"],
+    "answer": 0
+  },
+  "q_w574": {
+    "type": "choice_text",
+    "wordIds": ["w574"],
+    "question": "He jumped ______ into the pool.",
+    "options": ["sheepishly", "sideways", "headfirst", "cozy"],
+    "answer": 2
+  },
+  "q_w575": {
+    "type": "choice_text",
+    "wordIds": ["w575"],
+    "question": "Hang your jacket on the ______ by the door.",
+    "options": ["playpen", "coatrack", "lasso", "slush"],
+    "answer": 1
+  },
+  "q_w576": {
+    "type": "choice_text",
+    "wordIds": ["w576"],
+    "question": "The baby played safely inside the ______.",
+    "options": ["coatrack", "scrapbook", "gazebo", "playpen"],
+    "answer": 3
+  },
+  "q_w577": {
+    "type": "choice_text",
+    "wordIds": ["w577"],
+    "question": "The snow melted into wet ______ on the street.",
+    "options": ["slush", "moss", "plaque", "cocoa"],
+    "answer": 0
+  },
+  "q_w578": {
+    "type": "choice_text",
+    "wordIds": ["w578"],
+    "question": "The audience gave ______ applause after the show.",
+    "options": ["gooey", "wobbly", "thunderous", "drowsy"],
+    "answer": 2
+  },
+  
+  "q_w579": {
+    "type": "choice_text",
+    "wordIds": ["w579"],
+    "question": "After swimming in the ocean, my lips tasted ______.",
+    "options": ["plump", "salty", "royal", "gooey"],
+    "answer": 1
+  },
+  "q_w580": {
+    "type": "choice_text",
+    "wordIds": ["w580"],
+    "question": "I went to the park with my best ______.",
+    "options": ["gear", "trench", "island", "pal"],
+    "answer": 3
+  },
+  "q_w581": {
+    "type": "choice_text",
+    "wordIds": ["w581"],
+    "question": "Can you ______ me your pencil for a minute?",
+    "options": ["lend", "steer", "consult", "deny"],
+    "answer": 0
+  },
+  "q_w582": {
+    "type": "choice_text",
+    "wordIds": ["w582"],
+    "question": "The king and queen lived in a ______ palace.",
+    "options": ["salty", "plump", "royal", "frazzled"],
+    "answer": 2
+  },
+  "q_w583": {
+    "type": "choice_text",
+    "wordIds": ["w583"],
+    "question": "A ______ statue towered over the town.",
+    "options": ["colossal", "royal", "drowsy", "salty"],
+    "answer": 0
+  },
+  "q_w584": {
+    "type": "choice_text",
+    "wordIds": ["w584"],
+    "question": "The stream began to ______ over the rocks.",
+    "options": ["screech", "slosh", "gurgle", "pursue"],
+    "answer": 2
+  },
+  "q_w585": {
+    "type": "choice_text",
+    "wordIds": ["w585"],
+    "question": "Water started to ______ in the bucket as I walked.",
+    "options": ["gurgle", "slosh", "screech", "steer"],
+    "answer": 1
+  },
+  "q_w586": {
+    "type": "choice_text",
+    "wordIds": ["w586"],
+    "question": "The dog began to ______ the cat around the yard.",
+    "options": ["steer", "lend", "consult", "pursue"],
+    "answer": 3
+  },
+  "q_w587": {
+    "type": "choice_text",
+    "wordIds": ["w587"],
+    "question": "Hold the wheel and ______ the boat away from the rocks.",
+    "options": ["steer", "pursue", "slosh", "screech"],
+    "answer": 0
+  },
+  "q_w588": {
+    "type": "choice_text",
+    "wordIds": ["w588"],
+    "question": "We sailed to a small ______ with palm trees.",
+    "options": ["trench", "gear", "island", "kelp"],
+    "answer": 2
+  },
+  "q_w589": {
+    "type": "choice_text",
+    "wordIds": ["w589"],
+    "question": "At the zoo, we saw a ______ tiger (not a toy!).",
+    "options": ["pretend", "real live", "royal", "colossal"],
+    "answer": 1
+  },
+  "q_w590": {
+    "type": "choice_text",
+    "wordIds": ["w590"],
+    "question": "She was ______ of the dark.",
+    "options": ["frazzled", "salty", "royal", "afraid"],
+    "answer": 3
+  },
+  "q_w591": {
+    "type": "choice_text",
+    "wordIds": ["w591"],
+    "question": "The workers dug a deep ______ for the pipes.",
+    "options": ["trench", "kelp", "island", "gear"],
+    "answer": 0
+  },
+  "q_w592": {
+    "type": "choice_text",
+    "wordIds": ["w592"],
+    "question": "Don’t forget your safety ______ before you go diving.",
+    "options": ["scrapbook", "reminder card", "gear", "plaque"],
+    "answer": 2
+  },
+  "q_w593": {
+    "type": "choice_text",
+    "wordIds": ["w593"],
+    "question": "Fish can hide in a ______ forest in the ocean.",
+    "options": ["moss", "plaque", "salty", "kelp"],
+    "answer": 3
+  },
+  "q_w594": {
+    "type": "choice_text",
+    "wordIds": ["w594"],
+    "question": "After the busy day, she looked tired and ______.",
+    "options": ["drowsy", "frazzled", "cozy", "plump"],
+    "answer": 1
+  },
+  "q_w595": {
+    "type": "choice_text",
+    "wordIds": ["w595"],
+    "question": "Good time ______ helps you finish homework on time.",
+    "options": ["management", "cocoa", "shortcut", "molar"],
+    "answer": 0
+  },
+  "q_w596": {
+    "type": "choice_text",
+    "wordIds": ["w596"],
+    "question": "I wrote a ______ so I wouldn’t forget my chores.",
+    "options": ["scrapbook", "pal", "reminder card", "coatrack"],
+    "answer": 2
+  },
+  "q_w597": {
+    "type": "choice_text",
+    "wordIds": ["w597"],
+    "question": "During summer break, we might ______ through the mountains.",
+    "options": ["curl up", "go on a trek", "steer", "gurgle"],
+    "answer": 1
+  },
+  "q_w598": {
+    "type": "choice_text",
+    "wordIds": ["w598"],
+    "question": "The hike turned into a long, difficult ______.",
+    "options": ["island", "coating", "trench", "trek"],
+    "answer": 3
+  },
+  "q_w599": {
+    "type": "choice_text",
+    "wordIds": ["w599"],
+    "question": "The brakes began to ______ when the car stopped suddenly.",
+    "options": ["screech", "gurgle", "slosh", "whine"],
+    "answer": 0
+  },
+  "q_w600": {
+    "type": "choice_text",
+    "wordIds": ["w600"],
+    "question": "The grapes were ______ and sweet.",
+    "options": ["lumpy", "salty", "plump", "colossal"],
+    "answer": 2
+  },
+  "q_w601": {
+    "type": "choice_text",
+    "wordIds": ["w601"],
+    "question": "If you’re not sure where to go, ______ a map.",
+    "options": ["pursue", "lend", "deny", "consult"],
+    "answer": 3
+  },
+  "q_w602": {
+    "type": "choice_text",
+    "wordIds": ["w602"],
+    "question": "Feeding the class fish is your ______.",
+    "options": ["confidence", "responsibility", "celebration", "distress"],
+    "answer": 1
+  },
+  "q_w603": {
+    "type": "choice_text",
+    "wordIds": ["w603"],
+    "question": "When we arrived, the festival was already ______.",
+    "options": ["in full swing", "in distress", "well-considered", "cozy"],
+    "answer": 0
+  },
+  "q_w604": {
+    "type": "choice_text",
+    "wordIds": ["w604"],
+    "question": "At the fair, we rode the ______ that spins in a big circle.",
+    "options": ["scrapbook", "shortcut", "go-round", "coatrack"],
+    "answer": 2
+  },
+  "q_w605": {
+    "type": "choice_text",
+    "wordIds": ["w605"],
+    "question": "The car’s front ______ got a scratch.",
+    "options": ["holster", "tasselled", "trench", "bumper"],
+    "answer": 3
+  },
+  "q_w606": {
+    "type": "choice_text",
+    "wordIds": ["w606"],
+    "question": "My mom adds ______ to salad because it smells a bit like candy.",
+    "options": ["kelp", "fennel", "moss", "cocoa"],
+    "answer": 1
+  },
+  "q_w607": {
+    "type": "choice_text",
+    "wordIds": ["w607"],
+    "question": "I ______ visit my grandma again.",
+    "options": ["yearn to", "go through", "in full swing", "stalk"],
+    "answer": 0
+  },
+  "q_w608": {
+    "type": "choice_text",
+    "wordIds": ["w608"],
+    "question": "I packed snacks and water, so I was ______ for the hike.",
+    "options": ["drowsy", "eager", "frazzled", "prepared"],
+    "answer": 3
+  },
+  "q_w609": {
+    "type": "choice_text",
+    "wordIds": ["w609"],
+    "question": "An ______ is a big bird that can run fast but cannot fly.",
+    "options": ["molar", "twerp", "emu", "kelp"],
+    "answer": 2
+  },
+  "q_w610": {
+    "type": "choice_text",
+    "wordIds": ["w610"],
+    "question": "She let out a loud ______ when the surprise popped out.",
+    "options": ["screech", "shriek", "ripple", "dent"],
+    "answer": 1
+  },
+  "q_w611": {
+    "type": "choice_text",
+    "wordIds": ["w611"],
+    "question": "The monster gave a ______ look that made everyone step back.",
+    "options": ["menacing", "delighted", "cozy", "tasselled"],
+    "answer": 0
+  },
+  "q_w612": {
+    "type": "choice_text",
+    "wordIds": ["w612"],
+    "question": "The loud siren was ______ and made people worry.",
+    "options": ["funky", "plump", "alarming", "royal"],
+    "answer": 2
+  },
+  "q_w613": {
+    "type": "choice_text",
+    "wordIds": ["w613"],
+    "question": "Don’t ______ your drawing—keep it flat.",
+    "options": ["unravel", "attach", "dent", "crumple"],
+    "answer": 3
+  },
+  "q_w614": {
+    "type": "choice_text",
+    "wordIds": ["w614"],
+    "question": "The ball hit the door and left a small ______.",
+    "options": ["wrinkle", "dent", "cavity", "ripple"],
+    "answer": 1
+  },
+  "q_w615": {
+    "type": "choice_text",
+    "wordIds": ["w615"],
+    "question": "The knight carried a long ______.",
+    "options": ["lance", "holster", "bumper", "go-round"],
+    "answer": 0
+  },
+  "q_w616": {
+    "type": "choice_text",
+    "wordIds": ["w616"],
+    "question": "A ______ cleared the snow from the road after the storm.",
+    "options": ["fertilizer", "slush", "snowplough", "coatrack"],
+    "answer": 2
+  },
+  "q_w617": {
+    "type": "choice_text",
+    "wordIds": ["w617"],
+    "question": "Farmers add ______ to help plants grow strong.",
+    "options": ["saliva", "moss", "gear", "fertilizer"],
+    "answer": 3
+  },
+  "q_w618": {
+    "type": "choice_text",
+    "wordIds": ["w618"],
+    "question": "After the long trip, I ______ home.",
+    "options": ["yearn to", "yearn for", "go through", "depend on"],
+    "answer": 1
+  },
+  "q_w619": {
+    "type": "choice_text",
+    "wordIds": ["w619"],
+    "question": "She made a ______ decision before speaking.",
+    "options": ["well-considered", "wobbly", "thunderous", "gooey"],
+    "answer": 0
+  },
+  "q_w620": {
+    "type": "choice_text",
+    "wordIds": ["w620"],
+    "question": "His belt was ______ with little threads hanging down.",
+    "options": ["royal", "plump", "tasselled", "lumpy"],
+    "answer": 2
+  },
+  "q_w621": {
+    "type": "choice_text",
+    "wordIds": ["w621"],
+    "question": "Winning the game gave her more ______.",
+    "options": ["responsibility", "distress", "celebration", "confidence"],
+    "answer": 3
+  },
+  "q_w622": {
+    "type": "choice_text",
+    "wordIds": ["w622"],
+    "question": "The magician bowed with a big ______.",
+    "options": ["flourish", "dent", "trench", "ripple"],
+    "answer": 0
+  },
+  "q_w623": {
+    "type": "choice_text",
+    "wordIds": ["w623"],
+    "question": "The judge will ______ the winner.",
+    "options": ["deny", "declare", "pursue", "consult"],
+    "answer": 1
+  },
+  "q_w624": {
+    "type": "choice_text",
+    "wordIds": ["w624"],
+    "question": "The train will ______ a long, dark tunnel.",
+    "options": ["curl up", "in full swing", "go through", "slosh"],
+    "answer": 2
+  },
+  "q_w625": {
+    "type": "choice_text",
+    "wordIds": ["w625"],
+    "question": "I was ______ to get your invitation!",
+    "options": ["frazzled", "menacing", "drowsy", "delighted"],
+    "answer": 3
+  },
+  "q_w626": {
+    "type": "choice_text",
+    "wordIds": ["w626"],
+    "question": "The fastest runner became the new ______.",
+    "options": ["paladin", "champion", "responsibility", "creation"],
+    "answer": 1
+  },
+  "q_w627": {
+    "type": "choice_text",
+    "wordIds": ["w627"],
+    "question": "We had a big ______ for the new year.",
+    "options": ["distress", "management", "celebration", "responsibility"],
+    "answer": 2
+  },
+  "q_w628": {
+    "type": "choice_text",
+    "wordIds": ["w628"],
+    "question": "In fantasy stories, a ______ is a brave hero or knight who protects people.",
+    "options": ["paladin", "twerp", "champion", "lance"],
+    "answer": 0
+  },
+  "q_w629": {
+    "type": "choice_text",
+    "wordIds": ["w629"],
+    "question": "The lost puppy was in ______ and needed help.",
+    "options": ["confidence", "celebration", "relief", "distress"],
+    "answer": 3
+  },
+  "q_w630": {
+    "type": "choice_text",
+    "wordIds": ["w630"],
+    "question": "He kept his walkie-talkie in a ______ on his belt.",
+    "options": ["coatrack", "scrapbook", "holster", "playpen"],
+    "answer": 2
+  },
+  "q_w631": {
+    "type": "choice_text",
+    "wordIds": ["w631"],
+    "question": "Please ______ the label to the bag.",
+    "options": ["unravel", "attach", "preen", "steer"],
+    "answer": 1
+  },
+  "q_w632": {
+    "type": "choice_text",
+    "wordIds": ["w632"],
+    "question": "Look at my Lego ______—I built a castle!",
+    "options": ["creation", "celebration", "trench", "cocoa"],
+    "answer": 0
+  },
+  "q_w633": {
+    "type": "choice_text",
+    "wordIds": ["w633"],
+    "question": "The cat will ______ the bird quietly in the garden.",
+    "options": ["trot", "pursue", "distract", "stalk"],
+    "answer": 3
+  },
+  "q_w634": {
+    "type": "choice_text",
+    "wordIds": ["w634"],
+    "question": "Don’t call people a ______. It’s not kind.",
+    "options": ["pal", "twerp", "champion", "companion"],
+    "answer": 1
+  },
+  "q_w635": {
+    "type": "choice_text",
+    "wordIds": ["w635"],
+    "question": "My gym bag smells ______ after practice.",
+    "options": ["salty", "cozy", "funky", "tasselled"],
+    "answer": 2
+  },
+  "q_w636": {
+    "type": "choice_text",
+    "wordIds": ["w636"],
+    "question": "A stone made a ______ on the pond.",
+    "options": ["ripple", "dent", "wrinkle", "trench"],
+    "answer": 0
+  },
+  "q_w637": {
+    "type": "choice_text",
+    "wordIds": ["w637"],
+    "question": "My hands began to ______ in the cold.",
+    "options": ["gurgle", "sprawl", "preen", "tremble"],
+    "answer": 3
+  },
+  "q_w638": {
+    "type": "choice_text",
+    "wordIds": ["w638"],
+    "question": "They gave the old room a ______ with new paint and new pillows.",
+    "options": ["creation", "celebration", "makeover", "coating"],
+    "answer": 2
+  },
+  "q_w639": {
+    "type": "choice_text",
+    "wordIds": ["w639"],
+    "question": "The bird used its beak to ______ its feathers.",
+    "options": ["snuggle", "preen", "unravel", "attach"],
+    "answer": 1
+  },
+  "q_w640": {
+    "type": "choice_text",
+    "wordIds": ["w640"],
+    "question": "He had a ______ face because he lost the game.",
+    "options": ["frowny", "delighted", "eager", "cozy"],
+    "answer": 0
+  },
+  "q_w641": {
+    "type": "choice_text",
+    "wordIds": ["w641"],
+    "question": "The kids were ______ to open the presents.",
+    "options": ["frazzled", "drowsy", "menacing", "eager"],
+    "answer": 3
+  },
+  "q_w642": {
+    "type": "choice_text",
+    "wordIds": ["w642"],
+    "question": "Can you ______ this knot in the string?",
+    "options": ["attach", "crumple", "unravel", "dent"],
+    "answer": 2
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}

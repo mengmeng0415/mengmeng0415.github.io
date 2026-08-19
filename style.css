@@ -1,0 +1,2669 @@
+
+:root {
+    --primary: #5b67f1;
+    --primary-light: #eef2ff;
+    --text-dark: #333;
+    --text-gray: #999;
+    --bg-gray: #f4f7f9;
+    --border: #e0e6ed;
+    --green: #4caf50;
+    --red: #ff5252;
+    --header-height: 70px;
+    --sidebar-width: 280px;
+}
+
+body { 
+    margin: 0; 
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, 
+                 "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", "微软雅黑", 
+                 sans-serif;
+    background: #fff; 
+    color: var(--text-dark); 
+    overflow: hidden; 
+}
+
+input, button, textarea, select { font-family: inherit; }
+ul { list-style: none; padding: 0; margin: 0; }
+button { border: none; cursor: pointer; outline: none; background: transparent; font-family: inherit; }
+.hidden { display: none !important; }
+
+/* ============ 布局 ============ */
+.page-view { display: flex; width: 100vw; height: 100vh; }
+.sidebar { width: var(--sidebar-width); border-right: 1px solid var(--border); background: #fff; display: flex; flex-direction: column; transition: margin-left 0.3s ease; flex-shrink: 0; z-index: 100; }
+.sidebar.collapsed { margin-left: calc(var(--sidebar-width) * -1); }
+.content-home, .content-detail { flex: 1; display: flex; flex-direction: column; background: var(--bg-gray); overflow: hidden; position: relative; }
+
+/* ============ 侧边栏 ============ */
+.sidebar-header { height: 60px; padding: 0 20px; border-bottom: 1px solid var(--border); display: flex; align-items: center; justify-content: space-between; background: #fff; }
+.sidebar-header h2 { font-size: 18px; margin: 0; display: flex; align-items: center; gap: 8px; font-weight: 700; color: #333; }
+.list-count { font-size: 12px; color: #999; font-weight: normal; margin-left: 5px; background: #f0f2f5; padding: 2px 6px; border-radius: 4px; }
+.save-btn { background: var(--green); color: white; padding: 5px 12px; border-radius: 6px; font-size: 12px; font-weight: 600; display: flex; align-items: center; gap: 4px; }
+
+.search-box { padding: 15px 20px 10px; }
+.search-box input { width: 100%; padding: 10px 12px; border: 1px solid #eee; border-radius: 8px; box-sizing: border-box; background: #fff; font-size: 14px; transition: 0.2s; }
+.search-box input:focus { border-color: var(--primary); outline: none; box-shadow: 0 0 0 3px var(--primary-light); }
+
+.sidebar-filter-area { padding: 10px 16px; display: flex; justify-content: space-between; align-items: center; border-bottom: 1px solid var(--border); background: #fff; gap: 10px; }
+.filter-stars-container { display: flex; gap: 4px; align-items: center; overflow-x: auto; flex: 1; min-width: 0; }
+.filter-stars-container::-webkit-scrollbar { display: none; }
+.filter-star-btn { width: 30px; height: 30px; flex-shrink: 0; border-radius: 4px; background: transparent; display: flex; align-items: center; justify-content: center; position: relative; }
+.filter-star-img { width: 28px; height: 28px; display: block; object-fit: contain; opacity: 0.9; }
+.filter-star-label { position: absolute; top: 50%; left: 50%; transform: translate(-50%, -45%); font-size: 11px; font-weight: 800; color: #666; pointer-events: none; z-index: 2; text-shadow: 0 0 2px #fff; }
+.filter-star-btn:hover .filter-star-img { transform: scale(1.1); opacity: 1; }
+.filter-star-btn.active .filter-star-img { transform: scale(1.15); opacity: 1; }
+.filter-star-btn.active .filter-star-label { color: #fff; text-shadow: 0 1px 2px rgba(0,0,0,0.3); }
+
+.toggle-text-btn { font-size: 12px; color: var(--primary); background: var(--primary-light); padding: 5px 12px; border-radius: 15px; font-weight: 600; transition: 0.2s; flex-shrink: 0; white-space: nowrap; }
+.toggle-text-btn:hover { background: var(--primary); color: white; }
+
+.scroll-list { flex: 1; overflow-y: auto; padding: 0; }
+.scroll-list::-webkit-scrollbar { width: 6px; }
+.scroll-list::-webkit-scrollbar-thumb { background: #ddd; border-radius: 3px; }
+
+.abc-group-header { padding: 10px 20px; background: #fafafa; font-weight: 700; font-size: 14px; color: #333; cursor: pointer; display: flex; justify-content: space-between; align-items: center; margin-top: 0; border-top: 1px solid #f0f0f0; border-bottom: 1px solid #eee; }
+.abc-group-header:hover { background: #f0f0f0; }
+.group-count { font-size: 12px; color: #999; font-weight: normal; background: #eee; padding: 2px 8px; border-radius: 10px; }
+
+.abc-items li, .chapter-words li { padding: 14px 20px; border-bottom: 1px solid transparent; cursor: pointer; display: flex; justify-content: space-between; align-items: center; background: #fff; transition: background 0.1s; }
+.abc-items li:hover, .chapter-words li:hover { background: var(--primary-light); }
+.abc-items li.active, .chapter-words li.active { background: var(--primary-light); border-left: 4px solid var(--primary); padding-left: 16px; }
+
+.word-info-col { display: flex; align-items: baseline; gap: 8px; overflow: hidden; }
+.word-text { font-size: 16px; font-weight: 400; color: var(--text-dark); white-space: nowrap; }
+.series-text { font-size: 12px; color: #ccc; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.rating-num { font-size: 14px; font-weight: bold; min-width: 20px; text-align: right; }
+.rating-1 { color: #ff5252; } .rating-2 { color: #ff9800; } .rating-3 { color: #ffc107; } .rating-4 { color: #4caf50; } .rating-5 { color: #2196f3; }
+
+/* ============ 首页 (Home) ============ */
+#home-gallery-view { flex: 1; display: flex; flex-direction: column; overflow: hidden; height: 100%; }
+.home-fixed-header { height: 60px; padding: 0 40px; background: #fff; border-bottom: 1px solid var(--border); display: flex; align-items: center; justify-content: space-between; flex-shrink: 0; }
+.header-left { display: flex; align-items: center; gap: 30px; }
+.home-fixed-header h1 { margin: 0; font-size: 22px; color: var(--text-dark); display: flex; align-items: center; gap: 10px; font-weight: 800; }
+.book-type-nav { display: flex; gap: 8px; }
+.book-type-nav button { padding: 6px 14px; border-radius: 20px; background: #f5f5f5; color: #666; font-weight: 600; font-size: 13px; transition: 0.2s; }
+.book-type-nav button:hover { background: #e0e0e0; }
+.book-type-nav button.active { background: var(--primary); color: white; box-shadow: 0 2px 6px rgba(91, 103, 241, 0.3); }
+.header-right { display: flex; align-items: center; gap: 10px; font-size: 13px; color: #666; font-weight: 600; }
+.switch { position: relative; display: inline-block; width: 36px; height: 20px; }
+.switch input { opacity: 0; width: 0; height: 0; }
+.slider { position: absolute; cursor: pointer; top: 0; left: 0; right: 0; bottom: 0; background-color: #ccc; transition: .4s; border-radius: 20px; }
+.slider:before { position: absolute; content: ""; height: 16px; width: 16px; left: 2px; bottom: 2px; background-color: white; transition: .4s; border-radius: 50%; }
+input:checked + .slider { background-color: var(--primary); }
+input:checked + .slider:before { transform: translateX(16px); }
+
+.book-gallery { flex: 1; padding: 40px; max-width: 1400px; margin: 0 auto; overflow-y: auto; width: 100%; box-sizing: border-box; }
+.series-section { margin-bottom: 50px; }
+.series-header { border-left: 4px solid var(--primary); padding-left: 15px; margin-bottom: 20px; }
+.series-title { font-size: 18px; font-weight: 800; color: #333; margin: 0; }
+.series-scroll-container { display: flex; gap: 30px; overflow-x: auto; padding-bottom: 25px; }
+.series-scroll-container::-webkit-scrollbar { height: 8px; }
+.series-scroll-container::-webkit-scrollbar-thumb { background: #ddd; border-radius: 4px; }
+.book-card { flex: 0 0 220px; background: #fff; border-radius: 12px; box-shadow: 0 4px 12px rgba(0,0,0,0.05); cursor: pointer; transition: all 0.3s ease; overflow: hidden; padding-bottom: 12px; border: 1px solid transparent; }
+.book-card:hover { transform: translateY(-5px); box-shadow: 0 8px 20px rgba(91, 103, 241, 0.15); border-color: var(--primary-light); }
+.book-cover { width: 100%; height: 230px; background-color: #eee; background-size: cover; background-position: center; margin-bottom: 12px; }
+.book-info { padding: 0 12px; text-align: left; }
+.book-title { font-size: 15px; font-weight: 700; color: #333; margin-bottom: 4px; line-height: 1.4; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; }
+.book-count { font-size: 13px; color: #999; font-weight: 500; }
+
+/* Detail Top Bar */
+.word-top-bar { height: var(--header-height); background: #fff; border-bottom: 1px solid var(--border); display: flex; justify-content: space-between; align-items: center; padding: 0 30px; box-shadow: 0 2px 8px rgba(0,0,0,0.03); flex-shrink: 0; position: relative; }
+.bar-left { display: flex; align-items: center; gap: 10px; width: auto !important; min-width: 320px; }
+.bar-center { position: absolute; left: 50%; top: 50%; transform: translate(-50%, -50%); display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 4px; max-width: 40%; z-index: 10; }
+.bar-right { display: flex; align-items: center; gap: 15px; width: 300px; justify-content: flex-end; }
+
+.home-icon-img { width: 22px; height: 22px; object-fit: contain; vertical-align: middle; opacity: 0.7; transition: 0.2s; }
+.home-btn:hover .home-icon-img { opacity: 1; transform: scale(1.1); }
+
+.word-row-main { display: flex; align-items: center; gap: 10px; }
+#word-main { margin: 0; font-size: 32px; font-weight: 800; color: #2c3e50; line-height: 1.2; letter-spacing: -0.5px; white-space: nowrap; }
+.main-audio { width: 32px; height: 32px; background: var(--primary); border-radius: 50%; display: flex; align-items: center; justify-content: center; cursor: pointer; box-shadow: 0 3px 8px rgba(91, 103, 241, 0.3); transition: transform 0.2s; }
+.main-audio:hover { transform: scale(1.1); }
+.rating-box { display: flex; gap: 8px; height: auto; align-items: center; }
+.star-icon { width: 28px; height: 28px; cursor: pointer; transition: transform .12s ease; }
+.star-icon:hover { transform: scale(1.12); }
+.icon-btn { font-size: 20px; padding: 8px; border-radius: 8px; color: #666; transition: 0.2s; display: flex; align-items: center; justify-content: center; }
+.icon-btn:hover { background: #f0f0f0; color: var(--primary); }
+.nav-arrow { background: #f0f2f5; color: #666; padding: 8px 18px; border-radius: 20px; font-size: 12px; font-weight: 700; transition: 0.2s; }
+.nav-arrow:hover { background: #e0e6ed; color: var(--text-dark); }
+
+/* ============ 胶囊按钮 & 菜单 ============ */
+.toggle-word-btn {
+    padding: 6px 16px; border-radius: 20px; font-size: 13px; font-weight: 600; cursor: pointer; transition: all 0.2s ease; border: 1px solid transparent; white-space: nowrap;
+}
+.toggle-word-btn.active { background: var(--primary); color: white; box-shadow: 0 2px 6px rgba(91, 103, 241, 0.3); }
+.toggle-word-btn.active:hover { background: #4a56e0; }
+.toggle-word-btn:not(.active) { background: #f0f2f5; color: #999; }
+.toggle-word-btn:not(.active):hover { background: #e4e6eb; color: #666; }
+
+.practice-dropdown { margin-left: 5px; position: relative; display: inline-block; }
+.practice-btn {
+    background: #fff; border: 1px solid #e0e0e0; padding: 6px 14px; border-radius: 20px; cursor: pointer; font-weight: 600; color: #555; display: flex; align-items: center; gap: 6px; transition: all 0.2s; font-size: 13px; white-space: nowrap;
+}
+.practice-btn:hover { background: #f8f9fa; color: var(--primary); border-color: var(--primary); box-shadow: 0 2px 8px rgba(0,0,0,0.05); }
+.dropdown-arrow { font-size: 10px; opacity: 0.5; margin-top: 1px; }
+
+.dropdown-content { display: none; position: absolute; top: 110%; left: 0; background-color: #fff; min-width: 180px; box-shadow: 0 4px 15px rgba(0,0,0,0.1); z-index: 1000; border-radius: 8px; border: 1px solid #eee; overflow: hidden; padding: 5px 0; }
+.dropdown-content.show { display: block; animation: fadeIn 0.2s; }
+.dropdown-content button { color: #333; padding: 10px 20px; text-decoration: none; display: block; width: 100%; text-align: left; border: none; background: none; transition: 0.1s; font-size: 14px; font-weight: 500; }
+.dropdown-content button:hover { background-color: var(--primary-light); color: var(--primary); }
+@keyframes fadeIn { from { opacity: 0; transform: translateY(-5px); } to { opacity: 1; transform: translateY(0); } }
+
+/* ============ 详情页内容 ============ */
+.detail-tabs { display: flex; justify-content: center; background: #fff; border-bottom: 1px solid var(--border); padding-top: 10px; }
+.detail-tabs button { padding: 10px 30px; font-size: 15px; font-weight: 800; color: #999; border-bottom: 3px solid transparent; transition: 0.2s; margin-bottom: -1px; }
+.detail-tabs button.active { color: var(--primary); border-bottom-color: var(--primary); color: var(--primary); }
+/* ============ 1. 详情页内容区域 (还原) ============ */
+.tab-content-area { 
+    flex: 1; 
+    padding: 0;   /* 【还原】普通模式下不需要顶部内边距 */
+    overflow-y: auto; 
+    display: flex; 
+    flex-direction: column; 
+    align-items: center; 
+    background: #f8f9fa; 
+    scroll-behavior: smooth; 
+}
+
+/* 吸顶导航 */
+.rich-nav { position: sticky; top: 0; z-index: 20; background: #fff; width: 100%; padding: 15px 40px; box-sizing: border-box; display: flex; gap: 10px; overflow-x: auto; border-bottom: 1px solid #eee; box-shadow: 0 2px 8px rgba(0,0,0,0.02); min-height: 60px; flex-shrink: 0; }
+.rich-nav::-webkit-scrollbar { display: none; }
+.rich-nav button { padding: 6px 18px; border-radius: 20px; background: #f5f5f5; border: 1px solid transparent; color: #666; font-weight: 400; font-size: 20px; white-space: nowrap; transition: 0.2s; flex-shrink: 0; line-height: normal; }
+.rich-nav button:hover { background: #e0e6ed; color: var(--primary); }
+.rich-nav button:active { background: var(--primary-light); }
+
+/* 卡片 */
+.rich-section { background: #fff; padding: 30px 40px; border-radius: 20px; width: calc(100% - 40px); max-width: 1200px; margin-top: 20px; margin-bottom: 0; box-shadow: 0 4px 15px rgba(0,0,0,0.04); border: 1px solid rgba(0,0,0,0.02); box-sizing: border-box; scroll-margin-top: 80px; }
+.rich-section:last-child { margin-bottom: 80vh; }
+.rich-section h3 { margin-top: 0; font-size: 28px; color: #2c3e50; font-weight: 500; line-height: 1.2; border-left: none; padding-left: 0; border-bottom: 1px solid #eee; padding-bottom: 10px; margin-bottom: 15px; }
+
+/* 标题样式 */
+.level-1 { font-size: 26px; font-weight: 400; color: #1a1a1a; margin: 15px 0 15px; }
+.level-2 { font-size: 20px; font-weight: 400; color: #1a1a1a; margin: 15px 0 15px; display: flex; align-items: center; }
+.level-3 { font-size: 18px; font-weight: 400; color: #444; margin: 15px 0 8px; }
+.level-4 { font-size: 16px; font-weight: 400; color: #666; display: inline-block; }
+
+/* 标签样式 */
+.rich-phonetic { display: inline-block; font-size: 20px; line-height: 1.5; padding: 1px 8px; font-family: "Lucida Sans Unicode", "Arial Unicode MS", sans-serif; color: #D900B6; background: #d900b51d; border-radius: 4px; vertical-align: middle; margin-right: 6px; }
+.rich-tag { display: inline-block; font-size: 20px; line-height: 1.5; padding: 1px 10px; font-weight: 400; text-transform: uppercase; border-radius: 4px; border: 1px solid transparent; vertical-align: middle; margin-right: 6px; }
+.tag-pos { background: #f0f3ff; color: var(--primary); }
+
+/* ============ 文本与释义基础样式 (CN/EN) ============ */
+/* [CN] 中文释义：强制换行 */
+.text-cn { 
+    display: block; font-size: 20px; font-weight: 400; color: #112649; margin-top:8px; 
+}
+
+/* [EN] 英文释义：强制换行 */
+.text-en { 
+    display: block; font-size: 20px; color: #112649;font-weight: 400; margin-top:8px; 
+}
+
+/* ============ [DEF] 基本用法 (带胶囊标志) ============ */
+/* 容器 */
+.def-block { 
+    background: #f9f9f9; border-radius: 12px; padding: 20px; 
+    margin-bottom: 20px; border: 1px solid #eee; 
+}
+.def-block .text-cn, .def-block .rich-tag, .def-block .rich-phonetic { 
+    display: inline-block; vertical-align: middle !important; 
+}
+
+/* [EN] 英文解释 -> 橙色 #F59A23 */
+.def-block .text-en { 
+    display: block; font-size: 26px; color: #F59A23; 
+    font-family: "Segoe UI", sans-serif; line-height: 1.5; 
+    margin-bottom: 15px; margin-left: 0; padding-left: 0; 
+}
+/* 英文解释胶囊 */
+.def-block .text-en::before {
+    content: "英文解释";
+    display: inline-block; padding: 2px 8px; border-radius: 6px; margin-right: 10px;
+    font-size: 16px; font-weight: normal; vertical-align: middle;
+    color: #F59A23; background-color: rgba(245, 154, 35, 0.25); /* 25% 透明度 */
+    transform: translateY(-4px);
+}
+
+/* 2. [DEF] 里的中文释义 (优化版) */
+.def-block .text-cn {
+    display: inline-block;
+    color: #888;
+    font-size: 18px;
+    font-weight: 400;
+     /* 内边距让文字右移了 10px */
+    padding: 3px 10px;       
+    /* 【核心修复】使用负边距向左拉回 10px，让文字和下面的英文左对齐 */
+    margin-left: -10px;      
+    margin-right: 6px;       /* 保持和右边词性的距离 */
+    vertical-align: middle;
+    line-height: 1.5;
+}
+
+/* 中文解释胶囊 */
+.def-block .text-cn::before {
+    content: "中文解释";
+    display: inline-block; padding: 2px 8px; border-radius: 6px; margin-right: 8px;
+    font-size: 14px; font-weight: normal; vertical-align: middle;
+    color: #888; background-color: rgba(136, 138, 138, 0.25);
+    transform: translateY(-2px);
+}
+
+/* [DU] 情景理解 -> 青色 #008080 */
+.text-du { 
+    display: block; margin-top: 12px; padding-top: 12px; 
+    border-top: 1px dashed #ddd; font-size: 15px; line-height: 1.6; 
+}
+.text-du .en { 
+    color: #008080; font-size: 24px; font-weight: 400; 
+    display: block; margin-bottom: 4px; 
+}
+/* 情景理解胶囊 */
+.text-du .en::before {
+    content: "情景理解";
+    display: inline-block; padding: 2px 8px; border-radius: 6px; margin-right: 10px;
+    font-size: 16px; font-weight: normal; vertical-align: middle;
+    color: #008080; background-color: rgba(0, 128, 128, 0.25);
+    transform: translateY(-4px);
+}
+.text-du .cn { color: #888; display: block; font-size: 18px; }
+
+
+/* ============ [COLL] 固定搭配 (终极修复：流式布局) ============ */
+
+/* 1. 外框容器：保持卡片样式 */
+.col-block {
+    background: #fff;
+    border: 1px solid #f0f0f0;
+    border-radius: 8px;
+    padding: 20px 25px;
+    margin-bottom: 25px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.03);
+    display: block; 
+    position: relative;
+}
+
+/* 2. 标题行：关键！改为 block，让内部元素像文字一样流动 */
+.col-header {
+    display: block;  /* 【重点】取消 flex，禁止强制换行 */
+    border-bottom: 1px dashed #eee;
+    padding-bottom: 10px;
+    margin-bottom: 15px;
+    line-height: 1.6; /* 优化行高，让中英文混排更舒服 */
+}
+
+/* 3. 英文部分 */
+.col-header .text-en {
+    display: inline; /* 【重点】内联显示 */
+    font-family: "Segoe UI", sans-serif;
+    font-size: 30px;
+    font-weight: 500;
+    color: #D9001B;
+    margin-right: 15px; /* 英文和中文之间的距离 */
+    vertical-align: middle;
+}
+
+/* “常见搭配”胶囊标记 */
+.col-header .text-en::before {
+    content: "常见搭配";
+    display: inline-block;
+    padding: 2px 8px;
+    border-radius: 6px;
+    margin-right: 10px;
+    font-size: 14px;
+    font-weight: normal;
+    vertical-align: middle;
+    color: #D9001B;
+    background-color: rgba(217, 0, 27, 0.15);
+    transform: translateY(-3px);
+}
+
+/* 4. 中文部分 */
+.col-header .text-cn {
+    display: inline; /* 【重点】内联显示，紧跟英文 */
+    font-size: 18px;
+    color: #888;
+    vertical-align: middle;
+}
+
+/* 标题里的词性 (如果有的话) */
+.col-header .rich-tag {
+    padding: 1px 6px; border-radius: 4px;
+    margin-left: 5px;
+    vertical-align: 2px; /* 修正词性标签的对齐 */
+}
+
+/* 6. 底部的小短语胶囊 [C] */
+.col-chip {
+    display: inline-block !important;
+    border: 1px dashed #FFB3C1;
+    background: rgba(255, 179, 193, 0.18);
+    border-radius: 4px;
+    padding: 4px 12px;
+    margin-right: 10px;
+    margin-top: 10px;
+    font-size: 20px;
+    color: #A34075;
+    min-width: 80px;
+    text-align: center;
+}
+
+
+/* ============ [EX] 例句样式 (区分通用与COLL内) ============ */
+
+/* 1. 通用例句 -> 蓝色 #027DB4 */
+.block-example { 
+    display: block; margin: 15px 0; padding-left: 15px; 
+    border-left: 3px solid #e0e0e0; transition: 0.3s; 
+}
+.block-example:hover { border-left-color: #027DB4; }
+
+.block-example .en { 
+    display: block; font-size: 30px; color: #027DB4; 
+    font-weight: 500; margin-bottom: 4px; 
+}
+/* 通用例句胶囊 */
+.block-example .en::before {
+    content: "例句";
+    display: inline-block; padding: 2px 8px; border-radius: 6px; margin-right: 10px;
+    font-size: 16px; font-weight: normal; vertical-align: middle;
+    color: #027DB4; background-color: rgba(2, 125, 180, 0.25);
+    transform: translateY(-4px);
+}
+.block-example .cn { 
+    display: block; font-size: 16px; color: #888; font-weight: 400; 
+}
+
+
+/* 2. [COLL] 内部的例句 -> 深蓝色 #1565C0 (避免与上方红色标题冲突，更和谐) */
+.col-block .block-example { 
+    margin: 10px 0; padding-left: 12px; border-left: 3px solid #e0e0e0; 
+}
+.col-block .block-example:hover { 
+    border-left-color: #1565C0 !important; /* 强制覆盖通用hover */
+}
+
+/* 覆盖英文颜色 */
+.col-block .block-example .en { 
+    color: #1565C0 !important; 
+}
+
+/* 覆盖胶囊样式 (COLL内的例句) */
+.col-block .block-example .en::before {
+    content: "例句";
+    color: #1565C0 !important; 
+    background-color: rgba(21, 101, 192, 0.25) !important;
+}
+
+
+/* ============ 误区与提示块 ============ */
+.block-mistake, .block-cr, .block-co, .block-cb { margin: 20px 0; padding: 15px; border-radius: 8px; font-size: 28px; border-style: dashed; border-width: 1px; }
+.block-mistake { border: 1px dashed #ffcfcf; background: #fffdfd; color: #d32f2f; }
+.block-cr { color: #70B603; border-color: #70B603; background: rgba(112, 182, 3, 0.06); }
+.block-co { color: #F59A23; border-color: #F59A23; background: rgba(245, 154, 35, 0.06); }
+.block-cb { color: #02A7F0; border-color: #02A7F0; background: rgba(2, 167, 240, 0.06); }
+
+
+/* ============ [IMG] 点击放大后的弹窗样式 (Text Tab 优化版) ============ */
+
+/* 1. 弹窗容器 */
+.image-modal { 
+    display: none;        /* JS 控制显示/隐藏 */
+    position: fixed; 
+    z-index: 10000;       /* 保证层级最高 */
+    left: 0; 
+    top: 0; 
+    width: 100%; 
+    height: 100%; 
+    
+    /* 👇 修改点 1：背景改为纯白 */
+    background-color: #fff !important; 
+    
+    /* 👇 修改点 2：禁止滚动条 */
+    overflow: hidden !important; 
+}
+
+/* 2. 图片本体 (全屏居中) */
+.modal-content { 
+    display: block;
+    position: absolute;   /* 使用绝对定位 */
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); /* 配合 top/left 实现完美垂直水平居中 */
+    
+    /* 👇 修改点 3：最大限度放大，撑满宽高 */
+    width: 100% !important; 
+    height: 100% !important; 
+    max-width: 100% !important; 
+    max-height: 100% !important; 
+    
+    /* 👇 核心：保持比例完整显示 (类似 Scene 的效果) */
+    object-fit: contain !important; 
+    
+    /* 去掉多余样式 */
+    margin: 0 !important; 
+    border-radius: 0 !important; 
+    box-shadow: none !important; 
+    background: #fff; /* 确保图片透明部分背景也是白的 */
+}
+
+/* 3. 关闭按钮 (适配白底) */
+.close-btn { 
+    position: absolute; 
+    top: 20px; 
+    right: 20px; 
+    
+    /* 👇 修改点 4：颜色改为深灰，否则在白底上看不见 */
+    color: #555 !important; 
+    
+    font-size: 40px; 
+    font-weight: bold; 
+    cursor: pointer; 
+    z-index: 10001;       /* 保证在图片上层 */
+    
+    /* 增加一个半透明圆底，防止图片如果是深色时看不清按钮 */
+    width: 50px;
+    height: 50px;
+    line-height: 45px;
+    text-align: center;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.8); 
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    transition: all 0.2s;
+}
+
+.close-btn:hover {
+    color: #000 !important;
+    background: #f0f0f0;
+    transform: scale(1.1);
+}
+.big-image { display: block; width: calc(100% - 40px); max-width: 800px; margin: 0 auto 30px; border-radius: 12px; box-shadow: 0 4px 15px rgba(0,0,0,0.1); cursor: zoom-in; }
+
+.rich-img-group { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; padding: 0 20px; margin: 20px 0; width: 100%; box-sizing: border-box; }
+.rich-img-group img { width: 100%; aspect-ratio: 1.414 / 1; object-fit: cover; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.05); cursor: zoom-in; transition: transform 0.2s ease; display: block; background: #f0f0f0; }
+.rich-img-group img:hover { transform: scale(1.03); box-shadow: 0 5px 15px rgba(0,0,0,0.15); }
+@media (max-width: 600px) { .rich-img-group { grid-template-columns: repeat(2, 1fr); } }
+
+.scene-images { display: grid; gap: 35px; padding: 0 35px; margin: 20px 0; width: 100%; box-sizing: border-box; align-items: center; justify-items: center; }
+.scene-image { width: 100%; height: auto; object-fit: contain; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.05); transition: transform 0.2s ease; cursor: zoom-in; display: block; }
+.scene-image:hover { transform: scale(1.02); }
+.scene-images[data-count="1"] { grid-template-columns: 1fr; }
+.scene-images[data-count="1"] .scene-img-wrapper { width: 100%; display: flex; justify-content: center; }
+.scene-images[data-count="1"] .scene-image { width: auto; max-width: 100%; max-height: 450px; }
+.scene-images[data-count="2"] { grid-template-columns: 1fr 1fr; }
+.scene-images:not([data-count="1"]):not([data-count="2"]) { grid-template-columns: 1fr 1fr 1fr; }
+
+/* ============ [IMG] 单张图片缩略图优化 (Text Tab) ============ */
+
+/* 1. 容器布局：保持 Flex 居中 */
+.rich-img-group[data-count="1"] {
+    display: flex !important;    /* 强制 Flex */
+    justify-content: left;     /* 水平居中 */
+    grid-template-columns: none; /* 取消网格 */
+    padding: 0;
+    margin: 15px 0;              /* 上下留一点间距 */
+}
+
+/* 2. 图片尺寸控制 (核心修改) */
+.rich-img-group[data-count="1"] img {
+    /* 👇 核心修改点：调小这里的数值 👇 */
+    max-height: 200px !important;   /* 高度限制：从 500px 改为 200px (根据喜好调整) */
+    max-width: 60% !important;      /* 宽度限制：只占屏幕/容器宽度的 60% */
+    
+    /* 其它保持不变，确保比例正确 */
+    width: auto !important;         /* 宽度自动，保持比例 */
+    height: auto !important;        /* 高度自动 */
+    aspect-ratio: auto !important;  /* 取消 16:9 或 4:3 的强制裁剪 */
+    
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1); /* 加点阴影更像卡片 */
+    border-radius: 8px;
+    cursor: zoom-in;                /* 鼠标指针变为放大镜 */
+    background: #fff;
+}
+
+/* 📱 手机端适配：手机屏幕小，可以让缩略图稍微宽一点 */
+@media (max-width: 768px) {
+    .rich-img-group[data-count="1"] img {
+        max-width: 90% !important;  /* 手机上允许占宽一点，看清内容 */
+        max-height: 220px !important;
+    }
+}
+
+/* ============ 1. 游戏容器 (用于 Tab 页和 Quiz 页) ============ */
+.game-container { width: 100%; display: flex; justify-content: center; padding: 20px 0; margin-bottom: 50px; }
+.game-wrapper { width: 100%; max-width: 400px; aspect-ratio: 500 / 380; border-radius: 12px; overflow: hidden; box-shadow: 0 4px 20px rgba(0,0,0,0.1); background: #000; border: 1px solid #eee; }
+.game-wrapper iframe { width: 100%; height: 100%; border: none; display: block; }
+
+.rich-game-group { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; padding: 0 20px; margin: 20px 0; width: 100%; box-sizing: border-box; }
+.rich-game-item { width: 100%; aspect-ratio: 4 / 3; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.05); background: #000; overflow: hidden; border: 1px solid #eee; position: relative; }
+.rich-game-item iframe { width: 100%; height: 100%; border: none; display: block; }
+@media (max-width: 300px) { .rich-game-group { grid-template-columns: 1fr; } }
+
+
+/* ============ 图片 Tab 专属样式 ============ */
+
+/* 1. 白底大卡片容器 */
+.image-box {
+    background: #fff;
+    padding: 30px;           /* 内边距 */
+    border-radius: 20px;     /* 圆角 */
+    box-shadow: 0 4px 15px rgba(0,0,0,0.05); /* 阴影 */
+    width: 100%;
+    max-width: 1000px;       /* 限制最大宽度 */
+    margin: 20px auto;       /* 居中 */
+    box-sizing: border-box;
+    
+    /* 保证盒子有一定高度，且内容垂直居中 */
+    min-height: 400px;       
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+    align-items: center;     /* 水平居中 */
+}
+
+/* 2. 图片网格容器 */
+.scene-images {
+    width: 100%;
+    display: grid;
+    gap: 20px;
+}
+
+/* 3. 图片 wrapper 和 图片本身 */
+.scene-img-wrapper {
+    width: 100%;
+    border-radius: 12px;
+    overflow: hidden;
+    /* 给个默认背景色，图片加载出来前好看点 */
+    background: #f8f9fa; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.scene-image {
+    width: 100%;
+    height: 100%;
+    object-fit: contain; /* 保持比例 */
+    cursor: zoom-in;
+    transition: transform 0.2s ease;
+    border-radius: 12px;
+}
+.scene-image:hover {
+    transform: scale(1.02);
+}
+
+/* ============ 核心：单张图片特殊处理 ============ */
+
+/* 当只有 1 张图时 */
+.scene-images[data-count="1"] {
+    display: flex;           /* 改用 Flex 布局 */
+    justify-content: center; /* 水平居中 */
+    align-items: center;     /* 垂直居中 */
+    height: 100%;
+}
+
+.scene-images[data-count="1"] .scene-img-wrapper {
+    width: auto;             /* 宽度自动，不撑满整行 */
+    max-width: 100%;
+    background: transparent; /* 单图时去掉灰色背景 */
+}
+
+.scene-images[data-count="1"] .scene-image {
+    max-height: 500px;       /* 限制最大高度，防止图太长 */
+    width: auto;             /* 宽度自适应 */
+    max-width: 100%;         /* 但不能超过容器 */
+    box-shadow: 0 4px 20px rgba(0,0,0,0.1); /* 加点投影更精致 */
+}
+
+/* ============ 多张图片布局 ============ */
+
+/* 当有 2 张图时 */
+.scene-images[data-count="2"] {
+    grid-template-columns: 1fr 1fr;
+}
+
+/* 当有 3 张及以上图时 */
+.scene-images:not([data-count="1"]):not([data-count="2"]) {
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+}
+
+/* 针对全屏模式的适配 (可选，让全屏时白底也变大) */
+#tab-content-area:fullscreen .image-box,
+#tab-content-area.pseudo-fullscreen .image-box {
+    max-width: 1400px;
+    min-height: 75vh;
+    padding: 60px;
+}
+/* ============ Quiz & Matching (UI 优化版) ============ */
+
+/* 1. 题目大白卡片：固定最小高度 + 垂直居中 */
+.quiz-box { 
+    background: #fff; 
+    padding: 10px 40px;       /* 增加内边距 */
+    border-radius: 20px;      /* 更圆润的圆角 */
+    width: 100%; 
+    max-width: 950px;        /* 限制最大宽度 */
+    margin: 0 auto; 
+    box-shadow: 0 10px 40px rgba(0,0,0,0.08); /* 柔和投影 */
+    box-sizing: border-box; 
+    
+    /* 【核心代码】固定最小高度，防止切题时高度跳动 */
+    min-height: 500px;        
+    
+    /* 【核心代码】让内容始终垂直居中 */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;  
+}
+
+/* 2. 题干文字*/
+.quiz-q { 
+    font-size: 45px; 
+    line-height: 1.5; 
+    font-weight: 600; 
+    color: #2c3e50; 
+    margin-bottom: 40px; 
+    text-align: left;      
+}
+
+/* 3. 选项容器：网格布局 */
+.quiz-opts { 
+    display: grid; 
+    gap: 20px; 
+    grid-template-columns: 1fr; 
+    width: 100%;
+}
+@media (min-width: 700px) { 
+    .quiz-opts { grid-template-columns: 1fr 1fr; } 
+}
+
+/* 4. 选项按钮：卡片化 + 固定高度 */
+.opt-btn { 
+    background: #f8f9fa;      /* 浅灰底色 */
+    border: 2px solid transparent; 
+    padding: 20px 30px; 
+    border-radius: 12px; 
+    text-align: left; 
+    font-size: 45px; 
+    color: #444; 
+    transition: all 0.2s ease; 
+    
+    display: flex; 
+    align-items: center; 
+    gap: 15px; 
+    cursor: pointer;
+    
+    /* 【核心代码】固定选项最小高度，保证整齐 */
+    min-height: 90px;
+}
+
+/* 选项前的 ABCD 圆圈 */
+.opt-btn span { 
+    width: 44px; height: 44px; 
+    flex-shrink: 0; 
+    font-size: 30px; 
+    font-weight: 400px;
+    display: flex; align-items: center; justify-content: center; 
+    background: #fff; 
+    border-radius: 50%; 
+    color: var(--primary); 
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+}
+
+/* 鼠标悬停效果 */
+.opt-btn:hover { 
+    background: #fff;
+    border-color: var(--primary); 
+    box-shadow: 0 8px 20px rgba(91, 103, 241, 0.15); 
+    transform: translateY(-2px); 
+}
+
+/* 正确/错误状态 */
+.opt-btn.correct { background: #e8f5e9; border-color: var(--green); color: var(--green); }
+.opt-btn.correct span { background: var(--green); color: #fff; }
+.opt-btn.wrong { background: #ffebee; border-color: var(--red); color: var(--red); }
+.opt-btn.wrong span { background: var(--red); color: #fff; }
+
+/* 分页按钮 (位于白卡片外部上方) */
+.quiz-pagination { 
+    display: flex; 
+    justify-content: center; 
+    gap: 12px; 
+    
+    /* 【修改】调整边距 */
+    margin-top: 10px;      /* 离顶部Tab稍微有点距离 */
+    margin-bottom: 25px;   /* 离下面的白卡片远一点，不要贴着 */
+    
+    flex-wrap: wrap; 
+}
+
+/* 按钮样式不变 */
+.quiz-page-btn { 
+    width: 44px; height: 44px; 
+    border-radius: 50%; 
+    background: #fff;       /* 白底 */
+    border: 2px solid #eee; /* 浅灰框 */
+    color: #666; 
+    font-size: 18px; 
+    font-weight: 600; 
+    display: flex; align-items: center; justify-content: center; 
+    transition: all 0.2s ease; 
+    box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+}
+.quiz-page-btn:hover { border-color: var(--primary); color: var(--primary); }
+.quiz-page-btn.active { background: var(--primary); border-color: var(--primary); color: #fff; box-shadow: 0 4px 10px rgba(91, 103, 241, 0.3); transform: scale(1.1); }
+
+/* 配对题样式 (保持兼容) */
+.match-container { display: flex; justify-content: space-between; gap: 20px; margin-top: 20px; }
+.match-col { flex: 1; display: flex; flex-direction: column; gap: 15px; }
+.match-item { background: #fff; border: 2px solid #e0e6ed; padding: 15px; border-radius: 8px; text-align: center; cursor: pointer; transition: 0.2s; font-size: 16px; color: #444; user-select: none; }
+.match-item:hover { border-color: var(--primary); background: #f8f9fa; }
+.match-item.selected { background: var(--primary); color: #fff; border-color: var(--primary); box-shadow: 0 4px 12px rgba(91,103,241,0.3); }
+.match-item.matched { background: #e8f5e9; border-color: var(--green); color: var(--green); opacity: 0.6; cursor: default; pointer-events: none; }
+.match-item.error { background: #ffebee; border-color: var(--red); color: var(--red); animation: shake 0.4s; }
+@media (max-width: 600px) { .match-container { flex-direction: row; } .match-item { font-size: 14px; padding: 10px 5px; } }
+.match-item.has-image { padding: 5px; display: flex; align-items: center; justify-content: center; min-height: 80px; }
+.match-img { max-width: 100%; max-height: 100px; border-radius: 4px; object-fit: contain; display: block; }
+@media (max-width: 600px) { .match-container { flex-direction: row; } .match-item { font-size: 14px; padding: 10px 5px; } }
+/* 图片连线适配 */
+.match-item.has-image {
+    padding: 5px; /* 图片卡片内边距小一点 */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 80px; /* 保证卡片有一定高度 */
+}
+
+.match-img {
+    max-width: 100%;
+    max-height: 100px; /* 限制图片最大高度，防止撑破界面 */
+    border-radius: 4px;
+    object-fit: contain;
+    display: block;
+}
+
+
+/* ============ 2. 底部大号 Next 按钮 (还原) ============ */
+.btn-big-next {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    max-width: 320px;
+    
+    /* 【还原】普通模式下保持宽松的间距 */
+    margin: 40px auto 60px; 
+    
+    padding: 18px 0;
+    background: var(--primary);
+    color: #fff;
+    font-size: 20px;
+    font-weight: 700;
+    border-radius: 50px;
+    box-shadow: 0 8px 25px rgba(91, 103, 241, 0.4);
+    transition: all 0.2s ease;
+    cursor: pointer;
+}
+
+.btn-big-next:hover {
+    transform: translateY(-3px) scale(1.02);
+    box-shadow: 0 12px 30px rgba(91, 103, 241, 0.5);
+    background: #4a56e0;
+}
+
+.btn-big-next:active {
+    transform: scale(0.98);
+}
+/* ============ Quiz 全屏缩放按钮 ============ */
+.btn-quiz-zoom {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    width: 32px;
+    height: 32px;
+    background: transparent;
+    border: none;
+    color: #ccc; /* 默认浅灰色，不抢眼 */
+    cursor: pointer;
+    transition: all 0.2s;
+    z-index: 10;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.btn-quiz-zoom:hover {
+    color: var(--primary); /* 悬停变色 */
+    transform: scale(1.1);
+    background: rgba(91, 103, 241, 0.05);
+    border-radius: 6px;
+}
+
+/* 修复：确保 quiz-box 是相对定位，这样按钮才能定在它右上角 */
+.quiz-box {
+    position: relative; 
+    /* ...原有样式保持不变... */
+}
+
+/* ============ 全屏模式下的样式修正 ============ */
+/* 当容器全屏时，强制白色/灰色背景，并保持居中布局 */
+#tab-content-area:fullscreen {
+    background-color: var(--bg-gray); /* 保持原本的浅灰背景 */
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow-y: auto; /* 内容多了可以滚动 */
+    justify-content: center; /* 内容少时垂直居中 */
+}
+
+/* 针对 Webkit 浏览器 (Chrome/Safari) 的全屏伪类 */
+#tab-content-area:-webkit-full-screen {
+    background-color: var(--bg-gray);
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow-y: auto;
+}
+/* ============ 屏幕右下角悬浮全屏按钮 ============ */
+.btn-fixed-zoom {
+    position: fixed;        /* 固定定位：相对于屏幕窗口 */
+    bottom: 30px;           /* 距离底部 30px */
+    right: 30px;            /* 距离右侧 30px */
+    z-index: 1000;          /* 保证在最上层 */
+    
+    width: 50px;
+    height: 50px;
+    background: #fff;       /* 白底 */
+    border-radius: 50%;     /* 圆形 */
+    box-shadow: 0 4px 15px rgba(0,0,0,0.15); /* 漂亮的投影 */
+    border: 1px solid #eee;
+    
+    color: #555;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275); /* 弹性动画 */
+}
+
+/* 鼠标悬停 */
+.btn-fixed-zoom:hover {
+    transform: scale(1.15) rotate(90deg); /* 放大并旋转一点点 */
+    color: var(--primary);
+    box-shadow: 0 8px 25px rgba(91, 103, 241, 0.3);
+}
+
+
+
+
+/* ============ 📺 全屏沉浸模式专属优化 (最终兼容版) ============ */
+
+/* 1. 伪全屏机制：强制覆盖整个窗口 */
+.pseudo-fullscreen {
+    position: fixed !important;
+    top: 0 !important;
+    left: 0 !important;
+    width: 100vw !important;
+    height: 100vh !important;
+    z-index: 2147483647 !important; /* 调到最大值，防止被其他元素遮挡 */
+    background-color: var(--bg-gray) !important;
+    margin: 0 !important;
+    box-sizing: border-box !important;
+}
+
+/* 2. 容器样式：适用于 原生全屏 和 伪全屏 */
+#tab-content-area:fullscreen,
+#tab-content-area.pseudo-fullscreen {
+    background-color: var(--bg-gray);
+    padding: 10px 0 0 0; /* 您的微调：顶部留白 10px */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow-y: auto;
+    justify-content: flex-start; /* 从顶部开始排列 */
+}
+
+/* 3. 白底卡片 */
+#tab-content-area:fullscreen .quiz-box,
+#tab-content-area.pseudo-fullscreen .quiz-box {
+    max-width: 1400px;
+    width: 95%;
+    min-height: 75vh; /* 您的微调：70vh */
+    padding: 60px 60px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+
+/* 4. Next 按钮 */
+#tab-content-area:fullscreen .btn-big-next,
+#tab-content-area.pseudo-fullscreen .btn-big-next {
+    max-width: 400px;
+    font-size: 24px;
+    padding: 20px 0;
+    margin-top: 10px; /* 您的微调：20px */
+    margin-bottom: 0px;
+}
+
+/* 5. 字体放大 */
+#tab-content-area:fullscreen .quiz-q,
+#tab-content-area.pseudo-fullscreen .quiz-q {
+    font-size: 38px;
+    margin-bottom: 60px;
+    line-height: 1.4;
+}
+
+#tab-content-area:fullscreen .opt-btn,
+#tab-content-area.pseudo-fullscreen .opt-btn {
+    font-size: 26px;
+    padding: 25px 40px;
+    min-height: 110px;
+    border-radius: 16px;
+}
+
+#tab-content-area:fullscreen .opt-btn span,
+#tab-content-area.pseudo-fullscreen .opt-btn span {
+    width: 56px;
+    height: 56px;
+    font-size: 24px;
+    margin-right: 20px;
+}
+
+#tab-content-area:fullscreen .game-wrapper,
+#tab-content-area.pseudo-fullscreen .game-wrapper {
+    max-width: 650px; /* 您的微调：650px */
+    aspect-ratio: 16 / 9;
+}
+/* 8. 缩小全屏模式下的顶部页码按钮 */
+#tab-content-area:fullscreen .quiz-page-btn,
+#tab-content-area.pseudo-fullscreen .quiz-page-btn {
+    /* 默认是 44px，这里调小到 30px */
+    width: 30px;       
+    height: 30px;
+    
+    /* 字体也相应调小 */
+    font-size: 13px;   
+    
+    /* 如果觉得按钮之间太宽，可以微调外边距（可选） */
+    margin: 0 2px;
+}
+
+/* 9. 调整页码容器的间距（让排列更紧凑） */
+#tab-content-area:fullscreen .quiz-pagination,
+#tab-content-area.pseudo-fullscreen .quiz-pagination {
+    gap: 8px;  /* 默认是 12px，调小间隙 */
+    
+    /* 调整页码栏和下面白卡片的距离 */
+    margin-bottom: 10px; 
+}
+/* ============ 进度信息 (左下角外部) ============ */
+.quiz-info-text {
+    position: absolute;
+    left: 0;
+    bottom: -60px; /* 放在白卡片下方 */
+    width: 100%;
+    text-align: left; /* 左对齐 */
+    
+    font-size: 18px;
+    color: #888;
+    line-height: 1.5;
+    pointer-events: none; /* 防止遮挡点击 */
+    white-space: nowrap;
+}
+
+/* 全屏模式下，稍微往下一点，防止太挤 */
+#tab-content-area:fullscreen .quiz-info-text,
+#tab-content-area.pseudo-fullscreen .quiz-info-text {
+    bottom: -70px;
+    font-size: 20px; /* 全屏时字号稍大一点点 */
+}
+/* ============ 🃏 创建游戏模式 UI ============ */
+.btn-create-game {
+    width: 100%;
+    padding: 10px;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    border-radius: 8px;
+    font-weight: bold;
+    box-shadow: 0 4px 10px rgba(118, 75, 162, 0.3);
+    transition: all 0.2s;
+}
+.btn-create-game:active { transform: scale(0.98); }
+
+.btn-action-primary { flex:1; background: var(--primary); color:#fff; padding:8px; border-radius:6px; }
+.btn-action-cancel { flex:1; background: #eee; color:#666; padding:8px; border-radius:6px; }
+
+/* 复选框样式 */
+.word-checkbox {
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+    accent-color: var(--primary);
+    cursor: pointer;
+}
+
+/* 弹窗样式 */
+.modal-overlay {
+    position: fixed; top:0; left:0; width:100%; height:100%;
+    background: rgba(0,0,0,0.5); z-index: 2000;
+    display: flex; justify-content: center; align-items: center;
+}
+/* 增大弹窗宽度 */
+.config-box {
+    background: #fff; 
+    padding: 30px; 
+    border-radius: 15px; 
+    /* 👇 修改这里：宽度从 300px 改为 550px，并加上最大宽度限制以适配手机 */
+    width: 550px;
+    max-width: 90%; 
+    text-align: center; 
+    box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+}
+/* 修改配置行的布局：改为居中对齐，让下拉框往左靠 */
+.config-row { 
+    margin: 20px 0; 
+    display: flex; 
+    justify-content: left; /* 👈 核心改动：从 space-between 改为 center */
+    align-items: left; 
+    gap: 15px; /* 👈 新增：让标签和下拉框之间保持舒适距离 */
+}
+
+/* 稍微优化下标签，防止换行 */
+.config-row label {
+    white-space: nowrap;
+    font-weight: bold;
+    color: #555;
+}
+
+/* 稍微美化下拉框 */
+.config-row select {
+    padding: 8px 12px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    font-size: 14px;
+    outline: none;
+    cursor: pointer;
+    background-color: #f9f9f9;
+}
+/* ============ 弹窗按钮样式优化 ============ */
+
+/* 统一按钮容器布局：居中显示更美观 */
+.config-actions { 
+    display: flex; 
+    gap: 20px; 
+    justify-content: center; /* 按钮居中 */
+    margin-top: 30px; 
+}
+
+/* 1. 新增：取消按钮 (灰色背景) */
+.btn-cancel {
+    background: #f0f2f5;       /* 浅灰背景 */
+    color: #666;               /* 深灰文字 */
+    padding: 10px 35px;        /* 👈 增加内边距，让按钮看起来更大气 */
+    border-radius: 8px;
+    font-size: 15px;
+    font-weight: bold;
+    border: 1px solid #e0e0e0; /* 淡淡的边框增加质感 */
+    transition: all 0.2s;
+    margin-top: 30px;
+}
+
+.btn-cancel:hover {
+    background: #e4e6eb;       /* 悬停加深 */
+    color: #333;
+    transform: translateY(-1px);
+}
+
+/* 2. 更新：确认按钮 (确保与取消按钮大小一致) */
+.btn-confirm { 
+    background: var(--primary); 
+    color: #fff; 
+    padding: 10px 35px;        /* 👈 保持与 btn-cancel 完全一致 */
+    border-radius: 8px; 
+    font-size: 15px;
+    font-weight: bold;
+    box-shadow: 0 4px 12px rgba(91, 103, 241, 0.3); /* 加点投影更突出 */
+    transition: all 0.2s;
+    margin-top: 30px;
+}
+
+.btn-confirm:hover {
+    transform: translateY(-1px);
+    box-shadow: 0 6px 15px rgba(91, 103, 241, 0.4);
+}
+
+
+/* ============ 🎬 游戏场景与视频背景 ============ */
+#game-fullscreen-container {
+    position: fixed; top: 0; left: 0; width: 100vw; height: 100vh;
+    background: #000; z-index: 99999;
+    display: flex; flex-direction: column; align-items: center; justify-content: center;
+}
+
+/* 视频层：作为背景 */
+#game-video-bg {
+    position: absolute; top: 0; left: 0; width: 100%; height: 100%;
+    object-fit: cover; z-index: 1;
+    opacity: 1; transition: opacity 0.5s;
+}
+
+/* 游戏层：覆盖在视频上 */
+#game-board-layer {
+    position: relative; z-index: 10;
+    width: 100%; height: 100%; /* 确保层撑满屏幕 */
+    display: flex; 
+    flex-direction: column; 
+    align-items: center; 
+    justify-content: center; /* 垂直居中核心 */
+    opacity: 0; transition: opacity 1s;
+}
+
+/* 退出按钮 */
+.btn-exit-game {
+    position: absolute; top: 20px; right: 20px; z-index: 20;
+    background: rgba(255,255,255,0.2); color: #fff; border: 1px solid #fff;
+    padding: 5px 15px; border-radius: 20px; backdrop-filter: blur(5px);
+}
+
+/* ============ 🎴 翻牌卡片样式 (UI 撑满屏幕极简版) ============ */
+.spooky-grid {
+    display: grid; 
+    /* grid-template-columns 由 JS 动态计算 */
+    
+    /* 间距 */
+    gap: 1.5vh 1.5vw; 
+    
+    /* 容器尺寸 */
+    width: 98%;   
+    max-width: 1600px; 
+    height: 100%; 
+    
+    /* 整体居中 */
+    margin: 0 auto;
+    align-content: center;
+    justify-content: center;
+    
+    perspective: 1000px;
+}
+
+.spooky-card {
+    position: relative; 
+    
+    /* 1. 【核心修复】尺寸控制 */
+    /* 改回宽度撑满，高度自动，这样绝对不会塌陷成小点 */
+    width: 95%;
+    height: auto;
+    
+    /* 2. 【核心】锁定 3:4 比例 */
+    aspect-ratio: 3 / 4; 
+    
+    /* 3. 【巧妙限制】限制最大宽度，间接限制高度 */
+    /* 原理：最大高度想限制在 46vh，按 3:4 比例换算，最大宽度就是 46vh * 0.75 ≈ 34.5vh */
+    /* 这样既保证了比例，又保证了高度不会撑破屏幕，也不会塌陷 */
+    max-width: 30vh;
+    
+    /* 4. 居中显示 */
+    margin: 0 auto;
+    justify-self: center;
+    align-self: center;
+    
+    cursor: pointer;
+    transform-style: preserve-3d; 
+    transition: transform 0.6s cubic-bezier(0.4, 0.0, 0.2, 1);
+    
+    /* 阴影与圆角 */
+    box-shadow: 0 6px 16px rgba(0,0,0,0.3);
+    border-radius: 12px;
+    
+    /* 独立透视 */
+    transform-origin: center center;
+    transform: perspective(2000px) rotateY(0deg);
+}
+
+
+
+   /* ============ 🎴 翻牌卡片样式 (修复翻牌卡顿版) ============ */
+.spooky-card {
+    position: relative; 
+    width: 95%;
+    height: auto;
+    aspect-ratio: 3 / 4; 
+    max-width: 30vh;
+    margin: 0 auto;
+    justify-self: center;
+    align-self: center;
+    cursor: pointer;
+    transform-style: preserve-3d; 
+    transition: transform 0.6s cubic-bezier(0.4, 0.0, 0.2, 1);
+    box-shadow: 0 6px 16px rgba(0,0,0,0.3);
+    border-radius: 12px;
+    transform-origin: center center;
+    transform: perspective(2000px) rotateY(0deg);
+}
+
+/* 👇 1. 先写 hover 样式 (优先级较低) */
+.spooky-card:hover {
+    box-shadow: 0 10px 25px rgba(0,0,0,0.5); 
+    /* 只有在没翻牌的时候才应用这个 transform，防止冲突 */
+    /* 或者简单地让它只做位移，不强制 rotateY(0deg) */
+    transform: perspective(2000px) rotateY(0deg) translateY(-2px); 
+}
+
+/* 👇 2. 后写 flipped 样式 (优先级较高，覆盖 hover) */
+.spooky-card.flipped { 
+    /* 这里的 !important 虽然不是必须的(如果顺序对了)，但加上保险，确保一定翻过去 */
+    transform: perspective(2000px) rotateY(180deg); 
+}
+
+/* 配对消除 */
+.spooky-card.matched { 
+    visibility: hidden; 
+    opacity: 0; 
+    transition: opacity 0.5s 0.5s; 
+}
+
+
+
+.face {
+    position: absolute; width: 100%; height: 100%;
+    backface-visibility: hidden; border-radius: 12px; /* 圆角稍微大一点更现代 */
+    display: flex; justify-content: center; align-items: center;
+   
+}
+
+
+/* ============ 🎨 动态主题支持 ============ */
+
+/* 1. 卡牌背面 */
+.face.back {
+    background-color: #fff; 
+    /* 👇 核心修改：使用变量，如果没有变量则使用默认图 */
+    background-image: var(--card-back, url('https://cdn.jsdelivr.net/gh/mengmeng0415/wordpic01/spookythumb.png'));
+    background-size: cover; 
+    background-position: center;
+    background-repeat: no-repeat;
+    border: 2px solid rgba(255,255,255,0.6);
+}
+/* ============ 修改卡牌正面样式 (统一图文版) ============ */
+
+/* 2. 卡牌正面背景 */
+.face.front {
+    transform: rotateY(180deg);
+    background-color: #fff; 
+    /* 👇 核心修改：使用变量 */
+    background-image: var(--card-front-bg, url('https://cdn.jsdelivr.net/gh/mengmeng0415/wordpic01/spookyface.png'));
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border: 3px solid #fff; 
+    box-sizing: border-box; 
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+  /*  justify-content: center; */
+    align-items: center;
+    /*gap: 5px;*/
+}
+/* 3. 新增：主题选择器样式 (用于弹窗和开始界面) */
+.theme-selector {
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+    margin: 15px 0;
+}
+.theme-option {
+    width: 120px;
+    height: 90px;
+    border-radius: 8px;
+    border: 3px solid transparent;
+    cursor: pointer;
+    background-size: cover;
+    background-position: center;
+    transition: transform 0.2s;
+    position: relative;
+}
+.theme-option:hover { transform: scale(1.1); }
+.theme-option.selected { border-color: var(--primary); box-shadow: 0 0 10px var(--primary); transform: scale(1.1); }
+.theme-option span {
+    position: absolute; bottom: -20px; left: 50%; transform: translateX(-50%);
+    font-size: 10px; white-space: nowrap; color: #333; font-weight: bold;
+}
+/* 开始界面上的主题选项文字要是白色的 */
+#game-start-overlay .theme-option span { color: #fff; text-shadow: 0 1px 3px #000; }
+
+/* 2. 图片容器 (用于控制1:1比例) */
+/* 2. 图片容器 (用于控制1:1比例) - 强制生效版 */
+.front-img-container {
+    /* 👇 核心：强制宽度 90%，横向撑开 */
+    width: 90% !important;          
+    
+    /* 保持 1:1 的正方形比例 */
+    aspect-ratio: 1 / 1;  
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    /* 强制去掉背景和阴影 */
+    background: transparent !important; 
+    box-shadow: none !important; 
+    
+    /* 👇 核心：强制设置上方圆角 */
+    border-radius: 12px  !important; 
+    
+    /* 👇 核心：强制隐藏溢出，这样图片才会被切成圆角 */
+    overflow: hidden !important;    
+    
+    margin-bottom: 10px;
+}
+
+/* 3. 图片本身 - 强制生效版 */
+.front-img-container img {
+    /* 👇 核心：强制尺寸撑满容器 */
+    width: 100% !important;
+    height: 100% !important;
+    
+    /* 👇 核心：强制按比例填满，不留白 */
+    object-fit: center !important; 
+    
+    display: block; 
+    border-radius: 0 !important; /* 防止图片自身带有其他圆角干扰 */
+}
+
+/* (可选) 没有图片时的占位文字 */
+.no-img-text {
+    color: #ccc;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+/* 4. 下方的单词文本 */
+.front-word-text {
+    font-size: 4vh !important;
+    font-weight: 800;
+    color: #2c3e50;
+    text-align: center;
+    
+    /* 防止长单词换行撑破布局 */
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 98%;
+    
+    /* 加个白色描边，防止背景太花看不清 */
+   /* text-shadow: 0 2px 4px rgba(255,255,255,1); */
+}
+
+/* 手机端适配：稍微减小字体和间距 */
+@media (max-width: 600px) {
+    .face.front { padding: 8px; gap: 6px; }
+    .front-word-text { font-size: 1.8vh; }
+}
+
+.face.front img { 
+    width: 90%; /* 图片大一点 */
+    height: 75%; 
+    object-fit: contain; 
+}
+
+.face.front span { 
+    font-size: 1.5vw; 
+    margin-top: 5px; 
+    color: #333; 
+    font-weight: 800; 
+    
+    /* 文字描白边，确保在任何背景上都能看清 */
+    text-shadow: 0 0 5px #fff, 0 0 5px #fff, 0 0 5px #fff; 
+}
+
+/* 手机竖屏适配 */
+@media (max-width: 768px) {
+    .face.front span { font-size: 16px; } /* 手机上字体设个固定最小值，防止太小 */
+    .spooky-grid { gap: 10px; width: 95%; }
+}
+
+/* 洗牌动画 */
+@keyframes shuffleDeck {
+    0% { transform: translate(0,0); }
+    50% { transform: translate(0, -20px) rotate(5deg); }
+    100% { transform: translate(0,0); }
+}
+.shuffling .spooky-card { animation: shuffleDeck 0.3s ease-in-out infinite; }
+
+/* ============ 🎮 游戏启动遮罩层 ============ */
+.game-start-overlay {
+    position: absolute; 
+    top: 0; 
+    left: 0; 
+    width: 100%; 
+    height: 100%;
+    background: rgba(0, 0, 0, 0.85); /* 深色背景，确保能盖住视频 */
+    z-index: 9999; /* 确保层级最高 */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+}
+
+.btn-game-start {
+    padding: 15px 50px;
+    font-size: 28px;
+    font-weight: 800;
+    color: #fff;
+    background: linear-gradient(45deg, #ff5252, #f48fb1);
+    border: 4px solid #fff;
+    border-radius: 50px;
+    cursor: pointer;
+    box-shadow: 0 0 20px rgba(255, 82, 82, 0.6);
+    transition: transform 0.2s;
+    animation: pulseBtn 1.5s infinite;
+}
+
+.btn-game-start:hover { transform: scale(1.1); }
+.btn-game-start:active { transform: scale(0.95); }
+
+@keyframes pulseBtn {
+    0% { transform: scale(1); box-shadow: 0 0 0 0 rgba(255, 255, 255, 0.7); }
+    70% { transform: scale(1.05); box-shadow: 0 0 0 15px rgba(255, 255, 255, 0); }
+    100% { transform: scale(1); box-shadow: 0 0 0 0 rgba(255, 255, 255, 0); }
+}
+/* ============ 🎭 游戏特效样式 ============ */
+
+/* 1. 背景后退效果 */
+.grid-recede {
+    transform: scale(0.9); /* 整体缩小 */
+    opacity: 0.3;          /* 变暗 */
+    filter: blur(2px);     /* 变模糊 */
+    transition: all 0.5s ease;
+}
+
+/* 2. 印章容器 */
+.stamp-container {
+    position: absolute;
+    top: 0; left: 0; width: 100%; height: 100%;
+    background-size: 80%;
+    background-position: center;
+    background-repeat: no-repeat;
+    opacity: 0;
+    transform: scale(2); /* 初始放大，模拟盖章砸下来的效果 */
+    transition: all 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    z-index: 10;
+    pointer-events: none;
+}
+
+/* 印章显示状态 */
+.stamp-container.show {
+    opacity: 1;
+    transform: scale(1); /* 砸到纸面上 */
+}
+
+/* 3. 错误时的震动动画 */
+.shake {
+    animation: shakeCard 0.5s;
+}
+@keyframes shakeCard {
+    0%, 100% { transform: perspective(2000px) rotateY(180deg) translateX(0); }
+    25% { transform: perspective(2000px) rotateY(180deg) translateX(-10px); }
+    75% { transform: perspective(2000px) rotateY(180deg) translateX(10px); }
+}
+/* ============ 🎭 遮罩层样式 (修复版) ============ */
+
+/* 1. 遮罩层：位于棋盘(默认)之上，但位于主角卡牌(z9999)之下 */
+.grid-overlay {
+    position: absolute;
+    /* 扩大范围，防止边缘露白 */
+    top: -50%; left: -50%; 
+    width: 200%; height: 200%;
+    
+    background: rgba(0, 0, 0, 0.7); /* 70% 黑色背景 */
+    backdrop-filter: blur(8px);     /* 背景模糊 */
+    
+    z-index: 9000; /* 关键层级：比普通卡牌高，比放大卡牌低 */
+    
+    opacity: 0;
+    pointer-events: none; /* 让鼠标穿透，不影响点击 */
+    transition: opacity 0.5s ease;
+}
+
+.grid-overlay.active {
+    opacity: 1; /* 激活时显示 */
+}
+
+/* 2. 确保印章样式存在 */
+.stamp-container {
+    position: absolute;
+    top: 0; left: 0; width: 100%; height: 100%;
+    background-size: 80%;
+    background-position: center;
+    background-repeat: no-repeat;
+    opacity: 0;
+    transform: scale(2); 
+    transition: all 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    z-index: 10;
+    pointer-events: none;
+}
+.stamp-container.show { opacity: 1; transform: scale(1); }
+
+/* 3. 错误震动 */
+.shake { animation: shakeCard 0.5s; }
+@keyframes shakeCard {
+    0%, 100% { transform: perspective(2000px) rotateY(180deg) translateX(0); }
+    25% { transform: perspective(2000px) rotateY(180deg) translateX(-10px); }
+    75% { transform: perspective(2000px) rotateY(180deg) translateX(10px); }
+}
+#game-fullscreen-container {
+    /* 如果视频加载不出来，显示这张图作为背景 */
+    background-image: url('https://cdn.jsdelivr.net/gh/mengmeng0415/wordpic01/spookybackn.png');
+    background-size: cover;
+    background-position: center;
+}
+/* ============ 🏆 胜利结算界面样式 ============ */
+.victory-overlay {
+    position: absolute;
+    top: 0; left: 0; width: 100%; height: 100%;
+    background: rgba(0, 0, 0, 0.85); /* 深色半透明背景 */
+    z-index: 10000; /* 最高层级 */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    pointer-events: none; /* 未显示时不可点击 */
+    transition: opacity 0.5s ease;
+}
+
+.victory-overlay.show {
+    opacity: 1;
+    pointer-events: auto; /* 显示后可点击 */
+}
+
+/* 胜利图片 */
+.victory-img {
+    width: 60%; /* 默认宽度 */
+    max-width: 500px; /* 最大宽度 */
+    height: auto;
+    object-fit: contain;
+    animation: popIn 0.8s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    margin-bottom: 30px;
+}
+
+/* OK 按钮 */
+.btn-victory-ok {
+    padding: 12px 40px;
+    font-size: 24px;
+    font-weight: 800;
+    color: #fff;
+    background: linear-gradient(135deg, #4caf50 0%, #2e7d32 100%); /* 绿色渐变 */
+    border: 3px solid #fff;
+    border-radius: 50px;
+    cursor: pointer;
+    box-shadow: 0 5px 20px rgba(76, 175, 80, 0.5);
+    transition: transform 0.2s;
+    animation: fadeInUp 1s ease 0.5s backwards; /* 延迟出现 */
+}
+
+.btn-victory-ok:hover {
+    transform: scale(1.1);
+}
+
+.btn-victory-ok:active {
+    transform: scale(0.95);
+}
+
+/* 弹跳动画 */
+@keyframes popIn {
+    0% { transform: scale(0); opacity: 0; }
+    100% { transform: scale(1); opacity: 1; }
+}
+
+/* 上浮动画 */
+@keyframes fadeInUp {
+    0% { transform: translateY(20px); opacity: 0; }
+    100% { transform: translateY(0); opacity: 1; }
+}
+/* ============================================================
+   🚀 全屏沉浸模式核心系统 (Unified Zoom System) v2.0
+   适用模块: Scene (图片), Text (富文本), Quiz (挑战)
+   ============================================================ */
+
+/* 1. 伪全屏容器 (由 JS 动态添加/移除此 Class) */
+.pseudo-fullscreen {
+    position: fixed !important;
+    top: 0 !important;
+    left: 0 !important;
+    width: 100vw !important;
+    height: 100vh !important;
+    z-index: 9999 !important; /* 保证覆盖一切 */
+    margin: 0 !important;
+    box-sizing: border-box !important;
+    overflow-y: auto !important; /* 允许内容滚动 */
+}
+
+/* 2. 统一的右下角 Zoom 悬浮按钮 */
+.btn-fixed-zoom {
+    position: fixed;
+    bottom: 30px; 
+    right: 30px;
+    width: 50px; 
+    height: 50px;
+    background: #fff;
+    border-radius: 50%;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.15);
+    border: 1px solid #eee;
+    color: #555;
+    cursor: pointer;
+    display: flex; 
+    align-items: center; 
+    justify-content: center;
+    transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    z-index: 10001; /* 最高层级，保证能点到 */
+}
+
+.btn-fixed-zoom:hover {
+    transform: scale(1.15);
+    color: var(--primary);
+    box-shadow: 0 8px 25px rgba(91, 103, 241, 0.3);
+}
+
+/* 3. 左右切换大箭头 (Scene & Text Zoom 模式专用) */
+.btn-zoom-nav {
+    position: fixed;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 60px; 
+    height: 120px;
+    background: transparent;
+    border: none;
+    color: #ccc; /* 默认浅灰色 */
+    font-size: 40px;
+    cursor: pointer;
+    display: flex; 
+    align-items: center; 
+    justify-content: center;
+    transition: all 0.2s;
+    z-index: 10000; /* 在内容之上，但在退出按钮之下 */
+}
+
+.btn-zoom-nav:hover {
+    background: rgba(0,0,0,0.05);
+    color: var(--primary);
+    transform: translateY(-50%) scale(1.1);
+}
+
+.btn-zoom-nav.prev { left: 0; }
+.btn-zoom-nav.next { right: 0; }
+
+
+/* ============================================================
+   📖 Text Tab: 阅读器模式布局
+   ============================================================ */
+
+/* 全屏下的弹性布局容器 */
+    .reader-layout {
+    display: flex; 
+    flex-direction: column;
+    
+    /* 👇 修改这两行：保持与普通模式 (.rich-section) 一致的宽度 */
+    width: calc(100% - 40px); 
+    max-width: 1200px; 
+    
+    height: 100%;
+    background: #fff;
+    margin: 0 auto;   /* 水平居中 */
+    box-shadow: 0 0 60px rgba(0,0,0,0.05); 
+    border-radius: 20px; /* 可选：加个圆角让它更像原来的卡片 */
+    overflow: hidden;    /* 防止圆角被内容溢出盖住 */
+}
+
+/* 头部：胶囊导航 (固定吸顶) */
+.reader-header {
+    flex-shrink: 0; /* 禁止高度收缩 */
+    padding: 15px 0;
+    background: #fff;
+    border-bottom: 1px solid #f0f0f0;
+    z-index: 10;
+    text-align: center;
+}
+
+/* 复用原有的 rich-nav 样式，微调以适应全屏 */
+.reader-header .rich-nav {
+    position: static; /* 取消 sticky，由 flex 控制 */
+    box-shadow: none; 
+    border: none; 
+    padding: 5px;
+    justify-content: center;
+}
+
+/* 内容：滚动区域 */
+.reader-body {
+    flex: 1; /* 占满剩余高度 */
+    overflow-y: auto; /* 仅此处产生滚动条 */
+    padding: 10px 80px 120px 80px;  /* 顺序：上 | 右 | 下 | 左 */
+    scroll-behavior: smooth;
+}
+
+/* 隐藏滚动条但保留功能 */
+.reader-body::-webkit-scrollbar { display: none; }
+.reader-body { scrollbar-width: none; }
+
+
+/* ============================================================
+   🖼️ Scene Tab: 全屏图片布局
+   ============================================================ */
+.scene-zoom-layout {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.scene-zoom-img {
+    max-width: 90%;
+    max-height: 90%;
+    object-fit: contain;
+    border-radius: 12px;
+    box-shadow: 0 20px 50px rgba(0,0,0,0.15);
+    transition: transform 0.3s;
+}
+
+.scene-zoom-counter {
+    position: absolute;
+    bottom: 30px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: rgba(0,0,0,0.6);
+    color: #fff;
+    padding: 4px 12px;
+    border-radius: 20px;
+    font-size: 14px;
+    font-weight: bold;
+    pointer-events: none;
+}
+
+
+/* ============================================================
+   📱 移动端适配 (Mobile Responsive)
+   ============================================================ */
+@media (max-width: 768px) {
+    /* 缩小左右箭头区域，避免误触 */
+    .btn-zoom-nav { 
+        width: 40px; 
+        font-size: 24px; 
+        background: rgba(0,0,0,0.02); /* 稍微给点背景提示 */
+    }
+    
+    /* 减小阅读内边距 */
+    .reader-body { 
+        padding: 20px 20px 100px; 
+    }
+    
+    /* 调整右下角按钮位置 */
+    .btn-fixed-zoom {
+        bottom: 20px;
+        right: 20px;
+        width: 45px;
+        height: 45px;
+    }
+}
+/* ============ 🎃 自定义游戏列表样式 (Custom Games) ============ */
+
+/* 列表容器 */
+.custom-games-container {
+    width: 100%;
+    max-width: 1000px;
+    padding-top: 20px;
+    margin: 0 auto;
+}
+
+/* 标题 */
+.custom-games-header {
+    text-align: center;
+    color: var(--primary);
+    margin-bottom: 30px;
+    font-size: 24px;
+    font-weight: 800;
+}
+
+/* 网格布局 */
+.custom-games-grid {
+    display: grid;
+    gap: 30px;
+    /* 自适应列宽，手机单列，电脑多列 */
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    padding: 0 20px;
+}
+
+/* 单个游戏卡片 */
+.game-group-card {
+    background: #fff;
+    border-radius: 16px;
+    padding: 30px 20px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+    cursor: pointer;
+    transition: all 0.3s ease;
+    border: 2px solid transparent;
+    
+    /* 垂直居中内容 */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 200px; /* 保证卡片高度一致 */
+}
+
+/* 鼠标悬停效果 */
+.game-group-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(91, 103, 241, 0.15);
+    border-color: var(--primary-light);
+}
+
+/* 卡片内容区 */
+.game-group-content {
+    text-align: center;
+}
+
+/* 南瓜图标 */
+.game-group-icon {
+    font-size: 48px;
+    margin-bottom: 15px;
+}
+
+/* 游戏标题 (Group 1) */
+.game-group-title {
+    font-size: 20px;
+    font-weight: 800;
+    color: #333;
+    margin-bottom: 8px;
+}
+
+/* 游戏信息 (包含X个单词) */
+.game-group-info {
+    font-size: 14px;
+    color: #999;
+    font-weight: 500;
+}
+/* ============================================================
+   📱 移动端 Text Zoom 专属优化 (Mobile Reader Mode)
+   ============================================================ */
+@media (max-width: 768px) {
+
+    /* 1. 外层容器：完全撑满，去圆角 */
+    .reader-layout {
+        width: 100% !important;
+        max-width: 100% !important;
+        border-radius: 0 !important;
+        box-shadow: none !important;
+        margin: 0 !important;
+    }
+
+    /* 2. 滚动区域：减小内边距 */
+    .reader-body {
+        padding: 15px 15px 100px 15px !important; /* 更紧凑的边距 */
+    }
+
+    /* 3. 内部卡片：紧凑排列 */
+    .rich-section {
+        width: 100% !important;
+        padding: 20px 15px !important; 
+        margin-top: 15px !important;
+        border-radius: 12px !important;
+    }
+
+    /* ▼▼▼▼▼▼ 新增：顶部胶囊导航缩小 ▼▼▼▼▼▼ */
+    
+    /* 导航栏容器变矮 */
+    .reader-header {
+        padding: 5px 0 !important; /* 减少上下留白 */
+        border-bottom: 1px solid #eee !important;
+    }
+
+    /* 胶囊滚动区域 */
+    .reader-header .rich-nav {
+        padding: 5px 10px !important; /* 左右留一点空隙 */
+        gap: 8px !important;          /* 按钮之间的间距变小 */
+        justify-content: flex-start !important; /* 内容多时从左开始排，允许滚动 */
+    }
+
+    /* 胶囊按钮本体 */
+    .rich-nav button {
+        font-size: 13px !important;   /* 字体调小 (原来是20px) */
+        padding: 4px 12px !important; /* 按钮变瘦 */
+        border-radius: 14px !important;
+        background: #f0f2f5 !important;
+        color: #666 !important;
+        font-weight: 600 !important;
+        height: auto !important;
+        line-height: 1.4 !important;
+        flex-shrink: 0 !important;    /* 防止被挤压 */
+    }
+    
+    /* 选中的胶囊 (如果有active状态的话) */
+    .rich-nav button:active {
+        background: #e0e6ed !important;
+    }
+
+    /* ▲▲▲▲▲▲ 新增结束 ▲▲▲▲▲▲ */
+
+
+    /* ============ 🔠 内容字体缩小适配 ============ */
+    
+    #reader-scroll h1 {
+        font-size: 26px !important; 
+        margin: 15px 0 !important;
+    }
+
+    .rich-section h3 {
+        font-size: 18px !important;
+        margin-bottom: 10px !important;
+        padding-bottom: 8px !important;
+    }
+
+    /* 英文释义/例句 */
+    .level-1, .text-en, .col-header .text-en, .block-example .en {
+        font-size: 17px !important; 
+        line-height: 1.4 !important;
+    }
+
+    /* 中文释义 */
+    .text-cn, .block-example .cn {
+        font-size: 15px !important; 
+        line-height: 1.5 !important;
+        margin-top: 4px !important;
+    }
+
+    /* 标签与胶囊前缀 */
+    .rich-tag, .rich-phonetic,
+    .def-block .text-en::before, 
+    .def-block .text-cn::before,
+    .block-example .en::before,
+    .col-header .text-en::before {
+        font-size: 12px !important;
+        padding: 1px 5px !important;
+        margin-right: 4px !important;
+    }
+
+    /* 左右切换按钮 (半透明防遮挡) */
+    .btn-zoom-nav {
+        width: 36px !important;
+        background: rgba(255, 255, 255, 0.6) !important;
+        font-size: 18px !important;
+    }
+}
+/* ============================================================
+   📱 移动端列表优化 (Sidebar & Word List)
+   缩小宽度、字体、间距，适应竖屏操作
+   ============================================================ */
+@media (max-width: 768px) {
+
+    /* 1. 核心变量重写：缩小侧边栏整体宽度 */
+    :root {
+        --sidebar-width: 150px; /* 电脑端是 280px，手机端改窄到 220px */
+    }
+
+    /* 2. 搜索框变紧凑 */
+    .search-box {
+        padding: 10px 10px 5px 10px !important;
+    }
+    .search-box input {
+        padding: 6px 10px !important;
+        font-size: 13px !important;
+        height: 36px !important;
+    }
+
+    /* 3. 分组标题 (如 A, B, Chapter 1) 变矮 */
+    .abc-group-header {
+        padding: 6px 12px !important; /* 减少上下内边距 */
+        font-size: 12px !important;   /* 字体变小 */
+        height: 32px !important;      /* 强制高度 */
+        box-sizing: border-box !important;
+    }
+
+    /* 4. 单词列表项 (li) 变矮 */
+    #abc-list li, 
+    #chapter-list-container li {
+        padding: 8px 12px !important; /* 原来是 14px 20px，大幅压缩 */
+        min-height: 40px !important;  /* 限制最小高度 */
+    }
+
+    /* 5. 单词主文字缩小 */
+    .word-text {
+        font-size: 14px !important; /* 原来是 16px */
+    }
+
+    /* 6. 辅助文字 (系列名) 缩小 */
+    .series-text {
+        font-size: 10px !important; /* 原来是 12px */
+        margin-top: 2px !important;
+    }
+
+    /* 7. 星级评分数字缩小 */
+    .rating-num {
+        font-size: 12px !important;
+    }
+
+    /* 8. 侧边栏头部高度压缩 */
+    .sidebar-header {
+        height: 50px !important;
+        padding: 0 10px !important;
+    }
+    .sidebar-header h2 {
+        font-size: 15px !important;
+    }
+}
+/* ============================================================
+   📱 移动端首页优化 (Home View Mobile)
+   按钮、标签、书本卡片、字体全面缩小
+   ============================================================ */
+@media (max-width: 768px) {
+
+    /* 1. 顶部固定导航栏：变矮、内边距变小 */
+    .home-fixed-header {
+        height: 50px !important;       /* 原来是 60px */
+        padding: 0 15px !important;    /* 左右边距缩小 */
+    }
+
+    /* 2. 首页大标题 (Books) */
+    .home-fixed-header h1 {
+        font-size: 10px !important;    /* 字体缩小 */
+        gap: 6px !important;
+    }
+
+    /* 3. 书本分类标签 (Tab 按钮) */
+    .book-type-nav button {
+        padding: 4px 10px !important;  /* 按钮变瘦 */
+        font-size: 8px !important;    /* 字体变小 */
+        border-radius: 12px !important;
+    }
+    .book-type-nav { gap: 5px !important; }
+
+    /* 4. 右上角开关 (按键音) */
+    .header-right {
+        gap: 5px !important;
+    }
+    .header-right span {
+        font-size: 11px !important;    /* 文字变小 */
+    }
+    .switch {
+        transform: scale(0.7);         /* 直接缩放开关大小 */
+        margin-right: -5px;            /* 修正缩放后的留白 */
+    }
+
+    /* ============ 📚 书本列表区域 ============ */
+
+    /* 5. 画廊容器：减少外边距 */
+    .book-gallery {
+        padding: 20px 15px !important; /* 上下左右留白减少 */
+    }
+
+    /* 6. 系列标题 (Series Title) */
+    .series-header {
+        margin-bottom: 10px !important;
+        padding-left: 10px !important;
+        border-left-width: 3px !important;
+    }
+    .series-title {
+        font-size: 15px !important;    /* 字体缩小 */
+    }
+    .series-section {
+        margin-bottom: 30px !important; /* 系列间距缩小 */
+    }
+
+    /* 7. 书本卡片 (Book Card) - 核心修改 */
+    .book-card {
+        flex: 0 0 120px !important;    /* 宽度从 220px -> 120px */
+        border-radius: 8px !important;
+    }
+
+    /* 8. 书本封面图 */
+    .book-cover {
+        height: 120px !important;      /* 高度从 230px -> 140px */
+        margin-bottom: 8px !important;
+    }
+
+    /* 9. 书本信息文字 */
+    .book-info {
+        padding: 0 4px 4px !important;
+    }
+    .book-title {
+        font-size: 13px !important;    /* 书名变小 */
+        margin-bottom: 2px !important;
+        line-height: 1.3 !important;
+    }
+    .book-count {
+        font-size: 10px !important;    /* 单词数变小 */
+    }
+
+    /* 10. 横向滚动条间距 */
+    .series-scroll-container {
+        gap: 15px !important;          /* 卡片之间的间距变小 */
+        padding-bottom: 15px !important;
+    }
+}
+@media (max-width: 768px) {
+    /* ============ 💾 导出按钮缩小 ============ */
+    .save-btn {
+        padding: 4px 8px !important;   /* 减小按钮内边距 */
+        font-size: 8px !important;    /* 字体变小 */
+        border-radius: 4px !important; /* 圆角变小 */
+        gap: 3px !important;           /* 图标和文字靠得更近 */
+        height: 24px !important;       /* 强制限制高度 */
+        line-height: 1 !important;     /* 垂直居中修正 */
+    }
+    
+    /* 如果列表标题 (Word List) 还是太大，可以再微调一下 */
+    .sidebar-header h2 {
+        font-size: 10px !important;
+    }
+    
+    /* 列表计数 (0) 也同步变小 */
+    .list-count {
+        font-size: 8px !important;
+        padding: 1px 4px !important;
+    }
+}
+/* ============================================================
+   📱 移动端详情页顶部优化 (Detail Header Mobile)
+   两行布局：上排功能按钮，下排单词+星星
+   ============================================================ */
+@media (max-width: 768px) {
+
+   /* 1. 顶部容器：允许换行 (Wrap) */
+    .word-top-bar {
+        height: auto !important;       /* 高度自适应 */
+        min-height: 80px !important;
+        padding: 10px 15px !important;
+        
+        /* 👇 关键：改为 Row 布局，但允许换行 */
+        flex-direction: row !important; 
+        flex-wrap: wrap !important;    
+        align-items: center !important;
+        gap: 10px 0 !important;        /* 上下行间距10px，左右0 */
+    }
+
+    /* 2. 左侧按钮组 (菜单、Home...): 排序 1 */
+    .bar-left {
+        order: 1 !important;
+        width: auto !important;
+        flex: 1 1 auto !important;     /* 自动占据剩余空间 */
+        flex-wrap: wrap !important;    /* 👇 关键：内部按钮也允许换行 */
+        justify-content: flex-start !important;
+        gap: 8px !important;
+    }
+
+    /* 3. 右侧按钮组 (Prev/Next): 排序 2 */
+    .bar-right {
+        order: 2 !important;
+        position: static !important;   /* 👇 关键：取消绝对定位，回归文档流 */
+        width: auto !important;
+        margin-left: auto !important;  /* 靠右对齐 */
+        
+        display: flex !important;
+        gap: 8px !important;
+        white-space: nowrap !important; /* 尽量不让这两个按钮拆开 */
+    }
+
+    /* 4. 中间单词组 (Word+Stars): 排序 3 (强制换行) */
+    .bar-center {
+        order: 3 !important;           /* 排在最后 */
+        position: static !important;   /* 取消绝对居中 */
+        transform: none !important;
+        
+        width: 100% !important;        /* 👇 关键：强占一行 */
+        margin-top: 5px !important;
+        padding-top: 10px !important;
+        border-top: 1px dashed #eee !important; /* 加个虚线分隔，更清晰 */
+        
+        flex-direction: row !important;
+        justify-content: space-between !important;
+    }
+
+    /* ============ 元素瘦身 (保持之前的缩小设置) ============ */
+    .icon-btn { font-size: 16px !important; padding: 4px !important; width: 28px !important; height: 28px !important; }
+    .home-icon-img { width: 16px !important; height: 16px !important; }
+    .practice-btn { padding: 4px 10px !important; font-size: 11px !important; height: 28px !important; }
+    .toggle-word-btn { padding: 4px 10px !important; font-size: 11px !important; height: 28px !important; }
+    .nav-arrow { padding: 4px 10px !important; font-size: 10px !important; height: 26px !important; }
+    
+    #word-main { font-size: 22px !important; } /* 单词稍微再小一点，防溢出 */
+    .main-audio { width: 24px !important; height: 24px !important; }
+    .main-audio svg { width: 14px !important; height: 14px !important; }
+    .star-icon { width: 18px !important; height: 18px !important; }
+    .rating-box { gap: 3px !important; }
+    .detail-tabs { padding-top: 0 !important; }
+    .detail-tabs button { padding: 8px 15px !important; font-size: 13px !important; }
+
+}
+/* ============================================================
+   📱 移动端 Quiz 挑战页优化
+   题目、选项、按钮全面缩小，适配竖屏
+   ============================================================ */
+@media (max-width: 768px) {
+
+    /* 1. 白底大卡片：去死板高度，减少内边距 */
+    .quiz-box {
+        padding: 20px 15px !important;  /* 原来是 40px */
+        min-height: auto !important;    /* 取消固定最小高度，防止留白太多 */
+        border-radius: 12px !important;
+        margin-top: 10px !important;
+    }
+
+    /* 2. 题干文字 (Question) */
+    .quiz-q {
+        font-size: 18px !important;     /* 原来是 38px -> 缩小到 18px */
+        margin-bottom: 20px !important; /* 间距缩小 */
+        line-height: 1.4 !important;
+    }
+    
+    /* 题干前的 Q1. 标签 */
+    .quiz-q span {
+        font-size: 14px !important;
+        margin-right: 5px !important;
+    }
+
+    /* 3. 选项容器 (Options) */
+    .quiz-opts {
+        gap: 10px !important;           /* 选项间距变小 */
+        grid-template-columns: 1fr !important; /* 强制单列显示 */
+    }
+
+    /* 4. 选项按钮 (A, B, C, D) */
+    .opt-btn {
+        font-size: 15px !important;     /* 原来是 38px -> 缩小到 15px */
+        padding: 10px 12px !important;  /* 内边距缩小 */
+        min-height: auto !important;    /* 取消固定高度 */
+        border-radius: 8px !important;
+        gap: 8px !important;
+    }
+
+    /* 5. 选项前的圆圈 (A/B/C/D) */
+    .opt-btn span {
+        width: 26px !important;         /* 缩小圆圈尺寸 */
+        height: 26px !important;
+        font-size: 13px !important;     /* 圆圈内文字缩小 */
+        flex-shrink: 0 !important;      /* 防止被挤压 */
+        margin-right: 0 !important;
+    }
+
+    /* 6. 顶部页码条 (Pagination) */
+    .quiz-pagination {
+        gap: 6px !important;
+        margin-bottom: 10px !important;
+    }
+    .quiz-page-btn {
+        width: 28px !important;
+        height: 28px !important;
+        font-size: 12px !important;
+    }
+
+    /* 7. 底部大号 Next 按钮 */
+    .btn-big-next {
+        font-size: 16px !important;     /* 字体缩小 */
+        padding: 10px 0 !important;     /* 按钮变矮 */
+        margin: 35px auto 40px !important; /* 调整外边距 */
+        width: 80% !important;          /* 宽度稍微收一点 */
+        border-radius: 30px !important;
+    }
+    .btn-big-next svg {
+        width: 16px !important;
+        height: 16px !important;
+    }
+
+    /* 8. 底部进度文字 */
+    .quiz-info-text {
+        font-size: 12px !important;
+        bottom: -35px !important;       /* 贴近底部 */
+    }
+
+    /* ============ 🧩 配对题 (Matching) 适配 ============ */
+    .match-container {
+        flex-direction: row !important; /* 保持左右并排，或者改成 column 上下排 */
+        gap: 10px !important;
+    }
+    .match-item {
+        font-size: 13px !important;
+        padding: 8px 5px !important;
+        min-height: auto !important;
+    }
+    .match-img {
+        max-height: 60px !important;    /* 图片选项变小 */
+    }
+}
+/* ============================================================
+   📱 手机端顶部：强制分行 (Buttons Top, Word Bottom)
+   ============================================================ */
+@media (max-width: 768px) {
+
+    /* 1. 容器设置：允许换行 */
+    .word-top-bar {
+        display: flex !important;
+        flex-wrap: wrap !important;    /* 关键：允许内容折行 */
+        height: auto !important;       /* 高度随内容自动撑开 */
+        padding: 10px 15px !important;
+        align-items: center !important;
+    }
+
+    /* 2. 第一行左侧：功能按钮组 (菜单、Home...) */
+    .bar-left {
+        order: 1 !important;           /* 排位：1 */
+        width: auto !important;        /* 宽度自动 */
+        flex-grow: 1 !important;       /* 占据左侧剩余空间 */
+        justify-content: flex-start !important;
+        margin-bottom: 0 !important;   /* 紧贴下一行 */
+    }
+
+    /* 3. 第一行右侧：翻页按钮组 (Prev/Next) */
+    .bar-right {
+        order: 2 !important;           /* 排位：2 */
+        position: static !important;   /* 取消绝对定位 */
+        width: auto !important;
+        margin-left: auto !important;  /* 靠右对齐 */
+    }
+
+    /* 4. 第二行：单词主体 (强制换行核心) */
+    .bar-center {
+        order: 3 !important;           /* 排位：3 (最后) */
+        
+        /* 👇👇👇 核心代码：强制换行 👇👇👇 */
+        width: 100% !important;        /* 宽度100%，强迫自己独占一行 */
+        flex-basis: 100% !important;   /* Flex 里的强制换行符 */
+        
+        margin-top: 12px !important;   /* 与上面按钮拉开距离 */
+        padding-top: 12px !important;  /* 内部留白 */
+        border-top: 1px dashed #eee !important; /* 加条虚线，界限更清晰 */
+        
+        /* 内部样式复位 */
+        position: static !important;
+        transform: none !important;
+        display: flex !important;
+        justify-content: space-between !important; /* 单词在左，星星在右 */
+        align-items: center !important;
+    }
+
+    /* ============ 细节微调 ============ */
+    /* 单词字体大小 */
+    #word-main { font-size: 24px !important; margin: 0 !important; }
+    
+    /* 调整星星区域，防止太挤 */
+    .rating-box { margin-left: auto !important; }
+}
+/* ============================================================
+   🛠️ 修复：选错时去掉文字倒排特效
+   保持红色和抖动，但强制文字方向正常
+   ============================================================ */
+
+/* 针对被标记为 wrong 的选项按钮，以及它内部的所有元素（包括圆圈和文字） */
+.opt-btn.wrong,
+.opt-btn.wrong * {
+    /* 强制 Y 轴缩放为 1 (正常，非镜像) */
+    /* 强制 X 轴旋转为 0度 (不翻转) */
+    /* 使用 !important 最高优先级覆盖之前的设置 */
+    transform: scaleY(1) rotateX(0deg) !important;
+    
+    /* 注意：我们没有触碰 translateX，所以不会影响左右抖动 (shake) 动画 */
+}
+/* ============================================================
+   📱 移动端 Scene 图片大小优化
+   ============================================================ */
+@media (max-width: 768px) {
+    
+    /* 1. 普通模式：单张大图去除高度限制，强制撑满宽度 */
+    .scene-images[data-count="1"] .scene-image {
+        width: 100% !important;       /* 宽度强制撑满容器 */
+        max-width: 100% !important;
+        height: auto !important;      /* 高度自动，按比例伸缩 */
+        max-height: none !important;  /* ❌ 核心：去掉 500px 的高度限制 */
+        object-fit: cover !important; /* 稍微裁切一点边缘以换取更饱满的视觉 */
+        border-radius: 8px !important;
+    }
+
+    /* 2. 优化图片容器的内边距，让图片更贴边 */
+    .image-box {
+        padding: 5px !important; /* 减少留白 */
+    }
+}
+
+/* ============================================================
+   📱 移动端：提示块瘦身 (Mistakes, Critical, Notes)
+   ============================================================ */
+@media (max-width: 768px) {
+
+    /* 针对：常见误区(mistake), 重要(cr), 注意(co), 笔记(cb) */
+    .block-mistake, 
+    .block-cr, 
+    .block-co, 
+    .block-cb {
+        font-size: 16px !important;       /* 核心：从 28px 缩小到 16px */
+        line-height: 1.6 !important;      /* 增加行高，阅读更舒适 */
+        
+        padding: 12px 15px !important;    /* 缩小内边距 */
+        margin: 15px 0 !important;        /* 缩小上下外边距 */
+        
+        border-radius: 8px !important;    /* 圆角变小 */
+        border-width: 1px !important;     /* 确保边框纤细 */
+    }
+
+    /* 提示块里面的加粗标题 (如 "常见误区:") */
+    .block-mistake b, 
+    .block-cr b, 
+    .block-co b, 
+    .block-cb b {
+        font-size: 16px !important;       /* 标题保持和正文一致或稍大 */
+        margin-right: 5px !important;
+    }
+}
+/* ============ 💻 电脑端 Zoom 模式 Quiz 专属优化 (特大字体) ============ */
+@media (min-width: 769px) {
+
+    /* 1. 选项按钮 (整体变大) */
+    #tab-content-area:fullscreen .opt-btn,
+    #tab-content-area.pseudo-fullscreen .opt-btn {
+        font-size: 45px !important;      /* 字体：从 26px -> 36px */
+        font-weight: 600 !important;     /* 加粗 */
+        
+        padding: 30px 50px !important;   /* 内边距：让按钮更肥 */
+        min-height: 130px !important;    /* 高度：强制增高 */
+        border-radius: 20px !important;  /* 圆角：更圆润 */
+        gap: 30px !important;            /* 图标和文字的间距 */
+        
+        line-height: 1.3 !important;
+    }
+
+    /* 2. 选项前的 ABCD 圆圈 */
+    #tab-content-area:fullscreen .opt-btn span,
+    #tab-content-area.pseudo-fullscreen .opt-btn span {
+        width: 70px !important;          /* 圆圈直径变大 */
+        height: 70px !important;
+        flex-shrink: 0 !important;       /* 防止被挤压 */
+        
+        font-size: 32px !important;      /* 圆圈里的字母变大 */
+        border-width: 3px !important;    /* 边框加粗 */
+        box-shadow: 0 4px 10px rgba(0,0,0,0.1) !important;
+    }
+
+    /* 3. 题干文字 (配合选项同步放大) */
+    #tab-content-area:fullscreen .quiz-q,
+    #tab-content-area.pseudo-fullscreen .quiz-q {
+        font-size: 48px !important;      /* 题目超大号 */
+        line-height: 1.4 !important;
+        margin-bottom: 60px !important;  /* 增加与选项的距离 */
+        text-shadow: 0 1px 2px rgba(0,0,0,0.05); /* 增加一点质感 */
+    }
+    
+    /* 4. 调整一下全屏时的最大宽度，防止字太大了换行太频繁 */
+    #tab-content-area:fullscreen .quiz-box,
+    #tab-content-area.pseudo-fullscreen .quiz-box {
+        max-width: 1600px !important;    /* 允许内容占据更宽的屏幕 */
+        padding: 80px 100px !important;  /* 增加卡片内边距 */
+    }
+}
+/* ============ 🧠 AI 引擎专属样式 ============ */
+.ai-spinner {
+    border: 5px solid rgba(255, 255, 255, 0.2);
+    border-top: 5px solid #fff;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    animation: ai-spin 1s linear infinite;
+    box-shadow: 0 0 20px rgba(255,255,255,0.2);
+}
+@keyframes ai-spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+/* ============ 🧠 AI 词义单选题 专属样式 ============ */
+.quiz-stem-wrapper { display: flex; justify-content: space-between; align-items: flex-start; gap: 20px; margin-bottom: 30px; }
+.quiz-stem-text { flex: 1; font-size: 32px; font-weight: 600; color: #2c3e50; line-height: 1.4; text-align: left; }
+.quiz-stem-image-box { flex-shrink: 0; width: 150px; height: 150px; position: relative; }
+.quiz-stem-img { width: 100%; height: 100%; object-fit: cover; border-radius: 12px; box-shadow: 0 4px 12px rgba(0,0,0,0.1); }
+.quiz-img-mask { position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: #f0f2f5; border-radius: 12px; display: flex; align-items: center; justify-content: center; color: #999; font-size: 12px; cursor: pointer; border: 2px dashed #e0e6ed; box-sizing: border-box; }
+.quiz-img-toggle { display: inline-flex; align-items: center; gap: 6px; padding: 6px 12px; background: #fff; border: 1px solid #ddd; border-radius: 20px; font-size: 13px; color: #666; cursor: pointer; margin-bottom: 10px; transition: all 0.2s; }
+.quiz-img-toggle:hover { border-color: var(--primary); color: var(--primary); }
+.quiz-img-toggle.active { background: var(--primary-light); color: var(--primary); border-color: var(--primary); }
+@media (max-width: 768px) {
+    .quiz-stem-wrapper { flex-direction: column-reverse; align-items: center; text-align: center; }
+    .quiz-stem-text { font-size: 20px; text-align: center; }
+    .quiz-stem-image-box { width: 120px; height: 120px; }
+}
+/* ============ 💬 AI 聊天面板专属样式 ============ */
+.chat-container {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    min-height: 400px;
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+    overflow: hidden;
+    border: 1px solid var(--border);
+}
+
+.chat-history {
+    flex: 1;
+    padding: 20px;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    background: #f9fafc;
+}
+
+.chat-msg {
+    max-width: 85%;
+    padding: 12px 16px;
+    border-radius: 16px;
+    font-size: 14px;
+    line-height: 1.5;
+    word-wrap: break-word;
+    animation: fadeIn 0.3s ease;
+}
+
+.chat-msg.user {
+    align-self: flex-end;
+    background: var(--primary);
+    color: #fff;
+    border-bottom-right-radius: 4px;
+}
+
+.chat-msg.ai {
+    align-self: flex-start;
+    background: #fff;
+    color: #333;
+    border: 1px solid #e0e6ed;
+    border-bottom-left-radius: 4px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.02);
+}
+
+/* 快捷回复按钮区 */
+.chat-quick-replies {
+    display: flex;
+    gap: 10px;
+    padding: 12px 15px;
+    background: #fff;
+    border-top: 1px solid var(--border);
+    overflow-x: auto;
+    white-space: nowrap;
+}
+
+/* 隐藏滚动条但保留滚动功能 */
+.chat-quick-replies::-webkit-scrollbar { display: none; }
+.chat-quick-replies { -ms-overflow-style: none; scrollbar-width: none; }
+
+.chat-quick-btn {
+    background: #f0f2f5;
+    color: #555;
+    border: 1px solid transparent;
+    padding: 8px 14px;
+    border-radius: 20px;
+    font-size: 13px;
+    cursor: pointer;
+    transition: all 0.2s;
+    flex-shrink: 0;
+}
+.chat-quick-btn:hover {
+    background: var(--primary-light);
+    color: var(--primary);
+    border-color: var(--primary);
+}
+
+/* 输入框区域 */
+.chat-input-area {
+    display: flex;
+    padding: 15px;
+    background: #fff;
+    border-top: 1px solid #f0f2f5;
+    gap: 10px;
+    align-items: center;
+}
+
+.chat-input-area input {
+    flex: 1;
+    padding: 12px 20px;
+    border: 1px solid var(--border);
+    border-radius: 24px;
+    font-size: 14px;
+    outline: none;
+    transition: border-color 0.2s;
+    background: #f9fafc;
+}
+.chat-input-area input:focus {
+    border-color: var(--primary);
+    background: #fff;
+}
+
+.chat-send-btn {
+    background: var(--primary);
+    color: #fff;
+    border: none;
+    border-radius: 50%;
+    width: 44px;
+    height: 44px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: transform 0.2s, background 0.2s;
+}
+.chat-send-btn:hover {
+    transform: scale(1.05);
+    background: #4a54c4;
+}
+.chat-send-btn svg { width: 20px; height: 20px; fill: currentColor; }
+.chat-send-btn:disabled { background: #ccc; cursor: not-allowed; transform: none; }
+
+.chat-typing {
+    font-size: 12px;
+    color: #999;
+    font-style: italic;
+    align-self: flex-start;
+    margin-top: -5px;
+    margin-bottom: 5px;
+}
+@keyframes fadeIn { from { opacity: 0; transform: translateY(10px); } to { opacity: 1; transform: translateY(0); } }

@@ -1,0 +1,525 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>应用对象弹窗高保真原型</title>
+    <style>
+        :root {
+            --primary-color: #2f54eb;
+            --primary-hover: #597ef7;
+            --border-color: #d9d9d9;
+            --bg-gray: #f5f5f5;
+            --text-main: #333333;
+            --text-secondary: #666666;
+            --text-light: #999999;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+        }
+
+        body {
+            background-color: #f0f2f5;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            padding: 20px;
+        }
+
+        /* 弹窗容器 */
+        .modal-container {
+            width: 1000px;
+            background: #ffffff;
+            border-radius: 4px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+            display: flex;
+            flex-direction: column;
+            overflow: hidden;
+        }
+
+        /* 头部 */
+        .modal-header {
+            padding: 16px 24px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 1px solid #f0f0f0;
+        }
+
+        .modal-title {
+            font-size: 16px;
+            font-weight: 600;
+            color: var(--text-main);
+        }
+
+        .close-icon {
+            font-size: 18px;
+            color: var(--text-light);
+            cursor: pointer;
+        }
+
+        /* 内容区 */
+        .modal-body {
+            padding: 20px 24px;
+        }
+
+        .strategy-name {
+            font-size: 13px;
+            color: var(--text-secondary);
+            margin-bottom: 16px;
+        }
+
+        /* 筛选栏 */
+        .filter-bar {
+            display: flex;
+            gap: 12px;
+            margin-bottom: 20px;
+        }
+
+        .select-input {
+            height: 32px;
+            padding: 0 12px;
+            border: 1px solid var(--border-color);
+            border-radius: 4px;
+            color: var(--text-secondary);
+            font-size: 13px;
+            outline: none;
+            background: #fff;
+            min-width: 120px;
+        }
+
+        /* 穿梭框区域 */
+        .transfer-section {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+        }
+
+        .transfer-panel {
+            border: 1px solid #e8e8e8;
+            border-radius: 4px;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .panel-title {
+            font-size: 13px;
+            font-weight: 600;
+            color: var(--text-main);
+            padding: 12px 0;
+        }
+
+        /* 穿梭框顶部搜索过滤 */
+        .panel-search-bar {
+            background-color: #fafafa;
+            padding: 8px 12px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            border-bottom: 1px solid #e8e8e8;
+        }
+
+        .panel-search-bar .checkbox-all {
+            margin-right: 4px;
+        }
+
+        .search-input-group {
+            display: flex;
+            flex: 1;
+        }
+
+        .search-input {
+            flex: 1;
+            height: 32px;
+            border: 1px solid var(--border-color);
+            border-right: none;
+            border-radius: 4px 0 0 4px;
+            padding: 0 10px;
+            font-size: 13px;
+            outline: none;
+        }
+
+        .btn-search {
+            height: 32px;
+            padding: 0 16px;
+            background: var(--primary-color);
+            color: #fff;
+            border: none;
+            border-radius: 0 4px 4px 0;
+            cursor: pointer;
+            font-size: 13px;
+        }
+
+        .btn-batch-action {
+            background: none;
+            border: none;
+            color: var(--text-secondary);
+            font-size: 13px;
+            cursor: pointer;
+            padding: 0 8px;
+        }
+
+        /* 列表区域 - 已移除展开折叠三角形 */
+        .list-container {
+            height: 360px;
+            overflow-y: auto;
+        }
+
+        .list-item {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 10px 12px;
+            border-bottom: 1px solid #f5f5f5;
+            font-size: 13px;
+        }
+
+        .list-item:hover {
+            background-color: #f8f9ff;
+        }
+
+        .item-left {
+            display: flex;
+            align-items: center;
+            gap: 12px; /* 适当加大间距以保持对齐清晰 */
+        }
+
+        .item-name {
+            color: var(--text-main);
+        }
+
+        .action-link {
+            color: var(--primary-color);
+            cursor: pointer;
+            text-decoration: none;
+        }
+
+        .action-link:hover {
+            color: var(--primary-hover);
+        }
+
+        /* 分页栏 */
+        .pagination-bar {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            margin-top: 12px;
+            font-size: 12px;
+            color: var(--text-secondary);
+        }
+
+        .page-num {
+            width: 24px;
+            height: 24px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border: 1px solid var(--border-color);
+            border-radius: 2px;
+            cursor: pointer;
+            background: #fff;
+        }
+
+        .page-num.active {
+            background: var(--primary-color);
+            color: #fff;
+            border-color: var(--primary-color);
+        }
+
+        .page-arrow {
+            width: 24px;
+            height: 24px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border: 1px solid var(--border-color);
+            border-radius: 2px;
+            cursor: pointer;
+            color: var(--text-light);
+        }
+
+        .page-jump-input {
+            width: 36px;
+            height: 24px;
+            text-align: center;
+            border: 1px solid var(--border-color);
+            border-radius: 2px;
+            outline: none;
+        }
+
+        /* 底部按钮 */
+        .modal-footer {
+            padding: 12px 24px;
+            border-top: 1px solid #f0f0f0;
+            display: flex;
+            justify-content: flex-end;
+            gap: 12px;
+        }
+
+        .btn {
+            height: 32px;
+            padding: 0 20px;
+            border-radius: 4px;
+            font-size: 13px;
+            cursor: pointer;
+            border: 1px solid var(--border-color);
+            background: #fff;
+        }
+
+        .btn-confirm {
+            background: var(--primary-color);
+            color: #fff;
+            border-color: var(--primary-color);
+        }
+    </style>
+</head>
+<body>
+
+<div class="modal-container">
+    <!-- 头部 -->
+    <div class="modal-header">
+        <div class="modal-title">应用对象</div>
+        <div class="close-icon">✕</div>
+    </div>
+
+    <!-- 内容区 -->
+    <div class="modal-body">
+        <div class="strategy-name">策略名称： 事业四部-关闭campaign维度-2</div>
+
+        <!-- 顶部筛选栏 -->
+        <div class="filter-bar">
+            <select class="select-input">
+                <option>请选择店铺</option>
+            </select>
+            <select class="select-input">
+                <option>全部类型</option>
+            </select>
+            <select class="select-input">
+                <option>全部状态</option>
+            </select>
+            <!-- 已修改：请选择运营 -> 请选择事业部 -->
+            <select class="select-input">
+                <option>请选择事业部</option>
+            </select>
+        </div>
+
+        <!-- 穿梭框区域 -->
+        <div class="transfer-section">
+            <!-- 左侧：待选择 -->
+            <div>
+                <div class="panel-title">已选择：0个对象</div>
+                <div class="transfer-panel">
+                    <div class="panel-search-bar">
+                        <input type="checkbox" class="checkbox-all">
+                        <select class="select-input" style="width: 100px; height: 32px;">
+                            <option>Portfolio</option>
+                        </select>
+                        <div class="search-input-group">
+                            <input type="text" class="search-input" placeholder="请输入Portfolio">
+                            <button class="btn-search">搜索</button>
+                        </div>
+                        <button class="btn-batch-action">添加</button>
+                    </div>
+
+                    <!-- 列表（已移除行首三角形图标） -->
+                    <div class="list-container">
+                        <div class="list-item">
+                            <div class="item-left">
+                                <input type="checkbox">
+                                <span class="item-name">Sarah</span>
+                            </div>
+                            <span class="action-link">添加</span>
+                        </div>
+                        <div class="list-item">
+                            <div class="item-left">
+                                <input type="checkbox">
+                                <span class="item-name">Test-Aiden: 05-4</span>
+                            </div>
+                            <span class="action-link">添加</span>
+                        </div>
+                        <div class="list-item">
+                            <div class="item-left">
+                                <input type="checkbox">
+                                <span class="item-name">Kate-1368-REI</span>
+                            </div>
+                            <span class="action-link">添加</span>
+                        </div>
+                        <div class="list-item">
+                            <div class="item-left">
+                                <input type="checkbox">
+                                <span class="item-name">Cyan</span>
+                            </div>
+                            <span class="action-link">添加</span>
+                        </div>
+                        <div class="list-item">
+                            <div class="item-left">
+                                <input type="checkbox">
+                                <span class="item-name">Terina</span>
+                            </div>
+                            <span class="action-link">添加</span>
+                        </div>
+                        <div class="list-item">
+                            <div class="item-left">
+                                <input type="checkbox">
+                                <span class="item-name">T-RE-DESK</span>
+                            </div>
+                            <span class="action-link">添加</span>
+                        </div>
+                        <div class="list-item">
+                            <div class="item-left">
+                                <input type="checkbox">
+                                <span class="item-name">REI-CO-6579</span>
+                            </div>
+                            <span class="action-link">添加</span>
+                        </div>
+                        <div class="list-item">
+                            <div class="item-left">
+                                <input type="checkbox">
+                                <span class="item-name">Lucia</span>
+                            </div>
+                            <span class="action-link">添加</span>
+                        </div>
+                        <div class="list-item">
+                            <div class="item-left">
+                                <input type="checkbox">
+                                <span class="item-name">Iris</span>
+                            </div>
+                            <span class="action-link">添加</span>
+                        </div>
+                        <div class="list-item">
+                            <div class="item-left">
+                                <input type="checkbox">
+                                <span class="item-name">test</span>
+                            </div>
+                            <span class="action-link">添加</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 分页 -->
+                <div class="pagination-bar">
+                    <span>共2786条</span>
+                    <span class="page-arrow">&lt;</span>
+                    <span class="page-num active">1</span>
+                    <span class="page-num">2</span>
+                    <span class="page-num">3</span>
+                    <span class="page-num">4</span>
+                    <span class="page-num">5</span>
+                    <span class="page-num">6</span>
+                    <span class="page-arrow">&gt;</span>
+                    <select class="select-input" style="height: 24px; padding: 0 4px; min-width: auto;">
+                        <option>500/每页</option>
+                    </select>
+                    <span>跳至</span>
+                    <input type="text" class="page-jump-input" value="1">
+                    <span>页</span>
+                </div>
+            </div>
+
+            <!-- 右侧：已应用 -->
+            <div>
+                <div class="panel-title">应用：334个对象</div>
+                <div class="transfer-panel">
+                    <div class="panel-search-bar">
+                        <input type="checkbox" class="checkbox-all">
+                        <select class="select-input" style="width: 100px; height: 32px;">
+                            <option>Portfolio</option>
+                        </select>
+                        <div class="search-input-group">
+                            <input type="text" class="search-input" placeholder="请输入Portfolio">
+                            <button class="btn-search">搜索</button>
+                        </div>
+                        <button class="btn-batch-action">移除</button>
+                    </div>
+
+                    <!-- 列表（已移除行首三角形图标） -->
+                    <div class="list-container">
+                        <div class="list-item">
+                            <div class="item-left">
+                                <input type="checkbox">
+                                <span class="item-name">Con-SW-6579</span>
+                            </div>
+                            <span class="action-link">移除</span>
+                        </div>
+                        <div class="list-item">
+                            <div class="item-left">
+                                <input type="checkbox">
+                                <span class="item-name">Con-SW-5021-2</span>
+                            </div>
+                            <span class="action-link">移除</span>
+                        </div>
+                        <div class="list-item">
+                            <div class="item-left">
+                                <input type="checkbox">
+                                <span class="item-name">NC3595</span>
+                            </div>
+                            <span class="action-link">移除</span>
+                        </div>
+                        <div class="list-item">
+                            <div class="item-left">
+                                <input type="checkbox">
+                                <span class="item-name">AN-3CHDG</span>
+                            </div>
+                            <span class="action-link">移除</span>
+                        </div>
+                        <div class="list-item">
+                            <div class="item-left">
+                                <input type="checkbox">
+                                <span class="item-name">NC2457</span>
+                            </div>
+                            <span class="action-link">移除</span>
+                        </div>
+                        <div class="list-item">
+                            <div class="item-left">
+                                <input type="checkbox">
+                                <span class="item-name">Z-DM01</span>
+                            </div>
+                            <span class="action-link">移除</span>
+                        </div>
+                        <div class="list-item">
+                            <div class="item-left">
+                                <input type="checkbox">
+                                <span class="item-name">AN-SW-D-F02BC</span>
+                            </div>
+                            <span class="action-link">移除</span>
+                        </div>
+                        <div class="list-item">
+                            <div class="item-left">
+                                <input type="checkbox">
+                                <span class="item-name">SA-SWTV5</span>
+                            </div>
+                            <span class="action-link">移除</span>
+                        </div>
+                        <div class="list-item">
+                            <div class="item-left">
+                                <input type="checkbox">
+                                <span class="item-name">Terina</span>
+                            </div>
+                            <span class="action-link">移除</span>
+                        </div>
+                        <div class="list-item">
+                            <div class="item-left">
+                                <input type="checkbox">
+                                <span class="item-name">Cyan-F01/GDZ-SW</span>
+                            </div>
+                            <span class="action-link">移除</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 底部按钮 -->
+    <div class="modal-footer">
+        <button class="btn">取消</button>
+        <button class="btn btn-confirm">确定</button>
+    </div>
+</div>
+
+</body>
+</html>
