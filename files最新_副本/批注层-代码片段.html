@@ -297,7 +297,7 @@
     ? '<span class="grip" title="拖动移动工具条">⠿</span><button id="annoSplit" class="on">◫ 对照批注</button><button id="annoPins">圆点</button><button id="annoBox">虚线框</button><button id="annoList" class="on">清单</button><button id="annoOver">🗂 全览</button><span class="cnt" id="annoCnt" style="display:none">0</span>'
     : '<span class="grip" title="拖动移动工具条">⠿</span><button id="annoSplit">◫ 对照批注</button><button id="annoMode">◉ 气泡批注</button><button id="annoPins" class="on">圆点</button><button id="annoBox" class="on">虚线框</button><button id="annoList" class="on">清单</button><button id="annoOver">🗂 全览</button>'+
       '<button id="annoExp">⬇ 可继续批注</button><button id="annoExpRO">⬇ 只读</button>'+
-      '<button id="annoExpJS" title="导出全部 Tab 的批注数据">⬇ 全部批注</button><span class="cnt" id="annoCnt" style="display:none">0</span>');
+      '<span class="cnt" id="annoCnt" style="display:none">0</span>');
   root.appendChild(bar);
   var panel=document.createElement('div'); panel.className='anno-panel pe';
   panel.innerHTML='<div class="hd">批注清单<span id="annoCnt2"></span></div><div class="ls" id="annoLs"></div>';
@@ -2358,16 +2358,6 @@
   var editBtn = document.createElement('button'); editBtn.id = 'editMode'; editBtn.textContent = '✎ 编辑模式';
   var undoBtn = document.createElement('button'); undoBtn.id = 'editUndo'; undoBtn.title = '撤销'; undoBtn.textContent = '↶ 撤销'; undoBtn.disabled = true;
   var redoBtn = document.createElement('button'); redoBtn.id = 'editRedo'; redoBtn.title = '还原'; redoBtn.textContent = '↷ 还原'; redoBtn.disabled = true;
-  var bubbleAnchor = document.getElementById('annoMode');
-  var listAnchor = document.getElementById('annoList');
-  if (bubbleAnchor && bubbleAnchor.parentNode === bar) {
-    bar.insertBefore(editBtn, bubbleAnchor.nextSibling);
-    if (listAnchor && listAnchor.parentNode === bar) {
-      bar.insertBefore(undoBtn, listAnchor); bar.insertBefore(redoBtn, listAnchor);
-    } else { bar.appendChild(undoBtn); bar.appendChild(redoBtn) }
-  } else {
-    bar.appendChild(editBtn); bar.appendChild(undoBtn); bar.appendChild(redoBtn);
-  }
 
   var emode = false, esel = null, box = null, tbar = null, panel = null, palPanel = null;
   var dragKey = null, dropHint = null;

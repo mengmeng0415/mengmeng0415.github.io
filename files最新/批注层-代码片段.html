@@ -1,5 +1,6 @@
-<!-- ============ 通用批注层 v41 · 粘贴到任意 HTML 的 </body> 前即可 ============ -->
+<!-- ============ 通用批注层 v42 · 粘贴到任意 HTML 的 </body> 前即可 ============ -->
 <script id="anno-data" type="application/json">[]</script>
+<script id="anno-sync-config" type="application/json">{}</script>
 <style id="anno-style">
   .anno-hover{outline:2px dashed #ff7a45 !important;outline-offset:1px;cursor:crosshair !important;transition:none !important;animation:none !important}
   .anno-flash{}
@@ -123,6 +124,11 @@
   .anno-item.lost b{opacity:.45}
   .anno-item .warn{color:#d48806;font-size:11px;font-weight:600;margin-left:4px}
   .anno-panel .hd .lostn{color:#d48806;font-weight:600;margin-left:6px;cursor:pointer}
+  .anno-panel .gsec{border-top:1px solid #eef0f4}
+  .anno-panel .gtoggle{display:flex;align-items:center;gap:5px;width:100%;padding:8px 12px;background:none;border:0;cursor:pointer;font-size:12px;color:#8a9099;font-family:inherit}
+  .anno-panel .gtoggle:hover{color:#ff7a45}
+  .anno-panel .gtoggle b{margin-left:auto;font-weight:600;color:#1f2329}
+  .anno-item.other .tag{display:inline-block;font-size:11px;color:#3478f6;background:#eaf0fe;padding:1px 6px;border-radius:99px;margin-right:4px}
   .anno-pop .ph .ic.re{color:#d48806}
   .anno-relink{position:fixed;left:50%;bottom:14px;top:auto;transform:translateX(-50%);background:#d48806;color:#fff;padding:7px 16px;border-radius:20px;box-shadow:0 4px 14px rgba(0,0,0,.22);z-index:2147483005;font-size:13px}
   .anno-empty{padding:18px;color:#8a9099;text-align:center;line-height:1.8}
@@ -244,7 +250,23 @@
   }
 </style>
 <script>
+function annoShouldInitUI(){
+  if(window.self!==window.top){
+    return window.name==='mainFrame';
+  }
+  var mf=null; try{ mf=document.getElementsByName('mainFrame')[0] }catch(e){}
+  if(mf&&mf.tagName==='IFRAME') return false;
+  return true;
+}
 (function(){
+  /* Axure 导出的项目内部经常用 iframe 加载页面/动态面板，
+     每个被嵌套加载的文档都带着这份批注层，会各自弹出一套工具条——
+     只让"实际显示原型内容"的那一层文档初始化 UI，其余的跳过：
+     · 不在任何 iframe 里（独立文件/文件夹批量注入的场景）→ 显示
+     · 在 iframe 里，且是 Axure 经典结构约定的主内容框 mainFrame → 显示
+     · 在 iframe 里但不是 mainFrame（嵌套的动态面板/组件）→ 跳过
+     · 不在 iframe 里，但自己只是个套壳、内部还有个 mainFrame 子框架（Axure 的 index.html）→ 跳过，交给 mainFrame 那份处理 */
+  if(!annoShouldInitUI()) return;
   var STORE=document.getElementById('anno-data');
   var RO=STORE.getAttribute('data-mode')==='readonly';
   var raw=null; try{ raw=JSON.parse(STORE.textContent||'[]') }catch(e){ raw=null }
@@ -285,11 +307,84 @@
   seq=data.length;
   function group(n){ for(var i=0;i<PALETTES.length;i++) if(PALETTES[i].n===n) return PALETTES[i]; return PALETTES[0] }
   function serialize(){ return JSON.stringify({pref:PREF,list:data},null,2) }
+
+  /* ---------- 数据库同步（未注入 docId/密钥时自动禁用，不影响离线使用） ---------- */
+  var SYNC=(function(){
+    var cfgEl=document.getElementById('anno-sync-config');
+    var cfg=null; try{ cfg=cfgEl?JSON.parse(cfgEl.textContent||'{}'):null }catch(e){ cfg=null }
+    if(!cfg||!cfg.docId||!cfg.supabaseUrl||!cfg.supabaseAnonKey) return null;
+    var base=cfg.supabaseUrl.replace(/\/+$/,'');
+    var endpoint=base+'/rest/v1/annotations';
+    var rpcEndpoint=base+'/rest/v1/rpc/next_annotation_number';
+    var headers={'apikey':cfg.supabaseAnonKey,'Authorization':'Bearer '+cfg.supabaseAnonKey,'Content-Type':'application/json'};
+    var timer=null;
+    /* 一个项目（docId）可能包含多个真实 HTML 文件，每个文件内又可能有多个「文档页面」，
+       每一份都各自独立的一份批注列表；用 docId + 文件身份 + 当前页面名 拼出独立的行，
+       避免不同文件/不同页面互相覆盖对方的批注。
+       文件身份优先用注入时写死的 pageKey（不随文件改名/重新下载/换地方部署而变化）；
+       旧版本注入的文件没有 pageKey，退回用文件路径兜底，避免直接失联。 */
+    function effectiveDocId(){
+      var page=(document.body&&document.body.dataset&&document.body.dataset.editCurrentPage)||'首页';
+      var fileKey=cfg.pageKey||((typeof pagePath==='function')?pagePath():'');
+      return cfg.docId+'::'+fileKey+'::'+page;
+    }
+    /* 项目内全局唯一、连续的批注编号：向数据库要一个号，多人/多文件同时新建也不会撞号 */
+    function nextNumber(){
+      return fetch(rpcEndpoint,{method:'POST',headers:headers,body:JSON.stringify({p_project_id:cfg.docId})})
+        .then(function(r){ return r.ok?r.json():null })
+        .catch(function(){ return null });
+    }
+    function pull(){
+      var id=effectiveDocId();
+      return fetch(endpoint+'?doc_id=eq.'+encodeURIComponent(id)+'&select=data',{headers:headers})
+        .then(function(r){ return r.ok?r.json():[] })
+        .then(function(rows){ return (rows&&rows[0]&&rows[0].data)||null })
+        .catch(function(){ return null });
+    }
+    function pushNow(){
+      var h={}; for(var k in headers) h[k]=headers[k]; h['Prefer']='resolution=merge-duplicates';
+      fetch(endpoint,{method:'POST',headers:h,body:JSON.stringify([{doc_id:effectiveDocId(),data:JSON.parse(serialize()),updated_at:new Date().toISOString()}])}).catch(function(){});
+    }
+    function push(){ clearTimeout(timer); timer=setTimeout(pushNow,600) }
+    /* 全局可见：拉出同一个项目（docId）下所有页面/文件的批注行，用于跨页/跨文件展示 */
+    function listProject(){
+      return fetch(endpoint+'?doc_id=like.'+encodeURIComponent(cfg.docId+'::')+'*&select=doc_id,data',{headers:headers})
+        .then(function(r){ return r.ok?r.json():[] })
+        .catch(function(){ return [] });
+    }
+    return {pull:pull,push:push,nextNumber:nextNumber,listProject:listProject,effectiveId:effectiveDocId,cfg:cfg};
+  })();
+  var SYNC_APPLYING=false;      /* 防止「应用远端数据 → 触发重载 → 又拉一次远端」的死循环 */
+  function assignGlobalNumber(a){   /* 新建批注时顺带向数据库要一个项目内全局唯一的编号 */
+    if(!SYNC) return;
+    SYNC.nextNumber().then(function(n){
+      if(n){ a.gn=n; save() }
+    });
+  }
   var W0=560,H0=460;
   var mode=false, showList=true, showBox=!RO, sel=null, pop=null, over=null, EDCARET=null;
   var seq=data.reduce(function(m,a){return Math.max(m,a.n||0)},0), pins=[], boxes=[];
   var PINNED={on:RO,set:false,l:0,t:0,w:560,h:460};  /* 固定弹窗位置与大小；只读默认开启 */
   var showPins=!RO, ZOOM=1, boxEdit=null, annoToolMode=RO?'compare':'none', barMoved=false;
+
+  /* 工具条状态（对照/气泡模式、圆点、虚线框、清单）跨页面保持一致：
+     同一个项目（docId）下，不管切到哪个页面/文件，都用上次操作过的那一份，而不是每次都回到默认值。 */
+  function annoUIStateKey(){ return (SYNC&&SYNC.cfg&&SYNC.cfg.docId)?('annoUIState:'+SYNC.cfg.docId):null; }
+  function saveAnnoUIState(){
+    var key=annoUIStateKey(); if(!key) return;
+    try{ localStorage.setItem(key, JSON.stringify({mode:annoToolMode,showPins:showPins,showBox:showBox,showList:showList})); }catch(e){}
+  }
+  (function(){
+    var key=annoUIStateKey(); if(!key) return;
+    var saved=null; try{ var raw=localStorage.getItem(key); saved=raw?JSON.parse(raw):null; }catch(e){}
+    if(!saved) return;
+    if(typeof saved.showPins==='boolean') showPins=saved.showPins;
+    if(typeof saved.showBox==='boolean') showBox=saved.showBox;
+    if(typeof saved.showList==='boolean') showList=saved.showList;
+    if(saved.mode==='compare'||saved.mode==='bubble'||saved.mode==='none'){
+      annoToolMode = RO ? (saved.mode==='none'?'bubble':saved.mode) : saved.mode;
+    }
+  })();
 
   var root=document.createElement('div'); root.id='anno-root'; document.body.appendChild(root);
   var bar=document.createElement('div'); bar.className='anno-bar pe';
@@ -300,11 +395,97 @@
       '<span class="cnt" id="annoCnt" style="display:none">0</span>');
   root.appendChild(bar);
   var panel=document.createElement('div'); panel.className='anno-panel pe';
-  panel.innerHTML='<div class="hd">批注清单<span id="annoCnt2"></span></div><div class="ls" id="annoLs"></div>';
+  panel.innerHTML='<div class="hd">批注清单<span id="annoCnt2"></span></div><div class="ls" id="annoLs"></div>'+
+    (SYNC?'<div class="gsec"><button id="annoGlobalToggle" class="gtoggle">🌐 项目内其他页面<b id="annoGlobalCnt"></b></button><div class="ls" id="annoLsGlobal" style="display:none"></div></div>':'');
   root.appendChild(panel);
   var tip=document.createElement('div'); tip.className='anno-tip'; tip.style.display='none';
   tip.textContent='气泡批注：单击选中元素 · 按住拖动可框选区域 · Esc 退出'; root.appendChild(tip);
   floatFree(bar,bar.querySelector('.grip')); floatFree(panel,panel.querySelector('.hd'));
+
+  /* ---------- 全局可见：项目内其它页面/文件的批注 ---------- */
+  function parseDocId(id){                        /* "docId::pageKey::page" */
+    var i1=id.indexOf('::'); if(i1<0) return {pageKey:'',page:'首页'};
+    var rest=id.slice(i1+2), i2=rest.lastIndexOf('::');
+    if(i2<0) return {pageKey:rest,page:'首页'};
+    return {pageKey:rest.slice(0,i2), page:rest.slice(i2+2)};
+  }
+  function relativePath(fromPath,toPath){          /* 从当前文件所在目录跳到目标文件的相对路径 */
+    var fromParts=fromPath.split('/'); fromParts.pop();
+    var toParts=toPath.split('/'); var toFile=toParts.pop();
+    var i=0;
+    while(i<fromParts.length&&i<toParts.length&&fromParts[i]===toParts[i]) i++;
+    var rel=[];
+    for(var k=0;k<fromParts.length-i;k++) rel.push('..');
+    for(var k=i;k<toParts.length;k++) rel.push(toParts[k]);
+    rel.push(toFile);
+    return rel.join('/');
+  }
+  function goToRemote(loc,a){
+    if(loc.pageKey===SYNC.cfg.pageKey){            /* 同一个文件内的其它文档页面：目前还没有可编程切换的入口 */
+      alert('这条批注属于本文件里的另一个文档页面（'+loc.page+'），暂时还不支持自动跳转，需要手动切换过去查看。');
+      return;
+    }
+    var siblings=SYNC.cfg.siblings||{};
+    var myPath=siblings[SYNC.cfg.pageKey], target=siblings[loc.pageKey];
+    if(!target){ alert('找不到这条批注所在的文件（可能是旧版本注入的文件，没有记录兄弟文件路径）'); return; }
+    var href=myPath?relativePath(myPath,target):target;
+    location.href=href+'?annoFocus='+encodeURIComponent(a.id);
+  }
+  function loadGlobal(){
+    if(!SYNC) return;
+    var box=document.getElementById('annoLsGlobal');
+    var cntEl=document.getElementById('annoGlobalCnt');
+    box.innerHTML='<div style="padding:8px 12px;color:#8a9099;font-size:12px">加载中…</div>';
+    var myId=SYNC.effectiveId();
+    SYNC.listProject().then(function(rows){
+      var items=[];
+      (rows||[]).forEach(function(row){
+        if(row.doc_id===myId) return;              /* 本页自己的批注已经显示在上面了 */
+        var loc=parseDocId(row.doc_id);
+        var list=(row.data&&row.data.list)||[];
+        var fileLabel=loc.pageKey===SYNC.cfg.pageKey
+          ? loc.page
+          : ((SYNC.cfg.siblings&&SYNC.cfg.siblings[loc.pageKey])||'其他文件')+(loc.page&&loc.page!=='首页'?' · '+loc.page:'');
+        list.forEach(function(a){ items.push({a:a,loc:loc,fileLabel:fileLabel}) });
+      });
+      cntEl.textContent=items.length?(items.length+' 条'):'';
+      box.innerHTML='';
+      if(!items.length){ box.innerHTML='<div style="padding:8px 12px;color:#8a9099;font-size:12px">暂无</div>'; return }
+      items.forEach(function(it){
+        var a=it.a;
+        var d=document.createElement('div'); d.className='anno-item other';
+        d.innerHTML='<b></b><div class="tx"><p></p><em></em></div>';
+        var b=d.querySelector('b'); b.textContent=a.gn||a.n||''; paint(b,a.color||PINS[0]);
+        d.querySelector('p').textContent=plain(a.html)||'（空）';
+        d.querySelector('em').innerHTML='<span class="tag">'+it.fileLabel+'</span>'+(a.label||'');
+        d.onclick=function(){ goToRemote(it.loc,a) };
+        box.appendChild(d);
+      });
+    });
+  }
+  (function(){
+    var gToggle=document.getElementById('annoGlobalToggle');
+    if(!gToggle) return;
+    var open=false;
+    gToggle.onclick=function(){
+      open=!open;
+      document.getElementById('annoLsGlobal').style.display=open?'block':'none';
+      if(open) loadGlobal();
+    };
+  })();
+  /* 从其它页面/文件跳转过来时，带着 ?annoFocus=<id> 落地后自动定位过去（数据可能还没同步回来，重试几次） */
+  (function(){
+    var m=/[?&]annoFocus=([^&]+)/.exec(location.search);
+    if(!m) return;
+    var targetId=decodeURIComponent(m[1]);
+    var tries=0;
+    (function tryFocus(){
+      var found=null;
+      for(var i=0;i<data.length;i++) if(data[i].id===targetId){ found=data[i]; break }
+      if(found){ setTimeout(function(){ focusOn(found) },300); return }
+      if(++tries<20) setTimeout(tryFocus,200);
+    })();
+  })();
   function floatFree(el,handle){
     drag(handle,function(dx,dy,s){
       if(el===bar) barMoved=true;
@@ -415,8 +596,8 @@
     return true;
   }
   function covered(el,px,py,cx,cy){ return !hitOK(el,px,py)&&!hitOK(el,cx,cy) }
-  function save(){ STORE.textContent=serialize(); render() }
-  function save2(){ STORE.textContent=serialize() }
+  function save(){ STORE.textContent=serialize(); render(); if(SYNC) SYNC.push() }
+  function save2(){ STORE.textContent=serialize(); if(SYNC) SYNC.push() }
   function paint(el,color){ el.style.background=color; el.style.color=dark(color)?'#fff':'#1f2329' }
 
   /* ---------- 清单 + 拖拽排序 ---------- */
@@ -436,15 +617,17 @@
       var t=plain(a.html);
       d.querySelector('p').textContent=t||'（空）';
       var emEl=d.querySelector('em');
-      emEl.textContent=a.label||'';
+      emEl.textContent=(a.gn?('#'+a.gn+' · '):'')+(a.label||'');
       if(!alive){
+        var hasTrail=a.trail&&a.trail.length;    /* 有足迹：很可能只是被收起的抽屉/弹窗/Tab 挡住，点击会自动展开找回来 */
         var w=document.createElement('span'); w.className='warn';
-        w.textContent=RO?'⚠ 元素已变动':'⚠ 点此重新锚定';
-        if(!RO){ w.style.cursor='pointer'; w.onclick=function(ev){ ev.stopPropagation(); startRelink(a) } }
+        w.textContent=hasTrail?'⚠ 可能需展开，点击定位':(RO?'⚠ 元素已变动':'⚠ 点此重新锚定');
+        w.style.cursor='pointer';
+        w.onclick=function(ev){ ev.stopPropagation(); focusOn(a) };
         emEl.appendChild(w);
       }
       d.title=t;
-      d.onclick=function(){ alive?focusOn(a):(RO?null:startRelink(a)) };
+      d.onclick=function(){ focusOn(a) };
       if(!RO){ b.style.cursor='pointer'; b.title='双击修改编号';
         b.addEventListener('dblclick',function(ev){ ev.stopPropagation(); ev.preventDefault(); renumber(a) }) }
       if(!RO){
@@ -465,7 +648,7 @@
       }
       ls.appendChild(d);
     });
-    if(c2) c2.innerHTML=data.length+' 条'+(lost?'<span class="lostn">· '+lost+' 条待重锚</span>':'');
+    if(c2) c2.innerHTML=data.length+' 条'+(lost?'<span class="lostn">· '+lost+' 条不在本页</span>':'');
     if(!RO){
       ls.ondragover=function(e){ if(dragId) e.preventDefault() };
       ls.ondrop=function(e){ if(dragId&&e.target===ls){ e.preventDefault(); reorder(dragId,null,false); clearDrop() } };
@@ -639,7 +822,11 @@
   function focusOn(a){
     if(over) closeOver();
     reveal(a,function(el){
-      if(el){ try{ el.scrollIntoView({block:'center',behavior:'smooth'}) }catch(e){} }
+      if(!el){                              /* 按足迹重放也找不到，才是真的需要重新锚定 */
+        if(!RO) startRelink(a);
+        return;
+      }
+      try{ el.scrollIntoView({block:'center',behavior:'smooth'}) }catch(e){}
       sel=a.id; draw();
       setTimeout(function(){
         draw();
@@ -1447,7 +1634,7 @@
     var r=el.getBoundingClientRect();
     var a={ id:newId(), n:++seq, sel:pathOf(el), label:labelOf(el), html:'', color:PREF.c, w:W0, h:H0, trail:TRAIL.slice(),
             rx:r.width?(cx-r.left)/r.width:.5, ry:r.height?(cy-r.top)/r.height:.5 };
-    data.push(a); save(); openPop(a,cx,cy);
+    data.push(a); save(); assignGlobalNumber(a); openPop(a,cx,cy);
   }
   function pickArea(l,t,w,h){
     var host=null, cx=l+w/2, cy=t+h/2;
@@ -1476,7 +1663,7 @@
             label:'框选区域 · '+cnt+' 个元素'+(txt.trim()?' 「'+txt.trim().slice(0,18)+'」':''),
             html:'', color:PREF.c, w:W0, h:H0, trail:TRAIL.slice(),
             ax:(l-hr.left)/hw, ay:(t-hr.top)/hh, aw:w/hw, ah:h/hh, rx:1, ry:0 };
-    data.push(a); save(); openPop(a,l+w,t);
+    data.push(a); save(); assignGlobalNumber(a); openPop(a,l+w,t);
   }
   var mqS=null, mq=null, mqMoved=false;
   document.addEventListener('mousedown',function(e){
@@ -1548,7 +1735,7 @@
   function deactivateAnnoTool(){
     if(split) closeSplit();
     setMode(false); annoToolMode=RO?'bubble':'none';
-    updateAnnoToolButtons(); placeBarDefault(true);
+    updateAnnoToolButtons(); placeBarDefault(true); saveAnnoUIState();
   }
   function activateAnnoTool(kind,force){
     if(!force&&!RO&&annoToolMode===kind){ deactivateAnnoTool(); return }
@@ -1560,7 +1747,7 @@
       if(split) closeSplit();
       annoToolMode='bubble'; setMode(!RO);
     }
-    updateAnnoToolButtons(); placeBarDefault(true);
+    updateAnnoToolButtons(); placeBarDefault(true); saveAnnoUIState();
   }
   window.__annoExitForEdit=function(){
     if(RO) return;
@@ -1568,11 +1755,12 @@
     annoToolMode='none'; setMode(false); updateAnnoToolButtons(); placeBarDefault(true);
   };
   var bm=document.getElementById('annoMode'); if(bm) bm.onclick=function(){ activateAnnoTool('bubble') };
-  document.getElementById('annoList').onclick=function(){ showList=!showList; this.classList.toggle('on',showList); render() };
+  document.getElementById('annoList').onclick=function(){ showList=!showList; this.classList.toggle('on',showList); render(); saveAnnoUIState() };
   var bb=document.getElementById('annoBox');
   bb.onclick=function(){
     showBox=!showBox; bb.classList.toggle('on',showBox); draw();
     if(split){ drawFrame(); if(splitCur) splitShow(splitCur) }
+    saveAnnoUIState();
   };
   /* ---------- 对照模式：左原型 右批注 ---------- */
   var split=null, splitCur=null, splitW=58, splitH=32;
@@ -1884,7 +2072,7 @@
     },true);
   }
   function frameAdd(a){
-    data.push(a); save(); refreshSplitList(); splitShow(a); drawFrame(); splitEdit(a);
+    data.push(a); save(); assignGlobalNumber(a); refreshSplitList(); splitShow(a); drawFrame(); splitEdit(a);
   }
   function framePickElement(doc,el,cx,cy){
     var r=el.getBoundingClientRect();
@@ -2004,7 +2192,7 @@
       if(!RO){ b2.style.cursor='pointer'; b2.title='双击修改编号';
         b2.addEventListener('dblclick',function(ev){ ev.stopPropagation(); ev.preventDefault(); renumber(a) }) }
       d.querySelector('p').textContent=plain(a.html)||'（空）';
-      var em2=d.querySelector('em'); em2.textContent=a.label||'';
+      var em2=d.querySelector('em'); em2.textContent=(a.gn?('#'+a.gn+' · '):'')+(a.label||'');
       if(!alive2){ var w2=document.createElement('span'); w2.className='warn'; w2.textContent='⚠ 元素已变动'; em2.appendChild(w2) }
       d.dataset.id=a.id;
       d.onclick=function(){ splitShowEdit(a) };
@@ -2084,10 +2272,11 @@
   if(bpn) bpn.onclick=function(){
     showPins=!showPins; bpn.classList.toggle('on',showPins); draw();
     if(split){ drawFrame(); if(splitCur) splitShow(splitCur) }
+    saveAnnoUIState();
   };
   document.getElementById('annoOver').onclick=function(){ over?closeOver():openOver() };
 
-  function download(readonly){
+  function buildSelfHtml(readonly){          /* 把当前页克隆、去掉批注 UI、写入最新批注数据，返回完整 HTML 字符串 */
     closePop(); closeOver();
     STORE.textContent=serialize();
     var pagesSnapshot=window.__editBeforeExport?window.__editBeforeExport():null;
@@ -2101,10 +2290,101 @@
       if(ps) ps.textContent=JSON.stringify(pagesSnapshot.pages);
       if(c.querySelector('body')) c.querySelector('body').dataset.editCurrentPage=pagesSnapshot.currentPage;
     }
+    return '<!doctype html>\n'+c.outerHTML;
+  }
+  function download(readonly){
+    var html=buildSelfHtml(readonly);
     var name=(document.title||'page')+(readonly?'_批注只读版':'_批注版')+'.html';
-    var b=new Blob(['<!doctype html>\n'+c.outerHTML],{type:'text/html;charset=utf-8'});
+    var b=new Blob([html],{type:'text/html;charset=utf-8'});
     var u=URL.createObjectURL(b), a=document.createElement('a'); a.href=u; a.download=name; a.click();
     setTimeout(function(){ URL.revokeObjectURL(u) },3000);
+  }
+
+  /* ---------- 多文件项目：导出整个项目而不是只导出当前这一页 ---------- */
+  var CRC_TABLE_ANNO=(function(){
+    var t=[];
+    for(var n=0;n<256;n++){
+      var c=n;
+      for(var k=0;k<8;k++) c=(c&1)?(0xEDB88320^(c>>>1)):(c>>>1);
+      t[n]=c>>>0;
+    }
+    return t;
+  })();
+  function crc32Anno(bytes){
+    var crc=0^(-1);
+    for(var i=0;i<bytes.length;i++) crc=(crc>>>8)^CRC_TABLE_ANNO[(crc^bytes[i])&0xFF];
+    return (crc^(-1))>>>0;
+  }
+  function makeZipAnno(entries){              /* entries: [{path, bytes:Uint8Array}] */
+    var chunks=[], centralChunks=[], offset=0;
+    entries.forEach(function(e){
+      var nameBytes=new TextEncoder().encode(e.path.replace(/\\/g,'/'));
+      var data=e.bytes, crc=crc32Anno(data), size=data.length;
+      var lh=new Uint8Array(30+nameBytes.length), ldv=new DataView(lh.buffer);
+      ldv.setUint32(0,0x04034b50,true); ldv.setUint16(4,20,true); ldv.setUint16(6,0,true);
+      ldv.setUint16(8,0,true); ldv.setUint16(10,0,true); ldv.setUint16(12,0x21,true);
+      ldv.setUint32(14,crc,true); ldv.setUint32(18,size,true); ldv.setUint32(22,size,true);
+      ldv.setUint16(26,nameBytes.length,true); ldv.setUint16(28,0,true);
+      lh.set(nameBytes,30);
+      chunks.push(lh,data);
+      var ch=new Uint8Array(46+nameBytes.length), cdv=new DataView(ch.buffer);
+      cdv.setUint32(0,0x02014b50,true); cdv.setUint16(4,20,true); cdv.setUint16(6,20,true);
+      cdv.setUint16(8,0,true); cdv.setUint16(10,0,true); cdv.setUint16(12,0,true); cdv.setUint16(14,0x21,true);
+      cdv.setUint32(16,crc,true); cdv.setUint32(20,size,true); cdv.setUint32(24,size,true);
+      cdv.setUint16(28,nameBytes.length,true); cdv.setUint16(30,0,true); cdv.setUint16(32,0,true);
+      cdv.setUint16(34,0,true); cdv.setUint16(36,0,true); cdv.setUint32(38,0,true);
+      cdv.setUint32(42,offset,true);
+      ch.set(nameBytes,46);
+      centralChunks.push(ch);
+      offset+=lh.length+data.length;
+    });
+    var centralStart=offset;
+    var centralSize=centralChunks.reduce(function(s,c){ return s+c.length },0);
+    var end=new Uint8Array(22), edv=new DataView(end.buffer);
+    edv.setUint32(0,0x06054b50,true);
+    edv.setUint16(8,entries.length,true); edv.setUint16(10,entries.length,true);
+    edv.setUint32(12,centralSize,true); edv.setUint32(16,centralStart,true);
+    return new Blob(chunks.concat(centralChunks).concat([end]),{type:'application/zip'});
+  }
+  function isMultiFileProject(){
+    return !!(SYNC&&SYNC.cfg&&SYNC.cfg.siblings&&Object.keys(SYNC.cfg.siblings).length>1);
+  }
+  /* 点“导出”应该是纯下载动作，不该弹出选择文件/文件夹这种看起来像“上传”的交互——
+     所以改成用 fetch 按相对路径自动读取项目里的其它页面和资源文件，全程不用用户选任何东西。
+     只有 fetch 读不到（比如本地用 file:// 直接打开，浏览器不允许读取同目录的其它本地文件）才会
+     退回成只下载当前这一页（跟单文件项目的行为一致），并提示一下原因。 */
+  function fetchBytes(relHref){
+    return fetch(relHref).then(function(r){
+      if(!r.ok) throw new Error('http '+r.status);
+      return r.arrayBuffer();
+    }).then(function(buf){ return new Uint8Array(buf) });
+  }
+  function downloadProject(readonly){
+    var cfg=SYNC.cfg, siblings=cfg.siblings||{}, myPath=siblings[cfg.pageKey]||pagePath();
+    var otherPaths=Object.keys(siblings).map(function(k){ return siblings[k] }).filter(function(p){ return p!==myPath });
+    var assetPaths=cfg.assets||[];
+    var jobs=otherPaths.map(function(p){ return {path:p,href:relativePath(myPath,p),isHtml:true} })
+      .concat(assetPaths.map(function(p){ return {path:p,href:relativePath(myPath,p),isHtml:false} }));
+
+    Promise.all(jobs.map(function(j){
+      return fetchBytes(j.href).then(function(bytes){ return {path:j.path,bytes:bytes,ok:true} })
+        .catch(function(){ return {path:j.path,ok:false} });
+    })).then(function(results){
+      var failed=results.filter(function(r){ return !r.ok });
+      if(failed.length){
+        download(readonly);
+        alert('没能读到项目里其它文件（'+failed.length+' 个），常见于用 file:// 直接双击打开本地文件——已改成只下载当前这一页。把项目部署到网页（比如 GitHub Pages）后再点导出，就能整包下载了。');
+        return;
+      }
+      var enc=new TextEncoder();
+      var entries=results.map(function(r){ return {path:r.path,bytes:r.bytes} });
+      entries.push({path:myPath,bytes:enc.encode(buildSelfHtml(readonly))});
+      var rootName=myPath.split('/')[0]||'project';
+      var zipName=rootName+(readonly?'_批注只读版':'_批注版')+'.zip';
+      var blob=makeZipAnno(entries);
+      var u=URL.createObjectURL(blob), a=document.createElement('a'); a.href=u; a.download=zipName; a.click();
+      setTimeout(function(){ URL.revokeObjectURL(u) },4000);
+    });
   }
   function pagePath(){                      /* 当前页在原型包内的相对路径 */
     var p=location.pathname.replace(/\\/g,'/');
@@ -2135,8 +2415,8 @@
     a.href=u; a.download=name; a.click();
     setTimeout(function(){ URL.revokeObjectURL(u) },3000);
   };
-  var e1=document.getElementById('annoExp'); if(e1) e1.onclick=function(){ download(false) };
-  var e2=document.getElementById('annoExpRO'); if(e2) e2.onclick=function(){ download(true) };
+  var e1=document.getElementById('annoExp'); if(e1) e1.onclick=function(){ isMultiFileProject()?downloadProject(false):download(false) };
+  var e2=document.getElementById('annoExpRO'); if(e2) e2.onclick=function(){ isMultiFileProject()?downloadProject(true):download(true) };
 
   /* 同一 HTML 内的文档页面切换桥:重载当前页批注,不刷新浏览器 */
   window.__annoGetData=function(){
@@ -2178,21 +2458,51 @@
       if(keepToolMode==='compare'||keepToolMode==='bubble') activateAnnoTool(keepToolMode);
       else{ updateAnnoToolButtons(); placeBarDefault(true) }
     },0);
+    if(SYNC&&!SYNC_APPLYING){            /* 切换到某个文档页面时，顺带拉一次这个页面在数据库里的最新批注 */
+      SYNC.pull().then(function(remote){
+        if(!remote) return;
+        SYNC_APPLYING=true;
+        STORE.textContent=JSON.stringify(remote);
+        window.__annoReload();
+        SYNC_APPLYING=false;
+      });
+    }
   };
 
-  if(RO){                                     /* 只读模式默认进入对照批注 */
+  if(RO){                                     /* 只读模式默认进入对照批注，除非上次保存的是气泡批注 */
     setTimeout(function(){
       if(split) return;
-      activateAnnoTool('compare');
+      activateAnnoTool(annoToolMode==='bubble'?'bubble':'compare',true);
+    },0);
+  }else if(annoToolMode==='compare'||annoToolMode==='bubble'){
+    var restoredMode=annoToolMode;              /* 跨页面保留的批注模式，需要真正进入（不只是按钮点亮） */
+    setTimeout(function(){
+      if(split) return;
+      activateAnnoTool(restoredMode,true);
     },0);
   }
   ['scroll','wheel'].forEach(function(ev){ document.addEventListener(ev,function(){ draw(); posIH(); posTBar() },true) });
   addEventListener('resize',function(){ draw(); posIH(); posTBar(); if(split){ syncSplitShell(); barToLeft() } });
   setInterval(function(){ draw(); posIH(); if(split&&(showPins||showBox||splitCur)) drawFrame() },600);
+  var bpn0=document.getElementById('annoPins'); if(bpn0) bpn0.classList.toggle('on',showPins);
+  var bb0=document.getElementById('annoBox'); if(bb0) bb0.classList.toggle('on',showBox);
+  var bls0=document.getElementById('annoList'); if(bls0) bls0.classList.toggle('on',showList);
   updateAnnoToolButtons(); render(); watchAliveChanges(); setTimeout(function(){ placeBarDefault(true) },0);
+  if(SYNC){                                   /* 打开时拉一次数据库最新批注，覆盖本地嵌入的旧快照 */
+    SYNC.pull().then(function(remote){
+      if(remote){
+        SYNC_APPLYING=true;
+        STORE.textContent=JSON.stringify(remote);
+        window.__annoReload();
+        SYNC_APPLYING=false;
+      }else if(data&&data.length){            /* 数据库里还没有这份文档：用本地已有批注（升级/迁移场景）种一份进去 */
+        SYNC.push();
+      }
+    });
+  }
 })();
 </script>
-<!-- ============ 批注层 v41 结束 ============ -->
+<!-- ============ 批注层 v42 结束 ============ -->
 <!-- ============ 通用编辑层 v17 · 粘贴在「批注层」代码块之后(或单独粘贴到任意 HTML 的 </body> 前) ============ -->
 <style id="edit-style">
   #anno-root .pe{pointer-events:auto}
@@ -2240,6 +2550,7 @@
   .edit-opts textarea{display:block;width:100%;box-sizing:border-box;border:0;padding:10px 12px;font:13px/1.6 inherit;resize:vertical;min-height:110px}
   .edit-opts .ft{padding:8px 12px;border-top:1px solid #eef0f4;text-align:right}
   .edit-opts .ft button{border:1px solid #3478f6;background:#3478f6;color:#fff;border-radius:6px;padding:6px 14px;font:inherit;cursor:pointer}
+
 
   #anno-root.edit-shell-enabled .anno-bar{top:62px}
   #anno-root.edit-shell-enabled .anno-panel{top:112px;max-height:calc(100vh - 124px)}
@@ -2334,6 +2645,7 @@
 </style>
 <script>
 (function(){
+  if(!annoShouldInitUI()) return;         /* 同样只在实际显示原型内容的那层文档初始化，跳过套壳/嵌套面板 */
   if(window.__editLayerInit) return;
   window.__editLayerInit = true;
 
@@ -2381,6 +2693,16 @@
 
   function inRoot(el){ return !!el && root.contains(el) }
   function isFreePos(el){ var p = getComputedStyle(el).position; return p === 'absolute' || p === 'fixed' }
+
+  function pathOf(el){
+    if (!el || el === document.body) return 'body';
+    var p = [];
+    while (el && el !== document.body && el.nodeType === 1) {
+      var i = 1, s = el; while (s = s.previousElementSibling) { if (s.tagName === el.tagName) i++ }
+      p.unshift(el.tagName.toLowerCase() + ':nth-of-type(' + i + ')'); el = el.parentElement;
+    }
+    return 'body>' + p.join('>');
+  }
 
   /* ---------- 编辑内容防丢失：React/Vue 等框架重渲染会覆盖手动改的DOM，这里记住每处编辑，
      一旦发现被外部改回去就自动补写回来，不需要用户编辑完立刻下载 ---------- */
@@ -3283,6 +3605,7 @@
   }
   if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', migrateLegacyTrailingPageNodes, { once:true });
   else setTimeout(migrateLegacyTrailingPageNodes, 0);
+
 
   /* ---------- 持续跟随滚动 / 缩放 ---------- */
   document.addEventListener('scroll', function(){ if (esel) { drawBox(); posToolbar(); positionPanel(); positionTextPanel() } }, true);
