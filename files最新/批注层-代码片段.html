@@ -372,8 +372,9 @@ function annoShouldInitUI(){
   function annoUIStateKey(){ return (SYNC&&SYNC.cfg&&SYNC.cfg.docId)?('annoUIState:'+SYNC.cfg.docId):null; }
   function saveAnnoUIState(){
     var key=annoUIStateKey(); if(!key) return;
-    try{ localStorage.setItem(key, JSON.stringify({mode:annoToolMode,showPins:showPins,showBox:showBox,showList:showList})); }catch(e){}
+    try{ localStorage.setItem(key, JSON.stringify({mode:annoToolMode,showPins:showPins,showBox:showBox,showList:showList,over:!!over})); }catch(e){}
   }
+  var restoredOverview=false;
   (function(){
     var key=annoUIStateKey(); if(!key) return;
     var saved=null; try{ var raw=localStorage.getItem(key); saved=raw?JSON.parse(raw):null; }catch(e){}
@@ -384,6 +385,7 @@ function annoShouldInitUI(){
     if(saved.mode==='compare'||saved.mode==='bubble'||saved.mode==='none'){
       annoToolMode = RO ? (saved.mode==='none'?'bubble':saved.mode) : saved.mode;
     }
+    restoredOverview=!!saved.over;
   })();
 
   var root=document.createElement('div'); root.id='anno-root'; document.body.appendChild(root);
@@ -1501,6 +1503,8 @@ function annoShouldInitUI(){
     });
     over.addEventListener('click',function(e){ if(e.target.tagName==='IMG'&&e.target.closest('.bd')) lightbox(e.target.src) });
     root.classList.add('overview'); root.appendChild(over); draw();
+    var bov=document.getElementById('annoOver'); if(bov) bov.classList.add('on');
+    saveAnnoUIState();
     hd.querySelector('#annoOverX').onclick=closeOver;
     hd.querySelector('#annoPdf').onclick=function(){
       document.body.classList.add('anno-print');
@@ -1616,7 +1620,12 @@ function annoShouldInitUI(){
       if(sn&&sn._reset) sn._reset();
     };
   }
-  function closeOver(){ if(over){ over.remove(); over=null; root.classList.remove('overview'); draw() } }
+  function closeOver(){
+    if(!over) return;
+    over.remove(); over=null; root.classList.remove('overview'); draw();
+    var bov=document.getElementById('annoOver'); if(bov) bov.classList.remove('on');
+    saveAnnoUIState();
+  }
   function go(a,dir){                                /* 只读：切上一条 / 下一条 */
     var i=data.indexOf(a); if(i<0||data.length<2) return;
     focusOn(data[(i+dir+data.length)%data.length]);
@@ -2480,6 +2489,9 @@ function annoShouldInitUI(){
       if(split) return;
       activateAnnoTool(restoredMode,true);
     },0);
+  }
+  if(restoredOverview){                         /* 跨页面保留"全览"状态 */
+    setTimeout(function(){ if(!over) openOver() },0);
   }
   ['scroll','wheel'].forEach(function(ev){ document.addEventListener(ev,function(){ draw(); posIH(); posTBar() },true) });
   addEventListener('resize',function(){ draw(); posIH(); posTBar(); if(split){ syncSplitShell(); barToLeft() } });
