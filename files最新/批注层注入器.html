@@ -336,17 +336,21 @@ function buildShell(rootName,pages){
     '  html,body{height:100%;margin:0}\n'+
     '  body{font:14px/1.6 -apple-system,"PingFang SC","Microsoft YaHei",Arial;color:#1f2329}\n'+
     '  .wrap{display:flex;height:100%;width:100%}\n'+
-    '  .side{width:210px;flex:none;background:#fafbfc;border-right:1px solid #e5e8ee;overflow:auto;padding:10px 0;transition:width .15s,padding .15s}\n'+
-    '  .side.collapsed{width:0;padding:0;overflow:hidden;border-right:0}\n'+
+    '  .side{width:210px;flex:none;background:#fafbfc;border-right:1px solid #e5e8ee;overflow:auto;padding:10px 0}\n'+
+    '  .side.anim{transition:width .15s,padding .15s}\n'+
+    '  .side.collapsed{width:0!important;padding:0;overflow:hidden;border-right:0}\n'+
     '  .side a{display:block;padding:8px 16px;color:#4a5160;text-decoration:none;font-size:13px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}\n'+
     '  .side a:hover{background:#f0f2f5}\n'+
     '  .side a.on{background:#fff6f2;color:#ff7a45;font-weight:600;box-shadow:inset 2px 0 #ff7a45}\n'+
+    '  .resizer{flex:none;width:5px;margin-left:-5px;position:relative;z-index:2;cursor:col-resize}\n'+
+    '  .resizer:hover,.resizer.dragging{background:#ffb98a}\n'+
     '  .toggle{flex:none;width:16px;background:#f3f5f8;border-right:1px solid #e5e8ee;display:flex;align-items:center;justify-content:center;cursor:pointer;color:#9aa0a8;font-size:11px;user-select:none}\n'+
     '  .toggle:hover{background:#eceef1;color:#ff7a45}\n'+
     '  iframe{flex:1;border:0;width:100%;height:100%}\n'+
     '</style></head>\n<body>\n'+
     '<div class="wrap">\n'+
     '<div class="side" id="pageList">\n  '+items+'\n</div>\n'+
+    '<div class="resizer" id="sideResizer"></div>\n'+
     '<div class="toggle" id="sideToggle">‹</div>\n'+
     '<iframe name="mainFrame" src="'+firstHref.replace(/"/g,'&quot;')+'"></iframe>\n'+
     '</div>\n'+
@@ -354,10 +358,33 @@ function buildShell(rootName,pages){
     '  var links=document.querySelectorAll(".side a");\n'+
     '  links.forEach(function(a){ a.addEventListener("click",function(){ links.forEach(function(x){x.classList.remove("on")}); a.classList.add("on") }) });\n'+
     '  if(links[0]) links[0].classList.add("on");\n'+
+    '  (function(){\n'+
+    '    var side=document.getElementById("pageList"), rz=document.getElementById("sideResizer");\n'+
+    '    var savedW=null; try{ savedW=localStorage.getItem("annoShellSideWidth") }catch(e){}\n'+
+    '    if(savedW) side.style.width=savedW;\n'+
+    '    var dragging=false, startX=0, startW=0;\n'+
+    '    rz.addEventListener("mousedown",function(e){\n'+
+    '      if(side.classList.contains("collapsed")) return;\n'+
+    '      dragging=true; startX=e.clientX; startW=side.getBoundingClientRect().width;\n'+
+    '      rz.classList.add("dragging"); document.body.style.userSelect="none"; e.preventDefault();\n'+
+    '    });\n'+
+    '    document.addEventListener("mousemove",function(e){\n'+
+    '      if(!dragging) return;\n'+
+    '      var w=Math.max(120,Math.min(480,startW+(e.clientX-startX)));\n'+
+    '      side.style.width=w+"px";\n'+
+    '    });\n'+
+    '    document.addEventListener("mouseup",function(){\n'+
+    '      if(!dragging) return;\n'+
+    '      dragging=false; rz.classList.remove("dragging"); document.body.style.userSelect="";\n'+
+    '      try{ localStorage.setItem("annoShellSideWidth", side.style.width) }catch(e){}\n'+
+    '    });\n'+
+    '  })();\n'+
     '  var side=document.getElementById("pageList"), tg=document.getElementById("sideToggle");\n'+
     '  tg.addEventListener("click",function(){\n'+
+    '    side.classList.add("anim");\n'+
     '    side.classList.toggle("collapsed");\n'+
     '    tg.textContent=side.classList.contains("collapsed")?"\\u203a":"\\u2039";\n'+
+    '    setTimeout(function(){ side.classList.remove("anim") },200);\n'+
     '  });\n'+
     '<\/script>\n</body></html>\n';
 }
