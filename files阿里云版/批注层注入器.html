@@ -173,8 +173,8 @@ function editLayerRange(t){
   return {s:start.index,e:end?start.index+end.index+end[0].length:t.length};
 }
 /* ---------- 批注数据库同步：给每个文件分配一个稳定的 docId ---------- */
-var SUPABASE_URL='https://doeiutvrhqeendcbcmnx.supabase.co';
-var SUPABASE_ANON_KEY='sb_publishable_XjBNBQ0573HSPKM13IQzYQ_LK0hlLkG';
+var SUPABASE_URL='https://8-219-182-91.nip.io';
+var SUPABASE_ANON_KEY='eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJyb2xlIjoid2ViX2Fub24ifQ.fNfm5h9TyQZ7kZOuq4-JcU1PZOMxb8yZuEZ_Riz4O6g';
 function syncCfgOf(t){
   var m=/<script id="anno-sync-config"[^>]*>([\s\S]*?)<\/script>/i.exec(t);
   if(!m) return null;
