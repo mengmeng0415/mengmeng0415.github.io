@@ -774,7 +774,7 @@
   </script>
 <!-- ============ 通用批注层 v42 · 粘贴到任意 HTML 的 </body> 前即可 ============ -->
 <script id="anno-data" type="application/json">[]</script>
-<script id="anno-sync-config" type="application/json">{"docId":"dmt1rjr6qsvhvwp","pageKey":"pmt1rjr6q618gjv","supabaseUrl":"https://doeiutvrhqeendcbcmnx.supabase.co","supabaseAnonKey":"sb_publishable_XjBNBQ0573HSPKM13IQzYQ_LK0hlLkG","siblings":{"pmt1rjr6q618gjv":"项目1/邮件工单优化.html","pmt1rjr6r5mc6b9":"项目1/物流索赔.html"},"assets":[]}</script>
+<script id="anno-sync-config" type="application/json">{"docId":"dmt2dlhgjhmgu1c","pageKey":"pmt2dlhgjsnyd8v","supabaseUrl":"https://doeiutvrhqeendcbcmnx.supabase.co","supabaseAnonKey":"sb_publishable_XjBNBQ0573HSPKM13IQzYQ_LK0hlLkG","siblings":{"pmt2dlhgjsnyd8v":"项目1/邮件工单优化.html","pmt2dlhgn7twbuf":"项目1/物流索赔.html"},"assets":[],"shellPath":"项目1/index.html"}</script>
 <style id="anno-style">
   .anno-hover{outline:2px dashed #ff7a45 !important;outline-offset:1px;cursor:crosshair !important;transition:none !important;animation:none !important}
   .anno-flash{}
@@ -1313,6 +1313,12 @@ function annoShouldInitUI(){
   function plain(h){ var d=document.createElement('div'); d.innerHTML=h||'';
     var t=(d.textContent||'').replace(/\s+/g,' ').trim();
     return t || (/<img/i.test(h||'')?'[图片]':'') || (/<table/i.test(h||'')?'[表格]':'') }
+  function annoHtmlIsEmpty(h){                 /* 判断批注是不是真的什么都没有：图片/表格/列表本身就算内容，不能光看有没有文字 */
+    if(!h) return true;
+    if(/<(img|table|hr)[\s\/>]/i.test(h)) return false;
+    if(/<li[\s>]/i.test(h)) return false;
+    return !h.replace(/<[^>]+>|&nbsp;|\s/g,'');
+  }
   function dark(hex){
     var m=/^#?([0-9a-f]{6})$/i.exec(hex||''); if(!m) return false;
     var v=parseInt(m[1],16), r=v>>16, g=(v>>8)&255, b=v&255;
@@ -1769,7 +1775,7 @@ function annoShouldInitUI(){
                  .replace(/ class="tw-hot"/g,'').replace(/ class="tw-drag"/g,'')
                  .replace(/class="anno-cal curc"/g,'class="anno-cal"').trim();
       if(store) a.html=html;
-      if(!(a.html||'').replace(/<[^>]+>|&nbsp;|\s/g,'')){ remove(a); return }
+      if(annoHtmlIsEmpty(a.html)){ remove(a); return }
       closePop(); save();
     }
   }
@@ -3005,7 +3011,7 @@ function annoShouldInitUI(){
       if(store) a.html=html;
       if(pop===box) pop=null;
       host.innerHTML=''; host.style.display='none'; rv.style.display=''; hideIH(); hideTBar();
-      if(!(a.html||'').replace(/<[^>]+>|&nbsp;|\s/g,'')){
+      if(annoHtmlIsEmpty(a.html)){
         data=data.filter(function(x){ return x!==a });
         data.forEach(function(x,i){ x.n=i+1 }); seq=data.length;
         save();
@@ -3142,31 +3148,73 @@ function annoShouldInitUI(){
       return r.arrayBuffer();
     }).then(function(buf){ return new Uint8Array(buf) });
   }
+  function fetchText(relHref){
+    return fetch(relHref).then(function(r){
+      if(!r.ok) throw new Error('http '+r.status);
+      return r.text();
+    });
+  }
+  function markReadonly(html){                /* 给兄弟页面的 anno-data 打上只读标记，跟当前页导出时的处理保持一致 */
+    return html.replace(/<script id="anno-data"([^>]*)>/i,function(m,attrs){
+      return /data-mode\s*=\s*["']readonly["']/i.test(attrs) ? m : '<script id="anno-data"'+attrs+' data-mode="readonly">';
+    });
+  }
   function downloadProject(readonly){
     var cfg=SYNC.cfg, siblings=cfg.siblings||{}, myPath=siblings[cfg.pageKey]||pagePath();
     var otherPaths=Object.keys(siblings).map(function(k){ return siblings[k] }).filter(function(p){ return p!==myPath });
-    var assetPaths=cfg.assets||[];
-    var jobs=otherPaths.map(function(p){ return {path:p,href:relativePath(myPath,p),isHtml:true} })
-      .concat(assetPaths.map(function(p){ return {path:p,href:relativePath(myPath,p),isHtml:false} }));
+    var assetPaths=(cfg.assets||[]).slice();
+    if(cfg.shellPath && assetPaths.indexOf(cfg.shellPath)<0 && otherPaths.indexOf(cfg.shellPath)<0){
+      assetPaths.push(cfg.shellPath);          /* 自动生成的导航外壳不在 siblings 里（它不参与批注），单独按原样带上 */
+    }
+    var expBtn=document.getElementById(readonly?'annoExpRO':'annoExp');
+    var expBtnOther=document.getElementById(readonly?'annoExp':'annoExpRO');
+    var oldText=expBtn?expBtn.textContent:'';
+    if(expBtn){ expBtn.textContent='⏳ 正在打包…'; expBtn.disabled=true; }
+    if(expBtnOther) expBtnOther.disabled=true;
+    function restoreBtn(){
+      if(expBtn){ expBtn.textContent=oldText; expBtn.disabled=false; }
+      if(expBtnOther) expBtnOther.disabled=false;
+    }
 
-    Promise.all(jobs.map(function(j){
-      return fetchBytes(j.href).then(function(bytes){ return {path:j.path,bytes:bytes,ok:true} })
-        .catch(function(){ return {path:j.path,ok:false} });
-    })).then(function(results){
-      var failed=results.filter(function(r){ return !r.ok });
-      if(failed.length){
+    var htmlJobs=otherPaths.map(function(p){ return {path:p,href:relativePath(myPath,p)} });
+    var assetJobs=assetPaths.map(function(p){ return {path:p,href:relativePath(myPath,p)} });
+
+    Promise.all([
+      Promise.all(htmlJobs.map(function(j){
+        return fetchText(j.href).then(function(t){ return {path:j.path,text:(readonly?markReadonly(t):t),ok:true} })
+          .catch(function(){ return {path:j.path,ok:false} });
+      })),
+      Promise.all(assetJobs.map(function(j){
+        return fetchBytes(j.href).then(function(b){ return {path:j.path,bytes:b,ok:true} })
+          .catch(function(){ return {path:j.path,ok:false} });
+      }))
+    ]).then(function(all){
+      var htmlResults=all[0], assetResults=all[1];
+      var failed=htmlResults.concat(assetResults).filter(function(r){ return !r.ok });
+      var okHtml=htmlResults.filter(function(r){ return r.ok });
+      var okAssets=assetResults.filter(function(r){ return r.ok });
+      if(!okHtml.length && !okAssets.length && (htmlJobs.length+assetJobs.length)>0){
+        restoreBtn();
         download(readonly);
-        alert('没能读到项目里其它文件（'+failed.length+' 个），常见于用 file:// 直接双击打开本地文件——已改成只下载当前这一页。把项目部署到网页（比如 GitHub Pages）后再点导出，就能整包下载了。');
+        alert('没能读到项目里的其它文件，常见于用 file:// 直接双击打开本地文件——已改成只下载当前这一页。把项目部署到网页（比如 GitHub Pages）后再点导出，就能整包下载了。');
         return;
       }
       var enc=new TextEncoder();
-      var entries=results.map(function(r){ return {path:r.path,bytes:r.bytes} });
+      var entries=okHtml.map(function(r){ return {path:r.path,bytes:enc.encode(r.text)} })
+        .concat(okAssets.map(function(r){ return {path:r.path,bytes:r.bytes} }));
       entries.push({path:myPath,bytes:enc.encode(buildSelfHtml(readonly))});
+      restoreBtn();
+      if(failed.length){
+        alert('项目里有 '+failed.length+' 个文件没读到（可能是网络问题或文件已删除），已跳过这些文件，其余的正常打包。');
+      }
       var rootName=myPath.split('/')[0]||'project';
       var zipName=rootName+(readonly?'_批注只读版':'_批注版')+'.zip';
       var blob=makeZipAnno(entries);
       var u=URL.createObjectURL(blob), a=document.createElement('a'); a.href=u; a.download=zipName; a.click();
       setTimeout(function(){ URL.revokeObjectURL(u) },4000);
+    }).catch(function(){
+      restoreBtn();
+      alert('导出失败，请重试一次。');
     });
   }
   function pagePath(){                      /* 当前页在原型包内的相对路径 */
@@ -3208,6 +3256,7 @@ function annoShouldInitUI(){
   };
   window.__annoReload=function(){
     var keepToolMode=annoToolMode;
+    var keepOverview=!!over;                /* 数据刷新（比如从数据库拉到最新批注）不该把正在看的全览关掉，得记着刷新完重新打开 */
     closePop(); closeOver();
     if(split) closeSplit();
     if(relinkFor) endRelink();
@@ -3240,6 +3289,7 @@ function annoShouldInitUI(){
     setTimeout(function(){
       if(keepToolMode==='compare'||keepToolMode==='bubble') activateAnnoTool(keepToolMode);
       else{ updateAnnoToolButtons(); placeBarDefault(true) }
+      if(keepOverview) openOver();          /* 数据刷新完了，用最新的批注列表重新打开全览 */
     },0);
     if(SYNC&&!SYNC_APPLYING){            /* 切换到某个文档页面时，顺带拉一次这个页面在数据库里的最新批注 */
       SYNC.pull().then(function(remote){
