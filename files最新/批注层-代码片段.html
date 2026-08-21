@@ -539,6 +539,12 @@ function annoShouldInitUI(){
   function plain(h){ var d=document.createElement('div'); d.innerHTML=h||'';
     var t=(d.textContent||'').replace(/\s+/g,' ').trim();
     return t || (/<img/i.test(h||'')?'[图片]':'') || (/<table/i.test(h||'')?'[表格]':'') }
+  function annoHtmlIsEmpty(h){                 /* 判断批注是不是真的什么都没有：图片/表格/列表本身就算内容，不能光看有没有文字 */
+    if(!h) return true;
+    if(/<(img|table|hr)[\s\/>]/i.test(h)) return false;
+    if(/<li[\s>]/i.test(h)) return false;
+    return !h.replace(/<[^>]+>|&nbsp;|\s/g,'');
+  }
   function dark(hex){
     var m=/^#?([0-9a-f]{6})$/i.exec(hex||''); if(!m) return false;
     var v=parseInt(m[1],16), r=v>>16, g=(v>>8)&255, b=v&255;
@@ -995,7 +1001,7 @@ function annoShouldInitUI(){
                  .replace(/ class="tw-hot"/g,'').replace(/ class="tw-drag"/g,'')
                  .replace(/class="anno-cal curc"/g,'class="anno-cal"').trim();
       if(store) a.html=html;
-      if(!(a.html||'').replace(/<[^>]+>|&nbsp;|\s/g,'')){ remove(a); return }
+      if(annoHtmlIsEmpty(a.html)){ remove(a); return }
       closePop(); save();
     }
   }
@@ -2231,7 +2237,7 @@ function annoShouldInitUI(){
       if(store) a.html=html;
       if(pop===box) pop=null;
       host.innerHTML=''; host.style.display='none'; rv.style.display=''; hideIH(); hideTBar();
-      if(!(a.html||'').replace(/<[^>]+>|&nbsp;|\s/g,'')){
+      if(annoHtmlIsEmpty(a.html)){
         data=data.filter(function(x){ return x!==a });
         data.forEach(function(x,i){ x.n=i+1 }); seq=data.length;
         save();
@@ -2434,6 +2440,7 @@ function annoShouldInitUI(){
   };
   window.__annoReload=function(){
     var keepToolMode=annoToolMode;
+    var keepOverview=!!over;                /* 数据刷新（比如从数据库拉到最新批注）不该把正在看的全览关掉，得记着刷新完重新打开 */
     closePop(); closeOver();
     if(split) closeSplit();
     if(relinkFor) endRelink();
@@ -2466,6 +2473,7 @@ function annoShouldInitUI(){
     setTimeout(function(){
       if(keepToolMode==='compare'||keepToolMode==='bubble') activateAnnoTool(keepToolMode);
       else{ updateAnnoToolButtons(); placeBarDefault(true) }
+      if(keepOverview) openOver();          /* 数据刷新完了，用最新的批注列表重新打开全览 */
     },0);
     if(SYNC&&!SYNC_APPLYING){            /* 切换到某个文档页面时，顺带拉一次这个页面在数据库里的最新批注 */
       SYNC.pull().then(function(remote){
