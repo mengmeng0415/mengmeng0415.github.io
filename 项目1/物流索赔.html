@@ -412,7 +412,7 @@ function LogisticsClaimList({onOpenClaim:E,onOpenRefund:V}){
 </script>
   <!-- ============ 通用批注层 v42 · 粘贴到任意 HTML 的 </body> 前即可 ============ -->
 <script id="anno-data" type="application/json">[]</script>
-<script id="anno-sync-config" type="application/json">{"docId":"dmt2dlhgjhmgu1c","pageKey":"pmt2dlhgn7twbuf","supabaseUrl":"https://doeiutvrhqeendcbcmnx.supabase.co","supabaseAnonKey":"sb_publishable_XjBNBQ0573HSPKM13IQzYQ_LK0hlLkG","siblings":{"pmt2dlhgjsnyd8v":"项目1/邮件工单优化.html","pmt2dlhgn7twbuf":"项目1/物流索赔.html"},"assets":[],"shellPath":"项目1/index.html"}</script>
+<script id="anno-sync-config" type="application/json">{"docId":"dmt2ej0py45afc3","pageKey":"pmt2ej0q3zpvzot","supabaseUrl":"https://doeiutvrhqeendcbcmnx.supabase.co","supabaseAnonKey":"sb_publishable_XjBNBQ0573HSPKM13IQzYQ_LK0hlLkG","siblings":{"pmt2ej0py9ymrrc":"项目1/邮件工单优化.html","pmt2ej0q3zpvzot":"项目1/物流索赔.html"},"assets":[],"shellPath":"项目1/index.html"}</script>
 <style id="anno-style">
   .anno-hover{outline:2px dashed #ff7a45 !important;outline-offset:1px;cursor:crosshair !important;transition:none !important;animation:none !important}
   .anno-flash{}
@@ -2703,6 +2703,20 @@ function annoShouldInitUI(){
   };
   document.getElementById('annoOver').onclick=function(){ over?closeOver():openOver() };
 
+  function stripForeignInjections(root){
+    /* 有些浏览器扩展会在浏览时往页面里插自己的元素（比如某些内容采集类插件的 mpa-* 标签），
+       导出是整份 DOM 克隆出去的，这些元素、以及它们偶尔遗留下来的杂散文字，会被一起带进导出文件里，
+       变成看不懂的乱码显示在页面上——这里统一清掉，不是批注数据本身的问题。 */
+    Array.prototype.forEach.call(root.querySelectorAll('*'),function(n){
+      if((n.tagName||'').toLowerCase().indexOf('mpa-')===0) n.remove();
+    });
+    var body=root.querySelector('body');
+    if(body){
+      Array.prototype.slice.call(body.childNodes).forEach(function(n){
+        if(n.nodeType===3 && n.textContent && n.textContent.replace(/\s/g,'').length>20) n.remove();
+      });
+    }
+  }
   function buildSelfHtml(readonly){          /* 把当前页克隆、去掉批注 UI、写入最新批注数据，返回完整 HTML 字符串 */
     closePop(); closeOver();
     STORE.textContent=serialize();
@@ -2710,6 +2724,7 @@ function annoShouldInitUI(){
     var c=document.documentElement.cloneNode(true);
     var rt=c.querySelector('#anno-root'); if(rt) rt.remove();
     Array.prototype.forEach.call(c.querySelectorAll('.anno-hover,.anno-flash'),function(n){ n.classList.remove('anno-hover','anno-flash') });
+    stripForeignInjections(c);
     var st=c.querySelector('#anno-data');
     readonly?st.setAttribute('data-mode','readonly'):st.removeAttribute('data-mode');
     if(pagesSnapshot&&pagesSnapshot.pages){
@@ -4077,6 +4092,16 @@ function annoShouldInitUI(){
       persistPages();
     }
   }
+  function stripForeignBodyArtifacts(){
+    /* 某些浏览器扩展会往 body 里插自己的元素（比如 mpa-* 标签），偶尔还会留下一截裸露的 JSON 文字，
+       直接显示在页面最上面。这些跟批注/编辑层无关，扫一遍 body 的直接子节点清掉就行；
+       扫全部（不只 pageEnd 之后），因为这类东西可能出现在 pageStart 之前。 */
+    Array.prototype.slice.call(document.body.childNodes).forEach(function(n){
+      if (n.nodeType === 1 && (n.tagName||'').toLowerCase().indexOf('mpa-') === 0) { n.remove(); return }
+      if (n.nodeType === 3 && n.textContent && n.textContent.replace(/\s/g,'').length > 20) n.remove();
+    });
+  }
+  stripForeignBodyArtifacts();
   if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', migrateLegacyTrailingPageNodes, { once:true });
   else setTimeout(migrateLegacyTrailingPageNodes, 0);
 
