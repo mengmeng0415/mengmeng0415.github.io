@@ -2374,31 +2374,73 @@ function annoShouldInitUI(){
       return r.arrayBuffer();
     }).then(function(buf){ return new Uint8Array(buf) });
   }
+  function fetchText(relHref){
+    return fetch(relHref).then(function(r){
+      if(!r.ok) throw new Error('http '+r.status);
+      return r.text();
+    });
+  }
+  function markReadonly(html){                /* 给兄弟页面的 anno-data 打上只读标记，跟当前页导出时的处理保持一致 */
+    return html.replace(/<script id="anno-data"([^>]*)>/i,function(m,attrs){
+      return /data-mode\s*=\s*["']readonly["']/i.test(attrs) ? m : '<script id="anno-data"'+attrs+' data-mode="readonly">';
+    });
+  }
   function downloadProject(readonly){
     var cfg=SYNC.cfg, siblings=cfg.siblings||{}, myPath=siblings[cfg.pageKey]||pagePath();
     var otherPaths=Object.keys(siblings).map(function(k){ return siblings[k] }).filter(function(p){ return p!==myPath });
-    var assetPaths=cfg.assets||[];
-    var jobs=otherPaths.map(function(p){ return {path:p,href:relativePath(myPath,p),isHtml:true} })
-      .concat(assetPaths.map(function(p){ return {path:p,href:relativePath(myPath,p),isHtml:false} }));
+    var assetPaths=(cfg.assets||[]).slice();
+    if(cfg.shellPath && assetPaths.indexOf(cfg.shellPath)<0 && otherPaths.indexOf(cfg.shellPath)<0){
+      assetPaths.push(cfg.shellPath);          /* 自动生成的导航外壳不在 siblings 里（它不参与批注），单独按原样带上 */
+    }
+    var expBtn=document.getElementById(readonly?'annoExpRO':'annoExp');
+    var expBtnOther=document.getElementById(readonly?'annoExp':'annoExpRO');
+    var oldText=expBtn?expBtn.textContent:'';
+    if(expBtn){ expBtn.textContent='⏳ 正在打包…'; expBtn.disabled=true; }
+    if(expBtnOther) expBtnOther.disabled=true;
+    function restoreBtn(){
+      if(expBtn){ expBtn.textContent=oldText; expBtn.disabled=false; }
+      if(expBtnOther) expBtnOther.disabled=false;
+    }
 
-    Promise.all(jobs.map(function(j){
-      return fetchBytes(j.href).then(function(bytes){ return {path:j.path,bytes:bytes,ok:true} })
-        .catch(function(){ return {path:j.path,ok:false} });
-    })).then(function(results){
-      var failed=results.filter(function(r){ return !r.ok });
-      if(failed.length){
+    var htmlJobs=otherPaths.map(function(p){ return {path:p,href:relativePath(myPath,p)} });
+    var assetJobs=assetPaths.map(function(p){ return {path:p,href:relativePath(myPath,p)} });
+
+    Promise.all([
+      Promise.all(htmlJobs.map(function(j){
+        return fetchText(j.href).then(function(t){ return {path:j.path,text:(readonly?markReadonly(t):t),ok:true} })
+          .catch(function(){ return {path:j.path,ok:false} });
+      })),
+      Promise.all(assetJobs.map(function(j){
+        return fetchBytes(j.href).then(function(b){ return {path:j.path,bytes:b,ok:true} })
+          .catch(function(){ return {path:j.path,ok:false} });
+      }))
+    ]).then(function(all){
+      var htmlResults=all[0], assetResults=all[1];
+      var failed=htmlResults.concat(assetResults).filter(function(r){ return !r.ok });
+      var okHtml=htmlResults.filter(function(r){ return r.ok });
+      var okAssets=assetResults.filter(function(r){ return r.ok });
+      if(!okHtml.length && !okAssets.length && (htmlJobs.length+assetJobs.length)>0){
+        restoreBtn();
         download(readonly);
-        alert('没能读到项目里其它文件（'+failed.length+' 个），常见于用 file:// 直接双击打开本地文件——已改成只下载当前这一页。把项目部署到网页（比如 GitHub Pages）后再点导出，就能整包下载了。');
+        alert('没能读到项目里的其它文件，常见于用 file:// 直接双击打开本地文件——已改成只下载当前这一页。把项目部署到网页（比如 GitHub Pages）后再点导出，就能整包下载了。');
         return;
       }
       var enc=new TextEncoder();
-      var entries=results.map(function(r){ return {path:r.path,bytes:r.bytes} });
+      var entries=okHtml.map(function(r){ return {path:r.path,bytes:enc.encode(r.text)} })
+        .concat(okAssets.map(function(r){ return {path:r.path,bytes:r.bytes} }));
       entries.push({path:myPath,bytes:enc.encode(buildSelfHtml(readonly))});
+      restoreBtn();
+      if(failed.length){
+        alert('项目里有 '+failed.length+' 个文件没读到（可能是网络问题或文件已删除），已跳过这些文件，其余的正常打包。');
+      }
       var rootName=myPath.split('/')[0]||'project';
       var zipName=rootName+(readonly?'_批注只读版':'_批注版')+'.zip';
       var blob=makeZipAnno(entries);
       var u=URL.createObjectURL(blob), a=document.createElement('a'); a.href=u; a.download=zipName; a.click();
       setTimeout(function(){ URL.revokeObjectURL(u) },4000);
+    }).catch(function(){
+      restoreBtn();
+      alert('导出失败，请重试一次。');
     });
   }
   function pagePath(){                      /* 当前页在原型包内的相对路径 */
