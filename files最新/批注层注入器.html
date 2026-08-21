@@ -33,15 +33,15 @@ ul{color:#6b7280;margin:0 0 18px;padding-left:20px;font-size:14px}li{margin:5px 
 <h1>批注与编辑层注入器 <span style="font-size:13px;color:#8a9099;font-weight:400">单文件版</span></h1>
 <p class="sub">文件不上传，全部在本地浏览器完成</p>
 
-<button type="button" class="dbtoggle" id="dbToggle">⚙ 数据库设置（可选，默认用工具自带的数据库）</button>
-<div class="dbfields" id="dbFields" style="display:none">
+<button type="button" class="dbtoggle" id="dbToggle">⚙ 数据库设置</button>
+<div class="dbfields" id="dbFields">
   <label>Supabase 项目地址
     <input type="text" id="dbUrl" placeholder="https://xxxxx.supabase.co">
   </label>
   <label>Supabase anon / publishable key
     <input type="text" id="dbKey" placeholder="sb_publishable_...">
   </label>
-  <p class="dbhint">留空就用工具自带的默认数据库。想把批注存到自己的 Supabase（比如每个同事各用各的账号），把这两项换成你自己项目里的值——填过一次之后这个浏览器会记住，下次打开不用重填。之后用这个页面注入的所有文件，批注都会存到你填的这个数据库里。</p>
+  <p class="dbhint">这两项不内置默认值，必须填自己的 Supabase 项目信息，批注才会同步到数据库、支持跨页面/跨设备可见——填过一次之后这个浏览器会记住，下次打开不用重填。留空的话批注只会保存在本地这份文件里，不会同步、也看不到"项目内其他页面"。</p>
 </div>
 
 <div class="tabs">
@@ -192,7 +192,7 @@ function editLayerRange(t){
   return {s:start.index,e:end?start.index+end.index+end[0].length:t.length};
 }
 /* ---------- 批注数据库同步：给每个文件分配一个稳定的 docId ---------- */
-var SUPABASE_URL='https://doeiutvrhqeendcbcmnx.supabase.co';               /* 默认数据库，没自己配置就用这个 */
+var SUPABASE_URL='https://doeiutvrhqeendcbcmnx.supabase.co';   /* 这是你自己的默认库，这份文件仅供你自己用，别直接分享给同事 */
 var SUPABASE_ANON_KEY='sb_publishable_XjBNBQ0573HSPKM13IQzYQ_LK0hlLkG';
 (function(){                              /* 每个人可以填自己的 Supabase，浏览器本地记住，覆盖上面的默认值 */
   try{
@@ -440,6 +440,7 @@ var SIDECAR_NAME='annoproject.json';
    身份找回来，重新注入后批注还能对上号。 */
 function handleFolder(list){
   logEl.innerHTML=''; logEl.classList.remove('has');
+  if(!SUPABASE_URL||!SUPABASE_ANON_KEY) log('⚠ 还没填数据库设置：这次生成的批注只会保存在本地文件里，不会同步、也看不到"项目内其他页面"','warn');
   var all=(list||[]).filter(function(it){ return it&&it.file });
   if(!all.length){ log('没有可处理的文件','err'); return }
   var sidecarItem=all.filter(function(it){ return it.path.split('/').pop()===SIDECAR_NAME })[0];
@@ -523,6 +524,7 @@ function handleFolder(list){
 
 function handle(list){
   logEl.innerHTML=''; logEl.classList.remove('has');
+  if(!SUPABASE_URL||!SUPABASE_ANON_KEY) log('⚠ 还没填数据库设置：这次生成的批注只会保存在本地文件里，不会同步、也看不到"项目内其他页面"','warn');
   var htmls=(list||[]).filter(function(it){ return it&&it.file&&/\.html?$/i.test(it.path) });
   (list||[]).forEach(function(it){ if(it&&!/\.html?$/i.test(it.path)) log('跳过（非 HTML）：'+it.path,'dim') });
   if(!htmls.length){ log('没有可处理的 HTML 文件','err'); return }
