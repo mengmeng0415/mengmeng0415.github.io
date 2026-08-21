@@ -1,0 +1,64 @@
+<!doctype html>
+<!-- 批注器自动生成的导航外壳 · 请勿手动编辑 · 每次重新处理这个文件夹都会按当前的 HTML 文件重新生成 -->
+<html lang="zh-CN"><head><meta charset="utf-8"><title>项目1</title>
+<style>
+  *{box-sizing:border-box}
+  html,body{height:100%;margin:0}
+  body{font:14px/1.6 -apple-system,"PingFang SC","Microsoft YaHei",Arial;color:#1f2329}
+  .wrap{display:flex;height:100%;width:100%}
+  .side{width:210px;flex:none;background:#fafbfc;border-right:1px solid #e5e8ee;overflow:auto;padding:10px 0}
+  .side.anim{transition:width .15s,padding .15s}
+  .side.collapsed{width:0!important;padding:0;overflow:hidden;border-right:0}
+  .side a{display:block;padding:8px 16px;color:#4a5160;text-decoration:none;font-size:13px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+  .side a:hover{background:#f0f2f5}
+  .side a.on{background:#fff6f2;color:#ff7a45;font-weight:600;box-shadow:inset 2px 0 #ff7a45}
+  .resizer{flex:none;width:5px;margin-left:-5px;position:relative;z-index:2;cursor:col-resize}
+  .resizer:hover,.resizer.dragging{background:#ffb98a}
+  .toggle{flex:none;width:16px;background:#f3f5f8;border-right:1px solid #e5e8ee;display:flex;align-items:center;justify-content:center;cursor:pointer;color:#9aa0a8;font-size:11px;user-select:none}
+  .toggle:hover{background:#eceef1;color:#ff7a45}
+  iframe{flex:1;border:0;width:100%;height:100%}
+</style></head>
+<body>
+<div class="wrap">
+<div class="side" id="pageList">
+  <a href="物流索赔.html" target="mainFrame">退款请求 · 物流索赔</a>
+  <a href="邮件工单优化.html" target="mainFrame">邮件工单优化原型</a>
+</div>
+<div class="resizer" id="sideResizer"></div>
+<div class="toggle" id="sideToggle">‹</div>
+<iframe name="mainFrame" src="物流索赔.html"></iframe>
+</div>
+<script>
+  var links=document.querySelectorAll(".side a");
+  links.forEach(function(a){ a.addEventListener("click",function(){ links.forEach(function(x){x.classList.remove("on")}); a.classList.add("on") }) });
+  if(links[0]) links[0].classList.add("on");
+  (function(){
+    var side=document.getElementById("pageList"), rz=document.getElementById("sideResizer");
+    var savedW=null; try{ savedW=localStorage.getItem("annoShellSideWidth") }catch(e){}
+    if(savedW) side.style.width=savedW;
+    var dragging=false, startX=0, startW=0;
+    rz.addEventListener("mousedown",function(e){
+      if(side.classList.contains("collapsed")) return;
+      dragging=true; startX=e.clientX; startW=side.getBoundingClientRect().width;
+      rz.classList.add("dragging"); document.body.style.userSelect="none"; e.preventDefault();
+    });
+    document.addEventListener("mousemove",function(e){
+      if(!dragging) return;
+      var w=Math.max(120,Math.min(480,startW+(e.clientX-startX)));
+      side.style.width=w+"px";
+    });
+    document.addEventListener("mouseup",function(){
+      if(!dragging) return;
+      dragging=false; rz.classList.remove("dragging"); document.body.style.userSelect="";
+      try{ localStorage.setItem("annoShellSideWidth", side.style.width) }catch(e){}
+    });
+  })();
+  var side=document.getElementById("pageList"), tg=document.getElementById("sideToggle");
+  tg.addEventListener("click",function(){
+    side.classList.add("anim");
+    side.classList.toggle("collapsed");
+    tg.textContent=side.classList.contains("collapsed")?"\u203a":"\u2039";
+    setTimeout(function(){ side.classList.remove("anim") },200);
+  });
+</script>
+</body></html>
