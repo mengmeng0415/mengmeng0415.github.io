@@ -21,28 +21,9 @@ ul{color:#6b7280;margin:0 0 18px;padding-left:20px;font-size:14px}li{margin:5px 
 .tabs{display:flex;gap:8px;margin-bottom:18px}
 .tabbtn{flex:1;padding:9px 0;border-radius:8px;border:1px solid #e3e6eb;background:#fff;color:#6b7280;font-size:13px;cursor:pointer;font-family:inherit}
 .tabbtn.on{background:#fff6f2;border-color:#ff7a45;color:#ff7a45;font-weight:600}
-.dbtoggle{display:block;width:100%;text-align:left;background:none;border:0;color:#8a9099;font-size:12.5px;cursor:pointer;padding:4px 0 14px;font-family:inherit}
-.dbtoggle:hover{color:#ff7a45}
-.dbfields{background:#fafbfc;border:1px solid #e3e6eb;border-radius:10px;padding:14px 16px;margin-bottom:16px}
-.dbfields label{display:block;font-size:12.5px;color:#5b6472;margin-bottom:6px}
-.dbfields label+label{margin-top:10px}
-.dbfields input{width:100%;margin-top:4px;padding:7px 9px;border:1px solid #e3e6eb;border-radius:7px;font:13px/1.4 ui-monospace,monospace;color:#1f2329}
-.dbfields input:focus{outline:0;border-color:#ff7a45}
-.dbhint{margin:10px 0 0;font-size:12px;color:#8a9099;line-height:1.6}
 </style></head><body><div class="box">
 <h1>批注与编辑层注入器 <span style="font-size:13px;color:#8a9099;font-weight:400">单文件版</span></h1>
 <p class="sub">文件不上传，全部在本地浏览器完成</p>
-
-<button type="button" class="dbtoggle" id="dbToggle">⚙ 数据库设置（可选，默认用工具自带的数据库）</button>
-<div class="dbfields" id="dbFields" style="display:none">
-  <label>Supabase 项目地址
-    <input type="text" id="dbUrl" placeholder="https://xxxxx.supabase.co">
-  </label>
-  <label>Supabase anon / publishable key
-    <input type="text" id="dbKey" placeholder="sb_publishable_...">
-  </label>
-  <p class="dbhint">留空就用工具自带的默认数据库。想把批注存到自己的 Supabase（比如每个同事各用各的账号），把这两项换成你自己项目里的值——填过一次之后这个浏览器会记住，下次打开不用重填。之后用这个页面注入的所有文件，批注都会存到你填的这个数据库里。</p>
-</div>
 
 <div class="tabs">
   <button type="button" class="tabbtn on" data-tab="single">单个 / 多个文件</button>
@@ -192,29 +173,8 @@ function editLayerRange(t){
   return {s:start.index,e:end?start.index+end.index+end[0].length:t.length};
 }
 /* ---------- 批注数据库同步：给每个文件分配一个稳定的 docId ---------- */
-var SUPABASE_URL='https://doeiutvrhqeendcbcmnx.supabase.co';               /* 默认数据库，没自己配置就用这个 */
+var SUPABASE_URL='https://doeiutvrhqeendcbcmnx.supabase.co';
 var SUPABASE_ANON_KEY='sb_publishable_XjBNBQ0573HSPKM13IQzYQ_LK0hlLkG';
-(function(){                              /* 每个人可以填自己的 Supabase，浏览器本地记住，覆盖上面的默认值 */
-  try{
-    var u=localStorage.getItem('annoInjectorSupabaseUrl'), k=localStorage.getItem('annoInjectorSupabaseKey');
-    if(u) SUPABASE_URL=u;
-    if(k) SUPABASE_ANON_KEY=k;
-  }catch(e){}
-})();
-(function(){
-  var toggle=document.getElementById('dbToggle'), fields=document.getElementById('dbFields');
-  var urlInput=document.getElementById('dbUrl'), keyInput=document.getElementById('dbKey');
-  if(!toggle||!fields||!urlInput||!keyInput) return;
-  urlInput.value=SUPABASE_URL; keyInput.value=SUPABASE_ANON_KEY;
-  toggle.addEventListener('click',function(){ fields.style.display = fields.style.display==='none' ? 'block' : 'none' });
-  function save(){
-    var u=urlInput.value.trim(), k=keyInput.value.trim();
-    if(u){ SUPABASE_URL=u; try{ localStorage.setItem('annoInjectorSupabaseUrl',u) }catch(e){} }
-    if(k){ SUPABASE_ANON_KEY=k; try{ localStorage.setItem('annoInjectorSupabaseKey',k) }catch(e){} }
-  }
-  urlInput.addEventListener('input',save);
-  keyInput.addEventListener('input',save);
-})();
 function syncCfgOf(t){
   var m=/<script id="anno-sync-config"[^>]*>([\s\S]*?)<\/script>/i.exec(t);
   if(!m) return null;
