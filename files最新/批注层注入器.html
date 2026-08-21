@@ -44,6 +44,7 @@ ul{color:#6b7280;margin:0 0 18px;padding-left:20px;font-size:14px}li{margin:5px 
 
 <div class="tabpane" data-pane="folder" style="display:none">
   <p class="desc">点击选择一整个文件夹（比如 Axure 导出包，或放在同一个文件夹里的多个页面）。文件夹里所有 HTML 共用同一个项目、批注全局可见、编号统一；图片/CSS 等非 HTML 文件原样保留；下载下来还是一个文件夹（打包成 zip，解压即可，文件名和相对路径都不变）。文件夹里没有 index.html 的话会自动生成一个导航外壳，方便打开后在多个页面间切换。</p>
+  <p class="desc" style="color:#ff7a45">解压后会多一个 <b>annoproject.json</b>，跟 index.html 放在一起——以后在 Axure 里改完原型重新生成 HTML 包，把这份文件也留在同一个文件夹里（Axure 自己不认识它，不会动它），再拖进来批注就不会失联；删了这份文件的话，重新生成后批注就找不回来了。</p>
   <div class="drop" id="d3"><b>点击选择文件夹</b></div>
   <input type="file" id="f2" webkitdirectory multiple hidden>
 </div>
@@ -184,13 +185,15 @@ function pageKeyOf(t){ var c=syncCfgOf(t); return (c&&c.pageKey)||null }
 function genDocId(){ return 'd'+Date.now().toString(36)+Math.random().toString(36).slice(2,8) }
 function genPageKey(){ return 'p'+Date.now().toString(36)+Math.random().toString(36).slice(2,8) }
 
-function inject(t,forceRO,forceDocId){
+function inject(t,forceRO,forceDocId,forcePageKey){
   var upgraded=false, data=null, ro=!!forceRO;
   /* docId：整个项目共用（批量注入时可强制统一）；pageKey：这一个文件自己稳定的身份，
      不依赖文件名/路径——文件被重命名、重新下载、换个地方部署都不受影响，
-     升级/re-export 时始终从原文件里读回来，保持跟数据库里同一份数据的关联。 */
+     升级/re-export 时始终从原文件里读回来，保持跟数据库里同一份数据的关联。
+     forcePageKey：当文件本身已经被 Axure 重新生成、批注层被整个冲掉时，
+     从旁边那份 annoproject.json 侧车文件里按路径把原来的 pageKey 找回来，避免失联。 */
   var docId=forceDocId||docIdOf(t)||genDocId();
-  var pageKey=pageKeyOf(t)||genPageKey();
+  var pageKey=forcePageKey||pageKeyOf(t)||genPageKey();
   var tag=/<script id="anno-data"([^>]*)>([\s\S]*?)<\/script>/i.exec(t);
   if(tag){
     if(/data-mode\s*=\s*["']readonly["']/i.test(tag[1])) ro=true;
@@ -389,20 +392,32 @@ function buildShell(rootName,pages){
     '<\/script>\n</body></html>\n';
 }
 
+var SIDECAR_NAME='annoproject.json';
+/* 在 Axure 里改完原型、重新生成一遍 HTML 包时，Axure 只认它自己管的文件，
+   会把之前注入的批注层连同 docId/pageKey 一起整个冲掉——这份侧车文件放在项目根目录，
+   Axure 不认识它，重新生成时不会被删/被盖，靠它按「相对路径」把原来的项目 ID 和每个页面的
+   身份找回来，重新注入后批注还能对上号。 */
 function handleFolder(list){
   logEl.innerHTML=''; logEl.classList.remove('has');
   var all=(list||[]).filter(function(it){ return it&&it.file });
   if(!all.length){ log('没有可处理的文件','err'); return }
-  var htmlItems=all.filter(function(it){ return /\.html?$/i.test(it.path) });
-  var otherItems=all.filter(function(it){ return !/\.html?$/i.test(it.path) });
+  var sidecarItem=all.filter(function(it){ return it.path.split('/').pop()===SIDECAR_NAME })[0];
+  var rest=all.filter(function(it){ return it!==sidecarItem });
+  var htmlItems=rest.filter(function(it){ return /\.html?$/i.test(it.path) });
+  var otherItems=rest.filter(function(it){ return !/\.html?$/i.test(it.path) });
   if(!htmlItems.length){ log('文件夹里没有找到 HTML 文件','err'); return }
 
   Promise.all([
     Promise.all(htmlItems.map(function(it){ return readText(it.file).then(function(t){ return {path:it.path,text:t} }) })),
-    Promise.all(otherItems.map(function(it){ return readBytes(it.file).then(function(b){ return {path:it.path,bytes:b} }) }))
+    Promise.all(otherItems.map(function(it){ return readBytes(it.file).then(function(b){ return {path:it.path,bytes:b} }) })),
+    sidecarItem?readText(sidecarItem.file):Promise.resolve(null)
   ]).then(function(res){
-    var htmlFiles=res[0], assetFiles=res[1];
+    var htmlFiles=res[0], assetFiles=res[1], sidecarRaw=res[2];
     var rootName=htmlItems[0].path.split('/')[0]||'项目';
+
+    var sidecar=null; if(sidecarRaw){ try{ sidecar=JSON.parse(sidecarRaw) }catch(e){ sidecar=null } }
+    var sidecarPages=(sidecar&&sidecar.pages)||{};
+    function relOf(path){ return path.indexOf(rootName+'/')===0?path.slice(rootName.length+1):path }
 
     /* 有没有一个真正的（Axure 自带 / 用户自己的）index.html？有就不碰，只有「不存在」或者「是我们自己上次生成的外壳」才自动生成/更新 */
     var indexPath=rootName+'/index.html', indexPathAlt=rootName+'/index.htm';
@@ -410,13 +425,16 @@ function handleFolder(list){
     var shouldGenerateShell=!existingIndex||isAutoShell(existingIndex.text);
     var contentFiles=htmlFiles.filter(function(f){ return !(shouldGenerateShell&&existingIndex&&f===existingIndex) });
 
-    /* 整批共用同一个项目 docId：优先沿用其中任意一个文件已有的，都没有才新生成 */
-    var projectDocId=null;
-    contentFiles.forEach(function(f){ var id=docIdOf(f.text); if(id&&!projectDocId) projectDocId=id; });
+    /* 整批共用同一个项目 docId：优先用侧车文件记的，其次沿用文件里现存的，都没有才新生成 */
+    var projectDocId=(sidecar&&sidecar.docId)||null;
+    if(!projectDocId) contentFiles.forEach(function(f){ var id=docIdOf(f.text); if(id&&!projectDocId) projectDocId=id; });
     if(!projectDocId) projectDocId=genDocId();
 
+    var recovered=0;
     var results=contentFiles.map(function(f){
-      var r=inject(f.text,false,projectDocId);
+      var forceKey=pageKeyOf(f.text)?null:(sidecarPages[relOf(f.path)]||null);   /* 文件自己没带 pageKey（被 Axure 冲掉了），才从侧车找 */
+      if(forceKey) recovered++;
+      var r=inject(f.text,false,projectDocId,forceKey);
       return {path:f.path, html:r.html, pageKey:r.pageKey, upgraded:r.upgraded, kept:r.kept};
     });
 
@@ -431,12 +449,18 @@ function handleFolder(list){
 
     if(shouldGenerateShell){
       var pages=contentFiles.map(function(f){
-        var rel=f.path.indexOf(rootName+'/')===0?f.path.slice(rootName.length+1):f.path;
-        return {href:rel, label:pageLabelOf(f.path,f.text)};
+        return {href:relOf(f.path), label:pageLabelOf(f.path,f.text)};
       }).sort(function(a,b){ return a.href<b.href?-1:a.href>b.href?1:0 });
       var shellHtml=buildShell(rootName,pages);
       entries.push({path:indexPath, bytes:enc.encode(shellHtml)});
     }
+
+    /* 重新写一份侧车文件：按当前实际存在的文件重建路径→pageKey 映射，
+       删掉的页面自然被漏掉（不会占着旧编号），新增的页面这次也记进去。 */
+    var newSidecarPages={};
+    results.forEach(function(r){ newSidecarPages[relOf(r.path)]=r.pageKey; });
+    var sidecarOut={docId:projectDocId,pages:newSidecarPages};
+    entries.push({path:rootName+'/'+SIDECAR_NAME, bytes:enc.encode(JSON.stringify(sidecarOut,null,2))});
 
     var zipName=rootName+'_可批注.zip';
     save(makeZip(entries), zipName);
@@ -445,9 +469,11 @@ function handleFolder(list){
       log((r.upgraded ? '✓ '+r.path+' 已升级，保留 '+r.kept+' 条批注' : '✓ '+r.path+' 已注入批注与编辑层'),'ok');
     });
     if(assetFiles.length) log('原样保留了 '+assetFiles.length+' 个非 HTML 文件','dim');
+    if(recovered) log('✓ 通过 '+SIDECAR_NAME+' 找回了 '+recovered+' 个文件被 Axure 重新生成时冲掉的批注身份','ok');
     if(shouldGenerateShell) log((existingIndex?'✓ 已更新导航外壳 ':'✓ 已生成导航外壳 ')+indexPath+'（不注入批注，纯导航）','ok');
     else if(existingIndex) log('检测到已有的 '+existingIndex.path+'（非本工具生成），保留原样，未自动生成外壳','dim');
     log('已打包为 '+zipName+'，项目ID：'+projectDocId,'ok');
+    log('压缩包里带了一份 '+SIDECAR_NAME+'，解压后跟 index.html 放在一起——以后在 Axure 里改完原型重新生成，把这份文件也一起放回原来的文件夹再拖进来，批注就不会失联','warn');
   }).catch(function(err){
     log('处理失败：'+((err&&err.message)||err||'未知错误'),'err');
   });
