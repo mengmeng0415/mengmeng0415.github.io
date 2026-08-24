@@ -233,6 +233,19 @@ function outName(path,suffix){
   return path.replace(/^.*[\/]/,'').replace(/\.html?$/i,'')
     .replace(/_可批注$/,'').replace(/_升级版$/,'').replace(/_批注版$/,'')+suffix+'.html';
 }
+function baseName(path){
+  return path.replace(/^.*[\/]/,'').replace(/\.html?$/i,'')
+    .replace(/_可批注$/,'').replace(/_升级版$/,'').replace(/_批注版$/,'');
+}
+/* 项目名：单文件用文件名，文件夹/Axure 项目用文件夹名——纯粹给人看的标注，允许重复，真正的唯一标识还是 docId */
+function pushProjectName(docId,name){
+  if(!SUPABASE_URL||!SUPABASE_ANON_KEY||!docId||!name) return;
+  fetch(SUPABASE_URL.replace(/\/+$/,'')+'/rest/v1/project_counters',{
+    method:'POST',
+    headers:{apikey:SUPABASE_ANON_KEY,'Authorization':'Bearer '+SUPABASE_ANON_KEY,'Content-Type':'application/json','Prefer':'resolution=merge-duplicates'},
+    body:JSON.stringify([{project_id:docId,project_name:name}])
+  }).catch(function(){});
+}
 function readText(file){
   return new Promise(function(res,rej){
     var r=new FileReader();
@@ -430,6 +443,7 @@ function handleFolder(list){
     var projectDocId=(sidecar&&sidecar.docId)||null;
     if(!projectDocId) contentFiles.forEach(function(f){ var id=docIdOf(f.text); if(id&&!projectDocId) projectDocId=id; });
     if(!projectDocId) projectDocId=genDocId();
+    pushProjectName(projectDocId,rootName);
 
     var recovered=0;
     var results=contentFiles.map(function(f){
@@ -496,6 +510,7 @@ function handle(list){
       if(withA.length===1&&without.length===1){
         var src=withA[0], dst=without[0];
         var r=inject(dst.text,false);
+        pushProjectName(r.docId,baseName(dst.path));
         r.html=r.html.replace(/<script id="anno-data"([^>]*)>[\s\S]*?<\/script>/i,function(_,attr){
           return '<script id="anno-data"'+attr+(src.anno.ro?' data-mode="readonly"':'')+'>'+src.anno.raw+'<\/script>';
         });
@@ -515,6 +530,7 @@ function handle(list){
       if(id&&!projectDocId) projectDocId=id;
     });
     if(!projectDocId) projectDocId=genDocId();
+    pushProjectName(projectDocId,baseName(files[0].path));
     files.forEach(function(f){
       var r=inject(f.text,false,projectDocId);
       save(new Blob([r.html],{type:'text/html;charset=utf-8'}), outName(f.path, r.upgraded?'_升级版':'_可批注'));
