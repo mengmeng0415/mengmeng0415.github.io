@@ -201,7 +201,6 @@
     padding:18px 22px;border-bottom:1px solid var(--line);flex:none;
   }
   .drawer__title{font-size:16px;font-weight:600}
-  .drawer__sub{font-size:12px;color:var(--ink-3);margin-top:3px;font-weight:400}
   .drawer__head .close{
     width:28px;height:28px;border:0;background:transparent;border-radius:6px;
     color:var(--ink-3);font-size:16px;cursor:pointer;flex:none;
@@ -232,6 +231,7 @@
 
   .rfield{margin-bottom:12px}
   .rfield__label{display:block;font-size:12px;color:var(--ink-2);margin-bottom:7px;font-weight:500}
+  .rfield__label .req{color:var(--danger);margin-left:2px}
   .rradios{display:flex;gap:8px}
   .rradio{
     flex:1;display:flex;align-items:center;gap:6px;padding:8px 10px;border:1px solid var(--line);
@@ -251,6 +251,13 @@
     font-size:13px;font-family:inherit;color:var(--ink);min-height:52px;resize:vertical;line-height:1.5;
   }
   .rtextarea:focus{outline:0;border-color:var(--brand);box-shadow:0 0 0 3px rgba(58,114,242,.12)}
+  .rtextarea--error{border-color:var(--danger)}
+  .rtextarea--error:focus{border-color:var(--danger);box-shadow:0 0 0 3px rgba(217,67,47,.12)}
+  .rerr{display:none;font-size:12px;color:var(--danger);margin-top:6px}
+  .rerr.show{display:block}
+
+  .rremark{font-size:13px;color:var(--ink);line-height:1.6;white-space:pre-wrap}
+  .rremark--empty{color:var(--ink-3)}
 
   .drawer__empty{text-align:center;color:var(--ink-3);font-size:13px;padding:60px 0}
 </style>
@@ -685,10 +692,7 @@
 <div class="drawer-mask" id="drawerMask"></div>
 <div class="drawer" id="drawer" role="dialog" aria-modal="true" aria-labelledby="drawerTitle">
   <div class="drawer__head">
-    <div>
-      <div class="drawer__title" id="drawerTitle">批量复核</div>
-      <div class="drawer__sub" id="drawerSub">共 3 条待审批申请</div>
-    </div>
+    <div class="drawer__title" id="drawerTitle">批量复核</div>
     <button class="close" id="drawerClose" type="button" aria-label="关闭">✕</button>
   </div>
   <div class="drawer__body" id="drawerBody">
@@ -730,15 +734,21 @@
 
         <div class="rfield">
           <div class="rfield__label">备注</div>
-          <textarea class="rtextarea" data-remark="1" placeholder="选填">大促期间流量上涨，临时提额覆盖高峰竞价</textarea>
+          <div class="rremark">大促期间流量上涨，临时提额覆盖高峰竞价</div>
         </div>
 
-        <div class="rfield" style="margin-bottom:0">
+        <div class="rfield">
           <div class="rfield__label">审核结果</div>
           <div class="rradios">
             <label class="rradio"><input type="radio" name="bresult-1" value="reject" data-result="1">驳回</label>
             <label class="rradio"><input type="radio" name="bresult-1" value="approve" data-result="1" checked="">通过</label>
           </div>
+        </div>
+
+        <div class="rfield" style="margin-bottom:0">
+          <div class="rfield__label">审核原因<span class="req" data-reqmark="1" style="display:none">*</span></div>
+          <textarea class="rtextarea" data-reason="1" placeholder="选填，可补充通过说明"></textarea>
+          <div class="rerr" data-reasonerr="1">请填写驳回原因</div>
         </div>
       </div>
       <div class="rcard" data-card="5">
@@ -779,15 +789,21 @@
 
         <div class="rfield">
           <div class="rfield__label">备注</div>
-          <textarea class="rtextarea" data-remark="5" placeholder="选填"></textarea>
+          <div class="rremark rremark--empty">申请人未填写备注</div>
         </div>
 
-        <div class="rfield" style="margin-bottom:0">
+        <div class="rfield">
           <div class="rfield__label">审核结果</div>
           <div class="rradios">
             <label class="rradio"><input type="radio" name="bresult-5" value="reject" data-result="5">驳回</label>
             <label class="rradio"><input type="radio" name="bresult-5" value="approve" data-result="5" checked="">通过</label>
           </div>
+        </div>
+
+        <div class="rfield" style="margin-bottom:0">
+          <div class="rfield__label">审核原因<span class="req" data-reqmark="5" style="display:none">*</span></div>
+          <textarea class="rtextarea" data-reason="5" placeholder="选填，可补充通过说明"></textarea>
+          <div class="rerr" data-reasonerr="5">请填写驳回原因</div>
         </div>
       </div>
       <div class="rcard" data-card="11">
@@ -828,15 +844,21 @@
 
         <div class="rfield">
           <div class="rfield__label">备注</div>
-          <textarea class="rtextarea" data-remark="11" placeholder="选填">测试新素材，短期加大投放力度</textarea>
+          <div class="rremark">测试新素材，短期加大投放力度</div>
         </div>
 
-        <div class="rfield" style="margin-bottom:0">
+        <div class="rfield">
           <div class="rfield__label">审核结果</div>
           <div class="rradios">
             <label class="rradio"><input type="radio" name="bresult-11" value="reject" data-result="11">驳回</label>
             <label class="rradio"><input type="radio" name="bresult-11" value="approve" data-result="11" checked="">通过</label>
           </div>
+        </div>
+
+        <div class="rfield" style="margin-bottom:0">
+          <div class="rfield__label">审核原因<span class="req" data-reqmark="11" style="display:none">*</span></div>
+          <textarea class="rtextarea" data-reason="11" placeholder="选填，可补充通过说明"></textarea>
+          <div class="rerr" data-reasonerr="11">请填写驳回原因</div>
         </div>
       </div></div>
   <div class="drawer__foot">
@@ -1056,7 +1078,6 @@
   const drawerMask = document.getElementById('drawerMask');
   const drawer = document.getElementById('drawer');
   const drawerBody = document.getElementById('drawerBody');
-  const drawerSub = document.getElementById('drawerSub');
   let drawerIndices = [];
 
   function rcardTemplate(idx){
@@ -1100,21 +1121,26 @@
 
         <div class="rfield">
           <div class="rfield__label">备注</div>
-          <textarea class="rtextarea" data-remark="${idx}" placeholder="选填">${r.remark || ''}</textarea>
+          <div class="rremark ${r.remark ? '' : 'rremark--empty'}">${r.remark || '申请人未填写备注'}</div>
         </div>
 
-        <div class="rfield" style="margin-bottom:0">
+        <div class="rfield">
           <div class="rfield__label">审核结果</div>
           <div class="rradios">
             <label class="rradio"><input type="radio" name="bresult-${idx}" value="reject" data-result="${idx}">驳回</label>
             <label class="rradio"><input type="radio" name="bresult-${idx}" value="approve" data-result="${idx}" checked>通过</label>
           </div>
         </div>
+
+        <div class="rfield" style="margin-bottom:0">
+          <div class="rfield__label">审核原因<span class="req" data-reqmark="${idx}" style="display:none">*</span></div>
+          <textarea class="rtextarea" data-reason="${idx}" placeholder="选填，可补充通过说明"></textarea>
+          <div class="rerr" data-reasonerr="${idx}">请填写驳回原因</div>
+        </div>
       </div>`;
   }
 
   function renderDrawer(){
-    drawerSub.textContent = `共 ${drawerIndices.length} 条待审批申请`;
     drawerBody.innerHTML = drawerIndices.length
       ? drawerIndices.map(rcardTemplate).join('')
       : `<div class="drawer__empty">已没有可审核的申请</div>`;
@@ -1151,6 +1177,8 @@
   drawerBody.addEventListener('change', e => {
     const typeEl = e.target.closest('[data-type]');
     if (typeEl) refreshMini(Number(typeEl.dataset.type));
+    const resultEl = e.target.closest('[data-result]');
+    if (resultEl) syncReasonRequired(Number(resultEl.dataset.result));
   });
   function refreshMini(idx){
     const card = drawerBody.querySelector(`[data-card="${idx}"]`);
@@ -1158,6 +1186,17 @@
     const amount = card.querySelector(`[data-amount="${idx}"]`).value;
     card.querySelector(`[data-mini-current="${idx}"]`).textContent = fmt(amount);
     card.querySelector(`[data-mini-default="${idx}"]`).textContent = fmt(type === 'default' ? amount : rows[idx].def);
+  }
+  function syncReasonRequired(idx){
+    const card = drawerBody.querySelector(`[data-card="${idx}"]`);
+    const isReject = card.querySelector(`[data-result="${idx}"]:checked`).value === 'reject';
+    const reqMark = card.querySelector(`[data-reqmark="${idx}"]`);
+    const reasonInput = card.querySelector(`[data-reason="${idx}"]`);
+    const errEl = card.querySelector(`[data-reasonerr="${idx}"]`);
+    reqMark.style.display = isReject ? '' : 'none';
+    reasonInput.placeholder = isReject ? '请说明驳回原因，申请人将会收到通知' : '选填，可补充通过说明';
+    reasonInput.classList.remove('rtextarea--error');
+    errEl.classList.remove('show');
   }
 
   // 从本次批量中移除单条（不做审核决定，仅退出本次批量，仍保持“待审批”）
@@ -1186,14 +1225,32 @@
     if (display) display.textContent = fmt(value);
   }
 
-  // 每条各自独立的审核结果（默认“通过”），点击“确认”时按各自结果分别处理
+  // 每条各自独立的审核结果（默认“通过”），点击“确认”时按各自结果分别处理；驳回的必须填写审核原因
   document.getElementById('drawerConfirm').addEventListener('click', () => {
     if (!drawerIndices.length) { closeDrawer(); return; }
+
+    let firstInvalid = null;
+    drawerIndices.forEach(idx => {
+      const card = drawerBody.querySelector(`[data-card="${idx}"]`);
+      const result = card.querySelector(`[data-result="${idx}"]:checked`).value;
+      const reasonInput = card.querySelector(`[data-reason="${idx}"]`);
+      const errEl = card.querySelector(`[data-reasonerr="${idx}"]`);
+      if (result === 'reject' && !reasonInput.value.trim()) {
+        reasonInput.classList.add('rtextarea--error');
+        errEl.classList.add('show');
+        if (!firstInvalid) firstInvalid = reasonInput;
+      } else {
+        reasonInput.classList.remove('rtextarea--error');
+        errEl.classList.remove('show');
+      }
+    });
+    if (firstInvalid) { firstInvalid.focus(); return; }
+
     drawerIndices.forEach(idx => {
       const card = drawerBody.querySelector(`[data-card="${idx}"]`);
       const type = card.querySelector(`[data-type="${idx}"]:checked`).value;
       const amount = Number(card.querySelector(`[data-amount="${idx}"]`).value) || 0;
-      const remark = card.querySelector(`[data-remark="${idx}"]`).value.trim();
+      const reason = card.querySelector(`[data-reason="${idx}"]`).value.trim();
       const result = card.querySelector(`[data-result="${idx}"]:checked`).value;
       const r = rows[idx];
       if (result === 'approve') {
@@ -1203,7 +1260,7 @@
         syncEditableCell(idx, 'current', r.current);
         if (type === 'default') syncEditableCell(idx, 'default', r.def);
       } else {
-        r.status = {type:'rejected', reason: remark || '批量驳回，未填写具体原因'};
+        r.status = {type:'rejected', reason: reason};
       }
       document.querySelector(`[data-status-cell="${idx}"]`).innerHTML = statusBadge(r.status, idx);
       uncheckRow(idx);
