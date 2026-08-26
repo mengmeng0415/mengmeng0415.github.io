@@ -362,10 +362,10 @@ function annoShouldInitUI(){
     });
   }
   var W0=560,H0=460;
-  var mode=false, showList=true, showBox=!RO, sel=null, pop=null, over=null, EDCARET=null;
+  var mode=false, showList=true, showBox=true, sel=null, pop=null, over=null, EDCARET=null;
   var seq=data.reduce(function(m,a){return Math.max(m,a.n||0)},0), pins=[], boxes=[];
   var PINNED={on:RO,set:false,l:0,t:0,w:560,h:460};  /* 固定弹窗位置与大小；只读默认开启 */
-  var showPins=!RO, ZOOM=1, boxEdit=null, annoToolMode=RO?'compare':'none', barMoved=false;
+  var showPins=true, ZOOM=1, boxEdit=null, annoToolMode=RO?'compare':'none', barMoved=false;
 
   /* 工具条状态（对照/气泡模式、圆点、虚线框、清单）跨页面保持一致：
      同一个项目（docId）下，不管切到哪个页面/文件，都用上次操作过的那一份，而不是每次都回到默认值。 */
