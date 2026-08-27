@@ -187,7 +187,7 @@
   .anno-card .snap .el{cursor:zoom-in}
 
   .anno-split{position:fixed;inset:0;background:#eef0f4;z-index:25;display:flex}
-  .anno-split .lf{position:relative;overflow:hidden;background:#fff;padding-top:52px}
+  .anno-split .lf{position:relative;overflow:hidden;background:#fff}
   html.edit-pages-open #anno-root .anno-split .lf{padding-left:232px}
   .anno-split .lf iframe{width:100%;height:100%;border:0;display:block}
   .anno-split .gut{width:8px;flex:0 0 8px;background:#dfe3ea;cursor:col-resize;position:relative}
@@ -306,7 +306,14 @@ function annoShouldInitUI(){
   });
   seq=data.length;
   function group(n){ for(var i=0;i<PALETTES.length;i++) if(PALETTES[i].n===n) return PALETTES[i]; return PALETTES[0] }
-  function serialize(){ return JSON.stringify({pref:PREF,list:data},null,2) }
+  /* 写进 <script> 标签的 JSON，字符串内容里不能出现"结束标签"那几个字符连着写
+     （小于号紧跟斜杠再跟 script），否则只要 JSON 里恰好夹带一段页面/批注自带的真实
+     脚本标签，HTML 解析器会把它当成外层这个 <script> 自己的结束标签，后面一大截
+     还没解析完的 JSON 文本就会整个散落成页面正文——导致重新打开导出文件时页面乱掉。
+     下面统一用 <\/script 这种打断字符连续性的写法来转义，注意连这条注释自己都不能
+     把那几个字符连着写出来，写连着就等于又犯一次同样的错。 */
+  function jsonForScript(obj,space){ return JSON.stringify(obj,null,space).replace(/<\/script/gi,'<\\/script') }
+  function serialize(){ return jsonForScript({pref:PREF,list:data},2) }
 
   /* ---------- 数据库同步（未注入 docId/密钥时自动禁用，不影响离线使用） ---------- */
   var SYNC=(function(){
@@ -362,10 +369,10 @@ function annoShouldInitUI(){
     });
   }
   var W0=560,H0=460;
-  var mode=false, showList=true, showBox=!RO, sel=null, pop=null, over=null, EDCARET=null;
+  var mode=false, showList=true, showBox=true, sel=null, pop=null, over=null, EDCARET=null;
   var seq=data.reduce(function(m,a){return Math.max(m,a.n||0)},0), pins=[], boxes=[];
   var PINNED={on:RO,set:false,l:0,t:0,w:560,h:460};  /* 固定弹窗位置与大小；只读默认开启 */
-  var showPins=!RO, ZOOM=1, boxEdit=null, annoToolMode=RO?'compare':'none', barMoved=false;
+  var showPins=true, ZOOM=1, boxEdit=null, annoToolMode=RO?'compare':'none', barMoved=false;
 
   /* 工具条状态（对照/气泡模式、圆点、虚线框、清单）跨页面保持一致：
      同一个项目（docId）下，不管切到哪个页面/文件，都用上次操作过的那一份，而不是每次都回到默认值。 */
@@ -2294,14 +2301,15 @@ function annoShouldInitUI(){
   function stripForeignInjections(root){
     /* 有些浏览器扩展会在浏览时往页面里插自己的元素（比如某些内容采集类插件的 mpa-* 标签），
        导出是整份 DOM 克隆出去的，这些元素、以及它们偶尔遗留下来的杂散文字，会被一起带进导出文件里，
-       变成看不懂的乱码显示在页面上——这里统一清掉，不是批注数据本身的问题。 */
+       变成看不懂的乱码显示在页面上——这里统一清掉，不是批注数据本身的问题。
+       另外历史上出现过的转义 bug，残留的碎片可能很短（十几个字符），门槛不能设太高，否则漏网。 */
     Array.prototype.forEach.call(root.querySelectorAll('*'),function(n){
       if((n.tagName||'').toLowerCase().indexOf('mpa-')===0) n.remove();
     });
     var body=root.querySelector('body');
     if(body){
       Array.prototype.slice.call(body.childNodes).forEach(function(n){
-        if(n.nodeType===3 && n.textContent && n.textContent.replace(/\s/g,'').length>20) n.remove();
+        if(n.nodeType===3 && n.textContent && n.textContent.replace(/\s/g,'').length>2) n.remove();
       });
     }
   }
@@ -2317,7 +2325,7 @@ function annoShouldInitUI(){
     readonly?st.setAttribute('data-mode','readonly'):st.removeAttribute('data-mode');
     if(pagesSnapshot&&pagesSnapshot.pages){
       var ps=c.querySelector('#edit-pages-data');
-      if(ps) ps.textContent=JSON.stringify(pagesSnapshot.pages);
+      if(ps) ps.textContent=jsonForScript(pagesSnapshot.pages);
       if(c.querySelector('body')) c.querySelector('body').dataset.editCurrentPage=pagesSnapshot.currentPage;
     }
     return '<!doctype html>\n'+c.outerHTML;
@@ -2536,7 +2544,7 @@ function annoShouldInitUI(){
       SYNC.pull().then(function(remote){
         if(!remote) return;
         SYNC_APPLYING=true;
-        STORE.textContent=JSON.stringify(remote);
+        STORE.textContent=jsonForScript(remote);
         window.__annoReload();
         SYNC_APPLYING=false;
       });
@@ -2569,7 +2577,7 @@ function annoShouldInitUI(){
     SYNC.pull().then(function(remote){
       if(remote){
         SYNC_APPLYING=true;
-        STORE.textContent=JSON.stringify(remote);
+        STORE.textContent=jsonForScript(remote);
         window.__annoReload();
         SYNC_APPLYING=false;
       }else if(data&&data.length){            /* 数据库里还没有这份文档：用本地已有批注（升级/迁移场景）种一份进去 */
@@ -2730,10 +2738,11 @@ function annoShouldInitUI(){
     /* 某些浏览器扩展会往 body 里插自己的元素（比如 mpa-* 标签），偶尔还会留下一截裸露的 JSON 文字，
        直接显示在页面最上面。这些跟批注/编辑层无关，扫一遍 body 的直接子节点清掉就行；
        扫全部（不只 pageEnd 之后），因为这类东西可能出现在 pageStart 之前。
-       只读版也要清（很多插件是延迟/反复注入的，读写模式都可能中招），所以放在 RO 提前 return 之前。 */
+       只读版也要清（很多插件是延迟/反复注入的，读写模式都可能中招），所以放在 RO 提前 return 之前。
+       另外历史上出现过的转义 bug，残留的碎片可能很短（十几个字符），门槛不能设太高，否则漏网。 */
     Array.prototype.slice.call(document.body.childNodes).forEach(function(n){
       if (n.nodeType === 1 && (n.tagName||'').toLowerCase().indexOf('mpa-') === 0) { n.remove(); return }
-      if (n.nodeType === 3 && n.textContent && n.textContent.replace(/\s/g,'').length > 20) n.remove();
+      if (n.nodeType === 3 && n.textContent && n.textContent.replace(/\s/g,'').length > 2) n.remove();
     });
   }
   stripForeignBodyArtifacts();
@@ -3578,7 +3587,7 @@ function annoShouldInitUI(){
   var currentPageId = document.body.dataset.editCurrentPage || '首页';
   document.body.dataset.editCurrentPage = currentPageId;
 
-  function persistPages(){ pagesStore.textContent = JSON.stringify(PAGES) }
+  function persistPages(){ pagesStore.textContent = JSON.stringify(PAGES).replace(/<\/script/gi,'<\\/script') }
   function layerStartInfo(){
     var children = Array.prototype.slice.call(document.body.childNodes);
     for (var i = 0; i < children.length; i++) {
