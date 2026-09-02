@@ -206,6 +206,11 @@
   .anno-split .rv h3{font-size:17px;margin:6px 0}.anno-split .rv h4{font-size:15px;margin:6px 0}
   .anno-split .rv h5{font-size:13px;margin:6px 0;color:#4b5563}
   .anno-split .rv blockquote{margin:6px 0;padding:2px 10px;border-left:3px solid #ff7a45;color:#5b6069}
+  .anno-split .rv-item{padding-bottom:16px;margin-bottom:16px;border-bottom:1px solid #eef0f4}
+  .anno-split .rv-item:last-child{border-bottom:0;margin-bottom:0;padding-bottom:0}
+  .anno-split .rv-item-hd{display:flex;align-items:center;gap:8px;margin-bottom:8px}
+  .anno-split .rv-item-hd b{min-width:22px;height:22px;padding:0 5px;border-radius:11px;font:700 12px/22px -apple-system,"PingFang SC",Arial;text-align:center;display:inline-flex;align-items:center;justify-content:center;flex:0 0 auto}
+  .anno-split .rv-item-hd em{color:#8a9099;font-size:12px;font-style:normal;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
   .anno-split .rls{height:32%;overflow:auto;border-top:1px solid #eef0f4;padding:4px;flex:0 0 auto}
   .anno-split .rls .anno-item.sel{background:#fff6f2}
   .anno-pop.embed{position:static;width:auto !important;height:auto !important;flex:1;min-height:0;
@@ -1484,7 +1489,7 @@ function annoShouldInitUI(){
     over=document.createElement('div'); over.className='anno-over pe';
     var hd=document.createElement('div'); hd.className='oh';
     hd.innerHTML='<h3>批注全览 · '+data.length+' 条</h3><span class="sp"></span>'+
-      '<button id="annoPdf">⬇ 下载 PDF</button><button id="annoOverX">关闭</button>';
+      '<button id="annoPdf">⬇ 下载 PDF</button><button id="annoMd">⬇ 下载 Markdown</button><button id="annoOverX">关闭</button>';
     over.appendChild(hd);
     if(!data.length){ var e0=document.createElement('div'); e0.className='anno-empty'; e0.textContent='暂无批注'; over.appendChild(e0) }
     data.forEach(function(a){
@@ -1523,6 +1528,82 @@ function annoShouldInitUI(){
       document.body.classList.add('anno-print');
       setTimeout(function(){ print(); setTimeout(function(){ document.body.classList.remove('anno-print') },400) },60);
     };
+    hd.querySelector('#annoMd').onclick=downloadAnnoMarkdown;
+  }
+  /* ---------- 批注内容导出为 Markdown（只导出全览卡片右侧的批注正文，不含左侧位置截图） ---------- */
+  function mdEsc(s){ return String(s||'').replace(/([\\`*_\[\]])/g,'\\$1') }
+  function annoInlineMd(node){                 /* 行内：加粗/斜体/下划线/删除线/颜色/高亮/链接/图片，能对上 Markdown 语法的转语法，对不上的原样带一段行内 HTML 保留效果 */
+    if(node.nodeType===3) return mdEsc(node.textContent);
+    if(node.nodeType!==1) return '';
+    var tag=node.tagName.toLowerCase();
+    /* img/br 是自闭合标签，本来就没有子节点——不能走下面「内容是空就返回空」那条判断，
+       不然图片会被当成"啥都没有"直接吞掉，Markdown 里就看不到这张图了 */
+    if(tag==='img') return '!['+(node.getAttribute('alt')||'')+']('+(node.getAttribute('src')||'')+')';
+    if(tag==='br') return '  \n';
+    var inner=Array.prototype.map.call(node.childNodes,annoInlineMd).join('');
+    if(!inner) return '';
+    var st=node.style||{};
+    switch(tag){
+      case 'b': case 'strong': return '**'+inner+'**';
+      case 'i': case 'em': return '*'+inner+'*';
+      case 'u': return '<u>'+inner+'</u>';
+      case 's': case 'strike': case 'del': return '~~'+inner+'~~';
+      case 'a': return '['+inner+']('+(node.getAttribute('href')||'')+')';
+    }
+    var out=inner;
+    if(st.fontStyle==='italic') out='*'+out+'*';
+    if(st.fontWeight==='bold'||st.fontWeight==='700'||st.fontWeight==='bolder') out='**'+out+'**';
+    var deco=st.textDecorationLine||st.textDecoration||'';
+    if(deco.indexOf('underline')>=0) out='<u>'+out+'</u>';
+    if(deco.indexOf('line-through')>=0) out='~~'+out+'~~';
+    var css=''; if(st.color) css+='color:'+st.color+';'; if(st.backgroundColor&&st.backgroundColor!=='transparent') css+='background:'+st.backgroundColor+';';
+    if(css) out='<span style="'+css+'">'+out+'</span>';
+    return out;
+  }
+  function annoBlockMd(container,lines){
+    Array.prototype.forEach.call(container.childNodes,function(n){
+      if(n.nodeType===3){ var t0=mdEsc(n.textContent).trim(); if(t0) lines.push(t0); return }
+      if(n.nodeType!==1) return;
+      var tag=n.tagName.toLowerCase();
+      if(/^h[1-5]$/.test(tag)){ var t1=annoInlineMd(n).trim(); if(t1) lines.push('#'.repeat(+tag[1])+' '+t1); return }
+      if(tag==='blockquote'){ var t2=annoInlineMd(n).trim(); if(t2) lines.push(t2.split('\n').map(function(l){ return '> '+l }).join('\n')); return }
+      if(n.classList&&n.classList.contains('anno-cal')){          /* 飞书式高亮块，转成引用块，保留原来「醒目提示」的意思 */
+        var sub=[]; Array.prototype.forEach.call(n.children,function(c){ var t3=annoInlineMd(c).trim(); if(t3) sub.push(t3) });
+        if(sub.length) lines.push(sub.map(function(l){ return '> '+l }).join('\n> \n'));
+        return;
+      }
+      if(tag==='ul'){ Array.prototype.forEach.call(n.children,function(li){ var t4=annoInlineMd(li).trim(); if(t4) lines.push('- '+t4) }); return }
+      if(tag==='ol'){ var i=1; Array.prototype.forEach.call(n.children,function(li){ var t5=annoInlineMd(li).trim(); if(t5) lines.push((i++)+'. '+t5) }); return }
+      if(tag==='table'){
+        var rows=Array.prototype.map.call(n.querySelectorAll('tr'),function(tr){
+          return Array.prototype.map.call(tr.children,function(td){ return annoInlineMd(td).trim().replace(/\n/g,' ')||' ' });
+        });
+        if(!rows.length) return;
+        lines.push('| '+rows[0].join(' | ')+' |');
+        lines.push('| '+rows[0].map(function(){ return '---' }).join(' | ')+' |');
+        rows.slice(1).forEach(function(r){ lines.push('| '+r.join(' | ')+' |') });
+        return;
+      }
+      if(tag==='img'){ lines.push('!['+(n.getAttribute('alt')||'')+']('+(n.getAttribute('src')||'')+')'); return }
+      if(tag==='p'||tag==='div'){ var t6=annoInlineMd(n).trim(); if(t6) lines.push(t6); return }
+      annoBlockMd(n,lines);                     /* 不认识的包裹标签，往里递归找 */
+    });
+  }
+  function annoHtmlToMd(html){
+    var tmp=document.createElement('div'); tmp.innerHTML=html||'';
+    var lines=[]; annoBlockMd(tmp,lines);
+    return lines.join('\n\n');
+  }
+  function downloadAnnoMarkdown(){
+    var parts=data.map(function(a){
+      var body=annoHtmlToMd(a.html);
+      return '### '+a.n+(body?('\n\n'+body):'');
+    });
+    var md=parts.join('\n\n');
+    var blob=new Blob([md],{type:'text/markdown;charset=utf-8'});
+    var u=URL.createObjectURL(blob), dl=document.createElement('a');
+    dl.href=u; dl.download=(document.title||'批注')+'_批注.md'; dl.click();
+    setTimeout(function(){ URL.revokeObjectURL(u) },3000);
   }
   /* 快照：克隆整页上下文，用取景框只显示目标周边，可滚轮缩放 / 拖动平移 */
   function snapshot(a,el,col,big){
@@ -1845,6 +1926,12 @@ function annoShouldInitUI(){
       var hint=document.createElement('div');
       hint.style.cssText='position:absolute;left:12px;top:14px;z-index:3;color:#8a9099;font-size:12px;pointer-events:none';
       hint.id='annoSplitHint';
+    }else{
+      /* 只读对照模式：右侧改成全部批注一次性铺开滚动看，不需要「上一条/下一条」按钮，
+         底下那份缩略清单跟 .rv 里的内容重复了，也一起隐藏——.rv 是 flex:1，会自动补满空出来的地方 */
+      ['.pv','.nx','.idx','.hgut','.rls'].forEach(function(sel){
+        var el=split.querySelector(sel); if(el) el.style.display='none';
+      });
     }
     var lf=split.querySelector('.lf'); lf.style.width=splitW+'%';
     syncSplitShell(); barToLeft();
@@ -1929,8 +2016,49 @@ function annoShouldInitUI(){
         drawFrame();
       };
     }
-    if(data.length) splitShowEdit(data[0]);
+    if(RO) renderSplitAllRO();
+    else if(data.length) splitShowEdit(data[0]);
     else { split.querySelector('.rv').innerHTML='<div class="anno-empty">暂无批注</div>' }
+  }
+  /* 只读对照模式：把所有批注内容一次性铺在右侧，靠滚动条看，不用一条条点「下一条」；
+     滚动到哪条，哪条就是「当前」——即使圆点/虚线框都关着，当前这条也仍要在左侧显示出来
+     （drawFrame 里 cur 那条本来就不受 showPins/showBox 开关限制，这里只需要把 splitCur 跟着滚动位置更新）。 */
+  function renderSplitAllRO(){
+    var rv=split.querySelector('.rv'); if(!rv) return;
+    rv.innerHTML='';
+    if(!data.length){ rv.innerHTML='<div class="anno-empty">暂无批注</div>'; return }
+    data.forEach(function(a){
+      var item=document.createElement('div'); item.className='rv-item'; item.dataset.id=a.id;
+      var hd=document.createElement('div'); hd.className='rv-item-hd';
+      var b=document.createElement('b'); b.textContent=a.n; paint(b,a.color||PINS[0]);
+      var em=document.createElement('em'); em.textContent=a.label||'';
+      hd.appendChild(b); hd.appendChild(em);
+      var bd=document.createElement('div'); bd.className='rv-item-bd';
+      bd.innerHTML=a.html||'<span style="color:#b7bcc4">（空）</span>';
+      item.appendChild(hd); item.appendChild(bd);
+      rv.appendChild(item);
+    });
+    rv.onscroll=function(){
+      if(splitRvTicking) return; splitRvTicking=true;
+      requestAnimationFrame(function(){ splitRvTicking=false; updateSplitCurFromScroll() });
+    };
+    updateSplitCurFromScroll();
+  }
+  var splitRvTicking=false;
+  function updateSplitCurFromScroll(){
+    var rv=split&&split.querySelector('.rv'); if(!rv) return;
+    var items=rv.querySelectorAll('.rv-item'); if(!items.length) return;
+    var rvTop=rv.getBoundingClientRect().top, chosen=items[0];
+    for(var i=0;i<items.length;i++){
+      if(items[i].getBoundingClientRect().top<=rvTop+2) chosen=items[i]; else break;
+    }
+    var a=data.filter(function(x){ return x.id===chosen.dataset.id })[0];
+    if(!a||splitCur===a) return;
+    splitCur=a;
+    var b2=split.querySelector('.rh b'); if(b2){ b2.textContent=a.n; paint(b2,a.color||PINS[0]) }
+    var em2=split.querySelector('.rh em'); if(em2) em2.textContent=a.label||'';
+    Array.prototype.forEach.call(split.querySelectorAll('.rls .anno-item'),function(n){ n.classList.toggle('sel',n.dataset.id===a.id) });
+    drawFrame();
   }
   var FRAME_CSS='.afx-box{position:absolute;border:1.5px dashed;border-radius:3px;pointer-events:none;z-index:2147483000;opacity:.85}'+
     '.afx-box.cur{border-width:2.5px;opacity:1}'+
@@ -2163,6 +2291,21 @@ function annoShouldInitUI(){
   }
   function splitShow(a){
     if(!split) return;
+    if(RO){
+      /* 只读对照模式：.rv 里已经是全部批注铺开的样子，点清单只是滚过去看，不是替换内容 */
+      splitCur=a;
+      var rv0=split.querySelector('.rv');
+      var target=rv0&&rv0.querySelector('.rv-item[data-id="'+a.id+'"]');
+      if(target) try{ target.scrollIntoView({block:'start'}) }catch(e){}
+      var b0=split.querySelector('.rh b'); if(b0){ b0.textContent=a.n; paint(b0,a.color||PINS[0]) }
+      var em0=split.querySelector('.rh em'); if(em0) em0.textContent=a.label||'';
+      Array.prototype.forEach.call(split.querySelectorAll('.rls .anno-item'),function(n){ n.classList.toggle('sel',n.dataset.id===a.id) });
+      try{
+        var doc0=frameDoc();
+        if(doc0){ var t0=doc0.querySelector(a.sel); if(t0) t0.scrollIntoView({block:'center'}); drawFrame(); }
+      }catch(e){}
+      return;
+    }
     splitCur=a;
     var eb=split.querySelector('.redit');
     if(eb&&eb.style.display!=='none'){
