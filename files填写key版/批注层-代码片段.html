@@ -1532,15 +1532,31 @@ function annoShouldInitUI(){
   }
   /* ---------- 批注内容导出为 Markdown（只导出全览卡片右侧的批注正文，不含左侧位置截图） ---------- */
   function mdEsc(s){ return String(s||'').replace(/([\\`*_\[\]])/g,'\\$1') }
-  function annoInlineMd(node){                 /* 行内：加粗/斜体/下划线/删除线/颜色/高亮/链接/图片，能对上 Markdown 语法的转语法，对不上的原样带一段行内 HTML 保留效果 */
+  /* 图片：data: 开头的（贴图/插入图片都是这种）转成单独的图片文件放进 images/ 目录，
+     Markdown 里改用相对路径引用——飞书文档"导入 Markdown"认的是这种"md + images 文件夹"
+     的压缩包结构，直接内嵌一大坨 base64 反而经常导入失败或者图片出不来；
+     不是 data: 的（比如原本就是外链图片）原样保留链接，不用跟着打包。 */
+  function annoImgRef(node,imgs){
+    var src=node.getAttribute('src')||'', alt=node.getAttribute('alt')||'';
+    var m=/^data:([^;]+);base64,(.*)$/.exec(src);
+    if(!m) return '!['+alt+']('+src+')';
+    var ext=(m[1].split('/')[1]||'png').split('+')[0]; if(ext==='jpeg') ext='jpg';
+    var bin; try{ bin=atob(m[2]) }catch(e){ return '!['+alt+']('+src+')' }
+    var bytes=new Uint8Array(bin.length);
+    for(var i=0;i<bin.length;i++) bytes[i]=bin.charCodeAt(i);
+    var name='img'+(imgs.length+1)+'.'+ext;
+    imgs.push({name:name,bytes:bytes});
+    return '!['+alt+'](images/'+name+')';
+  }
+  function annoInlineMd(node,imgs){             /* 行内：加粗/斜体/下划线/删除线/颜色/高亮/链接/图片，能对上 Markdown 语法的转语法，对不上的原样带一段行内 HTML 保留效果 */
     if(node.nodeType===3) return mdEsc(node.textContent);
     if(node.nodeType!==1) return '';
     var tag=node.tagName.toLowerCase();
     /* img/br 是自闭合标签，本来就没有子节点——不能走下面「内容是空就返回空」那条判断，
        不然图片会被当成"啥都没有"直接吞掉，Markdown 里就看不到这张图了 */
-    if(tag==='img') return '!['+(node.getAttribute('alt')||'')+']('+(node.getAttribute('src')||'')+')';
+    if(tag==='img') return annoImgRef(node,imgs);
     if(tag==='br') return '  \n';
-    var inner=Array.prototype.map.call(node.childNodes,annoInlineMd).join('');
+    var inner=Array.prototype.map.call(node.childNodes,function(c){ return annoInlineMd(c,imgs) }).join('');
     if(!inner) return '';
     var st=node.style||{};
     switch(tag){
@@ -1560,23 +1576,23 @@ function annoShouldInitUI(){
     if(css) out='<span style="'+css+'">'+out+'</span>';
     return out;
   }
-  function annoBlockMd(container,lines){
+  function annoBlockMd(container,lines,imgs){
     Array.prototype.forEach.call(container.childNodes,function(n){
       if(n.nodeType===3){ var t0=mdEsc(n.textContent).trim(); if(t0) lines.push(t0); return }
       if(n.nodeType!==1) return;
       var tag=n.tagName.toLowerCase();
-      if(/^h[1-5]$/.test(tag)){ var t1=annoInlineMd(n).trim(); if(t1) lines.push('#'.repeat(+tag[1])+' '+t1); return }
-      if(tag==='blockquote'){ var t2=annoInlineMd(n).trim(); if(t2) lines.push(t2.split('\n').map(function(l){ return '> '+l }).join('\n')); return }
+      if(/^h[1-5]$/.test(tag)){ var t1=annoInlineMd(n,imgs).trim(); if(t1) lines.push('#'.repeat(+tag[1])+' '+t1); return }
+      if(tag==='blockquote'){ var t2=annoInlineMd(n,imgs).trim(); if(t2) lines.push(t2.split('\n').map(function(l){ return '> '+l }).join('\n')); return }
       if(n.classList&&n.classList.contains('anno-cal')){          /* 飞书式高亮块，转成引用块，保留原来「醒目提示」的意思 */
-        var sub=[]; Array.prototype.forEach.call(n.children,function(c){ var t3=annoInlineMd(c).trim(); if(t3) sub.push(t3) });
+        var sub=[]; Array.prototype.forEach.call(n.children,function(c){ var t3=annoInlineMd(c,imgs).trim(); if(t3) sub.push(t3) });
         if(sub.length) lines.push(sub.map(function(l){ return '> '+l }).join('\n> \n'));
         return;
       }
-      if(tag==='ul'){ Array.prototype.forEach.call(n.children,function(li){ var t4=annoInlineMd(li).trim(); if(t4) lines.push('- '+t4) }); return }
-      if(tag==='ol'){ var i=1; Array.prototype.forEach.call(n.children,function(li){ var t5=annoInlineMd(li).trim(); if(t5) lines.push((i++)+'. '+t5) }); return }
+      if(tag==='ul'){ Array.prototype.forEach.call(n.children,function(li){ var t4=annoInlineMd(li,imgs).trim(); if(t4) lines.push('- '+t4) }); return }
+      if(tag==='ol'){ var i=1; Array.prototype.forEach.call(n.children,function(li){ var t5=annoInlineMd(li,imgs).trim(); if(t5) lines.push((i++)+'. '+t5) }); return }
       if(tag==='table'){
         var rows=Array.prototype.map.call(n.querySelectorAll('tr'),function(tr){
-          return Array.prototype.map.call(tr.children,function(td){ return annoInlineMd(td).trim().replace(/\n/g,' ')||' ' });
+          return Array.prototype.map.call(tr.children,function(td){ return annoInlineMd(td,imgs).trim().replace(/\n/g,' ')||' ' });
         });
         if(!rows.length) return;
         lines.push('| '+rows[0].join(' | ')+' |');
@@ -1584,25 +1600,37 @@ function annoShouldInitUI(){
         rows.slice(1).forEach(function(r){ lines.push('| '+r.join(' | ')+' |') });
         return;
       }
-      if(tag==='img'){ lines.push('!['+(n.getAttribute('alt')||'')+']('+(n.getAttribute('src')||'')+')'); return }
-      if(tag==='p'||tag==='div'){ var t6=annoInlineMd(n).trim(); if(t6) lines.push(t6); return }
-      annoBlockMd(n,lines);                     /* 不认识的包裹标签，往里递归找 */
+      if(tag==='img'){ lines.push(annoImgRef(n,imgs)); return }
+      if(tag==='p'||tag==='div'){ var t6=annoInlineMd(n,imgs).trim(); if(t6) lines.push(t6); return }
+      annoBlockMd(n,lines,imgs);                /* 不认识的包裹标签，往里递归找 */
     });
   }
-  function annoHtmlToMd(html){
+  function annoHtmlToMd(html,imgs){
     var tmp=document.createElement('div'); tmp.innerHTML=html||'';
-    var lines=[]; annoBlockMd(tmp,lines);
+    var lines=[]; annoBlockMd(tmp,lines,imgs);
     return lines.join('\n\n');
   }
   function downloadAnnoMarkdown(){
+    var imgs=[];
     var parts=data.map(function(a){
-      var body=annoHtmlToMd(a.html);
+      var body=annoHtmlToMd(a.html,imgs);
       return '### '+a.n+(body?('\n\n'+body):'');
     });
     var md=parts.join('\n\n');
-    var blob=new Blob([md],{type:'text/markdown;charset=utf-8'});
-    var u=URL.createObjectURL(blob), dl=document.createElement('a');
-    dl.href=u; dl.download=(document.title||'批注')+'_批注.md'; dl.click();
+    var baseName=(document.title||'批注')+'_批注';
+    var u,dl=document.createElement('a');
+    if(!imgs.length){                           /* 没有图片就还是单份 .md，飞书直接粘贴/导入都方便 */
+      var blob=new Blob([md],{type:'text/markdown;charset=utf-8'});
+      u=URL.createObjectURL(blob); dl.href=u; dl.download=baseName+'.md';
+    }else{                                       /* 带图片就打包成 zip：md 在压缩包根目录，图片放 images/ 子目录，
+                                                      对应飞书"导入 Markdown"认的压缩包结构，比内嵌 base64 更稳 */
+      var enc=new TextEncoder();
+      var entries=[{path:baseName+'.md', bytes:enc.encode(md)}]
+        .concat(imgs.map(function(im){ return {path:'images/'+im.name, bytes:im.bytes} }));
+      var zblob=makeZipAnno(entries);
+      u=URL.createObjectURL(zblob); dl.href=u; dl.download=baseName+'.zip';
+    }
+    dl.click();
     setTimeout(function(){ URL.revokeObjectURL(u) },3000);
   }
   /* 快照：克隆整页上下文，用取景框只显示目标周边，可滚轮缩放 / 拖动平移 */
@@ -2501,8 +2529,10 @@ function annoShouldInitUI(){
     entries.forEach(function(e){
       var nameBytes=new TextEncoder().encode(e.path.replace(/\\/g,'/'));
       var data=e.bytes, crc=crc32Anno(data), size=data.length;
+      /* 通用标志位第 11 位（0x0800）= 文件名按 UTF-8 编码；不设这一位，解压工具会按本地
+         编码（比如 CP437）去读文件名，中文文件名/路径解压出来就是一堆乱码。 */
       var lh=new Uint8Array(30+nameBytes.length), ldv=new DataView(lh.buffer);
-      ldv.setUint32(0,0x04034b50,true); ldv.setUint16(4,20,true); ldv.setUint16(6,0,true);
+      ldv.setUint32(0,0x04034b50,true); ldv.setUint16(4,20,true); ldv.setUint16(6,0x0800,true);
       ldv.setUint16(8,0,true); ldv.setUint16(10,0,true); ldv.setUint16(12,0x21,true);
       ldv.setUint32(14,crc,true); ldv.setUint32(18,size,true); ldv.setUint32(22,size,true);
       ldv.setUint16(26,nameBytes.length,true); ldv.setUint16(28,0,true);
@@ -2510,7 +2540,7 @@ function annoShouldInitUI(){
       chunks.push(lh,data);
       var ch=new Uint8Array(46+nameBytes.length), cdv=new DataView(ch.buffer);
       cdv.setUint32(0,0x02014b50,true); cdv.setUint16(4,20,true); cdv.setUint16(6,20,true);
-      cdv.setUint16(8,0,true); cdv.setUint16(10,0,true); cdv.setUint16(12,0,true); cdv.setUint16(14,0x21,true);
+      cdv.setUint16(8,0x0800,true); cdv.setUint16(10,0,true); cdv.setUint16(12,0,true); cdv.setUint16(14,0x21,true);
       cdv.setUint32(16,crc,true); cdv.setUint32(20,size,true); cdv.setUint32(24,size,true);
       cdv.setUint16(28,nameBytes.length,true); cdv.setUint16(30,0,true); cdv.setUint16(32,0,true);
       cdv.setUint16(34,0,true); cdv.setUint16(36,0,true); cdv.setUint32(38,0,true);
