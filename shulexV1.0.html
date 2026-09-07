@@ -1,0 +1,1309 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>ERP · Shulex 工单联动</title>
+  <style>
+    :root {
+      --nav: #07101f;
+      --top: #222c3b;
+      --blue: #3478f6;
+      --blue-dark: #245bc0;
+      --text: #252b35;
+      --muted: #707986;
+      --line: #dfe4ea;
+      --soft: #f4f6f8;
+      --panel: #ffffff;
+    }
+    * { box-sizing: border-box; }
+    html, body { width: 100%; height: 100%; margin: 0; overflow: hidden; }
+    body {
+      color: var(--text);
+      background: #eef1f4;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC", "Microsoft YaHei", Arial, sans-serif;
+      font-size: 16px;
+    }
+    button, input, textarea, select { font: inherit; }
+    button { cursor: pointer; }
+    .icon { width: 22px; height: 22px; display: block; fill: none; stroke: currentColor; stroke-width: 1.7; stroke-linecap: round; stroke-linejoin: round; }
+
+    .app { width: 100vw; height: 100vh; min-width: 1180px; position: relative; }
+    .sidebar {
+      position: fixed; inset: 0 auto 0 0; width: 108px; z-index: 30;
+      background: var(--nav); color: #c7d0df; display: flex; flex-direction: column;
+      align-items: center;
+    }
+    .brand { height: 82px; width: 100%; display: grid; place-items: center; }
+    .brand-mark { width: 47px; height: 45px; position: relative; }
+    .brand-mark i { position: absolute; display: block; background: #367af7; border-radius: 1px; }
+    .brand-mark .b1 { left: 5px; top: 3px; width: 10px; height: 39px; }
+    .brand-mark .b2 { left: 27px; top: 3px; width: 10px; height: 39px; }
+    .brand-mark .b3 { left: 15px; top: 21px; width: 20px; height: 10px; transform: skewY(34deg); }
+    .nav-list { width: 100%; flex: 1; display: flex; flex-direction: column; gap: 2px; }
+    .nav-item {
+      width: 96px; height: 57px; margin: 0 auto; border: 0; border-radius: 4px;
+      color: #c8d1df; background: transparent; display: flex; align-items: center; justify-content: center; gap: 7px;
+      font-size: 18px; white-space: nowrap; transition: .15s ease;
+    }
+    .nav-item .icon { width: 22px; height: 22px; }
+    .nav-item:hover, .nav-item.active { background: #3176f5; color: white; }
+    .nav-item.compact { height: 53px; }
+
+    .workspace { position: absolute; inset: 0 0 0 108px; min-width: 1072px; }
+    .topbar {
+      position: absolute; z-index: 15; inset: 0 0 auto 0; height: 52px; background: var(--top);
+      color: #bfc7d2; display: flex; align-items: stretch; justify-content: space-between;
+    }
+    .tabs { min-width: 0; height: 100%; display: flex; align-items: stretch; overflow: hidden; }
+    .tab {
+      border: 0; border-right: 1px solid #536070; color: #bbc3cf; background: transparent;
+      padding: 0 18.9px; min-width: 66.6px; max-width: 189px; flex: 0 1 auto; display: flex; align-items: center; gap: 9px; white-space: nowrap; overflow: hidden;
+      font-size: 14.4px;
+    }
+    .tab.active { color: #515b67; background: #fff; border-radius: 7px 7px 0 0; }
+    .tab .tab-label { overflow: hidden; text-overflow: ellipsis; white-space: nowrap; min-width: 0; flex: 1 1 auto; }
+    .tab .close { font-size: 19.8px; line-height: 1; flex: 0 0 auto; }
+    .top-tools { display: flex; align-items: center; gap: 20px; padding: 0 12px 0 24px; white-space: nowrap; font-size: 15px; }
+    .tool-icon { width: 22px; height: 22px; color: #d2d9e3; }
+    .user-face { width: 36px; height: 36px; border-radius: 50%; display:grid; place-items:center; background:#e7b376; color:#1e354a; font-size:13px; font-weight:700; border:2px solid #d7dfeb; }
+    .caret { font-size: 11px; color: #aab3c1; }
+
+    .screen { position: absolute; inset: 52px 0 0 0; overflow: hidden; }
+    .page { width: 100%; height: 100%; display: none; }
+    .page.active { display: block; }
+
+    /* ERP work order detail */
+    .order-page { padding: 15px 6px 14px 14px; background: #f1f3f5; overflow:hidden; }
+    .order-card { width:166.666667%; height:166.666667%; transform:scale(.6); transform-origin:top left; background:#fff; border-radius:5px; overflow:hidden; box-shadow:0 1px 2px rgba(21,34,50,.04); }
+    .order-summary { height: 129px; border-bottom: 1px solid var(--line); padding: 18px 16px 13px; }
+    .summary-title { display: flex; align-items: center; gap: 10px; font-size: 22px; font-weight: 700; margin-bottom: 14px; }
+    .status { font-size: 15px; color: #e58a38; border: 1px solid #f0a04d; padding: 4px 10px; border-radius: 2px; font-weight: 400; }
+    .minus-dot { width: 20px; height: 20px; border-radius: 50%; background: #f6bf38; color:white; display:grid; place-items:center; font-size:15px; }
+    .summary-grid { display: grid; grid-template-columns: 1.12fr 1.1fr 1.13fr 1fr; row-gap: 10px; padding-left: 26px; font-size: 16px; }
+    .summary-grid .wide { grid-column: span 1; }
+    .label { color: #848b93; margin-right: 8px; }
+    .order-body { height: calc(100% - 129px); display: grid; grid-template-columns: 366px minmax(560px,1fr) 366px; }
+    .order-info { border-right: 1px solid var(--line); padding: 12px 16px; overflow: hidden; }
+    .section-heading { font-size: 20px; font-weight: 700; margin-bottom: 9px; }
+    .section-heading a { font-size: 17px; color: #3e82e8; font-weight: 400; margin-left: 14px; }
+    .red-badge { background: #ff261e; color:#fff; border-radius:10px; display:inline-grid; place-items:center; min-width:18px; height:18px; font-size:12px; transform: translate(-4px,-10px); }
+    .kv { font-size: 16px; line-height: 31px; white-space: nowrap; }
+    .kv .k { color:#858b93; display:inline-block; min-width:82px; }
+    .link { color:#2e7ce6; }
+    .product-thumb { width: 86px; height: 92px; margin: 25px 0 0 18px; position: relative; }
+    .product-thumb .machine { width: 49px; height: 66px; border-radius: 4px 4px 7px 7px; background:#9ee9db; position:absolute; left:14px; top:14px; box-shadow: inset -8px 0 rgba(30,144,139,.12); }
+    .product-thumb .machine:before { content:""; position:absolute; left:-2px; top:-11px; width:53px; height:18px; background:#dff7ef; border:1px solid #acd9cf; border-radius:50%; }
+    .product-thumb .machine:after { content:""; position:absolute; right:5px; top:25px; width:8px; height:8px; border-radius:50%; background:#66c5bd; }
+    .mail-center { min-width: 0; position: relative; display:flex; flex-direction:column; }
+    .mail-title { height:65px; border-bottom:1px solid var(--line); padding:20px 22px; font-size:20px; font-weight:700; }
+    .thread { flex:1; padding:17px 22px 18px; overflow:auto; }
+    .customer-name { font-size:18px; font-weight:700; margin-bottom:18px; }
+    .customer-name .link { font-size:16px; margin-left:15px; font-weight:400; }
+    .show-more { height:31px; line-height:31px; color:#2c79e8; background:#f1f3f5; padding-left:74px; font-weight:600; }
+    .message { margin:42px 0 0 65px; min-height:103px; background:#f0f2f4; border-radius:5px; padding:14px 12px; position:relative; }
+    .mail-direction { position:absolute; left:-65px; top:0; width:52px; height:52px; border-radius:50%; color:#27313b; }
+    .mail-direction.inbound { background:#f2f3f5; }
+    .mail-direction.outbound { background:#dce8ff; }
+    .mail-direction .dir-mail { position:absolute; left:10px; top:12px; width:28px; height:28px; stroke-width:1.8; }
+    .mail-direction .dir-arrow { position:absolute; right:6px; bottom:7px; width:21px; height:21px; padding:1px; border-radius:50%; background:inherit; stroke-width:2.2; }
+    .msg-head { font-weight:700; font-size:17px; }
+    .msg-role { display:inline-flex; align-items:center; height:22px; margin-left:9px; padding:0 8px; border-radius:3px; font-size:12px; line-height:20px; font-weight:500; vertical-align:2px; white-space:nowrap; }
+    .msg-role.user { color:#d46b22; background:#fff3e9; border:1px solid #ffd9bd; }
+    .msg-role.human { color:#276ed4; background:#eaf2ff; border:1px solid #c9dcff; }
+    .msg-role.ai { color:#6851cf; background:#f0edff; border:1px solid #d8d0ff; }
+    .msg-time { color:#9a9fa6; font-size:14px; font-weight:400; margin-left:10px; }
+    .msg-copy { color:#69727d; margin:11px 0 7px 8px; }
+    .msg-more { color:#2c79e8; font-weight:600; margin-left:8px; }
+    .composer { flex: 0 0 auto; border-top: 1px solid var(--line); }
+    .address-row { height:57px; display:grid; grid-template-columns: 1fr 1fr 1.2fr; align-items:center; gap:18px; border-bottom:1px solid var(--line); padding:0 20px; color:#59636f; }
+    .field { border:1px solid #d8dde3; height:42px; padding:9px 12px; background:white; color:#626b77; }
+    .subject-row { height:55px; display:flex; align-items:center; gap:13px; padding:0 20px; border-bottom:1px solid var(--line); color:#59636f; }
+    .subject-row .field { width:205px; height:40px; }
+    .editor-toolbar { height:38px; color:#999; border-bottom:1px solid #d3d7dc; display:flex; align-items:center; gap:13px; padding:0 14px; font-size:18px; }
+    .editor-area { height:173px; padding:24px 16px; color:#c7cbd0; font-style:italic; }
+    .bottom-actions { height:74px; border-top:1px solid var(--line); display:flex; justify-content:flex-end; align-items:center; gap:13px; padding:0 16px; }
+    .btn { height:43px; border:1px solid #d5d9de; background:white; color:#353b43; border-radius:2px; padding:0 21px; }
+    .btn.primary { color:white; border-color:var(--blue); background:var(--blue); }
+    .process { border-left:1px solid var(--line); display:flex; flex-direction:column; min-height:0; }
+    .process-tabs { height:54px; border-bottom:1px solid var(--line); display:flex; align-items:flex-end; gap:32px; padding:0 16px; }
+    .process-tab { height:54px; padding:17px 0; font-size:18px; color:#555e6b; position:relative; }
+    .process-tab.active { font-weight:700; color:#202733; }
+    .process-tab.active:after { content:""; position:absolute; left:0; right:0; bottom:0; height:3px; background:#3478f6; }
+    .process-form { flex:1 1 auto; min-height:0; padding:21px 22px; display:flex; flex-direction:column; gap:20px; }
+    .process-actions { flex:0 0 74px; min-height:74px; border-top:1px solid var(--line); display:flex; align-items:center; justify-content:flex-end; gap:8px; padding:0 10px; background:#fff; }
+    .process-actions .btn { flex:1 1 0; min-width:0; padding:0 8px; white-space:nowrap; }
+    .form-row { display:grid; grid-template-columns:85px 1fr; align-items:start; gap:10px; }
+    .form-row > label { text-align:right; padding-top:11px; font-size:16px; }
+    .control { height:42px; border:1px solid #d7dce1; color:#525a65; background:#fff; padding:10px 12px; }
+    textarea.control { height:60px; resize:none; color:#c3c7cc; }
+    .attachment { display:flex; align-items:center; gap:32px; padding-left:98px; color:#2e83df; }
+    .upload { height:42px; border:1px solid #d5d9de; background:#fff; padding:0 17px; }
+    .ok { width:21px; height:21px; border-radius:50%; color:#fff; background:#10c82f; display:grid; place-items:center; }
+
+    /* AI / manual hand-off (处理类型 field in the 工单处理 tab, below 附件) */
+    .handoff-control { display:flex; flex-wrap:wrap; align-items:center; gap:8px 10px; padding-top:11px; }
+    .handoff-status { display:inline-flex; align-items:center; gap:6px; font-weight:600; white-space:nowrap; font-size:16px; }
+    .handoff-status.ai { color:#6851cf; }
+    .handoff-status.manual { color:#2c79e8; }
+    .handoff-dot { width:7px; height:7px; border-radius:50%; background:currentColor; display:inline-block; }
+    .handoff-reason { flex:0 0 100%; color:#848b93; font-size:14px; }
+    .handoff-reason .reason-prefix { color:#525a65; font-weight:600; }
+    .handoff-toggle-wrap { position:relative; display:inline-flex; flex:0 0 auto; margin-left:auto; }
+    .handoff-toggle { flex:0 0 auto; height:30px; padding:0 12px; border:1px solid #d5d9de; background:#fff; color:#3f4853; border-radius:2px; font-size:13px; white-space:nowrap; }
+    .handoff-toggle:hover { border-color:#3478f6; color:#3478f6; }
+    .handoff-reason-picker { flex:0 0 100%; flex-wrap:wrap; align-items:center; gap:8px; min-width:0; }
+    .handoff-reason-picker:not([hidden]) { display:flex; }
+    .handoff-reason-picker select { flex:0 0 100%; height:30px; border:1px solid #d7dce1; padding:0 6px; color:#525a65; background:#fff; min-width:0; }
+    .handoff-reason-picker .handoff-reason-btns { flex:0 0 100%; display:flex; justify-content:flex-end; gap:8px; }
+    .handoff-reason-picker .handoff-confirm { flex:0 0 auto; height:30px; padding:0 12px; border:1px solid var(--blue); background:var(--blue); color:#fff; border-radius:2px; font-size:13px; white-space:nowrap; }
+    .handoff-reason-picker .handoff-cancel { flex:0 0 auto; height:30px; padding:0 10px; border:1px solid #d5d9de; background:#fff; color:#3f4853; border-radius:2px; font-size:13px; white-space:nowrap; }
+    .handoff-mark-wrap { flex:0 0 100%; display:flex; align-items:center; justify-content:flex-end; gap:10px; flex-wrap:wrap; }
+    .handoff-mark-wrap[hidden] { display:none; }
+    .handoff-mark-btn { flex:0 0 auto; height:30px; padding:0 12px; border:1px solid var(--blue); background:var(--blue); color:#fff; border-radius:2px; font-size:13px; white-space:nowrap; }
+    .handoff-mark-btn:hover { border-color:var(--blue-dark); background:var(--blue-dark); }
+    .handoff-mark-confirm { position:absolute; z-index:30; top:calc(100% + 10px); right:0; flex-direction:column; gap:10px; width:190px; padding:12px 14px; background:#fff; border-radius:8px; box-shadow:0 6px 20px rgba(20,30,45,.18); font-size:14px; color:#3d4652; white-space:normal; }
+    .handoff-mark-confirm:not([hidden]) { display:flex; }
+    .handoff-mark-confirm:before { content:""; position:absolute; top:-5px; right:16px; width:10px; height:10px; background:#fff; box-shadow:-2px -2px 3px rgba(20,30,45,.06); transform:rotate(45deg); }
+    .handoff-mark-done { display:flex; align-items:center; gap:10px; font-size:14px; flex-wrap:wrap; }
+    .handoff-mark-done[hidden] { display:none; }
+    .handoff-mark-done .mark-done-badge { display:inline-flex; align-items:center; height:22px; padding:0 8px; border-radius:3px; background:#eaf8f1; color:#36a36f; border:1px solid #bfe6d2; font-weight:600; white-space:nowrap; }
+    .handoff-mark-done .mark-meta { color:#848b93; }
+    .handoff-mark-done .mark-meta b { color:#525a65; font-weight:600; }
+    .handoff-confirm-picker { position:absolute; z-index:30; top:calc(100% + 10px); right:0; flex-direction:column; gap:10px; width:200px; padding:12px 14px; background:#fff; border-radius:8px; box-shadow:0 6px 20px rgba(20,30,45,.18); font-size:14px; color:#3d4652; white-space:normal; }
+    .handoff-confirm-picker:not([hidden]) { display:flex; }
+    .handoff-confirm-picker:before { content:""; position:absolute; top:-5px; right:16px; width:10px; height:10px; background:#fff; box-shadow:-2px -2px 3px rgba(20,30,45,.06); transform:rotate(45deg); }
+    .handoff-confirm-picker .handoff-confirm-btns { display:flex; justify-content:flex-end; gap:8px; }
+    .handoff-confirm-picker .handoff-confirm-ai { flex:0 0 auto; height:30px; padding:0 12px; border:1px solid var(--blue); background:var(--blue); color:#fff; border-radius:2px; font-size:13px; white-space:nowrap; }
+    .handoff-confirm-picker .handoff-cancel-ai { flex:0 0 auto; height:30px; padding:0 10px; border:1px solid #d5d9de; background:#fff; color:#3f4853; border-radius:2px; font-size:13px; white-space:nowrap; }
+
+    /* Work order management */
+    .management-page { padding:14px 12px 13px; background:#f1f3f5; color:#3d4652; overflow:hidden; }
+    .management-card { width:123.456790%; height:123.456790%; min-width:1120px; transform:scale(.81); transform-origin:top left; background:#fff; border-radius:4px; display:flex; flex-direction:column; overflow:hidden; }
+    .management-status { height:45px; flex:0 0 45px; display:flex; align-items:flex-end; gap:34px; padding:0 14px; border-bottom:1px solid #e1e5ea; }
+    .management-status button { height:45px; padding:0; border:0; background:transparent; color:#55606e; font-size:15px; position:relative; cursor:pointer; }
+    .management-status button.active { color:#3478f6; }
+    .management-status button.active:after { content:""; position:absolute; left:0; right:0; bottom:0; height:3px; background:#3478f6; }
+    .management-filters { flex:0 0 146px; padding:12px 14px 10px; }
+    .filter-line { display:flex; align-items:center; gap:9px; min-height:43px; white-space:nowrap; }
+    .filter-control { height:36px; border:1px solid #d8dee6; border-radius:2px; background:#fff; color:#9ba4b0; padding:0 11px; font-size:14px; }
+    select.filter-control { min-width:96px; }
+    .filter-control.medium { width:178px; }
+    .filter-control.long { width:220px; }
+    .filter-pair { display:flex; height:36px; }
+    .filter-pair .filter-control { border-radius:0; }
+    .filter-pair .filter-control:first-child { width:88px; border-radius:2px 0 0 2px; color:#616a76; }
+    .filter-pair input { width:205px; border-left:0; border-radius:0 2px 2px 0 !important; }
+    .filter-icon { width:36px; height:36px; border:1px solid #d8dee6; border-radius:2px; background:#fff; color:#7f8a98; display:grid; place-items:center; padding:7px; cursor:pointer; }
+    .filter-icon .icon { width:20px; height:20px; }
+    .query-btn, .reset-btn, .batch-btn { height:36px; border-radius:2px; padding:0 18px; border:1px solid #d5dbe3; background:#fff; color:#3f4853; font-size:14px; cursor:pointer; }
+    .query-btn, .batch-btn.primary { border-color:#3478f6; background:#3478f6; color:#fff; }
+    .management-actions { height:48px; display:flex; align-items:center; justify-content:space-between; }
+    .batch-group, .table-tools { display:flex; align-items:center; gap:10px; }
+    .batch-btn { min-width:66px; }
+    .table-tools { color:#687381; font-size:14px; gap:22px; }
+    .tool-link { display:flex; align-items:center; gap:6px; cursor:pointer; }
+    .tool-link .icon { width:17px; height:17px; }
+    .management-table-wrap { flex:1 1 auto; min-height:0; margin:0 14px; border:1px solid #e1e5ea; overflow:auto; position:relative; }
+    .management-table { width:100%; min-width:1850px; border-collapse:collapse; table-layout:fixed; font-size:14px; }
+    .management-table th { position:sticky; top:0; z-index:2; height:42px; padding:0 10px; background:#f1f3f6; border-right:1px solid #e0e4e9; border-bottom:1px solid #dfe4ea; color:#303945; text-align:left; font-weight:600; white-space:nowrap; }
+    .management-table td { height:47px; padding:0 10px; border-right:1px solid #f1f3f5; border-bottom:1px solid #e4e8ed; color:#424b56; white-space:nowrap; overflow:hidden; text-overflow:ellipsis; }
+    .management-table tr:hover td { background:#f8fbff; }
+    .management-table .check-col { width:42px; text-align:center; }
+    .management-table .number-col { width:150px; }
+    .management-table .status-col { width:190px; }
+    .handling-tag { display:inline-flex; align-items:center; height:20px; margin-left:5px; padding:0 7px; border-radius:9px; font-size:11px; font-weight:600; vertical-align:middle; }
+    .handling-tag.ai { color:#6851cf; background:#f0edff; border:1px solid #d8d0ff; }
+    .handling-tag.manual { color:#276ed4; background:#eaf2ff; border:1px solid #c9dcff; }
+    .handling-tag.manual-done { color:#1f8a53; background:#eaf8f1; border:1px solid #bfe6d2; }
+    .handling-tag.manual-pending { color:#d9483d; background:#fdeceb; border:1px solid #f5c6c2; }
+    .management-table .type-col { width:80px; }
+    .management-table .name-col { width:110px; }
+    .management-table .priority-col { width:65px; }
+    .management-table .desc-col { width:155px; }
+    .management-table .owner-col { width:88px; }
+    .management-table .category-col { width:95px; }
+    .management-table .tag-col { width:80px; }
+    .management-table .remark-col { width:65px; }
+    .management-table .person-col { width:74px; }
+    .management-table .date-col { width:145px; }
+    .management-table .operation-col { width:126px; position:sticky; right:0; background:#fff; box-shadow:-7px 0 10px rgba(37,53,71,.05); }
+    .management-table th.operation-col { background:#f1f3f6; z-index:3; }
+    .row-check { width:17px; height:17px; appearance:none; border:1px solid #cfd7e2; border-radius:3px; background:#fff; vertical-align:middle; }
+    .row-check:checked { background:#3478f6; border-color:#3478f6; box-shadow:inset 0 0 0 3px #fff; }
+    .order-link, .action-link { color:#3478f6; text-decoration:none; cursor:pointer; }
+    .action-link + .action-link { margin-left:19px; }
+    .status-chip { display:inline-flex; height:26px; align-items:center; padding:0 9px; border-radius:2px; }
+    .status-chip.processing { color:#ed7d31; background:#fff0e5; }
+    .status-chip.pending { color:#d89a00; background:#fff7df; }
+    .status-chip.closed { color:#7c8794; background:#eff2f5; }
+    .status-chip.done { color:#36a36f; background:#eaf8f1; }
+    .tag-edit { color:#b3bdc8; font-size:19px; }
+    .management-empty { height:180px !important; text-align:center; color:#9aa3af !important; }
+    .management-footer { flex:0 0 62px; min-height:62px; display:flex; align-items:center; justify-content:flex-end; gap:10px; padding:0 16px; color:#5e6875; font-size:14px; }
+    .page-btn { width:34px; height:34px; border:1px solid #d5dce5; background:#fff; border-radius:2px; color:#56616e; cursor:pointer; }
+    .page-btn.active { color:#fff; background:#3478f6; border-color:#3478f6; }
+    .page-size { height:34px; border:1px solid #d5dce5; background:#fff; padding:0 12px; color:#4d5763; }
+    .page-jump { width:55px; height:34px; border:1px solid #d5dce5; padding:0 10px; }
+
+    /* Internal-message work order */
+    .internal-page { padding:14px 10px 14px 12px; background:#f1f3f5; overflow:hidden; }
+    .internal-card { width:184.263878%; height:184.263878%; transform:scale(.5427); transform-origin:top left; background:#fff; border-radius:5px; overflow:hidden; display:flex; flex-direction:column; }
+    .internal-summary { flex:0 0 130px; border-bottom:1px solid var(--line); padding:16px 16px 12px; }
+    .internal-title { display:flex; align-items:center; gap:10px; font-size:20px; font-weight:700; margin-bottom:16px; }
+    .priority-mark { display:inline-flex; align-items:center; gap:6px; color:#666f7b; font-size:15px; font-weight:400; }
+    .priority-mark:before { content:"▲"; width:18px; height:18px; border-radius:50%; display:grid; place-items:center; background:#f5a444; color:#fff; font-size:9px; }
+    .internal-summary-grid { display:grid; grid-template-columns:1fr 1fr 1fr 1.15fr; gap:22px 40px; padding-left:22px; font-size:14px; }
+    .internal-summary-grid .internal-desc { grid-column:span 2; }
+    .internal-summary-grid .internal-name { grid-row:span 2; }
+    .internal-body { flex:1 1 auto; min-height:0; display:grid; grid-template-columns:305px minmax(500px,1fr) 360px; }
+    .internal-order-info { border-right:1px solid var(--line); padding:13px 14px; overflow:hidden; }
+    .internal-order-info .section-heading { font-size:18px; margin-bottom:12px; }
+    .internal-order-info .kv { font-size:14px; line-height:28px; }
+    .internal-order-info .kv .k { min-width:72px; }
+    .internal-placeholder { width:88px; height:88px; margin-top:18px; background:#f0f2f4; color:#c6cbd2; display:grid; place-items:center; font-size:34px; font-weight:700; }
+    .internal-mail { min-width:0; display:flex; flex-direction:column; border-right:1px solid var(--line); }
+    .internal-thread-head { flex:0 0 45px; min-height:45px; border-bottom:1px solid var(--line); display:flex; align-items:center; gap:12px; padding:0 18px; font-size:14px; color:#747c87; }
+    .internal-thread-head:before { content:"−"; color:#3478f6; font-weight:700; }
+    .internal-thread { flex:1 1 auto; min-height:0; overflow:auto; padding:14px 18px 20px; background:#fff; }
+    .internal-message-row { display:flex; margin-bottom:23px; }
+    .internal-message-row.user { justify-content:flex-start; }
+    .internal-message-row.ours { justify-content:flex-end; }
+    .internal-message-stack { width:56%; min-width:360px; max-width:620px; }
+    .internal-message-row.ours .internal-message-stack { text-align:right; }
+    .internal-message-time { margin-bottom:6px; color:#9aa2ad; font-size:14px; }
+    .internal-message-card { text-align:left; border-radius:5px; padding:12px 14px; background:#f0f2f4; color:#697384; font-size:14px; line-height:1.55; box-shadow:0 1px 1px rgba(27,39,54,.02); }
+    .internal-message-card.manual { background:#eaf2ff; border:1px solid #d2e2ff; }
+    .internal-message-card.ai { background:#f0edff; border:1px solid #ddd5ff; }
+    .internal-message-head { display:flex; align-items:center; gap:8px; margin-bottom:5px; color:#2d3540; font-weight:700; }
+    .internal-message-row.ours .internal-message-head { justify-content:flex-end; }
+    .internal-role { display:inline-flex; align-items:center; height:22px; padding:0 8px; border-radius:3px; font-size:12px; font-weight:500; white-space:nowrap; }
+    .internal-role.user { color:#d46b22; background:#fff3e9; border:1px solid #ffd9bd; }
+    .internal-role.manual { color:#276ed4; background:#fff; border:1px solid #bfd6ff; }
+    .internal-role.ai { color:#6851cf; background:#fff; border:1px solid #d3caff; }
+    .internal-subject { color:#2c333c; font-weight:700; }
+    .internal-attachments { display:flex; gap:8px; margin-top:5px; }
+    .attachment-chip { display:inline-flex; align-items:center; height:25px; padding:0 8px; background:#fff; border-radius:3px; color:#657181; }
+    .internal-reply-actions { flex:0 0 70px; min-height:70px; border-top:1px solid var(--line); display:flex; align-items:center; justify-content:flex-end; gap:12px; padding:0 14px; }
+    .internal-process { min-height:0; display:flex; flex-direction:column; background:#fff; }
+    .internal-process .process-tabs { flex:0 0 54px; gap:26px; padding:0 14px; }
+    .internal-process .process-form { gap:14px; padding:17px 16px; overflow:auto; }
+    .internal-process .form-row { grid-template-columns:82px 1fr; }
+    .internal-file-list { padding:0 38px 10px 115px; display:grid; gap:13px; color:#2e83df; font-size:14px; }
+    .internal-file-list span { display:flex; justify-content:space-between; align-items:center; }
+    .internal-file-list b { width:18px; height:18px; display:grid; place-items:center; border-radius:50%; background:#10c82f; color:#fff; font-size:11px; }
+    .internal-process .process-actions { flex:0 0 70px; min-height:70px; }
+    .tiktok-composer { flex:0 0 128px; min-height:128px; border-top:1px solid var(--line); padding:10px 18px; display:flex; flex-direction:column; gap:8px; }
+    .tiktok-composer[hidden] { display:none; }
+    .tiktok-compose-toolbar { flex:0 0 auto; display:flex; align-items:center; gap:16px; color:#69727d; font-size:14px; }
+    .tiktok-compose-toolbar .info-i { font-style:normal; color:#9aa0a8; }
+    .tiktok-compose-toolbar .ai-reply-btn { margin-left:auto; height:28px; padding:0 12px; border:1px solid #d5d9de; border-radius:3px; background:#fff; color:#3f4853; font-size:13px; display:inline-flex; align-items:center; gap:5px; }
+    .tiktok-compose-area { flex:1 1 auto; min-height:0; border:1px solid #d7dce1; border-radius:3px; padding:8px 10px; resize:none; color:#3d4652; font-size:14px; }
+    .tiktok-mark { margin-left:auto; align-self:center; width:20px; height:20px; border-radius:4px; background:#000; color:#fff; display:grid; place-items:center; font-size:12px; }
+
+    @media (max-width: 1450px) {
+      .internal-body { grid-template-columns:250px minmax(480px,1fr) 340px; }
+      .internal-summary-grid { gap:18px 22px; }
+      .internal-message-stack { min-width:330px; width:62%; }
+    }
+
+    /* Shulex embedded system */
+    .shulex-page { background:#fff; color:#111827; font-family: Arial, "PingFang SC", sans-serif; }
+    .shulex-shell { height:100%; display:grid; grid-template-rows:27px 1fr; }
+    .shulex-head { background:#091728; color:#dbe5ef; display:flex; align-items:center; justify-content:space-between; padding:0 9px; font-size:11px; }
+    .solvea { font-weight:700; font-size:13px; letter-spacing:-.3px; }
+    .solvea:before { content:"◉"; margin-right:4px; }
+    .shulex-main { min-height:0; display:grid; grid-template-columns:145px 145px 175px minmax(480px,1fr) 214px; background:#f3f5f7; }
+    .s-left { background:#f0f2f4; border-right:1px solid #dfe3e8; padding:8px 7px; position:relative; }
+    .s-workspace { height:28px; border-radius:4px; background:#fff; display:flex; align-items:center; justify-content:space-between; padding:0 8px; font-size:10px; box-shadow:0 1px 3px rgba(0,0,0,.07); }
+    .s-navrow { height:28px; margin-top:4px; border-radius:5px; padding:0 8px; display:flex; align-items:center; gap:7px; font-size:10px; color:#3f4751; }
+    .s-navrow.active { background:#dfe3e7; font-weight:700; }
+    .s-me { position:absolute; left:7px; right:7px; bottom:7px; height:27px; border-radius:5px; background:#dfe2e5; display:flex; align-items:center; gap:7px; padding:0 7px; font-size:9px; }
+    .tiny-avatar { width:17px; height:17px; border-radius:50%; background:#8e67ef; color:white; display:grid; place-items:center; font-size:8px; }
+    .s-queues { background:#f7f8f9; border-right:1px solid #dfe3e8; padding:12px 12px; font-size:10px; }
+    .s-title { display:flex; justify-content:space-between; align-items:center; font-weight:700; font-size:17px; margin:0 0 9px; }
+    .queue-row { height:21px; display:flex; align-items:center; justify-content:space-between; padding-left:5px; color:#35404c; }
+    .queue-row.indent { padding-left:17px; }
+    .queue-row .qcount { color:#66707b; }
+    .queue-section { color:#6d7580; margin:14px 0 5px; display:flex; justify-content:space-between; }
+    .channel-dot { width:10px; height:10px; border-radius:50%; display:inline-block; margin-right:6px; vertical-align:-1px; }
+    .tickets { background:#fbfbfc; border-right:1px solid #dfe3e8; padding:8px 7px; overflow:hidden; }
+    .ticket-tools { height:23px; display:flex; justify-content:space-between; color:#3f4853; margin-bottom:3px; }
+    .ticket { height:57px; padding:6px 7px; border-radius:5px; font-size:9px; line-height:14px; overflow:hidden; border-bottom:1px solid #edf0f2; }
+    .ticket.active { background:#eff2f5; }
+    .ticket .sender { color:#525b65; }
+    .ticket .subject { color:#141922; overflow:hidden; text-overflow:ellipsis; white-space:nowrap; }
+    .ticket .meta { color:#a1a7ae; display:flex; justify-content:space-between; }
+    .ticket .new { color:#3478f6; font-weight:700; }
+    .s-conversation { background:white; min-width:0; display:flex; flex-direction:column; }
+    .conversation-head { height:68px; padding:12px 12px 0; border-bottom:1px solid #edf0f3; }
+    .conversation-title { font-size:12px; font-weight:700; display:flex; align-items:center; justify-content:space-between; }
+    .conversation-actions { display:flex; align-items:center; gap:11px; color:#3b4654; }
+    .assign { height:23px; padding:0 11px; border:1px solid #cfd5db; background:white; border-radius:4px; font-size:10px; }
+    .ticket-status { display:flex; gap:7px; align-items:center; margin-top:8px; font-size:8px; color:#66707b; }
+    .pill { background:#edf8f2; color:#2bb66d; border-radius:3px; padding:2px 5px; }
+    .conversation-scroll { flex:1; overflow:hidden; padding:12px 20px 0; font-size:10px; }
+    .mail-card { margin-top:8px; width:650px; max-width:90%; background:#f2f4f6; border-radius:5px; padding:10px 12px 0; }
+    .mail-meta { display:flex; justify-content:space-between; color:#818892; }
+    .mail-subject { font-weight:700; color:#212833; margin:10px 0; }
+    .facebook-mail { background:#fff; height:282px; border-radius:3px; padding:15px 19px; overflow:hidden; }
+    .fb-logo { width:23px; height:23px; border-radius:50%; color:white; background:#1877f2; display:grid; place-items:center; font-size:20px; font-weight:bold; font-family:Arial; }
+    .fb-name { float:right; font-size:9px; }
+    .security-title { font-size:19px; margin:18px 0 22px; }
+    .facebook-mail p { line-height:1.55; margin:0 0 16px; }
+    .mapbox { height:86px; border:1px solid #e7e7e7; margin-top:8px; padding:46px 0 0 20px; position:relative; overflow:hidden; }
+    .mapbox:before { content:""; position:absolute; left:12px; bottom:10px; width:160px; height:38px; background:linear-gradient(20deg,#cbe8be 0 35%,#e3f1dd 36% 48%,#b9dcaa 49% 65%,#dfeadd 66%); opacity:.8; }
+    .expand { position:absolute; left:50%; bottom:8px; transform:translateX(-50%); background:#fff; border:0; border-radius:12px; box-shadow:0 2px 8px #c9cdd2; padding:4px 11px; font-size:9px; }
+    .ai-divider { height:34px; display:flex; align-items:center; justify-content:center; color:#777f88; }
+    .ai-note { height:53px; background:#fff5ce; border-radius:6px; padding:13px; color:#343b44; }
+    .reply-box { height:124px; border:1px solid #e0e4e8; border-radius:4px; margin:0 7px 7px; padding:8px; color:#8b929a; font-size:9px; }
+    .reply-tools { height:24px; border-bottom:1px solid #edf0f2; }
+    .reply-copy { padding-top:14px; line-height:17px; }
+    .s-detail { background:#fff; border-left:1px solid #dfe3e8; overflow:hidden; font-size:10px; }
+    .detail-head { height:38px; display:flex; align-items:center; justify-content:space-between; padding:0 12px; border-bottom:1px solid #e8ebee; font-weight:700; }
+    .detail-section { border-bottom:1px solid #edf0f3; padding:11px 12px; }
+    .detail-section-title { display:flex; align-items:center; justify-content:space-between; margin-bottom:12px; font-weight:700; }
+    .contact { display:flex; align-items:center; gap:9px; position:relative; min-width:0; }
+    .contact-avatar { width:28px; height:28px; border-radius:4px; display:grid; place-items:center; background:#b9dcff; color:#1c4b74; font-weight:700; }
+    .contact > div:nth-child(2) { flex:1 1 auto; min-width:0; }
+    .contact-mail { color:#8c939b; margin-top:4px; font-size:9px; overflow:hidden; text-overflow:ellipsis; white-space:nowrap; }
+    .workorder-btn {
+      flex:0 0 auto; min-width:48px; margin-left:auto; height:26px; padding:0 10px; border:1px solid #3478f6; color:#3478f6; background:#fff; border-radius:4px;
+      font-size:11px; line-height:24px; white-space:nowrap; text-align:center; font-weight:700; box-shadow:0 1px 2px rgba(52,120,246,.08);
+    }
+    .workorder-btn:hover { color:#fff; background:#3478f6; }
+    .note-box { height:49px; border:1px solid #e1e5e8; border-radius:5px; color:#c0c4c8; padding:8px; }
+    .related { background:#fafbfc; border:1px solid #eceff2; border-radius:4px; padding:6px; margin-top:6px; line-height:15px; }
+    .record { border-left:1px solid #d2d8de; margin-left:5px; padding:0 0 14px 12px; position:relative; }
+    .record:before { content:""; position:absolute; width:5px; height:5px; border-radius:50%; background:#3478f6; left:-3px; top:3px; }
+
+    /* Mega menu */
+    .veil { position:fixed; inset:0 0 0 108px; z-index:40; background:rgba(0,0,0,.48); display:none; }
+    .veil.open { display:block; }
+    .mega {
+      position:fixed; z-index:45; left:108px; top:0; width:530px; height:100vh; background:white; display:none;
+      grid-template-columns:265px 265px; box-shadow:2px 0 5px rgba(0,0,0,.04); color:#333a45;
+    }
+    .mega.open { display:grid; }
+    .mega-col { border-right:1px solid #e0e4e8; padding-top:18px; }
+    .mega-group { margin-bottom:36px; }
+    .mega-title { font-weight:700; padding:14px 20px 10px; }
+    .mega-link { height:39px; display:flex; align-items:center; padding:0 20px; color:#5c6674; text-decoration:none; font-size:16px; cursor:pointer; }
+    .mega-link:hover, .mega-link.shulex { background:#e8f0ff; color:#3478f6; }
+
+    /* AI reply configuration */
+    .ai-config-overlay { position:fixed; inset:0; z-index:80; display:none; align-items:center; justify-content:center; padding:40px 24px; background:rgba(18,27,40,.42); }
+    .ai-config-overlay.open { display:flex; }
+    .ai-config-dialog { width:min(560px, calc(100vw - 48px)); height:min(700px, calc(100vh - 80px)); max-height:calc(100vh - 80px); background:#fff; border-radius:7px; box-shadow:0 5px 24px rgba(14,25,40,.24); display:flex; flex-direction:column; overflow:hidden; transform:scale(.9); transform-origin:center center; }
+    .ai-config-head { flex:0 0 72px; min-height:72px; display:flex; align-items:center; justify-content:space-between; padding:0 24px; border-bottom:1px solid #e1e5ea; }
+    .ai-config-head h2 { margin:0; font-size:24px; color:#303640; }
+    .ai-config-close { width:34px; height:34px; border:0; background:transparent; color:#7b8490; font-size:27px; line-height:1; }
+    .ai-config-tabs { flex:0 0 46px; min-height:46px; display:flex; align-items:stretch; gap:28px; padding:0 24px; border-bottom:1px solid #e1e5ea; }
+    .ai-config-tab { border:0; background:transparent; color:#5c6674; font-size:16px; padding:0; position:relative; }
+    .ai-config-tab.active { color:#3478f6; font-weight:600; }
+    .ai-config-tab.active:after { content:""; position:absolute; left:0; right:0; bottom:-1px; height:2px; background:#3478f6; }
+    .ai-config-body { flex:1 1 auto; min-height:0; overflow:auto; padding:24px; }
+    .ai-config-title { margin:0 0 13px; font-size:18px; font-weight:500; color:#353b44; }
+    .ai-config-agent-row { display:flex; align-items:center; gap:12px; margin-bottom:14px; }
+    .ai-config-agent-row label { flex:0 0 auto; font-size:15px; color:#353b44; font-weight:500; }
+    .ai-config-agent-input { flex:1 1 auto; height:36px; border:1px solid #d7dce1; border-radius:3px; padding:0 12px; font-size:14px; color:#343a43; }
+    .ai-config-table { width:100%; border-collapse:collapse; table-layout:fixed; border:1px solid #8f959d; }
+    .ai-config-table th, .ai-config-table td { height:43px; border:1px solid #8f959d; text-align:center; padding:0 14px; font-size:16px; color:#343a43; }
+    .ai-config-table th { font-weight:600; background:#fff; }
+    .ai-config-table th:first-child, .ai-config-table td:first-child { width:50%; }
+    .ai-radio-cell { display:flex; align-items:center; justify-content:center; gap:18px; }
+    .ai-radio-cell label { display:inline-flex; align-items:center; gap:6px; cursor:pointer; font-size:15px; color:#343a43; }
+    .ai-radio-cell input[type="radio"] { width:16px; height:16px; accent-color:#3478f6; cursor:pointer; }
+    .ai-config-foot { flex:0 0 68px; min-height:68px; border-top:1px solid #e1e5ea; display:flex; align-items:center; justify-content:flex-end; gap:12px; padding:0 24px; background:#fff; }
+    .ai-config-foot .btn { min-width:82px; }
+    .toast { position:fixed; z-index:100; left:50%; top:74px; transform:translateX(-50%) translateY(-15px); background:#202a38; color:#fff; padding:10px 18px; border-radius:4px; opacity:0; pointer-events:none; transition:.2s ease; font-size:14px; box-shadow:0 4px 14px rgba(0,0,0,.18); }
+    .toast.show { opacity:1; transform:translateX(-50%) translateY(0); }
+
+    @media (max-width: 1450px) {
+      .order-body { grid-template-columns: 300px minmax(470px,1fr) 320px; }
+      .summary-grid { font-size:14px; }
+      .kv { font-size:14px; }
+      .shulex-main { grid-template-columns: 130px 125px 155px minmax(430px,1fr) 195px; }
+    }
+  </style>
+</head>
+<body>
+  <svg width="0" height="0" style="position:absolute" aria-hidden="true">
+    <defs>
+      <symbol id="i-home" viewBox="0 0 24 24"><path d="m3 11 9-8 9 8v9a1 1 0 0 1-1 1h-5v-7H9v7H4a1 1 0 0 1-1-1z"/></symbol>
+      <symbol id="i-board" viewBox="0 0 24 24"><path d="M3 3v18h18"/><path d="m6 15 4-4 3 2 6-7"/><path d="M6 18h13"/></symbol>
+      <symbol id="i-box" viewBox="0 0 24 24"><path d="m12 3 9 5-9 5-9-5z"/><path d="m3 8 9 5v9L3 17zM21 8l-9 5v9l9-5z"/></symbol>
+      <symbol id="i-sale" viewBox="0 0 24 24"><path d="M4 19V9m5 10V5m5 14v-7m5 7V3"/><path d="M2 21h20"/></symbol>
+      <symbol id="i-cart" viewBox="0 0 24 24"><circle cx="9" cy="20" r="1"/><circle cx="18" cy="20" r="1"/><path d="M3 4h2l2.7 11h10.8l2-7H7"/></symbol>
+      <symbol id="i-truck" viewBox="0 0 24 24"><path d="M3 6h11v10H3zM14 10h4l3 3v3h-7z"/><circle cx="7" cy="18" r="2"/><circle cx="18" cy="18" r="2"/></symbol>
+      <symbol id="i-store" viewBox="0 0 24 24"><path d="M3 9 5 4h14l2 5v2a3 3 0 0 1-6 0 3 3 0 0 1-6 0 3 3 0 0 1-6 0z"/><path d="M5 13v8h14v-8M9 21v-5h6v5"/></symbol>
+      <symbol id="i-money" viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="14" rx="1"/><path d="M7 9h4m-2-2v7m6-5h3m-3 4h3"/></symbol>
+      <symbol id="i-calendar" viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M8 3v4m8-4v4M3 10h18m-13 5 3 3 5-6"/></symbol>
+      <symbol id="i-ad" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><text x="6.3" y="15" fill="currentColor" stroke="none" font-size="8" font-family="Arial">AD</text></symbol>
+      <symbol id="i-headset" viewBox="0 0 24 24"><path d="M4 13v-2a8 8 0 0 1 16 0v2"/><path d="M4 13h3v6H5a2 2 0 0 1-2-2v-2a2 2 0 0 1 1-2Zm16 0h-3v6h2a2 2 0 0 0 2-2v-2a2 2 0 0 0-1-2ZM17 19c0 2-2 2-4 2"/></symbol>
+      <symbol id="i-wrench" viewBox="0 0 24 24"><path d="M14 6a4 4 0 0 0-5-5l2.2 2.2-3 3L6 4a4 4 0 0 0-5 5 4 4 0 0 0 5 1l8 8a3 3 0 1 0 4-4l-8-8a4 4 0 0 0 4 0Z"/></symbol>
+      <symbol id="i-report" viewBox="0 0 24 24"><path d="M4 3h13l3 3v15H4z"/><path d="M17 3v4h4M8 17v-4m4 4V9m4 8v-6"/></symbol>
+      <symbol id="i-settings" viewBox="0 0 24 24"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.7 1.7 0 0 0 .3 1.9l.1.1-2.8 2.8-.1-.1a1.7 1.7 0 0 0-1.9-.3 1.7 1.7 0 0 0-1 1.6v.2h-4V21a1.7 1.7 0 0 0-1-1.6 1.7 1.7 0 0 0-1.9.3l-.1.1L4.2 17l.1-.1a1.7 1.7 0 0 0 .3-1.9A1.7 1.7 0 0 0 3 14H2.8v-4H3a1.7 1.7 0 0 0 1.6-1 1.7 1.7 0 0 0-.3-1.9L4.2 7 7 4.2l.1.1A1.7 1.7 0 0 0 9 4.6a1.7 1.7 0 0 0 1-1.6v-.2h4V3a1.7 1.7 0 0 0 1 1.6 1.7 1.7 0 0 0 1.9-.3l.1-.1L19.8 7l-.1.1a1.7 1.7 0 0 0-.3 1.9 1.7 1.7 0 0 0 1.6 1h.2v4H21a1.7 1.7 0 0 0-1.6 1Z"/></symbol>
+      <symbol id="i-search" viewBox="0 0 24 24"><circle cx="11" cy="11" r="7"/><path d="m20 20-4-4"/></symbol>
+      <symbol id="i-filter" viewBox="0 0 24 24"><path d="M3 5h18l-7 8v6l-4 2v-8z"/></symbol>
+      <symbol id="i-export" viewBox="0 0 24 24"><path d="M12 3v12m-4-4 4 4 4-4"/><path d="M5 17v3h14v-3"/></symbol>
+      <symbol id="i-mail" viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></symbol>
+      <symbol id="i-arrow-left" viewBox="0 0 24 24"><path d="M19 12H5m6-6-6 6 6 6"/></symbol>
+      <symbol id="i-arrow-right" viewBox="0 0 24 24"><path d="M5 12h14m-6-6 6 6-6 6"/></symbol>
+      <symbol id="i-bell" viewBox="0 0 24 24"><path d="M18 8a6 6 0 0 0-12 0c0 7-3 7-3 9h18c0-2-3-2-3-9M10 21h4"/></symbol>
+      <symbol id="i-help" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M9.4 9a3 3 0 1 1 4.4 2.7c-1 .6-1.8 1.1-1.8 2.3m0 4h.01"/></symbol>
+      <symbol id="i-pin" viewBox="0 0 24 24"><path d="M20 10c0 5-8 11-8 11S4 15 4 10a8 8 0 1 1 16 0Z"/><circle cx="12" cy="10" r="3"/></symbol>
+    </defs>
+  </svg>
+
+  <div class="app">
+    <aside class="sidebar">
+      <div class="brand"><div class="brand-mark"><i class="b1"></i><i class="b2"></i><i class="b3"></i></div></div>
+      <div class="nav-list" id="erpNav">
+        <button class="nav-item compact" data-label="首页"><svg class="icon"><use href="#i-home"/></svg>首页</button>
+        <button class="nav-item compact" data-label="看板"><svg class="icon"><use href="#i-board"/></svg>看板</button>
+        <button class="nav-item compact" data-label="产品"><svg class="icon"><use href="#i-box"/></svg>产品</button>
+        <button class="nav-item compact" data-label="销售"><svg class="icon"><use href="#i-sale"/></svg>销售</button>
+        <button class="nav-item compact" data-label="采购"><svg class="icon"><use href="#i-cart"/></svg>采购</button>
+        <button class="nav-item compact" data-label="物流"><svg class="icon"><use href="#i-truck"/></svg>物流</button>
+        <button class="nav-item compact" data-label="仓储"><svg class="icon"><use href="#i-store"/></svg>仓储</button>
+        <button class="nav-item compact" data-label="计费"><svg class="icon"><use href="#i-money"/></svg>计费</button>
+        <button class="nav-item compact" data-label="计划"><svg class="icon"><use href="#i-calendar"/></svg>计划</button>
+        <button class="nav-item compact" data-label="广告"><svg class="icon"><use href="#i-ad"/></svg>广告</button>
+        <button class="nav-item active" id="serviceNav" data-label="客服"><svg class="icon"><use href="#i-headset"/></svg>客服</button>
+        <button class="nav-item compact" data-label="工具"><svg class="icon"><use href="#i-wrench"/></svg>工具</button>
+        <button class="nav-item compact" data-label="财务"><svg class="icon"><use href="#i-money"/></svg>财务</button>
+        <button class="nav-item compact" data-label="报表"><svg class="icon"><use href="#i-report"/></svg>报表</button>
+        <button class="nav-item compact" data-label="设置"><svg class="icon"><use href="#i-settings"/></svg>设置</button>
+      </div>
+    </aside>
+
+    <main class="workspace">
+      <header class="topbar">
+        <div class="tabs" id="tabs">
+          <button class="tab" data-page="home"><span class="tab-label">首页</span></button>
+          <button class="tab" data-page="management" id="managementTab"><span class="tab-label">工单管理</span></button>
+          <button class="tab" data-page="older"><span class="tab-label">站内信-20260827378026274</span> <span class="close">×</span></button>
+          <button class="tab" data-page="tiktok"><span class="tab-label">站内信-20260905525175314</span> <span class="close">×</span></button>
+          <button class="tab active" data-page="order" id="orderTab"><span class="tab-label">站外信-20260830919634504</span> <span class="close">×</span></button>
+        </div>
+        <div class="top-tools">
+          <svg class="icon tool-icon"><use href="#i-search"/></svg>
+          <svg class="icon tool-icon"><use href="#i-bell"/></svg>
+          <svg class="icon tool-icon"><use href="#i-help"/></svg>
+          <span style="display:flex;align-items:center;gap:5px"><svg class="icon tool-icon"><use href="#i-pin"/></svg>香港恒健</span>
+          <span>简体中文 <span class="caret">▼</span></span>
+          <span class="user-face">HQ</span>
+          <span>915805617@qq.com <span class="caret">▼</span></span>
+        </div>
+      </header>
+
+      <div class="screen">
+        <section class="page management-page" id="page-management">
+          <div class="management-card">
+            <div class="management-status" id="managementStatusTabs">
+              <button class="active" data-status="全部">全部</button>
+              <button data-status="待处理">待处理</button>
+              <button data-status="处理中">处理中</button>
+              <button data-status="已完成">已完成</button>
+              <button data-status="已关闭">已关闭</button>
+            </div>
+            <div class="management-filters">
+              <div class="filter-line">
+                <select class="filter-control"><option>处理人</option></select>
+                <select class="filter-control"><option>店铺</option></select>
+                <select class="filter-control"><option>问题分类</option></select>
+                <select class="filter-control"><option>创建时间</option></select>
+                <input class="filter-control medium" value="2026-08-19 － 2026-09-03" aria-label="创建时间范围" />
+                <select class="filter-control"><option>工单编号</option></select>
+                <input class="filter-control medium" placeholder="请输入" />
+                <select class="filter-control"><option>工单类型</option></select>
+                <select class="filter-control"><option>优先级</option></select>
+                <select class="filter-control"><option>状态</option></select>
+                <select class="filter-control"><option>标签</option></select>
+                <select class="filter-control"><option>处理类型</option><option>人工处理</option><option>AI处理</option></select>
+                <select class="filter-control"><option>人工处理状态</option><option>已处理</option><option>未处理</option></select>
+                <select class="filter-control"><option>转接人工原因</option><option>人工转接-原因1</option><option>人工转接-原因2</option><option>AI转接-需补发配件</option><option>AI转接-需补发产品</option><option>AI转接-原因1</option></select>
+                <select class="filter-control"><option>是否逾期</option></select>
+              </div>
+              <div class="filter-line">
+                <div class="filter-pair"><select class="filter-control"><option>订单号</option></select><input class="filter-control" id="managementQuery" placeholder="请输入" /></div>
+                <button class="filter-icon" title="高级筛选"><svg class="icon"><use href="#i-filter"/></svg></button>
+                <button class="query-btn" id="managementSearch">查询</button>
+                <button class="reset-btn" id="managementReset">重置</button>
+              </div>
+              <div class="management-actions">
+                <div class="batch-group">
+                  <button class="batch-btn primary">标签⌄</button><button class="batch-btn primary">转交</button><button class="batch-btn">完成</button><button class="batch-btn">关闭</button><button class="batch-btn">创建工单</button><button class="batch-btn" id="aiReplyConfigBtn">AI处理配置</button>
+                </div>
+                <div class="table-tools"><span class="tool-link"><svg class="icon"><use href="#i-settings"/></svg>配置</span><span class="tool-link"><svg class="icon"><use href="#i-export"/></svg>导出</span><span class="tool-link"><svg class="icon"><use href="#i-help"/></svg>帮助</span></div>
+              </div>
+            </div>
+            <div class="management-table-wrap">
+              <table class="management-table">
+                <thead><tr>
+                  <th class="check-col"><input type="checkbox" class="row-check" id="managementSelectAll" aria-label="全选" /></th>
+                  <th class="number-col">工单编号</th><th class="status-col">工单状态</th><th class="type-col">工单类型</th><th class="name-col">工单名称</th><th class="priority-col">优先级</th><th class="desc-col">工单描述</th><th class="owner-col">处理人</th><th class="category-col">问题分类</th><th class="tag-col">标签</th><th class="remark-col">备注</th><th class="person-col">完成人</th><th class="person-col">关闭人</th><th class="date-col">需求提交截止时间 ↕</th><th class="date-col">截止完成时间 ↕</th><th class="date-col">处理时间 ↕</th><th class="operation-col">操作</th>
+                </tr></thead>
+                <tbody id="managementRows"></tbody>
+              </table>
+            </div>
+            <div class="management-footer"><span id="managementCount">共23条</span><button class="page-btn">‹</button><button class="page-btn active">1</button><button class="page-btn">2</button><button class="page-btn">›</button><select class="page-size"><option>20/每页</option></select><span>跳至</span><input class="page-jump" value="1" /><span>页</span></div>
+          </div>
+        </section>
+
+        <section class="page internal-page" id="page-older">
+          <div class="internal-card">
+            <div class="internal-summary">
+              <div class="internal-title">工单信息 <span class="status">处理中</span><span class="priority-mark">高</span></div>
+              <div class="internal-summary-grid">
+                <div><span class="label">工单编号：</span>20260827378026274</div>
+                <div><span class="label">工单类型：</span><b>站内信</b></div>
+                <div><span class="label">创建时间：</span>2026-08-27 22:30:05</div>
+                <div class="internal-name"><span class="label">工单名称：</span>Re: Message from Walmart.com Customer, Ref ID: 19A1477732034E8BAB06A2E76F96EC12</div>
+                <div class="internal-desc"><span class="label">工单描述：</span>店铺:WAL-ZJHJ-US，买家:Paul Coe，订单号:</div>
+                <div><span class="label">邮箱：</span>-</div>
+                <div><span class="label">处理人：</span>-</div>
+              </div>
+            </div>
+            <div class="internal-body">
+              <aside class="internal-order-info">
+                <div class="section-heading">订单信息</div>
+                <div class="kv"><span class="k">订单号：</span>-</div><div class="kv"><span class="k">发货仓库：</span>-</div><div class="kv"><span class="k">客户单号：</span>-</div><div class="kv"><span class="k">买家姓名：</span>-</div>
+                <div class="kv"><span class="k">加密邮箱：</span>pc-19A1477732034E8BAB06A2E7<br><span style="padding-left:72px">6F96EC12@relay.walmart.com</span></div>
+                <div class="kv"><span class="k">邮箱：</span>-</div><div class="kv"><span class="k">下单时间：</span>-</div><div class="kv"><span class="k">发货时限：</span>-</div><div class="kv"><span class="k">发货时间：</span>-</div><div class="kv"><span class="k">收货预计：</span>-</div><div class="kv"><span class="k">SellerSKU：</span>-</div>
+                <div class="kv"><span class="k">数量：</span>- <span class="k" style="margin-left:58px">金额：</span>-</div><div class="kv"><span class="k">店铺：</span>-</div><div class="kv"><span class="k">销售渠道：</span>-</div><div class="kv"><span class="k">国家：</span>- <span class="k" style="margin-left:58px">运营：</span>-</div><div class="kv"><span class="k">推广订单：</span>-</div><div class="kv"><span class="k">商品名称：</span>-</div><div class="kv"><span class="k">SKU：</span>-</div><div class="kv"><span class="k">ASIN：</span>-</div>
+                <div class="internal-placeholder">H</div>
+              </aside>
+              <section class="internal-mail">
+                <div class="internal-thread-head">pc-19A1477732034E8BAB06A2E76F96EC12@relay.walmart.com <span class="link">查看历史消息</span></div>
+                <div class="internal-thread">
+                  <div class="internal-message-row user"><div class="internal-message-stack"><div class="internal-message-time">2026-08-27 22:25:05</div><div class="internal-message-card"><div class="internal-message-head"><span>pc-19A147...@relay.walmart.com</span><span class="internal-role user">用户消息</span></div><div class="internal-subject">Re: Message from Walmart.com Customer, Ref ID: 19A1477732034E8BAB06A2E76F96EC12</div><div class="internal-attachments"><span class="attachment-chip">📎3482.png</span><span class="attachment-chip">📎3492.jpg</span></div></div></div></div>
+                  <div class="internal-message-row user"><div class="internal-message-stack"><div class="internal-message-time">2026-08-27 22:26:15</div><div class="internal-message-card"><div class="internal-message-head"><span>pc-19A147...@relay.walmart.com</span><span class="internal-role user">用户消息</span></div><div class="internal-subject">Re: Message from Walmart.com Customer, Ref ID: 19A1477732034E8BAB06A2E76F96EC12</div><div>Paul Coe... 620 Exeter Dr Delaware Ohio 43015</div><div class="internal-attachments"><span class="attachment-chip">📎3482.png</span><span class="attachment-chip">📎3492.jpg</span></div></div></div></div>
+                  <div class="internal-message-row ours"><div class="internal-message-stack"><div class="internal-message-time">2026-08-28 09:10:42</div><div class="internal-message-card manual"><div class="internal-message-head"><span class="internal-role manual">我方回复（人工）</span><span>service@henglin.com</span></div><div class="internal-subject">Re: Message from Walmart.com Customer</div><div>Hello Paul, we can send you a replacement unit. Please confirm the shipping address.</div></div></div></div>
+                  <div class="internal-message-row user"><div class="internal-message-stack"><div class="internal-message-time">2026-08-28 15:14:00</div><div class="internal-message-card"><div class="internal-message-head"><span>pc-19A147...@relay.walmart.com</span><span class="internal-role user">用户消息</span></div><div class="internal-subject">Re: Message from Walmart.com Customer, Ref ID: 19A1477732034E8BAB06A2E76F96EC12</div><div>Please send me a replacement unit ... Thank you for the quick response...</div></div></div></div>
+                  <div class="internal-message-row ours"><div class="internal-message-stack"><div class="internal-message-time">2026-08-28 15:15:21</div><div class="internal-message-card ai"><div class="internal-message-head"><span class="internal-role ai">我方回复（AI）</span><span>service@henglin.com</span></div><div class="internal-subject">Re: Message from Walmart.com Customer</div><div>Thank you for your patience. We will arrange the replacement and provide an update shortly.</div></div></div></div>
+                  <div class="internal-message-row user"><div class="internal-message-stack"><div class="internal-message-time">2026-08-28 15:16:38</div><div class="internal-message-card"><div class="internal-message-head"><span>pc-19A147...@relay.walmart.com</span><span class="internal-role user">用户消息</span></div><div class="internal-subject">Re: Message from Walmart.com Customer, Ref ID: 19A1477732034E8BAB06A2E76F96EC12</div><div>Also do you need me to send this unit back to you ... If so can you send me a shipping label?</div></div></div></div>
+                </div>
+                <div class="internal-reply-actions"><button class="btn" id="internalReplyBtn" hidden>回复</button><button class="btn primary">申请⌄</button></div>
+              </section>
+              <aside class="internal-process">
+                <div class="process-tabs"><div class="process-tab active">工单处理</div><div class="process-tab">操作记录</div><div class="process-tab">子工单</div></div>
+                <div class="process-form">
+                  <div class="form-row"><label>工单状态</label><select class="control"><option>处理中</option></select></div><div class="form-row"><label>事项</label><select class="control" style="color:#c1c5ca"><option>请选择事项</option></select></div><div class="form-row"><label>问题分类</label><select class="control" style="color:#c1c5ca"><option>请选择问题分类</option></select></div><div class="form-row"><label>涉及配件</label><select class="control" style="color:#c1c5ca"><option>请选择</option></select></div><div class="form-row"><label>标签</label><select class="control" style="color:#c1c5ca"><option>请选择标签</option></select></div><div class="form-row"><label>描述</label><textarea class="control" placeholder="请输入描述"></textarea></div><div class="form-row"><label>备注</label><textarea class="control" placeholder="请输入备注"></textarea></div><div class="form-row"><label>附件</label><button class="upload">☁ 点击上传</button></div>
+                  <div class="internal-file-list"><span>3482.png <b>✓</b></span><span>3492.jpg <b>✓</b></span><span>3482.png <b>✓</b></span><span>3492.jpg <b>✓</b></span></div>
+                  <div class="form-row">
+                    <label>处理类型</label>
+                    <div class="handoff-control" id="internalHandoff">
+                      <span class="handoff-status ai"><i class="handoff-dot"></i>AI处理</span>
+                      <span class="handoff-toggle-wrap">
+                        <button class="handoff-toggle" data-action="to-manual">转人工处理</button>
+                        <div class="handoff-confirm-picker" hidden>
+                          <span>确认切换至AI处理？</span>
+                          <div class="handoff-confirm-btns">
+                            <button class="handoff-cancel-ai">取消</button>
+                            <button class="handoff-confirm-ai">确认</button>
+                          </div>
+                        </div>
+                      </span>
+                      <span class="handoff-reason" hidden><b class="reason-prefix"></b><span class="reason-text"></span></span>
+                      <div class="handoff-mark-wrap" hidden>
+                        <span class="handoff-toggle-wrap">
+                          <button class="handoff-mark-btn">标记为已处理</button>
+                          <div class="handoff-mark-confirm" hidden>
+                            <span>确认标记为已处理？</span>
+                            <div class="handoff-confirm-btns">
+                              <button class="handoff-mark-cancel">取消</button>
+                              <button class="handoff-mark-ok">确认</button>
+                            </div>
+                          </div>
+                        </span>
+                        <span class="handoff-mark-done" hidden><span class="mark-done-badge">✓ 已处理</span><span class="mark-meta">处理人：<b class="mark-handler"></b>　处理时间：<b class="mark-time"></b></span></span>
+                      </div>
+                      <div class="handoff-reason-picker" hidden>
+                        <select class="handoff-reason-select">
+                          <option value="">请选择原因</option>
+                          <option>客户情绪激动，需安抚</option>
+                          <option>问题复杂，AI无法处理</option>
+                          <option>客户明确要求人工</option>
+                          <option>其他</option>
+                        </select>
+                        <div class="handoff-reason-btns">
+                          <button class="handoff-cancel">取消</button>
+                          <button class="handoff-confirm">确认</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="process-actions"><button class="btn">关闭</button><button class="btn">完成</button><button class="btn">转交</button><button class="btn primary">保存</button></div>
+              </aside>
+            </div>
+          </div>
+        </section>
+
+        <section class="page internal-page" id="page-tiktok">
+          <div class="internal-card">
+            <div class="internal-summary">
+              <div class="internal-title">工单信息 <span class="status">待处理</span><span class="priority-mark">高</span></div>
+              <div class="internal-summary-grid">
+                <div><span class="label">工单编号：</span>20260905525175314</div>
+                <div><span class="label">工单类型：</span><b>站内信</b></div>
+                <div><span class="label">创建时间：</span>2026-09-05 02:56:25</div>
+                <div class="internal-name"><span class="label">工单名称：</span>参与会话人:BUYER_ID:764201989503187213</div>
+                <div class="internal-desc"><span class="label">工单描述：</span>TK-DUMOS Home-US</div>
+                <div><span class="label">邮箱：</span>-</div>
+                <div><span class="label">处理人：</span>-</div>
+              </div>
+            </div>
+            <div class="internal-body">
+              <aside class="internal-order-info">
+                <div class="section-heading">订单信息</div>
+                <div class="kv"><span class="k">订单号：</span>-</div><div class="kv"><span class="k">发货仓库：</span>-</div><div class="kv"><span class="k">客户单号：</span>-</div><div class="kv"><span class="k">买家姓名：</span>-</div>
+                <div class="kv"><span class="k">加密邮箱：</span>-</div>
+                <div class="kv"><span class="k">邮箱：</span>-</div><div class="kv"><span class="k">下单时间：</span>-</div><div class="kv"><span class="k">发货时限：</span>-</div><div class="kv"><span class="k">发货时间：</span>-</div><div class="kv"><span class="k">收货预计：</span>-</div><div class="kv"><span class="k">SellerSKU：</span>-</div>
+                <div class="kv"><span class="k">数量：</span>- <span class="k" style="margin-left:58px">金额：</span>-</div><div class="kv"><span class="k">店铺：</span>-</div><div class="kv"><span class="k">销售渠道：</span>-</div><div class="kv"><span class="k">国家：</span>- <span class="k" style="margin-left:58px">运营：</span>-</div><div class="kv"><span class="k">推广订单：</span>-</div><div class="kv"><span class="k">商品名称：</span>-</div><div class="kv"><span class="k">SKU：</span>-</div><div class="kv"><span class="k">ASIN：</span>-</div>
+                <div class="internal-placeholder">h</div>
+              </aside>
+              <section class="internal-mail">
+                <div class="internal-thread-head">-</div>
+                <div class="internal-thread">
+                  <div class="internal-message-row user"><div class="internal-message-stack"><div class="internal-message-time">2026-09-04 19:03:50</div><div class="internal-message-card"><div class="internal-message-head"><span>BUYER_ID:764201989503187213</span><span class="internal-role user">用户消息</span></div><div>Thank you for getting in touch. How may I help you today? Product instructions I still haven't received my order. When will my order arrive? What if this product doesn't work? Has it been shipped?</div></div></div></div>
+                  <div class="internal-message-row ours"><div class="internal-message-stack"><div class="internal-message-time">2026-09-04 19:05:12</div><div class="internal-message-card ai"><div class="internal-message-head"><span class="internal-role ai">我方回复（AI）</span><span>tiktokservice@henglin.com</span></div><div>Thanks for reaching out! Your order is being processed and should ship within 1-2 business days. We'll share tracking details once it's on the way.</div></div></div></div>
+                  <div class="internal-message-row ours"><div class="internal-message-stack"><div class="internal-message-time">2026-09-04 19:22:47</div><div class="internal-message-card manual"><div class="internal-message-head"><span class="internal-role manual">我方回复（人工）</span><span>tiktokservice@henglin.com</span></div><div>Hi, this is Alex from support - I've checked your order manually and confirmed it will ship today. Sorry for the delay!</div></div></div></div>
+                </div>
+                <div class="tiktok-composer" id="tiktokComposer" hidden>
+                  <div class="tiktok-compose-toolbar">
+                    <span>📎 上传文件 <i class="info-i">ⓘ</i></span>
+                    <span>选择模板 ⌄</span>
+                    <button class="ai-reply-btn"><span>▤</span> AI回复</button>
+                  </div>
+                  <textarea class="tiktok-compose-area" placeholder="请输入回复内容"></textarea>
+                </div>
+                <div class="internal-reply-actions"><button class="btn" id="tiktokReplyBtn" hidden>回复</button><button class="btn primary">申请⌄</button></div>
+              </section>
+              <aside class="internal-process">
+                <div class="process-tabs"><div class="process-tab active">工单处理</div><div class="process-tab">操作记录</div><div class="process-tab">子工单</div><span class="tiktok-mark">♪</span></div>
+                <div class="process-form">
+                  <div class="form-row"><label>工单状态</label><select class="control"><option>待处理</option></select></div><div class="form-row"><label>事项</label><select class="control" style="color:#c1c5ca"><option>请选择事项</option></select></div><div class="form-row"><label>问题分类</label><select class="control" style="color:#c1c5ca"><option>请选择问题分类</option></select></div><div class="form-row"><label>涉及配件</label><select class="control" style="color:#c1c5ca"><option>请选择</option></select></div><div class="form-row"><label>标签</label><select class="control" style="color:#c1c5ca"><option>请选择标签</option></select></div><div class="form-row"><label>描述</label><textarea class="control" placeholder="请输入描述"></textarea></div><div class="form-row"><label>备注</label><textarea class="control" placeholder="请输入备注"></textarea></div><div class="form-row"><label>附件</label><button class="upload">☁ 点击上传</button></div>
+                  <div class="form-row">
+                    <label>处理类型</label>
+                    <div class="handoff-control" id="tiktokHandoff">
+                      <span class="handoff-status ai"><i class="handoff-dot"></i>AI处理</span>
+                      <span class="handoff-toggle-wrap">
+                        <button class="handoff-toggle" data-action="to-manual">转人工处理</button>
+                        <div class="handoff-confirm-picker" hidden>
+                          <span>确认切换至AI处理？</span>
+                          <div class="handoff-confirm-btns">
+                            <button class="handoff-cancel-ai">取消</button>
+                            <button class="handoff-confirm-ai">确认</button>
+                          </div>
+                        </div>
+                      </span>
+                      <span class="handoff-reason" hidden><b class="reason-prefix"></b><span class="reason-text"></span></span>
+                      <div class="handoff-mark-wrap" hidden>
+                        <span class="handoff-toggle-wrap">
+                          <button class="handoff-mark-btn">标记为已处理</button>
+                          <div class="handoff-mark-confirm" hidden>
+                            <span>确认标记为已处理？</span>
+                            <div class="handoff-confirm-btns">
+                              <button class="handoff-mark-cancel">取消</button>
+                              <button class="handoff-mark-ok">确认</button>
+                            </div>
+                          </div>
+                        </span>
+                        <span class="handoff-mark-done" hidden><span class="mark-done-badge">✓ 已处理</span><span class="mark-meta">处理人：<b class="mark-handler"></b>　处理时间：<b class="mark-time"></b></span></span>
+                      </div>
+                      <div class="handoff-reason-picker" hidden>
+                        <select class="handoff-reason-select">
+                          <option value="">请选择原因</option>
+                          <option>客户情绪激动，需安抚</option>
+                          <option>问题复杂，AI无法处理</option>
+                          <option>客户明确要求人工</option>
+                          <option>其他</option>
+                        </select>
+                        <div class="handoff-reason-btns">
+                          <button class="handoff-cancel">取消</button>
+                          <button class="handoff-confirm">确认</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="process-actions"><button class="btn">关闭</button><button class="btn">完成</button><button class="btn">转交</button><button class="btn primary">保存</button></div>
+              </aside>
+            </div>
+          </div>
+        </section>
+
+        <section class="page order-page active" id="page-order">
+          <div class="order-card">
+            <div class="order-summary">
+              <div class="summary-title">工单信息 <span class="status">处理中</span><span class="minus-dot">−</span><span style="font-size:16px;font-weight:400;color:#6b727d">中</span></div>
+              <div class="summary-grid">
+                <div><span class="label">工单编号：</span>20260830919634504</div>
+                <div><span class="label">工单类型：</span><b>站外信</b></div>
+                <div><span class="label">创建时间：</span>2026-08-30 15:31:38</div>
+                <div><span class="label">处理人：</span>-</div>
+                <div><span class="label">工单名称：</span>Re: Dumos counter top ice maker</div>
+                <div style="grid-column:span 3"><span class="label">工单描述：</span>发件人： LORI TOLIVER， lorit2015@gmail.com收件人：dumosservice@outlook.com</div>
+              </div>
+            </div>
+            <div class="order-body">
+              <aside class="order-info">
+                <div class="section-heading">订单信息 <a>订单售后记录</a><span class="red-badge">0</span></div>
+                <div class="kv"><span class="k">订单号：</span><span class="link">PBl6gZRMJ</span> <span class="link">匹配订单</span></div>
+                <div class="kv"><span class="k">发货仓库：</span>EFGA</div>
+                <div class="kv"><span class="k">预估物流费：</span>-</div>
+                <div class="kv"><span class="k">客户单号：</span>111-2788962-1273864</div>
+                <div class="kv"><span class="k">买家姓名：</span>LORI TOLIVER</div>
+                <div class="kv"><span class="k">加密邮箱：</span>-</div>
+                <div class="kv"><span class="k">邮箱：</span>-</div>
+                <div class="kv"><span class="k">下单时间：</span>2026-05-23 20:50:30</div>
+                <div class="kv"><span class="k">发货时限：</span>2026-05-27 23:00:00</div>
+                <div class="kv"><span class="k">发货时间：</span>2026-05-27 15:18:28</div>
+                <div class="kv"><span class="k">收货预计：</span>-</div>
+                <div class="kv"><span class="k">SellerSKU：</span>ZBJ26-DM-GN-01</div>
+                <div class="kv"><span class="k">数量：</span>1 <span style="margin-left:110px" class="k">金额：</span>51.99</div>
+                <div class="kv"><span class="k">店铺：</span>HJ-3-VC-DF-US</div>
+                <div class="kv"><span class="k">销售渠道：</span>amazonvendords</div>
+                <div class="kv"><span class="k">国家：</span>US <span style="margin-left:112px" class="k">运营：</span>Liz（朱梦洁）</div>
+                <div class="kv"><span class="k">推广订单：</span>N</div>
+                <div class="kv"><span class="k">商品名称：</span>新款小制冰机-1.2L-绿色</div>
+                <div class="kv"><span class="k">SKU：</span>AH-ZBJ41XX-1D2GN</div>
+                <div class="kv"><span class="k">ASIN:</span>B0GW8952MW</div>
+                <div class="product-thumb"><div class="machine"></div></div>
+              </aside>
+              <section class="mail-center">
+                <div class="mail-title">邮件信息</div>
+                <div class="thread">
+                  <div class="customer-name">LORI TOLIVER <span class="link">查看历史消息</span></div>
+                  <div class="show-more">查看更多</div>
+                  <div class="message" data-mail-source="customer"><span class="mail-direction inbound" aria-label="收件"><svg class="icon dir-mail"><use href="#i-mail"/></svg><svg class="icon dir-arrow"><use href="#i-arrow-left"/></svg></span><div class="msg-head">lorit2015@gmail.com <span class="msg-role user">用户消息</span><span class="msg-time">2026-08-30 15:31:31</span></div><div class="msg-more" style="margin-top:37px">查看更多</div></div>
+                  <div class="message" data-mail-source="support" data-reply-type="human"><span class="mail-direction outbound" aria-label="发件"><svg class="icon dir-mail"><use href="#i-mail"/></svg><svg class="icon dir-arrow"><use href="#i-arrow-right"/></svg></span><div class="msg-head">dumosservice@outlook.com <span class="msg-role human">我方回复(人工)</span><span class="msg-time">2026-08-30 15:39:38</span></div><div class="msg-copy">Please order # At</div><div class="msg-more">查看更多</div></div>
+                  <div class="message" data-mail-source="support" data-reply-type="ai"><span class="mail-direction outbound" aria-label="发件"><svg class="icon dir-mail"><use href="#i-mail"/></svg><svg class="icon dir-arrow"><use href="#i-arrow-right"/></svg></span><div class="msg-head">dumosservice@outlook.com <span class="msg-role ai">我方回复(AI)</span><span class="msg-time">2026-08-31 09:44:04</span></div><div class="msg-copy">we do not receive your video. Could you send again, pls?</div><div class="msg-more">查看更多</div></div>
+                </div>
+                <div class="composer">
+                  <div class="order-editor" id="orderEditor" hidden>
+                    <div class="address-row"><div>发件人： dumosservice@outlook.com</div><div>收件人： <input class="field" value="lorit2015@gmail.com" /></div><div>ⓘ 抄送人： <input class="field" placeholder="多个请用分号隔开" /></div></div>
+                    <div class="subject-row"><span>主题:</span><input class="field" value="Re:Re: Dumos counter top"/><span>选择模板　⌄</span><span>📎 上传文件</span></div>
+                    <div class="editor-toolbar">正文⌄　 ❝ <b>B</b> <u>U</u> <i>I</i>　…　A⌄　 默认字号⌄　默认字体⌄　默认行高⌄　☷　☰　≡　▧　☻　🔗　▣　▦</div>
+                    <div class="editor-area">请输入内容...</div>
+                  </div>
+                  <div class="bottom-actions"><button class="btn">无需回复</button><button class="btn">申请⌄</button><button class="btn primary" id="orderReplyBtn" hidden>回复</button></div>
+                </div>
+              </section>
+              <aside class="process">
+                <div class="process-tabs"><div class="process-tab active">工单处理</div><div class="process-tab">操作记录</div><div class="process-tab">子工单</div></div>
+                <div class="process-form">
+                  <div class="form-row"><label>工单状态</label><select class="control"><option>处理中</option></select></div>
+                  <div class="form-row"><label>事项</label><select class="control"><option>客诉</option></select></div>
+                  <div class="form-row"><label>问题分类</label><select class="control" style="color:#c1c5ca"><option>请选择问题分类</option></select></div>
+                  <div class="form-row"><label>涉及配件</label><select class="control" style="color:#c1c5ca"><option>请选择</option></select></div>
+                  <div class="form-row"><label>标签</label><select class="control" style="color:#c1c5ca"><option>请选择标签</option></select></div>
+                  <div class="form-row"><label>描述</label><textarea class="control" placeholder="请输入描述"></textarea></div>
+                  <div class="form-row"><label>备注</label><textarea class="control" placeholder="请输入备注"></textarea></div>
+                  <div class="form-row"><label>附件</label><button class="upload">☁ 点击上传</button></div>
+                  <div class="attachment"><span>473.jpg</span><span class="ok">✓</span></div>
+                  <div class="form-row">
+                    <label>处理类型</label>
+                    <div class="handoff-control" id="orderHandoff">
+                      <span class="handoff-status ai"><i class="handoff-dot"></i>AI处理</span>
+                      <span class="handoff-toggle-wrap">
+                        <button class="handoff-toggle" data-action="to-manual">转人工处理</button>
+                        <div class="handoff-confirm-picker" hidden>
+                          <span>确认切换至AI处理？</span>
+                          <div class="handoff-confirm-btns">
+                            <button class="handoff-cancel-ai">取消</button>
+                            <button class="handoff-confirm-ai">确认</button>
+                          </div>
+                        </div>
+                      </span>
+                      <span class="handoff-reason" hidden><b class="reason-prefix"></b><span class="reason-text"></span></span>
+                      <div class="handoff-mark-wrap" hidden>
+                        <span class="handoff-toggle-wrap">
+                          <button class="handoff-mark-btn">标记为已处理</button>
+                          <div class="handoff-mark-confirm" hidden>
+                            <span>确认标记为已处理？</span>
+                            <div class="handoff-confirm-btns">
+                              <button class="handoff-mark-cancel">取消</button>
+                              <button class="handoff-mark-ok">确认</button>
+                            </div>
+                          </div>
+                        </span>
+                        <span class="handoff-mark-done" hidden><span class="mark-done-badge">✓ 已处理</span><span class="mark-meta">处理人：<b class="mark-handler"></b>　处理时间：<b class="mark-time"></b></span></span>
+                      </div>
+                      <div class="handoff-reason-picker" hidden>
+                        <select class="handoff-reason-select">
+                          <option value="">请选择原因</option>
+                          <option>客户情绪激动，需安抚</option>
+                          <option>问题复杂，AI无法处理</option>
+                          <option>客户明确要求人工</option>
+                          <option>其他</option>
+                        </select>
+                        <div class="handoff-reason-btns">
+                          <button class="handoff-cancel">取消</button>
+                          <button class="handoff-confirm">确认</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="process-actions"><button class="btn">关闭</button><button class="btn">完成</button><button class="btn">转交</button><button class="btn primary">保存</button></div>
+              </aside>
+            </div>
+          </div>
+        </section>
+
+        <section class="page shulex-page" id="page-shulex">
+          <div class="shulex-shell">
+            <div class="shulex-head"><span class="solvea">solvea.</span><span>▣　工单</span><span style="margin-left:auto">♧　⚙ 智能化　<span style="background:#ce6f95;border-radius:50%;padding:3px">TA</span></span></div>
+            <div class="shulex-main">
+              <aside class="s-left">
+                <div class="s-workspace"><b>▣　智能工作台</b><span>≡</span></div>
+                <div class="s-navrow active">▣　工单</div><div class="s-navrow">♧　联系人</div><div class="s-navrow">▤　报表</div><div class="s-navrow">◎　主动触达</div><div class="s-navrow">⚙　设置</div>
+                <div class="s-me"><span class="tiny-avatar">Y</span><span>yiqian.zhang</span><span style="margin-left:auto">›</span></div>
+              </aside>
+              <aside class="s-queues">
+                <div class="s-title">工单 <span>＋</span></div>
+                <div class="queue-row"><b>▣　全部</b><span class="qcount">1763</span></div>
+                <div class="queue-row indent"><span>♟ AI处理中</span><span class="qcount">235</span></div><div class="queue-row indent"><span>◉ 待处理</span><span class="qcount">1201</span></div><div class="queue-row indent"><span>▣ 处理中</span><span class="qcount">232</span></div><div class="queue-row indent"><span>● 已解决</span><span class="qcount">93</span></div><div class="queue-row indent"><span>♟ 通知邮件</span><span class="qcount">0</span></div><div class="queue-row indent"><span>▣ 广告邮件</span><span class="qcount">2</span></div><div class="queue-row indent"><span>☻ 我的工单</span><span class="qcount">274</span></div><div class="queue-row indent"><span>✕ 发送失败</span><span class="qcount">6</span></div>
+                <div class="queue-section"><span>个人视图⌄</span><span>＋</span></div><div class="queue-section"><span>公共视图⌄</span><span>＋</span></div>
+                <div class="queue-row"><span><i class="channel-dot" style="background:#90cc4b"></i>站内信</span><span class="qcount">0</span></div><div class="queue-row"><span><i class="channel-dot" style="background:#3867d6"></i>Email</span><span class="qcount">1261</span></div><div class="queue-row"><span><i class="channel-dot" style="background:#28c840"></i>Line</span><span class="qcount">7</span></div><div class="queue-row"><span><i class="channel-dot" style="background:#111"></i>TikTok</span><span class="qcount">10</span></div><div class="queue-row"><span><i class="channel-dot" style="background:#e14a89"></i>Custom Ticket</span><span class="qcount">29</span></div><div class="queue-row"><span><i class="channel-dot" style="background:#d94c80"></i>Instagram</span><span class="qcount">18</span></div><div class="queue-row"><span><i class="channel-dot" style="background:#315989"></i>Livechat</span><span class="qcount">120</span></div><div class="queue-row"><span><i class="channel-dot" style="background:#5d6796"></i>LiveAgent</span><span class="qcount">24</span></div><div class="queue-row"><span><i class="channel-dot" style="background:#2f4065"></i>Custom Chat</span><span class="qcount">11</span></div><div class="queue-row"><span><i class="channel-dot" style="background:#4267b2"></i>Facebook Messe...</span><span class="qcount">6</span></div><div class="queue-row"><span><i class="channel-dot" style="background:#27c46c"></i>Voice</span><span class="qcount">7</span></div>
+              </aside>
+              <aside class="tickets">
+                <div class="ticket-tools"><b>▣</b><span>⌕　↕</span></div>
+                <div class="ticket active"><div class="sender">noreply</div><div class="subject"><span class="new">New</span> Did you just log in near C...</div><div class="meta"><span>✉ 23h 56m</span><span>16:43</span></div></div>
+                <div class="ticket"><div class="sender">news@insideapple.apple.com</div><div class="subject">＜广告＞欢迎观看 Apple 的特别发...</div><div class="meta"><span>kuai_niu　AI处理中</span><span>14:25</span></div></div>
+                <div class="ticket"><div class="sender">msa@communication.microsoft.c...</div><div class="subject"><span class="new">New</span> 使用条款更新</div><div class="meta"><span style="color:#ea5d5d">超时 357h 0m</span><span>14:25</span></div></div>
+                <div class="ticket"><div class="sender">noreply</div><div class="subject">Did you just create a passkey?</div><div class="meta"><span>✉ 已解决</span><span>11:02</span></div></div>
+                <div class="ticket"><div class="sender">fixa532911@outlook.com</div><div class="subject"><span class="new">New</span> Need help with my order f...</div><div class="meta"><span>kuai_niu　18m</span><span>10:48</span></div></div>
+                <div class="ticket"><div class="sender">news@newsletter.nero.com</div><div class="subject"><span class="new">New</span> LAST CHANCE – Bundl...</div><div class="meta"><span style="color:#ea5d5d">超时 415h 41m</span><span>09:05</span></div></div>
+                <div class="ticket"><div class="sender">free</div><div class="subject">✉ 处理中</div><div class="meta"><span></span><span>昨天17:45</span></div></div>
+                <div class="ticket"><div class="sender">Bourgoine Heriford</div><div class="subject">✉ 已解决</div><div class="meta"><span></span><span>昨天16:23</span></div></div>
+                <div class="ticket"><div class="sender">2624537330@qq.com</div><div class="subject">来自蔚蓝的邮件</div><div class="meta"><span>kuai_niu 已解决</span><span>08/29 17:48</span></div></div>
+                <div class="ticket"><div class="sender">service@printomon.com</div><div class="subject"><span class="new">New</span> Información important...</div><div class="meta"><span style="color:#ea5d5d">超时 163h 36m</span><span>昨天00:13</span></div></div>
+                <div class="ticket"><div class="sender">posts-recap@mail.instagram.com</div><div class="subject">p.ansy.2025，看看你关注的 inst...</div><div class="meta"><span>kuai_niu 已解决</span><span>08/29 18:32</span></div></div>
+              </aside>
+              <section class="s-conversation">
+                <div class="conversation-head"><div class="conversation-title"><span>Did you just log in near Changsha on a new device?</span><span class="conversation-actions">⋮　↻　✦　⏱　<button class="assign">分配⌄</button></span></div><div class="ticket-status"><span>🟠 待处理</span><span>#783</span><span class="pill">23h 56m</span><span>◇ gstar</span><span>＋ 标签</span></div></div>
+                <div class="conversation-scroll">
+                  <div style="display:flex;justify-content:space-between;color:#8f959c"><span><b style="color:#49525d">N　noreply</b>　✉</span><span>08/31 16:43</span></div>
+                  <div class="mail-card"><div class="mail-subject">Did you just log in near Changsha on a new device?</div><div class="facebook-mail"><div class="fb-logo">f</div><span class="fb-name">Michael Zefans　👩🏻</span><h2 class="security-title">Security alert: login near Changsha on a new device</h2><p>Hi Michael,</p><p>Someone just logged into your Facebook account near Changsha, China on Chrome on macOS. If this wasn't you, we're here to help you take some simple steps to secure your account.</p><b>Was this you?</b><div class="mapbox"><button class="expand">展开</button></div></div></div>
+                  <div class="ai-divider">⌁ AI转人工</div><div class="ai-note">▣<br/>MENTION_PRIVACY|Mention Privacy</div>
+                </div>
+                <div class="reply-box"><div class="reply-tools">▣　◉　◌　⌕　♧　✧　▣　　✎ 备注　　noreply.gstar.zw@gmail.com</div><div class="reply-copy">请输入<br/><br/>Best Wish!<br/>***</div></div>
+              </section>
+              <aside class="s-detail">
+                <div class="detail-head"><span>详情</span><span>◧</span></div>
+                <div class="detail-section"><div class="detail-section-title"><span>♟ 客户信息</span><span>⌄</span></div><div class="contact"><div class="contact-avatar">N</div><div><b>noreply</b><div class="contact-mail">✉ noreply@facebookmail.com</div></div><button class="workorder-btn" id="workorderBtn">工单</button></div><div style="margin:17px 0">▦ 客户标签　　＋ 添加</div><div>备注</div><div class="note-box" style="margin-top:6px">添加　　<span style="float:right">◉</span></div><div style="margin-top:18px">SatisfactionUrl　 https://desk-staging-...</div></div>
+                <div class="detail-section"><div class="detail-section-title"><span>相关工单</span><span>20</span></div><div class="related">● 已解决　#781　<span style="float:right;color:#aaa">11:02</span><br/>Did you just create a passkey?</div><div class="related">● 已解决　#733　<span style="float:right;color:#aaa">08/24 17:39</span><br/>Action required: You’re invited to join the ...</div><div style="text-align:center;margin-top:7px">展开⌄</div></div>
+                <div class="detail-section"><div class="detail-section-title"><span>▣ 电商信息</span><span style="color:#3478f6">＋ 订单　⌄</span></div><div style="text-align:center;height:73px;padding-top:28px;color:#777">暂无内容</div></div>
+                <div class="detail-section"><div class="detail-section-title"><span>◷ 操作记录</span><span>⌄</span></div><div class="record"><b>新建工单</b><br/>system <span style="float:right;color:#aaa">2026/08/31 16:45</span></div><div class="record"><b>SatisfactionUrl 更新</b><br/>solvea <span style="float:right;color:#aaa">2026/08/31 16:45</span></div><div class="record"><b>AI 转人工客服</b><br/>system <span style="float:right;color:#aaa">2026/08/31 16:45</span></div><div class="record"><b>工单进入排队</b><br/>system <span style="float:right;color:#aaa">2026/08/31 16:45</span></div></div>
+              </aside>
+            </div>
+          </div>
+        </section>
+      </div>
+    </main>
+
+    <div class="veil open" id="veil"></div>
+    <nav class="mega open" id="megaMenu" aria-label="客服菜单">
+      <div class="mega-col">
+        <div class="mega-group"><div class="mega-title">工单管理</div><a class="mega-link" id="managementLink">工单管理</a><a class="mega-link">工单配置</a></div>
+        <div class="mega-group"><div class="mega-title">评价管理</div><a class="mega-link">商品评价</a><a class="mega-link">Feedback</a></div>
+        <div class="mega-group"><div class="mega-title">联系客户</div><a class="mega-link">站内/外信</a><a class="mega-link">其他站外信</a><a class="mega-link">联系模板</a><a class="mega-link">联系规则</a><a class="mega-link">发送列表</a><a class="mega-link shulex" id="shulexLink">Shulex</a></div>
+        <div class="mega-group"><div class="mega-title">售后管理</div><a class="mega-link">订单取消信息</a><a class="mega-link">退款信息</a><a class="mega-link">补发信息</a><a class="mega-link">客诉分析</a><a class="mega-link">退货信息</a><a class="mega-link">退货分析</a><a class="mega-link">VC客诉分析</a><a class="mega-link">COPQ</a><a class="mega-link">QA重大问题</a></div>
+      </div>
+      <div class="mega-col">
+        <div class="mega-group"><div class="mega-title">店铺绩效</div><a class="mega-link">服务质量</a><a class="mega-link">资金限制</a></div>
+        <div class="mega-group"><div class="mega-title">申诉管理</div><a class="mega-link">temu违规申诉</a><a class="mega-link">temu包裹已妥投申诉</a><a class="mega-link">尾程索赔</a></div>
+      </div>
+    </nav>
+    <div class="ai-config-overlay" id="aiConfigOverlay" aria-hidden="true">
+      <section class="ai-config-dialog" role="dialog" aria-modal="true" aria-labelledby="aiConfigTitle">
+        <header class="ai-config-head"><h2 id="aiConfigTitle">AI处理配置</h2><button class="ai-config-close" id="aiConfigClose" aria-label="关闭AI处理配置">×</button></header>
+        <div class="ai-config-tabs" id="aiConfigTabs">
+          <button class="ai-config-tab active" data-tab="waixin">站外信</button>
+          <button class="ai-config-tab" data-tab="walmart">站内信– Walmart/WalmartDSV</button>
+          <button class="ai-config-tab" data-tab="tiktok">站内信– TikTok</button>
+        </div>
+        <div class="ai-config-body">
+          <section class="ai-config-section" data-tab-panel="waixin">
+            <div class="ai-config-agent-row"><label for="agentWaixin">Agent</label><input type="text" class="ai-config-agent-input" id="agentWaixin" placeholder="请输入Agent"></div>
+            <table class="ai-config-table"><thead><tr><th>邮箱</th><th>AI处理</th></tr></thead><tbody>
+              <tr><td>HJ-Customer-Service@outlook.com</td><td class="ai-radio-cell"><label><input type="radio" name="ai-HJ-Customer-Service@outlook.com" value="yes" checked> 是</label><label><input type="radio" name="ai-HJ-Customer-Service@outlook.com" value="no"> 否</label></td></tr>
+              <tr><td>dumosservice@outlook.com</td><td class="ai-radio-cell"><label><input type="radio" name="ai-dumosservice@outlook.com" value="yes" checked> 是</label><label><input type="radio" name="ai-dumosservice@outlook.com" value="no"> 否</label></td></tr>
+              <tr><td>olixisservice@outlook.com</td><td class="ai-radio-cell"><label><input type="radio" name="ai-olixisservice@outlook.com" value="yes" checked> 是</label><label><input type="radio" name="ai-olixisservice@outlook.com" value="no"> 否</label></td></tr>
+              <tr><td>service@sweetcrispy.com</td><td class="ai-radio-cell"><label><input type="radio" name="ai-service@sweetcrispy.com" value="yes" checked> 是</label><label><input type="radio" name="ai-service@sweetcrispy.com" value="no"> 否</label></td></tr>
+            </tbody></table>
+          </section>
+          <section class="ai-config-section" data-tab-panel="walmart" hidden>
+            <div class="ai-config-agent-row"><label for="agentWalmart">Agent</label><input type="text" class="ai-config-agent-input" id="agentWalmart" placeholder="请输入Agent"></div>
+            <table class="ai-config-table"><thead><tr><th>店铺</th><th>AI处理</th></tr></thead><tbody>
+              <tr><td>WAL-ZJHJ-US</td><td class="ai-radio-cell"><label><input type="radio" name="ai-WAL-ZJHJ-US" value="yes" checked> 是</label><label><input type="radio" name="ai-WAL-ZJHJ-US" value="no"> 否</label></td></tr>
+              <tr><td>Walmart-US-01</td><td class="ai-radio-cell"><label><input type="radio" name="ai-Walmart-US-01" value="yes" checked> 是</label><label><input type="radio" name="ai-Walmart-US-01" value="no"> 否</label></td></tr>
+              <tr><td>Walmart-US-02</td><td class="ai-radio-cell"><label><input type="radio" name="ai-Walmart-US-02" value="yes" checked> 是</label><label><input type="radio" name="ai-Walmart-US-02" value="no"> 否</label></td></tr>
+              <tr><td>WalmartDSV-CA</td><td class="ai-radio-cell"><label><input type="radio" name="ai-WalmartDSV-CA" value="yes" checked> 是</label><label><input type="radio" name="ai-WalmartDSV-CA" value="no"> 否</label></td></tr>
+              <tr><td>WalmartDSV-US</td><td class="ai-radio-cell"><label><input type="radio" name="ai-WalmartDSV-US" value="yes" checked> 是</label><label><input type="radio" name="ai-WalmartDSV-US" value="no"> 否</label></td></tr>
+              <tr><td>WalmartDSV-MX</td><td class="ai-radio-cell"><label><input type="radio" name="ai-WalmartDSV-MX" value="yes" checked> 是</label><label><input type="radio" name="ai-WalmartDSV-MX" value="no"> 否</label></td></tr>
+              <tr><td>WAL-HJHome-US</td><td class="ai-radio-cell"><label><input type="radio" name="ai-WAL-HJHome-US" value="yes" checked> 是</label><label><input type="radio" name="ai-WAL-HJHome-US" value="no"> 否</label></td></tr>
+              <tr><td>WAL-CozyCorner-US</td><td class="ai-radio-cell"><label><input type="radio" name="ai-WAL-CozyCorner-US" value="yes" checked> 是</label><label><input type="radio" name="ai-WAL-CozyCorner-US" value="no"> 否</label></td></tr>
+              <tr><td>WAL-Sweetcrispy-US</td><td class="ai-radio-cell"><label><input type="radio" name="ai-WAL-Sweetcrispy-US" value="yes" checked> 是</label><label><input type="radio" name="ai-WAL-Sweetcrispy-US" value="no"> 否</label></td></tr>
+              <tr><td>Walmart-UK-01</td><td class="ai-radio-cell"><label><input type="radio" name="ai-Walmart-UK-01" value="yes" checked> 是</label><label><input type="radio" name="ai-Walmart-UK-01" value="no"> 否</label></td></tr>
+              <tr><td>WalmartDSV-UK</td><td class="ai-radio-cell"><label><input type="radio" name="ai-WalmartDSV-UK" value="yes" checked> 是</label><label><input type="radio" name="ai-WalmartDSV-UK" value="no"> 否</label></td></tr>
+              <tr><td>Walmart-CA-02</td><td class="ai-radio-cell"><label><input type="radio" name="ai-Walmart-CA-02" value="yes" checked> 是</label><label><input type="radio" name="ai-Walmart-CA-02" value="no"> 否</label></td></tr>
+            </tbody></table>
+          </section>
+          <section class="ai-config-section" data-tab-panel="tiktok" hidden>
+            <div class="ai-config-agent-row"><label for="agentTiktok">Agent</label><input type="text" class="ai-config-agent-input" id="agentTiktok" placeholder="请输入Agent"></div>
+            <table class="ai-config-table"><thead><tr><th>店铺</th><th>AI处理</th></tr></thead><tbody>
+              <tr><td>TikTok-US-Shop</td><td class="ai-radio-cell"><label><input type="radio" name="ai-TikTok-US-Shop" value="yes" checked> 是</label><label><input type="radio" name="ai-TikTok-US-Shop" value="no"> 否</label></td></tr>
+              <tr><td>TikTok-UK-Shop</td><td class="ai-radio-cell"><label><input type="radio" name="ai-TikTok-UK-Shop" value="yes" checked> 是</label><label><input type="radio" name="ai-TikTok-UK-Shop" value="no"> 否</label></td></tr>
+              <tr><td>TikTok-DE-Shop</td><td class="ai-radio-cell"><label><input type="radio" name="ai-TikTok-DE-Shop" value="yes" checked> 是</label><label><input type="radio" name="ai-TikTok-DE-Shop" value="no"> 否</label></td></tr>
+              <tr><td>TikTok-FR-Shop</td><td class="ai-radio-cell"><label><input type="radio" name="ai-TikTok-FR-Shop" value="yes" checked> 是</label><label><input type="radio" name="ai-TikTok-FR-Shop" value="no"> 否</label></td></tr>
+              <tr><td>TikTok-ES-Shop</td><td class="ai-radio-cell"><label><input type="radio" name="ai-TikTok-ES-Shop" value="yes" checked> 是</label><label><input type="radio" name="ai-TikTok-ES-Shop" value="no"> 否</label></td></tr>
+              <tr><td>TikTok-IT-Shop</td><td class="ai-radio-cell"><label><input type="radio" name="ai-TikTok-IT-Shop" value="yes" checked> 是</label><label><input type="radio" name="ai-TikTok-IT-Shop" value="no"> 否</label></td></tr>
+              <tr><td>TikTok-SE-Shop</td><td class="ai-radio-cell"><label><input type="radio" name="ai-TikTok-SE-Shop" value="yes" checked> 是</label><label><input type="radio" name="ai-TikTok-SE-Shop" value="no"> 否</label></td></tr>
+              <tr><td>TikTok-VN-Shop</td><td class="ai-radio-cell"><label><input type="radio" name="ai-TikTok-VN-Shop" value="yes" checked> 是</label><label><input type="radio" name="ai-TikTok-VN-Shop" value="no"> 否</label></td></tr>
+              <tr><td>TikTok-TH-Shop</td><td class="ai-radio-cell"><label><input type="radio" name="ai-TikTok-TH-Shop" value="yes" checked> 是</label><label><input type="radio" name="ai-TikTok-TH-Shop" value="no"> 否</label></td></tr>
+              <tr><td>TikTok-MY-Shop</td><td class="ai-radio-cell"><label><input type="radio" name="ai-TikTok-MY-Shop" value="yes" checked> 是</label><label><input type="radio" name="ai-TikTok-MY-Shop" value="no"> 否</label></td></tr>
+              <tr><td>TikTok-PH-Shop</td><td class="ai-radio-cell"><label><input type="radio" name="ai-TikTok-PH-Shop" value="yes" checked> 是</label><label><input type="radio" name="ai-TikTok-PH-Shop" value="no"> 否</label></td></tr>
+              <tr><td>TikTok-SG-Shop</td><td class="ai-radio-cell"><label><input type="radio" name="ai-TikTok-SG-Shop" value="yes" checked> 是</label><label><input type="radio" name="ai-TikTok-SG-Shop" value="no"> 否</label></td></tr>
+            </tbody></table>
+          </section>
+        </div>
+        <footer class="ai-config-foot"><button class="btn" id="aiConfigCancel">取消</button><button class="btn primary" id="aiConfigSave">确定</button></footer>
+      </section>
+    </div>
+    <div class="toast" id="toast">已打开 ERP 工单详情</div>
+  </div>
+
+  <script>
+    const menu = document.getElementById('megaMenu');
+    const veil = document.getElementById('veil');
+    const tabs = document.getElementById('tabs');
+    const orderPage = document.getElementById('page-order');
+    const shulexPage = document.getElementById('page-shulex');
+    const toast = document.getElementById('toast');
+    const managementRows = document.getElementById('managementRows');
+    const managementCount = document.getElementById('managementCount');
+    const managementQuery = document.getElementById('managementQuery');
+    const aiConfigOverlay = document.getElementById('aiConfigOverlay');
+    const aiConfigButton = document.getElementById('aiReplyConfigBtn');
+    let managementStatus = '全部';
+    let aiConfigSnapshot = null;
+
+    const managementOrders = [
+      ['2026090261163364','处理中','补发配件','SPU：C-810...','-','-','test','-','-','-','-','-','2026-08-04 02:00','2026-11-06 00:00','-',''],
+      ['20260830919634504','处理中','站外信','Re: Dumos counter...','中','LORI TOLIVER 邮件咨询','-','客诉','-','-','-','-','-','-','2026-08-31 09:44','AI'],
+      ['2026090277987133','处理中','补发产品','SPU：C-810...','-','-','test','-','-','-','-','-','2026-08-04 02:00','2026-11-06 00:00','-',''],
+      ['20260827378026274','处理中','站内信','Re: Message from Walmart.com Customer...','高','店铺:WAL-ZJHJ-US，买家:Paul Coe','-','客诉','-','-','-','-','2026-08-21 05:30','2026-12-22 00:00','-','人工-未处理'],
+      ['20260905525175314','待处理','站内信','参与会话人:BUYER_ID:764201989503187213','高','TK-DUMOS Home-US','Alex','客诉','-','-','-','-','2026-09-05 10:00','2026-09-07 00:00','2026-09-04 19:22','人工'],
+      ['20260904812345678','已完成','站外信','Re: Sweetcrispy missing screws','中','service@sweetcrispy.com 邮件咨询','Janice','客诉','-','-','Janice','-','2026-09-03 10:00','2026-09-05 18:00','2026-09-04 16:20','人工-已处理'],
+      ['2026090227925654','处理中','补发配件','SPU：OC-L...','-','-','zuo_q','-','-','-','-','-','2026-08-21 05:30','2026-12-22 00:00','-',''],
+      ['2026090159786262','处理中','补发产品','SPU：C-371...','-','-','Karida','-','-','-','-','-','2026-03-27 03:30','2199-12-22 00:00','-',''],
+      ['2026090187916942','处理中','补发配件','SPU：C-371...','-','-','zuo_q','-','-','-','-','-','2026-03-27 03:30','2199-12-22 00:00','-',''],
+      ['2026090106723905','已关闭','退款请求','客户申请订...','高','店铺名称:TEMU- Cozy Corner','-','-','-','-','-','test','-','-','2026-09-01 00:00',''],
+      ['2026083105947881','已关闭','退款请求','客户申请订...','高','店铺名称:TEMU- Cozy Corner','-','-','-','-','-','test','-','-','2026-08-31 15:42',''],
+      ['2026083138627079','已关闭','退款请求','客户申请订...','高','店铺名称:TEMU- Cozy Corner','-','-','-','-','-','test','-','-','2026-08-31 13:19',''],
+      ['2026083161593002','待处理','退款请求','客户申请订...','高','店铺名称:TEMU- Cozy Corner','-','-','-','-','-','-','-','-','-',''],
+      ['2026083135095980','待处理','退款请求','客户申请订...','高','店铺名称:TEMU- Cozy Corner','-','-','-','-','-','-','-','-','-',''],
+      ['2026083165295336','待处理','退款请求','客户申请订...','高','店铺名称:TEMU- Cozy Corner','-','-','-','-','-','-','-','-','-',''],
+      ['2026083192379114','待处理','退款请求','客户申请订...','高','店铺名称:TEMU- Cozy Corner','-','-','-','-','-','-','-','-','-',''],
+      ['2026083188946953','待处理','退款请求','客户申请订...','高','店铺名称:TEMU- Cozy Corner','-','-','-','-','-','-','-','-','-',''],
+      ['2026083102582338','待处理','退款请求','客户申请订...','高','店铺名称:TEMU- Cozy Corner','-','-','-','-','-','-','-','-','-','']
+    ];
+
+    function showToast(message) {
+      toast.textContent = message;
+      toast.classList.add('show');
+      clearTimeout(showToast.timer);
+      showToast.timer = setTimeout(() => toast.classList.remove('show'), 1700);
+    }
+
+    function resetAiConfigTabs() {
+      const configTabs = document.querySelectorAll('.ai-config-tab');
+      configTabs.forEach((t, index) => t.classList.toggle('active', index === 0));
+      document.querySelectorAll('.ai-config-section').forEach(panel => { panel.hidden = panel.dataset.tabPanel !== configTabs[0].dataset.tab; });
+    }
+    function snapshotAiConfig() {
+      return {
+        radios: [...document.querySelectorAll('#aiConfigOverlay input[type="radio"]')].map(r => r.checked),
+        agents: [...document.querySelectorAll('#aiConfigOverlay .ai-config-agent-input')].map(i => i.value)
+      };
+    }
+    function restoreAiConfig(snapshot) {
+      if (!snapshot) return;
+      [...document.querySelectorAll('#aiConfigOverlay input[type="radio"]')].forEach((r, i) => { r.checked = snapshot.radios[i]; });
+      [...document.querySelectorAll('#aiConfigOverlay .ai-config-agent-input')].forEach((inp, i) => { inp.value = snapshot.agents[i]; });
+    }
+    function setAiConfig(open) {
+      aiConfigOverlay.classList.toggle('open', open);
+      aiConfigOverlay.setAttribute('aria-hidden', String(!open));
+      if (open) {
+        resetAiConfigTabs();
+        aiConfigSnapshot = snapshotAiConfig();
+        document.getElementById('aiConfigClose').focus();
+      } else {
+        aiConfigButton.focus();
+      }
+    }
+
+    function renderManagementRows() {
+      const query = managementQuery.value.trim().toLowerCase();
+      const filtered = managementOrders.filter(row => {
+        const matchesStatus = managementStatus === '全部' || row[1] === managementStatus;
+        const matchesQuery = !query || row.join(' ').toLowerCase().includes(query);
+        return matchesStatus && matchesQuery;
+      });
+      managementRows.innerHTML = filtered.length ? filtered.map(row => {
+        const statusClass = row[1] === '处理中' ? 'processing' : row[1] === '待处理' ? 'pending' : row[1] === '已完成' ? 'done' : 'closed';
+        const operation = row[1] === '已关闭' ? '<a class="action-link open-order">查看</a>' : '<a class="action-link open-order">处理</a><a class="action-link">操作⌄</a>';
+        const handling = row[15];
+        const handlingMap = {
+          'AI': ['ai', 'AI'],
+          '人工': ['manual', '人工'],
+          '人工-已处理': ['manual-done', '人工(已处理)'],
+          '人工-未处理': ['manual-pending', '人工(未处理)']
+        };
+        const handlingInfo = handlingMap[handling];
+        const handlingTag = handlingInfo ? `<span class="handling-tag ${handlingInfo[0]}">${handlingInfo[1]}</span>` : '';
+        return `<tr><td class="check-col"><input type="checkbox" class="row-check management-row-check" aria-label="选择工单 ${row[0]}" /></td><td class="number-col"><a class="order-link open-order">${row[0]}</a></td><td class="status-col"><span class="status-chip ${statusClass}">${row[1]}</span>${handlingTag}</td><td class="type-col">${row[2]}</td><td class="name-col" title="${row[3]}">${row[3]}</td><td class="priority-col">${row[4]}</td><td class="desc-col" title="${row[5]}">${row[5]}</td><td class="owner-col">${row[6]}</td><td class="category-col">${row[7]}</td><td class="tag-col"><span class="tag-edit">□</span></td><td class="remark-col">${row[9]}</td><td class="person-col">${row[10]}</td><td class="person-col">${row[11]}</td><td class="date-col">${row[12]}</td><td class="date-col">${row[13]}</td><td class="date-col">${row[14]}</td><td class="operation-col">${operation}</td></tr>`;
+      }).join('') : '<tr><td class="management-empty" colspan="17">暂无符合条件的工单</td></tr>';
+      managementCount.textContent = managementStatus === '全部' && !query ? '共23条' : `共${filtered.length}条`;
+      document.getElementById('managementSelectAll').checked = false;
+    }
+
+    function setMenu(open) {
+      menu.classList.toggle('open', open);
+      veil.classList.toggle('open', open);
+    }
+    function activatePage(page) {
+      document.querySelectorAll('.page').forEach(p => p.classList.remove('active'));
+      document.querySelectorAll('.tab').forEach(t => t.classList.remove('active'));
+      const node = document.getElementById(`page-${page}`);
+      if (node) node.classList.add('active');
+      const tab = tabs.querySelector(`[data-page="${page}"]`);
+      if (tab) tab.classList.add('active');
+    }
+    function ensureTab(page, label, closeable = true) {
+      let tab = tabs.querySelector(`[data-page="${page}"]`);
+      if (!tab) {
+        tab = document.createElement('button');
+        tab.className = 'tab';
+        tab.dataset.page = page;
+        tab.innerHTML = `<span class="tab-label">${label}</span>${closeable ? ' <span class="close">×</span>' : ''}`;
+        tabs.appendChild(tab);
+      }
+      activatePage(page);
+    }
+    document.getElementById('serviceNav').addEventListener('click', () => setMenu(!menu.classList.contains('open')));
+    veil.addEventListener('click', () => setMenu(false));
+    document.getElementById('managementLink').addEventListener('click', () => {
+      setMenu(false);
+      activatePage('management');
+    });
+    document.getElementById('shulexLink').addEventListener('click', () => {
+      setMenu(false);
+      ensureTab('shulex', 'Shulex');
+    });
+    document.getElementById('workorderBtn').addEventListener('click', () => {
+      ensureTab('order', '站外信-20260830919634504');
+      showToast('已打开 ERP 工单详情');
+    });
+    document.getElementById('managementStatusTabs').addEventListener('click', (event) => {
+      const button = event.target.closest('button[data-status]');
+      if (!button) return;
+      managementStatus = button.dataset.status;
+      document.querySelectorAll('#managementStatusTabs button').forEach(item => item.classList.toggle('active', item === button));
+      renderManagementRows();
+    });
+    document.getElementById('managementSearch').addEventListener('click', renderManagementRows);
+    managementQuery.addEventListener('keydown', event => { if (event.key === 'Enter') renderManagementRows(); });
+    document.getElementById('managementReset').addEventListener('click', () => {
+      managementQuery.value = '';
+      managementStatus = '全部';
+      document.querySelectorAll('#managementStatusTabs button').forEach(item => item.classList.toggle('active', item.dataset.status === '全部'));
+      renderManagementRows();
+    });
+    managementRows.addEventListener('click', event => {
+      if (!event.target.closest('.open-order')) return;
+      ensureTab('order', '站外信-20260830919634504');
+      showToast('已打开工单详情');
+    });
+    document.getElementById('managementSelectAll').addEventListener('change', event => {
+      document.querySelectorAll('.management-row-check').forEach(box => { box.checked = event.target.checked; });
+    });
+    document.querySelectorAll('.management-actions button:not(#aiReplyConfigBtn), .table-tools .tool-link').forEach(control => control.addEventListener('click', () => showToast(`${control.textContent.trim().replace('⌄','')}操作已触发`)));
+    aiConfigButton.addEventListener('click', () => setAiConfig(true));
+    function closeAiConfigDiscard() { restoreAiConfig(aiConfigSnapshot); setAiConfig(false); }
+    document.getElementById('aiConfigClose').addEventListener('click', closeAiConfigDiscard);
+    document.getElementById('aiConfigCancel').addEventListener('click', closeAiConfigDiscard);
+    document.getElementById('aiConfigSave').addEventListener('click', () => {
+      setAiConfig(false);
+      showToast('AI处理配置已保存');
+    });
+    document.getElementById('aiConfigTabs').addEventListener('click', event => {
+      const tab = event.target.closest('.ai-config-tab');
+      if (!tab) return;
+      document.querySelectorAll('.ai-config-tab').forEach(t => t.classList.toggle('active', t === tab));
+      document.querySelectorAll('.ai-config-section').forEach(panel => { panel.hidden = panel.dataset.tabPanel !== tab.dataset.tab; });
+    });
+    aiConfigOverlay.addEventListener('click', event => { if (event.target === aiConfigOverlay) closeAiConfigDiscard(); });
+    document.addEventListener('keydown', event => { if (event.key === 'Escape' && aiConfigOverlay.classList.contains('open')) closeAiConfigDiscard(); });
+    tabs.addEventListener('click', (event) => {
+      const tab = event.target.closest('.tab');
+      if (!tab) return;
+      if (event.target.classList.contains('close')) {
+        const wasActive = tab.classList.contains('active');
+        const page = tab.dataset.page;
+        tab.remove();
+        if (page === 'shulex') shulexPage.classList.remove('active');
+        if (wasActive) {
+          const fallback = tabs.querySelector('[data-page="order"]') || tabs.querySelector('.tab:last-child');
+          if (fallback) activatePage(fallback.dataset.page);
+        }
+        return;
+      }
+      if (document.getElementById(`page-${tab.dataset.page}`)) activatePage(tab.dataset.page);
+    });
+
+    function formatDateTime(d) {
+      const p = n => String(n).padStart(2, '0');
+      return `${d.getFullYear()}-${p(d.getMonth() + 1)}-${p(d.getDate())} ${p(d.getHours())}:${p(d.getMinutes())}:${p(d.getSeconds())}`;
+    }
+
+    function setupHandoff(barId, replyBtnId, initial, composerId) {
+      const bar = document.getElementById(barId);
+      const composerEl = composerId ? document.getElementById(composerId) : null;
+      const status = bar.querySelector('.handoff-status');
+      const reasonLine = bar.querySelector('.handoff-reason');
+      const reasonPrefix = reasonLine.querySelector('.reason-prefix');
+      const reasonText = reasonLine.querySelector('.reason-text');
+      const toggleBtn = bar.querySelector('.handoff-toggle');
+      const picker = bar.querySelector('.handoff-reason-picker');
+      const select = picker.querySelector('.handoff-reason-select');
+      const confirmBtn = picker.querySelector('.handoff-confirm');
+      const cancelBtn = picker.querySelector('.handoff-cancel');
+      const confirmBox = bar.querySelector('.handoff-confirm-picker');
+      const confirmAiBtn = confirmBox.querySelector('.handoff-confirm-ai');
+      const cancelAiBtn = confirmBox.querySelector('.handoff-cancel-ai');
+      const replyBtn = document.getElementById(replyBtnId);
+      const markWrap = bar.querySelector('.handoff-mark-wrap');
+      const markBtn = markWrap.querySelector('.handoff-mark-btn');
+      const markConfirmBox = markWrap.querySelector('.handoff-mark-confirm');
+      const markCancelBtn = markConfirmBox.querySelector('.handoff-mark-cancel');
+      const markOkBtn = markConfirmBox.querySelector('.handoff-mark-ok');
+      const markDone = markWrap.querySelector('.handoff-mark-done');
+      const markHandlerEl = markDone.querySelector('.mark-handler');
+      const markTimeEl = markDone.querySelector('.mark-time');
+      const asideEl = bar.closest('.process, .internal-process');
+      const closeBtn = asideEl ? asideEl.querySelector('.process-actions .btn') : null;
+      let current = { prefix: '', reason: '' };
+      let handled = false;
+      let handledBy = '';
+      let handledAt = '';
+
+      function renderMark() {
+        const isAiTransfer = bar.dataset.mode === 'manual' && current.prefix === 'AI转接';
+        markWrap.hidden = !isAiTransfer;
+        if (!isAiTransfer) return;
+        markBtn.hidden = handled;
+        markConfirmBox.hidden = true;
+        markDone.hidden = !handled;
+        if (handled) {
+          markHandlerEl.textContent = handledBy;
+          markTimeEl.textContent = handledAt;
+        }
+      }
+
+      function render(mode, prefix, reason) {
+        bar.dataset.mode = mode;
+        toggleBtn.hidden = mode === 'picking' || mode === 'confirming';
+        picker.hidden = mode !== 'picking';
+        confirmBox.hidden = mode !== 'confirming';
+        if (mode === 'manual') {
+          if (prefix !== undefined) { current = { prefix, reason }; }
+          status.className = 'handoff-status manual';
+          status.innerHTML = '<i class="handoff-dot"></i>人工处理';
+          reasonLine.hidden = false;
+          reasonPrefix.textContent = current.prefix;
+          reasonText.textContent = '- ' + current.reason;
+          toggleBtn.textContent = '切换至AI处理';
+          toggleBtn.dataset.action = 'to-ai';
+          replyBtn.hidden = false;
+          if (composerEl) composerEl.hidden = false;
+          renderMark();
+        } else if (mode === 'ai') {
+          status.className = 'handoff-status ai';
+          status.innerHTML = '<i class="handoff-dot"></i>AI处理';
+          reasonLine.hidden = true;
+          toggleBtn.textContent = '转人工处理';
+          toggleBtn.dataset.action = 'to-manual';
+          replyBtn.hidden = true;
+          if (composerEl) composerEl.hidden = true;
+          renderMark();
+        }
+      }
+
+      toggleBtn.addEventListener('click', () => {
+        if (toggleBtn.dataset.action === 'to-manual') {
+          select.value = '';
+          render('picking');
+        } else {
+          if (current.prefix === 'AI转接' && !handled) {
+            showToast('请先将人工处理标记为"已处理"');
+            return;
+          }
+          render('confirming');
+        }
+      });
+      cancelBtn.addEventListener('click', () => render('ai'));
+      confirmBtn.addEventListener('click', () => {
+        if (!select.value) { select.focus(); return; }
+        render('manual', '人工切换', select.value);
+        showToast('已切换至人工处理');
+      });
+      cancelAiBtn.addEventListener('click', () => render('manual'));
+      confirmAiBtn.addEventListener('click', () => {
+        render('ai');
+        showToast('已切换至AI处理');
+      });
+      markBtn.addEventListener('click', () => {
+        markBtn.hidden = true;
+        markConfirmBox.hidden = false;
+      });
+      markCancelBtn.addEventListener('click', () => {
+        markConfirmBox.hidden = true;
+        markBtn.hidden = false;
+      });
+      markOkBtn.addEventListener('click', () => {
+        handled = true;
+        handledBy = '915805617@qq.com';
+        handledAt = formatDateTime(new Date());
+        renderMark();
+        showToast('已标记为已处理');
+      });
+      if (closeBtn) {
+        closeBtn.addEventListener('click', () => {
+          if (bar.dataset.mode === 'manual' && current.prefix === 'AI转接' && !handled) {
+            showToast('请先将人工处理标记为"已处理"');
+          }
+        });
+      }
+
+      if (initial && initial.mode === 'manual') {
+        render('manual', initial.prefix, initial.reason);
+      } else {
+        render('ai');
+      }
+    }
+    setupHandoff('orderHandoff', 'orderReplyBtn', undefined, 'orderEditor');
+    setupHandoff('internalHandoff', 'internalReplyBtn', { mode: 'manual', prefix: 'AI转接', reason: '客户多次追问且情绪升级，AI自动转人工跟进' });
+    setupHandoff('tiktokHandoff', 'tiktokReplyBtn', { mode: 'manual', prefix: '人工切换', reason: '问题复杂，AI无法处理' }, 'tiktokComposer');
+
+    renderManagementRows();
+  </script>
+</body>
+</html>
